@@ -44,7 +44,7 @@
 .vz-yn{display:flex;gap:6px}
 .vz-yn .btn{min-width:72px;justify-content:center}
 .vz-yn .btn[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#1a0a0a}
-.vz-ask .vz-small .en{display:block}
+.vz-ask .vz-small .en{display:block;font-size:inherit}
 .vz-go{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:12px}
 .vz-chip{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;margin:16px 0 0;font-size:14px;color:var(--mute)}
 .vz-chip b{color:var(--ink)}

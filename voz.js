@@ -31,7 +31,7 @@ const award = (...a) => { try { return typeof L().award === "function" ? L().awa
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const str = (lang, k, v) => { let s = (STR[lang] || STR.en)[k] || STR.en[k]; for (const x in v || {}) s = s.replace(`{${x}}`, v[x]); return s; };
 const T = (k, v) => { const S = L().S; let o = esc(str(S.learn, k, v)); if (L().both()) o += `<span class="en">${esc(str(S.know, k, v))}</span>`; return o; };
-const T1 = (k, v) => str(L().S.learn, k, v) + (L().both() ? " · " + str(L().S.know, k, v) : "");
+const T1 = (k, v) => { const a = str(L().S.learn, k, v), b = str(L().S.know, k, v); return a + (L().both() && b !== a ? " · " + b : ""); };
 const ico = {
   play: '<path d="M8 5v14l11-7z"/>', pause: '<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>', stop: '<path d="M6 6h12v12H6z"/>',
   prev: '<path d="M6 5h2v14H6zM20 5v14L9 12z"/>', next: '<path d="M16 5h2v14h-2zM4 5v14l11-7z"/>',
