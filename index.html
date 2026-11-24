@@ -282,6 +282,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="mascota/mascota.css">
 <link rel="stylesheet" href="votos/votos.css">
 <link rel="stylesheet" href="dictados/dictados.css">
+<link rel="stylesheet" href="fichas/fichas.css">
 </head>
 <body>
 <header class="top">
@@ -550,7 +551,7 @@ function renderProg() {
 function renderTop() {
   const rd = S.view === "read", L = rd ? R : null;
   $("tabs").innerHTML = `<a href="#inicio" ${S.view === "home" ? 'aria-current="page"' : ""}>${TT("home")}</a>
-    <a href="#diccionario" ${S.view === "dict" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}${window.LYADictados ? `<a href="#dictados" ${S.view === "dictado" ? 'aria-current="page"' : ""}>${LYADictados.tab()}</a>` : ""}`;
+    <a href="#diccionario" ${S.view === "dict" || S.view === "fc" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}${window.LYADictados ? `<a href="#dictados" ${S.view === "dictado" ? 'aria-current="page"' : ""}>${LYADictados.tab()}</a>` : ""}`;
   if (rd && L) { const r = scoreOf(L); $("score").innerHTML = `${esc(U("points", S.learn))} <b>${r.pts}</b> / ${r.tot}`; $("score").hidden = false; }
   else if (S && S.view === "dict") { $("score").innerHTML = `${esc(U("to_review", S.learn))} <b>${S.dict.filter(d => d.miss && d.l === S.learn).length}</b>`; $("score").hidden = false; }
   else $("score").hidden = true;
@@ -703,9 +704,9 @@ function renderDict() {
   const li = ([d, i]) => `<li class="${d.miss ? "miss" : ""}"><div><b>${esc(d.w)}${d.miss ? `<em>${esc(U("review", S.learn))}</em>` : ""}</b><span>${esc(trOf(d))}</span>
       ${others.filter(x => trOf(d, x)).map(x => `<span class="tro"><abbr title="${esc(lname(x, S.know))}">${x.toUpperCase()}</abbr> ${esc(trOf(d, x))}</span>`).join("")}
       ${d.d ? `<span class="dd">${esc(d.d)}</span>` : ""}</div>
-      <button class="x" data-act="del" data-i="${i}" aria-label="${esc(U("del_word", S.learn))} ${esc(d.w)}">×</button></li>`;
+      ${window.LYAFichas ? LYAFichas.wordBtn(d) : ""}<button class="x" data-act="del" data-i="${i}" aria-label="${esc(U("del_word", S.learn))} ${esc(d.w)}">×</button></li>`;
   app.innerHTML = `<div class="wrap">
-    <h1>${esc(U("dict", S.learn))}</h1><p class="en">${TB("d_sub")}</p>
+    <h1>${esc(U("dict", S.learn))}</h1><p class="en">${TB("d_sub")}</p>${window.LYAFichas ? LYAFichas.dictBanner() : ""}
     <div class="howto qm"><p>${TB("how_mode")}</p><div class="seg" role="group">${MODES.map(m => `<button data-act="qmode" data-m="${m}" aria-pressed="${ms.includes(m)}">${ms.includes(m) ? "✓ " : ""}${TI("m_" + m)}</button>`).join("")}</div>
       <p class="mnote" style="flex-basis:100%;margin:0">${TI("m_multi")}</p>
       ${ms.map(m => `<p class="mnote" style="flex-basis:100%;margin:0"><b>${esc(U("m_" + m, S.learn))}:</b> ${TI("m_" + m + "_help")}</p>`).join("")}</div>
@@ -944,6 +945,7 @@ $("app").addEventListener("click", async e => {
 function render() {
   renderTop();
   if (S.view === "dict") return renderDict();
+  if (S.view === "fc" && window.LYAFichas) return LYAFichas.render($("app"));
   if (S.view === "games" && window.LYAJuegos) return LYAJuegos.render($("app"));
   if (S.view === "prog") return renderProg();
   if (S.view === "pet" && window.LYAMascota) return LYAMascota.render($("app"));
@@ -959,6 +961,7 @@ async function route() {
   try { PK = await loadPack(S.learn, S.know); } catch (e) { $("app").innerHTML = `<p class="msg">${esc(U("load_error", "es"))}<br>${esc(U("load_error", "en"))}</p>`; return; }
   const lv = h.match(/^nivel-(a1|a2|b1)$/);
   if (h === "diccionario") S.view = "dict";
+  else if (window.LYAFichas?.isFc(h)) S.view = "fc";
   else if (window.LYAJuegos?.isGames(h)) S.view = "games";
   else if (h === "progreso") S.view = "prog";
   else if (window.LYAMascota?.isPet(h)) S.view = "pet";
@@ -1000,5 +1003,6 @@ start();
 <script src="mascota/mascota.js"></script>
 <script src="votos/votos.js"></script>
 <script src="dictados/dictados.js"></script>
+<script src="fichas/fichas.js"></script>
 </body>
 </html>
