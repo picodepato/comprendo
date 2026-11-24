@@ -8,15 +8,15 @@
    Rutas: #canciones (inicio), #canciones-<vídeo> (jugar ese vídeo), #canciones-texto (letra pegada), #cancion-<id> (deberes). */
 (() => {
 const TX = {
-  ca: {tab: "🎵 Cançons", h1: "Cançons", sub: "Escolta una cançó o un vídeo de YouTube i escriu les paraules que falten.",
+  ca: {buscar: "🔎 Busca la lletra pel nom", buscarq: "Artista i cançó", buscarb: "Buscar", buscando: "Buscant…", sinres: "No l'hem trobada. Prova amb un altre nom o enganxa la lletra.", sinsync: "sense temps", usar: "Fer servir", s_lrc: "LRCLIB (lletres sincronitzades)", lrcnota: "Lletra trobada: {n}.", noes: "No és aquesta?", ajuste: "Si la lletra va avançada o endarrerida, ajusta-la:", antes: "⏪ Abans", despues: "Després ⏩", tab: "🎵 Cançons", h1: "Cançons", sub: "Escolta una cançó o un vídeo de YouTube i escriu les paraules que falten.",
     pega: "Enganxa l'enllaç de YouTube", ej: "https://www.youtube.com/watch?v=…", empezar: "Començar", nivel: "Nivell", n1: "Fàcil", n2: "Normal", n3: "Difícil", n4: "Expert",
     nd1: "1 buit cada 2 frases", nd2: "1 buit per frase", nd3: "2 buits per frase", nd4: "1 de cada 3 paraules",
     como: "Com funciona", como1: "El vídeo s'atura al final de cada frase amb un buit.", como2: "Escriu la paraula que has sentit. Si l'encertes, continua sol.", como3: "🔁 repeteix la frase, 💡 et dona una lletra i 👀 et mostra la paraula (sense punts).",
     sinsubs: "No té subtítols? Enganxa tu la lletra", pegaletra: "Enganxa aquí la lletra (una frase per línia). També val amb temps (LRC o SRT).", usarletra: "Fer servir aquesta lletra", titulo: "Títol (opcional)",
     recientes: "Les teves cançons", cargando: "Buscant els subtítols…", volver: "← Cançons",
     e_enlace: "Aquest enllaç no sembla de YouTube. Copia'l de la barra del navegador o del botó «Compartir».",
-    e_sinsubs: "Aquest vídeo no té subtítols. Enganxa tu la lletra a sota i la fem servir amb el vídeo.",
-    e_yt: "YouTube no ens ha donat els subtítols d'aquest vídeo. Prova'n un altre o enganxa tu la lletra a sota.",
+    e_sinsubs: "No hem trobat la lletra d'aquest vídeo. Busca-la pel nom o enganxa-la a sota i la fem servir amb el vídeo.",
+    e_yt: "No hem trobat la lletra d'aquest vídeo. Busca-la pel nom o enganxa-la a sota.",
     e_muchas: "Has buscat moltes cançons en una hora. Espera una mica i torna-ho a provar.",
     e_noserv: "Aquí no es poden descarregar els subtítols. Enganxa tu la lletra a sota.", e_red: "No hi ha connexió. Torna-ho a provar.",
     e_letra: "Enganxa almenys dues frases.", e_entra: "Entra amb el teu compte per obrir aquesta cançó.", e_nodeber: "Aquesta cançó ja no hi és (el teu profe l'ha treta).",
@@ -30,15 +30,15 @@ const TX = {
     deber: "📚 Deures del teu profe", mandar: "🧑‍🏫 Enviar com a deures", para: "Per a", todas: "Totes les meves classes", todos: "Tots els alumnes", hasta: "Data límit", nota: "Nota (opcional)",
     mandarb: "Enviar a la classe", mandada: "✓ Enviada. Els teus alumnes la veuran a la portada, a «Els teus deures».", sinclases: "Primer crea una classe al teu Tauler del profe.", e_mandar: "No s'ha pogut enviar. Torna-ho a provar.",
     letra_de: "Lletra: {s}", s_auto: "subtítols automàtics de YouTube", s_yt: "subtítols de YouTube", s_tuya: "enganxada per tu"},
-  es: {tab: "🎵 Canciones", h1: "Canciones", sub: "Escucha una canción o un vídeo de YouTube y escribe las palabras que faltan.",
+  es: {buscar: "🔎 Busca la letra por su nombre", buscarq: "Artista y canción", buscarb: "Buscar", buscando: "Buscando…", sinres: "No la hemos encontrado. Prueba con otro nombre o pega la letra.", sinsync: "sin tiempos", usar: "Usar", s_lrc: "LRCLIB (letras sincronizadas)", lrcnota: "Letra encontrada: {n}.", noes: "¿No es esta?", ajuste: "Si la letra va adelantada o atrasada, ajústala:", antes: "⏪ Antes", despues: "Después ⏩", tab: "🎵 Canciones", h1: "Canciones", sub: "Escucha una canción o un vídeo de YouTube y escribe las palabras que faltan.",
     pega: "Pega el enlace de YouTube", ej: "https://www.youtube.com/watch?v=…", empezar: "Empezar", nivel: "Nivel", n1: "Fácil", n2: "Normal", n3: "Difícil", n4: "Experto",
     nd1: "1 hueco cada 2 frases", nd2: "1 hueco por frase", nd3: "2 huecos por frase", nd4: "1 de cada 3 palabras",
     como: "Cómo funciona", como1: "El vídeo se para al final de cada frase con un hueco.", como2: "Escribe la palabra que has oído. Si aciertas, sigue solo.", como3: "🔁 repite la frase, 💡 te da una letra y 👀 te enseña la palabra (sin puntos).",
     sinsubs: "¿No tiene subtítulos? Pega tú la letra", pegaletra: "Pega aquí la letra (una frase por línea). También vale con tiempos (LRC o SRT).", usarletra: "Usar esta letra", titulo: "Título (opcional)",
     recientes: "Tus canciones", cargando: "Buscando los subtítulos…", volver: "← Canciones",
     e_enlace: "Ese enlace no parece de YouTube. Cópialo de la barra del navegador o del botón «Compartir».",
-    e_sinsubs: "Este vídeo no tiene subtítulos. Pega tú la letra abajo y la usamos con el vídeo.",
-    e_yt: "YouTube no nos ha dado los subtítulos de este vídeo. Prueba con otro o pega tú la letra abajo.",
+    e_sinsubs: "No hemos encontrado la letra de este vídeo. Búscala por su nombre o pégala abajo y la usamos con el vídeo.",
+    e_yt: "No hemos encontrado la letra de este vídeo. Búscala por su nombre o pégala abajo.",
     e_muchas: "Has buscado muchas canciones en una hora. Espera un poco y vuelve a probar.",
     e_noserv: "Aquí no se pueden descargar los subtítulos. Pega tú la letra abajo.", e_red: "No hay conexión. Prueba otra vez.",
     e_letra: "Pega al menos dos frases.", e_entra: "Entra con tu cuenta para abrir esta canción.", e_nodeber: "Esta canción ya no está (tu profe la ha quitado).",
@@ -52,15 +52,15 @@ const TX = {
     deber: "📚 Deberes de tu profe", mandar: "🧑‍🏫 Mandar como deberes", para: "Para", todas: "Todas mis clases", todos: "Todos los alumnos", hasta: "Fecha límite", nota: "Nota (opcional)",
     mandarb: "Mandar a la clase", mandada: "✓ Mandada. Tus alumnos la verán en la portada, en «Tus deberes».", sinclases: "Primero crea una clase en tu Panel del profe.", e_mandar: "No se ha podido mandar. Prueba otra vez.",
     letra_de: "Letra: {s}", s_auto: "subtítulos automáticos de YouTube", s_yt: "subtítulos de YouTube", s_tuya: "pegada por ti"},
-  en: {tab: "🎵 Songs", h1: "Songs", sub: "Listen to a song or a YouTube video and type the missing words.",
+  en: {buscar: "🔎 Search the lyrics by name", buscarq: "Artist and song", buscarb: "Search", buscando: "Searching…", sinres: "We could not find it. Try another name or paste the lyrics.", sinsync: "no times", usar: "Use", s_lrc: "LRCLIB (synced lyrics)", lrcnota: "Lyrics found: {n}.", noes: "Not this one?", ajuste: "If the lyrics come too early or too late, adjust them:", antes: "⏪ Earlier", despues: "Later ⏩", tab: "🎵 Songs", h1: "Songs", sub: "Listen to a song or a YouTube video and type the missing words.",
     pega: "Paste the YouTube link", ej: "https://www.youtube.com/watch?v=…", empezar: "Start", nivel: "Level", n1: "Easy", n2: "Normal", n3: "Hard", n4: "Expert",
     nd1: "1 gap every 2 lines", nd2: "1 gap per line", nd3: "2 gaps per line", nd4: "1 in 3 words",
     como: "How it works", como1: "The video stops at the end of each line with a gap.", como2: "Type the word you heard. If it is right, the video goes on.", como3: "🔁 repeats the line, 💡 gives you a letter and 👀 shows the word (no points).",
     sinsubs: "No subtitles? Paste the lyrics yourself", pegaletra: "Paste the lyrics here (one line each). Timed lyrics work too (LRC or SRT).", usarletra: "Use these lyrics", titulo: "Title (optional)",
     recientes: "Your songs", cargando: "Looking for the subtitles…", volver: "← Songs",
     e_enlace: "That link does not look like YouTube. Copy it from the address bar or the «Share» button.",
-    e_sinsubs: "This video has no subtitles. Paste the lyrics below and we will use them with the video.",
-    e_yt: "YouTube did not give us the subtitles for this video. Try another one or paste the lyrics below.",
+    e_sinsubs: "We could not find the lyrics of this video. Search them by name or paste them below and we will use them with the video.",
+    e_yt: "We could not find the lyrics of this video. Search them by name or paste them below.",
     e_muchas: "You have looked up a lot of songs this hour. Wait a little and try again.",
     e_noserv: "Subtitles cannot be downloaded here. Paste the lyrics below.", e_red: "No connection. Try again.",
     e_letra: "Paste at least two lines.", e_entra: "Sign in to open this song.", e_nodeber: "This song is no longer here (your teacher removed it).",
@@ -202,9 +202,10 @@ async function abrirVideo(el, v, h) {
     const e = (r.j || {}).error || "";
     F.err = e === "enlace_no_valido" ? "e_enlace" : e === "sin_subtitulos" ? "e_sinsubs" : e === "demasiadas" ? "e_muchas" : "e_yt";
     F.abrir = F.err !== "e_enlace" && F.err !== "e_muchas"; F.titulo = (r.j || {}).titulo || "";
+    if (F.abrir && F.titulo) F.q = F.titulo.replace(/\([^)]*\)|\[[^\]]*\]/g, " ").replace(/\b(official|oficial|video|vídeo|lyrics?|letra|audio)\b/gi, " ").replace(/[|"]/g, " ").replace(/\s+/g, " ").trim();
     return pintarInicio(el);
   }
-  nuevo({h, clave: "yt-" + v, v, titulo: r.j.titulo || "YouTube", idioma: r.j.idioma, auto: r.j.auto, origen: r.j.auto ? "s_auto" : "s_yt", lineas: r.j.lineas});
+  nuevo({h, clave: "yt-" + v, v, titulo: r.j.titulo || "YouTube", idioma: r.j.idioma, auto: r.j.auto, origen: r.j.origen === "lrclib" ? "s_lrc" : r.j.auto ? "s_auto" : "s_yt", lrc: r.j.lrc || null, lineas: r.j.lineas});
   pintarJuego(el);
 }
 async function abrirDeber(el, id, h) {
@@ -228,6 +229,9 @@ function pintarInicio(el) {
       ${F.err ? `<p class="cnerr" role="alert">${T(F.err)}</p>` : ""}
       <fieldset class="cnlvs"><legend>${T("nivel")}</legend>${[1, 2, 3, 4].map(lvBtn).join("")}</fieldset>
     </form>
+    <details class="cnpaste cnsearch"${F.abrir || F.q ? " open" : ""}><summary>${T("buscar")}</summary>
+      <form id="cnsform"><div class="cnrow"><input name="q" maxlength="150" autocomplete="off" placeholder="${esc(tl("buscarq", lg()))}" aria-label="${esc(tl("buscarq", lg()))}" value="${esc(F.q || "")}"><button class="btn main" type="submit">${T("buscarb")}</button></div></form>
+      <div id="cnsres" aria-live="polite"></div></details>
     <details class="cnpaste"${F.abrir ? " open" : ""}><summary>${T("sinsubs")}</summary>
       <form id="cnpform"><label>${T("titulo")}<input name="titulo" maxlength="120" value="${esc(F.titulo || "")}"></label>
       <label>${T("pegaletra")}<textarea name="letra" rows="8"></textarea></label>
@@ -242,6 +246,7 @@ function pintarInicio(el) {
     F = {v};
     if (location.hash.slice(1) === "canciones-" + v) { M = null; render(el); } else location.hash = "canciones-" + v;
   };
+  el.querySelector("#cnsform").onsubmit = e => { e.preventDefault(); buscar(el, e.target.q.value.trim()); };
   el.querySelector("#cnpform").onsubmit = e => {
     e.preventDefault();
     const lineas = parseLetra(e.target.letra.value), perr = el.querySelector("#cnperr");
@@ -251,6 +256,32 @@ function pintarInicio(el) {
     nuevo({h: "canciones-texto", clave: v ? "yt-" + v : "", v, titulo, idioma: lg(), auto: false, origen: "s_tuya", lineas});
     if (location.hash.slice(1) === "canciones-texto") pintarJuego(el); else location.hash = "canciones-texto";
   };
+}
+
+/* buscar letras por nombre (LRCLIB): por el servidor, o directamente desde el navegador si no hay servidor */
+async function buscarDirecto(q) {
+  const r = await fetch("https://lrclib.net/api/search?q=" + encodeURIComponent(q)); if (!r.ok) return [];
+  const j = await r.json();
+  return (Array.isArray(j) ? j : []).filter(x => !x.instrumental && (x.syncedLyrics || x.plainLyrics)).sort((a, b) => !!b.syncedLyrics - !!a.syncedLyrics).slice(0, 5)
+    .map(x => ({id: x.id, titulo: `${x.artistName || ""} - ${x.trackName || ""}`, dur: x.duration || 0, sincronizada: !!x.syncedLyrics, lineas: parseLetra(x.syncedLyrics || x.plainLyrics)})).filter(c => c.lineas.length >= 2);
+}
+let RES = [];
+async function buscar(el, q) {
+  const box = el.querySelector("#cnsres"); if (!box || q.length < 2) return;
+  F.q = q; box.innerHTML = `<p class="small">${T("buscando")}</p>`;
+  RES = [];
+  try {
+    if (await servidor()) { const r = await C().api("canciones?q=" + encodeURIComponent(q)); RES = r.ok ? r.j.resultados || [] : []; }
+    else RES = await buscarDirecto(q);
+  } catch (e) { RES = []; }
+  if (!document.body.contains(box)) return;
+  box.innerHTML = RES.length ? `<ul class="cnres">${RES.map((c, i) => `<li><span><b>${esc(c.titulo)}</b><small>${c.dur ? Math.floor(c.dur / 60) + ":" + String(Math.round(c.dur % 60)).padStart(2, "0") : ""}${c.sincronizada ? "" : " · " + T("sinsync")}</small></span><button type="button" class="btn" data-cn="usarres" data-i="${i}">${T("usar")}</button></li>`).join("")}</ul>` : `<p class="cnerr">${T("sinres")}</p>`;
+}
+function usarResultado(i) {
+  const c = RES[i]; if (!c) return;
+  const v = idVideo((document.getElementById("cnurl") || {}).value) || F.v || "";
+  nuevo({h: "canciones-texto", clave: v ? "yt-" + v : "lrc-" + c.id, v, titulo: c.titulo, idioma: lg(), auto: false, origen: "s_lrc", lrc: {id: c.id, nombre: c.titulo, dur: c.dur}, lineas: c.lineas});
+  if (location.hash.slice(1) === "canciones-texto") pintarJuego(app()); else location.hash = "canciones-texto";
 }
 
 /* ---------- juego ---------- */
@@ -264,7 +295,7 @@ function gapHTML(g, i) {
 function lineaHTML(l, i) { return `<li data-li="${i}">${l.tok.map(t => t.g !== undefined ? gapHTML(M.gaps[t.g], t.g) : esc(t.s)).join("")}</li>`; }
 function pintarJuego(el) {
   const S = st().S, sync = M.tiempos;
-  const nota = [M.auto ? T("auto") : "", M.idioma && M.idioma !== S.learn ? T("otroidioma", {l: lname(M.idioma)}) : ""].filter(Boolean).map(x => `<p class="cnnote">${x}</p>`).join("");
+  const nota = [M.lrc ? `${T("lrcnota", {n: M.lrc.nombre})} <a href="#canciones" data-cn="noes">${T("noes")}</a>` : "", M.auto ? T("auto") : "", M.idioma && M.idioma !== S.learn ? T("otroidioma", {l: lname(M.idioma)}) : ""].filter(Boolean).map(x => `<p class="cnnote">${x}</p>`).join("");
   el.innerHTML = `<section class="cn cnplay">
     <div class="cnhead"><a class="cnback" href="#canciones">${T("volver")}</a>${M.deber ? `<span class="cntag">${T("deber")}</span>` : ""}
       <h1>${esc(M.titulo)}</h1>${nota}</div>
@@ -279,6 +310,7 @@ function pintarJuego(el) {
           <button type="button" class="btn" data-cn="ver" ${IBA("ver")}>${IB("ver")}</button>
         </div>
         <p class="cnmsg" id="cnmsg" aria-live="polite">${M.msg || (M.v ? (sync ? T("pulsa") : T("sintiempos")) : "")}</p></div>
+        ${M.v && M.tiempos ? `<div class="cnadj"><small>${T("ajuste")}</small><button type="button" class="btn" data-cn="aj" data-d="-0.5">${T("antes")}</button><span id="cnadjv">${M.ajuste ? (M.ajuste > 0 ? "+" : "") + M.ajuste.toFixed(1) + " s" : "0 s"}</span><button type="button" class="btn" data-cn="aj" data-d="0.5">${T("despues")}</button></div>` : ""}
         ${M.deber ? "" : `<div class="cnlvrow" role="group" aria-label="${esc(tl("nivel", lg()))}">${[1, 2, 3, 4].map(i => `<button type="button" class="cnlv sm${M.nivel === i ? " on" : ""}" data-cn="nivel" data-n="${i}" aria-pressed="${M.nivel === i}">${T("n" + i)}</button>`).join("")}</div>`}
         <div id="cnprof"></div>
       </div>
@@ -466,6 +498,8 @@ document.addEventListener("click", e => {
   }
   const a = b.dataset.cn;
   if (a === "pref") { st().S.cnNivel = +b.dataset.n; L().save(); b.parentElement.querySelectorAll(".cnlv").forEach(x => { const on = x === b; x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); }); return; }
+  if (a === "usarres") return usarResultado(+b.dataset.i);
+  if (a === "noes") { e.preventDefault(); const v = M && M.v, q = M ? String(M.titulo || "").replace(/\([^)]*\)|\[[^\]]*\]/g, " ").replace(/\b(official|oficial|video|vídeo|lyrics?|letra|audio)\b/gi, " ").replace(/\s+/g, " ").trim() : ""; parar(); M = null; F = {v, q}; if (location.hash.slice(1) === "canciones") pintarInicio(app()); else location.hash = "canciones"; return; }
   if (!M) return;
   if (a === "play") { try { if (player.getPlayerState() === 1) player.pauseVideo(); else { M.espera = -1; player.playVideo(); } } catch (x) {} }
   else if (a === "rep") repetir();
@@ -475,6 +509,13 @@ document.addEventListener("click", e => {
   else if (a === "fin2") terminar(true);
   else if (a === "nivel") reiniciar(+b.dataset.n);
   else if (a === "otra") reiniciar();
+  else if (a === "aj") {
+    const d = +b.dataset.d, mv = l => ({...l, t: Math.max(0, Math.round((l.t + d) * 100) / 100)}); M.ajuste = Math.round(((M.ajuste || 0) + d) * 10) / 10;
+    for (const l of M.lineas) l.t = mv(l).t;
+    M.crudas = M.crudas.map(mv);
+    const s = document.getElementById("cnadjv"); if (s) s.textContent = (M.ajuste > 0 ? "+" : "") + M.ajuste.toFixed(1) + " s";
+    try { if (player) M.lastT = player.getCurrentTime(); } catch (x) {}
+  }
   else if (a === "otronivel") { const s = root && root.querySelector(".cnlvrow"); if (s) s.scrollIntoView({block: "center", behavior: "smooth"}); }
 });
 document.addEventListener("input", e => {

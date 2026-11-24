@@ -101,7 +101,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   ok(await P.$(`.cnrec a[href="#canciones-${V}"]`) !== null, "«Tus canciones» muestra la canción");
   ok(!(await P.$(".cnvid")) && await P.evaluate(() => !window.__yt || window.__yt.iv), "al salir se quita el vídeo");
   /* letra pegada, sin vídeo */
-  await P.fill("#cnurl", ""); await P.click(".cnpaste summary");
+  await P.fill("#cnurl", ""); await P.click(".cnpaste:not(.cnsearch) summary");
   await P.fill("#cnpform [name=letra]", "uno"); await P.click("#cnpform [type=submit]");
   ok(!(await P.isHidden("#cnperr")), "letra de una línea: pide más");
   await P.fill("#cnpform [name=titulo]", "Mi poema");
@@ -117,6 +117,24 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   const srt = await P.evaluate(() => LYACanciones._test.parseLetra("1\n00:00:01,000 --> 00:00:03,500\nprimera línea\n\n2\n00:00:04,000 --> 00:00:06,000\n<i>segunda</i> línea"));
   ok(srt.length === 2 && srt[0].d === 2.5 && srt[1].x === "segunda línea", "lee subtítulos SRT");
   ok(await P.evaluate(() => ["https://youtu.be/AbCdEfGhIjK?si=x", "https://m.youtube.com/watch?feature=share&v=AbCdEfGhIjK", "https://youtube.com/shorts/AbCdEfGhIjK", "AbCdEfGhIjK"].every(u => LYACanciones._test.idVideo(u) === "AbCdEfGhIjK")), "entiende enlaces youtu.be, m.youtube, shorts");
+
+  /* ---------- YouTube no da subtítulos: letra de LRCLIB (sincronizada), ajustar, «¿No es esta?» y buscar por nombre ---------- */
+  const V2 = "LrCliBxxxxx", LR = LINEAS.map(l => ({...l, t: l.t + 1}));
+  await P.route(/\/api\/canciones\?v=LrCliBxxxxx/, r => r.fulfill({ contentType: "application/json", body: JSON.stringify({ v: V2, titulo: "Grupo - Canción (Official Video)", idioma: null, auto: false, origen: "lrclib", lrc: {id: 7, nombre: "Grupo - Canción", dur: 200, sincronizada: true}, lineas: LR }) }));
+  await P.route(/\/api\/canciones\?q=/, r => r.fulfill({ contentType: "application/json", body: JSON.stringify({ resultados: [{id: 8, titulo: "Grupo - Canción buena", dur: 185, sincronizada: true, lineas: LINEAS}, {id: 9, titulo: "Otro - Sin tiempos", dur: 0, sincronizada: false, lineas: LINEAS.map(l => ({...l, t: 0, d: 0}))}] }) }));
+  await P.goto(URL + "#canciones-" + V2); await P.waitForSelector(".cnplay");
+  ok(/Letra encontrada: Grupo - Canción/.test(await P.textContent(".cnhead")) && /LRCLIB/.test(await P.textContent(".cnsrc")), "sin subtítulos: usa la letra sincronizada de LRCLIB y lo dice");
+  await P.click('[data-cn="aj"][data-d="-0.5"]'); await P.click('[data-cn="aj"][data-d="-0.5"]');
+  ok((await P.textContent("#cnadjv")).includes("-1.0") && await P.evaluate(() => LYACanciones._test.M.lineas[0].t === 1 && LYACanciones._test.M.crudas[0].t === 1), "«Antes» adelanta la letra 0,5 s cada vez");
+  await P.click('[data-cn="play"]'); await pausadoEn(P); ok((await M(P)).espera === 0, "con la letra ajustada se para en el 1.er hueco");
+  await P.click('[data-cn="noes"]'); await P.waitForSelector("#cnsform");
+  ok(await P.$eval(".cnsearch", d => d.open) && (await P.inputValue("#cnsform [name=q]")) === "Grupo - Canción", "«¿No es esta?» abre la búsqueda con el título del vídeo");
+  ok(await P.evaluate(() => !document.querySelector(".cnvid")), "y quita el vídeo");
+  await P.fill("#cnsform [name=q]", "grupo cancion"); await P.click("#cnsform [type=submit]"); await P.waitForSelector(".cnres li");
+  ok((await P.$$(".cnres li")).length === 2 && /sin tiempos/.test(await P.textContent(".cnres")), "buscar por nombre: lista de letras (y avisa si no tienen tiempos)");
+  await P.fill("#cnurl", "https://youtu.be/" + V2);
+  await P.click('[data-cn="usarres"][data-i="0"]'); await P.waitForSelector(".cnplay .cnvid iframe");
+  ok(/Grupo - Canción buena/.test(await P.textContent(".cnhead")) && (await M(P)).gaps.length >= 3, "«Usar» abre la letra elegida con el vídeo");
 
   /* ---------- móvil ---------- */
   const Mv = await nueva(390, 800);
