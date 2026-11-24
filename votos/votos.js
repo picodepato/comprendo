@@ -39,8 +39,10 @@ async function connect() {
     } catch (e) {}
     return; /* inside Claude without a database: keep votes on this device */
   }
-  try { const r = await fetch("api/votos", {cache: "no-store"}); const j = await r.json(); if (r.ok && j.ok) { mode = "api"; counts = j.votos || {}; paint(); } } catch (e) {}
+  try { const r = await fetch("api/votos", {cache: "no-store"}); const j = await r.json(); if (r.ok && j.ok) { mode = "api"; counts = j.votos || {}; addExtra(j.temas); paint(); } } catch (e) {}
 }
+/* topics the admin added from students' proposals (only on the Vercel site) */
+function addExtra(list) { if (!D || !Array.isArray(list)) return; const have = new Set(ids()); for (const t of list) if (t && t.id && !have.has(t.id)) D.temas.push(t); try { const {S} = st(); if (S && S.view === "home" && list.length) L().renderPage(); } catch (e) {} }
 async function vote(id) {
   if (mine.has(id) || !ids().includes(id)) return;
   mine.add(id); keepMine(); msg = "thanks"; paint();

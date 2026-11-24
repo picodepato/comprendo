@@ -33,6 +33,8 @@ export function claveCorrecta(clave, guardado) {
 export async function nuevaSesion(usuario) {
   const token = crypto.randomBytes(32).toString("base64url");
   await redis("SET", "sesion:" + token, usuario, "EX", SESION_DIAS * 86400);
+  await redis("SADD", "sesiones:" + usuario, token);
+  await redis("EXPIRE", "sesiones:" + usuario, SESION_DIAS * 86400);
   return token;
 }
 const tokenDe = req => (req.headers.authorization || "").replace(/^Bearer\s+/i, "").trim();
@@ -51,17 +53,41 @@ export const claveAdminCorrecta = c => {
 };
 export const claveAdminPorDefecto = () => !process.env.ADMIN_CLAVE;
 export async function esAdmin(req) { return (await usuarioDeSesion(req)) === ADMIN; }
+/* quién abre el panel: el admin (todo) o un profe (solo sus clases y sus alumnos) */
+export async function quienPanel(req) {
+  const u = await usuarioDeSesion(req); if (!u) return null;
+  if (u === ADMIN) return { usuario: u, admin: true, profe: false };
+  const d = await leerJSON("usuario:" + u, {});
+  return d.rol === "profe" ? { usuario: u, admin: false, profe: true } : null;
+}
+export const normCodigo = c => String(c || "").trim().toLowerCase().replace(/\s+/g, "-");
+export const codigoValido = c => /^[a-z0-9ñ_-]{3,20}$/.test(c);
+/* clases: admin:grupos = {grupos: {id: {nombre, codigo, profe}}, miembros: {alumno: id}} */
+export const leerGrupos = () => leerJSON("admin:grupos", { grupos: {}, miembros: {} });
+export const grupoPorCodigo = (G, c) => Object.keys(G.grupos).find(id => G.grupos[id].codigo === normCodigo(c)) || null;
 export const ipDe = req => String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || "x";
+
+/* cierra todas las sesiones de un usuario (al cambiarle la contraseña o borrarlo) */
+export async function cerrarSesiones(usuario) {
+  const ts = (await redis("SMEMBERS", "sesiones:" + usuario)) || [];
+  if (ts.length) await redis("DEL", ...ts.map(t => "sesion:" + t));
+  await redis("DEL", "sesiones:" + usuario);
+}
+/* datos del admin guardados como JSON en una sola clave */
+export const leerJSON = async (k, def) => { try { return JSON.parse((await redis("GET", k)) || "null") ?? def; } catch (e) { return def; } };
+export const guardarJSON = (k, v) => redis("SET", k, JSON.stringify(v));
+export const nuevoId = () => crypto.randomBytes(6).toString("hex");
 
 export async function borrarSesion(req) { const t = tokenDe(req); if (t) await redis("DEL", "sesion:" + t); }
 
-/* Freno a quien prueba muchas contraseñas: 20 intentos cada 15 minutos por IP */
-export async function demasiadosIntentos(req) {
-  const ip = String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || "x";
-  const k = "intentos:" + ip, n = await redis("INCR", k);
-  if (n === 1) await redis("EXPIRE", k, 900);
-  return n > 20;
-}
+/* Frenos (pensados para que una clase entera, con la misma conexión, pueda crear cuentas a la vez):
+   - entrar: 10 contraseñas mal seguidas para el mismo usuario desde la misma conexión → esperar 15 minutos
+   - crear cuentas: 100 por hora y conexión */
+const ipKey = req => String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || "x";
+export async function contar(k, segundos) { const n = await redis("INCR", k); if (n === 1) await redis("EXPIRE", k, segundos); return n; }
+export async function bloqueadoEntrar(req, usuario) { return +(await redis("GET", `fallos:${ipKey(req)}:${usuario}`)) >= 10; }
+export const falloEntrar = (req, usuario) => contar(`fallos:${ipKey(req)}:${usuario}`, 900);
+export async function demasiadosRegistros(req) { return (await contar("registros:" + ipKey(req), 3600)) > 100; }
 
 export function responder(res, codigo, datos) {
   res.setHeader("Cache-Control", "no-store");

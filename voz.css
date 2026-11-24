@@ -34,3 +34,20 @@
 .tip .vz-word:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
 @media(max-width:600px){.vz-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.vz-bar{flex-wrap:nowrap;gap:6px;padding:6px}.vz-bar .vz-play{min-width:0;flex:1 1 auto;padding:8px 10px;font-size:14px}.vz-of{display:none}.vz-ic{width:40px;flex:none}.vz-rate{padding:8px 10px}.vz-line{font-size:19px}}
 @media(prefers-reduced-motion:reduce){.vz-live{animation:none}.vz-s{transition:none}}
+/* ¿puedes escuchar / hablar ahora? */
+.vz-ask{margin:20px 0 6px;padding:clamp(16px,3vw,22px);border-radius:16px;background:var(--panel);border:2px solid var(--acc)}
+.vz-ask h2{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:22px;line-height:1.15;margin:0 0 6px}
+.vz-ask h2 .en{display:block;font-family:Lexend,system-ui,sans-serif;font-size:15px}
+.vz-q{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.vz-q p{margin:0;font-weight:500;flex:1 1 220px}
+.vz-q p .en{display:block;font-weight:400}
+.vz-yn{display:flex;gap:6px}
+.vz-yn .btn{min-width:72px;justify-content:center}
+.vz-yn .btn[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#1a0a0a}
+.vz-ask .vz-small .en{display:block}
+.vz-go{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:12px}
+.vz-chip{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;margin:16px 0 0;font-size:14px;color:var(--mute)}
+.vz-chip b{color:var(--ink)}
+.vz-link{background:none;border:0;padding:10px 4px;color:var(--acc);font-weight:700;font-size:14px;cursor:pointer;text-decoration:underline;min-height:44px}
+.vz-link:focus-visible{outline:3px solid var(--beam);outline-offset:2px;border-radius:6px}
+.no-oir .vz-barw,.no-oir .tip .vz-word,.no-oir [data-act="sayw"],.no-oir .howto .check:has(#say),.no-hablar .vz-pronw{display:none}

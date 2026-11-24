@@ -37,7 +37,7 @@ async function preparar(p, g) {
   }
   let pr = P.list.find(x => x.id === id);
   if (r && r.ok) {
-    servidor = true;
+    servidor = true; if (r.j.rol && C.rol !== r.j.rol) { C.rol = r.j.rol; escribir(C); }
     if (r.j.s && !(C.pend && pr)) { if (pr) pr.s = r.j.s; else P.list.push(pr = {id, name: C.usuario, s: r.j.s}); }
     else if (!pr) P.list.push(pr = {id, name: C.usuario, s: copiaLocal()});
     if (C.pend || !r.j.s) setTimeout(subir, 500);
@@ -110,6 +110,7 @@ const MSG = {
   usuario_ocupado: "Ese usuario ya existe. Elige otro o entra con él.",
   datos_mal: "Usuario o contraseña incorrectos.",
   espera: "Demasiados intentos. Espera unos minutos.",
+  codigo_no_existe: "No hay ninguna clase con ese código. Pregúntaselo a tu profe.",
 };
 
 async function abrir() {
@@ -126,7 +127,11 @@ function panelEntrar(modo) {
     <form id="ctaf" autocomplete="on">
       <label><span>Usuario <span class="ctae">· Username</span></span><input name="usuario" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="20"></label>
       <label><span>Contraseña <span class="ctae">· Password</span></span><input name="clave" type="password" autocomplete="${crear ? "new-password" : "current-password"}" required minlength="${crear ? 6 : 1}" maxlength="100"></label>
-      ${crear ? `<label>Repite la contraseña<input name="clave2" type="password" autocomplete="new-password" required maxlength="100"></label>` : ""}
+      ${crear ? `<label>Repite la contraseña<input name="clave2" type="password" autocomplete="new-password" required maxlength="100"></label>
+      <fieldset class="ctafs"><legend>Quiero aprender <span class="ctae">· I want to learn</span></legend>${cursos().map((c, i) => `<label class="ctak"><input type="radio" name="curso" value="${c.learn}>${c.know}"${i === 0 ? " checked" : ""}> ${esc(c.txt)}</label>`).join("")}</fieldset>
+      <fieldset class="ctafs"><legend>Soy <span class="ctae">· I am</span></legend><label class="ctak"><input type="radio" name="rol" value="alumno" checked> 🎒 Alumno <span class="ctae">· Student</span></label><label class="ctak"><input type="radio" name="rol" value="profe"> 🧑‍🏫 Profe <span class="ctae">· Teacher</span></label></fieldset>
+      <label id="ctacod"><span>Código de clase <span class="ctae">· Class code (opcional)</span></span><input name="codigo" autocapitalize="none" spellcheck="false" maxlength="20" placeholder="Te lo da tu profe"></label>
+      <p class="ctas" id="ctaprof" hidden>Como profe podrás crear tus clases con un código, mandar lecturas y ver el progreso de tus alumnos.</p>` : ""}
       ${hay ? `<label class="ctak"><input type="checkbox" name="llevar" checked> ${crear ? "Llevar a la cuenta el progreso de este dispositivo" : "Si la cuenta está vacía, usar el progreso de este dispositivo"}</label>` : ""}
       <p class="ctam" id="ctam" role="alert"></p>
       <button class="btn main" type="submit">${crear ? "Crear cuenta" : "Entrar"}</button>
@@ -134,21 +139,24 @@ function panelEntrar(modo) {
     <p class="ctas">${crear ? `¿Ya tienes cuenta? <button type="button" class="ctal" id="ctac">Entrar</button>` : `¿No tienes cuenta? <button type="button" class="ctal" id="ctac">Crear una</button>`}</p>
     <p class="ctas"><button type="button" class="ctal" id="ctab2">Copia de mi progreso (exportar / importar)</button> · <button type="button" class="ctal" data-cerrar>Seguir como invitado</button></p>`);
   $d("#ctac").onclick = () => panelEntrar(crear ? "entrar" : "crear");
+  if (crear) dlg.querySelectorAll("[name=rol]").forEach(r => r.onchange = () => { const p = $d("[name=rol]:checked").value === "profe"; $d("#ctacod").hidden = p; $d("#ctaprof").hidden = !p; });
   $d("#ctab2").onclick = panelCopia;
   $d("#ctaf").onsubmit = async e => {
     e.preventDefault();
     const f = e.target, m = $d("#ctam"), b = f.querySelector("[type=submit]");
     const usuario = f.usuario.value.trim().toLowerCase(), clave = f.clave.value, llevar = f.llevar ? f.llevar.checked : false;
+    const extra = crear ? {rol: f.rol.value, codigo: f.rol.value === "alumno" ? f.codigo.value.trim() : "", curso: f.curso ? f.curso.value : ""} : {};
     if (crear && clave !== f.clave2.value) { m.textContent = "Las contraseñas no coinciden."; return; }
     b.disabled = true; m.textContent = "Un momento…";
     try {
-      const r = await api(crear ? "registro" : "entrar", "POST", {usuario, clave, ...(crear && llevar ? {progreso: copiaLocal()} : {})});
+      const prog = crear ? conCurso(llevar ? copiaLocal() : null, extra.curso) : null;
+      const r = await api(crear ? "registro" : "entrar", "POST", {usuario, clave, ...(crear ? {rol: extra.rol, codigo: extra.codigo, progreso: prog} : {})});
       if (!r.ok) { m.textContent = MSG[r.j.error] || r.j.error || "No se ha podido. Inténtalo otra vez."; b.disabled = false; return; }
-      C = {usuario: r.j.usuario, token: r.j.token, pend: false};
+      C = {usuario: r.j.usuario, token: r.j.token, rol: r.j.rol || "alumno", pend: false};
       const g = await api("progreso");
       const id = pid(C.usuario); P.list = P.list.filter(x => x.id !== id);
       let s = g.ok && g.j.s ? g.j.s : null;
-      if (!s) { s = llevar ? copiaLocal() : undefined; if (s) C.pend = true; }
+      if (!s) { s = crear ? prog : llevar ? copiaLocal() : undefined; if (s) C.pend = true; }
       P.list.push({id, name: C.usuario, s: s || nuevo()}); P.cur = id;
       escribir(C); guardarP();
       if (C.pend) await subir();
@@ -156,18 +164,33 @@ function panelEntrar(modo) {
     } catch (err) { m.textContent = "No hay conexión con el servidor."; b.disabled = false; }
   };
 }
+/* cursos que ofrece la web (catalogo.json → courses) */
+function cursos() {
+  const cat = window.LYA && window.LYA.CAT, nm = (c, l) => ((cat && cat.languages[c] || {}).name || {})[l] || c;
+  const lista = cat && cat.courses ? cat.courses.filter(c => c.ready).flatMap(c => c.know.map(k => ({learn: c.learn, know: k}))) : [{learn: "es", know: "en"}];
+  return lista.map(c => ({...c, txt: `${nm(c.learn, "es")} (${nm(c.learn, c.know)}) · sé ${nm(c.know, "es").toLowerCase()}`}));
+}
+function conCurso(s, curso) {
+  const [learn, know] = String(curso || "").split(">"); if (!learn) return s || undefined;
+  s = s || nuevo();
+  if (s.learn !== learn) { s.learn = learn; s.know = know; s.view = "home"; s.read = learn === "es" ? "bear-a1" : `${learn}-bear-a1`; }
+  else s.know = know;
+  return s;
+}
 /* perfil vacío: index.html rellena lo que falte (fix/fixG) */
 const nuevo = () => ({learn: "es", know: "en", level: "A1", read: "bear-a1", a: {}, dict: [], dir: "learn", say: false, view: "home"});
 
 function panelCuenta() {
   const t = estado === "offline" ? "⚠ Sin conexión: tus cambios se guardan en este dispositivo y se subirán cuando vuelva internet."
     : estado === "error" ? "⚠ El último guardado falló. Se intentará de nuevo." : estado === "sesion" ? "⚠ Tu sesión ha caducado. Sal y vuelve a entrar." : "✓ Tu progreso se guarda en tu cuenta automáticamente.";
-  const adm = C.usuario === "admin";
-  ventana(`<h2>👤 ${esc(C.usuario)}</h2>${adm ? `<p><button class="btn main" type="button" id="ctaadm">🛠 Panel de administración</button></p>` : ""}<p class="ctas">${t}</p>
+  const adm = C.usuario === "admin", prof = C.rol === "profe", alu = !adm && !prof;
+  ventana(`<h2>👤 ${esc(C.usuario)} ${prof ? '<span class="ctae">· 🧑‍🏫 Profe</span>' : ""}</h2>${adm ? `<p><button class="btn main" type="button" id="ctaadm">🛠 Panel de administración</button></p>` : prof ? `<p><button class="btn main" type="button" id="ctaadm">🧑‍🏫 Panel del profe</button></p>` : ""}
+    ${alu ? `<div class="ctacl" id="ctacl"><p class="ctas">Cargando tu clase…</p></div>` : ""}<p class="ctas">${t}</p>
     <p><button class="btn" type="button" id="ctag">Guardar ahora</button> <button class="btn" type="button" id="ctab2">Copia de mi progreso</button></p>
     <p><button class="btn" type="button" id="ctas">Salir de la cuenta</button></p>
     <p class="ctas">Al salir, este dispositivo vuelve al modo invitado. Tu progreso sigue en la cuenta.</p>`);
-  if (adm) $d("#ctaadm").onclick = () => panelAdmin("propuestas");
+  if (adm || prof) $d("#ctaadm").onclick = () => panelAdmin(adm ? "propuestas" : "usuarios");
+  if (alu) miClase();
   $d("#ctag").onclick = async () => { $d("#ctag").disabled = true; await subir(); panelCuenta(); };
   $d("#ctab2").onclick = panelCopia;
   $d("#ctas").onclick = async () => {
@@ -180,64 +203,27 @@ function panelCuenta() {
   };
 }
 
-/* ---------- administrador: propuestas, usuarios y votos ---------- */
-const fecha = t => t ? new Date(t).toLocaleString("es-ES", {day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit"}) : "—";
-async function panelAdmin(tab) {
-  ventana(`<h2>🛠 Administración</h2><p class="ctas">Cargando…</p>`); dlg.classList.add("ancha");
-  let r; try { r = await api("admin"); } catch (e) { r = {ok: false, j: {}}; }
-  if (!r.ok) { ventana(`<h2>🛠 Administración</h2><p class="ctam">${r.code === 403 ? "Tu sesión de administrador ha caducado. Sal y vuelve a entrar." : "No se ha podido cargar."}</p>`); return; }
-  const {propuestas, usuarios, votos, claveAdminPorDefecto} = r.j;
-  const tabs = [["propuestas", `💡 Propuestas (${propuestas.length})`], ["usuarios", `👥 Usuarios (${usuarios.length})`], ["votos", "🗳 Votos"]];
-  let cuerpoHTML = "";
-  if (tab === "propuestas") cuerpoHTML = propuestas.length ? `<ul class="ctali">${propuestas.map(p => `<li><p>${esc(p.texto)}</p><small>${p.usuario ? "👤 " + esc(p.usuario) : "Invitado"} · ${fecha(p.t)}</small> <button type="button" class="ctal" data-borrar="${esc(p.id)}">Borrar</button></li>`).join("")}</ul>` : `<p class="ctas">Todavía no hay propuestas.</p>`;
-  if (tab === "usuarios") cuerpoHTML = usuarios.length ? `<p class="ctas">Pulsa un usuario para ver lo que ha hecho en cada lectura.</p><div class="ctatb"><table><thead><tr><th>Usuario</th><th>Lecturas terminadas</th><th>Estrellas</th><th>Con ★★★</th><th>Veces leídas</th><th>Sin terminar</th><th>XP</th><th>Racha</th><th>Cromos</th><th>Palabras</th><th>Último guardado</th></tr></thead><tbody>${usuarios.sort((a, b) => b.ultimo - a.ultimo).map(u => `<tr class="ctafila" data-usuario="${esc(u.usuario)}" tabindex="0"><td><b>${esc(u.usuario)}</b></td><td>${u.terminadas}</td><td>⭐ ${u.estrellas}</td><td>${u.tres}</td><td>${u.veces}</td><td>${u.empezadas}</td><td>${u.xp}</td><td>${u.racha} (mejor ${u.mejorRacha})</td><td>${u.cromos}</td><td>${u.palabras}</td><td>${fecha(u.ultimo)}</td></tr>`).join("")}</tbody></table></div>` : `<p class="ctas">Todavía no hay usuarios.</p>`;
-  if (tab === "votos") { const v = Object.entries(votos).sort((a, b) => b[1] - a[1]); cuerpoHTML = v.length ? `<ul class="ctali">${v.map(([k, n]) => `<li><p><b>${esc(k)}</b>: ${n} ${n === 1 ? "voto" : "votos"}</p></li>`).join("")}</ul>` : `<p class="ctas">Todavía no hay votos.</p>`; }
-  ventana(`<h2>🛠 Administración</h2>
-    ${claveAdminPorDefecto ? `<p class="ctam">⚠ La contraseña de admin sigue siendo «admin». Cámbiala en Vercel → Settings → Environment Variables → ADMIN_CLAVE.</p>` : ""}
-    <div class="ctatabs" role="tablist">${tabs.map(([k, n]) => `<button type="button" class="btn${k === tab ? " main" : ""}" data-tab="${k}" role="tab" aria-selected="${k === tab}">${n}</button>`).join("")}</div>
-    ${cuerpoHTML}`);
-  dlg.classList.add("ancha");
-  dlg.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => panelAdmin(b.dataset.tab));
-  dlg.querySelectorAll("[data-usuario]").forEach(tr => { tr.onclick = () => panelUsuario(tr.dataset.usuario); tr.onkeydown = e => { if (e.key === "Enter") panelUsuario(tr.dataset.usuario); }; });
-  dlg.querySelectorAll("[data-borrar]").forEach(b => b.onclick = async () => {
-    if (b.dataset.ok !== "1") { b.dataset.ok = "1"; b.textContent = "¿Seguro? Pulsa otra vez"; return; }
-    b.disabled = true; await api("propuestas", "DELETE", {id: b.dataset.borrar}); panelAdmin("propuestas");
-  });
+/* ---------- alumno: unirse a una clase con el código del profe ---------- */
+async function miClase(aviso = "") {
+  let cl = null; try { const r = await api("avisos"); if (r.ok) cl = r.j.clase; } catch (e) {}
+  const el = dlg && dlg.querySelector("#ctacl"); if (!el) return;
+  el.innerHTML = `<p><b>🏫 Mi clase:</b> ${cl ? `${esc(cl.nombre)}${cl.profe ? ` <span class="ctae">(profe: ${esc(cl.profe)})</span>` : ""}` : "ninguna todavía"}</p>
+    <form id="ctaclf" class="ctaclf"><input name="codigo" autocapitalize="none" spellcheck="false" maxlength="20" required placeholder="Código de clase" aria-label="Código de clase"><button class="btn" type="submit">${cl ? "Cambiar de clase" : "Unirme a la clase"}</button>${cl ? ` <button class="ctal" type="button" id="ctaclx">Salir de la clase</button>` : ""}</form>
+    <p class="ctam" role="status">${aviso}</p>`;
+  el.querySelector("#ctaclf").onsubmit = async e => {
+    e.preventDefault(); const b = e.target.querySelector("button"); b.disabled = true;
+    const r = await api("avisos", "POST", {codigo: e.target.codigo.value.trim()}).catch(() => ({ok: false, j: {}}));
+    if (r.ok) { miClase(`✓ Ya estás en la clase ${esc(r.j.clase.nombre)}.`); if (window.LYAAvisos) window.LYAAvisos.cargar(); }
+    else { el.querySelector(".ctam").textContent = MSG[r.j.error] || "No se ha podido."; b.disabled = false; }
+  };
+  const x = el.querySelector("#ctaclx"); if (x) x.onclick = async () => { await api("avisos", "POST", {salirClase: true}).catch(() => {}); miClase("Has salido de la clase."); if (window.LYAAvisos) window.LYAAvisos.cargar(); };
 }
 
-/* detalle de un usuario: lectura por lectura */
-let CATA = null;
-const titulos = async () => {
-  if (!CATA) CATA = fetch("content/catalogo.json").then(r => r.json()).then(c => { const m = {}; for (const t of c.topics) for (const [lang, rs] of Object.entries(t.readings || {})) for (const r of rs) { const id = r.id || `${t.id}-${r.level.toLowerCase()}`; m[id] = {tema: (t.name || {}).es || t.id, titulo: (r.title || {}).es || (r.title || {})[lang] || id, nivel: r.level, lengua: lang, orden: Object.keys(m).length}; } return m; }).catch(() => ({}));
-  return CATA;
-};
-const est = n => `<span class="stars" aria-label="${n} de 3 estrellas">${"<i class=\"on\">★</i>".repeat(n)}${"<i>★</i>".repeat(3 - n)}</span>`;
-async function panelUsuario(u) {
-  ventana(`<h2>👤 ${esc(u)}</h2><p class="ctas">Cargando…</p>`); dlg.classList.add("ancha");
-  const [r, T] = await Promise.all([api("admin?usuario=" + encodeURIComponent(u)).catch(() => ({ok: false})), titulos()]);
-  if (!r.ok) { ventana(`<h2>👤 ${esc(u)}</h2><p class="ctam">No se ha podido cargar.</p><p><button class="btn" type="button" id="ctavol">← Volver</button></p>`); dlg.classList.add("ancha"); $d("#ctavol").onclick = () => panelAdmin("usuarios"); return; }
-  const {resumen: R, lecturas, palabras} = r.j;
-  const L = lecturas.map(l => ({...l, ...(T[l.id] || {tema: "—", titulo: l.id, nivel: "", lengua: "", orden: 9999})})).sort((a, b) => b.terminada - a.terminada || a.orden - b.orden);
-  const fallos = palabras.filter(p => p.fallo).length;
-  ventana(`<p><button class="btn" type="button" id="ctavol">← Usuarios</button></p>
-    <h2>👤 ${esc(R.usuario)}</h2>
-    <div class="ctares">
-      <div><b>${R.terminadas}</b><span>lecturas terminadas</span></div>
-      <div><b>⭐ ${R.estrellas}</b><span>estrellas (de ${R.terminadas * 3})</span></div>
-      <div><b>${R.tres}</b><span>con 3 estrellas</span></div>
-      <div><b>${R.veces}</b><span>veces leídas</span></div>
-      <div><b>${R.empezadas}</b><span>sin terminar</span></div>
-      <div><b>${R.xp}</b><span>XP</span></div>
-      <div><b>${R.racha}</b><span>racha (mejor ${R.mejorRacha})</span></div>
-      <div><b>${R.cromos}</b><span>cromos</span></div>
-      <div><b>${R.medallas}</b><span>medallas</span></div>
-      <div><b>${R.palabras}</b><span>palabras guardadas${fallos ? ` (${fallos} por repasar)` : ""}</span></div>
-    </div>
-    <p class="ctas">Alta: ${fecha(R.creado)} · Último guardado: ${fecha(R.ultimo)}</p>
-    ${L.length ? `<div class="ctatb"><table><thead><tr><th>Lectura</th><th>Tema</th><th>Nivel</th><th>Mejor resultado</th><th>Última vez</th><th>Veces</th><th>Mejor %</th></tr></thead><tbody>${L.map(l => `<tr><td><b>${esc(l.titulo)}</b>${l.lengua === "en" ? ' <small class="ctae">(inglés)</small>' : ""}</td><td>${esc(l.tema)}</td><td>${esc(l.nivel)}</td><td>${l.terminada ? est(l.estrellas) : `<small class="ctae">Empezada (${l.respuestas} ${l.respuestas === 1 ? "respuesta" : "respuestas"})</small>`}</td><td>${l.terminada && l.ultima !== null ? est(l.ultima) : "—"}</td><td>${l.veces || "—"}</td><td>${l.terminada ? l.mejorPct + " %" : "—"}</td></tr>`).join("")}</tbody></table></div>` : `<p class="ctas">Todavía no ha hecho ninguna lectura.</p>`}
-    ${palabras.length ? `<details class="ctapal"><summary>Palabras guardadas (${palabras.length})</summary><p>${palabras.map(p => `<span${p.fallo ? ' class="fallo" title="Por repasar"' : ""}>${esc(p.palabra)}</span>`).join(" ")}</p></details>` : ""}`);
-  dlg.classList.add("ancha");
-  $d("#ctavol").onclick = () => panelAdmin("usuarios");
+/* ---------- administrador: el panel está en panel-admin.js y se carga solo cuando el admin lo abre ---------- */
+let cargaAdmin = null;
+function panelAdmin(tab) {
+  cargaAdmin ||= new Promise((ok, mal) => { const sc = document.createElement("script"); sc.src = "panel-admin.js"; sc.onload = ok; sc.onerror = mal; document.head.appendChild(sc); });
+  cargaAdmin.then(() => window.LYAPanelAdmin.abrir(tab)).catch(() => { cargaAdmin = null; ventana(`<h2>🛠 Administración</h2><p class="ctam">No se ha podido cargar el panel.</p>`); });
 }
 
 /* ---------- copia del progreso: sirve para pasar el progreso de la web antigua a la nueva ---------- */
@@ -269,5 +255,6 @@ function panelCopia() {
   };
 }
 
-window.LYACuentas = {preparar, cambio, boton, abrir, subir, api, hayServidor, get usuario() { return C && C.usuario; }};
+window.LYACuentas = {preparar, cambio, boton, abrir, subir, api, hayServidor, get usuario() { return C && C.usuario; },
+  ui: {ventana, cerrar, esc, get dlg() { return dlg; }, $d: s => dlg.querySelector(s)}};
 })();

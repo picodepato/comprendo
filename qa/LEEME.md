@@ -42,3 +42,5 @@ Ambos con `NODE_PATH=/opt/node22/lib/node_modules`.
 ## Estrellas por lectura y relectura
 `prueba-estrellas.js <url>`: hace BEAR A1 con fallos (1 estrella), «Volver a leer», la repite perfecta (3 estrellas, 2 veces), mira las estrellas bajo las tarjetas, los logros de 3 estrellas (tema, nivel, todo) en #progreso y el curso de inglés. Los datos van en `S.g.rd` (por lectura) y `S.g.ach` (logros, con el idioma delante), así que se guardan en la nube con cuentas.js.
 Nota: `prueba-mascota.js` a veces falla en la línea 35 («Node is detached») por tiempos; al repetirlo pasa.
+- `prueba-admin2.js <url>`: clases, deberes (el alumno los ve), mensajes (salen al entrar), fallos, aprobar propuesta → votación, Excel, cambiar contraseña (cierra sesión), borrar usuario.
+- `prueba-profe.js <url>`: idioma y rol al crear la cuenta, profe crea clase con código, alumnos se unen (al registrarse y desde Mi cuenta), cada profe solo ve a los suyos, deberes del profe, el admin lo ve todo.

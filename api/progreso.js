@@ -1,11 +1,12 @@
 /* GET: devuelve el progreso guardado de la cuenta.  PUT: lo guarda (todo el estado de la web). */
-import { redis, usuarioDeSesion, responder, cuerpo, seguro } from "./_db.js";
+import { redis, leerJSON, ADMIN, usuarioDeSesion, responder, cuerpo, seguro } from "./_db.js";
 export default (req, res) => seguro(res, async () => {
   const usuario = await usuarioDeSesion(req);
   if (!usuario) return responder(res, 401, { error: "sin_sesion" });
   if (req.method === "GET") {
     const g = JSON.parse((await redis("GET", "progreso:" + usuario)) || "null");
-    return responder(res, 200, { usuario, s: g ? g.s : null, t: g ? g.t : 0 });
+    const rol = usuario === ADMIN ? "admin" : (await leerJSON("usuario:" + usuario, {})).rol || "alumno";
+    return responder(res, 200, { usuario, rol, s: g ? g.s : null, t: g ? g.t : 0 });
   }
   if (req.method === "PUT" || req.method === "POST") {
     const { s } = cuerpo(req);

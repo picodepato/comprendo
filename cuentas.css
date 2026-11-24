@@ -47,3 +47,32 @@
 .ctapal summary{cursor:pointer;font-weight:600}
 .ctapal span{display:inline-block;margin:3px 2px;padding:2px 8px;border-radius:7px;background:var(--panel2)}
 .ctapal span.fallo{border:1px solid var(--acc)}
+/* panel de admin (panel-admin.js) */
+.ctab h3{margin:8px 0 8px;font-size:17px}
+.admbt{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}
+.admbt input{flex:1 1 200px}
+.ctab select{font:inherit;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.admform{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin:10px 0;padding:12px;border-radius:12px;background:var(--panel2)}
+.admform[hidden]{display:none}
+.admform label{flex:1 1 160px}
+.admform .admw,.admgest .admw{flex:1 1 100%}
+.admform select{width:100%}
+.admgest{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin:10px 0 16px;padding:12px;border-radius:12px;background:var(--panel2)}
+.admgest form{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;flex:1 1 260px}
+.admgest form label{flex:1 1 180px}
+.admin-l{display:flex!important;align-items:center;gap:8px}
+/* deberes del alumno (avisos.js) */
+.deb{margin:18px max(4vw,16px) 0;padding:16px 18px;border-radius:16px;background:var(--panel);border:1px solid color-mix(in srgb,var(--acc) 55%,var(--line))}
+.deb h2{margin:0 0 10px;font-size:20px}
+.deb ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.deb li{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:12px;background:var(--panel2)}
+.deb li div{display:grid;gap:2px}
+.deb li small{color:var(--mute)}
+.deb li.ok{opacity:.75}
+.ctafs{border:0;margin:0;padding:0;display:grid;gap:6px}
+.ctafs legend{font-weight:600;font-size:15px;margin-bottom:4px;padding:0}
+.ctab label[hidden]{display:none}
+.ctacl{margin:10px 0;padding:12px;border-radius:12px;background:var(--panel2)}
+.ctacl p{margin:0 0 8px}
+.ctaclf{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ctaclf input{flex:1 1 160px}

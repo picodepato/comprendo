@@ -9,7 +9,9 @@ http.createServer((q, r) => { let b = ""; q.on("data", c => b += c); q.on("end",
   else if (c === "SET") { const nx = a.includes("NX"); if (nx && vivo(k)) res = null; else { kv.set(k, a[2]); exp.delete(k); const i = a.indexOf("EX"); if (i > 0) exp.set(k, Date.now() + a[i + 1] * 1000); res = "OK"; } }
   else if (c === "INCR") { const n = (vivo(k) ? +kv.get(k) : 0) + 1; kv.set(k, String(n)); res = n; }
   else if (c === "EXPIRE") { if (vivo(k)) exp.set(k, Date.now() + a[2] * 1000); res = 1; }
-  else if (c === "DEL") { res = kv.delete(k) ? 1 : 0; }
+  else if (c === "DEL") { res = a.slice(1).filter(x => kv.delete(x)).length; }
+  else if (c === "SREM") { const st = vivo(k) ? kv.get(k) : new Set(); res = a.slice(2).filter(x => st.delete(x)).length; }
+  else if (c === "LPUSH") { const l = vivo(k) ? kv.get(k) : []; kv.set(k, l); l.unshift(...a.slice(2).reverse()); res = l.length; }
   else if (c === "MGET") res = a.slice(1).map(x => vivo(x) ? kv.get(x) : null);
   else if (c === "KEYS") { const re = new RegExp("^" + k.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, ".*") + "$"); res = [...kv.keys()].filter(x => vivo(x) && re.test(x) && !Array.isArray(kv.get(x)) && !(kv.get(x) instanceof Set)); }
   else if (c === "SADD") { const st = vivo(k) ? kv.get(k) : new Set(); kv.set(k, st); let n = 0; for (const x of a.slice(2)) if (!st.has(x)) { st.add(x); n++; } res = n; }

@@ -17,6 +17,14 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Sin cuenta, la web funciona como invitado y guarda en el navegador.
 - «Copia de mi progreso» (botón de la cuenta o 💾): exportar e importar el progreso como texto.
 
+## Profes y clases
+- Al crear la cuenta se elige el curso (qué idioma aprender), si eres **alumno** o **profe**, y (alumno) el código de clase opcional.
+- El profe crea sus clases con un código en «Mi cuenta → Panel del profe → Mis clases». Ve solo a sus alumnos: resumen, detalle por lectura, deberes con fecha, fallos, mensajes, Excel y cambio de contraseña.
+- El alumno se une o cambia de clase en «Mi cuenta» con el código.
+- El admin lo ve todo, y además borra usuarios, aprueba propuestas (pasan a la votación) y gestiona los temas de la votación.
+- API: `GET|POST /api/admin` (admin y profes, según quién), `GET|POST /api/avisos` (alumno: su clase, mensajes, deberes, unirse a una clase).
+- Límites: 10 contraseñas mal seguidas por usuario y conexión (15 min); 100 cuentas nuevas por hora y conexión (una clase entera puede registrarse a la vez).
+
 ## Publicar
 1. Importar este repositorio en Vercel (Framework: Other, sin build).
 2. Storage → Upstash (Redis) → conectar al proyecto.

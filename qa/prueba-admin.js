@@ -2,6 +2,7 @@
    Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-admin.js http://localhost:8790/index.html [clave-admin] */
 const { chromium } = require("playwright");
 const URL = process.argv[2], CLAVE = process.argv[3] || "admin";
+const tab = async (p, k) => { await p.click(`[data-tab=${k}]`); await p.waitForSelector(`[data-tab=${k}][aria-selected=true]`); };
 const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c) ERR.push(m); };
 (async () => {
   const b = await chromium.launch({ executablePath: "/usr/bin/google-chrome" });
@@ -34,9 +35,9 @@ const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c)
   const txt = await D.textContent(".ctab");
   ok(txt.includes("Los volcanes de Islandia") && txt.includes("Tiburones blancos") && txt.includes(u), "admin ve las propuestas (y quién las envió)");
   await D.screenshot({ path: "/tmp/admin-propuestas.png" });
-  await D.click("[data-tab=usuarios]"); await D.waitForSelector(".ctatb");
+  await tab(D, "usuarios"); await D.waitForSelector(".ctatb");
   const fila = await D.textContent(".ctatb tbody"); ok(fila.includes(u), "admin ve los usuarios");
-  ok(await D.evaluate(u => [...document.querySelectorAll(".ctatb tbody tr")].some(tr => tr.textContent.includes(u) && tr.children[1].textContent === "1" && tr.children[2].textContent.includes("3") && tr.children[5].textContent === "1"), u), "resumen: 1 terminada, 3 estrellas, 1 sin terminar");
+  ok(await D.evaluate(u => [...document.querySelectorAll(".ctatb tbody tr")].some(tr => tr.textContent.includes(u) && tr.children[4].textContent === "1" && tr.children[5].textContent.includes("3") && tr.children[8].textContent === "1"), u), "resumen: 1 terminada, 3 estrellas, 1 sin terminar");
   await D.click(`[data-usuario="${u}"]`); await D.waitForSelector(".ctares");
   const det = await D.textContent(".ctab");
   ok(det.includes("El juego") && det.includes("Empezada") && det.includes("100 %"), "detalle por lectura (título, estrellas, empezada)");
@@ -45,8 +46,8 @@ const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c)
   await D.screenshot({ path: "/tmp/admin-detalle.png" });
   await D.click("#ctavol"); await D.waitForSelector("[data-usuario]");
   await D.screenshot({ path: "/tmp/admin-usuarios.png" });
-  await D.click("[data-tab=votos]"); await D.waitForTimeout(300); ok(true, "pestaña votos abre");
-  await D.click("[data-tab=propuestas]"); await D.waitForSelector("[data-borrar]");
+  await tab(D, "votos"); await D.waitForTimeout(300); ok(true, "pestaña votos abre");
+  await tab(D, "propuestas"); await D.waitForSelector("[data-borrar]");
   const n0 = await D.locator(".ctali li").count(); await D.click("[data-borrar] >> nth=0"); await D.click("[data-borrar] >> nth=0");
   await D.waitForFunction(n => document.querySelectorAll(".ctali li").length === n - 1 || (n === 1 && !document.querySelector(".ctali")), n0); ok(true, "admin borra una propuesta");
   console.log("ERRORES:", ERR.length ? ERR.join(" | ") : "ninguno");

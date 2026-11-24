@@ -1,9 +1,14 @@
 /* Votar el próximo tema. GET: recuento. POST {tema, aparato}: un voto por tema y aparato. */
-import { redis, responder, cuerpo, seguro } from "./_db.js";
-const TEMAS = ["tiburones", "esports", "cuerpo", "internet", "olimpicos"];
+import { redis, leerJSON, responder, cuerpo, seguro } from "./_db.js";
+const BASE = ["tiburones", "esports", "cuerpo", "internet", "olimpicos"];
+/* temas añadidos por el admin al aprobar una propuesta */
+const extra = () => leerJSON("temas:extra", []);
+let TEMAS = BASE;
+const cargar = async () => { const x = await extra(); TEMAS = [...BASE, ...x.map(t => t.id)]; return x; };
 const contar = async () => { const v = {}; for (const t of TEMAS) v[t] = +(await redis("GET", "votos:" + t)) || 0; return v; };
 export default (req, res) => seguro(res, async () => {
-  if (req.method === "GET") return responder(res, 200, { ok: true, votos: await contar() });
+  const temas = await cargar();
+  if (req.method === "GET") return responder(res, 200, { ok: true, votos: await contar(), temas });
   if (req.method === "POST") {
     const { tema, aparato } = cuerpo(req);
     if (!TEMAS.includes(tema) || !/^[a-f0-9]{16,40}$/.test(String(aparato || ""))) return responder(res, 400, { error: "voto_no_valido" });
@@ -12,7 +17,7 @@ export default (req, res) => seguro(res, async () => {
     if (n > 40) return responder(res, 429, { error: "demasiados_votos" });
     const nuevo = await redis("SET", `voto:${tema}:${aparato}`, "1", "NX");
     if (nuevo) await redis("INCR", "votos:" + tema);
-    return responder(res, 200, { ok: true, nuevo: !!nuevo, votos: await contar() });
+    return responder(res, 200, { ok: true, nuevo: !!nuevo, votos: await contar(), temas });
   }
   responder(res, 405, { error: "Usa GET o POST" });
 });

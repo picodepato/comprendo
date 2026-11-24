@@ -277,6 +277,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
 <script src="cuentas.js"></script>
 <script src="propuestas.js"></script>
+<script src="avisos.js"></script>
 <link rel="stylesheet" href="mascota/mascota.css">
 <link rel="stylesheet" href="votos/votos.css">
 </head>
@@ -578,6 +579,7 @@ function renderHome() {
       <div class="pk"><h2>${esc(U("know", S.know))}${S.know !== S.learn ? `<span class="en">${esc(U("know", S.learn))}</span>` : ""}</h2><div class="chips" role="group">${langs.map(c => chip(c, c === S.know, okKnow(c), "know")).join("")}</div></div>
       <div class="pk"><h2>${esc(U("learn", S.know))}${S.know !== S.learn ? `<span class="en">${esc(U("learn", S.learn))}</span>` : ""}</h2><div class="chips" role="group">${langs.map(c => chip(c, c === S.learn, okLearn(c), "learn")).join("")}</div></div>
     </div></div></section>
+    ${window.LYAAvisos ? LYAAvisos.html() : ""}
     <div class="lvbar"><h2>${TI("level")}</h2><nav class="lv">${LV.map(l => `<a href="#nivel-${l.toLowerCase()}" aria-current="${l === S.level}"><b>${l}</b><span>${esc(U("level_" + l, S.learn))}</span></a>`).join("")}</nav></div>
     <div class="lvbar" style="padding-top:14px"><p class="en" style="margin:0">${TI("pick")}</p></div>
     <div class="grid">${rs.map(r => cardHTML(r)).join("")}</div>${window.LYAVotos ? LYAVotos.html() : ""}${window.LYAPropuestas ? LYAPropuestas.html() : ""}`;
@@ -979,6 +981,7 @@ async function start() {
   for (const l in GTXT) UI[l] = {...GTXT[l], ...(UI[l] || {})};
   route();
   window.LYACuentas?.boton();
+  window.LYAAvisos?.cargar();
 }
 /* bridge for voz.js (voice, karaoke, recording) */
 window.LYA = window.LYA || {}; for (const [k, f] of Object.entries({S: () => S, R: () => R, CAT: () => CAT})) Object.defineProperty(window.LYA, k, {get: f, configurable: true}); Object.assign(window.LYA, {tok, plain, both, save});
