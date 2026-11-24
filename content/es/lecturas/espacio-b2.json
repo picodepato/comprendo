@@ -1,0 +1,502 @@
+{
+ "id": "espacio-b2",
+ "topic": "espacio",
+ "level": "B2",
+ "title": "¿Hay alguien ahí fuera?",
+ "short": "¿Hay alguien ahí fuera?",
+ "text": [
+  "En una noche despejada, lejos de las luces de la ciudad, se pueden ver miles de estrellas a simple vista. Cada una de ellas es un sol, y hoy sabemos que muchas tienen planetas girando a su alrededor. Ante cifras tan enormes, es difícil no hacerse una de las preguntas más antiguas de todas: ¿estamos solos en el universo? Durante siglos, esta fue una pregunta para filósofos y escritores de ciencia ficción. Hoy, los científicos intentan responderla en serio.",
+  "La búsqueda empieza sorprendentemente cerca de casa. Durante mucho tiempo, Marte se consideró el lugar más prometedor para buscar, y varios robots exploradores han recorrido su superficie. Han encontrado pruebas claras de que allí hubo ríos y lagos hace miles de millones de años, cuando el planeta era más cálido y húmedo. Si alguna vez apareció vida en Marte, los científicos esperan encontrar rastros de ella en rocas antiguas, y ya se están recogiendo muestras con ese objetivo.",
+  "Más recientemente, sin embargo, la atención se ha desplazado hacia lugares inesperados: las lunas heladas de Júpiter y Saturno. Europa, una de las lunas de Júpiter, está cubierta por una gruesa capa de hielo, pero se cree que debajo hay un enorme océano de agua líquida. Encélado, una pequeña luna de Saturno, resulta todavía más intrigante. En 2005, la sonda Cassini observó enormes chorros de agua que salían de unas grietas cerca de su polo sur. En la Tierra, allí donde hay agua líquida hay vida, así que estas lunas se han convertido en objetivos prioritarios de futuras misiones.",
+  "Más allá de nuestro sistema solar, las posibilidades se multiplican. Desde que se confirmaron los primeros planetas que giran alrededor de otras estrellas, en los años noventa, los astrónomos han descubierto más de cinco mil. Algunos son enormes bolas de gas, pero otros son mundos rocosos de un tamaño parecido al de la Tierra, que giran a una distancia de su estrella en la que podría existir agua líquida. Los nuevos telescopios ya pueden estudiar la atmósfera de algunos de estos planetas en busca de gases que podrían producir los seres vivos.",
+  "Por supuesto, encontrar bacterias en una luna lejana sería muy distinto de conocer a seres inteligentes. Desde 1960, algunos investigadores escuchan el espacio en busca de señales de radio de otras civilizaciones, de momento sin éxito. Este silencio ha dado lugar a un famoso enigma, conocido como la paradoja de Fermi. Si el universo es tan grande y tan antiguo, y la vida no es algo raro, ¿dónde está todo el mundo?",
+  "Hay muchas respuestas posibles. Quizá la vida inteligente sea extremadamente rara. Quizá existan civilizaciones, pero estén demasiado lejos o se comuniquen de formas que no entendemos. Algunos científicos incluso sugieren que simplemente no llevamos buscando el tiempo suficiente, ya que nuestra tecnología solo existe desde hace una parte diminuta de la historia del universo.",
+  "Sea cual sea la verdad, la propia búsqueda está cambiando nuestra forma de ver nuestro planeta. Cada descubrimiento nos recuerda lo especiales que son las condiciones de la Tierra. Y si algún día recibimos un mensaje de las estrellas, probablemente será la noticia más importante de la historia de la humanidad."
+ ],
+ "q": [
+  [
+   "¿Cuál es la idea principal del primer párrafo?",
+   [
+    "Una pregunta que antes era de filósofos ahora la estudian los científicos.",
+    "Los escritores de ciencia ficción han respondido la pregunta.",
+    "La mayoría de las estrellas no tienen planetas.",
+    "Es imposible ver estrellas cerca de una ciudad."
+   ],
+   0
+  ],
+  [
+   "¿Qué han descubierto los robots en Marte?",
+   [
+    "bacterias vivas bajo la superficie",
+    "que Marte es más cálido de lo que se creía",
+    "señales de que hubo agua en el planeta hace mucho tiempo",
+    "ríos y lagos que todavía existen"
+   ],
+   2
+  ],
+  [
+   "¿Por qué interesan a los científicos Europa y Encélado?",
+   [
+    "Están cubiertas por completo de océanos.",
+    "Tienen la misma atmósfera que la Tierra.",
+    "Probablemente tienen agua líquida.",
+    "Están más cerca de la Tierra que Marte."
+   ],
+   2
+  ],
+  [
+   "¿Qué buscan los nuevos telescopios?",
+   [
+    "gases en la atmósfera de otros planetas que podrían venir de la vida",
+    "mensajes de radio de otras civilizaciones",
+    "bolas de gas cerca de nuestro sistema solar",
+    "estrellas nuevas parecidas al Sol"
+   ],
+   0
+  ],
+  [
+   "¿Qué es la paradoja de Fermi?",
+   [
+    "una señal de radio recibida en 1960",
+    "la idea de que la vida en la Tierra vino del espacio",
+    "la pregunta de por qué no hemos encontrado señales de vida inteligente",
+    "una teoría sobre cómo se forman los planetas"
+   ],
+   2
+  ],
+  [
+   "¿Qué dice el autor en el último párrafo?",
+   [
+    "Otros planetas tienen mejores condiciones que la Tierra.",
+    "La búsqueda es una pérdida de dinero.",
+    "Recibiremos un mensaje muy pronto.",
+    "Buscar vida nos ayuda a valorar la Tierra."
+   ],
+   3
+  ],
+  [
+   "¿En qué párrafo describe el autor una observación hecha por una sonda?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   2
+  ],
+  [
+   "¿En qué párrafo da el autor varias explicaciones para un misterio?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   5
+  ],
+  [
+   "¿En qué párrafo menciona el autor que se están recogiendo muestras?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   1
+  ],
+  [
+   "¿En qué párrafo menciona el autor el número de planetas encontrados alrededor de otras estrellas?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "telescopio",
+   "🔭"
+  ],
+  [
+   "cohete",
+   "🚀"
+  ],
+  [
+   "luna",
+   "🌙"
+  ],
+  [
+   "hielo",
+   "🧊"
+  ],
+  [
+   "océano",
+   "🌊"
+  ],
+  [
+   "señal",
+   "📡"
+  ]
+ ],
+ "halves": [
+  [
+   "Hace miles de millones de años...",
+   "...hubo ríos y lagos en Marte."
+  ],
+  [
+   "Europa está cubierta...",
+   "...por una gruesa capa de hielo."
+  ],
+  [
+   "En la Tierra, allí donde hay agua líquida,...",
+   "...hay vida."
+  ],
+  [
+   "Desde 1960 algunos investigadores...",
+   "...escuchan señales de radio."
+  ],
+  [
+   "Cada descubrimiento nos recuerda...",
+   "...lo especiales que son las condiciones de la Tierra."
+  ]
+ ],
+ "grammar": {
+  "title": "Uso de la lengua",
+  "rule": "Cuatro partes como el examen <b>Use of English</b> de Cambridge, pero en español. Partes 2, 3 y 4: escribe tus respuestas y pulsa <b>Comprobar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Parte 1 · Huecos con opciones",
+    "help": "Lee el texto y elige la palabra o expresión que mejor completa cada hueco.",
+    "text": "Enviar personas a Marte es uno de los mayores retos a los que se han {{0}} nunca las agencias espaciales. El viaje {{1}} unos siete meses en cada sentido. Durante ese tiempo, los astronautas estarían {{2}} a altos niveles de radiación. También tendrían que {{3}} frente al aislamiento, ya que los mensajes desde la Tierra pueden tardar hasta veinte minutos en llegar. A pesar de estas dificultades, muchos expertos creen que una misión tripulada podría {{4}} lugar en las próximas décadas. Si sale bien, {{5}} el comienzo de una nueva era de exploración.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Parte 2 · Huecos abiertos",
+    "help": "Escribe una sola palabra en cada hueco.",
+    "text": "Los astrónomos han encontrado planetas en los lugares más inesperados. Algunos giran alrededor de dos soles a la {{6}}, como el planeta Tatooine de La guerra de las galaxias. Otros están tan cerca de su estrella {{7}} un año dura menos de un día. Se cree que un planeta está cubierto {{8}} un océano de lava, mientras que en otro podría llover cristal. Los científicos creen que en nuestra galaxia hay más planetas {{9}} estrellas. {{10}} tantos mundos ahí fuera, parece poco probable que la Tierra sea el único {{11}} existe vida.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Parte 3 · Formación de palabras",
+    "help": "Usa la palabra en mayúsculas para formar la palabra que falta.",
+    "text": "La {{12}} espacial ha avanzado mucho en las últimas décadas. Gracias a potentes telescopios, los astrónomos han hecho descubrimientos {{13}}. Sin embargo, la {{14}} de vida fuera de la Tierra todavía no se ha demostrado. Algunos científicos {{15}} en que la encontraremos pronto, mientras que otros son más {{16}}. En cualquier caso, la búsqueda es {{17}} emocionante.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Parte 4 · Transformaciones",
+    "help": "Completa la segunda frase para que signifique lo mismo que la primera. Usa la palabra dada sin cambiarla. Escribe entre dos y cinco palabras.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Enviar personas a Marte es uno de los mayores retos a los que se han ___ nunca las agencias espaciales.",
+    [
+     "opuesto",
+     "enfrentado",
+     "resistido",
+     "negado"
+    ],
+    1
+   ],
+   [
+    "El viaje ___ unos siete meses en cada sentido.",
+    [
+     "pasaría",
+     "duraría",
+     "gastaría",
+     "cumpliría"
+    ],
+    1
+   ],
+   [
+    "Durante ese tiempo, los astronautas estarían ___ a altos niveles de radiación.",
+    [
+     "mostrados",
+     "presentados",
+     "expuestos",
+     "abiertos"
+    ],
+    2
+   ],
+   [
+    "También tendrían que ___ frente al aislamiento, ya que los mensajes desde la Tierra pueden tardar hasta veinte minutos en llegar.",
+    [
+     "dar",
+     "tener",
+     "hacer",
+     "poner"
+    ],
+    2
+   ],
+   [
+    "A pesar de estas dificultades, muchos expertos creen que una misión tripulada podría ___ lugar en las próximas décadas.",
+    [
+     "tener",
+     "dar",
+     "hacer",
+     "haber"
+    ],
+    0
+   ],
+   [
+    "Si sale bien, ___ el comienzo de una nueva era de exploración.",
+    [
+     "apuntará",
+     "firmará",
+     "marcará",
+     "anotará"
+    ],
+    2
+   ],
+   [
+    "Algunos giran alrededor de dos soles a la ___, como el planeta Tatooine de La guerra de las galaxias.",
+    [
+     "vez"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Otros están tan cerca de su estrella ___ un año dura menos de un día.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Se cree que un planeta está cubierto ___ un océano de lava, mientras que en otro podría llover cristal.",
+    [
+     "por",
+     "de"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Los científicos creen que en nuestra galaxia hay más planetas ___ estrellas.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ tantos mundos ahí fuera, parece poco probable que la Tierra sea el único … existe vida.",
+    [
+     "Con"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "… tantos mundos ahí fuera, parece poco probable que la Tierra sea el único ___ existe vida.",
+    [
+     "donde",
+     "en"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "La ___ espacial ha avanzado mucho en las últimas décadas.",
+    [
+     "exploración"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXPLORAR"
+    }
+   ],
+   [
+    "Gracias a potentes telescopios, los astrónomos han hecho descubrimientos ___.",
+    [
+     "notables"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "NOTAR"
+    }
+   ],
+   [
+    "Sin embargo, la ___ de vida fuera de la Tierra todavía no se ha demostrado.",
+    [
+     "existencia"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXISTIR"
+    }
+   ],
+   [
+    "Algunos científicos ___ en que la encontraremos pronto, mientras que otros son más ….",
+    [
+     "confían"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CONFIAR"
+    }
+   ],
+   [
+    "Algunos científicos … en que la encontraremos pronto, mientras que otros son más ___.",
+    [
+     "escépticos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ESCEPTICISMO"
+    }
+   ],
+   [
+    "En cualquier caso, la búsqueda es ___ emocionante.",
+    [
+     "increíblemente"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INCREÍBLE"
+    }
+   ],
+   [
+    "Los científicos creen que hay un océano bajo el hielo de Europa. → Se ___ un océano bajo el hielo de Europa.",
+    [
+     "cree que hay"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Los científicos creen que hay un océano bajo el hielo de Europa.",
+     "w": "CREE",
+     "p": "Se ___ un océano bajo el hielo de Europa."
+    }
+   ],
+   [
+    "Todavía no hemos recibido ninguna señal. → No ___ ninguna señal.",
+    [
+     "hemos recibido aún",
+     "hemos recibido aun",
+     "hemos aún recibido"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Todavía no hemos recibido ninguna señal.",
+     "w": "AÚN",
+     "p": "No ___ ninguna señal."
+    }
+   ],
+   [
+    "Es posible que hubiera vida en Marte hace mucho tiempo. → ___ vida en Marte hace mucho tiempo.",
+    [
+     "Pudo haber",
+     "Pudo existir",
+     "Pudo haber existido"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Es posible que hubiera vida en Marte hace mucho tiempo.",
+     "w": "PUDO",
+     "p": "___ vida en Marte hace mucho tiempo."
+    }
+   ],
+   [
+    "Nadie ha visto nunca un extraterrestre. → Ningún extraterrestre ha ___ nadie.",
+    [
+     "sido visto nunca por",
+     "sido visto por"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Nadie ha visto nunca un extraterrestre.",
+     "w": "SIDO",
+     "p": "Ningún extraterrestre ha ___ nadie."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Is anybody out there?",
+   "sub": "The search for life beyond Earth",
+   "grammar": "Use of English: four tasks like the Cambridge B2 First exam (multiple-choice cloze, open cloze, word formation and key word transformation), in Spanish.",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "telescope",
+    "rocket",
+    "moon",
+    "ice",
+    "ocean",
+    "signal"
+   ]
+  }
+ }
+}
