@@ -212,7 +212,7 @@
     "type": "wf",
     "title": "Part 3 · Word formation",
     "help": "Use the word in capitals at the end of each gap to form a word that fits.",
-    "text": "The first edition of the book was an {{12}} success. Its {{13}} grew quickly, and it soon became an {{14}} publication. Today, a team of adjudicators is {{15}} for checking every record. Their {{16}} are final, and they must remain completely {{17}}.",
+    "text": "The first edition of the book was an {{12}} success. Its {{13}} grew quickly, and it was soon published {{14}}. Today, a team of adjudicators has {{15}} for checking every record. Their {{16}} are final, and they must remain completely {{17}}.",
     "items": [
      12,
      13,
@@ -367,7 +367,7 @@
     }
    ],
    [
-    "Its ___ grew quickly, and it soon became an … publication.",
+    "Its ___ grew quickly, and it was soon published ….",
     [
      "popularity"
     ],
@@ -378,9 +378,9 @@
     }
    ],
    [
-    "Its … grew quickly, and it soon became an ___ publication.",
+    "Its … grew quickly, and it was soon published ___.",
     [
-     "annual"
+     "annually"
     ],
     0,
     {
@@ -389,9 +389,9 @@
     }
    ],
    [
-    "Today, a team of adjudicators is ___ for checking every record.",
+    "Today, a team of adjudicators has ___ for checking every record.",
     [
-     "responsible"
+     "responsibility"
     ],
     0,
     {

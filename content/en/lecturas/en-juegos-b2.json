@@ -212,7 +212,7 @@
     "type": "wf",
     "title": "Part 3 · Word formation",
     "help": "Use the word in capitals at the end of each gap to form a word that fits.",
-    "text": "Some games are designed to be {{12}}, with rewards that keep players coming back. However, most players enjoy games in a {{13}} way. Scientists have found that games can improve {{14}} and problem solving. The key is to keep a good {{15}} between gaming and other activities. Doctors say that {{16}} nights are one of the clearest signs of a problem. With a little {{17}}, gaming can be a positive part of life.",
+    "text": "Some games are designed to be {{12}}, with rewards that keep players coming back. However, most players enjoy games in a {{13}} way. Scientists have found that games can improve {{14}} and problem solving. The key is to have a {{15}} life, with time for gaming and other activities. Doctors say that {{16}} nights are one of the clearest signs of a problem. With a little {{17}}, gaming can be a positive part of life.",
     "items": [
      12,
      13,
@@ -390,9 +390,9 @@
     }
    ],
    [
-    "The key is to keep a good ___ between gaming and other activities.",
+    "The key is to have a ___ life, with time for gaming and other activities.",
     [
-     "balance"
+     "balanced"
     ],
     0,
     {
@@ -449,17 +449,16 @@
     }
    ],
    [
-    "He started playing video games when he was six. → He ___ video games since he was six.",
+    "He started playing video games when he was six. → He has been playing video games ___ six.",
     [
-     "has been playing",
-     "has played"
+     "since he was"
     ],
     0,
     {
      "t": "kwt",
      "s": "He started playing video games when he was six.",
      "w": "SINCE",
-     "p": "He ___ video games since he was six."
+     "p": "He has been playing video games ___ six."
     }
    ],
    [

@@ -212,7 +212,7 @@
     "type": "wf",
     "title": "Part 3 · Word formation",
     "help": "Use the word in capitals at the end of each gap to form a word that fits.",
-    "text": "The {{12}} of the octopus has amazed scientists for decades. In one famous {{13}}, an octopus learnt to open a jar {{14}} after watching another octopus do it. Their ability to change colour is also {{15}}. Some researchers think that octopuses could {{16}} us to understand how brains work better, and their {{17}} may one day help to design better robots.",
+    "text": "The {{12}} of the octopus has amazed scientists for decades. In one famous {{13}} study, an octopus learnt to open a jar {{14}} after watching another octopus do it. Their ability to change colour is also {{15}}. Some researchers think that octopuses could {{16}} us to understand how brains work better, and their {{17}} may one day help to design better robots.",
     "items": [
      12,
      13,
@@ -367,9 +367,9 @@
     }
    ],
    [
-    "In one famous ___, an octopus learnt to open a jar … after watching another octopus do it.",
+    "In one famous ___ study, an octopus learnt to open a jar … after watching another octopus do it.",
     [
-     "experiment"
+     "experimental"
     ],
     0,
     {
@@ -378,7 +378,7 @@
     }
    ],
    [
-    "In one famous …, an octopus learnt to open a jar ___ after watching another octopus do it.",
+    "In one famous … study, an octopus learnt to open a jar ___ after watching another octopus do it.",
     [
      "quickly"
     ],

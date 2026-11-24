@@ -1,0 +1,498 @@
+{
+ "id": "ca-egipto-b2",
+ "topic": "egipto",
+ "level": "B2",
+ "title": "Desxifrant el codi dels faraons",
+ "short": "Desxifrant el codi dels faraons",
+ "text": [
+  "Durant més de mil anys, ningú al món no va ser capaç de llegir els jeroglífics egipcis. Els viatgers que visitaven les piràmides i els temples veien parets cobertes de dibuixos bonics d'ocells, ulls, serps i peus, però no tenien ni idea del que volien dir. Molts savis creien que cada símbol representava una idea i no un so, i que l'escriptura amagava una saviesa religiosa secreta. Al final es va veure que estaven gairebé del tot equivocats, i la clau del misteri era un tros trencat de pedra grisa.",
+  "El 1799, uns soldats francesos que havien arribat a Egipte amb Napoleó estaven reconstruint un vell fort a prop de la ciutat de Rashid, coneguda a Europa com a Rosetta, quan van trobar una gran llosa coberta d'escriptura. De seguida es van adonar que era important. La pedra contenia el mateix text escrit tres vegades: en jeroglífics, en una escriptura egípcia posterior anomenada demòtic i en grec antic. Com que els savis encara sabien llegir grec, la pedra oferia una oportunitat única de comparar les tres versions.",
+  "Tanmateix, la pedra no va estar gaire temps en mans franceses. Després que els britànics derrotessin l'exèrcit francès a Egipte, se la van endur a Londres, on s'exposa al Museu Britànic des del 1802. Es van enviar còpies de les inscripcions a experts de tot Europa, i va començar una cursa per ser el primer a desxifrar-les.",
+  "Un dels principals competidors va ser Thomas Young, un científic anglès brillant que ja havia fet descobriments importants sobre la llum. Young va avançar de debò. Va demostrar que alguns jeroglífics que apareixien dins d'uns òvals, anomenats cartutxos, formaven els noms de reis i reines, i va identificar correctament diversos signes. Però continuava convençut que la majoria dels jeroglífics eren símbols d'idees, i no va poder anar més enllà.",
+  "El gran avenç va arribar de la mà d'un jove francès, Jean-François Champollion. Egipte el fascinava des de petit i havia après un nombre impressionant de llengües, entre elles el copte, una forma tardana de l'egipci que encara es feia servir a les misses. Aquest coneixement va ser fonamental. Comparant els noms dels cartutxos amb altres inscripcions, Champollion es va adonar que els jeroglífics eren una barreja de signes que representaven sons i signes que representaven idees. Segons una anècdota famosa, quan per fi va entendre el sistema, el 1822, va córrer a veure el seu germà cridant que ho havia aconseguit, i després es va desmaiar de l'emoció.",
+  "El seu descobriment va obrir la porta a tota una civilització. Per primera vegada en segles, es podien llegir les paraules dels mateixos egipcis antics: les seves oracions, els seus poemes, les seves cartes i fins i tot les seves queixes. La història ja no era només el que els escriptors grecs i romans havien explicat sobre Egipte.",
+  "Avui, la pedra de Rosetta és un dels objectes més visitats del Museu Britànic, i el seu nom s'ha convertit en símbol de qualsevol cosa que ajudi a resoldre un problema difícil. Egipte ha demanat en diverses ocasions que la hi tornin, i el debat sobre on hauria de ser continua."
+ ],
+ "q": [
+  [
+   "Què creien molts savis sobre els jeroglífics abans de desxifrar-los?",
+   [
+    "Que cada símbol representava una idea, no un so.",
+    "Que era impossible entendre'ls.",
+    "Que eren una forma de grec antic.",
+    "Que no volien dir res."
+   ],
+   0
+  ],
+  [
+   "Per què era tan útil la pedra de Rosetta?",
+   [
+    "Explicava el significat de cada jeroglífic.",
+    "Només estava escrita en jeroglífics.",
+    "Tenia el mateix text en una llengua que els experts encara sabien llegir.",
+    "Era la pedra més gran trobada a Egipte."
+   ],
+   2
+  ],
+  [
+   "Què va passar amb la pedra després de trobar-la?",
+   [
+    "Es va quedar molts anys a França.",
+    "Es va tornar a Egipte el 1802.",
+    "Va acabar a Londres després d'una derrota militar.",
+    "Es va trencar en tres trossos."
+   ],
+   2
+  ],
+  [
+   "Quina va ser la principal limitació de la feina de Thomas Young?",
+   [
+    "Es va negar a estudiar els cartutxos.",
+    "No sabia res sobre la llum.",
+    "No acceptava que la majoria dels signes poguessin representar sons.",
+    "No va veure mai una còpia de les inscripcions."
+   ],
+   2
+  ],
+  [
+   "Per què va ser important per a Champollion saber copte?",
+   [
+    "Li va permetre llegir grec més fàcilment.",
+    "Era la llengua de la pedra.",
+    "El va ajudar a relacionar els signes amb els sons de l'egipci.",
+    "Era la llengua que parlava el seu germà."
+   ],
+   2
+  ],
+  [
+   "Què diu l'autor sobre el resultat del descobriment?",
+   [
+    "Els escriptors grecs i romans es van fer més populars.",
+    "Es va descobrir la religió secreta egípcia.",
+    "El Museu Britànic es va convertir en el més visitat del món.",
+    "Per fi es va poder conèixer Egipte a través dels mateixos egipcis."
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf esmenta l'autor un desacord que no s'ha resolt?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   6
+  ],
+  [
+   "En quin paràgraf descriu l'autor una reacció emocional forta?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   4
+  ],
+  [
+   "En quin paràgraf explica l'autor com es va descobrir la pedra?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   1
+  ],
+  [
+   "En quin paràgraf descriu l'autor un científic famós per la seva feina en un altre camp?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "pedra",
+   "🪨"
+  ],
+  [
+   "piràmide",
+   "🔺"
+  ],
+  [
+   "serp",
+   "🐍"
+  ],
+  [
+   "ull",
+   "👁️"
+  ],
+  [
+   "museu",
+   "🏛️"
+  ],
+  [
+   "soldat",
+   "💂"
+  ]
+ ],
+ "halves": [
+  [
+   "La pedra contenia...",
+   "...el mateix text escrit tres vegades."
+  ],
+  [
+   "S'exposa al Museu Britànic...",
+   "...des del 1802."
+  ],
+  [
+   "Alguns jeroglífics formaven...",
+   "...els noms de reis i reines."
+  ],
+  [
+   "Egipte fascinava Champollion...",
+   "...des de petit."
+  ],
+  [
+   "El seu descobriment va obrir la porta...",
+   "...a tota una civilització."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "Aprendre a llegir jeroglífics va ser un {{0}} llarg i difícil. Fins i tot després que Champollion entengués el sistema bàsic, {{1}} caldre molts anys més de feina per traduir textos complicats. Els experts van haver d'{{2}} el significat de centenars de signes, alguns dels quals es podien llegir de diverses maneres. A poc a poc, però, es van publicar diccionaris i gramàtiques, i el tema es va convertir en una disciplina acadèmica {{3}} dret propi. Avui els estudiants de moltes universitats poden {{4}} assignatures d'egipci antic. Alguns fins i tot {{5}} treballant en excavacions a Egipte.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "Els escribes de l'antic Egipte passaven anys aprenent a escriure. Només una petita part de la població sabia llegir, {{6}} que els escribes estaven molt ben considerats. Escrivien sobre papir, un tipus de paper fet {{7}} una planta que creixia a la vora del Nil. Els jeroglífics es podien escriure d'esquerra a dreta, de dreta a esquerra o fins i tot de dalt a baix. Per saber en quina direcció {{8}} llegien, calia fixar-se en els animals i les persones del text: sempre miraven cap al començament de la línia. Els jeroglífics es feien servir sobretot per a inscripcions importants en temples i tombes, {{9}} que per als documents de cada dia, {{10}} cartes i rebuts, es feien servir escriptures més senzilles. Va ser un sistema que va durar {{11}} de tres mil anys.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "El {{12}} de la pedra de Rosetta va marcar un abans i un després. Les seves tres {{13}} van permetre als experts comparar les llengües. Champollion va treballar amb una gran {{14}} durant molts anys. El seu èxit el va fer {{15}} a tot Europa. Avui la pedra és un dels objectes més {{16}} del Museu Britànic, i per a Egipte recuperar-la és una qüestió d'orgull {{17}}.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Aprendre a llegir jeroglífics va ser un ___ llarg i difícil.",
+    [
+     "procés",
+     "procediment",
+     "progrés",
+     "processó"
+    ],
+    0
+   ],
+   [
+    "Fins i tot després que Champollion entengués el sistema bàsic, ___ caldre molts anys més de feina per traduir textos complicats.",
+    [
+     "van",
+     "vaig",
+     "vam",
+     "vas"
+    ],
+    0
+   ],
+   [
+    "Els experts van haver d'___ el significat de centenars de signes, alguns dels quals es podien llegir de diverses maneres.",
+    [
+     "esbrinar",
+     "informar",
+     "avisar",
+     "assabentar"
+    ],
+    0
+   ],
+   [
+    "A poc a poc, però, es van publicar diccionaris i gramàtiques, i el tema es va convertir en una disciplina acadèmica ___ dret propi.",
+    [
+     "amb",
+     "de",
+     "per",
+     "en"
+    ],
+    2
+   ],
+   [
+    "Avui els estudiants de moltes universitats poden ___ assignatures d'egipci antic.",
+    [
+     "passar",
+     "córrer",
+     "anar",
+     "cursar"
+    ],
+    3
+   ],
+   [
+    "Alguns fins i tot ___ treballant en excavacions a Egipte.",
+    [
+     "deixen",
+     "paren",
+     "cessen",
+     "acaben"
+    ],
+    3
+   ],
+   [
+    "Només una petita part de la població sabia llegir, ___ que els escribes estaven molt ben considerats.",
+    [
+     "així"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Escrivien sobre papir, un tipus de paper fet ___ una planta que creixia a la vora del Nil.",
+    [
+     "amb",
+     "de"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Per saber en quina direcció ___ llegien, calia fixar-se en els animals i les persones del text: sempre miraven cap al començament de la línia.",
+    [
+     "es"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els jeroglífics es feien servir sobretot per a inscripcions importants en temples i tombes, ___ que per als documents de cada dia, … cartes i rebuts, es feien servir escriptures més senzilles.",
+    [
+     "mentre"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els jeroglífics es feien servir sobretot per a inscripcions importants en temples i tombes, … que per als documents de cada dia, ___ cartes i rebuts, es feien servir escriptures més senzilles.",
+    [
+     "com"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Va ser un sistema que va durar ___ de tres mil anys.",
+    [
+     "més"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El ___ de la pedra de Rosetta va marcar un abans i un després.",
+    [
+     "descobriment"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DESCOBRIR"
+    }
+   ],
+   [
+    "Les seves tres ___ van permetre als experts comparar les llengües.",
+    [
+     "inscripcions"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INSCRIURE"
+    }
+   ],
+   [
+    "Champollion va treballar amb una gran ___ durant molts anys.",
+    [
+     "determinació"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DETERMINAR"
+    }
+   ],
+   [
+    "El seu èxit el va fer ___ a tot Europa.",
+    [
+     "famós"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "FAMA"
+    }
+   ],
+   [
+    "Avui la pedra és un dels objectes més ___ del Museu Britànic, i per a Egipte recuperar-la és una qüestió d'orgull ….",
+    [
+     "valuosos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "VALOR"
+    }
+   ],
+   [
+    "Avui la pedra és un dels objectes més … del Museu Britànic, i per a Egipte recuperar-la és una qüestió d'orgull ___.",
+    [
+     "nacional"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "NACIÓ"
+    }
+   ],
+   [
+    "Champollion va ser el primer a desxifrar els jeroglífics. → ___ els jeroglífics abans que Champollion.",
+    [
+     "Ningú no havia desxifrat",
+     "Ningú havia desxifrat",
+     "Ningú no va desxifrar"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Champollion va ser el primer a desxifrar els jeroglífics.",
+     "w": "NINGÚ",
+     "p": "___ els jeroglífics abans que Champollion."
+    }
+   ],
+   [
+    "Uns soldats francesos van trobar la pedra el 1799. → La pedra ___ uns soldats francesos el 1799.",
+    [
+     "va ser trobada per"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Uns soldats francesos van trobar la pedra el 1799.",
+     "w": "VA",
+     "p": "La pedra ___ uns soldats francesos el 1799."
+    }
+   ],
+   [
+    "Young no va poder avançar més perquè no va acceptar la idea. → Young hauria avançat més ___ la idea.",
+    [
+     "si hagués acceptat"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Young no va poder avançar més perquè no va acceptar la idea.",
+     "w": "SI",
+     "p": "Young hauria avançat més ___ la idea."
+    }
+   ],
+   [
+    "Molta gent visita la pedra cada any. → La pedra és ___ molta gent cada any.",
+    [
+     "visitada per"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Molta gent visita la pedra cada any.",
+     "w": "VISITADA",
+     "p": "La pedra és ___ molta gent cada any."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Descifrando el código de los faraones",
+   "sub": "La piedra de Rosetta y los jeroglíficos",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "piedra",
+    "pirámide",
+    "serpiente",
+    "ojo",
+    "museo",
+    "soldado"
+   ]
+  }
+ }
+}

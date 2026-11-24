@@ -212,7 +212,7 @@
     "type": "wf",
     "title": "Part 3 · Word formation",
     "help": "Use the word in capitals at the end of each gap to form a word that fits.",
-    "text": "The marathons have become {{12}} popular since they started in 2010. Thanks to the {{13}} of viewers, they have raised tens of millions of dollars. The {{14}} work for months to prepare each event. Runners are {{15}} selected, and every run is tested in {{16}}. The atmosphere is always {{17}}, even when things go wrong.",
+    "text": "The marathons have become {{12}} popular since they started in 2010. Thanks to the {{13}} of viewers, they have raised tens of millions of dollars. The {{14}} work for months to prepare each event. Runners are {{15}} selected, and every run is {{16}} tested. The atmosphere is always {{17}}, even when things go wrong.",
     "items": [
      12,
      13,
@@ -391,7 +391,7 @@
     }
    ],
    [
-    "Runners are ___ selected, and every run is tested in ….",
+    "Runners are ___ selected, and every run is … tested.",
     [
      "carefully"
     ],
@@ -402,14 +402,14 @@
     }
    ],
    [
-    "Runners are … selected, and every run is tested in ___.",
+    "Runners are … selected, and every run is ___ tested.",
     [
-     "advance"
+     "thoroughly"
     ],
     0,
     {
      "t": "wf",
-     "w": "ADVANCE"
+     "w": "THOROUGH"
     }
    ],
    [

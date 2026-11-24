@@ -212,7 +212,7 @@
     "type": "wf",
     "title": "Part 3 · Word formation",
     "help": "Use the word in capitals at the end of each gap to form a word that fits.",
-    "text": "Space {{12}} has made great progress in recent decades. Thanks to powerful telescopes, astronomers have made many {{13}} discoveries. However, the {{14}} of life beyond Earth has not yet been proved. Some scientists are {{15}} that we will find it soon, while others are more {{16}}. Either way, the search is {{17}} exciting.",
+    "text": "Space {{12}} has made great progress in recent decades. Thanks to powerful telescopes, astronomers have made many {{13}} discoveries. However, the {{14}} of life beyond Earth has not yet been proved. Some scientists have great {{15}} that we will find it soon, while others are more {{16}}. Either way, the search is {{17}} exciting.",
     "items": [
      12,
      13,
@@ -392,9 +392,9 @@
     }
    ],
    [
-    "Some scientists are ___ that we will find it soon, while others are more ….",
+    "Some scientists have great ___ that we will find it soon, while others are more ….",
     [
-     "confident"
+     "confidence"
     ],
     0,
     {
@@ -403,7 +403,7 @@
     }
    ],
    [
-    "Some scientists are … that we will find it soon, while others are more ___.",
+    "Some scientists have great … that we will find it soon, while others are more ___.",
     [
      "doubtful"
     ],
