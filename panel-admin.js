@@ -22,7 +22,7 @@ const catalogo = () => CAT ||= fetch("content/catalogo.json").then(r => r.json()
   }
   return m;
 }).catch(() => ({}));
-const nombreL = (T, id) => T[id] ? `${T[id].titulo} (${T[id].tema} · ${T[id].nivel}${T[id].lengua === "en" ? " · inglés" : ""})` : id;
+const nombreL = (T, id) => /^dictado-/.test(id) && T[id.slice(8)] ? "✍️ Dictado: " + nombreL(T, id.slice(8)) : T[id] ? `${T[id].titulo} (${T[id].tema} · ${T[id].nivel}${T[id].lengua === "en" ? " · inglés" : ""})` : id;
 
 let D = null, T = {}, tabActual = "propuestas", filtroGrupo = "";
 async function cargar() {
@@ -48,7 +48,8 @@ const nGrupo = id => (D.grupos[id] || {}).nombre || "—";
 const esAdmin = () => D && D.soy && D.soy.admin, titulo = () => esAdmin() ? "🛠 Administración" : "🧑‍🏫 Panel del profe";
 const alumnos = () => D.usuarios.filter(u => u.rol !== "profe");
 const optsGrupo = (sel, vacio = "Sin clase") => `<option value="">${vacio}</option>${Object.entries(D.grupos).map(([id, g]) => `<option value="${esc(id)}"${id === sel ? " selected" : ""}>${esc(g.nombre)}</option>`).join("")}`;
-const optsLectura = () => Object.values(T).sort((a, b) => (a.lengua > b.lengua) - (a.lengua < b.lengua) || a.orden - b.orden).map(l => `<option value="${esc(l.id)}">${esc(nombreL(T, l.id))}</option>`).join("");
+const optsLectura = () => { const ls = Object.values(T).sort((a, b) => (a.lengua > b.lengua) - (a.lengua < b.lengua) || a.orden - b.orden).filter(l => l.file);
+  return `<optgroup label="📖 Lecturas">${ls.map(l => `<option value="${esc(l.id)}">${esc(nombreL(T, l.id))}</option>`).join("")}</optgroup><optgroup label="✍️ Dictados (5 frases de la lectura)">${ls.map(l => `<option value="dictado-${esc(l.id)}">${esc(nombreL(T, "dictado-" + l.id))}</option>`).join("")}</optgroup>`; };
 
 function pintar() {
   const tabs = [["propuestas", `💡 Propuestas (${D.propuestas.length})`], ["usuarios", esAdmin() ? `👥 Usuarios (${D.usuarios.length})` : `🎒 Mis alumnos (${D.usuarios.length})`], ["clases", `🏫 ${esAdmin() ? "Clases" : "Mis clases"} (${Object.keys(D.grupos).length})`],
@@ -172,16 +173,16 @@ ACCIONES.clases = () => {
 };
 
 /* ---------- deberes ---------- */
-VISTAS.deberes = () => `<form id="admdc" class="admform"><label class="admw">Lectura<select name="lectura" required>${optsLectura()}</select></label>
+VISTAS.deberes = () => `<form id="admdc" class="admform"><label class="admw">Lectura o dictado<select name="lectura" required>${optsLectura()}</select></label>
   <label>Para<select name="grupo">${optsGrupo("", esAdmin() ? "Todos los alumnos" : "Todas mis clases")}</select></label><label>Fecha límite<input name="limite" type="date" required value="${hoy()}"></label>
   <label class="admw">Nota (opcional)<input name="nota" maxlength="200" placeholder="Por ejemplo: intenta sacar 3 estrellas"></label><button class="btn main" type="submit">📚 Asignar lectura</button></form>
   ${D.deberes.length ? `<ul class="ctali">${[...D.deberes].sort((a, b) => a.limite.localeCompare(b.limite)).map(d => { const hechos = d.alumnos.filter(a => a.hecho).length, venc = d.limite < hoy();
     return `<li><p><b>${esc(nombreL(T, d.lectura))}</b></p><small>Para: ${d.grupo ? esc(nGrupo(d.grupo)) : esAdmin() ? "todos" : "todas mis clases"} · Hasta: ${dia(d.limite)}${venc ? " (terminado el plazo)" : ""}${d.nota ? " · " + esc(d.nota) : ""}</small>
     <p style="margin-top:6px">✅ <b>${hechos}</b> de ${d.alumnos.length} la han hecho</p>
     <details class="ctapal"><summary>Ver quién</summary><p>${d.alumnos.map(a => `<span${a.hecho ? "" : ' class="fallo"'}>${a.hecho ? "✓" : "✗"} ${esc(a.usuario)}${a.hecho ? " " + "★".repeat(a.estrellas) : ""}</span>`).join(" ") || "Nadie en esta clase."}</p></details>
-    <button type="button" class="ctal" data-borrad="${esc(d.id)}">Quitar</button></li>`; }).join("")}</ul>` : `<p class="ctas">No hay lecturas asignadas. Los alumnos las verán en la portada con la fecha límite.</p>`}`;
+    <button type="button" class="ctal" data-borrad="${esc(d.id)}">Quitar</button></li>`; }).join("")}</ul>` : `<p class="ctas">No hay deberes. Puedes mandar una lectura o un dictado; los alumnos los verán en la portada con la fecha límite.</p>`}`;
 ACCIONES.deberes = () => {
-  $d("#admdc").onsubmit = async e => { e.preventDefault(); const f = e.target; if (await hacer({accion: "deber_crear", lectura: f.lectura.value, grupo: f.grupo.value, limite: f.limite.value, nota: f.nota.value}, f.querySelector("[type=submit]"))) { await abrir("deberes"); alerta("✓ Lectura asignada."); } };
+  $d("#admdc").onsubmit = async e => { e.preventDefault(); const f = e.target; if (await hacer({accion: "deber_crear", lectura: f.lectura.value, grupo: f.grupo.value, limite: f.limite.value, nota: f.nota.value}, f.querySelector("[type=submit]"))) { await abrir("deberes"); alerta("✓ Deber asignado."); } };
   $$("[data-borrad]").forEach(b => b.onclick = async () => { if (b.dataset.ok !== "1") { b.dataset.ok = "1"; b.textContent = "¿Seguro? Pulsa otra vez"; return; } if (await hacer({accion: "deber_borrar", id: b.dataset.borrad}, b)) abrir("deberes"); });
 };
 

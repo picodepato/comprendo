@@ -14,7 +14,7 @@ function resumen(u, d, p, grupo) {
     terminadas: fin.length, empezadas: Object.keys(emp).filter(id => !rd[id]).length, veces: fin.reduce((n, id) => n + (rd[id].n || 0), 0),
     estrellas: fin.reduce((n, id) => n + (rd[id].best || 0), 0), tres: fin.filter(id => rd[id].best === 3).length,
     cromos: Object.keys(g.album || {}).length, medallas: Object.keys(g.medals || {}).length, palabras: (s.dict || []).length,
-    lecturas: Object.fromEntries(fin.map(id => [id, rd[id].best || 0])) };
+    lecturas: Object.fromEntries([...fin.map(id => [id, rd[id].best || 0]), ...Object.entries(g.dc || {}).map(([k, v]) => ["dictado-" + k, (v && v.best) || 0])]) };  /* S.g.dc[lectura] = dictados */
 }
 const leer = x => { try { return JSON.parse(x || "null") || {}; } catch (e) { return {}; } };
 /* qué ve cada uno: el admin todo; un profe sus clases y los alumnos que están en ellas */
