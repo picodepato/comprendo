@@ -18,7 +18,7 @@ const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c)
   const u = "alu" + Date.now() % 100000;
   await A.click("#cta"); await A.click("#ctac"); await A.fill("[name=usuario]", u); await A.fill("[name=clave]", "clave123"); await A.fill("[name=clave2]", "clave123");
   await Promise.all([A.waitForNavigation(), A.click("#ctaf [type=submit]")]); await listo(A);
-  await A.evaluate(() => { LYA.S.a["bear-a1:q0"] = 1; LYA.S.a["comida-a1:q0"] = 1; LYA.save(); }); await A.waitForTimeout(2600);
+  await A.evaluate(() => { const S = LYA.S; S.a["bear-a1:q0"] = 1; S.a["bear-a1:fin"] = 1; S.a["comida-a1:q0"] = 1; S.g.rd = {"bear-a1": {n: 2, best: 3, bp: 100, last: 2}}; S.dict.push({w: "oso", k: "oso", r: "bear-a1", l: "es", t: "bear", miss: true}); LYA.save(); }); await A.waitForTimeout(2600);
   await A.waitForSelector("#propf"); await A.fill("#propf textarea", "Tiburones blancos"); await A.click("#propf button");
   await A.waitForFunction(() => /Gracias/.test(document.querySelector("#propf .ctam").textContent));
   /* nadie más puede registrarse como admin */
@@ -36,7 +36,14 @@ const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c)
   await D.screenshot({ path: "/tmp/admin-propuestas.png" });
   await D.click("[data-tab=usuarios]"); await D.waitForSelector(".ctatb");
   const fila = await D.textContent(".ctatb tbody"); ok(fila.includes(u), "admin ve los usuarios");
-  ok(await D.evaluate(u => [...document.querySelectorAll(".ctatb tbody tr")].some(tr => tr.textContent.includes(u) && tr.children[3].textContent === "2"), u), "admin ve lecturas del usuario (2)");
+  ok(await D.evaluate(u => [...document.querySelectorAll(".ctatb tbody tr")].some(tr => tr.textContent.includes(u) && tr.children[1].textContent === "1" && tr.children[2].textContent.includes("3") && tr.children[5].textContent === "1"), u), "resumen: 1 terminada, 3 estrellas, 1 sin terminar");
+  await D.click(`[data-usuario="${u}"]`); await D.waitForSelector(".ctares");
+  const det = await D.textContent(".ctab");
+  ok(det.includes("El juego") && det.includes("Empezada") && det.includes("100 %"), "detalle por lectura (título, estrellas, empezada)");
+  ok(await D.locator(".ctatb tbody tr >> nth=0 >> td >> nth=3 >> .stars i.on").count() === 3, "detalle: 3 estrellas en la lectura terminada");
+  ok(det.includes("Palabras guardadas (1)"), "detalle: palabras guardadas");
+  await D.screenshot({ path: "/tmp/admin-detalle.png" });
+  await D.click("#ctavol"); await D.waitForSelector("[data-usuario]");
   await D.screenshot({ path: "/tmp/admin-usuarios.png" });
   await D.click("[data-tab=votos]"); await D.waitForTimeout(300); ok(true, "pestaña votos abre");
   await D.click("[data-tab=propuestas]"); await D.waitForSelector("[data-borrar]");

@@ -258,6 +258,18 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 .won p{margin:0}
 @media(prefers-reduced-motion:reduce){.toast{animation:none}}
 @media(max-width:600px){.me{padding:6px 9px;font-size:14px}}
+/* stars per reading */
+.stars{display:inline-flex;gap:1px;line-height:1;vertical-align:-1px}
+.stars i{font-style:normal;color:#5a4f63}
+.stars i.on{color:#ffd54a;text-shadow:0 0 6px rgba(255,213,74,.45)}
+.stars.big{font-size:38px;gap:4px}
+.card .rs{display:flex;align-items:center;gap:8px;margin-top:4px;font-size:13px;color:var(--mute)}
+.card .rs .stars{font-size:17px}
+.stk .st3{position:absolute;right:5px;top:5px;font-size:11px;background:#120e16cc;border-radius:6px;padding:2px 4px}
+.runstars{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin:14px 0 4px;padding:12px 14px;border-radius:12px;background:var(--panel2)}
+.runstars p{margin:0}
+.meta .stars{font-size:16px}
+.meta .rt{color:var(--mute);font-weight:500}
 </style>
 <link rel="stylesheet" href="voz.css">
 <link rel="stylesheet" href="juegos/juegos.css">
@@ -420,6 +432,7 @@ function practiceAnswer(ok) {
 }
 function checkReading(L) {
   if (!L || !S.g) return;
+  recordRun(L);
   const r = scoreOf(L), id = L.id, g = S.g;
   if (r.done < r.tot || g.album[id]) return;
   g.album[id] = today();
@@ -427,6 +440,45 @@ function checkReading(L) {
   if (r.pts === r.tot) secret("perfecto");
   if (Object.values(g.album).filter(d => d === g.album[id]).length >= 3) secret("maraton");
   award(50, "fin:" + id, id);
+}
+/* ---------- stars per reading, rereading and star achievements ---------- */
+Object.assign(GTXT.es, {stars: "estrellas", t_stars: "¡{n} de 3 estrellas!", times: "{n} veces", once: "1 vez", new_rd: "Nueva", best: "Tu récord: {n} de 3 estrellas", run_stars: "Estrellas de esta vez", go3: "Vuelve a leerla para conseguir las 3 estrellas.", got3: "¡3 estrellas! Lectura perfecta.", reread: "Volver a leer", star_ach: "Logros de estrellas", star_ach_help: "Consigue 3 estrellas en todas las lecturas de un tema, de un nivel o de todo el curso.", a_topic: "3 estrellas en {t}", a_level: "3 estrellas en todo {lv}", a_all: "3 estrellas en todo", t_ach: "¡Logro: {m}!", stars_rule: "3 estrellas: todo bien · 2: del 60 al 99 % · 1: del 30 al 59 %"});
+Object.assign(GTXT.en, {stars: "stars", t_stars: "{n} out of 3 stars!", times: "{n} times", once: "once", new_rd: "New", best: "Your best: {n} out of 3 stars", run_stars: "Stars this time", go3: "Read it again to win all 3 stars.", got3: "3 stars! A perfect reading.", reread: "Read again", star_ach: "Star achievements", star_ach_help: "Win 3 stars in every reading of a topic, a level or the whole course.", a_topic: "3 stars in {t}", a_level: "3 stars in all of {lv}", a_all: "3 stars in everything", t_ach: "Achievement: {m}!", stars_rule: "3 stars: all right · 2: 60 to 99% · 1: 30 to 59%"});
+const starsOf = (pts, tot) => { const p = tot ? pts / tot * 100 : 0; return p >= 100 ? 3 : p >= 60 ? 2 : p >= 30 ? 1 : 0; };
+const rdStat = id => (S.g.rd || {})[id];
+const starsHTML = (n, cls = "") => `<span class="stars ${cls}" role="img" aria-label="${n} / 3 ${esc(U("stars", S.learn))}">${"<i class=\"on\">★</i>".repeat(n)}${"<i>★</i>".repeat(3 - n)}</span>`;
+const timesTxt = n => esc(n === 1 ? U("once", S.learn) : U("times", S.learn, {n}));
+/* the line under each reading card: best stars and how many times it was done */
+const rdLine = r => { const st = rdStat(r.id); return `<span class="rs">${starsHTML(st ? st.best : 0)}<span>${st ? timesTxt(st.n) : esc(U("new_rd", S.learn))}</span></span>`; };
+/* called when every exercise of a reading is answered: counts one go and keeps the best stars */
+function recordRun(L) {
+  const r = scoreOf(L), id = L.id, g = S.g, fk = id + ":fin";
+  if (r.done < r.tot || S.a[fk]) return;
+  S.a[fk] = 1; g.rd = g.rd || {};
+  const st = starsOf(r.pts, r.tot), o = g.rd[id] || {n: 0, best: 0, bp: 0}, prev = o.best;
+  o.n++; o.last = st; o.best = Math.max(o.best, st); o.bp = Math.max(o.bp, Math.round(r.pts / r.tot * 100)); g.rd[id] = o;
+  toast(`${"★".repeat(st)}${"☆".repeat(3 - st)} ${TI("t_stars", {n: st})}`, 1);
+  if (o.n > 1) award(15 + (st > prev ? 20 * (st - prev) : 0), null, id);
+  checkStarAch(); save();
+}
+function starGroups() {
+  const C = S.learn, all = rdList().filter(r => r.file), nm = (o, l) => o[l] || o[C] || o.es || Object.values(o)[0];
+  const best = r => (rdStat(r.id) || {}).best || 0;
+  const grp = (k, ic, name, rs, need, xp, c) => ({k: `${C}:${k}`, ic, name, rs, need, xp, c, have: rs.filter(r => best(r) === 3).length});
+  return [
+    ...LV.map(lv => grp("l:" + lv, "🎖️", l => U("a_level", l, {lv}), all.filter(r => r.level === lv), CAT.topics.length, 300)),
+    grp("all", "👑", l => U("a_all", l), all, CAT.topics.length * LV.length, 1000),
+    ...CAT.topics.map(t => grp("t:" + t.id, "🏅", l => U("a_topic", l, {t: nm(t.name, l)}), all.filter(r => r.t.id === t.id), LV.length, 100, t.color))
+  ];
+}
+function checkStarAch() {
+  const g = S.g; g.ach = g.ach || {};
+  for (const a of starGroups()) if (a.have >= a.need && !g.ach[a.k]) { g.ach[a.k] = today(); toast(TV("t_ach", l => ({m: a.name(l)})), 1); award(a.xp, "ach:" + a.k, null); }
+}
+function starAchHTML() {
+  const gs = starGroups(), all = rdList().filter(r => r.file), got = all.reduce((s, r) => s + ((rdStat(r.id) || {}).best || 0), 0), ach = S.g.ach || {};
+  const card = a => `<div class="md ${ach[a.k] ? "t3" : "lock"}"${a.c ? ` style="--c:${a.c}"` : ""}><div class="ic" aria-hidden="true">${a.ic}</div><b>${esc(a.name(S.learn))}</b><div class="pb"><i style="width:${Math.min(100, a.have / a.need * 100)}%"></i></div><span>${a.have} / ${a.need} · ${starsHTML(3)}</span></div>`;
+  return `<section class="ex" id="estrellas"><div class="dh"><h2>${TI("star_ach")}</h2><span class="score"><span class="stars"><i class="on">★</i></span> ${got} / ${all.length * 3}</span></div><p class="en">${TB("star_ach_help")}</p><p class="small">${TI("stars_rule")}</p><div class="medals">${gs.map(card).join("")}</div></section>`;
 }
 const MEDALS = [
   ["lector", "📚", [1, 5, 15], () => Object.keys(S.g.album).length],
@@ -455,7 +507,7 @@ addEventListener("lya:xp", e => {
 function stkHTML(r) {
   const got = S.g.album[r.id], img = `<img src="${esc(r.art || r.t.art)}" alt="" loading="lazy">`, lv = `<span class="lv1">${r.level}</span>`;
   const cap = `<span class="cap">${esc(r.title[S.learn] || r.title.es)}</span>`;
-  if (got) return `<a class="stk got" href="#${r.id}">${img}${lv}${cap}</a>`;
+  if (got) return `<a class="stk got" href="#${r.id}">${img}${lv}${rdStat(r.id) ? `<span class="st3">${starsHTML(rdStat(r.id).best)}</span>` : ""}${cap}</a>`;
   if (r.file) return `<a class="stk" href="#${r.id}" aria-label="${esc(r.title[S.learn] || r.title.es)}">${img}${lv}<span class="qm">?</span></a>`;
   return `<div class="stk soon" title="${esc(U("soon", S.learn))}">${img}${lv}<span class="qm">…</span></div>`;
 }
@@ -486,6 +538,7 @@ function renderProg() {
       <div class="box"><h2>${TI("shields")}</h2><div class="shields">${[...Array(SHIELD_MAX)].map((_, i) => `<span class="sh${i < g.shields ? " on" : ""}">${i < g.shields ? "🛡️" : ""}</span>`).join("")}</div><p class="small" style="margin-bottom:10px">${TI("shield_help")}</p>${buy}</div>
     </div>
     <section class="ex" id="medallas"><h2>${TI("medals")}</h2><div class="medals">${MEDALS.map(medal).join("")}${SECRETS.map(sec).join("")}</div></section>
+    ${starAchHTML()}
     <section class="ex" id="album"><div class="dh"><h2>${TI("album")}</h2><span class="score">${got} / ${all.length} ${esc(U("stickers", S.learn))}</span></div><p class="en">${TB("album_help")}</p><div class="alb">${album}</div></section>
   </div>`;
 }
@@ -508,7 +561,7 @@ const setAcc = c => document.documentElement.style.setProperty("--acc", c || "#f
 function cardHTML(r, small) {
   const ready = !!r.file, t = r.t;
   const inner = `<div class="art"><img src="${esc(r.art || t.art)}" alt="" loading="lazy"><span class="badge">${ready ? r.level : TI("soon")}</span></div>
-    <div class="tx"><span class="tn">${esc(t.name[S.learn] || t.name.es)}</span><span class="tt">${esc(r.title[S.learn] || r.title.es)}</span>${both() && !small ? `<span class="te">${esc(r.title[S.know] || "")}</span>` : ""}</div>`;
+    <div class="tx"><span class="tn">${esc(t.name[S.learn] || t.name.es)}</span><span class="tt">${esc(r.title[S.learn] || r.title.es)}</span>${both() && !small ? `<span class="te">${esc(r.title[S.know] || "")}</span>` : ""}${ready ? rdLine(r) : ""}</div>`;
   return ready ? `<a class="card" style="--c:${t.color}" href="#${r.id}">${inner}</a>` : `<div class="card lock" style="--c:${t.color}" aria-disabled="true">${inner}</div>`;
 }
 function renderHome() {
@@ -569,7 +622,7 @@ function renderRead() {
   const g = L.grammar;
   $("app").innerHTML = `<div class="hero"><img src="${esc(meta.art || t.art)}" alt=""></div>
   <div class="wrap">
-    <p class="meta"><span>${meta.level}</span><a href="#nivel-${meta.level.toLowerCase()}">${esc(t.name[S.learn])}</a></p>
+    <p class="meta"><span>${meta.level}</span><a href="#nivel-${meta.level.toLowerCase()}">${esc(t.name[S.learn])}</a>${rdStat(id) ? `${starsHTML(rdStat(id).best)}<span class="rt">${timesTxt(rdStat(id).n)}</span>` : ""}</p>
     <h1>${esc(L.title)}</h1>${both() && tr.title ? `<p class="en">${esc(tr.title)}${tr.sub ? " · " + esc(tr.sub) : ""}</p>` : ""}
     <div class="howto"><p>${TB("howto")}</p>
       <button class="btn" data-act="listen"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>${TI("listen")}</button>
@@ -586,7 +639,8 @@ function renderRead() {
       ${g.items.map((q, i) => mcq(id, "g", i, q[0], (tr.hints || [])[i], q[1], q[2], false)).join("")}</section>
     <section class="ex"><h2><span>5.</span> ${esc(U("s_res", S.learn))}</h2><p class="en">${TB("s_res_help")}</p>
       <div class="res"><div class="big">${r.pts} <small>/ ${r.tot}</small></div><p style="margin:0;font-weight:500">${TB(...msg)}</p>
-        <div class="bars">${bars}</div>${S.g.album[id] ? `<div class="won" style="--c:${t.color}">${stkHTML(meta)}<div><p style="font-weight:700">${TI("won")}</p><p class="small">${TI("xp_here", {n: S.g.rx[id] || 0})}</p><a class="btn" href="#progreso" style="text-decoration:none;margin-top:8px">${TI("see_album")}</a></div></div>` : `<p class="small" style="margin-top:12px">${TI("won_how")} · ${TI("xp_here", {n: S.g.rx[id] || 0})}</p>`}<div class="row"><button class="btn" data-act="reset">${TI("retry")}</button></div></div></section>
+        ${r.done >= r.tot ? `<div class="runstars">${starsHTML(starsOf(r.pts, r.tot), "big")}<div><p style="font-weight:700">${TI("run_stars")}</p><p class="small">${TI(starsOf(r.pts, r.tot) === 3 ? "got3" : "go3")}</p>${rdStat(id) ? `<p class="small">${TI("best", {n: rdStat(id).best})} · ${timesTxt(rdStat(id).n)}</p>` : ""}</div></div>` : ""}
+        <div class="bars">${bars}</div>${S.g.album[id] ? `<div class="won" style="--c:${t.color}">${stkHTML(meta)}<div><p style="font-weight:700">${TI("won")}</p><p class="small">${TI("xp_here", {n: S.g.rx[id] || 0})}</p><a class="btn" href="#progreso" style="text-decoration:none;margin-top:8px">${TI("see_album")}</a></div></div>` : `<p class="small" style="margin-top:12px">${TI("won_how")} · ${TI("xp_here", {n: S.g.rx[id] || 0})}</p>`}<div class="row"><button class="btn${r.done >= r.tot && starsOf(r.pts, r.tot) < 3 ? " main" : ""}" data-act="reset">${TI(r.done >= r.tot ? "reread" : "retry")}</button></div></div></section>
     ${window.LYAJuegos ? LYAJuegos.offer(meta) : ""}
     <section class="ex"><h2><span>6.</span> ${esc(U("more", S.learn))}</h2>${both() ? `<p class="en">${esc(U("more", S.know))}</p>` : ""}
       <h3>${TI("more_topic")}</h3><div class="next">${same.map(x => cardHTML(x, 1)).join("")}</div>
@@ -879,7 +933,7 @@ $("app").addEventListener("click", async e => {
     } else sel = (sel && sel.k === k && sel.side === side && sel.i === i) ? null : {k, side, i};
     render();
   } else if (act === "listen") { try { if (speechSynthesis.speaking) { speechSynthesis.cancel(); return; } speak(R.text.map(plain).join(" ")); } catch (err) {} }
-  else if (act === "reset") { for (const k of Object.keys(S.a)) if (k.startsWith(id + ":")) delete S.a[k]; sel = null; save(); render(); }
+  else if (act === "reset") { for (const k of Object.keys(S.a)) if (k.startsWith(id + ":")) delete S.a[k]; sel = null; save(); render(); scrollTo(0, 0); }
 });
 
 /* ---------- routing ---------- */

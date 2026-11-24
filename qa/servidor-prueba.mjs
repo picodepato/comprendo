@@ -29,7 +29,7 @@ http.createServer(async (q, r) => {
     if (!fs.existsSync(f)) { r.statusCode = 404; return r.end("{}"); }
     const h = (await import(f)).default;
     let body = b; if ((q.headers["content-type"] || "").includes("json")) try { body = JSON.parse(b || "{}"); } catch (e) {}
-    const req = {method: q.method, headers: q.headers, body};
+    const req = {method: q.method, url: q.url, query: Object.fromEntries(u.searchParams), headers: q.headers, body};
     const res = {setHeader: (a, v) => r.setHeader(a, v), status(c) { r.statusCode = c; return res; }, json(o) { r.setHeader("content-type", "application/json"); r.end(JSON.stringify(o)); }};
     return h(req, res);
   }

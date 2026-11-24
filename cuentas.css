@@ -36,3 +36,14 @@
 .prop textarea{flex:1 1 260px;min-height:48px;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical}
 .prop textarea:focus-visible{outline:3px solid var(--beam);outline-offset:1px}
 .prop .ctam{flex-basis:100%}
+.ctafila{cursor:pointer}
+.ctafila:hover td,.ctafila:focus-visible td{background:var(--panel2)}
+.ctafila:focus-visible{outline:3px solid var(--beam);outline-offset:-3px}
+.ctares{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin:10px 0}
+.ctares div{display:grid;gap:2px;padding:10px 12px;border-radius:10px;background:var(--panel2);border:1px solid var(--line)}
+.ctares b{font-size:22px}
+.ctares span{color:var(--mute);font-size:13px}
+.ctapal{margin-top:14px}
+.ctapal summary{cursor:pointer;font-weight:600}
+.ctapal span{display:inline-block;margin:3px 2px;padding:2px 8px;border-radius:7px;background:var(--panel2)}
+.ctapal span.fallo{border:1px solid var(--acc)}

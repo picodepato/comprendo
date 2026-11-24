@@ -190,7 +190,7 @@ async function panelAdmin(tab) {
   const tabs = [["propuestas", `💡 Propuestas (${propuestas.length})`], ["usuarios", `👥 Usuarios (${usuarios.length})`], ["votos", "🗳 Votos"]];
   let cuerpoHTML = "";
   if (tab === "propuestas") cuerpoHTML = propuestas.length ? `<ul class="ctali">${propuestas.map(p => `<li><p>${esc(p.texto)}</p><small>${p.usuario ? "👤 " + esc(p.usuario) : "Invitado"} · ${fecha(p.t)}</small> <button type="button" class="ctal" data-borrar="${esc(p.id)}">Borrar</button></li>`).join("")}</ul>` : `<p class="ctas">Todavía no hay propuestas.</p>`;
-  if (tab === "usuarios") cuerpoHTML = usuarios.length ? `<div class="ctatb"><table><thead><tr><th>Usuario</th><th>XP</th><th>Racha</th><th>Lecturas</th><th>Cromos</th><th>Medallas</th><th>Palabras</th><th>Último guardado</th><th>Alta</th></tr></thead><tbody>${usuarios.sort((a, b) => b.ultimo - a.ultimo).map(u => `<tr><td><b>${esc(u.usuario)}</b></td><td>${u.xp}</td><td>${u.racha} (mejor ${u.mejorRacha})</td><td>${u.lecturas}</td><td>${u.cromos}</td><td>${u.medallas}</td><td>${u.palabras}</td><td>${fecha(u.ultimo)}</td><td>${fecha(u.creado)}</td></tr>`).join("")}</tbody></table></div>` : `<p class="ctas">Todavía no hay usuarios.</p>`;
+  if (tab === "usuarios") cuerpoHTML = usuarios.length ? `<p class="ctas">Pulsa un usuario para ver lo que ha hecho en cada lectura.</p><div class="ctatb"><table><thead><tr><th>Usuario</th><th>Lecturas terminadas</th><th>Estrellas</th><th>Con ★★★</th><th>Veces leídas</th><th>Sin terminar</th><th>XP</th><th>Racha</th><th>Cromos</th><th>Palabras</th><th>Último guardado</th></tr></thead><tbody>${usuarios.sort((a, b) => b.ultimo - a.ultimo).map(u => `<tr class="ctafila" data-usuario="${esc(u.usuario)}" tabindex="0"><td><b>${esc(u.usuario)}</b></td><td>${u.terminadas}</td><td>⭐ ${u.estrellas}</td><td>${u.tres}</td><td>${u.veces}</td><td>${u.empezadas}</td><td>${u.xp}</td><td>${u.racha} (mejor ${u.mejorRacha})</td><td>${u.cromos}</td><td>${u.palabras}</td><td>${fecha(u.ultimo)}</td></tr>`).join("")}</tbody></table></div>` : `<p class="ctas">Todavía no hay usuarios.</p>`;
   if (tab === "votos") { const v = Object.entries(votos).sort((a, b) => b[1] - a[1]); cuerpoHTML = v.length ? `<ul class="ctali">${v.map(([k, n]) => `<li><p><b>${esc(k)}</b>: ${n} ${n === 1 ? "voto" : "votos"}</p></li>`).join("")}</ul>` : `<p class="ctas">Todavía no hay votos.</p>`; }
   ventana(`<h2>🛠 Administración</h2>
     ${claveAdminPorDefecto ? `<p class="ctam">⚠ La contraseña de admin sigue siendo «admin». Cámbiala en Vercel → Settings → Environment Variables → ADMIN_CLAVE.</p>` : ""}
@@ -198,10 +198,46 @@ async function panelAdmin(tab) {
     ${cuerpoHTML}`);
   dlg.classList.add("ancha");
   dlg.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => panelAdmin(b.dataset.tab));
+  dlg.querySelectorAll("[data-usuario]").forEach(tr => { tr.onclick = () => panelUsuario(tr.dataset.usuario); tr.onkeydown = e => { if (e.key === "Enter") panelUsuario(tr.dataset.usuario); }; });
   dlg.querySelectorAll("[data-borrar]").forEach(b => b.onclick = async () => {
     if (b.dataset.ok !== "1") { b.dataset.ok = "1"; b.textContent = "¿Seguro? Pulsa otra vez"; return; }
     b.disabled = true; await api("propuestas", "DELETE", {id: b.dataset.borrar}); panelAdmin("propuestas");
   });
+}
+
+/* detalle de un usuario: lectura por lectura */
+let CATA = null;
+const titulos = async () => {
+  if (!CATA) CATA = fetch("content/catalogo.json").then(r => r.json()).then(c => { const m = {}; for (const t of c.topics) for (const [lang, rs] of Object.entries(t.readings || {})) for (const r of rs) { const id = r.id || `${t.id}-${r.level.toLowerCase()}`; m[id] = {tema: (t.name || {}).es || t.id, titulo: (r.title || {}).es || (r.title || {})[lang] || id, nivel: r.level, lengua: lang, orden: Object.keys(m).length}; } return m; }).catch(() => ({}));
+  return CATA;
+};
+const est = n => `<span class="stars" aria-label="${n} de 3 estrellas">${"<i class=\"on\">★</i>".repeat(n)}${"<i>★</i>".repeat(3 - n)}</span>`;
+async function panelUsuario(u) {
+  ventana(`<h2>👤 ${esc(u)}</h2><p class="ctas">Cargando…</p>`); dlg.classList.add("ancha");
+  const [r, T] = await Promise.all([api("admin?usuario=" + encodeURIComponent(u)).catch(() => ({ok: false})), titulos()]);
+  if (!r.ok) { ventana(`<h2>👤 ${esc(u)}</h2><p class="ctam">No se ha podido cargar.</p><p><button class="btn" type="button" id="ctavol">← Volver</button></p>`); dlg.classList.add("ancha"); $d("#ctavol").onclick = () => panelAdmin("usuarios"); return; }
+  const {resumen: R, lecturas, palabras} = r.j;
+  const L = lecturas.map(l => ({...l, ...(T[l.id] || {tema: "—", titulo: l.id, nivel: "", lengua: "", orden: 9999})})).sort((a, b) => b.terminada - a.terminada || a.orden - b.orden);
+  const fallos = palabras.filter(p => p.fallo).length;
+  ventana(`<p><button class="btn" type="button" id="ctavol">← Usuarios</button></p>
+    <h2>👤 ${esc(R.usuario)}</h2>
+    <div class="ctares">
+      <div><b>${R.terminadas}</b><span>lecturas terminadas</span></div>
+      <div><b>⭐ ${R.estrellas}</b><span>estrellas (de ${R.terminadas * 3})</span></div>
+      <div><b>${R.tres}</b><span>con 3 estrellas</span></div>
+      <div><b>${R.veces}</b><span>veces leídas</span></div>
+      <div><b>${R.empezadas}</b><span>sin terminar</span></div>
+      <div><b>${R.xp}</b><span>XP</span></div>
+      <div><b>${R.racha}</b><span>racha (mejor ${R.mejorRacha})</span></div>
+      <div><b>${R.cromos}</b><span>cromos</span></div>
+      <div><b>${R.medallas}</b><span>medallas</span></div>
+      <div><b>${R.palabras}</b><span>palabras guardadas${fallos ? ` (${fallos} por repasar)` : ""}</span></div>
+    </div>
+    <p class="ctas">Alta: ${fecha(R.creado)} · Último guardado: ${fecha(R.ultimo)}</p>
+    ${L.length ? `<div class="ctatb"><table><thead><tr><th>Lectura</th><th>Tema</th><th>Nivel</th><th>Mejor resultado</th><th>Última vez</th><th>Veces</th><th>Mejor %</th></tr></thead><tbody>${L.map(l => `<tr><td><b>${esc(l.titulo)}</b>${l.lengua === "en" ? ' <small class="ctae">(inglés)</small>' : ""}</td><td>${esc(l.tema)}</td><td>${esc(l.nivel)}</td><td>${l.terminada ? est(l.estrellas) : `<small class="ctae">Empezada (${l.respuestas} ${l.respuestas === 1 ? "respuesta" : "respuestas"})</small>`}</td><td>${l.terminada && l.ultima !== null ? est(l.ultima) : "—"}</td><td>${l.veces || "—"}</td><td>${l.terminada ? l.mejorPct + " %" : "—"}</td></tr>`).join("")}</tbody></table></div>` : `<p class="ctas">Todavía no ha hecho ninguna lectura.</p>`}
+    ${palabras.length ? `<details class="ctapal"><summary>Palabras guardadas (${palabras.length})</summary><p>${palabras.map(p => `<span${p.fallo ? ' class="fallo" title="Por repasar"' : ""}>${esc(p.palabra)}</span>`).join(" ")}</p></details>` : ""}`);
+  dlg.classList.add("ancha");
+  $d("#ctavol").onclick = () => panelAdmin("usuarios");
 }
 
 /* ---------- copia del progreso: sirve para pasar el progreso de la web antigua a la nueva ---------- */

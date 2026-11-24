@@ -38,3 +38,7 @@ Servidor de prueba que imita Vercel y la base de datos: `sh vercel/montar.sh /tm
 - `prueba-cuentas.js <url> [url-sin-servidor]`: invitado con progreso antiguo de BEAR → crear cuenta llevando el progreso → otro dispositivo entra y lo ve → contraseña mala, usuario repetido → copia (exportar/importar) → salir.
 - `prueba-admin.js <url> [clave-admin]`: «Propón un tema» (invitado y con cuenta), nadie puede crear la cuenta admin, panel de admin (propuestas, usuarios, votos, borrar).
 Ambos con `NODE_PATH=/opt/node22/lib/node_modules`.
+
+## Estrellas por lectura y relectura
+`prueba-estrellas.js <url>`: hace BEAR A1 con fallos (1 estrella), «Volver a leer», la repite perfecta (3 estrellas, 2 veces), mira las estrellas bajo las tarjetas, los logros de 3 estrellas (tema, nivel, todo) en #progreso y el curso de inglés. Los datos van en `S.g.rd` (por lectura) y `S.g.ach` (logros, con el idioma delante), así que se guardan en la nube con cuentas.js.
+Nota: `prueba-mascota.js` a veces falla en la línea 35 («Node is detached») por tiempos; al repetirlo pasa.
