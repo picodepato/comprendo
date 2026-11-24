@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lee y aprende</title>
+<title>COMPRENDO</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
@@ -280,10 +280,11 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <script src="avisos.js"></script>
 <link rel="stylesheet" href="mascota/mascota.css">
 <link rel="stylesheet" href="votos/votos.css">
+<link rel="stylesheet" href="diseno.css">
 </head>
 <body>
 <header class="top">
-  <a class="brand" id="brand" href="#inicio">Lee y aprende</a>
+  <a class="brand" id="brand" href="#inicio">COMPRENDO</a>
   <nav class="tabs" id="tabs" aria-label="Menú"></nav>
   <div class="score" id="score" hidden></div>
   <a class="me" id="me" href="#progreso" hidden></a>
@@ -556,7 +557,7 @@ function renderTop() {
   const me = $("me");
   if (me && S && S.g) { const s = streakNow(), n = lvOf(S.g.xp); me.innerHTML = `<span class="fire${s ? "" : " off"}" aria-hidden="true">🔥</span>${s}<span class="lvn"> · ${esc(U("lvl", S.learn, {n}))}</span>`; me.setAttribute("aria-label", `${U("progress", S.learn)}: ${U("streak", S.learn)} ${s}, ${U("lvl", S.learn, {n})}`); me.toggleAttribute("aria-current", false); if (S.view === "prog") me.setAttribute("aria-current", "page"); me.hidden = false; }
 }
-const setAcc = c => document.documentElement.style.setProperty("--acc", c || "#ff4141");
+const setAcc = c => document.documentElement.style.setProperty("--acc", !c || c === "#ff4141" ? "var(--brand)" : c);
 
 /* ---------- home: selector, level, 15 cards ---------- */
 function cardHTML(r, small) {

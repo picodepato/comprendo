@@ -62,3 +62,30 @@ html[data-tema=claro] .reading .w,html[data-tema=caramelo] .reading .w{border-bo
 html[data-tema=claro] .card.lock .badge,html[data-tema=caramelo] .card.lock .badge{background:#fffdf9e6;color:#1f1724}
 html[data-tema=claro] .w:hover,html[data-tema=caramelo] .w:hover{background:rgba(154,91,0,.12)}
 html[data-tema=claro] .tip .add[disabled],html[data-tema=caramelo] .tip .add[disabled]{color:#14583f}
+
+/* ---------- movimiento: respirar en reposo y 3 bailes (diseño COMPRENDO) ---------- */
+.pet-svg .pet-in{transform-origin:100px 214px;animation:pidle 3.2s ease-in-out infinite}
+.pet-svg .pet-arm{transform-origin:134px 152px;animation:parm 3.2s ease-in-out infinite}
+.pet-svg.mini .pet-in,.pet-svg.mini .pet-arm,.pet-svg.ico .pet-in,.pet-svg.ico .pet-arm{animation:none}
+@keyframes pidle{0%,100%{transform:none}50%{transform:translateY(-3px) scale(1.015,.99)}}
+@keyframes parm{0%,100%{transform:none}50%{transform:rotate(-7deg)}}
+.pet-svg.dance1 .pet-b{transform-origin:100px 214px;animation:pd1 2.4s ease-in-out}
+.pet-svg.dance2 .pet-b{transform-origin:100px 214px;animation:pd2 2.4s ease-in-out}
+.pet-svg.dance2 .pet-arm{animation:pwave .4s ease-in-out 6}
+.pet-svg.dance3 .pet-b{transform-origin:100px 120px;animation:pd3 2.4s ease-in-out}
+.pet-svg.dance1 .pet-in,.pet-svg.dance3 .pet-in{animation:none}
+@keyframes pd1{0%,100%{transform:none}8%,36%,64%{transform:scale(1.08,.9)}20%,48%{transform:translateY(-34px) scale(.96,1.05)}78%{transform:translateY(-52px) rotate(-8deg)}90%{transform:scale(1.06,.94)}}
+@keyframes pd2{0%,100%{transform:none}12%{transform:rotate(-12deg) translateX(-8px)}25%{transform:rotate(12deg) translateX(8px)}37%{transform:rotate(-12deg) translateX(-8px)}50%{transform:rotate(12deg) translateX(8px)}62%{transform:rotate(-10deg) translateY(-8px)}75%{transform:rotate(10deg) translateY(-8px)}88%{transform:rotate(-4deg)}}
+@keyframes pwave{0%,100%{transform:none}50%{transform:rotate(-40deg)}}
+@keyframes pd3{0%,100%{transform:none}20%{transform:scaleX(-1)}40%{transform:none}55%{transform:translateY(-30px) rotate(180deg)}70%{transform:translateY(-30px) rotate(360deg)}85%{transform:scale(1.08,.92) rotate(360deg)}}
+.pnotes{position:absolute;inset:60px 0 0;pointer-events:none;display:none}
+.pstage.bailando .pnotes{display:block}
+.pnotes i{position:absolute;bottom:30%;font-style:normal;font-size:28px;color:var(--hi,var(--beam));opacity:0;animation:pnote 1.2s ease-out 2}
+.pnotes i:nth-child(1){left:18%}.pnotes i:nth-child(2){left:72%;animation-delay:.4s}.pnotes i:nth-child(3){left:45%;animation-delay:.8s}
+@keyframes pnote{0%{opacity:0;transform:translateY(0) rotate(-10deg)}20%{opacity:1}100%{opacity:0;transform:translateY(-120px) rotate(15deg)}}
+.pdance{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.pdance b{grid-column:1/-1;text-align:center;font-size:14px;color:var(--mute);font-weight:500}
+.pdance .btn{flex-direction:column;justify-content:center;gap:2px;padding:8px 6px;text-align:center;line-height:1.25;font-size:14px}
+.pdance .btn .em{font-size:24px;line-height:1}
+.pdance .btn:active{transform:scale(.95)}
+@media(prefers-reduced-motion:reduce){.pet-svg .pet-in,.pet-svg .pet-arm,.pnotes i{animation:none!important}}

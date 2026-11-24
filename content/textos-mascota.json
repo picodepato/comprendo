@@ -102,7 +102,11 @@
   "th_lava": "Lava",
   "th_bosque": "Bosque",
   "th_caramelo": "Caramelo",
-  "see_shop": "Ir a la tienda de mi mascota"
+  "see_shop": "Ir a la tienda de mi mascota",
+  "dance_title": "¡A bailar!",
+  "dance_1": "Saltitos",
+  "dance_2": "Meneíto",
+  "dance_3": "Vuelta loca"
  },
  "en": {
   "tab": "My pet",
@@ -207,6 +211,10 @@
   "th_lava": "Lava",
   "th_bosque": "Forest",
   "th_caramelo": "Candy",
-  "see_shop": "Go to my pet's shop"
+  "see_shop": "Go to my pet's shop",
+  "dance_title": "Let's dance!",
+  "dance_1": "Hop hop",
+  "dance_2": "Wiggle",
+  "dance_3": "Crazy spin"
  }
 }
