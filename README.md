@@ -1,4 +1,4 @@
-# Lee y aprende
+# COMPRENDO
 
 Web: https://comprendo-dusky.vercel.app
 
