@@ -25,6 +25,13 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - API: `GET|POST /api/admin` (admin y profes, según quién), `GET|POST /api/avisos` (alumno: su clase, mensajes, deberes, unirse a una clase).
 - Límites: 10 contraseñas mal seguidas por usuario y conexión (15 min); 100 cuentas nuevas por hora y conexión (una clase entera puede registrarse a la vez).
 
+## Canciones de YouTube (canciones/)
+- Pestaña «Canciones»: se pega un enlace de YouTube, el vídeo se ve en la web con la letra, y se para en cada hueco hasta escribir la palabra. 4 niveles. Da XP y estrellas (`S.g.cn`).
+- `GET /api/canciones?v=<vídeo>&lang=es`: el servidor coge los subtítulos de YouTube (los del autor o los automáticos) y los devuelve con sus tiempos. **No se guardan.**
+- Si el vídeo no tiene subtítulos (o YouTube no los da), se puede pegar la letra (texto, LRC o SRT).
+- Profes: «Mandar como deberes» guarda esa canción para su clase (`cancion:<id>`, caduca a los 180 días y se borra al quitar el deber). Es lo único que se guarda.
+- Prueba: `qa/prueba-canciones.js`.
+
 ## Publicar
 1. Importar este repositorio en Vercel (Framework: Other, sin build).
 2. Storage → Upstash (Redis) → conectar al proyecto.

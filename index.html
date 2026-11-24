@@ -280,6 +280,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <script src="avisos.js"></script>
 <link rel="stylesheet" href="mascota/mascota.css">
 <link rel="stylesheet" href="votos/votos.css">
+<link rel="stylesheet" href="canciones/canciones.css">
 </head>
 <body>
 <header class="top">
@@ -548,7 +549,7 @@ function renderProg() {
 function renderTop() {
   const rd = S.view === "read", L = rd ? R : null;
   $("tabs").innerHTML = `<a href="#inicio" ${S.view === "home" ? 'aria-current="page"' : ""}>${TT("home")}</a>
-    <a href="#diccionario" ${S.view === "dict" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}`;
+    <a href="#diccionario" ${S.view === "dict" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}${window.LYACanciones ? `<a href="#canciones" ${S.view === "songs" ? 'aria-current="page"' : ""}>${LYACanciones.tab()}</a>` : ""}`;
   if (rd && L) { const r = scoreOf(L); $("score").innerHTML = `${esc(U("points", S.learn))} <b>${r.pts}</b> / ${r.tot}`; $("score").hidden = false; }
   else if (S && S.view === "dict") { $("score").innerHTML = `${esc(U("to_review", S.learn))} <b>${S.dict.filter(d => d.miss && d.l === S.learn).length}</b>`; $("score").hidden = false; }
   else $("score").hidden = true;
@@ -945,6 +946,7 @@ function render() {
   if (S.view === "games" && window.LYAJuegos) return LYAJuegos.render($("app"));
   if (S.view === "prog") return renderProg();
   if (S.view === "pet" && window.LYAMascota) return LYAMascota.render($("app"));
+  if (S.view === "songs" && window.LYACanciones) return LYACanciones.render($("app"));
   if (S.view === "read" && R) return renderRead();
   return renderHome();
 }
@@ -959,6 +961,7 @@ async function route() {
   else if (window.LYAJuegos?.isGames(h)) S.view = "games";
   else if (h === "progreso") S.view = "prog";
   else if (window.LYAMascota?.isPet(h)) S.view = "pet";
+  else if (window.LYACanciones?.isSongs(h)) S.view = "songs";
   else if (lv) { S.view = "home"; S.level = lv[1].toUpperCase(); }
   else if (rdById(h)?.file) {
     const meta = rdById(h);
@@ -994,5 +997,6 @@ start();
 <script src="juegos/juegos.js"></script>
 <script src="mascota/mascota.js"></script>
 <script src="votos/votos.js"></script>
+<script src="canciones/canciones.js"></script>
 </body>
 </html>

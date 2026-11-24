@@ -176,10 +176,11 @@ VISTAS.deberes = () => `<form id="admdc" class="admform"><label class="admw">Lec
   <label>Para<select name="grupo">${optsGrupo("", esAdmin() ? "Todos los alumnos" : "Todas mis clases")}</select></label><label>Fecha límite<input name="limite" type="date" required value="${hoy()}"></label>
   <label class="admw">Nota (opcional)<input name="nota" maxlength="200" placeholder="Por ejemplo: intenta sacar 3 estrellas"></label><button class="btn main" type="submit">📚 Asignar lectura</button></form>
   ${D.deberes.length ? `<ul class="ctali">${[...D.deberes].sort((a, b) => a.limite.localeCompare(b.limite)).map(d => { const hechos = d.alumnos.filter(a => a.hecho).length, venc = d.limite < hoy();
-    return `<li><p><b>${esc(nombreL(T, d.lectura))}</b></p><small>Para: ${d.grupo ? esc(nGrupo(d.grupo)) : esAdmin() ? "todos" : "todas mis clases"} · Hasta: ${dia(d.limite)}${venc ? " (terminado el plazo)" : ""}${d.nota ? " · " + esc(d.nota) : ""}</small>
+    return `<li><p><b>${d.cancion ? "🎵 " + esc(d.titulo || "Canción") : esc(nombreL(T, d.lectura))}</b></p><small>Para: ${d.grupo ? esc(nGrupo(d.grupo)) : esAdmin() ? "todos" : "todas mis clases"} · Hasta: ${dia(d.limite)}${venc ? " (terminado el plazo)" : ""}${d.nota ? " · " + esc(d.nota) : ""}</small>
     <p style="margin-top:6px">✅ <b>${hechos}</b> de ${d.alumnos.length} la han hecho</p>
     <details class="ctapal"><summary>Ver quién</summary><p>${d.alumnos.map(a => `<span${a.hecho ? "" : ' class="fallo"'}>${a.hecho ? "✓" : "✗"} ${esc(a.usuario)}${a.hecho ? " " + "★".repeat(a.estrellas) : ""}</span>`).join(" ") || "Nadie en esta clase."}</p></details>
-    <button type="button" class="ctal" data-borrad="${esc(d.id)}">Quitar</button></li>`; }).join("")}</ul>` : `<p class="ctas">No hay lecturas asignadas. Los alumnos las verán en la portada con la fecha límite.</p>`}`;
+    <button type="button" class="ctal" data-borrad="${esc(d.id)}">Quitar</button></li>`; }).join("")}</ul>` : `<p class="ctas">No hay lecturas asignadas. Los alumnos las verán en la portada con la fecha límite.</p>`}
+  <p class="ctas">🎵 Para mandar una canción de YouTube, ábrela en la pestaña «Canciones» y pulsa «Mandar como deberes».</p>`;
 ACCIONES.deberes = () => {
   $d("#admdc").onsubmit = async e => { e.preventDefault(); const f = e.target; if (await hacer({accion: "deber_crear", lectura: f.lectura.value, grupo: f.grupo.value, limite: f.limite.value, nota: f.nota.value}, f.querySelector("[type=submit]"))) { await abrir("deberes"); alerta("✓ Lectura asignada."); } };
   $$("[data-borrad]").forEach(b => b.onclick = async () => { if (b.dataset.ok !== "1") { b.dataset.ok = "1"; b.textContent = "¿Seguro? Pulsa otra vez"; return; } if (await hacer({accion: "deber_borrar", id: b.dataset.borrad}, b)) abrir("deberes"); });

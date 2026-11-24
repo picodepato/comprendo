@@ -14,7 +14,8 @@ function resumen(u, d, p, grupo) {
     terminadas: fin.length, empezadas: Object.keys(emp).filter(id => !rd[id]).length, veces: fin.reduce((n, id) => n + (rd[id].n || 0), 0),
     estrellas: fin.reduce((n, id) => n + (rd[id].best || 0), 0), tres: fin.filter(id => rd[id].best === 3).length,
     cromos: Object.keys(g.album || {}).length, medallas: Object.keys(g.medals || {}).length, palabras: (s.dict || []).length,
-    lecturas: Object.fromEntries(fin.map(id => [id, rd[id].best || 0])) };
+    lecturas: Object.fromEntries(fin.map(id => [id, rd[id].best || 0])),
+    canciones: Object.fromEntries(Object.entries(g.cn || {}).map(([k, v]) => [k, (v && v.best) || 0])) };  /* S.g.cn[cancion] = {n, best, bp, last} (canciones de YouTube) */
 }
 const leer = x => { try { return JSON.parse(x || "null") || {}; } catch (e) { return {}; } };
 /* qué ve cada uno: el admin todo; un profe sus clases y los alumnos que están en ellas */
@@ -77,7 +78,11 @@ async function accion(b, yo) {
       D.push({ id: nuevoId(), lectura, grupo: b.grupo && G.grupos[b.grupo] ? b.grupo : null, profe: yo.admin ? null : yo.usuario, limite, nota: String(b.nota || "").slice(0, 200), creado: Date.now() });
       await guardarJSON("admin:deberes", D); return [200, {}];
     }
-    case "deber_borrar": { const D = await leerJSON("admin:deberes", []); await guardarJSON("admin:deberes", D.filter(d => d.id !== b.id || (!yo.admin && d.profe !== yo.usuario))); return [200, {}]; }
+    case "deber_borrar": {
+      const D = await leerJSON("admin:deberes", []), quedan = D.filter(d => d.id !== b.id || (!yo.admin && d.profe !== yo.usuario));
+      for (const d of D) if (!quedan.includes(d) && d.cancion) await redis("DEL", "cancion:" + d.cancion);  /* canción de YouTube: se borra con el deber */
+      await guardarJSON("admin:deberes", quedan); return [200, {}];
+    }
     case "clave": {
       if (!claveValida(b.nueva)) return [400, "clave_corta"];
       const d = leer(await redis("GET", "usuario:" + u)); if (!d.hash) return [404, "no_existe"];
@@ -142,7 +147,7 @@ export default (req, res) => seguro(res, async () => {
   const misGrupos = Object.fromEntries(A.grupos.map(id => [id, { ...G.grupos[id], alumnos: Object.keys(G.miembros).filter(k => G.miembros[k] === id).length }]));
   const deberes = (await leerJSON("admin:deberes", [])).filter(d => yo.admin || d.profe === yo.usuario).map(d => {
     const para = alumnos.filter(x => d.grupo ? x.grupo === d.grupo : !d.profe || (x.grupo && (G.grupos[x.grupo] || {}).profe === d.profe)).map(x => x.usuario);
-    return { ...d, alumnos: para.map(u => ({ usuario: u, hecho: porU[u].lecturas[d.lectura] !== undefined, estrellas: porU[u].lecturas[d.lectura] || 0 })) };
+    return { ...d, alumnos: para.map(u => { const m = d.cancion ? porU[u].canciones : porU[u].lecturas, k = d.cancion || d.lectura; return { usuario: u, hecho: m[k] !== undefined, estrellas: m[k] || 0 }; }) };
   });
   const base = { soy: yo, usuarios, grupos: misGrupos, deberes, fallos: fallos(lista.filter(x => (x.d.rol || "alumno") !== "profe")), enviados: await leerJSON("enviados:" + yo.usuario, []) };
   if (!yo.admin) return responder(res, 200, { ...base, propuestas: [], votos: {}, temasExtra: [] });
