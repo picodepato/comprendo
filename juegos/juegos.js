@@ -75,12 +75,13 @@ const parse = h => {
   const m = h.match(/^juego-(cartas|reloj|ahorcado)(?:--(.+))?$/);
   return m ? {game: m[1], src: m[2] || null} : null;
 };
-const isGames = h => !!parse(h);
+const isGames = h => !!parse(h) || !!window.LYAGram?.is(h ?? location.hash);
 const stopTimer = () => { clearInterval(timer); timer = null; };
 const app = () => document.getElementById("app");
 
 async function render(el) {
   el = el || app();
+  if (window.LYAGram?.is(location.hash)) { ++runN; stopTimer(); G = null; return window.LYAGram.render(el); } /* gramatica/gramatica.js */
   const n = ++runN, r = parse();
   await txP;
   if (!r) return;
@@ -113,12 +114,12 @@ async function renderRoom(el, n) {
   el.innerHTML = `<section class="intro gintro"><div class="in"><h1>${esc(tl("sala_title", S.learn))}</h1>
     ${both() ? `<p class="en">${esc(tl("sala_title", S.know))}</p>` : ""}<p class="lead">${TB("sala_sub")}</p>
     <p class="gnote">${pool.few ? TB("sala_few", {n: pool.have}) : TB("sala_dict", {n: pool.words.length})}</p></div></section>
-    <div class="ggrid">${GAMES.map(g => tile(g, null)).join("")}</div>`;
+    <div class="ggrid">${GAMES.map(g => tile(g, null)).join("")}</div>${window.LYAGram ? window.LYAGram.room() : ""}`;
 }
 function offer(meta) {
   if (!TX || !meta) return "";
   return `<section class="ex goffer"><h2><span>★</span> ${esc(tl("offer_title", st().S.learn))}</h2><p class="en">${TB("offer_sub")}</p>
-    <div class="ggrid small">${GAMES.map(g => tile(g, meta.id)).join("")}</div></section>`;
+    <div class="ggrid small">${GAMES.map(g => tile(g, meta.id)).join("")}${window.LYAGram ? window.LYAGram.offerTiles(meta) : ""}</div></section>`;
 }
 
 /* ---------- setup per game ---------- */

@@ -1,0 +1,69 @@
+/* Juegos de gramática y verbos (gramatica/gramatica.js) */
+.grsec{max-width:1180px;margin:0 auto;padding:8px 0 0}
+.grsec-in{padding:0 max(4vw,16px)}
+.grsec h2{font-family:Bungee,Impact,sans-serif;font-size:clamp(22px,4.6vw,30px);margin:10px 0 2px;color:var(--ink)}
+.grsec .lead{margin:6px 0 0;color:var(--mute)}
+.grlv{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0 4px}
+.grlv span{font-weight:700;color:var(--mute);font-size:14.5px}
+.grlv .btn{min-width:54px;padding:6px 12px}
+.grm .grlv{margin:12px 0 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* conjuga */
+.grconj{text-align:center}
+.grverb{font-family:Bungee,Impact,sans-serif;font-size:clamp(30px,8vw,46px);margin:6px 0 0;color:var(--acc);line-height:1.1}
+.grmean{min-height:1.2em;margin:2px 0 6px}
+.grchips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:8px 0 14px}
+.grchip{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:700;font-size:16px}
+.grchip.t{border-color:var(--acc)}
+.grform{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.grinput{font:inherit;font-size:20px;padding:10px 14px;border-radius:12px;border:2px solid var(--line);background:var(--panel2);color:var(--ink);width:min(100%,320px);text-align:center}
+.grinput:focus{outline:none;border-color:var(--acc)}
+.gracc{display:flex;gap:6px;justify-content:center;margin:10px 0 0}
+.gracc .key{flex:0 0 44px;text-transform:none}
+.grfb{min-height:1.5em;margin:12px 0 4px}
+/* ordena */
+.grline,.grbank{display:flex;flex-wrap:wrap;gap:8px;min-height:58px;padding:10px;border-radius:14px;align-items:center;transition:background .15s,border-color .15s}
+.grline{border:2px dashed var(--line);background:var(--panel2)}
+.grline.ok{border-color:var(--ok);border-style:solid}
+.grbank{border:2px solid transparent}
+.grline.over,.grbank.over{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 12%,var(--panel2))}
+.grph{color:var(--mute);font-size:14.5px}
+.grw{font:inherit;font-size:18px;font-weight:500;padding:9px 13px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;min-height:44px}
+.grw:hover:not([disabled]){border-color:var(--acc)}
+.grw:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.grw.ok{background:rgba(63,214,156,.22);border-color:var(--ok)}
+.grw[disabled]{cursor:default}
+.grw.grgone{opacity:.25}
+.grghost{position:fixed;left:0;top:0;z-index:999;pointer-events:none;box-shadow:0 8px 24px rgba(0,0,0,.35);border-color:var(--acc);cursor:grabbing}
+.grord .row{margin-top:16px}
+/* caza el error */
+.grsent{font-size:clamp(19px,4.6vw,24px);line-height:2.1;margin:4px 0 14px}
+.grtok{font:inherit;padding:2px 7px;border-radius:8px;border:1px solid transparent;background:transparent;color:var(--ink);cursor:pointer;border-bottom:2px dotted var(--line)}
+.grtok:hover:not([disabled]){background:var(--panel2);border-color:var(--line)}
+.grtok:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.grtok[disabled]{cursor:default}
+.grtok.fine{opacity:.5;text-decoration:line-through;text-decoration-color:var(--mute)}
+.grtok.caught{background:rgba(255,90,90,.22);border-color:var(--red);opacity:1;text-decoration:line-through}
+.grtok.fixed{background:rgba(63,214,156,.25);border-color:var(--ok);opacity:1}
+.grhint{margin:12px 0 0;color:var(--mute)}
+.grhintb{margin-top:12px}
+/* pasado / presente / futuro */
+.grarena{position:relative;height:clamp(250px,46vh,460px);border-radius:16px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);overflow:hidden}
+.grfall{position:absolute;left:50%;transform:translateX(-50%);width:min(92%,560px);padding:14px 16px;border-radius:14px;background:var(--beam);color:#1a1208;font-weight:500;font-size:clamp(17px,4.2vw,21px);line-height:1.35;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.grfall.ok{background:rgba(63,214,156,.95);color:#06231a;transition:left .45s,opacity .45s;opacity:.2}
+.grfall.no{background:#ff8a8a;color:#2a0606}
+.grfall.ok.to-past{left:16%}.grfall.ok.to-fut{left:84%}
+.grground{position:absolute;left:0;right:0;bottom:0;height:8px;background:repeating-linear-gradient(90deg,var(--red) 0 14px,transparent 14px 28px);opacity:.6}
+.grbins{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.grbin{font:inherit;font-weight:700;font-size:clamp(16px,4vw,20px);padding:14px 6px;border-radius:14px;border:2px solid var(--line);background:var(--panel2);color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;min-height:64px}
+.grbin small{font-weight:400;font-size:13px;color:var(--mute)}
+.grbin .k{font-size:12px;color:var(--mute);font-weight:400}
+.grbin.b-past{border-color:#6aa8ff}.grbin.b-pres{border-color:var(--ok)}.grbin.b-fut{border-color:#c48bff}
+.grbin:active{transform:scale(.97)}
+.grbin:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+/* memoria */
+.grmem .mf b{font-size:17px}
+.grmem .grsmall{font-size:12px;opacity:.8}
+@media(max-width:560px){.grmem .mf b{font-size:14px}.grmem .grsmall{font-size:10.5px}.grw{font-size:16px;padding:8px 10px}}
+.grrev li div{display:flex;flex-direction:column}
+@media(prefers-reduced-motion:reduce){.grfall.ok{transition:none}}
