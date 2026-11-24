@@ -1,0 +1,496 @@
+{
+ "id": "en-peligrosos-b2",
+ "topic": "peligrosos",
+ "level": "B2",
+ "title": "The deadliest animal on Earth",
+ "short": "The deadliest animal on Earth",
+ "text": [
+  "If you were asked to name the most dangerous animal in the world, you would probably think of a shark, a lion or perhaps a crocodile. These predators certainly have sharp teeth and a frightening reputation, but together they kill only a few hundred people a year. The real champion is far smaller, weighs less than a grain of rice and may well be flying around your bedroom tonight: the mosquito.",
+  "Mosquitoes are not dangerous because of their bite, which is usually nothing more than an itchy red spot. The problem is what they can carry. When a mosquito feeds on the blood of an infected person or animal, tiny parasites or viruses can travel into its body. The next time it bites someone, it may pass them on. In this way, mosquitoes spread diseases such as malaria, dengue and yellow fever, which together cause hundreds of thousands of deaths every year, mainly in tropical countries.",
+  "Surprisingly, only female mosquitoes bite. Males live on the sugar found in flowers and fruit, and so do females most of the time. However, a female needs the protein in blood in order to produce her eggs. To find a victim, she relies on an impressive set of senses. She can detect the carbon dioxide we breathe out from several metres away, and as she gets closer, she follows the heat and the smell of our skin. That is why some people seem to be bitten far more often than others.",
+  "Their bite is also more sophisticated than it looks. A mosquito does not simply stab the skin with a single needle. Its mouth contains six thin parts that work together: some cut through the skin, one searches for a blood vessel and another injects saliva. The saliva stops the blood from clotting and, conveniently for the insect, it also makes the bite almost painless at first. By the time we notice the itch, the mosquito has usually flown away.",
+  "Fighting such a tiny enemy has never been easy. For decades, people have relied on insecticides, mosquito nets and draining the still water where mosquitoes lay their eggs. Nets treated with insecticide have saved millions of lives, especially among young children. However, many mosquitoes have become resistant to the chemicals, so scientists are looking for new solutions.",
+  "Some of these solutions sound like science fiction. In several countries, researchers have released mosquitoes carrying a natural type of bacteria called Wolbachia, which makes it much harder for the insects to pass on certain viruses. Others are developing genetically modified mosquitoes that produce offspring unable to survive. In addition, the first vaccines against malaria have recently been approved, which many experts see as a historic step.",
+  "Not everyone agrees that we should try to get rid of mosquitoes completely, however. They are food for birds, bats, fish and frogs, and some ecologists warn that removing them could have consequences we cannot predict. For now, the battle continues, and it is a reminder that in nature, size is not everything. The most dangerous creature on the planet is not the one with the biggest teeth, but the one we can barely see."
+ ],
+ "q": [
+  [
+   "Why does the writer mention sharks, lions and crocodiles in the first paragraph?",
+   [
+    "to contrast animals that look dangerous with the one that really is",
+    "to explain which animals kill the most people",
+    "to describe the animals that mosquitoes attack",
+    "to show that predators are becoming less dangerous"
+   ],
+   0
+  ],
+  [
+   "According to the second paragraph, mosquitoes are dangerous because",
+   [
+    "they can carry illnesses from one person to another",
+    "they live only in tropical countries",
+    "they attack people mainly at night",
+    "their bite is extremely painful"
+   ],
+   0
+  ],
+  [
+   "What do we learn about female mosquitoes in the third paragraph?",
+   [
+    "They never eat sugar from plants.",
+    "They can see people from several metres away.",
+    "They prefer to bite people who are cold.",
+    "They need blood to be able to produce eggs."
+   ],
+   3
+  ],
+  [
+   "In paragraph 4, the word conveniently suggests that the painless bite",
+   [
+    "makes the itch disappear more quickly",
+    "is useful for doctors who study insects",
+    "is a sign that the mosquito is not dangerous",
+    "helps the mosquito to escape before it is noticed"
+   ],
+   3
+  ],
+  [
+   "Why are scientists looking for new ways to fight mosquitoes?",
+   [
+    "Draining water is too expensive for most countries.",
+    "Mosquito nets have not saved any lives.",
+    "Children refuse to sleep under mosquito nets.",
+    "Many mosquitoes are no longer affected by insecticides."
+   ],
+   3
+  ],
+  [
+   "What is the attitude of some ecologists in the last paragraph?",
+   [
+    "They are not interested in the problem of malaria.",
+    "They think the new vaccines will not work.",
+    "They believe mosquitoes should be removed as soon as possible.",
+    "They are worried about the effects of removing mosquitoes completely."
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer describe how mosquitoes find the people they bite?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   2
+  ],
+  [
+   "In which paragraph does the writer mention a simple method that has protected many young children?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ],
+  [
+   "In which paragraph does the writer explain why we do not feel the bite immediately?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer describe solutions that may seem unbelievable?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   5
+  ]
+ ],
+ "vocab": [
+  [
+   "mosquito",
+   "🦟"
+  ],
+  [
+   "blood",
+   "🩸"
+  ],
+  [
+   "shark",
+   "🦈"
+  ],
+  [
+   "vaccine",
+   "💉"
+  ],
+  [
+   "skin",
+   "✋"
+  ],
+  [
+   "net",
+   "🕸️"
+  ]
+ ],
+ "halves": [
+  [
+   "Only female mosquitoes...",
+   "...bite people."
+  ],
+  [
+   "A female needs blood...",
+   "...in order to produce her eggs."
+  ],
+  [
+   "The saliva makes the bite...",
+   "...almost painless at first."
+  ],
+  [
+   "Many mosquitoes have become resistant...",
+   "...to the chemicals."
+  ],
+  [
+   "In nature,...",
+   "...size is not everything."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "When people travel to tropical countries, they often {{0}} precautions against the sun, but they sometimes forget about mosquitoes. Doctors {{1}} travellers to use insect repellent, especially at sunset, when many mosquitoes are most active. It is also a good idea to wear long sleeves, as mosquitoes find it harder to {{2}} the skin through clothing. In some areas, travellers may need to take medicine to {{3}} malaria before, during and after their trip. These measures may seem annoying, but they can make a huge {{4}}. After all, it is much better to be safe than {{5}}.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Mosquitoes have been on Earth {{6}} more than one hundred million years, which means they lived at the same time {{7}} the dinosaurs. There are about three thousand five hundred species, but only a small number of {{8}} bite humans. Mosquitoes lay their eggs in still water, {{9}} even a bottle cap full of rainwater can become a nursery. The eggs hatch in a {{10}} days, and the young insects live in the water until they are ready to fly. This is why experts advise people to get rid of any water {{11}} collects in their gardens.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "The mosquito is often described as the most {{12}} animal in the world. Its bite may seem {{13}}, but it can carry serious diseases. {{14}}, scientists are making progress. The new vaccines are an important {{15}}, and many experts are {{16}} about the future. However, the {{17}} of mosquitoes to adapt means that the fight is far from over.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "When people travel to tropical countries, they often ___ precautions against the sun, but they sometimes forget about mosquitoes.",
+    [
+     "do",
+     "take",
+     "get",
+     "make"
+    ],
+    1
+   ],
+   [
+    "Doctors ___ travellers to use insect repellent, especially at sunset, when many mosquitoes are most active.",
+    [
+     "advise",
+     "propose",
+     "recommend",
+     "suggest"
+    ],
+    0
+   ],
+   [
+    "It is also a good idea to wear long sleeves, as mosquitoes find it harder to ___ the skin through clothing.",
+    [
+     "arrive",
+     "get",
+     "reach",
+     "achieve"
+    ],
+    2
+   ],
+   [
+    "In some areas, travellers may need to take medicine to ___ malaria before, during and after their trip.",
+    [
+     "prevent",
+     "protect",
+     "defend",
+     "resist"
+    ],
+    0
+   ],
+   [
+    "These measures may seem annoying, but they can make a huge ___.",
+    [
+     "change",
+     "result",
+     "difference",
+     "effect"
+    ],
+    2
+   ],
+   [
+    "After all, it is much better to be safe than ___.",
+    [
+     "regretful",
+     "unhappy",
+     "sad",
+     "sorry"
+    ],
+    3
+   ],
+   [
+    "Mosquitoes have been on Earth ___ more than one hundred million years, which means they lived at the same time … the dinosaurs.",
+    [
+     "for"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Mosquitoes have been on Earth … more than one hundred million years, which means they lived at the same time ___ the dinosaurs.",
+    [
+     "as"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "There are about three thousand five hundred species, but only a small number of ___ bite humans.",
+    [
+     "them"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Mosquitoes lay their eggs in still water, ___ even a bottle cap full of rainwater can become a nursery.",
+    [
+     "so"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "The eggs hatch in a ___ days, and the young insects live in the water until they are ready to fly.",
+    [
+     "few"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "This is why experts advise people to get rid of any water ___ collects in their gardens.",
+    [
+     "that",
+     "which"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "The mosquito is often described as the most ___ animal in the world.",
+    [
+     "dangerous"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DANGER"
+    }
+   ],
+   [
+    "Its bite may seem ___, but it can carry serious diseases.",
+    [
+     "harmless"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "HARM"
+    }
+   ],
+   [
+    "___, scientists are making progress.",
+    [
+     "Fortunately"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "FORTUNATE"
+    }
+   ],
+   [
+    "The new vaccines are an important ___, and many experts are … about the future.",
+    [
+     "achievement"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ACHIEVE"
+    }
+   ],
+   [
+    "The new vaccines are an important …, and many experts are ___ about the future.",
+    [
+     "optimistic"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "OPTIMISM"
+    }
+   ],
+   [
+    "However, the ___ of mosquitoes to adapt means that the fight is far from over.",
+    [
+     "ability"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ABLE"
+    }
+   ],
+   [
+    "Only female mosquitoes bite people. → Mosquitoes that bite people are ___ females.",
+    [
+     "nothing but"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Only female mosquitoes bite people.",
+     "w": "BUT",
+     "p": "Mosquitoes that bite people are ___ females."
+    }
+   ],
+   [
+    "She was bitten so many times that she could not sleep. → She got ___ bites that she could not sleep.",
+    [
+     "such a lot of"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "She was bitten so many times that she could not sleep.",
+     "w": "SUCH",
+     "p": "She got ___ bites that she could not sleep."
+    }
+   ],
+   [
+    "Scientists have recently approved the first malaria vaccines. → The first malaria vaccines ___ by scientists.",
+    [
+     "have recently been approved"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Scientists have recently approved the first malaria vaccines.",
+     "w": "BEEN",
+     "p": "The first malaria vaccines ___ by scientists."
+    }
+   ],
+   [
+    "You should use a mosquito net, or the insects will bite you. → The insects will bite you ___ a mosquito net.",
+    [
+     "unless you use"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "You should use a mosquito net, or the insects will bite you.",
+     "w": "UNLESS",
+     "p": "The insects will bite you ___ a mosquito net."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El animal más mortal de la Tierra",
+   "sub": "Por qué el mosquito es más peligroso que el tiburón",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "mosquito",
+    "sangre",
+    "tiburón",
+    "vacuna",
+    "piel",
+    "red"
+   ]
+  }
+ }
+}

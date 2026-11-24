@@ -1,0 +1,497 @@
+{
+ "id": "en-juegos-b2",
+ "topic": "juegos",
+ "level": "B2",
+ "title": "Are video games good for you?",
+ "short": "Are video games good for you?",
+ "text": [
+  "Few hobbies cause as many arguments at home as video games. For many parents, the sight of a teenager glued to a screen late at night is a source of constant worry. For the teenagers themselves, games are a way to relax, meet friends and enjoy a challenge. So who is right? Over the last twenty years, scientists have carried out hundreds of studies on the subject, and the answer turns out to be more complicated, and more interesting, than either side might expect.",
+  "Some of the most surprising findings concern action games, the fast and noisy kind that adults often criticise the most. Researchers have found that regular players of these games tend to be better at paying attention to several things at once and at noticing small details in a busy scene. In some experiments, people who had never played before showed improvements in their vision after just a few weeks of training with an action game. These games, it seems, can work like a gym for certain parts of the brain.",
+  "Other types of games appear to have different benefits. Strategy and puzzle games may help players to plan ahead and solve problems, while online games that require teamwork can develop communication skills. Many players also describe games as an excellent way to deal with stress. After a difficult day at school, spending an hour building a world or completing a mission can be genuinely relaxing.",
+  "However, scientists are careful not to exaggerate. Most of these benefits are small, and it is not always clear whether games improve skills or whether people who already have those skills are simply attracted to games. In addition, abilities that improve in a game do not always transfer to real life. Being brilliant at a puzzle game does not automatically make someone better at maths.",
+  "There is also a darker side. In 2019, the World Health Organization officially recognised gaming disorder as a medical condition. It describes people who lose control over how much they play and continue even when it seriously damages their studies, sleep or relationships. Experts stress that this affects only a small minority of players, but for those people the consequences can be serious.",
+  "So how much is too much? Many researchers now believe that the amount of time is less important than how gaming fits into the rest of a life. A teenager who plays for two hours but still sleeps well, does homework and sees friends is probably fine. One who plays for the same amount of time instead of sleeping is not. Warning signs include feeling irritable when not playing and losing interest in other activities.",
+  "In the end, video games are neither the miracle that some fans claim nor the disaster that some critics fear. Like books, films or sport, they can be good or bad depending on how they are used. Perhaps the most useful thing families can do is to talk about games, and even play them together, rather than fight about them."
+ ],
+ "q": [
+  [
+   "In the first paragraph, the writer suggests that",
+   [
+    "teenagers do not care about scientific studies",
+    "the debate about video games is not as simple as people think",
+    "scientists have stopped studying video games",
+    "parents are usually right about video games"
+   ],
+   1
+  ],
+  [
+   "What does the writer mean by the phrase work like a gym for certain parts of the brain?",
+   [
+    "Players should exercise after playing.",
+    "Some games can train particular mental skills.",
+    "Games make players physically stronger.",
+    "Action games are as tiring as sport."
+   ],
+   1
+  ],
+  [
+   "According to the third paragraph, teamwork games can help players to",
+   [
+    "communicate better",
+    "plan ahead",
+    "build worlds",
+    "relax after school"
+   ],
+   0
+  ],
+  [
+   "What problem with the research does the writer mention in the fourth paragraph?",
+   [
+    "Most scientists refuse to study puzzle games.",
+    "Games make people worse at maths.",
+    "The studies were carried out on very few people.",
+    "It is not certain whether games cause the skills or attract people who have them."
+   ],
+   3
+  ],
+  [
+   "What does the writer say about gaming disorder?",
+   [
+    "It was invented by parents who dislike games.",
+    "It is a real problem but only for a small number of players.",
+    "It affects most teenagers who play every day.",
+    "It only damages the sleep of players."
+   ],
+   1
+  ],
+  [
+   "What is the main message of the last paragraph?",
+   [
+    "Fans of games are always wrong.",
+    "Games can have good or bad effects depending on how they are used.",
+    "Games are more dangerous than books and films.",
+    "Families should forbid games at home."
+   ],
+   1
+  ],
+  [
+   "In which paragraph does the writer explain that playing a long time is not necessarily a problem?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   5
+  ],
+  [
+   "In which paragraph does the writer mention an official decision by an international organisation?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ],
+  [
+   "In which paragraph does the writer describe games as a way of reducing stress?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   2
+  ],
+  [
+   "In which paragraph does the writer mention an improvement in the way people see?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "screen",
+   "🖥️"
+  ],
+  [
+   "puzzle",
+   "🧩"
+  ],
+  [
+   "gym",
+   "🏋️"
+  ],
+  [
+   "sleep",
+   "😴"
+  ],
+  [
+   "brain",
+   "🧠"
+  ],
+  [
+   "family",
+   "👨‍👩‍👧"
+  ]
+ ],
+ "halves": [
+  [
+   "Regular players of action games...",
+   "...notice small details more easily."
+  ],
+  [
+   "Online games that require teamwork...",
+   "...can develop communication skills."
+  ],
+  [
+   "Skills that improve in a game...",
+   "...do not always transfer to real life."
+  ],
+  [
+   "Gaming disorder affects...",
+   "...only a small minority of players."
+  ],
+  [
+   "Families should talk about games...",
+   "...rather than fight about them."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Esports, or competitive video gaming, has {{0}} enormously in recent years. Professional players {{1}} several hours a day training, just like traditional athletes. The biggest tournaments {{2}} millions of viewers online, and the prize money can be {{3}}. Nevertheless, many people still do not {{4}} gaming as a real sport. For them, a real sport must {{5}} physical effort, not just quick fingers.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Many parents worry that their children spend too much time playing video games. {{6}}, banning games completely is rarely a good solution. Experts suggest that families should agree {{7}} clear rules together. For example, a teenager might be allowed to play {{8}} long as homework is finished first. It is also important to know {{9}} kind of games children are playing and who they are talking to online. {{10}} parents show an interest, children are more likely to listen to their advice. After all, nobody likes rules {{11}} seem unfair.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "Some games are designed to be {{12}}, with rewards that keep players coming back. However, most players enjoy games in a {{13}} way. Scientists have found that games can improve {{14}} and problem solving. The key is to keep a good {{15}} between gaming and other activities. Doctors say that {{16}} nights are one of the clearest signs of a problem. With a little {{17}}, gaming can be a positive part of life.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Esports, or competitive video gaming, has ___ enormously in recent years.",
+    [
+     "lifted",
+     "raised",
+     "built",
+     "grown"
+    ],
+    3
+   ],
+   [
+    "Professional players ___ several hours a day training, just like traditional athletes.",
+    [
+     "use",
+     "spend",
+     "take",
+     "pass"
+    ],
+    1
+   ],
+   [
+    "The biggest tournaments ___ millions of viewers online, and the prize money can be ….",
+    [
+     "attract",
+     "pull",
+     "bring",
+     "catch"
+    ],
+    0
+   ],
+   [
+    "The biggest tournaments … millions of viewers online, and the prize money can be ___.",
+    [
+     "wide",
+     "huge",
+     "tall",
+     "deep"
+    ],
+    1
+   ],
+   [
+    "Nevertheless, many people still do not ___ gaming as a real sport.",
+    [
+     "think",
+     "see",
+     "feel",
+     "believe"
+    ],
+    1
+   ],
+   [
+    "For them, a real sport must ___ physical effort, not just quick fingers.",
+    [
+     "consist",
+     "result",
+     "insist",
+     "involve"
+    ],
+    3
+   ],
+   [
+    "___, banning games completely is rarely a good solution.",
+    [
+     "However"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Experts suggest that families should agree ___ clear rules together.",
+    [
+     "on"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "For example, a teenager might be allowed to play ___ long as homework is finished first.",
+    [
+     "as"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "It is also important to know ___ kind of games children are playing and who they are talking to online.",
+    [
+     "what"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ parents show an interest, children are more likely to listen to their advice.",
+    [
+     "If"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "After all, nobody likes rules ___ seem unfair.",
+    [
+     "that",
+     "which"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Some games are designed to be ___, with rewards that keep players coming back.",
+    [
+     "addictive"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ADDICT"
+    }
+   ],
+   [
+    "However, most players enjoy games in a ___ way.",
+    [
+     "healthy"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "HEALTH"
+    }
+   ],
+   [
+    "Scientists have found that games can improve ___ and problem solving.",
+    [
+     "concentration"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CONCENTRATE"
+    }
+   ],
+   [
+    "The key is to keep a good ___ between gaming and other activities.",
+    [
+     "balance"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "BALANCE"
+    }
+   ],
+   [
+    "Doctors say that ___ nights are one of the clearest signs of a problem.",
+    [
+     "sleepless"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SLEEP"
+    }
+   ],
+   [
+    "With a little ___, gaming can be a positive part of life.",
+    [
+     "responsibility"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "RESPONSIBLE"
+    }
+   ],
+   [
+    "My parents do not let me play after ten at night. → I am ___ after ten at night.",
+    [
+     "not allowed to play"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "My parents do not let me play after ten at night.",
+     "w": "ALLOWED",
+     "p": "I am ___ after ten at night."
+    }
+   ],
+   [
+    "It is not a good idea to play games instead of sleeping. → You ___ games instead of sleeping.",
+    [
+     "had better not play"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "It is not a good idea to play games instead of sleeping.",
+     "w": "BETTER",
+     "p": "You ___ games instead of sleeping."
+    }
+   ],
+   [
+    "He started playing video games when he was six. → He ___ video games since he was six.",
+    [
+     "has been playing",
+     "has played"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "He started playing video games when he was six.",
+     "w": "SINCE",
+     "p": "He ___ video games since he was six."
+    }
+   ],
+   [
+    "Playing for hours is not as important as how you play. → How you play is ___ playing for hours.",
+    [
+     "more important than"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Playing for hours is not as important as how you play.",
+     "w": "MORE",
+     "p": "How you play is ___ playing for hours."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Son buenos los videojuegos?",
+   "sub": "Lo que dice la ciencia sobre jugar",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "pantalla",
+    "rompecabezas",
+    "gimnasio",
+    "dormir",
+    "cerebro",
+    "familia"
+   ]
+  }
+ }
+}

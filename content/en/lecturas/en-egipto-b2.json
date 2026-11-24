@@ -1,0 +1,496 @@
+{
+ "id": "en-egipto-b2",
+ "topic": "egipto",
+ "level": "B2",
+ "title": "Cracking the code of the pharaohs",
+ "short": "Cracking the code of the pharaohs",
+ "text": [
+  "For more than a thousand years, nobody in the world could read Egyptian hieroglyphs. Travellers who visited the pyramids and temples saw walls covered in beautiful pictures of birds, eyes, snakes and feet, but they had no idea what they meant. Many scholars believed that each symbol represented an idea rather than a sound, and that the writing contained secret religious wisdom. As it turned out, they were mostly wrong, and the key to the mystery was a broken piece of grey stone.",
+  "In 1799, French soldiers who had arrived in Egypt with Napoleon were rebuilding an old fort near the town of Rashid, known in Europe as Rosetta, when they found a large slab covered in writing. They quickly realised it was important. The stone contained the same text written three times: in hieroglyphs, in a later Egyptian script called Demotic, and in ancient Greek. Since scholars could still read Greek, the stone offered a unique opportunity to compare the three versions.",
+  "However, the stone did not stay in French hands for long. After the British defeated the French army in Egypt, it was taken to London, where it has been displayed in the British Museum since 1802. Copies of the inscriptions were sent to experts all over Europe, and a race began to be the first to decipher them.",
+  "One of the leading competitors was Thomas Young, a brilliant English scientist who had already made important discoveries about light. Young made real progress. He showed that some of the hieroglyphs inside oval shapes, known as cartouches, spelled out the names of kings and queens, and he correctly identified several signs. But he remained convinced that most hieroglyphs were symbols for ideas, and he could not go further.",
+  "The breakthrough came from a young Frenchman, Jean-François Champollion. He had been fascinated by Egypt since childhood and had learnt an impressive number of languages, including Coptic, a late form of Egyptian still used in church services. This knowledge proved essential. By comparing the names in the cartouches with other inscriptions, Champollion realised that hieroglyphs were a mixture of signs that represented sounds and signs that represented ideas. According to a famous story, when he finally understood the system in 1822, he ran to his brother shouting that he had done it, and then fainted from excitement.",
+  "His discovery opened the door to an entire civilisation. For the first time in centuries, people could read the words of the ancient Egyptians themselves: their prayers, their poems, their letters and even their complaints. History was no longer only what Greek and Roman writers had said about Egypt.",
+  "Today, the Rosetta Stone is one of the most visited objects in the British Museum, and its name has become a symbol of anything that helps to unlock a difficult problem. Egypt has asked for it to be returned on several occasions, and the debate about where it belongs continues."
+ ],
+ "q": [
+  [
+   "What did many scholars believe about hieroglyphs before they were deciphered?",
+   [
+    "They were impossible to understand.",
+    "They were a form of ancient Greek.",
+    "Each symbol stood for an idea, not a sound.",
+    "They had no meaning at all."
+   ],
+   2
+  ],
+  [
+   "Why was the Rosetta Stone so useful?",
+   [
+    "It had the same text in a language that experts could still read.",
+    "It was the largest stone ever found in Egypt.",
+    "It was written only in hieroglyphs.",
+    "It explained the meaning of every hieroglyph."
+   ],
+   0
+  ],
+  [
+   "What happened to the stone after it was found?",
+   [
+    "It was broken into three pieces.",
+    "It ended up in London after a military defeat.",
+    "It was returned to Egypt in 1802.",
+    "It remained in France for many years."
+   ],
+   1
+  ],
+  [
+   "What was the main limitation of the work of Thomas Young?",
+   [
+    "He did not accept that most signs could represent sounds.",
+    "He did not know anything about light.",
+    "He never saw a copy of the inscriptions.",
+    "He refused to study the cartouches."
+   ],
+   0
+  ],
+  [
+   "Why was the knowledge of Coptic important for Champollion?",
+   [
+    "It was the language used on the stone.",
+    "It allowed him to read Greek more easily.",
+    "It helped him connect the signs with sounds of the Egyptian language.",
+    "It was the language spoken by his brother."
+   ],
+   2
+  ],
+  [
+   "What does the writer say about the result of the discovery?",
+   [
+    "The British Museum became the most visited museum in the world.",
+    "Greek and Roman writers became more popular.",
+    "People could finally learn about Egypt from the Egyptians themselves.",
+    "Egyptian religion was finally understood as a secret."
+   ],
+   2
+  ],
+  [
+   "In which paragraph does the writer mention a disagreement that has not been settled?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   6
+  ],
+  [
+   "In which paragraph does the writer describe a strong emotional reaction?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ],
+  [
+   "In which paragraph does the writer explain how the stone was discovered?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ],
+  [
+   "In which paragraph does the writer describe a scientist who was famous for work in another field?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "stone",
+   "🪨"
+  ],
+  [
+   "pyramid",
+   "🔺"
+  ],
+  [
+   "snake",
+   "🐍"
+  ],
+  [
+   "eye",
+   "👁️"
+  ],
+  [
+   "museum",
+   "🏛️"
+  ],
+  [
+   "soldier",
+   "💂"
+  ]
+ ],
+ "halves": [
+  [
+   "The stone contained...",
+   "...the same text written three times."
+  ],
+  [
+   "It has been displayed...",
+   "...in the British Museum since 1802."
+  ],
+  [
+   "Some hieroglyphs spelled out...",
+   "...the names of kings and queens."
+  ],
+  [
+   "Champollion had been fascinated by Egypt...",
+   "...since childhood."
+  ],
+  [
+   "His discovery opened the door...",
+   "...to an entire civilisation."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Learning to read hieroglyphs was a long and difficult {{0}}. Even after Champollion had understood the basic system, it {{1}} many more years of work to translate complicated texts. Scholars had to {{2}} out the meaning of hundreds of different signs, some of which could be read in several ways. Gradually, however, dictionaries and grammar books were published, and the subject became an academic {{3}} in its own right. Today, students at many universities can {{4}} courses in ancient Egyptian. Some of them even {{5}} on to work on excavations in Egypt.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Ancient Egyptian scribes spent years learning to write. Only a small part of the population could read, {{6}} scribes were highly respected. They wrote on papyrus, a kind of paper made {{7}} a plant that grew along the River Nile. Hieroglyphs could be written from left to right, from right to left, or even from top to bottom. To know which way to read {{8}}, you had to look at the animals and people in the text: they always faced the beginning of the line. Hieroglyphs were used mainly for important inscriptions on temples and tombs, {{9}} simpler scripts were used for everyday documents {{10}} as letters and receipts. It was a system that lasted {{11}} more than three thousand years.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "The {{12}} of the Rosetta Stone was a turning point in history. Its three {{13}} allowed scholars to compare the languages. Champollion worked with great {{14}} for many years. His success made him {{15}} across Europe. Today, the stone is one of the most {{16}} objects in the British Museum, and Egypt considers getting it back a matter of {{17}} pride.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Learning to read hieroglyphs was a long and difficult ___.",
+    [
+     "process",
+     "progress",
+     "procedure",
+     "proceeding"
+    ],
+    0
+   ],
+   [
+    "Even after Champollion had understood the basic system, it ___ many more years of work to translate complicated texts.",
+    [
+     "spent",
+     "passed",
+     "took",
+     "lasted"
+    ],
+    2
+   ],
+   [
+    "Scholars had to ___ out the meaning of hundreds of different signs, some of which could be read in several ways.",
+    [
+     "figure",
+     "bring",
+     "make",
+     "turn"
+    ],
+    0
+   ],
+   [
+    "Gradually, however, dictionaries and grammar books were published, and the subject became an academic ___ in its own right.",
+    [
+     "topic",
+     "discipline",
+     "material",
+     "matter"
+    ],
+    1
+   ],
+   [
+    "Today, students at many universities can ___ courses in ancient Egyptian.",
+    [
+     "give",
+     "make",
+     "take",
+     "put"
+    ],
+    2
+   ],
+   [
+    "Some of them even ___ on to work on excavations in Egypt.",
+    [
+     "get",
+     "turn",
+     "come",
+     "go"
+    ],
+    3
+   ],
+   [
+    "Only a small part of the population could read, ___ scribes were highly respected.",
+    [
+     "so"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "They wrote on papyrus, a kind of paper made ___ a plant that grew along the River Nile.",
+    [
+     "from"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "To know which way to read ___, you had to look at the animals and people in the text: they always faced the beginning of the line.",
+    [
+     "them"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Hieroglyphs were used mainly for important inscriptions on temples and tombs, ___ simpler scripts were used for everyday documents … as letters and receipts.",
+    [
+     "while",
+     "whereas"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Hieroglyphs were used mainly for important inscriptions on temples and tombs, … simpler scripts were used for everyday documents ___ as letters and receipts.",
+    [
+     "such"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "It was a system that lasted ___ more than three thousand years.",
+    [
+     "for"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "The ___ of the Rosetta Stone was a turning point in history.",
+    [
+     "discovery"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DISCOVER"
+    }
+   ],
+   [
+    "Its three ___ allowed scholars to compare the languages.",
+    [
+     "inscriptions"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INSCRIBE"
+    }
+   ],
+   [
+    "Champollion worked with great ___ for many years.",
+    [
+     "determination"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DETERMINE"
+    }
+   ],
+   [
+    "His success made him ___ across Europe.",
+    [
+     "famous"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "FAME"
+    }
+   ],
+   [
+    "Today, the stone is one of the most ___ objects in the British Museum, and Egypt considers getting it back a matter of … pride.",
+    [
+     "valuable"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "VALUE"
+    }
+   ],
+   [
+    "Today, the stone is one of the most … objects in the British Museum, and Egypt considers getting it back a matter of ___ pride.",
+    [
+     "national"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "NATION"
+    }
+   ],
+   [
+    "Champollion was the first person to decipher the hieroglyphs. → ___ deciphered the hieroglyphs before Champollion.",
+    [
+     "Nobody had"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Champollion was the first person to decipher the hieroglyphs.",
+     "w": "NOBODY",
+     "p": "___ deciphered the hieroglyphs before Champollion."
+    }
+   ],
+   [
+    "French soldiers found the stone in 1799. → The stone ___ French soldiers in 1799.",
+    [
+     "was found by"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "French soldiers found the stone in 1799.",
+     "w": "WAS",
+     "p": "The stone ___ French soldiers in 1799."
+    }
+   ],
+   [
+    "Young could not go further because he did not accept the idea. → Young could have gone further ___ accepted the idea.",
+    [
+     "if he had"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Young could not go further because he did not accept the idea.",
+     "w": "IF",
+     "p": "Young could have gone further ___ accepted the idea."
+    }
+   ],
+   [
+    "Many people visit the stone every year. → The stone ___ many people every year.",
+    [
+     "is visited by"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Many people visit the stone every year.",
+     "w": "VISITED",
+     "p": "The stone ___ many people every year."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Descifrando el código de los faraones",
+   "sub": "La piedra de Rosetta y los jeroglíficos",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "piedra",
+    "pirámide",
+    "serpiente",
+    "ojo",
+    "museo",
+    "soldado"
+   ]
+  }
+ }
+}
