@@ -39,7 +39,7 @@ async function preparar(p, g) {
   if (r && r.ok) {
     servidor = true; if (r.j.rol && C.rol !== r.j.rol) { C.rol = r.j.rol; escribir(C); }
     if (r.j.s && !(C.pend && pr)) { if (pr) pr.s = r.j.s; else P.list.push(pr = {id, name: C.usuario, s: r.j.s}); }
-    else if (!pr) P.list.push(pr = {id, name: C.usuario, s: copiaLocal()});
+    else if (!pr) P.list.push(pr = {id, name: C.usuario, s: copiaLocal() || nuevo()});
     if (C.pend || !r.j.s) setTimeout(subir, 500);
   } else if (!pr) { /* sin conexión y sin copia: invitado por ahora */ P.cur = "local"; guardarP(); estado = "offline"; return; }
   else estado = "offline";
