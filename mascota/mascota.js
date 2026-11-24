@@ -12,8 +12,8 @@ const SLOTS = ["cabeza", "ojos", "cuello", "mano", "fondo", "temas"];
 
 /* ---------- colours of the website (free: oscuro, claro) ---------- */
 const THEMES = [
-  ["oscuro", 0, ["#120e16", "#272030", "#ff4141"]],
-  ["claro", 0, ["#f7f2ea", "#efe7dc", "#ff4141"]],
+  ["oscuro", 0, ["#120e16", "#272030", "#ffb238"]],
+  ["claro", 0, ["#f7f2ea", "#efe7dc", "#e8590c"]],
   ["neon", 250, ["#0a0b1e", "#1e2147", "#ff4fd8"]],
   ["oceano", 250, ["#06161f", "#123342", "#38d2e0"]],
   ["lava", 250, ["#1a0a06", "#3a1a10", "#ff7a1a"]],
@@ -115,7 +115,7 @@ function petSVG(kind, wear, o = {}) {
   const part = (slot, side) => { const it = ITEM[wear?.[slot]]; if (!it) return ""; const v = it[3]; return typeof v === "string" ? (side === "front" ? v : "") : (v[side] || ""); };
   const hold = wear?.mano && ITEM[wear.mano];
   return `<svg class="pet-svg${o.cls ? " " + o.cls : ""}" viewBox="0 -24 200 244" aria-hidden="true" focusable="false">
-    ${part("fondo", "front")}<g class="pet-b">${part("cuello", "back")}${dr.back || ""}${dr.body}${part("ojos", "front")}${part("cuello", "front")}${part("cabeza", "front")}${hold ? part("mano", "front") : ""}${dr.arm}</g></svg>`;
+    ${part("fondo", "front")}<g class="pet-b"><g class="pet-in">${part("cuello", "back")}${dr.back || ""}${dr.body}${part("ojos", "front")}${part("cuello", "front")}${part("cabeza", "front")}<g class="pet-arm">${hold ? part("mano", "front") : ""}${dr.arm}</g></g></g></svg>`;
 }
 
 /* ---------- texts ---------- */
@@ -180,7 +180,8 @@ function render(el) {
   el.innerHTML = `<div class="wrap wide pet-page">
     <h1>${esc(tl("title", S.learn))}</h1>${both() ? `<p class="en">${esc(tl("title", S.know))}</p>` : ""}
     <div class="pmain">
-      <div class="pstage"><p class="bubble" aria-live="polite">${esc(bubble)}</p>${petSVG(p.kind, view, {cls: "big" + (msg ? " jump" : ""), happy: !!msg})}</div>
+      <div class="pstage"><p class="bubble" aria-live="polite">${esc(bubble)}</p>${petSVG(p.kind, view, {cls: "big" + (msg ? " jump" : ""), happy: !!msg})}<span class="pnotes" aria-hidden="true"><i>♪</i><i>♫</i><i>♪</i></span>
+        <div class="pdance" role="group" aria-label="${esc(tl("dance_title", S.learn))}"><b>${T("dance_title")}</b>${[1, 2, 3].map(n => `<button class="btn" type="button" data-pet="dance" data-d="${n}"><span class="em" aria-hidden="true">${["🦘", "💃", "🌀"][n - 1]}</span><span>${T("dance_" + n)}</span></button>`).join("")}</div></div>
       <div class="pside">
         <label class="pname"><span>${T("name_label")}</span><input id="petName" type="text" maxlength="16" autocomplete="off" value="${esc(p.name)}" placeholder="${esc(tl("dn_" + p.kind, S.learn))}"></label>
         <div class="box ppts"><span>${T("pts")}</span><b>${pts()}</b><p class="small">${T("how_pts")}</p></div>
@@ -193,9 +194,19 @@ function render(el) {
       ${sel ? `<div class="pbar">${ITEM[sel] ? petSVG(p.kind, view, {cls: "small"}) : ""}<div class="pact">${actionBox()}</div></div>` : ""}</section></div>`;
 }
 const rerender = () => { const el = document.getElementById("app"); if (st().S.view === "pet" && el) render(el); };
+/* dances: the pet does a short move and goes back to its idle motion */
+function dance(n) {
+  const stage = document.querySelector(".pstage"), svg = stage && stage.querySelector(".pet-svg");
+  if (!svg) return;
+  svg.classList.remove("jump", "dance1", "dance2", "dance3"); void svg.getBoundingClientRect();
+  svg.classList.add("dance" + n); stage.classList.add("bailando");
+  const end = () => { svg.classList.remove("dance" + n); stage.classList.remove("bailando"); };
+  clearTimeout(dance.t); dance.t = setTimeout(end, 2500);
+}
 function act(a, b) {
   const {S} = st(), p = pet();
   if (a === "kind") { p.kind = b.dataset.k; choosing = false; msg = tl("hello_new", S.learn, {name: nameOf(p, S.learn)}); save(); rerender(); setTimeout(() => { msg = null; rerender(); }, 2600); return; }
+  if (a === "dance") { dance(b.dataset.d); return; }
   if (a === "change") { choosing = true; return rerender(); }
   if (a === "back") { choosing = false; return rerender(); }
   if (a === "tab") { tab = b.dataset.s; sel = null; return rerender(); }

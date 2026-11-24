@@ -1,0 +1,207 @@
+{
+ "id": "ca-records-a2",
+ "topic": "records",
+ "level": "A2",
+ "title": "Rècords d'animals",
+ "short": "Rècords d'animals",
+ "text": [
+  "Els animals també tenen rècords, i alguns són molt sorprenents. Els científics els estudien molt, perquè ens ensenyen coses importants sobre la natura.",
+  "L'animal més gran del planeta és la balena blava. Pot fer trenta metres i pesar més que vint elefants junts. El seu cor és [tan gran com] un cotxe petit! Tot i que és enorme, menja animals molt petits: el krill.",
+  "L'animal més ràpid a terra és el guepard, que corre a més de cent quilòmetres per hora. Però a l'aire hi ha un altre campió: el falcó pelegrí. Quan baixa [en picat] per caçar, supera els tres-cents quilòmetres per hora.",
+  "I l'animal que viu més anys? És el tauró de Groenlàndia. Neda molt a poc a poc en aigües molt fredes i pot viure més de dos-cents cinquanta anys. Alguns dels que neden avui van néixer fa més de dos segles!",
+  "Guinness també té rècords de mascotes. La gata més vella va ser [Creme Puff], dels [Estats Units]: va viure trenta-vuit anys. Normalment, un gat viu uns quinze anys, així que [Creme Puff] va viure molt més [del normal]."
+ ],
+ "q": [
+  [
+   "Quin és l'animal més gran del planeta?",
+   [
+    "L'elefant",
+    "La balena blava",
+    "El tauró"
+   ],
+   1
+  ],
+  [
+   "Què menja la balena blava?",
+   [
+    "Krill",
+    "Elefants",
+    "Taurons"
+   ],
+   0
+  ],
+  [
+   "A quina velocitat corre el guepard?",
+   [
+    "A més de cent quilòmetres per hora",
+    "A deu quilòmetres per hora",
+    "A mil quilòmetres per hora"
+   ],
+   0
+  ],
+  [
+   "Quan supera el falcó els tres-cents quilòmetres per hora?",
+   [
+    "Quan dorm",
+    "Quan baixa [en picat] per caçar",
+    "Quan neda"
+   ],
+   1
+  ],
+  [
+   "Quants anys pot viure el tauró de Groenlàndia?",
+   [
+    "Quinze",
+    "Trenta-vuit",
+    "Més de dos-cents cinquanta"
+   ],
+   2
+  ],
+  [
+   "Quants anys va viure [Creme Puff]?",
+   [
+    "Quinze",
+    "Trenta-vuit",
+    "Cent"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "balena",
+   "🐋"
+  ],
+  [
+   "elefant",
+   "🐘"
+  ],
+  [
+   "guepard",
+   "🐆"
+  ],
+  [
+   "falcó",
+   "🦅"
+  ],
+  [
+   "tauró",
+   "🦈"
+  ],
+  [
+   "gat",
+   "🐈"
+  ]
+ ],
+ "halves": [
+  [
+   "La balena blava és...",
+   "...l'animal més gran del planeta."
+  ],
+  [
+   "El seu cor és [tan gran com]...",
+   "...un cotxe petit."
+  ],
+  [
+   "El guepard corre a més de...",
+   "...cent quilòmetres per hora."
+  ],
+  [
+   "El tauró de Groenlàndia neda...",
+   "...molt a poc a poc."
+  ],
+  [
+   "[Creme Puff] va viure...",
+   "...trenta-vuit anys."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: tan ... com i tant ... com",
+  "rule": "Davant d'un adjectiu: <b>tan</b> gran <b>com</b>. Davant d'un nom, <b>tant</b> canvia: <b>tant</b> menjar, <b>tanta</b> força, <b>tants</b> anys, <b>tantes</b> dents.",
+  "rows": [
+   "tan gran com un cotxe",
+   "tan ràpid com un cotxe",
+   "tant menjar com",
+   "tanta força com",
+   "tants anys com",
+   "tantes dents com"
+  ],
+  "items": [
+   [
+    "El seu cor és ___ gran com un cotxe.",
+    [
+     "tan",
+     "tant",
+     "tanta"
+    ],
+    0
+   ],
+   [
+    "Cap gat no viu ___ anys com Creme Puff.",
+    [
+     "tan",
+     "tants",
+     "tantes"
+    ],
+    1
+   ],
+   [
+    "El guepard és ___ ràpid com un cotxe.",
+    [
+     "tant",
+     "tanta",
+     "tan"
+    ],
+    2
+   ],
+   [
+    "La balena menja ___ krill!",
+    [
+     "tant",
+     "tanta",
+     "tants"
+    ],
+    0
+   ],
+   [
+    "No té ___ força com l'elefant.",
+    [
+     "tant",
+     "tanta",
+     "tantes"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Récords de animales",
+   "sub": "El más grande, el más rápido y el más viejo",
+   "grammar": "Gramática: tan ... como y tanto ... como. Tan + adjetivo (tan grande como). Tant cambia delante de un nombre: tant, tanta, tants, tantes (tanto, tanta, tantos, tantas).",
+   "rows": [
+    "tan grande como un coche",
+    "tan rápido como un coche",
+    "tanta comida como",
+    "tanta fuerza como",
+    "tantos años como",
+    "tantos dientes como"
+   ],
+   "hints": [
+    "tan",
+    "tantos",
+    "tan",
+    "tanto",
+    "tanta"
+   ],
+   "vocab": [
+    "ballena",
+    "elefante",
+    "guepardo",
+    "halcón",
+    "tiburón",
+    "gato"
+   ]
+  }
+ }
+}

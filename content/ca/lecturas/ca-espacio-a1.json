@@ -1,0 +1,207 @@
+{
+ "id": "ca-espacio-a1",
+ "topic": "espacio",
+ "level": "A1",
+ "title": "Els planetes",
+ "short": "Els planetes",
+ "text": [
+  "El nostre planeta [es diu] Terra. La Terra gira al voltant del Sol. El Sol és una estrella. Al [sistema solar] hi ha vuit planetes.",
+  "Mercuri és el planeta més petit i és molt a prop del Sol. Venus és el planeta més calent: hi ha més de quatre-cents graus! La Terra és el tercer planeta. És l'únic planeta amb aigua líquida i amb vida.",
+  "Mart és el planeta vermell. És fred i té muntanyes molt altes. Júpiter és el planeta més gran: a dins de Júpiter hi caben més de mil Terres! Té una gran taca vermella. És una tempesta enorme.",
+  "Saturn és famós pels seus anells. Els anells són de gel i de pedres. Urà i Neptú són molt lluny del Sol. Són blaus i molt, molt freds. A Neptú hi ha vents molt forts.",
+  "I Plutó? Abans era el planeta número nou. Però és molt petit, i des del 2006 és un [planeta nan]."
+ ],
+ "q": [
+  [
+   "Quants planetes hi ha al [sistema solar]?",
+   [
+    "Set",
+    "Vuit",
+    "Nou"
+   ],
+   1
+  ],
+  [
+   "Què és el Sol?",
+   [
+    "Un planeta",
+    "Una estrella",
+    "Una lluna"
+   ],
+   1
+  ],
+  [
+   "Quin és el planeta més calent?",
+   [
+    "Mercuri",
+    "Venus",
+    "Mart"
+   ],
+   1
+  ],
+  [
+   "Quin planeta té aigua líquida i vida?",
+   [
+    "La Terra",
+    "Júpiter",
+    "Neptú"
+   ],
+   0
+  ],
+  [
+   "Quin és el planeta més gran?",
+   [
+    "Saturn",
+    "Urà",
+    "Júpiter"
+   ],
+   2
+  ],
+  [
+   "Què és Plutó des del 2006?",
+   [
+    "Una estrella",
+    "Un [planeta nan]",
+    "El planeta més gran"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "sol",
+   "☀️"
+  ],
+  [
+   "estrella",
+   "⭐"
+  ],
+  [
+   "planeta",
+   "🪐"
+  ],
+  [
+   "lluna",
+   "🌙"
+  ],
+  [
+   "coet",
+   "🚀"
+  ],
+  [
+   "terra",
+   "🌍"
+  ]
+ ],
+ "halves": [
+  [
+   "La Terra gira...",
+   "...al voltant del Sol."
+  ],
+  [
+   "Mercuri és...",
+   "...el planeta més petit."
+  ],
+  [
+   "Mart és...",
+   "...el planeta vermell."
+  ],
+  [
+   "Saturn és famós...",
+   "...pels seus anells."
+  ],
+  [
+   "Urà i Neptú són...",
+   "...blaus i molt freds."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: hi ha i és",
+  "rule": "Per dir que una cosa existeix fem servir <b>hi ha</b>. Per dir on és una cosa concreta fem servir <b>és</b> o <b>són</b>.",
+  "rows": [
+   "hi ha vuit planetes",
+   "hi ha vents",
+   "Mercuri és a prop del Sol",
+   "Urà i Neptú són lluny",
+   "no hi ha aigua",
+   "on és Mart?"
+  ],
+  "items": [
+   [
+    "Al sistema solar ___ vuit planetes.",
+    [
+     "hi ha",
+     "és",
+     "són"
+    ],
+    0
+   ],
+   [
+    "Mercuri ___ molt a prop del Sol.",
+    [
+     "hi ha",
+     "és",
+     "són"
+    ],
+    1
+   ],
+   [
+    "A Neptú ___ vents molt forts.",
+    [
+     "són",
+     "és",
+     "hi ha"
+    ],
+    2
+   ],
+   [
+    "Urà i Neptú ___ molt lluny.",
+    [
+     "és",
+     "són",
+     "hi ha"
+    ],
+    1
+   ],
+   [
+    "A Mart no ___ aigua líquida.",
+    [
+     "hi ha",
+     "és",
+     "són"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los planetas",
+   "sub": "Un viaje por el sistema solar",
+   "grammar": "Gramática: hay y está. Hi ha = hay (existe algo). Para decir dónde está una cosa concreta se usa és / són (está / están): Mercuri és a prop del Sol.",
+   "rows": [
+    "hay ocho planetas",
+    "hay vientos",
+    "Mercurio está cerca del Sol",
+    "Urano y Neptuno están lejos",
+    "no hay agua",
+    "¿dónde está Marte?"
+   ],
+   "hints": [
+    "hay",
+    "está",
+    "hay",
+    "están",
+    "hay"
+   ],
+   "vocab": [
+    "sol",
+    "estrella",
+    "planeta",
+    "luna",
+    "cohete",
+    "tierra"
+   ]
+  }
+ }
+}

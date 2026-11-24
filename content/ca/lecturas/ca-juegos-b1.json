@@ -1,0 +1,207 @@
+{
+ "id": "ca-juegos-b1",
+ "topic": "juegos",
+ "level": "B1",
+ "title": "Per què un joc es fa famós?",
+ "short": "Per què un joc es fa famós",
+ "text": [
+  "Cada any surten milers de videojocs nous, però només uns quants es converteixen en un fenomen mundial. Què tenen en comú Tetris, Minecraft o [Among Us]? Els experts creuen que no hi ha una recepta màgica, tot i que sí que hi ha alguns ingredients que es repeteixen.",
+  "El primer és que el joc sigui fàcil d'entendre. Si algú ha de llegir un manual de cinquanta pàgines abans de començar, probablement ho deixarà córrer. Els grans èxits s'aprenen en pocs minuts, però ofereixen reptes durant anys. Els dissenyadors en diuen «fàcil d'aprendre, difícil de dominar».",
+  "El segon ingredient és jugar amb altres persones. Quan un joc permet que els amics comparteixin partides, cada jugador nou en convida d'altres, i la notícia corre [com la pólvora]. [Per això] molts jocs famosos són gratuïts: així, ningú no es queda fora [per culpa del] preu.",
+  "El tercer són els creadors de contingut. [Among Us] va sortir el 2018 i gairebé ningú no el coneixia. [Tanmateix], el 2020, diversos streamers van començar a jugar-hi [en directe] i, en poques setmanes, milions de persones el van descarregar. Un vídeo viral pot fer més que una campanya de publicitat molt cara.",
+  "[Finalment], els jocs amb més èxit canvien constantment. Les empreses hi afegeixen actualitzacions, esdeveniments i temporades perquè els jugadors sempre tinguin alguna cosa nova per descobrir. [Això sí], cap fórmula no funciona sense el més important: cal que el joc sigui, [abans de res], divertit."
+ ],
+ "q": [
+  [
+   "Segons els experts, hi ha una recepta màgica per a l'èxit?",
+   [
+    "Sí, i sempre funciona",
+    "No, però hi ha ingredients que es repeteixen",
+    "Sí, però és secreta"
+   ],
+   1
+  ],
+  [
+   "Què vol dir «fàcil d'aprendre, difícil de dominar»?",
+   [
+    "Que el joc és avorrit",
+    "Que s'aprèn de pressa, però ofereix reptes durant anys",
+    "Que necessites un manual"
+   ],
+   1
+  ],
+  [
+   "Per què molts jocs famosos són gratuïts?",
+   [
+    "Perquè ningú no es quedi fora [per culpa del] preu",
+    "Perquè són dolents",
+    "Perquè no tenen actualitzacions"
+   ],
+   0
+  ],
+  [
+   "Quan es va fer famós [Among Us]?",
+   [
+    "El 2018",
+    "El 2020",
+    "El 2023"
+   ],
+   1
+  ],
+  [
+   "Qui va ajudar [Among Us] a fer-se famós?",
+   [
+    "Una campanya de publicitat",
+    "Els streamers",
+    "Els creadors de Tetris"
+   ],
+   1
+  ],
+  [
+   "Per a què afegeixen les empreses esdeveniments i temporades?",
+   [
+    "Perquè els jugadors sempre tinguin alguna cosa nova",
+    "Per apujar el preu",
+    "Per acabar el joc"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "recepta",
+   "🧾"
+  ],
+  [
+   "ingredient",
+   "🥕"
+  ],
+  [
+   "manual",
+   "📖"
+  ],
+  [
+   "preu",
+   "🏷️"
+  ],
+  [
+   "vídeo",
+   "🎬"
+  ],
+  [
+   "publicitat",
+   "📢"
+  ]
+ ],
+ "halves": [
+  [
+   "Els grans èxits s'aprenen...",
+   "...en pocs minuts."
+  ],
+  [
+   "Cada jugador nou...",
+   "...en convida d'altres."
+  ],
+  [
+   "[Among Us] va sortir el 2018...",
+   "...i gairebé ningú no el coneixia."
+  ],
+  [
+   "Un vídeo viral pot fer més...",
+   "...que una campanya de publicitat."
+  ],
+  [
+   "Cal que el joc sigui...",
+   "...divertit."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el present de subjuntiu",
+  "rule": "Després de <b>cal que</b>, <b>és important que</b> i <b>perquè</b> (per a què) fem servir el subjuntiu: <b>sigui</b>, <b>tinguin</b>, <b>comparteixin</b>.",
+  "rows": [
+   "ser → sigui",
+   "tenir → tinguin",
+   "compartir → comparteixin",
+   "poder → pugui",
+   "cal que sigui divertit",
+   "perquè tinguin alguna cosa nova"
+  ],
+  "items": [
+   [
+    "Cal que el joc ___ divertit.",
+    [
+     "és",
+     "sigui",
+     "serà"
+    ],
+    1
+   ],
+   [
+    "Afegeixen temporades perquè els jugadors ___ novetats.",
+    [
+     "tenen",
+     "tindran",
+     "tinguin"
+    ],
+    2
+   ],
+   [
+    "És important que el joc ___ fàcil d'entendre.",
+    [
+     "sigui",
+     "és",
+     "era"
+    ],
+    0
+   ],
+   [
+    "Volen que els amics ___ partides.",
+    [
+     "comparteixen",
+     "comparteixin",
+     "compartiran"
+    ],
+    1
+   ],
+   [
+    "Cal que tothom ___ jugar.",
+    [
+     "pugui",
+     "pot",
+     "podrà"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Por qué un juego se vuelve famoso?",
+   "sub": "Los ingredientes de un éxito",
+   "grammar": "Gramática: el presente de subjuntivo. Se usa como en español después de cal que (hace falta que), és important que (es importante que) y perquè con el sentido de «para que».",
+   "rows": [
+    "ser → sea",
+    "tener → tengan",
+    "compartir → compartan",
+    "poder → pueda",
+    "hace falta que sea divertido",
+    "para que tengan algo nuevo"
+   ],
+   "hints": [
+    "sea",
+    "tengan",
+    "sea",
+    "compartan",
+    "pueda"
+   ],
+   "vocab": [
+    "receta",
+    "ingrediente",
+    "manual",
+    "precio",
+    "vídeo",
+    "publicidad"
+   ]
+  }
+ }
+}

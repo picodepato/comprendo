@@ -1,0 +1,207 @@
+{
+ "id": "ca-egipto-b1",
+ "topic": "egipto",
+ "level": "B1",
+ "title": "La tomba de Tutankamon",
+ "short": "La tomba de Tutankamon",
+ "text": [
+  "Tutankamon va ser un faraó que va arribar al tron quan només tenia uns nou anys i va morir molt jove, amb uns divuit o dinou. En vida no va ser un rei especialment important, però avui és el faraó més famós del món. Per què? Pel que va passar més de tres mil anys després de la seva mort.",
+  "A la Vall dels Reis, els lladres havien saquejat gairebé totes les tombes dels faraons feia segles. Molts arqueòlegs pensaven que ja no quedava res per descobrir. Tanmateix, el britànic [Howard Carter] estava convençut que la tomba de Tutankamon continuava amagada, i feia anys que la buscava amb els diners de [Lord Carnarvon].",
+  "El novembre del 1922, quan estava a punt de rendir-se, el seu equip va trobar un graó sota la sorra. Unes setmanes després, Carter va fer un forat petit a la porta i va mirar a dins amb una espelma. Carnarvon li va preguntar si veia alguna cosa, i ell va respondre: «Sí, coses meravelloses». La tomba estava gairebé intacta, perquè les restes d'una altra tomba l'havien tapada durant segles.",
+  "A dins hi havia més de cinc mil objectes: carros, joies, estàtues, jocs de taula i [fins i tot] menjar per a l'altra vida. Però el tresor més gran era la mòmia del faraó, protegida per diversos sarcòfags, l'un dins de l'altre. L'últim era d'or massís, i damunt del cap de la mòmia descansava una màscara d'or que avui és un símbol d'Egipte.",
+  "Pocs mesos després, Lord Carnarvon va morir d'una infecció, i els diaris van començar a parlar de la «maledicció del faraó». Tanmateix, Carter va viure setze anys més. Per als científics, la maledicció no havia existit mai: el que sí que existia era una història perfecta per vendre diaris."
+ ],
+ "q": [
+  [
+   "Quants anys tenia Tutankamon quan va arribar al tron?",
+   [
+    "Uns nou",
+    "Uns divuit",
+    "Uns trenta"
+   ],
+   0
+  ],
+  [
+   "Què havia passat a gairebé totes les tombes de la Vall dels Reis?",
+   [
+    "Eren sota l'aigua",
+    "Els lladres les havien saquejat",
+    "Ningú no les havia construït"
+   ],
+   1
+  ],
+  [
+   "Què va trobar l'equip de Carter el novembre del 1922?",
+   [
+    "Un graó sota la sorra",
+    "Una màscara d'or",
+    "Un lladre"
+   ],
+   0
+  ],
+  [
+   "Per què la tomba estava gairebé intacta?",
+   [
+    "Perquè tenia una porta d'or",
+    "Perquè les restes d'una altra tomba l'havien tapada",
+    "Perquè era en un altre país"
+   ],
+   1
+  ],
+  [
+   "De què era l'últim sarcòfag?",
+   [
+    "De fusta",
+    "De pedra",
+    "D'or massís"
+   ],
+   2
+  ],
+  [
+   "Segons els científics, què era la «maledicció del faraó»?",
+   [
+    "Una malaltia real",
+    "Una història per vendre diaris",
+    "Un joc de taula"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "tomba",
+   "⚰️"
+  ],
+  [
+   "or",
+   "🥇"
+  ],
+  [
+   "espelma",
+   "🕯️"
+  ],
+  [
+   "màscara",
+   "🎭"
+  ],
+  [
+   "diari",
+   "📰"
+  ],
+  [
+   "sorra",
+   "🏜️"
+  ]
+ ],
+ "halves": [
+  [
+   "Tutankamon va arribar al tron...",
+   "...amb uns nou anys."
+  ],
+  [
+   "Els lladres havien saquejat...",
+   "...gairebé totes les tombes."
+  ],
+  [
+   "Carter va mirar a dins...",
+   "...amb una espelma."
+  ],
+  [
+   "L'últim sarcòfag era...",
+   "...d'or massís."
+  ],
+  [
+   "Per als científics, la maledicció...",
+   "...no havia existit mai."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el plusquamperfet",
+  "rule": "El plusquamperfet explica una acció passada abans d'una altra acció passada: <b>havia</b> + participi.",
+  "rows": [
+   "jo havia vist",
+   "tu havies vist",
+   "ell havia vist",
+   "nosaltres havíem vist",
+   "ells havien vist",
+   "no havia existit mai"
+  ],
+  "items": [
+   [
+    "Els lladres ___ saquejat les tombes.",
+    [
+     "havien",
+     "havia",
+     "havíem"
+    ],
+    0
+   ],
+   [
+    "Carter ___ buscat la tomba durant anys.",
+    [
+     "havien",
+     "havia",
+     "havies"
+    ],
+    1
+   ],
+   [
+    "La maledicció no havia ___ mai.",
+    [
+     "existit",
+     "existir",
+     "existeix"
+    ],
+    0
+   ],
+   [
+    "Nosaltres ___ llegit la història abans.",
+    [
+     "havien",
+     "havia",
+     "havíem"
+    ],
+    2
+   ],
+   [
+    "Les restes l'___ tapada.",
+    [
+     "havia",
+     "havien",
+     "havies"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La tumba de Tutankamón",
+   "sub": "El gran descubrimiento de la egiptología",
+   "grammar": "Gramática: el pretérito pluscuamperfecto. Se forma con havia + participio, como en español (había + participio): havien saquejat (habían saqueado).",
+   "rows": [
+    "yo había visto",
+    "tú habías visto",
+    "él había visto",
+    "nosotros habíamos visto",
+    "ellos habían visto",
+    "nunca había existido"
+   ],
+   "hints": [
+    "habían",
+    "había",
+    "existido",
+    "habíamos",
+    "habían"
+   ],
+   "vocab": [
+    "tumba",
+    "oro",
+    "vela",
+    "máscara",
+    "periódico",
+    "arena"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "ca-egipto-a2",
+ "topic": "egipto",
+ "level": "A2",
+ "title": "Les mòmies",
+ "short": "Les mòmies",
+ "text": [
+  "Els antics egipcis creien que hi havia una altra vida després de la mort. Però, per viure aquesta nova vida, el mort necessitava el seu cos. [Per això], quan moria algú important, el convertien en una mòmia.",
+  "Fer una mòmia era una feina molt llarga: durava uns setanta dies. Primer, els embalsamadors rentaven el cos i en treien els òrgans. El cervell el treien pel nas amb un ganxo! Guardaven alguns òrgans en uns gerros especials, però deixaven el cor dins del cos.",
+  "Després, cobrien el cos amb una sal que es diu natró. La sal assecava el cos durant uns quaranta dies. Així, el cos no es feia malbé i podia durar milers d'anys.",
+  "Al final, embolicaven la mòmia amb centenars de metres de benes de tela. Entre les benes posaven amulets per protegir-la. A les mòmies dels faraons també els posaven una màscara i les guardaven en un sarcòfag molt bonic.",
+  "No només hi havia mòmies de persones. Els egipcis també feien mòmies d'animals: gats, cocodrils, ocells i [fins i tot] peixos. Els arqueòlegs han trobat milions de mòmies d'animals a Egipte."
+ ],
+ "q": [
+  [
+   "Per què feien mòmies els egipcis?",
+   [
+    "Per espantar la gent",
+    "Perquè el mort necessitava el seu cos a l'altra vida",
+    "Per vendre-les"
+   ],
+   1
+  ],
+  [
+   "Quant de temps durava fer una mòmia?",
+   [
+    "Uns set dies",
+    "Uns setanta dies",
+    "Uns setanta anys"
+   ],
+   1
+  ],
+  [
+   "Per on treien el cervell?",
+   [
+    "Pel nas",
+    "Per la boca",
+    "Per l'orella"
+   ],
+   0
+  ],
+  [
+   "Quin òrgan deixaven dins del cos?",
+   [
+    "El cervell",
+    "El cor",
+    "Cap"
+   ],
+   1
+  ],
+  [
+   "Per a què feien servir el natró?",
+   [
+    "Per assecar el cos",
+    "Per pintar la màscara",
+    "Per cuinar"
+   ],
+   0
+  ],
+  [
+   "De quins animals feien mòmies?",
+   [
+    "Només de gats",
+    "De gats, cocodrils, ocells i peixos",
+    "De cap animal"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "mòmia",
+   "🧟"
+  ],
+  [
+   "cervell",
+   "🧠"
+  ],
+  [
+   "nas",
+   "👃"
+  ],
+  [
+   "cor",
+   "❤️"
+  ],
+  [
+   "sal",
+   "🧂"
+  ],
+  [
+   "cocodril",
+   "🐊"
+  ]
+ ],
+ "halves": [
+  [
+   "Fer una mòmia durava...",
+   "...uns setanta dies."
+  ],
+  [
+   "El cervell el treien...",
+   "...pel nas."
+  ],
+  [
+   "La sal assecava el cos...",
+   "...durant uns quaranta dies."
+  ],
+  [
+   "Entre les benes posaven...",
+   "...amulets."
+  ],
+  [
+   "Els egipcis també feien mòmies...",
+   "...d'animals."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: l'imperfet",
+  "rule": "L'imperfet explica què passava abans o què es feia sovint. Els verbs en <b>-ar</b> fan <b>-ava</b>; els altres fan <b>-ia</b>.",
+  "rows": [
+   "rentar → rentava",
+   "guardar → guardaven",
+   "creure → creien",
+   "fer → feien",
+   "ser → era",
+   "haver-hi → hi havia"
+  ],
+  "items": [
+   [
+    "Els embalsamadors ___ el cos.",
+    [
+     "rentaven",
+     "renten",
+     "rentaran"
+    ],
+    0
+   ],
+   [
+    "Fer una mòmia ___ setanta dies.",
+    [
+     "dura",
+     "durava",
+     "durarà"
+    ],
+    1
+   ],
+   [
+    "Els egipcis ___ en una altra vida.",
+    [
+     "creuen",
+     "creien",
+     "creuran"
+    ],
+    1
+   ],
+   [
+    "Abans no ___ hospitals com avui.",
+    [
+     "hi ha",
+     "hi haurà",
+     "hi havia"
+    ],
+    2
+   ],
+   [
+    "També ___ mòmies d'animals.",
+    [
+     "feien",
+     "fan",
+     "faran"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Las momias",
+   "sub": "Cómo preparaban los egipcios a los muertos",
+   "grammar": "Gramática: el pretérito imperfecto. Sirve para describir el pasado y las costumbres, como en español. Verbos en -ar: -ava (rentava = lavaba). Los demás: -ia (creia = creía).",
+   "rows": [
+    "lavar → lavaba",
+    "guardar → guardaban",
+    "creer → creían",
+    "hacer → hacían",
+    "ser → era",
+    "haber → había"
+   ],
+   "hints": [
+    "lavaban",
+    "duraba",
+    "creían",
+    "había",
+    "hacían"
+   ],
+   "vocab": [
+    "momia",
+    "cerebro",
+    "nariz",
+    "corazón",
+    "sal",
+    "cocodrilo"
+   ]
+  }
+ }
+}

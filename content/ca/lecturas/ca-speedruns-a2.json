@@ -1,0 +1,207 @@
+{
+ "id": "ca-speedruns-a2",
+ "topic": "speedruns",
+ "level": "A2",
+ "title": "El rècord de Super Mario",
+ "short": "El rècord de Super Mario",
+ "text": [
+  "[Super Mario Bros.] va sortir el 1985 per a la consola NES de Nintendo. Va ser un dels jocs més venuts de la seva època i [encara avui] és un dels preferits dels speedrunners. El seu speedrun és curt, però molt difícil.",
+  "El joc té trenta-dos nivells, però els speedrunners no els juguen tots. Fan servir unes canonades secretes que porten a altres mons. Així, només passen per vuit nivells i arriben molt aviat al castell final.",
+  "Durant molts anys, els jugadors van intentar baixar el rècord [a poc a poc]. Cada rècord nou va ser unes centèsimes més ràpid que l'anterior. Per aconseguir-ho, van fer moviments perfectes: un error molt petit, de menys d'una dècima de segon, pot arruïnar tota la partida.",
+  "El 2021, un jugador que es diu Niftski va fer història: va ser la primera persona que va acabar el joc en menys de quatre minuts i cinquanta-cinc segons. Després, ell mateix va poder millorar el seu rècord una altra vegada.",
+  "Molts experts diuen que el rècord és gairebé al límit humà. Una màquina pot acabar el joc unes dècimes més ràpid, però cap humà no ho ha fet [fins ara]. Qui sap? Potser algun dia algú ho aconseguirà."
+ ],
+ "q": [
+  [
+   "En quin any va sortir [Super Mario Bros.]?",
+   [
+    "El 1985",
+    "El 1995",
+    "El 2021"
+   ],
+   0
+  ],
+  [
+   "Quants nivells té el joc?",
+   [
+    "Vuit",
+    "Trenta-dos",
+    "Cinquanta-cinc"
+   ],
+   1
+  ],
+  [
+   "Per a què fan servir els speedrunners les canonades secretes?",
+   [
+    "Per anar a altres mons",
+    "Per aconseguir monedes",
+    "Per descansar"
+   ],
+   0
+  ],
+  [
+   "Per quants nivells passen els speedrunners?",
+   [
+    "Per quatre",
+    "Per vuit",
+    "Per trenta-dos"
+   ],
+   1
+  ],
+  [
+   "Què va fer Niftski el 2021?",
+   [
+    "Va crear el joc",
+    "Va acabar el joc en menys de quatre minuts i cinquanta-cinc segons",
+    "Va perdre la partida"
+   ],
+   1
+  ],
+  [
+   "Segons els experts, com és el rècord?",
+   [
+    "Molt fàcil de millorar",
+    "És gairebé al límit humà",
+    "Més lent que el 1985"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "consola",
+   "🎮"
+  ],
+  [
+   "castell",
+   "🏰"
+  ],
+  [
+   "món",
+   "🌍"
+  ],
+  [
+   "màquina",
+   "🤖"
+  ],
+  [
+   "error",
+   "❌"
+  ],
+  [
+   "humà",
+   "🧑"
+  ]
+ ],
+ "halves": [
+  [
+   "[Super Mario Bros.] va sortir...",
+   "...el 1985."
+  ],
+  [
+   "Les canonades secretes porten...",
+   "...a altres mons."
+  ],
+  [
+   "Un error molt petit pot...",
+   "...arruïnar tota la partida."
+  ],
+  [
+   "Niftski va fer història...",
+   "...el 2021."
+  ],
+  [
+   "Una màquina pot acabar...",
+   "...unes dècimes més ràpid."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: els pronoms els i ho",
+  "rule": "<b>Els</b> substitueix un nom en plural: <b>no els juguen tots</b> (els nivells). <b>Ho</b> substitueix una idea o una frase: <b>ningú no ho ha fet</b>.",
+  "rows": [
+   "els nivells → els juguen",
+   "les canonades → les fan servir",
+   "el rècord → el baixen",
+   "acabar en 4 minuts → ho fa",
+   "ningú no ho sap",
+   "algú ho aconseguirà"
+  ],
+  "items": [
+   [
+    "Els nivells? No ___ juguen tots.",
+    [
+     "els",
+     "ho",
+     "la"
+    ],
+    0
+   ],
+   [
+    "Qui sap? Ningú no ___ sap.",
+    [
+     "els",
+     "ho",
+     "les"
+    ],
+    1
+   ],
+   [
+    "El rècord? Niftski ___ va millorar.",
+    [
+     "els",
+     "les",
+     "el"
+    ],
+    2
+   ],
+   [
+    "Les canonades? ___ fan servir per anar a altres mons.",
+    [
+     "Les",
+     "Ho",
+     "El"
+    ],
+    0
+   ],
+   [
+    "Acabar en 4 minuts? Algú ___ aconseguirà.",
+    [
+     "la",
+     "ho",
+     "els"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El récord de Super Mario",
+   "sub": "Menos de cinco minutos de movimientos perfectos",
+   "grammar": "Gramática: los pronombres los y lo. Els = los (no els juguen = no los juegan). Ho = lo, cuando sustituye una idea o una frase: ningú no ho ha fet (nadie lo ha hecho).",
+   "rows": [
+    "los niveles → los juegan",
+    "las tuberías → las usan",
+    "el récord → lo bajan",
+    "terminar en 4 minutos → lo hace",
+    "nadie lo sabe",
+    "alguien lo conseguirá"
+   ],
+   "hints": [
+    "los",
+    "lo",
+    "lo",
+    "las",
+    "lo"
+   ],
+   "vocab": [
+    "consola",
+    "castillo",
+    "mundo",
+    "máquina",
+    "error",
+    "humano"
+   ]
+  }
+ }
+}

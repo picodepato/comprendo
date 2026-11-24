@@ -39,7 +39,7 @@ async function preparar(p, g) {
   if (r && r.ok) {
     servidor = true; if (r.j.rol && C.rol !== r.j.rol) { C.rol = r.j.rol; escribir(C); }
     if (r.j.s && !(C.pend && pr)) { if (pr) pr.s = r.j.s; else P.list.push(pr = {id, name: C.usuario, s: r.j.s}); }
-    else if (!pr) P.list.push(pr = {id, name: C.usuario, s: copiaLocal()});
+    else if (!pr) P.list.push(pr = {id, name: C.usuario, s: copiaLocal() || nuevo()});
     if (C.pend || !r.j.s) setTimeout(subir, 500);
   } else if (!pr) { /* sin conexión y sin copia: invitado por ahora */ P.cur = "local"; guardarP(); estado = "offline"; return; }
   else estado = "offline";
@@ -168,7 +168,7 @@ function panelEntrar(modo) {
 function cursos() {
   const cat = window.LYA && window.LYA.CAT, nm = (c, l) => ((cat && cat.languages[c] || {}).name || {})[l] || c;
   const lista = cat && cat.courses ? cat.courses.filter(c => c.ready).flatMap(c => c.know.map(k => ({learn: c.learn, know: k}))) : [{learn: "es", know: "en"}];
-  return lista.map(c => ({...c, txt: `${nm(c.learn, "es")} (${nm(c.learn, c.know)}) · sé ${nm(c.know, "es").toLowerCase()}`}));
+  return lista.map(c => ({...c, txt: `${nm(c.learn, "es")} (${nm(c.learn, c.learn) !== nm(c.learn, "es") ? nm(c.learn, c.learn) : nm(c.learn, c.know)}) · sé ${nm(c.know, "es").toLowerCase()}`}));
 }
 function conCurso(s, curso) {
   const [learn, know] = String(curso || "").split(">"); if (!learn) return s || undefined;

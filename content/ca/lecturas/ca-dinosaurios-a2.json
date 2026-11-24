@@ -1,0 +1,207 @@
+{
+ "id": "ca-dinosaurios-a2",
+ "topic": "dinosaurios",
+ "level": "A2",
+ "title": "Com van desaparèixer els dinosaures",
+ "short": "Com van desaparèixer",
+ "text": [
+  "Els dinosaures van viure a la Terra durant uns cent seixanta milions d'anys. Però fa seixanta-sis milions d'anys, van desaparèixer gairebé tots. Què va passar?",
+  "Un dia, un asteroide enorme va xocar contra la Terra. Feia uns deu quilòmetres, més que una muntanya. Va caure al mar, en el que avui és la península del Yucatán, a Mèxic. El cop va fer un cràter d'uns cent vuitanta quilòmetres. Avui [es diu] el cràter de Chicxulub.",
+  "El xoc va ser terrible. Hi va haver incendis, terratrèmols i onades gegants. Després, molta pols va pujar al cel i va tapar la llum del Sol durant mesos o anys. La Terra es va tornar fosca i freda. Moltes plantes van morir, i després van morir els animals que se les menjaven.",
+  "Al mateix temps, a l'Índia, hi havia volcans enormes que treien lava i gasos. Molts científics pensen que els volcans també van ajudar a canviar el clima. Al final, van desaparèixer tres de cada quatre espècies de la Terra.",
+  "Però no tots els dinosaures van desaparèixer. Alguns dinosaures petits amb plomes van sobreviure: són els avantpassats dels ocells! Així que, quan veus un colom al carrer, estàs mirant un parent del [tiranosaure rex]. També van sobreviure alguns mamífers petits, com els nostres avantpassats."
+ ],
+ "q": [
+  [
+   "Quan van desaparèixer gairebé tots els dinosaures?",
+   [
+    "Fa seixanta-sis milions d'anys",
+    "Fa sis mil anys",
+    "Fa sis-cents anys"
+   ],
+   0
+  ],
+  [
+   "On va caure l'asteroide?",
+   [
+    "A Espanya",
+    "A l'Índia",
+    "Al mar, a prop del Yucatán"
+   ],
+   2
+  ],
+  [
+   "Què va tapar la llum del Sol?",
+   [
+    "La pols",
+    "La pluja",
+    "La Lluna"
+   ],
+   0
+  ],
+  [
+   "Què passava a l'Índia al mateix temps?",
+   [
+    "Hi havia un asteroide",
+    "Hi havia volcans enormes",
+    "Feia molta calor"
+   ],
+   1
+  ],
+  [
+   "Quantes espècies van desaparèixer?",
+   [
+    "Una de cada deu",
+    "La meitat",
+    "Tres de cada quatre"
+   ],
+   2
+  ],
+  [
+   "Quins animals d'avui són parents dels dinosaures?",
+   [
+    "Els ocells",
+    "Els peixos",
+    "Els gats"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "asteroide",
+   "☄️"
+  ],
+  [
+   "foc",
+   "🔥"
+  ],
+  [
+   "onada",
+   "🌊"
+  ],
+  [
+   "ocell",
+   "🐦"
+  ],
+  [
+   "colom",
+   "🕊️"
+  ],
+  [
+   "volcà",
+   "🌋"
+  ]
+ ],
+ "halves": [
+  [
+   "L'asteroide feia...",
+   "...uns deu quilòmetres."
+  ],
+  [
+   "El cop va fer...",
+   "...un cràter enorme."
+  ],
+  [
+   "La pols va tapar...",
+   "...la llum del Sol."
+  ],
+  [
+   "Alguns dinosaures amb plomes...",
+   "...van sobreviure."
+  ],
+  [
+   "Un colom és...",
+   "...un parent del T. rex."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: fa + temps",
+  "rule": "Per dir quan va passar una cosa, fem servir <b>fa</b> + temps: <b>fa deu anys</b>, <b>fa molt de temps</b>.",
+  "rows": [
+   "fa deu anys",
+   "fa molt de temps",
+   "fa una setmana",
+   "fa milions d'anys",
+   "fa poc",
+   "Quant de temps fa?"
+  ],
+  "items": [
+   [
+    "Els dinosaures van desaparèixer ___ seixanta-sis milions d'anys.",
+    [
+     "fa",
+     "hi ha",
+     "fan"
+    ],
+    0
+   ],
+   [
+    "Vaig anar al museu ___ una setmana.",
+    [
+     "fan",
+     "fa",
+     "feia"
+    ],
+    1
+   ],
+   [
+    "Quant de temps ___ que va caure l'asteroide?",
+    [
+     "fa",
+     "faig",
+     "fem"
+    ],
+    0
+   ],
+   [
+    "Fa ___ de temps que estudio dinosaures.",
+    [
+     "molts",
+     "molta",
+     "molt"
+    ],
+    2
+   ],
+   [
+    "Vaig veure un colom fa ___.",
+    [
+     "poc",
+     "poca",
+     "pocs"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Cómo desaparecieron los dinosaurios",
+   "sub": "Un asteroide, volcanes y una sorpresa",
+   "grammar": "Gramática: hace + tiempo. En catalán se dice fa (hace): fa deu anys (hace diez años), fa molt de temps (hace mucho tiempo).",
+   "rows": [
+    "hace diez años",
+    "hace mucho tiempo",
+    "hace una semana",
+    "hace millones de años",
+    "hace poco",
+    "¿Cuánto tiempo hace?"
+   ],
+   "hints": [
+    "hace",
+    "hace",
+    "hace",
+    "mucho",
+    "poco"
+   ],
+   "vocab": [
+    "asteroide",
+    "fuego",
+    "ola",
+    "pájaro",
+    "paloma",
+    "volcán"
+   ]
+  }
+ }
+}

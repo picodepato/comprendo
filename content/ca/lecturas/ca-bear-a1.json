@@ -1,0 +1,207 @@
+{
+ "id": "ca-bear-a1",
+ "topic": "bear",
+ "level": "A1",
+ "title": "Què és BEAR (Alpha)?",
+ "short": "El joc",
+ "text": [
+  "BEAR (Alpha) és un joc de por de Roblox. El va crear un usuari que [es diu] Cheedaman l'any 2019. Avui és un joc molt famós: té més de tres-cents milions de visites.",
+  "A cada partida hi ha dos grups. Un jugador és l'Ós i els altres jugadors són els supervivents. L'Ós és gran, ràpid i perillós. Té una llum vermella [al seu voltant], [per això] els supervivents el poden veure a la foscor.",
+  "Els supervivents tenen una missió: escapar de l'Ós. [Per fer-ho], necessiten córrer, amagar-se i treballar en equip. A l'ordinador, els jugadors [mantenen premuda] la tecla Shift per córrer més ràpid. Si l'Ós atrapa un supervivent, aquest jugador perd.",
+  "Cada partida té un temps límit. Si el temps s'acaba i encara hi ha supervivents vius, ells guanyen. Si l'Ós els atrapa a tots, l'Ós guanya.",
+  "És un joc que fa [una mica de por], però també és molt divertit. És perfecte per jugar amb amics!"
+ ],
+ "q": [
+  [
+   "Quin tipus de joc és BEAR (Alpha)?",
+   [
+    "Un joc de futbol",
+    "Un joc de por",
+    "Un joc de cotxes"
+   ],
+   1
+  ],
+  [
+   "Qui va crear el joc?",
+   [
+    "Roblox",
+    "L'Ós",
+    "Cheedaman"
+   ],
+   2
+  ],
+  [
+   "Quants jugadors són l'Ós a cada partida?",
+   [
+    "Un",
+    "Dos",
+    "Tots"
+   ],
+   0
+  ],
+  [
+   "De quin color és la llum de l'Ós?",
+   [
+    "Blava",
+    "Vermella",
+    "Verda"
+   ],
+   1
+  ],
+  [
+   "Quina tecla fan servir per córrer a l'ordinador?",
+   [
+    "Enter",
+    "Espai",
+    "Shift"
+   ],
+   2
+  ],
+  [
+   "Quan guanyen els supervivents?",
+   [
+    "Quan atrapen l'Ós",
+    "Quan el temps s'acaba i són vius",
+    "Quan apaguen la llum vermella"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "ós",
+   "🐻"
+  ],
+  [
+   "jugador",
+   "🎮"
+  ],
+  [
+   "córrer",
+   "🏃"
+  ],
+  [
+   "amagar-se",
+   "🙈"
+  ],
+  [
+   "guanyar",
+   "🏆"
+  ],
+  [
+   "llum",
+   "💡"
+  ]
+ ],
+ "halves": [
+  [
+   "Un jugador és...",
+   "...l'Ós."
+  ],
+  [
+   "L'Ós té una llum...",
+   "...vermella."
+  ],
+  [
+   "Els supervivents necessiten...",
+   "...córrer i amagar-se."
+  ],
+  [
+   "Si l'Ós els atrapa a tots...",
+   "...l'Ós guanya."
+  ],
+  [
+   "És un joc perfecte per...",
+   "...jugar amb amics."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el present",
+  "rule": "En català, el verb canvia segons <b>qui</b> fa l'acció.",
+  "rows": [
+   "jo jugo",
+   "ell / ella juga",
+   "nosaltres juguem",
+   "ells juguen",
+   "ser: és / són",
+   "tenir: té / tenen"
+  ],
+  "items": [
+   [
+    "L'Ós ___ gran.",
+    [
+     "són",
+     "és",
+     "sóc"
+    ],
+    1
+   ],
+   [
+    "Els supervivents ___ molt ràpid.",
+    [
+     "corren",
+     "corre",
+     "corro"
+    ],
+    0
+   ],
+   [
+    "Jo ___ amb els meus amics.",
+    [
+     "juga",
+     "juguen",
+     "jugo"
+    ],
+    2
+   ],
+   [
+    "L'Ós ___ una llum vermella.",
+    [
+     "tenen",
+     "té",
+     "tinc"
+    ],
+    1
+   ],
+   [
+    "Nosaltres ___ en equip.",
+    [
+     "treballen",
+     "treballa",
+     "treballem"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Qué es BEAR (Alpha)?",
+   "sub": "El juego y sus reglas",
+   "grammar": "Gramática: el presente. Como en español, el verbo cambia según quién hace la acción.",
+   "rows": [
+    "yo juego",
+    "él / ella juega",
+    "nosotros jugamos",
+    "ellos juegan",
+    "ser: es / son",
+    "tener: tiene / tienen"
+   ],
+   "hints": [
+    "es",
+    "corren",
+    "juego",
+    "tiene",
+    "trabajamos"
+   ],
+   "vocab": [
+    "oso",
+    "jugador",
+    "correr",
+    "esconderse",
+    "ganar",
+    "luz"
+   ]
+  }
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "id": "ca-comida-b1",
+ "topic": "comida",
+ "level": "B1",
+ "title": "Els insectes, menjar del futur?",
+ "short": "Els insectes, menjar del futur?",
+ "text": [
+  "Si algú t'ofereix un plat de llagostes fregides, què fas? Per a molts europeus i americans, la idea de menjar insectes fa fàstic. Tanmateix, segons l'Organització de les Nacions Unides per a l'Alimentació (la FAO), uns dos mil milions de persones al món ja mengen insectes de manera habitual.",
+  "A Mèxic, [per exemple], els chapulines són un aperitiu molt popular a Oaxaca. Són llagostes torrades amb llimona, all, bitxo i sal. A Tailàndia es venen grills fregits al carrer, i en algunes parts d'Àfrica les erugues són un aliment tradicional. En total, hi ha més de dues mil espècies d'insectes que es poden menjar.",
+  "Per què parlen els científics del «menjar del futur»? El 2050 serem gairebé deu mil milions de persones, i produir tanta carn serà un problema enorme. Les vaques necessiten moltíssim menjar, aigua i espai, i produeixen gasos que escalfen el planeta. Els grills, en canvi, necessiten moltíssim menys menjar per produir la mateixa quantitat de proteïna.",
+  "A més, els insectes són molt nutritius. Tenen tantes proteïnes com la carn, i també vitamines i minerals com el ferro. Es poden criar en granges petites, fins i tot dins d'una ciutat, i gairebé no produeixen residus.",
+  "A Europa ja han començat els canvis. Des del 2021, la Unió Europea permet vendre alguns insectes com a aliment, com el cuc de la farina i el grill domèstic. Moltes empreses els converteixen en farina per fer pasta, galetes o barretes. Així, els consumidors no veuen l'insecte i és més fàcil tastar-lo.",
+  "Menjarem insectes cada dia d'aquí a uns anys? És difícil saber-ho. El problema més gran no és el gust, sinó el nostre cap: ens costa canviar el que mengem. Potser d'aquí a uns anys una hamburguesa de grills serà tan normal com una pizza. Tu t'hi atreviries?"
+ ],
+ "q": [
+  [
+   "Quantes persones mengen insectes de manera habitual?",
+   [
+    "Uns dos milions",
+    "Uns dos mil milions",
+    "Gairebé ningú"
+   ],
+   1
+  ],
+  [
+   "Què són els chapulines?",
+   [
+    "Grills crus",
+    "Llagostes torrades",
+    "Erugues fregides"
+   ],
+   1
+  ],
+  [
+   "Quantes persones hi haurà al món el 2050?",
+   [
+    "Gairebé deu mil milions",
+    "Uns dos mil milions",
+    "Mil milions"
+   ],
+   0
+  ],
+  [
+   "Quin avantatge tenen els grills davant de les vaques?",
+   [
+    "Són més grans",
+    "Necessiten molt menys menjar",
+    "Produeixen més gasos"
+   ],
+   1
+  ],
+  [
+   "Des de quan permet la Unió Europea vendre alguns insectes?",
+   [
+    "Des del 1990",
+    "Des del 2050",
+    "Des del 2021"
+   ],
+   2
+  ],
+  [
+   "Segons el text, quin és el problema més gran?",
+   [
+    "El gust",
+    "El preu",
+    "El nostre cap: ens costa canviar"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "vaca",
+   "🐄"
+  ],
+  [
+   "hamburguesa",
+   "🍔"
+  ],
+  [
+   "pizza",
+   "🍕"
+  ],
+  [
+   "galeta",
+   "🍪"
+  ],
+  [
+   "grill",
+   "🦗"
+  ],
+  [
+   "farina",
+   "🌾"
+  ]
+ ],
+ "halves": [
+  [
+   "Per a molts europeus, menjar insectes...",
+   "...fa fàstic."
+  ],
+  [
+   "A Tailàndia es venen...",
+   "...grills fregits al carrer."
+  ],
+  [
+   "Les vaques produeixen gasos...",
+   "...que escalfen el planeta."
+  ],
+  [
+   "Els insectes tenen tantes proteïnes...",
+   "...com la carn."
+  ],
+  [
+   "El problema més gran no és el gust...",
+   "...sinó el nostre cap."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el futur dels verbs irregulars",
+  "rule": "Alguns verbs canvien l'arrel en el futur: <b>ser → serà</b>, <b>fer → farà</b>, <b>haver-hi → hi haurà</b>, <b>tenir → tindrà</b>, <b>venir → vindrà</b>, <b>poder → podrà</b>.",
+  "rows": [
+   "ser → serem",
+   "fer → farà",
+   "haver-hi → hi haurà",
+   "tenir → tindrà",
+   "venir → vindran",
+   "poder → podrem"
+  ],
+  "items": [
+   [
+    "El 2050 ___ deu mil milions de persones.",
+    [
+     "serem",
+     "serà",
+     "serien"
+    ],
+    0
+   ],
+   [
+    "Produir tanta carn ___ un problema.",
+    [
+     "és",
+     "serà",
+     "era"
+    ],
+    1
+   ],
+   [
+    "D'aquí a uns anys ___ molts canvis.",
+    [
+     "hi ha",
+     "hi havia",
+     "hi haurà"
+    ],
+    2
+   ],
+   [
+    "La gent ___ més ganes de tastar insectes.",
+    [
+     "tindrà",
+     "tenirà",
+     "té"
+    ],
+    0
+   ],
+   [
+    "Les empreses ___ galetes d'insectes.",
+    [
+     "faran",
+     "fan",
+     "feien"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los insectos, ¿comida del futuro?",
+   "sub": "¿Comeremos insectos?",
+   "grammar": "Gramática: el futuro de los verbos irregulares. Como en español (tendrá, vendrá, podrá), algunos verbos cambian: serà (será), farà (hará), hi haurà (habrá), tindrà (tendrá), vindrà (vendrá), podrà (podrá).",
+   "rows": [
+    "ser → seremos",
+    "hacer → hará",
+    "haber → habrá",
+    "tener → tendrá",
+    "venir → vendrán",
+    "poder → podremos"
+   ],
+   "hints": [
+    "seremos",
+    "será",
+    "habrá",
+    "tendrá",
+    "harán"
+   ],
+   "vocab": [
+    "vaca",
+    "hamburguesa",
+    "pizza",
+    "galleta",
+    "grillo",
+    "harina"
+   ]
+  }
+ }
+}

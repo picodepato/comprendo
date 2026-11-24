@@ -1,0 +1,207 @@
+{
+ "id": "ca-minecraft-b1",
+ "topic": "minecraft",
+ "level": "B1",
+ "title": "Construccions rècord a Minecraft",
+ "short": "Construccions rècord",
+ "text": [
+  "A Minecraft, l'únic límit és la imaginació. [Al llarg dels] anys, els jugadors han construït ciutats senceres, màquines que funcionen i [fins i tot] còpies de països reals. Algunes d'aquestes obres han necessitat milers d'hores de feina i l'ajuda de centenars de persones.",
+  "El projecte més ambiciós és [Build the Earth] («Construeix la Terra»). Va començar el 2020 i el seu objectiu és reconstruir tot el nostre planeta a mida real: un bloc de Minecraft equival a un metre. Milers de voluntaris de tot el món ja han construït carrers, edificis i monuments de les seves pròpies ciutats. Encara falta moltíssim per acabar-lo, però cada dia creix una mica més.",
+  "Una altra construcció famosa és la Biblioteca sense Censura, que l'organització [Reporters sense Fronteres] va obrir el 2020. És un edifici gegant, fet amb milions de blocs, que guarda articles de periodistes de països on la premsa no és lliure. Com que Minecraft està permès [gairebé a tot arreu], joves de tot el món han pogut llegir aquests textos dins del joc.",
+  "Els enginyers de Minecraft fan servir la redstone, un mineral que funciona com l'electricitat. Amb la redstone, alguns jugadors han fet calculadores, ordinadors senzills i [fins i tot] videojocs dins del mateix Minecraft. Són construccions enormes, perquè cada circuit ocupa moltíssim espai.",
+  "I tu? Has construït mai alguna cosa especial? [No cal] ser un expert: molts d'aquests projectes van començar amb una sola persona i una idea. [El més important] és tenir paciència, planificar bé i, [sobretot], divertir-se."
+ ],
+ "q": [
+  [
+   "Quin és l'objectiu de [Build the Earth]?",
+   [
+    "Construir una ciutat inventada",
+    "Reconstruir la Terra a mida real",
+    "Construir l'edifici més alt"
+   ],
+   1
+  ],
+  [
+   "A [Build the Earth], quant fa un bloc?",
+   [
+    "Un centímetre",
+    "Un metre",
+    "Un quilòmetre"
+   ],
+   1
+  ],
+  [
+   "Qui va obrir la Biblioteca sense Censura?",
+   [
+    "Mojang",
+    "Un grup de nens",
+    "[Reporters sense Fronteres]"
+   ],
+   2
+  ],
+  [
+   "Què guarda la biblioteca?",
+   [
+    "Articles de periodistes",
+    "Mapes secrets",
+    "Diamants"
+   ],
+   0
+  ],
+  [
+   "Per a què serveix la redstone?",
+   [
+    "Per menjar",
+    "Funciona com l'electricitat",
+    "Per volar"
+   ],
+   1
+  ],
+  [
+   "Segons el text, què és el més important?",
+   [
+    "Ser un expert",
+    "Tenir molts amics",
+    "Tenir paciència i divertir-se"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "biblioteca",
+   "📚"
+  ],
+  [
+   "ciutat",
+   "🏙️"
+  ],
+  [
+   "carrer",
+   "🛣️"
+  ],
+  [
+   "planeta",
+   "🌍"
+  ],
+  [
+   "calculadora",
+   "🧮"
+  ],
+  [
+   "idea",
+   "💡"
+  ]
+ ],
+ "halves": [
+  [
+   "[Build the Earth] va començar...",
+   "...el 2020."
+  ],
+  [
+   "Un bloc de Minecraft...",
+   "...equival a un metre."
+  ],
+  [
+   "La biblioteca guarda articles...",
+   "...de periodistes."
+  ],
+  [
+   "La redstone funciona...",
+   "...com l'electricitat."
+  ],
+  [
+   "Molts projectes van començar...",
+   "...amb una sola persona i una idea."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el perfet",
+  "rule": "El perfet parla d'accions acabades en un temps que encara dura (avui, aquest any, mai): <b>he</b>, <b>has</b>, <b>ha</b>, <b>hem</b>, <b>heu</b>, <b>han</b> + participi.",
+  "rows": [
+   "jo he construït",
+   "tu has jugat",
+   "ella ha fet",
+   "nosaltres hem llegit",
+   "ells han pogut",
+   "Has construït mai...?"
+  ],
+  "items": [
+   [
+    "Els jugadors ___ construït ciutats senceres.",
+    [
+     "han",
+     "ha",
+     "hem"
+    ],
+    0
+   ],
+   [
+    "Aquest any jo ___ fet un castell enorme.",
+    [
+     "ha",
+     "he",
+     "han"
+    ],
+    1
+   ],
+   [
+    "Molts joves ___ llegit els articles.",
+    [
+     "ha",
+     "hem",
+     "han"
+    ],
+    2
+   ],
+   [
+    "Tu ___ jugat mai a Minecraft?",
+    [
+     "has",
+     "ha",
+     "heu"
+    ],
+    0
+   ],
+   [
+    "Nosaltres hem ___ un ordinador de redstone.",
+    [
+     "fer",
+     "fet",
+     "fem"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Construcciones récord en Minecraft",
+   "sub": "Toda la Tierra, una biblioteca y ordenadores de redstone",
+   "grammar": "Gramática: el pretérito perfecto. Igual que en español: he, has, ha, hem, heu, han + participio: han construït (han construido), ha fet (ha hecho).",
+   "rows": [
+    "yo he construido",
+    "tú has jugado",
+    "ella ha hecho",
+    "nosotros hemos leído",
+    "ellos han podido",
+    "¿Has construido alguna vez...?"
+   ],
+   "hints": [
+    "han",
+    "he",
+    "han",
+    "has",
+    "hecho"
+   ],
+   "vocab": [
+    "biblioteca",
+    "ciudad",
+    "calle",
+    "planeta",
+    "calculadora",
+    "idea"
+   ]
+  }
+ }
+}

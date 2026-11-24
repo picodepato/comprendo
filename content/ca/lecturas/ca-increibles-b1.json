@@ -1,0 +1,208 @@
+{
+ "id": "ca-increibles-b1",
+ "topic": "increibles",
+ "level": "B1",
+ "title": "El tardígrad indestructible",
+ "short": "El tardígrad",
+ "text": [
+  "Quin és l'animal més resistent del planeta? No és l'elefant ni el tauró, sinó un animal diminut que normalment fa mig mil·límetre: el tardígrad. [Per la seva forma], també l'anomenen «ós d'aigua». Té vuit potes curtes amb urpes i es mou lentíssimament, com un osset maldestre.",
+  "El científic alemany [Johann Goeze] el va descobrir el 1773. [Des d'aleshores], els investigadors n'han trobat més de mil espècies a tot el món: al cim de les muntanyes, al fons del mar, al gel de l'Antàrtida i [fins i tot] a la molsa del teu jardí.",
+  "El més sorprenent és tot el que pot suportar. Aguanta temperatures de gairebé dos-cents setanta graus [sota zero] i de més de cent graus. Resisteix una radiació mil vegades més forta que la dosi mortal per a un ésser humà i pressions enormes.",
+  "Quin és el seu secret? Quan l'ambient es torna perillós, [per exemple] quan no hi ha aigua, el tardígrad expulsa gairebé tota l'aigua del seu cos, s'encongeix i es converteix en una boleta seca. En aquest estat, que es diu «bóta», el seu metabolisme gairebé s'atura. Pot passar així molts anys i, quan torna a tenir aigua, es desperta [com si res].",
+  "El 2007, un grup de científics va enviar tardígrads a l'espai en un satèl·lit. Van estar deu dies al buit de l'espai, sense aire i exposats a la radiació del sol. En tornar a la Terra, molts encara eren vius i fins i tot van tenir cries.",
+  "[Tanmateix], el tardígrad no és immortal. En el seu estat normal és força fràgil i només viu uns mesos. El seu veritable superpoder és saber esperar el moment adequat per tornar a la vida. [Per això] els científics l'estudien: potser algun dia ens ajudarà a protegir els astronautes en viatges llarguíssims."
+ ],
+ "q": [
+  [
+   "Quant fa normalment un tardígrad?",
+   [
+    "Mig mil·límetre",
+    "Mig metre",
+    "Cinc centímetres"
+   ],
+   0
+  ],
+  [
+   "Per què l'anomenen «ós d'aigua»?",
+   [
+    "Perquè menja peixos",
+    "Per la seva forma",
+    "Perquè és molt fort"
+   ],
+   1
+  ],
+  [
+   "On podem trobar tardígrads?",
+   [
+    "Només al mar",
+    "Només a l'Antàrtida",
+    "Gairebé a tot arreu, [fins i tot] a la molsa"
+   ],
+   2
+  ],
+  [
+   "Què fa el tardígrad quan no hi ha aigua?",
+   [
+    "Es converteix en una boleta seca",
+    "Busca un riu",
+    "Es mor de seguida"
+   ],
+   0
+  ],
+  [
+   "Què va passar el 2007?",
+   [
+    "Van descobrir el tardígrad",
+    "Van enviar tardígrads a l'espai",
+    "Van trobar tardígrads a la Lluna"
+   ],
+   1
+  ],
+  [
+   "Quin és el veritable superpoder del tardígrad?",
+   [
+    "Ser immortal",
+    "Ser molt ràpid",
+    "Saber esperar el moment adequat"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "elefant",
+   "🐘"
+  ],
+  [
+   "muntanya",
+   "⛰️"
+  ],
+  [
+   "gel",
+   "🧊"
+  ],
+  [
+   "satèl·lit",
+   "🛰️"
+  ],
+  [
+   "astronauta",
+   "🧑‍🚀"
+  ],
+  [
+   "microscopi",
+   "🔬"
+  ]
+ ],
+ "halves": [
+  [
+   "El tardígrad té...",
+   "...vuit potes curtes amb urpes."
+  ],
+  [
+   "[Johann Goeze] el va descobrir...",
+   "...el 1773."
+  ],
+  [
+   "Sense aigua, el tardígrad...",
+   "...es converteix en una boleta seca."
+  ],
+  [
+   "A l'espai van estar...",
+   "...deu dies."
+  ],
+  [
+   "En el seu estat normal...",
+   "...només viu uns mesos."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el superlatiu",
+  "rule": "Per dir que una cosa és la més gran del grup: <b>el més</b> + adjectiu. Per dir «molt molt»: adjectiu + <b>-íssim</b>.",
+  "rows": [
+   "l'animal més resistent",
+   "la muntanya més alta",
+   "el més sorprenent",
+   "lent → lentíssim",
+   "llarg → llarguíssim",
+   "petit → petitíssim"
+  ],
+  "items": [
+   [
+    "El tardígrad és l'animal ___ resistent.",
+    [
+     "més",
+     "molt",
+     "tan"
+    ],
+    0
+   ],
+   [
+    "Es mou ___.",
+    [
+     "lentíssim",
+     "lentíssimament",
+     "més lent"
+    ],
+    1
+   ],
+   [
+    "Són viatges ___.",
+    [
+     "llarguíssims",
+     "llarguíssim",
+     "llarguíssimes"
+    ],
+    0
+   ],
+   [
+    "L'Everest és la muntanya més ___ del món.",
+    [
+     "alt",
+     "alts",
+     "alta"
+    ],
+    2
+   ],
+   [
+    "És un animal ___.",
+    [
+     "petitíssim",
+     "petitíssima",
+     "petitíssims"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El tardígrado indestructible",
+   "sub": "El animal más resistente del planeta",
+   "grammar": "Gramática: el superlativo. El més resistent = el más resistente. Con -íssim se dice «muy muy»: lentíssim (lentísimo), llarguíssim (larguísimo).",
+   "rows": [
+    "el animal más resistente",
+    "la montaña más alta",
+    "lo más sorprendente",
+    "lento → lentísimo",
+    "largo → larguísimo",
+    "pequeño → pequeñísimo"
+   ],
+   "hints": [
+    "más",
+    "lentísimamente",
+    "larguísimos",
+    "alta",
+    "pequeñísimo"
+   ],
+   "vocab": [
+    "elefante",
+    "montaña",
+    "hielo",
+    "satélite",
+    "astronauta",
+    "microscopio"
+   ]
+  }
+ }
+}

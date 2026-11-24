@@ -1,0 +1,207 @@
+{
+ "id": "ca-naturaleza-a2",
+ "topic": "naturaleza",
+ "level": "A2",
+ "title": "Els llocs més extrems de la Terra",
+ "short": "Els llocs més extrems",
+ "text": [
+  "A la Terra hi ha llocs on la vida és molt difícil: fa massa calor, massa fred o no hi ha prou aire. Molts exploradors els visiten per batre rècords. Coneixerem cinc d'aquests llocs.",
+  "La [Vall de la Mort], als [Estats Units], és un dels llocs més calorosos del planeta. El 1913, un termòmetre va marcar cinquanta-sis graus. A l'estiu, els turistes la visiten, però no poden caminar gaire estona al sol.",
+  "El lloc més fred és a l'Antàrtida. El 1983, a la base russa de Vostok, els científics van mesurar gairebé noranta graus [sota zero]. Amb aquest fred, si llances aigua calenta a l'aire, la veus convertir-se en gel!",
+  "El [desert d'Atacama], a Xile, és el desert més sec del món, sense comptar els pols. En algunes parts no hi han mesurat mai pluja. El terra s'assembla tant al de Mart que la NASA el fa servir per provar els seus robots.",
+  "L'Everest és la muntanya més alta: fa vuit mil vuit-cents quaranta-nou metres. A dalt, l'aire té molt poc oxigen, [per això] gairebé tots els alpinistes el porten en ampolles. I el lloc més profund és la [fossa de les Marianes], a l'oceà Pacífic: té gairebé onze mil metres. Molt poques persones l'han visitada, en submarins especials."
+ ],
+ "q": [
+  [
+   "Quants graus va marcar el termòmetre a la [Vall de la Mort]?",
+   [
+    "Cinquanta-sis",
+    "Quaranta",
+    "Noranta"
+   ],
+   0
+  ],
+  [
+   "On és el lloc més fred?",
+   [
+    "A l'Everest",
+    "A l'Antàrtida",
+    "A Xile"
+   ],
+   1
+  ],
+  [
+   "Per què la NASA fa servir el [desert d'Atacama]?",
+   [
+    "Perquè fa molt de fred",
+    "Perquè hi ha molta aigua",
+    "Perquè el terra s'assembla al de Mart"
+   ],
+   2
+  ],
+  [
+   "Quant fa l'Everest?",
+   [
+    "Vuit mil vuit-cents quaranta-nou metres",
+    "Onze mil metres",
+    "Mil metres"
+   ],
+   0
+  ],
+  [
+   "Per què els alpinistes porten ampolles d'oxigen?",
+   [
+    "Per beure",
+    "Perquè a dalt hi ha molt poc oxigen",
+    "Per cuinar"
+   ],
+   1
+  ],
+  [
+   "Com es visita la [fossa de les Marianes]?",
+   [
+    "Nedant",
+    "En avió",
+    "En submarins especials"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "termòmetre",
+   "🌡️"
+  ],
+  [
+   "desert",
+   "🏜️"
+  ],
+  [
+   "gel",
+   "🧊"
+  ],
+  [
+   "submarí",
+   "🤿"
+  ],
+  [
+   "ampolla",
+   "🍼"
+  ],
+  [
+   "muntanya",
+   "🏔️"
+  ]
+ ],
+ "halves": [
+  [
+   "A la [Vall de la Mort]...",
+   "...fa moltíssima calor."
+  ],
+  [
+   "A Vostok van mesurar...",
+   "...gairebé noranta graus [sota zero]."
+  ],
+  [
+   "El [desert d'Atacama] és...",
+   "...el més sec del món."
+  ],
+  [
+   "L'Everest és...",
+   "...la muntanya més alta."
+  ],
+  [
+   "La [fossa de les Marianes] té...",
+   "...gairebé onze mil metres."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el, la, els, les (pronoms)",
+  "rule": "Per no repetir un nom fem servir els pronoms <b>el</b>, <b>la</b>, <b>els</b>, <b>les</b>. Davant de vocal: <b>l'</b>. Darrere del verb: <b>-lo</b>, <b>-la</b>, <b>-los</b>, <b>-les</b>.",
+  "rows": [
+   "la veus",
+   "el porten",
+   "els visiten",
+   "les mesuren",
+   "l'han visitada",
+   "vull visitar-la"
+  ],
+  "items": [
+   [
+    "L'aigua? ___ veus convertir-se en gel.",
+    [
+     "La",
+     "El",
+     "Els"
+    ],
+    0
+   ],
+   [
+    "L'oxigen? Els alpinistes ___ porten en ampolles.",
+    [
+     "la",
+     "el",
+     "les"
+    ],
+    1
+   ],
+   [
+    "Els llocs extrems? Molts exploradors ___ visiten.",
+    [
+     "el",
+     "la",
+     "els"
+    ],
+    2
+   ],
+   [
+    "La fossa? Poques persones ___ han visitada.",
+    [
+     "l'",
+     "la",
+     "el"
+    ],
+    0
+   ],
+   [
+    "El desert? La NASA vol fer-___ servir.",
+    [
+     "la",
+     "lo",
+     "les"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los lugares más extremos de la Tierra",
+   "sub": "Calor, frío, sequedad, altura y profundidad",
+   "grammar": "Gramática: lo, la, los, las. En catalán: el (lo), la (la), els (los), les (las). Delante de vocal se escribe l'. Detrás de un infinitivo se escribe con guion: visitar-la (visitarla).",
+   "rows": [
+    "la ves",
+    "lo llevan",
+    "los visitan",
+    "las miden",
+    "la han visitado",
+    "quiero visitarla"
+   ],
+   "hints": [
+    "la",
+    "lo",
+    "los",
+    "la",
+    "lo"
+   ],
+   "vocab": [
+    "termómetro",
+    "desierto",
+    "hielo",
+    "submarino",
+    "botella",
+    "montaña"
+   ]
+  }
+ }
+}

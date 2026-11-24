@@ -1,0 +1,208 @@
+{
+ "id": "ca-misterios-b1",
+ "topic": "misterios",
+ "level": "B1",
+ "title": "L'Atlàntida",
+ "short": "L'Atlàntida",
+ "text": [
+  "Fa uns dos mil quatre-cents anys, el filòsof grec Plató va escriure sobre una illa increïble anomenada Atlàntida. Segons ell, era més enllà de les [Columnes d'Hèrcules], [és a dir], de l'[estret de Gibraltar], i era més gran que molts països junts. Els seus habitants eren rics i poderosos, tenien temples d'or i plata, ports plens de vaixells i canals en forma d'anell al voltant de la capital.",
+  "Però, segons Plató, els atlants es van tornar arrogants i van voler conquerir el món. Com a càstig, en un sol dia i una sola nit, terratrèmols i inundacions terribles van enfonsar l'illa al mar, i l'Atlàntida va desaparèixer per sempre.",
+  "Des d'aleshores, moltes persones han intentat trobar-la. Alguns investigadors pensen que potser la història s'inspira en l'illa grega de Santorini. Fa uns tres mil sis-cents anys, allà hi va haver una de les erupcions volcàniques més grans de la història, que va destruir gran part de l'illa i va afectar la civilització minoica, molt avançada per a la seva època.",
+  "Altres busquen l'Atlàntida en llocs molt diferents: al sud d'Espanya, a prop de Doñana; al [mar del Nord]; a les illes Açores; i fins i tot a l'Antàrtida! De tant en tant, una notícia anuncia que algú l'ha trobada, però fins ara ningú no ha presentat proves sòlides.",
+  "La majoria dels historiadors creu que Plató es va inventar l'Atlàntida per ensenyar una lliçó moral: que l'orgull i l'ambició poden destruir fins i tot la societat més poderosa. És possible que no trobem mai l'illa, perquè potser no va existir mai.",
+  "Tot i això, la llegenda continua viva en llibres, pel·lícules i videojocs. Pot ser que el que ens atrau de l'Atlàntida no sigui trobar-la, sinó imaginar-la."
+ ],
+ "q": [
+  [
+   "Qui va escriure sobre l'Atlàntida?",
+   [
+    "Plató",
+    "Hèrcules",
+    "Un explorador espanyol"
+   ],
+   0
+  ],
+  [
+   "Segons Plató, on era l'Atlàntida?",
+   [
+    "Al centre de Grècia",
+    "Més enllà de l'[estret de Gibraltar]",
+    "A l'Antàrtida"
+   ],
+   1
+  ],
+  [
+   "Per què es va enfonsar l'illa, segons Plató?",
+   [
+    "Per un asteroide",
+    "Per una guerra amb Egipte",
+    "Com a càstig per la seva arrogància"
+   ],
+   2
+  ],
+  [
+   "Què va passar a Santorini fa uns tres mil sis-cents anys?",
+   [
+    "Una gran erupció volcànica",
+    "Una guerra",
+    "Es va construir un temple d'or"
+   ],
+   0
+  ],
+  [
+   "Algú ha presentat proves sòlides de l'Atlàntida?",
+   [
+    "Sí, el 2010",
+    "No, fins ara ningú",
+    "Sí, a Doñana"
+   ],
+   1
+  ],
+  [
+   "Què creu la majoria dels historiadors?",
+   [
+    "Que és al [mar del Nord]",
+    "Que és a les Açores",
+    "Que Plató se la va inventar"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "illa",
+   "🏝️"
+  ],
+  [
+   "temple",
+   "🏛️"
+  ],
+  [
+   "or",
+   "🥇"
+  ],
+  [
+   "port",
+   "⚓"
+  ],
+  [
+   "terratrèmol",
+   "🫨"
+  ],
+  [
+   "pergamí",
+   "📜"
+  ]
+ ],
+ "halves": [
+  [
+   "Els atlants eren...",
+   "...rics i poderosos."
+  ],
+  [
+   "L'illa es va enfonsar...",
+   "...en un sol dia i una sola nit."
+  ],
+  [
+   "A Santorini hi va haver...",
+   "...una erupció enorme."
+  ],
+  [
+   "Ningú no ha presentat...",
+   "...proves sòlides."
+  ],
+  [
+   "Potser el que ens atrau...",
+   "...és imaginar-la."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: expressar dubte",
+  "rule": "Per expressar dubte fem servir <b>potser</b> (amb indicatiu) o <b>és possible que</b> i <b>pot ser que</b> (amb subjuntiu).",
+  "rows": [
+   "potser no va existir",
+   "potser és a Santorini",
+   "és possible que no la trobem",
+   "pot ser que sigui una llegenda",
+   "no crec que existeixi",
+   "dubto que la trobin"
+  ],
+  "items": [
+   [
+    "És possible que no ___ mai l'illa.",
+    [
+     "trobem",
+     "trobarem",
+     "trobàvem"
+    ],
+    0
+   ],
+   [
+    "Potser la història ___ inventada.",
+    [
+     "sigui",
+     "és",
+     "fos"
+    ],
+    1
+   ],
+   [
+    "Pot ser que l'Atlàntida ___ una llegenda.",
+    [
+     "és",
+     "serà",
+     "sigui"
+    ],
+    2
+   ],
+   [
+    "Dubto que algú la ___.",
+    [
+     "trobi",
+     "troba",
+     "trobarà"
+    ],
+    0
+   ],
+   [
+    "No crec que ___ proves sòlides.",
+    [
+     "hi ha",
+     "hi hagi",
+     "hi haurà"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La Atlántida",
+   "sub": "La isla perdida de Platón",
+   "grammar": "Gramática: expresar duda. Potser (quizá) va con indicativo. És possible que (es posible que) y pot ser que (puede que) van con subjuntivo: és possible que no trobem (es posible que no encontremos).",
+   "rows": [
+    "quizá no existió",
+    "quizá está en Santorini",
+    "es posible que no la encontremos",
+    "puede que sea una leyenda",
+    "no creo que exista",
+    "dudo que la encuentren"
+   ],
+   "hints": [
+    "encontremos",
+    "es",
+    "sea",
+    "encuentre",
+    "haya"
+   ],
+   "vocab": [
+    "isla",
+    "templo",
+    "oro",
+    "puerto",
+    "terremoto",
+    "pergamino"
+   ]
+  }
+ }
+}

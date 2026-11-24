@@ -1,0 +1,207 @@
+{
+ "id": "ca-comida-a2",
+ "topic": "comida",
+ "level": "A2",
+ "title": "Menjars estranys del món",
+ "short": "Menjars estranys del món",
+ "text": [
+  "Cada país té el seu menjar típic. Alguns menjars són normals per a la gent d'allà, però molt estranys per als visitants. Avui viatgem pel món per conèixer quatre menjars sorprenents.",
+  "Al Japó, molta gent esmorza natto. Són llavors de soja fermentades. Tenen una olor forta i són molt enganxoses: quan les aixeques amb els bastonets, surten fils llargs. Normalment, el natto es menja amb arròs.",
+  "A la Xina hi ha l'[ou centenari]. El seu nom vol dir «ou de cent anys», però no és tan vell: es prepara en unes setmanes. Es guarda en una barreja de fang, sal i cendra. Al final, la clara es torna negra i transparent, i el rovell es torna verd fosc.",
+  "A Escòcia es menja el haggis, el plat nacional. Es fa amb parts del xai, com el cor i els pulmons, barrejades amb ceba i civada. [Abans], tot es cuinava dins de l'estómac de l'animal. Se serveix amb puré de patates.",
+  "Però el menjar més pudent és, [potser], el surströmming de Suècia. És peix fermentat en una llauna. L'olor és tan forta que la llauna s'obre fora de casa. Molts suecs el mengen amb pa, patates i ceba. T'atreveixes a tastar-lo?"
+ ],
+ "q": [
+  [
+   "On es menja el natto?",
+   [
+    "A la Xina",
+    "Al Japó",
+    "A Suècia"
+   ],
+   1
+  ],
+  [
+   "Què passa quan aixeques el natto?",
+   [
+    "Surten fils llargs",
+    "Canvia de color",
+    "Es trenca"
+   ],
+   0
+  ],
+  [
+   "Quant de temps necessita l'[ou centenari]?",
+   [
+    "Cent anys",
+    "Unes setmanes",
+    "Un dia"
+   ],
+   1
+  ],
+  [
+   "De quin color és la clara de l'[ou centenari]?",
+   [
+    "Blanca",
+    "Verda",
+    "Negra i transparent"
+   ],
+   2
+  ],
+  [
+   "Amb què se serveix el haggis?",
+   [
+    "Amb puré de patates",
+    "Amb arròs",
+    "Amb pa"
+   ],
+   0
+  ],
+  [
+   "Per què la llauna de surströmming s'obre fora de casa?",
+   [
+    "Perquè és molt gran",
+    "Perquè l'olor és molt forta",
+    "Perquè és una tradició d'estiu"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "ou",
+   "🥚"
+  ],
+  [
+   "arròs",
+   "🍚"
+  ],
+  [
+   "peix",
+   "🐟"
+  ],
+  [
+   "pa",
+   "🍞"
+  ],
+  [
+   "ceba",
+   "🧅"
+  ],
+  [
+   "bastonets",
+   "🥢"
+  ]
+ ],
+ "halves": [
+  [
+   "El natto és...",
+   "...molt enganxós."
+  ],
+  [
+   "L'[ou centenari] no és...",
+   "...tan vell."
+  ],
+  [
+   "El haggis és...",
+   "...el plat nacional d'Escòcia."
+  ],
+  [
+   "El surströmming és...",
+   "...peix fermentat en una llauna."
+  ],
+  [
+   "Molts suecs el mengen...",
+   "...amb pa i patates."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: es + verb",
+  "rule": "Amb <b>es</b> + verb diem el que fa la gent en general: <b>es menja</b>, <b>es fa</b>. Davant de vocal fem <b>s'</b>, i davant de <b>s</b> fem <b>se</b>.",
+  "rows": [
+   "es menja",
+   "es mengen",
+   "es fa",
+   "es prepara",
+   "s'obre",
+   "se serveix"
+  ],
+  "items": [
+   [
+    "El natto ___ menja amb arròs.",
+    [
+     "es",
+     "se",
+     "s'"
+    ],
+    0
+   ],
+   [
+    "La llauna ___ fora de casa.",
+    [
+     "es obre",
+     "s'obre",
+     "se obre"
+    ],
+    1
+   ],
+   [
+    "El haggis ___ serveix amb puré.",
+    [
+     "es",
+     "s'",
+     "se"
+    ],
+    2
+   ],
+   [
+    "A Suècia es ___ peix fermentat.",
+    [
+     "menja",
+     "mengen",
+     "menjo"
+    ],
+    0
+   ],
+   [
+    "Aquests ous es ___ en unes setmanes.",
+    [
+     "prepara",
+     "preparen",
+     "prepares"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Comidas raras del mundo",
+   "sub": "Cuatro comidas sorprendentes",
+   "grammar": "Gramática: se + verbo. Igual que en español (se come, se hace). Delante de vocal se escribe s' (s'obre) y delante de s se escribe se (se serveix).",
+   "rows": [
+    "se come",
+    "se comen",
+    "se hace",
+    "se prepara",
+    "se abre",
+    "se sirve"
+   ],
+   "hints": [
+    "se",
+    "se abre",
+    "se sirve",
+    "come",
+    "preparan"
+   ],
+   "vocab": [
+    "huevo",
+    "arroz",
+    "pescado",
+    "pan",
+    "cebolla",
+    "palillos"
+   ]
+  }
+ }
+}

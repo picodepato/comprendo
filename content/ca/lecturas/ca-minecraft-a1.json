@@ -1,0 +1,207 @@
+{
+ "id": "ca-minecraft-a1",
+ "topic": "minecraft",
+ "level": "A1",
+ "title": "Com es juga a Minecraft",
+ "short": "Com es juga",
+ "text": [
+  "Minecraft és un videojoc de món obert. A Minecraft, tot és de blocs: la terra, els arbres, l'aigua, els animals i les persones. El teu personatge [es diu] Steve o Alex. Tu decideixes què fas.",
+  "Hi ha dos modes de joc principals. En el mode Supervivència, has de buscar menjar, fusta i pedra. En el mode Creatiu, tens tots els blocs i pots volar. Pots construir cases, castells i ciutats.",
+  "Primer, talles arbres per tenir fusta. Amb la fusta, fas una [taula de treball]. A la [taula de treball] pots fabricar eines: un pic, una espasa o una destral. Amb el pic, pots picar pedra i buscar minerals, com el ferro i el diamant.",
+  "A Minecraft hi ha dia i nit. El dia és tranquil, però a la nit surten monstres: zombis, esquelets i aranyes. El més famós és el creeper: és verd, no fa soroll i explota! [Per això], és important construir una casa abans de la nit.",
+  "Pots jugar sol o amb amics. A Minecraft no hi ha una manera correcta de jugar: cada partida és diferent."
+ ],
+ "q": [
+  [
+   "Com és tot a Minecraft?",
+   [
+    "Rodó",
+    "De blocs",
+    "D'aigua"
+   ],
+   1
+  ],
+  [
+   "Com es diu el teu personatge?",
+   [
+    "Steve o Alex",
+    "Leo o Marta",
+    "Notch"
+   ],
+   0
+  ],
+  [
+   "En quin mode pots volar?",
+   [
+    "En el mode Supervivència",
+    "En el mode Creatiu",
+    "En tots dos"
+   ],
+   1
+  ],
+  [
+   "Què fas amb la fusta?",
+   [
+    "Una [taula de treball]",
+    "Un creeper",
+    "Un diamant"
+   ],
+   0
+  ],
+  [
+   "Quan surten els monstres?",
+   [
+    "Al matí",
+    "A la nit",
+    "Mai"
+   ],
+   1
+  ],
+  [
+   "Què fa el creeper?",
+   [
+    "Vola",
+    "Explota",
+    "Canta"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "arbre",
+   "🌳"
+  ],
+  [
+   "pedra",
+   "🪨"
+  ],
+  [
+   "espasa",
+   "⚔️"
+  ],
+  [
+   "diamant",
+   "💎"
+  ],
+  [
+   "aranya",
+   "🕷️"
+  ],
+  [
+   "casa",
+   "🏠"
+  ]
+ ],
+ "halves": [
+  [
+   "A Minecraft, tot és...",
+   "...de blocs."
+  ],
+  [
+   "En el mode Creatiu...",
+   "...pots volar."
+  ],
+  [
+   "Amb el pic...",
+   "...pots picar pedra."
+  ],
+  [
+   "A la nit surten...",
+   "...monstres."
+  ],
+  [
+   "El creeper és verd...",
+   "...i explota."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: poder + infinitiu",
+  "rule": "Per dir que una cosa és possible fem servir <b>poder</b> + infinitiu: <b>pots volar</b>, <b>podem construir</b>.",
+  "rows": [
+   "jo puc jugar",
+   "tu pots volar",
+   "ell pot construir",
+   "nosaltres podem picar",
+   "vosaltres podeu tallar",
+   "ells poden explotar"
+  ],
+  "items": [
+   [
+    "En el mode Creatiu, tu ___ volar.",
+    [
+     "pots",
+     "pot",
+     "puc"
+    ],
+    0
+   ],
+   [
+    "Jo ___ construir una casa.",
+    [
+     "pot",
+     "puc",
+     "poden"
+    ],
+    1
+   ],
+   [
+    "Nosaltres ___ jugar junts.",
+    [
+     "podeu",
+     "poden",
+     "podem"
+    ],
+    2
+   ],
+   [
+    "El creeper ___ explotar.",
+    [
+     "pot",
+     "pots",
+     "puc"
+    ],
+    0
+   ],
+   [
+    "Els jugadors ___ fabricar eines.",
+    [
+     "podem",
+     "poden",
+     "pot"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Cómo se juega a Minecraft",
+   "sub": "Bloques, herramientas y monstruos",
+   "grammar": "Gramática: poder + infinitivo. Funciona como en español: pots volar (puedes volar), podem construir (podemos construir).",
+   "rows": [
+    "yo puedo jugar",
+    "tú puedes volar",
+    "él puede construir",
+    "nosotros podemos picar",
+    "vosotros podéis cortar",
+    "ellos pueden explotar"
+   ],
+   "hints": [
+    "puedes",
+    "puedo",
+    "podemos",
+    "puede",
+    "pueden"
+   ],
+   "vocab": [
+    "árbol",
+    "piedra",
+    "espada",
+    "diamante",
+    "araña",
+    "casa"
+   ]
+  }
+ }
+}

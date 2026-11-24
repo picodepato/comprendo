@@ -1,0 +1,207 @@
+{
+ "id": "ca-inventos-a2",
+ "topic": "inventos",
+ "level": "A2",
+ "title": "Invents per accident",
+ "short": "Invents per accident",
+ "text": [
+  "Molts invents famosos van néixer per casualitat. Els seus inventors buscaven una altra cosa, però un error o una sorpresa els va donar una idea genial. Aquí tens quatre exemples.",
+  "El 1945, l'enginyer [Percy Spencer] treballava amb un aparell per als radars. Un dia, mentre era a prop de la màquina, va notar una cosa estranya: la barreta de xocolata de la seva butxaca es va desfer. Després, va provar amb blat de moro i van sortir crispetes! Així va néixer el forn microones.",
+  "El 1928, el científic [Alexander Fleming] se'n va anar de vacances i va deixar el seu laboratori una mica desordenat. Quan va tornar, va veure que en un dels seus plats hi havia crescut una floridura. Al voltant de la floridura, els bacteris eren morts. Fleming va descobrir la penicil·lina, el primer antibiòtic, que va salvar milions de vides.",
+  "El 1968, [Spencer Silver] intentava crear una cola molt forta, però li'n va sortir una de molt fluixa: enganxava, però es desenganxava fàcilment. Ningú no sabia per a què servia. Uns anys després, el seu company [Art Fry] la va fer servir per marcar les pàgines del seu llibre de cançons. Així van néixer les notes adhesives, els famosos pòsits.",
+  "I segons una llegenda, el 1853 un client d'un restaurant es queixava perquè les seves patates fregides eren massa gruixudes. El cuiner, enfadat, les va tallar primíssimes i les va fregir molt. Al client li van encantar! Així van néixer les patates de bossa. La lliçó: un error pot ser el principi d'una cosa increïble."
+ ],
+ "q": [
+  [
+   "Què li va passar a [Percy Spencer]?",
+   [
+    "Se li va desfer la xocolata",
+    "Se li va trencar la màquina",
+    "Va perdre el radar"
+   ],
+   0
+  ],
+  [
+   "Quin invent va néixer gràcies a ell?",
+   [
+    "La nevera",
+    "El forn microones",
+    "La bombeta"
+   ],
+   1
+  ],
+  [
+   "Què va fer Fleming abans del seu descobriment?",
+   [
+    "Se'n va anar de vacances",
+    "Va comprar un microscopi",
+    "Va menjar crispetes"
+   ],
+   0
+  ],
+  [
+   "Què va descobrir Fleming?",
+   [
+    "La xocolata",
+    "La cola",
+    "La penicil·lina"
+   ],
+   2
+  ],
+  [
+   "Com era la cola de [Spencer Silver]?",
+   [
+    "Molt forta",
+    "Molt fluixa",
+    "De colors"
+   ],
+   1
+  ],
+  [
+   "Per què es queixava el client del restaurant?",
+   [
+    "Les patates eren fredes",
+    "Les patates eren massa gruixudes",
+    "No hi havia patates"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "xocolata",
+   "🍫"
+  ],
+  [
+   "crispetes",
+   "🍿"
+  ],
+  [
+   "llibre",
+   "📖"
+  ],
+  [
+   "patates fregides",
+   "🍟"
+  ],
+  [
+   "bacteris",
+   "🦠"
+  ],
+  [
+   "cuiner",
+   "🧑‍🍳"
+  ]
+ ],
+ "halves": [
+  [
+   "[Percy Spencer] treballava...",
+   "...amb un aparell per als radars."
+  ],
+  [
+   "Fleming se'n va anar...",
+   "...de vacances."
+  ],
+  [
+   "Al voltant de la floridura, els bacteris...",
+   "...eren morts."
+  ],
+  [
+   "[Art Fry] va fer servir la cola...",
+   "...per marcar les pàgines."
+  ],
+  [
+   "Un error pot ser...",
+   "...el principi d'una cosa increïble."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: imperfet i passat perifràstic",
+  "rule": "L'imperfet descriu la situació: <b>treballava</b>. El passat perifràstic explica què va passar: <b>va notar</b>. Es fa amb <b>anar</b> + infinitiu: vaig, vas, va, vam, vau, van.",
+  "rows": [
+   "treballava",
+   "va notar",
+   "buscaven",
+   "van néixer",
+   "jo vaig provar",
+   "nosaltres vam descobrir"
+  ],
+  "items": [
+   [
+    "Spencer ___ amb un aparell per als radars.",
+    [
+     "treballava",
+     "va treballar",
+     "treballa"
+    ],
+    0
+   ],
+   [
+    "Un dia, Spencer ___ una cosa estranya.",
+    [
+     "notava",
+     "va notar",
+     "nota"
+    ],
+    1
+   ],
+   [
+    "Fleming ___ la penicil·lina el 1928.",
+    [
+     "descobreix",
+     "descobria",
+     "va descobrir"
+    ],
+    2
+   ],
+   [
+    "Els inventors ___ una altra cosa.",
+    [
+     "buscaven",
+     "van",
+     "busquen"
+    ],
+    0
+   ],
+   [
+    "Les notes adhesives ___ per casualitat.",
+    [
+     "va néixer",
+     "van néixer",
+     "naixien"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Inventos por accidente",
+   "sub": "El microondas, la penicilina, los pósits y las patatas fritas",
+   "grammar": "Gramática: imperfecto e indefinido. El imperfecto describe (treballava = trabajaba). Para el pasado de acciones, el catalán usa vaig, vas, va, vam, vau, van + infinitivo: va notar (notó), van néixer (nacieron).",
+   "rows": [
+    "trabajaba",
+    "notó",
+    "buscaban",
+    "nacieron",
+    "yo probé",
+    "nosotros descubrimos"
+   ],
+   "hints": [
+    "trabajaba",
+    "notó",
+    "descubrió",
+    "buscaban",
+    "nacieron"
+   ],
+   "vocab": [
+    "chocolate",
+    "palomitas",
+    "libro",
+    "patatas fritas",
+    "bacterias",
+    "cocinero"
+   ]
+  }
+ }
+}

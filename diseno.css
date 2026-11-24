@@ -1,0 +1,82 @@
+/* COMPRENDO: capa de diseño común (se carga la última, después de las hojas de cada sección).
+   - Color de marca --brand por tema (ya no rojo: el rojo queda solo para los fallos).
+   - Barra superior en dos filas: marca + puntos arriba, pestañas en una sola fila deslizable.
+   - Portada más compacta para que las lecturas se vean antes, tarjetas con relieve, botones que responden al toque. */
+:root{--brand:#ffb238;--radius:16px;--shadow:0 10px 28px -14px rgba(0,0,0,.7)}
+html[data-tema=claro]{--brand:#e8590c}
+html[data-tema=caramelo]{--brand:#e0558f}
+html[data-tema=neon]{--brand:#ff4fd8}
+html[data-tema=oceano]{--brand:#38d2e0}
+html[data-tema=lava]{--brand:#ff7a1a}
+html[data-tema=bosque]{--brand:#7bd66b}
+
+body{background:radial-gradient(900px 520px at 85% -120px,color-mix(in srgb,var(--brand) 9%,transparent),transparent 70%) no-repeat,var(--bg)}
+
+/* ---------- barra superior ---------- */
+.top{gap:8px 10px;padding:8px max(4vw,16px) 0}
+.top>*{order:2}
+.top .brand{order:0;margin-right:auto;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:21px;letter-spacing:.04em;color:var(--brand)}
+.top .brand::before{content:"";flex:none;width:26px;height:26px;border-radius:8px;background:var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23120e16' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6.5C6.5 5 9.5 5 12 6.8 14.5 5 17.5 5 20 6.5V18c-2.5-1.4-5.5-1.4-8 .4-2.5-1.8-5.5-1.8-8-.4z'/%3E%3Cpath d='M12 6.8v11.6'/%3E%3C/svg%3E") center/18px no-repeat;transform:rotate(-6deg)}
+.top .tabs{order:9;flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;gap:4px;padding:0 0 8px;margin:0 -4px;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,transparent 0,#000 6px,#000 calc(100% - 24px),transparent)}
+.top .tabs::-webkit-scrollbar{display:none}
+.tabs a{gap:6px;flex:none;border-color:transparent;background:transparent;border-radius:999px;padding:6px 14px;transition:background .15s,color .15s}
+.tabs a:first-child{margin-left:4px}
+.tabs a:hover{background:var(--panel2);color:var(--ink)}
+.tabs a[aria-current=page]{background:var(--acc);border-color:var(--acc);color:#1a0a0a;font-weight:700}
+.tabs a[href="#inicio"]::before{content:"🏠"}
+.tabs a[href="#diccionario"]::before{content:"📖"}
+.tabs a[href="#juegos"]::before{content:"🎮"}
+.tabs .tk{opacity:.75;font-weight:400}
+
+/* ---------- portada ---------- */
+.intro{padding-top:clamp(22px,4vw,44px);padding-bottom:22px}
+.intro h1{color:var(--brand);letter-spacing:.02em;font-size:clamp(40px,8vw,72px)}
+.intro .lead{font-size:clamp(17px,2.2vw,20px)}
+.phome{transition:border-color .15s,transform .15s}
+.phome:hover{transform:translateY(-2px)}
+.pk{border-radius:var(--radius)}
+.chip{border-radius:999px;padding:4px 14px;transition:transform .1s}
+.chip[disabled]{min-height:36px;opacity:.4;border-style:dashed;background:transparent}
+.lv a{border-radius:14px;transition:transform .12s,border-color .12s}
+.lv a:hover{transform:translateY(-2px);border-color:var(--mute)}
+
+/* ---------- tarjetas de lectura ---------- */
+.card{border-radius:18px;box-shadow:var(--shadow);transition:transform .18s,border-color .18s,box-shadow .18s}
+a.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px -16px color-mix(in srgb,var(--c) 70%,transparent)}
+.card .art{border-bottom:1px solid var(--line)}
+.card .tt{font-weight:700}
+.card .badge{border-radius:999px;padding:3px 10px}
+
+/* ---------- lectura ---------- */
+.hero{border-bottom:1px solid var(--line)}
+.reading,.qc,.res,.box{box-shadow:var(--shadow)}
+.meta span{border-radius:999px;padding:2px 11px}
+
+/* ---------- botones: responden al toque ---------- */
+.btn,.opt,.mi,.chip,.seg button,.lv a{transition:transform .1s,border-color .15s,background .15s}
+.btn:active:not([disabled]),.opt:active:not([disabled]),.mi:active:not([disabled]),.chip:active:not([disabled]),.seg button:active{transform:scale(.96)}
+.btn.main{font-weight:700;box-shadow:0 6px 16px -8px var(--acc)}
+
+/* ---------- móvil ---------- */
+@media(max-width:600px){
+ .top{padding-top:6px}
+ .top .brand{font-size:18px}
+ .top .brand::before{width:22px;height:22px;background-size:15px}
+ .tabs a{padding:6px 12px}
+ .intro{padding-top:18px;padding-bottom:18px}
+ .intro h1{font-size:40px}
+ .intro .lead{margin-top:4px}
+ .phome{margin-top:14px;padding:8px 12px 8px 8px}
+ .phome .pet-svg.small{width:64px}
+ .pickers{margin-top:14px;gap:10px}
+ .pk{padding:10px 12px}
+ .lvbar{padding-top:18px}
+}
+@media(prefers-reduced-motion:reduce){.card,.phome,.lv a,.btn,.opt,.mi,.chip,.tabs a{transition:none}a.card:hover,.phome:hover,.lv a:hover{transform:none}}
+@media(max-width:600px){
+ .chip[disabled] small{display:none}
+ .chip[disabled]{min-height:34px;padding:2px 12px}
+ .phome .pet-svg.tiny{width:36px}
+ .pfaces .pet-svg+.pet-svg{margin-left:-10px}
+}
+@media(max-width:600px){.top:has(#score:not([hidden])) .brand{font-size:0;gap:0;letter-spacing:0}}

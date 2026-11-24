@@ -1,0 +1,207 @@
+{
+ "id": "ca-speedruns-b1",
+ "topic": "speedruns",
+ "level": "B1",
+ "title": "Trucs i glitches",
+ "short": "Trucs i glitches",
+ "text": [
+  "Un glitch és un error de programació que fa que el joc funcioni d'una manera que els seus creadors no esperaven. Per a la majoria dels jugadors, un glitch és només una cosa curiosa o molesta. Per als speedrunners, [en canvi], pot ser un tresor: [de vegades] permet estalviar minuts o [fins i tot] hores.",
+  "Un dels glitches més coneguts és el «salt llarg enrere» de [Super Mario 64]. Al castell hi ha una escala infinita que, en teoria, només es pot pujar amb setanta estrelles. [Tanmateix], si en Mario salta enrere [una vegada i una altra], guanya [cada vegada més] velocitat, fins que travessa la barrera i arriba a dalt sense les estrelles.",
+  "Altres trucs permeten travessar parets, saltar-se parts senceres d'un nivell o [fins i tot] arribar directament als crèdits finals. Els jugadors els descobreixen després de milers d'hores de proves i, [sovint], comparteixen les seves troballes a internet perquè tota la comunitat les pugui aprofitar.",
+  "[Això sí], no tothom pensa que els glitches siguin justos. [Per això], moltes comunitats creen categories separades: en les partides «sense glitches», els jugadors han d'acabar el joc tal com el van dissenyar els seus creadors. Si un jugador fes servir un glitch en aquesta categoria, el seu rècord no seria vàlid.",
+  "Alguns speedrunners diuen que, si no existissin els glitches, la seva afició seria molt més avorrida. D'altres prefereixen l'habilitat pura. [El més curiós] és que aquests errors, que abans eren un problema per als programadors, avui són una part fonamental de la història dels videojocs."
+ ],
+ "q": [
+  [
+   "Què és un glitch?",
+   [
+    "Un error de programació",
+    "Un tipus de consola",
+    "Un rècord mundial"
+   ],
+   0
+  ],
+  [
+   "Per què un glitch pot ser un tresor per als speedrunners?",
+   [
+    "Perquè és bonic",
+    "Perquè permet estalviar temps",
+    "Perquè dona estrelles"
+   ],
+   1
+  ],
+  [
+   "En teoria, quantes estrelles necessites per pujar l'escala infinita?",
+   [
+    "Set",
+    "Setanta",
+    "Cap"
+   ],
+   1
+  ],
+  [
+   "Com travessa en Mario la barrera?",
+   [
+    "Saltant enrere moltes vegades",
+    "Amb setanta estrelles",
+    "Corrent endavant"
+   ],
+   0
+  ],
+  [
+   "Què fan els jugadors amb les seves troballes?",
+   [
+    "Les amaguen",
+    "Les comparteixen a internet",
+    "Les venen"
+   ],
+   1
+  ],
+  [
+   "En la categoria «sense glitches», què passaria si fessis servir un glitch?",
+   [
+    "Tindries més punts",
+    "El teu rècord no seria vàlid",
+    "Guanyaries una estrella"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "escala",
+   "🪜"
+  ],
+  [
+   "estrella",
+   "⭐"
+  ],
+  [
+   "paret",
+   "🧱"
+  ],
+  [
+   "tresor",
+   "💎"
+  ],
+  [
+   "barrera",
+   "🚧"
+  ],
+  [
+   "internet",
+   "🌐"
+  ]
+ ],
+ "halves": [
+  [
+   "Un glitch és...",
+   "...un error de programació."
+  ],
+  [
+   "Si en Mario salta enrere...",
+   "...guanya [cada vegada més] velocitat."
+  ],
+  [
+   "Els jugadors comparteixen les troballes...",
+   "...a internet."
+  ],
+  [
+   "Si un jugador fes servir un glitch...",
+   "...el seu rècord no seria vàlid."
+  ],
+  [
+   "Si no existissin els glitches...",
+   "...la seva afició seria més avorrida."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: si + imperfet de subjuntiu",
+  "rule": "Per parlar d'una situació imaginària: <b>si</b> + imperfet de subjuntiu, i després el condicional: <b>si fes servir un glitch, no seria vàlid</b>.",
+  "rows": [
+   "si fes servir un glitch",
+   "si no existissin",
+   "si tingués temps",
+   "si pogués",
+   "seria vàlid",
+   "guanyaria"
+  ],
+  "items": [
+   [
+    "Si ___ un glitch, el rècord no seria vàlid.",
+    [
+     "fes servir",
+     "faig servir",
+     "faré servir"
+    ],
+    0
+   ],
+   [
+    "Si no existissin els glitches, l'afició ___ avorrida.",
+    [
+     "és",
+     "seria",
+     "serà"
+    ],
+    1
+   ],
+   [
+    "Si ___ més temps, entrenaria cada dia.",
+    [
+     "tinc",
+     "tindré",
+     "tingués"
+    ],
+    2
+   ],
+   [
+    "Si pogués, ___ el rècord.",
+    [
+     "batria",
+     "batré",
+     "bato"
+    ],
+    0
+   ],
+   [
+    "Si en Mario no ___ enrere, no travessaria la barrera.",
+    [
+     "salta",
+     "saltés",
+     "saltarà"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Trucos y glitches",
+   "sub": "Cuando un error se convierte en un tesoro",
+   "grammar": "Gramática: si + imperfecto de subjuntivo. Para situaciones imaginarias, como en español: si fes servir (si usara), no seria (no sería). Si no existissin (si no existieran), seria (sería).",
+   "rows": [
+    "si usara un glitch",
+    "si no existieran",
+    "si tuviera tiempo",
+    "si pudiera",
+    "sería válido",
+    "ganaría"
+   ],
+   "hints": [
+    "usara",
+    "sería",
+    "tuviera",
+    "batiría",
+    "saltara"
+   ],
+   "vocab": [
+    "escalera",
+    "estrella",
+    "pared",
+    "tesoro",
+    "barrera",
+    "internet"
+   ]
+  }
+ }
+}

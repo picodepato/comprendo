@@ -1,0 +1,207 @@
+{
+ "id": "ca-espacio-a2",
+ "topic": "espacio",
+ "level": "A2",
+ "title": "Un viatge a Mart",
+ "short": "Un viatge a Mart",
+ "text": [
+  "Imagina que ets astronauta i viatjaràs a Mart. Avui no hi ha persones a Mart, però les agències espacials volen enviar-hi els primers astronautes en els pròxims anys. Com serà el teu viatge?",
+  "Primer, passaràs uns set mesos dins d'una nau espacial. És un viatge molt llarg i no pots sortir. Menjaràs menjar especial, faràs exercici cada dia per no perdre múscul i parlaràs amb la teva família amb missatges. Els missatges triguen fins a vint minuts a arribar a la Terra.",
+  "Quan arribis, veuràs un paisatge vermell. Mart és vermell perquè el terra té òxid de ferro, com el metall vell. Allà fa molt de fred: la temperatura mitjana és d'uns seixanta graus [sota zero]. I l'aire no es pot respirar, [així que] sempre portaràs un vestit espacial.",
+  "A Mart pesaràs molt menys. Si a la Terra peses quaranta quilos, a Mart en pesaràs uns quinze. Podràs saltar molt alt! Un dia a Mart dura gairebé el mateix que a la Terra: vint-i-quatre hores i trenta-set minuts.",
+  "També visitaràs l'[Olympus Mons], el volcà més alt del [sistema solar]: fa uns vint-i-dos quilòmetres, molt més que l'Everest. I saludaràs els robots que ja hi són, com el ròver Perseverance, que hi va arribar el 2021 per buscar senyals de vida antiga."
+ ],
+ "q": [
+  [
+   "Quant dura el viatge a Mart?",
+   [
+    "Set dies",
+    "Uns set mesos",
+    "Set anys"
+   ],
+   1
+  ],
+  [
+   "Per què fas exercici a la nau?",
+   [
+    "Per no perdre múscul",
+    "Per no tenir fred",
+    "Per arribar abans"
+   ],
+   0
+  ],
+  [
+   "Per què és vermell Mart?",
+   [
+    "Pel foc",
+    "Per l'òxid de ferro del terra",
+    "Per la llum del Sol"
+   ],
+   1
+  ],
+  [
+   "Quina és la temperatura mitjana a Mart?",
+   [
+    "Uns vint graus",
+    "Uns cent graus",
+    "Uns seixanta graus [sota zero]"
+   ],
+   2
+  ],
+  [
+   "Si a la Terra peses quaranta quilos, quant peses a Mart?",
+   [
+    "Uns quinze",
+    "Uns quaranta",
+    "Uns cent"
+   ],
+   0
+  ],
+  [
+   "Què és Perseverance?",
+   [
+    "Un volcà",
+    "Un astronauta",
+    "Un robot"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "astronauta",
+   "🧑‍🚀"
+  ],
+  [
+   "coet",
+   "🚀"
+  ],
+  [
+   "volcà",
+   "🌋"
+  ],
+  [
+   "robot",
+   "🤖"
+  ],
+  [
+   "rellotge",
+   "⏰"
+  ],
+  [
+   "missatge",
+   "✉️"
+  ]
+ ],
+ "halves": [
+  [
+   "Els missatges triguen...",
+   "...fins a vint minuts."
+  ],
+  [
+   "Mart és vermell perquè...",
+   "...el terra té òxid de ferro."
+  ],
+  [
+   "L'aire de Mart...",
+   "...no es pot respirar."
+  ],
+  [
+   "A Mart podràs...",
+   "...saltar molt alt."
+  ],
+  [
+   "Perseverance hi va arribar...",
+   "...el 2021."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el futur",
+  "rule": "El futur es fa amb l'infinitiu + <b>-é, -às, -à, -em, -eu, -an</b>: <b>viatjaré</b>, <b>viatjaràs</b>, <b>viatjarà</b>.",
+  "rows": [
+   "jo viatjaré",
+   "tu viatjaràs",
+   "ella viatjarà",
+   "nosaltres viatjarem",
+   "vosaltres viatjareu",
+   "ells viatjaran"
+  ],
+  "items": [
+   [
+    "Tu ___ uns set mesos a la nau.",
+    [
+     "passaràs",
+     "passaré",
+     "passaran"
+    ],
+    0
+   ],
+   [
+    "Els astronautes ___ menjar especial.",
+    [
+     "menjarà",
+     "menjaran",
+     "menjarem"
+    ],
+    1
+   ],
+   [
+    "Demà jo ___ amb la meva família.",
+    [
+     "parlaràs",
+     "parlarà",
+     "parlaré"
+    ],
+    2
+   ],
+   [
+    "Nosaltres ___ l'Olympus Mons.",
+    [
+     "visitarem",
+     "visitareu",
+     "visitaran"
+    ],
+    0
+   ],
+   [
+    "El viatge ___ molt llarg.",
+    [
+     "serem",
+     "serà",
+     "seràs"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Un viaje a Marte",
+   "sub": "Cómo sería tu viaje",
+   "grammar": "Gramática: el futuro. Se forma con el infinitivo + terminación, como en español: viatjaràs (viajarás), menjaràs (comerás). En catalán no se usa «anar a» para el futuro.",
+   "rows": [
+    "yo viajaré",
+    "tú viajarás",
+    "ella viajará",
+    "nosotros viajaremos",
+    "vosotros viajaréis",
+    "ellos viajarán"
+   ],
+   "hints": [
+    "pasarás",
+    "comerán",
+    "hablaré",
+    "visitaremos",
+    "será"
+   ],
+   "vocab": [
+    "astronauta",
+    "cohete",
+    "volcán",
+    "robot",
+    "reloj",
+    "mensaje"
+   ]
+  }
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "id": "ca-inventos-b1",
+ "topic": "inventos",
+ "level": "B1",
+ "title": "Robots i intel·ligència artificial",
+ "short": "Robots i IA",
+ "text": [
+  "Fa cinquanta anys, els robots només existien a les pel·lícules de ciència-ficció. Avui són a tot arreu, encara que no sempre els vegem. A les fàbriques, els braços robòtics munten cotxes sense descansar. A moltes cases, un robot aspirador neteja el terra tot sol. I a Mart, diversos robots exploren el planeta i envien fotos a la Terra.",
+  "Un robot és una màquina que es pot moure i fer tasques de manera automàtica. La [intel·ligència artificial] (IA), en canvi, no necessita un cos: és un programa d'ordinador que aprèn a partir de moltíssims exemples. [Per exemple], després de veure milions de fotos de gats, una IA pot reconèixer un gat en una foto nova.",
+  "Gràcies a la IA, avui podem traduir un text en segons, parlar amb assistents de veu o rebre recomanacions de vídeos i cançons. En medicina, algunes IA ajuden els metges a detectar malalties en radiografies. I quan robots i IA treballen junts, apareixen coses com els cotxes autònoms, que condueixen sense conductor.",
+  "Tanmateix, la IA no és perfecta. Es pot equivocar, inventar informació o repetir els errors de les dades amb què va aprendre. [Per això], molts experts pensen que sempre hi ha d'haver una persona que revisi les seves decisions importants. A més, hi ha preguntes difícils: qui és responsable si un cotxe autònom té un accident? Com protegim les nostres dades personals?",
+  "També hi ha debat sobre la feina. Algunes persones tenen por que els robots els prenguin la feina. D'altres creuen que la IA farà les tasques avorrides i que apareixeran professions noves, com ja va passar amb internet. El més probable és que moltes feines canviïn, i que haguem d'aprendre a fer servir aquestes eines.",
+  "I tu, què en penses? Jo crec que la IA és una eina molt útil, però no crec que pugui substituir la creativitat, l'amistat o la imaginació d'una persona. El més important és que aprenguem a fer-la servir bé i amb sentit comú."
+ ],
+ "q": [
+  [
+   "On treballen els braços robòtics?",
+   [
+    "A les fàbriques",
+    "A les escoles",
+    "A Mart"
+   ],
+   0
+  ],
+  [
+   "Quina diferència hi ha entre un robot i una IA?",
+   [
+    "La IA és més gran",
+    "La IA no necessita un cos",
+    "El robot no es pot moure"
+   ],
+   1
+  ],
+  [
+   "Com aprèn una IA a reconèixer gats?",
+   [
+    "Parlant amb gats",
+    "Amb un cos de robot",
+    "Veient milions de fotos"
+   ],
+   2
+  ],
+  [
+   "Com ajuden algunes IA en medicina?",
+   [
+    "Detecten malalties en radiografies",
+    "Operen soles els pacients",
+    "Fabriquen medicaments"
+   ],
+   0
+  ],
+  [
+   "Segons molts experts, què ha de passar amb les decisions importants d'una IA?",
+   [
+    "Ningú no les ha de revisar",
+    "Una persona les ha de revisar",
+    "Una altra IA les ha de prendre"
+   ],
+   1
+  ],
+  [
+   "Segons el text, què no pot substituir la IA?",
+   [
+    "Els cotxes",
+    "Les traduccions",
+    "La creativitat i l'amistat"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "robot",
+   "🤖"
+  ],
+  [
+   "fàbrica",
+   "🏭"
+  ],
+  [
+   "metge",
+   "🧑‍⚕️"
+  ],
+  [
+   "cotxe",
+   "🚗"
+  ],
+  [
+   "foto",
+   "📷"
+  ],
+  [
+   "cervell",
+   "🧠"
+  ]
+ ],
+ "halves": [
+  [
+   "Un robot aspirador...",
+   "...neteja el terra tot sol."
+  ],
+  [
+   "Una IA aprèn...",
+   "...a partir de moltíssims exemples."
+  ],
+  [
+   "Els cotxes autònoms...",
+   "...condueixen sense conductor."
+  ],
+  [
+   "La IA es pot...",
+   "...equivocar."
+  ],
+  [
+   "El més important és...",
+   "...fer-la servir bé i amb sentit comú."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: donar la teva opinió",
+  "rule": "<b>Crec que</b> + indicatiu: <b>crec que és útil</b>. <b>No crec que</b> + subjuntiu: <b>no crec que pugui</b>.",
+  "rows": [
+   "crec que és útil",
+   "no crec que sigui perfecta",
+   "penso que pot ajudar",
+   "no penso que pugui pensar",
+   "em sembla que canviarà",
+   "és important que aprenguem"
+  ],
+  "items": [
+   [
+    "Crec que la IA ___ molt útil.",
+    [
+     "és",
+     "sigui",
+     "fos"
+    ],
+    0
+   ],
+   [
+    "No crec que la IA ___ substituir l'amistat.",
+    [
+     "pot",
+     "pugui",
+     "podrà"
+    ],
+    1
+   ],
+   [
+    "Penso que els robots ___ ajudar.",
+    [
+     "puguin",
+     "poguessin",
+     "poden"
+    ],
+    2
+   ],
+   [
+    "És important que ___ a fer-la servir bé.",
+    [
+     "aprenguem",
+     "aprenem",
+     "aprendrem"
+    ],
+    0
+   ],
+   [
+    "No crec que la IA ___ perfecta.",
+    [
+     "és",
+     "sigui",
+     "serà"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Robots e inteligencia artificial",
+   "sub": "Lo que pueden hacer y lo que no",
+   "grammar": "Gramática: dar tu opinión. Igual que en español: crec que + indicativo (creo que es), no crec que + subjuntivo (no creo que pueda).",
+   "rows": [
+    "creo que es útil",
+    "no creo que sea perfecta",
+    "pienso que puede ayudar",
+    "no pienso que pueda pensar",
+    "me parece que cambiará",
+    "es importante que aprendamos"
+   ],
+   "hints": [
+    "es",
+    "pueda",
+    "pueden",
+    "aprendamos",
+    "sea"
+   ],
+   "vocab": [
+    "robot",
+    "fábrica",
+    "médico",
+    "coche",
+    "foto",
+    "cerebro"
+   ]
+  }
+ }
+}

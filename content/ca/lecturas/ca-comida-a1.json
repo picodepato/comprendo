@@ -1,0 +1,207 @@
+{
+ "id": "ca-comida-a1",
+ "topic": "comida",
+ "level": "A1",
+ "title": "Fruites estranyes",
+ "short": "Fruites estranyes",
+ "text": [
+  "Tots coneixem la poma, el plàtan i la taronja. Però al món hi ha fruites molt estranyes. T'agraden les fruites rares? Anem a veure'n algunes!",
+  "El durian és una fruita gran d'Àsia. Per fora té moltes punxes. Fa molt mala olor: algunes persones diuen que fa olor de mitjons bruts. A Singapur, està prohibit portar durian al metro. Però a molta gent li agrada el seu gust dolç.",
+  "La pitaia també es diu [fruita del drac]. Per fora és rosa i té fulles verdes, com les escates d'un drac. Per dins és blanca o vermella, amb moltes llavors negres i petites.",
+  "El rambutan és una fruita vermella amb pèls. Sembla un animal petit! Per dins és blanc i molt dolç. Ve del sud-est d'Àsia.",
+  "La carambola és groga. Si la talles, cada tros té forma d'estrella. I la [mà de Buda] és una llimona molt rara: sembla una mà amb molts dits! Quina fruita t'agrada més?"
+ ],
+ "q": [
+  [
+   "Quina olor fa el durian?",
+   [
+    "Molt bona",
+    "Molt mala",
+    "No fa olor"
+   ],
+   1
+  ],
+  [
+   "On està prohibit portar durian?",
+   [
+    "Al metro de Singapur",
+    "A les escoles d'Espanya",
+    "Als avions de Mèxic"
+   ],
+   0
+  ],
+  [
+   "Quin altre nom té la pitaia?",
+   [
+    "[Mà de Buda]",
+    "[Fruita del drac]",
+    "Carambola"
+   ],
+   1
+  ],
+  [
+   "Com és el rambutan per fora?",
+   [
+    "Verd i llis",
+    "Groc",
+    "Vermell i amb pèls"
+   ],
+   2
+  ],
+  [
+   "Quina forma tenen els trossos de carambola?",
+   [
+    "D'estrella",
+    "De cor",
+    "De mà"
+   ],
+   0
+  ],
+  [
+   "Què sembla la [mà de Buda]?",
+   [
+    "Un drac",
+    "Una mà amb molts dits",
+    "Un animal petit"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "poma",
+   "🍎"
+  ],
+  [
+   "plàtan",
+   "🍌"
+  ],
+  [
+   "taronja",
+   "🍊"
+  ],
+  [
+   "llimona",
+   "🍋"
+  ],
+  [
+   "drac",
+   "🐉"
+  ],
+  [
+   "estrella",
+   "⭐"
+  ]
+ ],
+ "halves": [
+  [
+   "El durian té...",
+   "...moltes punxes."
+  ],
+  [
+   "La pitaia és rosa...",
+   "...per fora."
+  ],
+  [
+   "El rambutan sembla...",
+   "...un animal petit."
+  ],
+  [
+   "Cada tros de carambola...",
+   "...té forma d'estrella."
+  ],
+  [
+   "La [mà de Buda] és...",
+   "...una llimona molt rara."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: agradar",
+  "rule": "Amb una cosa diem <b>m'agrada</b>; amb moltes coses diem <b>m'agraden</b>.",
+  "rows": [
+   "m'agrada la poma",
+   "m'agraden les pomes",
+   "t'agrada",
+   "li agrada",
+   "ens agrada",
+   "els agrada"
+  ],
+  "items": [
+   [
+    "M'___ la taronja.",
+    [
+     "agrada",
+     "agraden",
+     "agradem"
+    ],
+    0
+   ],
+   [
+    "T'___ les fruites rares?",
+    [
+     "agrada",
+     "agraden",
+     "agrades"
+    ],
+    1
+   ],
+   [
+    "A en Pau ___ agrada el plàtan.",
+    [
+     "em",
+     "li",
+     "els"
+    ],
+    1
+   ],
+   [
+    "A nosaltres ___ agrada el durian.",
+    [
+     "ens",
+     "us",
+     "els"
+    ],
+    0
+   ],
+   [
+    "A molta gent li ___ les llavors.",
+    [
+     "agrada",
+     "agrado",
+     "agraden"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Frutas extrañas",
+   "sub": "Frutas raras de todo el mundo",
+   "grammar": "Gramática: agradar (gustar). Funciona como gustar: m'agrada (me gusta), m'agraden (me gustan).",
+   "rows": [
+    "me gusta la manzana",
+    "me gustan las manzanas",
+    "te gusta",
+    "le gusta",
+    "nos gusta",
+    "les gusta"
+   ],
+   "hints": [
+    "gusta",
+    "gustan",
+    "le",
+    "nos",
+    "gustan"
+   ],
+   "vocab": [
+    "manzana",
+    "plátano",
+    "naranja",
+    "limón",
+    "dragón",
+    "estrella"
+   ]
+  }
+ }
+}

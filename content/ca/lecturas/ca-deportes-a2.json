@@ -1,0 +1,207 @@
+{
+ "id": "ca-deportes-a2",
+ "topic": "deportes",
+ "level": "A2",
+ "title": "El parkour",
+ "short": "El parkour",
+ "text": [
+  "El parkour és una manera de moure's per la ciutat fent servir només el cos. Els traceurs, que és com es diuen les persones que el practiquen, corren, salten i s'enfilen per murs, bancs i baranes. L'objectiu és anar d'un lloc a un altre de la manera més ràpida i eficaç.",
+  "El parkour va néixer a França a finals dels anys vuitanta, a Lisses, una ciutat a prop de París. Un grup de joves, amb David Belle, va començar a entrenar als edificis i parcs del seu barri. En David va aprendre molt del seu pare, Raymond, que era bomber i soldat, i que li va ensenyar a superar obstacles.",
+  "A poc a poc, el parkour es va fer famós a tot el món gràcies a les pel·lícules, els anuncis i els videojocs. [Per exemple], al principi d'una pel·lícula de James Bond hi ha una persecució de parkour molt famosa. També hi ha molts jocs en què el personatge salta de teulada en teulada.",
+  "Hi ha una forma semblant que es diu freerunning. En el freerunning, el més important no és només la velocitat: els esportistes també fan acrobàcies, com tombarelles i girs, per expressar-se amb el cos.",
+  "Si vols començar, segueix aquests consells: escalfa bé abans d'entrenar, comença amb salts petits, aprèn a caure i a rodolar per terra, i entrena sempre amb un grup o amb un monitor. I respecta els llocs on practiques!"
+ ],
+ "q": [
+  [
+   "Què fan servir els traceurs per moure's?",
+   [
+    "Una bicicleta",
+    "Només el cos",
+    "Un monopatí"
+   ],
+   1
+  ],
+  [
+   "On va néixer el parkour?",
+   [
+    "A França",
+    "Al Japó",
+    "Als [Estats Units]"
+   ],
+   0
+  ],
+  [
+   "Qui va ensenyar a David Belle a superar obstacles?",
+   [
+    "Un professor de gimnàstica",
+    "El seu pare, Raymond",
+    "James Bond"
+   ],
+   1
+  ],
+  [
+   "Com es va fer famós el parkour?",
+   [
+    "Gràcies a les pel·lícules, els anuncis i els videojocs",
+    "Gràcies a la ràdio",
+    "Gràcies als Jocs Olímpics del 1900"
+   ],
+   0
+  ],
+  [
+   "Què fan els esportistes en el freerunning?",
+   [
+    "Només corren",
+    "També fan acrobàcies",
+    "Neden"
+   ],
+   1
+  ],
+  [
+   "Quin consell dona el text?",
+   [
+    "Comença amb salts molt alts",
+    "Entrena sempre sol",
+    "Escalfa bé abans d'entrenar"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "mur",
+   "🧱"
+  ],
+  [
+   "banc",
+   "🪑"
+  ],
+  [
+   "teulada",
+   "🏠"
+  ],
+  [
+   "bomber",
+   "🧑‍🚒"
+  ],
+  [
+   "pel·lícula",
+   "🎬"
+  ],
+  [
+   "terra",
+   "⬇️"
+  ]
+ ],
+ "halves": [
+  [
+   "Els traceurs corren...",
+   "...salten i s'enfilen."
+  ],
+  [
+   "El parkour va néixer...",
+   "...a França."
+  ],
+  [
+   "El pare d'en David era...",
+   "...bomber i soldat."
+  ],
+  [
+   "En el freerunning fan...",
+   "...acrobàcies."
+  ],
+  [
+   "Escalfa bé...",
+   "...abans d'entrenar."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: l'imperatiu (tu)",
+  "rule": "Per donar un consell a un amic fem servir l'imperatiu: <b>escalfa</b>, <b>comença</b>, <b>aprèn</b>, <b>segueix</b>.",
+  "rows": [
+   "escalfar → escalfa",
+   "començar → comença",
+   "aprendre → aprèn",
+   "seguir → segueix",
+   "entrenar → entrena",
+   "respectar → respecta"
+  ],
+  "items": [
+   [
+    "___ bé abans d'entrenar.",
+    [
+     "Escalfo",
+     "Escalfa",
+     "Escalfen"
+    ],
+    1
+   ],
+   [
+    "___ amb salts petits.",
+    [
+     "Comença",
+     "Començo",
+     "Començar"
+    ],
+    0
+   ],
+   [
+    "___ a caure bé.",
+    [
+     "Aprendre",
+     "Aprenc",
+     "Aprèn"
+    ],
+    2
+   ],
+   [
+    "___ aquests consells.",
+    [
+     "Segueix",
+     "Seguir",
+     "Segueixo"
+    ],
+    0
+   ],
+   [
+    "___ els llocs on practiques.",
+    [
+     "Respectes",
+     "Respecta",
+     "Respecten"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El parkour",
+   "sub": "Moverse por la ciudad",
+   "grammar": "Gramática: el imperativo (tú). Sirve para dar consejos u órdenes a un amigo. Muchas veces es igual que la forma de él/ella del presente: escalfa (calienta), comença (empieza).",
+   "rows": [
+    "calentar → calienta",
+    "empezar → empieza",
+    "aprender → aprende",
+    "seguir → sigue",
+    "entrenar → entrena",
+    "respetar → respeta"
+   ],
+   "hints": [
+    "calienta",
+    "empieza",
+    "aprende",
+    "sigue",
+    "respeta"
+   ],
+   "vocab": [
+    "muro",
+    "banco",
+    "tejado",
+    "bombero",
+    "película",
+    "suelo"
+   ]
+  }
+ }
+}

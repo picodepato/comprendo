@@ -1,0 +1,207 @@
+{
+ "id": "ca-deportes-b1",
+ "topic": "deportes",
+ "level": "B1",
+ "title": "Els rècords dels X Games",
+ "short": "Els rècords dels X Games",
+ "text": [
+  "Els X Games són una de les competicions d'esports extrems més importants del món. Van néixer el 1995 als [Estats Units], amb el nom d'Extreme Games, i el 1997 es va celebrar la primera edició d'hivern. Des d'aleshores, han reunit els millors skaters, ciclistes de BMX, pilots de motocròs i surfistes de neu del planeta.",
+  "El moment més famós de la seva història va arribar el 1999. L'skater [Tony Hawk] feia anys que intentava fer un «900»: dues voltes i mitja a l'aire damunt d'una rampa. Durant la competició, va caure una vegada i una altra, però no va deixar d'intentar-ho. Tot i que el temps ja s'havia acabat, els jutges el van deixar continuar provant, i a l'onzè intent, per fi, va aterrar. El públic es va tornar boig.",
+  "Set anys després, el 2006, el pilot [Travis Pastrana] va tornar a fer història: va ser el primer a fer un doble mortal enrere amb una moto en una competició. Molts pensaven que era impossible, perquè una moto pesa gairebé cent quilos.",
+  "Els rècords continuen caient. El 2019, l'skater [Mitchie Brusco] va aconseguir el primer «1260» de la història: tres voltes i mitja a l'aire. Avui, alguns dels millors esportistes són adolescents que han crescut mirant aquests vídeos i que continuen pujant el nivell cada any.",
+  "Tanmateix, darrere de cada truc hi ha milers d'hores d'entrenament, caigudes i lesions. Tots aquests campions coincideixen en una cosa: el més important no és no caure mai, sinó tornar-se a aixecar."
+ ],
+ "q": [
+  [
+   "Quan van néixer els X Games?",
+   [
+    "El 1995",
+    "El 1999",
+    "El 2006"
+   ],
+   0
+  ],
+  [
+   "Què és un «900»?",
+   [
+    "Una rampa de 900 metres",
+    "Dues voltes i mitja a l'aire",
+    "Un rècord de velocitat"
+   ],
+   1
+  ],
+  [
+   "En quin intent va aterrar [Tony Hawk] el seu «900»?",
+   [
+    "En el primer",
+    "En l'onzè",
+    "En el nou-centè"
+   ],
+   1
+  ],
+  [
+   "Què va fer [Travis Pastrana] el 2006?",
+   [
+    "Un doble mortal enrere amb una moto",
+    "Un «900» amb l'skate",
+    "Va guanyar una cursa de BMX"
+   ],
+   0
+  ],
+  [
+   "Qui va aconseguir el primer «1260»?",
+   [
+    "[Tony Hawk]",
+    "[Mitchie Brusco]",
+    "[Travis Pastrana]"
+   ],
+   1
+  ],
+  [
+   "Segons el text, què és el més important?",
+   [
+    "No caure mai",
+    "Tornar-se a aixecar",
+    "Tenir la moto més cara"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "rampa",
+   "🛹"
+  ],
+  [
+   "moto",
+   "🏍️"
+  ],
+  [
+   "bicicleta",
+   "🚲"
+  ],
+  [
+   "neu",
+   "❄️"
+  ],
+  [
+   "públic",
+   "👏"
+  ],
+  [
+   "lesió",
+   "🩹"
+  ]
+ ],
+ "halves": [
+  [
+   "Els X Games van néixer...",
+   "...el 1995."
+  ],
+  [
+   "[Tony Hawk] no va deixar...",
+   "...d'intentar-ho."
+  ],
+  [
+   "[Travis Pastrana] va tornar...",
+   "...a fer història."
+  ],
+  [
+   "Els rècords continuen...",
+   "...caient."
+  ],
+  [
+   "El més important és...",
+   "...tornar-se a aixecar."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: les perífrasis verbals",
+  "rule": "Una perífrasi és un verb + un infinitiu o un gerundi: <b>tornar a</b> fer, <b>deixar de</b> fer, <b>continuar</b> fent, <b>acabar de</b> fer.",
+  "rows": [
+   "tornar a fer",
+   "deixar de fer",
+   "continuar fent",
+   "acabar de fer",
+   "començar a fer",
+   "haver de fer"
+  ],
+  "items": [
+   [
+    "Pastrana va ___ a fer història.",
+    [
+     "tornar",
+     "deixar",
+     "acabar"
+    ],
+    0
+   ],
+   [
+    "Hawk no va deixar ___ intentar-ho.",
+    [
+     "a",
+     "de",
+     "per"
+    ],
+    1
+   ],
+   [
+    "Els rècords continuen ___.",
+    [
+     "caure",
+     "caient",
+     "caigut"
+    ],
+    1
+   ],
+   [
+    "L'skater ___ de fer un truc nou: és el primer!",
+    [
+     "acaba",
+     "torna",
+     "comença"
+    ],
+    0
+   ],
+   [
+    "Per guanyar, ___ entrenar moltes hores.",
+    [
+     "has de",
+     "deixes de",
+     "tornes"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los récords de los X Games",
+   "sub": "Trucos que hicieron historia",
+   "grammar": "Gramática: las perífrasis verbales. Son dos verbos juntos que cambian el sentido: tornar a (volver a), deixar de (dejar de), continuar + gerundio (seguir + gerundio), acabar de (acabar de).",
+   "rows": [
+    "volver a hacer",
+    "dejar de hacer",
+    "seguir haciendo",
+    "acabar de hacer",
+    "empezar a hacer",
+    "tener que hacer"
+   ],
+   "hints": [
+    "volver",
+    "de",
+    "cayendo",
+    "acaba",
+    "tienes que"
+   ],
+   "vocab": [
+    "rampa",
+    "moto",
+    "bicicleta",
+    "nieve",
+    "público",
+    "lesión"
+   ]
+  }
+ }
+}

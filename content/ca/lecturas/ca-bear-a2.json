@@ -1,0 +1,207 @@
+{
+ "id": "ca-bear-a2",
+ "topic": "bear",
+ "level": "A2",
+ "title": "La història secreta de l'Ós",
+ "short": "La història",
+ "text": [
+  "Els jocs de BEAR tenen una història secreta. [La coneixes]?",
+  "[Fa molts anys], en una fàbrica molt gran, treballen dos científics: Sam i Whitey. La fàbrica [es diu] Cheese Factory. En català, aquest nom vol dir «Fàbrica de Formatge». Però en aquesta fàbrica no fan només formatge...",
+  "Sam i Whitey fan experiments estranys en un laboratori secret. En un dels seus experiments, creen l'Ós. L'Ós és enorme, fort i molt perillós. El seu cos brilla amb una llum vermella.",
+  "Els dos científics no s'aturen. Creen molts óssos diferents. Un dia hi ha un accident a la fàbrica i els óssos s'escapen. Aquest moment [es diu] l'«Apocalipsi de l'Ós». Des d'aquell dia, els óssos busquen les persones [per tot arreu].",
+  "[Per això], al joc, els supervivents [tenen por]. Viuen en llocs foscos i perillosos, i sempre escolten [amb atenció]. Qui ve? És un amic... o és l'Ós?"
+ ],
+ "q": [
+  [
+   "Com es diuen els dos científics?",
+   [
+    "Sam i Cheedaman",
+    "Sam i Whitey",
+    "Leo i Whitey"
+   ],
+   1
+  ],
+  [
+   "Què vol dir «Cheese Factory» en català?",
+   [
+    "Casa de Formatge",
+    "Fàbrica d'Óssos",
+    "Fàbrica de Formatge"
+   ],
+   2
+  ],
+  [
+   "On fan els experiments?",
+   [
+    "En un laboratori secret",
+    "En una escola",
+    "En un bosc"
+   ],
+   0
+  ],
+  [
+   "Com és l'Ós?",
+   [
+    "Petit i simpàtic",
+    "Enorme, fort i perillós",
+    "Lent i tranquil"
+   ],
+   1
+  ],
+  [
+   "Què passa un dia a la fàbrica?",
+   [
+    "Hi ha una festa",
+    "Arriba la policia",
+    "Hi ha un accident"
+   ],
+   2
+  ],
+  [
+   "Per què [tenen por] els supervivents?",
+   [
+    "Perquè [fa fred]",
+    "Perquè els óssos els busquen",
+    "Perquè no tenen menjar"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "fàbrica",
+   "🏭"
+  ],
+  [
+   "formatge",
+   "🧀"
+  ],
+  [
+   "científic",
+   "🔬"
+  ],
+  [
+   "accident",
+   "💥"
+  ],
+  [
+   "por",
+   "😱"
+  ],
+  [
+   "secret",
+   "🤫"
+  ]
+ ],
+ "halves": [
+  [
+   "Sam i Whitey són...",
+   "...dos científics."
+  ],
+  [
+   "Al laboratori fan...",
+   "...experiments estranys."
+  ],
+  [
+   "El cos de l'Ós brilla...",
+   "...amb una llum vermella."
+  ],
+  [
+   "Després de l'accident...",
+   "...els óssos s'escapen."
+  ],
+  [
+   "Els supervivents sempre...",
+   "...escolten [amb atenció]."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: masculí, femení i plural",
+  "rule": "Molts noms i adjectius fan el femení amb <b>-a</b>. El plural es fa amb <b>-s</b>, <b>-es</b> o <b>-os</b>.",
+  "rows": [
+   "un científic → una científica",
+   "fosc → fosca",
+   "un experiment → dos experiments",
+   "una fàbrica → dues fàbriques",
+   "un ós → dos óssos",
+   "perillós → perillosos"
+  ],
+  "items": [
+   [
+    "Sam és un ___ molt intel·ligent.",
+    [
+     "científica",
+     "científic",
+     "científics"
+    ],
+    1
+   ],
+   [
+    "La fàbrica és molt ___.",
+    [
+     "fosc",
+     "foscos",
+     "fosca"
+    ],
+    2
+   ],
+   [
+    "Els científics creen molts ___.",
+    [
+     "óssos",
+     "ós",
+     "osses"
+    ],
+    0
+   ],
+   [
+    "Fan experiments ___.",
+    [
+     "estrany",
+     "estranys",
+     "estranya"
+    ],
+    1
+   ],
+   [
+    "Hi ha dues ___ a la ciutat.",
+    [
+     "fàbriques",
+     "fàbrica",
+     "fàbricas"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La historia secreta del Oso",
+   "sub": "La historia que hay detrás del juego",
+   "grammar": "Gramática: masculino, femenino y plural. Muchas palabras hacen el femenino con -a. El plural se hace con -s; las palabras en -a hacen -es, y algunas palabras en -s hacen -os.",
+   "rows": [
+    "un científico → una científica",
+    "oscuro → oscura",
+    "un experimento → dos experimentos",
+    "una fábrica → dos fábricas",
+    "un oso → dos osos",
+    "peligroso → peligrosos"
+   ],
+   "hints": [
+    "científico",
+    "oscura",
+    "osos",
+    "extraños",
+    "fábricas"
+   ],
+   "vocab": [
+    "fábrica",
+    "queso",
+    "científico",
+    "accidente",
+    "miedo",
+    "secreto"
+   ]
+  }
+ }
+}
