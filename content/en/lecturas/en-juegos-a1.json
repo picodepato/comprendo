@@ -1,0 +1,207 @@
+{
+ "id": "en-juegos-a1",
+ "topic": "juegos",
+ "level": "A1",
+ "title": "Tetris",
+ "short": "Tetris",
+ "text": [
+  "Tetris is a very old video game. It is from Russia. There is a big box on the screen, and there are pieces that fall from the top.",
+  "There are seven different pieces. Each piece has four squares. There is a long piece, there is a square piece and there are pieces with the shape of the letters L, J, S, T and Z.",
+  "You can move the pieces to the left and to the right. You can also turn them. Your goal is to make full lines. When a line is full, it goes away and you get points.",
+  "The pieces fall faster and faster. If the pieces get to the top of the box, the game ends.",
+  "There is a version of Tetris on almost every computer, phone and console. There are millions of players in the world. It is simple, but it is very difficult to stop!"
+ ],
+ "q": [
+  [
+   "Where is Tetris from?",
+   [
+    "Japan",
+    "Russia",
+    "the United States"
+   ],
+   1
+  ],
+  [
+   "How many different pieces are there?",
+   [
+    "Four",
+    "Seven",
+    "Ten"
+   ],
+   1
+  ],
+  [
+   "How many squares does each piece have?",
+   [
+    "Four",
+    "Three",
+    "Five"
+   ],
+   0
+  ],
+  [
+   "What is your goal?",
+   [
+    "To make full lines",
+    "To catch the pieces",
+    "To fly"
+   ],
+   0
+  ],
+  [
+   "What happens when a line is full?",
+   [
+    "It goes away and you get points",
+    "The game ends",
+    "The pieces stop"
+   ],
+   0
+  ],
+  [
+   "When does the game end?",
+   [
+    "When the pieces get to the top",
+    "After ten minutes",
+    "When you get a long piece"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "piece",
+   "🧩"
+  ],
+  [
+   "square",
+   "🟦"
+  ],
+  [
+   "line",
+   "➖"
+  ],
+  [
+   "screen",
+   "🖥️"
+  ],
+  [
+   "top",
+   "⬆️"
+  ],
+  [
+   "points",
+   "⭐"
+  ]
+ ],
+ "halves": [
+  [
+   "Tetris is from...",
+   "...Russia."
+  ],
+  [
+   "Each piece has...",
+   "...four squares."
+  ],
+  [
+   "You can move the pieces...",
+   "...to the left and to the right."
+  ],
+  [
+   "When a line is full...",
+   "...it goes away."
+  ],
+  [
+   "There are millions...",
+   "...of players in the world."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: there is / there are",
+  "rule": "Use <b>there is</b> for one thing and <b>there are</b> for two or more things.",
+  "rows": [
+   "There is a box.",
+   "There are seven pieces.",
+   "There is not a ... / There are not any ...",
+   "Is there...? / Are there...?",
+   "one thing → there is",
+   "many things → there are"
+  ],
+  "items": [
+   [
+    "___ a big box on the screen.",
+    [
+     "There is",
+     "There are",
+     "It are"
+    ],
+    0
+   ],
+   [
+    "___ seven different pieces.",
+    [
+     "There is",
+     "There are",
+     "There be"
+    ],
+    1
+   ],
+   [
+    "___ a long piece.",
+    [
+     "There are",
+     "There is",
+     "Is there are"
+    ],
+    1
+   ],
+   [
+    "___ millions of players.",
+    [
+     "There is",
+     "There are",
+     "There am"
+    ],
+    1
+   ],
+   [
+    "___ a version on your phone?",
+    [
+     "Is there",
+     "Are there",
+     "There is"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Tetris",
+   "sub": "Un juego de piezas que cae del cielo",
+   "grammar": "Gramática: there is / there are (hay). There is para una cosa; there are para dos o más.",
+   "rows": [
+    "Hay una caja.",
+    "Hay siete piezas.",
+    "No hay...",
+    "¿Hay...?",
+    "una cosa",
+    "varias cosas"
+   ],
+   "hints": [
+    "Hay",
+    "Hay",
+    "Hay",
+    "Hay",
+    "¿Hay"
+   ],
+   "vocab": [
+    "pieza",
+    "cuadrado",
+    "línea",
+    "pantalla",
+    "arriba",
+    "puntos"
+   ]
+  }
+ }
+}

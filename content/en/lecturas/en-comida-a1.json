@@ -1,0 +1,207 @@
+{
+ "id": "en-comida-a1",
+ "topic": "comida",
+ "level": "A1",
+ "title": "Strange fruits",
+ "short": "Strange fruits",
+ "text": [
+  "There are many strange fruits in the world. Some have funny colors, some have strange shapes and some have a very bad smell!",
+  "The dragon fruit is pink on the outside. On the inside it is white with small black seeds. It comes from a cactus. It is sweet and it has a lot of water.",
+  "The durian is a big fruit from Asia. It has a hard skin with spikes. It has a very strong smell, like old socks. In some hotels and buses you cannot bring a durian! But many people say it is delicious.",
+  "The rambutan is a small red fruit with soft hairs. It looks like a little monster. Inside there is a white fruit. It is a bit like a grape.",
+  "Some fruits have funny names. There is a star fruit: if you cut it, every piece is a star. Do you want to try an exotic fruit? Look for one at the market!"
+ ],
+ "q": [
+  [
+   "What color is the dragon fruit on the outside?",
+   [
+    "Pink",
+    "Green",
+    "Yellow"
+   ],
+   0
+  ],
+  [
+   "Where does the dragon fruit come from?",
+   [
+    "From a cactus",
+    "From a tree in the sea",
+    "From a flower"
+   ],
+   0
+  ],
+  [
+   "What is the smell of the durian like?",
+   [
+    "Old socks",
+    "Roses",
+    "Chocolate"
+   ],
+   0
+  ],
+  [
+   "Where can you not bring a durian?",
+   [
+    "In some hotels and buses",
+    "To school",
+    "Home"
+   ],
+   0
+  ],
+  [
+   "What does the rambutan look like?",
+   [
+    "A little monster",
+    "A star",
+    "A ball"
+   ],
+   0
+  ],
+  [
+   "What shape is every piece of the star fruit?",
+   [
+    "A circle",
+    "A star",
+    "A square"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "fruit",
+   "🍓"
+  ],
+  [
+   "seed",
+   "🌱"
+  ],
+  [
+   "smell",
+   "👃"
+  ],
+  [
+   "sweet",
+   "🍬"
+  ],
+  [
+   "market",
+   "🛒"
+  ],
+  [
+   "star",
+   "⭐"
+  ]
+ ],
+ "halves": [
+  [
+   "The dragon fruit is pink...",
+   "...on the outside."
+  ],
+  [
+   "The durian has a hard skin...",
+   "...with spikes."
+  ],
+  [
+   "The rambutan is a small red fruit...",
+   "...with soft hairs."
+  ],
+  [
+   "If you cut a star fruit...",
+   "...every piece is a star."
+  ],
+  [
+   "Look for an exotic fruit...",
+   "...at the market."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: a, an and some",
+  "rule": "Use <b>a</b> before a consonant sound and <b>an</b> before a vowel sound. Use <b>some</b> with plurals and with things you cannot count.",
+  "rows": [
+   "a fruit",
+   "an apple",
+   "an exotic fruit",
+   "some seeds",
+   "some water",
+   "a / an = uno, una"
+  ],
+  "items": [
+   [
+    "The durian is ___ big fruit.",
+    [
+     "a",
+     "an",
+     "some"
+    ],
+    0
+   ],
+   [
+    "I want ___ apple.",
+    [
+     "a",
+     "an",
+     "some"
+    ],
+    1
+   ],
+   [
+    "It has ___ black seeds.",
+    [
+     "a",
+     "an",
+     "some"
+    ],
+    2
+   ],
+   [
+    "Do you want to try ___ exotic fruit?",
+    [
+     "a",
+     "an",
+     "some"
+    ],
+    1
+   ],
+   [
+    "The dragon fruit has ___ water.",
+    [
+     "an",
+     "a",
+     "some"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Frutas extrañas",
+   "sub": "Frutas raras de todo el mundo",
+   "grammar": "Gramática: a, an y some. A delante de sonido de consonante; an delante de sonido de vocal. Some con plurales y con cosas que no se cuentan.",
+   "rows": [
+    "una fruta",
+    "una manzana",
+    "una fruta exótica",
+    "unas semillas",
+    "algo de agua",
+    "some = unos, algo de"
+   ],
+   "hints": [
+    "una",
+    "una",
+    "unas",
+    "una",
+    "agua"
+   ],
+   "vocab": [
+    "fruta",
+    "semilla",
+    "olor",
+    "dulce",
+    "mercado",
+    "estrella"
+   ]
+  }
+ }
+}

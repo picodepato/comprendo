@@ -1,0 +1,207 @@
+{
+ "id": "minecraft-a1",
+ "topic": "minecraft",
+ "level": "A1",
+ "title": "Cómo se juega a Minecraft",
+ "short": "Cómo se juega",
+ "text": [
+  "Minecraft es un videojuego de mundo abierto. En Minecraft, todo es de bloques: la tierra, los árboles, el agua, los animales y las personas. Tu personaje [se llama] Steve o Alex. Tú decides qué hacer.",
+  "Hay dos modos de juego principales. En el modo Supervivencia, necesitas buscar comida, madera y piedra. En el modo Creativo, tienes todos los bloques y puedes volar. Puedes construir casas, castillos y ciudades.",
+  "Primero, cortas árboles para tener madera. Con la madera, haces una [mesa de trabajo]. En la [mesa de trabajo] puedes fabricar herramientas: un pico, una espada o un hacha. Con el pico, puedes picar piedra y buscar minerales, como el hierro y el diamante.",
+  "En Minecraft hay día y noche. El día es tranquilo, pero por la noche salen monstruos: zombis, esqueletos y arañas. El más famoso es el creeper: es verde, no hace ruido y ¡explota! [Por eso], es importante construir una casa antes de la noche.",
+  "Puedes jugar solo o con amigos. En Minecraft no hay una forma correcta de jugar: cada partida es diferente."
+ ],
+ "q": [
+  [
+   "¿Cómo es todo en Minecraft?",
+   [
+    "Redondo",
+    "De bloques",
+    "De agua"
+   ],
+   1
+  ],
+  [
+   "¿Cómo se llama tu personaje?",
+   [
+    "Steve o Alex",
+    "Leo o Marta",
+    "Notch"
+   ],
+   0
+  ],
+  [
+   "¿En qué modo puedes volar?",
+   [
+    "En el modo Supervivencia",
+    "En el modo Creativo",
+    "En los dos"
+   ],
+   1
+  ],
+  [
+   "¿Qué haces con la madera?",
+   [
+    "Una [mesa de trabajo]",
+    "Un creeper",
+    "Un diamante"
+   ],
+   0
+  ],
+  [
+   "¿Cuándo salen los monstruos?",
+   [
+    "Por la mañana",
+    "Por la noche",
+    "Nunca"
+   ],
+   1
+  ],
+  [
+   "¿Qué hace el creeper?",
+   [
+    "Vuela",
+    "Explota",
+    "Canta"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "árbol",
+   "🌳"
+  ],
+  [
+   "piedra",
+   "🪨"
+  ],
+  [
+   "espada",
+   "⚔️"
+  ],
+  [
+   "diamante",
+   "💎"
+  ],
+  [
+   "araña",
+   "🕷️"
+  ],
+  [
+   "casa",
+   "🏠"
+  ]
+ ],
+ "halves": [
+  [
+   "En Minecraft, todo es...",
+   "...de bloques."
+  ],
+  [
+   "En el modo Creativo...",
+   "...puedes volar."
+  ],
+  [
+   "Con el pico...",
+   "...puedes picar piedra."
+  ],
+  [
+   "Por la noche salen...",
+   "...monstruos."
+  ],
+  [
+   "El creeper es verde...",
+   "...y explota."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: poder + infinitivo",
+  "rule": "<b>Poder</b> + verbo en infinitivo dice qué cosas es posible hacer.",
+  "rows": [
+   "yo puedo",
+   "tú puedes",
+   "él / ella puede",
+   "nosotros podemos",
+   "ellos pueden",
+   "puedo + volar"
+  ],
+  "items": [
+   [
+    "Tú ___ volar en el modo Creativo.",
+    [
+     "puedes",
+     "puede",
+     "puedo"
+    ],
+    0
+   ],
+   [
+    "Yo ___ construir una casa.",
+    [
+     "puede",
+     "puedo",
+     "pueden"
+    ],
+    1
+   ],
+   [
+    "Los zombis ___ atacar por la noche.",
+    [
+     "puede",
+     "podemos",
+     "pueden"
+    ],
+    2
+   ],
+   [
+    "Nosotros ___ jugar juntos.",
+    [
+     "podemos",
+     "pueden",
+     "puedes"
+    ],
+    0
+   ],
+   [
+    "Con el pico, Steve ___ picar piedra.",
+    [
+     "puedo",
+     "puede",
+     "puedes"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "How to play Minecraft",
+   "sub": "Blocks, tools and monsters",
+   "grammar": "Grammar: poder (can) + infinitive. It says what is possible to do.",
+   "rows": [
+    "I can",
+    "you can",
+    "he / she can",
+    "we can",
+    "they can",
+    "I can + fly"
+   ],
+   "hints": [
+    "can (you)",
+    "can (I)",
+    "can (they)",
+    "can (we)",
+    "can (he)"
+   ],
+   "vocab": [
+    "tree",
+    "stone",
+    "sword",
+    "diamond",
+    "spider",
+    "house"
+   ]
+  }
+ }
+}

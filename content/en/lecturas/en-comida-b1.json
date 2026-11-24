@@ -1,0 +1,207 @@
+{
+ "id": "en-comida-b1",
+ "topic": "comida",
+ "level": "B1",
+ "title": "Insects: the food of the future?",
+ "short": "Insects: food of the future?",
+ "text": [
+  "By 2050 there will be almost ten billion people on Earth. Feeding all of them will be one of the biggest challenges of this century. Many scientists think that insects will be part of the solution.",
+  "For about two billion people, mostly in Asia, Africa and Latin America, eating insects is already normal. There are more than two thousand edible species, from crickets and ants to beetles and caterpillars.",
+  "Insects have several advantages. They have a lot of protein, vitamins and healthy fats. They need much less water, land and food than cows or pigs. They also produce fewer gases that warm the planet.",
+  "However, in Europe and North America many people feel disgust when they think about eating a bug. That is why companies are trying new ideas. They grind crickets into flour and use it in pasta, bread and protein bars. You will not see the insect at all.",
+  "Will we all eat insects in the future? Nobody knows for sure. But experts predict that the market will grow very quickly. Maybe one day your favorite snack will be made of crickets, and you will not even notice!"
+ ],
+ "q": [
+  [
+   "How many people will there be on Earth by 2050?",
+   [
+    "Almost ten billion",
+    "Two billion",
+    "One million"
+   ],
+   0
+  ],
+  [
+   "How many people already eat insects?",
+   [
+    "About two billion",
+    "Nobody",
+    "Ten people"
+   ],
+   0
+  ],
+  [
+   "How many edible species of insects are there?",
+   [
+    "More than two thousand",
+    "Ten",
+    "Fifty"
+   ],
+   0
+  ],
+  [
+   "Why are insects good for the planet?",
+   [
+    "They need less water and land",
+    "They are pretty",
+    "They are expensive"
+   ],
+   0
+  ],
+  [
+   "How do many Europeans feel about eating bugs?",
+   [
+    "Disgust",
+    "Joy",
+    "Nothing"
+   ],
+   0
+  ],
+  [
+   "How do companies hide the insects?",
+   [
+    "They grind them into flour",
+    "They paint them",
+    "They freeze them"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "cricket",
+   "🦗"
+  ],
+  [
+   "ant",
+   "🐜"
+  ],
+  [
+   "cow",
+   "🐄"
+  ],
+  [
+   "bread",
+   "🍞"
+  ],
+  [
+   "flour",
+   "🌾"
+  ],
+  [
+   "planet",
+   "🌍"
+  ]
+ ],
+ "halves": [
+  [
+   "By 2050 there will be...",
+   "...almost ten billion people."
+  ],
+  [
+   "For about two billion people...",
+   "...eating insects is normal."
+  ],
+  [
+   "Insects need much less water...",
+   "...than cows or pigs."
+  ],
+  [
+   "Companies grind crickets...",
+   "...into flour."
+  ],
+  [
+   "Experts predict that the market...",
+   "...will grow very quickly."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: will for predictions",
+  "rule": "Use <b>will</b> + verb to make predictions about the future. The negative is <b>will not</b>. Use <b>Will...?</b> for questions.",
+  "rows": [
+   "there will be",
+   "we will eat",
+   "it will grow",
+   "you will not see",
+   "Will we eat insects?",
+   "will + verb (no to)"
+  ],
+  "items": [
+   [
+    "By 2050 there ___ be ten billion people.",
+    [
+     "will",
+     "is",
+     "are"
+    ],
+    0
+   ],
+   [
+    "Insects ___ be part of the solution.",
+    [
+     "are",
+     "will",
+     "did"
+    ],
+    1
+   ],
+   [
+    "You will not ___ the insect.",
+    [
+     "see",
+     "saw",
+     "seeing"
+    ],
+    0
+   ],
+   [
+    "___ we all eat insects?",
+    [
+     "Do",
+     "Will",
+     "Are"
+    ],
+    1
+   ],
+   [
+    "The market will ___ very quickly.",
+    [
+     "grows",
+     "grow",
+     "grew"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los insectos, ¿comida del futuro?",
+   "sub": "¿Comeremos grillos en lugar de carne?",
+   "grammar": "Gramática: will para predicciones sobre el futuro: will + verbo. Negativo: will not. Pregunta: Will...?",
+   "rows": [
+    "habrá",
+    "comeremos",
+    "crecerá",
+    "no verás",
+    "¿Comeremos insectos?",
+    "will + verbo sin to"
+   ],
+   "hints": [
+    "habrá",
+    "serán",
+    "verás",
+    "Comeremos",
+    "crecer"
+   ],
+   "vocab": [
+    "grillo",
+    "hormiga",
+    "vaca",
+    "pan",
+    "harina",
+    "planeta"
+   ]
+  }
+ }
+}

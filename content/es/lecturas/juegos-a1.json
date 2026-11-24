@@ -1,0 +1,207 @@
+{
+ "id": "juegos-a1",
+ "topic": "juegos",
+ "level": "A1",
+ "title": "Tetris, el juego de las piezas",
+ "short": "Tetris",
+ "text": [
+  "Tetris es un videojuego muy famoso. Alekséi Pázhitnov es un ingeniero de Rusia. En 1984, él crea un juego nuevo en su ordenador: Tetris.",
+  "En Tetris, unas piezas caen desde arriba. Cada pieza tiene cuatro cuadrados. Hay siete piezas diferentes, y cada una tiene un color. El jugador gira y mueve las piezas.",
+  "El objetivo es completar líneas. Una línea completa desaparece y el jugador gana puntos. Si las piezas llegan [arriba del todo], la partida termina.",
+  "El nombre Tetris tiene dos partes: «tetra», que significa «cuatro» en griego, y «tenis», el deporte favorito de Pázhitnov.",
+  "Hoy, Tetris está en consolas, ordenadores y teléfonos móviles. Es [uno de los] juegos más vendidos de la historia. ¡Es fácil de aprender, pero muy difícil de dominar!"
+ ],
+ "q": [
+  [
+   "¿De dónde es Pázhitnov?",
+   [
+    "De Rusia",
+    "De España",
+    "De Japón"
+   ],
+   0
+  ],
+  [
+   "¿En qué año crea Tetris?",
+   [
+    "En 1964",
+    "En 1984",
+    "En 2004"
+   ],
+   1
+  ],
+  [
+   "¿Cuántos cuadrados tiene cada pieza?",
+   [
+    "Tres",
+    "Cuatro",
+    "Siete"
+   ],
+   1
+  ],
+  [
+   "¿Qué pasa con una línea completa?",
+   [
+    "Desaparece",
+    "Cambia de color",
+    "Cae"
+   ],
+   0
+  ],
+  [
+   "¿Cuándo termina la partida?",
+   [
+    "Cuando el jugador gana puntos",
+    "Cuando las piezas llegan [arriba del todo]",
+    "Cuando hay siete piezas"
+   ],
+   1
+  ],
+  [
+   "¿Cuál es el deporte favorito de Pázhitnov?",
+   [
+    "El fútbol",
+    "El tenis",
+    "El baloncesto"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "pieza",
+   "🧩"
+  ],
+  [
+   "cuadrado",
+   "🟥"
+  ],
+  [
+   "línea",
+   "➖"
+  ],
+  [
+   "punto",
+   "⭐"
+  ],
+  [
+   "ordenador",
+   "💻"
+  ],
+  [
+   "teléfono",
+   "📱"
+  ]
+ ],
+ "halves": [
+  [
+   "Cada pieza tiene...",
+   "...cuatro cuadrados."
+  ],
+  [
+   "Hay siete piezas...",
+   "...diferentes."
+  ],
+  [
+   "Una línea completa...",
+   "...desaparece."
+  ],
+  [
+   "«Tetra» significa...",
+   "...«cuatro» en griego."
+  ],
+  [
+   "Es fácil de aprender...",
+   "...pero muy difícil de dominar."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: los artículos",
+  "rule": "<b>el, la, los, las</b>: una cosa concreta. <b>un, una, unos, unas</b>: una cosa cualquiera o nueva.",
+  "rows": [
+   "el juego / los juegos",
+   "la pieza / las piezas",
+   "un cuadrado / unos cuadrados",
+   "una línea / unas líneas",
+   "el + masculino, la + femenino",
+   "un + masculino, una + femenino"
+  ],
+  "items": [
+   [
+    "___ objetivo es completar líneas.",
+    [
+     "El",
+     "La",
+     "Los"
+    ],
+    0
+   ],
+   [
+    "Pázhitnov es ___ ingeniero de Rusia.",
+    [
+     "una",
+     "un",
+     "unos"
+    ],
+    1
+   ],
+   [
+    "___ piezas caen desde arriba.",
+    [
+     "La",
+     "El",
+     "Las"
+    ],
+    2
+   ],
+   [
+    "Juego a Tetris en ___ teléfono.",
+    [
+     "la",
+     "el",
+     "las"
+    ],
+    1
+   ],
+   [
+    "___ línea completa desaparece.",
+    [
+     "Una",
+     "Un",
+     "Unos"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Tetris, the game of pieces",
+   "sub": "Who created it and how to play",
+   "grammar": "Grammar: articles. el / la / los / las = the; un / una / unos / unas = a, some.",
+   "rows": [
+    "the game / the games",
+    "the piece / the pieces",
+    "a square / some squares",
+    "a line / some lines",
+    "el + masculine, la + feminine",
+    "un + masculine, una + feminine"
+   ],
+   "hints": [
+    "the",
+    "a",
+    "the (plural)",
+    "the",
+    "a"
+   ],
+   "vocab": [
+    "piece",
+    "square",
+    "line",
+    "point",
+    "computer",
+    "phone"
+   ]
+  }
+ }
+}

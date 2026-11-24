@@ -1,0 +1,207 @@
+{
+ "id": "bear-a1",
+ "topic": "bear",
+ "level": "A1",
+ "title": "¿Qué es BEAR (Alpha)?",
+ "short": "El juego",
+ "text": [
+  "BEAR (Alpha) es un juego de terror de Roblox. [Lo creó] un usuario que [se llama] Cheedaman en el año 2019. Hoy es un juego muy famoso: tiene más de trescientos millones de visitas.",
+  "En cada partida hay dos grupos. Un jugador es el Oso y los otros jugadores son los supervivientes. El Oso es grande, rápido y peligroso. Tiene una luz roja [a su alrededor], [por eso] los supervivientes pueden verlo en la oscuridad.",
+  "Los supervivientes tienen una misión: escapar del Oso. [Para eso], necesitan correr, esconderse y trabajar en equipo. En el ordenador, los jugadores [mantienen pulsada] la tecla Shift para correr más rápido. Si el Oso atrapa a un superviviente, ese jugador pierde.",
+  "Cada partida tiene un tiempo límite. Si el tiempo termina y todavía hay supervivientes vivos, ellos ganan. Si el Oso atrapa a todos, el Oso gana.",
+  "Es un juego [un poco de miedo], pero también es muy divertido. ¡Es perfecto para jugar con amigos!"
+ ],
+ "q": [
+  [
+   "¿Qué tipo de juego es BEAR (Alpha)?",
+   [
+    "Un juego de fútbol",
+    "Un juego de terror",
+    "Un juego de coches"
+   ],
+   1
+  ],
+  [
+   "¿Quién creó el juego?",
+   [
+    "Roblox",
+    "El Oso",
+    "Cheedaman"
+   ],
+   2
+  ],
+  [
+   "¿Cuántos jugadores son el Oso en cada partida?",
+   [
+    "Uno",
+    "Dos",
+    "Todos"
+   ],
+   0
+  ],
+  [
+   "¿De qué color es la luz del Oso?",
+   [
+    "Azul",
+    "Roja",
+    "Verde"
+   ],
+   1
+  ],
+  [
+   "¿Qué tecla usan para correr en el ordenador?",
+   [
+    "Enter",
+    "Espacio",
+    "Shift"
+   ],
+   2
+  ],
+  [
+   "¿Cuándo ganan los supervivientes?",
+   [
+    "Cuando atrapan al Oso",
+    "Cuando el tiempo termina y están vivos",
+    "Cuando apagan la luz roja"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "oso",
+   "🐻"
+  ],
+  [
+   "jugador",
+   "🎮"
+  ],
+  [
+   "correr",
+   "🏃"
+  ],
+  [
+   "esconderse",
+   "🙈"
+  ],
+  [
+   "ganar",
+   "🏆"
+  ],
+  [
+   "luz",
+   "💡"
+  ]
+ ],
+ "halves": [
+  [
+   "Un jugador es...",
+   "...el Oso."
+  ],
+  [
+   "El Oso tiene una luz...",
+   "...roja."
+  ],
+  [
+   "Los supervivientes necesitan...",
+   "...correr y esconderse."
+  ],
+  [
+   "Si el Oso atrapa a todos...",
+   "...el Oso gana."
+  ],
+  [
+   "Es un juego perfecto para...",
+   "...jugar con amigos."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el presente",
+  "rule": "En español, el verbo cambia según <b>quién</b> hace la acción.",
+  "rows": [
+   "yo juego",
+   "él / ella juega",
+   "nosotros jugamos",
+   "ellos juegan",
+   "ser: es / son",
+   "tener: tiene / tienen"
+  ],
+  "items": [
+   [
+    "El Oso ___ grande.",
+    [
+     "son",
+     "es",
+     "soy"
+    ],
+    1
+   ],
+   [
+    "Los supervivientes ___ muy rápido.",
+    [
+     "corren",
+     "corre",
+     "corro"
+    ],
+    0
+   ],
+   [
+    "Yo ___ con mis amigos.",
+    [
+     "juega",
+     "juegan",
+     "juego"
+    ],
+    2
+   ],
+   [
+    "El Oso ___ una luz roja.",
+    [
+     "tienen",
+     "tiene",
+     "tengo"
+    ],
+    1
+   ],
+   [
+    "Nosotros ___ en equipo.",
+    [
+     "trabajan",
+     "trabaja",
+     "trabajamos"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "What is BEAR (Alpha)?",
+   "sub": "The game and its rules",
+   "grammar": "Grammar: the present tense. The ending of the verb changes with the person.",
+   "rows": [
+    "I play",
+    "he / she plays",
+    "we play",
+    "they play",
+    "is / are",
+    "has / have"
+   ],
+   "hints": [
+    "is",
+    "run",
+    "play",
+    "has",
+    "work"
+   ],
+   "vocab": [
+    "bear",
+    "player",
+    "to run",
+    "to hide",
+    "to win",
+    "light"
+   ]
+  }
+ }
+}

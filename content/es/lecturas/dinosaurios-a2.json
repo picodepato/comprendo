@@ -1,0 +1,207 @@
+{
+ "id": "dinosaurios-a2",
+ "topic": "dinosaurios",
+ "level": "A2",
+ "title": "Cómo desaparecieron los dinosaurios",
+ "short": "Cómo desaparecieron",
+ "text": [
+  "Los dinosaurios vivieron en la Tierra durante unos ciento sesenta millones de años. Pero hace sesenta y seis millones de años, desaparecieron casi todos. ¿Qué pasó?",
+  "Un día, un asteroide enorme chocó contra la Tierra. Medía unos diez kilómetros, más que una montaña. Cayó en el mar, en lo que hoy es la península de Yucatán, en México. El golpe hizo un cráter de unos ciento ochenta kilómetros. Hoy [se llama] el cráter de Chicxulub.",
+  "El choque fue terrible. Hubo incendios, terremotos y olas gigantes. Después, mucho polvo subió al cielo y tapó la luz del Sol durante meses o años. La Tierra se volvió oscura y fría. Muchas plantas murieron, y después murieron los animales que las comían.",
+  "Al mismo tiempo, en la India, había volcanes enormes que expulsaban lava y gases. Muchos científicos piensan que los volcanes también ayudaron a cambiar el clima. Al final, desaparecieron tres de cada cuatro especies de la Tierra.",
+  "Pero no todos los dinosaurios desaparecieron. Algunos dinosaurios pequeños con plumas sobrevivieron: ¡son los antepasados de los pájaros! Así que, cuando ves una paloma en la calle, estás mirando a un pariente del [tiranosaurio rex]. También sobrevivieron algunos mamíferos pequeños, como nuestros antepasados."
+ ],
+ "q": [
+  [
+   "¿Cuándo desaparecieron casi todos los dinosaurios?",
+   [
+    "Hace sesenta y seis millones de años",
+    "Hace seis mil años",
+    "Hace seiscientos años"
+   ],
+   0
+  ],
+  [
+   "¿Dónde cayó el asteroide?",
+   [
+    "En España",
+    "En la India",
+    "En el mar, cerca de Yucatán"
+   ],
+   2
+  ],
+  [
+   "¿Qué tapó la luz del Sol?",
+   [
+    "El polvo",
+    "La lluvia",
+    "La Luna"
+   ],
+   0
+  ],
+  [
+   "¿Qué pasó en la India al mismo tiempo?",
+   [
+    "Hubo un asteroide",
+    "Había volcanes enormes",
+    "Hacía mucho calor"
+   ],
+   1
+  ],
+  [
+   "¿Cuántas especies desaparecieron?",
+   [
+    "Una de cada diez",
+    "La mitad",
+    "Tres de cada cuatro"
+   ],
+   2
+  ],
+  [
+   "¿Qué animales de hoy son parientes de los dinosaurios?",
+   [
+    "Los pájaros",
+    "Los peces",
+    "Los gatos"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "asteroide",
+   "☄️"
+  ],
+  [
+   "fuego",
+   "🔥"
+  ],
+  [
+   "ola",
+   "🌊"
+  ],
+  [
+   "pájaro",
+   "🐦"
+  ],
+  [
+   "paloma",
+   "🕊️"
+  ],
+  [
+   "volcán",
+   "🌋"
+  ]
+ ],
+ "halves": [
+  [
+   "El asteroide medía...",
+   "...unos diez kilómetros."
+  ],
+  [
+   "El golpe hizo...",
+   "...un cráter enorme."
+  ],
+  [
+   "El polvo tapó...",
+   "...la luz del Sol."
+  ],
+  [
+   "Algunos dinosaurios con plumas...",
+   "...sobrevivieron."
+  ],
+  [
+   "Una paloma es...",
+   "...un pariente del T. rex."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: hace + tiempo",
+  "rule": "<b>Hace + cantidad de tiempo</b> dice cuándo pasó algo, contando desde hoy: <b>hace dos días</b>, <b>hace un año</b>.",
+  "rows": [
+   "hace sesenta y seis millones de años",
+   "hace un año",
+   "hace dos semanas",
+   "hace mucho tiempo",
+   "chocó, cayó, hubo, murieron",
+   "¿Cuándo pasó? — Hace..."
+  ],
+  "items": [
+   [
+    "El asteroide cayó ___ sesenta y seis millones de años.",
+    [
+     "hace",
+     "desde",
+     "en"
+    ],
+    0
+   ],
+   [
+    "Fui al museo ___ dos semanas.",
+    [
+     "desde",
+     "hace",
+     "por"
+    ],
+    1
+   ],
+   [
+    "El asteroide ___ contra la Tierra.",
+    [
+     "choca",
+     "chocó",
+     "chocaron"
+    ],
+    1
+   ],
+   [
+    "Muchas plantas ___ por el frío.",
+    [
+     "murió",
+     "mueren",
+     "murieron"
+    ],
+    2
+   ],
+   [
+    "Después del choque ___ incendios y terremotos.",
+    [
+     "hubo",
+     "hay",
+     "habrá"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "How the dinosaurs disappeared",
+   "sub": "An asteroid, volcanoes and a surprise survivor",
+   "grammar": "Grammar: hace + time = ago. Hace dos días = two days ago.",
+   "rows": [
+    "sixty-six million years ago",
+    "a year ago",
+    "two weeks ago",
+    "a long time ago",
+    "crashed, fell, there were, died",
+    "When did it happen? — ... ago"
+   ],
+   "hints": [
+    "ago",
+    "ago",
+    "crashed",
+    "died",
+    "there were"
+   ],
+   "vocab": [
+    "asteroid",
+    "fire",
+    "wave",
+    "bird",
+    "pigeon / dove",
+    "volcano"
+   ]
+  }
+ }
+}

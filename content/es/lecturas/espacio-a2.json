@@ -1,0 +1,207 @@
+{
+ "id": "espacio-a2",
+ "topic": "espacio",
+ "level": "A2",
+ "title": "Un viaje a Marte",
+ "short": "Un viaje a Marte",
+ "text": [
+  "Imagina que eres astronauta y vas a viajar a Marte. Hoy no hay personas en Marte, pero las agencias espaciales quieren enviar a los primeros astronautas en los próximos años. ¿Cómo va a ser tu viaje?",
+  "Primero, vas a pasar unos siete meses dentro de una nave espacial. Es un viaje muy largo y no puedes salir. Vas a comer comida especial, hacer ejercicio todos los días para no perder músculo y hablar con tu familia con mensajes. Los mensajes tardan hasta veinte minutos en llegar a la Tierra.",
+  "Cuando llegues, vas a ver un paisaje rojo. Marte es rojo porque el suelo tiene óxido de hierro, como el metal viejo. Allí hace mucho frío: la temperatura media es de unos sesenta grados [bajo cero]. Y el aire no se puede respirar, [así que] siempre vas a llevar un traje espacial.",
+  "En Marte vas a pesar mucho menos. Si en la Tierra pesas cuarenta kilos, en Marte vas a pesar unos quince. ¡Vas a poder saltar muy alto! Un día en Marte dura casi lo mismo que en la Tierra: veinticuatro horas y treinta y siete minutos.",
+  "También vas a visitar el [Olympus Mons], el volcán más alto del [sistema solar]: mide unos veintidós kilómetros, mucho más que el Everest. Y vas a saludar a los robots que ya están allí, como el rover Perseverance, que llegó en 2021 para buscar señales de vida antigua."
+ ],
+ "q": [
+  [
+   "¿Cuánto dura el viaje a Marte?",
+   [
+    "Siete días",
+    "Unos siete meses",
+    "Siete años"
+   ],
+   1
+  ],
+  [
+   "¿Por qué haces ejercicio en la nave?",
+   [
+    "Para no perder músculo",
+    "Para no tener frío",
+    "Para llegar antes"
+   ],
+   0
+  ],
+  [
+   "¿Por qué es rojo Marte?",
+   [
+    "Por el fuego",
+    "Por el óxido de hierro del suelo",
+    "Por la luz del Sol"
+   ],
+   1
+  ],
+  [
+   "¿Cuál es la temperatura media en Marte?",
+   [
+    "Unos veinte grados",
+    "Unos cien grados",
+    "Unos sesenta grados [bajo cero]"
+   ],
+   2
+  ],
+  [
+   "Si en la Tierra pesas cuarenta kilos, ¿cuánto pesas en Marte?",
+   [
+    "Unos quince",
+    "Unos cuarenta",
+    "Unos cien"
+   ],
+   0
+  ],
+  [
+   "¿Qué es Perseverance?",
+   [
+    "Un volcán",
+    "Un astronauta",
+    "Un robot"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "astronauta",
+   "🧑‍🚀"
+  ],
+  [
+   "cohete",
+   "🚀"
+  ],
+  [
+   "volcán",
+   "🌋"
+  ],
+  [
+   "robot",
+   "🤖"
+  ],
+  [
+   "reloj",
+   "⏰"
+  ],
+  [
+   "mensaje",
+   "✉️"
+  ]
+ ],
+ "halves": [
+  [
+   "Los mensajes tardan...",
+   "...hasta veinte minutos."
+  ],
+  [
+   "Marte es rojo porque...",
+   "...el suelo tiene óxido de hierro."
+  ],
+  [
+   "El aire de Marte...",
+   "...no se puede respirar."
+  ],
+  [
+   "En Marte vas a poder...",
+   "...saltar muy alto."
+  ],
+  [
+   "Perseverance llegó...",
+   "...en 2021."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: ir a + infinitivo",
+  "rule": "Para hablar de <b>planes</b> y del <b>futuro</b> cercano: <b>ir a + verbo en infinitivo</b>.",
+  "rows": [
+   "yo voy a viajar",
+   "tú vas a ver",
+   "él / ella va a pesar",
+   "nosotros vamos a saltar",
+   "ellos van a llegar",
+   "ir: voy, vas, va, vamos, van"
+  ],
+  "items": [
+   [
+    "Yo ___ a viajar a Marte.",
+    [
+     "voy",
+     "va",
+     "vas"
+    ],
+    0
+   ],
+   [
+    "Tú vas a ___ un paisaje rojo.",
+    [
+     "ves",
+     "ver",
+     "visto"
+    ],
+    1
+   ],
+   [
+    "Los astronautas ___ a llegar en siete meses.",
+    [
+     "va",
+     "vamos",
+     "van"
+    ],
+    2
+   ],
+   [
+    "Nosotros ___ a saltar muy alto.",
+    [
+     "vamos",
+     "van",
+     "voy"
+    ],
+    0
+   ],
+   [
+    "Ella va ___ llevar un traje espacial.",
+    [
+     "de",
+     "a",
+     "en"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "A trip to Mars",
+   "sub": "What your journey would be like",
+   "grammar": "Grammar: ir a + infinitive = going to ... (plans and the near future).",
+   "rows": [
+    "I am going to travel",
+    "you are going to see",
+    "he / she is going to weigh",
+    "we are going to jump",
+    "they are going to arrive",
+    "to go: I go, you go, he goes, we go, they go"
+   ],
+   "hints": [
+    "am going",
+    "see",
+    "are going",
+    "are going (we)",
+    "to"
+   ],
+   "vocab": [
+    "astronaut",
+    "rocket",
+    "volcano",
+    "robot",
+    "clock",
+    "message"
+   ]
+  }
+ }
+}

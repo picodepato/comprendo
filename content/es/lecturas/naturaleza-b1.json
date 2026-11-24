@@ -1,0 +1,208 @@
+{
+ "id": "naturaleza-b1",
+ "topic": "naturaleza",
+ "level": "B1",
+ "title": "Cómo sobrevivir en la selva",
+ "short": "Sobrevivir en la selva",
+ "text": [
+  "El 24 de diciembre de 1971, un avión que volaba sobre la selva amazónica de Perú fue alcanzado por un rayo y se rompió en el aire. [Juliane Koepcke], una chica de diecisiete años, cayó desde unos tres mil metros, todavía sujeta a su asiento. Increíblemente, sobrevivió, con solo una clavícula rota y algunas heridas. Estaba sola en medio de la selva.",
+  "Juliane había vivido con sus padres, dos biólogos, en una estación de investigación en la selva, y recordó un consejo de su padre: «Si te pierdes, busca agua y sigue la corriente. Los arroyos llevan a ríos más grandes, y en los ríos vive la gente». Durante once días caminó y nadó río abajo, con hambre y con heridas infectadas, hasta que encontró una cabaña. Allí, unos leñadores la ayudaron.",
+  "Su historia enseña las reglas básicas de supervivencia en la selva. La primera es: no te dejes llevar por el pánico. Respira, siéntate y piensa. Si hay posibilidad de que te busquen, quédate cerca del lugar del accidente y haz señales: un fuego con humo o colores brillantes en un claro.",
+  "La segunda regla es el agua. En la selva llueve mucho, pero el agua de los ríos puede tener parásitos. Recoge agua de lluvia con hojas grandes y, si puedes, hiérvela antes de beberla. Sin agua, una persona solo sobrevive unos pocos días; sin comida, puede aguantar semanas.",
+  "Tercera regla: protégete. No duermas directamente en el suelo, donde hay hormigas, serpientes y humedad; construye una cama con ramas, un poco más alta. Mira siempre dónde pones las manos y los pies, y sacude la ropa y los zapatos antes de ponértelos.",
+  "Por último, ten cuidado con la comida. No comas frutas ni plantas que no conozcas, porque muchas son venenosas. Juliane casi no comió nada en once días, solo unos caramelos que encontró. Hoy es bióloga y dirige la estación de investigación que fundaron sus padres, para proteger la selva que le salvó la vida."
+ ],
+ "q": [
+  [
+   "¿Qué le pasó al avión de Juliane?",
+   [
+    "Se quedó sin combustible",
+    "Fue alcanzado por un rayo",
+    "Aterrizó en un río"
+   ],
+   1
+  ],
+  [
+   "¿Qué consejo le dio su padre?",
+   [
+    "Subir a un árbol",
+    "Seguir la corriente del agua",
+    "Quedarse siempre quieta"
+   ],
+   1
+  ],
+  [
+   "¿Cuántos días caminó Juliane?",
+   [
+    "Once",
+    "Tres",
+    "Diecisiete"
+   ],
+   0
+  ],
+  [
+   "¿Por qué es peligroso beber agua de los ríos?",
+   [
+    "Porque está muy fría",
+    "Porque es salada",
+    "Porque puede tener parásitos"
+   ],
+   2
+  ],
+  [
+   "¿Por qué no debes dormir en el suelo?",
+   [
+    "Porque hay hormigas, serpientes y humedad",
+    "Porque hace calor",
+    "Porque hay mucho ruido"
+   ],
+   0
+  ],
+  [
+   "¿Qué hace Juliane hoy?",
+   [
+    "Es piloto de aviones",
+    "Dirige una estación de investigación",
+    "Vive en una ciudad grande sin selva"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "avión",
+   "✈️"
+  ],
+  [
+   "rayo",
+   "⚡"
+  ],
+  [
+   "hormiga",
+   "🐜"
+  ],
+  [
+   "zapato",
+   "👟"
+  ],
+  [
+   "cabaña",
+   "🛖"
+  ],
+  [
+   "lluvia",
+   "🌧️"
+  ]
+ ],
+ "halves": [
+  [
+   "Juliane cayó...",
+   "...todavía sujeta a su asiento."
+  ],
+  [
+   "Los arroyos llevan...",
+   "...a ríos más grandes."
+  ],
+  [
+   "Unos leñadores...",
+   "...la ayudaron."
+  ],
+  [
+   "Sin agua, una persona solo sobrevive...",
+   "...unos pocos días."
+  ],
+  [
+   "No comas plantas...",
+   "...que no conozcas."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el imperativo",
+  "rule": "El <b>imperativo</b> da órdenes y consejos. Afirmativo: <b>busca, sigue, haz</b>. Negativo: <b>no + subjuntivo</b>: no comas, no duermas.",
+  "rows": [
+   "buscar → busca / no busques",
+   "seguir → sigue / no sigas",
+   "comer → come / no comas",
+   "dormir → duerme / no duermas",
+   "hacer → haz / no hagas",
+   "ponerse → ponte, quedarse → quédate"
+  ],
+  "items": [
+   [
+    "Si te pierdes, ___ agua.",
+    [
+     "busca",
+     "buscas",
+     "buscar"
+    ],
+    0
+   ],
+   [
+    "No ___ plantas desconocidas.",
+    [
+     "come",
+     "comas",
+     "comer"
+    ],
+    1
+   ],
+   [
+    "___ un fuego con humo.",
+    [
+     "Hace",
+     "Hacer",
+     "Haz"
+    ],
+    2
+   ],
+   [
+    "No ___ en el suelo.",
+    [
+     "duermas",
+     "duerme",
+     "dormir"
+    ],
+    0
+   ],
+   [
+    "___ cerca del accidente.",
+    [
+     "Quedas",
+     "Quédate",
+     "Quedarte"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "How to survive in the jungle",
+   "sub": "The true story of Juliane Koepcke",
+   "grammar": "Grammar: the imperative (commands and advice). Negative: no + subjunctive.",
+   "rows": [
+    "look for / don't look for",
+    "follow / don't follow",
+    "eat / don't eat",
+    "sleep / don't sleep",
+    "make / don't make",
+    "put on, stay"
+   ],
+   "hints": [
+    "look for",
+    "don't eat",
+    "make",
+    "don't sleep",
+    "stay"
+   ],
+   "vocab": [
+    "plane",
+    "lightning",
+    "ant",
+    "shoe",
+    "hut",
+    "rain"
+   ]
+  }
+ }
+}

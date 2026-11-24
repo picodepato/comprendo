@@ -1,0 +1,207 @@
+{
+ "id": "en-dinosaurios-a2",
+ "topic": "dinosaurios",
+ "level": "A2",
+ "title": "How did the dinosaurs disappear?",
+ "short": "How they disappeared",
+ "text": [
+  "Dinosaurs lived on the Earth for more than one hundred and sixty million years. Then, about sixty-six million years ago, they disappeared. For a long time, scientists did not know why.",
+  "In 1980 a team of scientists found a strange thin layer of rock all over the world. It had a lot of iridium, a metal that is rare on the Earth but common in asteroids. They had a new idea: an asteroid hit the Earth.",
+  "Later, scientists found the crater in Mexico, near the town of Chicxulub. It is about one hundred and eighty kilometers wide. The asteroid was about ten kilometers wide, as big as a city.",
+  "The impact did not kill all the dinosaurs at once. It caused fires, giant waves and huge clouds of dust. The dust covered the sky and the sunlight did not reach the plants. The plants died, the animals that ate plants died, and then the hunters died too.",
+  "But not all the dinosaurs disappeared. Some small dinosaurs with feathers survived. Do you know their names today? They are the birds! A chicken is a distant cousin of the [T. rex]."
+ ],
+ "q": [
+  [
+   "How long did dinosaurs live on the Earth?",
+   [
+    "More than one hundred and sixty million years",
+    "Ten thousand years",
+    "One million years"
+   ],
+   0
+  ],
+  [
+   "What did scientists find in 1980?",
+   [
+    "A thin layer of rock with iridium",
+    "A living dinosaur",
+    "A spaceship"
+   ],
+   0
+  ],
+  [
+   "Where is the crater?",
+   [
+    "In Mexico",
+    "In Spain",
+    "In China"
+   ],
+   0
+  ],
+  [
+   "How big was the asteroid?",
+   [
+    "About ten kilometers wide",
+    "As big as a car",
+    "As big as the Moon"
+   ],
+   0
+  ],
+  [
+   "Why did the plants die?",
+   [
+    "The sunlight did not reach them",
+    "It rained too much",
+    "The dinosaurs ate them all"
+   ],
+   0
+  ],
+  [
+   "Which animals are the descendants of dinosaurs?",
+   [
+    "Birds",
+    "Fish",
+    "Cats"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "asteroid",
+   "☄️"
+  ],
+  [
+   "crater",
+   "🕳️"
+  ],
+  [
+   "rock",
+   "🪨"
+  ],
+  [
+   "cloud",
+   "☁️"
+  ],
+  [
+   "feather",
+   "🪶"
+  ],
+  [
+   "bird",
+   "🐦"
+  ]
+ ],
+ "halves": [
+  [
+   "Dinosaurs disappeared...",
+   "...about sixty-six million years ago."
+  ],
+  [
+   "The layer of rock had...",
+   "...a lot of iridium."
+  ],
+  [
+   "The crater is near...",
+   "...the town of Chicxulub."
+  ],
+  [
+   "The dust covered...",
+   "...the sky."
+  ],
+  [
+   "Some small dinosaurs with feathers...",
+   "...survived."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the past simple negative",
+  "rule": "For the negative in the past simple, use <b>did not</b> + verb (without -ed). It is the same for all people.",
+  "rows": [
+   "They did not know.",
+   "It did not kill all the dinosaurs.",
+   "The light did not reach the plants.",
+   "did not = didn't",
+   "did not + verb (no -ed)",
+   "I did not see"
+  ],
+  "items": [
+   [
+    "Scientists ___ know why.",
+    [
+     "did not",
+     "not",
+     "no did"
+    ],
+    0
+   ],
+   [
+    "The impact did not ___ all the dinosaurs.",
+    [
+     "killed",
+     "kill",
+     "kills"
+    ],
+    1
+   ],
+   [
+    "The sunlight did not ___ the plants.",
+    [
+     "reach",
+     "reached",
+     "reaches"
+    ],
+    0
+   ],
+   [
+    "Not all the dinosaurs ___.",
+    [
+     "disappeared",
+     "disappear",
+     "did disappeared"
+    ],
+    0
+   ],
+   [
+    "We did not ___ a living dinosaur.",
+    [
+     "found",
+     "find",
+     "finding"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Cómo desaparecieron los dinosaurios?",
+   "sub": "El día que cambió la Tierra",
+   "grammar": "Gramática: el pasado simple en negativo: did not + verbo (sin -ed). Es igual para todas las personas.",
+   "rows": [
+    "No lo sabían.",
+    "No mató a todos los dinosaurios.",
+    "La luz no llegó a las plantas.",
+    "se puede acortar",
+    "did not + verbo sin -ed",
+    "no vi"
+   ],
+   "hints": [
+    "no sabían",
+    "mató",
+    "llegó a",
+    "desaparecieron",
+    "encontramos"
+   ],
+   "vocab": [
+    "asteroide",
+    "cráter",
+    "roca",
+    "nube",
+    "pluma",
+    "pájaro"
+   ]
+  }
+ }
+}

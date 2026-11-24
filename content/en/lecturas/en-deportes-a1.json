@@ -1,0 +1,207 @@
+{
+ "id": "en-deportes-a1",
+ "topic": "deportes",
+ "level": "A1",
+ "title": "Skateboarding",
+ "short": "Skateboarding",
+ "text": [
+  "Skateboarding is a sport with a board and four wheels. People skate in the street, in parks and in special skateparks. Many children and teenagers love skating.",
+  "To skate, you put one foot on the board and you push with the other foot. Then you put both feet on the board and you ride. It is easy to start, but it is difficult to be really good.",
+  "Skaters like doing tricks. The most famous trick is the ollie: you jump with the board, and the board stays under your feet. It looks like magic!",
+  "Skateboarding is also an Olympic sport. In Tokyo in 2021, a girl from Japan won a gold medal. She was only thirteen years old!",
+  "Do you like skating? Remember: always wear a helmet and pads. Falling is part of learning, so do not be afraid. Practice every day and have fun!"
+ ],
+ "q": [
+  [
+   "How many wheels does a skateboard have?",
+   [
+    "Two",
+    "Four",
+    "Six"
+   ],
+   1
+  ],
+  [
+   "Where do people skate?",
+   [
+    "In the street and in parks",
+    "Only at home",
+    "In the water"
+   ],
+   0
+  ],
+  [
+   "What is an ollie?",
+   [
+    "A jump with the board",
+    "A type of wheel",
+    "A skatepark"
+   ],
+   0
+  ],
+  [
+   "When was skateboarding in the Olympics in Tokyo?",
+   [
+    "In 2021",
+    "In 1990",
+    "In 2010"
+   ],
+   0
+  ],
+  [
+   "How old was the girl from Japan?",
+   [
+    "Thirteen",
+    "Twenty",
+    "Ten"
+   ],
+   0
+  ],
+  [
+   "What should you always wear?",
+   [
+    "A helmet and pads",
+    "A hat",
+    "Sunglasses"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "board",
+   "🛹"
+  ],
+  [
+   "wheel",
+   "🛞"
+  ],
+  [
+   "foot",
+   "🦶"
+  ],
+  [
+   "park",
+   "🌳"
+  ],
+  [
+   "helmet",
+   "⛑️"
+  ],
+  [
+   "medal",
+   "🥇"
+  ]
+ ],
+ "halves": [
+  [
+   "People skate...",
+   "...in the street and in parks."
+  ],
+  [
+   "You push...",
+   "...with the other foot."
+  ],
+  [
+   "Skaters like...",
+   "...doing tricks."
+  ],
+  [
+   "A girl from Japan won...",
+   "...a gold medal."
+  ],
+  [
+   "Always wear...",
+   "...a helmet and pads."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: like, love and hate + -ing",
+  "rule": "After <b>like</b>, <b>love</b>, <b>enjoy</b> and <b>hate</b>, we usually use a verb with <b>-ing</b>.",
+  "rows": [
+   "I like skating",
+   "she loves jumping",
+   "we enjoy riding",
+   "they hate falling",
+   "Do you like skating?",
+   "skate → skating"
+  ],
+  "items": [
+   [
+    "Skaters like ___ tricks.",
+    [
+     "do",
+     "doing",
+     "does"
+    ],
+    1
+   ],
+   [
+    "I love ___ in the park.",
+    [
+     "skating",
+     "skate",
+     "skates"
+    ],
+    0
+   ],
+   [
+    "She hates ___.",
+    [
+     "fall",
+     "falling",
+     "falls"
+    ],
+    1
+   ],
+   [
+    "Do you like ___?",
+    [
+     "ride",
+     "rides",
+     "riding"
+    ],
+    2
+   ],
+   [
+    "We enjoy ___ every day.",
+    [
+     "practicing",
+     "practice",
+     "practices"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El skate",
+   "sub": "Un deporte sobre cuatro ruedas",
+   "grammar": "Gramática: después de like (gustar), love (encantar), enjoy (disfrutar) y hate (odiar), el verbo suele ir con -ing.",
+   "rows": [
+    "me gusta patinar",
+    "le encanta saltar",
+    "disfrutamos montando",
+    "odian caerse",
+    "¿Te gusta patinar?",
+    "se quita la -e"
+   ],
+   "hints": [
+    "hacer",
+    "patinar",
+    "caerse",
+    "montar",
+    "practicar"
+   ],
+   "vocab": [
+    "tabla",
+    "rueda",
+    "pie",
+    "parque",
+    "casco",
+    "medalla"
+   ]
+  }
+ }
+}

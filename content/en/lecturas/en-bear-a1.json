@@ -1,0 +1,207 @@
+{
+ "id": "en-bear-a1",
+ "topic": "bear",
+ "level": "A1",
+ "title": "What is BEAR (Alpha)?",
+ "short": "The game",
+ "text": [
+  "BEAR (Alpha) is a horror game on Roblox. A user called Cheedaman made it in 2019. Today it is a very famous game: it has more than three hundred million visits.",
+  "In every match there are two groups. One player is the Bear and the other players are the survivors. The Bear is big, fast and dangerous. It has a red light around it, so the survivors can see it in the dark.",
+  "The survivors have one mission: escape from the Bear. They need to run, hide and work as a team. On a computer, a player holds down the Shift key to run faster. If the Bear catches a survivor, that player loses.",
+  "Every match has a time limit. If the time ends and some survivors are still alive, they win. If the Bear catches everyone, the Bear wins.",
+  "The game is a little scary, but it is also a lot of fun. It is perfect to play with friends!"
+ ],
+ "q": [
+  [
+   "What type of game is BEAR (Alpha)?",
+   [
+    "A football game",
+    "A horror game",
+    "A car game"
+   ],
+   1
+  ],
+  [
+   "Who made the game?",
+   [
+    "Roblox",
+    "The Bear",
+    "Cheedaman"
+   ],
+   2
+  ],
+  [
+   "How many players are the Bear in every match?",
+   [
+    "One",
+    "Two",
+    "All of them"
+   ],
+   0
+  ],
+  [
+   "What color is the light of the Bear?",
+   [
+    "Blue",
+    "Red",
+    "Green"
+   ],
+   1
+  ],
+  [
+   "What key do players use to run faster?",
+   [
+    "Enter",
+    "Space",
+    "Shift"
+   ],
+   2
+  ],
+  [
+   "When do the survivors win?",
+   [
+    "When they catch the Bear",
+    "When the time ends and they are alive",
+    "When they turn off the red light"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "bear",
+   "🐻"
+  ],
+  [
+   "player",
+   "🎮"
+  ],
+  [
+   "run",
+   "🏃"
+  ],
+  [
+   "hide",
+   "🙈"
+  ],
+  [
+   "win",
+   "🏆"
+  ],
+  [
+   "light",
+   "💡"
+  ]
+ ],
+ "halves": [
+  [
+   "One player is...",
+   "...the Bear."
+  ],
+  [
+   "The Bear has a light...",
+   "...that is red."
+  ],
+  [
+   "The survivors need to...",
+   "...run and hide."
+  ],
+  [
+   "If the Bear catches everyone...",
+   "...the Bear wins."
+  ],
+  [
+   "The game is perfect...",
+   "...to play with friends."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the present simple",
+  "rule": "In the present simple, the verb takes <b>-s</b> with <b>he</b>, <b>she</b> and <b>it</b>.",
+  "rows": [
+   "I play",
+   "you play",
+   "he / she / it plays",
+   "we play",
+   "they play",
+   "run → runs, catch → catches"
+  ],
+  "items": [
+   [
+    "The Bear ___ very fast.",
+    [
+     "run",
+     "runs",
+     "running"
+    ],
+    1
+   ],
+   [
+    "The survivors ___ in the dark.",
+    [
+     "hides",
+     "hide",
+     "hiding"
+    ],
+    1
+   ],
+   [
+    "I ___ with my friends.",
+    [
+     "play",
+     "plays",
+     "playing"
+    ],
+    0
+   ],
+   [
+    "The Bear ___ a red light.",
+    [
+     "have",
+     "has",
+     "haves"
+    ],
+    1
+   ],
+   [
+    "If the Bear ___ you, you lose.",
+    [
+     "catch",
+     "catchs",
+     "catches"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Qué es BEAR (Alpha)?",
+   "sub": "El juego y sus reglas",
+   "grammar": "Gramática: el presente simple. Con he, she e it (él, ella, ello) el verbo lleva -s al final.",
+   "rows": [
+    "yo juego",
+    "tú juegas",
+    "él / ella juega",
+    "nosotros jugamos",
+    "ellos juegan",
+    "-s, o -es tras ch, sh, s, x"
+   ],
+   "hints": [
+    "corre",
+    "se esconden",
+    "juego",
+    "tiene",
+    "atrapa"
+   ],
+   "vocab": [
+    "oso",
+    "jugador",
+    "correr",
+    "esconderse",
+    "ganar",
+    "luz"
+   ]
+  }
+ }
+}

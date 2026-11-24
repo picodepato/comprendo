@@ -1,0 +1,207 @@
+{
+ "id": "inventos-a1",
+ "topic": "inventos",
+ "level": "A1",
+ "title": "Inventos de casa",
+ "short": "Inventos de casa",
+ "text": [
+  "En casa usamos muchos inventos todos los días. Son tan normales que no pensamos en ellos. Pero hace muchos años, la gente vivía sin ellos. ¿Puedes imaginar tu casa sin estos inventos?",
+  "La bombilla da luz por la noche. Antes, la gente usaba velas. Hoy, con un interruptor, encendemos la luz en un segundo. Las bombillas LED de hoy gastan muy poca electricidad.",
+  "La nevera sirve para guardar la comida fría. Así, la leche, la carne y la fruta duran más días. Antes, la gente usaba hielo o guardaba la comida en lugares frescos, como un sótano.",
+  "La lavadora lava la ropa. Antes, la gente lavaba la ropa a mano, en el río o en casa. ¡Era un trabajo muy duro! Hoy, metes la ropa, pones el jabón, pulsas un botón y la máquina trabaja.",
+  "El microondas calienta la comida muy rápido. En solo un minuto, tu leche está caliente. Y tú, ¿qué invento de casa usas más?"
+ ],
+ "q": [
+  [
+   "¿Qué usaba la gente antes de la bombilla?",
+   [
+    "Velas",
+    "Neveras",
+    "Microondas"
+   ],
+   0
+  ],
+  [
+   "¿Cómo gastan electricidad las bombillas LED?",
+   [
+    "Mucha",
+    "Muy poca",
+    "Nada"
+   ],
+   1
+  ],
+  [
+   "¿Para qué sirve la nevera?",
+   [
+    "Para lavar la ropa",
+    "Para calentar la comida",
+    "Para guardar la comida fría"
+   ],
+   2
+  ],
+  [
+   "¿Dónde lavaba la gente la ropa antes?",
+   [
+    "En el río o en casa",
+    "En la nevera",
+    "En el sótano"
+   ],
+   0
+  ],
+  [
+   "¿Qué hace el microondas?",
+   [
+    "Lava la ropa",
+    "Calienta la comida",
+    "Da luz"
+   ],
+   1
+  ],
+  [
+   "¿Cuánto tiempo necesita el microondas para calentar la leche?",
+   [
+    "Una hora",
+    "Un minuto",
+    "Un día"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "bombilla",
+   "💡"
+  ],
+  [
+   "vela",
+   "🕯️"
+  ],
+  [
+   "leche",
+   "🥛"
+  ],
+  [
+   "ropa",
+   "👕"
+  ],
+  [
+   "jabón",
+   "🧼"
+  ],
+  [
+   "botón",
+   "🔘"
+  ]
+ ],
+ "halves": [
+  [
+   "La bombilla da luz...",
+   "...por la noche."
+  ],
+  [
+   "Antes, la gente usaba...",
+   "...velas."
+  ],
+  [
+   "La nevera sirve para...",
+   "...guardar la comida fría."
+  ],
+  [
+   "La lavadora...",
+   "...lava la ropa."
+  ],
+  [
+   "El microondas calienta...",
+   "...la comida muy rápido."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el presente (-ar, -er, -ir)",
+  "rule": "En presente, los verbos cambian según su terminación: <b>-ar</b>, <b>-er</b>, <b>-ir</b>.",
+  "rows": [
+   "lavar: lava, lavan",
+   "encender: enciende, encienden",
+   "servir: sirve, sirven",
+   "usar: uso, usas, usa",
+   "meter: meto, metes, mete",
+   "vivir: vivo, vives, vive"
+  ],
+  "items": [
+   [
+    "La lavadora ___ la ropa.",
+    [
+     "lava",
+     "lavan",
+     "lavo"
+    ],
+    0
+   ],
+   [
+    "La nevera ___ para guardar la comida.",
+    [
+     "sirven",
+     "sirve",
+     "sirvo"
+    ],
+    1
+   ],
+   [
+    "Nosotros ___ la luz con un interruptor.",
+    [
+     "enciende",
+     "encienden",
+     "encendemos"
+    ],
+    2
+   ],
+   [
+    "Yo ___ el microondas todos los días.",
+    [
+     "uso",
+     "usa",
+     "usan"
+    ],
+    0
+   ],
+   [
+    "Tú ___ la ropa en la lavadora.",
+    [
+     "mete",
+     "metes",
+     "meto"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Household inventions",
+   "sub": "The light bulb, the fridge, the washing machine and the microwave",
+   "grammar": "Grammar: the present tense. Verbs change with their ending: -ar, -er, -ir.",
+   "rows": [
+    "to wash: washes, wash",
+    "to switch on: switches on",
+    "to be used for: is used for",
+    "to use: I use, you use, he uses",
+    "to put in: I put, you put, he puts",
+    "to live: I live, you live, he lives"
+   ],
+   "hints": [
+    "washes",
+    "is used",
+    "switch on",
+    "use",
+    "put"
+   ],
+   "vocab": [
+    "light bulb",
+    "candle",
+    "milk",
+    "clothes",
+    "soap",
+    "button"
+   ]
+  }
+ }
+}

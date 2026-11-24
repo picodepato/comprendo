@@ -1,0 +1,208 @@
+{
+ "id": "peligrosos-b1",
+ "topic": "peligrosos",
+ "level": "B1",
+ "title": "¿Por qué atacan los animales?",
+ "short": "¿Por qué atacan?",
+ "text": [
+  "Cuando vemos una película sobre tiburones o serpientes, parece que los animales salvajes quieren atacarnos. [Sin embargo], los expertos explican que casi ningún animal busca a las personas para hacerles daño. Si un animal ataca, normalmente tiene una razón.",
+  "La primera razón es el miedo. Muchos animales atacan porque se sienten en peligro. [Por ejemplo], una serpiente que alguien pisa [sin querer] muerde para defenderse. Para ella, nosotros somos un monstruo gigante.",
+  "La segunda razón es proteger a sus crías. Una osa con sus oseznos o un hipopótamo con su bebé pueden ser muy agresivos. [De hecho], el hipopótamo es uno de los animales más peligrosos de África, aunque solo come plantas.",
+  "Otros animales defienden su territorio, [es decir], el lugar donde viven y comen. Si entramos en ese espacio, piensan que queremos quitarles su casa o su comida. [Por eso], muchos animales primero avisan: el perro gruñe, la [serpiente de cascabel] hace ruido con la cola y el gato levanta el pelo.",
+  "También hay ataques por confusión. Algunos científicos creen que muchos tiburones muerden a surfistas porque, desde abajo, una persona sobre una tabla se parece a una foca. Cuando el tiburón [se da cuenta] del error, normalmente se va.",
+  "Entonces, ¿qué podemos hacer? [Lo más importante] es respetar a los animales: mirarlos [desde lejos], no darles comida y no acercarnos a sus crías. Si entendemos por qué atacan, podemos compartir el planeta con ellos sin peligro."
+ ],
+ "q": [
+  [
+   "Según los expertos, ¿buscan los animales a las personas para atacarlas?",
+   [
+    "Sí, casi siempre",
+    "No, casi nunca",
+    "Solo los tiburones"
+   ],
+   1
+  ],
+  [
+   "¿Por qué muerde una serpiente cuando alguien la pisa?",
+   [
+    "Para defenderse",
+    "Porque tiene hambre",
+    "Para proteger su territorio"
+   ],
+   0
+  ],
+  [
+   "¿Qué come el hipopótamo?",
+   [
+    "Peces",
+    "Otros animales",
+    "Solo plantas"
+   ],
+   2
+  ],
+  [
+   "¿Qué hace la [serpiente de cascabel] para avisar?",
+   [
+    "Levanta el pelo",
+    "Hace ruido con la cola",
+    "Gruñe"
+   ],
+   1
+  ],
+  [
+   "¿Por qué algunos tiburones muerden a surfistas?",
+   [
+    "Porque los confunden con focas",
+    "Porque les gustan las tablas",
+    "Porque están enfadados"
+   ],
+   0
+  ],
+  [
+   "¿Qué NO debemos hacer con los animales salvajes?",
+   [
+    "Mirarlos [desde lejos]",
+    "Respetarlos",
+    "Darles comida"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "hipopótamo",
+   "🦛"
+  ],
+  [
+   "foca",
+   "🦭"
+  ],
+  [
+   "perro",
+   "🐕"
+  ],
+  [
+   "gato",
+   "🐈"
+  ],
+  [
+   "surfista",
+   "🏄"
+  ],
+  [
+   "osa",
+   "🐻"
+  ]
+ ],
+ "halves": [
+  [
+   "Muchos animales atacan...",
+   "...porque se sienten en peligro."
+  ],
+  [
+   "El hipopótamo es peligroso...",
+   "...aunque solo come plantas."
+  ],
+  [
+   "El territorio es...",
+   "...el lugar donde viven y comen."
+  ],
+  [
+   "Desde abajo, un surfista...",
+   "...se parece a una foca."
+  ],
+  [
+   "[Lo más importante] es...",
+   "...respetar a los animales."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: los conectores",
+  "rule": "Los <b>conectores</b> unen ideas. Cada uno tiene una función diferente.",
+  "rows": [
+   "porque",
+   "para",
+   "por eso",
+   "aunque",
+   "sin embargo",
+   "es decir"
+  ],
+  "items": [
+   [
+    "Muchos animales atacan ___ tienen miedo.",
+    [
+     "porque",
+     "para",
+     "aunque"
+    ],
+    0
+   ],
+   [
+    "La serpiente muerde ___ defenderse.",
+    [
+     "porque",
+     "para",
+     "por eso"
+    ],
+    1
+   ],
+   [
+    "El hipopótamo es peligroso, ___ solo come plantas.",
+    [
+     "aunque",
+     "por eso",
+     "para"
+    ],
+    0
+   ],
+   [
+    "El tiburón confunde al surfista con una foca. ___, lo muerde.",
+    [
+     "Por eso",
+     "Aunque",
+     "Para"
+    ],
+    0
+   ],
+   [
+    "Los ataques son raros; ___, hay que tener cuidado.",
+    [
+     "sin embargo",
+     "porque",
+     "para"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Why do animals attack?",
+   "sub": "Fear, babies, territory and mistakes",
+   "grammar": "Grammar: connectors. They join ideas: cause, purpose, result, contrast, explanation.",
+   "rows": [
+    "because (cause)",
+    "in order to (purpose)",
+    "that's why (result)",
+    "although (contrast)",
+    "however (contrast)",
+    "that is (explanation)"
+   ],
+   "hints": [
+    "because",
+    "in order to",
+    "although",
+    "that's why",
+    "however"
+   ],
+   "vocab": [
+    "hippo",
+    "seal",
+    "dog",
+    "cat",
+    "surfer",
+    "she-bear"
+   ]
+  }
+ }
+}

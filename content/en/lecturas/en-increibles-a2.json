@@ -1,0 +1,207 @@
+{
+ "id": "en-increibles-a2",
+ "topic": "increibles",
+ "level": "A2",
+ "title": "Animals that glow",
+ "short": "Animals that glow",
+ "text": [
+  "Some animals can make their own light. This is called bioluminescence. It usually happens because of a special chemical reaction inside their bodies.",
+  "Fireflies are the most famous example. On summer nights they often fly over fields and gardens. They flash their lights to find a partner. Each type of firefly has its own pattern of flashes, like a secret code.",
+  "Most glowing animals live in the deep ocean. Down there, the sun never arrives and it is always dark. The anglerfish has a small light on its head. Little fish swim towards the light, and then the anglerfish eats them!",
+  "Some animals use light to hide. A small squid lives near Hawaii. At night the moon shines on the water, so the squid glows from below. Predators usually do not see its shadow.",
+  "On some beaches you can sometimes see blue waves at night. The light comes from millions of tiny living things in the water. When the waves move, they glow. It looks like magic, but it is science!"
+ ],
+ "q": [
+  [
+   "What is bioluminescence?",
+   [
+    "When animals make their own light",
+    "When animals change color",
+    "When animals sleep at night"
+   ],
+   0
+  ],
+  [
+   "Why do fireflies flash their lights?",
+   [
+    "To scare birds",
+    "To find a partner",
+    "To see in the dark"
+   ],
+   1
+  ],
+  [
+   "Where do most glowing animals live?",
+   [
+    "In the desert",
+    "In the deep ocean",
+    "In the mountains"
+   ],
+   1
+  ],
+  [
+   "How does the anglerfish use its light?",
+   [
+    "To catch fish",
+    "To read",
+    "To swim faster"
+   ],
+   0
+  ],
+  [
+   "Why does the squid glow from below?",
+   [
+    "To hide its shadow",
+    "To find friends",
+    "To keep warm"
+   ],
+   0
+  ],
+  [
+   "Where does the light of the blue waves come from?",
+   [
+    "From the moon",
+    "From millions of tiny living things",
+    "From the sun"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "firefly",
+   "✨"
+  ],
+  [
+   "night",
+   "🌙"
+  ],
+  [
+   "light",
+   "💡"
+  ],
+  [
+   "squid",
+   "🦑"
+  ],
+  [
+   "wave",
+   "🌊"
+  ],
+  [
+   "shadow",
+   "👤"
+  ]
+ ],
+ "halves": [
+  [
+   "Fireflies flash their lights...",
+   "...to find a partner."
+  ],
+  [
+   "In the deep ocean...",
+   "...it is always dark."
+  ],
+  [
+   "The anglerfish has a light...",
+   "...on its head."
+  ],
+  [
+   "Predators usually do not see...",
+   "...the shadow of the squid."
+  ],
+  [
+   "When the waves move...",
+   "...they glow."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: adverbs of frequency",
+  "rule": "Adverbs of frequency say <b>how often</b>. They go <b>before</b> the main verb, but <b>after</b> the verb to be.",
+  "rows": [
+   "always",
+   "usually",
+   "often",
+   "sometimes",
+   "never",
+   "It is always dark. / They often fly."
+  ],
+  "items": [
+   [
+    "In the deep ocean it is ___ dark.",
+    [
+     "never",
+     "always",
+     "sometimes"
+    ],
+    1
+   ],
+   [
+    "The sun ___ arrives there.",
+    [
+     "never",
+     "always",
+     "often"
+    ],
+    0
+   ],
+   [
+    "Fireflies ___ fly on summer nights.",
+    [
+     "often",
+     "never",
+     "no"
+    ],
+    0
+   ],
+   [
+    "Predators ___ do not see the squid.",
+    [
+     "usually",
+     "always never",
+     "sometimes always"
+    ],
+    0
+   ],
+   [
+    "You can ___ see blue waves.",
+    [
+     "sometimes",
+     "never",
+     "always never"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Animales que brillan",
+   "sub": "La luz que fabrican los seres vivos",
+   "grammar": "Gramática: los adverbios de frecuencia dicen con qué frecuencia pasa algo. Van delante del verbo principal, pero detrás de to be.",
+   "rows": [
+    "siempre (100%)",
+    "normalmente",
+    "a menudo",
+    "a veces",
+    "nunca (0%)",
+    "to be + adverbio / adverbio + verbo"
+   ],
+   "hints": [
+    "siempre",
+    "nunca",
+    "a menudo",
+    "normalmente",
+    "a veces"
+   ],
+   "vocab": [
+    "luciérnaga",
+    "noche",
+    "luz",
+    "calamar",
+    "ola",
+    "sombra"
+   ]
+  }
+ }
+}

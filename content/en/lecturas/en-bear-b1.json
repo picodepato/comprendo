@@ -1,0 +1,208 @@
+{
+ "id": "en-bear-b1",
+ "topic": "bear",
+ "level": "B1",
+ "title": "My match with friends",
+ "short": "My match with friends",
+ "text": [
+  "My name is Leo and I am twelve years old. My favorite game on Roblox is BEAR (Alpha). On Saturdays I play with my friends Lucas and Marta.",
+  "Last Saturday a new match started. The game chose the Bear at random... and it was Marta! Lucas and I were survivors. We had to survive until the end of the time.",
+  "First, I was running down a long, dark hallway when I heard footsteps behind me. How scary! I went into a bedroom and hid under a bed. Lucas was hiding inside a wardrobe, next to the door.",
+  "While I was lying under the bed, the Bear came into the room. My heart was beating very fast. Marta was looking everywhere, but she did not see us. After a few seconds, she left the room. Phew!",
+  "In the end, the time finished and Lucas and I won. We got quidz, the money of the game. With quidz you can buy new skins for your character.",
+  "My advice: do not always hide in the same place, listen carefully to the footsteps and help your friends. And if you are the Bear, look inside the wardrobes!"
+ ],
+ "q": [
+  [
+   "How old is Leo?",
+   [
+    "Ten",
+    "Fifteen",
+    "Twelve"
+   ],
+   2
+  ],
+  [
+   "When does Leo play with his friends?",
+   [
+    "On Saturdays",
+    "On Mondays",
+    "Every day"
+   ],
+   0
+  ],
+  [
+   "What was Leo doing when he heard footsteps?",
+   [
+    "He was buying skins",
+    "He was running down a hallway",
+    "He was opening a wardrobe"
+   ],
+   1
+  ],
+  [
+   "Where did Leo hide?",
+   [
+    "Inside a wardrobe",
+    "Under a bed",
+    "Behind the door"
+   ],
+   1
+  ],
+  [
+   "What are quidz?",
+   [
+    "A type of bear",
+    "The money of the game",
+    "A map"
+   ],
+   1
+  ],
+  [
+   "What is one piece of advice from Leo?",
+   [
+    "Always hide in the same place",
+    "Listen carefully to the footsteps",
+    "Play alone"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "bed",
+   "🛏️"
+  ],
+  [
+   "wardrobe",
+   "🗄️"
+  ],
+  [
+   "door",
+   "🚪"
+  ],
+  [
+   "heart",
+   "❤️"
+  ],
+  [
+   "money",
+   "💰"
+  ],
+  [
+   "footsteps",
+   "👣"
+  ]
+ ],
+ "halves": [
+  [
+   "In this match Marta was...",
+   "...the Bear."
+  ],
+  [
+   "Lucas was hiding...",
+   "...inside a wardrobe."
+  ],
+  [
+   "Leo heard footsteps...",
+   "...behind him."
+  ],
+  [
+   "With quidz you can buy...",
+   "...new skins."
+  ],
+  [
+   "The heart of Leo...",
+   "...was beating very fast."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the past continuous",
+  "rule": "Use the <b>past continuous</b> (was / were + -ing) for an action in progress in the past. Use the <b>past simple</b> for a short action that interrupts it.",
+  "rows": [
+   "I was running",
+   "you were running",
+   "he / she was hiding",
+   "we were playing",
+   "they were looking",
+   "I was running when I heard..."
+  ],
+  "items": [
+   [
+    "I ___ running when I heard footsteps.",
+    [
+     "were",
+     "was",
+     "am"
+    ],
+    1
+   ],
+   [
+    "Lucas ___ inside a wardrobe.",
+    [
+     "was hiding",
+     "were hiding",
+     "hided"
+    ],
+    0
+   ],
+   [
+    "We ___ under the bed.",
+    [
+     "was lying",
+     "were lying",
+     "lies"
+    ],
+    1
+   ],
+   [
+    "Marta was looking everywhere when the time ___.",
+    [
+     "was finishing",
+     "finished",
+     "finish"
+    ],
+    1
+   ],
+   [
+    "They ___ footsteps while they were hiding.",
+    [
+     "heard",
+     "were hear",
+     "hearing"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Mi partida con amigos",
+   "sub": "Un jugador cuenta su historia",
+   "grammar": "Gramática: el pasado continuo (was / were + -ing) para una acción que estaba en marcha en el pasado. El pasado simple, para la acción corta que la interrumpe.",
+   "rows": [
+    "yo estaba corriendo",
+    "tú estabas corriendo",
+    "él / ella se estaba escondiendo",
+    "estábamos jugando",
+    "ellos estaban buscando",
+    "estaba corriendo cuando oí..."
+   ],
+   "hints": [
+    "estaba",
+    "se estaba escondiendo",
+    "estábamos tumbados",
+    "terminó",
+    "oyeron"
+   ],
+   "vocab": [
+    "cama",
+    "armario",
+    "puerta",
+    "corazón",
+    "dinero",
+    "pasos"
+   ]
+  }
+ }
+}

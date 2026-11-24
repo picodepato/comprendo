@@ -1,0 +1,207 @@
+{
+ "id": "deportes-a2",
+ "topic": "deportes",
+ "level": "A2",
+ "title": "El parkour",
+ "short": "El parkour",
+ "text": [
+  "El parkour es una forma de moverse por la ciudad usando solo el cuerpo. Los traceurs, que así se llaman las personas que lo practican, corren, saltan y trepan por muros, bancos y barandillas. El objetivo es ir de un sitio a otro de la forma más rápida y eficaz.",
+  "El parkour nació en Francia a finales de los años ochenta, en Lisses, una ciudad cerca de París. Un grupo de jóvenes, con David Belle, empezó a entrenar en los edificios y parques de su barrio. David aprendió mucho de su padre, Raymond, que era bombero y soldado, y que le enseñó a superar obstáculos.",
+  "Poco a poco, el parkour se hizo famoso en todo el mundo gracias a las películas, los anuncios y los videojuegos. Por ejemplo, al principio de una película de James Bond hay una persecución de parkour muy famosa. También hay muchos juegos en los que el personaje salta de tejado en tejado.",
+  "Hay una forma parecida que se llama freerunning. En el freerunning, lo importante no es solo la velocidad: los deportistas hacen también acrobacias, como volteretas y giros, para expresarse con el cuerpo.",
+  "Si quieres empezar, sigue estos consejos: calienta bien antes de entrenar, empieza con saltos pequeños, aprende a caer y a rodar por el suelo, y entrena siempre con un grupo o con un monitor. ¡Y respeta los lugares donde practicas!"
+ ],
+ "q": [
+  [
+   "¿Qué usan los traceurs para moverse?",
+   [
+    "Una bicicleta",
+    "Solo el cuerpo",
+    "Un monopatín"
+   ],
+   1
+  ],
+  [
+   "¿Dónde nació el parkour?",
+   [
+    "En Francia",
+    "En Japón",
+    "En [Estados Unidos]"
+   ],
+   0
+  ],
+  [
+   "¿Quién enseñó a David Belle a superar obstáculos?",
+   [
+    "Un profesor de gimnasia",
+    "Su padre, Raymond",
+    "James Bond"
+   ],
+   1
+  ],
+  [
+   "¿Cómo se hizo famoso el parkour?",
+   [
+    "Gracias a las películas, los anuncios y los videojuegos",
+    "Gracias a la radio",
+    "Gracias a los Juegos Olímpicos de 1900"
+   ],
+   0
+  ],
+  [
+   "¿Qué hacen los deportistas en el freerunning?",
+   [
+    "Solo corren",
+    "Hacen también acrobacias",
+    "Nadan"
+   ],
+   1
+  ],
+  [
+   "¿Qué consejo da el texto?",
+   [
+    "Empieza con saltos muy altos",
+    "Entrena siempre solo",
+    "Calienta bien antes de entrenar"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "muro",
+   "🧱"
+  ],
+  [
+   "banco",
+   "🪑"
+  ],
+  [
+   "tejado",
+   "🏠"
+  ],
+  [
+   "bombero",
+   "🧑‍🚒"
+  ],
+  [
+   "película",
+   "🎬"
+  ],
+  [
+   "suelo",
+   "⬇️"
+  ]
+ ],
+ "halves": [
+  [
+   "Los traceurs corren...",
+   "...saltan y trepan."
+  ],
+  [
+   "El parkour nació...",
+   "...en Francia."
+  ],
+  [
+   "El padre de David era...",
+   "...bombero y soldado."
+  ],
+  [
+   "En el freerunning hacen...",
+   "...acrobacias."
+  ],
+  [
+   "Calienta bien...",
+   "...antes de entrenar."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el imperativo (tú)",
+  "rule": "El <b>imperativo</b> sirve para dar consejos e instrucciones. Para <b>tú</b>, normalmente es igual que «él» en presente: <b>él salta → ¡salta!</b>",
+  "rows": [
+   "saltar → salta",
+   "correr → corre",
+   "aprender → aprende",
+   "seguir → sigue",
+   "empezar → empieza",
+   "irregulares: hacer → haz, ir → ve, poner → pon"
+  ],
+  "items": [
+   [
+    "___ bien antes de entrenar.",
+    [
+     "Calientas",
+     "Calienta",
+     "Calentar"
+    ],
+    1
+   ],
+   [
+    "___ con saltos pequeños.",
+    [
+     "Empieza",
+     "Empiezas",
+     "Empezar"
+    ],
+    0
+   ],
+   [
+    "___ a caer y a rodar.",
+    [
+     "Aprendes",
+     "Aprende",
+     "Aprendo"
+    ],
+    1
+   ],
+   [
+    "___ estos consejos.",
+    [
+     "Sigue",
+     "Sigues",
+     "Seguir"
+    ],
+    0
+   ],
+   [
+    "___ los ejercicios despacio.",
+    [
+     "Haces",
+     "Hace",
+     "Haz"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Parkour",
+   "sub": "Moving through the city with only your body",
+   "grammar": "Grammar: the imperative (tú). It is used for advice and instructions. For tú it is usually the same as the «he» form in the present: él salta → jump!",
+   "rows": [
+    "jump → jump!",
+    "run → run!",
+    "learn → learn!",
+    "follow → follow!",
+    "start → start!",
+    "irregular: do → do!, go → go!, put → put!"
+   ],
+   "hints": [
+    "warm up",
+    "start",
+    "learn",
+    "follow",
+    "do"
+   ],
+   "vocab": [
+    "wall",
+    "bench",
+    "roof",
+    "firefighter",
+    "film",
+    "ground"
+   ]
+  }
+ }
+}

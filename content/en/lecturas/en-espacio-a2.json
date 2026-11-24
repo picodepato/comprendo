@@ -1,0 +1,207 @@
+{
+ "id": "en-espacio-a2",
+ "topic": "espacio",
+ "level": "A2",
+ "title": "A trip to Mars",
+ "short": "A trip to Mars",
+ "text": [
+  "Humans have walked on the Moon, but nobody has walked on Mars yet. Space agencies and companies are going to change that. Many experts think that the first astronauts are going to land on Mars in the next twenty years.",
+  "The trip is going to be very long. Mars is far away, so the journey is going to take about seven months. The astronauts are going to live in a small spaceship and eat special food. They are going to exercise every day, because in space muscles get weak.",
+  "Mars is not a friendly place. There is very little air and it is very cold: the average temperature is minus sixty degrees. There are also huge dust storms that can cover the whole planet.",
+  "To survive, the astronauts are going to need a base. They are going to make water from the ice under the ground and grow vegetables in special greenhouses. Some engineers want to build houses with a 3D printer, using red Martian dust.",
+  "Are you going to be one of the first people on Mars? Maybe! The first explorers of Mars are probably at school right now."
+ ],
+ "q": [
+  [
+   "Has anyone walked on Mars?",
+   [
+    "Yes, many people",
+    "No, nobody yet",
+    "Only robots and two astronauts"
+   ],
+   1
+  ],
+  [
+   "How long is the journey to Mars?",
+   [
+    "About seven days",
+    "About seven months",
+    "About seven years"
+   ],
+   1
+  ],
+  [
+   "Why do astronauts exercise every day?",
+   [
+    "Because in space muscles get weak",
+    "Because they are bored",
+    "To win a prize"
+   ],
+   0
+  ],
+  [
+   "What is the average temperature on Mars?",
+   [
+    "Minus sixty degrees",
+    "Twenty degrees",
+    "Zero degrees"
+   ],
+   0
+  ],
+  [
+   "Where are they going to get water?",
+   [
+    "From the ice under the ground",
+    "From the rain",
+    "From the Earth"
+   ],
+   0
+  ],
+  [
+   "What do some engineers want to use to build houses?",
+   [
+    "A 3D printer and red dust",
+    "Wood from trees",
+    "Bricks from the Earth"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "astronaut",
+   "👩‍🚀"
+  ],
+  [
+   "spaceship",
+   "🚀"
+  ],
+  [
+   "journey",
+   "🧳"
+  ],
+  [
+   "dust",
+   "🌫️"
+  ],
+  [
+   "greenhouse",
+   "🪴"
+  ],
+  [
+   "ground",
+   "🟫"
+  ]
+ ],
+ "halves": [
+  [
+   "The first astronauts are going to land...",
+   "...in the next twenty years."
+  ],
+  [
+   "The journey is going to take...",
+   "...about seven months."
+  ],
+  [
+   "There are huge dust storms...",
+   "...that can cover the planet."
+  ],
+  [
+   "They are going to make water...",
+   "...from the ice under the ground."
+  ],
+  [
+   "The first explorers of Mars...",
+   "...are at school right now."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: going to",
+  "rule": "Use <b>be going to</b> + verb for plans and for things that we are sure will happen.",
+  "rows": [
+   "I am going to travel",
+   "you are going to live",
+   "she is going to land",
+   "we are going to grow",
+   "they are not going to...",
+   "Are you going to...?"
+  ],
+  "items": [
+   [
+    "The astronauts are going ___ on Mars.",
+    [
+     "land",
+     "to land",
+     "landing"
+    ],
+    1
+   ],
+   [
+    "The journey ___ going to be very long.",
+    [
+     "is",
+     "are",
+     "am"
+    ],
+    0
+   ],
+   [
+    "We ___ going to grow vegetables.",
+    [
+     "is",
+     "am",
+     "are"
+    ],
+    2
+   ],
+   [
+    "___ you going to be an astronaut?",
+    [
+     "Is",
+     "Are",
+     "Do"
+    ],
+    1
+   ],
+   [
+    "I am going ___ a house with a 3D printer.",
+    [
+     "build",
+     "to build",
+     "built"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Un viaje a Marte",
+   "sub": "Cómo será el primer viaje humano al planeta rojo",
+   "grammar": "Gramática: going to (ir a) + verbo, para planes y para cosas que estamos seguros de que van a pasar.",
+   "rows": [
+    "voy a viajar",
+    "vas a vivir",
+    "ella va a aterrizar",
+    "vamos a cultivar",
+    "no van a...",
+    "¿Vas a...?"
+   ],
+   "hints": [
+    "a aterrizar",
+    "va a",
+    "vamos a",
+    "Vas a",
+    "a construir"
+   ],
+   "vocab": [
+    "astronauta",
+    "nave espacial",
+    "viaje",
+    "polvo",
+    "invernadero",
+    "suelo"
+   ]
+  }
+ }
+}

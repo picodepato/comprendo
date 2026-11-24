@@ -1,0 +1,207 @@
+{
+ "id": "en-naturaleza-a1",
+ "topic": "naturaleza",
+ "level": "A1",
+ "title": "Volcanoes",
+ "short": "Volcanoes",
+ "text": [
+  "A volcano is a special mountain. Inside the Earth it is very, very hot. There is rock that is liquid. Its name is magma. When the magma comes out of a volcano, its name is lava.",
+  "Lava is red and orange. It is very hot: more than one thousand degrees! It moves slowly down the mountain and it burns everything.",
+  "Some volcanoes are active. They can erupt. When a volcano erupts, there is fire, smoke and ash. Other volcanoes are asleep. Their last eruption was a long time ago.",
+  "There are volcanoes on every continent, also in Antarctica. In Spain there are volcanoes in the Canary Islands. In 2021 the volcano of La Palma erupted for almost three months.",
+  "Volcanoes are dangerous, but they are also useful. Their ash makes the land very good for plants. And their heat can make electricity. Volcanoes are the fire of our planet."
+ ],
+ "q": [
+  [
+   "What is magma?",
+   [
+    "Liquid rock inside the Earth",
+    "A type of mountain",
+    "Water"
+   ],
+   0
+  ],
+  [
+   "What is the name of magma when it comes out?",
+   [
+    "Lava",
+    "Ash",
+    "Smoke"
+   ],
+   0
+  ],
+  [
+   "How hot is lava?",
+   [
+    "More than one thousand degrees",
+    "Fifty degrees",
+    "Zero degrees"
+   ],
+   0
+  ],
+  [
+   "What happens when a volcano erupts?",
+   [
+    "There is fire, smoke and ash",
+    "It snows",
+    "Nothing"
+   ],
+   0
+  ],
+  [
+   "Where are there volcanoes in Spain?",
+   [
+    "In the Canary Islands",
+    "In Madrid",
+    "In the Pyrenees"
+   ],
+   0
+  ],
+  [
+   "Why are volcanoes useful?",
+   [
+    "Their ash is good for plants",
+    "They are cold",
+    "They make water"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "volcano",
+   "🌋"
+  ],
+  [
+   "mountain",
+   "⛰️"
+  ],
+  [
+   "lava",
+   "🔥"
+  ],
+  [
+   "smoke",
+   "💨"
+  ],
+  [
+   "ash",
+   "🌫️"
+  ],
+  [
+   "hot",
+   "🥵"
+  ]
+ ],
+ "halves": [
+  [
+   "Inside the Earth...",
+   "...it is very hot."
+  ],
+  [
+   "Lava moves slowly...",
+   "...down the mountain."
+  ],
+  [
+   "When a volcano erupts...",
+   "...there is fire and smoke."
+  ],
+  [
+   "In 2021 the volcano of La Palma...",
+   "...erupted for almost three months."
+  ],
+  [
+   "Their ash makes the land...",
+   "...good for plants."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: possessive adjectives",
+  "rule": "Possessive adjectives say <b>who</b> something belongs to. They go before the noun.",
+  "rows": [
+   "my",
+   "your",
+   "his / her",
+   "its",
+   "our",
+   "their"
+  ],
+  "items": [
+   [
+    "The magma comes out. ___ name is lava.",
+    [
+     "Its",
+     "Their",
+     "His"
+    ],
+    0
+   ],
+   [
+    "Volcanoes are useful. ___ ash is good for plants.",
+    [
+     "Its",
+     "Their",
+     "Our"
+    ],
+    1
+   ],
+   [
+    "We live on Earth. It is ___ planet.",
+    [
+     "our",
+     "their",
+     "its"
+    ],
+    0
+   ],
+   [
+    "I like volcanoes. ___ favorite is Teide.",
+    [
+     "Your",
+     "My",
+     "Its"
+    ],
+    1
+   ],
+   [
+    "Maria lives in La Palma. ___ house is near the volcano.",
+    [
+     "His",
+     "Her",
+     "Their"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los volcanes",
+   "sub": "Montañas que escupen fuego",
+   "grammar": "Gramática: los adjetivos posesivos dicen de quién es algo. Van delante del nombre.",
+   "rows": [
+    "mi",
+    "tu",
+    "su (de él / de ella)",
+    "su (de una cosa o animal)",
+    "nuestro",
+    "su (de ellos)"
+   ],
+   "hints": [
+    "Su",
+    "Su",
+    "nuestro",
+    "Mi",
+    "Su"
+   ],
+   "vocab": [
+    "volcán",
+    "montaña",
+    "lava",
+    "humo",
+    "ceniza",
+    "caliente"
+   ]
+  }
+ }
+}

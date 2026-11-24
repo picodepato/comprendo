@@ -1,0 +1,207 @@
+{
+ "id": "en-peligrosos-b1",
+ "topic": "peligrosos",
+ "level": "B1",
+ "title": "Why do animals attack?",
+ "short": "Why do animals attack?",
+ "text": [
+  "Many people think that wild animals attack because they are evil. In fact, animals almost never attack without a reason. Scientists say that most attacks have one of three causes: fear, hunger or protection.",
+  "Fear is the most common cause. If an animal feels trapped, it will defend itself. A snake usually tries to escape, but if you step on it, it will bite. That is why experts say: if you see a snake, stay calm and walk away slowly.",
+  "Hunger is another reason. When there is not enough food in nature, some predators come closer to towns. If a bear finds food in your rubbish, it will come back again and again. In some national parks, visitors have to keep their food in special boxes.",
+  "Protection is the third reason. Mothers protect their babies very strongly. A hippo looks slow and peaceful, but if you get between a mother and her baby, she will attack. Hippos kill more people in Africa than lions do.",
+  "The good news is that we can avoid most attacks. If we respect the space of wild animals, they will usually leave us alone. Remember: we are visitors in their home."
+ ],
+ "q": [
+  [
+   "According to scientists, why do most animals attack?",
+   [
+    "Because they are evil",
+    "Because of fear, hunger or protection",
+    "Because they are bored"
+   ],
+   1
+  ],
+  [
+   "What is the most common cause of attacks?",
+   [
+    "Hunger",
+    "Fear",
+    "Protection"
+   ],
+   1
+  ],
+  [
+   "What should you do if you see a snake?",
+   [
+    "Run very fast",
+    "Stay calm and walk away slowly",
+    "Touch it carefully"
+   ],
+   1
+  ],
+  [
+   "Why do some predators come closer to towns?",
+   [
+    "There is not enough food in nature",
+    "They like people",
+    "They are lost"
+   ],
+   0
+  ],
+  [
+   "When will a mother hippo attack?",
+   [
+    "When it rains",
+    "When you get between her and her baby",
+    "When she is hungry"
+   ],
+   1
+  ],
+  [
+   "How can we avoid most attacks?",
+   [
+    "By respecting the space of wild animals",
+    "By feeding the animals",
+    "By making a lot of noise"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "fear",
+   "😨"
+  ],
+  [
+   "hunger",
+   "🍖"
+  ],
+  [
+   "bite",
+   "🦷"
+  ],
+  [
+   "rubbish",
+   "🗑️"
+  ],
+  [
+   "hippo",
+   "🦛"
+  ],
+  [
+   "baby",
+   "🍼"
+  ]
+ ],
+ "halves": [
+  [
+   "Animals almost never attack...",
+   "...without a reason."
+  ],
+  [
+   "If you step on a snake...",
+   "...it will bite."
+  ],
+  [
+   "If a bear finds food in your rubbish...",
+   "...it will come back."
+  ],
+  [
+   "Mothers protect...",
+   "...their babies very strongly."
+  ],
+  [
+   "If we respect their space...",
+   "...they will leave us alone."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the first conditional",
+  "rule": "Use the <b>first conditional</b> for a possible situation and its result: <b>If + present simple, will + verb</b>.",
+  "rows": [
+   "If you step on it, it will bite.",
+   "If a bear finds food, it will come back.",
+   "If you stay calm, you will be safe.",
+   "It will not attack if you walk away.",
+   "will not = won't",
+   "If + present, will + verb"
+  ],
+  "items": [
+   [
+    "If you step on a snake, it ___ bite.",
+    [
+     "will",
+     "is",
+     "would"
+    ],
+    0
+   ],
+   [
+    "If a bear ___ food, it will come back.",
+    [
+     "will find",
+     "finds",
+     "found"
+    ],
+    1
+   ],
+   [
+    "If you get close to the baby, the hippo ___.",
+    [
+     "attacks will",
+     "will attack",
+     "attacked"
+    ],
+    1
+   ],
+   [
+    "If we ___ their space, they will leave us alone.",
+    [
+     "respect",
+     "will respect",
+     "respected"
+    ],
+    0
+   ],
+   [
+    "The animal will not attack if you ___ calm.",
+    [
+     "will stay",
+     "stayed",
+     "stay"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Por qué atacan los animales?",
+   "sub": "Las razones detrás de un ataque",
+   "grammar": "Gramática: el primer condicional, para una situación posible y su resultado: If + presente simple, will + verbo.",
+   "rows": [
+    "Si la pisas, te morderá.",
+    "Si un oso encuentra comida, volverá.",
+    "Si mantienes la calma, estarás a salvo.",
+    "No atacará si te alejas.",
+    "will not se puede acortar",
+    "Si + presente, futuro"
+   ],
+   "hints": [
+    "morderá",
+    "encuentra",
+    "atacará",
+    "respetamos",
+    "te quedas"
+   ],
+   "vocab": [
+    "miedo",
+    "hambre",
+    "morder",
+    "basura",
+    "hipopótamo",
+    "cría"
+   ]
+  }
+ }
+}

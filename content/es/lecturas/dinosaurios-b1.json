@@ -1,0 +1,208 @@
+{
+ "id": "dinosaurios-b1",
+ "topic": "dinosaurios",
+ "level": "B1",
+ "title": "Cómo trabajan los paleontólogos",
+ "short": "Los paleontólogos",
+ "text": [
+  "Nadie ha visto nunca un dinosaurio vivo. Entonces, ¿cómo sabemos cómo eran, qué comían o cómo se movían? Gracias a los paleontólogos, los científicos que estudian la vida del pasado a partir de los fósiles: huesos, dientes, huevos, huellas e incluso excrementos convertidos en piedra.",
+  "Encontrar un fósil no es fácil. Los paleontólogos buscan en lugares donde las rocas tienen la edad adecuada, como desiertos o acantilados, porque allí el viento y la lluvia dejan los huesos al descubierto. [A veces], el descubrimiento es pura suerte: muchos fósiles fueron encontrados por excursionistas, agricultores o niños.",
+  "Una de las paleontólogas más famosas de la historia fue [Mary Anning]. Cuando tenía unos doce años, en Inglaterra, ella y su hermano descubrieron el esqueleto de un ictiosaurio, un reptil marino gigante. En su época, las mujeres no podían entrar en las sociedades científicas, pero hoy sus descubrimientos son reconocidos en todo el mundo.",
+  "Cuando se encuentra un fósil, empieza la excavación. Es un trabajo lento y delicado: los huesos se limpian con pinceles, cepillos y pequeñas herramientas, centímetro a centímetro. Antes de moverlos, cada hueso es fotografiado, medido y dibujado en un mapa. Después, los fósiles más frágiles se cubren con una capa de yeso, como cuando alguien se rompe una pierna, para protegerlos durante el viaje.",
+  "En el laboratorio, el trabajo continúa durante meses o años. Los huesos son estudiados con microscopios y escáneres, y comparados con los de animales actuales. Así, los científicos pueden calcular el tamaño, la edad o la velocidad de un dinosaurio. Un esqueleto famoso es Sue, el [tiranosaurio rex] más completo que se conoce, que fue descubierto en 1990 en [Estados Unidos].",
+  "Cada año se describen decenas de especies nuevas de dinosaurios. Por eso, los libros de dinosaurios cambian tan a menudo. ¿Te gustaría ser paleontólogo? Necesitas paciencia, curiosidad y no tener miedo a ensuciarte."
+ ],
+ "q": [
+  [
+   "¿Qué estudian los paleontólogos?",
+   [
+    "Los volcanes",
+    "La vida del pasado a partir de los fósiles",
+    "Los animales de hoy"
+   ],
+   1
+  ],
+  [
+   "¿Por qué buscan en desiertos o acantilados?",
+   [
+    "Porque hace calor",
+    "Porque hay muchos animales",
+    "Porque el viento y la lluvia dejan los huesos al descubierto"
+   ],
+   2
+  ],
+  [
+   "¿Qué descubrió [Mary Anning] con su hermano?",
+   [
+    "El esqueleto de un ictiosaurio",
+    "Un huevo de T. rex",
+    "Una huella de dinosaurio"
+   ],
+   0
+  ],
+  [
+   "¿Con qué se limpian los huesos?",
+   [
+    "Con agua y jabón",
+    "Con pinceles y cepillos",
+    "Con máquinas grandes"
+   ],
+   1
+  ],
+  [
+   "¿Para qué se cubren algunos fósiles con yeso?",
+   [
+    "Para protegerlos durante el viaje",
+    "Para pintarlos",
+    "Para venderlos"
+   ],
+   0
+  ],
+  [
+   "¿Qué es Sue?",
+   [
+    "Una paleontóloga",
+    "Un museo",
+    "El [tiranosaurio rex] más completo que se conoce"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "fósil",
+   "🦴"
+  ],
+  [
+   "huella",
+   "🐾"
+  ],
+  [
+   "roca",
+   "🪨"
+  ],
+  [
+   "pincel",
+   "🖌️"
+  ],
+  [
+   "mapa",
+   "🗺️"
+  ],
+  [
+   "lupa",
+   "🔍"
+  ]
+ ],
+ "halves": [
+  [
+   "Muchos fósiles fueron encontrados...",
+   "...por excursionistas o niños."
+  ],
+  [
+   "[Mary Anning] descubrió un ictiosaurio...",
+   "...cuando tenía unos doce años."
+  ],
+  [
+   "Cada hueso es fotografiado...",
+   "...medido y dibujado."
+  ],
+  [
+   "Los fósiles frágiles se cubren...",
+   "...con una capa de yeso."
+  ],
+  [
+   "Sue fue descubierto...",
+   "...en 1990."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: la voz pasiva",
+  "rule": "La <b>voz pasiva</b> pone el foco en lo que recibe la acción: <b>ser + participio</b> (+ <b>por</b> quien la hace). El participio cambia como un adjetivo.",
+  "rows": [
+   "el fósil fue encontrado",
+   "la especie fue descrita",
+   "los huesos son estudiados",
+   "las huellas fueron medidas",
+   "fue descubierto por un niño",
+   "ser + participio (-ado, -ido)"
+  ],
+  "items": [
+   [
+    "Sue fue ___ en 1990.",
+    [
+     "descubierto",
+     "descubrió",
+     "descubriendo"
+    ],
+    0
+   ],
+   [
+    "Los huesos ___ estudiados en el laboratorio.",
+    [
+     "es",
+     "son",
+     "está"
+    ],
+    1
+   ],
+   [
+    "Muchos fósiles fueron encontrados ___ niños.",
+    [
+     "para",
+     "de",
+     "por"
+    ],
+    2
+   ],
+   [
+    "Las huellas fueron ___ con cuidado.",
+    [
+     "medidos",
+     "medidas",
+     "medida"
+    ],
+    1
+   ],
+   [
+    "El esqueleto ___ dibujado en un mapa.",
+    [
+     "fue",
+     "fueron",
+     "fui"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "How palaeontologists work",
+   "sub": "From the dig to the laboratory",
+   "grammar": "Grammar: the passive voice. ser + past participle (+ por = by). The participle agrees like an adjective.",
+   "rows": [
+    "the fossil was found",
+    "the species was described",
+    "the bones are studied",
+    "the footprints were measured",
+    "it was discovered by a child",
+    "ser + past participle"
+   ],
+   "hints": [
+    "discovered",
+    "are",
+    "by",
+    "measured (fem. pl.)",
+    "was"
+   ],
+   "vocab": [
+    "fossil",
+    "footprint",
+    "rock",
+    "paintbrush",
+    "map",
+    "magnifying glass"
+   ]
+  }
+ }
+}

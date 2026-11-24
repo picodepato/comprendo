@@ -1,0 +1,208 @@
+{
+ "id": "bear-b1",
+ "topic": "bear",
+ "level": "B1",
+ "title": "Mi partida con amigos",
+ "short": "Mi partida",
+ "text": [
+  "[Me llamo] Leo y tengo doce años. Mi juego favorito de Roblox es BEAR (Alpha). Los sábados [juego|juego (verbo)] con mis amigos Lucas y Marta.",
+  "Hoy empieza una partida nueva. El juego elige al Oso [al azar]... ¡y es Marta! Lucas y yo somos supervivientes. [Tenemos que] sobrevivir hasta el final del tiempo.",
+  "Primero, corro por un pasillo largo y oscuro. Escucho pasos [detrás de] mí. ¡[Qué miedo]! Entro en una habitación y [me escondo] [debajo de] una cama. Lucas [se esconde] [dentro de] un armario, [al lado de] la puerta.",
+  "El Oso entra en la habitación. Mi corazón late muy rápido. Marta mira [por todas partes], pero [no nos ve]. [Después de] unos segundos, sale de la habitación. ¡Uf!",
+  "[Al final], el tiempo termina y Lucas y yo ganamos. Recibimos quidz, el dinero del juego. Con los quidz [puedes comprar] skins nuevas para tu personaje.",
+  "Mi consejo: [no te escondas] siempre en el mismo sitio, escucha bien los pasos y ayuda a tus amigos. ¡Y si eres el Oso, busca en los armarios!"
+ ],
+ "q": [
+  [
+   "¿Cuántos años tiene Leo?",
+   [
+    "Diez",
+    "Quince",
+    "Doce"
+   ],
+   2
+  ],
+  [
+   "¿Cuándo juega Leo con sus amigos?",
+   [
+    "Los sábados",
+    "Los lunes",
+    "Todos los días"
+   ],
+   0
+  ],
+  [
+   "¿Qué hace Leo primero?",
+   [
+    "Compra skins",
+    "Corre por un pasillo",
+    "Abre un armario"
+   ],
+   1
+  ],
+  [
+   "¿Dónde [se esconde] Leo?",
+   [
+    "[Dentro de] un armario",
+    "[Debajo de] una cama",
+    "[Detrás de] la puerta"
+   ],
+   1
+  ],
+  [
+   "¿Qué son los quidz?",
+   [
+    "Un tipo de oso",
+    "El dinero del juego",
+    "Un mapa"
+   ],
+   1
+  ],
+  [
+   "¿Cuál es un consejo de Leo?",
+   [
+    "Esconderse siempre en el mismo sitio",
+    "Escuchar bien los pasos",
+    "[Jugar solo]"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "cama",
+   "🛏️"
+  ],
+  [
+   "armario",
+   "🗄️"
+  ],
+  [
+   "puerta",
+   "🚪"
+  ],
+  [
+   "corazón",
+   "❤️"
+  ],
+  [
+   "dinero",
+   "💰"
+  ],
+  [
+   "pasos",
+   "👣"
+  ]
+ ],
+ "halves": [
+  [
+   "Marta es...",
+   "...el Oso en esta partida."
+  ],
+  [
+   "Lucas [se esconde]...",
+   "...[dentro de] un armario."
+  ],
+  [
+   "Leo escucha pasos...",
+   "...[detrás de] él."
+  ],
+  [
+   "Los quidz sirven...",
+   "...para comprar skins."
+  ],
+  [
+   "El corazón de Leo...",
+   "...late muy rápido."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: ¿dónde está?",
+  "rule": "Para decir <b>dónde</b> está algo, usamos estas palabras:",
+  "rows": [
+   "debajo de",
+   "encima de",
+   "dentro de",
+   "detrás de",
+   "al lado de",
+   "de + el = del"
+  ],
+  "items": [
+   [
+    "Leo [se esconde] ___ la cama.",
+    [
+     "encima de",
+     "debajo de",
+     "al lado de"
+    ],
+    1
+   ],
+   [
+    "Lucas está ___ un armario.",
+    [
+     "dentro de",
+     "detrás de",
+     "encima de"
+    ],
+    0
+   ],
+   [
+    "Los pasos están ___ Leo.",
+    [
+     "debajo de",
+     "dentro de",
+     "detrás de"
+    ],
+    2
+   ],
+   [
+    "El armario está ___ la puerta.",
+    [
+     "al lado de",
+     "dentro de",
+     "debajo de"
+    ],
+    0
+   ],
+   [
+    "La linterna está ___ la mesa.",
+    [
+     "detrás de",
+     "encima de",
+     "dentro de"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "My match with friends",
+   "sub": "A player tells his story",
+   "grammar": "Grammar: prepositions of place. Where is it?",
+   "rows": [
+    "under",
+    "on top of",
+    "inside",
+    "behind",
+    "next to",
+    "debajo del armario"
+   ],
+   "hints": [
+    "under",
+    "inside",
+    "behind",
+    "next to",
+    "on top of"
+   ],
+   "vocab": [
+    "bed",
+    "wardrobe",
+    "door",
+    "heart",
+    "money",
+    "footsteps"
+   ]
+  }
+ }
+}

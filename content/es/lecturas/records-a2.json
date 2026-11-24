@@ -1,0 +1,207 @@
+{
+ "id": "records-a2",
+ "topic": "records",
+ "level": "A2",
+ "title": "Récords de animales",
+ "short": "Récords de animales",
+ "text": [
+  "Los animales también tienen récords, y algunos son muy sorprendentes. Los científicos los estudian mucho, porque nos enseñan cosas importantes sobre la naturaleza.",
+  "El animal más grande del planeta es la ballena azul. Puede medir treinta metros y pesar más que veinte elefantes juntos. ¡Su corazón es [tan grande como] un coche pequeño! Aunque es enorme, come animales muy pequeños: el kril.",
+  "El animal más rápido en tierra es el guepardo, que corre a más de cien kilómetros por hora. Pero en el aire hay otro campeón: el halcón peregrino. Cuando baja [en picado] para cazar, supera los trescientos kilómetros por hora.",
+  "¿Y el animal que vive más años? Es el tiburón de Groenlandia. Nada muy despacio en aguas muy frías y puede vivir más de doscientos cincuenta años. ¡Algunos de los que nadan hoy nacieron hace más de dos siglos!",
+  "Guinness también tiene récords de mascotas. La gata más vieja fue [Creme Puff], de [Estados Unidos]: vivió treinta y ocho años. Normalmente, un gato vive unos quince años, así que [Creme Puff] vivió mucho más [de lo normal]."
+ ],
+ "q": [
+  [
+   "¿Cuál es el animal más grande del planeta?",
+   [
+    "El elefante",
+    "La ballena azul",
+    "El tiburón"
+   ],
+   1
+  ],
+  [
+   "¿Qué come la ballena azul?",
+   [
+    "Kril",
+    "Elefantes",
+    "Tiburones"
+   ],
+   0
+  ],
+  [
+   "¿A qué velocidad corre el guepardo?",
+   [
+    "A más de cien kilómetros por hora",
+    "A diez kilómetros por hora",
+    "A mil kilómetros por hora"
+   ],
+   0
+  ],
+  [
+   "¿Cuándo supera el halcón los trescientos kilómetros por hora?",
+   [
+    "Cuando duerme",
+    "Cuando baja [en picado] para cazar",
+    "Cuando nada"
+   ],
+   1
+  ],
+  [
+   "¿Cuántos años puede vivir el tiburón de Groenlandia?",
+   [
+    "Quince",
+    "Treinta y ocho",
+    "Más de doscientos cincuenta"
+   ],
+   2
+  ],
+  [
+   "¿Cuántos años vivió [Creme Puff]?",
+   [
+    "Quince",
+    "Treinta y ocho",
+    "Cien"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "ballena",
+   "🐋"
+  ],
+  [
+   "elefante",
+   "🐘"
+  ],
+  [
+   "guepardo",
+   "🐆"
+  ],
+  [
+   "halcón",
+   "🦅"
+  ],
+  [
+   "tiburón",
+   "🦈"
+  ],
+  [
+   "gato",
+   "🐈"
+  ]
+ ],
+ "halves": [
+  [
+   "La ballena azul es...",
+   "...el animal más grande del planeta."
+  ],
+  [
+   "Su corazón es [tan grande como]...",
+   "...un coche pequeño."
+  ],
+  [
+   "El guepardo corre a más de...",
+   "...cien kilómetros por hora."
+  ],
+  [
+   "El tiburón de Groenlandia nada...",
+   "...muy despacio."
+  ],
+  [
+   "[Creme Puff] vivió...",
+   "...treinta y ocho años."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: muy y mucho",
+  "rule": "<b>muy</b> va con adjetivos y adverbios: muy grande, muy despacio. <b>mucho</b> va con verbos (vive mucho) y con nombres: mucho, mucha, muchos, muchas.",
+  "rows": [
+   "muy + adjetivo: muy grande",
+   "muy + adverbio: muy despacio",
+   "verbo + mucho: estudian mucho",
+   "mucho tiempo",
+   "mucha agua",
+   "muchos años / muchas cosas"
+  ],
+  "items": [
+   [
+    "La ballena azul es ___ grande.",
+    [
+     "mucho",
+     "muy",
+     "mucha"
+    ],
+    1
+   ],
+   [
+    "El tiburón vive ___ años.",
+    [
+     "muchos",
+     "muy",
+     "muchas"
+    ],
+    0
+   ],
+   [
+    "Los científicos estudian ___ a los animales.",
+    [
+     "muy",
+     "mucho",
+     "muchos"
+    ],
+    1
+   ],
+   [
+    "El kril es ___ pequeño.",
+    [
+     "muy",
+     "mucho",
+     "muchos"
+    ],
+    0
+   ],
+   [
+    "En el mar hay ___ ballenas.",
+    [
+     "mucho",
+     "muy",
+     "muchas"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Animal records",
+   "sub": "The biggest, the fastest and the oldest",
+   "grammar": "Grammar: muy and mucho. muy (very) goes with adjectives and adverbs. mucho (a lot, much, many) goes with verbs and with nouns, and agrees with the noun.",
+   "rows": [
+    "very + adjective: very big",
+    "very + adverb: very slowly",
+    "verb + a lot: they study a lot",
+    "a lot of time",
+    "a lot of water",
+    "many years / many things"
+   ],
+   "hints": [
+    "very",
+    "many",
+    "a lot",
+    "very",
+    "many"
+   ],
+   "vocab": [
+    "whale",
+    "elephant",
+    "cheetah",
+    "falcon",
+    "shark",
+    "cat"
+   ]
+  }
+ }
+}

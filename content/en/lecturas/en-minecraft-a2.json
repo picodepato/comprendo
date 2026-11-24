@@ -1,0 +1,207 @@
+{
+ "id": "en-minecraft-a2",
+ "topic": "minecraft",
+ "level": "A2",
+ "title": "The history of Minecraft",
+ "short": "Its history",
+ "text": [
+  "Minecraft began as a small project. In 2009, a Swedish programmer called Markus Persson, known as Notch, made the first version in only six days. He put it on the internet and people loved it.",
+  "At first the game was very simple. There were no monsters and no goals. Players just built things with blocks. Notch worked on the game every day and added new ideas from the players.",
+  "In 2011 the full version came out. Notch and his friends started a company called Mojang. The game grew very fast and soon millions of people played it.",
+  "In 2014 Microsoft bought Mojang for two and a half billion dollars. Notch left the company, but the game kept growing. It came to phones, consoles and schools.",
+  "Today Minecraft is the best-selling video game in history. It sold more than three hundred million copies. Teachers use it to teach maths and history, and there was even a Minecraft film in 2025."
+ ],
+ "q": [
+  [
+   "Who made the first version of Minecraft?",
+   [
+    "Markus Persson",
+    "Bill Gates",
+    "A team of a hundred people"
+   ],
+   0
+  ],
+  [
+   "How long did the first version take?",
+   [
+    "Six days",
+    "Six months",
+    "Six years"
+   ],
+   0
+  ],
+  [
+   "What was the first version like?",
+   [
+    "Very simple, with no monsters",
+    "Full of monsters",
+    "Only for phones"
+   ],
+   0
+  ],
+  [
+   "What was the name of the company of Notch?",
+   [
+    "Microsoft",
+    "Mojang",
+    "Roblox"
+   ],
+   1
+  ],
+  [
+   "What happened in 2014?",
+   [
+    "Microsoft bought Mojang",
+    "The game ended",
+    "Notch made a new game"
+   ],
+   0
+  ],
+  [
+   "How do teachers use Minecraft?",
+   [
+    "To teach maths and history",
+    "To give homework only",
+    "They do not use it"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "programmer",
+   "👨‍💻"
+  ],
+  [
+   "company",
+   "🏢"
+  ],
+  [
+   "player",
+   "🎮"
+  ],
+  [
+   "phone",
+   "📱"
+  ],
+  [
+   "film",
+   "🎬"
+  ],
+  [
+   "teacher",
+   "👩‍🏫"
+  ]
+ ],
+ "halves": [
+  [
+   "Notch made the first version...",
+   "...in only six days."
+  ],
+  [
+   "At first there were...",
+   "...no monsters and no goals."
+  ],
+  [
+   "In 2011 the full version...",
+   "...came out."
+  ],
+  [
+   "Microsoft bought Mojang...",
+   "...in 2014."
+  ],
+  [
+   "Minecraft sold more than...",
+   "...three hundred million copies."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the past simple (irregular verbs)",
+  "rule": "Many common verbs are <b>irregular</b> in the past simple. You need to learn them.",
+  "rows": [
+   "make → made",
+   "buy → bought",
+   "sell → sold",
+   "come → came",
+   "leave → left",
+   "grow → grew"
+  ],
+  "items": [
+   [
+    "Notch ___ the first version in six days.",
+    [
+     "maked",
+     "made",
+     "make"
+    ],
+    1
+   ],
+   [
+    "Microsoft ___ Mojang in 2014.",
+    [
+     "bought",
+     "buyed",
+     "buys"
+    ],
+    0
+   ],
+   [
+    "The game ___ more than three hundred million copies.",
+    [
+     "selled",
+     "sold",
+     "sell"
+    ],
+    1
+   ],
+   [
+    "Notch ___ the company.",
+    [
+     "leaved",
+     "left",
+     "leave"
+    ],
+    1
+   ],
+   [
+    "The game ___ very fast.",
+    [
+     "grew",
+     "growed",
+     "grow"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La historia de Minecraft",
+   "sub": "De un proyecto pequeño al juego más vendido",
+   "grammar": "Gramática: el pasado simple de los verbos irregulares. Muchos verbos comunes son irregulares y hay que aprenderlos.",
+   "rows": [
+    "hacer → hizo",
+    "comprar → compró",
+    "vender → vendió",
+    "venir → vino",
+    "irse → se fue",
+    "crecer → creció"
+   ],
+   "hints": [
+    "hizo",
+    "compró",
+    "vendió",
+    "dejó",
+    "creció"
+   ],
+   "vocab": [
+    "programador",
+    "empresa",
+    "jugador",
+    "teléfono",
+    "película",
+    "profesor"
+   ]
+  }
+ }
+}

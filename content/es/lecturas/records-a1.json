@@ -1,0 +1,207 @@
+{
+ "id": "records-a1",
+ "topic": "records",
+ "level": "A1",
+ "title": "Personas de récord",
+ "short": "Personas récord",
+ "text": [
+  "El [Libro Guinness de los Récords] es un libro muy famoso. Tiene los récords más increíbles del mundo: las personas más altas, más bajas, más rápidas... ¿Quieres conocer a algunas?",
+  "Robert Wadlow es el hombre más alto de la historia. Mide dos metros y setenta y dos centímetros. Nace en [Estados Unidos] en 1918 y muere en 1940. ¡Sus zapatos son enormes!",
+  "La mujer más baja del mundo [se llama] Jyoti Amge. Es de la India y mide solo sesenta y tres centímetros. Es actriz: trabaja en series de televisión.",
+  "¿Y la persona más rápida? Es [Usain Bolt], de Jamaica. En 2009, corre cien metros en solo nueve segundos y cincuenta y ocho centésimas. ¡Nadie corre más rápido!",
+  "La persona con más años de la historia es Jeanne Calment, una mujer de Francia. Vive ciento veintidós años, de 1875 a 1997. ¿Cuál es su secreto? Ella dice que es el aceite de oliva, el chocolate y... ¡el buen humor!"
+ ],
+ "q": [
+  [
+   "¿Cuánto mide Robert Wadlow?",
+   [
+    "1,72 metros",
+    "2,72 metros",
+    "3,72 metros"
+   ],
+   1
+  ],
+  [
+   "¿De dónde es Jyoti Amge?",
+   [
+    "De Francia",
+    "De la India",
+    "De Jamaica"
+   ],
+   1
+  ],
+  [
+   "¿Quién es la persona más rápida?",
+   [
+    "[Usain Bolt]",
+    "Robert Wadlow",
+    "Jeanne Calment"
+   ],
+   0
+  ],
+  [
+   "¿En cuántos segundos corre Bolt cien metros?",
+   [
+    "En 9,58",
+    "En 19,58",
+    "En 58"
+   ],
+   0
+  ],
+  [
+   "¿Cuántos años vive Jeanne Calment?",
+   [
+    "92",
+    "102",
+    "122"
+   ],
+   2
+  ],
+  [
+   "¿Qué trabajo tiene Jyoti Amge?",
+   [
+    "Es actriz",
+    "Es corredora",
+    "Es profesora"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "libro",
+   "📕"
+  ],
+  [
+   "hombre",
+   "👨"
+  ],
+  [
+   "mujer",
+   "👩"
+  ],
+  [
+   "zapato",
+   "👞"
+  ],
+  [
+   "chocolate",
+   "🍫"
+  ],
+  [
+   "televisión",
+   "📺"
+  ]
+ ],
+ "halves": [
+  [
+   "Robert Wadlow es...",
+   "...el hombre más alto de la historia."
+  ],
+  [
+   "Jyoti Amge es...",
+   "...de la India."
+  ],
+  [
+   "[Usain Bolt] corre cien metros...",
+   "...en nueve segundos y cincuenta y ocho centésimas."
+  ],
+  [
+   "Jeanne Calment vive...",
+   "...ciento veintidós años."
+  ],
+  [
+   "Su secreto es...",
+   "...el buen humor."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: las preguntas",
+  "rule": "Las palabras de pregunta llevan <b>tilde</b>. La pregunta empieza con <b>¿</b> y termina con <b>?</b>.",
+  "rows": [
+   "¿Quién? → una persona",
+   "¿Dónde? / ¿De dónde? → un lugar",
+   "¿Cuándo? → un momento",
+   "¿Cuánto? / ¿Cuántos? → una cantidad",
+   "¿Qué? / ¿Cuál? → una cosa",
+   "¿Cómo? → la forma"
+  ],
+  "items": [
+   [
+    "¿___ es la persona más rápida? —[Usain Bolt].",
+    [
+     "Dónde",
+     "Quién",
+     "Cuándo"
+    ],
+    1
+   ],
+   [
+    "¿___ es Jyoti Amge? —De la India.",
+    [
+     "De dónde",
+     "Cuánto",
+     "Qué"
+    ],
+    0
+   ],
+   [
+    "¿___ mide Robert Wadlow? —2,72 metros.",
+    [
+     "Quién",
+     "Cuánto",
+     "Cuál"
+    ],
+    1
+   ],
+   [
+    "¿___ años vive Jeanne Calment? —122.",
+    [
+     "Cuántos",
+     "Cuántas",
+     "Cómo"
+    ],
+    0
+   ],
+   [
+    "¿___ nace Robert Wadlow? —En 1918.",
+    [
+     "Dónde",
+     "Qué",
+     "Cuándo"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Record-breaking people",
+   "sub": "The tallest, the shortest, the fastest and the oldest",
+   "grammar": "Grammar: questions. Question words have an accent. A question starts with ¿ and ends with ?",
+   "rows": [
+    "Who? → a person",
+    "Where? / Where from? → a place",
+    "When? → a moment",
+    "How much? / How many? → an amount",
+    "What? / Which? → a thing",
+    "How? → the way"
+   ],
+   "hints": [
+    "Who",
+    "Where from",
+    "How tall (how much)",
+    "How many",
+    "When"
+   ],
+   "vocab": [
+    "book",
+    "man",
+    "woman",
+    "shoe",
+    "chocolate",
+    "television"
+   ]
+  }
+ }
+}

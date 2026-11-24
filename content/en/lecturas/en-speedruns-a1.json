@@ -1,0 +1,207 @@
+{
+ "id": "en-speedruns-a1",
+ "topic": "speedruns",
+ "level": "A1",
+ "title": "What is a speedrun?",
+ "short": "What is a speedrun?",
+ "text": [
+  "A speedrun is a special way to play a video game. The goal is very simple: you finish the game as fast as you can. A person who does speedruns is a speedrunner.",
+  "Speedrunners can finish some games in a few minutes. A normal player needs many hours. How can they do it? They know every level, every enemy and every secret.",
+  "A speedrunner can play the same game every day for months. They can practice one small jump a thousand times. They cannot make mistakes: one second is very important!",
+  "When a speedrunner finishes a game, they send a video to a website. On the website you can see the best times in the world. Can you see your name there?",
+  "There are also big events for speedrunners. They play in front of many people and the money goes to charities. Speedrunning can help people!"
+ ],
+ "q": [
+  [
+   "What is the goal of a speedrun?",
+   [
+    "To finish the game as fast as you can",
+    "To get all the coins",
+    "To play with friends"
+   ],
+   0
+  ],
+  [
+   "How long does a normal player need?",
+   [
+    "A few minutes",
+    "Many hours",
+    "One second"
+   ],
+   1
+  ],
+  [
+   "What do speedrunners know?",
+   [
+    "Every level, enemy and secret",
+    "Only the first level",
+    "Nothing"
+   ],
+   0
+  ],
+  [
+   "How many times can they practice one jump?",
+   [
+    "Once",
+    "Ten times",
+    "A thousand times"
+   ],
+   2
+  ],
+  [
+   "Where can you see the best times?",
+   [
+    "On a website",
+    "On television",
+    "In a book"
+   ],
+   0
+  ],
+  [
+   "Where does the money of the big events go?",
+   [
+    "To the players",
+    "To charities",
+    "To the games"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "fast",
+   "⚡"
+  ],
+  [
+   "level",
+   "🗺️"
+  ],
+  [
+   "enemy",
+   "👾"
+  ],
+  [
+   "jump",
+   "🦘"
+  ],
+  [
+   "mistake",
+   "❌"
+  ],
+  [
+   "time",
+   "⏱️"
+  ]
+ ],
+ "halves": [
+  [
+   "A speedrunner finishes the game...",
+   "...as fast as possible."
+  ],
+  [
+   "A normal player needs...",
+   "...many hours."
+  ],
+  [
+   "They practice one jump...",
+   "...a thousand times."
+  ],
+  [
+   "They send a video...",
+   "...to a website."
+  ],
+  [
+   "The money goes...",
+   "...to charities."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: can and cannot",
+  "rule": "Use <b>can</b> for ability. It is the same for all people, and the next verb has no <b>to</b>. Negative: <b>cannot</b>.",
+  "rows": [
+   "I can play",
+   "she can jump",
+   "they can finish",
+   "I cannot fly",
+   "Can you...?",
+   "can + verb (no to)"
+  ],
+  "items": [
+   [
+    "Speedrunners ___ finish games in minutes.",
+    [
+     "can",
+     "cans",
+     "can to"
+    ],
+    0
+   ],
+   [
+    "She can ___ very fast.",
+    [
+     "plays",
+     "to play",
+     "play"
+    ],
+    2
+   ],
+   [
+    "They ___ make mistakes.",
+    [
+     "cannot",
+     "not can",
+     "can no"
+    ],
+    0
+   ],
+   [
+    "___ you see your name?",
+    [
+     "Do can",
+     "Can",
+     "Cans"
+    ],
+    1
+   ],
+   [
+    "He ___ jump very high.",
+    [
+     "can",
+     "cans",
+     "is can"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Qué es un speedrun?",
+   "sub": "Terminar un juego lo más rápido posible",
+   "grammar": "Gramática: can (poder, saber hacer). Es igual para todas las personas y el verbo que sigue va sin to. Negativo: cannot.",
+   "rows": [
+    "puedo jugar / sé jugar",
+    "ella puede saltar",
+    "pueden terminar",
+    "no puedo volar",
+    "¿Puedes...?",
+    "can + verbo, sin to"
+   ],
+   "hints": [
+    "pueden",
+    "jugar",
+    "no pueden",
+    "Puedes",
+    "puede"
+   ],
+   "vocab": [
+    "rápido",
+    "nivel",
+    "enemigo",
+    "salto",
+    "error",
+    "tiempo"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "en-naturaleza-a2",
+ "topic": "naturaleza",
+ "level": "A2",
+ "title": "The most extreme places",
+ "short": "The most extreme places",
+ "text": [
+  "Our planet has some places where it is very difficult to live. Right now, scientists are working in many of them. They are trying to understand how life survives in extreme conditions.",
+  "Antarctica is the coldest place on Earth. In 1983 a station there recorded minus eighty-nine degrees. Today, researchers are living in bases on the ice. In winter the sun does not come up for months, so they are living in the dark.",
+  "Death Valley, in the United States, is one of the hottest places. In 1913 the temperature reached fifty-seven degrees. At the moment, tourists are visiting it in cars with air conditioning, and they are drinking a lot of water.",
+  "The Atacama Desert in Chile is the driest place. Some parts have not seen rain for hundreds of years. The air is so clear that astronomers are using giant telescopes there to look at the stars.",
+  "Mount Everest is the highest mountain in the world: almost nine thousand meters. Up there, there is very little oxygen. Every spring, climbers are trying to reach the top, but it is a very dangerous adventure."
+ ],
+ "q": [
+  [
+   "What are scientists trying to understand?",
+   [
+    "How life survives in extreme conditions",
+    "How to build cities",
+    "How to make films"
+   ],
+   0
+  ],
+  [
+   "What is the coldest place on Earth?",
+   [
+    "Antarctica",
+    "Death Valley",
+    "Everest"
+   ],
+   0
+  ],
+  [
+   "What happens in winter in Antarctica?",
+   [
+    "The sun does not come up for months",
+    "It is very hot",
+    "It rains every day"
+   ],
+   0
+  ],
+  [
+   "What was the temperature in Death Valley in 1913?",
+   [
+    "Fifty-seven degrees",
+    "Twenty degrees",
+    "Minus ten degrees"
+   ],
+   0
+  ],
+  [
+   "Why do astronomers use the Atacama Desert?",
+   [
+    "The air is very clear",
+    "It is very cold",
+    "It is near the sea"
+   ],
+   0
+  ],
+  [
+   "What is the problem on top of Everest?",
+   [
+    "There is very little oxygen",
+    "There is too much water",
+    "There are many animals"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "desert",
+   "🏜️"
+  ],
+  [
+   "ice",
+   "🧊"
+  ],
+  [
+   "rain",
+   "🌧️"
+  ],
+  [
+   "oxygen",
+   "🫁"
+  ],
+  [
+   "climber",
+   "🧗"
+  ],
+  [
+   "tourist",
+   "📸"
+  ]
+ ],
+ "halves": [
+  [
+   "Antarctica is...",
+   "...the coldest place on Earth."
+  ],
+  [
+   "Researchers are living...",
+   "...in bases on the ice."
+  ],
+  [
+   "Tourists are drinking...",
+   "...a lot of water."
+  ],
+  [
+   "Astronomers are using telescopes...",
+   "...to look at the stars."
+  ],
+  [
+   "Climbers are trying...",
+   "...to reach the top."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the present continuous",
+  "rule": "Use the <b>present continuous</b> (am / is / are + -ing) for actions happening now or around now.",
+  "rows": [
+   "I am working",
+   "you are living",
+   "he / she is visiting",
+   "we are drinking",
+   "they are trying",
+   "right now / at the moment"
+  ],
+  "items": [
+   [
+    "Scientists ___ working in many places.",
+    [
+     "is",
+     "are",
+     "am"
+    ],
+    1
+   ],
+   [
+    "Right now, a researcher ___ living on the ice.",
+    [
+     "is",
+     "are",
+     "am"
+    ],
+    0
+   ],
+   [
+    "Tourists are ___ a lot of water.",
+    [
+     "drink",
+     "drinks",
+     "drinking"
+    ],
+    2
+   ],
+   [
+    "I am ___ at the stars.",
+    [
+     "looking",
+     "look",
+     "looks"
+    ],
+    0
+   ],
+   [
+    "The climbers ___ trying to reach the top.",
+    [
+     "is",
+     "are",
+     "be"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los lugares más extremos",
+   "sub": "Rincones del planeta donde vivir es casi imposible",
+   "grammar": "Gramática: el presente continuo (am / is / are + -ing), para acciones que están pasando ahora o en esta época.",
+   "rows": [
+    "estoy trabajando",
+    "estás viviendo",
+    "está visitando",
+    "estamos bebiendo",
+    "están intentando",
+    "ahora mismo / en este momento"
+   ],
+   "hints": [
+    "están",
+    "está",
+    "bebiendo",
+    "mirando",
+    "están"
+   ],
+   "vocab": [
+    "desierto",
+    "hielo",
+    "lluvia",
+    "oxígeno",
+    "alpinista",
+    "turista"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "en-comida-a2",
+ "topic": "comida",
+ "level": "A2",
+ "title": "Strange food from around the world",
+ "short": "Weird foods of the world",
+ "text": [
+  "Every country has its own food, and sometimes the food of other countries looks very strange to us. But remember: your normal food is strange for someone too!",
+  "In Iceland, people eat hakarl, a shark that is left for months to dry. It has a very strong smell, and many visitors cannot eat much of it. Locals usually eat a small piece with a drink.",
+  "In Japan, natto is a popular breakfast. It is made from beans and it is very sticky. When you lift it with your chopsticks, long threads come with it. A lot of Japanese people eat it with rice.",
+  "In Sardinia, an island in Italy, there is a cheese with live insects inside. It is called casu marzu. Some people love it, but it is illegal to sell it in many places.",
+  "In Mexico, chapulines are grasshoppers fried with lime and chili. They are crunchy and they have a lot of protein. You can buy many of them at markets, like snacks. Would you try them?"
+ ],
+ "q": [
+  [
+   "Where do people eat hakarl?",
+   [
+    "In Iceland",
+    "In Japan",
+    "In Mexico"
+   ],
+   0
+  ],
+  [
+   "What is hakarl?",
+   [
+    "A dried shark",
+    "A sweet cake",
+    "A fruit"
+   ],
+   0
+  ],
+  [
+   "What is natto made from?",
+   [
+    "Beans",
+    "Fish",
+    "Milk"
+   ],
+   0
+  ],
+  [
+   "What is special about casu marzu?",
+   [
+    "It has live insects inside",
+    "It is blue",
+    "It is very sweet"
+   ],
+   0
+  ],
+  [
+   "What are chapulines?",
+   [
+    "Fried grasshoppers",
+    "A type of bread",
+    "A drink"
+   ],
+   0
+  ],
+  [
+   "What do chapulines have a lot of?",
+   [
+    "Sugar",
+    "Protein",
+    "Water"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "breakfast",
+   "🍳"
+  ],
+  [
+   "beans",
+   "🫘"
+  ],
+  [
+   "rice",
+   "🍚"
+  ],
+  [
+   "insect",
+   "🐛"
+  ],
+  [
+   "chili",
+   "🌶️"
+  ],
+  [
+   "snack",
+   "🍿"
+  ]
+ ],
+ "halves": [
+  [
+   "Your normal food...",
+   "...is strange for someone too."
+  ],
+  [
+   "Many visitors cannot eat...",
+   "...much hakarl."
+  ],
+  [
+   "When you lift natto...",
+   "...long threads come with it."
+  ],
+  [
+   "It is illegal to sell casu marzu...",
+   "...in many places."
+  ],
+  [
+   "Chapulines are fried...",
+   "...with lime and chili."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: much, many and a lot of",
+  "rule": "Use <b>many</b> with things you can count and <b>much</b> with things you cannot count, mostly in questions and negatives. <b>A lot of</b> works with both.",
+  "rows": [
+   "many beans",
+   "many visitors",
+   "much rice (not much)",
+   "How many...?",
+   "How much...?",
+   "a lot of = much / many"
+  ],
+  "items": [
+   [
+    "Many visitors cannot eat ___ hakarl.",
+    [
+     "many",
+     "much",
+     "a"
+    ],
+    1
+   ],
+   [
+    "You can buy ___ grasshoppers at markets.",
+    [
+     "much",
+     "many",
+     "a much"
+    ],
+    1
+   ],
+   [
+    "They have ___ protein.",
+    [
+     "a lot of",
+     "many",
+     "a many"
+    ],
+    0
+   ],
+   [
+    "How ___ beans are there?",
+    [
+     "much",
+     "many",
+     "lot"
+    ],
+    1
+   ],
+   [
+    "How ___ rice do you eat?",
+    [
+     "many",
+     "much",
+     "lots"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Comidas raras del mundo",
+   "sub": "Platos que sorprenden a los visitantes",
+   "grammar": "Gramática: much, many y a lot of. Many con cosas que se cuentan; much con cosas que no se cuentan (sobre todo en preguntas y negativas). A lot of vale para las dos.",
+   "rows": [
+    "muchas alubias",
+    "muchos visitantes",
+    "mucho arroz (no mucho)",
+    "¿Cuántos...?",
+    "¿Cuánto...?",
+    "mucho / muchos"
+   ],
+   "hints": [
+    "mucho",
+    "muchos",
+    "mucha",
+    "cuántas",
+    "cuánto"
+   ],
+   "vocab": [
+    "desayuno",
+    "alubias",
+    "arroz",
+    "insecto",
+    "chile",
+    "tentempié"
+   ]
+  }
+ }
+}

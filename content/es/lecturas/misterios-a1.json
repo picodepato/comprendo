@@ -1,0 +1,207 @@
+{
+ "id": "misterios-a1",
+ "topic": "misterios",
+ "level": "A1",
+ "title": "El monstruo del lago Ness",
+ "short": "El monstruo del lago Ness",
+ "text": [
+  "En Escocia hay un lago muy largo y muy profundo. [Se llama] el [lago Ness]. Su agua es muy oscura: no puedes ver el fondo. Según una leyenda, en el lago vive un monstruo. La gente lo llama «Nessie».",
+  "¿Cómo es Nessie? Muchas personas dicen que es enorme, con un cuello muy largo y una cabeza pequeña. Parece un dinosaurio. Otras personas dicen que tiene jorobas en la espalda.",
+  "En 1934, un médico hizo una foto famosa de Nessie. En la foto hay un cuello largo encima del agua. Pero sesenta años después, en 1994, descubrieron la verdad: ¡era un juguete!",
+  "Muchos científicos han buscado a Nessie con barcos, cámaras y sonar. En 2018, estudiaron el ADN del agua del lago. No encontraron ADN de reptiles, pero sí mucho ADN de anguilas. ¿Es Nessie una anguila gigante? Nadie lo sabe.",
+  "Hoy, miles de turistas visitan el [lago Ness] cada año. Quieren ver a Nessie. ¿Existe? ¿Quién sabe? ¿Tú qué crees?"
+ ],
+ "q": [
+  [
+   "¿Dónde está el [lago Ness]?",
+   [
+    "En Escocia",
+    "En España",
+    "En México"
+   ],
+   0
+  ],
+  [
+   "¿Cómo es el agua del lago?",
+   [
+    "Muy clara",
+    "Muy oscura",
+    "Muy caliente"
+   ],
+   1
+  ],
+  [
+   "¿Cómo llama la gente al monstruo?",
+   [
+    "Ness",
+    "Lago",
+    "Nessie"
+   ],
+   2
+  ],
+  [
+   "¿Qué había en la foto de 1934 en realidad?",
+   [
+    "Un juguete",
+    "Un dinosaurio",
+    "Una anguila"
+   ],
+   0
+  ],
+  [
+   "¿Qué ADN encontraron en el lago en 2018?",
+   [
+    "ADN de reptiles",
+    "Mucho ADN de anguilas",
+    "ADN de dinosaurio"
+   ],
+   1
+  ],
+  [
+   "¿Por qué visitan los turistas el lago?",
+   [
+    "Para nadar",
+    "Para pescar",
+    "Para ver a Nessie"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "lago",
+   "🏞️"
+  ],
+  [
+   "monstruo",
+   "👹"
+  ],
+  [
+   "cámara",
+   "📷"
+  ],
+  [
+   "barco",
+   "🚤"
+  ],
+  [
+   "juguete",
+   "🧸"
+  ],
+  [
+   "turista",
+   "🧳"
+  ]
+ ],
+ "halves": [
+  [
+   "El [lago Ness] es...",
+   "...muy largo y muy profundo."
+  ],
+  [
+   "Nessie tiene un cuello...",
+   "...muy largo."
+  ],
+  [
+   "La foto de 1934 era...",
+   "...un juguete."
+  ],
+  [
+   "En 2018 estudiaron...",
+   "...el ADN del agua."
+  ],
+  [
+   "Miles de turistas...",
+   "...visitan el lago cada año."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: las preguntas",
+  "rule": "Las palabras para preguntar llevan <b>tilde</b> y la pregunta empieza con <b>¿</b> y termina con <b>?</b>.",
+  "rows": [
+   "¿Qué?",
+   "¿Quién?",
+   "¿Dónde?",
+   "¿Cuándo?",
+   "¿Cómo?",
+   "¿Por qué? — Porque..."
+  ],
+  "items": [
+   [
+    "¿___ está el [lago Ness]? — En Escocia.",
+    [
+     "Dónde",
+     "Cuándo",
+     "Quién"
+    ],
+    0
+   ],
+   [
+    "¿___ es Nessie? — Es grande, con un cuello largo.",
+    [
+     "Qué",
+     "Cómo",
+     "Dónde"
+    ],
+    1
+   ],
+   [
+    "¿___ hicieron la foto? — En 1934.",
+    [
+     "Cómo",
+     "Quién",
+     "Cuándo"
+    ],
+    2
+   ],
+   [
+    "¿___ hizo la foto? — Un médico.",
+    [
+     "Quién",
+     "Qué",
+     "Dónde"
+    ],
+    0
+   ],
+   [
+    "¿___ visitan el lago? — Porque quieren ver a Nessie.",
+    [
+     "Cómo",
+     "Por qué",
+     "Cuándo"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The Loch Ness monster",
+   "sub": "Scotland's most famous mystery",
+   "grammar": "Grammar: question words. They carry an accent and the question opens with ¿.",
+   "rows": [
+    "What?",
+    "Who?",
+    "Where?",
+    "When?",
+    "How? / What is it like?",
+    "Why? — Because..."
+   ],
+   "hints": [
+    "Where",
+    "What is it like",
+    "When",
+    "Who",
+    "Why"
+   ],
+   "vocab": [
+    "lake / loch",
+    "monster",
+    "camera",
+    "boat",
+    "toy",
+    "tourist"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "speedruns-a1",
+ "topic": "speedruns",
+ "level": "A1",
+ "title": "¿Qué es un speedrun?",
+ "short": "Qué es un speedrun",
+ "text": [
+  "Un speedrun es una forma especial de jugar a un videojuego. El objetivo no es solo terminar el juego: tienes que terminarlo [lo más rápido posible]. Las personas que hacen speedruns se llaman speedrunners.",
+  "Un speedrunner usa un cronómetro. El cronómetro empieza con el juego y para al final. Además, el jugador tiene que grabar un vídeo de la partida. Sin vídeo, no hay récord.",
+  "Hay muchas categorías. En la categoría «Any%», puedes terminar el juego de cualquier forma. En la categoría «100%», tienes que conseguir todos los objetos del juego. Por eso, la categoría «100%» es mucho más larga.",
+  "Los récords están en una página web muy famosa. Allí hay récords de miles de juegos, [por ejemplo], de Super Mario o de Minecraft. Muchos jugadores entrenan todos los días durante meses para ganar unos pocos segundos.",
+  "También hay maratones de speedruns para ayudar a otras personas. El más famoso es [Games Done Quick], en [Estados Unidos]. La gente ve las partidas por internet y da dinero para organizaciones que ayudan a personas enfermas."
+ ],
+ "q": [
+  [
+   "¿Cuál es el objetivo de un speedrun?",
+   [
+    "Terminar el juego muy rápido",
+    "Jugar muy despacio",
+    "Perder muchas veces"
+   ],
+   0
+  ],
+  [
+   "¿Qué usa un speedrunner para medir el tiempo?",
+   [
+    "Un mapa",
+    "Un cronómetro",
+    "Una pieza"
+   ],
+   1
+  ],
+  [
+   "¿Qué tiene que grabar el jugador?",
+   [
+    "Una canción",
+    "Un vídeo de la partida",
+    "Una foto"
+   ],
+   1
+  ],
+  [
+   "En la categoría «100%», ¿qué tienes que hacer?",
+   [
+    "Conseguir todos los objetos",
+    "Terminar en un minuto",
+    "Jugar con amigos"
+   ],
+   0
+  ],
+  [
+   "¿Cuánto entrenan muchos jugadores?",
+   [
+    "Un día",
+    "Todos los días durante meses",
+    "Nunca"
+   ],
+   1
+  ],
+  [
+   "¿Para qué es el dinero de [Games Done Quick]?",
+   [
+    "Para los jugadores",
+    "Para comprar juegos",
+    "Para ayudar a personas enfermas"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "cronómetro",
+   "⏱️"
+  ],
+  [
+   "vídeo",
+   "📹"
+  ],
+  [
+   "récord",
+   "🏆"
+  ],
+  [
+   "objeto",
+   "🎁"
+  ],
+  [
+   "dinero",
+   "💰"
+  ],
+  [
+   "mes",
+   "📅"
+  ]
+ ],
+ "halves": [
+  [
+   "Un speedrun es...",
+   "...una forma especial de jugar."
+  ],
+  [
+   "El cronómetro empieza...",
+   "...con el juego."
+  ],
+  [
+   "Sin vídeo...",
+   "...no hay récord."
+  ],
+  [
+   "La categoría «100%» es...",
+   "...mucho más larga."
+  ],
+  [
+   "Muchos jugadores entrenan...",
+   "...todos los días."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: tener que + infinitivo",
+  "rule": "<b>tener que</b> + infinitivo = es necesario u obligatorio hacer algo.",
+  "rows": [
+   "yo tengo que grabar",
+   "tú tienes que terminar",
+   "él / ella tiene que entrenar",
+   "nosotros tenemos que correr",
+   "ellos tienen que jugar",
+   "tener que + infinitivo (-ar, -er, -ir)"
+  ],
+  "items": [
+   [
+    "Yo ___ que entrenar mucho.",
+    [
+     "tienes",
+     "tengo",
+     "tiene"
+    ],
+    1
+   ],
+   [
+    "El jugador tiene que ___ un vídeo.",
+    [
+     "grabar",
+     "graba",
+     "grabo"
+    ],
+    0
+   ],
+   [
+    "Tú ___ que conseguir todos los objetos.",
+    [
+     "tienes",
+     "tenemos",
+     "tienen"
+    ],
+    0
+   ],
+   [
+    "Los speedrunners ___ que ser muy rápidos.",
+    [
+     "tiene",
+     "tienen",
+     "tengo"
+    ],
+    1
+   ],
+   [
+    "Nosotros tenemos ___ terminar el juego.",
+    [
+     "de",
+     "que",
+     "a"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "What is a speedrun?",
+   "sub": "Finishing a game as fast as possible",
+   "grammar": "Grammar: tener que + infinitive = to have to do something.",
+   "rows": [
+    "I have to record",
+    "you have to finish",
+    "he / she has to train",
+    "we have to run",
+    "they have to play",
+    "tener que + infinitive (-ar, -er, -ir)"
+   ],
+   "hints": [
+    "have to (I)",
+    "record",
+    "have to (you)",
+    "have to (they)",
+    "to"
+   ],
+   "vocab": [
+    "stopwatch",
+    "video",
+    "record",
+    "object / item",
+    "money",
+    "month"
+   ]
+  }
+ }
+}

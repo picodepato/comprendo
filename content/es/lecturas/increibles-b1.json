@@ -1,0 +1,208 @@
+{
+ "id": "increibles-b1",
+ "topic": "increibles",
+ "level": "B1",
+ "title": "El tardígrado indestructible",
+ "short": "El tardígrado",
+ "text": [
+  "¿Cuál es el animal más resistente del planeta? No es el elefante ni el tiburón, sino un animal diminuto que normalmente mide medio milímetro: el tardígrado. [Por su forma], también lo llaman «oso de agua». Tiene ocho patas cortas con garras y se mueve despacísimo, como un osito torpe.",
+  "El científico alemán [Johann Goeze] lo descubrió en 1773. [Desde entonces], los investigadores han encontrado más de mil especies en todo el mundo: en la cima de las montañas, en el fondo del mar, en el hielo de la Antártida y [hasta en] el musgo de tu jardín.",
+  "Lo más sorprendente es todo lo que puede soportar. Aguanta temperaturas de casi doscientos setenta grados [bajo cero] y de más de cien grados. Resiste una radiación mil veces más fuerte que la dosis mortal para un ser humano y presiones enormes.",
+  "¿Cuál es su secreto? Cuando el ambiente se vuelve peligroso, [por ejemplo] cuando no hay agua, el tardígrado expulsa casi toda el agua de su cuerpo, se encoge y se convierte en una bolita seca. En ese estado, llamado «tonel», su metabolismo casi se detiene. Puede pasar así muchos años y, cuando vuelve a tener agua, se despierta [como si nada].",
+  "En 2007, un grupo de científicos envió tardígrados al espacio en un satélite. Estuvieron diez días en el vacío espacial, sin aire y expuestos a la radiación del sol. Al volver a la Tierra, muchos seguían vivos e incluso tuvieron crías.",
+  "[Sin embargo], el tardígrado no es inmortal. En su estado normal es bastante frágil y vive solo unos meses. Su verdadero superpoder es saber esperar el momento adecuado para volver a la vida. [Por eso] los científicos lo estudian: quizá algún día nos ayude a proteger a los astronautas en viajes larguísimos."
+ ],
+ "q": [
+  [
+   "¿Cuánto mide normalmente un tardígrado?",
+   [
+    "Medio milímetro",
+    "Medio metro",
+    "Cinco centímetros"
+   ],
+   0
+  ],
+  [
+   "¿Por qué lo llaman «oso de agua»?",
+   [
+    "Porque come peces",
+    "Por su forma",
+    "Porque es muy fuerte"
+   ],
+   1
+  ],
+  [
+   "¿Dónde podemos encontrar tardígrados?",
+   [
+    "Solo en el mar",
+    "Solo en la Antártida",
+    "En casi todas partes, [hasta en] el musgo"
+   ],
+   2
+  ],
+  [
+   "¿Qué hace el tardígrado cuando no hay agua?",
+   [
+    "Se convierte en una bolita seca",
+    "Busca un río",
+    "Se muere enseguida"
+   ],
+   0
+  ],
+  [
+   "¿Qué pasó en 2007?",
+   [
+    "Descubrieron el tardígrado",
+    "Enviaron tardígrados al espacio",
+    "Encontraron tardígrados en la Luna"
+   ],
+   1
+  ],
+  [
+   "¿Cuál es el verdadero superpoder del tardígrado?",
+   [
+    "Ser inmortal",
+    "Ser muy rápido",
+    "Saber esperar el momento adecuado"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "elefante",
+   "🐘"
+  ],
+  [
+   "montaña",
+   "⛰️"
+  ],
+  [
+   "hielo",
+   "🧊"
+  ],
+  [
+   "satélite",
+   "🛰️"
+  ],
+  [
+   "astronauta",
+   "🧑‍🚀"
+  ],
+  [
+   "microscopio",
+   "🔬"
+  ]
+ ],
+ "halves": [
+  [
+   "El tardígrado tiene...",
+   "...ocho patas cortas con garras."
+  ],
+  [
+   "[Johann Goeze] lo descubrió...",
+   "...en 1773."
+  ],
+  [
+   "Sin agua, el tardígrado...",
+   "...se convierte en una bolita seca."
+  ],
+  [
+   "En el espacio estuvieron...",
+   "...diez días."
+  ],
+  [
+   "En su estado normal...",
+   "...vive solo unos meses."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el superlativo",
+  "rule": "Para decir que algo es <b>lo máximo</b> de un grupo: <b>el / la más ... de</b>. Para decir <b>muy, muy</b>: <b>-ísimo</b>.",
+  "rows": [
+   "el animal más resistente del planeta",
+   "la especie menos conocida de",
+   "muy pequeño → pequeñísimo",
+   "muy largo → larguísimo",
+   "muy seco → sequísimo",
+   "muy despacio → despacísimo"
+  ],
+  "items": [
+   [
+    "El tardígrado es el animal más resistente ___ planeta.",
+    [
+     "del",
+     "que",
+     "como"
+    ],
+    0
+   ],
+   [
+    "Es un animal ___: mide medio milímetro.",
+    [
+     "pequeñísimo",
+     "más pequeño que",
+     "menos"
+    ],
+    0
+   ],
+   [
+    "Los viajes a Marte son ___.",
+    [
+     "larguísimos",
+     "largísimos",
+     "más largos de"
+    ],
+    0
+   ],
+   [
+    "La Antártida es el lugar ___ frío de la Tierra.",
+    [
+     "muy",
+     "más",
+     "tan"
+    ],
+    1
+   ],
+   [
+    "Sin agua, el tardígrado está ___.",
+    [
+     "secísimo",
+     "sequísimo",
+     "más seco de"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The indestructible tardigrade",
+   "sub": "The toughest animal on the planet",
+   "grammar": "Grammar: superlatives. el / la más ... de = the most ... in. -ísimo = very, very.",
+   "rows": [
+    "the toughest animal on the planet",
+    "the least known species of",
+    "very small → tiny",
+    "very long → extremely long",
+    "very dry → bone-dry",
+    "very slowly → extremely slowly"
+   ],
+   "hints": [
+    "on the (of the)",
+    "tiny",
+    "extremely long",
+    "coldest",
+    "bone-dry"
+   ],
+   "vocab": [
+    "elephant",
+    "mountain",
+    "ice",
+    "satellite",
+    "astronaut",
+    "microscope"
+   ]
+  }
+ }
+}

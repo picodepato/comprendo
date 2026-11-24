@@ -1,0 +1,207 @@
+{
+ "id": "espacio-a1",
+ "topic": "espacio",
+ "level": "A1",
+ "title": "Los planetas",
+ "short": "Los planetas",
+ "text": [
+  "Nuestro planeta [se llama] Tierra. La Tierra gira alrededor del Sol. El Sol es una estrella. En el [sistema solar] hay ocho planetas.",
+  "Mercurio es el planeta más pequeño y está muy cerca del Sol. Venus es el planeta más caliente: ¡hay más de cuatrocientos grados! La Tierra es el tercer planeta. Es el único planeta con agua líquida y con vida.",
+  "Marte es el planeta rojo. Es frío y tiene montañas muy altas. Júpiter es el planeta más grande: ¡dentro de Júpiter caben más de mil Tierras! Tiene una gran mancha roja. Es una tormenta enorme.",
+  "Saturno es famoso por sus anillos. Los anillos son de hielo y de piedras. Urano y Neptuno están muy lejos del Sol. Son azules y muy, muy fríos. En Neptuno hay vientos muy fuertes.",
+  "¿Y Plutón? Antes era el planeta número nueve. Pero es muy pequeño, y desde 2006 es un [planeta enano]."
+ ],
+ "q": [
+  [
+   "¿Cuántos planetas hay en el [sistema solar]?",
+   [
+    "Siete",
+    "Ocho",
+    "Nueve"
+   ],
+   1
+  ],
+  [
+   "¿Qué es el Sol?",
+   [
+    "Un planeta",
+    "Una estrella",
+    "Una luna"
+   ],
+   1
+  ],
+  [
+   "¿Cuál es el planeta más caliente?",
+   [
+    "Mercurio",
+    "Venus",
+    "Marte"
+   ],
+   1
+  ],
+  [
+   "¿Qué planeta tiene agua líquida y vida?",
+   [
+    "La Tierra",
+    "Júpiter",
+    "Neptuno"
+   ],
+   0
+  ],
+  [
+   "¿Cuál es el planeta más grande?",
+   [
+    "Saturno",
+    "Urano",
+    "Júpiter"
+   ],
+   2
+  ],
+  [
+   "¿Qué es Plutón desde 2006?",
+   [
+    "Una estrella",
+    "Un [planeta enano]",
+    "El planeta más grande"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "sol",
+   "☀️"
+  ],
+  [
+   "estrella",
+   "⭐"
+  ],
+  [
+   "planeta",
+   "🪐"
+  ],
+  [
+   "luna",
+   "🌙"
+  ],
+  [
+   "cohete",
+   "🚀"
+  ],
+  [
+   "tierra",
+   "🌍"
+  ]
+ ],
+ "halves": [
+  [
+   "La Tierra gira...",
+   "...alrededor del Sol."
+  ],
+  [
+   "Mercurio es...",
+   "...el planeta más pequeño."
+  ],
+  [
+   "Marte es...",
+   "...el planeta rojo."
+  ],
+  [
+   "Saturno es famoso...",
+   "...por sus anillos."
+  ],
+  [
+   "Urano y Neptuno son...",
+   "...azules y muy fríos."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: hay y está",
+  "rule": "<b>Hay</b> dice que algo existe (hay ocho planetas). <b>Está / están</b> dice dónde (Mercurio está cerca del Sol).",
+  "rows": [
+   "hay ocho planetas",
+   "hay una mancha roja",
+   "Mercurio está cerca del Sol",
+   "Urano y Neptuno están lejos",
+   "hay + un / una / dos...",
+   "el / la ... + está"
+  ],
+  "items": [
+   [
+    "En el [sistema solar] ___ ocho planetas.",
+    [
+     "hay",
+     "está",
+     "están"
+    ],
+    0
+   ],
+   [
+    "Mercurio ___ muy cerca del Sol.",
+    [
+     "hay",
+     "está",
+     "están"
+    ],
+    1
+   ],
+   [
+    "En Júpiter ___ una tormenta enorme.",
+    [
+     "está",
+     "hay",
+     "son"
+    ],
+    1
+   ],
+   [
+    "Neptuno y Urano ___ muy lejos.",
+    [
+     "hay",
+     "está",
+     "están"
+    ],
+    2
+   ],
+   [
+    "En Neptuno ___ vientos muy fuertes.",
+    [
+     "hay",
+     "están",
+     "es"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The planets",
+   "sub": "A tour of the solar system",
+   "grammar": "Grammar: hay (there is / there are) and está (is located).",
+   "rows": [
+    "there are eight planets",
+    "there is a red spot",
+    "Mercury is near the Sun",
+    "Uranus and Neptune are far away",
+    "hay + a / two...",
+    "the ... + is (located)"
+   ],
+   "hints": [
+    "there are",
+    "is (located)",
+    "there is",
+    "are (located)",
+    "there are"
+   ],
+   "vocab": [
+    "sun",
+    "star",
+    "planet",
+    "moon",
+    "rocket",
+    "Earth"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "naturaleza-a2",
+ "topic": "naturaleza",
+ "level": "A2",
+ "title": "Los lugares más extremos de la Tierra",
+ "short": "Los lugares más extremos",
+ "text": [
+  "En la Tierra hay lugares donde la vida es muy difícil: hace demasiado calor, demasiado frío o no hay aire suficiente. Muchos exploradores los visitan para batir récords. Vamos a conocer cinco de ellos.",
+  "El [Valle de la Muerte], en [Estados Unidos], es uno de los lugares más calurosos del planeta. En 1913, un termómetro marcó cincuenta y seis grados. En verano, los turistas lo visitan, pero no pueden caminar mucho tiempo al sol.",
+  "El lugar más frío está en la Antártida. En 1983, en la base rusa de Vostok, los científicos midieron casi noventa grados [bajo cero]. Con ese frío, si tiras agua caliente al aire, ¡la ves convertirse en hielo!",
+  "El [desierto de Atacama], en Chile, es el desierto más seco del mundo, sin contar los polos. En algunas partes nunca han medido lluvia. El suelo es tan parecido al de Marte que la NASA lo usa para probar sus robots.",
+  "El Everest es la montaña más alta: mide ocho mil ochocientos cuarenta y nueve metros. Arriba, el aire tiene muy poco oxígeno, por eso casi todos los alpinistas lo llevan en botellas. Y el lugar más profundo es la [fosa de las Marianas], en el océano Pacífico: tiene casi once mil metros. Muy pocas personas la han visitado, en submarinos especiales."
+ ],
+ "q": [
+  [
+   "¿Cuántos grados marcó el termómetro en el [Valle de la Muerte]?",
+   [
+    "Cincuenta y seis",
+    "Cuarenta",
+    "Noventa"
+   ],
+   0
+  ],
+  [
+   "¿Dónde está el lugar más frío?",
+   [
+    "En el Everest",
+    "En la Antártida",
+    "En Chile"
+   ],
+   1
+  ],
+  [
+   "¿Por qué la NASA usa el [desierto de Atacama]?",
+   [
+    "Porque hace mucho frío",
+    "Porque hay mucha agua",
+    "Porque el suelo es parecido al de Marte"
+   ],
+   2
+  ],
+  [
+   "¿Cuánto mide el Everest?",
+   [
+    "Ocho mil ochocientos cuarenta y nueve metros",
+    "Once mil metros",
+    "Mil metros"
+   ],
+   0
+  ],
+  [
+   "¿Por qué los alpinistas llevan botellas de oxígeno?",
+   [
+    "Para beber",
+    "Porque arriba hay muy poco oxígeno",
+    "Para cocinar"
+   ],
+   1
+  ],
+  [
+   "¿Cómo se visita la [fosa de las Marianas]?",
+   [
+    "Nadando",
+    "En avión",
+    "En submarinos especiales"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "termómetro",
+   "🌡️"
+  ],
+  [
+   "desierto",
+   "🏜️"
+  ],
+  [
+   "hielo",
+   "🧊"
+  ],
+  [
+   "submarino",
+   "🤿"
+  ],
+  [
+   "botella",
+   "🍼"
+  ],
+  [
+   "montaña",
+   "🏔️"
+  ]
+ ],
+ "halves": [
+  [
+   "En el [Valle de la Muerte]...",
+   "...hace muchísimo calor."
+  ],
+  [
+   "En Vostok midieron...",
+   "...casi noventa grados [bajo cero]."
+  ],
+  [
+   "El [desierto de Atacama] es...",
+   "...el más seco del mundo."
+  ],
+  [
+   "El Everest es...",
+   "...la montaña más alta."
+  ],
+  [
+   "La [fosa de las Marianas] tiene...",
+   "...casi once mil metros."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: lo, la, los, las",
+  "rule": "Para no repetir una palabra, usamos <b>lo</b> (masculino), <b>la</b> (femenino), <b>los</b> y <b>las</b> (plural). Van antes del verbo.",
+  "rows": [
+   "el valle → lo visitan",
+   "la fosa → la han visitado",
+   "los robots → los prueban",
+   "las botellas → las llevan",
+   "el oxígeno → lo llevan",
+   "el agua → la ves"
+  ],
+  "items": [
+   [
+    "El desierto es muy seco. La NASA ___ usa.",
+    [
+     "lo",
+     "la",
+     "los"
+    ],
+    0
+   ],
+   [
+    "La fosa es muy profunda. Pocos ___ han visitado.",
+    [
+     "lo",
+     "la",
+     "las"
+    ],
+    1
+   ],
+   [
+    "Los robots son nuevos. La NASA ___ prueba en Chile.",
+    [
+     "la",
+     "lo",
+     "los"
+    ],
+    2
+   ],
+   [
+    "Las botellas pesan mucho, pero los alpinistas ___ llevan.",
+    [
+     "las",
+     "los",
+     "la"
+    ],
+    0
+   ],
+   [
+    "El Everest es muy alto. Muchos alpinistas ___ suben.",
+    [
+     "la",
+     "lo",
+     "las"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The most extreme places on Earth",
+   "sub": "Heat, cold, dryness, height and depth",
+   "grammar": "Grammar: object pronouns lo, la, los, las (it / them). They go before the verb.",
+   "rows": [
+    "the valley → they visit it",
+    "the trench → they have visited it",
+    "the robots → they test them",
+    "the bottles → they carry them",
+    "the oxygen → they carry it",
+    "the water → you see it"
+   ],
+   "hints": [
+    "it (masc.)",
+    "it (fem.)",
+    "them (masc.)",
+    "them (fem.)",
+    "it (masc.)"
+   ],
+   "vocab": [
+    "thermometer",
+    "desert",
+    "ice",
+    "submarine",
+    "bottle",
+    "mountain"
+   ]
+  }
+ }
+}

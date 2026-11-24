@@ -1,0 +1,207 @@
+{
+ "id": "naturaleza-a1",
+ "topic": "naturaleza",
+ "level": "A1",
+ "title": "Los volcanes",
+ "short": "Volcanes",
+ "text": [
+  "Un volcán es una montaña especial. Dentro de la Tierra hay roca muy caliente y líquida. Se llama magma. A veces, el magma sube y sale por el volcán. Es una erupción.",
+  "Cuando el magma sale, se llama lava. La lava está muy caliente: tiene unos mil grados. Es roja y naranja y baja muy despacio por la montaña. Cuando se enfría, se convierte en roca negra.",
+  "En una erupción, el volcán también expulsa humo, ceniza y piedras. La ceniza puede volar muy lejos. [A veces], los aviones no pueden volar por la ceniza.",
+  "En el mundo hay muchos volcanes activos. En España, hay volcanes en las [Islas Canarias]. En 2021, un volcán de la isla de [La Palma] estuvo en erupción casi tres meses. Mucha gente perdió su casa.",
+  "Los volcanes son peligrosos, pero también son útiles. La tierra cerca de los volcanes es muy buena para las plantas. Y algunos volcanes crean islas nuevas en el mar. ¡Hawái y las Canarias nacieron de volcanes!"
+ ],
+ "q": [
+  [
+   "¿Qué es el magma?",
+   [
+    "Roca muy caliente y líquida",
+    "Agua muy fría",
+    "Humo negro"
+   ],
+   0
+  ],
+  [
+   "¿Cuántos grados tiene la lava?",
+   [
+    "Unos cien",
+    "Unos mil",
+    "Unos diez"
+   ],
+   1
+  ],
+  [
+   "¿En qué se convierte la lava cuando se enfría?",
+   [
+    "En agua",
+    "En humo",
+    "En roca negra"
+   ],
+   2
+  ],
+  [
+   "¿Por qué a veces los aviones no pueden volar?",
+   [
+    "Por la ceniza",
+    "Por la lava",
+    "Por el agua"
+   ],
+   0
+  ],
+  [
+   "¿Dónde hay volcanes en España?",
+   [
+    "En Madrid",
+    "En las [Islas Canarias]",
+    "En los Pirineos"
+   ],
+   1
+  ],
+  [
+   "¿Por qué son útiles los volcanes?",
+   [
+    "Dan agua",
+    "Dan electricidad a todo el mundo",
+    "La tierra es buena para las plantas"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "volcán",
+   "🌋"
+  ],
+  [
+   "fuego",
+   "🔥"
+  ],
+  [
+   "montaña",
+   "⛰️"
+  ],
+  [
+   "humo",
+   "💨"
+  ],
+  [
+   "isla",
+   "🏝️"
+  ],
+  [
+   "avión",
+   "✈️"
+  ]
+ ],
+ "halves": [
+  [
+   "El magma sale...",
+   "...por el volcán."
+  ],
+  [
+   "La lava es...",
+   "...roja y naranja."
+  ],
+  [
+   "La ceniza puede volar...",
+   "...muy lejos."
+  ],
+  [
+   "En 2021, un volcán de [La Palma]...",
+   "...estuvo en erupción."
+  ],
+  [
+   "Hawái y las Canarias...",
+   "...nacieron de volcanes."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: muy y mucho",
+  "rule": "<b>Muy</b> va con adjetivos (muy caliente). <b>Mucho / mucha / muchos / muchas</b> va con nombres (mucha gente) y cambia como un adjetivo.",
+  "rows": [
+   "muy caliente",
+   "muy lejos",
+   "mucho humo",
+   "mucha ceniza",
+   "muchos volcanes",
+   "muchas piedras"
+  ],
+  "items": [
+   [
+    "La lava está ___ caliente.",
+    [
+     "muy",
+     "mucho",
+     "mucha"
+    ],
+    0
+   ],
+   [
+    "Hay ___ volcanes activos.",
+    [
+     "muy",
+     "muchos",
+     "mucha"
+    ],
+    1
+   ],
+   [
+    "El volcán expulsa ___ ceniza.",
+    [
+     "muy",
+     "mucho",
+     "mucha"
+    ],
+    2
+   ],
+   [
+    "La lava baja ___ despacio.",
+    [
+     "muy",
+     "mucha",
+     "muchos"
+    ],
+    0
+   ],
+   [
+    "En la erupción hay ___ humo.",
+    [
+     "mucha",
+     "mucho",
+     "muy"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Volcanoes",
+   "sub": "Magma, lava and new islands",
+   "grammar": "Grammar: muy (very) goes with adjectives. mucho (a lot of / many) goes with nouns and agrees with them.",
+   "rows": [
+    "very hot",
+    "very far",
+    "a lot of smoke",
+    "a lot of ash",
+    "many volcanoes",
+    "many stones"
+   ],
+   "hints": [
+    "very",
+    "many",
+    "a lot of",
+    "very",
+    "a lot of"
+   ],
+   "vocab": [
+    "volcano",
+    "fire",
+    "mountain",
+    "smoke",
+    "island",
+    "plane"
+   ]
+  }
+ }
+}

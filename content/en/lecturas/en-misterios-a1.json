@@ -1,0 +1,207 @@
+{
+ "id": "en-misterios-a1",
+ "topic": "misterios",
+ "level": "A1",
+ "title": "The Loch Ness monster",
+ "short": "The Loch Ness monster",
+ "text": [
+  "Loch Ness is a big lake in Scotland. The water is very deep and very dark. Many people say that a monster lives in the lake. Its name is Nessie.",
+  "What does Nessie look like? People say it has a long neck, a small head and a big body. It looks like a dinosaur that swims.",
+  "Where does the story come from? In 1933 a couple saw a strange animal in the water. In 1934 a famous photo showed a long neck in the lake. Many years later, people discovered that the photo was a trick: it was a toy!",
+  "Do scientists believe in Nessie? Not really. They looked for the monster with special machines, but they did not find it. Maybe people see big fish, boats or waves.",
+  "Who visits the lake? Every year, thousands of tourists come to Loch Ness. They take photos, they ride boats and they buy Nessie toys. Is Nessie real? What do you think?"
+ ],
+ "q": [
+  [
+   "Where is Loch Ness?",
+   [
+    "In Scotland",
+    "In Spain",
+    "In Canada"
+   ],
+   0
+  ],
+  [
+   "What is the name of the monster?",
+   [
+    "Nessie",
+    "Lochy",
+    "Scotty"
+   ],
+   0
+  ],
+  [
+   "What does Nessie look like?",
+   [
+    "A dinosaur that swims",
+    "A big bird",
+    "A small fish"
+   ],
+   0
+  ],
+  [
+   "What was the photo of 1934?",
+   [
+    "A trick with a toy",
+    "A real monster",
+    "A boat"
+   ],
+   0
+  ],
+  [
+   "What did scientists find?",
+   [
+    "Nothing",
+    "A monster",
+    "A dinosaur egg"
+   ],
+   0
+  ],
+  [
+   "What do tourists do at Loch Ness?",
+   [
+    "They take photos and ride boats",
+    "They swim with Nessie",
+    "They catch the monster"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "monster",
+   "👹"
+  ],
+  [
+   "lake",
+   "🏞️"
+  ],
+  [
+   "photo",
+   "📷"
+  ],
+  [
+   "boat",
+   "⛵"
+  ],
+  [
+   "toy",
+   "🧸"
+  ],
+  [
+   "deep",
+   "🌊"
+  ]
+ ],
+ "halves": [
+  [
+   "Loch Ness is a big lake...",
+   "...in Scotland."
+  ],
+  [
+   "People say Nessie has...",
+   "...a long neck."
+  ],
+  [
+   "The famous photo was...",
+   "...a trick."
+  ],
+  [
+   "Scientists looked for the monster...",
+   "...with special machines."
+  ],
+  [
+   "Thousands of tourists...",
+   "...visit the lake every year."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: question words",
+  "rule": "Question words go at the <b>start</b> of a question.",
+  "rows": [
+   "What?",
+   "Where?",
+   "Who?",
+   "When?",
+   "Why?",
+   "How?"
+  ],
+  "items": [
+   [
+    "___ is Loch Ness? In Scotland.",
+    [
+     "Where",
+     "Who",
+     "When"
+    ],
+    0
+   ],
+   [
+    "___ is the monster called? Nessie.",
+    [
+     "What",
+     "Where",
+     "Who"
+    ],
+    0
+   ],
+   [
+    "___ did the couple see the animal? In 1933.",
+    [
+     "Who",
+     "When",
+     "Where"
+    ],
+    1
+   ],
+   [
+    "___ visits the lake? Thousands of tourists.",
+    [
+     "What",
+     "Who",
+     "Why"
+    ],
+    1
+   ],
+   [
+    "___ do people see Nessie? Maybe they see waves.",
+    [
+     "Why",
+     "Who",
+     "Where"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El monstruo del lago Ness",
+   "sub": "¿Vive un monstruo en un lago de Escocia?",
+   "grammar": "Gramática: las palabras para preguntar van al principio de la pregunta.",
+   "rows": [
+    "¿Qué?",
+    "¿Dónde?",
+    "¿Quién?",
+    "¿Cuándo?",
+    "¿Por qué?",
+    "¿Cómo?"
+   ],
+   "hints": [
+    "Dónde",
+    "Cómo (qué)",
+    "Cuándo",
+    "Quién",
+    "Por qué"
+   ],
+   "vocab": [
+    "monstruo",
+    "lago",
+    "foto",
+    "barco",
+    "juguete",
+    "profundo"
+   ]
+  }
+ }
+}

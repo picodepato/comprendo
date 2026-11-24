@@ -1,0 +1,207 @@
+{
+ "id": "en-bear-a2",
+ "topic": "bear",
+ "level": "A2",
+ "title": "The secret story of the Bear",
+ "short": "The secret story",
+ "text": [
+  "The BEAR games have a secret story. Do you know it?",
+  "Many years ago, two scientists worked in a very big factory. Their names were Sam and Whitey. The factory was called the Cheese Factory. But they did not only make cheese there...",
+  "Sam and Whitey worked in a secret laboratory. They wanted to create something new, so they started some strange experiments. In one of their experiments, they created the Bear. The Bear was huge, strong and very dangerous. Its body glowed with a red light.",
+  "The two scientists did not stop. They created many different bears. One day there was an accident in the factory and all the bears escaped. People called this moment the Bear Apocalypse. From that day, the bears looked for people everywhere.",
+  "That is why the survivors in the game are afraid. They live in dark and dangerous places, and they always listen carefully. Who is coming? Is it a friend... or is it the Bear?"
+ ],
+ "q": [
+  [
+   "What were the names of the two scientists?",
+   [
+    "Sam and Cheedaman",
+    "Sam and Whitey",
+    "Leo and Whitey"
+   ],
+   1
+  ],
+  [
+   "What was the name of the factory?",
+   [
+    "The Bear House",
+    "The Cheese Factory",
+    "The Toy Factory"
+   ],
+   1
+  ],
+  [
+   "Where did they do their experiments?",
+   [
+    "In a secret laboratory",
+    "In a school",
+    "In a forest"
+   ],
+   0
+  ],
+  [
+   "What was the Bear like?",
+   [
+    "Small and friendly",
+    "Huge, strong and dangerous",
+    "Slow and calm"
+   ],
+   1
+  ],
+  [
+   "What happened one day in the factory?",
+   [
+    "There was a party",
+    "The police arrived",
+    "There was an accident"
+   ],
+   2
+  ],
+  [
+   "Why are the survivors afraid?",
+   [
+    "Because it is cold",
+    "Because the bears look for them",
+    "Because they have no food"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "factory",
+   "🏭"
+  ],
+  [
+   "cheese",
+   "🧀"
+  ],
+  [
+   "scientist",
+   "🔬"
+  ],
+  [
+   "accident",
+   "💥"
+  ],
+  [
+   "afraid",
+   "😱"
+  ],
+  [
+   "secret",
+   "🤫"
+  ]
+ ],
+ "halves": [
+  [
+   "Sam and Whitey were...",
+   "...two scientists."
+  ],
+  [
+   "In the laboratory they started...",
+   "...some strange experiments."
+  ],
+  [
+   "The body of the Bear glowed...",
+   "...with a red light."
+  ],
+  [
+   "After the accident...",
+   "...all the bears escaped."
+  ],
+  [
+   "The survivors always...",
+   "...listen carefully."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the past simple (regular verbs)",
+  "rule": "For the past simple of regular verbs, add <b>-ed</b>. It is the same for all people.",
+  "rows": [
+   "work → worked",
+   "start → started",
+   "create → created",
+   "stop → stopped",
+   "try → tried",
+   "did not + verb"
+  ],
+  "items": [
+   [
+    "Sam and Whitey ___ in a factory.",
+    [
+     "work",
+     "worked",
+     "works"
+    ],
+    1
+   ],
+   [
+    "They ___ a huge bear.",
+    [
+     "created",
+     "createed",
+     "create"
+    ],
+    0
+   ],
+   [
+    "One day the bears ___ from the factory.",
+    [
+     "escape",
+     "escapes",
+     "escaped"
+    ],
+    2
+   ],
+   [
+    "The scientists did not ___.",
+    [
+     "stopped",
+     "stop",
+     "stops"
+    ],
+    1
+   ],
+   [
+    "The bears ___ for people everywhere.",
+    [
+     "looked",
+     "looks",
+     "look"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La historia secreta del Oso",
+   "sub": "La historia que hay detrás del juego",
+   "grammar": "Gramática: el pasado simple de los verbos regulares. Se añade -ed y es igual para todas las personas.",
+   "rows": [
+    "trabajar → trabajó",
+    "empezar → empezó",
+    "crear → creó (solo -d)",
+    "parar → paró (se dobla la consonante)",
+    "intentar → intentó (y → ied)",
+    "negativo: did not + verbo"
+   ],
+   "hints": [
+    "trabajaban",
+    "crearon",
+    "escaparon",
+    "pararon",
+    "buscaban"
+   ],
+   "vocab": [
+    "fábrica",
+    "queso",
+    "científico",
+    "accidente",
+    "asustado",
+    "secreto"
+   ]
+  }
+ }
+}

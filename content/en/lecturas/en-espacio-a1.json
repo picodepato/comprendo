@@ -1,0 +1,207 @@
+{
+ "id": "en-espacio-a1",
+ "topic": "espacio",
+ "level": "A1",
+ "title": "The planets",
+ "short": "The planets",
+ "text": [
+  "The Sun is a star. Around the Sun there are eight planets. Together they are the Solar System. Our planet, the Earth, is one of them.",
+  "Mercury is near the Sun. It is very hot in the day and very cold at night. Venus is between Mercury and the Earth. It is the hottest planet.",
+  "The Earth is the third planet from the Sun. It has water, air and life. Mars is next to the Earth. It is red because it has a lot of red dust.",
+  "Jupiter is behind Mars. It is the biggest planet. It has a big red spot: it is a giant storm! Saturn is famous for its rings of ice and rock.",
+  "Uranus and Neptune are far from the Sun. They are very cold and blue. On Neptune the wind is very, very strong. Which planet is your favorite?"
+ ],
+ "q": [
+  [
+   "What is the Sun?",
+   [
+    "A planet",
+    "A star",
+    "A moon"
+   ],
+   1
+  ],
+  [
+   "How many planets are there in the Solar System?",
+   [
+    "Eight",
+    "Nine",
+    "Ten"
+   ],
+   0
+  ],
+  [
+   "Which is the hottest planet?",
+   [
+    "Mercury",
+    "Venus",
+    "Mars"
+   ],
+   1
+  ],
+  [
+   "Why is Mars red?",
+   [
+    "It has a lot of red dust",
+    "It is very hot",
+    "It has red water"
+   ],
+   0
+  ],
+  [
+   "What is the big red spot on Jupiter?",
+   [
+    "A giant storm",
+    "A volcano",
+    "A lake"
+   ],
+   0
+  ],
+  [
+   "What are the rings of Saturn made of?",
+   [
+    "Ice and rock",
+    "Gold",
+    "Water"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "sun",
+   "☀️"
+  ],
+  [
+   "planet",
+   "🪐"
+  ],
+  [
+   "star",
+   "⭐"
+  ],
+  [
+   "moon",
+   "🌙"
+  ],
+  [
+   "storm",
+   "🌪️"
+  ],
+  [
+   "wind",
+   "💨"
+  ]
+ ],
+ "halves": [
+  [
+   "Around the Sun...",
+   "...there are eight planets."
+  ],
+  [
+   "Venus is...",
+   "...the hottest planet."
+  ],
+  [
+   "Mars is red because...",
+   "...it has red dust."
+  ],
+  [
+   "Jupiter is...",
+   "...the biggest planet."
+  ],
+  [
+   "Uranus and Neptune are...",
+   "...very cold and blue."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: prepositions of place",
+  "rule": "Prepositions of place say <b>where</b> something is.",
+  "rows": [
+   "near",
+   "far from",
+   "next to",
+   "between",
+   "behind",
+   "around"
+  ],
+  "items": [
+   [
+    "Mercury is ___ the Sun.",
+    [
+     "near",
+     "between",
+     "far"
+    ],
+    0
+   ],
+   [
+    "Venus is ___ Mercury and the Earth.",
+    [
+     "next",
+     "between",
+     "around"
+    ],
+    1
+   ],
+   [
+    "Mars is ___ the Earth.",
+    [
+     "next to",
+     "between",
+     "far"
+    ],
+    0
+   ],
+   [
+    "Neptune is far ___ the Sun.",
+    [
+     "to",
+     "of",
+     "from"
+    ],
+    2
+   ],
+   [
+    "The planets go ___ the Sun.",
+    [
+     "around",
+     "between",
+     "next"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los planetas",
+   "sub": "Un paseo por el sistema solar",
+   "grammar": "Gramática: las preposiciones de lugar dicen dónde está algo.",
+   "rows": [
+    "cerca de",
+    "lejos de",
+    "al lado de",
+    "entre",
+    "detrás de",
+    "alrededor de"
+   ],
+   "hints": [
+    "cerca del",
+    "entre",
+    "al lado de",
+    "lejos del",
+    "alrededor del"
+   ],
+   "vocab": [
+    "sol",
+    "planeta",
+    "estrella",
+    "luna",
+    "tormenta",
+    "viento"
+   ]
+  }
+ }
+}

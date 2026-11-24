@@ -1,0 +1,207 @@
+{
+ "id": "en-records-a2",
+ "topic": "records",
+ "level": "A2",
+ "title": "Animal records",
+ "short": "Animal records",
+ "text": [
+  "Humans are not the only record holders. The animal world is full of champions, and some of their records are amazing.",
+  "The blue whale is the largest animal that has ever lived. It is bigger than any dinosaur. Its heart is as big as a small car, and its baby drinks hundreds of liters of milk every day.",
+  "The cheetah is the fastest land animal. It can run at more than one hundred kilometers per hour, but only for a few seconds. The peregrine falcon is even faster: when it dives from the sky, it reaches more than three hundred kilometers per hour.",
+  "The oldest land animal alive is Jonathan, a giant tortoise. He lives on the island of Saint Helena and he was born in about 1832. He is older than cars, planes and telephones!",
+  "Some records are strange. The smallest frog in the world is smaller than a pea. And the loudest animal is the sperm whale: its clicks are louder than a rocket."
+ ],
+ "q": [
+  [
+   "What is the largest animal that has ever lived?",
+   [
+    "The blue whale",
+    "A dinosaur",
+    "The elephant"
+   ],
+   0
+  ],
+  [
+   "How big is the heart of the blue whale?",
+   [
+    "As big as a small car",
+    "As big as a ball",
+    "As big as a house"
+   ],
+   0
+  ],
+  [
+   "Which is the fastest land animal?",
+   [
+    "The cheetah",
+    "The falcon",
+    "The horse"
+   ],
+   0
+  ],
+  [
+   "When does the falcon reach more than three hundred kilometers per hour?",
+   [
+    "When it dives from the sky",
+    "When it eats",
+    "At night"
+   ],
+   0
+  ],
+  [
+   "Who is Jonathan?",
+   [
+    "A giant tortoise",
+    "A whale",
+    "A scientist"
+   ],
+   0
+  ],
+  [
+   "Which is the loudest animal?",
+   [
+    "The sperm whale",
+    "The frog",
+    "The cheetah"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "whale",
+   "🐋"
+  ],
+  [
+   "cheetah",
+   "🐆"
+  ],
+  [
+   "falcon",
+   "🦅"
+  ],
+  [
+   "tortoise",
+   "🐢"
+  ],
+  [
+   "sky",
+   "☁️"
+  ],
+  [
+   "milk",
+   "🥛"
+  ]
+ ],
+ "halves": [
+  [
+   "The blue whale is...",
+   "...the largest animal ever."
+  ],
+  [
+   "The cheetah runs fast...",
+   "...but only for a few seconds."
+  ],
+  [
+   "The falcon dives...",
+   "...from the sky."
+  ],
+  [
+   "Jonathan was born...",
+   "...in about 1832."
+  ],
+  [
+   "The smallest frog...",
+   "...is smaller than a pea."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: superlatives",
+  "rule": "To say that something is number one, use <b>the + adjective + -est</b>. With long adjectives use <b>the most + adjective</b>.",
+  "rows": [
+   "fast → the fastest",
+   "large → the largest",
+   "loud → the loudest",
+   "amazing → the most amazing",
+   "good → the best",
+   "bad → the worst"
+  ],
+  "items": [
+   [
+    "The cheetah is the ___ land animal.",
+    [
+     "faster",
+     "fastest",
+     "most fast"
+    ],
+    1
+   ],
+   [
+    "The blue whale is the ___ animal.",
+    [
+     "largest",
+     "larger",
+     "most large"
+    ],
+    0
+   ],
+   [
+    "Jonathan is the ___ land animal alive.",
+    [
+     "older",
+     "oldest",
+     "most old"
+    ],
+    1
+   ],
+   [
+    "This is the ___ record of all.",
+    [
+     "most amazing",
+     "amazingest",
+     "more amazing"
+    ],
+    0
+   ],
+   [
+    "The sperm whale is the ___ animal.",
+    [
+     "loudest",
+     "louder",
+     "most loud"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Récords de animales",
+   "sub": "Los campeones del reino animal",
+   "grammar": "Gramática: los superlativos, para decir que algo es el número uno: the + adjetivo + -est. Con adjetivos largos: the most + adjetivo.",
+   "rows": [
+    "rápido → el más rápido",
+    "grande → el más grande",
+    "ruidoso → el más ruidoso",
+    "increíble → el más increíble",
+    "bueno → el mejor",
+    "malo → el peor"
+   ],
+   "hints": [
+    "más rápido",
+    "más grande",
+    "más viejo",
+    "más increíble",
+    "más ruidoso"
+   ],
+   "vocab": [
+    "ballena",
+    "guepardo",
+    "halcón",
+    "tortuga",
+    "cielo",
+    "leche"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "dinosaurios-a1",
+ "topic": "dinosaurios",
+ "level": "A1",
+ "title": "Los dinosaurios más grandes",
+ "short": "Los más grandes",
+ "text": [
+  "Los dinosaurios vivieron en la Tierra durante muchos millones de años. Había dinosaurios pequeños, como una gallina, y dinosaurios enormes, más grandes que una casa. ¿Cuáles eran los más grandes?",
+  "El argentinosaurio era gigante. Medía unos treinta y cinco metros: ¡como tres autobuses! Pesaba más que diez elefantes. Tenía el cuello y la cola muy largos. Comía plantas. Vivía en Argentina, en América del Sur.",
+  "El [tiranosaurio rex] es el dinosaurio más famoso. Medía unos doce metros y pesaba unas ocho toneladas. Tenía unos sesenta dientes muy grandes, ¡como plátanos! Sus brazos eran muy cortos, pero sus piernas eran muy fuertes. Comía carne.",
+  "El espinosaurio era más largo que el [tiranosaurio rex]: medía unos quince metros. Tenía una vela grande en la espalda. Vivía cerca de los ríos de África y comía peces.",
+  "Hoy no hay dinosaurios vivos. Pero en los museos puedes ver sus huesos. ¡Son enormes!"
+ ],
+ "q": [
+  [
+   "¿Cuánto medía el argentinosaurio?",
+   [
+    "Unos cinco metros",
+    "Unos treinta y cinco metros",
+    "Unos cien metros"
+   ],
+   1
+  ],
+  [
+   "¿Qué comía el argentinosaurio?",
+   [
+    "Plantas",
+    "Carne",
+    "Peces"
+   ],
+   0
+  ],
+  [
+   "¿Cómo eran los brazos del [tiranosaurio rex]?",
+   [
+    "Muy largos",
+    "Muy fuertes",
+    "Muy cortos"
+   ],
+   2
+  ],
+  [
+   "¿Cuántos dientes tenía el [tiranosaurio rex]?",
+   [
+    "Unos seis",
+    "Unos sesenta",
+    "Unos seiscientos"
+   ],
+   1
+  ],
+  [
+   "¿Qué tenía el espinosaurio en la espalda?",
+   [
+    "Una vela",
+    "Alas",
+    "Un cuerno"
+   ],
+   0
+  ],
+  [
+   "¿Dónde puedes ver huesos de dinosaurio hoy?",
+   [
+    "En el parque",
+    "En los museos",
+    "En el mar"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "dinosaurio",
+   "🦖"
+  ],
+  [
+   "hueso",
+   "🦴"
+  ],
+  [
+   "autobús",
+   "🚌"
+  ],
+  [
+   "gallina",
+   "🐔"
+  ],
+  [
+   "museo",
+   "🏛️"
+  ],
+  [
+   "cuello",
+   "🦒"
+  ]
+ ],
+ "halves": [
+  [
+   "El argentinosaurio medía...",
+   "...como tres autobuses."
+  ],
+  [
+   "Pesaba más...",
+   "...que diez elefantes."
+  ],
+  [
+   "Los dientes del T. rex eran...",
+   "...como plátanos."
+  ],
+  [
+   "El espinosaurio comía...",
+   "...peces."
+  ],
+  [
+   "En los museos puedes ver...",
+   "...sus huesos."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: los números",
+  "rule": "Los números grandes: <b>diez, veinte, treinta, cien, mil</b>. Del 31 en adelante, se usa <b>y</b>: treinta <b>y</b> cinco.",
+  "rows": [
+   "10 diez",
+   "12 doce",
+   "15 quince",
+   "35 treinta y cinco",
+   "60 sesenta",
+   "100 cien · 1000 mil"
+  ],
+  "items": [
+   [
+    "El T. rex medía ___ metros (12).",
+    [
+     "doce",
+     "dos",
+     "veinte"
+    ],
+    0
+   ],
+   [
+    "El argentinosaurio medía treinta ___ cinco metros.",
+    [
+     "con",
+     "y",
+     "de"
+    ],
+    1
+   ],
+   [
+    "El espinosaurio medía ___ metros (15).",
+    [
+     "cincuenta",
+     "cinco",
+     "quince"
+    ],
+    2
+   ],
+   [
+    "El T. rex tenía unos ___ dientes (60).",
+    [
+     "sesenta",
+     "setenta",
+     "seis"
+    ],
+    0
+   ],
+   [
+    "Pesaba más que ___ elefantes (10).",
+    [
+     "dos",
+     "diez",
+     "doce"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The biggest dinosaurs",
+   "sub": "Argentinosaurus, T. rex and Spinosaurus",
+   "grammar": "Grammar: numbers. From 31 on, tens and units are joined with y: treinta y cinco = 35.",
+   "rows": [
+    "10 ten",
+    "12 twelve",
+    "15 fifteen",
+    "35 thirty-five",
+    "60 sixty",
+    "100 a hundred · 1000 a thousand"
+   ],
+   "hints": [
+    "twelve",
+    "and",
+    "fifteen",
+    "sixty",
+    "ten"
+   ],
+   "vocab": [
+    "dinosaur",
+    "bone",
+    "bus",
+    "hen",
+    "museum",
+    "neck"
+   ]
+  }
+ }
+}

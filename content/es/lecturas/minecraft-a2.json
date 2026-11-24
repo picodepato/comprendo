@@ -1,0 +1,207 @@
+{
+ "id": "minecraft-a2",
+ "topic": "minecraft",
+ "level": "A2",
+ "title": "La historia de Minecraft",
+ "short": "Su historia",
+ "text": [
+  "Minecraft nació en Suecia. Su creador, [Markus Persson], es un programador sueco. En internet, todos lo conocen como «Notch». En mayo de 2009, Notch publicó la primera versión del juego. La hizo él solo, en unos pocos días.",
+  "Al principio, el juego era muy simple: solo había bloques para construir. Pero muchos jugadores lo descubrieron y empezaron a compartir vídeos en YouTube. [Poco a poco], Minecraft se hizo famoso en todo el mundo.",
+  "Notch creó una empresa, Mojang, con otros desarrolladores. El 18 de noviembre de 2011 salió la versión oficial, la 1.0, en una gran fiesta para fans en [Las Vegas].",
+  "En 2014, la empresa Microsoft compró Mojang por dos mil quinientos millones de dólares. Notch dejó el proyecto, pero el equipo continuó con muchas actualizaciones: llegaron nuevos océanos, cuevas enormes, abejas, ajolotes y mucho más.",
+  "Hoy, Minecraft es el videojuego más vendido de la historia: vendió más de trescientos millones de copias. Muchos profesores lo usan en el colegio para enseñar. Y en 2025 llegó a los cines con su propia película."
+ ],
+ "q": [
+  [
+   "¿De qué país es Minecraft?",
+   [
+    "De [Estados Unidos]",
+    "De Suecia",
+    "De España"
+   ],
+   1
+  ],
+  [
+   "¿Quién es Notch?",
+   [
+    "El creador de Minecraft",
+    "Un monstruo del juego",
+    "Una empresa"
+   ],
+   0
+  ],
+  [
+   "¿Cuándo publicó Notch la primera versión?",
+   [
+    "En 2009",
+    "En 2011",
+    "En 2014"
+   ],
+   0
+  ],
+  [
+   "¿Cómo se hizo famoso el juego?",
+   [
+    "Con anuncios en la tele",
+    "Con vídeos en YouTube",
+    "Con una película"
+   ],
+   1
+  ],
+  [
+   "¿Qué empresa compró Mojang?",
+   [
+    "Sony",
+    "Nintendo",
+    "Microsoft"
+   ],
+   2
+  ],
+  [
+   "¿Cuántas copias vendió Minecraft?",
+   [
+    "Más de tres millones",
+    "Más de treinta millones",
+    "Más de trescientos millones"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "ordenador",
+   "💻"
+  ],
+  [
+   "vídeo",
+   "📹"
+  ],
+  [
+   "cine",
+   "🎬"
+  ],
+  [
+   "fiesta",
+   "🎉"
+  ],
+  [
+   "abeja",
+   "🐝"
+  ],
+  [
+   "bloque",
+   "🧱"
+  ]
+ ],
+ "halves": [
+  [
+   "Notch hizo la primera versión...",
+   "...en unos pocos días."
+  ],
+  [
+   "Los jugadores compartieron...",
+   "...vídeos en YouTube."
+  ],
+  [
+   "La versión 1.0 salió...",
+   "...en 2011."
+  ],
+  [
+   "Microsoft compró Mojang...",
+   "...en 2014."
+  ],
+  [
+   "En 2025, Minecraft llegó...",
+   "...a los cines."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el pretérito indefinido",
+  "rule": "Usamos el <b>pretérito indefinido</b> para acciones terminadas en el pasado: <b>en 2009</b>, <b>ayer</b>, <b>el año pasado</b>.",
+  "rows": [
+   "publicar → publicó",
+   "vender → vendió",
+   "salir → salió",
+   "comprar → compraron",
+   "hacer → hizo",
+   "ser / ir → fue"
+  ],
+  "items": [
+   [
+    "En 2009, Notch ___ la primera versión.",
+    [
+     "publica",
+     "publicó",
+     "publicaron"
+    ],
+    1
+   ],
+   [
+    "Microsoft ___ Mojang en 2014.",
+    [
+     "compró",
+     "compraron",
+     "compro"
+    ],
+    0
+   ],
+   [
+    "En 2010, los jugadores ___ vídeos.",
+    [
+     "compartió",
+     "compartieron",
+     "compartimos"
+    ],
+    1
+   ],
+   [
+    "La versión 1.0 ___ en 2011.",
+    [
+     "salió",
+     "salieron",
+     "salí"
+    ],
+    0
+   ],
+   [
+    "Notch ___ el juego en pocos días.",
+    [
+     "hizo",
+     "hacé",
+     "hicieron"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The history of Minecraft",
+   "sub": "From one programmer to the best-selling game ever",
+   "grammar": "Grammar: the preterite (simple past). For finished actions in the past.",
+   "rows": [
+    "to publish → published",
+    "to sell → sold",
+    "to come out → came out",
+    "to buy → they bought",
+    "to make → made",
+    "to be / to go → was / went"
+   ],
+   "hints": [
+    "published",
+    "bought",
+    "shared",
+    "came out",
+    "made"
+   ],
+   "vocab": [
+    "computer",
+    "video",
+    "cinema",
+    "party",
+    "bee",
+    "block"
+   ]
+  }
+ }
+}

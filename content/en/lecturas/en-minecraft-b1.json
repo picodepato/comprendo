@@ -1,0 +1,207 @@
+{
+ "id": "en-minecraft-b1",
+ "topic": "minecraft",
+ "level": "B1",
+ "title": "Record-breaking builds",
+ "short": "Record-breaking builds",
+ "text": [
+  "Some players do not use Minecraft only to survive. For them, it is a giant digital construction kit. Over the years, amazing projects have been built by players from all over the world.",
+  "One of the most famous is a copy of the world of Westeros, from a famous fantasy series. It was built by a group of hundreds of players called WesterosCraft. Every castle, city and road was planned carefully, and the project took many years.",
+  "In Denmark, the government decided to do something unusual. In 2014 the whole country was recreated in Minecraft at a real scale, using official maps. Every building, road and field was placed in the right position.",
+  "Other builders prefer to use redstone, a material that works like electricity in the game. With redstone, working computers and even simple video games have been created inside Minecraft. These machines are made of millions of blocks.",
+  "Projects like these show that a game can also be a place to learn. Players learn architecture, planning and teamwork. And sometimes, a simple block is the beginning of something enormous."
+ ],
+ "q": [
+  [
+   "What is Minecraft for some players?",
+   [
+    "A giant digital construction kit",
+    "Only a horror game",
+    "A sports game"
+   ],
+   0
+  ],
+  [
+   "Who built the copy of Westeros?",
+   [
+    "One teacher",
+    "A group of hundreds of players",
+    "A film company"
+   ],
+   1
+  ],
+  [
+   "What did Denmark do in 2014?",
+   [
+    "It banned Minecraft",
+    "It recreated the whole country in Minecraft",
+    "It built a new city"
+   ],
+   1
+  ],
+  [
+   "What were the Danish maps based on?",
+   [
+    "Official maps",
+    "Old drawings",
+    "A film"
+   ],
+   0
+  ],
+  [
+   "What is redstone like?",
+   [
+    "Water",
+    "Electricity",
+    "Wood"
+   ],
+   1
+  ],
+  [
+   "What do players learn with these projects?",
+   [
+    "Architecture, planning and teamwork",
+    "Only how to fight",
+    "Nothing"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "castle",
+   "🏰"
+  ],
+  [
+   "city",
+   "🏙️"
+  ],
+  [
+   "road",
+   "🛣️"
+  ],
+  [
+   "map",
+   "🗺️"
+  ],
+  [
+   "computer",
+   "💻"
+  ],
+  [
+   "country",
+   "🌍"
+  ]
+ ],
+ "halves": [
+  [
+   "WesterosCraft is a group...",
+   "...of hundreds of players."
+  ],
+  [
+   "Every castle and road...",
+   "...was planned carefully."
+  ],
+  [
+   "In Denmark the whole country...",
+   "...was recreated in Minecraft."
+  ],
+  [
+   "Redstone works...",
+   "...like electricity."
+  ],
+  [
+   "Players learn architecture...",
+   "...and teamwork."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the passive voice",
+  "rule": "Use the <b>passive</b> when the action is more important than who does it: <b>was / were + past participle</b> (+ by).",
+  "rows": [
+   "They built it. → It was built.",
+   "Players made them. → They were made by players.",
+   "is / are + participle",
+   "was / were + participle",
+   "plan → planned",
+   "build → built"
+  ],
+  "items": [
+   [
+    "The castle ___ built by hundreds of players.",
+    [
+     "were",
+     "was",
+     "is being"
+    ],
+    1
+   ],
+   [
+    "The roads were ___ carefully.",
+    [
+     "plan",
+     "planning",
+     "planned"
+    ],
+    2
+   ],
+   [
+    "Denmark ___ recreated in Minecraft in 2014.",
+    [
+     "was",
+     "were",
+     "is"
+    ],
+    0
+   ],
+   [
+    "Computers ___ created with redstone.",
+    [
+     "was",
+     "have",
+     "were"
+    ],
+    2
+   ],
+   [
+    "These machines are ___ of millions of blocks.",
+    [
+     "make",
+     "made",
+     "making"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Construcciones récord",
+   "sub": "Los proyectos más increíbles de Minecraft",
+   "grammar": "Gramática: la voz pasiva, cuando importa más la acción que quién la hace: was / were + participio (+ by = por).",
+   "rows": [
+    "Lo construyeron. → Fue construido.",
+    "Fueron hechos por jugadores.",
+    "presente: es / son + participio",
+    "pasado: fue / fueron + participio",
+    "planear → planeado",
+    "construir → construido"
+   ],
+   "hints": [
+    "fue",
+    "planeadas",
+    "fue",
+    "fueron",
+    "hechas"
+   ],
+   "vocab": [
+    "castillo",
+    "ciudad",
+    "carretera",
+    "mapa",
+    "ordenador",
+    "país"
+   ]
+  }
+ }
+}

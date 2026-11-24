@@ -1,0 +1,208 @@
+{
+ "id": "misterios-b1",
+ "topic": "misterios",
+ "level": "B1",
+ "title": "La Atlántida",
+ "short": "La Atlántida",
+ "text": [
+  "Hace unos dos mil cuatrocientos años, el filósofo griego Platón escribió sobre una isla increíble llamada Atlántida. Según él, estaba más allá de las [Columnas de Hércules], es decir, del [estrecho de Gibraltar], y era más grande que muchos países juntos. Sus habitantes eran ricos y poderosos, tenían templos de oro y plata, puertos llenos de barcos y canales en forma de anillo alrededor de su capital.",
+  "Pero, según Platón, los atlantes se volvieron arrogantes y quisieron conquistar el mundo. Como castigo, en un solo día y una sola noche, terremotos e inundaciones terribles hundieron la isla en el mar, y la Atlántida desapareció para siempre.",
+  "Desde entonces, muchas personas han intentado encontrarla. Algunos investigadores piensan que quizá la historia esté inspirada en la isla griega de Santorini. Hace unos tres mil seiscientos años, allí hubo una de las erupciones volcánicas más grandes de la historia, que destruyó gran parte de la isla y afectó a la civilización minoica, muy avanzada para su época.",
+  "Otros buscan la Atlántida en lugares muy diferentes: en el sur de España, cerca de Doñana; en el [mar del Norte]; en las islas Azores; ¡e incluso en la Antártida! Cada cierto tiempo, una noticia anuncia que alguien la ha encontrado, pero hasta ahora nadie ha presentado pruebas sólidas.",
+  "La mayoría de los historiadores cree que Platón se inventó la Atlántida para enseñar una lección moral: que el orgullo y la ambición pueden destruir incluso a la sociedad más poderosa. Es posible que nunca encontremos la isla, porque tal vez nunca existió.",
+  "Aun así, la leyenda sigue viva en libros, películas y videojuegos. Puede que lo que nos atrae de la Atlántida no sea encontrarla, sino imaginarla."
+ ],
+ "q": [
+  [
+   "¿Quién escribió sobre la Atlántida?",
+   [
+    "Platón",
+    "Hércules",
+    "Un explorador español"
+   ],
+   0
+  ],
+  [
+   "Según Platón, ¿dónde estaba la Atlántida?",
+   [
+    "En el centro de Grecia",
+    "Más allá del [estrecho de Gibraltar]",
+    "En la Antártida"
+   ],
+   1
+  ],
+  [
+   "¿Por qué se hundió la isla, según Platón?",
+   [
+    "Por un asteroide",
+    "Por una guerra con Egipto",
+    "Como castigo por su arrogancia"
+   ],
+   2
+  ],
+  [
+   "¿Qué pasó en Santorini hace unos tres mil seiscientos años?",
+   [
+    "Una gran erupción volcánica",
+    "Una guerra",
+    "Se construyó un templo de oro"
+   ],
+   0
+  ],
+  [
+   "¿Alguien ha presentado pruebas sólidas de la Atlántida?",
+   [
+    "Sí, en 2010",
+    "No, hasta ahora nadie",
+    "Sí, en Doñana"
+   ],
+   1
+  ],
+  [
+   "¿Qué cree la mayoría de los historiadores?",
+   [
+    "Que está en el [mar del Norte]",
+    "Que está en las Azores",
+    "Que Platón se la inventó"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "isla",
+   "🏝️"
+  ],
+  [
+   "templo",
+   "🏛️"
+  ],
+  [
+   "oro",
+   "🥇"
+  ],
+  [
+   "puerto",
+   "⚓"
+  ],
+  [
+   "terremoto",
+   "🫨"
+  ],
+  [
+   "pergamino",
+   "📜"
+  ]
+ ],
+ "halves": [
+  [
+   "Los atlantes eran...",
+   "...ricos y poderosos."
+  ],
+  [
+   "La isla se hundió...",
+   "...en un solo día y una sola noche."
+  ],
+  [
+   "En Santorini hubo...",
+   "...una erupción enorme."
+  ],
+  [
+   "Nadie ha presentado...",
+   "...pruebas sólidas."
+  ],
+  [
+   "Quizá lo que nos atrae...",
+   "...es imaginarla."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: expresar duda",
+  "rule": "<b>Quizá, tal vez</b> + subjuntivo (o indicativo). <b>Es posible que, puede que</b> + siempre subjuntivo: <b>sea, exista, encontremos</b>.",
+  "rows": [
+   "quizá esté inspirada en...",
+   "tal vez nunca existió",
+   "es posible que nunca la encontremos",
+   "puede que no sea real",
+   "ser → sea",
+   "existir → exista, encontrar → encontremos"
+  ],
+  "items": [
+   [
+    "Es posible que la Atlántida no ___.",
+    [
+     "existe",
+     "exista",
+     "existió"
+    ],
+    1
+   ],
+   [
+    "Puede que la historia ___ inventada.",
+    [
+     "sea",
+     "es",
+     "fue"
+    ],
+    0
+   ],
+   [
+    "Es posible que nunca la ___.",
+    [
+     "encontramos",
+     "encontraremos",
+     "encontremos"
+    ],
+    2
+   ],
+   [
+    "Quizá Platón ___ en Santorini.",
+    [
+     "pensara",
+     "pensar",
+     "pensando"
+    ],
+    0
+   ],
+   [
+    "Puede que algún día alguien ___ pruebas.",
+    [
+     "encuentra",
+     "encuentre",
+     "encontró"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Atlantis",
+   "sub": "Plato's lost island",
+   "grammar": "Grammar: expressing doubt. quizá / tal vez (+ subjunctive or indicative), es posible que / puede que (+ subjunctive).",
+   "rows": [
+    "perhaps it is inspired by...",
+    "maybe it never existed",
+    "we may never find it",
+    "it may not be real",
+    "to be → (that) it is",
+    "to exist, to find (subjunctive)"
+   ],
+   "hints": [
+    "exist (subj.)",
+    "is (subj.)",
+    "find (subj.)",
+    "thought (subj.)",
+    "finds (subj.)"
+   ],
+   "vocab": [
+    "island",
+    "temple",
+    "gold",
+    "port",
+    "earthquake",
+    "scroll"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "juegos-a2",
+ "topic": "juegos",
+ "level": "A2",
+ "title": "Fortnite y Roblox",
+ "short": "Fortnite y Roblox",
+ "text": [
+  "Fortnite y Roblox son dos de los juegos más populares del mundo. Millones de niños y jóvenes juegan cada día. Los dos son gratis, pero son muy diferentes.",
+  "Fortnite salió en 2017 y lo creó la empresa Epic Games. Su modo más famoso es el [Battle Royale]: cien jugadores saltan desde un autobús volador a una isla. Allí buscan armas y materiales para construir. Una tormenta hace la isla [cada vez más] pequeña, y gana el último jugador que queda vivo.",
+  "Roblox es más antiguo: nació en 2006. No es un solo juego: es una plataforma con millones de juegos. Los crean los propios usuarios con una herramienta gratuita, [Roblox Studio]. [Por ejemplo], BEAR (Alpha) es un juego de Roblox.",
+  "Si los juegos son gratis, ¿cómo ganan dinero? Venden cosas dentro del juego. En Fortnite, los jugadores compran pavos para tener skins, [es decir], ropa y bailes nuevos para su personaje. En Roblox, la moneda [se llama] Robux. Algunos creadores de Roblox ganan mucho dinero real con sus juegos.",
+  "¿Por qué les gustan tanto a los jugadores? A muchos les gusta jugar con sus amigos. En Fortnite también hay conciertos: en 2020, más de doce millones de personas vieron al rapero [Travis Scott] dentro del juego [al mismo tiempo]. Y a los que les gusta crear, Roblox les permite inventar sus propios mundos."
+ ],
+ "q": [
+  [
+   "¿Cuándo salió Fortnite?",
+   [
+    "En 2006",
+    "En 2017",
+    "En 2020"
+   ],
+   1
+  ],
+  [
+   "¿Cuántos jugadores hay en una partida de [Battle Royale]?",
+   [
+    "Cien",
+    "Doce",
+    "Mil"
+   ],
+   0
+  ],
+  [
+   "¿Qué hace la tormenta?",
+   [
+    "Hace la isla más pequeña",
+    "Destruye el autobús",
+    "Da armas a los jugadores"
+   ],
+   0
+  ],
+  [
+   "¿Quién crea los juegos de Roblox?",
+   [
+    "[Epic Games]",
+    "Los usuarios",
+    "[Travis Scott]"
+   ],
+   1
+  ],
+  [
+   "¿Cómo [se llama] la moneda de Roblox?",
+   [
+    "Pavos",
+    "Robux",
+    "Skins"
+   ],
+   1
+  ],
+  [
+   "¿Qué pasó en Fortnite en 2020?",
+   [
+    "Un concierto de [Travis Scott]",
+    "Una tormenta real",
+    "Nació Roblox"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "isla",
+   "🏝️"
+  ],
+  [
+   "autobús",
+   "🚌"
+  ],
+  [
+   "tormenta",
+   "⛈️"
+  ],
+  [
+   "moneda",
+   "🪙"
+  ],
+  [
+   "baile",
+   "💃"
+  ],
+  [
+   "dinero",
+   "💰"
+  ]
+ ],
+ "halves": [
+  [
+   "Fortnite y Roblox son...",
+   "...gratis."
+  ],
+  [
+   "Los jugadores saltan desde...",
+   "...un autobús volador."
+  ],
+  [
+   "Gana el último jugador...",
+   "...que queda vivo."
+  ],
+  [
+   "Roblox es una plataforma...",
+   "...con millones de juegos."
+  ],
+  [
+   "A muchos jugadores les gusta...",
+   "...jugar con sus amigos."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el verbo gustar",
+  "rule": "Con <b>gustar</b>, lo que gusta es el sujeto: <b>gusta</b> + una cosa o un infinitivo; <b>gustan</b> + varias cosas.",
+  "rows": [
+   "me gusta jugar",
+   "te gusta Roblox",
+   "le gusta construir",
+   "nos gustan los conciertos",
+   "les gustan los bailes",
+   "a mí / a ti / a él / a nosotros / a ellos"
+  ],
+  "items": [
+   [
+    "A mí me ___ Fortnite.",
+    [
+     "gusta",
+     "gustan",
+     "gusto"
+    ],
+    0
+   ],
+   [
+    "A los jugadores les ___ las skins.",
+    [
+     "gusta",
+     "gustan",
+     "gustamos"
+    ],
+    1
+   ],
+   [
+    "¿A ti ___ gusta construir?",
+    [
+     "me",
+     "te",
+     "le"
+    ],
+    1
+   ],
+   [
+    "A mi hermano ___ gusta Roblox.",
+    [
+     "le",
+     "les",
+     "me"
+    ],
+    0
+   ],
+   [
+    "A nosotros ___ gustan los conciertos.",
+    [
+     "os",
+     "les",
+     "nos"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Fortnite and Roblox",
+   "sub": "Two free games played by millions",
+   "grammar": "Grammar: the verb gustar (to like). The thing you like is the subject: gusta + one thing, gustan + several things.",
+   "rows": [
+    "I like playing",
+    "you like Roblox",
+    "he / she likes building",
+    "we like the concerts",
+    "they like the dances",
+    "to me / to you / to him / to us / to them"
+   ],
+   "hints": [
+    "like (one thing)",
+    "like (several things)",
+    "you",
+    "him / her",
+    "us"
+   ],
+   "vocab": [
+    "island",
+    "bus",
+    "storm",
+    "coin / currency",
+    "dance",
+    "money"
+   ]
+  }
+ }
+}

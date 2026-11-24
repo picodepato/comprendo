@@ -1,0 +1,207 @@
+{
+ "id": "en-espacio-b1",
+ "topic": "espacio",
+ "level": "B1",
+ "title": "Black holes",
+ "short": "Black holes",
+ "text": [
+  "A black hole is a place in space where gravity is so strong that nothing can escape from it, not even light. That is why we cannot see black holes directly: they are completely dark.",
+  "Most black holes form when a giant star dies. If a star were big enough, it would collapse at the end of its life and squeeze all its mass into a tiny space. In the center of our galaxy there is a supermassive black hole, four million times heavier than the Sun.",
+  "What would happen if you fell into a black hole? Scientists have a funny name for it: spaghettification. The gravity on your feet would be much stronger than on your head, so your body would be stretched like spaghetti.",
+  "Time also behaves strangely near a black hole. If you stayed close to one for an hour, many years would pass on Earth. When you came back, your friends would be much older than you.",
+  "In 2019 scientists published the first image of a black hole. It looked like a dark circle surrounded by a ring of fire. If we had better telescopes, we would probably discover many more secrets about these mysterious objects."
+ ],
+ "q": [
+  [
+   "Why can we not see black holes directly?",
+   [
+    "Nothing, not even light, can escape",
+    "They are very small",
+    "They are behind the Sun"
+   ],
+   0
+  ],
+  [
+   "How do most black holes form?",
+   [
+    "When a giant star dies",
+    "When two planets crash",
+    "When a comet falls"
+   ],
+   0
+  ],
+  [
+   "What is in the center of our galaxy?",
+   [
+    "A supermassive black hole",
+    "A giant planet",
+    "Nothing"
+   ],
+   0
+  ],
+  [
+   "What is spaghettification?",
+   [
+    "When your body is stretched by gravity",
+    "A type of food for astronauts",
+    "A new planet"
+   ],
+   0
+  ],
+  [
+   "What would happen if you stayed near a black hole for an hour?",
+   [
+    "Many years would pass on Earth",
+    "You would get younger",
+    "Nothing"
+   ],
+   0
+  ],
+  [
+   "When was the first image of a black hole published?",
+   [
+    "In 2019",
+    "In 1969",
+    "In 2000"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "gravity",
+   "🧲"
+  ],
+  [
+   "galaxy",
+   "🌌"
+  ],
+  [
+   "telescope",
+   "🔭"
+  ],
+  [
+   "circle",
+   "⭕"
+  ],
+  [
+   "fire",
+   "🔥"
+  ],
+  [
+   "hole",
+   "🕳️"
+  ]
+ ],
+ "halves": [
+  [
+   "Nothing can escape...",
+   "...not even light."
+  ],
+  [
+   "Most black holes form...",
+   "...when a giant star dies."
+  ],
+  [
+   "Your body would be stretched...",
+   "...like spaghetti."
+  ],
+  [
+   "Near a black hole...",
+   "...time behaves strangely."
+  ],
+  [
+   "The first image looked like...",
+   "...a dark circle with a ring of fire."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the second conditional",
+  "rule": "Use the <b>second conditional</b> for imaginary situations: <b>If + past simple, would + verb</b>. With the verb to be, we often use <b>were</b> for all people.",
+  "rows": [
+   "If you fell, you would be stretched.",
+   "If you stayed, years would pass.",
+   "If I were an astronaut, I would go.",
+   "If we had telescopes, we would see more.",
+   "would + verb",
+   "If + past, would + verb"
+  ],
+  "items": [
+   [
+    "If you fell into a black hole, you ___ be stretched.",
+    [
+     "will",
+     "would",
+     "are"
+    ],
+    1
+   ],
+   [
+    "If you ___ near it for an hour, years would pass.",
+    [
+     "stay",
+     "stayed",
+     "will stay"
+    ],
+    1
+   ],
+   [
+    "If I ___ an astronaut, I would go to space.",
+    [
+     "am",
+     "were",
+     "will be"
+    ],
+    1
+   ],
+   [
+    "If we had better telescopes, we ___ discover more.",
+    [
+     "would",
+     "will",
+     "did"
+    ],
+    0
+   ],
+   [
+    "Your friends would be older if you ___ back.",
+    [
+     "come",
+     "came",
+     "would come"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los agujeros negros",
+   "sub": "Los objetos más extremos del universo",
+   "grammar": "Gramática: el segundo condicional, para situaciones imaginarias: If + pasado simple, would + verbo. Con to be se suele usar were para todas las personas.",
+   "rows": [
+    "Si cayeras, te estirarías.",
+    "Si te quedaras, pasarían años.",
+    "Si fuera astronauta, iría.",
+    "Si tuviéramos telescopios, veríamos más.",
+    "-ría (condicional)",
+    "Si + pasado, condicional"
+   ],
+   "hints": [
+    "serías",
+    "te quedaras",
+    "fuera",
+    "descubriríamos",
+    "volvieras"
+   ],
+   "vocab": [
+    "gravedad",
+    "galaxia",
+    "telescopio",
+    "círculo",
+    "fuego",
+    "agujero"
+   ]
+  }
+ }
+}

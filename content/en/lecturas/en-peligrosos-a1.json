@@ -1,0 +1,207 @@
+{
+ "id": "en-peligrosos-a1",
+ "topic": "peligrosos",
+ "level": "A1",
+ "title": "The most venomous animals",
+ "short": "The most venomous",
+ "text": [
+  "There are many dangerous animals in the world. Some are big and strong, like the lion. Others are small, but they have venom. A very strong venom can kill a person.",
+  "The box jellyfish is a jellyfish. It lives in the sea, near Australia. It is almost transparent, so it is difficult to see. It has very long tentacles with venom. It is the most venomous animal in the sea!",
+  "The taipan is a snake from Australia. It lives in the desert. Its venom is the strongest of all snakes. But the taipan is shy: it usually does not attack people.",
+  "The golden poison frog is very small and yellow. It lives in the jungle in Colombia. Its skin has poison. Its bright color says to other animals: Be careful! Do not eat me!",
+  "The blue-ringed octopus is small and pretty, but be careful! When it is afraid, its blue rings shine. It is a signal: Do not touch me."
+ ],
+ "q": [
+  [
+   "What is the box jellyfish?",
+   [
+    "A snake",
+    "A jellyfish",
+    "A frog"
+   ],
+   1
+  ],
+  [
+   "Why is it difficult to see the box jellyfish?",
+   [
+    "Because it is almost transparent",
+    "Because it is very small",
+    "Because it lives in the desert"
+   ],
+   0
+  ],
+  [
+   "Where does the taipan live?",
+   [
+    "In the jungle",
+    "In the sea",
+    "In the desert"
+   ],
+   2
+  ],
+  [
+   "How is the taipan with people?",
+   [
+    "It is shy",
+    "It is angry",
+    "It is friendly"
+   ],
+   0
+  ],
+  [
+   "What color is the golden poison frog?",
+   [
+    "Blue",
+    "Yellow",
+    "Green"
+   ],
+   1
+  ],
+  [
+   "What happens when the octopus is afraid?",
+   [
+    "Its rings shine",
+    "It runs very fast",
+    "It hides in the sand"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "snake",
+   "🐍"
+  ],
+  [
+   "frog",
+   "🐸"
+  ],
+  [
+   "octopus",
+   "🐙"
+  ],
+  [
+   "venom",
+   "☠️"
+  ],
+  [
+   "sea",
+   "🌊"
+  ],
+  [
+   "jungle",
+   "🌴"
+  ]
+ ],
+ "halves": [
+  [
+   "The box jellyfish has...",
+   "...very long tentacles."
+  ],
+  [
+   "The taipan lives...",
+   "...in the desert of Australia."
+  ],
+  [
+   "The frog is small...",
+   "...and yellow."
+  ],
+  [
+   "Its bright color says:",
+   "Do not eat me!"
+  ],
+  [
+   "When the octopus is afraid...",
+   "...its rings shine."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the verb to be",
+  "rule": "The verb <b>to be</b> has three forms in the present: <b>am</b>, <b>is</b> and <b>are</b>.",
+  "rows": [
+   "I am small",
+   "you are fast",
+   "he / she / it is dangerous",
+   "we are friends",
+   "they are snakes",
+   "it is not / it is"
+  ],
+  "items": [
+   [
+    "The frog ___ very small.",
+    [
+     "are",
+     "is",
+     "am"
+    ],
+    1
+   ],
+   [
+    "Snakes ___ dangerous.",
+    [
+     "is",
+     "am",
+     "are"
+    ],
+    2
+   ],
+   [
+    "I ___ afraid of the octopus.",
+    [
+     "am",
+     "is",
+     "are"
+    ],
+    0
+   ],
+   [
+    "The taipan ___ shy.",
+    [
+     "are",
+     "is",
+     "am"
+    ],
+    1
+   ],
+   [
+    "We ___ in the jungle.",
+    [
+     "is",
+     "am",
+     "are"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los animales más venenosos",
+   "sub": "Animales pequeños con un veneno muy fuerte",
+   "grammar": "Gramática: el verbo to be (ser / estar). En presente tiene tres formas: am, is y are.",
+   "rows": [
+    "yo soy pequeño",
+    "tú eres rápido",
+    "él / ella / ello es peligroso",
+    "somos amigos",
+    "son serpientes",
+    "no es / es"
+   ],
+   "hints": [
+    "es",
+    "son",
+    "tengo (estoy)",
+    "es",
+    "estamos"
+   ],
+   "vocab": [
+    "serpiente",
+    "rana",
+    "pulpo",
+    "veneno",
+    "mar",
+    "selva"
+   ]
+  }
+ }
+}

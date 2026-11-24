@@ -1,0 +1,207 @@
+{
+ "id": "increibles-a1",
+ "topic": "increibles",
+ "level": "A1",
+ "title": "El ajolote",
+ "short": "El ajolote",
+ "text": [
+  "El ajolote es un animal muy especial. Es un anfibio, como la rana, pero toda su vida vive en el agua. Es de México. Vive en los lagos de Xochimilco, cerca de la [Ciudad de México].",
+  "El ajolote tiene la cabeza grande, los ojos pequeños y una boca que parece una sonrisa. ¡Siempre parece contento! A los lados de la cabeza tiene branquias. Parecen plumas. Con las branquias, el ajolote respira dentro del agua.",
+  "Hay ajolotes de muchos colores: rosa, blanco, gris, negro y dorado. En la naturaleza, normalmente son oscuros. Los ajolotes rosas son muy famosos. ¡También están en Minecraft!",
+  "El ajolote tiene un superpoder: si pierde una pata, ¡tiene una pata nueva! También puede regenerar la cola y partes del corazón y del cerebro. [Por eso], los científicos estudian mucho al ajolote.",
+  "Pero el ajolote está en peligro. Los lagos de Xochimilco están sucios y hay pocos ajolotes libres. Hoy, muchas personas trabajan para salvarlo."
+ ],
+ "q": [
+  [
+   "¿De dónde es el ajolote?",
+   [
+    "De España",
+    "De México",
+    "De Australia"
+   ],
+   1
+  ],
+  [
+   "¿Dónde vive el ajolote?",
+   [
+    "En el agua",
+    "En los árboles",
+    "En el desierto"
+   ],
+   0
+  ],
+  [
+   "¿Qué parece su boca?",
+   [
+    "Una pluma",
+    "Una sonrisa",
+    "Una pata"
+   ],
+   1
+  ],
+  [
+   "¿Para qué usa las branquias?",
+   [
+    "Para comer",
+    "Para nadar",
+    "Para respirar dentro del agua"
+   ],
+   2
+  ],
+  [
+   "¿Cuál es el superpoder del ajolote?",
+   [
+    "Puede volar",
+    "Puede regenerar partes del cuerpo",
+    "Puede cambiar de color"
+   ],
+   1
+  ],
+  [
+   "¿Por qué está en peligro?",
+   [
+    "Porque los lagos están sucios",
+    "Porque hace mucho frío",
+    "Porque come mucho"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "agua",
+   "💧"
+  ],
+  [
+   "ojos",
+   "👀"
+  ],
+  [
+   "boca",
+   "👄"
+  ],
+  [
+   "pata",
+   "🦵"
+  ],
+  [
+   "lago",
+   "🏞️"
+  ],
+  [
+   "sonrisa",
+   "😊"
+  ]
+ ],
+ "halves": [
+  [
+   "El ajolote es...",
+   "...un anfibio."
+  ],
+  [
+   "Su boca parece...",
+   "...una sonrisa."
+  ],
+  [
+   "Las branquias parecen...",
+   "...plumas."
+  ],
+  [
+   "Si pierde una pata...",
+   "...tiene una pata nueva."
+  ],
+  [
+   "Los lagos de Xochimilco...",
+   "...están sucios."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: ser y estar",
+  "rule": "<b>Ser</b>: qué es, cómo es, de dónde es. <b>Estar</b>: dónde está y cómo está ahora.",
+  "rows": [
+   "es un anfibio",
+   "es de México",
+   "es rosa",
+   "está en el agua",
+   "está contento",
+   "está en peligro"
+  ],
+  "items": [
+   [
+    "El ajolote ___ de México.",
+    [
+     "es",
+     "está",
+     "son"
+    ],
+    0
+   ],
+   [
+    "Los lagos ___ sucios.",
+    [
+     "son",
+     "están",
+     "es"
+    ],
+    1
+   ],
+   [
+    "El ajolote ___ un anfibio.",
+    [
+     "está",
+     "es",
+     "están"
+    ],
+    1
+   ],
+   [
+    "El ajolote ___ en el agua.",
+    [
+     "es",
+     "está",
+     "son"
+    ],
+    1
+   ],
+   [
+    "Los ajolotes ___ de muchos colores.",
+    [
+     "están",
+     "es",
+     "son"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The axolotl",
+   "sub": "The smiling animal from Mexico",
+   "grammar": "Grammar: ser and estar (to be). Ser: what, what it is like, where from. Estar: where, how it is now.",
+   "rows": [
+    "is an amphibian",
+    "is from Mexico",
+    "is pink",
+    "is in the water",
+    "is happy (now)",
+    "is in danger"
+   ],
+   "hints": [
+    "is (from)",
+    "are (dirty)",
+    "is (an)",
+    "is (in)",
+    "are (of)"
+   ],
+   "vocab": [
+    "water",
+    "eyes",
+    "mouth",
+    "leg (of an animal)",
+    "lake",
+    "smile"
+   ]
+  }
+ }
+}

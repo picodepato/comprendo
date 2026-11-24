@@ -1,0 +1,207 @@
+{
+ "id": "en-egipto-b1",
+ "topic": "egipto",
+ "level": "B1",
+ "title": "The tomb of Tutankhamun",
+ "short": "Tutankhamun's tomb",
+ "text": [
+  "On 4 November 1922, a boy who was bringing water to a team of archaeologists in the Valley of the Kings found a stone step. It was the beginning of the most famous discovery in the history of archaeology.",
+  "The British archaeologist Howard Carter had been looking for the tomb of Tutankhamun for years. His sponsor, Lord Carnarvon, had almost decided to stop paying for the search. When Carter finally found the step, he sent a message to Carnarvon and waited for him to arrive.",
+  "When they opened the tomb, Carter looked inside with a candle. Carnarvon asked if he could see anything. Carter answered: Yes, wonderful things! Robbers had entered the tomb in ancient times, but they had not taken most of the treasures.",
+  "Inside there were more than five thousand objects: chariots, beds, jewelry and statues. The mummy of the young king was inside three coffins, one inside the other. The last one was made of solid gold. On his face there was the famous golden mask, which now is in a museum in Cairo.",
+  "A few months later, Lord Carnarvon died of an infection. Newspapers soon invented the curse of the pharaoh. However, most of the people who had entered the tomb lived for many more years. The real magic of the tomb is what it taught us about ancient Egypt."
+ ],
+ "q": [
+  [
+   "Who found the first stone step?",
+   [
+    "A boy who was bringing water",
+    "Lord Carnarvon",
+    "A tourist"
+   ],
+   0
+  ],
+  [
+   "What had Lord Carnarvon almost decided?",
+   [
+    "To stop paying for the search",
+    "To become an archaeologist",
+    "To sell the tomb"
+   ],
+   0
+  ],
+  [
+   "What did Carter say when he looked inside?",
+   [
+    "Wonderful things!",
+    "Nothing here!",
+    "Help!"
+   ],
+   0
+  ],
+  [
+   "How many objects were in the tomb?",
+   [
+    "More than five thousand",
+    "Ten",
+    "One hundred"
+   ],
+   0
+  ],
+  [
+   "What was the last coffin made of?",
+   [
+    "Solid gold",
+    "Wood",
+    "Stone"
+   ],
+   0
+  ],
+  [
+   "What did newspapers invent?",
+   [
+    "The curse of the pharaoh",
+    "A new pyramid",
+    "A film"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "tomb",
+   "🪦"
+  ],
+  [
+   "gold",
+   "🥇"
+  ],
+  [
+   "mask",
+   "🎭"
+  ],
+  [
+   "candle",
+   "🕯️"
+  ],
+  [
+   "treasure",
+   "💎"
+  ],
+  [
+   "robber",
+   "🦹"
+  ]
+ ],
+ "halves": [
+  [
+   "A boy found...",
+   "...a stone step."
+  ],
+  [
+   "Carter had been looking for the tomb...",
+   "...for years."
+  ],
+  [
+   "Robbers had entered the tomb...",
+   "...in ancient times."
+  ],
+  [
+   "The last coffin...",
+   "...was made of solid gold."
+  ],
+  [
+   "The golden mask is now...",
+   "...in a museum in Cairo."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the past perfect",
+  "rule": "Use the <b>past perfect</b> (had + past participle) for an action that happened <b>before</b> another action in the past.",
+  "rows": [
+   "Robbers had entered the tomb.",
+   "Carter had looked for years.",
+   "They had not taken the treasures.",
+   "When we arrived, he had left.",
+   "had + participle",
+   "had not = hadn't"
+  ],
+  "items": [
+   [
+    "Carter ___ been looking for years.",
+    [
+     "has",
+     "had",
+     "have"
+    ],
+    1
+   ],
+   [
+    "Robbers had ___ the tomb in ancient times.",
+    [
+     "enter",
+     "entered",
+     "entering"
+    ],
+    1
+   ],
+   [
+    "They had not ___ most of the treasures.",
+    [
+     "took",
+     "take",
+     "taken"
+    ],
+    2
+   ],
+   [
+    "Carnarvon ___ almost decided to stop.",
+    [
+     "had",
+     "has",
+     "did"
+    ],
+    0
+   ],
+   [
+    "When Carnarvon arrived, Carter had ___ the step.",
+    [
+     "found",
+     "find",
+     "finding"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La tumba de Tutankamón",
+   "sub": "El mayor descubrimiento de la arqueología",
+   "grammar": "Gramática: el pasado perfecto (had + participio), para una acción que pasó antes que otra acción del pasado (había + participio).",
+   "rows": [
+    "Los ladrones habían entrado en la tumba.",
+    "Carter había buscado durante años.",
+    "No se habían llevado los tesoros.",
+    "Cuando llegamos, se había ido.",
+    "había + participio",
+    "negativo"
+   ],
+   "hints": [
+    "había",
+    "entrado",
+    "llevado",
+    "había",
+    "encontrado"
+   ],
+   "vocab": [
+    "tumba",
+    "oro",
+    "máscara",
+    "vela",
+    "tesoro",
+    "ladrón"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "en-egipto-a2",
+ "topic": "egipto",
+ "level": "A2",
+ "title": "Mummies",
+ "short": "Mummies",
+ "text": [
+  "The ancient Egyptians believed in a life after death. They thought that the body was necessary for this new life, so they made mummies to protect it.",
+  "Making a mummy took about seventy days. First, the priests removed the organs. They put the stomach, the lungs and other organs in special jars. They left the heart in the body, because the heart was important in the afterlife.",
+  "Then they covered the body with a salt called natron. It dried the body completely in about forty days. After that, they wrapped the body in hundreds of meters of linen. Between the layers they put amulets for protection.",
+  "Finally, they put the mummy in a coffin, often in the shape of a person, and placed it in a tomb with food, furniture and treasures. They held a big ceremony at sunset.",
+  "Not only people became mummies. The Egyptians also mummified cats, birds, crocodiles and even dogs. In the 19th century, archaeologists found millions of animal mummies in a single cemetery!"
+ ],
+ "q": [
+  [
+   "Why did the Egyptians make mummies?",
+   [
+    "To protect the body for the afterlife",
+    "To scare people",
+    "For museums"
+   ],
+   0
+  ],
+  [
+   "How long did it take to make a mummy?",
+   [
+    "About seventy days",
+    "One day",
+    "Ten years"
+   ],
+   0
+  ],
+  [
+   "Where did they put the organs?",
+   [
+    "In special jars",
+    "In the river",
+    "In the garden"
+   ],
+   0
+  ],
+  [
+   "Which organ did they leave in the body?",
+   [
+    "The heart",
+    "The stomach",
+    "The lungs"
+   ],
+   0
+  ],
+  [
+   "What did they wrap the body in?",
+   [
+    "Linen",
+    "Paper",
+    "Leather"
+   ],
+   0
+  ],
+  [
+   "Which animals did they mummify?",
+   [
+    "Cats, birds and crocodiles",
+    "Only horses",
+    "No animals"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "mummy",
+   "🧟"
+  ],
+  [
+   "priest",
+   "🙏"
+  ],
+  [
+   "jar",
+   "🏺"
+  ],
+  [
+   "salt",
+   "🧂"
+  ],
+  [
+   "coffin",
+   "⚰️"
+  ],
+  [
+   "cat",
+   "🐈"
+  ]
+ ],
+ "halves": [
+  [
+   "Making a mummy took...",
+   "...about seventy days."
+  ],
+  [
+   "They left the heart...",
+   "...in the body."
+  ],
+  [
+   "Natron dried the body...",
+   "...in about forty days."
+  ],
+  [
+   "Between the layers...",
+   "...they put amulets."
+  ],
+  [
+   "Archaeologists found...",
+   "...millions of animal mummies."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: in, on and at for time",
+  "rule": "Use <b>at</b> for times, <b>on</b> for days and dates, and <b>in</b> for months, years, centuries and long periods.",
+  "rows": [
+   "at sunset / at night / at 5 o clock",
+   "on Monday",
+   "on 4 November",
+   "in May",
+   "in 1922",
+   "in the 19th century"
+  ],
+  "items": [
+   [
+    "They held the ceremony ___ sunset.",
+    [
+     "in",
+     "on",
+     "at"
+    ],
+    2
+   ],
+   [
+    "The tomb was found ___ 1922.",
+    [
+     "at",
+     "in",
+     "on"
+    ],
+    1
+   ],
+   [
+    "They found the mummies ___ the 19th century.",
+    [
+     "on",
+     "in",
+     "at"
+    ],
+    1
+   ],
+   [
+    "The museum opens ___ Monday.",
+    [
+     "on",
+     "in",
+     "at"
+    ],
+    0
+   ],
+   [
+    "Many tombs were robbed ___ night.",
+    [
+     "at",
+     "on",
+     "in"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Las momias",
+   "sub": "Cómo conservaban los egipcios a sus muertos",
+   "grammar": "Gramática: in, on y at con el tiempo. At para horas y momentos (at sunset); on para días y fechas; in para meses, años, siglos y periodos largos.",
+   "rows": [
+    "al atardecer / por la noche / a las 5",
+    "el lunes",
+    "el 4 de noviembre",
+    "en mayo",
+    "en 1922",
+    "en el siglo XIX"
+   ],
+   "hints": [
+    "al",
+    "en",
+    "en el",
+    "el",
+    "por la"
+   ],
+   "vocab": [
+    "momia",
+    "sacerdote",
+    "vasija",
+    "sal",
+    "sarcófago",
+    "gato"
+   ]
+  }
+ }
+}

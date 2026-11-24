@@ -1,0 +1,207 @@
+{
+ "id": "en-deportes-b1",
+ "topic": "deportes",
+ "level": "B1",
+ "title": "X Games records",
+ "short": "X Games records",
+ "text": [
+  "The X Games are like the Olympics of extreme sports. Since 1995, the best skaters, BMX riders, snowboarders and motocross riders in the world have met there to show their most incredible tricks.",
+  "One of the most famous moments happened in 1999. Tony Hawk, a skateboarding legend, landed the first 900: two and a half spins in the air. He had tried it many times for years, and the crowd went crazy. At that time, most people thought it was too difficult to be possible.",
+  "Records keep falling. In 2023, a young Brazilian skater, Gui Khury, became the first person to land a 1080 on a vertical ramp. He was only fourteen. Older skaters said that he was brave enough to try what nobody else dared.",
+  "Snowboarders and BMX riders also push the limits. Some athletes are now doing triple and even quadruple spins in the air. But these tricks are not without risk. If a rider is not focused enough, a small mistake can mean a serious injury.",
+  "Why do they do it? Most athletes say that it is not about danger: it is about progress. Every trick that seems too crazy today might be normal tomorrow. As Tony Hawk once said, you should never be too afraid to try."
+ ],
+ "q": [
+  [
+   "What are the X Games like?",
+   [
+    "The Olympics of extreme sports",
+    "A video game",
+    "A school competition"
+   ],
+   0
+  ],
+  [
+   "What did Tony Hawk do in 1999?",
+   [
+    "He landed the first 900",
+    "He won a car",
+    "He stopped skating"
+   ],
+   0
+  ],
+  [
+   "What is a 900?",
+   [
+    "Two and a half spins in the air",
+    "Nine jumps",
+    "A type of board"
+   ],
+   0
+  ],
+  [
+   "Who landed the first 1080 on a vertical ramp?",
+   [
+    "Gui Khury",
+    "Tony Hawk",
+    "Nobody"
+   ],
+   0
+  ],
+  [
+   "How old was Gui Khury?",
+   [
+    "Fourteen",
+    "Twenty-five",
+    "Ten"
+   ],
+   0
+  ],
+  [
+   "According to the athletes, what is it about?",
+   [
+    "Progress",
+    "Danger",
+    "Money"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "ramp",
+   "🛹"
+  ],
+  [
+   "crowd",
+   "👥"
+  ],
+  [
+   "spin",
+   "🌀"
+  ],
+  [
+   "snow",
+   "❄️"
+  ],
+  [
+   "injury",
+   "🩹"
+  ],
+  [
+   "brave",
+   "🦁"
+  ]
+ ],
+ "halves": [
+  [
+   "The X Games are like...",
+   "...the Olympics of extreme sports."
+  ],
+  [
+   "Tony Hawk landed...",
+   "...the first 900."
+  ],
+  [
+   "Gui Khury was brave enough...",
+   "...to try it."
+  ],
+  [
+   "A small mistake...",
+   "...can mean a serious injury."
+  ],
+  [
+   "A trick that seems too crazy today...",
+   "...might be normal tomorrow."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: too and enough",
+  "rule": "<b>Too</b> + adjective means more than necessary. Adjective + <b>enough</b> means as much as necessary. Both can be followed by <b>to</b> + verb.",
+  "rows": [
+   "too difficult",
+   "brave enough",
+   "too difficult to be possible",
+   "not focused enough",
+   "too + adjective",
+   "adjective + enough"
+  ],
+  "items": [
+   [
+    "People thought the trick was ___ difficult.",
+    [
+     "too",
+     "enough",
+     "to"
+    ],
+    0
+   ],
+   [
+    "He was brave ___ to try it.",
+    [
+     "too",
+     "enough",
+     "so"
+    ],
+    1
+   ],
+   [
+    "If a rider is not focused ___, he can fall.",
+    [
+     "too",
+     "enough",
+     "much"
+    ],
+    1
+   ],
+   [
+    "You should never be ___ afraid to try.",
+    [
+     "enough",
+     "too",
+     "so much"
+    ],
+    1
+   ],
+   [
+    "The ramp was ___ high for beginners.",
+    [
+     "too",
+     "enough",
+     "very enough"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los récords de los X Games",
+   "sub": "Los trucos más difíciles de la historia",
+   "grammar": "Gramática: too + adjetivo (demasiado) y adjetivo + enough (lo bastante / suficiente). Los dos pueden ir seguidos de to + verbo.",
+   "rows": [
+    "demasiado difícil",
+    "lo bastante valiente",
+    "demasiado difícil para ser posible",
+    "no lo bastante concentrado",
+    "demasiado + adjetivo",
+    "adjetivo + suficiente"
+   ],
+   "hints": [
+    "demasiado",
+    "lo bastante",
+    "lo bastante",
+    "demasiado",
+    "demasiado"
+   ],
+   "vocab": [
+    "rampa",
+    "público",
+    "giro",
+    "nieve",
+    "lesión",
+    "valiente"
+   ]
+  }
+ }
+}

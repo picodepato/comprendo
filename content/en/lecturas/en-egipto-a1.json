@@ -1,0 +1,207 @@
+{
+ "id": "en-egipto-a1",
+ "topic": "egipto",
+ "level": "A1",
+ "title": "The pyramids",
+ "short": "The pyramids",
+ "text": [
+  "Look at this photo. These are the pyramids of Giza, in Egypt. They are very, very old: more than four thousand five hundred years old!",
+  "This big pyramid is the Great Pyramid. It is the tomb of a king called Khufu. In Egypt, the king was called the pharaoh. That small pyramid is the tomb of a queen.",
+  "The pyramids are made of big stone blocks. Each block is very heavy: like two cars! Thousands of workers built the pyramids. They used ropes, ramps and boats on the river Nile.",
+  "In front of the pyramids there is a big statue. It is the Sphinx. It has the body of a lion and the head of a man. Its nose is not there now.",
+  "These pyramids are one of the Seven Wonders of the Ancient World. Today, millions of tourists visit them. Do you want to see them one day?"
+ ],
+ "q": [
+  [
+   "Where are the pyramids of Giza?",
+   [
+    "In Egypt",
+    "In Mexico",
+    "In Greece"
+   ],
+   0
+  ],
+  [
+   "How old are they?",
+   [
+    "More than four thousand five hundred years",
+    "Two hundred years",
+    "Fifty years"
+   ],
+   0
+  ],
+  [
+   "Who was Khufu?",
+   [
+    "A king",
+    "A worker",
+    "A god"
+   ],
+   0
+  ],
+  [
+   "How heavy is each block?",
+   [
+    "Like two cars",
+    "Like a book",
+    "Like a cat"
+   ],
+   0
+  ],
+  [
+   "What does the Sphinx have?",
+   [
+    "The body of a lion and the head of a man",
+    "Two heads",
+    "Wings"
+   ],
+   0
+  ],
+  [
+   "Who visits the pyramids today?",
+   [
+    "Millions of tourists",
+    "Nobody",
+    "Only kings"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "pyramid",
+   "🔺"
+  ],
+  [
+   "king",
+   "👑"
+  ],
+  [
+   "queen",
+   "👸"
+  ],
+  [
+   "stone",
+   "🪨"
+  ],
+  [
+   "lion",
+   "🦁"
+  ],
+  [
+   "statue",
+   "🗿"
+  ]
+ ],
+ "halves": [
+  [
+   "The Great Pyramid is...",
+   "...the tomb of Khufu."
+  ],
+  [
+   "The king of Egypt was called...",
+   "...the pharaoh."
+  ],
+  [
+   "The pyramids are made...",
+   "...of big stone blocks."
+  ],
+  [
+   "The Sphinx has the body...",
+   "...of a lion."
+  ],
+  [
+   "Millions of tourists...",
+   "...visit them today."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: this, that, these and those",
+  "rule": "Use <b>this</b> and <b>these</b> for things near you, and <b>that</b> and <b>those</b> for things far from you.",
+  "rows": [
+   "this pyramid",
+   "these pyramids",
+   "that pyramid",
+   "those pyramids",
+   "this / that = one",
+   "these / those = many"
+  ],
+  "items": [
+   [
+    "Look at ___ photo in my hand.",
+    [
+     "this",
+     "these",
+     "those"
+    ],
+    0
+   ],
+   [
+    "___ pyramids here are very old.",
+    [
+     "This",
+     "These",
+     "That"
+    ],
+    1
+   ],
+   [
+    "___ small pyramid over there is for a queen.",
+    [
+     "That",
+     "Those",
+     "These"
+    ],
+    0
+   ],
+   [
+    "___ tourists far away are taking photos.",
+    [
+     "This",
+     "These",
+     "Those"
+    ],
+    2
+   ],
+   [
+    "___ block next to me is very heavy.",
+    [
+     "Those",
+     "This",
+     "These"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Las pirámides",
+   "sub": "Las tumbas gigantes de los faraones",
+   "grammar": "Gramática: this / these para cosas cerca (este, estos); that / those para cosas lejos (ese, aquel, esos, aquellos).",
+   "rows": [
+    "esta pirámide (cerca)",
+    "estas pirámides (cerca)",
+    "esa / aquella pirámide (lejos)",
+    "esas / aquellas pirámides (lejos)",
+    "una cosa",
+    "varias cosas"
+   ],
+   "hints": [
+    "esta",
+    "Estas",
+    "Aquella",
+    "Aquellos",
+    "Este"
+   ],
+   "vocab": [
+    "pirámide",
+    "rey",
+    "reina",
+    "piedra",
+    "león",
+    "estatua"
+   ]
+  }
+ }
+}

@@ -1,0 +1,20 @@
+const puppeteer = require('puppeteer-core');
+const wait = ms => new Promise(r => setTimeout(r, ms));
+(async () => {
+  const b = await puppeteer.launch({executablePath: '/usr/bin/google-chrome', args: ['--no-sandbox']});
+  const p = await b.newPage(); const errs = [];
+  p.on('pageerror', e => errs.push(e.message));
+  await p.goto('http://localhost:8765/index.html#bear-a1', {waitUntil: 'networkidle0'});
+  await p.evaluate(() => localStorage.removeItem('lyaPerfiles'));
+  await p.reload({waitUntil: 'networkidle0'}); await wait(500);
+  const xp = () => p.evaluate(() => JSON.parse(localStorage.getItem('lyaPerfiles')).list[0].s.g.xp);
+  const w = (await p.$$('.reading .w'))[10]; await w.evaluate(e => e.scrollIntoView({block: 'center'})); await wait(400); const bb = await w.boundingBox();
+  await p.mouse.move(bb.x + 3, bb.y + 3); await p.mouse.down(); await wait(100); await p.mouse.up(); await wait(150);
+  const ab = await p.$eval('#add', e => { const r = e.getBoundingClientRect(); return [r.x + r.width / 2, r.y + r.height / 2, e.parentElement.className]; });
+  console.log('add at', ab); await p.mouse.click(ab[0], ab[1]); await wait(500);
+  console.log('dict', await p.evaluate(() => JSON.parse(localStorage.getItem('lyaPerfiles')).list[0].s.dict.length), 'tip', await p.$eval('#tip', e => e.className + ' ' + e.textContent.slice(0,60)));
+  console.log('tras guardar palabra XP=', await xp(), 'chip=', await p.$eval('#me', e => e.textContent));
+  console.log('LYA keys:', await p.evaluate(() => Object.keys(window.LYA)));
+  console.log('ERR:', errs);
+  await b.close();
+})();

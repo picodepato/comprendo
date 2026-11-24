@@ -1,0 +1,13 @@
+{
+ "temas": [
+  {"id": "tiburones", "emoji": "🦈", "color": "#38a0ff", "name": {"es": "Tiburones", "en": "Sharks"}, "desc": {"es": "Los peces más temidos del mar.", "en": "The most feared fish in the sea."}},
+  {"id": "esports", "emoji": "🎮", "color": "#8a5bff", "name": {"es": "eSports", "en": "eSports"}, "desc": {"es": "Jugar a videojuegos como un deporte.", "en": "Playing video games as a sport."}},
+  {"id": "cuerpo", "emoji": "🫀", "color": "#ff5d7a", "name": {"es": "El cuerpo humano", "en": "The human body"}, "desc": {"es": "Cómo funciona tu cuerpo por dentro.", "en": "How your body works inside."}},
+  {"id": "internet", "emoji": "😂", "color": "#ffb400", "name": {"es": "Internet y memes", "en": "The internet and memes"}, "desc": {"es": "De dónde vienen los memes más famosos.", "en": "Where the most famous memes come from."}},
+  {"id": "olimpicos", "emoji": "🏅", "color": "#3fd69c", "name": {"es": "Deportes olímpicos curiosos", "en": "Strange Olympic sports"}, "desc": {"es": "Deportes de los Juegos Olímpicos que casi nadie conoce.", "en": "Olympic sports that almost nobody knows."}}
+ ],
+ "tx": {
+  "es": {"title": "¿Qué tema quieres leer después?", "sub": "Vota los temas que te gustan. Puedes votar varios, pero solo una vez cada uno.", "vote": "Quiero este tema", "voted": "✓ Has votado", "n1": "1 voto", "nn": "{n} votos", "thanks": "¡Gracias por tu voto!", "local": "Tu voto queda guardado en este aparato."},
+  "en": {"title": "Which topic do you want to read next?", "sub": "Vote for the topics you like. You can vote for several, but only once for each.", "vote": "I want this topic", "voted": "✓ You voted", "n1": "1 vote", "nn": "{n} votes", "thanks": "Thanks for your vote!", "local": "Your vote is saved on this device."}
+ }
+}

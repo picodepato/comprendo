@@ -1,0 +1,207 @@
+{
+ "id": "increibles-a2",
+ "topic": "increibles",
+ "level": "A2",
+ "title": "Animales que brillan",
+ "short": "Animales que brillan",
+ "text": [
+  "¿Sabes que algunos animales producen su propia luz? Este fenómeno [se llama] bioluminiscencia. La luz aparece por una reacción química dentro de su cuerpo. Es una luz fría: no quema.",
+  "Las luciérnagas son los animales que brillan más conocidos. Son insectos pequeños que vuelan en las noches de verano. Encienden y apagan su luz para hablar entre ellas y para encontrar pareja. Cada especie tiene su propio código de luces, como un mensaje secreto.",
+  "En el fondo del océano no llega la luz del sol. Allí, tres de cada cuatro animales producen luz. El [rape abisal], [por ejemplo], tiene una pequeña lámpara encima de la cabeza. La usa para atraer a otros peces y comérselos.",
+  "Algunas medusas y calamares usan la luz para defenderse. Cuando un depredador los ataca, producen un flash de luz para asustarlo y escapar. ¡Es como una linterna en la oscuridad!",
+  "También hay seres diminutos que brillan: el plancton. En algunas playas, como en la isla de Vieques, en [Puerto Rico], el agua se vuelve azul por la noche. Cuando nadas o mueves la mano, ¡el mar se ilumina!"
+ ],
+ "q": [
+  [
+   "¿Cómo se llama el fenómeno de producir luz?",
+   [
+    "Bioluminiscencia",
+    "Fotografía",
+    "Electricidad"
+   ],
+   0
+  ],
+  [
+   "¿Cómo es la luz de estos animales?",
+   [
+    "Muy caliente",
+    "Fría",
+    "Roja siempre"
+   ],
+   1
+  ],
+  [
+   "¿Para qué encienden su luz las luciérnagas?",
+   [
+    "Para comer",
+    "Para dormir",
+    "Para hablar y encontrar pareja"
+   ],
+   2
+  ],
+  [
+   "¿Cuántos animales producen luz en el fondo del océano?",
+   [
+    "Uno de cada diez",
+    "Tres de cada cuatro",
+    "Todos"
+   ],
+   1
+  ],
+  [
+   "¿Dónde tiene su lámpara el [rape abisal]?",
+   [
+    "Encima de la cabeza",
+    "En la cola",
+    "En los ojos"
+   ],
+   0
+  ],
+  [
+   "¿Qué pasa en la playa de Vieques por la noche?",
+   [
+    "El agua se vuelve roja",
+    "El agua se vuelve azul",
+    "El agua desaparece"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "noche",
+   "🌙"
+  ],
+  [
+   "playa",
+   "🏖️"
+  ],
+  [
+   "isla",
+   "🏝️"
+  ],
+  [
+   "pez",
+   "🐟"
+  ],
+  [
+   "mano",
+   "✋"
+  ],
+  [
+   "insecto",
+   "🐞"
+  ]
+ ],
+ "halves": [
+  [
+   "La luz aparece por...",
+   "...una reacción química."
+  ],
+  [
+   "Las luciérnagas vuelan...",
+   "...en las noches de verano."
+  ],
+  [
+   "En el fondo del océano...",
+   "...no llega la luz del sol."
+  ],
+  [
+   "El rape usa su luz...",
+   "...para atraer a otros peces."
+  ],
+  [
+   "Cuando nadas en Vieques...",
+   "...el mar se ilumina."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: para + infinitivo",
+  "rule": "Para explicar el <b>objetivo</b> de una acción, usamos <b>para + verbo en infinitivo</b> (-ar, -er, -ir).",
+  "rows": [
+   "para hablar",
+   "para encontrar pareja",
+   "para atraer peces",
+   "para defenderse",
+   "para escapar",
+   "para + -ar / -er / -ir"
+  ],
+  "items": [
+   [
+    "Las luciérnagas brillan para ___ pareja.",
+    [
+     "encuentran",
+     "encontrar",
+     "encontrado"
+    ],
+    1
+   ],
+   [
+    "El rape usa su luz para ___ peces.",
+    [
+     "atraer",
+     "atrae",
+     "atraen"
+    ],
+    0
+   ],
+   [
+    "Las medusas producen luz para ___.",
+    [
+     "escapan",
+     "escapó",
+     "escapar"
+    ],
+    2
+   ],
+   [
+    "Vamos a la playa para ___ el agua azul.",
+    [
+     "vemos",
+     "ver",
+     "ve"
+    ],
+    1
+   ],
+   [
+    "Estudio español para ___ con mis amigos.",
+    [
+     "hablo",
+     "hablar",
+     "hablan"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Animals that glow",
+   "sub": "Fireflies, deep-sea fish and glowing beaches",
+   "grammar": "Grammar: para + infinitive = in order to / to (purpose).",
+   "rows": [
+    "to talk",
+    "to find a partner",
+    "to attract fish",
+    "to defend themselves",
+    "to escape",
+    "para + basic form of the verb"
+   ],
+   "hints": [
+    "find",
+    "attract",
+    "escape",
+    "see",
+    "talk"
+   ],
+   "vocab": [
+    "night",
+    "beach",
+    "island",
+    "fish",
+    "hand",
+    "insect"
+   ]
+  }
+ }
+}

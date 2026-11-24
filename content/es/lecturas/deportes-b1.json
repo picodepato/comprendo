@@ -1,0 +1,207 @@
+{
+ "id": "deportes-b1",
+ "topic": "deportes",
+ "level": "B1",
+ "title": "Los récords de los X Games",
+ "short": "Los récords de los X Games",
+ "text": [
+  "Los X Games son una de las competiciones de deportes extremos más importantes del mundo. Nacieron en 1995 en [Estados Unidos], con el nombre de Extreme Games, y en 1997 se celebró la primera edición de invierno. Desde entonces, han reunido a los mejores skaters, ciclistas de BMX, pilotos de motocross y snowboarders del planeta.",
+  "El momento más famoso de su historia llegó en 1999. El skater [Tony Hawk] llevaba años intentando hacer un «900»: dos vueltas y media en el aire sobre una rampa. Durante la competición, se cayó una y otra vez, pero no dejó de intentarlo. Aunque el tiempo ya se había terminado, los jueces le dejaron seguir probando, y en el undécimo intento, por fin, aterrizó. El público se volvió loco.",
+  "Siete años después, en 2006, el piloto [Travis Pastrana] volvió a hacer historia: fue el primero en hacer un doble mortal hacia atrás con una moto en una competición. Muchos pensaban que era imposible, porque una moto pesa casi cien kilos.",
+  "Los récords siguen cayendo. En 2019, el skater [Mitchie Brusco] logró el primer «1260» de la historia: tres vueltas y media en el aire. Hoy, algunos de los mejores deportistas son adolescentes que han crecido viendo estos vídeos y que siguen subiendo el nivel cada año.",
+  "Sin embargo, detrás de cada truco hay miles de horas de entrenamiento, caídas y lesiones. Todos estos campeones coinciden en algo: lo más importante no es no caerse nunca, sino volver a levantarse."
+ ],
+ "q": [
+  [
+   "¿Cuándo nacieron los X Games?",
+   [
+    "En 1995",
+    "En 1999",
+    "En 2006"
+   ],
+   0
+  ],
+  [
+   "¿Qué es un «900»?",
+   [
+    "Una rampa de 900 metros",
+    "Dos vueltas y media en el aire",
+    "Un récord de velocidad"
+   ],
+   1
+  ],
+  [
+   "¿En qué intento aterrizó [Tony Hawk] su «900»?",
+   [
+    "En el primero",
+    "En el undécimo",
+    "En el novecientos"
+   ],
+   1
+  ],
+  [
+   "¿Qué hizo [Travis Pastrana] en 2006?",
+   [
+    "Un doble mortal hacia atrás con una moto",
+    "Un «900» en skate",
+    "Ganó una carrera de BMX"
+   ],
+   0
+  ],
+  [
+   "¿Quién logró el primer «1260»?",
+   [
+    "[Tony Hawk]",
+    "[Mitchie Brusco]",
+    "[Travis Pastrana]"
+   ],
+   1
+  ],
+  [
+   "Según el texto, ¿qué es lo más importante?",
+   [
+    "No caerse nunca",
+    "Volver a levantarse",
+    "Tener la moto más cara"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "rampa",
+   "🛹"
+  ],
+  [
+   "moto",
+   "🏍️"
+  ],
+  [
+   "bicicleta",
+   "🚲"
+  ],
+  [
+   "nieve",
+   "❄️"
+  ],
+  [
+   "público",
+   "👏"
+  ],
+  [
+   "lesión",
+   "🩹"
+  ]
+ ],
+ "halves": [
+  [
+   "Los X Games nacieron...",
+   "...en 1995."
+  ],
+  [
+   "[Tony Hawk] no dejó...",
+   "...de intentarlo."
+  ],
+  [
+   "[Travis Pastrana] volvió...",
+   "...a hacer historia."
+  ],
+  [
+   "Los récords siguen...",
+   "...cayendo."
+  ],
+  [
+   "Lo más importante es...",
+   "...volver a levantarse."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: las perífrasis verbales",
+  "rule": "Algunos verbos se combinan con otro verbo para dar más información: repetir, parar, continuar o llevar tiempo haciendo algo.",
+  "rows": [
+   "volver a + infinitivo = hacer otra vez",
+   "dejar de + infinitivo = parar",
+   "seguir + gerundio = continuar",
+   "llevar + tiempo + gerundio = desde hace",
+   "acabar de + infinitivo = hace muy poco",
+   "-ar → -ando; -er / -ir → -iendo"
+  ],
+  "items": [
+   [
+    "Pastrana ___ a hacer historia.",
+    [
+     "volvió",
+     "dejó",
+     "siguió"
+    ],
+    0
+   ],
+   [
+    "Hawk no dejó ___ intentarlo.",
+    [
+     "a",
+     "de",
+     "en"
+    ],
+    1
+   ],
+   [
+    "Los récords siguen ___.",
+    [
+     "caer",
+     "cayendo",
+     "caído"
+    ],
+    1
+   ],
+   [
+    "Hawk llevaba años ___ el «900».",
+    [
+     "intentando",
+     "intentar",
+     "intentado"
+    ],
+    0
+   ],
+   [
+    "Brusco acaba ___ aterrizar un truco nuevo.",
+    [
+     "a",
+     "de",
+     "por"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "X Games records",
+   "sub": "Impossible tricks that became history",
+   "grammar": "Grammar: verb phrases. Some verbs combine with another verb to say that something is repeated, stops, continues or has been going on for some time.",
+   "rows": [
+    "volver a + infinitive = to do again",
+    "dejar de + infinitive = to stop doing",
+    "seguir + gerund = to keep doing",
+    "llevar + time + gerund = to have been doing",
+    "acabar de + infinitive = to have just done",
+    "-ar → -ando; -er / -ir → -iendo (-ing)"
+   ],
+   "hints": [
+    "again",
+    "stop",
+    "keep falling",
+    "had been trying",
+    "just"
+   ],
+   "vocab": [
+    "ramp",
+    "motorbike",
+    "bicycle",
+    "snow",
+    "audience",
+    "injury"
+   ]
+  }
+ }
+}

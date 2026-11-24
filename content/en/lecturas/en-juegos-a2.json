@@ -1,0 +1,207 @@
+{
+ "id": "en-juegos-a2",
+ "topic": "juegos",
+ "level": "A2",
+ "title": "Fortnite and Roblox",
+ "short": "Fortnite and Roblox",
+ "text": [
+  "Fortnite and Roblox are two of the most popular games in the world. Both are free, and millions of children and teenagers play them every day. But they are very different.",
+  "Fortnite came out in 2017. Its most famous mode is Battle Royale: one hundred players jump from a flying bus onto an island. They look for weapons and build walls. The last player alive is the winner. The game was so popular that its dances were everywhere.",
+  "Roblox is older. It was created in 2004 and it opened to everyone in 2006. Roblox is not really one game: it is a platform with millions of games. The players were the creators. Anyone could make a game, like BEAR (Alpha).",
+  "Both games make money in a similar way. They are free, but players can buy things for their characters, like skins or emotes. In Fortnite the money is called V-Bucks, and in Roblox it is called Robux.",
+  "Both games also became places to meet. There were concerts inside Fortnite, and some schools used Roblox for lessons. For many young people, these games were not only games: they were their social network."
+ ],
+ "q": [
+  [
+   "How much do Fortnite and Roblox cost?",
+   [
+    "They are free",
+    "Ten euros",
+    "A hundred euros"
+   ],
+   0
+  ],
+  [
+   "When did Fortnite come out?",
+   [
+    "In 2004",
+    "In 2017",
+    "In 2006"
+   ],
+   1
+  ],
+  [
+   "What happens in Battle Royale?",
+   [
+    "One hundred players fight on an island",
+    "Players build cities",
+    "Players race cars"
+   ],
+   0
+  ],
+  [
+   "Why is Roblox different?",
+   [
+    "It is a platform with millions of games",
+    "It has only one game",
+    "It is only for adults"
+   ],
+   0
+  ],
+  [
+   "What is the money in Roblox called?",
+   [
+    "V-Bucks",
+    "Robux",
+    "Quidz"
+   ],
+   1
+  ],
+  [
+   "What happened inside Fortnite?",
+   [
+    "There were concerts",
+    "There were exams",
+    "There were elections"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "island",
+   "🏝️"
+  ],
+  [
+   "bus",
+   "🚌"
+  ],
+  [
+   "wall",
+   "🧱"
+  ],
+  [
+   "winner",
+   "🥇"
+  ],
+  [
+   "dance",
+   "💃"
+  ],
+  [
+   "concert",
+   "🎤"
+  ]
+ ],
+ "halves": [
+  [
+   "One hundred players jump...",
+   "...from a flying bus."
+  ],
+  [
+   "The last player alive...",
+   "...is the winner."
+  ],
+  [
+   "Roblox was created...",
+   "...in 2004."
+  ],
+  [
+   "Players can buy skins...",
+   "...for their characters."
+  ],
+  [
+   "Some schools used Roblox...",
+   "...for lessons."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: was / were",
+  "rule": "<b>Was</b> and <b>were</b> are the past of the verb to be. Use <b>was</b> with I, he, she and it, and <b>were</b> with you, we and they.",
+  "rows": [
+   "I was",
+   "you were",
+   "he / she / it was",
+   "we were",
+   "they were",
+   "was not / were not"
+  ],
+  "items": [
+   [
+    "The game ___ very popular.",
+    [
+     "were",
+     "was",
+     "is been"
+    ],
+    1
+   ],
+   [
+    "There ___ concerts inside Fortnite.",
+    [
+     "was",
+     "were",
+     "be"
+    ],
+    1
+   ],
+   [
+    "The players ___ the creators.",
+    [
+     "were",
+     "was",
+     "is"
+    ],
+    0
+   ],
+   [
+    "I ___ at the concert last year.",
+    [
+     "were",
+     "was",
+     "be"
+    ],
+    1
+   ],
+   [
+    "These games ___ not only games.",
+    [
+     "was",
+     "were",
+     "wasnt"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Fortnite y Roblox",
+   "sub": "Dos juegos gigantes, dos ideas distintas",
+   "grammar": "Gramática: was / were, el pasado de to be (era, fue, estaba). Was con I, he, she, it; were con you, we, they.",
+   "rows": [
+    "yo era / estaba",
+    "tú eras / estabas",
+    "él / ella era",
+    "nosotros éramos",
+    "ellos eran",
+    "negativo"
+   ],
+   "hints": [
+    "fue",
+    "hubo",
+    "eran",
+    "estuve",
+    "eran"
+   ],
+   "vocab": [
+    "isla",
+    "autobús",
+    "muro",
+    "ganador",
+    "baile",
+    "concierto"
+   ]
+  }
+ }
+}

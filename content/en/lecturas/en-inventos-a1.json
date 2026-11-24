@@ -1,0 +1,207 @@
+{
+ "id": "en-inventos-a1",
+ "topic": "inventos",
+ "level": "A1",
+ "title": "Inventions at home",
+ "short": "Inventions at home",
+ "text": [
+  "We use many inventions every day. We do not think about them, but they are all very important. Look around your house!",
+  "In the morning, I wake up and I turn on the light. The light bulb is a great invention. Before the light bulb, people used candles. Then I brush my teeth with a toothbrush. The first toothbrushes were from China.",
+  "In the kitchen we have a fridge. It keeps our food cold and fresh. We also have a microwave. We heat our food in one or two minutes.",
+  "My brother and I play video games on the television. My parents watch films. We do not live without the internet: we send messages and we talk with our family.",
+  "In the bathroom there is a toilet. It is a very old invention, but it is still very important. What is your favorite invention at home?"
+ ],
+ "q": [
+  [
+   "What did people use before the light bulb?",
+   [
+    "Candles",
+    "Phones",
+    "Fridges"
+   ],
+   0
+  ],
+  [
+   "Where were the first toothbrushes from?",
+   [
+    "China",
+    "Spain",
+    "Mexico"
+   ],
+   0
+  ],
+  [
+   "What does the fridge do?",
+   [
+    "It keeps food cold and fresh",
+    "It heats food",
+    "It washes clothes"
+   ],
+   0
+  ],
+  [
+   "How fast does the microwave heat food?",
+   [
+    "In one or two minutes",
+    "In one hour",
+    "In one day"
+   ],
+   0
+  ],
+  [
+   "What do we do with the internet?",
+   [
+    "We send messages",
+    "We cook",
+    "We sleep"
+   ],
+   0
+  ],
+  [
+   "Where is the toilet?",
+   [
+    "In the bathroom",
+    "In the kitchen",
+    "In the garden"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "light bulb",
+   "💡"
+  ],
+  [
+   "toothbrush",
+   "🪥"
+  ],
+  [
+   "fridge",
+   "🧊"
+  ],
+  [
+   "kitchen",
+   "🍳"
+  ],
+  [
+   "television",
+   "📺"
+  ],
+  [
+   "bathroom",
+   "🚿"
+  ]
+ ],
+ "halves": [
+  [
+   "Before the light bulb...",
+   "...people used candles."
+  ],
+  [
+   "The fridge keeps our food...",
+   "...cold and fresh."
+  ],
+  [
+   "We heat our food...",
+   "...in the microwave."
+  ],
+  [
+   "My parents...",
+   "...watch films."
+  ],
+  [
+   "The toilet is a very old invention...",
+   "...but it is very important."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the present simple (I, you, we, they)",
+  "rule": "With <b>I</b>, <b>you</b>, <b>we</b> and <b>they</b>, the verb has no -s. For the negative, use <b>do not</b> + verb.",
+  "rows": [
+   "I wake up",
+   "you use",
+   "we heat",
+   "they watch",
+   "we do not live",
+   "Do you use...?"
+  ],
+  "items": [
+   [
+    "I ___ my teeth every day.",
+    [
+     "brushes",
+     "brush",
+     "brushing"
+    ],
+    1
+   ],
+   [
+    "We ___ many inventions.",
+    [
+     "use",
+     "uses",
+     "using"
+    ],
+    0
+   ],
+   [
+    "My parents ___ films.",
+    [
+     "watches",
+     "watch",
+     "watchs"
+    ],
+    1
+   ],
+   [
+    "We ___ live without the internet.",
+    [
+     "not",
+     "do not",
+     "does not"
+    ],
+    1
+   ],
+   [
+    "___ you have a microwave?",
+    [
+     "Do",
+     "Does",
+     "Are"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Inventos de casa",
+   "sub": "Cosas de casa que alguien inventó",
+   "grammar": "Gramática: el presente simple con I, you, we y they. El verbo no lleva -s. Negativo: do not + verbo.",
+   "rows": [
+    "me despierto",
+    "usas",
+    "calentamos",
+    "ellos ven",
+    "no vivimos",
+    "¿Usas...?"
+   ],
+   "hints": [
+    "me cepillo",
+    "usamos",
+    "ven",
+    "no vivimos",
+    "Tienes"
+   ],
+   "vocab": [
+    "bombilla",
+    "cepillo de dientes",
+    "nevera",
+    "cocina",
+    "televisión",
+    "baño"
+   ]
+  }
+ }
+}

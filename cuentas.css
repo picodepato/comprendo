@@ -1,0 +1,38 @@
+/* Cuentas de usuario (cuentas.js) */
+.cta{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;font-size:15px;max-width:180px}
+.cta:hover{border-color:var(--mute)}
+.cta:focus-visible{outline:3px solid var(--beam);outline-offset:2px}
+.ctan{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ctaw{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.6)}
+.ctaw.on{display:flex}
+.ctab{position:relative;width:min(440px,100%);max-height:calc(100vh - 32px);overflow:auto;padding:22px 20px 16px;border-radius:16px;background:var(--panel);border:1px solid var(--line);color:var(--ink)}
+.ctab h2{margin:0 36px 10px 0;font-size:22px}
+.ctae{color:var(--mute);font-weight:400;font-size:.8em}
+.ctas{color:var(--mute);font-size:14px;line-height:1.45}
+.ctab form{display:grid;gap:12px;margin:12px 0}
+.ctab label{display:grid;gap:4px;font-weight:600;font-size:15px}
+.ctab input:not([type=checkbox]):not([type=file]),.ctab textarea{font:inherit;font-weight:400;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%;box-sizing:border-box}
+.ctab textarea{font-size:12px;resize:vertical}
+.ctab input:focus-visible,.ctab textarea:focus-visible{outline:3px solid var(--beam);outline-offset:1px}
+.ctab .ctak{display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:14px}
+.ctam{min-height:1.2em;margin:0;color:var(--beam);font-size:14px}
+.ctax{position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--panel2);color:var(--ink);cursor:pointer}
+.ctal{background:none;border:0;padding:0;color:var(--ink);text-decoration:underline;cursor:pointer;font-size:inherit}
+@media(max-width:600px){.cta{padding:6px 9px;font-size:14px}.ctan{max-width:90px}}
+.ctaw.ancha .ctab{width:min(1000px,100%)}
+.ctatabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+.ctali{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ctali li{padding:10px 12px;border-radius:10px;background:var(--panel2);border:1px solid var(--line)}
+.ctali p{margin:0 0 4px;overflow-wrap:anywhere}
+.ctali small{color:var(--mute)}
+.ctatb{overflow-x:auto}
+.ctatb table{border-collapse:collapse;width:100%;font-size:14px}
+.ctatb th,.ctatb td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.ctatb th{color:var(--mute);font-weight:600}
+/* «Propón un tema» (propuestas.js) */
+.prop{margin:28px max(4vw,16px) 8px;padding:18px;border-radius:16px;background:var(--panel);border:1px solid var(--line)}
+.prop h2{margin:0 0 4px;font-size:20px}
+.prop form{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.prop textarea{flex:1 1 260px;min-height:48px;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical}
+.prop textarea:focus-visible{outline:3px solid var(--beam);outline-offset:1px}
+.prop .ctam{flex-basis:100%}

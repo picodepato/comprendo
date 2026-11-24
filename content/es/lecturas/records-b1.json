@@ -1,0 +1,207 @@
+{
+ "id": "records-b1",
+ "topic": "records",
+ "level": "B1",
+ "title": "Los récords más absurdos",
+ "short": "Los récords más absurdos",
+ "text": [
+  "Todo empezó con una discusión. En 1951, [Sir Hugh Beaver], director de la empresa Guinness, no sabía cuál era el [ave de caza] más rápida de Europa, y no encontró la respuesta en ningún libro. Así nació una idea: un libro que reuniera los récords del mundo. La primera edición fue publicada en 1955 y se convirtió en un éxito inmediato.",
+  "Desde entonces, se han registrado miles de récords serios, pero los que más [llaman la atención] son los más absurdos. [Por ejemplo], en 2019, un canadiense llamado [Ted Hastings] se puso doscientas sesenta camisetas, una encima de otra. Al final, apenas podía moverse.",
+  "Otros récords exigen años de paciencia. La estadounidense [Lee Redmond] dejó crecer sus uñas durante casi treinta años, hasta que medían, en total, más de ocho metros. [Por desgracia], las perdió en un accidente de coche en 2009.",
+  "El rey de los récords es [Ashrita Furman], de [Nueva York]. Ha batido más de seiscientos récords, como caminar kilómetros con una botella de leche en la cabeza o dar volteretas durante horas. Para él, cada récord es una forma de demostrar que el cuerpo y la mente no tienen límites.",
+  "[Sin embargo], no todo vale. Hoy, los récords son revisados por jueces oficiales, y algunos han sido prohibidos porque eran peligrosos para la salud, como comer o beber cantidades enormes en poco tiempo. [Al fin y al cabo], la idea es divertirse, no hacerse daño."
+ ],
+ "q": [
+  [
+   "¿Cómo nació el [Libro Guinness de los Récords]?",
+   [
+    "Por una discusión sobre un ave",
+    "Por un concurso de camisetas",
+    "Por un accidente de coche"
+   ],
+   0
+  ],
+  [
+   "¿Cuándo fue publicada la primera edición?",
+   [
+    "En 1951",
+    "En 1955",
+    "En 2009"
+   ],
+   1
+  ],
+  [
+   "¿Cuántas camisetas se puso [Ted Hastings]?",
+   [
+    "Veintiséis",
+    "Doscientas sesenta",
+    "Seiscientas"
+   ],
+   1
+  ],
+  [
+   "¿Qué le pasó a [Lee Redmond] en 2009?",
+   [
+    "Batió otro récord",
+    "Perdió sus uñas en un accidente",
+    "Se cortó el pelo"
+   ],
+   1
+  ],
+  [
+   "¿Cuántos récords ha batido [Ashrita Furman]?",
+   [
+    "Más de seiscientos",
+    "Unos treinta",
+    "Solo uno"
+   ],
+   0
+  ],
+  [
+   "¿Por qué han sido prohibidos algunos récords?",
+   [
+    "Porque eran aburridos",
+    "Porque eran peligrosos para la salud",
+    "Porque eran demasiado fáciles"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "camiseta",
+   "👕"
+  ],
+  [
+   "uña",
+   "💅"
+  ],
+  [
+   "leche",
+   "🥛"
+  ],
+  [
+   "juez",
+   "⚖️"
+  ],
+  [
+   "ave",
+   "🐦"
+  ],
+  [
+   "coche",
+   "🚗"
+  ]
+ ],
+ "halves": [
+  [
+   "La primera edición fue publicada...",
+   "...en 1955."
+  ],
+  [
+   "[Ted Hastings] se puso...",
+   "...doscientas sesenta camisetas."
+  ],
+  [
+   "[Lee Redmond] perdió sus uñas...",
+   "...en un accidente de coche."
+  ],
+  [
+   "[Ashrita Furman] ha batido...",
+   "...más de seiscientos récords."
+  ],
+  [
+   "Los récords son revisados...",
+   "...por jueces oficiales."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: la voz pasiva",
+  "rule": "<b>ser + participio</b> (+ por...): lo importante es la cosa, no quién hace la acción. El participio concuerda: publicado, publicada, publicados, publicadas.",
+  "rows": [
+   "el libro fue publicado en 1955",
+   "los récords son revisados por jueces",
+   "la idea fue creada por Beaver",
+   "algunos récords han sido prohibidos",
+   "publicar → publicado, revisar → revisado",
+   "poner → puesto, escribir → escrito"
+  ],
+  "items": [
+   [
+    "La primera edición fue ___ en 1955.",
+    [
+     "publicado",
+     "publicada",
+     "publicadas"
+    ],
+    1
+   ],
+   [
+    "Los récords ___ revisados por jueces oficiales.",
+    [
+     "es",
+     "son",
+     "fue"
+    ],
+    1
+   ],
+   [
+    "Algunos récords han sido ___.",
+    [
+     "prohibidos",
+     "prohibido",
+     "prohibidas"
+    ],
+    0
+   ],
+   [
+    "El libro fue ___ por muchos expertos.",
+    [
+     "escribido",
+     "escrito",
+     "escritos"
+    ],
+    1
+   ],
+   [
+    "Las camisetas fueron ___ una encima de otra.",
+    [
+     "puesto",
+     "ponidas",
+     "puestas"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The most absurd records",
+   "sub": "T-shirts, fingernails and a bottle of milk",
+   "grammar": "Grammar: the passive voice. ser + past participle (+ by...): what matters is the thing, not who does the action. The participle agrees with the subject.",
+   "rows": [
+    "the book was published in 1955",
+    "records are checked by judges",
+    "the idea was created by Beaver",
+    "some records have been banned",
+    "publish → published, check → checked",
+    "put → put, write → written"
+   ],
+   "hints": [
+    "published",
+    "are",
+    "banned",
+    "written",
+    "put"
+   ],
+   "vocab": [
+    "T-shirt",
+    "fingernail",
+    "milk",
+    "judge",
+    "bird",
+    "car"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "en-inventos-b1",
+ "topic": "inventos",
+ "level": "B1",
+ "title": "Robots and artificial intelligence",
+ "short": "Robots and artificial intelligence",
+ "text": [
+  "Fifty years ago, robots only existed in science fiction films. People used to imagine metal men who walked and talked like humans. Today robots are real, but most of them look nothing like those old films.",
+  "In the past, factories used to need thousands of workers to build a car. Now huge robotic arms do most of the work. They never get tired, and they can repeat the same movement millions of times with perfect precision.",
+  "Artificial intelligence, or AI, is different. It is not a machine with arms: it is software that can learn from examples. People used to write every instruction for a computer. Now we show an AI millions of examples and it learns to recognize faces, translate languages or even write texts.",
+  "AI is already part of our lives. It recommends videos, helps doctors to find diseases in X-rays and drives some cars. Many people did not use to trust machines, but now they talk to virtual assistants every day.",
+  "Of course, there are also worries. Some jobs will disappear, and AI can make mistakes. That is why experts say we need clear rules. Robots and AI are powerful tools, and humans have to decide how to use them."
+ ],
+ "q": [
+  [
+   "Where did robots only exist fifty years ago?",
+   [
+    "In science fiction films",
+    "In schools",
+    "In hospitals"
+   ],
+   0
+  ],
+  [
+   "What do robotic arms do in factories?",
+   [
+    "Most of the work",
+    "Nothing",
+    "Only cleaning"
+   ],
+   0
+  ],
+  [
+   "What is artificial intelligence?",
+   [
+    "Software that can learn from examples",
+    "A metal man",
+    "A type of car"
+   ],
+   0
+  ],
+  [
+   "How does an AI learn?",
+   [
+    "From millions of examples",
+    "From one book",
+    "It does not learn"
+   ],
+   0
+  ],
+  [
+   "How does AI help doctors?",
+   [
+    "To find diseases in X-rays",
+    "To cook",
+    "To drive ambulances only"
+   ],
+   0
+  ],
+  [
+   "What do experts say we need?",
+   [
+    "Clear rules",
+    "More films",
+    "Fewer computers"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "robot",
+   "🤖"
+  ],
+  [
+   "arm",
+   "🦾"
+  ],
+  [
+   "factory",
+   "🏭"
+  ],
+  [
+   "doctor",
+   "🩺"
+  ],
+  [
+   "car",
+   "🚗"
+  ],
+  [
+   "job",
+   "💼"
+  ]
+ ],
+ "halves": [
+  [
+   "People used to imagine...",
+   "...metal men who talked like humans."
+  ],
+  [
+   "Robotic arms never...",
+   "...get tired."
+  ],
+  [
+   "An AI learns...",
+   "...from millions of examples."
+  ],
+  [
+   "AI helps doctors...",
+   "...to find diseases."
+  ],
+  [
+   "Humans have to decide...",
+   "...how to use these tools."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: used to",
+  "rule": "Use <b>used to</b> + verb for habits or situations in the past that are not true now. Negative: <b>did not use to</b>.",
+  "rows": [
+   "People used to imagine...",
+   "Factories used to need workers.",
+   "We used to write instructions.",
+   "They did not use to trust machines.",
+   "Did you use to...?",
+   "used to + verb"
+  ],
+  "items": [
+   [
+    "Factories ___ to need thousands of workers.",
+    [
+     "use",
+     "used",
+     "using"
+    ],
+    1
+   ],
+   [
+    "People used to ___ metal men.",
+    [
+     "imagined",
+     "imagine",
+     "imagining"
+    ],
+    1
+   ],
+   [
+    "Many people did not ___ to trust machines.",
+    [
+     "used",
+     "use",
+     "using"
+    ],
+    1
+   ],
+   [
+    "___ you use to watch science fiction films?",
+    [
+     "Did",
+     "Do",
+     "Were"
+    ],
+    0
+   ],
+   [
+    "We used ___ write every instruction.",
+    [
+     "to",
+     "for",
+     "of"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Robots e inteligencia artificial",
+   "sub": "Máquinas que aprenden y trabajan con nosotros",
+   "grammar": "Gramática: used to + verbo, para costumbres o situaciones del pasado que ya no son así (solía, antes...). Negativo: did not use to.",
+   "rows": [
+    "La gente solía imaginar...",
+    "Antes las fábricas necesitaban obreros.",
+    "Antes escribíamos instrucciones.",
+    "Antes no confiaban en las máquinas.",
+    "¿Solías...?",
+    "antes + pasado"
+   ],
+   "hints": [
+    "solían",
+    "imaginar",
+    "solían",
+    "Solías",
+    "(used to)"
+   ],
+   "vocab": [
+    "robot",
+    "brazo",
+    "fábrica",
+    "médico",
+    "coche",
+    "trabajo"
+   ]
+  }
+ }
+}

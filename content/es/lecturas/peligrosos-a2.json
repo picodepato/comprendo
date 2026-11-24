@@ -1,0 +1,207 @@
+{
+ "id": "peligrosos-a2",
+ "topic": "peligrosos",
+ "level": "A2",
+ "title": "Depredadores del océano",
+ "short": "Depredadores del océano",
+ "text": [
+  "Un depredador es un animal que caza y come a otros animales. En el océano viven algunos de los depredadores más peligrosos del planeta. Vamos a conocer a tres de ellos.",
+  "El [tiburón blanco] es el pez depredador más grande del mundo. Puede medir seis metros y tiene unos trescientos dientes. Tiene un olfato increíble: puede oler una gota de sangre [desde muy lejos]. Come focas, peces y, [a veces], ballenas muertas.",
+  "La orca parece una ballena, pero [en realidad] es un delfín: el delfín más grande de todos. Es más inteligente que el tiburón y caza en grupo, con su familia. Las orcas se comunican con sonidos y preparan estrategias. ¡Algunas orcas cazan tiburones blancos!",
+  "El [cocodrilo de agua salada] es el reptil más grande del mundo. Vive en ríos y en el mar, en Australia y en el sudeste de Asia. Es más pesado que un coche pequeño: algunos pesan más de mil kilos. Espera en el agua sin moverse y, [de repente], ataca muy rápido.",
+  "¿Son muy peligrosos para las personas? [En realidad], los ataques son muy raros. Cada año, los tiburones matan a unas cinco o diez personas en todo el mundo. Los mosquitos son mucho más peligrosos que los tiburones, porque transmiten enfermedades."
+ ],
+ "q": [
+  [
+   "¿Qué es un depredador?",
+   [
+    "Un animal que solo come plantas",
+    "Un animal que caza y come a otros animales",
+    "Un animal que vive en el océano"
+   ],
+   1
+  ],
+  [
+   "¿Cuántos dientes tiene el [tiburón blanco]?",
+   [
+    "Unos treinta",
+    "Unos trescientos",
+    "Unos tres mil"
+   ],
+   1
+  ],
+  [
+   "¿Qué es [en realidad] la orca?",
+   [
+    "Un delfín",
+    "Una ballena",
+    "Un tiburón"
+   ],
+   0
+  ],
+  [
+   "¿Cómo caza la orca?",
+   [
+    "Sola",
+    "En grupo, con su familia",
+    "Solo por la noche"
+   ],
+   1
+  ],
+  [
+   "¿Cuánto pesan algunos cocodrilos de agua salada?",
+   [
+    "Más de cien kilos",
+    "Más de mil kilos",
+    "Más de diez mil kilos"
+   ],
+   1
+  ],
+  [
+   "¿Qué animal es más peligroso que el tiburón?",
+   [
+    "La orca",
+    "El delfín",
+    "El mosquito"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "tiburón",
+   "🦈"
+  ],
+  [
+   "ballena",
+   "🐋"
+  ],
+  [
+   "delfín",
+   "🐬"
+  ],
+  [
+   "cocodrilo",
+   "🐊"
+  ],
+  [
+   "dientes",
+   "🦷"
+  ],
+  [
+   "mosquito",
+   "🦟"
+  ]
+ ],
+ "halves": [
+  [
+   "El [tiburón blanco] puede oler...",
+   "...una gota de sangre."
+  ],
+  [
+   "La orca parece una ballena...",
+   "...pero es un delfín."
+  ],
+  [
+   "Las orcas se comunican...",
+   "...con sonidos."
+  ],
+  [
+   "El cocodrilo es más pesado...",
+   "...que un coche pequeño."
+  ],
+  [
+   "Los ataques de tiburón...",
+   "...son muy raros."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: comparar",
+  "rule": "Para <b>comparar</b> dos cosas, usamos <b>más / menos ... que</b> y <b>tan ... como</b>.",
+  "rows": [
+   "más grande que",
+   "menos peligroso que",
+   "tan rápido como",
+   "el más grande de",
+   "bueno → mejor",
+   "malo → peor"
+  ],
+  "items": [
+   [
+    "La orca es más inteligente ___ el tiburón.",
+    [
+     "que",
+     "como",
+     "de"
+    ],
+    0
+   ],
+   [
+    "El cocodrilo es el reptil ___ grande del mundo.",
+    [
+     "menos",
+     "más",
+     "tan"
+    ],
+    1
+   ],
+   [
+    "Un tiburón es ___ peligroso que un mosquito.",
+    [
+     "más",
+     "menos",
+     "tan"
+    ],
+    1
+   ],
+   [
+    "El delfín es tan rápido ___ el tiburón.",
+    [
+     "que",
+     "como",
+     "de"
+    ],
+    1
+   ],
+   [
+    "Tengo un diez en el examen: mi nota es ___ que tu nota.",
+    [
+     "mejor",
+     "peor",
+     "más bien"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Ocean predators",
+   "sub": "The shark, the orca and the crocodile",
+   "grammar": "Grammar: comparisons. more / less ... than, as ... as, the most ...",
+   "rows": [
+    "bigger than",
+    "less dangerous than",
+    "as fast as",
+    "the biggest in",
+    "good → better",
+    "bad → worse"
+   ],
+   "hints": [
+    "than",
+    "most",
+    "less",
+    "as",
+    "better"
+   ],
+   "vocab": [
+    "shark",
+    "whale",
+    "dolphin",
+    "crocodile",
+    "teeth",
+    "mosquito"
+   ]
+  }
+ }
+}

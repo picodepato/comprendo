@@ -1,0 +1,207 @@
+{
+ "id": "peligrosos-a1",
+ "topic": "peligrosos",
+ "level": "A1",
+ "title": "Los animales más venenosos",
+ "short": "Los más venenosos",
+ "text": [
+  "En el mundo hay muchos animales peligrosos. Algunos son grandes y fuertes, como el león. Otros son pequeños, pero tienen veneno. Un veneno muy fuerte [puede matar] a una persona.",
+  "La [avispa de mar] es una medusa. Vive en el mar, cerca de Australia. Es casi transparente, [por eso] es difícil verla. Tiene tentáculos muy largos con veneno. ¡Es el animal más venenoso del mar!",
+  "El taipán es una serpiente de Australia. Vive en el desierto. Su veneno es el más fuerte de todas las serpientes. Pero el taipán es tímido: normalmente no ataca a las personas.",
+  "La [rana dardo dorada] es muy pequeña y de color amarillo. Vive en la selva de Colombia. Su piel tiene veneno. Su color brillante dice a los otros animales: «¡Cuidado! ¡No me comas!»",
+  "El [pulpo de anillos azules] es pequeño y bonito, pero ¡cuidado! Cuando tiene miedo, sus anillos azules brillan. Es una señal: «[No me toques]»."
+ ],
+ "q": [
+  [
+   "¿Qué es la [avispa de mar]?",
+   [
+    "Una serpiente",
+    "Una medusa",
+    "Una rana"
+   ],
+   1
+  ],
+  [
+   "¿Por qué es difícil ver la [avispa de mar]?",
+   [
+    "Porque es casi transparente",
+    "Porque es muy pequeña",
+    "Porque vive en el desierto"
+   ],
+   0
+  ],
+  [
+   "¿Dónde vive el taipán?",
+   [
+    "En la selva",
+    "En el mar",
+    "En el desierto"
+   ],
+   2
+  ],
+  [
+   "¿Cómo es el taipán con las personas?",
+   [
+    "Es tímido",
+    "Es agresivo",
+    "Es amigo"
+   ],
+   0
+  ],
+  [
+   "¿De qué color es la [rana dardo dorada]?",
+   [
+    "Azul",
+    "Amarillo",
+    "Verde"
+   ],
+   1
+  ],
+  [
+   "¿Qué pasa cuando el pulpo tiene miedo?",
+   [
+    "Sus anillos brillan",
+    "Corre muy rápido",
+    "Se esconde en la arena"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "serpiente",
+   "🐍"
+  ],
+  [
+   "rana",
+   "🐸"
+  ],
+  [
+   "pulpo",
+   "🐙"
+  ],
+  [
+   "veneno",
+   "☠️"
+  ],
+  [
+   "mar",
+   "🌊"
+  ],
+  [
+   "selva",
+   "🌴"
+  ]
+ ],
+ "halves": [
+  [
+   "La [avispa de mar] tiene...",
+   "...tentáculos muy largos."
+  ],
+  [
+   "El taipán vive...",
+   "...en el desierto de Australia."
+  ],
+  [
+   "La rana es pequeña...",
+   "...y de color amarillo."
+  ],
+  [
+   "Su color brillante dice:",
+   "«¡No me comas!»"
+  ],
+  [
+   "Cuando el pulpo tiene miedo...",
+   "...sus anillos brillan."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el adjetivo",
+  "rule": "El adjetivo cambia según la palabra: <b>masculino</b> o <b>femenino</b>, <b>uno</b> o <b>muchos</b>.",
+  "rows": [
+   "el pulpo pequeño",
+   "la rana pequeña",
+   "los pulpos pequeños",
+   "las ranas pequeñas",
+   "azul → azules",
+   "fuerte → fuertes"
+  ],
+  "items": [
+   [
+    "La rana es muy ___.",
+    [
+     "pequeño",
+     "pequeña",
+     "pequeños"
+    ],
+    1
+   ],
+   [
+    "Los tentáculos son muy ___.",
+    [
+     "larga",
+     "largos",
+     "largo"
+    ],
+    1
+   ],
+   [
+    "El veneno es muy ___.",
+    [
+     "peligroso",
+     "peligrosa",
+     "peligrosas"
+    ],
+    0
+   ],
+   [
+    "Las serpientes son ___.",
+    [
+     "tímida",
+     "tímidos",
+     "tímidas"
+    ],
+    2
+   ],
+   [
+    "El pulpo tiene anillos ___.",
+    [
+     "azul",
+     "azules",
+     "azula"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The most venomous animals",
+   "sub": "Small animals with strong venom",
+   "grammar": "Grammar: adjectives. They change to match the noun: masculine or feminine, singular or plural.",
+   "rows": [
+    "the small octopus",
+    "the small frog",
+    "the small octopuses",
+    "the small frogs",
+    "blue (one → many)",
+    "strong (one → many)"
+   ],
+   "hints": [
+    "small",
+    "long",
+    "dangerous",
+    "shy",
+    "blue"
+   ],
+   "vocab": [
+    "snake",
+    "frog",
+    "octopus",
+    "venom / poison",
+    "sea",
+    "jungle"
+   ]
+  }
+ }
+}

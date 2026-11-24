@@ -1,0 +1,207 @@
+{
+ "id": "minecraft-b1",
+ "topic": "minecraft",
+ "level": "B1",
+ "title": "Construcciones récord en Minecraft",
+ "short": "Construcciones récord",
+ "text": [
+  "En Minecraft, el único límite es la imaginación. [A lo largo de] los años, los jugadores han construido ciudades enteras, máquinas que funcionan y [hasta] copias de países reales. Algunas de estas obras han necesitado miles de horas de trabajo y la ayuda de cientos de personas.",
+  "El proyecto más ambicioso es [Build the Earth] («Construye la Tierra»). Empezó en 2020 y su objetivo es reconstruir todo nuestro planeta a tamaño real: un bloque de Minecraft equivale a un metro. Miles de voluntarios de todo el mundo ya han construido calles, edificios y monumentos de sus propias ciudades. Todavía falta muchísimo para terminarlo, pero cada día crece un poco más.",
+  "Otra construcción famosa es La Biblioteca sin Censura, que la organización [Reporteros sin Fronteras] abrió en 2020. Es un edificio gigante, hecho con millones de bloques, que guarda artículos de periodistas de países donde la prensa no es libre. Como Minecraft está permitido [casi en todas partes], jóvenes de todo el mundo han podido leer esos textos dentro del juego.",
+  "Los ingenieros de Minecraft usan la redstone, un mineral que funciona como la electricidad. Con ella, algunos jugadores han hecho calculadoras, ordenadores sencillos e [incluso] videojuegos dentro del propio Minecraft. Son construcciones enormes, porque cada circuito ocupa muchísimo espacio.",
+  "¿Y tú? ¿Has construido algo especial [alguna vez]? [No hace falta] ser un experto: muchos de estos proyectos empezaron con una sola persona y una idea. [Lo importante] es tener paciencia, planificar bien y, [sobre todo], divertirse."
+ ],
+ "q": [
+  [
+   "¿Cuál es el objetivo de [Build the Earth]?",
+   [
+    "Construir una ciudad inventada",
+    "Reconstruir la Tierra a tamaño real",
+    "Construir el edificio más alto"
+   ],
+   1
+  ],
+  [
+   "En [Build the Earth], ¿cuánto mide un bloque?",
+   [
+    "Un centímetro",
+    "Un metro",
+    "Un kilómetro"
+   ],
+   1
+  ],
+  [
+   "¿Quién abrió La Biblioteca sin Censura?",
+   [
+    "Mojang",
+    "Un grupo de niños",
+    "[Reporteros sin Fronteras]"
+   ],
+   2
+  ],
+  [
+   "¿Qué guarda la biblioteca?",
+   [
+    "Artículos de periodistas",
+    "Mapas secretos",
+    "Diamantes"
+   ],
+   0
+  ],
+  [
+   "¿Para qué sirve la redstone?",
+   [
+    "Para comer",
+    "Funciona como la electricidad",
+    "Para volar"
+   ],
+   1
+  ],
+  [
+   "Según el texto, ¿qué es lo más importante?",
+   [
+    "Ser un experto",
+    "Tener muchos amigos",
+    "Tener paciencia y divertirse"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "biblioteca",
+   "📚"
+  ],
+  [
+   "ciudad",
+   "🏙️"
+  ],
+  [
+   "calle",
+   "🛣️"
+  ],
+  [
+   "planeta",
+   "🌍"
+  ],
+  [
+   "calculadora",
+   "🧮"
+  ],
+  [
+   "idea",
+   "💡"
+  ]
+ ],
+ "halves": [
+  [
+   "[Build the Earth] empezó...",
+   "...en 2020."
+  ],
+  [
+   "Un bloque de Minecraft...",
+   "...equivale a un metro."
+  ],
+  [
+   "La biblioteca guarda artículos...",
+   "...de periodistas."
+  ],
+  [
+   "La redstone funciona...",
+   "...como la electricidad."
+  ],
+  [
+   "Muchos proyectos empezaron...",
+   "...con una sola persona y una idea."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el pretérito perfecto",
+  "rule": "<b>haber + participio</b>: acciones del pasado que todavía tienen relación con el presente (<b>ya</b>, <b>alguna vez</b>, <b>nunca</b>, <b>este año</b>).",
+  "rows": [
+   "yo he construido",
+   "tú has jugado",
+   "él / ella ha abierto",
+   "nosotros hemos visto",
+   "ellos han hecho",
+   "hacer → hecho, abrir → abierto, ver → visto"
+  ],
+  "items": [
+   [
+    "Los jugadores ___ construido ciudades enteras.",
+    [
+     "han",
+     "ha",
+     "hemos"
+    ],
+    0
+   ],
+   [
+    "¿Tú ___ jugado [alguna vez] a [Build the Earth]?",
+    [
+     "he",
+     "has",
+     "han"
+    ],
+    1
+   ],
+   [
+    "Yo nunca he ___ una calculadora de redstone.",
+    [
+     "hacido",
+     "hecho",
+     "haciendo"
+    ],
+    1
+   ],
+   [
+    "[Reporteros sin Fronteras] ha ___ una biblioteca.",
+    [
+     "abrido",
+     "abierto",
+     "abriendo"
+    ],
+    1
+   ],
+   [
+    "Nosotros ___ visto el proyecto en YouTube.",
+    [
+     "hemos",
+     "han",
+     "he"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Record-breaking builds in Minecraft",
+   "sub": "The whole Earth, a library and redstone computers",
+   "grammar": "Grammar: the present perfect. haber + past participle: I have built, they have made...",
+   "rows": [
+    "I have built",
+    "you have played",
+    "he / she has opened",
+    "we have seen",
+    "they have made",
+    "irregular: done/made, opened, seen"
+   ],
+   "hints": [
+    "have",
+    "have (you)",
+    "made",
+    "opened",
+    "have (we)"
+   ],
+   "vocab": [
+    "library",
+    "city",
+    "street",
+    "planet",
+    "calculator",
+    "idea"
+   ]
+  }
+ }
+}

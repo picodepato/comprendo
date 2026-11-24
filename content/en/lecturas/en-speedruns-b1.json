@@ -1,0 +1,207 @@
+{
+ "id": "en-speedruns-b1",
+ "topic": "speedruns",
+ "level": "B1",
+ "title": "Tricks and glitches",
+ "short": "Tricks and glitches",
+ "text": [
+  "Video games are made by people, and people make mistakes. A glitch is an error in the code of a game. For most players, glitches are annoying. For speedrunners, they are treasure.",
+  "Some glitches allow you to walk through walls. Others let you skip whole levels or even jump straight to the final scene. Finding these errors involves testing the game in strange ways, like pausing at a precise moment or walking against a corner for minutes.",
+  "Speedrunners love sharing their discoveries. When someone finds a new glitch, the community starts practicing it immediately. Many tricks require pressing buttons in a window of a few milliseconds, so executing them is incredibly hard.",
+  "Because glitches can change a game completely, speedrunners divide their races into categories. In an any% run, using glitches is allowed. In a glitchless run, players avoid using any error. This way, everyone competes under the same rules.",
+  "Some developers hate their games being broken, but many enjoy watching speedruns. A few even include secret shortcuts on purpose. After all, finding new ways to play is part of the fun of gaming."
+ ],
+ "q": [
+  [
+   "What is a glitch?",
+   [
+    "An error in the code of a game",
+    "A type of controller",
+    "A secret level"
+   ],
+   0
+  ],
+  [
+   "What can some glitches let you do?",
+   [
+    "Walk through walls",
+    "Buy things for free",
+    "Play without a screen"
+   ],
+   0
+  ],
+  [
+   "What does the community do with a new glitch?",
+   [
+    "It forgets it",
+    "It starts practicing it",
+    "It reports it to the police"
+   ],
+   1
+  ],
+  [
+   "Why are many tricks hard?",
+   [
+    "The window is only a few milliseconds",
+    "They need a new console",
+    "They are illegal"
+   ],
+   0
+  ],
+  [
+   "What is allowed in an any% run?",
+   [
+    "Using glitches",
+    "Using two controllers",
+    "Nothing"
+   ],
+   0
+  ],
+  [
+   "What do some developers do?",
+   [
+    "Include secret shortcuts on purpose",
+    "Delete all speedruns",
+    "Close their studios"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "error",
+   "🐞"
+  ],
+  [
+   "wall",
+   "🧱"
+  ],
+  [
+   "button",
+   "🔘"
+  ],
+  [
+   "shortcut",
+   "↪️"
+  ],
+  [
+   "rule",
+   "📏"
+  ],
+  [
+   "code",
+   "💾"
+  ]
+ ],
+ "halves": [
+  [
+   "A glitch is...",
+   "...an error in the code."
+  ],
+  [
+   "Some glitches let you...",
+   "...skip whole levels."
+  ],
+  [
+   "Speedrunners love...",
+   "...sharing their discoveries."
+  ],
+  [
+   "In a glitchless run...",
+   "...players avoid any error."
+  ],
+  [
+   "Finding new ways to play...",
+   "...is part of the fun."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: verbs + -ing",
+  "rule": "After some verbs and prepositions, the next verb takes <b>-ing</b>: love, enjoy, avoid, start, involve... An <b>-ing</b> verb can also be the subject of a sentence.",
+  "rows": [
+   "love sharing",
+   "enjoy watching",
+   "avoid using",
+   "start practicing",
+   "Finding glitches is hard.",
+   "after / before + -ing"
+  ],
+  "items": [
+   [
+    "Speedrunners love ___ their discoveries.",
+    [
+     "share",
+     "sharing",
+     "to shared"
+    ],
+    1
+   ],
+   [
+    "In a glitchless run, players avoid ___ errors.",
+    [
+     "use",
+     "using",
+     "used"
+    ],
+    1
+   ],
+   [
+    "___ these errors is very hard.",
+    [
+     "Find",
+     "Finding",
+     "Found"
+    ],
+    1
+   ],
+   [
+    "Many developers enjoy ___ speedruns.",
+    [
+     "watch",
+     "to watched",
+     "watching"
+    ],
+    2
+   ],
+   [
+    "The community starts ___ it immediately.",
+    [
+     "practicing",
+     "practice",
+     "practiced"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Trucos y glitches",
+   "sub": "Cuando los errores del juego se vuelven un arma",
+   "grammar": "Gramática: verbos con -ing. Después de algunos verbos (love, enjoy, avoid, start...) y de las preposiciones, el verbo va en -ing. También puede ser el sujeto de la frase.",
+   "rows": [
+    "encantar compartir",
+    "disfrutar viendo",
+    "evitar usar",
+    "empezar a practicar",
+    "Encontrar glitches es difícil.",
+    "después de / antes de + verbo"
+   ],
+   "hints": [
+    "compartir",
+    "usar",
+    "Encontrar",
+    "ver",
+    "practicarlo"
+   ],
+   "vocab": [
+    "error",
+    "pared",
+    "botón",
+    "atajo",
+    "regla",
+    "código"
+   ]
+  }
+ }
+}

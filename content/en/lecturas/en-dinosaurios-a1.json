@@ -1,0 +1,207 @@
+{
+ "id": "en-dinosaurios-a1",
+ "topic": "dinosaurios",
+ "level": "A1",
+ "title": "The biggest dinosaurs",
+ "short": "The biggest ones",
+ "text": [
+  "Dinosaurs lived on the Earth millions of years ago. There were small dinosaurs and there were enormous dinosaurs. Today we only find their bones.",
+  "The Argentinosaurus was a giant dinosaur from South America. It had a very long neck and a long tail. It was as long as three buses! It was a calm animal and it ate plants.",
+  "The Brachiosaurus was very tall. It had long front legs and it ate the leaves at the top of tall trees. It was like a giant giraffe.",
+  "The Tyrannosaurus rex was a big hungry hunter. It had a huge head, strong legs and very sharp teeth. But it had short arms. It ate other dinosaurs.",
+  "The Spinosaurus was a long dinosaur with a big sail on its back. It lived near rivers and it ate fish. It was even longer than the [T. rex]!"
+ ],
+ "q": [
+  [
+   "When did dinosaurs live?",
+   [
+    "Millions of years ago",
+    "One hundred years ago",
+    "Today"
+   ],
+   0
+  ],
+  [
+   "How long was the Argentinosaurus?",
+   [
+    "As long as three buses",
+    "As long as a car",
+    "As long as a dog"
+   ],
+   0
+  ],
+  [
+   "What did the Argentinosaurus eat?",
+   [
+    "Plants",
+    "Fish",
+    "Other dinosaurs"
+   ],
+   0
+  ],
+  [
+   "What was the Brachiosaurus like?",
+   [
+    "A giant giraffe",
+    "A small bird",
+    "A crocodile"
+   ],
+   0
+  ],
+  [
+   "What did the [T. rex] have?",
+   [
+    "Short arms",
+    "Long wings",
+    "A sail"
+   ],
+   0
+  ],
+  [
+   "Where did the Spinosaurus live?",
+   [
+    "Near rivers",
+    "In the desert",
+    "In the mountains"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "dinosaur",
+   "🦕"
+  ],
+  [
+   "bone",
+   "🦴"
+  ],
+  [
+   "neck",
+   "🦒"
+  ],
+  [
+   "leaves",
+   "🍃"
+  ],
+  [
+   "river",
+   "🏞️"
+  ],
+  [
+   "fish",
+   "🐟"
+  ]
+ ],
+ "halves": [
+  [
+   "Today we only find...",
+   "...their bones."
+  ],
+  [
+   "The Argentinosaurus ate...",
+   "...plants."
+  ],
+  [
+   "The Brachiosaurus ate the leaves...",
+   "...at the top of tall trees."
+  ],
+  [
+   "The [T. rex] had very sharp...",
+   "...teeth."
+  ],
+  [
+   "The Spinosaurus had a big sail...",
+   "...on its back."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: adjectives",
+  "rule": "In English, the adjective goes <b>before</b> the noun, and it does not change in the plural.",
+  "rows": [
+   "a big dinosaur",
+   "big dinosaurs",
+   "a long neck",
+   "sharp teeth",
+   "a tall tree",
+   "adjective + noun"
+  ],
+  "items": [
+   [
+    "It was a ___.",
+    [
+     "dinosaur big",
+     "big dinosaur",
+     "bigs dinosaur"
+    ],
+    1
+   ],
+   [
+    "It had very ___ teeth.",
+    [
+     "sharps",
+     "sharp",
+     "sharpes"
+    ],
+    1
+   ],
+   [
+    "It ate the leaves of ___.",
+    [
+     "trees tall",
+     "talls trees",
+     "tall trees"
+    ],
+    2
+   ],
+   [
+    "The [T. rex] had ___ arms.",
+    [
+     "short",
+     "shorts",
+     "arms short"
+    ],
+    0
+   ],
+   [
+    "It was a ___.",
+    [
+     "hunter hungry",
+     "hungry hunter",
+     "hungrys hunter"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los dinosaurios más grandes",
+   "sub": "Gigantes que caminaron por la Tierra",
+   "grammar": "Gramática: los adjetivos. En inglés el adjetivo va delante del nombre y no cambia en plural.",
+   "rows": [
+    "un dinosaurio grande",
+    "dinosaurios grandes",
+    "un cuello largo",
+    "dientes afilados",
+    "un árbol alto",
+    "adjetivo + nombre"
+   ],
+   "hints": [
+    "dinosaurio grande",
+    "afilados",
+    "árboles altos",
+    "cortos",
+    "cazador hambriento"
+   ],
+   "vocab": [
+    "dinosaurio",
+    "hueso",
+    "cuello",
+    "hojas",
+    "río",
+    "pez"
+   ]
+  }
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "id": "comida-b1",
+ "topic": "comida",
+ "level": "B1",
+ "title": "Los insectos, ¿comida del futuro?",
+ "short": "Los insectos, ¿comida del futuro?",
+ "text": [
+  "Si alguien te ofrece un plato de saltamontes fritos, ¿qué haces? Para muchos europeos y americanos, la idea de comer insectos da asco. Sin embargo, según la Organización de las Naciones Unidas para la Alimentación (la FAO), unos dos mil millones de personas en el mundo ya comen insectos de forma habitual.",
+  "En México, [por ejemplo], los chapulines son un aperitivo muy popular en Oaxaca. Son saltamontes tostados con limón, ajo, chile y sal. En Tailandia se venden grillos fritos en la calle, y en algunas partes de África las orugas son un alimento tradicional. En total, hay más de dos mil especies de insectos que se pueden comer.",
+  "¿Por qué hablan los científicos de la «comida del futuro»? En 2050 seremos casi diez mil millones de personas, y producir tanta carne será un problema enorme. Las vacas necesitan muchísima comida, agua y espacio, y producen gases que calientan el planeta. Los grillos, en cambio, necesitan muchísima menos comida para producir la misma cantidad de proteína.",
+  "Además, los insectos son muy nutritivos. Tienen tantas proteínas como la carne, y también vitaminas y minerales como el hierro. Se pueden criar en granjas pequeñas, incluso dentro de una ciudad, y casi no producen residuos.",
+  "En Europa ya han empezado los cambios. Desde 2021, la Unión Europea permite vender algunos insectos como alimento, como el gusano de la harina y el grillo doméstico. Muchas empresas los convierten en harina para hacer pasta, galletas o barritas. Así, los consumidores no ven el insecto y es más fácil probarlo.",
+  "¿Comeremos insectos todos los días dentro de unos años? Es difícil saberlo. El mayor problema no es el sabor, sino nuestra cabeza: nos cuesta cambiar lo que comemos. Quizá dentro de unos años una hamburguesa de grillos será tan normal como una pizza. ¿Tú te atreverías?"
+ ],
+ "q": [
+  [
+   "¿Cuántas personas comen insectos de forma habitual?",
+   [
+    "Unos dos millones",
+    "Unos dos mil millones",
+    "Casi nadie"
+   ],
+   1
+  ],
+  [
+   "¿Qué son los chapulines?",
+   [
+    "Grillos crudos",
+    "Saltamontes tostados",
+    "Orugas fritas"
+   ],
+   1
+  ],
+  [
+   "¿Cuántas personas habrá en el mundo en 2050?",
+   [
+    "Casi diez mil millones",
+    "Unos dos mil millones",
+    "Mil millones"
+   ],
+   0
+  ],
+  [
+   "¿Qué ventaja tienen los grillos frente a las vacas?",
+   [
+    "Son más grandes",
+    "Necesitan mucha menos comida",
+    "Producen más gases"
+   ],
+   1
+  ],
+  [
+   "¿Desde cuándo permite la Unión Europea vender algunos insectos?",
+   [
+    "Desde 1990",
+    "Desde 2050",
+    "Desde 2021"
+   ],
+   2
+  ],
+  [
+   "Según el texto, ¿cuál es el mayor problema?",
+   [
+    "El sabor",
+    "El precio",
+    "Nuestra cabeza: nos cuesta cambiar"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "vaca",
+   "🐄"
+  ],
+  [
+   "hamburguesa",
+   "🍔"
+  ],
+  [
+   "pizza",
+   "🍕"
+  ],
+  [
+   "galleta",
+   "🍪"
+  ],
+  [
+   "grillo",
+   "🦗"
+  ],
+  [
+   "harina",
+   "🌾"
+  ]
+ ],
+ "halves": [
+  [
+   "Para muchos europeos, comer insectos...",
+   "...da asco."
+  ],
+  [
+   "En Tailandia se venden...",
+   "...grillos fritos en la calle."
+  ],
+  [
+   "Las vacas producen gases...",
+   "...que calientan el planeta."
+  ],
+  [
+   "Los insectos tienen tantas proteínas...",
+   "...como la carne."
+  ],
+  [
+   "El mayor problema no es el sabor...",
+   "...sino nuestra cabeza."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el futuro",
+  "rule": "El <b>futuro</b> habla de lo que va a pasar. Se forma con el infinitivo + <b>-é, -ás, -á, -emos, -án</b>.",
+  "rows": [
+   "yo comeré",
+   "tú comerás",
+   "él / ella comerá",
+   "nosotros comeremos",
+   "ellos comerán",
+   "ser → será, haber → habrá, tener → tendrá"
+  ],
+  "items": [
+   [
+    "En 2050, ___ casi diez mil millones de personas.",
+    [
+     "seremos",
+     "somos",
+     "fuimos"
+    ],
+    0
+   ],
+   [
+    "Producir tanta carne ___ un problema.",
+    [
+     "era",
+     "será",
+     "es"
+    ],
+    1
+   ],
+   [
+    "Dentro de unos años, ¿___ (nosotros) insectos?",
+    [
+     "comemos",
+     "comíamos",
+     "comeremos"
+    ],
+    2
+   ],
+   [
+    "Mañana yo ___ chapulines por primera vez.",
+    [
+     "probaré",
+     "probé",
+     "pruebo"
+    ],
+    0
+   ],
+   [
+    "En el futuro ___ más granjas de insectos.",
+    [
+     "hay",
+     "habrá",
+     "había"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Insects: the food of the future?",
+   "sub": "Crickets, grasshoppers and caterpillars on the menu",
+   "grammar": "Grammar: the future tense. Infinitive + -é, -ás, -á, -emos, -án = will ...",
+   "rows": [
+    "I will eat",
+    "you will eat",
+    "he / she will eat",
+    "we will eat",
+    "they will eat",
+    "will be, there will be, will have"
+   ],
+   "hints": [
+    "we will be",
+    "will be",
+    "will we eat",
+    "I will try",
+    "there will be"
+   ],
+   "vocab": [
+    "cow",
+    "hamburger",
+    "pizza",
+    "biscuit / cookie",
+    "cricket",
+    "flour"
+   ]
+  }
+ }
+}

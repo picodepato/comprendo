@@ -1,0 +1,207 @@
+{
+ "id": "en-inventos-a2",
+ "topic": "inventos",
+ "level": "A2",
+ "title": "Accidental inventions",
+ "short": "Accidental inventions",
+ "text": [
+  "Some of the most famous inventions in history were mistakes. The inventors were looking for something else, but they were curious, so they found something new.",
+  "In 1928 Alexander Fleming went on holiday and left some dishes with bacteria in his laboratory. When he came back, he saw a strange mold on one of them. The bacteria around the mold were dead, so Fleming studied it. It was penicillin, the first antibiotic. It saved millions of lives.",
+  "In 1945 an engineer called Percy Spencer was working with radar machines. Suddenly he noticed that the chocolate bar in his pocket was melting. He was surprised, so he tried with popcorn. The popcorn exploded! This is how he invented the microwave oven.",
+  "In 1968 a scientist tried to make a very strong glue, but his glue was weak. Years later, a colleague wanted bookmarks that did not fall from his book, so he used the weak glue. That was the beginning of sticky notes.",
+  "Even the potato chip was an accident. A customer said that the potatoes in a restaurant were too thick, so the chef cut them very thin and fried them. The customer loved them!"
+ ],
+ "q": [
+  [
+   "What did Fleming leave in his laboratory?",
+   [
+    "Dishes with bacteria",
+    "A chocolate bar",
+    "Some potatoes"
+   ],
+   0
+  ],
+  [
+   "What was the mold?",
+   [
+    "Penicillin",
+    "Glue",
+    "Chocolate"
+   ],
+   0
+  ],
+  [
+   "What happened to the chocolate in the pocket of Spencer?",
+   [
+    "It was melting",
+    "It disappeared",
+    "It became hard"
+   ],
+   0
+  ],
+  [
+   "What did Spencer invent?",
+   [
+    "The microwave oven",
+    "The fridge",
+    "The radio"
+   ],
+   0
+  ],
+  [
+   "Why was the glue useful for bookmarks?",
+   [
+    "Because it was weak",
+    "Because it was very strong",
+    "Because it was blue"
+   ],
+   0
+  ],
+  [
+   "Why did the chef cut the potatoes very thin?",
+   [
+    "A customer said they were too thick",
+    "He had no time",
+    "He was tired"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "mistake",
+   "❌"
+  ],
+  [
+   "chocolate",
+   "🍫"
+  ],
+  [
+   "pocket",
+   "👖"
+  ],
+  [
+   "glue",
+   "🧴"
+  ],
+  [
+   "potato",
+   "🥔"
+  ],
+  [
+   "chef",
+   "👨‍🍳"
+  ]
+ ],
+ "halves": [
+  [
+   "Fleming saw a strange mold...",
+   "...on one of the dishes."
+  ],
+  [
+   "Penicillin saved...",
+   "...millions of lives."
+  ],
+  [
+   "The popcorn...",
+   "...exploded!"
+  ],
+  [
+   "The glue was weak...",
+   "...so it was perfect for bookmarks."
+  ],
+  [
+   "The chef cut the potatoes...",
+   "...very thin."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: because and so",
+  "rule": "Use <b>because</b> to give a reason. Use <b>so</b> to give a result.",
+  "rows": [
+   "He studied it because the bacteria were dead.",
+   "The bacteria were dead, so he studied it.",
+   "because = reason",
+   "so = result",
+   "I was hungry, so I ate.",
+   "I ate because I was hungry."
+  ],
+  "items": [
+   [
+    "He was surprised, ___ he tried with popcorn.",
+    [
+     "because",
+     "so",
+     "but so"
+    ],
+    1
+   ],
+   [
+    "The glue was useful ___ it was weak.",
+    [
+     "because",
+     "so",
+     "and so"
+    ],
+    0
+   ],
+   [
+    "The potatoes were thick, ___ the chef cut them thin.",
+    [
+     "because",
+     "so",
+     "why"
+    ],
+    1
+   ],
+   [
+    "Fleming studied the mold ___ it was strange.",
+    [
+     "so",
+     "because",
+     "then"
+    ],
+    1
+   ],
+   [
+    "They were curious, ___ they found something new.",
+    [
+     "so",
+     "because",
+     "what"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Inventos por accidente",
+   "sub": "Grandes descubrimientos que nadie buscaba",
+   "grammar": "Gramática: because y so. Because (porque) da la causa; so (así que) da el resultado.",
+   "rows": [
+    "Lo estudió porque las bacterias estaban muertas.",
+    "Las bacterias estaban muertas, así que lo estudió.",
+    "because = causa",
+    "so = consecuencia",
+    "Tenía hambre, así que comí.",
+    "Comí porque tenía hambre."
+   ],
+   "hints": [
+    "así que",
+    "porque",
+    "así que",
+    "porque",
+    "así que"
+   ],
+   "vocab": [
+    "error",
+    "chocolate",
+    "bolsillo",
+    "pegamento",
+    "patata",
+    "cocinero"
+   ]
+  }
+ }
+}

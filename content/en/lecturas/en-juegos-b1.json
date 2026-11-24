@@ -1,0 +1,207 @@
+{
+ "id": "en-juegos-b1",
+ "topic": "juegos",
+ "level": "B1",
+ "title": "Why does a game become famous?",
+ "short": "Why a game becomes famous",
+ "text": [
+  "Every year thousands of video games are published, but only a few become really famous. What is the difference? Experts who study games have found some common ingredients.",
+  "The first ingredient is a simple idea that anyone can understand in a few seconds. Tetris, which was made in 1984, only has falling pieces. Among Us, where players look for a traitor, can be explained in one sentence.",
+  "The second ingredient is friends. A game that you can play with other people spreads much faster. When a player who loves a game invites a friend, the friend often invites more friends. This is called the network effect.",
+  "The third ingredient is the internet. Streamers and YouTubers, who have millions of followers, can make a game famous overnight. Among Us came out in 2018, but it only became a hit in 2020, when famous streamers started to play it.",
+  "Finally, luck plays a part. Many excellent games never find their audience, while some strange ones go viral. That is why game studios often say that a hit is a mix of a good idea, good timing and a little magic."
+ ],
+ "q": [
+  [
+   "How many games are published every year?",
+   [
+    "About ten",
+    "Thousands",
+    "Only one"
+   ],
+   1
+  ],
+  [
+   "What is the first ingredient of a famous game?",
+   [
+    "Expensive graphics",
+    "A simple idea",
+    "A long story"
+   ],
+   1
+  ],
+  [
+   "What is the network effect?",
+   [
+    "Friends invite more friends",
+    "A computer problem",
+    "A type of internet cable"
+   ],
+   0
+  ],
+  [
+   "When did Among Us become a hit?",
+   [
+    "In 2018",
+    "In 2020",
+    "In 1984"
+   ],
+   1
+  ],
+  [
+   "Why did Among Us become a hit?",
+   [
+    "Famous streamers started to play it",
+    "It was on television",
+    "It was very expensive"
+   ],
+   0
+  ],
+  [
+   "According to studios, what is a hit?",
+   [
+    "A mix of a good idea, good timing and magic",
+    "Only luck",
+    "Only money"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "idea",
+   "💡"
+  ],
+  [
+   "friend",
+   "🧑‍🤝‍🧑"
+  ],
+  [
+   "follower",
+   "👥"
+  ],
+  [
+   "luck",
+   "🍀"
+  ],
+  [
+   "traitor",
+   "🕵️"
+  ],
+  [
+   "expert",
+   "🎓"
+  ]
+ ],
+ "halves": [
+  [
+   "Tetris only has...",
+   "...falling pieces."
+  ],
+  [
+   "A game that you can play with friends...",
+   "...spreads much faster."
+  ],
+  [
+   "Streamers can make a game famous...",
+   "...overnight."
+  ],
+  [
+   "Among Us came out in 2018...",
+   "...but became a hit in 2020."
+  ],
+  [
+   "Many excellent games...",
+   "...never find their audience."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: relative clauses",
+  "rule": "Use <b>who</b> for people, <b>which</b> for things and <b>where</b> for places. <b>That</b> can be used for people and things.",
+  "rows": [
+   "a player who loves games",
+   "a game which is simple",
+   "a game where you look for a traitor",
+   "streamers who have followers",
+   "that = who / which",
+   "whose = de quien"
+  ],
+  "items": [
+   [
+    "Streamers ___ have millions of followers are powerful.",
+    [
+     "which",
+     "who",
+     "where"
+    ],
+    1
+   ],
+   [
+    "Tetris is a game ___ was made in 1984.",
+    [
+     "which",
+     "who",
+     "where"
+    ],
+    0
+   ],
+   [
+    "Among Us is a game ___ players look for a traitor.",
+    [
+     "who",
+     "which",
+     "where"
+    ],
+    2
+   ],
+   [
+    "A player ___ loves a game invites friends.",
+    [
+     "where",
+     "who",
+     "which"
+    ],
+    1
+   ],
+   [
+    "This is the studio ___ made the game.",
+    [
+     "that",
+     "where",
+     "who's"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Por qué un juego se hace famoso?",
+   "sub": "Los secretos de los grandes éxitos",
+   "grammar": "Gramática: las oraciones de relativo. Who para personas, which para cosas, where para lugares. That sirve para personas y cosas.",
+   "rows": [
+    "un jugador que ama los juegos",
+    "un juego que es sencillo",
+    "un juego donde buscas a un traidor",
+    "streamers que tienen seguidores",
+    "that = que",
+    "cuyo"
+   ],
+   "hints": [
+    "que",
+    "que",
+    "donde",
+    "que",
+    "que"
+   ],
+   "vocab": [
+    "idea",
+    "amigo",
+    "seguidor",
+    "suerte",
+    "traidor",
+    "experto"
+   ]
+  }
+ }
+}

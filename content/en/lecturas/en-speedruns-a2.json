@@ -1,0 +1,207 @@
+{
+ "id": "en-speedruns-a2",
+ "topic": "speedruns",
+ "level": "A2",
+ "title": "The Super Mario record",
+ "short": "The Super Mario record",
+ "text": [
+  "Super Mario Bros. came out in 1985. It is one of the most famous games in history. Millions of people played it as children. But for speedrunners, it became a race that never ends.",
+  "A normal player needs hours to finish the game. Speedrunners finish it in less than five minutes. How did they do it? They used warp pipes to skip worlds, and they discovered tiny tricks to save time.",
+  "For many years, players fought for every hundredth of a second. In 2018 a runner called Kosmic got a very fast time. Then other runners like Niftski and Kosmic broke the record again and again.",
+  "Did they play for fun? Yes, but they also trained a lot. Some runners played the first level thousands of times. They studied the game frame by frame to find the perfect route.",
+  "In 2023 Niftski finished the game in four minutes and fifty-four seconds. Experts say it is almost impossible to go faster. But did people believe that before? No, and the record fell again!"
+ ],
+ "q": [
+  [
+   "When did Super Mario Bros. come out?",
+   [
+    "In 1985",
+    "In 2018",
+    "In 2023"
+   ],
+   0
+  ],
+  [
+   "How long do speedrunners need to finish it?",
+   [
+    "Hours",
+    "Less than five minutes",
+    "One day"
+   ],
+   1
+  ],
+  [
+   "What did they use to skip worlds?",
+   [
+    "Warp pipes",
+    "Stars",
+    "Mushrooms"
+   ],
+   0
+  ],
+  [
+   "What did players fight for?",
+   [
+    "Every hundredth of a second",
+    "Money only",
+    "A new console"
+   ],
+   0
+  ],
+  [
+   "How did runners study the game?",
+   [
+    "Frame by frame",
+    "With books",
+    "They did not study"
+   ],
+   0
+  ],
+  [
+   "What was the time of Niftski in 2023?",
+   [
+    "Four minutes and fifty-four seconds",
+    "Ten minutes",
+    "One hour"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "record",
+   "🏅"
+  ],
+  [
+   "race",
+   "🏁"
+  ],
+  [
+   "pipe",
+   "🟩"
+  ],
+  [
+   "trick",
+   "🎩"
+  ],
+  [
+   "route",
+   "🛤️"
+  ],
+  [
+   "second",
+   "⏲️"
+  ]
+ ],
+ "halves": [
+  [
+   "Super Mario Bros. came out...",
+   "...in 1985."
+  ],
+  [
+   "Speedrunners finish it...",
+   "...in less than five minutes."
+  ],
+  [
+   "They used warp pipes...",
+   "...to skip worlds."
+  ],
+  [
+   "Some runners played the first level...",
+   "...thousands of times."
+  ],
+  [
+   "Experts say it is almost impossible...",
+   "...to go faster."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: questions in the past simple",
+  "rule": "To ask questions in the past simple, use <b>did</b> + subject + verb (without -ed).",
+  "rows": [
+   "Did they play?",
+   "Did you finish the game?",
+   "What did he use?",
+   "How did they do it?",
+   "Yes, they did. / No, they did not.",
+   "did + verb (no -ed)"
+  ],
+  "items": [
+   [
+    "___ they play for fun?",
+    [
+     "Do",
+     "Did",
+     "Does"
+    ],
+    1
+   ],
+   [
+    "Did he ___ the record?",
+    [
+     "broke",
+     "break",
+     "breaked"
+    ],
+    1
+   ],
+   [
+    "How ___ they do it?",
+    [
+     "did",
+     "does",
+     "done"
+    ],
+    0
+   ],
+   [
+    "What did they ___ to skip worlds?",
+    [
+     "used",
+     "use",
+     "using"
+    ],
+    1
+   ],
+   [
+    "___ you finish the game yesterday?",
+    [
+     "Did",
+     "Were",
+     "Do"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El récord de Super Mario",
+   "sub": "La carrera por los milisegundos",
+   "grammar": "Gramática: preguntas en pasado simple: did + sujeto + verbo (sin -ed).",
+   "rows": [
+    "¿Jugaron?",
+    "¿Terminaste el juego?",
+    "¿Qué usó?",
+    "¿Cómo lo hicieron?",
+    "respuestas cortas",
+    "did + verbo sin -ed"
+   ],
+   "hints": [
+    "Jugaron",
+    "batió",
+    "lo hicieron",
+    "usaron",
+    "Terminaste"
+   ],
+   "vocab": [
+    "récord",
+    "carrera",
+    "tubería",
+    "truco",
+    "ruta",
+    "segundo"
+   ]
+  }
+ }
+}

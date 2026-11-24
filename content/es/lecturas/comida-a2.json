@@ -1,0 +1,207 @@
+{
+ "id": "comida-a2",
+ "topic": "comida",
+ "level": "A2",
+ "title": "Comidas raras del mundo",
+ "short": "Comidas raras del mundo",
+ "text": [
+  "Cada país tiene su comida típica. Algunas comidas son normales para la gente de allí, pero muy raras para los visitantes. Hoy viajamos por el mundo para conocer cuatro comidas sorprendentes.",
+  "En Japón, mucha gente desayuna natto. Son semillas de soja fermentadas. Tienen un olor fuerte y son muy pegajosas: cuando las levantas con los palillos, salen hilos largos. Normalmente, el natto se come con arroz.",
+  "En China existe el [huevo centenario]. Su nombre significa «huevo de cien años», pero no es tan viejo: se prepara en unas semanas. Se guarda en una mezcla de barro, sal y ceniza. Al final, la clara se vuelve negra y transparente, y la yema se vuelve verde oscuro.",
+  "En Escocia se come el haggis, el plato nacional. Se hace con partes del cordero, como el corazón y los pulmones, mezcladas con cebolla y avena. [Antes], todo se cocinaba dentro del estómago del animal. Se sirve con puré de patatas.",
+  "Pero la comida más apestosa es, [quizás], el surströmming de Suecia. Es pescado fermentado en una lata. El olor es tan fuerte que la lata se abre fuera de casa. Muchos suecos lo comen en pan con patatas y cebolla. ¿Te atreves a probarlo?"
+ ],
+ "q": [
+  [
+   "¿Dónde se come el natto?",
+   [
+    "En China",
+    "En Japón",
+    "En Suecia"
+   ],
+   1
+  ],
+  [
+   "¿Qué pasa cuando levantas el natto?",
+   [
+    "Salen hilos largos",
+    "Cambia de color",
+    "Se rompe"
+   ],
+   0
+  ],
+  [
+   "¿Cuánto tiempo necesita el [huevo centenario]?",
+   [
+    "Cien años",
+    "Unas semanas",
+    "Un día"
+   ],
+   1
+  ],
+  [
+   "¿De qué color es la clara del [huevo centenario]?",
+   [
+    "Blanca",
+    "Verde",
+    "Negra y transparente"
+   ],
+   2
+  ],
+  [
+   "¿Con qué se sirve el haggis?",
+   [
+    "Con puré de patatas",
+    "Con arroz",
+    "Con pan"
+   ],
+   0
+  ],
+  [
+   "¿Por qué la lata de surströmming se abre fuera de casa?",
+   [
+    "Porque es muy grande",
+    "Porque el olor es muy fuerte",
+    "Porque es una tradición de verano"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "huevo",
+   "🥚"
+  ],
+  [
+   "arroz",
+   "🍚"
+  ],
+  [
+   "pescado",
+   "🐟"
+  ],
+  [
+   "pan",
+   "🍞"
+  ],
+  [
+   "cebolla",
+   "🧅"
+  ],
+  [
+   "palillos",
+   "🥢"
+  ]
+ ],
+ "halves": [
+  [
+   "El natto es...",
+   "...muy pegajoso."
+  ],
+  [
+   "El [huevo centenario] no es...",
+   "...tan viejo."
+  ],
+  [
+   "El haggis es...",
+   "...el plato nacional de Escocia."
+  ],
+  [
+   "El surströmming es...",
+   "...pescado fermentado en una lata."
+  ],
+  [
+   "Muchos suecos lo comen...",
+   "...en pan con patatas."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: se + verbo",
+  "rule": "Usamos <b>se + verbo</b> cuando no importa quién hace la acción. Si la cosa es una: <b>se come</b>. Si son varias: <b>se comen</b>.",
+  "rows": [
+   "se come",
+   "se comen",
+   "se prepara",
+   "se guarda",
+   "se sirve",
+   "se abre"
+  ],
+  "items": [
+   [
+    "El natto ___ con arroz.",
+    [
+     "se come",
+     "se comen",
+     "come"
+    ],
+    0
+   ],
+   [
+    "Los huevos ___ en barro y sal.",
+    [
+     "se guarda",
+     "se guardan",
+     "guardan se"
+    ],
+    1
+   ],
+   [
+    "En Escocia ___ haggis.",
+    [
+     "se comen",
+     "se come",
+     "comes"
+    ],
+    1
+   ],
+   [
+    "La lata ___ fuera de casa.",
+    [
+     "se abre",
+     "se abren",
+     "abre se"
+    ],
+    0
+   ],
+   [
+    "Las patatas ___ con el haggis.",
+    [
+     "se sirve",
+     "se sirven",
+     "sirven"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Strange foods of the world",
+   "sub": "Four surprising dishes",
+   "grammar": "Grammar: se + verb, when it doesn't matter who does it. One thing: se come. Several things: se comen.",
+   "rows": [
+    "is eaten",
+    "are eaten",
+    "is prepared",
+    "is kept",
+    "is served",
+    "is opened"
+   ],
+   "hints": [
+    "is eaten",
+    "are kept",
+    "is eaten",
+    "is opened",
+    "are served"
+   ],
+   "vocab": [
+    "egg",
+    "rice",
+    "fish (food)",
+    "bread",
+    "onion",
+    "chopsticks"
+   ]
+  }
+ }
+}

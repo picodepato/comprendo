@@ -1,0 +1,207 @@
+{
+ "id": "en-records-b1",
+ "topic": "records",
+ "level": "B1",
+ "title": "The most absurd records",
+ "short": "The most absurd records",
+ "text": [
+  "Not every world record is about being the fastest or the strongest. Some of the records in the Guinness book are so absurd that you might laugh when you read them. But each one has required hours of effort.",
+  "Have you ever tried to balance a spoon on your nose? A man from Iran has balanced thirty-one spoons on his face at the same time. Another person has kept a pencil balanced on his nose for more than eleven minutes.",
+  "Food records are also popular. People have built the largest pizza, the longest sandwich and the tallest cake. A team in Italy has made a pizza more than one thousand eight hundred meters long. After the record, the pizza was shared with everyone.",
+  "Some records involve animals. A dog called Purin has caught more balls with its paws than any other dog in one minute. And a cat called Didga has done more tricks on a skateboard than any other cat.",
+  "Why do people do it? Many say they have always dreamed of seeing their name in the book. Others just enjoy the challenge. Since the book first appeared in 1955, millions of people have tried to break a record. Have you ever thought about it?"
+ ],
+ "q": [
+  [
+   "What is special about the records in this text?",
+   [
+    "They are absurd",
+    "They are dangerous",
+    "They are about speed"
+   ],
+   0
+  ],
+  [
+   "How many spoons has a man balanced on his face?",
+   [
+    "Three",
+    "Thirty-one",
+    "One hundred"
+   ],
+   1
+  ],
+  [
+   "How long was the pizza from Italy?",
+   [
+    "More than one thousand eight hundred meters",
+    "Ten meters",
+    "One kilometer exactly"
+   ],
+   0
+  ],
+  [
+   "What happened to the pizza after the record?",
+   [
+    "It was thrown away",
+    "It was shared with everyone",
+    "It was sold"
+   ],
+   1
+  ],
+  [
+   "What can the cat Didga do?",
+   [
+    "Tricks on a skateboard",
+    "Catch balls",
+    "Swim"
+   ],
+   0
+  ],
+  [
+   "When did the book first appear?",
+   [
+    "In 1955",
+    "In 2000",
+    "In 1900"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "spoon",
+   "🥄"
+  ],
+  [
+   "nose",
+   "👃"
+  ],
+  [
+   "pencil",
+   "✏️"
+  ],
+  [
+   "pizza",
+   "🍕"
+  ],
+  [
+   "cake",
+   "🎂"
+  ],
+  [
+   "dog",
+   "🐕"
+  ]
+ ],
+ "halves": [
+  [
+   "Each absurd record has required...",
+   "...hours of effort."
+  ],
+  [
+   "A man from Iran has balanced...",
+   "...thirty-one spoons."
+  ],
+  [
+   "A team in Italy has made...",
+   "...a very long pizza."
+  ],
+  [
+   "A cat called Didga...",
+   "...does tricks on a skateboard."
+  ],
+  [
+   "Millions of people have tried...",
+   "...to break a record."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the present perfect",
+  "rule": "Use the <b>present perfect</b> (have / has + past participle) for experiences and for past actions without a specific time. Use <b>ever</b> in questions and <b>never</b> for negative experiences.",
+  "rows": [
+   "I have tried",
+   "she has balanced",
+   "they have built",
+   "Have you ever...?",
+   "I have never...",
+   "make → made, do → done, see → seen"
+  ],
+  "items": [
+   [
+    "A man ___ balanced thirty-one spoons.",
+    [
+     "have",
+     "has",
+     "is"
+    ],
+    1
+   ],
+   [
+    "___ you ever tried to break a record?",
+    [
+     "Did",
+     "Have",
+     "Has"
+    ],
+    1
+   ],
+   [
+    "People have ___ the longest sandwich.",
+    [
+     "build",
+     "built",
+     "builded"
+    ],
+    1
+   ],
+   [
+    "I have ___ seen a cat on a skateboard.",
+    [
+     "never",
+     "ever",
+     "yet"
+    ],
+    0
+   ],
+   [
+    "The dog has ___ more balls than any other dog.",
+    [
+     "catch",
+     "catched",
+     "caught"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los récords más absurdos",
+   "sub": "Récords raros que alguien decidió batir",
+   "grammar": "Gramática: el presente perfecto (have / has + participio), para experiencias y acciones pasadas sin fecha concreta. Ever en preguntas (alguna vez) y never (nunca).",
+   "rows": [
+    "he intentado",
+    "ella ha mantenido en equilibrio",
+    "han construido",
+    "¿Alguna vez has...?",
+    "Nunca he...",
+    "participios irregulares"
+   ],
+   "hints": [
+    "ha",
+    "Has",
+    "construido",
+    "nunca",
+    "atrapado"
+   ],
+   "vocab": [
+    "cuchara",
+    "nariz",
+    "lápiz",
+    "pizza",
+    "pastel",
+    "perro"
+   ]
+  }
+ }
+}

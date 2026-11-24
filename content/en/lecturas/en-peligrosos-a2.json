@@ -1,0 +1,207 @@
+{
+ "id": "en-peligrosos-a2",
+ "topic": "peligrosos",
+ "level": "A2",
+ "title": "Ocean predators",
+ "short": "Ocean predators",
+ "text": [
+  "The ocean is full of life, but it is also full of hunters. A predator is an animal that hunts and eats other animals. In the sea there are some amazing predators.",
+  "The great white shark is the most famous. It is longer than a car and it has about three hundred teeth. It can smell a drop of blood from very far away. But sharks attack people very rarely. Fishing is more dangerous for sharks than sharks are for us.",
+  "The orca, or killer whale, is bigger and stronger than the great white shark. Orcas live and hunt in family groups. They are very intelligent and they work as a team. Sometimes they even hunt sharks!",
+  "The saltwater crocodile lives near the coast in Asia and Australia. It is heavier than a small car. It waits without moving in the water and then it attacks very fast.",
+  "Some ocean predators are tiny. The cone snail is smaller than your hand, but it has a dangerous venom. Be careful when you walk on the beach!"
+ ],
+ "q": [
+  [
+   "What is a predator?",
+   [
+    "An animal that only eats plants",
+    "An animal that hunts other animals",
+    "A type of fish"
+   ],
+   1
+  ],
+  [
+   "How many teeth does the great white shark have?",
+   [
+    "About thirty",
+    "About three hundred",
+    "About three thousand"
+   ],
+   1
+  ],
+  [
+   "Which animal is bigger than the great white shark?",
+   [
+    "The orca",
+    "The cone snail",
+    "The crocodile"
+   ],
+   0
+  ],
+  [
+   "How do orcas hunt?",
+   [
+    "Alone",
+    "In family groups",
+    "At night only"
+   ],
+   1
+  ],
+  [
+   "How does the crocodile attack?",
+   [
+    "It waits and then attacks very fast",
+    "It swims after boats",
+    "It jumps from trees"
+   ],
+   0
+  ],
+  [
+   "What is special about the cone snail?",
+   [
+    "It is very big",
+    "It is very fast",
+    "It has a dangerous venom"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "shark",
+   "🦈"
+  ],
+  [
+   "whale",
+   "🐋"
+  ],
+  [
+   "teeth",
+   "🦷"
+  ],
+  [
+   "blood",
+   "🩸"
+  ],
+  [
+   "beach",
+   "🏖️"
+  ],
+  [
+   "hunt",
+   "🎯"
+  ]
+ ],
+ "halves": [
+  [
+   "A predator is an animal...",
+   "...that hunts other animals."
+  ],
+  [
+   "The shark can smell...",
+   "...a drop of blood."
+  ],
+  [
+   "Orcas live and hunt...",
+   "...in family groups."
+  ],
+  [
+   "The crocodile is heavier...",
+   "...than a small car."
+  ],
+  [
+   "The cone snail is smaller...",
+   "...than your hand."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: comparatives",
+  "rule": "To compare two things, use <b>adjective + -er + than</b>. With long adjectives use <b>more + adjective + than</b>.",
+  "rows": [
+   "big → bigger than",
+   "long → longer than",
+   "heavy → heavier than",
+   "dangerous → more dangerous than",
+   "good → better than",
+   "bad → worse than"
+  ],
+  "items": [
+   [
+    "The orca is ___ than the shark.",
+    [
+     "big",
+     "bigger",
+     "more big"
+    ],
+    1
+   ],
+   [
+    "A shark is ___ than a car.",
+    [
+     "longer",
+     "more long",
+     "longest"
+    ],
+    0
+   ],
+   [
+    "The crocodile is ___ than a small car.",
+    [
+     "heavyer",
+     "heavier",
+     "more heavy"
+    ],
+    1
+   ],
+   [
+    "Fishing is ___ for sharks than sharks are for us.",
+    [
+     "dangerouser",
+     "most dangerous",
+     "more dangerous"
+    ],
+    2
+   ],
+   [
+    "The snail is ___ than your hand.",
+    [
+     "smaller",
+     "more small",
+     "smallest"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Depredadores del océano",
+   "sub": "Los cazadores más grandes del mar",
+   "grammar": "Gramática: los comparativos. Para comparar dos cosas: adjetivo + -er + than. Con adjetivos largos: more + adjetivo + than.",
+   "rows": [
+    "grande → más grande que",
+    "largo → más largo que",
+    "pesado → más pesado que",
+    "peligroso → más peligroso que",
+    "bueno → mejor que",
+    "malo → peor que"
+   ],
+   "hints": [
+    "más grande",
+    "más largo",
+    "más pesado",
+    "más peligrosa",
+    "más pequeño"
+   ],
+   "vocab": [
+    "tiburón",
+    "ballena",
+    "dientes",
+    "sangre",
+    "playa",
+    "cazar"
+   ]
+  }
+ }
+}

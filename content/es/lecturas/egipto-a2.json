@@ -1,0 +1,207 @@
+{
+ "id": "egipto-a2",
+ "topic": "egipto",
+ "level": "A2",
+ "title": "Las momias",
+ "short": "Las momias",
+ "text": [
+  "Los antiguos egipcios creían que había otra vida después de la muerte. Pero, para vivir esa nueva vida, el muerto necesitaba su cuerpo. Por eso, cuando alguien importante moría, lo convertían en una momia.",
+  "Hacer una momia era un trabajo muy largo: duraba unos setenta días. Primero, los embalsamadores lavaban el cuerpo y sacaban los órganos. ¡El cerebro lo sacaban por la nariz con un gancho! Guardaban algunos órganos en unos vasos especiales, pero dejaban el corazón dentro del cuerpo.",
+  "Después, cubrían el cuerpo con una sal que se llama natrón. La sal secaba el cuerpo durante unos cuarenta días. Así, el cuerpo no se estropeaba y podía durar miles de años.",
+  "Al final, envolvían la momia con cientos de metros de vendas de tela. Entre las vendas ponían amuletos para protegerla. A las momias de los faraones les ponían también una máscara y las guardaban en un sarcófago muy bonito.",
+  "No solo había momias de personas. Los egipcios también hacían momias de animales: gatos, cocodrilos, pájaros y [hasta] peces. Los arqueólogos han encontrado millones de momias de animales en Egipto."
+ ],
+ "q": [
+  [
+   "¿Por qué hacían momias los egipcios?",
+   [
+    "Para asustar a la gente",
+    "Porque el muerto necesitaba su cuerpo en la otra vida",
+    "Para venderlas"
+   ],
+   1
+  ],
+  [
+   "¿Cuánto tiempo duraba hacer una momia?",
+   [
+    "Unos siete días",
+    "Unos setenta días",
+    "Unos setenta años"
+   ],
+   1
+  ],
+  [
+   "¿Por dónde sacaban el cerebro?",
+   [
+    "Por la nariz",
+    "Por la boca",
+    "Por la oreja"
+   ],
+   0
+  ],
+  [
+   "¿Qué órgano dejaban dentro del cuerpo?",
+   [
+    "El cerebro",
+    "El corazón",
+    "Ninguno"
+   ],
+   1
+  ],
+  [
+   "¿Para qué usaban el natrón?",
+   [
+    "Para secar el cuerpo",
+    "Para pintar la máscara",
+    "Para cocinar"
+   ],
+   0
+  ],
+  [
+   "¿De qué animales hacían momias?",
+   [
+    "Solo de gatos",
+    "De gatos, cocodrilos, pájaros y peces",
+    "De ningún animal"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "momia",
+   "🧟"
+  ],
+  [
+   "cerebro",
+   "🧠"
+  ],
+  [
+   "nariz",
+   "👃"
+  ],
+  [
+   "corazón",
+   "❤️"
+  ],
+  [
+   "sal",
+   "🧂"
+  ],
+  [
+   "cocodrilo",
+   "🐊"
+  ]
+ ],
+ "halves": [
+  [
+   "Hacer una momia duraba...",
+   "...unos setenta días."
+  ],
+  [
+   "El cerebro lo sacaban...",
+   "...por la nariz."
+  ],
+  [
+   "La sal secaba el cuerpo...",
+   "...durante unos cuarenta días."
+  ],
+  [
+   "Entre las vendas ponían...",
+   "...amuletos."
+  ],
+  [
+   "Los egipcios también hacían momias...",
+   "...de animales."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el pretérito imperfecto",
+  "rule": "El <b>imperfecto</b> sirve para hablar de costumbres del pasado y para describir. <b>-ar → -aba</b>; <b>-er / -ir → -ía</b>.",
+  "rows": [
+   "sacar → sacaba, sacaban",
+   "creer → creía, creían",
+   "vivir → vivía, vivían",
+   "ser → era, eran",
+   "ir → iba, iban",
+   "ver → veía, veían"
+  ],
+  "items": [
+   [
+    "Los egipcios ___ en otra vida.",
+    [
+     "creían",
+     "creaban",
+     "creyeron"
+    ],
+    0
+   ],
+   [
+    "Los embalsamadores ___ el cuerpo.",
+    [
+     "lavaba",
+     "lavaban",
+     "lavían"
+    ],
+    1
+   ],
+   [
+    "Hacer una momia ___ un trabajo largo.",
+    [
+     "era",
+     "eras",
+     "ería"
+    ],
+    0
+   ],
+   [
+    "El faraón ___ en un palacio.",
+    [
+     "vivaba",
+     "vivía",
+     "vivían"
+    ],
+    1
+   ],
+   [
+    "La sal ___ el cuerpo.",
+    [
+     "secía",
+     "secaba",
+     "secaban"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Mummies",
+   "sub": "How the Egyptians prepared the dead for another life",
+   "grammar": "Grammar: the imperfect tense. It is used for habits in the past and for descriptions. -ar → -aba; -er / -ir → -ía.",
+   "rows": [
+    "take out → used to take out (he, they)",
+    "believe → believed (he, they)",
+    "live → lived (he, they)",
+    "be → was, were",
+    "go → was going, were going",
+    "see → saw (he, they)"
+   ],
+   "hints": [
+    "believed",
+    "washed",
+    "was",
+    "lived",
+    "dried"
+   ],
+   "vocab": [
+    "mummy",
+    "brain",
+    "nose",
+    "heart",
+    "salt",
+    "crocodile"
+   ]
+  }
+ }
+}

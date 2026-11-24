@@ -1,0 +1,207 @@
+{
+ "id": "speedruns-b1",
+ "topic": "speedruns",
+ "level": "B1",
+ "title": "Trucos y glitches",
+ "short": "Trucos y glitches",
+ "text": [
+  "Un glitch es un error de programación que hace que el juego funcione de una forma que sus creadores no esperaban. Para la mayoría de los jugadores, un glitch es solo algo curioso o molesto. Para los speedrunners, [en cambio], puede ser un tesoro: [a veces] permite ahorrar minutos o [incluso] horas.",
+  "Uno de los glitches más conocidos es el «salto largo hacia atrás» de [Super Mario 64]. En el castillo hay una escalera infinita que, en teoría, solo se puede subir con setenta estrellas. [Sin embargo], si Mario salta hacia atrás [una y otra vez], gana [cada vez más] velocidad, hasta que atraviesa la barrera y llega arriba sin las estrellas.",
+  "Otros trucos permiten atravesar paredes, saltarse partes enteras de un nivel o [incluso] llegar directamente a los créditos finales. Los jugadores los descubren tras miles de horas de pruebas y, [a menudo], comparten sus hallazgos en internet para que toda la comunidad pueda aprovecharlos.",
+  "[Eso sí], no todo el mundo piensa que los glitches sean justos. Por eso, muchas comunidades crean categorías separadas: en las partidas «sin glitches», los jugadores tienen que terminar el juego tal como lo diseñaron sus creadores. Si un jugador usara un glitch en esa categoría, su récord no sería válido.",
+  "Algunos speedrunners dicen que, si no existieran los glitches, su afición sería mucho más aburrida. Otros prefieren la habilidad pura. [Lo curioso] es que estos errores, que antes eran un problema para los programadores, hoy son una parte fundamental de la historia de los videojuegos."
+ ],
+ "q": [
+  [
+   "¿Qué es un glitch?",
+   [
+    "Un error de programación",
+    "Un tipo de consola",
+    "Un récord mundial"
+   ],
+   0
+  ],
+  [
+   "¿Por qué un glitch puede ser un tesoro para los speedrunners?",
+   [
+    "Porque es bonito",
+    "Porque permite ahorrar tiempo",
+    "Porque da estrellas"
+   ],
+   1
+  ],
+  [
+   "En teoría, ¿cuántas estrellas necesitas para subir la escalera infinita?",
+   [
+    "Siete",
+    "Setenta",
+    "Ninguna"
+   ],
+   1
+  ],
+  [
+   "¿Cómo atraviesa Mario la barrera?",
+   [
+    "Saltando hacia atrás muchas veces",
+    "Con setenta estrellas",
+    "Corriendo hacia delante"
+   ],
+   0
+  ],
+  [
+   "¿Qué hacen los jugadores con sus hallazgos?",
+   [
+    "Los esconden",
+    "Los comparten en internet",
+    "Los venden"
+   ],
+   1
+  ],
+  [
+   "En la categoría «sin glitches», ¿qué pasaría si usaras un glitch?",
+   [
+    "Tendrías más puntos",
+    "Tu récord no sería válido",
+    "Ganarías una estrella"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "escalera",
+   "🪜"
+  ],
+  [
+   "estrella",
+   "⭐"
+  ],
+  [
+   "pared",
+   "🧱"
+  ],
+  [
+   "tesoro",
+   "💎"
+  ],
+  [
+   "barrera",
+   "🚧"
+  ],
+  [
+   "internet",
+   "🌐"
+  ]
+ ],
+ "halves": [
+  [
+   "Un glitch es...",
+   "...un error de programación."
+  ],
+  [
+   "Si Mario salta hacia atrás...",
+   "...gana [cada vez más] velocidad."
+  ],
+  [
+   "Los jugadores comparten sus hallazgos...",
+   "...en internet."
+  ],
+  [
+   "Si un jugador usara un glitch...",
+   "...su récord no sería válido."
+  ],
+  [
+   "Si no existieran los glitches...",
+   "...su afición sería más aburrida."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: si + imperfecto de subjuntivo",
+  "rule": "Para hablar de situaciones imaginarias: <b>si</b> + imperfecto de subjuntivo, + condicional.",
+  "rows": [
+   "si usara un glitch, perdería el récord",
+   "si no existieran, sería aburrido",
+   "si tuviera tiempo, entrenaría",
+   "si pudiera, lo intentaría",
+   "usar → usara, existir → existiera",
+   "tener → tuviera, poder → pudiera"
+  ],
+  "items": [
+   [
+    "Si ___ más tiempo, entrenaría todos los días.",
+    [
+     "tengo",
+     "tuviera",
+     "tendría"
+    ],
+    1
+   ],
+   [
+    "Si usaras un glitch, tu récord no ___ válido.",
+    [
+     "sería",
+     "fuera",
+     "es"
+    ],
+    0
+   ],
+   [
+    "Si Mario no ___ hacia atrás, no atravesaría la barrera.",
+    [
+     "saltara",
+     "saltaría",
+     "salta"
+    ],
+    0
+   ],
+   [
+    "Si no existieran los glitches, el juego ___ más lento.",
+    [
+     "fuera",
+     "sería",
+     "será"
+    ],
+    1
+   ],
+   [
+    "Si ___, yo también haría speedruns.",
+    [
+     "puedo",
+     "pudiera",
+     "podría"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Tricks and glitches",
+   "sub": "When a bug becomes a treasure",
+   "grammar": "Grammar: si (if) + imperfect subjunctive + conditional, for imaginary situations: if I used..., I would...",
+   "rows": [
+    "if I used a glitch, I would lose the record",
+    "if they didn't exist, it would be boring",
+    "if I had time, I would train",
+    "if I could, I would try it",
+    "to use → (if I) used, to exist → (if they) existed",
+    "to have → (if I) had, can → (if I) could"
+   ],
+   "hints": [
+    "had",
+    "would be",
+    "jumped",
+    "would be",
+    "could"
+   ],
+   "vocab": [
+    "stairs",
+    "star",
+    "wall",
+    "treasure",
+    "barrier",
+    "internet"
+   ]
+  }
+ }
+}

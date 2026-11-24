@@ -1,0 +1,207 @@
+{
+ "id": "en-minecraft-a1",
+ "topic": "minecraft",
+ "level": "A1",
+ "title": "How to play Minecraft",
+ "short": "How to play",
+ "text": [
+  "Minecraft is a game about blocks. Everything in the world is a block: the grass, the trees, the stone and even the water. You can break blocks and you can build with them.",
+  "When you start, you are in a big world. First, find a tree and break it. You get wood. With wood you can make a table, a pickaxe and many other things.",
+  "Be careful when the sun goes down! At night, monsters come out: zombies, skeletons and creepers. Build a small house before the night and stay inside.",
+  "Look for coal and iron in the caves. With iron you can make better tools. Do not dig straight down: you can fall into a hole or into lava!",
+  "There are two main modes. In Survival mode you need food and you can die. In Creative mode you can fly and you have all the blocks. Choose your mode and have fun!"
+ ],
+ "q": [
+  [
+   "What is everything in the world of Minecraft?",
+   [
+    "A block",
+    "A ball",
+    "A card"
+   ],
+   0
+  ],
+  [
+   "What do you get when you break a tree?",
+   [
+    "Stone",
+    "Wood",
+    "Iron"
+   ],
+   1
+  ],
+  [
+   "What happens at night?",
+   [
+    "Monsters come out",
+    "The game ends",
+    "It snows"
+   ],
+   0
+  ],
+  [
+   "Where can you find coal and iron?",
+   [
+    "In the trees",
+    "In the caves",
+    "In the water"
+   ],
+   1
+  ],
+  [
+   "Why should you not dig straight down?",
+   [
+    "You can fall into lava",
+    "You can find a monster friend",
+    "You can lose your house"
+   ],
+   0
+  ],
+  [
+   "What can you do in Creative mode?",
+   [
+    "You can fly",
+    "You need food",
+    "You can die"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "block",
+   "🧱"
+  ],
+  [
+   "tree",
+   "🌳"
+  ],
+  [
+   "wood",
+   "🪵"
+  ],
+  [
+   "house",
+   "🏠"
+  ],
+  [
+   "cave",
+   "🕳️"
+  ],
+  [
+   "tool",
+   "⛏️"
+  ]
+ ],
+ "halves": [
+  [
+   "You can break blocks...",
+   "...and build with them."
+  ],
+  [
+   "With wood you can make...",
+   "...a table and a pickaxe."
+  ],
+  [
+   "At night...",
+   "...monsters come out."
+  ],
+  [
+   "With iron you can make...",
+   "...better tools."
+  ],
+  [
+   "In Creative mode...",
+   "...you can fly."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: imperatives",
+  "rule": "Use the <b>imperative</b> to give instructions. It is the verb with no subject. For a negative, use <b>do not</b> + verb.",
+  "rows": [
+   "Find a tree.",
+   "Build a house.",
+   "Stay inside.",
+   "Be careful!",
+   "Do not dig down.",
+   "Do not + verb"
+  ],
+  "items": [
+   [
+    "___ a small house before the night.",
+    [
+     "Builds",
+     "Build",
+     "Building"
+    ],
+    1
+   ],
+   [
+    "___ dig straight down!",
+    [
+     "Do not",
+     "Not",
+     "No do"
+    ],
+    0
+   ],
+   [
+    "___ careful with the creepers!",
+    [
+     "Are",
+     "Be",
+     "Is"
+    ],
+    1
+   ],
+   [
+    "___ coal in the caves.",
+    [
+     "Look for",
+     "Looks for",
+     "To look for"
+    ],
+    0
+   ],
+   [
+    "___ inside at night.",
+    [
+     "Stays",
+     "Stay",
+     "Staying"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Cómo se juega a Minecraft",
+   "sub": "Las reglas básicas de un mundo de bloques",
+   "grammar": "Gramática: el imperativo, para dar instrucciones. Es el verbo sin sujeto. En negativo: do not + verbo.",
+   "rows": [
+    "Busca un árbol.",
+    "Construye una casa.",
+    "Quédate dentro.",
+    "¡Ten cuidado!",
+    "No caves hacia abajo.",
+    "No + verbo"
+   ],
+   "hints": [
+    "Construye",
+    "No caves",
+    "Ten",
+    "Busca",
+    "Quédate"
+   ],
+   "vocab": [
+    "bloque",
+    "árbol",
+    "madera",
+    "casa",
+    "cueva",
+    "herramienta"
+   ]
+  }
+ }
+}

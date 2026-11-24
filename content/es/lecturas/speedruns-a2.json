@@ -1,0 +1,207 @@
+{
+ "id": "speedruns-a2",
+ "topic": "speedruns",
+ "level": "A2",
+ "title": "El récord de Super Mario",
+ "short": "El récord de Super Mario",
+ "text": [
+  "[Super Mario Bros.] salió en 1985 para la consola NES de Nintendo. Fue uno de los juegos más vendidos de su época y [todavía hoy] es uno de los favoritos de los speedrunners. Su speedrun es corto, pero muy difícil.",
+  "El juego tiene treinta y dos niveles, pero los speedrunners no los juegan todos. Usan unas tuberías secretas que llevan a otros mundos. Así, solo pasan por ocho niveles y llegan muy pronto al castillo final.",
+  "Durante muchos años, los jugadores intentaron bajar el récord [poco a poco]. Cada nuevo récord fue unas centésimas más rápido que el anterior. Para conseguirlo, hicieron movimientos perfectos: un error muy pequeño, de menos de una décima de segundo, puede arruinar toda la partida.",
+  "En 2021, un jugador llamado Niftski hizo historia: fue la primera persona que terminó el juego en menos de cuatro minutos y cincuenta y cinco segundos. Después, él mismo pudo mejorar su récord otra vez.",
+  "Muchos expertos dicen que el récord está casi en el límite humano. Una máquina puede terminar el juego unas décimas más rápido, pero ningún humano lo hizo [hasta ahora]. ¿Quién sabe? Quizás algún día alguien lo consiga."
+ ],
+ "q": [
+  [
+   "¿En qué año salió [Super Mario Bros.]?",
+   [
+    "En 1985",
+    "En 1995",
+    "En 2021"
+   ],
+   0
+  ],
+  [
+   "¿Cuántos niveles tiene el juego?",
+   [
+    "Ocho",
+    "Treinta y dos",
+    "Cincuenta y cinco"
+   ],
+   1
+  ],
+  [
+   "¿Para qué usan los speedrunners las tuberías secretas?",
+   [
+    "Para ir a otros mundos",
+    "Para conseguir monedas",
+    "Para descansar"
+   ],
+   0
+  ],
+  [
+   "¿Por cuántos niveles pasan los speedrunners?",
+   [
+    "Por cuatro",
+    "Por ocho",
+    "Por treinta y dos"
+   ],
+   1
+  ],
+  [
+   "¿Qué hizo Niftski en 2021?",
+   [
+    "Creó el juego",
+    "Terminó el juego en menos de cuatro minutos y cincuenta y cinco segundos",
+    "Perdió la partida"
+   ],
+   1
+  ],
+  [
+   "Según los expertos, ¿cómo es el récord?",
+   [
+    "Muy fácil de mejorar",
+    "Está casi en el límite humano",
+    "Más lento que en 1985"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "consola",
+   "🎮"
+  ],
+  [
+   "castillo",
+   "🏰"
+  ],
+  [
+   "mundo",
+   "🌍"
+  ],
+  [
+   "máquina",
+   "🤖"
+  ],
+  [
+   "error",
+   "❌"
+  ],
+  [
+   "humano",
+   "🧑"
+  ]
+ ],
+ "halves": [
+  [
+   "[Super Mario Bros.] salió...",
+   "...en 1985."
+  ],
+  [
+   "Las tuberías secretas llevan...",
+   "...a otros mundos."
+  ],
+  [
+   "Un error muy pequeño puede...",
+   "...arruinar toda la partida."
+  ],
+  [
+   "Niftski hizo historia...",
+   "...en 2021."
+  ],
+  [
+   "Una máquina puede terminar...",
+   "...unas décimas más rápido."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el pretérito indefinido irregular",
+  "rule": "Algunos verbos muy usados son <b>irregulares</b> en el pasado. <b>ser</b> e <b>ir</b> tienen la misma forma.",
+  "rows": [
+   "ser / ir → fue, fueron",
+   "hacer → hizo, hicieron",
+   "poder → pudo, pudieron",
+   "tener → tuvo, tuvieron",
+   "decir → dijo, dijeron",
+   "estar → estuvo, estuvieron"
+  ],
+  "items": [
+   [
+    "Niftski ___ historia en 2021.",
+    [
+     "hizo",
+     "hació",
+     "hice"
+    ],
+    0
+   ],
+   [
+    "[Super Mario Bros.] ___ un juego muy vendido.",
+    [
+     "fue",
+     "fueron",
+     "fui"
+    ],
+    0
+   ],
+   [
+    "Los jugadores ___ movimientos perfectos.",
+    [
+     "hizo",
+     "hicieron",
+     "hacieron"
+    ],
+    1
+   ],
+   [
+    "Él ___ mejorar su récord.",
+    [
+     "pudo",
+     "podió",
+     "pudieron"
+    ],
+    0
+   ],
+   [
+    "Los expertos ___ que es el límite humano.",
+    [
+     "decieron",
+     "dijo",
+     "dijeron"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The Super Mario record",
+   "sub": "Less than five minutes of perfect moves",
+   "grammar": "Grammar: the irregular preterite (simple past). Some very common verbs are irregular. ser (to be) and ir (to go) have the same form.",
+   "rows": [
+    "was / went (he), were / went (they)",
+    "did / made (he), did / made (they)",
+    "could (he), could (they)",
+    "had (he), had (they)",
+    "said (he), said (they)",
+    "was (he), were (they)"
+   ],
+   "hints": [
+    "made",
+    "was",
+    "made (they)",
+    "could",
+    "said (they)"
+   ],
+   "vocab": [
+    "console",
+    "castle",
+    "world",
+    "machine",
+    "mistake",
+    "human"
+   ]
+  }
+ }
+}

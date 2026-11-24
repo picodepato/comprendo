@@ -1,0 +1,207 @@
+{
+ "id": "en-deportes-a2",
+ "topic": "deportes",
+ "level": "A2",
+ "title": "Parkour",
+ "short": "Parkour",
+ "text": [
+  "Parkour is a way of moving through a city using only your body. You run, jump, climb and roll over walls, stairs and railings. The goal is to go from one point to another in the most efficient way.",
+  "Parkour started in France in the 1990s. A group of young people from the suburbs of Paris, including David Belle, trained together every day. They wanted to be fast and free, like animals.",
+  "To do parkour, you do not need any special equipment. You only have to wear comfortable clothes and good shoes. But you have to train a lot: your arms and legs need to be very strong.",
+  "The first rule of parkour is safety. Beginners have to start with small jumps near the ground. You do not have to jump from roof to roof! Good traceurs, the people who do parkour, know exactly what they can and cannot do.",
+  "Today parkour is popular all over the world, and you can see it in many action films and video games. There are also gyms with special walls and boxes where you can practice safely."
+ ],
+ "q": [
+  [
+   "What is parkour?",
+   [
+    "A way of moving through a city with your body",
+    "A type of car race",
+    "A board game"
+   ],
+   0
+  ],
+  [
+   "Where did parkour start?",
+   [
+    "In France",
+    "In Japan",
+    "In Brazil"
+   ],
+   0
+  ],
+  [
+   "When did it start?",
+   [
+    "In the 1990s",
+    "In 1900",
+    "In 2020"
+   ],
+   0
+  ],
+  [
+   "What equipment do you need?",
+   [
+    "Only comfortable clothes and good shoes",
+    "A bike",
+    "A helmet and skis"
+   ],
+   0
+  ],
+  [
+   "What is the first rule of parkour?",
+   [
+    "Safety",
+    "Speed",
+    "Money"
+   ],
+   0
+  ],
+  [
+   "What are traceurs?",
+   [
+    "People who do parkour",
+    "Special shoes",
+    "Walls in a gym"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "climb",
+   "🧗"
+  ],
+  [
+   "stairs",
+   "🪜"
+  ],
+  [
+   "roof",
+   "🏠"
+  ],
+  [
+   "clothes",
+   "👕"
+  ],
+  [
+   "gym",
+   "🏋️"
+  ],
+  [
+   "jump",
+   "🤸"
+  ]
+ ],
+ "halves": [
+  [
+   "In parkour you run, jump...",
+   "...and climb."
+  ],
+  [
+   "Parkour started in France...",
+   "...in the 1990s."
+  ],
+  [
+   "You only have to wear...",
+   "...comfortable clothes."
+  ],
+  [
+   "Beginners have to start...",
+   "...with small jumps."
+  ],
+  [
+   "There are gyms...",
+   "...with special walls and boxes."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: have to and do not have to",
+  "rule": "Use <b>have to</b> for things that are necessary. Use <b>do not have to</b> when something is not necessary. With he, she and it: <b>has to</b> / <b>does not have to</b>.",
+  "rows": [
+   "You have to train.",
+   "She has to be strong.",
+   "You do not have to jump from roofs.",
+   "He does not have to buy equipment.",
+   "Do I have to...?",
+   "must not ≠ do not have to"
+  ],
+  "items": [
+   [
+    "You ___ to train a lot.",
+    [
+     "have",
+     "has",
+     "having"
+    ],
+    0
+   ],
+   [
+    "A traceur ___ to be very strong.",
+    [
+     "have",
+     "has",
+     "is"
+    ],
+    1
+   ],
+   [
+    "You do not have ___ buy special equipment.",
+    [
+     "to",
+     "for",
+     "of"
+    ],
+    0
+   ],
+   [
+    "Beginners ___ to start with small jumps.",
+    [
+     "has",
+     "have",
+     "having"
+    ],
+    1
+   ],
+   [
+    "He ___ have to jump from roofs.",
+    [
+     "do not",
+     "does not",
+     "not"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El parkour",
+   "sub": "Moverse por la ciudad como un gato",
+   "grammar": "Gramática: have to (tener que) para lo necesario; do not have to (no hace falta) cuando no es necesario. Con he, she, it: has to / does not have to.",
+   "rows": [
+    "Tienes que entrenar.",
+    "Ella tiene que ser fuerte.",
+    "No tienes que saltar desde tejados.",
+    "Él no tiene que comprar material.",
+    "¿Tengo que...?",
+    "prohibido ≠ no hace falta"
+   ],
+   "hints": [
+    "tienes que",
+    "tiene que",
+    "que",
+    "tienen que",
+    "no tiene que"
+   ],
+   "vocab": [
+    "trepar",
+    "escaleras",
+    "tejado",
+    "ropa",
+    "gimnasio",
+    "saltar"
+   ]
+  }
+ }
+}

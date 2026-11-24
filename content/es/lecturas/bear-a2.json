@@ -1,0 +1,205 @@
+{
+ "id": "bear-a2",
+ "topic": "bear",
+ "level": "A2",
+ "title": "La historia secreta del Oso",
+ "short": "La historia",
+ "text": [
+  "Los juegos de BEAR tienen una historia secreta. ¿[La conoces]?",
+  "[Hace muchos años], en una fábrica muy grande, trabajan dos científicos: Sam y Whitey. La fábrica [se llama] Cheese Factory. En español, este nombre significa «Fábrica de Queso». Pero en esta fábrica no hacen solo queso...",
+  "Sam y Whitey hacen experimentos extraños en un laboratorio secreto. En uno de sus experimentos, crean al Oso. El Oso es enorme, fuerte y muy peligroso. Su cuerpo brilla con una luz roja.",
+  "Los dos científicos no paran. Crean muchos osos diferentes. Un día ocurre un accidente en la fábrica y los osos escapan. Este momento [se llama] el «Apocalipsis del Oso». Desde ese día, los osos buscan a las personas [por todas partes].",
+  "[Por eso], en el juego, los supervivientes [tienen miedo]. Viven en lugares oscuros y peligrosos, y siempre escuchan [con atención]. ¿Quién viene? ¿Es un amigo... o es el Oso?"
+ ],
+ "q": [
+  [
+   "¿[Cómo se llaman] los dos científicos?",
+   [
+    "Sam y Cheedaman",
+    "Sam y Whitey",
+    "Leo y Whitey"
+   ],
+   1
+  ],
+  [
+   "¿Qué significa «Cheese Factory» en español?",
+   [
+    "Casa de Queso",
+    "Fábrica de Osos",
+    "Fábrica de Queso"
+   ],
+   2
+  ],
+  [
+   "¿Dónde hacen los experimentos?",
+   [
+    "En un laboratorio secreto",
+    "En un colegio",
+    "En un bosque"
+   ],
+   0
+  ],
+  [
+   "¿[Cómo es] el Oso?",
+   [
+    "Pequeño y simpático",
+    "Enorme, fuerte y peligroso",
+    "Lento y tranquilo"
+   ],
+   1
+  ],
+  [
+   "¿Qué pasa un día en la fábrica?",
+   [
+    "Hay una fiesta",
+    "Llega la policía",
+    "Ocurre un accidente"
+   ],
+   2
+  ],
+  [
+   "¿[Por qué] [tienen miedo] los supervivientes?",
+   [
+    "Porque [hace frío]",
+    "Porque los osos [los buscan]",
+    "Porque no tienen comida"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "fábrica",
+   "🏭"
+  ],
+  [
+   "queso",
+   "🧀"
+  ],
+  [
+   "científico",
+   "🔬"
+  ],
+  [
+   "accidente",
+   "💥"
+  ],
+  [
+   "miedo",
+   "😱"
+  ],
+  [
+   "secreto",
+   "🤫"
+  ]
+ ],
+ "halves": [
+  [
+   "Sam y Whitey son...",
+   "...dos científicos."
+  ],
+  [
+   "En el laboratorio hacen...",
+   "...experimentos extraños."
+  ],
+  [
+   "El cuerpo del Oso brilla...",
+   "...con una luz roja."
+  ],
+  [
+   "Después del accidente...",
+   "...los osos escapan."
+  ],
+  [
+   "Los supervivientes siempre...",
+   "...escuchan [con atención]."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: masculino, femenino y plural",
+  "rule": "El artículo y el adjetivo cambian <b>igual</b> que el nombre.",
+  "rows": [
+   "el oso grande",
+   "la fábrica oscura",
+   "los osos rojos",
+   "las luces rojas",
+   "-o → masculino"
+  ],
+  "items": [
+   [
+    "___ fábrica es muy grande.",
+    [
+     "El",
+     "La",
+     "Los"
+    ],
+    1
+   ],
+   [
+    "El Oso es muy ___.",
+    [
+     "agresiva",
+     "agresivos",
+     "agresivo"
+    ],
+    2
+   ],
+   [
+    "Los científicos son ___.",
+    [
+     "extraños",
+     "extraño",
+     "extraña"
+    ],
+    0
+   ],
+   [
+    "___ osos escapan de la fábrica.",
+    [
+     "El",
+     "Las",
+     "Los"
+    ],
+    2
+   ],
+   [
+    "Los supervivientes viven en lugares ___.",
+    [
+     "oscura",
+     "oscuros",
+     "oscuras"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The Bear's secret story",
+   "sub": "The story behind the game",
+   "grammar": "Grammar: gender and number. The article and the adjective match the noun.",
+   "rows": [
+    "masculine, singular",
+    "feminine, singular (-a)",
+    "masculine, plural (-s)",
+    "feminine, plural (-s)",
+    "-a → feminine"
+   ],
+   "hints": [
+    "the",
+    "aggressive",
+    "strange",
+    "the",
+    "dark"
+   ],
+   "vocab": [
+    "factory",
+    "cheese",
+    "scientist",
+    "accident",
+    "fear",
+    "secret"
+   ]
+  }
+ }
+}

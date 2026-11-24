@@ -1,0 +1,207 @@
+{
+ "id": "en-naturaleza-b1",
+ "topic": "naturaleza",
+ "level": "B1",
+ "title": "How to survive in the jungle",
+ "short": "How to survive in the jungle",
+ "text": [
+  "Tropical jungles are some of the most beautiful places on Earth, but they can be dangerous if you get lost. Survival experts agree on a few basic rules that could save your life.",
+  "The first rule is: you must not panic. Sit down, breathe and think. If you are on a path, you should stay near it, because rescuers will look there first. Leave signs, like broken branches or stones in a line, to show where you have been.",
+  "Water is more important than food. In the jungle it rains a lot, so you should collect rainwater with big leaves. You must not drink water from rivers without boiling it, because it can contain parasites. A person can survive weeks without food, but only a few days without water.",
+  "At night the jungle is full of insects. You should not sleep on the ground. Build a simple bed with branches, and cover yourself with leaves. Also, you should not touch brightly colored animals: in nature, bright colors often mean danger.",
+  "Finally, if you find a river, follow it downstream. Rivers usually lead to villages. Experts say that the most important tool is not a knife: it is a calm mind."
+ ],
+ "q": [
+  [
+   "What is the first rule if you get lost?",
+   [
+    "You must not panic",
+    "You must run",
+    "You must shout all night"
+   ],
+   0
+  ],
+  [
+   "Why should you stay near a path?",
+   [
+    "Rescuers will look there first",
+    "It is warmer",
+    "There is food"
+   ],
+   0
+  ],
+  [
+   "What is more important than food?",
+   [
+    "Water",
+    "Money",
+    "A phone"
+   ],
+   0
+  ],
+  [
+   "Why must you not drink river water without boiling it?",
+   [
+    "It can contain parasites",
+    "It is too cold",
+    "It is salty"
+   ],
+   0
+  ],
+  [
+   "Why should you not sleep on the ground?",
+   [
+    "Because of the insects",
+    "Because it is wet",
+    "Because it is noisy"
+   ],
+   0
+  ],
+  [
+   "Where do rivers usually lead?",
+   [
+    "To villages",
+    "To deserts",
+    "To mountains"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "path",
+   "🥾"
+  ],
+  [
+   "branch",
+   "🌿"
+  ],
+  [
+   "water",
+   "💧"
+  ],
+  [
+   "insect",
+   "🐜"
+  ],
+  [
+   "knife",
+   "🔪"
+  ],
+  [
+   "village",
+   "🏘️"
+  ]
+ ],
+ "halves": [
+  [
+   "You must not...",
+   "...panic."
+  ],
+  [
+   "Leave signs to show...",
+   "...where you have been."
+  ],
+  [
+   "You should collect rainwater...",
+   "...with big leaves."
+  ],
+  [
+   "Bright colors in nature...",
+   "...often mean danger."
+  ],
+  [
+   "If you find a river...",
+   "...follow it downstream."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: should and must",
+  "rule": "Use <b>should</b> for advice and <b>must</b> for strong obligation. <b>Must not</b> means it is prohibited or very dangerous.",
+  "rows": [
+   "You should stay near the path.",
+   "You must not panic.",
+   "You must drink water.",
+   "You should not sleep on the ground.",
+   "should + verb",
+   "must + verb"
+  ],
+  "items": [
+   [
+    "You ___ not panic.",
+    [
+     "must",
+     "should to",
+     "musts"
+    ],
+    0
+   ],
+   [
+    "You ___ collect rainwater with big leaves.",
+    [
+     "should",
+     "shoulds",
+     "should to"
+    ],
+    0
+   ],
+   [
+    "You must not drink river water without ___ it.",
+    [
+     "boil",
+     "boiling",
+     "boiled"
+    ],
+    1
+   ],
+   [
+    "You should not ___ on the ground.",
+    [
+     "sleep",
+     "sleeping",
+     "to sleep"
+    ],
+    0
+   ],
+   [
+    "If you find a river, you should ___ it.",
+    [
+     "follows",
+     "follow",
+     "following"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Cómo sobrevivir en la selva",
+   "sub": "Consejos de los expertos si te pierdes",
+   "grammar": "Gramática: should (deberías) para consejos y must (tienes que) para obligación fuerte. Must not significa que está prohibido o es muy peligroso.",
+   "rows": [
+    "Deberías quedarte cerca del sendero.",
+    "No debes entrar en pánico.",
+    "Tienes que beber agua.",
+    "No deberías dormir en el suelo.",
+    "consejo",
+    "obligación"
+   ],
+   "hints": [
+    "debes",
+    "deberías",
+    "hervirla",
+    "dormir",
+    "seguirlo"
+   ],
+   "vocab": [
+    "sendero",
+    "rama",
+    "agua",
+    "insecto",
+    "cuchillo",
+    "pueblo"
+   ]
+  }
+ }
+}

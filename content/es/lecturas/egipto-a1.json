@@ -1,0 +1,207 @@
+{
+ "id": "egipto-a1",
+ "topic": "egipto",
+ "level": "A1",
+ "title": "Las pirámides de Egipto",
+ "short": "Las pirámides",
+ "text": [
+  "Las pirámides de Egipto son muy famosas. Las más grandes están en Guiza, cerca de El Cairo y del río Nilo. Son tumbas: dentro descansan los faraones, los reyes del antiguo Egipto.",
+  "La pirámide más grande es la Gran Pirámide. Es la tumba del faraón Keops y tiene unos cuatro mil quinientos años. Su altura hoy es de unos ciento treinta y nueve metros. Durante casi cuatro mil años, es el edificio más alto del mundo.",
+  "La Gran Pirámide tiene más de dos millones de bloques de piedra. ¡Cada bloque pesa más que un coche! Los trabajadores mueven los bloques con cuerdas, rampas y trineos de madera. Es un trabajo muy duro.",
+  "Al lado de las pirámides está la Esfinge. Tiene cuerpo de león y cabeza de persona. Es enorme: mide unos setenta y tres metros de largo.",
+  "Las pirámides son una de las siete maravillas del mundo antiguo. Hoy, son la única maravilla que todavía existe. ¡Millones de turistas las visitan cada año!"
+ ],
+ "q": [
+  [
+   "¿Dónde están las pirámides más grandes?",
+   [
+    "En Guiza",
+    "En Roma",
+    "En Madrid"
+   ],
+   0
+  ],
+  [
+   "¿Qué son las pirámides?",
+   [
+    "Casas",
+    "Tumbas",
+    "Templos para jugar"
+   ],
+   1
+  ],
+  [
+   "¿De quién es la Gran Pirámide?",
+   [
+    "Del faraón Keops",
+    "De la Esfinge",
+    "De un turista"
+   ],
+   0
+  ],
+  [
+   "¿Cuántos bloques tiene la Gran Pirámide?",
+   [
+    "Unos cien",
+    "Más de dos millones",
+    "Siete"
+   ],
+   1
+  ],
+  [
+   "¿Cómo es el cuerpo de la Esfinge?",
+   [
+    "De persona",
+    "De pájaro",
+    "De león"
+   ],
+   2
+  ],
+  [
+   "¿Cuántas maravillas del mundo antiguo existen todavía?",
+   [
+    "Una",
+    "Tres",
+    "Siete"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "pirámide",
+   "🔺"
+  ],
+  [
+   "río",
+   "🏞️"
+  ],
+  [
+   "piedra",
+   "🪨"
+  ],
+  [
+   "león",
+   "🦁"
+  ],
+  [
+   "cuerda",
+   "🪢"
+  ],
+  [
+   "turista",
+   "📸"
+  ]
+ ],
+ "halves": [
+  [
+   "Las pirámides son...",
+   "...tumbas."
+  ],
+  [
+   "La Gran Pirámide es la tumba...",
+   "...del faraón Keops."
+  ],
+  [
+   "Cada bloque pesa...",
+   "...más que un coche."
+  ],
+  [
+   "La Esfinge tiene cuerpo...",
+   "...de león."
+  ],
+  [
+   "Millones de turistas...",
+   "...las visitan cada año."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: los posesivos",
+  "rule": "Los posesivos dicen <b>de quién</b> es algo. Cambian en plural: <b>mi → mis</b>, <b>tu → tus</b>, <b>su → sus</b>.",
+  "rows": [
+   "yo → mi libro / mis libros",
+   "tú → tu casa / tus casas",
+   "él, ella → su tumba / sus tumbas",
+   "nosotros → nuestro rey / nuestra pirámide",
+   "ellos, ellas → su ciudad / sus ciudades",
+   "su = de él, de ella, de ellos, de ellas"
+  ],
+  "items": [
+   [
+    "Keops es el faraón. Es ___ tumba.",
+    [
+     "su",
+     "sus",
+     "mi"
+    ],
+    0
+   ],
+   [
+    "Los trabajadores mueven ___ bloques.",
+    [
+     "su",
+     "sus",
+     "tu"
+    ],
+    1
+   ],
+   [
+    "Yo visito Egipto con ___ familia.",
+    [
+     "mis",
+     "mi",
+     "su"
+    ],
+    1
+   ],
+   [
+    "¿Tú tienes ___ fotos de la Esfinge?",
+    [
+     "tu",
+     "tus",
+     "mi"
+    ],
+    1
+   ],
+   [
+    "Nosotros vemos ___ pirámide favorita.",
+    [
+     "nuestro",
+     "nuestra",
+     "nuestros"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The pyramids of Egypt",
+   "sub": "Giant tombs for the pharaohs",
+   "grammar": "Grammar: possessives. They say who something belongs to. They change in the plural: mi → mis, tu → tus, su → sus.",
+   "rows": [
+    "I → my book / my books",
+    "you → your house / your houses",
+    "he, she → his / her tomb, tombs",
+    "we → our king / our pyramid",
+    "they → their city / their cities",
+    "su = his, her, its, their"
+   ],
+   "hints": [
+    "his",
+    "their",
+    "my",
+    "your",
+    "our"
+   ],
+   "vocab": [
+    "pyramid",
+    "river",
+    "stone",
+    "lion",
+    "rope",
+    "tourist"
+   ]
+  }
+ }
+}

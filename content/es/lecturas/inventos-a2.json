@@ -1,0 +1,207 @@
+{
+ "id": "inventos-a2",
+ "topic": "inventos",
+ "level": "A2",
+ "title": "Inventos por accidente",
+ "short": "Inventos por accidente",
+ "text": [
+  "Muchos inventos famosos nacieron por casualidad. Sus inventores buscaban otra cosa, pero un error o una sorpresa les dio una idea genial. Aquí tienes cuatro ejemplos.",
+  "En 1945, el ingeniero [Percy Spencer] trabajaba con un aparato para los radares. Un día, mientras estaba cerca de la máquina, notó algo raro: la barrita de chocolate de su bolsillo se derritió. Después, probó con maíz y ¡salieron palomitas! Así nació el horno microondas.",
+  "En 1928, el científico [Alexander Fleming] se fue de vacaciones y dejó su laboratorio un poco desordenado. Cuando volvió, vio que en uno de sus platos había crecido un moho. Alrededor del moho, las bacterias estaban muertas. Fleming descubrió la penicilina, el primer antibiótico, que salvó millones de vidas.",
+  "En 1968, [Spencer Silver] intentaba crear un pegamento muy fuerte, pero le salió uno muy débil: pegaba, pero se despegaba fácilmente. Nadie sabía para qué servía. Unos años después, su compañero [Art Fry] lo usó para marcar las páginas de su libro de canciones. Así nacieron las notas adhesivas, los famosos pósits.",
+  "Y según una leyenda, en 1853 un cliente de un restaurante se quejaba porque sus patatas fritas estaban demasiado gruesas. El cocinero, enfadado, las cortó finísimas y las frió mucho. ¡Al cliente le encantaron! Así nacieron las patatas fritas de bolsa. La lección: un error puede ser el principio de algo increíble."
+ ],
+ "q": [
+  [
+   "¿Qué le pasó a [Percy Spencer]?",
+   [
+    "Se le derritió el chocolate",
+    "Se le rompió la máquina",
+    "Se le perdió el radar"
+   ],
+   0
+  ],
+  [
+   "¿Qué invento nació gracias a él?",
+   [
+    "La nevera",
+    "El horno microondas",
+    "La bombilla"
+   ],
+   1
+  ],
+  [
+   "¿Qué hizo Fleming antes de su descubrimiento?",
+   [
+    "Se fue de vacaciones",
+    "Compró un microscopio",
+    "Comió palomitas"
+   ],
+   0
+  ],
+  [
+   "¿Qué descubrió Fleming?",
+   [
+    "El chocolate",
+    "El pegamento",
+    "La penicilina"
+   ],
+   2
+  ],
+  [
+   "¿Cómo era el pegamento de [Spencer Silver]?",
+   [
+    "Muy fuerte",
+    "Muy débil",
+    "De colores"
+   ],
+   1
+  ],
+  [
+   "¿Por qué se quejaba el cliente del restaurante?",
+   [
+    "Las patatas estaban frías",
+    "Las patatas estaban demasiado gruesas",
+    "No había patatas"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "chocolate",
+   "🍫"
+  ],
+  [
+   "palomitas",
+   "🍿"
+  ],
+  [
+   "libro",
+   "📖"
+  ],
+  [
+   "patatas fritas",
+   "🍟"
+  ],
+  [
+   "bacterias",
+   "🦠"
+  ],
+  [
+   "cocinero",
+   "🧑‍🍳"
+  ]
+ ],
+ "halves": [
+  [
+   "[Percy Spencer] trabajaba...",
+   "...con un aparato para los radares."
+  ],
+  [
+   "Fleming se fue...",
+   "...de vacaciones."
+  ],
+  [
+   "Alrededor del moho, las bacterias...",
+   "...estaban muertas."
+  ],
+  [
+   "[Art Fry] usó el pegamento...",
+   "...para marcar las páginas."
+  ],
+  [
+   "Un error puede ser...",
+   "...el principio de algo increíble."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: imperfecto e indefinido",
+  "rule": "El <b>imperfecto</b> describe la situación (trabajaba, estaba). El <b>indefinido</b> cuenta la acción que pasa de repente (notó, se derritió).",
+  "rows": [
+   "trabajaba (situación)",
+   "estaba (situación)",
+   "buscaba (situación)",
+   "notó (acción)",
+   "descubrió (acción)",
+   "Mientras trabajaba, notó algo raro."
+  ],
+  "items": [
+   [
+    "Spencer ___ con un radar cuando notó algo raro.",
+    [
+     "trabajaba",
+     "trabajó",
+     "trabaja"
+    ],
+    0
+   ],
+   [
+    "Un día, el chocolate se ___.",
+    [
+     "derretía",
+     "derritió",
+     "derrite"
+    ],
+    1
+   ],
+   [
+    "Cuando Fleming volvió, ___ un moho en el plato.",
+    [
+     "veía",
+     "ve",
+     "vio"
+    ],
+    2
+   ],
+   [
+    "Silver ___ crear un pegamento fuerte.",
+    [
+     "intentaba",
+     "intentó",
+     "intenta"
+    ],
+    0
+   ],
+   [
+    "El cocinero ___ las patatas muy finas.",
+    [
+     "cortaba",
+     "cortó",
+     "corta"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Inventions by accident",
+   "sub": "The microwave, penicillin, sticky notes and crisps",
+   "grammar": "Grammar: imperfect vs preterite. Imperfect = background (was working). Preterite = what suddenly happened (noticed).",
+   "rows": [
+    "was working (background)",
+    "was (background)",
+    "was looking for (background)",
+    "noticed (action)",
+    "discovered (action)",
+    "While he was working, he noticed something strange."
+   ],
+   "hints": [
+    "was working",
+    "melted",
+    "saw",
+    "was trying",
+    "cut"
+   ],
+   "vocab": [
+    "chocolate",
+    "popcorn",
+    "book",
+    "crisps / chips",
+    "bacteria",
+    "cook"
+   ]
+  }
+ }
+}

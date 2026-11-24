@@ -1,0 +1,207 @@
+{
+ "id": "en-dinosaurios-b1",
+ "topic": "dinosaurios",
+ "level": "B1",
+ "title": "How do palaeontologists work?",
+ "short": "How palaeontologists work",
+ "text": [
+  "Palaeontologists are scientists who study life from the distant past. They work a bit like detectives: they cannot see the dinosaurs, so they must find clues in fossils and rocks.",
+  "The work often starts in deserts or cliffs, where old rock layers are visible. When palaeontologists find a bone, they dig very slowly with small tools and brushes. A big skeleton can take months or even years to remove. Then they cover the bones with plaster to protect them during the trip to the museum.",
+  "Fossils tell many stories. Big footprints in a line might show that a dinosaur was walking alone. Many footprints together could mean that the animals lived in groups. If a skull has teeth like knives, the animal must have been a meat eater.",
+  "Sometimes the clues are surprising. Some fossils show feathers, so scientists now think that many dinosaurs might have been colorful. A dinosaur found sitting on its eggs must have protected its babies like a bird.",
+  "Of course, palaeontologists cannot be completely sure about everything. New discoveries can change old ideas. That is what makes this science so exciting: the next fossil might rewrite the history of life on Earth."
+ ],
+ "q": [
+  [
+   "How do palaeontologists work?",
+   [
+    "Like detectives",
+    "Like cooks",
+    "Like pilots"
+   ],
+   0
+  ],
+  [
+   "Where does the work often start?",
+   [
+    "In deserts or cliffs",
+    "In cities",
+    "In the sea"
+   ],
+   0
+  ],
+  [
+   "Why do they cover the bones with plaster?",
+   [
+    "To protect them",
+    "To paint them",
+    "To make them heavier"
+   ],
+   0
+  ],
+  [
+   "What might many footprints together mean?",
+   [
+    "The animals lived in groups",
+    "The animal was flying",
+    "It was raining"
+   ],
+   0
+  ],
+  [
+   "What can we say about an animal with teeth like knives?",
+   [
+    "It must have been a meat eater",
+    "It ate only leaves",
+    "It had no teeth"
+   ],
+   0
+  ],
+  [
+   "Why is this science exciting?",
+   [
+    "New discoveries can change old ideas",
+    "It is very easy",
+    "Nothing ever changes"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "fossil",
+   "🦴"
+  ],
+  [
+   "skeleton",
+   "💀"
+  ],
+  [
+   "footprint",
+   "🐾"
+  ],
+  [
+   "brush",
+   "🖌️"
+  ],
+  [
+   "museum",
+   "🏛️"
+  ],
+  [
+   "egg",
+   "🥚"
+  ]
+ ],
+ "halves": [
+  [
+   "Palaeontologists must find clues...",
+   "...in fossils and rocks."
+  ],
+  [
+   "They dig very slowly...",
+   "...with small tools and brushes."
+  ],
+  [
+   "Footprints in a line might show...",
+   "...that a dinosaur was walking alone."
+  ],
+  [
+   "Many dinosaurs might have been...",
+   "...colorful."
+  ],
+  [
+   "The next fossil might rewrite...",
+   "...the history of life."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: modals of deduction",
+  "rule": "Use <b>must</b> when you are almost sure something is true, <b>might</b> or <b>could</b> when it is possible, and <b>cannot</b> when you are sure it is not true.",
+  "rows": [
+   "It must be a meat eater.",
+   "It might be colorful.",
+   "It could mean they lived in groups.",
+   "It cannot be a bird.",
+   "must have been",
+   "might have been"
+  ],
+  "items": [
+   [
+    "With teeth like knives, it ___ be a meat eater.",
+    [
+     "must",
+     "might not",
+     "cannot"
+    ],
+    0
+   ],
+   [
+    "We are not sure, but it ___ be colorful.",
+    [
+     "must",
+     "might",
+     "cannot"
+    ],
+    1
+   ],
+   [
+    "It has no feathers, so it ___ be a bird.",
+    [
+     "must",
+     "cannot",
+     "might"
+    ],
+    1
+   ],
+   [
+    "Many footprints together ___ mean a group.",
+    [
+     "could",
+     "must not",
+     "cannot"
+    ],
+    0
+   ],
+   [
+    "It was sitting on its eggs: it must have ___ its babies.",
+    [
+     "protect",
+     "protected",
+     "protecting"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Cómo trabajan los paleontólogos?",
+   "sub": "Detectives de un pasado de millones de años",
+   "grammar": "Gramática: los modales de deducción. Must cuando casi estás seguro (debe de); might / could cuando es posible (puede que); cannot cuando estás seguro de que no (no puede).",
+   "rows": [
+    "Debe de ser carnívoro.",
+    "Puede que sea de colores.",
+    "Podría significar que vivían en grupos.",
+    "No puede ser un pájaro.",
+    "debe de haber sido",
+    "puede que haya sido"
+   ],
+   "hints": [
+    "debe de",
+    "puede que",
+    "no puede",
+    "podrían",
+    "protegido"
+   ],
+   "vocab": [
+    "fósil",
+    "esqueleto",
+    "huella",
+    "pincel",
+    "museo",
+    "huevo"
+   ]
+  }
+ }
+}

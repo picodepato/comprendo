@@ -1,0 +1,207 @@
+{
+ "id": "comida-a1",
+ "topic": "comida",
+ "level": "A1",
+ "title": "Frutas extrañas",
+ "short": "Frutas extrañas",
+ "text": [
+  "Todos conocemos la manzana, el plátano y la naranja. Pero en el mundo hay frutas muy extrañas. ¿Te gustan las frutas raras? ¡Vamos a ver algunas!",
+  "El durián es una fruta grande de Asia. Por fuera tiene muchos pinchos. Huele muy mal: algunas personas dicen que huele a calcetines sucios. En Singapur, está prohibido llevar durián en el metro. Pero a mucha gente le gusta su sabor dulce.",
+  "La pitaya también se llama [fruta del dragón]. Por fuera es rosa y tiene hojas verdes, como las escamas de un dragón. Por dentro es blanca o roja, con muchas semillas negras y pequeñas.",
+  "El rambután es una fruta roja con pelos. ¡Parece un animal pequeño! Por dentro es blanco y muy dulce. Viene del sudeste de Asia.",
+  "La carambola es amarilla. Si la cortas, cada trozo tiene forma de estrella. Y la [mano de Buda] es un limón muy raro: ¡parece una mano con muchos dedos! ¿Qué fruta te gusta más?"
+ ],
+ "q": [
+  [
+   "¿Cómo huele el durián?",
+   [
+    "Muy bien",
+    "Muy mal",
+    "No huele"
+   ],
+   1
+  ],
+  [
+   "¿Dónde está prohibido llevar durián?",
+   [
+    "En el metro de Singapur",
+    "En los colegios de España",
+    "En los aviones de México"
+   ],
+   0
+  ],
+  [
+   "¿Qué otro nombre tiene la pitaya?",
+   [
+    "[Mano de Buda]",
+    "[Fruta del dragón]",
+    "Carambola"
+   ],
+   1
+  ],
+  [
+   "¿Cómo es el rambután por fuera?",
+   [
+    "Verde y liso",
+    "Amarillo",
+    "Rojo y con pelos"
+   ],
+   2
+  ],
+  [
+   "¿Qué forma tienen los trozos de carambola?",
+   [
+    "De estrella",
+    "De corazón",
+    "De mano"
+   ],
+   0
+  ],
+  [
+   "¿Qué parece la [mano de Buda]?",
+   [
+    "Un dragón",
+    "Una mano con muchos dedos",
+    "Un animal pequeño"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "manzana",
+   "🍎"
+  ],
+  [
+   "plátano",
+   "🍌"
+  ],
+  [
+   "naranja",
+   "🍊"
+  ],
+  [
+   "limón",
+   "🍋"
+  ],
+  [
+   "dragón",
+   "🐉"
+  ],
+  [
+   "estrella",
+   "⭐"
+  ]
+ ],
+ "halves": [
+  [
+   "El durián tiene...",
+   "...muchos pinchos."
+  ],
+  [
+   "La pitaya es rosa...",
+   "...por fuera."
+  ],
+  [
+   "El rambután parece...",
+   "...un animal pequeño."
+  ],
+  [
+   "Cada trozo de carambola...",
+   "...tiene forma de estrella."
+  ],
+  [
+   "La [mano de Buda] es...",
+   "...un limón muy raro."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: gustar",
+  "rule": "Con <b>gustar</b>, el verbo va con la cosa que gusta: <b>me gusta</b> + una cosa, <b>me gustan</b> + varias cosas.",
+  "rows": [
+   "me gusta la fruta",
+   "me gustan las frutas",
+   "te gusta",
+   "le gusta",
+   "nos gusta",
+   "les gusta"
+  ],
+  "items": [
+   [
+    "Me ___ el durián.",
+    [
+     "gusta",
+     "gustan",
+     "gusto"
+    ],
+    0
+   ],
+   [
+    "Me ___ las frutas raras.",
+    [
+     "gusta",
+     "gustan",
+     "gustas"
+    ],
+    1
+   ],
+   [
+    "¿Te ___ la pitaya?",
+    [
+     "gustas",
+     "gusto",
+     "gusta"
+    ],
+    2
+   ],
+   [
+    "A Leo ___ gusta el rambután.",
+    [
+     "le",
+     "me",
+     "te"
+    ],
+    0
+   ],
+   [
+    "A nosotros ___ gustan las fresas.",
+    [
+     "les",
+     "nos",
+     "me"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Strange fruits",
+   "sub": "Smelly, hairy and star-shaped fruits",
+   "grammar": "Grammar: gustar (to like). The verb agrees with the thing you like: me gusta (one thing), me gustan (several things).",
+   "rows": [
+    "I like fruit",
+    "I like fruits",
+    "you like",
+    "he / she likes",
+    "we like",
+    "they like"
+   ],
+   "hints": [
+    "like (one thing)",
+    "like (several things)",
+    "do you like",
+    "to him",
+    "to us"
+   ],
+   "vocab": [
+    "apple",
+    "banana",
+    "orange",
+    "lemon",
+    "dragon",
+    "star"
+   ]
+  }
+ }
+}

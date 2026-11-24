@@ -1,0 +1,207 @@
+{
+ "id": "en-increibles-b1",
+ "topic": "increibles",
+ "level": "B1",
+ "title": "The indestructible tardigrade",
+ "short": "The indestructible tardigrade",
+ "text": [
+  "Imagine an animal that can survive in space, in boiling water and in ice. It sounds impossible, but it exists. It is called the tardigrade, and it is smaller than a grain of sand.",
+  "Tardigrades are also called water bears, because they look like tiny bears with eight legs. They live almost everywhere: on mountains, in the deep ocean and even in the moss of your garden. If you look at a piece of wet moss with a microscope, you will probably find one.",
+  "Their secret is a special state called the tun. If there is no water, a tardigrade dries up and turns into a little ball. Its body almost stops working. If you add water, even many years later, it wakes up and walks away as if nothing happened.",
+  "In this state, tardigrades can survive temperatures of minus two hundred degrees and more than one hundred and fifty degrees. In 2007, scientists sent some tardigrades into space. When the tardigrades came back to Earth, many of them were still alive.",
+  "Scientists study tardigrades because they want to learn how to protect cells. If we understand their secrets, we might keep medicines safe without a fridge, or protect astronauts on long trips."
+ ],
+ "q": [
+  [
+   "How big is a tardigrade?",
+   [
+    "As big as a bear",
+    "Smaller than a grain of sand",
+    "As big as a mouse"
+   ],
+   1
+  ],
+  [
+   "Why are they called water bears?",
+   [
+    "They look like tiny bears",
+    "They eat bears",
+    "They live with bears"
+   ],
+   0
+  ],
+  [
+   "What happens when there is no water?",
+   [
+    "The tardigrade dies at once",
+    "It turns into a little ball called a tun",
+    "It looks for a lake"
+   ],
+   1
+  ],
+  [
+   "What happens if you add water to a tun?",
+   [
+    "It wakes up",
+    "It explodes",
+    "It changes color"
+   ],
+   0
+  ],
+  [
+   "What did scientists do in 2007?",
+   [
+    "They found tardigrades on the moon",
+    "They sent tardigrades into space",
+    "They made a tardigrade film"
+   ],
+   1
+  ],
+  [
+   "Why do scientists study tardigrades?",
+   [
+    "To learn how to protect cells",
+    "To make them bigger",
+    "To use them as food"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "space",
+   "🚀"
+  ],
+  [
+   "ice",
+   "🧊"
+  ],
+  [
+   "sand",
+   "🏜️"
+  ],
+  [
+   "microscope",
+   "🔬"
+  ],
+  [
+   "moss",
+   "🌿"
+  ],
+  [
+   "alive",
+   "💚"
+  ]
+ ],
+ "halves": [
+  [
+   "A tardigrade is smaller...",
+   "...than a grain of sand."
+  ],
+  [
+   "If there is no water...",
+   "...it dries up."
+  ],
+  [
+   "If you add water...",
+   "...it wakes up."
+  ],
+  [
+   "In 2007 scientists sent tardigrades...",
+   "...into space."
+  ],
+  [
+   "Scientists want to learn...",
+   "...how to protect cells."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: the zero conditional",
+  "rule": "Use the <b>zero conditional</b> for things that are always true: <b>If + present simple, present simple</b>.",
+  "rows": [
+   "If there is no water, it dries up.",
+   "If you add water, it wakes up.",
+   "If you heat ice, it melts.",
+   "When = If (always true)",
+   "If + present, present",
+   "If it is cold, it does not move."
+  ],
+  "items": [
+   [
+    "If there is no water, a tardigrade ___ up.",
+    [
+     "dry",
+     "dries",
+     "will dried"
+    ],
+    1
+   ],
+   [
+    "If you ___ water, it wakes up.",
+    [
+     "add",
+     "adds",
+     "added"
+    ],
+    0
+   ],
+   [
+    "If you heat ice, it ___.",
+    [
+     "melt",
+     "melting",
+     "melts"
+    ],
+    2
+   ],
+   [
+    "If it is very cold, the tardigrade ___ not move.",
+    [
+     "do",
+     "does",
+     "is"
+    ],
+    1
+   ],
+   [
+    "Water ___ at one hundred degrees if you heat it.",
+    [
+     "boils",
+     "boil",
+     "boiling"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El tardígrado indestructible",
+   "sub": "El animal más resistente del planeta",
+   "grammar": "Gramática: el condicional cero, para cosas que siempre son verdad: If + presente simple, presente simple.",
+   "rows": [
+    "Si no hay agua, se seca.",
+    "Si añades agua, se despierta.",
+    "Si calientas hielo, se derrite.",
+    "when también vale",
+    "Si + presente, presente",
+    "Si hace frío, no se mueve."
+   ],
+   "hints": [
+    "se seca",
+    "añades",
+    "se derrite",
+    "no se mueve",
+    "hierve"
+   ],
+   "vocab": [
+    "espacio",
+    "hielo",
+    "arena",
+    "microscopio",
+    "musgo",
+    "vivo"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "misterios-a2",
+ "topic": "misterios",
+ "level": "A2",
+ "title": "El Triángulo de las Bermudas",
+ "short": "El Triángulo de las Bermudas",
+ "text": [
+  "En el océano Atlántico hay una zona con forma de triángulo. Sus tres puntas son Miami, en [Estados Unidos], las islas Bermudas y [Puerto Rico]. Mucha gente la llama el [Triángulo de las Bermudas] y dice que allí desaparecen barcos y aviones sin explicación.",
+  "La historia más famosa pasó en 1945. Cinco aviones del ejército de [Estados Unidos] hacían un vuelo de entrenamiento. El cielo estaba gris y el mar estaba muy agitado. [De repente], el líder del grupo dijo por radio que sus brújulas no funcionaban y que no sabía dónde estaba. Nunca volvieron. Además, un avión que salió a buscarlos también desapareció.",
+  "Durante muchos años, la gente inventaba explicaciones increíbles: había extraterrestres que secuestraban los barcos, una ciudad perdida bajo el mar o fuerzas magnéticas misteriosas. Se escribieron libros y se hicieron películas sobre el tema, y la leyenda se hizo cada vez más famosa.",
+  "Pero los expertos tienen explicaciones más sencillas. En esa zona hay tormentas fuertes y repentinas, y una corriente de agua muy rápida, la [corriente del Golfo], que puede llevar los restos lejos. Además, es una de las zonas con más tráfico de barcos y aviones del mundo.",
+  "Según los guardacostas de [Estados Unidos] y las compañías de seguros, en el Triángulo no hay más accidentes que en otras zonas del océano con el mismo tráfico. Entonces, ¿es un misterio de verdad? Probablemente no... pero es una historia muy buena."
+ ],
+ "q": [
+  [
+   "¿Cuáles son las tres puntas del Triángulo?",
+   [
+    "Miami, Bermudas y [Puerto Rico]",
+    "Madrid, Londres y París",
+    "Cuba, México y Chile"
+   ],
+   0
+  ],
+  [
+   "¿Qué pasó en 1945?",
+   [
+    "Se hundió un barco enorme",
+    "Desaparecieron cinco aviones",
+    "Se descubrió una isla"
+   ],
+   1
+  ],
+  [
+   "¿Qué dijo el líder del grupo por radio?",
+   [
+    "Que veía extraterrestres",
+    "Que hacía buen tiempo",
+    "Que sus brújulas no funcionaban"
+   ],
+   2
+  ],
+  [
+   "¿Qué hay en esa zona, según los expertos?",
+   [
+    "Tormentas fuertes y una corriente rápida",
+    "Una ciudad perdida",
+    "Fuerzas magnéticas"
+   ],
+   0
+  ],
+  [
+   "¿Hay más accidentes en el Triángulo que en otras zonas?",
+   [
+    "Sí, muchos más",
+    "No, según los guardacostas",
+    "Nadie lo ha estudiado"
+   ],
+   1
+  ],
+  [
+   "Según el texto, ¿es un misterio de verdad?",
+   [
+    "Sí, seguro",
+    "Sí, por los extraterrestres",
+    "Probablemente no"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "barco",
+   "🚢"
+  ],
+  [
+   "avión",
+   "✈️"
+  ],
+  [
+   "radio",
+   "📻"
+  ],
+  [
+   "brújula",
+   "🧭"
+  ],
+  [
+   "tormenta",
+   "⛈️"
+  ],
+  [
+   "triángulo",
+   "🔺"
+  ]
+ ],
+ "halves": [
+  [
+   "Cinco aviones hacían...",
+   "...un vuelo de entrenamiento."
+  ],
+  [
+   "El cielo estaba gris...",
+   "...y el mar estaba agitado."
+  ],
+  [
+   "La gente inventaba...",
+   "...explicaciones increíbles."
+  ],
+  [
+   "La [corriente del Golfo] puede llevar...",
+   "...los restos lejos."
+  ],
+  [
+   "Es una zona con mucho tráfico...",
+   "...de barcos y aviones."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el pretérito imperfecto",
+  "rule": "El <b>imperfecto</b> describe el pasado: cómo era algo, qué pasaba o qué se hacía muchas veces. <b>-ar → -aba</b>; <b>-er / -ir → -ía</b>.",
+  "rows": [
+   "estar → estaba",
+   "hacer → hacían",
+   "saber → sabía",
+   "inventar → inventaba",
+   "ser → era / eran",
+   "haber → había"
+  ],
+  "items": [
+   [
+    "El cielo ___ gris.",
+    [
+     "estaba",
+     "estuvo",
+     "está"
+    ],
+    0
+   ],
+   [
+    "Los aviones ___ un vuelo de entrenamiento.",
+    [
+     "hicieron",
+     "hacían",
+     "hacen"
+    ],
+    1
+   ],
+   [
+    "El líder no ___ dónde estaba.",
+    [
+     "supo",
+     "sabe",
+     "sabía"
+    ],
+    2
+   ],
+   [
+    "Antes, la gente ___ historias de extraterrestres.",
+    [
+     "inventaba",
+     "inventó",
+     "inventa"
+    ],
+    0
+   ],
+   [
+    "___ tormentas muy fuertes en la zona.",
+    [
+     "Hubo",
+     "Había",
+     "Hay"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The Bermuda Triangle",
+   "sub": "Legend and science",
+   "grammar": "Grammar: the imperfect tense. It describes the past: what things were like, what was happening. -ar → -aba; -er / -ir → -ía.",
+   "rows": [
+    "was",
+    "were doing",
+    "knew",
+    "used to invent",
+    "was / were",
+    "there was / there were"
+   ],
+   "hints": [
+    "was",
+    "were doing",
+    "knew",
+    "used to invent",
+    "there were"
+   ],
+   "vocab": [
+    "ship",
+    "plane",
+    "radio",
+    "compass",
+    "storm",
+    "triangle"
+   ]
+  }
+ }
+}

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lee y aprende</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Lexend:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE everyday learning, a little adventurous, made for curious kids and teens
+   IDEA a night-time library of 15 worlds: each topic is a lit doorway with its own colour and picture
+   PICTURE one illustrated scene per topic (cards on the home page, wide band on each reading)
+   COLOUR night plum ground, bone-white ink, one accent per topic, mint for correct answers
+   TYPE Bungee display + Lexend (made for easy reading)
+   LAYOUT sticky bar; level picker; card grid; reading in one calm column with exercises below.
+   CONTENT lives in content/: catalogo.json (languages, topics, levels), textos-web.json (buttons),
+   <lang>/lecturas/*.json (readings), <lang>/definiciones.json, <lang>/traducciones-<lang>.json */
+:root{color-scheme:dark;--bg:#120e16;--panel:#1c1622;--panel2:#272030;--line:#3a3044;--ink:#f4eee6;--mute:#b9aec4;--red:#ff4141;--acc:#ff4141;--ok:#3fd69c;--beam:#fff1c9}
+*{box-sizing:border-box;min-width:0}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:17px/1.6 Lexend,system-ui,sans-serif;overflow-x:clip}
+button{font:inherit;color:inherit}
+.top{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding:10px max(4vw,16px);background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.brand{font-family:Bungee,Impact,sans-serif;font-size:18px;letter-spacing:.01em;color:var(--acc);white-space:nowrap}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;flex:1}
+.tabs a{display:inline-flex;align-items:center;min-height:40px;padding:6px 14px;border-radius:10px;border:1px solid var(--line);color:var(--mute);text-decoration:none;font-weight:500;font-size:15px;white-space:nowrap}
+.tabs a[aria-current=page]{background:var(--acc);border-color:var(--acc);color:#1a0a0a}
+.score{font-weight:700;font-size:15px;white-space:nowrap;padding:6px 12px;border-radius:10px;background:var(--panel2)}
+.score b{color:var(--ok)}
+.hero{position:relative;height:clamp(190px,32vw,330px);background:#0b0810;overflow:hidden}
+.hero svg{position:absolute;inset:0;width:100%;height:100%}
+.glow{animation:pulse 3.2s ease-in-out infinite;transform-origin:center}
+@keyframes pulse{0%,100%{opacity:.75}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.glow{animation:none}}
+.wrap{max-width:760px;margin:0 auto;padding:24px max(4vw,16px) 64px}
+h1{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:clamp(28px,6vw,44px);line-height:1.05;margin:0;text-wrap:balance}
+.en{color:var(--mute);font-size:15px;margin:4px 0 0}
+.howto{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:20px 0 14px;padding:12px 14px;border-radius:12px;background:var(--panel2);font-size:15px}
+.howto p{margin:0;flex:1 1 260px}
+.howto .en{margin:0}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:10px;border:1px solid var(--line);background:var(--panel);cursor:pointer;font-weight:500;font-size:15px}
+.btn:hover{border-color:var(--mute)}
+.btn:focus-visible,.opt:focus-visible,.mi:focus-visible,.tabs a:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.btn.main{background:var(--acc);border-color:var(--acc);color:#1a0a0a}
+.check{display:inline-flex;align-items:center;gap:8px;font-size:15px;min-height:44px;cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--acc)}
+.reading{font-size:19px;line-height:1.85;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:clamp(18px,4vw,30px)}
+.reading p{margin:0 0 1em}
+.reading p:last-child{margin:0}
+.w{cursor:pointer;border-radius:5px;padding:1px 1px;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.reading .w{border-bottom:1px dotted rgba(244,238,230,.25)}
+.w:hover{background:rgba(255,241,201,.12)}
+.w.on{background:var(--beam);color:#1a1208}
+.tip{position:fixed;z-index:50;left:0;top:0;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .1s,transform .1s;background:var(--beam);color:#1a1208;border-radius:12px;padding:8px 14px 9px;max-width:min(320px,92vw);box-shadow:0 8px 24px rgba(0,0,0,.45);text-align:center}
+.tip.show{opacity:1;transform:none;pointer-events:auto}
+.tip .add{display:block;width:100%;margin-top:8px;min-height:40px;padding:6px 12px;border-radius:9px;border:0;background:#1a1208;color:var(--hi,var(--beam));font-weight:700;font-size:14px;cursor:pointer}
+.tip .add[disabled]{background:rgba(26,18,8,.12);color:#14583f;cursor:default}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{min-height:44px;padding:6px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);cursor:pointer;font-size:15px}
+.seg button[aria-pressed=true]{background:var(--beam);color:#1a1208;border-color:var(--beam);font-weight:700}
+.remix{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 22%,var(--panel)),var(--panel) 70%);border:1px solid color-mix(in srgb,var(--acc) 50%,transparent);border-radius:16px;padding:18px;margin-top:16px}
+.remix h2{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:28px;margin:0;color:var(--acc)}
+.remix p{margin:4px 0 0}
+.remix>div{flex:1 1 260px}
+.btn[disabled]{opacity:.45;cursor:default}
+.dh{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.words{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:8px}
+.words li{display:flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:4px 4px 4px 12px;line-height:1.3}
+.words li.miss{border-color:var(--acc)}
+.words li div{flex:1}
+.words li b{display:block}
+.words li span{color:var(--mute);font-size:14px}
+.words li em{font-style:normal;font-size:12px;font-weight:700;color:#1a0a0a;background:var(--acc);border-radius:6px;padding:1px 6px;margin-left:6px}
+.x{flex:none;width:40px;height:40px;border:0;background:transparent;color:var(--mute);font-size:22px;cursor:pointer;border-radius:8px}
+.x:hover{background:var(--panel2);color:var(--ink)}
+.empty{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:12px 0 0;font-size:15px}
+.empty a{color:var(--hi,var(--beam))}
+.qc{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:clamp(16px,4vw,26px);margin-top:18px}
+.qtop{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;color:var(--mute)}
+.prog{height:8px;background:var(--panel2);border-radius:6px;overflow:hidden;margin:10px 0 18px}
+.prog i{display:block;height:100%;background:var(--acc)}
+.prompt{font-size:clamp(22px,5vw,30px);font-weight:700;line-height:1.25;margin:0}
+.prompt em{font-style:normal;color:var(--hi,var(--beam))}
+.tip small{display:block;font-size:13px;opacity:.7;line-height:1.2}
+.tip b{display:block;font-size:20px;line-height:1.25}
+.tip::after{content:"";position:absolute;left:var(--ax,50%);bottom:-7px;width:14px;height:14px;margin-left:-7px;background:var(--beam);transform:rotate(45deg)}
+.tip.below::after{bottom:auto;top:-7px}
+.ex{margin-top:40px}
+.ex h2{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:24px;line-height:1.15;margin:0;color:var(--ink)}
+.ex h2 span{color:var(--acc)}
+.ex>.en{margin-bottom:16px}
+.q{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px}
+.q .stem{font-weight:500;font-size:18px;margin:0 0 10px}
+.q .stem i{font-style:normal;color:var(--mute);font-weight:400;font-size:15px}
+.opts{display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;text-align:left;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);cursor:pointer;font-size:17px}
+.opt .k{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:8px;background:var(--bg);font-weight:700;font-size:14px}
+.opt:hover:not([disabled]){border-color:var(--mute)}
+.opt[disabled]{cursor:default}
+.opt.right{border-color:var(--ok);background:rgba(63,214,156,.16)}
+.opt.right .k{background:var(--ok);color:#06231a}
+.opt.wrong{border-color:var(--acc);background:rgba(255,65,65,.14)}
+.opt.wrong .k{background:var(--acc);color:#1a0a0a}
+.opt.dim{opacity:.55}
+.fb{margin:10px 0 0;font-size:15px;font-weight:500}
+.fb.ok{color:var(--ok)}
+.fb.no{color:#ff8a8a}
+.blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--mute);text-align:center;color:var(--ok);font-weight:700;line-height:1.3}
+.match{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px 12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.col{display:grid;gap:8px;align-content:start}
+.col h3{margin:0 0 2px;font-size:13px;font-weight:500;color:var(--mute)}
+.mi{display:flex;align-items:center;gap:8px;width:100%;min-height:52px;text-align:left;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);cursor:pointer;font-size:16px;line-height:1.35}
+.mi:hover:not([disabled]){border-color:var(--mute)}
+.mi.sel{border-color:var(--beam);box-shadow:0 0 0 2px var(--beam) inset}
+.mi.done{border-color:var(--ok);background:rgba(63,214,156,.14);cursor:default}
+.mi .n{flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:7px;background:var(--ok);color:#06231a;font-size:13px;font-weight:700}
+.mi.bad{border-color:var(--acc);animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.mnote{font-size:14px;color:var(--mute);margin:8px 2px 0}
+.rule{background:var(--panel2);border-radius:14px;padding:14px 16px;margin-bottom:14px;font-size:16px}
+.rule p{margin:0 0 8px}
+.rule table{border-collapse:collapse;width:100%;font-size:15px}
+.rule td{padding:5px 8px;border-top:1px solid var(--line);vertical-align:top}
+.rule td:first-child{font-weight:700;color:var(--hi,var(--beam));white-space:nowrap}
+.rule td:last-child{color:var(--mute)}
+.res{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px}
+.big{font-family:Bungee,Impact,sans-serif;font-size:clamp(40px,10vw,64px);line-height:1;margin:4px 0 6px}
+.big small{font-size:.45em;color:var(--mute)}
+.bars{display:grid;gap:10px;margin:16px 0}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;font-size:15px}
+.bar .t{height:10px;grid-column:1/-1;background:var(--panel2);border-radius:6px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--ok);border-radius:6px}
+.bar b{white-space:nowrap}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+@media(max-width:600px){
+ body{font-size:16px}
+ .reading{font-size:18px}
+ .brand{font-size:15px}
+ .tabs a{padding:6px 10px;font-size:14px}
+ .match{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;padding:10px}
+ .mi{font-size:15px;padding:8px 10px}
+}
+.opt.wrong{border-color:var(--red);background:rgba(255,65,65,.14)}.opt.wrong .k{background:var(--red);color:#1a0a0a}.mi.bad{border-color:var(--red)}.words li.miss{border-color:rgba(255,65,65,.65)}.words li em{background:var(--red)}
+.brand{text-decoration:none;color:var(--acc)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tip p.def{margin:6px 0 0;font-size:14px;line-height:1.35;text-align:left;border-top:1px solid rgba(26,18,8,.18);padding-top:6px}
+.tip p.def i{font-style:normal;font-weight:700}
+.intro{position:relative;padding:clamp(28px,5vw,56px) max(4vw,16px) 26px;background:radial-gradient(120% 140% at 85% 0%,var(--intro,#2a1730) 0%,var(--bg) 60%);border-bottom:1px solid var(--line)}
+.intro .in{max-width:1180px;margin:0 auto}
+.intro h1{font-size:clamp(34px,7vw,60px);color:var(--acc)}
+.intro .lead{font-size:18px;margin:8px 0 0;max-width:60ch}
+.pickers{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px;margin-top:22px}
+.pk{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.pk h2{margin:0 0 8px;font-size:15px;font-weight:700}
+.pk h2 .en{display:inline;margin-left:6px;font-weight:400}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:44px;padding:4px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);cursor:pointer;font-size:15px;line-height:1.2}
+.chip small{font-size:11.5px;color:var(--mute)}
+.chip[aria-pressed=true]{background:var(--beam);border-color:var(--beam);color:#1a1208;font-weight:700}
+.chip[aria-pressed=true] small{color:#5a4a2a}
+.chip[disabled]{opacity:.5;cursor:default}
+.lvbar{max-width:1180px;margin:0 auto;padding:22px max(4vw,16px) 0;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center}
+.lvbar h2{margin:0;font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:22px}
+.lv{display:flex;flex-wrap:wrap;gap:8px}
+.lv a{display:flex;flex-direction:column;min-height:48px;justify-content:center;padding:4px 16px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;line-height:1.15}
+.lv a b{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:20px}
+.lv a span{font-size:13px;color:var(--mute)}
+.lv a[aria-current=true]{background:var(--beam);border-color:var(--beam);color:#1a1208}
+.lv a[aria-current=true] span{color:#5a4a2a}
+.grid{max-width:1180px;margin:0 auto;padding:18px max(4vw,16px) 64px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:14px}
+.card{--c:#fff;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;color:var(--ink);text-decoration:none;transition:transform .15s,border-color .15s}
+a.card:hover{transform:translateY(-3px);border-color:var(--c)}
+a.card:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.card .art{position:relative;aspect-ratio:2/1;background:#120e16}
+.card .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card .tx{padding:10px 14px 14px;display:grid;gap:2px}
+.card .tn{font-size:13px;font-weight:700;color:var(--c)}
+.card .tt{font-size:17px;font-weight:500;line-height:1.3}
+.card .te{font-size:13.5px;color:var(--mute)}
+.card .badge{position:absolute;left:10px;top:10px;font-size:12px;font-weight:700;padding:3px 8px;border-radius:7px;background:var(--c);color:#120e16}
+.card.lock{opacity:.62}
+.card.lock .badge{background:#120e16cc;color:var(--ink);border:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){.card{transition:none}a.card:hover{transform:none}}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 8px;font-size:14px;font-weight:700}
+.meta span{padding:2px 9px;border-radius:7px;background:var(--acc);color:#120e16}
+.meta a{color:var(--mute);font-weight:500}
+.next{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px;margin-top:12px}
+.next .card .tt{font-size:16px}
+.ex h3{font-size:16px;margin:22px 0 0}
+.ex h3 .en{display:inline;margin-left:6px;font-weight:400}
+.msg{padding:60px 20px;text-align:center;color:var(--mute)}
+[hidden]{display:none!important}
+/* diccionario: modos de repaso */
+.words li span.tro,.words li span.dd{display:block;font-size:13px}
+.words li span.tro abbr{text-decoration:none;font-weight:700;font-size:11px;color:var(--ink);background:var(--panel2);border-radius:5px;padding:0 5px;margin-right:4px}
+.words li span.dd{color:var(--mute);opacity:.85;margin-top:2px}
+.gs{font-size:clamp(19px,4.4vw,24px);line-height:1.5;margin:0}
+.gs .blank{min-width:3em;padding:0 4px;color:var(--hi,var(--beam));letter-spacing:.12em}
+.gs .blank.bad{color:#ff8a8a;letter-spacing:0}
+.rxw{margin-top:10px}
+.qw{display:flex;flex-wrap:wrap;gap:8px}
+.qw input{flex:1 1 220px;min-height:48px;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font-size:18px}
+.qw input:focus{outline:3px solid var(--hi,var(--beam));outline-offset:1px}
+.qw input[disabled]{opacity:.8}
+.xpn{display:inline-block;font-weight:700;color:#1a1208;background:var(--beam);border-radius:7px;padding:1px 8px;font-size:14px;margin:6px 0 0}
+@media(max-width:600px){.tk{display:none}.tabs{flex:1 1 auto}.top{gap:8px 10px}}
+/* points, streak, stickers, medals */
+.me{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:6px 12px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;white-space:nowrap}
+.me[aria-current=page]{border-color:var(--beam)}
+.me:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.me .lvn{color:var(--hi,var(--beam))}
+.fire.off{filter:grayscale(1);opacity:.55}
+.toasts{position:fixed;z-index:60;left:50%;bottom:18px;transform:translateX(-50%);display:grid;gap:8px;justify-items:center;pointer-events:none;width:min(92vw,440px)}
+.toast{background:var(--beam);color:#1a1208;font-weight:700;font-size:15px;border-radius:12px;padding:9px 16px;box-shadow:0 8px 24px rgba(0,0,0,.5);animation:tin .25s ease-out;text-align:center}
+.toast.tbig{background:var(--ok);color:#06231a;font-size:17px;padding:12px 18px}
+@keyframes tin{from{opacity:0;transform:translateY(12px) scale(.96)}}
+.wrap.wide{max-width:1000px}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:14px;margin-top:20px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+.box h2{margin:0 0 4px;font-size:14px;font-weight:700;color:var(--mute)}
+.lvl{font-family:Bungee,Impact,sans-serif;font-size:46px;line-height:1.05;margin:2px 0}
+.rank{margin:0;font-weight:700;color:var(--hi,var(--beam))}
+.xpb{height:12px;background:var(--panel2);border-radius:8px;overflow:hidden;margin:12px 0 6px}
+.xpb i{display:block;height:100%;background:linear-gradient(90deg,var(--ok),#a6f5d6);border-radius:8px}
+.small{font-size:14px;color:var(--mute);margin:0;line-height:1.45}
+.shields{display:flex;gap:8px;margin:8px 0 10px}
+.sh{width:42px;height:48px;display:grid;place-items:center;border-radius:12px;border:2px dashed var(--line);font-size:24px}
+.sh.on{border:2px solid #7fb7ff;background:rgba(127,183,255,.15)}
+.medals{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,170px),1fr));gap:10px;margin-top:14px}
+.md{display:grid;justify-items:center;align-content:start;text-align:center;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 10px}
+.md .ic{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:30px;background:var(--panel2);border:4px solid var(--line)}
+.md.t1 .ic{border-color:#cd7f32;background:rgba(205,127,50,.2)}
+.md.t2 .ic{border-color:#dfe3ea;background:rgba(223,227,234,.16)}
+.md.t3 .ic{border-color:#ffd54a;background:rgba(255,213,74,.2);box-shadow:0 0 18px rgba(255,213,74,.35)}
+.md.lock .ic{filter:grayscale(1);opacity:.5}
+.md b{font-size:15px;line-height:1.25}
+.md span{font-size:13px;color:var(--mute);line-height:1.3}
+.md .pb{width:100%;height:6px;background:var(--panel2);border-radius:4px;overflow:hidden;margin-top:2px}
+.md .pb i{display:block;height:100%;background:var(--ok)}
+.alb{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:16px 14px;margin-top:6px}
+.at{display:grid;gap:6px}
+.at h3{margin:0;font-size:14px;color:var(--c)}
+.at.full h3::after{content:" ★";color:#ffd54a}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.stk{position:relative;display:block;aspect-ratio:4/5;border-radius:12px;overflow:hidden;border:2px solid var(--line);background:#0b0810;color:var(--ink);text-decoration:none}
+.stk img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stk.got{border-color:var(--c);box-shadow:0 0 0 2px color-mix(in srgb,var(--c) 35%,transparent)}
+.stk:not(.got) img{filter:grayscale(1) brightness(.3) blur(1.5px)}
+.stk.soon{opacity:.6}
+.stk .lv1{position:absolute;left:6px;top:6px;font-size:11.5px;font-weight:700;padding:2px 6px;border-radius:6px;background:var(--c);color:#120e16}
+.stk:not(.got) .lv1{background:#120e16cc;color:var(--ink);border:1px solid var(--line)}
+.stk .cap{position:absolute;left:0;right:0;bottom:0;padding:16px 7px 6px;background:linear-gradient(transparent,#000d);font-size:12px;line-height:1.2;font-weight:500}
+.stk .qm{position:absolute;inset:0;display:grid;place-items:center;font-family:Bungee,Impact,sans-serif;font-size:32px;color:var(--mute)}
+a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.won{display:flex;align-items:center;gap:14px;margin-top:14px;padding:12px;border-radius:12px;background:var(--panel2)}
+.won .stk{width:76px;flex:none}
+.won p{margin:0}
+@media(prefers-reduced-motion:reduce){.toast{animation:none}}
+@media(max-width:600px){.me{padding:6px 9px;font-size:14px}}
+</style>
+<link rel="stylesheet" href="voz.css">
+<link rel="stylesheet" href="juegos/juegos.css">
+<link rel="stylesheet" href="cuentas.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
+<script src="cuentas.js"></script>
+<script src="propuestas.js"></script>
+<link rel="stylesheet" href="mascota/mascota.css">
+<link rel="stylesheet" href="votos/votos.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" id="brand" href="#inicio">Lee y aprende</a>
+  <nav class="tabs" id="tabs" aria-label="Menú"></nav>
+  <div class="score" id="score" hidden></div>
+  <a class="me" id="me" href="#progreso" hidden></a>
+</header>
+<main id="app"><p class="msg">Cargando… · Loading…</p></main>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<div class="tip" id="tip"><small></small><b></b><p class="def"></p><button class="add" id="add" type="button"></button></div>
+<script>
+{
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const KEYS = "ABCD", LV = ["A1","A2","B1"];
+const LET = "A-Za-zÁÉÍÓÚÜÑáéíóúüñÄÖÜäößÀÈÌÒÙàèìòùç";
+const RE = new RegExp(`\\[([^\\]|]+)(?:\\|([^\\]]+))?\\]|([${LET}0-9]+)|([^\\[${LET}0-9]+)`, "g");
+const shuf = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const store = { get(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+const getJSON = p => fetch(p).then(r => { if (!r.ok) throw new Error(p); return r.json(); });
+
+/* ---------- content ---------- */
+let CAT, UI, PACK = {}; const READ = {};
+async function loadPack(learn, know) {
+  const k = learn + ">" + know;
+  if (!PACK[k]) PACK[k] = Promise.all([getJSON(`content/${learn}/definiciones.json`), getJSON(`content/${learn}/traducciones-${know}.json`)]).then(([def, tr]) => ({def, tr}));
+  return PACK[k];
+}
+const loadReading = f => READ[f] ||= getJSON("content/" + f);
+const topicOf = id => CAT.topics.find(t => t.id === id);
+const rdList = () => CAT.topics.flatMap(t => (t.readings[S.learn] || []).map(r => ({...r, t, id: r.id || `${t.id}-${r.level.toLowerCase()}`})));
+const rdOf = (tid, level) => rdList().find(r => r.t.id === tid && r.level === level);
+const rdById = id => rdList().find(r => r.id === id);
+
+/* ---------- profiles & state ---------- */
+const PKEY = "lyaPerfiles";
+let P = store.get(PKEY) || {list: [], cur: null};
+let S = null;
+const fresh = () => ({learn: "es", know: "en", level: "A1", read: "bear-a1", a: {}, dict: [], dir: "learn", say: false, view: "home"});
+const fix = () => { const f = fresh(); for (const k in f) if (S[k] === undefined) S[k] = f[k]; };
+const prof = () => P.list.find(p => p.id === P.cur);
+const save = () => { const p = prof(); if (p) { p.s = S; store.set(PKEY, P); window.LYACuentas?.cambio(); } };
+function migrateOld() {
+  const o = store.get("bearLectura"); if (!o || !o.a) return null;
+  const ids = ["bear-a1","bear-a2","bear-b1"], s = fresh();
+  for (const [k, v] of Object.entries(o.a)) { const m = k.match(/^(\d)(.+)$/); if (m && ids[m[1]]) s.a[`${ids[m[1]]}:${m[2]}`] = v; }
+  s.dict = (o.dict || []).map(d => ({w: d.es, k: d.es.toLowerCase(), r: ids[d.v] || "bear-a1", l: "es", t: d.en, miss: !!d.miss}));
+  s.say = !!o.say;
+  return s;
+}
+
+/* ---------- interface text ---------- */
+const uiMode = lv => (CAT.settings.ui || {})[lv] || "both";
+const lvNow = () => S.view === "read" ? (rdById(S.read)?.level || S.level) : S.level;
+const U = (k, lang, vars) => { let s = (UI[lang] || UI.en)[k] ?? k; for (const v in vars || {}) s = s.replace(`{${v}}`, vars[v]); return s; };
+const both = () => uiMode(lvNow()) === "both" && S.know !== S.learn;
+/* block: main text + small line in the language you know (A1 only) */
+const TB = (k, vars, tag = "p") => `${esc(U(k, S.learn, vars))}${both() ? `<span class="en" style="display:block">${esc(U(k, S.know, vars))}</span>` : ""}`;
+/* inline: "texto · text" */
+const TI = (k, vars) => esc(U(k, S.learn, vars)) + (both() ? " · " + esc(U(k, S.know, vars)) : "");
+/* top bar: second language hidden on phones */
+const TT = k => esc(U(k, S.learn)) + (both() ? `<span class="tk"> · ${esc(U(k, S.know))}</span>` : "");
+const lc = (n, lang) => lang === "en" || lang === "de" ? n : n.toLowerCase();
+const lname = (code, inLang) => CAT.languages[code].name[inLang] || CAT.languages[code].name.en;
+
+/* ---------- words ---------- */
+let R = null, PK = null; /* current reading and language pack */
+const NAME = /^Name of |: name of |^Nickname |^Short name |^The letter |^The person who is speaking|^Nombre |^Palabra inglesa|^Tecla |^Plataforma |^Dinero que se gana|^Ropa o aspecto/;
+function lookup(text, key) {
+  const k = (key || text).toLowerCase();
+  const t = R?.tr?.[S.know]?.words?.[k] || PK?.tr[k] || (/^\d+$/.test(text) ? text : null);
+  const d = PK?.def[k] || null;
+  return t || d ? {k, t: t || "", d} : null;
+}
+const span = (txt, k) => `<span class="w" data-k="${esc(k)}">${esc(txt)}</span>`;
+const tok = s => s.replace(RE, (m, ph, key, w, o) => ph ? span(ph, key || ph) : w ? (lookup(w) ? span(w, w) : esc(w)) : esc(o));
+const plain = s => s.replace(/\[([^\]|]+)(?:\|[^\]]+)?\]/g, "$1");
+
+/* ---------- scoring ---------- */
+function scoreOf(L) {
+  const A = S.a, id = L.id, r = {};
+  r.q = [L.q.filter((q, i) => A[`${id}:q${i}`] === q[2]).length, L.q.length, L.q.filter((q, i) => A[`${id}:q${i}`] !== undefined).length];
+  const g = L.grammar.items;
+  r.g = [g.filter((q, i) => A[`${id}:g${i}`] === q[2]).length, g.length, g.filter((q, i) => A[`${id}:g${i}`] !== undefined).length];
+  for (const k of ["vocab", "halves"]) { const m = A[`${id}:${k}`] || {d: [], x: []}; r[k] = [m.d.filter(i => !m.x.includes(i)).length, L[k].length, m.d.length]; }
+  r.pts = r.q[0] + r.g[0] + r.vocab[0] + r.halves[0]; r.tot = r.q[1] + r.g[1] + r.vocab[1] + r.halves[1]; r.done = r.q[2] + r.g[2] + r.vocab[2] + r.halves[2];
+  return r;
+}
+function shuffleIdx(n, seed) {
+  const a = [...Array(n).keys()]; let s = seed;
+  for (let i = n - 1; i > 0; i--) { s = s * 16807 % 2147483647; const j = s % (i + 1); [a[i], a[j]] = [a[j], a[i]]; }
+  if (a.every((v, i) => v === i)) a.push(a.shift());
+  return a;
+}
+const seedOf = s => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 2147483647, 7);
+
+/* ---------- points (XP), streak, sticker album, medals ---------- */
+const GTXT = {
+  es: {progress: "Mi progreso", rlevel: "Nivel de lector", lvl: "Nivel {n}", xp_next: "{n} XP para el nivel {l}", spend: "Puntos para gastar", streak: "Racha", streak_days: "Días seguidos: {n}", streak_best: "Tu mejor racha: {n}", streak_help: "Lee, juega o repasa algo cada día para no perder la racha.", shields: "Escudos", shield_help: "Un escudo salva tu racha si un día no entras. Puedes tener 2.", buy_shield: "Comprar escudo · {n} puntos", shield_full: "Ya tienes el máximo de escudos.", shield_need: "Te faltan {n} puntos para un escudo.", album: "Álbum de cromos", album_help: "Termina todos los ejercicios de una lectura para ganar su cromo.", medals: "Medallas", secret: "Medalla secreta", secret_help: "Sigue jugando para descubrirla.", t_level: "¡Subes al nivel {n}!", t_sticker: "¡Cromo nuevo para tu álbum!", t_medal: "¡Medalla: {m}!", t_secret: "¡Medalla secreta: {m}!", t_shield: "Un escudo ha salvado tu racha", t_streak: "🔥 Racha de {n} días", t_bought: "¡Escudo comprado!", tier1: "bronce", tier2: "plata", tier3: "oro", next_tier: "{v} / {g} para {t}", maxed: "¡Oro conseguido!", won: "¡Has ganado el cromo de esta lectura!", won_how: "Termina todos los ejercicios para ganar el cromo de esta lectura.", see_album: "Ver mi álbum", xp_here: "XP ganados en esta lectura: {n}", r1: "Lector novato", r2: "Explorador de páginas", r3: "Cazador de palabras", r4: "Maestro lector", r5: "Leyenda de la lectura", m_lector: "Lector", md_lector: "Termina lecturas", m_racha: "En racha", md_racha: "Días seguidos leyendo", m_dicc: "Coleccionista", md_dicc: "Palabras en tu diccionario", m_juego: "Jugador", md_juego: "Aciertos en juegos y repasos", m_explora: "Explorador", md_explora: "Temas con algún cromo", s_buho: "Búho nocturno", sd_buho: "Leer de noche", s_madruga: "Madrugador", sd_madruga: "Leer antes de las 8", s_perfecto: "Sin fallos", sd_perfecto: "Una lectura sin ningún fallo", s_combo: "Imparable", sd_combo: "10 aciertos seguidos al repasar", s_maraton: "Maratón", sd_maraton: "3 cromos en un mismo día", stickers: "cromos"},
+  en: {progress: "My progress", rlevel: "Reader level", lvl: "Level {n}", xp_next: "{n} XP to level {l}", spend: "Points to spend", streak: "Streak", streak_days: "Days in a row: {n}", streak_best: "Your best streak: {n}", streak_help: "Read, play or review something every day to keep your streak.", shields: "Shields", shield_help: "A shield saves your streak if you miss a day. You can hold 2.", buy_shield: "Buy a shield · {n} points", shield_full: "You already have the most shields.", shield_need: "You need {n} more points for a shield.", album: "Sticker album", album_help: "Finish every exercise in a reading to win its sticker.", medals: "Medals", secret: "Secret medal", secret_help: "Keep playing to discover it.", t_level: "Level up! Level {n}", t_sticker: "New sticker for your album!", t_medal: "Medal: {m}!", t_secret: "Secret medal: {m}!", t_shield: "A shield saved your streak", t_streak: "🔥 {n}-day streak", t_bought: "Shield bought!", tier1: "bronze", tier2: "silver", tier3: "gold", next_tier: "{v} / {g} for {t}", maxed: "Gold won!", won: "You won this reading's sticker!", won_how: "Finish every exercise to win this reading's sticker.", see_album: "See my album", xp_here: "XP won in this reading: {n}", r1: "Rookie reader", r2: "Page explorer", r3: "Word hunter", r4: "Master reader", r5: "Reading legend", m_lector: "Reader", md_lector: "Finish readings", m_racha: "On a roll", md_racha: "Days in a row", m_dicc: "Collector", md_dicc: "Words in your dictionary", m_juego: "Player", md_juego: "Right answers in games and reviews", m_explora: "Explorer", md_explora: "Topics with a sticker", s_buho: "Night owl", sd_buho: "Read at night", s_madruga: "Early bird", sd_madruga: "Read before 8 am", s_perfecto: "Flawless", sd_perfecto: "A reading with no mistakes", s_combo: "Unstoppable", sd_combo: "10 right answers in a row", s_maraton: "Marathon", sd_maraton: "3 stickers in one day", stickers: "stickers"}
+};
+const MULT = {A1: 1, A2: 1.5, B1: 2}, SHIELD_COST = 150, SHIELD_MAX = 2;
+const freshG = () => ({xp: 0, spent: 0, streak: 0, best: 0, last: null, shields: 0, got: {}, rx: {}, album: {}, medals: {}, secrets: {}, st: {ok: 0, combo: 0}});
+const fixG = () => { const f = freshG(); if (!S.g || typeof S.g !== "object") S.g = f; for (const k in f) if (S.g[k] === undefined) S.g[k] = f[k]; };
+const dstr = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+const dayN = s => { const [y, m, d] = s.split("-").map(Number); return Math.round(Date.UTC(y, m - 1, d) / 864e5); };
+const today = () => dstr(new Date());
+const lvStart = n => 50 * n * (n - 1); /* XP needed to reach level n: 0, 100, 300, 600, 1000… */
+const lvOf = xp => { let n = 1; while (xp >= lvStart(n + 1)) n++; return n; };
+const rankOf = n => [[1, "r1"], [3, "r2"], [5, "r3"], [8, "r4"], [12, "r5"]].filter(([m]) => n >= m).pop()[1];
+/* inline text with values that depend on the language */
+const TV = (k, f) => esc(U(k, S.learn, f(S.learn))) + (both() ? " · " + esc(U(k, S.know, f(S.know))) : "");
+function streakNow() { const g = S.g; if (!g.last) return 0; const gap = dayN(today()) - dayN(g.last); return gap <= 1 || g.shields >= gap - 1 ? g.streak : 0; }
+function touchDay() {
+  const g = S.g, t = today(); if (g.last === t) return;
+  const gap = g.last ? dayN(t) - dayN(g.last) : 0;
+  if (gap === 1) g.streak++;
+  else if (gap > 1 && g.shields >= gap - 1) { g.shields -= gap - 1; g.streak++; toast(TI("t_shield")); }
+  else g.streak = 1;
+  g.last = t; g.best = Math.max(g.best, g.streak);
+  if (g.streak > 1) toast(TI("t_streak", {n: g.streak}));
+}
+function toast(html, big) {
+  const box = $("toasts"); if (!box) return;
+  while (box.children.length > 2) box.firstChild.remove();
+  const el = document.createElement("div"); el.className = "toast" + (big ? " tbig" : ""); el.innerHTML = html; box.append(el);
+  setTimeout(() => el.remove(), big ? 3400 : 1900);
+}
+let xpPend = 0, xpT = null;
+const xpPop = n => { xpPend += n; clearTimeout(xpT); xpT = setTimeout(() => { toast(`+${xpPend} XP`); xpPend = 0; }, 300); };
+/* give n XP once per key (key null = always); rid = reading id for the level bonus */
+function award(n, key, rid) {
+  const g = S.g; if (!g) return 0;
+  if (key) { if (g.got[key]) return 0; g.got[key] = 1; }
+  if (rid) n = Math.round(n * (MULT[rdById(rid)?.level] || 1));
+  touchDay();
+  const h = new Date().getHours();
+  if (h >= 22 || h < 5) secret("buho"); else if (h < 8) secret("madruga");
+  if (n > 0) {
+    const before = lvOf(g.xp); g.xp += n; if (rid) g.rx[rid] = (g.rx[rid] || 0) + n;
+    xpPop(n); const after = lvOf(g.xp); if (after > before) toast(TI("t_level", {n: after}), 1);
+    try { dispatchEvent(new CustomEvent("lya:gain", {detail: {n, key, up: after > before}})); } catch (e) {} /* mascota */
+  }
+  checkMedals(); save(); renderTop();
+  return n;
+}
+function practiceAnswer(ok) {
+  const st = S.g.st;
+  if (ok) { st.ok++; st.combo++; if (st.combo >= 10) secret("combo"); } else st.combo = 0;
+}
+function checkReading(L) {
+  if (!L || !S.g) return;
+  const r = scoreOf(L), id = L.id, g = S.g;
+  if (r.done < r.tot || g.album[id]) return;
+  g.album[id] = today();
+  toast(TI("t_sticker"), 1);
+  if (r.pts === r.tot) secret("perfecto");
+  if (Object.values(g.album).filter(d => d === g.album[id]).length >= 3) secret("maraton");
+  award(50, "fin:" + id, id);
+}
+const MEDALS = [
+  ["lector", "📚", [1, 5, 15], () => Object.keys(S.g.album).length],
+  ["racha", "🔥", [3, 7, 30], () => S.g.best],
+  ["dicc", "📖", [10, 50, 150], () => S.dict.length],
+  ["juego", "🎮", [20, 100, 300], () => S.g.st.ok],
+  ["explora", "🧭", [3, 8, 15], () => new Set(Object.keys(S.g.album).map(id => rdById(id)?.t.id).filter(Boolean)).size]
+];
+const SECRETS = [["buho", "🦉"], ["madruga", "🌅"], ["perfecto", "💯"], ["combo", "⚡"], ["maraton", "🏃"]];
+function checkMedals() {
+  for (const [id, , goals, val] of MEDALS) {
+    const t = goals.filter(x => val() >= x).length;
+    if (t > (S.g.medals[id] || 0)) { S.g.medals[id] = t; toast(TV("t_medal", l => ({m: U("m_" + id, l) + " (" + U("tier" + t, l) + ")"})), 1); }
+  }
+}
+function secret(id) { if (S.g.secrets[id]) return; S.g.secrets[id] = today(); toast(TV("t_secret", l => ({m: U("s_" + id, l)})), 1); }
+/* other parts of the site (mini-games, dictionary) send points with this event */
+addEventListener("lya:xp", e => {
+  if (!S || !S.g) return;
+  const d = e.detail || {}, n = +(d.n ?? d.xp ?? 0) || 0;
+  if (typeof d.ok === "boolean" && !/^(dict-save|quiz-done)$/.test(d.src || "")) practiceAnswer(d.ok);
+  else if (/^quiz-(test|fill|write)$/.test(d.src || "")) practiceAnswer(true);
+  const rid = d.lectura && rdById(d.lectura) ? d.lectura : null;
+  if (n > 0 || d.ok !== false) award(Math.max(0, n), null, rid); else { save(); }
+});
+function stkHTML(r) {
+  const got = S.g.album[r.id], img = `<img src="${esc(r.art || r.t.art)}" alt="" loading="lazy">`, lv = `<span class="lv1">${r.level}</span>`;
+  const cap = `<span class="cap">${esc(r.title[S.learn] || r.title.es)}</span>`;
+  if (got) return `<a class="stk got" href="#${r.id}">${img}${lv}${cap}</a>`;
+  if (r.file) return `<a class="stk" href="#${r.id}" aria-label="${esc(r.title[S.learn] || r.title.es)}">${img}${lv}<span class="qm">?</span></a>`;
+  return `<div class="stk soon" title="${esc(U("soon", S.learn))}">${img}${lv}<span class="qm">…</span></div>`;
+}
+function renderProg() {
+  setAcc("#ff4141");
+  const g = S.g, n = lvOf(g.xp), a = lvStart(n), b = lvStart(n + 1), pts = g.xp - g.spent, s = streakNow();
+  const all = rdList(), got = all.filter(r => g.album[r.id]).length;
+  const buy = g.shields >= SHIELD_MAX ? `<p class="small">${TI("shield_full")}</p>` : `<button class="btn main" data-act="shield" ${pts >= SHIELD_COST ? "" : "disabled"}>${TI("buy_shield", {n: SHIELD_COST})}</button>${pts < SHIELD_COST ? `<p class="small" style="margin-top:6px">${TI("shield_need", {n: SHIELD_COST - pts})}</p>` : ""}`;
+  const medal = ([id, ic, goals, val]) => {
+    const t = g.medals[id] || 0, v = val(), nx = goals[t];
+    const foot = nx ? `<div class="pb"><i style="width:${Math.min(100, v / nx * 100)}%"></i></div><span>${TV("next_tier", l => ({v, g: nx, t: U("tier" + (t + 1), l)}))}</span>` : `<span>${TI("maxed")}</span>`;
+    return `<div class="md ${t ? "t" + t : "lock"}"><div class="ic" aria-hidden="true">${ic}</div><b>${esc(U("m_" + id, S.learn))}${t ? ` · ${esc(U("tier" + t, S.learn))}` : ""}</b><span>${TI("md_" + id)}</span>${foot}</div>`;
+  };
+  const sec = ([id, ic]) => g.secrets[id] ? `<div class="md t3"><div class="ic" aria-hidden="true">${ic}</div><b>${esc(U("s_" + id, S.learn))}</b><span>${TI("sd_" + id)}</span></div>`
+    : `<div class="md lock"><div class="ic" aria-hidden="true">❔</div><b>${TI("secret")}</b><span>${TI("secret_help")}</span></div>`;
+  const album = CAT.topics.map(t => {
+    const rs = LV.map(l => rdOf(t.id, l)).filter(Boolean); if (!rs.length) return "";
+    const full = rs.every(r => g.album[r.id]);
+    return `<div class="at${full ? " full" : ""}" style="--c:${t.color}"><h3>${esc(t.name[S.learn] || t.name.es)}</h3><div class="row3">${rs.map(stkHTML).join("")}</div></div>`;
+  }).join("");
+  $("app").innerHTML = `<div class="wrap wide">
+    <h1>${esc(U("progress", S.learn))}</h1>${both() ? `<p class="en">${esc(U("progress", S.know))}</p>` : ""}
+    <div class="pg">
+      <div class="box"><h2>${TI("rlevel")}</h2><div class="lvl">${n}</div><p class="rank">${TI(rankOf(n))}</p>
+        <div class="xpb"><i style="width:${(g.xp - a) / (b - a) * 100}%"></i></div><p class="small">${g.xp} XP · ${TI("xp_next", {n: b - g.xp, l: n + 1})}</p>
+        <p class="small" style="margin-top:6px">${TI("spend")}: <b style="color:var(--hi,var(--beam))">${pts}</b></p>${window.LYAMascota ? LYAMascota.link() : ""}</div>
+      <div class="box"><h2>${TI("streak")}</h2><div class="lvl"><span class="fire${s ? "" : " off"}">🔥</span> ${s}</div><p class="small">${TI("streak_days", {n: s})} · ${TI("streak_best", {n: g.best})}</p><p class="small" style="margin-top:6px">${TI("streak_help")}</p></div>
+      <div class="box"><h2>${TI("shields")}</h2><div class="shields">${[...Array(SHIELD_MAX)].map((_, i) => `<span class="sh${i < g.shields ? " on" : ""}">${i < g.shields ? "🛡️" : ""}</span>`).join("")}</div><p class="small" style="margin-bottom:10px">${TI("shield_help")}</p>${buy}</div>
+    </div>
+    <section class="ex" id="medallas"><h2>${TI("medals")}</h2><div class="medals">${MEDALS.map(medal).join("")}${SECRETS.map(sec).join("")}</div></section>
+    <section class="ex" id="album"><div class="dh"><h2>${TI("album")}</h2><span class="score">${got} / ${all.length} ${esc(U("stickers", S.learn))}</span></div><p class="en">${TB("album_help")}</p><div class="alb">${album}</div></section>
+  </div>`;
+}
+
+/* ---------- top bar ---------- */
+function renderTop() {
+  const rd = S.view === "read", L = rd ? R : null;
+  $("tabs").innerHTML = `<a href="#inicio" ${S.view === "home" ? 'aria-current="page"' : ""}>${TT("home")}</a>
+    <a href="#diccionario" ${S.view === "dict" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}`;
+  if (rd && L) { const r = scoreOf(L); $("score").innerHTML = `${esc(U("points", S.learn))} <b>${r.pts}</b> / ${r.tot}`; $("score").hidden = false; }
+  else if (S && S.view === "dict") { $("score").innerHTML = `${esc(U("to_review", S.learn))} <b>${S.dict.filter(d => d.miss && d.l === S.learn).length}</b>`; $("score").hidden = false; }
+  else $("score").hidden = true;
+  $("brand").textContent = U("brand", S ? S.learn : "es");
+  const me = $("me");
+  if (me && S && S.g) { const s = streakNow(), n = lvOf(S.g.xp); me.innerHTML = `<span class="fire${s ? "" : " off"}" aria-hidden="true">🔥</span>${s}<span class="lvn"> · ${esc(U("lvl", S.learn, {n}))}</span>`; me.setAttribute("aria-label", `${U("progress", S.learn)}: ${U("streak", S.learn)} ${s}, ${U("lvl", S.learn, {n})}`); me.toggleAttribute("aria-current", false); if (S.view === "prog") me.setAttribute("aria-current", "page"); me.hidden = false; }
+}
+const setAcc = c => document.documentElement.style.setProperty("--acc", c || "#ff4141");
+
+/* ---------- home: selector, level, 15 cards ---------- */
+function cardHTML(r, small) {
+  const ready = !!r.file, t = r.t;
+  const inner = `<div class="art"><img src="${esc(r.art || t.art)}" alt="" loading="lazy"><span class="badge">${ready ? r.level : TI("soon")}</span></div>
+    <div class="tx"><span class="tn">${esc(t.name[S.learn] || t.name.es)}</span><span class="tt">${esc(r.title[S.learn] || r.title.es)}</span>${both() && !small ? `<span class="te">${esc(r.title[S.know] || "")}</span>` : ""}</div>`;
+  return ready ? `<a class="card" style="--c:${t.color}" href="#${r.id}">${inner}</a>` : `<div class="card lock" style="--c:${t.color}" aria-disabled="true">${inner}</div>`;
+}
+function renderHome() {
+  setAcc("#ff4141");
+  const langs = Object.keys(CAT.languages);
+  const okKnow = c => CAT.courses.some(x => x.ready && x.know.includes(c));
+  const okLearn = c => CAT.courses.some(x => x.ready && x.learn === c);
+  const chip = (c, on, ok, act) => `<button class="chip" data-act="${act}" data-l="${c}" aria-pressed="${on}" ${ok ? "" : "disabled"}>${esc(lname(c, c))}${ok ? (c !== S.know ? `<small>${esc(lname(c, S.know))}</small>` : "") : `<small>${TI("soon")}</small>`}</button>`;
+  const rs = rdList().filter(r => r.level === S.level);
+  rs.sort((a, b) => (!!b.file) - (!!a.file));
+  $("app").innerHTML = `<section class="intro"><div class="in">
+    <h1>${esc(U("home_title", S.learn))}</h1><p class="lead">${TB("home_sub")}</p>${window.LYAMascota ? LYAMascota.homeCard() : ""}
+    <div class="pickers">
+      <div class="pk"><h2>${esc(U("know", S.know))}${S.know !== S.learn ? `<span class="en">${esc(U("know", S.learn))}</span>` : ""}</h2><div class="chips" role="group">${langs.map(c => chip(c, c === S.know, okKnow(c), "know")).join("")}</div></div>
+      <div class="pk"><h2>${esc(U("learn", S.know))}${S.know !== S.learn ? `<span class="en">${esc(U("learn", S.learn))}</span>` : ""}</h2><div class="chips" role="group">${langs.map(c => chip(c, c === S.learn, okLearn(c), "learn")).join("")}</div></div>
+    </div></div></section>
+    <div class="lvbar"><h2>${TI("level")}</h2><nav class="lv">${LV.map(l => `<a href="#nivel-${l.toLowerCase()}" aria-current="${l === S.level}"><b>${l}</b><span>${esc(U("level_" + l, S.learn))}</span></a>`).join("")}</nav></div>
+    <div class="lvbar" style="padding-top:14px"><p class="en" style="margin:0">${TI("pick")}</p></div>
+    <div class="grid">${rs.map(r => cardHTML(r)).join("")}</div>${window.LYAVotos ? LYAVotos.html() : ""}${window.LYAPropuestas ? LYAPropuestas.html() : ""}`;
+}
+
+/* ---------- reading ---------- */
+function mcq(id, kind, i, stem, hint, opts, ans, tips) {
+  const key = `${id}:${kind}${i}`, ch = S.a[key], done = ch !== undefined;
+  const filled = kind === "g" ? `<span class="blank">${done ? esc(opts[ans]) : "&nbsp;"}</span>` : "";
+  const st = tok(stem).replace("___", filled);
+  const ob = opts.map((o, j) => {
+    let c = "opt"; if (done) c += j === ans ? " right" : j === ch ? " wrong" : " dim";
+    return `<button class="${c}" data-act="${kind}" data-k="${key}" data-o="${j}" ${done ? "disabled" : ""}><span class="k">${KEYS[j]}</span><span>${tips ? tok(o) : esc(o)}</span></button>`;
+  }).join("");
+  const fb = done ? (ch === ans ? `<p class="fb ok">${TI("correct")}</p>` : `<p class="fb no">${esc(U("wrong", S.learn))} ${KEYS[ans]}.${both() ? ` · ${esc(U("wrong", S.know))} ${KEYS[ans]}.` : ""}</p>`) : "";
+  return `<div class="q"><p class="stem">${i + 1}. ${st}${hint ? ` <i>(${esc(hint)})</i>` : ""}</p><div class="opts">${ob}</div>${fb}</div>`;
+}
+function matcher(id, k, left, right, tipsL) {
+  const m = S.a[`${id}:${k}`] || {d: [], x: []}, order = shuffleIdx(left.length, seedOf(id + k));
+  const item = (side, i, label) => {
+    const isDone = m.d.includes(i), n = isDone ? m.d.indexOf(i) + 1 : 0;
+    let c = "mi"; if (isDone) c += " done";
+    if (sel && sel.k === k && sel.side === side && sel.i === i) c += " sel";
+    if (bad && bad.k === k && (side === "L" ? bad.l : bad.r) === i) c += " bad";
+    return `<button class="${c}" data-act="m" data-m="${k}" data-side="${side}" data-i="${i}" ${isDone ? "disabled" : ""}>${isDone ? `<span class="n">${n}</span>` : ""}<span>${label}</span></button>`;
+  };
+  const L = left.map((p, i) => item("L", i, tipsL ? tok(p) : esc(p))).join("");
+  const Rr = order.map(i => item("R", i, k === "vocab" ? esc(right[i]) : tok(right[i]))).join("");
+  const hL = k === "vocab" ? esc(lname(S.learn, S.learn)) : TI("beginning"), hR = k === "vocab" ? esc(lname(S.know, S.know)) : TI("ending");
+  const note = m.d.length === left.length ? `<p class="fb ok">${TI("all_matched")}</p>` : `<p class="mnote">${TI("match_help")}</p>`;
+  return `<div class="match"><div class="col"><h3>${hL}</h3>${L}</div><div class="col"><h3>${hR}</h3>${Rr}</div></div>${note}`;
+}
+function renderRead() {
+  const L = R, meta = rdById(L.id), t = meta.t, r = scoreOf(L), id = L.id, tr = L.tr[S.know] || {};
+  setAcc(t.color);
+  const pct = Math.round(r.pts / r.tot * 100);
+  const msg = r.done < r.tot ? ["left", {n: r.tot - r.done}] : pct >= 90 ? ["great"] : pct >= 60 ? ["good"] : ["keep"];
+  const SEC = [["q", "s_q"], ["vocab", "s_vocab"], ["halves", "s_halves"], ["g", "s_g"]];
+  const bars = SEC.map(([k, lab]) => `<div class="bar"><span>${TI(lab)}</span><b>${r[k][0]} / ${r[k][1]}</b><div class="t"><i style="width:${r[k][0] / r[k][1] * 100}%"></i></div></div>`).join("");
+  const same = (t.readings[S.learn] || []).map(x => rdOf(t.id, x.level)).filter(x => x.id !== id);
+  const lvl = shuf(rdList().filter(x => x.level === meta.level && x.t.id !== t.id)).sort((a, b) => (!!b.file) - (!!a.file)).slice(0, 3);
+  const g = L.grammar;
+  $("app").innerHTML = `<div class="hero"><img src="${esc(meta.art || t.art)}" alt=""></div>
+  <div class="wrap">
+    <p class="meta"><span>${meta.level}</span><a href="#nivel-${meta.level.toLowerCase()}">${esc(t.name[S.learn])}</a></p>
+    <h1>${esc(L.title)}</h1>${both() && tr.title ? `<p class="en">${esc(tr.title)}${tr.sub ? " · " + esc(tr.sub) : ""}</p>` : ""}
+    <div class="howto"><p>${TB("howto")}</p>
+      <button class="btn" data-act="listen"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>${TI("listen")}</button>
+      <label class="check"><input type="checkbox" id="say" ${S.say ? "checked" : ""}> ${TI("say")}</label></div>
+    <article class="reading">${L.text.map(p => `<p>${tok(p)}</p>`).join("")}</article>
+    <section class="ex"><h2><span>1.</span> ${esc(U("s_q", S.learn))}</h2><p class="en">${TB("s_q_help")}</p>
+      ${L.q.map((q, i) => mcq(id, "q", i, q[0], "", q[1], q[2], true)).join("")}</section>
+    <section class="ex"><h2><span>2.</span> ${esc(U("s_vocab", S.learn))}</h2><p class="en">${TB("s_vocab_help")}</p>
+      ${matcher(id, "vocab", L.vocab.map(v => v[0]), L.vocab.map((v, i) => `${v[1]} ${(tr.vocab || [])[i] || ""}`), false)}</section>
+    <section class="ex"><h2><span>3.</span> ${esc(U("s_halves", S.learn))}</h2><p class="en">${TB("s_halves_help")}</p>
+      ${matcher(id, "halves", L.halves.map(h => h[0]), L.halves.map(h => h[1]), true)}</section>
+    <section class="ex"><h2><span>4.</span> ${esc(g.title)}</h2>${both() && tr.grammar ? `<p class="en">${esc(tr.grammar)}</p>` : ""}
+      <div class="rule"><p>${g.rule}</p><table>${g.rows.map((x, i) => `<tr><td>${esc(x)}</td><td>${esc((tr.rows || [])[i] || "")}</td></tr>`).join("")}</table></div>
+      ${g.items.map((q, i) => mcq(id, "g", i, q[0], (tr.hints || [])[i], q[1], q[2], false)).join("")}</section>
+    <section class="ex"><h2><span>5.</span> ${esc(U("s_res", S.learn))}</h2><p class="en">${TB("s_res_help")}</p>
+      <div class="res"><div class="big">${r.pts} <small>/ ${r.tot}</small></div><p style="margin:0;font-weight:500">${TB(...msg)}</p>
+        <div class="bars">${bars}</div>${S.g.album[id] ? `<div class="won" style="--c:${t.color}">${stkHTML(meta)}<div><p style="font-weight:700">${TI("won")}</p><p class="small">${TI("xp_here", {n: S.g.rx[id] || 0})}</p><a class="btn" href="#progreso" style="text-decoration:none;margin-top:8px">${TI("see_album")}</a></div></div>` : `<p class="small" style="margin-top:12px">${TI("won_how")} · ${TI("xp_here", {n: S.g.rx[id] || 0})}</p>`}<div class="row"><button class="btn" data-act="reset">${TI("retry")}</button></div></div></section>
+    ${window.LYAJuegos ? LYAJuegos.offer(meta) : ""}
+    <section class="ex"><h2><span>6.</span> ${esc(U("more", S.learn))}</h2>${both() ? `<p class="en">${esc(U("more", S.know))}</p>` : ""}
+      <h3>${TI("more_topic")}</h3><div class="next">${same.map(x => cardHTML(x, 1)).join("")}</div>
+      <h3>${TI("more_level")}</h3><div class="next">${lvl.map(x => cardHTML(x, 1)).join("")}</div>
+      <div class="row"><a class="btn main" href="#nivel-${meta.level.toLowerCase()}" style="text-decoration:none">${TI("other_topic")}</a></div></section>
+  </div>`;
+}
+
+/* ---------- dictionary & word quiz ---------- */
+/* Each saved word: {w, k, r, l, t, d, miss, tr: {en: "...", de: "...", it: "..."}}.
+   t = translation when it was saved (kept for old data); tr = one translation per language the learner knows. */
+let Q = null, DT = null;
+const mine = () => S.dict.map((d, i) => [d, i]).filter(([d]) => d.l === S.learn);
+const xp = (n, src, extra) => { try { dispatchEvent(new CustomEvent("lya:xp", {detail: {xp: n, src, ...extra}})); } catch (e) {} };
+/* after choosing one side of the course, make the other side match a ready course */
+function fixCourse(side) {
+  const ok = x => x.ready && x.learn === S.learn && x.know.includes(S.know);
+  if (CAT.courses.some(ok)) return;
+  const c = CAT.courses.find(x => x.ready && (side === "know" ? x.know.includes(S.know) : x.learn === S.learn));
+  if (!c) return;
+  if (side === "know") S.learn = c.learn; else S.know = c.know.includes(S.know) ? S.know : c.know[0];
+}
+const knowLangs = () => [...new Set([S.know, ...CAT.courses.filter(c => c.learn === S.learn).flatMap(c => c.know)])].filter(x => x !== S.learn);
+const trOf = (d, lang = S.know) => d.tr?.[lang] || (lang === S.know ? PK?.tr[d.k] : "") || (lang === S.know ? d.t : "") || "";
+/* interface texts of this section live in their own file, merged under textos-web.json */
+const loadDT = () => DT ||= getJSON("content/textos-diccionario.json").then(t => { for (const l in t) UI[l] = {...t[l], ...(UI[l] || {})}; }).catch(() => {});
+/* fill the translation of every saved word into every language the learner knows (packs that exist) */
+async function fillTr() {
+  let ch = false;
+  for (const lang of knowLangs()) {
+    let pk = null; try { pk = await loadPack(S.learn, lang); } catch (e) { continue; }
+    for (const [d] of mine()) {
+      d.tr ||= {};
+      if (!d.tr[lang]) { const t = pk.tr[d.k] || (lang === S.know ? d.t : ""); if (t) { d.tr[lang] = t; ch = true; } }
+    }
+  }
+  if (ch) save();
+  return ch;
+}
+window.LYA_DICT = {trOf: d => trOf(d), mine: () => mine().map(([d]) => d)};
+
+const MODES = ["test", "fill", "write"];
+/* question types chosen by the learner: one or several, mixed in the same round */
+const qmodes = () => { const m = (Array.isArray(S.qmodes) ? S.qmodes : [S.qmode]).filter(x => MODES.includes(x)); return m.length ? m : ["test"]; };
+const RXMAX = 20;
+function renderDict() {
+  setAcc("#ff4141");
+  const app = $("app");
+  if (!DT) { app.innerHTML = `<p class="msg">${TI("loading")}</p>`; loadDT().then(() => S.view === "dict" && render()); return; }
+  if (!renderDict.filled) { renderDict.filled = 1; fillTr().then(ch => ch && S.view === "dict" && !Q && render()); }
+  if (Q) { app.innerHTML = `<div class="wrap">${quizHTML()}</div>`; const i = $("qin"); if (i && Q.pick === null) i.focus({preventScroll: true}); return; }
+  const all = mine(), miss = all.filter(([d]) => d.miss).length, ms = qmodes(), rxAll = !!S.rxall, rxN = Math.min(RXMAX, rxAll ? all.length : miss);
+  const dirs = [["learn", `${lname(S.learn, S.learn)} → ${lname(S.know, S.know)}`], ["know", `${lname(S.know, S.know)} → ${lname(S.learn, S.learn)}`], ["mix", TI("mix")]];
+  const rds = rdList().filter(r => r.file && (all.some(([d]) => d.r === r.id) || r.t.id === "bear"));
+  const others = knowLangs().filter(x => x !== S.know);
+  const li = ([d, i]) => `<li class="${d.miss ? "miss" : ""}"><div><b>${esc(d.w)}${d.miss ? `<em>${esc(U("review", S.learn))}</em>` : ""}</b><span>${esc(trOf(d))}</span>
+      ${others.filter(x => trOf(d, x)).map(x => `<span class="tro"><abbr title="${esc(lname(x, S.know))}">${x.toUpperCase()}</abbr> ${esc(trOf(d, x))}</span>`).join("")}
+      ${d.d ? `<span class="dd">${esc(d.d)}</span>` : ""}</div>
+      <button class="x" data-act="del" data-i="${i}" aria-label="${esc(U("del_word", S.learn))} ${esc(d.w)}">×</button></li>`;
+  app.innerHTML = `<div class="wrap">
+    <h1>${esc(U("dict", S.learn))}</h1><p class="en">${TB("d_sub")}</p>
+    <div class="howto qm"><p>${TB("how_mode")}</p><div class="seg" role="group">${MODES.map(m => `<button data-act="qmode" data-m="${m}" aria-pressed="${ms.includes(m)}">${ms.includes(m) ? "✓ " : ""}${TI("m_" + m)}</button>`).join("")}</div>
+      <p class="mnote" style="flex-basis:100%;margin:0">${TI("m_multi")}</p>
+      ${ms.map(m => `<p class="mnote" style="flex-basis:100%;margin:0"><b>${esc(U("m_" + m, S.learn))}:</b> ${TI("m_" + m + "_help")}</p>`).join("")}</div>
+    ${ms.some(m => m !== "fill") ? `<div class="howto"><p>${TB("how_practise")}</p><div class="seg" role="group">${dirs.map(([d, l]) => `<button data-act="dir" data-d="${d}" aria-pressed="${S.dir === d}">${l}</button>`).join("")}</div></div>` : ""}
+    <div class="remix"><div><h2>Remix</h2><p>${TB(rxAll ? "rx_p_all" : "remix_p")}</p>
+        <div class="seg rxw" role="group" aria-label="${esc(U("rx_which", S.learn))}"><button data-act="rxall" data-v="0" aria-pressed="${!rxAll}">${TI("rx_miss")} · ${miss}</button><button data-act="rxall" data-v="1" aria-pressed="${rxAll}">${TI("rx_all")} · ${all.length}</button></div>
+        <p class="mnote">${esc(ms.map(m => U("m_" + m, S.learn)).join(" + "))}${(rxAll ? all.length : miss) > RXMAX ? ` · ${TI("rx_cap", {n: RXMAX})}` : ""}</p></div>
+      <button class="btn main" data-act="remix" ${rxN ? "" : "disabled"}>Remix · ${rxN} ${esc(U(rxN === 1 ? "word" : "words", S.learn))}</button></div>
+    ${rxAll || miss ? "" : `<p class="mnote">${TI("remix_note")}</p>`}
+    ${rds.map(r => {
+      const ws = all.filter(([d]) => d.r === r.id);
+      return `<section class="ex"><div class="dh"><h2><span>${r.level}</span> ${esc(r.title[S.learn])}</h2>
+        <button class="btn" data-act="prac" data-r="${r.id}" ${ws.length ? "" : "disabled"}>${TI("practise")} · ${ws.length}</button></div>
+        <p class="en">${esc(r.t.name[S.learn])}</p>
+        ${ws.length ? `<ul class="words">${ws.map(li).join("")}</ul>`
+          : `<p class="empty">${TB("no_words")} <a href="#${r.id}">${TI("open")}</a></p>`}
+        <div class="row"><button class="btn" data-act="addvocab" data-r="${r.id}">${TI("add_key")}</button></div></section>`;
+    }).join("")}</div>`;
+}
+/* multiple-choice options; dir "learn": answer in the language you know, "know": answer in the language you learn */
+function options(d, dir) {
+  const ans = dir === "learn" ? trOf(d) : d.w, phrase = d.w.includes(" ");
+  const pool = [...S.dict.filter(x => x.l === S.learn).map(x => [x.w, trOf(x)]), ...shuf(Object.entries(PK.tr).filter(([k]) => !NAME.test(PK.def[k]?.[1] || "")))]
+    .filter(([w, t]) => t && t !== trOf(d) && w !== d.w && w.includes(" ") === phrase).map(([w, t]) => dir === "learn" ? t : w);
+  const out = [];
+  for (const p of shuf(pool.slice(0, Math.max(12, S.dict.length))).concat(pool)) { if (!out.includes(p) && p !== ans) out.push(p); if (out.length === 3) break; }
+  return shuf([ans, ...out]);
+}
+/* sentences of the word's reading that contain it, with the word cut out */
+const SENT = /[^.!?¡¿]*(?:[¡¿][^.!?]*)?[^.!?]*[.!?]+|[^.!?]+$/g;
+function gapOf(d, L) {
+  const out = [];
+  for (const p of L?.text || []) for (const s of (p.match(SENT) || []).map(x => x.trim()).filter(Boolean)) {
+    let hit = false, pre = "", post = "", form = "";
+    s.replace(RE, (m, ph, key, w, o) => {
+      const txt = ph || w || o, k = (key || ph || w || "").toLowerCase();
+      if (!hit && (ph || w) && (k === d.k || txt.toLowerCase() === d.w.toLowerCase())) { hit = true; form = txt; }
+      else if (hit) post += txt; else pre += txt;
+      return m;
+    });
+    if (hit && s.length < 260) out.push({pre, post, form});
+  }
+  return out.length ? out[Math.floor(Math.random() * out.length)] : null;
+}
+/* compare a typed answer with all accepted forms; returns "ok", "acc" (right but missing accents) or "" */
+const fold = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
+const norm = s => String(s).toLowerCase().replace(/\([^)]*\)/g, " ").replace(/[¡!¿?.,;:"«»'’…]/g, " ").replace(/\s+/g, " ").trim()
+  .replace(/^(to|the|a|an|el|la|los|las|un|una|der|die|das|ein|eine|il|lo|gli|le|uno)\s+/, "");
+function accepted(ans) { return ans.split(/\s*[\/;,]\s*|\s+or\s+/).map(norm).filter(Boolean); }
+function judge(typed, ans) {
+  const t = norm(typed), ok = accepted(ans); if (!t) return "";
+  if (ok.includes(t)) return "ok";
+  if (ok.map(fold).includes(fold(t))) return "acc";
+  return "";
+}
+async function startQuiz(idx, title) {
+  const ms = qmodes(), items = shuf(idx), modes = items.map((_, n) => ms[(n + Math.floor(Math.random() * ms.length)) % ms.length]);
+  const dirs = items.map((_, n) => modes[n] === "fill" ? "know" : S.dir === "mix" ? (Math.random() < .5 ? "learn" : "know") : S.dir);
+  let gaps = [];
+  if (modes.includes("fill")) {
+    $("app").innerHTML = `<p class="msg">${TI("loading")}</p>`;
+    gaps = await Promise.all(items.map(async (i, n) => { if (modes[n] !== "fill") return null; const d = S.dict[i], r = rdById(d.r); try { return r?.file ? gapOf(d, await loadReading(r.file)) : null; } catch (e) { return null; } }));
+  }
+  Q = {title, modes, items, dirs, gaps, opts: items.map((i, n) => options(S.dict[i], dirs[n])), i: 0, pick: null, typed: "", help: false, res: "", right: 0, fails: []};
+  render(); scrollTo(0, 0);
+}
+function quizHTML() {
+  const n = Q.items.length;
+  if (Q.i >= n) {
+    const f = [...new Set(Q.fails)].map(i => S.dict[i]).filter(Boolean);
+    const msg = Q.right === n ? "perfect_q" : Q.right >= n * .6 ? "good_q" : "keep_q";
+    return `<h1>${esc(Q.title)}</h1><div class="qc"><div class="big">${Q.right} <small>/ ${n}</small></div><p style="margin:0;font-weight:500">${TB(msg)}</p>
+      ${Q.xp ? `<p class="xpn">+${Q.xp} XP</p>` : ""}
+      ${f.length ? `<p class="mnote" style="margin-top:16px">${TI("review_words")}</p><ul class="words">${f.map(d => `<li class="miss"><div><b>${esc(d.w)}</b><span>${esc(trOf(d))}</span></div></li>`).join("")}</ul>` : ""}
+      <div class="row">${f.length ? `<button class="btn main" data-act="again">${TI("retry_fails")}</button>` : ""}<button class="btn" data-act="quit">${TI("back_dict")}</button></div></div>`;
+  }
+  const d = S.dict[Q.items[Q.i]], dir = Q.dirs[Q.i], mode = Q.modes[Q.i], done = Q.pick !== null;
+  const ans = dir === "learn" ? trOf(d) : d.w;
+  let body = "", ok = false;
+  if (mode === "fill") {
+    const g = Q.gaps[Q.i], f = g ? g.form : d.w, hint = `${f[0]}${"_".repeat(Math.max(1, f.length - 1))}`;
+    const gap = done ? `<span class="blank ${Q.res ? "" : "bad"}">${esc(g ? g.form : d.w)}</span>` : `<span class="blank">${esc(hint)}</span>`;
+    body = `<p class="gs">${g ? `${esc(plain(g.pre))}${gap}${esc(plain(g.post))}` : `${esc(U("f_def", S.learn))} <i>${esc((d.d || "").replace(/^[^:]*:\s*/, ""))}</i> → ${gap}`}</p>
+      <p class="en" style="margin:4px 0 14px">${esc(U("f_hint", S.learn))} <b>${esc(trOf(d))}</b></p>`;
+  } else {
+    const prompt = dir === "learn" ? `<em>«${esc(d.w)}»</em>` : `<em>«${esc(trOf(d))}»</em>`;
+    const sub = mode === "write"
+      ? U(dir === "learn" ? "w_in" : "w_in", S.learn, {lang: lc(lname(dir === "learn" ? S.know : S.learn, S.learn), S.learn)})
+      : dir === "learn" ? U("q_mean", S.know, {lang: lc(lname(S.know, S.know), S.know), w: ""}) : U("q_say", S.learn, {lang: lc(lname(S.learn, S.learn), S.learn), w: ""}).replace("  ", " ");
+    body = `<p class="prompt">${prompt}</p><p class="en" style="margin:4px 0 16px">${esc(sub)}</p>`;
+  }
+  const choose = mode === "test" || (mode === "fill" && Q.help);
+  if (choose) {
+    const opts = mode === "fill" ? Q.fopts : Q.opts[Q.i], right = mode === "fill" ? d.w : ans;
+    ok = done && opts[Q.pick] === right;
+    body += `<div class="opts">${opts.map((o, j) => { let c = "opt"; if (done) c += o === right ? " right" : j === Q.pick ? " wrong" : " dim"; return `<button class="${c}" data-act="qa" data-o="${j}" ${done ? "disabled" : ""}><span class="k">${KEYS[j]}</span><span>${esc(o)}</span></button>`; }).join("")}</div>`;
+  } else {
+    ok = done && !!Q.res;
+    body += `<form class="qw"><input id="qin" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"
+        lang="${dir === "learn" && mode === "write" ? S.know : S.learn}" value="${esc(Q.typed)}" ${done ? "disabled" : ""} placeholder="${esc(U("w_ph", S.learn))}" aria-label="${esc(U("w_ph", S.learn))}">
+      ${done ? "" : `<button class="btn main" type="submit">${TI("check")}</button>`}</form>
+      ${!done && mode === "fill" ? `<div class="row" style="margin-top:8px"><button class="btn" data-act="qhelp" type="button">${TI("f_help")}</button></div>` : ""}`;
+  }
+  const right = mode === "fill" ? d.w : ans;
+  const fb = !done ? "" : ok ? `${TI("correct")}${Q.res === "acc" ? ` <span class="en" style="display:inline">${esc(U("accents", S.learn))} <b>${esc(right)}</b></span>` : ""}` : `${esc(d.w)} = ${esc(trOf(d))}`;
+  return `<h1>${esc(Q.title)}</h1><div class="qc">
+    <div class="qtop"><span>${esc(U("question", S.learn))} ${Q.i + 1} / ${n} · ${esc(U("m_" + mode, S.learn))}</span><span>${esc(U("hits", S.learn))}: <b style="color:var(--ok)">${Q.right}</b></span></div>
+    <div class="prog"><i style="width:${Q.i / n * 100}%"></i></div>
+    ${body}
+    ${done ? `<p class="fb ${ok ? "ok" : "no"}">${fb}${ok && Q.got ? ` <span class="xpn">+${Q.got} XP</span>` : ""}</p>` : ""}
+    ${done && d.d ? `<p class="mnote">${esc(d.d)}</p>` : ""}
+    <div class="row">${done ? `<button class="btn main" data-act="qnext">${TI(Q.i + 1 < n ? "next" : "see_res")}</button>` : ""}
+      <button class="btn" data-act="sayw" type="button">${TI("listen")}</button><button class="btn" data-act="quit" type="button">${TI("exit")}</button></div></div>`;
+}
+/* record one answer: XP, review mark, streak events */
+function answer(ok, how) {
+  const d = S.dict[Q.items[Q.i]], src = "quiz-" + Q.modes[Q.i], mode = Q.modes[Q.i];
+  const n = ok ? (mode === "test" ? 2 : mode === "write" ? 4 : Q.help ? 2 : 3) : 0;
+  if (ok) { Q.right++; d.miss = false; } else { d.miss = true; Q.fails.push(Q.items[Q.i]); }
+  Q.got = n; Q.xp = (Q.xp || 0) + n;
+  xp(n, src, {ok, word: d.w, how});
+  if (Q.i + 1 >= Q.items.length) { Q.xp += 5; xp(5, "quiz-done", {ok: true, right: Q.right, of: Q.items.length}); }
+  save(); render();
+}
+/* dictionary actions; returns true when handled */
+async function dictAct(act, b) {
+  if (act === "dir") { S.dir = b.dataset.d; save(); render(); }
+  else if (act === "qmode") { const m = b.dataset.m, cur = qmodes(); S.qmodes = cur.includes(m) ? (cur.length > 1 ? cur.filter(x => x !== m) : cur) : MODES.filter(x => x === m || cur.includes(x)); save(); render(); }
+  else if (act === "rxall") { S.rxall = b.dataset.v === "1"; save(); render(); }
+  else if (act === "del") { S.dict.splice(+b.dataset.i, 1); save(); render(); }
+  else if (act === "addvocab") {
+    const r = rdById(b.dataset.r), L = await loadReading(r.file), tr = L.tr[S.know] || {};
+    let n = 0;
+    L.vocab.forEach(([w], i) => { const k = w.toLowerCase(), d = PK.def[k]; if (!inDict(k, r.id)) { const t = (tr.vocab || [])[i] || PK.tr[k] || ""; S.dict.push({w, k, r: r.id, l: S.learn, t, tr: {[S.know]: t}, d: d ? `${d[0]}: ${d[1]}` : "", miss: false}); n++; } });
+    if (n) xp(n, "dict-save", {ok: true, count: n});
+    await fillTr(); save(); render();
+  }
+  else if (act === "prac") { const r = rdById(b.dataset.r); startQuiz(mine().filter(([d]) => d.r === r.id).map(([, i]) => i), `${U("practise", S.learn)}: ${r.title[S.learn]}`); }
+  else if (act === "remix") startQuiz(shuf(mine().filter(([d]) => S.rxall || d.miss).map(([, i]) => i)).slice(0, RXMAX), "Remix");
+  else if (act === "again") startQuiz([...new Set(Q.fails)], U("retry_fails", S.learn));
+  else if (act === "quit") { Q = null; render(); scrollTo(0, 0); }
+  else if (act === "qa") {
+    if (!Q || Q.pick !== null) return true; Q.pick = +b.dataset.o;
+    const d = S.dict[Q.items[Q.i]], opts = Q.modes[Q.i] === "fill" ? Q.fopts : Q.opts[Q.i], right = Q.modes[Q.i] === "fill" ? d.w : Q.dirs[Q.i] === "learn" ? trOf(d) : d.w;
+    answer(opts[Q.pick] === right, "choice");
+  } else if (act === "qcheck") {
+    if (!Q || Q.pick !== null) return true;
+    const inp = $("qin"), typed = inp ? inp.value : ""; if (!typed.trim()) { inp?.focus(); return true; }
+    const d = S.dict[Q.items[Q.i]], right = Q.modes[Q.i] === "fill" ? d.w : Q.dirs[Q.i] === "learn" ? trOf(d) : d.w;
+    Q.typed = typed; Q.res = judge(typed, right); Q.pick = 0;
+    answer(!!Q.res, "typed");
+  } else if (act === "qhelp") {
+    if (!Q || Q.pick !== null) return true;
+    Q.help = true; Q.fopts = options(S.dict[Q.items[Q.i]], "know"); render();
+  } else if (act === "qnext") { Q.i++; Q.pick = null; Q.typed = ""; Q.res = ""; Q.help = false; Q.got = 0; render(); }
+  else if (act === "sayw") { const d = Q && S.dict[Q.items[Q.i]]; if (d && ((Q.dirs[Q.i] === "learn" && Q.modes[Q.i] !== "fill") || Q.pick !== null)) speak(d.w, 1); }
+  else return false;
+  return true;
+}
+$("app").addEventListener("submit", e => { if (e.target.closest(".qw")) { e.preventDefault(); dictAct("qcheck", e.target); } });
+
+/* ---------- tooltip ---------- */
+const tip = $("tip"), addBtn = $("add");
+let cur = null, word = null, pressing = false, downAt = 0, held = 0, hideT = null, sel = null, bad = null;
+const inDict = (k, r) => S.dict.some(d => d.k === k && d.r === r && d.l === S.learn);
+function updAdd() { const has = word && inDict(word.k, word.r); addBtn.disabled = !!has; addBtn.textContent = has ? TI("saved") : TI("add"); }
+function place(w) {
+  tip.classList.remove("below"); tip.style.left = "0px"; tip.style.top = "0px";
+  const r = w.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
+  let x = Math.max(8, Math.min(r.left + r.width / 2 - tw / 2, innerWidth - tw - 8)), y = r.top - th - 12;
+  if (y < 64) { y = r.bottom + 12; tip.classList.add("below"); }
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+  tip.style.setProperty("--ax", Math.max(14, Math.min(tw - 14, r.left + r.width / 2 - x)) + "px");
+}
+function showTip(w) {
+  const info = lookup(w.textContent, w.dataset.k); if (!info) return;
+  clearTimeout(hideT); if (cur) cur.classList.remove("on");
+  cur = w; w.classList.add("on");
+  const isName = info.d && NAME.test(info.d[1]);
+  word = {w: isName ? w.textContent : w.textContent.toLowerCase(), k: info.k, t: info.t, d: info.d ? `${info.d[0]}: ${info.d[1]}` : "", r: S.read};
+  tip.querySelector("small").textContent = w.textContent;
+  tip.querySelector("b").textContent = info.t;
+  tip.querySelector(".def").innerHTML = info.d ? `<i>${esc(info.d[0])}</i> · ${esc(info.d[1])}` : "";
+  tip.querySelector(".def").hidden = !info.d;
+  updAdd(); place(w); tip.classList.add("show");
+  if (S.say) speak(w.textContent, 1);
+}
+function hideTip(delay) { clearTimeout(hideT); hideT = setTimeout(() => { tip.classList.remove("show"); if (cur) cur.classList.remove("on"); cur = null; }, delay); }
+function speak(t, short) { try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = CAT.languages[S.learn].voice; u.rate = short ? .8 : .85; speechSynthesis.speak(u); } catch (e) {} }
+document.addEventListener("pointerdown", e => {
+  if (e.target.closest("#tip")) { clearTimeout(hideT); return; }
+  const w = e.target.closest(".w"); held = 0;
+  if (!w) { if (cur) hideTip(0); return; }
+  pressing = true; downAt = Date.now(); showTip(w);
+});
+const release = () => { if (!pressing) return; pressing = false; held = Date.now() - downAt; hideTip(4000); };
+document.addEventListener("pointerup", release); document.addEventListener("pointercancel", release);
+addEventListener("scroll", () => { if (cur && !pressing) hideTip(0); }, {passive: true});
+document.addEventListener("contextmenu", e => { if (e.target.closest(".w")) e.preventDefault(); });
+document.addEventListener("click", e => { if (held >= 400 && e.target.closest(".w")) { e.preventDefault(); e.stopPropagation(); held = 0; } }, true);
+addBtn.addEventListener("click", () => {
+  if (!word || inDict(word.k, word.r)) return;
+  S.dict.push({w: word.w, k: word.k, r: word.r, l: S.learn, t: word.t, tr: {[S.know]: word.t}, d: word.d, miss: false});
+  xp(1, "dict-save", {ok: true, word: word.w}); fillTr();
+  save(); updAdd(); renderTop(); hideTip(1400);
+});
+
+/* ---------- actions ---------- */
+$("app").addEventListener("change", e => { if (e.target.id === "say") { S.say = e.target.checked; save(); } });
+$("app").addEventListener("click", async e => {
+  const b = e.target.closest("[data-act]"); if (!b) return;
+  const act = b.dataset.act, id = R?.id;
+  if (await dictAct(act, b)) return;
+  if (act === "know" || act === "learn") { S[act] = b.dataset.l; fixCourse(act); save(); route(); }
+  else if (act === "q" || act === "g") {
+    if (S.a[b.dataset.k] === undefined) {
+      const o = +b.dataset.o, i = +b.dataset.k.split(":").pop().slice(1), it = act === "q" ? R.q[i] : R.grammar.items[i];
+      S.a[b.dataset.k] = o; award(it && o === it[2] ? 10 : 2, "a:" + b.dataset.k, id); checkReading(R); save(); render();
+    }
+  }
+  else if (act === "shield") { const g = S.g; if (g.shields < SHIELD_MAX && g.xp - g.spent >= SHIELD_COST) { g.spent += SHIELD_COST; g.shields++; save(); toast(TI("t_bought")); render(); } }
+  else if (act === "m") {
+    const k = b.dataset.m, side = b.dataset.side, i = +b.dataset.i, key = `${id}:${k}`;
+    const m = S.a[key] || (S.a[key] = {d: [], x: []});
+    if (sel && sel.k === k && sel.side !== side) {
+      const l = side === "L" ? i : sel.i, r = side === "R" ? i : sel.i; sel = null;
+      if (l === r) { m.d.push(l); award(5, `m:${key}:${l}`, id); } else { if (!m.x.includes(l)) m.x.push(l); bad = {k, l, r}; setTimeout(() => { bad = null; render(); }, 450); }
+      checkReading(R); save();
+    } else sel = (sel && sel.k === k && sel.side === side && sel.i === i) ? null : {k, side, i};
+    render();
+  } else if (act === "listen") { try { if (speechSynthesis.speaking) { speechSynthesis.cancel(); return; } speak(R.text.map(plain).join(" ")); } catch (err) {} }
+  else if (act === "reset") { for (const k of Object.keys(S.a)) if (k.startsWith(id + ":")) delete S.a[k]; sel = null; save(); render(); }
+});
+
+/* ---------- routing ---------- */
+function render() {
+  renderTop();
+  if (S.view === "dict") return renderDict();
+  if (S.view === "games" && window.LYAJuegos) return LYAJuegos.render($("app"));
+  if (S.view === "prog") return renderProg();
+  if (S.view === "pet" && window.LYAMascota) return LYAMascota.render($("app"));
+  if (S.view === "read" && R) return renderRead();
+  return renderHome();
+}
+let routeN = 0;
+async function route() {
+  const n = ++routeN; sel = null; Q = null; hideTip(0);
+  let h = location.hash.slice(1);
+  const old = h.match(/^lectura-(\d)$/); if (old) h = ["bear-a1", "bear-a2", "bear-b1"][+old[1] - 1] || "inicio";
+  try { PK = await loadPack(S.learn, S.know); } catch (e) { $("app").innerHTML = `<p class="msg">${esc(U("load_error", "es"))}<br>${esc(U("load_error", "en"))}</p>`; return; }
+  const lv = h.match(/^nivel-(a1|a2|b1)$/);
+  if (h === "diccionario") S.view = "dict";
+  else if (window.LYAJuegos?.isGames(h)) S.view = "games";
+  else if (h === "progreso") S.view = "prog";
+  else if (window.LYAMascota?.isPet(h)) S.view = "pet";
+  else if (lv) { S.view = "home"; S.level = lv[1].toUpperCase(); }
+  else if (rdById(h)?.file) {
+    const meta = rdById(h);
+    if (R?.id !== h) { $("app").innerHTML = `<p class="msg">${TI("loading")}</p>`; try { R = await loadReading(meta.file); } catch (e) { $("app").innerHTML = `<p class="msg">${TI("load_error")}</p>`; return; } }
+    if (n !== routeN) return;
+    S.view = "read"; S.read = h; S.level = meta.level;
+    checkReading(R);
+  } else S.view = "home";
+  save(); render();
+}
+addEventListener("hashchange", () => { route(); scrollTo(0, 0); });
+
+async function start() {
+  try { [CAT, UI] = await Promise.all([getJSON("content/catalogo.json"), getJSON("content/textos-web.json")]); }
+  catch (e) { $("app").innerHTML = `<p class="msg">No se ha podido cargar el contenido. · The content could not be loaded.</p>`; return; }
+  /* accounts (cuentas.js): a signed-in user gets the progress saved in the cloud; otherwise the local guest profile */
+  if (window.LYACuentas) await LYACuentas.preparar(P, () => store.set(PKEY, P));
+  if (!prof()) { const id = "local"; if (!P.list.some(p => p.id === id)) P.list.push({id, name: "", s: migrateOld() || fresh()}); P.cur = id; store.set(PKEY, P); }
+  S = prof().s; fix(); fixG();
+  for (const l in GTXT) UI[l] = {...GTXT[l], ...(UI[l] || {})};
+  route();
+  window.LYACuentas?.boton();
+}
+/* bridge for voz.js (voice, karaoke, recording) */
+window.LYA = window.LYA || {}; for (const [k, f] of Object.entries({S: () => S, R: () => R, CAT: () => CAT})) Object.defineProperty(window.LYA, k, {get: f, configurable: true}); Object.assign(window.LYA, {tok, plain, both, save});
+window.LYA = Object.assign(window.LYA || {}, {award: (...a) => award(...a)});
+{ const LYA = window.LYA = window.LYA || {}; const mine = {rdList, rdById, loadReading, setAcc, speak, NAME, both, save}; for (const k in mine) if (!(k in LYA)) LYA[k] = mine[k]; LYA.get = () => ({S, CAT, PK, R}); LYA.renderPage = render; } /* mini-juegos */
+start();
+}
+</script>
+<script src="voz.js"></script>
+<script src="juegos/juegos.js"></script>
+<script src="mascota/mascota.js"></script>
+<script src="votos/votos.js"></script>
+</body>
+</html>

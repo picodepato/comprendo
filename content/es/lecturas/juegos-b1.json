@@ -1,0 +1,207 @@
+{
+ "id": "juegos-b1",
+ "topic": "juegos",
+ "level": "B1",
+ "title": "¿Por qué un juego se vuelve famoso?",
+ "short": "Por qué un juego se vuelve famoso",
+ "text": [
+  "Cada año salen miles de videojuegos nuevos, pero solo unos pocos se convierten en un fenómeno mundial. ¿Qué tienen en común Tetris, Minecraft o [Among Us]? Los expertos creen que no existe una receta mágica, aunque sí hay algunos ingredientes que se repiten.",
+  "El primero es que el juego sea fácil de entender. Si alguien necesita leer un manual de cincuenta páginas antes de empezar, probablemente abandonará. Los grandes éxitos se aprenden en pocos minutos, pero ofrecen retos durante años. Los diseñadores lo llaman «fácil de aprender, difícil de dominar».",
+  "El segundo ingrediente es jugar con otros. Cuando un juego permite que los amigos compartan partidas, cada jugador nuevo invita a otros, y la noticia corre [como la pólvora]. Por eso muchos juegos famosos son gratis: así, nadie se queda fuera [por culpa del] precio.",
+  "El tercero son los creadores de contenido. [Among Us] salió en 2018 y casi nadie lo conocía. [Sin embargo], en 2020, varios streamers empezaron a jugarlo [en directo] y, en pocas semanas, millones de personas lo descargaron. Un vídeo viral puede hacer más que una campaña de publicidad muy cara.",
+  "[Por último], los juegos con más éxito cambian constantemente. Las empresas añaden actualizaciones, eventos y temporadas para que los jugadores siempre tengan algo nuevo que descubrir. [Eso sí], ninguna fórmula funciona sin lo más importante: es necesario que el juego sea, [ante todo], divertido."
+ ],
+ "q": [
+  [
+   "Según los expertos, ¿existe una receta mágica para el éxito?",
+   [
+    "Sí, y siempre funciona",
+    "No, pero hay ingredientes que se repiten",
+    "Sí, pero es secreta"
+   ],
+   1
+  ],
+  [
+   "¿Qué significa «fácil de aprender, difícil de dominar»?",
+   [
+    "Que el juego es aburrido",
+    "Que se aprende rápido, pero ofrece retos durante años",
+    "Que necesitas un manual"
+   ],
+   1
+  ],
+  [
+   "¿Por qué muchos juegos famosos son gratis?",
+   [
+    "Para que nadie se quede fuera [por culpa del] precio",
+    "Porque son malos",
+    "Porque no tienen actualizaciones"
+   ],
+   0
+  ],
+  [
+   "¿Cuándo se hizo famoso [Among Us]?",
+   [
+    "En 2018",
+    "En 2020",
+    "En 2023"
+   ],
+   1
+  ],
+  [
+   "¿Quién ayudó a [Among Us] a ser famoso?",
+   [
+    "Una campaña de publicidad",
+    "Los streamers",
+    "Los creadores de Tetris"
+   ],
+   1
+  ],
+  [
+   "¿Para qué añaden las empresas eventos y temporadas?",
+   [
+    "Para que los jugadores siempre tengan algo nuevo",
+    "Para subir el precio",
+    "Para terminar el juego"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "receta",
+   "🧾"
+  ],
+  [
+   "ingrediente",
+   "🥕"
+  ],
+  [
+   "manual",
+   "📖"
+  ],
+  [
+   "precio",
+   "🏷️"
+  ],
+  [
+   "vídeo",
+   "🎬"
+  ],
+  [
+   "publicidad",
+   "📢"
+  ]
+ ],
+ "halves": [
+  [
+   "Los grandes éxitos se aprenden...",
+   "...en pocos minutos."
+  ],
+  [
+   "Cada jugador nuevo...",
+   "...invita a otros."
+  ],
+  [
+   "[Among Us] salió en 2018...",
+   "...y casi nadie lo conocía."
+  ],
+  [
+   "Un vídeo viral puede hacer más...",
+   "...que una campaña de publicidad."
+  ],
+  [
+   "Es necesario que el juego sea...",
+   "...divertido."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el presente de subjuntivo",
+  "rule": "Después de <b>para que</b>, <b>es necesario que</b>, <b>es importante que</b>, <b>querer que</b> o <b>permitir que</b>, el verbo va en subjuntivo.",
+  "rows": [
+   "ser → sea",
+   "tener → tenga",
+   "jugar → juegue",
+   "compartir → comparta",
+   "poder → pueda",
+   "-ar → -e; -er / -ir → -a"
+  ],
+  "items": [
+   [
+    "Es necesario que el juego ___ divertido.",
+    [
+     "es",
+     "sea",
+     "será"
+    ],
+    1
+   ],
+   [
+    "Añaden eventos para que los jugadores ___ algo nuevo.",
+    [
+     "tienen",
+     "tengan",
+     "tener"
+    ],
+    1
+   ],
+   [
+    "El juego permite que los amigos ___ partidas.",
+    [
+     "compartan",
+     "comparten",
+     "compartir"
+    ],
+    0
+   ],
+   [
+    "Es importante que todos ___ jugar gratis.",
+    [
+     "pueden",
+     "pudieron",
+     "puedan"
+    ],
+    2
+   ],
+   [
+    "Mis padres quieren que yo ___ menos.",
+    [
+     "juego",
+     "juegue",
+     "jugar"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Why does a game become famous?",
+   "sub": "The ingredients of a hit",
+   "grammar": "Grammar: the present subjunctive. After para que (so that), es necesario que (it is necessary that), querer que (to want someone to)... the verb goes in the subjunctive.",
+   "rows": [
+    "to be → (that it) be",
+    "to have → (that they) have",
+    "to play → (that I) play",
+    "to share → (that they) share",
+    "can → (that they) can",
+    "-ar → -e; -er / -ir → -a"
+   ],
+   "hints": [
+    "be",
+    "have",
+    "share",
+    "can",
+    "play"
+   ],
+   "vocab": [
+    "recipe",
+    "ingredient",
+    "manual",
+    "price",
+    "video",
+    "advertising"
+   ]
+  }
+ }
+}

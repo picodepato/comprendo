@@ -1,0 +1,207 @@
+{
+ "id": "en-records-a1",
+ "topic": "records",
+ "level": "A1",
+ "title": "Record-breaking people",
+ "short": "Record-breaking people",
+ "text": [
+  "The Guinness Book of Records is a famous book. It has thousands of world records. Every year, people try to break records and get their names in the book.",
+  "Robert Wadlow is the tallest man in history. He was two meters and seventy-two centimeters tall. His shoes were very, very big!",
+  "Some people have very long hair or very long nails. One woman from the United States had nails of more than seven meters! Other people have many tattoos on their bodies.",
+  "Some records are about speed. Usain Bolt from Jamaica is the fastest man in the world. He can run one hundred meters in nine seconds and fifty-eight hundredths.",
+  "Children can also have records. Some kids are very young chess champions, and some kids are the youngest pilots or scientists. What record do you want to break?"
+ ],
+ "q": [
+  [
+   "What is the Guinness Book of Records?",
+   [
+    "A famous book with world records",
+    "A film",
+    "A game"
+   ],
+   0
+  ],
+  [
+   "Who is the tallest man in history?",
+   [
+    "Usain Bolt",
+    "Robert Wadlow",
+    "A chess champion"
+   ],
+   1
+  ],
+  [
+   "How tall was he?",
+   [
+    "Two meters and seventy-two centimeters",
+    "One meter and fifty centimeters",
+    "Three meters"
+   ],
+   0
+  ],
+  [
+   "How long were the nails of one woman?",
+   [
+    "More than seven meters",
+    "Ten centimeters",
+    "One meter"
+   ],
+   0
+  ],
+  [
+   "Where is Usain Bolt from?",
+   [
+    "Jamaica",
+    "Spain",
+    "China"
+   ],
+   0
+  ],
+  [
+   "What records can children have?",
+   [
+    "Young chess champions",
+    "No records",
+    "Only running records"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "book",
+   "📕"
+  ],
+  [
+   "shoes",
+   "👟"
+  ],
+  [
+   "hair",
+   "💇"
+  ],
+  [
+   "nails",
+   "💅"
+  ],
+  [
+   "man",
+   "👨"
+  ],
+  [
+   "woman",
+   "👩"
+  ]
+ ],
+ "halves": [
+  [
+   "The book has thousands...",
+   "...of world records."
+  ],
+  [
+   "Robert Wadlow is...",
+   "...the tallest man in history."
+  ],
+  [
+   "His shoes were...",
+   "...very big."
+  ],
+  [
+   "Usain Bolt is...",
+   "...the fastest man in the world."
+  ],
+  [
+   "Some kids are...",
+   "...young chess champions."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: plurals",
+  "rule": "Most nouns add <b>-s</b> in the plural. Nouns ending in -s, -sh, -ch or -x add <b>-es</b>. Some plurals are irregular.",
+  "rows": [
+   "book → books",
+   "record → records",
+   "box → boxes",
+   "man → men",
+   "woman → women",
+   "child → children"
+  ],
+  "items": [
+   [
+    "The book has thousands of ___.",
+    [
+     "record",
+     "records",
+     "recordes"
+    ],
+    1
+   ],
+   [
+    "Some ___ have very long hair.",
+    [
+     "womans",
+     "women",
+     "woman"
+    ],
+    1
+   ],
+   [
+    "Many ___ break records.",
+    [
+     "childs",
+     "children",
+     "childrens"
+    ],
+    1
+   ],
+   [
+    "He had two big ___.",
+    [
+     "boxs",
+     "boxes",
+     "box"
+    ],
+    1
+   ],
+   [
+    "Two tall ___ were in the photo.",
+    [
+     "men",
+     "mans",
+     "man"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Personas récord",
+   "sub": "Gente que ha batido récords increíbles",
+   "grammar": "Gramática: los plurales. La mayoría añade -s; si acaba en -s, -sh, -ch o -x, añade -es. Algunos plurales son irregulares.",
+   "rows": [
+    "libro → libros",
+    "récord → récords",
+    "caja → cajas",
+    "hombre → hombres",
+    "mujer → mujeres",
+    "niño → niños"
+   ],
+   "hints": [
+    "récords",
+    "mujeres",
+    "niños",
+    "cajas",
+    "hombres"
+   ],
+   "vocab": [
+    "libro",
+    "zapatos",
+    "pelo",
+    "uñas",
+    "hombre",
+    "mujer"
+   ]
+  }
+ }
+}

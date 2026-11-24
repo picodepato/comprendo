@@ -1,0 +1,207 @@
+{
+ "id": "en-misterios-b1",
+ "topic": "misterios",
+ "level": "B1",
+ "title": "Atlantis",
+ "short": "Atlantis",
+ "text": [
+  "More than two thousand years ago, the Greek philosopher Plato wrote about a powerful island called Atlantis. He said that it was a rich civilization with great temples, canals and a strong army.",
+  "According to Plato, the people of Atlantis became too proud. They tried to conquer Athens and other cities. Plato wrote that the gods punished them, and that in a single day and night the island sank into the sea.",
+  "Since then, thousands of explorers have looked for Atlantis. Some said that it was in the Atlantic Ocean, others told reporters that they had found it in Antarctica, in the Caribbean or even under the Sahara desert. Nobody has ever found real proof.",
+  "Many historians say that Plato probably invented the story to teach a moral lesson. However, some researchers think he was inspired by a real event. About three thousand six hundred years ago, a huge volcanic eruption destroyed part of the island of Santorini, in Greece, and a rich culture there disappeared.",
+  "Whether Atlantis was real or not, the legend lives on. It has inspired novels, films and video games. Perhaps the true power of Atlantis is not in the ocean, but in our imagination."
+ ],
+ "q": [
+  [
+   "Who first wrote about Atlantis?",
+   [
+    "Plato",
+    "Homer",
+    "A modern explorer"
+   ],
+   0
+  ],
+  [
+   "What was Atlantis like, according to Plato?",
+   [
+    "A rich civilization with temples and canals",
+    "A small village",
+    "A desert"
+   ],
+   0
+  ],
+  [
+   "What happened to the island?",
+   [
+    "It sank into the sea",
+    "It flew away",
+    "It became a mountain"
+   ],
+   0
+  ],
+  [
+   "Has anyone found real proof of Atlantis?",
+   [
+    "No, nobody",
+    "Yes, in Antarctica",
+    "Yes, in Madrid"
+   ],
+   0
+  ],
+  [
+   "What do many historians think?",
+   [
+    "Plato invented the story",
+    "Atlantis is in Spain",
+    "Plato lived in Atlantis"
+   ],
+   0
+  ],
+  [
+   "What real event might have inspired the story?",
+   [
+    "An eruption on Santorini",
+    "A war in Rome",
+    "A storm in London"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "island",
+   "🏝️"
+  ],
+  [
+   "temple",
+   "🏛️"
+  ],
+  [
+   "army",
+   "⚔️"
+  ],
+  [
+   "god",
+   "⚡"
+  ],
+  [
+   "proof",
+   "🔎"
+  ],
+  [
+   "legend",
+   "📜"
+  ]
+ ],
+ "halves": [
+  [
+   "Plato wrote about...",
+   "...a powerful island."
+  ],
+  [
+   "The people of Atlantis...",
+   "...became too proud."
+  ],
+  [
+   "In a single day and night...",
+   "...the island sank."
+  ],
+  [
+   "Nobody has ever found...",
+   "...real proof."
+  ],
+  [
+   "The legend has inspired...",
+   "...novels, films and games."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: reported speech",
+  "rule": "To report what someone said, we often move the verb <b>one step back</b> in the past: <b>is → was</b>, <b>has → had</b>, <b>found → had found</b>.",
+  "rows": [
+   "\"It is rich.\" → He said that it was rich.",
+   "\"I found it.\" → She said that she had found it.",
+   "\"The gods punish them.\" → He said the gods punished them.",
+   "say → said",
+   "tell someone → told",
+   "that (optional)"
+  ],
+  "items": [
+   [
+    "Plato said that Atlantis ___ a rich civilization.",
+    [
+     "is",
+     "was",
+     "be"
+    ],
+    1
+   ],
+   [
+    "An explorer said that he ___ found it.",
+    [
+     "has",
+     "had",
+     "have"
+    ],
+    1
+   ],
+   [
+    "They ___ reporters that it was in Antarctica.",
+    [
+     "told",
+     "said",
+     "say"
+    ],
+    0
+   ],
+   [
+    "Plato wrote that the island ___ into the sea.",
+    [
+     "sinks",
+     "sank",
+     "sink"
+    ],
+    1
+   ],
+   [
+    "She said that she ___ the legend.",
+    [
+     "loved",
+     "loves",
+     "is loving"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La Atlántida",
+   "sub": "La ciudad perdida que nadie ha encontrado",
+   "grammar": "Gramática: el estilo indirecto. Para contar lo que alguien dijo, el verbo suele ir un paso más atrás en el pasado: is → was, has → had, found → had found.",
+   "rows": [
+    "Dijo que era rica.",
+    "Dijo que la había encontrado.",
+    "Dijo que los dioses los castigaban.",
+    "decir → dijo",
+    "decirle a alguien → le dijo",
+    "que (se puede omitir)"
+   ],
+   "hints": [
+    "era",
+    "había",
+    "dijeron a",
+    "se hundió",
+    "le encantaba"
+   ],
+   "vocab": [
+    "isla",
+    "templo",
+    "ejército",
+    "dios",
+    "prueba",
+    "leyenda"
+   ]
+  }
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "id": "espacio-b1",
+ "topic": "espacio",
+ "level": "B1",
+ "title": "Los agujeros negros",
+ "short": "Los agujeros negros",
+ "text": [
+  "Los agujeros negros son, [probablemente], los objetos más misteriosos del universo. No son agujeros [de verdad], sino lugares donde hay muchísima materia concentrada en un espacio muy pequeño. Por eso, su gravedad es tan fuerte que nada puede escapar de ellos, ni siquiera la luz. Como no sale luz, no podemos verlos directamente.",
+  "¿Cómo se forma un agujero negro? Muchos nacen cuando una estrella enorme se queda sin combustible y muere. Si la estrella tiene mucha masa, explota en una supernova y su centro se aplasta sobre sí mismo hasta formar un agujero negro. También existen agujeros negros supermasivos, millones de veces más pesados que el Sol, en el centro de casi todas las galaxias.",
+  "Alrededor de cada agujero negro hay un límite invisible llamado [horizonte de sucesos]. Si algo cruza esa frontera, ya no puede volver. Los científicos imaginan que, si un astronauta se acercara demasiado, la gravedad lo estiraría como un espagueti. Este efecto, aunque parezca un chiste, se llama [de verdad] «espaguetificación».",
+  "Durante mucho tiempo, nadie había visto un agujero negro. Pero en 2019, un equipo internacional de científicos presentó la primera imagen de uno. Para conseguirla, conectaron telescopios de todo el mundo y crearon un telescopio virtual del tamaño de la Tierra. En la imagen se ve un anillo naranja de gas muy caliente alrededor de una sombra negra.",
+  "En 2022, el mismo equipo mostró la imagen de Sagitario A*, el agujero negro que está en el centro de nuestra galaxia, la [Vía Láctea]. Tiene unos cuatro millones de veces la masa del Sol. ¿Debemos tener miedo? No: está a unos veintiséis mil años luz de la Tierra. ¿Y el Sol? No se convertirá nunca en un agujero negro, porque es demasiado pequeño para eso.",
+  "Todavía hay muchas preguntas sin respuesta. ¿Qué pasa exactamente dentro de un agujero negro? Si alguien encuentra la respuesta, cambiará nuestra forma de entender el universo. Quizá lo descubras tú."
+ ],
+ "q": [
+  [
+   "¿Por qué no podemos ver directamente un agujero negro?",
+   [
+    "Porque está muy lejos",
+    "Porque no sale luz de él",
+    "Porque es muy pequeño"
+   ],
+   1
+  ],
+  [
+   "¿Cómo nacen muchos agujeros negros?",
+   [
+    "Cuando muere una estrella enorme",
+    "Cuando chocan dos planetas",
+    "Cuando un cometa explota"
+   ],
+   0
+  ],
+  [
+   "¿Qué es el [horizonte de sucesos]?",
+   [
+    "Un telescopio",
+    "Una estrella",
+    "Un límite del que no puedes volver"
+   ],
+   2
+  ],
+  [
+   "¿Qué pasó en 2019?",
+   [
+    "Se descubrió la [Vía Láctea]",
+    "Se presentó la primera imagen de un agujero negro",
+    "Un astronauta visitó un agujero negro"
+   ],
+   1
+  ],
+  [
+   "¿Dónde está Sagitario A*?",
+   [
+    "En el centro de nuestra galaxia",
+    "Al lado de la Tierra",
+    "Dentro del Sol"
+   ],
+   0
+  ],
+  [
+   "¿Puede el Sol convertirse en un agujero negro?",
+   [
+    "Sí, muy pronto",
+    "Sí, en 2050",
+    "No, es demasiado pequeño"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "telescopio",
+   "🔭"
+  ],
+  [
+   "galaxia",
+   "🌌"
+  ],
+  [
+   "estrella",
+   "⭐"
+  ],
+  [
+   "espagueti",
+   "🍝"
+  ],
+  [
+   "anillo",
+   "💍"
+  ],
+  [
+   "explosión",
+   "💥"
+  ]
+ ],
+ "halves": [
+  [
+   "Su gravedad es tan fuerte que...",
+   "...ni siquiera la luz puede escapar."
+  ],
+  [
+   "Si algo cruza el horizonte...",
+   "...ya no puede volver."
+  ],
+  [
+   "Conectaron telescopios...",
+   "...de todo el mundo."
+  ],
+  [
+   "En la imagen se ve...",
+   "...un anillo naranja alrededor de una sombra."
+  ],
+  [
+   "Sagitario A* está...",
+   "...en el centro de la [Vía Láctea]."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: oraciones con si",
+  "rule": "Para hablar de una condición real: <b>si + presente</b>, y después <b>presente</b> o <b>futuro</b>.",
+  "rows": [
+   "Si algo cruza el horizonte, no puede volver.",
+   "Si alguien encuentra la respuesta, cambiará todo.",
+   "si + presente → presente",
+   "si + presente → futuro",
+   "si + presente → imperativo",
+   "Si miras el cielo, verás estrellas."
+  ],
+  "items": [
+   [
+    "Si la estrella ___ mucha masa, explota.",
+    [
+     "tiene",
+     "tendrá",
+     "tuvo"
+    ],
+    0
+   ],
+   [
+    "Si algo cruza el horizonte, no ___ volver.",
+    [
+     "podía",
+     "puede",
+     "pudo"
+    ],
+    1
+   ],
+   [
+    "Si alguien encuentra la respuesta, ___ nuestra forma de pensar.",
+    [
+     "cambió",
+     "cambiaba",
+     "cambiará"
+    ],
+    2
+   ],
+   [
+    "Si ___ al centro de la galaxia, verás Sagitario A*.",
+    [
+     "viajas",
+     "viajarás",
+     "viajaste"
+    ],
+    0
+   ],
+   [
+    "Si te gusta el espacio, ___ este libro.",
+    [
+     "leíste",
+     "lee",
+     "leías"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Black holes",
+   "sub": "Where not even light can escape",
+   "grammar": "Grammar: sentences with si (if). Real conditions: si + present → present / future / command.",
+   "rows": [
+    "If something crosses the horizon, it can't come back.",
+    "If someone finds the answer, everything will change.",
+    "if + present → present",
+    "if + present → future",
+    "if + present → command",
+    "If you look at the sky, you will see stars."
+   ],
+   "hints": [
+    "has",
+    "can",
+    "will change",
+    "you travel",
+    "read (command)"
+   ],
+   "vocab": [
+    "telescope",
+    "galaxy",
+    "star",
+    "spaghetti",
+    "ring",
+    "explosion"
+   ]
+  }
+ }
+}

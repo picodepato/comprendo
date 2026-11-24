@@ -1,0 +1,207 @@
+{
+ "id": "deportes-a1",
+ "topic": "deportes",
+ "level": "A1",
+ "title": "El skate",
+ "short": "El skate",
+ "text": [
+  "El skate es un deporte con una tabla y cuatro ruedas. Nace en California, en [Estados Unidos], en los años cincuenta. Algunos surfistas no tienen olas en el mar, y entonces deciden «surfear» en la calle.",
+  "Hoy, millones de personas patinan en parques, en plazas y en la calle. Los skaters hacen trucos increíbles: saltan, giran y se deslizan por barandillas. El truco más famoso se llama ollie: el skater salta con la tabla sin usar las manos.",
+  "Aprender a patinar no es fácil. Todos los skaters se caen muchas veces. Pero un buen skater siempre se levanta y lo intenta otra vez. Por eso, es muy importante la protección: antes de patinar, los skaters se ponen el casco y las rodilleras.",
+  "Desde los Juegos Olímpicos de Tokio, el skate es un deporte olímpico. En Tokio hay campeones muy jóvenes. La japonesa Momiji Nishiya gana la medalla de oro con solo trece años.",
+  "¿Quieres probar? Necesitas una tabla, un casco y muchas ganas. ¡Y recuerda: caerse es parte de aprender!"
+ ],
+ "q": [
+  [
+   "¿Dónde nace el skate?",
+   [
+    "En Japón",
+    "En California",
+    "En Francia"
+   ],
+   1
+  ],
+  [
+   "¿Cuántas ruedas tiene la tabla?",
+   [
+    "Dos",
+    "Tres",
+    "Cuatro"
+   ],
+   2
+  ],
+  [
+   "¿Cómo se llama el truco más famoso?",
+   [
+    "Ollie",
+    "Tokio",
+    "Surf"
+   ],
+   0
+  ],
+  [
+   "¿Qué hace un buen skater cuando se cae?",
+   [
+    "Se va a casa",
+    "Se levanta y lo intenta otra vez",
+    "Llora mucho"
+   ],
+   1
+  ],
+  [
+   "¿Qué se ponen los skaters antes de patinar?",
+   [
+    "Un sombrero",
+    "El casco y las rodilleras",
+    "Una medalla"
+   ],
+   1
+  ],
+  [
+   "¿Cuántos años tiene Momiji Nishiya cuando gana el oro?",
+   [
+    "Trece",
+    "Treinta",
+    "Ocho"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "tabla",
+   "🛹"
+  ],
+  [
+   "rueda",
+   "🛞"
+  ],
+  [
+   "ola",
+   "🌊"
+  ],
+  [
+   "casco",
+   "⛑️"
+  ],
+  [
+   "medalla",
+   "🏅"
+  ],
+  [
+   "calle",
+   "🛣️"
+  ]
+ ],
+ "halves": [
+  [
+   "El skate nace...",
+   "...en California."
+  ],
+  [
+   "El ollie es un salto...",
+   "...sin usar las manos."
+  ],
+  [
+   "Todos los skaters se caen...",
+   "...muchas veces."
+  ],
+  [
+   "Los skaters se ponen...",
+   "...el casco y las rodilleras."
+  ],
+  [
+   "Caerse es parte...",
+   "...de aprender."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: los verbos reflexivos",
+  "rule": "Algunos verbos llevan <b>me, te, se, nos, os, se</b>: la acción vuelve a la misma persona.",
+  "rows": [
+   "levantarse: yo me levanto",
+   "caerse: tú te caes",
+   "ponerse: él / ella se pone",
+   "llamarse: nosotros nos llamamos",
+   "deslizarse: ellos se deslizan",
+   "me, te, se, nos, os, se + verbo"
+  ],
+  "items": [
+   [
+    "El skater ___ cae muchas veces.",
+    [
+     "me",
+     "se",
+     "te"
+    ],
+    1
+   ],
+   [
+    "Yo ___ pongo el casco.",
+    [
+     "me",
+     "se",
+     "nos"
+    ],
+    0
+   ],
+   [
+    "¿Cómo ___ llamas?",
+    [
+     "se",
+     "me",
+     "te"
+    ],
+    2
+   ],
+   [
+    "Nosotros ___ levantamos rápido.",
+    [
+     "nos",
+     "se",
+     "os"
+    ],
+    0
+   ],
+   [
+    "Los skaters ___ deslizan por las barandillas.",
+    [
+     "te",
+     "se",
+     "nos"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Skateboarding",
+   "sub": "A board, four wheels and lots of falls",
+   "grammar": "Grammar: reflexive verbs. Some verbs take me, te, se, nos, os, se: the action goes back to the same person.",
+   "rows": [
+    "get up: I get up",
+    "fall over: you fall",
+    "put on: he / she puts on",
+    "be called: we are called",
+    "slide: they slide",
+    "me, te, se, nos, os, se + verb"
+   ],
+   "hints": [
+    "himself",
+    "myself",
+    "yourself",
+    "ourselves",
+    "themselves"
+   ],
+   "vocab": [
+    "board",
+    "wheel",
+    "wave",
+    "helmet",
+    "medal",
+    "street"
+   ]
+  }
+ }
+}

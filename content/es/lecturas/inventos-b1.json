@@ -1,0 +1,208 @@
+{
+ "id": "inventos-b1",
+ "topic": "inventos",
+ "level": "B1",
+ "title": "Robots e inteligencia artificial",
+ "short": "Robots e IA",
+ "text": [
+  "Hace cincuenta años, los robots solo existían en las películas de ciencia ficción. Hoy están en todas partes, aunque no siempre los veamos. En las fábricas, los brazos robóticos montan coches sin descansar. En muchas casas, un robot aspirador limpia el suelo solo. Y en Marte, varios robots exploran el planeta y envían fotos a la Tierra.",
+  "Un robot es una máquina que puede moverse y hacer tareas de forma automática. La [inteligencia artificial] (IA), en cambio, no necesita un cuerpo: es un programa de ordenador que aprende a partir de muchísimos ejemplos. Por ejemplo, después de ver millones de fotos de gatos, una IA puede reconocer un gato en una foto nueva.",
+  "Gracias a la IA, hoy podemos traducir un texto en segundos, hablar con asistentes de voz o recibir recomendaciones de vídeos y canciones. En medicina, algunas IA ayudan a los médicos a detectar enfermedades en radiografías. Y cuando robots e IA trabajan juntos, aparecen cosas como los coches autónomos, que conducen sin conductor.",
+  "Sin embargo, la IA no es perfecta. Puede equivocarse, inventarse información o repetir los errores de los datos con los que aprendió. Por eso, muchos expertos piensan que siempre debe haber una persona que revise sus decisiones importantes. Además, hay preguntas difíciles: ¿quién es responsable si un coche autónomo tiene un accidente? ¿Cómo protegemos nuestros datos personales?",
+  "También hay debate sobre el trabajo. Algunas personas temen que los robots les quiten el empleo. Otras creen que la IA hará las tareas aburridas y que aparecerán profesiones nuevas, como ya pasó con internet. Lo más probable es que muchos trabajos cambien, y que tengamos que aprender a usar estas herramientas.",
+  "¿Y tú qué opinas? Yo creo que la IA es una herramienta muy útil, pero no creo que pueda reemplazar la creatividad, la amistad o la imaginación de una persona. Lo importante es que aprendamos a usarla bien y con sentido común."
+ ],
+ "q": [
+  [
+   "¿Dónde trabajan los brazos robóticos?",
+   [
+    "En las fábricas",
+    "En los colegios",
+    "En Marte"
+   ],
+   0
+  ],
+  [
+   "¿Qué diferencia hay entre un robot y una IA?",
+   [
+    "La IA es más grande",
+    "La IA no necesita un cuerpo",
+    "El robot no puede moverse"
+   ],
+   1
+  ],
+  [
+   "¿Cómo aprende una IA a reconocer gatos?",
+   [
+    "Hablando con gatos",
+    "Con un cuerpo de robot",
+    "Viendo millones de fotos"
+   ],
+   2
+  ],
+  [
+   "¿Cómo ayudan algunas IA en medicina?",
+   [
+    "Detectan enfermedades en radiografías",
+    "Operan solas a los pacientes",
+    "Fabrican medicinas"
+   ],
+   0
+  ],
+  [
+   "Según muchos expertos, ¿qué debe pasar con las decisiones importantes de una IA?",
+   [
+    "Nadie debe revisarlas",
+    "Una persona debe revisarlas",
+    "Otra IA debe tomarlas"
+   ],
+   1
+  ],
+  [
+   "Según el texto, ¿qué no puede reemplazar la IA?",
+   [
+    "Los coches",
+    "Las traducciones",
+    "La creatividad y la amistad"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "robot",
+   "🤖"
+  ],
+  [
+   "fábrica",
+   "🏭"
+  ],
+  [
+   "médico",
+   "🧑‍⚕️"
+  ],
+  [
+   "coche",
+   "🚗"
+  ],
+  [
+   "foto",
+   "📷"
+  ],
+  [
+   "cerebro",
+   "🧠"
+  ]
+ ],
+ "halves": [
+  [
+   "Un robot aspirador...",
+   "...limpia el suelo solo."
+  ],
+  [
+   "Una IA aprende...",
+   "...a partir de muchísimos ejemplos."
+  ],
+  [
+   "Los coches autónomos...",
+   "...conducen sin conductor."
+  ],
+  [
+   "La IA puede...",
+   "...equivocarse."
+  ],
+  [
+   "Lo importante es...",
+   "...usarla bien y con sentido común."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: dar tu opinión",
+  "rule": "<b>Creo que / pienso que</b> + indicativo (es, puede). <b>No creo que / es importante que</b> + subjuntivo (sea, pueda, aprendamos).",
+  "rows": [
+   "creo que es útil",
+   "pienso que puede ayudar",
+   "no creo que sea perfecta",
+   "no creo que pueda reemplazar...",
+   "es importante que aprendamos",
+   "temen que les quiten el empleo"
+  ],
+  "items": [
+   [
+    "Creo que la IA ___ muy útil.",
+    [
+     "es",
+     "sea",
+     "fue"
+    ],
+    0
+   ],
+   [
+    "No creo que la IA ___ perfecta.",
+    [
+     "es",
+     "sea",
+     "será"
+    ],
+    1
+   ],
+   [
+    "Pienso que los robots ___ ayudar mucho.",
+    [
+     "puedan",
+     "pudieran",
+     "pueden"
+    ],
+    2
+   ],
+   [
+    "Es importante que ___ a usar la IA.",
+    [
+     "aprendamos",
+     "aprendemos",
+     "aprender"
+    ],
+    0
+   ],
+   [
+    "Algunos temen que los robots les ___ el trabajo.",
+    [
+     "quitan",
+     "quiten",
+     "quitaron"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Robots and artificial intelligence",
+   "sub": "What they can do, and what they can't",
+   "grammar": "Grammar: giving your opinion. creo que + indicative; no creo que / es importante que + subjunctive.",
+   "rows": [
+    "I think it is useful",
+    "I think it can help",
+    "I don't think it is perfect",
+    "I don't think it can replace...",
+    "it is important that we learn",
+    "they fear that they will take their jobs"
+   ],
+   "hints": [
+    "is",
+    "is (subjunctive)",
+    "can",
+    "we learn",
+    "take (subjunctive)"
+   ],
+   "vocab": [
+    "robot",
+    "factory",
+    "doctor",
+    "car",
+    "photo",
+    "brain"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "en-increibles-a1",
+ "topic": "increibles",
+ "level": "A1",
+ "title": "The axolotl",
+ "short": "The axolotl",
+ "text": [
+  "The axolotl is a very special animal. It lives in the lakes of Mexico City. It has a small body, four short legs and a long tail. Its face looks like it is always smiling!",
+  "The axolotl has six pink gills on its head. They look like feathers. It uses them to breathe under the water.",
+  "Axolotls have different colors. Some are pink, some are brown and some are black or gold. A pink axolotl has small black eyes.",
+  "The axolotl has a super power: it can grow its body again. If it loses a leg, a new leg grows in a few weeks. Scientists study this power.",
+  "Today there are very few axolotls in the wild. The lakes have a lot of pollution. But you can see axolotls in many aquariums, and they are also a famous animal in Minecraft!"
+ ],
+ "q": [
+  [
+   "Where does the axolotl live?",
+   [
+    "In the lakes of Mexico City",
+    "In the sea",
+    "In the desert"
+   ],
+   0
+  ],
+  [
+   "How many legs does the axolotl have?",
+   [
+    "Two",
+    "Four",
+    "Six"
+   ],
+   1
+  ],
+  [
+   "What does the axolotl have on its head?",
+   [
+    "Six gills",
+    "Two horns",
+    "A shell"
+   ],
+   0
+  ],
+  [
+   "What colors can axolotls have?",
+   [
+    "Only green",
+    "Pink, brown, black or gold",
+    "Only blue"
+   ],
+   1
+  ],
+  [
+   "What is the super power of the axolotl?",
+   [
+    "It can fly",
+    "It can grow its body again",
+    "It can change into a fish"
+   ],
+   1
+  ],
+  [
+   "Why are there very few axolotls in the wild?",
+   [
+    "Because the lakes have a lot of pollution",
+    "Because it is very cold",
+    "Because people eat them"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "lake",
+   "🏞️"
+  ],
+  [
+   "leg",
+   "🦵"
+  ],
+  [
+   "tail",
+   "🦎"
+  ],
+  [
+   "eyes",
+   "👀"
+  ],
+  [
+   "pink",
+   "🩷"
+  ],
+  [
+   "grow",
+   "🌱"
+  ]
+ ],
+ "halves": [
+  [
+   "The axolotl lives...",
+   "...in the lakes of Mexico City."
+  ],
+  [
+   "It has six gills...",
+   "...on its head."
+  ],
+  [
+   "A pink axolotl has...",
+   "...small black eyes."
+  ],
+  [
+   "If it loses a leg...",
+   "...a new leg grows."
+  ],
+  [
+   "You can see axolotls...",
+   "...in many aquariums."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: have and has",
+  "rule": "Use <b>has</b> with he, she and it. Use <b>have</b> with I, you, we and they.",
+  "rows": [
+   "I have",
+   "you have",
+   "he / she / it has",
+   "we have",
+   "they have",
+   "does not have"
+  ],
+  "items": [
+   [
+    "The axolotl ___ four legs.",
+    [
+     "have",
+     "has",
+     "haves"
+    ],
+    1
+   ],
+   [
+    "Axolotls ___ different colors.",
+    [
+     "has",
+     "have",
+     "is"
+    ],
+    1
+   ],
+   [
+    "I ___ a pink axolotl.",
+    [
+     "have",
+     "has",
+     "am"
+    ],
+    0
+   ],
+   [
+    "It ___ six gills.",
+    [
+     "have",
+     "are",
+     "has"
+    ],
+    2
+   ],
+   [
+    "We ___ an aquarium at school.",
+    [
+     "has",
+     "have",
+     "haves"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El ajolote",
+   "sub": "Un animal que siempre sonríe",
+   "grammar": "Gramática: have y has (tener). Has con he, she e it; have con I, you, we y they.",
+   "rows": [
+    "yo tengo",
+    "tú tienes",
+    "él / ella / ello tiene",
+    "nosotros tenemos",
+    "ellos tienen",
+    "no tiene"
+   ],
+   "hints": [
+    "tiene",
+    "tienen",
+    "tengo",
+    "tiene",
+    "tenemos"
+   ],
+   "vocab": [
+    "lago",
+    "pata",
+    "cola",
+    "ojos",
+    "rosa",
+    "crecer"
+   ]
+  }
+ }
+}

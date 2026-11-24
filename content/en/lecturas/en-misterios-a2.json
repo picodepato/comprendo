@@ -1,0 +1,207 @@
+{
+ "id": "en-misterios-a2",
+ "topic": "misterios",
+ "level": "A2",
+ "title": "The Bermuda Triangle",
+ "short": "The Bermuda Triangle",
+ "text": [
+  "The Bermuda Triangle is an area of the Atlantic Ocean between Miami, Puerto Rico and the island of Bermuda. Many people believe that ships and planes disappear there mysteriously.",
+  "The most famous story happened in 1945. Five military planes, called Flight 19, were flying over the area. Suddenly the pilots said that their compasses were not working correctly. The planes never came back, and nobody found them.",
+  "After that, people quickly invented many explanations. Some said that aliens took the planes. Others talked about the lost city of Atlantis under the sea, or about strange magnetic forces.",
+  "But scientists think differently. The area is one of the busiest in the world, so it is normal that some accidents happen there. Also, the weather changes very rapidly: there are sudden storms and powerful currents that can carry objects far away.",
+  "In fact, insurance companies say that the Bermuda Triangle is not more dangerous than other parts of the ocean. Ships cross it safely every day. The real mystery is why the legend is still so popular."
+ ],
+ "q": [
+  [
+   "Where is the Bermuda Triangle?",
+   [
+    "In the Atlantic Ocean",
+    "In the Pacific Ocean",
+    "In the Mediterranean"
+   ],
+   0
+  ],
+  [
+   "What was Flight 19?",
+   [
+    "Five military planes",
+    "A big ship",
+    "A rocket"
+   ],
+   0
+  ],
+  [
+   "What did the pilots say?",
+   [
+    "Their compasses were not working",
+    "They saw aliens",
+    "They were hungry"
+   ],
+   0
+  ],
+  [
+   "What explanation did some people give?",
+   [
+    "Aliens took the planes",
+    "The planes were late",
+    "The pilots were sleeping"
+   ],
+   0
+  ],
+  [
+   "Why do scientists think accidents happen there?",
+   [
+    "It is a busy area with sudden storms",
+    "It is cursed",
+    "There is a monster"
+   ],
+   0
+  ],
+  [
+   "What do insurance companies say?",
+   [
+    "It is not more dangerous than other areas",
+    "It is the most dangerous place",
+    "Nobody can cross it"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "ship",
+   "🚢"
+  ],
+  [
+   "plane",
+   "✈️"
+  ],
+  [
+   "pilot",
+   "👨‍✈️"
+  ],
+  [
+   "compass",
+   "🧭"
+  ],
+  [
+   "alien",
+   "👽"
+  ],
+  [
+   "ocean",
+   "🌊"
+  ]
+ ],
+ "halves": [
+  [
+   "Many people believe...",
+   "...that ships disappear there."
+  ],
+  [
+   "Five military planes...",
+   "...never came back."
+  ],
+  [
+   "Some people said...",
+   "...that aliens took the planes."
+  ],
+  [
+   "The weather changes...",
+   "...very rapidly."
+  ],
+  [
+   "Ships cross the area...",
+   "...safely every day."
+  ]
+ ],
+ "grammar": {
+  "title": "Grammar: adverbs of manner",
+  "rule": "Adverbs of manner say <b>how</b> something happens. Most are made with <b>adjective + -ly</b>.",
+  "rows": [
+   "quick → quickly",
+   "sudden → suddenly",
+   "safe → safely",
+   "rapid → rapidly",
+   "correct → correctly",
+   "good → well"
+  ],
+  "items": [
+   [
+    "___ the pilots said that something was wrong.",
+    [
+     "Sudden",
+     "Suddenly",
+     "Suddenness"
+    ],
+    1
+   ],
+   [
+    "The compasses were not working ___.",
+    [
+     "correct",
+     "correctly",
+     "corrects"
+    ],
+    1
+   ],
+   [
+    "Ships cross the area ___ every day.",
+    [
+     "safely",
+     "safe",
+     "safety"
+    ],
+    0
+   ],
+   [
+    "People ___ invented many explanations.",
+    [
+     "quick",
+     "quickly",
+     "quicker"
+    ],
+    1
+   ],
+   [
+    "The planes disappeared ___.",
+    [
+     "mysterious",
+     "mysteriously",
+     "mystery"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El Triángulo de las Bermudas",
+   "sub": "Barcos y aviones que desaparecieron... ¿o no?",
+   "grammar": "Gramática: los adverbios de modo dicen cómo pasa algo. La mayoría se forma con adjetivo + -ly (como -mente).",
+   "rows": [
+    "rápido → rápidamente",
+    "repentino → de repente",
+    "seguro → con seguridad",
+    "rápido → rápidamente",
+    "correcto → correctamente",
+    "bueno → bien (irregular)"
+   ],
+   "hints": [
+    "De repente",
+    "correctamente",
+    "con seguridad",
+    "rápidamente",
+    "misteriosamente"
+   ],
+   "vocab": [
+    "barco",
+    "avión",
+    "piloto",
+    "brújula",
+    "extraterrestre",
+    "océano"
+   ]
+  }
+ }
+}

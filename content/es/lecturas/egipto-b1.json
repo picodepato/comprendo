@@ -1,0 +1,207 @@
+{
+ "id": "egipto-b1",
+ "topic": "egipto",
+ "level": "B1",
+ "title": "La tumba de Tutankamón",
+ "short": "La tumba de Tutankamón",
+ "text": [
+  "Tutankamón fue un faraón que llegó al trono cuando solo tenía unos nueve años y murió muy joven, con unos dieciocho o diecinueve. En vida no fue un rey especialmente importante, pero hoy es el faraón más famoso del mundo. ¿Por qué? Por lo que pasó más de tres mil años después de su muerte.",
+  "En el Valle de los Reyes, los ladrones habían saqueado casi todas las tumbas de los faraones [hacía] siglos. Muchos arqueólogos pensaban que ya no quedaba nada por descubrir. Sin embargo, el británico [Howard Carter] estaba convencido de que la tumba de Tutankamón seguía escondida, y llevaba años buscándola con el dinero de [Lord Carnarvon].",
+  "En noviembre de 1922, cuando estaba a punto de rendirse, su equipo encontró un escalón bajo la arena. Unas semanas después, Carter hizo un pequeño agujero en la puerta y miró dentro con una vela. Carnarvon le preguntó si veía algo, y él respondió: «Sí, cosas maravillosas». La tumba estaba casi intacta, porque los restos de otra tumba la habían tapado durante siglos.",
+  "Dentro había más de cinco mil objetos: carros, joyas, estatuas, juegos de mesa e [incluso] comida para la otra vida. Pero el mayor tesoro era la momia del faraón, protegida por varios sarcófagos, uno dentro de otro. El último era de oro macizo, y sobre la cabeza de la momia descansaba una máscara de oro que hoy es un símbolo de Egipto.",
+  "Pocos meses después, Lord Carnarvon murió por una infección, y los periódicos empezaron a hablar de la «maldición del faraón». Sin embargo, Carter vivió dieciséis años más. Para los científicos, la maldición nunca había existido: lo que sí existía era una historia perfecta para vender periódicos."
+ ],
+ "q": [
+  [
+   "¿Cuántos años tenía Tutankamón cuando llegó al trono?",
+   [
+    "Unos nueve",
+    "Unos dieciocho",
+    "Unos treinta"
+   ],
+   0
+  ],
+  [
+   "¿Qué les había pasado a casi todas las tumbas del Valle de los Reyes?",
+   [
+    "Estaban bajo el agua",
+    "Los ladrones las habían saqueado",
+    "Nadie las había construido"
+   ],
+   1
+  ],
+  [
+   "¿Qué encontró el equipo de Carter en noviembre de 1922?",
+   [
+    "Un escalón bajo la arena",
+    "Una máscara de oro",
+    "Un ladrón"
+   ],
+   0
+  ],
+  [
+   "¿Por qué la tumba estaba casi intacta?",
+   [
+    "Porque tenía una puerta de oro",
+    "Porque los restos de otra tumba la habían tapado",
+    "Porque estaba en otro país"
+   ],
+   1
+  ],
+  [
+   "¿De qué era el último sarcófago?",
+   [
+    "De madera",
+    "De piedra",
+    "De oro macizo"
+   ],
+   2
+  ],
+  [
+   "Según los científicos, ¿qué era la «maldición del faraón»?",
+   [
+    "Una enfermedad real",
+    "Una historia para vender periódicos",
+    "Un juego de mesa"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "tumba",
+   "⚰️"
+  ],
+  [
+   "oro",
+   "🥇"
+  ],
+  [
+   "vela",
+   "🕯️"
+  ],
+  [
+   "máscara",
+   "🎭"
+  ],
+  [
+   "periódico",
+   "📰"
+  ],
+  [
+   "arena",
+   "🏜️"
+  ]
+ ],
+ "halves": [
+  [
+   "Tutankamón llegó al trono...",
+   "...con unos nueve años."
+  ],
+  [
+   "Los ladrones habían saqueado...",
+   "...casi todas las tumbas."
+  ],
+  [
+   "Carter miró dentro...",
+   "...con una vela."
+  ],
+  [
+   "El último sarcófago era...",
+   "...de oro macizo."
+  ],
+  [
+   "Para los científicos, la maldición...",
+   "...nunca había existido."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramática: el pretérito pluscuamperfecto",
+  "rule": "<b>había + participio</b>: una acción pasada <b>anterior</b> a otra acción pasada.",
+  "rows": [
+   "yo había encontrado",
+   "tú habías visto",
+   "él / ella había saqueado",
+   "nosotros habíamos descubierto",
+   "ellos habían tapado",
+   "ver → visto, descubrir → descubierto, romper → roto"
+  ],
+  "items": [
+   [
+    "Cuando llegó Carter, los ladrones ya ___ muchas tumbas.",
+    [
+     "habían saqueado",
+     "han saqueado",
+     "saquean"
+    ],
+    0
+   ],
+   [
+    "Nadie ___ la tumba antes de 1922.",
+    [
+     "había encontrado",
+     "habían encontrado",
+     "ha encontrando"
+    ],
+    0
+   ],
+   [
+    "Carter nunca había ___ tantos tesoros.",
+    [
+     "vido",
+     "visto",
+     "viendo"
+    ],
+    1
+   ],
+   [
+    "Los restos de otra tumba la ___ tapado.",
+    [
+     "había",
+     "habían",
+     "habías"
+    ],
+    1
+   ],
+   [
+    "Para los científicos, la maldición nunca ___ existido.",
+    [
+     "había",
+     "habían",
+     "he"
+    ],
+    0
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Tutankhamun's tomb",
+   "sub": "The greatest discovery in Egyptology",
+   "grammar": "Grammar: the pluperfect. había + past participle: a past action that happened before another past action (had found, had seen...).",
+   "rows": [
+    "I had found",
+    "you had seen",
+    "he / she had looted",
+    "we had discovered",
+    "they had covered",
+    "irregular: seen, discovered, broken"
+   ],
+   "hints": [
+    "had looted",
+    "had found",
+    "seen",
+    "had (they)",
+    "had"
+   ],
+   "vocab": [
+    "tomb",
+    "gold",
+    "candle",
+    "mask",
+    "newspaper",
+    "sand"
+   ]
+  }
+ }
+}
