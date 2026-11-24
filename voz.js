@@ -8,6 +8,15 @@ document.documentElement.classList.add("voz-on");
 
 /* ---------- texts ---------- */
 const STR = {
+  ca: {listen: "Escoltar", pause: "Pausa", stop: "Aturar", prev: "Frase anterior", next: "Frase següent", slow: "Lent", normal: "Normal",
+    of: "Frase {n} de {t}", pron: "Llegeix en veu alta", pron_help: "Escolta la frase, grava't llegint-la i compara la teva veu amb la de la web.",
+    hear: "Escoltar", rec: "Gravar-me", recstop: "Aturar", mine: "La meva veu", both: "Les dues", phone: "Gravar amb el mòbil",
+    private: "La teva gravació es queda en aquest aparell i s'esborra quan surts de la lectura.", done: "Has gravat {n} de {t} frases.",
+    xp: "Bé! +{n} XP", nomic: "Aquí el navegador no deixa fer servir el micròfon directament. Toca «Gravar amb el mòbil» i tria la gravadora de veu (o un àudio ja gravat); després t'escoltes aquí.",
+    norec: "Primer grava't.", word: "Escoltar la paraula", recording: "Gravant… llegeix la frase i toca Aturar.",
+    ask_t: "Abans de començar", ask_oir: "Pots escoltar àudio ara?", ask_hablar: "Pots parlar en veu alta ara?", yes: "Sí", no: "No",
+    ask_help: "Si dius que no, traiem les parts d'escoltar o de parlar. Ho pots canviar quan vulguis.", ask_go: "Començar", ask_fijo: "No tornar a preguntar",
+    snd: "So", talk: "Parlar", change: "Canviar"},
   es: {listen: "Escuchar", pause: "Pausa", stop: "Parar", prev: "Frase anterior", next: "Frase siguiente", slow: "Lento", normal: "Normal",
     of: "Frase {n} de {t}", pron: "Lee en voz alta", pron_help: "Escucha la frase, grábate leyéndola y compara tu voz con la de la web.",
     hear: "Escuchar", rec: "Grabarme", recstop: "Parar", mine: "Mi voz", both: "Las dos", phone: "Grabar con el móvil",
@@ -48,7 +57,7 @@ function split(p) {
   for (let s of parts) {
     s = s.trim(); if (!s) continue;
     /* keep 300.000, "p. ej." and similar together */
-    if (out.length && (/^[a-zñáéíóú0-9,;:]/.test(s) || /\d[.]$/.test(out[out.length - 1]) && /^\d/.test(s))) out[out.length - 1] += (/^\d/.test(s) && /\d[.]$/.test(out[out.length - 1]) ? "" : " ") + s;
+    if (out.length && (/^[a-zñáéíóúàèòïüç0-9,;:]/.test(s) || /\d[.]$/.test(out[out.length - 1]) && /^\d/.test(s))) out[out.length - 1] += (/^\d/.test(s) && /\d[.]$/.test(out[out.length - 1]) ? "" : " ") + s;
     else out.push(s);
   }
   return out;

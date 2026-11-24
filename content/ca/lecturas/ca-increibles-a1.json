@@ -1,0 +1,207 @@
+{
+ "id": "ca-increibles-a1",
+ "topic": "increibles",
+ "level": "A1",
+ "title": "L'axolot",
+ "short": "L'axolot",
+ "text": [
+  "L'axolot és un animal molt especial. És un amfibi, com la granota, però tota la seva vida viu a l'aigua. És de Mèxic. Viu als llacs de Xochimilco, a prop de [Ciutat de Mèxic].",
+  "L'axolot té el cap gran, els ulls petits i una boca que sembla un somriure. Sempre sembla content! Als costats del cap té brànquies. Semblen plomes. Amb les brànquies, l'axolot respira dins de l'aigua.",
+  "Hi ha axolots de molts colors: rosa, blanc, gris, negre i daurat. A la natura, normalment són foscos. Els axolots roses són molt famosos. També surten a Minecraft!",
+  "L'axolot té un superpoder: si perd una pota, li surt una pota nova! També pot regenerar la cua i parts del cor i del cervell. [Per això], els científics estudien molt l'axolot.",
+  "Però l'axolot està en perill. Els llacs de Xochimilco estan bruts i hi ha pocs axolots lliures. Avui, moltes persones treballen per salvar-lo."
+ ],
+ "q": [
+  [
+   "D'on és l'axolot?",
+   [
+    "D'Espanya",
+    "De Mèxic",
+    "D'Austràlia"
+   ],
+   1
+  ],
+  [
+   "On viu l'axolot?",
+   [
+    "A l'aigua",
+    "Als arbres",
+    "Al desert"
+   ],
+   0
+  ],
+  [
+   "Què sembla la seva boca?",
+   [
+    "Una ploma",
+    "Un somriure",
+    "Una pota"
+   ],
+   1
+  ],
+  [
+   "Per a què fa servir les brànquies?",
+   [
+    "Per menjar",
+    "Per nedar",
+    "Per respirar dins de l'aigua"
+   ],
+   2
+  ],
+  [
+   "Quin és el superpoder de l'axolot?",
+   [
+    "Pot volar",
+    "Pot regenerar parts del cos",
+    "Pot canviar de color"
+   ],
+   1
+  ],
+  [
+   "Per què està en perill?",
+   [
+    "Perquè els llacs estan bruts",
+    "Perquè fa molt de fred",
+    "Perquè menja molt"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "aigua",
+   "💧"
+  ],
+  [
+   "ulls",
+   "👀"
+  ],
+  [
+   "boca",
+   "👄"
+  ],
+  [
+   "pota",
+   "🦵"
+  ],
+  [
+   "llac",
+   "🏞️"
+  ],
+  [
+   "somriure",
+   "😊"
+  ]
+ ],
+ "halves": [
+  [
+   "L'axolot és...",
+   "...un amfibi."
+  ],
+  [
+   "La seva boca sembla...",
+   "...un somriure."
+  ],
+  [
+   "Les brànquies semblen...",
+   "...plomes."
+  ],
+  [
+   "Si perd una pota...",
+   "...li surt una pota nova."
+  ],
+  [
+   "Els llacs de Xochimilco...",
+   "...estan bruts."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: ser i estar",
+  "rule": "Fem servir <b>ser</b> per dir com és una cosa, d'on és i on és. Fem servir <b>estar</b> per a estats que canvien: <b>està content</b>, <b>està en perill</b>.",
+  "rows": [
+   "és un amfibi",
+   "és de Mèxic",
+   "és a l'aigua",
+   "està content",
+   "està en perill",
+   "els llacs estan bruts"
+  ],
+  "items": [
+   [
+    "L'axolot ___ un amfibi.",
+    [
+     "és",
+     "està",
+     "estan"
+    ],
+    0
+   ],
+   [
+    "L'axolot ___ de Mèxic.",
+    [
+     "està",
+     "és",
+     "estan"
+    ],
+    1
+   ],
+   [
+    "Avui l'axolot ___ molt content.",
+    [
+     "és",
+     "són",
+     "està"
+    ],
+    2
+   ],
+   [
+    "Els llacs ___ bruts.",
+    [
+     "estan",
+     "és",
+     "està"
+    ],
+    0
+   ],
+   [
+    "Els axolots ___ en perill.",
+    [
+     "és",
+     "estan",
+     "està"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El ajolote",
+   "sub": "El animal sonriente de México",
+   "grammar": "Gramática: ser y estar. Ojo: en catalán, para decir dónde está algo se usa ser (és a Mèxic = está en México). Estar se usa para estados: està content (está contento).",
+   "rows": [
+    "es un anfibio",
+    "es de México",
+    "está en el agua",
+    "está contento",
+    "está en peligro",
+    "los lagos están sucios"
+   ],
+   "hints": [
+    "es",
+    "es",
+    "está",
+    "están",
+    "están"
+   ],
+   "vocab": [
+    "agua",
+    "ojos",
+    "boca",
+    "pata",
+    "lago",
+    "sonrisa"
+   ]
+  }
+ }
+}

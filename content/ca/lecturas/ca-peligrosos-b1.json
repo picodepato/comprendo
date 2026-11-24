@@ -1,0 +1,208 @@
+{
+ "id": "ca-peligrosos-b1",
+ "topic": "peligrosos",
+ "level": "B1",
+ "title": "Per què ataquen els animals?",
+ "short": "Per què ataquen?",
+ "text": [
+  "Quan veiem una pel·lícula sobre taurons o serps, sembla que els animals salvatges ens vulguin atacar. [Tanmateix], els experts expliquen que gairebé cap animal no busca les persones per fer-los mal. Si un animal ataca, normalment té una raó.",
+  "La primera raó és la por. Molts animals ataquen perquè se senten en perill. [Per exemple], una serp que algú trepitja [sense voler] mossega per defensar-se. Per a la serp, nosaltres som un monstre gegant.",
+  "La segona raó és protegir les cries. Una óssa amb els seus ossets o un hipopòtam amb la seva cria poden ser molt agressius. [De fet], l'hipopòtam és un dels animals més perillosos d'Àfrica, tot i que només menja plantes.",
+  "Altres animals defensen el seu territori, [és a dir], el lloc on viuen i mengen. Si entrem en aquest espai, pensen que els volem prendre la casa o el menjar. [Per això], molts animals primer avisen: el gos grunyeix, la [serp de cascavell] fa soroll amb la cua i el gat aixeca el pèl.",
+  "També hi ha atacs per confusió. Alguns científics creuen que molts taurons mosseguen surfistes perquè, des de sota, una persona damunt d'una taula s'assembla a una foca. Quan el tauró [s'adona] de l'error, normalment se'n va.",
+  "Aleshores, què podem fer? [El més important] és respectar els animals: mirar-los [des de lluny], no donar-los menjar i no acostar-nos a les seves cries. Si entenem per què ataquen, podem compartir el planeta amb ells sense perill."
+ ],
+ "q": [
+  [
+   "Segons els experts, els animals busquen les persones per atacar-les?",
+   [
+    "Sí, gairebé sempre",
+    "No, gairebé mai",
+    "Només els taurons"
+   ],
+   1
+  ],
+  [
+   "Per què mossega una serp quan algú la trepitja?",
+   [
+    "Per defensar-se",
+    "Perquè té gana",
+    "Per protegir el seu territori"
+   ],
+   0
+  ],
+  [
+   "Què menja l'hipopòtam?",
+   [
+    "Peixos",
+    "Altres animals",
+    "Només plantes"
+   ],
+   2
+  ],
+  [
+   "Què fa la [serp de cascavell] per avisar?",
+   [
+    "Aixeca el pèl",
+    "Fa soroll amb la cua",
+    "Grunyeix"
+   ],
+   1
+  ],
+  [
+   "Per què alguns taurons mosseguen surfistes?",
+   [
+    "Perquè els confonen amb foques",
+    "Perquè els agraden les taules",
+    "Perquè estan enfadats"
+   ],
+   0
+  ],
+  [
+   "Què NO hem de fer amb els animals salvatges?",
+   [
+    "Mirar-los [des de lluny]",
+    "Respectar-los",
+    "Donar-los menjar"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "hipopòtam",
+   "🦛"
+  ],
+  [
+   "foca",
+   "🦭"
+  ],
+  [
+   "gos",
+   "🐕"
+  ],
+  [
+   "gat",
+   "🐈"
+  ],
+  [
+   "surfista",
+   "🏄"
+  ],
+  [
+   "óssa",
+   "🐻"
+  ]
+ ],
+ "halves": [
+  [
+   "Molts animals ataquen...",
+   "...perquè se senten en perill."
+  ],
+  [
+   "L'hipopòtam és perillós...",
+   "...tot i que només menja plantes."
+  ],
+  [
+   "El territori és...",
+   "...el lloc on viuen i mengen."
+  ],
+  [
+   "Des de sota, un surfista...",
+   "...s'assembla a una foca."
+  ],
+  [
+   "[El més important] és...",
+   "...respectar els animals."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: els connectors",
+  "rule": "Els connectors uneixen idees: <b>tanmateix</b> (contrast), <b>per exemple</b>, <b>de fet</b>, <b>és a dir</b>, <b>per això</b> (conseqüència), <b>tot i que</b>.",
+  "rows": [
+   "tanmateix",
+   "per exemple",
+   "de fet",
+   "és a dir",
+   "per això",
+   "tot i que"
+  ],
+  "items": [
+   [
+    "Sembla perillós; ___, gairebé mai no ataca.",
+    [
+     "tanmateix",
+     "per això",
+     "per exemple"
+    ],
+    0
+   ],
+   [
+    "Defensen el territori, ___, el lloc on viuen.",
+    [
+     "tot i que",
+     "és a dir",
+     "tanmateix"
+    ],
+    1
+   ],
+   [
+    "L'hipopòtam és perillós ___ només menja plantes.",
+    [
+     "per això",
+     "és a dir",
+     "tot i que"
+    ],
+    2
+   ],
+   [
+    "Té por; ___, ataca.",
+    [
+     "per això",
+     "tot i que",
+     "és a dir"
+    ],
+    0
+   ],
+   [
+    "Molts animals avisen; ___, el gos grunyeix.",
+    [
+     "tanmateix",
+     "per exemple",
+     "tot i que"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Por qué atacan los animales?",
+   "sub": "Miedo, crías, territorio y errores",
+   "grammar": "Gramática: los conectores. Tanmateix (sin embargo), per exemple (por ejemplo), de fet (de hecho), és a dir (es decir), per això (por eso), tot i que (aunque).",
+   "rows": [
+    "sin embargo",
+    "por ejemplo",
+    "de hecho",
+    "es decir",
+    "por eso",
+    "aunque"
+   ],
+   "hints": [
+    "sin embargo",
+    "es decir",
+    "aunque",
+    "por eso",
+    "por ejemplo"
+   ],
+   "vocab": [
+    "hipopótamo",
+    "foca",
+    "perro",
+    "gato",
+    "surfista",
+    "osa"
+   ]
+  }
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "id": "ca-naturaleza-b1",
+ "topic": "naturaleza",
+ "level": "B1",
+ "title": "Com sobreviure a la selva",
+ "short": "Sobreviure a la selva",
+ "text": [
+  "El 24 de desembre del 1971, un avió que volava sobre la selva amazònica del Perú va ser tocat per un llamp i es va trencar a l'aire. [Juliane Koepcke], una noia de disset anys, va caure des d'uns tres mil metres, encara lligada al seient. Increïblement, va sobreviure, amb només una clavícula trencada i algunes ferides. Estava sola enmig de la selva.",
+  "La Juliane havia viscut amb els seus pares, dos biòlegs, en una estació de recerca a la selva, i va recordar un consell del seu pare: «Si et perds, busca aigua i segueix el corrent. Els rierols porten a rius més grans, i als rius hi viu gent». Durant onze dies va caminar i nedar riu avall, amb gana i amb ferides infectades, fins que va trobar una cabana. Allà, uns llenyataires la van ajudar.",
+  "La seva història ensenya les regles bàsiques de supervivència a la selva. La primera és: no et deixis portar pel pànic. Respira, seu i pensa. Si hi ha possibilitats que et busquin, queda't a prop del lloc de l'accident i fes senyals: un foc amb fum o colors brillants en una clariana.",
+  "La segona regla és l'aigua. A la selva plou molt, però l'aigua dels rius pot tenir paràsits. Recull aigua de pluja amb fulles grans i, si pots, bull-la abans de beure-la. Sense aigua, una persona només sobreviu uns quants dies; sense menjar, pot aguantar setmanes.",
+  "Tercera regla: protegeix-te. No dormis directament a terra, on hi ha formigues, serps i humitat; construeix un llit amb branques, una mica més alt. Mira sempre on poses les mans i els peus, i sacseja la roba i les sabates abans de posar-te-les.",
+  "[Finalment], vés amb compte amb el menjar. No mengis fruites ni plantes que no coneguis, perquè moltes són verinoses. La Juliane gairebé no va menjar res en onze dies, només uns caramels que va trobar. Avui és biòloga i dirigeix l'estació de recerca que van fundar els seus pares, per protegir la selva que li va salvar la vida."
+ ],
+ "q": [
+  [
+   "Què li va passar a l'avió de la Juliane?",
+   [
+    "Es va quedar sense combustible",
+    "Va ser tocat per un llamp",
+    "Va aterrar en un riu"
+   ],
+   1
+  ],
+  [
+   "Quin consell li va donar el seu pare?",
+   [
+    "Pujar a un arbre",
+    "Seguir el corrent de l'aigua",
+    "Quedar-se sempre quieta"
+   ],
+   1
+  ],
+  [
+   "Quants dies va caminar la Juliane?",
+   [
+    "Onze",
+    "Tres",
+    "Disset"
+   ],
+   0
+  ],
+  [
+   "Per què és perillós beure aigua dels rius?",
+   [
+    "Perquè és molt freda",
+    "Perquè és salada",
+    "Perquè pot tenir paràsits"
+   ],
+   2
+  ],
+  [
+   "Per què no has de dormir a terra?",
+   [
+    "Perquè hi ha formigues, serps i humitat",
+    "Perquè fa calor",
+    "Perquè hi ha molt de soroll"
+   ],
+   0
+  ],
+  [
+   "Què fa la Juliane avui?",
+   [
+    "És pilot d'avions",
+    "Dirigeix una estació de recerca",
+    "Viu en una ciutat gran sense selva"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "avió",
+   "✈️"
+  ],
+  [
+   "llamp",
+   "⚡"
+  ],
+  [
+   "formiga",
+   "🐜"
+  ],
+  [
+   "sabata",
+   "👟"
+  ],
+  [
+   "cabana",
+   "🛖"
+  ],
+  [
+   "pluja",
+   "🌧️"
+  ]
+ ],
+ "halves": [
+  [
+   "La Juliane va caure...",
+   "...encara lligada al seient."
+  ],
+  [
+   "Els rierols porten...",
+   "...a rius més grans."
+  ],
+  [
+   "Uns llenyataires...",
+   "...la van ajudar."
+  ],
+  [
+   "Sense aigua, una persona només sobreviu...",
+   "...uns quants dies."
+  ],
+  [
+   "No mengis plantes...",
+   "...que no coneguis."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: l'imperatiu",
+  "rule": "L'imperatiu afirmatiu dona ordres: <b>respira</b>, <b>busca</b>. Per dir que no, fem servir <b>no</b> + subjuntiu: <b>no dormis</b>, <b>no mengis</b>.",
+  "rows": [
+   "respira",
+   "busca aigua",
+   "segueix el corrent",
+   "no dormis a terra",
+   "no mengis plantes",
+   "queda't a prop"
+  ],
+  "items": [
+   [
+    "Si et perds, ___ aigua.",
+    [
+     "busca",
+     "busques",
+     "buscar"
+    ],
+    0
+   ],
+   [
+    "No ___ directament a terra.",
+    [
+     "dorms",
+     "dormis",
+     "dorm"
+    ],
+    1
+   ],
+   [
+    "No ___ fruites que no coneguis.",
+    [
+     "menja",
+     "menges",
+     "mengis"
+    ],
+    2
+   ],
+   [
+    "___ el corrent del riu.",
+    [
+     "Segueix",
+     "Segueixis",
+     "Seguir"
+    ],
+    0
+   ],
+   [
+    "No et ___ portar pel pànic.",
+    [
+     "deixes",
+     "deixis",
+     "deixa"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Cómo sobrevivir en la selva",
+   "sub": "La historia real de Juliane Koepcke",
+   "grammar": "Gramática: el imperativo. Afirmativo: respira, busca (respira, busca). Negativo: no + subjuntivo, como en español: no dormis (no duermas), no mengis (no comas).",
+   "rows": [
+    "respira",
+    "busca agua",
+    "sigue la corriente",
+    "no duermas en el suelo",
+    "no comas plantas",
+    "quédate cerca"
+   ],
+   "hints": [
+    "busca",
+    "duermas",
+    "comas",
+    "sigue",
+    "dejes"
+   ],
+   "vocab": [
+    "avión",
+    "rayo",
+    "hormiga",
+    "zapato",
+    "cabaña",
+    "lluvia"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "ca-inventos-a1",
+ "topic": "inventos",
+ "level": "A1",
+ "title": "Invents de casa",
+ "short": "Invents de casa",
+ "text": [
+  "A casa fem servir molts invents cada dia. Són tan normals que no hi pensem. Però fa molts anys, la gent vivia sense aquests invents. Pots imaginar casa teva sense ells?",
+  "La bombeta fa llum a la nit. Abans, la gent feia servir espelmes. Avui, amb un interruptor, encenem el llum en un segon. Les bombetes LED d'avui gasten molt poca electricitat.",
+  "La nevera serveix per guardar el menjar fred. Així, la llet, la carn i la fruita duren més dies. Abans, la gent feia servir gel o guardava el menjar en llocs frescos, com un soterrani.",
+  "La rentadora renta la roba. Abans, la gent rentava la roba a mà, al riu o a casa. Era una feina molt dura! Avui, poses la roba a dins, poses el sabó, prems un botó i la màquina treballa.",
+  "El microones escalfa el menjar molt de pressa. En només un minut, la teva llet és calenta. I tu, quin invent de casa fas servir més?"
+ ],
+ "q": [
+  [
+   "Què feia servir la gent abans de la bombeta?",
+   [
+    "Espelmes",
+    "Neveres",
+    "Microones"
+   ],
+   0
+  ],
+  [
+   "Quanta electricitat gasten les bombetes LED?",
+   [
+    "Molta",
+    "Molt poca",
+    "Gens"
+   ],
+   1
+  ],
+  [
+   "Per a què serveix la nevera?",
+   [
+    "Per rentar la roba",
+    "Per escalfar el menjar",
+    "Per guardar el menjar fred"
+   ],
+   2
+  ],
+  [
+   "On rentava la roba la gent abans?",
+   [
+    "Al riu o a casa",
+    "A la nevera",
+    "Al soterrani"
+   ],
+   0
+  ],
+  [
+   "Què fa el microones?",
+   [
+    "Renta la roba",
+    "Escalfa el menjar",
+    "Fa llum"
+   ],
+   1
+  ],
+  [
+   "Quant de temps necessita el microones per escalfar la llet?",
+   [
+    "Una hora",
+    "Un minut",
+    "Un dia"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "bombeta",
+   "💡"
+  ],
+  [
+   "espelma",
+   "🕯️"
+  ],
+  [
+   "llet",
+   "🥛"
+  ],
+  [
+   "roba",
+   "👕"
+  ],
+  [
+   "sabó",
+   "🧼"
+  ],
+  [
+   "botó",
+   "🔘"
+  ]
+ ],
+ "halves": [
+  [
+   "La bombeta fa llum...",
+   "...a la nit."
+  ],
+  [
+   "Abans, la gent feia servir...",
+   "...espelmes."
+  ],
+  [
+   "La nevera serveix per...",
+   "...guardar el menjar fred."
+  ],
+  [
+   "La rentadora...",
+   "...renta la roba."
+  ],
+  [
+   "El microones escalfa...",
+   "...el menjar molt de pressa."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el present (-ar, -re, -ir)",
+  "rule": "Hi ha tres grups de verbs. Molts verbs en <b>-ir</b> fan <b>-eix</b>: <b>serveix</b>.",
+  "rows": [
+   "rentar: renta, renten",
+   "escalfar: escalfa, escalfem",
+   "encendre: encenc, encén",
+   "servir: serveix, serveixen",
+   "prémer: premo, prems",
+   "viure: visc, viu"
+  ],
+  "items": [
+   [
+    "La rentadora ___ la roba.",
+    [
+     "renta",
+     "rento",
+     "renten"
+    ],
+    0
+   ],
+   [
+    "La nevera ___ per guardar el menjar.",
+    [
+     "serveis",
+     "serveix",
+     "servo"
+    ],
+    1
+   ],
+   [
+    "Nosaltres ___ el llum.",
+    [
+     "encén",
+     "encenen",
+     "encenem"
+    ],
+    2
+   ],
+   [
+    "El microones ___ el menjar.",
+    [
+     "escalfa",
+     "escalfen",
+     "escalfes"
+    ],
+    0
+   ],
+   [
+    "Tu ___ un botó.",
+    [
+     "premo",
+     "prems",
+     "prem"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Inventos de casa",
+   "sub": "La bombilla, la nevera, la lavadora y el microondas",
+   "grammar": "Gramática: el presente. Hay verbos en -ar (rentar), en -er o -re (encendre) y en -ir (servir). Muchos verbos en -ir añaden -eix: serveix (sirve), llegeix (lee).",
+   "rows": [
+    "lavar: lava, lavan",
+    "calentar: calienta, calentamos",
+    "encender: enciendo, enciende",
+    "servir: sirve, sirven",
+    "pulsar: pulso, pulsas",
+    "vivir: vivo, vive"
+   ],
+   "hints": [
+    "lava",
+    "sirve",
+    "encendemos",
+    "calienta",
+    "pulsas"
+   ],
+   "vocab": [
+    "bombilla",
+    "vela",
+    "leche",
+    "ropa",
+    "jabón",
+    "botón"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "ca-misterios-a1",
+ "topic": "misterios",
+ "level": "A1",
+ "title": "El monstre del llac Ness",
+ "short": "El monstre del llac Ness",
+ "text": [
+  "A Escòcia hi ha un llac molt llarg i molt profund. [Es diu] el [llac Ness]. La seva aigua és molt fosca: no pots veure el fons. Segons una llegenda, al llac hi viu un monstre. La gent l'anomena «Nessie».",
+  "Com és la Nessie? Moltes persones diuen que és enorme, amb un coll molt llarg i un cap petit. Sembla un dinosaure. Altres persones diuen que té geps a l'esquena.",
+  "El 1934, un metge va fer una foto famosa de la Nessie. A la foto hi ha un coll llarg damunt de l'aigua. Però seixanta anys després, el 1994, van descobrir la veritat: era una joguina!",
+  "Molts científics han buscat la Nessie amb vaixells, càmeres i sonar. El 2018, van estudiar l'ADN de l'aigua del llac. No van trobar ADN de rèptils, però sí molt ADN d'anguiles. És la Nessie una anguila gegant? Ningú no ho sap.",
+  "Avui, milers de turistes visiten el [llac Ness] cada any. Volen veure la Nessie. Existeix? Qui sap? Tu què creus?"
+ ],
+ "q": [
+  [
+   "On és el [llac Ness]?",
+   [
+    "A Escòcia",
+    "A Espanya",
+    "A Mèxic"
+   ],
+   0
+  ],
+  [
+   "Com és l'aigua del llac?",
+   [
+    "Molt clara",
+    "Molt fosca",
+    "Molt calenta"
+   ],
+   1
+  ],
+  [
+   "Com anomena la gent el monstre?",
+   [
+    "Ness",
+    "Llac",
+    "Nessie"
+   ],
+   2
+  ],
+  [
+   "Què hi havia de veritat a la foto del 1934?",
+   [
+    "Una joguina",
+    "Un dinosaure",
+    "Una anguila"
+   ],
+   0
+  ],
+  [
+   "Quin ADN van trobar al llac el 2018?",
+   [
+    "ADN de rèptils",
+    "Molt ADN d'anguiles",
+    "ADN de dinosaure"
+   ],
+   1
+  ],
+  [
+   "Per què visiten el llac els turistes?",
+   [
+    "Per nedar",
+    "Per pescar",
+    "Per veure la Nessie"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "llac",
+   "🏞️"
+  ],
+  [
+   "monstre",
+   "👹"
+  ],
+  [
+   "càmera",
+   "📷"
+  ],
+  [
+   "vaixell",
+   "🚤"
+  ],
+  [
+   "joguina",
+   "🧸"
+  ],
+  [
+   "turista",
+   "🧳"
+  ]
+ ],
+ "halves": [
+  [
+   "El [llac Ness] és...",
+   "...molt llarg i molt profund."
+  ],
+  [
+   "La Nessie té un coll...",
+   "...molt llarg."
+  ],
+  [
+   "La foto del 1934 era...",
+   "...una joguina."
+  ],
+  [
+   "El 2018 van estudiar...",
+   "...l'ADN de l'aigua."
+  ],
+  [
+   "Milers de turistes...",
+   "...visiten el llac cada any."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: les preguntes",
+  "rule": "Per fer preguntes fem servir <b>què</b>, <b>qui</b>, <b>on</b>, <b>com</b>, <b>quan</b>, <b>quant</b> i <b>per què</b>.",
+  "rows": [
+   "Què és?",
+   "Qui va fer la foto?",
+   "On és el llac?",
+   "Com és la Nessie?",
+   "Quan van fer la foto?",
+   "Per què hi van?"
+  ],
+  "items": [
+   [
+    "___ és el llac Ness? A Escòcia.",
+    [
+     "On",
+     "Qui",
+     "Quan"
+    ],
+    0
+   ],
+   [
+    "___ va fer la foto? Un metge.",
+    [
+     "Com",
+     "Qui",
+     "Què"
+    ],
+    1
+   ],
+   [
+    "___ és la Nessie? És enorme.",
+    [
+     "Quan",
+     "On",
+     "Com"
+    ],
+    2
+   ],
+   [
+    "___ van descobrir la veritat? El 1994.",
+    [
+     "Quan",
+     "Qui",
+     "Com"
+    ],
+    0
+   ],
+   [
+    "___ visiten el llac? Per veure la Nessie.",
+    [
+     "Què",
+     "Per què",
+     "On"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El monstruo del lago Ness",
+   "sub": "El misterio más famoso de Escocia",
+   "grammar": "Gramática: las preguntas. Què (qué), qui (quién), on (dónde), com (cómo), quan (cuándo), quant (cuánto), per què (por qué). En catalán no se pone el signo ¿ al principio.",
+   "rows": [
+    "¿Qué es?",
+    "¿Quién hizo la foto?",
+    "¿Dónde está el lago?",
+    "¿Cómo es Nessie?",
+    "¿Cuándo hicieron la foto?",
+    "¿Por qué van?"
+   ],
+   "hints": [
+    "dónde",
+    "quién",
+    "cómo",
+    "cuándo",
+    "por qué"
+   ],
+   "vocab": [
+    "lago",
+    "monstruo",
+    "cámara",
+    "barco",
+    "juguete",
+    "turista"
+   ]
+  }
+ }
+}

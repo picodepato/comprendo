@@ -1,0 +1,208 @@
+{
+ "id": "ca-espacio-b1",
+ "topic": "espacio",
+ "level": "B1",
+ "title": "Els forats negres",
+ "short": "Els forats negres",
+ "text": [
+  "Els forats negres són, [probablement], els objectes més misteriosos de l'univers. No són forats [de debò], sinó llocs on hi ha moltíssima matèria concentrada en un espai molt petit. [Per això], la seva gravetat és tan forta que res no en pot escapar, ni tan sols la llum. Com que no en surt llum, no els podem veure directament.",
+  "Com es forma un forat negre? Molts neixen quan una estrella enorme es queda sense combustible i mor. Si l'estrella té molta massa, esclata en una supernova i el seu centre s'aixafa sobre si mateix fins a formar un forat negre. També hi ha forats negres supermassius, milions de vegades més pesants que el Sol, al centre de gairebé totes les galàxies.",
+  "Al voltant de cada forat negre hi ha un límit invisible que es diu [horitzó d'esdeveniments]. Si alguna cosa travessa aquesta frontera, ja no pot tornar. Els científics imaginen que, si un astronauta s'hi acostés massa, la gravetat l'estiraria com un espagueti. Aquest efecte, encara que sembli un acudit, es diu [de debò] «espaguetització».",
+  "Durant molt de temps, ningú no havia vist un forat negre. Però el 2019, un equip internacional de científics va presentar la primera imatge d'un forat negre. Per aconseguir-la, van connectar telescopis de tot el món i van crear un telescopi virtual de la mida de la Terra. A la imatge es veu un anell taronja de gas molt calent al voltant d'una ombra negra.",
+  "El 2022, el mateix equip va mostrar la imatge de Sagitari A*, el forat negre que hi ha al centre de la nostra galàxia, la [Via Làctia]. Té uns quatre milions de vegades la massa del Sol. Hem de tenir por? No: és a uns vint-i-sis mil anys llum de la Terra. I el Sol? No es convertirà mai en un forat negre, perquè és massa petit.",
+  "Encara hi ha moltes preguntes sense resposta. Què passa exactament dins d'un forat negre? Si algú troba la resposta, canviarà la nostra manera d'entendre l'univers. Potser ho descobriràs tu."
+ ],
+ "q": [
+  [
+   "Per què no podem veure directament un forat negre?",
+   [
+    "Perquè és molt lluny",
+    "Perquè no en surt llum",
+    "Perquè és molt petit"
+   ],
+   1
+  ],
+  [
+   "Com neixen molts forats negres?",
+   [
+    "Quan mor una estrella enorme",
+    "Quan xoquen dos planetes",
+    "Quan un cometa esclata"
+   ],
+   0
+  ],
+  [
+   "Què és l'[horitzó d'esdeveniments]?",
+   [
+    "Un telescopi",
+    "Una estrella",
+    "Un límit del qual no pots tornar"
+   ],
+   2
+  ],
+  [
+   "Què va passar el 2019?",
+   [
+    "Es va descobrir la [Via Làctia]",
+    "Es va presentar la primera imatge d'un forat negre",
+    "Un astronauta va visitar un forat negre"
+   ],
+   1
+  ],
+  [
+   "On és Sagitari A*?",
+   [
+    "Al centre de la nostra galàxia",
+    "Al costat de la Terra",
+    "Dins del Sol"
+   ],
+   0
+  ],
+  [
+   "Es pot convertir el Sol en un forat negre?",
+   [
+    "Sí, molt aviat",
+    "Sí, el 2050",
+    "No, és massa petit"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "telescopi",
+   "🔭"
+  ],
+  [
+   "galàxia",
+   "🌌"
+  ],
+  [
+   "estrella",
+   "⭐"
+  ],
+  [
+   "espagueti",
+   "🍝"
+  ],
+  [
+   "anell",
+   "💍"
+  ],
+  [
+   "explosió",
+   "💥"
+  ]
+ ],
+ "halves": [
+  [
+   "La seva gravetat és tan forta que...",
+   "...ni tan sols la llum pot escapar."
+  ],
+  [
+   "Si alguna cosa travessa l'horitzó...",
+   "...ja no pot tornar."
+  ],
+  [
+   "Van connectar telescopis...",
+   "...de tot el món."
+  ],
+  [
+   "A la imatge es veu...",
+   "...un anell taronja al voltant d'una ombra."
+  ],
+  [
+   "Sagitari A* és...",
+   "...al centre de la [Via Làctia]."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: les frases amb si",
+  "rule": "<b>Si</b> + present → futur: <b>si algú ho troba, canviarà</b>. <b>Si</b> + imperfet de subjuntiu → condicional: <b>si s'acostés, l'estiraria</b>.",
+  "rows": [
+   "si trobes la resposta, canviarà tot",
+   "si l'estrella mor, es formarà un forat",
+   "si s'acostés, l'estiraria",
+   "si tingués un coet, hi aniria",
+   "si fos astronauta, viatjaria",
+   "si pogués, ho veuria"
+  ],
+  "items": [
+   [
+    "Si algú troba la resposta, ___ la ciència.",
+    [
+     "canviarà",
+     "canviaria",
+     "canviés"
+    ],
+    0
+   ],
+   [
+    "Si un astronauta s'acostés, la gravetat l'___.",
+    [
+     "estirarà",
+     "estiraria",
+     "estira"
+    ],
+    1
+   ],
+   [
+    "Si ___ un telescopi, miraria les estrelles.",
+    [
+     "tinc",
+     "tindré",
+     "tingués"
+    ],
+    2
+   ],
+   [
+    "Si ___ astronauta, viatjaria a Mart.",
+    [
+     "fos",
+     "sóc",
+     "seré"
+    ],
+    0
+   ],
+   [
+    "Si l'estrella té molta massa, ___.",
+    [
+     "esclataria",
+     "esclatarà",
+     "esclatés"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los agujeros negros",
+   "sub": "Donde ni la luz puede escapar",
+   "grammar": "Gramática: oraciones con si. Si + presente → futuro (si alguien lo encuentra, cambiará). Si + imperfecto de subjuntivo → condicional (si se acercara, lo estiraría).",
+   "rows": [
+    "si encuentras la respuesta, cambiará todo",
+    "si la estrella muere, se formará un agujero",
+    "si se acercara, lo estiraría",
+    "si tuviera un cohete, iría",
+    "si fuera astronauta, viajaría",
+    "si pudiera, lo vería"
+   ],
+   "hints": [
+    "cambiará",
+    "estiraría",
+    "tuviera",
+    "fuera",
+    "explotará"
+   ],
+   "vocab": [
+    "telescopio",
+    "galaxia",
+    "estrella",
+    "espagueti",
+    "anillo",
+    "explosión"
+   ]
+  }
+ }
+}

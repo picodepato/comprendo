@@ -3,6 +3,7 @@
 (() => {
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const TX = {
+  ca: {t: "💡 Proposa un tema per a una lectura", s: "Sobre què t'agradaria llegir? Escriu-ho i ho tindrem en compte.", ph: "Per exemple: els volcans, el meu videojoc preferit…", b: "Enviar", ok: "Gràcies! Hem rebut la teva idea.", corto: "Escriu almenys 3 lletres.", espera: "Has enviat moltes idees. Prova-ho d'aquí a una estona.", mal: "No s'ha pogut enviar. Torna-ho a provar."},
   es: {t: "💡 Propón un tema para una lectura", s: "¿Sobre qué te gustaría leer? Escríbelo y lo tendremos en cuenta.", ph: "Por ejemplo: los volcanes, mi videojuego favorito…", b: "Enviar", ok: "¡Gracias! Hemos recibido tu idea.", corto: "Escribe al menos 3 letras.", espera: "Has enviado muchas ideas. Prueba dentro de un rato.", mal: "No se ha podido enviar. Inténtalo otra vez."},
   en: {t: "💡 Suggest a topic for a reading", s: "What would you like to read about? Write it and we will take it into account.", ph: "For example: volcanoes, my favourite video game…", b: "Send", ok: "Thank you! We got your idea.", corto: "Write at least 3 letters.", espera: "You have sent many ideas. Try again later.", mal: "It could not be sent. Try again."},
 };

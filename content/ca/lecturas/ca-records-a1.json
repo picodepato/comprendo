@@ -1,0 +1,207 @@
+{
+ "id": "ca-records-a1",
+ "topic": "records",
+ "level": "A1",
+ "title": "Persones de rècord",
+ "short": "Persones rècord",
+ "text": [
+  "El [Llibre Guinness dels Rècords] és un llibre molt famós. Té els rècords més increïbles del món: les persones més altes, més baixes, més ràpides... Vols conèixer-ne algunes?",
+  "Robert Wadlow és l'home més alt de la història. Fa dos metres i setanta-dos centímetres. Neix als [Estats Units] el 1918 i mor el 1940. Les seves sabates són enormes!",
+  "La dona més baixa del món [es diu] Jyoti Amge. És de l'Índia i fa només seixanta-tres centímetres. És actriu: treballa en sèries de televisió.",
+  "I la persona més ràpida? És [Usain Bolt], de Jamaica. El 2009, corre cent metres en només nou segons i cinquanta-vuit centèsimes. Ningú no corre més ràpid!",
+  "La persona amb més anys de la història és Jeanne Calment, una dona de França. Viu cent vint-i-dos anys, del 1875 al 1997. Quin és el seu secret? Ella diu que és l'oli d'oliva, la xocolata i... el bon humor!"
+ ],
+ "q": [
+  [
+   "Quant fa Robert Wadlow?",
+   [
+    "1,72 metres",
+    "2,72 metres",
+    "3,72 metres"
+   ],
+   1
+  ],
+  [
+   "D'on és Jyoti Amge?",
+   [
+    "De França",
+    "De l'Índia",
+    "De Jamaica"
+   ],
+   1
+  ],
+  [
+   "Qui és la persona més ràpida?",
+   [
+    "[Usain Bolt]",
+    "Robert Wadlow",
+    "Jeanne Calment"
+   ],
+   0
+  ],
+  [
+   "En quants segons corre Bolt cent metres?",
+   [
+    "En 9,58",
+    "En 19,58",
+    "En 58"
+   ],
+   0
+  ],
+  [
+   "Quants anys viu Jeanne Calment?",
+   [
+    "92",
+    "102",
+    "122"
+   ],
+   2
+  ],
+  [
+   "Quina feina té Jyoti Amge?",
+   [
+    "És actriu",
+    "És corredora",
+    "És professora"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "llibre",
+   "📕"
+  ],
+  [
+   "home",
+   "👨"
+  ],
+  [
+   "dona",
+   "👩"
+  ],
+  [
+   "sabata",
+   "👞"
+  ],
+  [
+   "xocolata",
+   "🍫"
+  ],
+  [
+   "televisió",
+   "📺"
+  ]
+ ],
+ "halves": [
+  [
+   "Robert Wadlow és...",
+   "...l'home més alt de la història."
+  ],
+  [
+   "Jyoti Amge és...",
+   "...de l'Índia."
+  ],
+  [
+   "[Usain Bolt] corre cent metres...",
+   "...en nou segons i cinquanta-vuit centèsimes."
+  ],
+  [
+   "Jeanne Calment viu...",
+   "...cent vint-i-dos anys."
+  ],
+  [
+   "El seu secret és...",
+   "...el bon humor."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: quant, quanta, quants, quantes",
+  "rule": "Per preguntar una quantitat fem servir <b>quant</b>. Canvia segons el nom: <b>quant</b> temps, <b>quanta</b> gent, <b>quants</b> anys, <b>quantes</b> sabates.",
+  "rows": [
+   "Quant fa?",
+   "Quant de temps?",
+   "Quanta gent?",
+   "Quants anys té?",
+   "Quantes persones?",
+   "Quants segons?"
+  ],
+  "items": [
+   [
+    "___ anys viu Jeanne Calment?",
+    [
+     "Quants",
+     "Quantes",
+     "Quanta"
+    ],
+    0
+   ],
+   [
+    "___ persones hi ha al llibre?",
+    [
+     "Quants",
+     "Quantes",
+     "Quant"
+    ],
+    1
+   ],
+   [
+    "___ fa Robert Wadlow?",
+    [
+     "Quanta",
+     "Quants",
+     "Quant"
+    ],
+    2
+   ],
+   [
+    "___ gent llegeix el llibre?",
+    [
+     "Quanta",
+     "Quants",
+     "Quantes"
+    ],
+    0
+   ],
+   [
+    "En ___ segons corre Bolt?",
+    [
+     "quantes",
+     "quants",
+     "quanta"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Personas de récord",
+   "sub": "El más alto, la más baja, el más rápido y la mayor",
+   "grammar": "Gramática: cuánto. Quant cambia como en español: quant (cuánto), quanta (cuánta), quants (cuántos), quantes (cuántas). Quant fa? = ¿Cuánto mide?",
+   "rows": [
+    "¿Cuánto mide?",
+    "¿Cuánto tiempo?",
+    "¿Cuánta gente?",
+    "¿Cuántos años tiene?",
+    "¿Cuántas personas?",
+    "¿Cuántos segundos?"
+   ],
+   "hints": [
+    "cuántos",
+    "cuántas",
+    "cuánto",
+    "cuánta",
+    "cuántos"
+   ],
+   "vocab": [
+    "libro",
+    "hombre",
+    "mujer",
+    "zapato",
+    "chocolate",
+    "televisión"
+   ]
+  }
+ }
+}

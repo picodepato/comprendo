@@ -1,0 +1,207 @@
+{
+ "id": "ca-peligrosos-a2",
+ "topic": "peligrosos",
+ "level": "A2",
+ "title": "Depredadors de l'oceà",
+ "short": "Depredadors de l'oceà",
+ "text": [
+  "Un depredador és un animal que caça i menja altres animals. A l'oceà hi viuen alguns dels depredadors més perillosos del planeta. Coneixerem tres d'aquests animals.",
+  "El [tauró blanc] és el peix depredador més gran del món. Pot fer sis metres i té unes tres-centes dents. Té un olfacte increïble: pot olorar una gota de sang [des de molt lluny]. Menja foques, peixos i, [de vegades], balenes mortes.",
+  "L'orca sembla una balena, però [en realitat] és un dofí: el dofí més gran de tots. És més intel·ligent que el tauró i caça en grup, amb la seva família. Les orques es comuniquen amb sons i preparen estratègies. Algunes orques cacen taurons blancs!",
+  "El [cocodril marí] és el rèptil més gran del món. Viu en rius i al mar, a Austràlia i al sud-est d'Àsia. És més pesant que un cotxe petit: alguns pesen més de mil quilos. Espera a l'aigua sense moure's i, [de sobte], ataca molt de pressa.",
+  "Són molt perillosos per a les persones? [En realitat], els atacs són molt rars. Cada any, els taurons maten unes cinc o deu persones a tot el món. Els mosquits són molt més perillosos que els taurons, perquè transmeten malalties."
+ ],
+ "q": [
+  [
+   "Què és un depredador?",
+   [
+    "Un animal que només menja plantes",
+    "Un animal que caça i menja altres animals",
+    "Un animal que viu a l'oceà"
+   ],
+   1
+  ],
+  [
+   "Quantes dents té el [tauró blanc]?",
+   [
+    "Unes trenta",
+    "Unes tres-centes",
+    "Unes tres mil"
+   ],
+   1
+  ],
+  [
+   "Què és [en realitat] l'orca?",
+   [
+    "Un dofí",
+    "Una balena",
+    "Un tauró"
+   ],
+   0
+  ],
+  [
+   "Com caça l'orca?",
+   [
+    "Sola",
+    "En grup, amb la seva família",
+    "Només a la nit"
+   ],
+   1
+  ],
+  [
+   "Quant pesen alguns cocodrils marins?",
+   [
+    "Més de cent quilos",
+    "Més de mil quilos",
+    "Més de deu mil quilos"
+   ],
+   1
+  ],
+  [
+   "Quin animal és més perillós que el tauró?",
+   [
+    "L'orca",
+    "El dofí",
+    "El mosquit"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "tauró",
+   "🦈"
+  ],
+  [
+   "balena",
+   "🐋"
+  ],
+  [
+   "dofí",
+   "🐬"
+  ],
+  [
+   "cocodril",
+   "🐊"
+  ],
+  [
+   "dents",
+   "🦷"
+  ],
+  [
+   "mosquit",
+   "🦟"
+  ]
+ ],
+ "halves": [
+  [
+   "El [tauró blanc] pot olorar...",
+   "...una gota de sang."
+  ],
+  [
+   "L'orca sembla una balena...",
+   "...però és un dofí."
+  ],
+  [
+   "Les orques es comuniquen...",
+   "...amb sons."
+  ],
+  [
+   "El cocodril és més pesant...",
+   "...que un cotxe petit."
+  ],
+  [
+   "Els atacs de tauró...",
+   "...són molt rars."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: comparar",
+  "rule": "Per comparar fem servir <b>més</b> ... <b>que</b>, <b>menys</b> ... <b>que</b> i <b>tan</b> ... <b>com</b>.",
+  "rows": [
+   "més intel·ligent que",
+   "menys perillós que",
+   "tan gran com",
+   "més pesant que un cotxe",
+   "millor que",
+   "pitjor que"
+  ],
+  "items": [
+   [
+    "L'orca és més intel·ligent ___ el tauró.",
+    [
+     "que",
+     "com",
+     "de"
+    ],
+    0
+   ],
+   [
+    "El cocodril és ___ pesant que un cotxe.",
+    [
+     "tan",
+     "més",
+     "com"
+    ],
+    1
+   ],
+   [
+    "El dofí és tan ràpid ___ el tauró.",
+    [
+     "que",
+     "de",
+     "com"
+    ],
+    2
+   ],
+   [
+    "El tauró és ___ perillós que el mosquit.",
+    [
+     "menys",
+     "tan",
+     "com"
+    ],
+    0
+   ],
+   [
+    "Caçar en grup és ___ que caçar sol.",
+    [
+     "més bo",
+     "millor",
+     "més millor"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Depredadores del océano",
+   "sub": "El tiburón, la orca y el cocodrilo",
+   "grammar": "Gramática: comparar. Més ... que (más ... que), menys ... que (menos ... que), tan ... com (tan ... como). Millor = mejor, pitjor = peor.",
+   "rows": [
+    "más inteligente que",
+    "menos peligroso que",
+    "tan grande como",
+    "más pesado que un coche",
+    "mejor que",
+    "peor que"
+   ],
+   "hints": [
+    "que",
+    "más",
+    "como",
+    "menos",
+    "mejor"
+   ],
+   "vocab": [
+    "tiburón",
+    "ballena",
+    "delfín",
+    "cocodrilo",
+    "dientes",
+    "mosquito"
+   ]
+  }
+ }
+}

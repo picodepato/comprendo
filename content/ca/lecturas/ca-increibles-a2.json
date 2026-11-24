@@ -1,0 +1,207 @@
+{
+ "id": "ca-increibles-a2",
+ "topic": "increibles",
+ "level": "A2",
+ "title": "Animals que brillen",
+ "short": "Animals que brillen",
+ "text": [
+  "Saps que alguns animals produeixen la seva pròpia llum? Aquest fenomen [es diu] bioluminescència. La llum apareix per una reacció química dins del seu cos. És una llum freda: no crema.",
+  "Les cuques de llum són els animals que brillen més coneguts. Són insectes petits que volen a les nits d'estiu. Encenen i apaguen la llum per parlar entre elles i per trobar parella. Cada espècie té el seu propi codi de llums, com un missatge secret.",
+  "Al fons de l'oceà no hi arriba la llum del sol. Allà, tres de cada quatre animals produeixen llum. El [rap abissal], [per exemple], té una petita làmpada damunt del cap. La fa servir per atraure altres peixos i menjar-los.",
+  "Algunes meduses i calamars fan servir la llum per defensar-se. Quan un depredador els ataca, produeixen un flaix de llum per espantar-lo i escapar. És com una llanterna a la foscor!",
+  "També hi ha éssers diminuts que brillen: el plàncton. En algunes platges, com a l'illa de Vieques, a [Puerto Rico], l'aigua es torna blava a la nit. Quan nedes o mous la mà, el mar s'il·lumina!"
+ ],
+ "q": [
+  [
+   "Com es diu el fenomen de produir llum?",
+   [
+    "Bioluminescència",
+    "Fotografia",
+    "Electricitat"
+   ],
+   0
+  ],
+  [
+   "Com és la llum d'aquests animals?",
+   [
+    "Molt calenta",
+    "Freda",
+    "Sempre vermella"
+   ],
+   1
+  ],
+  [
+   "Per a què encenen la llum les cuques de llum?",
+   [
+    "Per menjar",
+    "Per dormir",
+    "Per parlar i trobar parella"
+   ],
+   2
+  ],
+  [
+   "Quants animals produeixen llum al fons de l'oceà?",
+   [
+    "Un de cada deu",
+    "Tres de cada quatre",
+    "Tots"
+   ],
+   1
+  ],
+  [
+   "On té la làmpada el [rap abissal]?",
+   [
+    "Damunt del cap",
+    "A la cua",
+    "Als ulls"
+   ],
+   0
+  ],
+  [
+   "Què passa a la platja de Vieques a la nit?",
+   [
+    "L'aigua es torna vermella",
+    "L'aigua es torna blava",
+    "L'aigua desapareix"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "nit",
+   "🌙"
+  ],
+  [
+   "platja",
+   "🏖️"
+  ],
+  [
+   "illa",
+   "🏝️"
+  ],
+  [
+   "peix",
+   "🐟"
+  ],
+  [
+   "mà",
+   "✋"
+  ],
+  [
+   "insecte",
+   "🐞"
+  ]
+ ],
+ "halves": [
+  [
+   "La llum apareix per...",
+   "...una reacció química."
+  ],
+  [
+   "Les cuques de llum volen...",
+   "...a les nits d'estiu."
+  ],
+  [
+   "Al fons de l'oceà...",
+   "...no hi arriba la llum del sol."
+  ],
+  [
+   "El rap fa servir la llum...",
+   "...per atraure altres peixos."
+  ],
+  [
+   "Quan nedes a Vieques...",
+   "...el mar s'il·lumina."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: per + infinitiu",
+  "rule": "Per explicar per a què fem una cosa, fem servir <b>per</b> + infinitiu: <b>per parlar</b>, <b>per escapar</b>.",
+  "rows": [
+   "per parlar",
+   "per trobar parella",
+   "per atraure peixos",
+   "per defensar-se",
+   "per escapar",
+   "per veure-hi"
+  ],
+  "items": [
+   [
+    "Encenen la llum ___ parlar.",
+    [
+     "per",
+     "de",
+     "a"
+    ],
+    0
+   ],
+   [
+    "El rap fa servir la llum per ___ peixos.",
+    [
+     "atrau",
+     "atraure",
+     "atrauen"
+    ],
+    1
+   ],
+   [
+    "Fan un flaix per ___ el depredador.",
+    [
+     "espantar",
+     "espanten",
+     "espantat"
+    ],
+    0
+   ],
+   [
+    "Les meduses brillen per ___.",
+    [
+     "defensen",
+     "defensar",
+     "defensar-se"
+    ],
+    2
+   ],
+   [
+    "Vaig a la platja ___ veure el mar blau.",
+    [
+     "a",
+     "per",
+     "de"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Animales que brillan",
+   "sub": "Luciérnagas, peces del fondo del mar y playas que brillan",
+   "grammar": "Gramática: para + infinitivo. En catalán se dice per + infinitivo: per parlar (para hablar), per escapar (para escapar).",
+   "rows": [
+    "para hablar",
+    "para encontrar pareja",
+    "para atraer peces",
+    "para defenderse",
+    "para escapar",
+    "para ver"
+   ],
+   "hints": [
+    "para",
+    "atraer",
+    "asustar",
+    "defenderse",
+    "para"
+   ],
+   "vocab": [
+    "noche",
+    "playa",
+    "isla",
+    "pez",
+    "mano",
+    "insecto"
+   ]
+  }
+ }
+}

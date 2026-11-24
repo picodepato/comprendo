@@ -281,9 +281,9 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <script src="avisos.js"></script>
 <link rel="stylesheet" href="mascota/mascota.css">
 <link rel="stylesheet" href="votos/votos.css">
+<link rel="stylesheet" href="canciones/canciones.css">
 <link rel="stylesheet" href="dictados/dictados.css">
 <link rel="stylesheet" href="fichas/fichas.css">
-<link rel="stylesheet" href="canciones/canciones.css">
 <link rel="stylesheet" href="diseno.css">
 </head>
 <body>
@@ -301,7 +301,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const KEYS = "ABCD", LV = ["A1","A2","B1"];
-const LET = "A-Za-zÁÉÍÓÚÜÑáéíóúüñÄÖÜäößÀÈÌÒÙàèìòùç";
+const LET = "A-Za-zÁÉÍÓÚÜÑáéíóúüñÄÖÜäößÀÈÌÒÙàèìòùçÇÏï·";
 const RE = new RegExp(`\\[([^\\]|]+)(?:\\|([^\\]]+))?\\]|([${LET}0-9]+)|([^\\[${LET}0-9]+)`, "g");
 const shuf = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const store = { get(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
@@ -353,7 +353,7 @@ const lname = (code, inLang) => CAT.languages[code].name[inLang] || CAT.language
 
 /* ---------- words ---------- */
 let R = null, PK = null; /* current reading and language pack */
-const NAME = /^Name of |: name of |^Nickname |^Short name |^The letter |^The person who is speaking|^Nombre |^Palabra inglesa|^Tecla |^Plataforma |^Dinero que se gana|^Ropa o aspecto/;
+const NAME = /^Nom d|^Nom:|^Paraula anglesa|^Paraula grega|^Tecla |^Part del nom|^Name of |: name of |^Nickname |^Short name |^The letter |^The person who is speaking|^Nombre |^Palabra inglesa|^Tecla |^Plataforma |^Dinero que se gana|^Ropa o aspecto/;
 function lookup(text, key) {
   const k = (key || text).toLowerCase();
   const t = R?.tr?.[S.know]?.words?.[k] || PK?.tr[k] || (/^\d+$/.test(text) ? text : null);
@@ -384,6 +384,7 @@ const seedOf = s => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 2147483
 
 /* ---------- points (XP), streak, sticker album, medals ---------- */
 const GTXT = {
+  ca: {progress: "El meu progrés", rlevel: "Nivell de lector", lvl: "Nivell {n}", xp_next: "{n} XP per al nivell {l}", spend: "Punts per gastar", streak: "Ratxa", streak_days: "Dies seguits: {n}", streak_best: "La teva millor ratxa: {n}", streak_help: "Llegeix, juga o repassa alguna cosa cada dia per no perdre la ratxa.", shields: "Escuts", shield_help: "Un escut salva la teva ratxa si un dia no hi entres. En pots tenir 2.", buy_shield: "Comprar escut · {n} punts", shield_full: "Ja tens el màxim d'escuts.", shield_need: "Et falten {n} punts per a un escut.", album: "Àlbum de cromos", album_help: "Acaba tots els exercicis d'una lectura per guanyar-ne el cromo.", medals: "Medalles", secret: "Medalla secreta", secret_help: "Continua jugant per descobrir-la.", t_level: "Puges al nivell {n}!", t_sticker: "Cromo nou per al teu àlbum!", t_medal: "Medalla: {m}!", t_secret: "Medalla secreta: {m}!", t_shield: "Un escut ha salvat la teva ratxa", t_streak: "🔥 Ratxa de {n} dies", t_bought: "Escut comprat!", tier1: "bronze", tier2: "plata", tier3: "or", next_tier: "{v} / {g} per a {t}", maxed: "Or aconseguit!", won: "Has guanyat el cromo d'aquesta lectura!", won_how: "Acaba tots els exercicis per guanyar el cromo d'aquesta lectura.", see_album: "Veure el meu àlbum", xp_here: "XP guanyats en aquesta lectura: {n}", r1: "Lector novell", r2: "Explorador de pàgines", r3: "Caçador de paraules", r4: "Mestre lector", r5: "Llegenda de la lectura", m_lector: "Lector", md_lector: "Acaba lectures", m_racha: "En ratxa", md_racha: "Dies seguits llegint", m_dicc: "Col·leccionista", md_dicc: "Paraules al teu diccionari", m_juego: "Jugador", md_juego: "Encerts en jocs i repassos", m_explora: "Explorador", md_explora: "Temes amb algun cromo", s_buho: "Mussol nocturn", sd_buho: "Llegir de nit", s_madruga: "Matiner", sd_madruga: "Llegir abans de les 8", s_perfecto: "Sense errades", sd_perfecto: "Una lectura sense cap errada", s_combo: "Imparable", sd_combo: "10 encerts seguits en repassar", s_maraton: "Marató", sd_maraton: "3 cromos el mateix dia", stickers: "cromos"},
   es: {progress: "Mi progreso", rlevel: "Nivel de lector", lvl: "Nivel {n}", xp_next: "{n} XP para el nivel {l}", spend: "Puntos para gastar", streak: "Racha", streak_days: "Días seguidos: {n}", streak_best: "Tu mejor racha: {n}", streak_help: "Lee, juega o repasa algo cada día para no perder la racha.", shields: "Escudos", shield_help: "Un escudo salva tu racha si un día no entras. Puedes tener 2.", buy_shield: "Comprar escudo · {n} puntos", shield_full: "Ya tienes el máximo de escudos.", shield_need: "Te faltan {n} puntos para un escudo.", album: "Álbum de cromos", album_help: "Termina todos los ejercicios de una lectura para ganar su cromo.", medals: "Medallas", secret: "Medalla secreta", secret_help: "Sigue jugando para descubrirla.", t_level: "¡Subes al nivel {n}!", t_sticker: "¡Cromo nuevo para tu álbum!", t_medal: "¡Medalla: {m}!", t_secret: "¡Medalla secreta: {m}!", t_shield: "Un escudo ha salvado tu racha", t_streak: "🔥 Racha de {n} días", t_bought: "¡Escudo comprado!", tier1: "bronce", tier2: "plata", tier3: "oro", next_tier: "{v} / {g} para {t}", maxed: "¡Oro conseguido!", won: "¡Has ganado el cromo de esta lectura!", won_how: "Termina todos los ejercicios para ganar el cromo de esta lectura.", see_album: "Ver mi álbum", xp_here: "XP ganados en esta lectura: {n}", r1: "Lector novato", r2: "Explorador de páginas", r3: "Cazador de palabras", r4: "Maestro lector", r5: "Leyenda de la lectura", m_lector: "Lector", md_lector: "Termina lecturas", m_racha: "En racha", md_racha: "Días seguidos leyendo", m_dicc: "Coleccionista", md_dicc: "Palabras en tu diccionario", m_juego: "Jugador", md_juego: "Aciertos en juegos y repasos", m_explora: "Explorador", md_explora: "Temas con algún cromo", s_buho: "Búho nocturno", sd_buho: "Leer de noche", s_madruga: "Madrugador", sd_madruga: "Leer antes de las 8", s_perfecto: "Sin fallos", sd_perfecto: "Una lectura sin ningún fallo", s_combo: "Imparable", sd_combo: "10 aciertos seguidos al repasar", s_maraton: "Maratón", sd_maraton: "3 cromos en un mismo día", stickers: "cromos"},
   en: {progress: "My progress", rlevel: "Reader level", lvl: "Level {n}", xp_next: "{n} XP to level {l}", spend: "Points to spend", streak: "Streak", streak_days: "Days in a row: {n}", streak_best: "Your best streak: {n}", streak_help: "Read, play or review something every day to keep your streak.", shields: "Shields", shield_help: "A shield saves your streak if you miss a day. You can hold 2.", buy_shield: "Buy a shield · {n} points", shield_full: "You already have the most shields.", shield_need: "You need {n} more points for a shield.", album: "Sticker album", album_help: "Finish every exercise in a reading to win its sticker.", medals: "Medals", secret: "Secret medal", secret_help: "Keep playing to discover it.", t_level: "Level up! Level {n}", t_sticker: "New sticker for your album!", t_medal: "Medal: {m}!", t_secret: "Secret medal: {m}!", t_shield: "A shield saved your streak", t_streak: "🔥 {n}-day streak", t_bought: "Shield bought!", tier1: "bronze", tier2: "silver", tier3: "gold", next_tier: "{v} / {g} for {t}", maxed: "Gold won!", won: "You won this reading's sticker!", won_how: "Finish every exercise to win this reading's sticker.", see_album: "See my album", xp_here: "XP won in this reading: {n}", r1: "Rookie reader", r2: "Page explorer", r3: "Word hunter", r4: "Master reader", r5: "Reading legend", m_lector: "Reader", md_lector: "Finish readings", m_racha: "On a roll", md_racha: "Days in a row", m_dicc: "Collector", md_dicc: "Words in your dictionary", m_juego: "Player", md_juego: "Right answers in games and reviews", m_explora: "Explorer", md_explora: "Topics with a sticker", s_buho: "Night owl", sd_buho: "Read at night", s_madruga: "Early bird", sd_madruga: "Read before 8 am", s_perfecto: "Flawless", sd_perfecto: "A reading with no mistakes", s_combo: "Unstoppable", sd_combo: "10 right answers in a row", s_maraton: "Marathon", sd_maraton: "3 stickers in one day", stickers: "stickers"}
 };
@@ -449,6 +450,7 @@ function checkReading(L) {
 }
 /* ---------- stars per reading, rereading and star achievements ---------- */
 Object.assign(GTXT.es, {stars: "estrellas", t_stars: "¡{n} de 3 estrellas!", times: "{n} veces", once: "1 vez", new_rd: "Nueva", best: "Tu récord: {n} de 3 estrellas", run_stars: "Estrellas de esta vez", go3: "Vuelve a leerla para conseguir las 3 estrellas.", got3: "¡3 estrellas! Lectura perfecta.", reread: "Volver a leer", star_ach: "Logros de estrellas", star_ach_help: "Consigue 3 estrellas en todas las lecturas de un tema, de un nivel o de todo el curso.", a_topic: "3 estrellas en {t}", a_level: "3 estrellas en todo {lv}", a_all: "3 estrellas en todo", t_ach: "¡Logro: {m}!", stars_rule: "3 estrellas: todo bien · 2: del 60 al 99 % · 1: del 30 al 59 %"});
+Object.assign(GTXT.ca, {stars: "estrelles", t_stars: "{n} de 3 estrelles!", times: "{n} vegades", once: "1 vegada", new_rd: "Nova", best: "El teu rècord: {n} de 3 estrelles", run_stars: "Estrelles d'aquesta vegada", go3: "Torna-la a llegir per aconseguir les 3 estrelles.", got3: "3 estrelles! Lectura perfecta.", reread: "Tornar a llegir", star_ach: "Assoliments d'estrelles", star_ach_help: "Aconsegueix 3 estrelles a totes les lectures d'un tema, d'un nivell o de tot el curs.", a_topic: "3 estrelles a {t}", a_level: "3 estrelles a tot {lv}", a_all: "3 estrelles a tot", t_ach: "Assoliment: {m}!", stars_rule: "3 estrelles: tot bé · 2: del 60 al 99 % · 1: del 30 al 59 %"});
 Object.assign(GTXT.en, {stars: "stars", t_stars: "{n} out of 3 stars!", times: "{n} times", once: "once", new_rd: "New", best: "Your best: {n} out of 3 stars", run_stars: "Stars this time", go3: "Read it again to win all 3 stars.", got3: "3 stars! A perfect reading.", reread: "Read again", star_ach: "Star achievements", star_ach_help: "Win 3 stars in every reading of a topic, a level or the whole course.", a_topic: "3 stars in {t}", a_level: "3 stars in all of {lv}", a_all: "3 stars in everything", t_ach: "Achievement: {m}!", stars_rule: "3 stars: all right · 2: 60 to 99% · 1: 30 to 59%"});
 const starsOf = (pts, tot) => { const p = tot ? pts / tot * 100 : 0; return p >= 100 ? 3 : p >= 60 ? 2 : p >= 30 ? 1 : 0; };
 const rdStat = id => (S.g.rd || {})[id];
@@ -951,8 +953,8 @@ function render() {
   if (S.view === "games" && window.LYAJuegos) return LYAJuegos.render($("app"));
   if (S.view === "prog") return renderProg();
   if (S.view === "pet" && window.LYAMascota) return LYAMascota.render($("app"));
-  if (S.view === "dictado" && window.LYADictados) return LYADictados.render($("app"));
   if (S.view === "songs" && window.LYACanciones) return LYACanciones.render($("app"));
+  if (S.view === "dictado" && window.LYADictados) return LYADictados.render($("app"));
   if (S.view === "read" && R) return renderRead();
   return renderHome();
 }
@@ -968,8 +970,8 @@ async function route() {
   else if (window.LYAJuegos?.isGames(h)) S.view = "games";
   else if (h === "progreso") S.view = "prog";
   else if (window.LYAMascota?.isPet(h)) S.view = "pet";
-  else if (window.LYADictados?.isDict(h)) S.view = "dictado";
   else if (window.LYACanciones?.isSongs(h)) S.view = "songs";
+  else if (window.LYADictados?.isDict(h)) S.view = "dictado";
   else if (lv) { S.view = "home"; S.level = lv[1].toUpperCase(); }
   else if (rdById(h)?.file) {
     const meta = rdById(h);
@@ -1006,8 +1008,8 @@ start();
 <script src="gramatica/gramatica.js"></script>
 <script src="mascota/mascota.js"></script>
 <script src="votos/votos.js"></script>
+<script src="canciones/canciones.js"></script>
 <script src="dictados/dictados.js"></script>
 <script src="fichas/fichas.js"></script>
-<script src="canciones/canciones.js"></script>
 </body>
 </html>

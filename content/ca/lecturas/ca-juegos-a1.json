@@ -1,0 +1,207 @@
+{
+ "id": "ca-juegos-a1",
+ "topic": "juegos",
+ "level": "A1",
+ "title": "Tetris, el joc de les peces",
+ "short": "Tetris",
+ "text": [
+  "Tetris és un videojoc molt famós. Aleksei Pajitnov és un enginyer de Rússia. El 1984, crea un joc nou al seu ordinador: Tetris.",
+  "A Tetris, unes peces cauen des de dalt. Cada peça té quatre quadrats. Hi ha set peces diferents, i cada una té un color. El jugador gira i mou les peces.",
+  "L'objectiu és completar línies. Una línia completa desapareix i el jugador guanya punts. Si les peces arriben [a dalt de tot], la partida s'acaba.",
+  "El nom Tetris té dues parts: «tetra», que vol dir «quatre» en grec, i «tennis», l'esport preferit de Pajitnov.",
+  "Avui, Tetris és a les consoles, als ordinadors i als telèfons mòbils. És [un dels] jocs més venuts de la història. És fàcil d'aprendre, però molt difícil de dominar!"
+ ],
+ "q": [
+  [
+   "D'on és Pajitnov?",
+   [
+    "De Rússia",
+    "D'Espanya",
+    "Del Japó"
+   ],
+   0
+  ],
+  [
+   "En quin any crea Tetris?",
+   [
+    "El 1964",
+    "El 1984",
+    "El 2004"
+   ],
+   1
+  ],
+  [
+   "Quants quadrats té cada peça?",
+   [
+    "Tres",
+    "Quatre",
+    "Set"
+   ],
+   1
+  ],
+  [
+   "Què passa amb una línia completa?",
+   [
+    "Desapareix",
+    "Canvia de color",
+    "Cau"
+   ],
+   0
+  ],
+  [
+   "Quan s'acaba la partida?",
+   [
+    "Quan el jugador guanya punts",
+    "Quan les peces arriben [a dalt de tot]",
+    "Quan hi ha set peces"
+   ],
+   1
+  ],
+  [
+   "Quin és l'esport preferit de Pajitnov?",
+   [
+    "El futbol",
+    "El tennis",
+    "El bàsquet"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "peça",
+   "🧩"
+  ],
+  [
+   "quadrat",
+   "🟥"
+  ],
+  [
+   "línia",
+   "➖"
+  ],
+  [
+   "punt",
+   "⭐"
+  ],
+  [
+   "ordinador",
+   "💻"
+  ],
+  [
+   "telèfon",
+   "📱"
+  ]
+ ],
+ "halves": [
+  [
+   "Cada peça té...",
+   "...quatre quadrats."
+  ],
+  [
+   "Hi ha set peces...",
+   "...diferents."
+  ],
+  [
+   "Una línia completa...",
+   "...desapareix."
+  ],
+  [
+   "«Tetra» vol dir...",
+   "...«quatre» en grec."
+  ],
+  [
+   "És fàcil d'aprendre...",
+   "...però molt difícil de dominar."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: els articles",
+  "rule": "Els articles són <b>el</b>, <b>la</b>, <b>els</b>, <b>les</b>. Davant de vocal o h, <b>el</b> i <b>la</b> fan <b>l'</b>: <b>l'objectiu</b>, <b>l'aigua</b>.",
+  "rows": [
+   "el jugador",
+   "la peça",
+   "els punts",
+   "les línies",
+   "l'ordinador",
+   "un joc, una partida"
+  ],
+  "items": [
+   [
+    "___ jugador gira les peces.",
+    [
+     "La",
+     "El",
+     "Les"
+    ],
+    1
+   ],
+   [
+    "___ peces cauen des de dalt.",
+    [
+     "Les",
+     "Els",
+     "La"
+    ],
+    0
+   ],
+   [
+    "___ objectiu és completar línies.",
+    [
+     "El",
+     "La",
+     "L'"
+    ],
+    2
+   ],
+   [
+    "El jugador guanya ___ punts.",
+    [
+     "els",
+     "les",
+     "la"
+    ],
+    0
+   ],
+   [
+    "Tetris és ___ joc molt famós.",
+    [
+     "una",
+     "un",
+     "uns"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Tetris, el juego de las piezas",
+   "sub": "Quién lo creó y cómo se juega",
+   "grammar": "Gramática: los artículos. El, la, els, les = el, la, los, las. Delante de vocal o h se escribe l' (l'objectiu = el objetivo). Un, una, uns, unes = un, una, unos, unas.",
+   "rows": [
+    "el jugador",
+    "la pieza",
+    "los puntos",
+    "las líneas",
+    "el ordenador",
+    "un juego, una partida"
+   ],
+   "hints": [
+    "el",
+    "las",
+    "el",
+    "los",
+    "un"
+   ],
+   "vocab": [
+    "pieza",
+    "cuadrado",
+    "línea",
+    "punto",
+    "ordenador",
+    "teléfono"
+   ]
+  }
+ }
+}

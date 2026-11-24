@@ -168,7 +168,7 @@ function panelEntrar(modo) {
 function cursos() {
   const cat = window.LYA && window.LYA.CAT, nm = (c, l) => ((cat && cat.languages[c] || {}).name || {})[l] || c;
   const lista = cat && cat.courses ? cat.courses.filter(c => c.ready).flatMap(c => c.know.map(k => ({learn: c.learn, know: k}))) : [{learn: "es", know: "en"}];
-  return lista.map(c => ({...c, txt: `${nm(c.learn, "es")}${c.learn !== "es" ? ` (${nm(c.learn, c.learn)})` : ""} · sé ${nm(c.know, "es").toLowerCase()}`}));
+  return lista.map(c => ({...c, txt: `${nm(c.learn, "es")} (${nm(c.learn, c.learn) !== nm(c.learn, "es") ? nm(c.learn, c.learn) : nm(c.learn, c.know)}) · sé ${nm(c.know, "es").toLowerCase()}`}));
 }
 function conCurso(s, curso) {
   const [learn, know] = String(curso || "").split(">"); if (!learn) return s || undefined;

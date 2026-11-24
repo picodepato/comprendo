@@ -1,0 +1,207 @@
+{
+ "id": "ca-juegos-a2",
+ "topic": "juegos",
+ "level": "A2",
+ "title": "Fortnite i Roblox",
+ "short": "Fortnite i Roblox",
+ "text": [
+  "Fortnite i Roblox són dos dels jocs més populars del món. Milions de nens i joves hi juguen cada dia. Tots dos són gratuïts, però són molt diferents.",
+  "Fortnite va sortir el 2017 i el va crear l'empresa Epic Games. El seu mode més famós és el [Battle Royale]: cent jugadors salten d'un autobús volador a una illa. Allà busquen armes i materials per construir. Una tempesta fa l'illa [cada vegada més] petita, i guanya l'últim jugador que queda viu.",
+  "Roblox és més antic: va néixer el 2006. No és un sol joc: és una plataforma amb milions de jocs. Els creen els mateixos usuaris amb una eina gratuïta, [Roblox Studio]. [Per exemple], BEAR (Alpha) és un joc de Roblox.",
+  "Si els jocs són gratuïts, com guanyen diners? Venen coses dins del joc. A Fortnite, els jugadors compren paons per tenir skins, [és a dir], roba i balls nous per al seu personatge. A Roblox, la moneda [es diu] Robux. Alguns creadors de Roblox guanyen molts diners reals amb els seus jocs.",
+  "Per què els agraden tant als jugadors? A molts els agrada jugar amb els seus amics. A Fortnite també hi ha concerts: el 2020, més de dotze milions de persones van veure el raper [Travis Scott] dins del joc [al mateix temps]. I als que els agrada crear, Roblox els permet inventar els seus propis mons."
+ ],
+ "q": [
+  [
+   "Quan va sortir Fortnite?",
+   [
+    "El 2006",
+    "El 2017",
+    "El 2020"
+   ],
+   1
+  ],
+  [
+   "Quants jugadors hi ha en una partida de [Battle Royale]?",
+   [
+    "Cent",
+    "Dotze",
+    "Mil"
+   ],
+   0
+  ],
+  [
+   "Què fa la tempesta?",
+   [
+    "Fa l'illa més petita",
+    "Destrueix l'autobús",
+    "Dona armes als jugadors"
+   ],
+   0
+  ],
+  [
+   "Qui crea els jocs de Roblox?",
+   [
+    "[Epic Games]",
+    "Els usuaris",
+    "[Travis Scott]"
+   ],
+   1
+  ],
+  [
+   "Com [es diu] la moneda de Roblox?",
+   [
+    "Paons",
+    "Robux",
+    "Skins"
+   ],
+   1
+  ],
+  [
+   "Què va passar a Fortnite el 2020?",
+   [
+    "Un concert de [Travis Scott]",
+    "Una tempesta real",
+    "Va néixer Roblox"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "illa",
+   "🏝️"
+  ],
+  [
+   "autobús",
+   "🚌"
+  ],
+  [
+   "tempesta",
+   "⛈️"
+  ],
+  [
+   "moneda",
+   "🪙"
+  ],
+  [
+   "ball",
+   "💃"
+  ],
+  [
+   "diners",
+   "💰"
+  ]
+ ],
+ "halves": [
+  [
+   "Fortnite i Roblox són...",
+   "...gratuïts."
+  ],
+  [
+   "Els jugadors salten...",
+   "...d'un autobús volador."
+  ],
+  [
+   "Guanya l'últim jugador...",
+   "...que queda viu."
+  ],
+  [
+   "Roblox és una plataforma...",
+   "...amb milions de jocs."
+  ],
+  [
+   "A molts jugadors els agrada...",
+   "...jugar amb els seus amics."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: li i els",
+  "rule": "Per dir <b>a qui</b> fem servir <b>li</b> (a ell, a ella) i <b>els</b> (a ells, a elles): <b>li agrada</b>, <b>els permet</b>.",
+  "rows": [
+   "a la Marta li agrada",
+   "als nens els agrada",
+   "li dono un regal",
+   "els permet crear",
+   "li compren skins",
+   "els venen roba"
+  ],
+  "items": [
+   [
+    "A la Marta ___ agrada Roblox.",
+    [
+     "li",
+     "els",
+     "em"
+    ],
+    0
+   ],
+   [
+    "Als jugadors ___ agrada jugar junts.",
+    [
+     "li",
+     "els",
+     "ens"
+    ],
+    1
+   ],
+   [
+    "Roblox ___ permet crear mons als usuaris.",
+    [
+     "li",
+     "em",
+     "els"
+    ],
+    2
+   ],
+   [
+    "A en Pau ___ compren un skin nou.",
+    [
+     "li",
+     "els",
+     "ens"
+    ],
+    0
+   ],
+   [
+    "Al meu germà ___ encanta Fortnite.",
+    [
+     "els",
+     "li",
+     "us"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Fortnite y Roblox",
+   "sub": "Dos juegos gratis con millones de jugadores",
+   "grammar": "Gramática: le y les. En catalán, li = le (a él, a ella) y els = les (a ellos, a ellas): li agrada (le gusta), els permet (les permite).",
+   "rows": [
+    "a Marta le gusta",
+    "a los niños les gusta",
+    "le doy un regalo",
+    "les permite crear",
+    "le compran skins",
+    "les venden ropa"
+   ],
+   "hints": [
+    "le",
+    "les",
+    "les",
+    "le",
+    "le"
+   ],
+   "vocab": [
+    "isla",
+    "autobús",
+    "tormenta",
+    "moneda",
+    "baile",
+    "dinero"
+   ]
+  }
+ }
+}

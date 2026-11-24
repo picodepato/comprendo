@@ -1,0 +1,207 @@
+{
+ "id": "ca-deportes-a1",
+ "topic": "deportes",
+ "level": "A1",
+ "title": "L'skate",
+ "short": "L'skate",
+ "text": [
+  "L'skate és un esport amb una taula i quatre rodes. Neix a Califòrnia, als [Estats Units], als anys cinquanta. Alguns surfistes no tenen onades al mar, i llavors decideixen «surfejar» al carrer.",
+  "Avui, milions de persones patinen en parcs, en places i al carrer. Els skaters fan trucs increïbles: salten, giren i llisquen per les baranes. El truc més famós es diu ollie: l'skater salta amb la taula sense fer servir les mans.",
+  "Aprendre a patinar no és fàcil. Tots els skaters es cauen moltes vegades. Però un bon skater sempre s'aixeca i ho torna a provar. [Per això], la protecció és molt important: abans de patinar, els skaters es posen el casc i les genolleres.",
+  "Des dels Jocs Olímpics de Tòquio, l'skate és un esport olímpic. A Tòquio hi ha campions molt joves. La japonesa Momiji Nishiya guanya la medalla d'or amb només tretze anys.",
+  "Vols provar-ho? Necessites una taula, un casc i moltes ganes. I recorda: caure és part d'aprendre!"
+ ],
+ "q": [
+  [
+   "On neix l'skate?",
+   [
+    "Al Japó",
+    "A Califòrnia",
+    "A França"
+   ],
+   1
+  ],
+  [
+   "Quantes rodes té la taula?",
+   [
+    "Dues",
+    "Tres",
+    "Quatre"
+   ],
+   2
+  ],
+  [
+   "Com es diu el truc més famós?",
+   [
+    "Ollie",
+    "Tòquio",
+    "Surf"
+   ],
+   0
+  ],
+  [
+   "Què fa un bon skater quan cau?",
+   [
+    "Se'n va a casa",
+    "S'aixeca i ho torna a provar",
+    "Plora molt"
+   ],
+   1
+  ],
+  [
+   "Què es posen els skaters abans de patinar?",
+   [
+    "Un barret",
+    "El casc i les genolleres",
+    "Una medalla"
+   ],
+   1
+  ],
+  [
+   "Quants anys té Momiji Nishiya quan guanya l'or?",
+   [
+    "Tretze",
+    "Trenta",
+    "Vuit"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "taula",
+   "🛹"
+  ],
+  [
+   "roda",
+   "🛞"
+  ],
+  [
+   "onada",
+   "🌊"
+  ],
+  [
+   "casc",
+   "⛑️"
+  ],
+  [
+   "medalla",
+   "🏅"
+  ],
+  [
+   "carrer",
+   "🛣️"
+  ]
+ ],
+ "halves": [
+  [
+   "L'skate neix...",
+   "...a Califòrnia."
+  ],
+  [
+   "L'ollie és un salt...",
+   "...sense fer servir les mans."
+  ],
+  [
+   "Tots els skaters es cauen...",
+   "...moltes vegades."
+  ],
+  [
+   "Els skaters es posen...",
+   "...el casc i les genolleres."
+  ],
+  [
+   "Caure és part...",
+   "...d'aprendre."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: els verbs pronominals",
+  "rule": "Alguns verbs porten un pronom: <b>em</b>, <b>et</b>, <b>es</b>, <b>ens</b>, <b>us</b>, <b>es</b>. Davant de vocal: <b>m'</b>, <b>t'</b>, <b>s'</b>.",
+  "rows": [
+   "jo em poso",
+   "tu et poses",
+   "ell es posa",
+   "nosaltres ens posem",
+   "ells es posen",
+   "jo m'aixeco"
+  ],
+  "items": [
+   [
+    "Jo ___ poso el casc.",
+    [
+     "em",
+     "et",
+     "es"
+    ],
+    0
+   ],
+   [
+    "L'skater ___ aixeca.",
+    [
+     "s'",
+     "m'",
+     "t'"
+    ],
+    0
+   ],
+   [
+    "Nosaltres ___ posem les genolleres.",
+    [
+     "es",
+     "ens",
+     "us"
+    ],
+    1
+   ],
+   [
+    "Tu ___ caus moltes vegades.",
+    [
+     "et",
+     "em",
+     "ens"
+    ],
+    0
+   ],
+   [
+    "Els skaters ___ posen el casc.",
+    [
+     "ens",
+     "es",
+     "et"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El skate",
+   "sub": "Un deporte sobre ruedas",
+   "grammar": "Gramática: los verbos reflexivos. Llevan un pronombre como en español: em (me), et (te), es (se), ens (nos), us (os). Delante de vocal se escribe m', t', s' (m'aixeco = me levanto).",
+   "rows": [
+    "yo me pongo",
+    "tú te pones",
+    "él se pone",
+    "nosotros nos ponemos",
+    "ellos se ponen",
+    "yo me levanto"
+   ],
+   "hints": [
+    "me",
+    "se",
+    "nos",
+    "te",
+    "se"
+   ],
+   "vocab": [
+    "tabla",
+    "rueda",
+    "ola",
+    "casco",
+    "medalla",
+    "calle"
+   ]
+  }
+ }
+}

@@ -170,7 +170,7 @@ function draw() {
 }
 
 /* ===== 1. Conjuga contra reloj ===== */
-const ACC = ["á", "é", "í", "ó", "ú", "ñ"];
+const ACC = ["á", "é", "í", "ó", "ú", "ñ"], ACC_CA = ["à", "è", "é", "í", "ï", "ò", "ó", "ú", "ü", "ç"];
 function conjHTML() {
   if (!G.started) return head() + `<div class="qc gstart"><p class="prompt">${T("d_conj")}</p><p class="mnote">${TB("conj_help", {n: G.start, m: G.bonus})}</p>
     <div class="row"><button class="btn main" data-gr="go">${T("start")}</button></div></div>`;
@@ -182,7 +182,7 @@ function conjHTML() {
     <form class="grform" data-gr="form" autocomplete="off"><label class="sr" for="grin">${esc(tl("type_here", S.learn))}</label>
     <input id="grin" class="grinput" type="text" inputmode="text" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="${esc(tl("type_here", S.learn))}" ${G.fb ? "disabled" : ""}>
     <button class="btn main" type="submit" ${G.fb ? "disabled" : ""}>${T("check")}</button></form>
-    ${G.learn === "es" ? `<div class="gracc" aria-label="tildes">${ACC.map(c => `<button type="button" class="key" data-gr="acc" data-c="${c}" tabindex="-1">${c}</button>`).join("")}</div>` : ""}
+    ${G.learn === "es" || G.learn === "ca" ? `<div class="gracc" aria-label="tildes">${(G.learn === "ca" ? ACC_CA : ACC).map(c => `<button type="button" class="key" data-gr="acc" data-c="${c}" tabindex="-1">${c}</button>`).join("")}</div>` : ""}
     <p class="fb grfb" id="grfb" aria-live="polite"></p>
     <div class="row"><button class="btn" data-gr="skip" type="button">${T("skip")}</button></div></div>`;
 }

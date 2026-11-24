@@ -1,0 +1,208 @@
+{
+ "id": "ca-dinosaurios-b1",
+ "topic": "dinosaurios",
+ "level": "B1",
+ "title": "Com treballen els paleontòlegs",
+ "short": "Els paleontòlegs",
+ "text": [
+  "Ningú no ha vist mai un dinosaure viu. Aleshores, com sabem com eren, què menjaven o com es movien? Gràcies als paleontòlegs, els científics que estudien la vida del passat a partir dels fòssils: ossos, dents, ous, petjades i fins i tot excrements convertits en pedra.",
+  "Trobar un fòssil no és fàcil. Els paleontòlegs busquen en llocs on les roques tenen l'edat adequada, com deserts o penya-segats, perquè allà el vent i la pluja deixen els ossos al descobert. [De vegades], el descobriment és pura sort: molts fòssils van ser trobats per excursionistes, pagesos o nens.",
+  "Una de les paleontòlogues més famoses de la història va ser [Mary Anning]. Quan tenia uns dotze anys, a Anglaterra, ella i el seu germà van descobrir l'esquelet d'un ictiosaure, un rèptil marí gegant. En la seva època, les dones no podien entrar a les societats científiques, però avui els seus descobriments són reconeguts a tot el món.",
+  "Quan es troba un fòssil, comença l'excavació. És una feina lenta i delicada: els ossos es netegen amb pinzells, raspalls i eines petites, centímetre a centímetre. Abans de moure'ls, cada os és fotografiat, mesurat i dibuixat en un mapa. Després, els fòssils més fràgils es cobreixen amb una capa de guix, com quan algú es trenca una cama, per protegir-los durant el viatge.",
+  "Al laboratori, la feina continua durant mesos o anys. Els ossos són estudiats amb microscopis i escàners, i comparats amb els d'animals actuals. Així, els científics poden calcular la mida, l'edat o la velocitat d'un dinosaure. Un esquelet famós és la Sue, el [tiranosaure rex] més complet que es coneix, que va ser descobert el 1990 als [Estats Units].",
+  "Cada any es descriuen desenes d'espècies noves de dinosaures. [Per això], els llibres de dinosaures canvien tan sovint. T'agradaria ser paleontòleg? Necessites paciència, curiositat i no tenir por d'embrutar-te."
+ ],
+ "q": [
+  [
+   "Què estudien els paleontòlegs?",
+   [
+    "Els volcans",
+    "La vida del passat a partir dels fòssils",
+    "Els animals d'avui"
+   ],
+   1
+  ],
+  [
+   "Per què busquen en deserts o penya-segats?",
+   [
+    "Perquè fa calor",
+    "Perquè hi ha molts animals",
+    "Perquè el vent i la pluja deixen els ossos al descobert"
+   ],
+   2
+  ],
+  [
+   "Què va descobrir [Mary Anning] amb el seu germà?",
+   [
+    "L'esquelet d'un ictiosaure",
+    "Un ou de T. rex",
+    "Una petjada de dinosaure"
+   ],
+   0
+  ],
+  [
+   "Amb què es netegen els ossos?",
+   [
+    "Amb aigua i sabó",
+    "Amb pinzells i raspalls",
+    "Amb màquines grans"
+   ],
+   1
+  ],
+  [
+   "Per a què es cobreixen alguns fòssils amb guix?",
+   [
+    "Per protegir-los durant el viatge",
+    "Per pintar-los",
+    "Per vendre'ls"
+   ],
+   0
+  ],
+  [
+   "Qui és la Sue?",
+   [
+    "Una paleontòloga",
+    "Un museu",
+    "El [tiranosaure rex] més complet que es coneix"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "fòssil",
+   "🦴"
+  ],
+  [
+   "petjada",
+   "🐾"
+  ],
+  [
+   "roca",
+   "🪨"
+  ],
+  [
+   "pinzell",
+   "🖌️"
+  ],
+  [
+   "mapa",
+   "🗺️"
+  ],
+  [
+   "lupa",
+   "🔍"
+  ]
+ ],
+ "halves": [
+  [
+   "Molts fòssils van ser trobats...",
+   "...per excursionistes o nens."
+  ],
+  [
+   "[Mary Anning] va descobrir un ictiosaure...",
+   "...quan tenia uns dotze anys."
+  ],
+  [
+   "Cada os és fotografiat...",
+   "...mesurat i dibuixat."
+  ],
+  [
+   "Els fòssils fràgils es cobreixen...",
+   "...amb una capa de guix."
+  ],
+  [
+   "La Sue va ser descoberta...",
+   "...el 1990."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: la veu passiva",
+  "rule": "La passiva es fa amb <b>ser</b> + participi. El participi concorda amb el subjecte: <b>l'os és netejat</b>, <b>les dents són netejades</b>.",
+  "rows": [
+   "l'os és fotografiat",
+   "la dent és netejada",
+   "els ossos són estudiats",
+   "van ser trobats",
+   "va ser descobert",
+   "són reconeguts"
+  ],
+  "items": [
+   [
+    "Cada os és ___ en un mapa.",
+    [
+     "dibuixat",
+     "dibuixada",
+     "dibuixats"
+    ],
+    0
+   ],
+   [
+    "Els ossos ___ estudiats amb microscopis.",
+    [
+     "és",
+     "són",
+     "era"
+    ],
+    1
+   ],
+   [
+    "Molts fòssils van ser ___ per nens.",
+    [
+     "trobat",
+     "trobada",
+     "trobats"
+    ],
+    2
+   ],
+   [
+    "L'esquelet ___ descobert el 1990.",
+    [
+     "va ser",
+     "van ser",
+     "és ser"
+    ],
+    0
+   ],
+   [
+    "Les petjades són ___ amb cura.",
+    [
+     "netejat",
+     "netejades",
+     "netejats"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Cómo trabajan los paleontólogos",
+   "sub": "De la excavación al laboratorio",
+   "grammar": "Gramática: la voz pasiva. Se forma con ser + participio, como en español. El participio cambia según el sujeto: trobat, trobada, trobats, trobades (encontrado, -a, -os, -as).",
+   "rows": [
+    "el hueso es fotografiado",
+    "el diente es limpiado",
+    "los huesos son estudiados",
+    "fueron encontrados",
+    "fue descubierto",
+    "son reconocidos"
+   ],
+   "hints": [
+    "dibujado",
+    "son",
+    "encontrados",
+    "fue",
+    "limpiadas"
+   ],
+   "vocab": [
+    "fósil",
+    "huella",
+    "roca",
+    "pincel",
+    "mapa",
+    "lupa"
+   ]
+  }
+ }
+}

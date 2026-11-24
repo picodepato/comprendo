@@ -1,0 +1,207 @@
+{
+ "id": "ca-naturaleza-a1",
+ "topic": "naturaleza",
+ "level": "A1",
+ "title": "Els volcans",
+ "short": "Volcans",
+ "text": [
+  "Un volcà és una muntanya especial. Dins de la Terra hi ha roca molt calenta i líquida. Es diu magma. [De vegades], el magma puja i surt pel volcà. És una erupció.",
+  "Quan el magma surt, es diu lava. La lava és molt calenta: té uns mil graus. És vermella i taronja i baixa molt a poc a poc per la muntanya. Quan es refreda, es converteix en roca negra.",
+  "En una erupció, el volcà també treu fum, cendra i pedres. La cendra pot volar molt lluny. [De vegades], els avions no poden volar per culpa de la cendra.",
+  "Al món hi ha molts volcans actius. A Espanya, hi ha volcans a les [Illes Canàries]. El 2021, un volcà de l'illa de [La Palma] va estar en erupció gairebé tres mesos. Molta gent va perdre la seva casa. A Catalunya també hi ha volcans, a la Garrotxa, però ara dormen.",
+  "Els volcans són perillosos, però també són útils. La terra a prop dels volcans és molt bona per a les plantes. I alguns volcans creen illes noves al mar. Hawaii i les Canàries van néixer de volcans!"
+ ],
+ "q": [
+  [
+   "Què és el magma?",
+   [
+    "Roca molt calenta i líquida",
+    "Aigua molt freda",
+    "Fum negre"
+   ],
+   0
+  ],
+  [
+   "Quants graus té la lava?",
+   [
+    "Uns cent",
+    "Uns mil",
+    "Uns deu"
+   ],
+   1
+  ],
+  [
+   "En què es converteix la lava quan es refreda?",
+   [
+    "En aigua",
+    "En fum",
+    "En roca negra"
+   ],
+   2
+  ],
+  [
+   "Per què de vegades els avions no poden volar?",
+   [
+    "Per la cendra",
+    "Per la lava",
+    "Per l'aigua"
+   ],
+   0
+  ],
+  [
+   "On hi ha volcans actius a Espanya?",
+   [
+    "A Madrid",
+    "A les [Illes Canàries]",
+    "Als Pirineus"
+   ],
+   1
+  ],
+  [
+   "Per què són útils els volcans?",
+   [
+    "Donen aigua",
+    "Donen electricitat a tot el món",
+    "La terra és bona per a les plantes"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "volcà",
+   "🌋"
+  ],
+  [
+   "foc",
+   "🔥"
+  ],
+  [
+   "muntanya",
+   "⛰️"
+  ],
+  [
+   "fum",
+   "💨"
+  ],
+  [
+   "illa",
+   "🏝️"
+  ],
+  [
+   "avió",
+   "✈️"
+  ]
+ ],
+ "halves": [
+  [
+   "El magma surt...",
+   "...pel volcà."
+  ],
+  [
+   "La lava és...",
+   "...vermella i taronja."
+  ],
+  [
+   "La cendra pot volar...",
+   "...molt lluny."
+  ],
+  [
+   "El 2021, un volcà de [La Palma]...",
+   "...va estar en erupció."
+  ],
+  [
+   "Hawaii i les Canàries...",
+   "...van néixer de volcans."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: molt, molta, molts, moltes",
+  "rule": "Davant d'un nom, <b>molt</b> canvia: <b>molt</b> fum, <b>molta</b> gent, <b>molts</b> volcans, <b>moltes</b> pedres. Davant d'un adjectiu no canvia: <b>molt</b> calenta.",
+  "rows": [
+   "molt fum",
+   "molta gent",
+   "molts volcans",
+   "moltes pedres",
+   "molt calenta",
+   "molt lluny"
+  ],
+  "items": [
+   [
+    "Al món hi ha ___ volcans.",
+    [
+     "molts",
+     "moltes",
+     "molta"
+    ],
+    0
+   ],
+   [
+    "La lava és ___ calenta.",
+    [
+     "molta",
+     "molt",
+     "moltes"
+    ],
+    1
+   ],
+   [
+    "___ gent va perdre la casa.",
+    [
+     "Molt",
+     "Molts",
+     "Molta"
+    ],
+    2
+   ],
+   [
+    "El volcà treu ___ pedres.",
+    [
+     "moltes",
+     "molts",
+     "molt"
+    ],
+    0
+   ],
+   [
+    "La cendra vola ___ lluny.",
+    [
+     "molta",
+     "molt",
+     "molts"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los volcanes",
+   "sub": "Magma, lava e islas nuevas",
+   "grammar": "Gramática: muy y mucho. En catalán, molt sirve para «muy» y para «mucho». Delante de un nombre cambia (molta gent = mucha gente); delante de un adjetivo no cambia (molt calenta = muy caliente).",
+   "rows": [
+    "mucho humo",
+    "mucha gente",
+    "muchos volcanes",
+    "muchas piedras",
+    "muy caliente",
+    "muy lejos"
+   ],
+   "hints": [
+    "muchos",
+    "muy",
+    "mucha",
+    "muchas",
+    "muy"
+   ],
+   "vocab": [
+    "volcán",
+    "fuego",
+    "montaña",
+    "humo",
+    "isla",
+    "avión"
+   ]
+  }
+ }
+}

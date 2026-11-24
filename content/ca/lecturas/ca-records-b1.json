@@ -1,0 +1,207 @@
+{
+ "id": "ca-records-b1",
+ "topic": "records",
+ "level": "B1",
+ "title": "Els rècords més absurds",
+ "short": "Els rècords més absurds",
+ "text": [
+  "Tot va començar amb una discussió. El 1951, [Sir Hugh Beaver], director de l'empresa Guinness, no sabia quina era l'[au de caça] més ràpida d'Europa, i no va trobar la resposta en cap llibre. Així va néixer una idea: un llibre que reunís els rècords del món. La primera edició es va publicar el 1955 i es va convertir en un èxit immediat.",
+  "Des d'aleshores, s'han registrat milers de rècords seriosos, però els que més [criden l'atenció] són els més absurds. [Per exemple], el 2019, un canadenc que es diu [Ted Hastings] es va posar dues-centes seixanta samarretes, l'una damunt de l'altra. Al final, gairebé no es podia moure.",
+  "Altres rècords demanen anys de paciència. La nord-americana [Lee Redmond] va deixar créixer les ungles durant gairebé trenta anys, fins que feien, en total, més de vuit metres. [Malauradament], les va perdre en un accident de cotxe el 2009.",
+  "El rei dels rècords és [Ashrita Furman], de [Nova York], un home que ha batut més de sis-cents rècords, com caminar quilòmetres amb una ampolla de llet al cap o fer tombarelles durant hores. Per a ell, cada rècord és una manera de demostrar que el cos i la ment no tenen límits.",
+  "[Tanmateix], no tot s'hi val. Avui, els rècords són revisats per jutges oficials, i alguns han estat prohibits perquè eren perillosos per a la salut, com menjar o beure quantitats enormes en poc temps. [Al capdavall], la idea és divertir-se, no fer-se mal."
+ ],
+ "q": [
+  [
+   "Com va néixer el [Llibre Guinness dels Rècords]?",
+   [
+    "Per una discussió sobre una au",
+    "Per un concurs de samarretes",
+    "Per un accident de cotxe"
+   ],
+   0
+  ],
+  [
+   "Quan es va publicar la primera edició?",
+   [
+    "El 1951",
+    "El 1955",
+    "El 2009"
+   ],
+   1
+  ],
+  [
+   "Quantes samarretes es va posar [Ted Hastings]?",
+   [
+    "Vint-i-sis",
+    "Dues-centes seixanta",
+    "Sis-centes"
+   ],
+   1
+  ],
+  [
+   "Què li va passar a [Lee Redmond] el 2009?",
+   [
+    "Va batre un altre rècord",
+    "Va perdre les ungles en un accident",
+    "Es va tallar els cabells"
+   ],
+   1
+  ],
+  [
+   "Quants rècords ha batut [Ashrita Furman]?",
+   [
+    "Més de sis-cents",
+    "Uns trenta",
+    "Només un"
+   ],
+   0
+  ],
+  [
+   "Per què han estat prohibits alguns rècords?",
+   [
+    "Perquè eren avorrits",
+    "Perquè eren perillosos per a la salut",
+    "Perquè eren massa fàcils"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "samarreta",
+   "👕"
+  ],
+  [
+   "ungla",
+   "💅"
+  ],
+  [
+   "llet",
+   "🥛"
+  ],
+  [
+   "jutge",
+   "⚖️"
+  ],
+  [
+   "au",
+   "🐦"
+  ],
+  [
+   "cotxe",
+   "🚗"
+  ]
+ ],
+ "halves": [
+  [
+   "La primera edició es va publicar...",
+   "...el 1955."
+  ],
+  [
+   "[Ted Hastings] es va posar...",
+   "...dues-centes seixanta samarretes."
+  ],
+  [
+   "[Lee Redmond] va perdre les ungles...",
+   "...en un accident de cotxe."
+  ],
+  [
+   "[Ashrita Furman] ha batut...",
+   "...més de sis-cents rècords."
+  ],
+  [
+   "Els rècords són revisats...",
+   "...per jutges oficials."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: els relatius que i on",
+  "rule": "<b>Que</b> uneix dues frases sobre una persona o una cosa: <b>un home que ha batut rècords</b>. <b>On</b> parla d'un lloc: <b>el lloc on viu</b>.",
+  "rows": [
+   "un home que ha batut rècords",
+   "el llibre que va néixer el 1955",
+   "les samarretes que es va posar",
+   "la ciutat on viu",
+   "el lloc on va passar",
+   "una idea que va canviar tot"
+  ],
+  "items": [
+   [
+    "Furman és un home ___ ha batut molts rècords.",
+    [
+     "que",
+     "on",
+     "qui"
+    ],
+    0
+   ],
+   [
+    "Nova York és la ciutat ___ viu Furman.",
+    [
+     "que",
+     "on",
+     "qual"
+    ],
+    1
+   ],
+   [
+    "Les ungles ___ va perdre feien vuit metres.",
+    [
+     "on",
+     "qui",
+     "que"
+    ],
+    2
+   ],
+   [
+    "És el lloc ___ va passar l'accident.",
+    [
+     "on",
+     "que",
+     "qui"
+    ],
+    0
+   ],
+   [
+    "El llibre ___ va publicar Guinness és famós.",
+    [
+     "on",
+     "que",
+     "quins"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los récords más absurdos",
+   "sub": "Camisetas, uñas y una botella de leche",
+   "grammar": "Gramática: los relativos que y donde. Que = que (un home que corre = un hombre que corre). On = donde (la ciutat on viu = la ciudad donde vive).",
+   "rows": [
+    "un hombre que ha batido récords",
+    "el libro que nació en 1955",
+    "las camisetas que se puso",
+    "la ciudad donde vive",
+    "el lugar donde pasó",
+    "una idea que lo cambió todo"
+   ],
+   "hints": [
+    "que",
+    "donde",
+    "que",
+    "donde",
+    "que"
+   ],
+   "vocab": [
+    "camiseta",
+    "uña",
+    "leche",
+    "juez",
+    "ave",
+    "coche"
+   ]
+  }
+ }
+}

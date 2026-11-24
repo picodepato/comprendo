@@ -1,0 +1,207 @@
+{
+ "id": "ca-peligrosos-a1",
+ "topic": "peligrosos",
+ "level": "A1",
+ "title": "Els animals més verinosos",
+ "short": "Els més verinosos",
+ "text": [
+  "Al món hi ha molts animals perillosos. Alguns són grans i forts, com el lleó. Altres són petits, però tenen verí. Un verí molt fort [pot matar] una persona.",
+  "La [cuboza australiana] és una medusa. Viu al mar, a prop d'Austràlia. És gairebé transparent, [per això] és difícil veure-la. Té tentacles molt llargs amb verí. És l'animal més verinós del mar!",
+  "El taipan és una serp d'Austràlia. Viu al desert. El seu verí és el més fort de totes les serps. Però el taipan és tímid: normalment no ataca les persones.",
+  "La [granota dard daurada] és molt petita i de color groc. Viu a la selva de Colòmbia. La seva pell té verí. El seu color brillant diu als altres animals: «Compte! No em mengis!»",
+  "El [pop d'anells blaus] és petit i bonic, però compte! Quan té por, els seus anells blaus brillen. És un senyal: «[No em toquis]»."
+ ],
+ "q": [
+  [
+   "Què és la [cuboza australiana]?",
+   [
+    "Una serp",
+    "Una medusa",
+    "Una granota"
+   ],
+   1
+  ],
+  [
+   "Per què és difícil veure la [cuboza australiana]?",
+   [
+    "Perquè és gairebé transparent",
+    "Perquè és molt petita",
+    "Perquè viu al desert"
+   ],
+   0
+  ],
+  [
+   "On viu el taipan?",
+   [
+    "A la selva",
+    "Al mar",
+    "Al desert"
+   ],
+   2
+  ],
+  [
+   "Com és el taipan amb les persones?",
+   [
+    "És tímid",
+    "És agressiu",
+    "És amic"
+   ],
+   0
+  ],
+  [
+   "De quin color és la [granota dard daurada]?",
+   [
+    "Blava",
+    "Groga",
+    "Verda"
+   ],
+   1
+  ],
+  [
+   "Què passa quan el pop té por?",
+   [
+    "Els seus anells brillen",
+    "Corre molt de pressa",
+    "S'amaga a la sorra"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "serp",
+   "🐍"
+  ],
+  [
+   "granota",
+   "🐸"
+  ],
+  [
+   "pop",
+   "🐙"
+  ],
+  [
+   "verí",
+   "☠️"
+  ],
+  [
+   "mar",
+   "🌊"
+  ],
+  [
+   "selva",
+   "🌴"
+  ]
+ ],
+ "halves": [
+  [
+   "La [cuboza australiana] té...",
+   "...tentacles molt llargs."
+  ],
+  [
+   "El taipan viu...",
+   "...al desert d'Austràlia."
+  ],
+  [
+   "La granota és petita...",
+   "...i de color groc."
+  ],
+  [
+   "El seu color brillant diu:",
+   "«No em mengis!»"
+  ],
+  [
+   "Quan el pop té por...",
+   "...els seus anells brillen."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: l'adjectiu",
+  "rule": "L'adjectiu canvia com el nom: masculí o femení, singular o plural. <b>Un pop petit</b>, <b>una granota petita</b>, <b>uns anells blaus</b>.",
+  "rows": [
+   "un animal perillós",
+   "una serp perillosa",
+   "animals perillosos",
+   "granotes petites",
+   "un anell blau",
+   "anells blaus"
+  ],
+  "items": [
+   [
+    "La granota és molt ___.",
+    [
+     "petit",
+     "petita",
+     "petits"
+    ],
+    1
+   ],
+   [
+    "El taipan és ___.",
+    [
+     "tímid",
+     "tímida",
+     "tímides"
+    ],
+    0
+   ],
+   [
+    "Té tentacles molt ___.",
+    [
+     "llarg",
+     "llargues",
+     "llargs"
+    ],
+    2
+   ],
+   [
+    "Els anells són ___.",
+    [
+     "blaus",
+     "blau",
+     "blaves"
+    ],
+    0
+   ],
+   [
+    "És una medusa ___.",
+    [
+     "perillós",
+     "perillosa",
+     "perillosos"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los animales más venenosos",
+   "sub": "Animales pequeños con un veneno muy fuerte",
+   "grammar": "Gramática: el adjetivo. Concuerda con el nombre como en español: petit, petita, petits, petites (pequeño, -a, -os, -as). Ojo: blau → blava, blaus, blaves (azul).",
+   "rows": [
+    "un animal peligroso",
+    "una serpiente peligrosa",
+    "animales peligrosos",
+    "ranas pequeñas",
+    "un anillo azul",
+    "anillos azules"
+   ],
+   "hints": [
+    "pequeña",
+    "tímido",
+    "largos",
+    "azules",
+    "peligrosa"
+   ],
+   "vocab": [
+    "serpiente",
+    "rana",
+    "pulpo",
+    "veneno",
+    "mar",
+    "selva"
+   ]
+  }
+ }
+}

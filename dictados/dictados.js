@@ -9,6 +9,20 @@
 const L = () => window.LYA, st = () => L().get();
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const STR = {
+  ca: {tab: "Dictats", title: "Dictats", sub: "Escolta una frase de les lectures i escriu-la. La web et corregeix paraula per paraula.",
+    level: "Nivell", pick: "Tria una lectura. Cada dictat té 5 frases.", go: "Començar", again: "Una altra vegada", best: "Millor: {p} %",
+    of: "Frase {n} de {t}", listen: "Escoltar", slow: "Més lent", part: "Per parts", partn: "Part {n} de {t}",
+    write: "Escriu aquí el que sents", check: "Corregir", next: "Frase següent", finish: "Veure el resultat", empty: "Primer escriu la frase.",
+    hints: "Noms i números d'aquesta frase", right: "La frase correcta", yours: "El que has escrit",
+    k_ok: "bé", k_tilde: "accent", k_may: "majúscula", k_mal: "mal escrita", k_falta: "falta", k_sobra: "sobra", k_punt: "puntuació",
+    legend: "Verd: bé · Taronja: accent o majúscula · Vermell: mal escrita o falta · Ratllat: sobra",
+    perfect: "Perfecta! Sense cap errada.", score: "Has encertat el {p} %",
+    end: "Dictat acabat!", total: "Resultat: {p} %", tip_tilde: "Repassa els accents: {w}", tip_mal: "Paraules per practicar: {w}",
+    back: "Tots els dictats", more: "Unes altres 5 frases", read: "Llegir la lectura",
+    noaudio: "El dictat necessita so", noaudio_p: "Has dit que ara no pots escoltar àudio. Per fer un dictat has de sentir les frases.",
+    noaudio_b: "Ja puc escoltar: activar el so", nosynth: "Aquest navegador no pot llegir en veu alta. Prova amb Chrome, Edge o Safari.",
+    novoice: "El teu aparell no té una veu en aquesta llengua. La frase pot sonar estranya.", keys: "Lletres especials",
+    hw: "Dictat que t'ha enviat el teu profe", none: "Encara no hi ha lectures en aquest nivell.", done_n: "Fet {n} vegades"},
   es: {tab: "Dictados", title: "Dictados", sub: "Escucha una frase de las lecturas y escríbela. La web te corrige palabra a palabra.",
     level: "Nivel", pick: "Elige una lectura. Cada dictado tiene 5 frases.", go: "Empezar", again: "Otra vez", best: "Mejor: {p} %",
     of: "Frase {n} de {t}", listen: "Escuchar", slow: "Más lento", part: "Por partes", partn: "Parte {n} de {t}",
@@ -53,7 +67,7 @@ function split(p) {
   const parts = p.match(/[^.!?…]+(?:[.!?…]+[»"”)\]]*|$)/g) || [p], out = [];
   for (let s of parts) {
     s = s.trim(); if (!s) continue;
-    if (out.length && (/^[a-zñáéíóú0-9,;:]/.test(s) || /\d[.]$/.test(out[out.length - 1]) && /^\d/.test(s))) out[out.length - 1] += (/^\d/.test(s) && /\d[.]$/.test(out[out.length - 1]) ? "" : " ") + s;
+    if (out.length && (/^[a-zñáéíóúàèòïüç0-9,;:]/.test(s) || /\d[.]$/.test(out[out.length - 1]) && /^\d/.test(s))) out[out.length - 1] += (/^\d/.test(s) && /\d[.]$/.test(out[out.length - 1]) ? "" : " ") + s;
     else out.push(s);
   }
   return out;
@@ -187,8 +201,8 @@ function hub(app) {
       ${p ? `<small>${stars(p.best)} ${T("best", {p: p.bp})}</small>` : ""}</span></a>`; }).join("") : `<p>${T("none")}</p>`}</div></section>`;
 }
 function keysHTML() {
-  const {S} = st(); if (S.learn !== "es") return "";
-  return `<div class="dc-keys" role="group" aria-label="${esc(s1("keys", S.learn))}">${"á é í ó ú ñ ü ¿ ¡".split(" ").map(c => `<button type="button" class="btn" data-dc="key" data-c="${c}">${c}</button>`).join("")}</div>`;
+  const {S} = st(); if (S.learn !== "es" && S.learn !== "ca") return "";
+  return `<div class="dc-keys" role="group" aria-label="${esc(s1("keys", S.learn))}">${(S.learn === "ca" ? "à è é í ï ò ó ú ü ç ·" : "á é í ó ú ñ ü ¿ ¡").split(" ").map(c => `<button type="button" class="btn" data-dc="key" data-c="${c}">${c}</button>`).join("")}</div>`;
 }
 function opsHTML(ops) {
   return ops.map(o => {

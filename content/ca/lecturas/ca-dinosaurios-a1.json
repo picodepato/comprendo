@@ -1,0 +1,207 @@
+{
+ "id": "ca-dinosaurios-a1",
+ "topic": "dinosaurios",
+ "level": "A1",
+ "title": "Els dinosaures més grans",
+ "short": "Els més grans",
+ "text": [
+  "Els dinosaures van viure a la Terra durant molts milions d'anys. Hi havia dinosaures petits, com una gallina, i dinosaures enormes, més grans que una casa. Quins eren els més grans?",
+  "L'argentinosaure era gegant. Feia uns trenta-cinc metres: com tres autobusos! Pesava més que deu elefants. Tenia el coll i la cua molt llargs. Menjava plantes. Vivia a l'Argentina, a l'Amèrica del Sud.",
+  "El [tiranosaure rex] és el dinosaure més famós. Feia uns dotze metres i pesava unes vuit tones. Tenia unes seixanta dents molt grans, com plàtans! Els seus braços eren molt curts, però les seves cames eren molt fortes. Menjava carn.",
+  "L'espinosaure era més llarg que el [tiranosaure rex]: feia uns quinze metres. Tenia una vela gran a l'esquena. Vivia a prop dels rius d'Àfrica i menjava peixos.",
+  "Avui no hi ha dinosaures vius. Però als museus pots veure els seus ossos. Són enormes!"
+ ],
+ "q": [
+  [
+   "Quant feia l'argentinosaure?",
+   [
+    "Uns cinc metres",
+    "Uns trenta-cinc metres",
+    "Uns cent metres"
+   ],
+   1
+  ],
+  [
+   "Què menjava l'argentinosaure?",
+   [
+    "Plantes",
+    "Carn",
+    "Peixos"
+   ],
+   0
+  ],
+  [
+   "Com eren els braços del [tiranosaure rex]?",
+   [
+    "Molt llargs",
+    "Molt forts",
+    "Molt curts"
+   ],
+   2
+  ],
+  [
+   "Quantes dents tenia el [tiranosaure rex]?",
+   [
+    "Unes sis",
+    "Unes seixanta",
+    "Unes sis-centes"
+   ],
+   1
+  ],
+  [
+   "Què tenia l'espinosaure a l'esquena?",
+   [
+    "Una vela",
+    "Ales",
+    "Una banya"
+   ],
+   0
+  ],
+  [
+   "On pots veure ossos de dinosaure avui?",
+   [
+    "Al parc",
+    "Als museus",
+    "Al mar"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "dinosaure",
+   "🦖"
+  ],
+  [
+   "os",
+   "🦴"
+  ],
+  [
+   "autobús",
+   "🚌"
+  ],
+  [
+   "gallina",
+   "🐔"
+  ],
+  [
+   "museu",
+   "🏛️"
+  ],
+  [
+   "coll",
+   "🦒"
+  ]
+ ],
+ "halves": [
+  [
+   "L'argentinosaure feia...",
+   "...com tres autobusos."
+  ],
+  [
+   "Pesava més...",
+   "...que deu elefants."
+  ],
+  [
+   "Les dents del T. rex eren...",
+   "...com plàtans."
+  ],
+  [
+   "L'espinosaure menjava...",
+   "...peixos."
+  ],
+  [
+   "Als museus pots veure...",
+   "...els seus ossos."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: els nombres",
+  "rule": "Els nombres <b>un</b> i <b>dos</b> tenen femení: <b>una</b>, <b>dues</b>. Entre les desenes i les unitats posem un guionet: <b>trenta-cinc</b>.",
+  "rows": [
+   "un os, una dent",
+   "dos ossos, dues dents",
+   "dotze",
+   "quinze",
+   "trenta-cinc",
+   "seixanta"
+  ],
+  "items": [
+   [
+    "Hi ha ___ cames molt fortes.",
+    [
+     "dos",
+     "dues",
+     "dos-es"
+    ],
+    1
+   ],
+   [
+    "El T. rex feia ___ metres.",
+    [
+     "dotze",
+     "dos",
+     "dues"
+    ],
+    0
+   ],
+   [
+    "L'argentinosaure feia ___ metres.",
+    [
+     "trentacinc",
+     "trenta i cinc",
+     "trenta-cinc"
+    ],
+    2
+   ],
+   [
+    "Tenia ___ dents.",
+    [
+     "seixanta",
+     "sis",
+     "setanta"
+    ],
+    0
+   ],
+   [
+    "L'espinosaure feia ___ metres.",
+    [
+     "catorze",
+     "quinze",
+     "cinc"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los dinosaurios más grandes",
+   "sub": "Argentinosaurio, T. rex y espinosaurio",
+   "grammar": "Gramática: los números. Un y dos tienen femenino: una, dues (dos). Las decenas y las unidades se unen con guion: trenta-cinc (treinta y cinco).",
+   "rows": [
+    "un hueso, un diente",
+    "dos huesos, dos dientes",
+    "doce",
+    "quince",
+    "treinta y cinco",
+    "sesenta"
+   ],
+   "hints": [
+    "dos (femenino)",
+    "doce",
+    "treinta y cinco",
+    "sesenta",
+    "quince"
+   ],
+   "vocab": [
+    "dinosaurio",
+    "hueso",
+    "autobús",
+    "gallina",
+    "museo",
+    "cuello"
+   ]
+  }
+ }
+}

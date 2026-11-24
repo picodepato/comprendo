@@ -1,0 +1,208 @@
+{
+ "id": "ca-bear-b1",
+ "topic": "bear",
+ "level": "B1",
+ "title": "La meva partida amb amics",
+ "short": "La meva partida",
+ "text": [
+  "[Em dic] Leo i tinc dotze anys. El meu joc preferit de Roblox és BEAR (Alpha). Els dissabtes [jugo|jugo (verb)] amb els meus amics Lucas i Marta.",
+  "Avui comença una partida nova. El joc tria l'Ós [a l'atzar]... i és la Marta! En Lucas i jo som supervivents. [Hem de] sobreviure fins al final del temps.",
+  "Primer, corro per un passadís llarg i fosc. Sento passos [darrere meu]. Quina por! Entro en una habitació i [m'amago] [sota] un llit. En Lucas [s'amaga] [dins d'un armari|dins de], [al costat de] la porta.",
+  "L'Ós entra a l'habitació. El meu cor batega molt de pressa. La Marta mira [per tot arreu], però no ens veu. [Al cap d'uns segons|al cap de], surt de l'habitació. Uf!",
+  "[Al final], el temps s'acaba i en Lucas i jo guanyem. Rebem quidz, els diners del joc. Amb els quidz [pots comprar] skins noves per al teu personatge.",
+  "El meu consell: no t'amaguis sempre al mateix lloc, escolta bé els passos i ajuda els teus amics. I si ets l'Ós, busca als armaris!"
+ ],
+ "q": [
+  [
+   "Quants anys té en Leo?",
+   [
+    "Deu",
+    "Quinze",
+    "Dotze"
+   ],
+   2
+  ],
+  [
+   "Quan juga en Leo amb els seus amics?",
+   [
+    "Els dissabtes",
+    "Els dilluns",
+    "Cada dia"
+   ],
+   0
+  ],
+  [
+   "Què fa en Leo primer?",
+   [
+    "Compra skins",
+    "Corre per un passadís",
+    "Obre un armari"
+   ],
+   1
+  ],
+  [
+   "On [s'amaga] en Leo?",
+   [
+    "[Dins d'un armari|dins de]",
+    "[Sota] un llit",
+    "[Darrere de] la porta"
+   ],
+   1
+  ],
+  [
+   "Què són els quidz?",
+   [
+    "Un tipus d'ós",
+    "Els diners del joc",
+    "Un mapa"
+   ],
+   1
+  ],
+  [
+   "Quin és un consell d'en Leo?",
+   [
+    "Amagar-se sempre al mateix lloc",
+    "Escoltar bé els passos",
+    "[Jugar sol]"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "llit",
+   "🛏️"
+  ],
+  [
+   "armari",
+   "🗄️"
+  ],
+  [
+   "porta",
+   "🚪"
+  ],
+  [
+   "cor",
+   "❤️"
+  ],
+  [
+   "diners",
+   "💰"
+  ],
+  [
+   "passos",
+   "👣"
+  ]
+ ],
+ "halves": [
+  [
+   "La Marta és...",
+   "...l'Ós en aquesta partida."
+  ],
+  [
+   "En Lucas [s'amaga]...",
+   "...[dins d'un armari|dins de]."
+  ],
+  [
+   "En Leo sent passos...",
+   "...[darrere seu]."
+  ],
+  [
+   "Els quidz serveixen...",
+   "...per comprar skins."
+  ],
+  [
+   "El cor d'en Leo...",
+   "...batega molt de pressa."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: on és?",
+  "rule": "Per dir on és una cosa fem servir <b>sota</b>, <b>damunt de</b>, <b>dins de</b>, <b>darrere de</b>, <b>davant de</b> i <b>al costat de</b>.",
+  "rows": [
+   "sota el llit",
+   "damunt de la taula",
+   "dins de l'armari",
+   "darrere de la porta",
+   "davant de la casa",
+   "al costat de la finestra"
+  ],
+  "items": [
+   [
+    "Leo s'amaga ___ el llit.",
+    [
+     "dins",
+     "sota",
+     "davant"
+    ],
+    1
+   ],
+   [
+    "Lucas és ___ de l'armari.",
+    [
+     "dins",
+     "sobre",
+     "sota"
+    ],
+    0
+   ],
+   [
+    "Sento passos ___ meu.",
+    [
+     "davant",
+     "damunt",
+     "darrere"
+    ],
+    2
+   ],
+   [
+    "L'armari és ___ de la porta.",
+    [
+     "al costat",
+     "sota",
+     "dins"
+    ],
+    0
+   ],
+   [
+    "Mira endavant: la porta és just ___ teu.",
+    [
+     "darrere",
+     "davant",
+     "sota"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Mi partida con amigos",
+   "sub": "Una partida contada por Leo",
+   "grammar": "Gramática: ¿dónde está? Para decir dónde está algo usamos estas expresiones. Ojo: de + el = del (darrere del llit).",
+   "rows": [
+    "debajo de la cama",
+    "encima de la mesa",
+    "dentro del armario",
+    "detrás de la puerta",
+    "delante de la casa",
+    "al lado de la ventana"
+   ],
+   "hints": [
+    "debajo de",
+    "dentro",
+    "detrás de mí",
+    "al lado",
+    "delante de ti"
+   ],
+   "vocab": [
+    "cama",
+    "armario",
+    "puerta",
+    "corazón",
+    "dinero",
+    "pasos"
+   ]
+  }
+ }
+}

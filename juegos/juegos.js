@@ -5,7 +5,7 @@
 (() => {
 const GAMES = ["cartas", "reloj", "ahorcado"];
 const ICON = {cartas: "🃏", reloj: "⏱️", ahorcado: "🔤"};
-const STOP = new Set("el la los las un una unos unas de del al a en y o que es son con por para su sus se lo le les me te mi tu muy más pero como hay está están ser fue era también este esta estos estas ese esa eso cada otro otra no sí ya hoy".split(" "));
+const STOP = new Set("el la los las un una unos unas de del al a en y o que es son con por para su sus se lo le les me te mi tu muy más pero como hay está están ser fue era también este esta estos estas ese esa eso cada otro otra no sí ya hoy els les uns unes amb per és són hi ha seu seva seus seves molt més però com està estan era eren també aquest aquesta aquests aquestes això cada altre altra altres sí ja avui".split(" "));
 let TX = null;
 const txP = fetch("content/textos-juegos.json").then(r => r.json()).then(j => (TX = j)).catch(() => (TX = {}));
 const L = () => window.LYA, st = () => L().get();
@@ -38,9 +38,9 @@ async function readingWords(id) {
   (R.vocab || []).forEach(([w, emo], i) => { add(w, w, (tr.vocab || [])[i]); const e = out.get(w.toLowerCase()); if (e && emo) e.emo = emo; });
   for (const d of S.dict) if (d.r === id && d.l === S.learn) add(d.w, d.k, d.tr?.[S.know] || d.t);
   const txt = (R.text || []).join(" ");
-  const re = /\[([^\]|]+)(?:\|([^\]]+))?\]|([A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)/g; let m;
+  const re = /\[([^\]|]+)(?:\|([^\]]+))?\]|([A-Za-zÁÉÍÓÚÜÑáéíóúüñÀÈÒÇÏàèòçï·]+)/g; let m;
   const cand = [];
-  while ((m = re.exec(txt))) { if (m[1]) cand.push([m[1], m[2] || m[1]]); else if (m[3].length >= 4 && !STOP.has(m[3].toLowerCase()) && !/^[A-ZÁÉÍÓÚÑ]/.test(m[3])) cand.push([m[3], m[3]]); }
+  while ((m = re.exec(txt))) { if (m[1]) cand.push([m[1], m[2] || m[1]]); else if (m[3].length >= 4 && !STOP.has(m[3].toLowerCase()) && !/^[A-ZÁÉÍÓÚÑÀÈÒÇ]/.test(m[3])) cand.push([m[3], m[3]]); }
   for (const [w, k] of shuf(cand)) add(w.toLowerCase() === w ? w : w, k);
   return [...out.values()];
 }
@@ -134,7 +134,7 @@ function setup() {
     G.left = 60; G.hits = 0; G.n = 0; G.started = false; G.cur = null; G.pick = null;
     G.order = shuf(P);
   } else {
-    const ok = P.filter(e => /^[a-záéíóúüñ]{3,12}$/i.test(e.w) && e.d);
+    const ok = P.filter(e => /^[a-záéíóúüñàèòçï]{3,12}$/i.test(e.w) && e.d);
     G.words = shuf(ok.slice(0, 12)).slice(0, 5); G.i = 0; G.solved = 0; G.newRound = true;
     nextWord();
   }

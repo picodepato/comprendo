@@ -1,0 +1,207 @@
+{
+ "id": "ca-egipto-a1",
+ "topic": "egipto",
+ "level": "A1",
+ "title": "Les piràmides d'Egipte",
+ "short": "Les piràmides",
+ "text": [
+  "Les piràmides d'Egipte són molt famoses. Les més grans són a Gizeh, a prop del Caire i del riu Nil. Són tombes: a dins descansen els faraons, els reis de l'antic Egipte.",
+  "La piràmide més gran és la Gran Piràmide. És la tomba del faraó Kheops i té uns quatre mil cinc-cents anys. Avui la seva altura és d'uns cent trenta-nou metres. Durant gairebé quatre mil anys, és l'edifici més alt del món.",
+  "La Gran Piràmide té més de dos milions de blocs de pedra. Cada bloc pesa més que un cotxe! Els treballadors mouen els blocs amb cordes, rampes i trineus de fusta. És una feina molt dura.",
+  "Al costat de les piràmides hi ha l'Esfinx. Té cos de lleó i cap de persona. És enorme: fa uns setanta-tres metres de llarg.",
+  "Les piràmides són una de les set meravelles del món antic. Avui són l'única meravella que encara existeix. Milions de turistes les visiten cada any!"
+ ],
+ "q": [
+  [
+   "On són les piràmides més grans?",
+   [
+    "A Gizeh",
+    "A Roma",
+    "A Madrid"
+   ],
+   0
+  ],
+  [
+   "Què són les piràmides?",
+   [
+    "Cases",
+    "Tombes",
+    "Temples per jugar"
+   ],
+   1
+  ],
+  [
+   "De qui és la Gran Piràmide?",
+   [
+    "Del faraó Kheops",
+    "De l'Esfinx",
+    "D'un turista"
+   ],
+   0
+  ],
+  [
+   "Quants blocs té la Gran Piràmide?",
+   [
+    "Uns cent",
+    "Més de dos milions",
+    "Set"
+   ],
+   1
+  ],
+  [
+   "Com és el cos de l'Esfinx?",
+   [
+    "De persona",
+    "D'ocell",
+    "De lleó"
+   ],
+   2
+  ],
+  [
+   "Quantes meravelles del món antic encara existeixen?",
+   [
+    "Una",
+    "Tres",
+    "Set"
+   ],
+   0
+  ]
+ ],
+ "vocab": [
+  [
+   "piràmide",
+   "🔺"
+  ],
+  [
+   "riu",
+   "🏞️"
+  ],
+  [
+   "pedra",
+   "🪨"
+  ],
+  [
+   "lleó",
+   "🦁"
+  ],
+  [
+   "corda",
+   "🪢"
+  ],
+  [
+   "turista",
+   "📸"
+  ]
+ ],
+ "halves": [
+  [
+   "Les piràmides són...",
+   "...tombes."
+  ],
+  [
+   "La Gran Piràmide és la tomba...",
+   "...del faraó Kheops."
+  ],
+  [
+   "Cada bloc pesa...",
+   "...més que un cotxe."
+  ],
+  [
+   "L'Esfinx té cos...",
+   "...de lleó."
+  ],
+  [
+   "Milions de turistes...",
+   "...les visiten cada any."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: els possessius",
+  "rule": "Els possessius porten article: <b>el meu</b> cos, <b>la meva</b> casa, <b>el seu</b> cap, <b>la seva</b> tomba.",
+  "rows": [
+   "el meu llibre",
+   "la meva piràmide",
+   "el teu cap",
+   "la teva tomba",
+   "el seu cos",
+   "els seus blocs"
+  ],
+  "items": [
+   [
+    "Aquesta és ___ tomba: la del faraó.",
+    [
+     "la seva",
+     "el seu",
+     "els seus"
+    ],
+    0
+   ],
+   [
+    "L'Esfinx té ___ cos de lleó.",
+    [
+     "la seva",
+     "el seu",
+     "les seves"
+    ],
+    1
+   ],
+   [
+    "Jo visito Egipte amb ___ família.",
+    [
+     "el meu",
+     "la meva",
+     "els meus"
+    ],
+    1
+   ],
+   [
+    "Tu portes ___ càmera?",
+    [
+     "la teva",
+     "el teu",
+     "els teus"
+    ],
+    0
+   ],
+   [
+    "Els treballadors mouen ___ blocs.",
+    [
+     "el seu",
+     "la seva",
+     "els seus"
+    ],
+    2
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Las pirámides de Egipto",
+   "sub": "Tumbas gigantes para los faraones",
+   "grammar": "Gramática: los posesivos. En catalán llevan artículo delante: el meu (mi), la meva (mi), el teu (tu), el seu (su), la seva (su), els seus (sus).",
+   "rows": [
+    "mi libro",
+    "mi pirámide",
+    "tu cabeza",
+    "tu tumba",
+    "su cuerpo",
+    "sus bloques"
+   ],
+   "hints": [
+    "su",
+    "su",
+    "mi",
+    "tu",
+    "sus"
+   ],
+   "vocab": [
+    "pirámide",
+    "río",
+    "piedra",
+    "león",
+    "cuerda",
+    "turista"
+   ]
+  }
+ }
+}

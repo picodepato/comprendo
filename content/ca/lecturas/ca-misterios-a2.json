@@ -1,0 +1,207 @@
+{
+ "id": "ca-misterios-a2",
+ "topic": "misterios",
+ "level": "A2",
+ "title": "El Triangle de les Bermudes",
+ "short": "El Triangle de les Bermudes",
+ "text": [
+  "A l'oceà Atlàntic hi ha una zona amb forma de triangle. Les seves tres puntes són Miami, als [Estats Units], les illes Bermudes i [Puerto Rico]. Molta gent l'anomena el [Triangle de les Bermudes] i diu que allà hi desapareixen vaixells i avions sense explicació.",
+  "La història més famosa va passar el 1945. Cinc avions de l'exèrcit dels [Estats Units] feien un vol d'entrenament. El cel era gris i el mar estava molt agitat. [De sobte], el líder del grup va dir per ràdio que les brúixoles no funcionaven i que no sabia on era. No van tornar mai. A més, un avió que va sortir a buscar-los també va desaparèixer.",
+  "Durant molts anys, la gent inventava explicacions increïbles: hi havia extraterrestres que segrestaven els vaixells, una ciutat perduda sota el mar o forces magnètiques misterioses. Es van escriure llibres i es van fer pel·lícules sobre el tema, i la llegenda es va fer cada vegada més famosa.",
+  "Però els experts tenen explicacions més senzilles. En aquella zona hi ha tempestes fortes i sobtades, i un corrent d'aigua molt ràpid, el [corrent del Golf], que pot portar les restes lluny. A més, és una de les zones amb més trànsit de vaixells i avions del món.",
+  "Segons els guardacostes dels [Estats Units] i les companyies d'assegurances, al Triangle no hi ha més accidents que en altres zones de l'oceà amb el mateix trànsit. Aleshores, és un misteri [de debò]? Probablement no... però és una història molt bona."
+ ],
+ "q": [
+  [
+   "Quines són les tres puntes del Triangle?",
+   [
+    "Miami, les Bermudes i [Puerto Rico]",
+    "Madrid, Londres i París",
+    "Cuba, Mèxic i Xile"
+   ],
+   0
+  ],
+  [
+   "Què va passar el 1945?",
+   [
+    "Es va enfonsar un vaixell enorme",
+    "Van desaparèixer cinc avions",
+    "Es va descobrir una illa"
+   ],
+   1
+  ],
+  [
+   "Què va dir el líder del grup per ràdio?",
+   [
+    "Que veia extraterrestres",
+    "Que feia bon temps",
+    "Que les brúixoles no funcionaven"
+   ],
+   2
+  ],
+  [
+   "Què hi ha en aquella zona, segons els experts?",
+   [
+    "Tempestes fortes i un corrent ràpid",
+    "Una ciutat perduda",
+    "Forces magnètiques"
+   ],
+   0
+  ],
+  [
+   "Hi ha més accidents al Triangle que en altres zones?",
+   [
+    "Sí, molts més",
+    "No, segons els guardacostes",
+    "Ningú no ho ha estudiat"
+   ],
+   1
+  ],
+  [
+   "Segons el text, és un misteri [de debò]?",
+   [
+    "Sí, segur",
+    "Sí, pels extraterrestres",
+    "Probablement no"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "vaixell",
+   "🚢"
+  ],
+  [
+   "avió",
+   "✈️"
+  ],
+  [
+   "ràdio",
+   "📻"
+  ],
+  [
+   "brúixola",
+   "🧭"
+  ],
+  [
+   "tempesta",
+   "⛈️"
+  ],
+  [
+   "triangle",
+   "🔺"
+  ]
+ ],
+ "halves": [
+  [
+   "Cinc avions feien...",
+   "...un vol d'entrenament."
+  ],
+  [
+   "El cel era gris...",
+   "...i el mar estava agitat."
+  ],
+  [
+   "La gent inventava...",
+   "...explicacions increïbles."
+  ],
+  [
+   "El [corrent del Golf] pot portar...",
+   "...les restes lluny."
+  ],
+  [
+   "És una zona amb molt de trànsit...",
+   "...de vaixells i avions."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: descriure el passat",
+  "rule": "Per descriure com era una situació fem servir l'imperfet: <b>era</b>, <b>estava</b>, <b>hi havia</b>, <b>feia</b>.",
+  "rows": [
+   "el cel era gris",
+   "el mar estava agitat",
+   "hi havia tempestes",
+   "feia mal temps",
+   "els avions feien un vol",
+   "no sabia on era"
+  ],
+  "items": [
+   [
+    "Aquell dia el cel ___ gris.",
+    [
+     "era",
+     "és",
+     "serà"
+    ],
+    0
+   ],
+   [
+    "El mar ___ molt agitat.",
+    [
+     "està",
+     "estava",
+     "estarà"
+    ],
+    1
+   ],
+   [
+    "A la zona ___ tempestes fortes.",
+    [
+     "hi ha",
+     "hi haurà",
+     "hi havia"
+    ],
+    2
+   ],
+   [
+    "Els cinc avions ___ un vol d'entrenament.",
+    [
+     "feien",
+     "fan",
+     "faran"
+    ],
+    0
+   ],
+   [
+    "El líder no ___ on era.",
+    [
+     "sap",
+     "sabia",
+     "sabrà"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El Triángulo de las Bermudas",
+   "sub": "Leyenda y ciencia",
+   "grammar": "Gramática: describir el pasado. Con el imperfecto describimos la situación: era (era), estava (estaba), hi havia (había), feia (hacía).",
+   "rows": [
+    "el cielo estaba gris",
+    "el mar estaba agitado",
+    "había tormentas",
+    "hacía mal tiempo",
+    "los aviones hacían un vuelo",
+    "no sabía dónde estaba"
+   ],
+   "hints": [
+    "estaba",
+    "estaba",
+    "había",
+    "hacían",
+    "sabía"
+   ],
+   "vocab": [
+    "barco",
+    "avión",
+    "radio",
+    "brújula",
+    "tormenta",
+    "triángulo"
+   ]
+  }
+ }
+}

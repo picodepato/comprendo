@@ -1,0 +1,207 @@
+{
+ "id": "ca-speedruns-a1",
+ "topic": "speedruns",
+ "level": "A1",
+ "title": "Què és un speedrun?",
+ "short": "Què és un speedrun",
+ "text": [
+  "Un speedrun és una manera especial de jugar a un videojoc. L'objectiu no és només acabar el joc: l'has d'acabar [tan de pressa com puguis]. Les persones que fan speedruns es diuen speedrunners.",
+  "Un speedrunner fa servir un cronòmetre. El cronòmetre comença amb el joc i s'atura al final. A més, el jugador ha de gravar un vídeo de la partida. Sense vídeo, no hi ha rècord.",
+  "Hi ha moltes categories. En la categoria «Any%», pots acabar el joc de qualsevol manera. En la categoria «100%», has d'aconseguir tots els objectes del joc. [Per això], la categoria «100%» és molt més llarga.",
+  "Els rècords són en una pàgina web molt famosa. Allà hi ha rècords de milers de jocs, [per exemple], de Super Mario o de Minecraft. Molts jugadors entrenen cada dia durant mesos per guanyar uns quants segons.",
+  "També hi ha maratons de speedruns per ajudar altres persones. La més famosa és [Games Done Quick], als [Estats Units]. La gent mira les partides per internet i dona diners a organitzacions que ajuden persones malaltes."
+ ],
+ "q": [
+  [
+   "Quin és l'objectiu d'un speedrun?",
+   [
+    "Acabar el joc molt de pressa",
+    "Jugar molt a poc a poc",
+    "Perdre moltes vegades"
+   ],
+   0
+  ],
+  [
+   "Què fa servir un speedrunner per mesurar el temps?",
+   [
+    "Un mapa",
+    "Un cronòmetre",
+    "Una peça"
+   ],
+   1
+  ],
+  [
+   "Què ha de gravar el jugador?",
+   [
+    "Una cançó",
+    "Un vídeo de la partida",
+    "Una foto"
+   ],
+   1
+  ],
+  [
+   "En la categoria «100%», què has de fer?",
+   [
+    "Aconseguir tots els objectes",
+    "Acabar en un minut",
+    "Jugar amb amics"
+   ],
+   0
+  ],
+  [
+   "Quant entrenen molts jugadors?",
+   [
+    "Un dia",
+    "Cada dia durant mesos",
+    "Mai"
+   ],
+   1
+  ],
+  [
+   "Per a què són els diners de [Games Done Quick]?",
+   [
+    "Per als jugadors",
+    "Per comprar jocs",
+    "Per ajudar persones malaltes"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "cronòmetre",
+   "⏱️"
+  ],
+  [
+   "vídeo",
+   "📹"
+  ],
+  [
+   "rècord",
+   "🏆"
+  ],
+  [
+   "objecte",
+   "🎁"
+  ],
+  [
+   "diners",
+   "💰"
+  ],
+  [
+   "mes",
+   "📅"
+  ]
+ ],
+ "halves": [
+  [
+   "Un speedrun és...",
+   "...una manera especial de jugar."
+  ],
+  [
+   "El cronòmetre comença...",
+   "...amb el joc."
+  ],
+  [
+   "Sense vídeo...",
+   "...no hi ha rècord."
+  ],
+  [
+   "La categoria «100%» és...",
+   "...molt més llarga."
+  ],
+  [
+   "Molts jugadors entrenen...",
+   "...cada dia."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: haver de + infinitiu",
+  "rule": "Per dir que una cosa és obligatòria fem servir <b>haver de</b> + infinitiu: <b>he de</b>, <b>has de</b>, <b>ha de</b>, <b>hem de</b>, <b>heu de</b>, <b>han de</b>.",
+  "rows": [
+   "jo he de jugar",
+   "tu has de gravar",
+   "ell ha d'acabar",
+   "nosaltres hem d'entrenar",
+   "vosaltres heu de córrer",
+   "ells han de guanyar"
+  ],
+  "items": [
+   [
+    "El jugador ___ gravar un vídeo.",
+    [
+     "ha de",
+     "has de",
+     "han de"
+    ],
+    0
+   ],
+   [
+    "Tu ___ aconseguir tots els objectes.",
+    [
+     "ha de",
+     "has de",
+     "heu de"
+    ],
+    1
+   ],
+   [
+    "Nosaltres ___ jugar cada dia.",
+    [
+     "han de",
+     "he de",
+     "hem de"
+    ],
+    2
+   ],
+   [
+    "Jo ___ córrer molt de pressa.",
+    [
+     "he de",
+     "ha de",
+     "hem de"
+    ],
+    0
+   ],
+   [
+    "Els speedrunners ___ fer servir un cronòmetre.",
+    [
+     "ha de",
+     "han de",
+     "hem de"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Qué es un speedrun?",
+   "sub": "Terminar un juego lo más rápido posible",
+   "grammar": "Gramática: tener que + infinitivo. En catalán se dice haver de + infinitivo: has de gravar (tienes que grabar), han d'entrenar (tienen que entrenar).",
+   "rows": [
+    "yo tengo que jugar",
+    "tú tienes que grabar",
+    "él tiene que terminar",
+    "nosotros tenemos que entrenar",
+    "vosotros tenéis que correr",
+    "ellos tienen que ganar"
+   ],
+   "hints": [
+    "tiene que",
+    "tienes que",
+    "tenemos que",
+    "tengo que",
+    "tienen que"
+   ],
+   "vocab": [
+    "cronómetro",
+    "vídeo",
+    "récord",
+    "objeto",
+    "dinero",
+    "mes"
+   ]
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "id": "ca-minecraft-a2",
+ "topic": "minecraft",
+ "level": "A2",
+ "title": "La història de Minecraft",
+ "short": "La seva història",
+ "text": [
+  "Minecraft va néixer a Suècia. El seu creador, [Markus Persson], és un programador suec. A internet, tothom el coneix com a «Notch». El maig del 2009, Notch va publicar la primera versió del joc. La va fer ell sol, en pocs dies.",
+  "Al principi, el joc era molt simple: només hi havia blocs per construir. Però molts jugadors el van descobrir i van començar a compartir vídeos a YouTube. [A poc a poc], Minecraft es va fer famós a tot el món.",
+  "Notch va crear una empresa, Mojang, amb altres desenvolupadors. El 18 de novembre del 2011 va sortir la versió oficial, la 1.0, en una gran festa per a fans a [Las Vegas].",
+  "El 2014, l'empresa Microsoft va comprar Mojang per dos mil cinc-cents milions de dòlars. Notch va deixar el projecte, però l'equip va continuar amb moltes actualitzacions: van arribar oceans nous, coves enormes, abelles, axolots i molt més.",
+  "Avui, Minecraft és el videojoc més venut de la història: n'han venut més de tres-cents milions de còpies. Molts professors el fan servir a l'escola per ensenyar. I el 2025 va arribar als cinemes amb la seva pròpia pel·lícula."
+ ],
+ "q": [
+  [
+   "De quin país és Minecraft?",
+   [
+    "Dels [Estats Units]",
+    "De Suècia",
+    "D'Espanya"
+   ],
+   1
+  ],
+  [
+   "Qui és Notch?",
+   [
+    "El creador de Minecraft",
+    "Un monstre del joc",
+    "Una empresa"
+   ],
+   0
+  ],
+  [
+   "Quan va publicar Notch la primera versió?",
+   [
+    "El 2009",
+    "El 2011",
+    "El 2014"
+   ],
+   0
+  ],
+  [
+   "Com es va fer famós el joc?",
+   [
+    "Amb anuncis a la tele",
+    "Amb vídeos a YouTube",
+    "Amb una pel·lícula"
+   ],
+   1
+  ],
+  [
+   "Quina empresa va comprar Mojang?",
+   [
+    "Sony",
+    "Nintendo",
+    "Microsoft"
+   ],
+   2
+  ],
+  [
+   "Quantes còpies s'han venut de Minecraft?",
+   [
+    "Més de tres milions",
+    "Més de trenta milions",
+    "Més de tres-cents milions"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "ordinador",
+   "💻"
+  ],
+  [
+   "vídeo",
+   "📹"
+  ],
+  [
+   "cinema",
+   "🎬"
+  ],
+  [
+   "festa",
+   "🎉"
+  ],
+  [
+   "abella",
+   "🐝"
+  ],
+  [
+   "bloc",
+   "🧱"
+  ]
+ ],
+ "halves": [
+  [
+   "Notch va fer la primera versió...",
+   "...en pocs dies."
+  ],
+  [
+   "Els jugadors van compartir...",
+   "...vídeos a YouTube."
+  ],
+  [
+   "La versió 1.0 va sortir...",
+   "...el 2011."
+  ],
+  [
+   "Microsoft va comprar Mojang...",
+   "...el 2014."
+  ],
+  [
+   "El 2025, Minecraft va arribar...",
+   "...als cinemes."
+  ]
+ ],
+ "grammar": {
+  "title": "Gramàtica: el passat perifràstic",
+  "rule": "Per explicar què va passar fem servir <b>anar</b> + infinitiu: <b>vaig, vas, va, vam, vau, van</b> + publicar.",
+  "rows": [
+   "jo vaig jugar",
+   "tu vas jugar",
+   "ell va jugar",
+   "nosaltres vam jugar",
+   "vosaltres vau jugar",
+   "ells van jugar"
+  ],
+  "items": [
+   [
+    "El 2009, Notch ___ publicar el joc.",
+    [
+     "va",
+     "van",
+     "vam"
+    ],
+    0
+   ],
+   [
+    "Els jugadors ___ compartir vídeos.",
+    [
+     "va",
+     "van",
+     "vas"
+    ],
+    1
+   ],
+   [
+    "Ahir jo ___ construir un castell.",
+    [
+     "va",
+     "vas",
+     "vaig"
+    ],
+    2
+   ],
+   [
+    "Nosaltres ___ veure la pel·lícula el 2025.",
+    [
+     "vam",
+     "vau",
+     "van"
+    ],
+    0
+   ],
+   [
+    "Tu ___ jugar amb el teu germà?",
+    [
+     "vaig",
+     "vas",
+     "van"
+    ],
+    1
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La historia de Minecraft",
+   "sub": "De un programador al juego más vendido",
+   "grammar": "Gramática: el pretérito indefinido. En catalán se forma con vaig, vas, va, vam, vau, van + infinitivo: va publicar (publicó), van comprar (compraron). ¡No es futuro!",
+   "rows": [
+    "yo jugué",
+    "tú jugaste",
+    "él jugó",
+    "nosotros jugamos",
+    "vosotros jugasteis",
+    "ellos jugaron"
+   ],
+   "hints": [
+    "publicó",
+    "compartieron",
+    "construí",
+    "vimos",
+    "jugaste"
+   ],
+   "vocab": [
+    "ordenador",
+    "vídeo",
+    "cine",
+    "fiesta",
+    "abeja",
+    "bloque"
+   ]
+  }
+ }
+}
