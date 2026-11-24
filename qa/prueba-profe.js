@@ -25,10 +25,10 @@ const n = Date.now() % 100000, P1 = "profe" + n, P2 = "otraprofe" + n, AL1 = "lu
   await P.click("#ctaadm"); await P.waitForSelector("#admc"); const tabs = await P.textContent(".ctatabs");
   ok(!tabs.includes("Propuestas") && !tabs.includes("Votos"), "profe: no ve propuestas ni votos");
   await tab(P, "clases"); await P.fill("#admgc [name=nombre]", "Inglés " + n); await P.fill("#admgc [name=codigo]", COD); await P.click("#admgc [type=submit]");
-  await P.waitForFunction(c => document.getElementById("admm").textContent.includes(c), COD); ok(true, "profe crea clase con su código");
+  await P.waitForFunction(c => ((document.getElementById("admm") || {}).textContent || "").includes(c), COD); ok(true, "profe crea clase con su código");
   /* código repetido */
   await P.fill("#admgc [name=nombre]", "Otra"); await P.fill("#admgc [name=codigo]", COD); await P.click("#admgc [type=submit]");
-  await P.waitForFunction(() => /ya lo usa/.test(document.getElementById("admm").textContent)); ok(true, "código de clase repetido rechazado");
+  await P.waitForFunction(() => /ya lo usa/.test(((document.getElementById("admm") || {}).textContent || ""))); ok(true, "código de clase repetido rechazado");
   /* alumno 1: inglés y con código al crear la cuenta */
   const A = await nueva(); await crear(A, AL1, {codigo: COD.toUpperCase(), curso: "en>es"}); await hecho(A);
   ok(await A.evaluate(() => LYA.S.learn === "en" && LYA.S.know === "es"), "alumno eligió aprender inglés al crear la cuenta");
@@ -44,7 +44,7 @@ const n = Date.now() % 100000, P1 = "profe" + n, P2 = "otraprofe" + n, AL1 = "lu
   await B.keyboard.press("Escape"); await B.evaluate(() => { LYA.S.g.rd = {"bear-a1": {n: 1, best: 3, bp: 100, last: 3}}; LYA.S.a["bear-a1:fin"] = 1; LYA.save(); }); await B.waitForTimeout(2600);
   /* alumno 3 de otra profe */
   const Q = await nueva(1280); await crear(Q, P2, {rol: "profe"}); await hecho(Q);
-  await Q.click("#cta"); await Q.click("#ctaadm"); await Q.waitForSelector("#admc"); await tab(Q, "clases"); await Q.fill("#admgc [name=nombre]", "Otra " + n); await Q.fill("#admgc [name=codigo]", "otra-" + n); await Q.click("#admgc [type=submit]"); await Q.waitForFunction(() => /Clase creada/.test(document.getElementById("admm").textContent));
+  await Q.click("#cta"); await Q.click("#ctaadm"); await Q.waitForSelector("#admc"); await tab(Q, "clases"); await Q.fill("#admgc [name=nombre]", "Otra " + n); await Q.fill("#admgc [name=codigo]", "otra-" + n); await Q.click("#admgc [type=submit]"); await Q.waitForFunction(() => /Clase creada/.test(((document.getElementById("admm") || {}).textContent || "")));
   const C3 = await nueva(); await crear(C3, AL3, {codigo: "otra-" + n}); await hecho(C3);
   /* profe 1 solo ve a los suyos */
   await tab(P, "usuarios"); await P.waitForSelector(".ctatb");

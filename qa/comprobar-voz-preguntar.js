@@ -1,0 +1,43 @@
+// Comprueba la pregunta «¿puedes escuchar / hablar ahora?» de voz.js
+const puppeteer = require('puppeteer-core');
+const BASE = process.argv[2] || 'http://localhost:8765/index.html';
+const wait = ms => new Promise(r => setTimeout(r, ms));
+(async () => {
+  const b = await puppeteer.launch({executablePath: '/usr/bin/google-chrome', args: ['--no-sandbox']});
+  const p = await b.newPage(); const errs = [];
+  await p.setViewport({width: 420, height: 800});
+  p.on('pageerror', e => errs.push('pageerror: ' + e.message));
+  await p.evaluateOnNewDocument(() => {
+    window.__said = [];
+    Object.defineProperty(document, 'permissionsPolicy', {value: {allowsFeature: f => f !== 'microphone'}});
+    const ss = {speaking: false, pending: false, getVoices: () => [], addEventListener() {}, speak(u) { window.__said.push(u.text); }, cancel() {}};
+    Object.defineProperty(window, 'speechSynthesis', {value: ss});
+    window.SpeechSynthesisUtterance = function (t) { this.text = t; };
+  });
+  const vis = s => p.evaluate(s => { const e = document.querySelector(s); return !!e && getComputedStyle(e).display !== 'none' && e.offsetParent !== null; }, s);
+  const r = {};
+  await p.goto(BASE + '#bear-a1', {waitUntil: 'networkidle0'}); await wait(500);
+  r.cardShown = await vis('.vz-ask');
+  r.fileCapture = await p.evaluate(() => { const i = document.querySelector('.vz-file input'); return i ? [i.getAttribute('capture'), i.accept] : null; });
+  await p.click('.vz-ask [data-k="oir"][data-v="0"]'); await p.click('.vz-ask [data-vz="askgo"]'); await wait(200);
+  r.afterNo = {card: await vis('.vz-ask'), chip: await p.$eval('.vz-chip', e => e.textContent), bar: await vis('.vz-bar'), pron: await vis('.vz-pron')};
+  await p.evaluate(() => { window.LYA.S.say = true; }); const n0 = await p.evaluate(() => __said.length);
+  await p.evaluate(() => { document.querySelectorAll('.reading .w')[3].scrollIntoView({block: 'center'}); }); await wait(200);
+  const w = await p.$$('.reading .w'); await w[3].click(); await wait(200);
+  r.muted = (await p.evaluate(() => __said.length)) === n0;
+  r.wordBtn = await vis('#tip .vz-word');
+  await p.reload({waitUntil: 'networkidle0'}); await wait(500);
+  r.reloadNoCard = !(await vis('.vz-ask'));
+  r.reloadBarHidden = !(await vis('.vz-bar'));
+  await p.click('[data-vz="askopen"]'); await wait(100);
+  r.reopened = await vis('.vz-ask');
+  await p.click('.vz-ask [data-k="oir"][data-v="1"]'); await p.click('.vz-ask [data-k="hablar"][data-v="0"]'); await p.click('.vz-ask [data-vz="askgo"]'); await wait(200);
+  r.soundOnTalkOff = {bar: await vis('.vz-bar'), pron: await vis('.vz-pron')};
+  await p.click('.vz-play'); await wait(200);
+  r.speaksAgain = (await p.evaluate(() => __said.length)) > 0;
+  const p2 = await b.newPage(); await p2.goto(BASE + '#bear-a2', {waitUntil: 'networkidle0'}); await wait(500);
+  r.newVisitAsksAgain = await p2.evaluate(() => !!document.querySelector('.vz-ask'));
+  await p.screenshot({path: '/tmp/qa/preguntar.png'});
+  console.log(JSON.stringify(r, null, 1)); console.log('ERRORES:', errs.join('\n') || 'ninguno');
+  await b.close();
+})();

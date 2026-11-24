@@ -26,7 +26,7 @@ const sufijo = Date.now() % 100000, A1 = "ana" + sufijo, B1 = "beto" + sufijo, C
   await D.click("#cta"); await D.click("#ctaadm"); await D.waitForSelector("#admc");
   /* clases */
   await tab(D, "clases"); await D.fill("#admgc [name=nombre]", CLASE); await D.click("#admgc button"); await D.waitForSelector(`text=${CLASE}`);
-  await D.selectOption(`[data-asig="${A1}"]`, { label: CLASE }); await D.waitForFunction(() => /✓/.test(document.getElementById("admm").textContent));
+  await D.selectOption(`[data-asig="${A1}"]`, { label: CLASE }); await D.waitForFunction(() => /✓/.test(((document.getElementById("admm") || {}).textContent || "")));
   await tab(D, "clases"); const nAl = await D.evaluate(c => { const tr = [...document.querySelectorAll("#admc tr")].find(t => t.children[0] && t.children[0].textContent === c); return tr && tr.children[3].textContent; }, CLASE); ok(nAl === "1", "clase creada (con código) con 1 alumno y resumen");
   /* deberes para la clase */
   await tab(D, "deberes"); await D.selectOption("#admdc [name=lectura]", "bear-a1"); await D.selectOption("#admdc [name=grupo]", { label: CLASE });
@@ -34,19 +34,19 @@ const sufijo = Date.now() % 100000, A1 = "ana" + sufijo, B1 = "beto" + sufijo, C
   ok(/1<\/b> de 1|1 de 1/.test(await D.innerHTML("#admc")), "deber asignado y se ve quién lo ha hecho (1 de 1)");
   /* mensaje a la clase */
   await tab(D, "mensajes"); await D.selectOption("#admmc [name=para]", { label: "Clase " + CLASE }); await D.fill("#admmc [name=texto]", "¡Muy bien, clase!");
-  await D.click("#admmc [type=submit]"); await D.waitForFunction(() => /Enviado a 1/.test(document.getElementById("admm").textContent)); ok(true, "mensaje enviado a la clase (1 alumno)");
+  await D.click("#admmc [type=submit]"); await D.waitForFunction(() => /Enviado a 1/.test(((document.getElementById("admm") || {}).textContent || ""))); ok(true, "mensaje enviado a la clase (1 alumno)");
   /* fallos */
   await tab(D, "fallos"); await D.waitForFunction(() => !/Calculando/.test(document.getElementById("admpq").textContent));
   const fal = await D.textContent("#admc"); ok(fal.includes("oso") && /de 2/.test(fal) && fal.includes("Un juego de terror"), "fallos: palabra «oso» y pregunta fallada con su respuesta buena");
   /* aprobar propuesta → votación */
   await tab(D, "propuestas"); await D.click("[data-aprobar] >> nth=0"); await D.fill("[data-form] [name=emoji] >> nth=0", "🌋"); await D.fill("[data-form] [name=nombre_es] >> nth=0", "Volcanes " + sufijo);
-  await D.click("[data-form] [type=submit] >> nth=0"); await D.waitForFunction(() => /votación/.test(document.getElementById("admm").textContent)); ok(true, "propuesta aprobada");
+  await D.click("[data-form] [type=submit] >> nth=0"); await D.waitForFunction(() => /votación/.test(((document.getElementById("admm") || {}).textContent || ""))); ok(true, "propuesta aprobada");
   /* Excel */
   await tab(D, "usuarios"); const [dl] = await Promise.all([D.waitForEvent("download"), D.click("#admxl")]);
   const csv = require("fs").readFileSync(await dl.path(), "utf8"); ok(csv.includes(A1) && csv.includes("Estrellas") && csv.includes(CLASE), "Excel (CSV) con usuarios, clase y estrellas");
   /* cambiar contraseña de B y borrar A */
   await D.click(`[data-usuario="${B1}"]`); await D.waitForSelector("#admuc"); await D.fill("#admuc [name=nueva]", "nueva456"); await D.click("#admuc button");
-  await D.waitForFunction(() => /Contraseña cambiada/.test(document.getElementById("admm").textContent)); ok(true, "contraseña cambiada por el admin");
+  await D.waitForFunction(() => /Contraseña cambiada/.test(((document.getElementById("admm") || {}).textContent || ""))); ok(true, "contraseña cambiada por el admin");
   await D.screenshot({ path: "/tmp/admin2-usuario.png" });
   /* el alumno A ve deberes y mensaje */
   await A.reload(); await listo(A); await A.waitForSelector("#avok", { timeout: 8000 }).catch(() => {});

@@ -11,7 +11,7 @@
 .ctas{color:var(--mute);font-size:14px;line-height:1.45}
 .ctab form{display:grid;gap:12px;margin:12px 0}
 .ctab label{display:grid;gap:4px;font-weight:600;font-size:15px}
-.ctab input:not([type=checkbox]):not([type=file]),.ctab textarea{font:inherit;font-weight:400;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%;box-sizing:border-box}
+.ctab input:not([type=checkbox]):not([type=radio]):not([type=file]),.ctab textarea{font:inherit;font-weight:400;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%;box-sizing:border-box}
 .ctab textarea{font-size:12px;resize:vertical}
 .ctab input:focus-visible,.ctab textarea:focus-visible{outline:3px solid var(--beam);outline-offset:1px}
 .ctab .ctak{display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:14px}
@@ -76,3 +76,4 @@
 .ctacl p{margin:0 0 8px}
 .ctaclf{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .ctaclf input{flex:1 1 160px}
+.ctab .ctak input{width:auto;flex:none;margin:3px 0 0}
