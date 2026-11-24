@@ -239,6 +239,8 @@ if (tip && !tip.querySelector(".vz-word")) {
   bt.setAttribute("aria-label", "Escuchar la palabra · Listen to the word"); bt.title = bt.getAttribute("aria-label");
   tip.prepend(bt);
 }
+/* for dictados.js: is sound on? turn it on */
+window.LYAVoz = {oir: () => PREF.oir, setOir: v => { PREF.oir = !!v; ASK.oir = PREF.oir; ls.set("lyaVozPref", PREF); applyPref(); }};
 addEventListener("pagehide", halt);
 applyPref();
 }

@@ -17,6 +17,11 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Sin cuenta, la web funciona como invitado y guarda en el navegador.
 - «Copia de mi progreso» (botón de la cuenta o 💾): exportar e importar el progreso como texto.
 
+## Dictados
+- Pestaña «✍️ Dictados» (`dictados/`): la web lee una frase de una lectura (voz del navegador) y el alumno la escribe. Corrección palabra a palabra sin IA: bien, tilde, mayúscula, mal escrita (letras marcadas), falta, sobra y puntuación. Botones Escuchar, Más lento y Por partes. 5 frases por dictado, XP por frase y premio al terminar.
+- Progreso en `S.g.dc[lectura]` (se guarda con la cuenta). Si el alumno dijo que no puede escuchar, explica que hace falta sonido.
+- El profe puede mandar un dictado como deber (`dictado-<lectura>`) desde el panel.
+
 ## Profes y clases
 - Al crear la cuenta se elige el curso (qué idioma aprender), si eres **alumno** o **profe**, y (alumno) el código de clase opcional.
 - El profe crea sus clases con un código en «Mi cuenta → Panel del profe → Mis clases». Ve solo a sus alumnos: resumen, detalle por lectura, deberes con fecha, fallos, mensajes, Excel y cambio de contraseña.

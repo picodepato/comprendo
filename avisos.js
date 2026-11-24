@@ -3,8 +3,8 @@
 (() => {
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const TX = {
-  es: {deb: "📚 Tus deberes", hasta: "Hasta el {d}", hoy: "¡Hoy es el último día!", tarde: "Se acabó el plazo", hecha: "Hecha", ir: "Leer", msg: "📬 Mensaje de tu profe", msgs: "📬 Mensajes de tu profe", ok: "¡Entendido!"},
-  en: {deb: "📚 Your homework", hasta: "Due {d}", hoy: "Today is the last day!", tarde: "Past the due date", hecha: "Done", ir: "Read", msg: "📬 A message from your teacher", msgs: "📬 Messages from your teacher", ok: "Got it!"},
+  es: {deb: "📚 Tus deberes", hasta: "Hasta el {d}", hoy: "¡Hoy es el último día!", tarde: "Se acabó el plazo", hecha: "Hecha", ir: "Leer", msg: "📬 Mensaje de tu profe", msgs: "📬 Mensajes de tu profe", ok: "¡Entendido!", dict: "Dictado", escribir: "Escribir"},
+  en: {deb: "📚 Your homework", hasta: "Due {d}", hoy: "Today is the last day!", tarde: "Past the due date", hecha: "Done", ir: "Read", msg: "📬 A message from your teacher", msgs: "📬 Messages from your teacher", ok: "Got it!", dict: "Dictation", escribir: "Write"},
 };
 let A = null;
 const S = () => (window.LYA && window.LYA.S) || {learn: "es", know: "en"};
@@ -16,11 +16,12 @@ const dia = d => new Date(d + "T12:00:00").toLocaleDateString(S().learn === "en"
 function html() {
   if (!A || !A.deberes.length) return "";
   const s = S(), rd = (s.g && s.g.rd) || {}, h = hoy();
-  const items = [...A.deberes].sort((a, b) => (!!rd[a.lectura]) - (!!rd[b.lectura]) || a.limite.localeCompare(b.limite)).map(d => {
-    const r = window.LYA.rdById ? window.LYA.rdById(d.lectura) : null, hecha = rd[d.lectura];
-    const titulo = r ? (r.title[s.learn] || r.title.es) + ` · ${r.level}` : d.lectura;
+  const hechoDe = d => /^dictado-/.test(d.lectura || "") ? ((s.g && s.g.dc) || {})[d.lectura.slice(8)] : rd[d.lectura];  /* dictados: S.g.dc */
+  const items = [...A.deberes].sort((a, b) => (!!hechoDe(a)) - (!!hechoDe(b)) || a.limite.localeCompare(b.limite)).map(d => {
+    const dic = /^dictado-/.test(d.lectura || ""), r = window.LYA.rdById ? window.LYA.rdById(dic ? d.lectura.slice(8) : d.lectura) : null, hecha = hechoDe(d);
+    const titulo = r ? (dic ? "✍️ " + t("dict") + ": " : "") + (r.title[s.learn] || r.title.es) + ` · ${r.level}` : d.lectura;
     const cuando = hecha ? `✅ ${T("hecha")} ${"★".repeat(hecha.best)}${"☆".repeat(3 - hecha.best)}` : d.limite < h ? T("tarde") : d.limite === h ? `<b>${T("hoy")}</b>` : T("hasta", {d: dia(d.limite)});
-    return `<li class="${hecha ? "ok" : ""}"><div><b>${esc(titulo)}</b><small>${cuando}${d.nota ? " · " + esc(d.nota) : ""}</small></div>${r && r.file ? `<a class="btn${hecha ? "" : " main"}" href="#${esc(d.lectura)}">${T("ir")}</a>` : ""}</li>`;
+    return `<li class="${hecha ? "ok" : ""}"><div><b>${esc(titulo)}</b><small>${cuando}${d.nota ? " · " + esc(d.nota) : ""}</small></div>${r && r.file ? `<a class="btn${hecha ? "" : " main"}" href="#${esc(d.lectura)}">${T(dic ? "escribir" : "ir")}</a>` : ""}</li>`;
   }).join("");
   return `<section class="deb" id="deberes"><h2>${T("deb")}</h2><ul>${items}</ul></section>`;
 }
@@ -36,5 +37,5 @@ async function cargar() {
   try { if (S().view === "home") window.LYA.renderPage(); } catch (e) {}
   mensajes();
 }
-window.LYAAvisos = {html, cargar};
+window.LYAAvisos = {html, cargar, deberes: () => (A && A.deberes) || []};
 })();
