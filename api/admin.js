@@ -88,6 +88,7 @@ async function accion(b, yo) {
       await cerrarSesiones(u);
       await redis("DEL", "usuario:" + u, "progreso:" + u, "mensajes:" + u, "leidos:" + u);
       await redis("SREM", "usuarios", u);
+      { const ds = (await redis("SMEMBERS", "dibujos:" + u)) || []; if (ds.length) await redis("DEL", ...ds.map(id => `dibujo:${u}:${id}`)); await redis("DEL", "dibujos:" + u); }  /* dibujos de sus flashcards */
       if (G.miembros[u]) { delete G.miembros[u]; await guardarJSON("admin:grupos", G); }
       return [200, {}];
     }

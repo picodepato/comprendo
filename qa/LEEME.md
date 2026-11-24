@@ -44,3 +44,6 @@ Ambos con `NODE_PATH=/opt/node22/lib/node_modules`.
 Nota: `prueba-mascota.js` a veces falla en la línea 35 («Node is detached») por tiempos; al repetirlo pasa.
 - `prueba-admin2.js <url>`: clases, deberes (el alumno los ve), mensajes (salen al entrar), fallos, aprobar propuesta → votación, Excel, cambiar contraseña (cierra sesión), borrar usuario.
 - `prueba-profe.js <url>`: idioma y rol al crear la cuenta, profe crea clase con código, alumnos se unen (al registrarse y desde Mi cuenta), cada profe solo ve a los suyos, deberes del profe, el admin lo ve todo.
+
+## Flashcards (fichas/)
+`prueba-fichas.js <url> [carpeta]` (playwright; con servidor-prueba.mjs también prueba la cuenta): crear tarjetas con dibujo, emoji, enlace, Wikimedia y Pixabay (simulados), álbum (2 páginas de 4, flechas, teclado, deslizar), carta en grande, tocar palabra del diccionario, repaso espaciado, «¿Qué es?», «Dibújalo» (antigua o nueva), XP y dibujos en la nube.
