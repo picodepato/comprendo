@@ -2,10 +2,15 @@
    GET ?ids=a,b,c  → {dibujos: {id: "data:image/..."}}
    POST {id, img}  → guarda un dibujo (máx. 40 KB, máx. 2000 por cuenta)
    DELETE ?id=a    → lo borra
-   Claves: dibujo:<usuario>:<id> y el conjunto dibujos:<usuario>. */
+   Claves: dibujo:<usuario>:<id> y el conjunto dibujos:<usuario>.
+   También sirve el juego «Garabatos» (dibuja y adivina en grupo): GET ?sala=… y POST {accion:"g-…"}. Está aquí para
+   no gastar otra función de Vercel; el código está en api/_garabatos.js. */
 import { redis, usuarioDeSesion, responder, cuerpo, seguro } from "./_db.js";
+import { garabatosGET, garabatosPOST } from "./_garabatos.js";
 const ID = /^[a-f0-9]{8,24}$/, MAX = 2000;
 export default (req, res) => seguro(res, async () => {
+  if (req.method === "GET" && (req.query || {}).sala) return garabatosGET(req, res);
+  if (req.method === "POST") { const b = cuerpo(req); if (/^g-/.test(String(b.accion || ""))) return garabatosPOST(req, res, b); }
   const u = await usuarioDeSesion(req);
   if (!u) return responder(res, 401, { error: "sin_sesion" });
   const q = req.query || {};
