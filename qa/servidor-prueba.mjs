@@ -28,6 +28,7 @@ http.createServer((q, r) => { let b = ""; q.on("data", c => b += c); q.on("end",
     else if (c === "HMGET") res = a.slice(2).map(f => h.has(f) ? h.get(f) : null);
     else if (c === "HGETALL") res = [...h].flat();
     else if (c === "HDEL") res = a.slice(2).filter(f => h.delete(f)).length;
+    else if (c === "HEXISTS") res = h.has(a[2]) ? 1 : 0;
     else if (c === "HLEN") res = h.size;
     else if (c === "HINCRBY") { const n = (+h.get(a[2]) || 0) + +a[3]; h.set(a[2], String(n)); kv.set(k, h); res = n; }
     else if (c === "HEXISTS") res = h.has(a[2]) ? 1 : 0;
