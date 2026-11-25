@@ -63,3 +63,13 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - En directo: `api/concursos` abre una partida con código de 6 cifras (máx. 30 jugadores, caduca a las 4 h). Los móviles consultan el estado cada 1-2 s y Vercel comparte esa respuesta 1 s entre todos, así que una partida de 30 alumnos gasta del orden de 2.000 operaciones de Upstash. El tiempo de cada respuesta lo mide el servidor.
 - `api/votos` ahora vive en `api/_votos.js` y se sirve desde `api/propuestas?votos=1` (y una redirección en `vercel.json`), para no pasar del máximo de funciones de Vercel.
 - Pruebas: `qa/prueba-concursos-api.mjs` (API) y `qa/prueba-concursos.cjs` (navegador: crear, editar, jugar solo y partida con 3 móviles).
+
+## Duelos en directo (duelo/)
+- Pestaña «⚔️ Duelo» (`#duelo`, sala en `#duelo-<código>`). Hace falta cuenta.
+- Crear: idioma del curso (español, inglés, catalán), nivel y lectura; tiempo por pregunta y para leer, y si se puede mirar el texto. Sale un **código de 6 cifras**; los demás lo escriben para unirse. **Máximo 30 jugadores.**
+- Fases: sala de espera → lectura (con cuenta atrás; el anfitrión puede saltarla) → preguntas de la lectura con botones de colores → solución con reparto de respuestas y clasificación → podio. Acertar rápido da más puntos (500-1000). Si contestan todos, se pasa sola a la solución.
+- **Profe**: puede no jugar (su pantalla es la «pantalla grande» para el proyector, con la tabla pregunta a pregunta al final), elige los XP (para todos y para los 3 primeros, máx. 200) y un logro opcional (icono + nombre) para el ganador, los 3 primeros o todos. **Alumno**: solo tiempos y texto; premio fijo (10 XP por jugar y 30/20/15 para el podio). El anfitrión puede sacar a alguien de la sala.
+- Progreso en `S.g.du = {n, w, tr: [logros]}`; los logros se ven en la pestaña Duelo.
+- `api/duelo.js`: toda la mesa en **una clave** de Upstash (hash `duelo:<código>`, caduca a las 3 h). El estado (`GET ?c=`) es igual para todos y Vercel lo guarda 1 s en su CDN (`Vercel-CDN-Cache-Control`), así que con 5 o con 30 jugadores Upstash recibe como mucho ~1 lectura por segundo. Contestar = 2 operaciones. Un duelo de toda la clase gasta del orden de 1.000 operaciones (el plan gratis da 500.000 al mes).
+- Las soluciones las saca el servidor del archivo de la lectura (`includeFiles` en `vercel.json`); no se ven hasta que se cierra cada pregunta.
+- Pruebas: `node qa/prueba-duelo-api.mjs http://localhost:8790` y `node qa/prueba-duelo.mjs http://localhost:8790 [capturas]` (con `qa/servidor-prueba.mjs`, que ya entiende los rewrites y los comandos H* de Redis).
