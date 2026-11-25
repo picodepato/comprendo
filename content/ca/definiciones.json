@@ -31,6 +31,14 @@
 "abella",
 "Insecte groc i negre que fa mel i pot picar."
 ],
+"abstractes": [
+"abstracte",
+"D'idees."
+],
+"absurd": [
+"absurd",
+"Sense sentit."
+],
 "absurds": [
 "absurd",
 "Que no tenen sentit; molt estranys i divertits."
@@ -47,6 +55,50 @@
 "acabar",
 "Que ja ha arribat al final."
 ],
+"acabaven": [
+"acabar",
+"Acabaven de: ho havien fet fa poc."
+],
+"acaben": [
+"acabar",
+"Acaben fent: al final fan."
+],
+"acadèmica": [
+"acadèmic",
+"De la universitat."
+],
+"accelerat": [
+"accelerar",
+"Més ràpid."
+],
+"accepta": [
+"acceptar",
+"Diu que sí."
+],
+"acceptada": [
+"acceptar",
+"Que es creu."
+],
+"acceptar": [
+"acceptar",
+"Dir que sí."
+],
+"acceptaran": [
+"acceptar",
+"Diran que sí."
+],
+"acceptat": [
+"acceptar",
+"Admès."
+],
+"acceptava": [
+"acceptar",
+"Deia que sí."
+],
+"accepten": [
+"acceptar",
+"Diuen que sí."
+],
 "accident": [
 "accident",
 "Una cosa dolenta que passa sense voler, com un xoc."
@@ -54,6 +106,18 @@
 "accidents": [
 "accident",
 "Coses dolentes que passen sense voler, com un xoc."
+],
+"acció": [
+"acció",
+"Una cosa que es fa."
+],
+"acompanyades": [
+"acompanyar",
+"Amb."
+],
+"aconsegueixen": [
+"aconseguir",
+"Assoleixen."
 ],
 "aconseguir": [
 "aconseguir",
@@ -63,9 +127,29 @@
 "aconseguir",
 "Obtindrà el que vol (futur)."
 ],
+"aconseguit": [
+"aconseguir",
+"Assolit."
+],
+"aconsellen": [
+"aconsellar",
+"Diuen què fer."
+],
+"acord": [
+"acord",
+"Estar d'acord: pensar igual."
+],
+"acosta": [
+"acostar",
+"S'apropa."
+],
 "acostar": [
 "acostar",
 "Posar més a prop."
+],
+"acosten": [
+"acostar",
+"S'apropen."
 ],
 "acostés": [
 "acostar-se",
@@ -75,13 +159,25 @@
 "acrobàcia",
 "Salts i girs difícils amb el cos."
 ],
+"actitud": [
+"actitud",
+"Manera de pensar."
+],
 "actius": [
 "actiu",
 "Que funcionen o es mouen ara."
 ],
+"activitats": [
+"activitat",
+"Coses que es fan."
+],
 "actriu": [
 "actor",
 "Dona que fa papers al cinema, al teatre o a la televisió."
+],
+"actual": [
+"actual",
+"D'ara."
 ],
 "actualitzacions": [
 "actualització",
@@ -91,9 +187,25 @@
 "actual",
 "D'ara, d'avui."
 ],
+"actuava": [
+"actuar",
+"Feia."
+],
+"acudir": [
+"acudir",
+"Anar."
+],
 "acudit": [
 "acudit",
 "Història curta que fa riure."
+],
+"acumuli": [
+"acumular",
+"S'ajunti."
+],
+"adaptar": [
+"adaptar",
+"Canviar per encaixar."
 ],
 "adequada": [
 "adequat",
@@ -111,21 +223,101 @@
 "ADN",
 "Substància de les cèl·lules que té la informació d'un ésser viu."
 ],
+"adolescent": [
+"adolescent",
+"Jove de 12 a 18 anys."
+],
 "adolescents": [
 "adolescent",
 "Persones joves, entre nens i adults."
+],
+"adonar": [
+"adonar",
+"Adonar-se: notar."
+],
+"adrenalina": [
+"adrenalina",
+"Substància del cos que dona energia quan hi ha perill."
+],
+"adulta": [
+"adult",
+"Gran."
+],
+"adults": [
+"adult",
+"Persones grans."
+],
+"adverteixen": [
+"advertir",
+"Avisen."
+],
+"advertir": [
+"advertir",
+"Avisar."
+],
+"afecta": [
+"afectar",
+"Té efecte."
 ],
 "afectar": [
 "afectar",
 "Fer un canvi o un mal a una cosa."
 ],
+"afectats": [
+"afectar",
+"Amb efecte."
+],
 "afegeixen": [
 "afegir",
 "Posen una cosa més."
 ],
+"afegir": [
+"afegir",
+"Posar més."
+],
+"afegit": [
+"afegir",
+"Posat de més."
+],
+"aferri": [
+"aferrar",
+"Forma d'\"aferrar\"."
+],
+"aficionat": [
+"aficionat",
+"Persona que fa una cosa per gust."
+],
+"aficionats": [
+"aficionat",
+"Persones a qui agrada una cosa."
+],
+"aficions": [
+"afició",
+"Coses que agrada fer."
+],
 "afició": [
 "afició",
 "Una cosa que t'agrada fer en el temps lliure."
+],
+"afirma": [
+"afirmar",
+"Diu que és veritat."
+],
+"afirmen": [
+"afirmar",
+"Diuen que és veritat."
+],
+"afrontat": [
+"afrontar",
+"Posat davant."
+],
+"agafar": [
+"agafar",
+"Prendre."
+],
+"agafen": [
+"agafar",
+"Prenen."
 ],
 "agitat": [
 "agitat",
@@ -135,9 +327,17 @@
 "agradar",
 "Ser bo o bonic per a algú: m'agrada = em fa contento."
 ],
+"agradar": [
+"agradar",
+"Semblar bé."
+],
 "agradaria": [
 "agradar",
 "M'agradaria = voldria, em faria content."
+],
+"agradava": [
+"agradar",
+"Li semblava bé."
 ],
 "agraden": [
 "agradar",
@@ -159,6 +359,14 @@
 "aguantar",
 "Resistir, suportar una cosa difícil."
 ],
+"agulla": [
+"agulla",
+"Punta fina."
+],
+"agència": [
+"agència",
+"Empresa de serveis."
+],
 "agències": [
 "agència",
 "Organitzacions que fan una feina especial, com viatjar a l'espai."
@@ -170,6 +378,10 @@
 "aigua": [
 "aigua",
 "Líquid transparent que bevem. Hi ha aigua als rius i al mar."
+],
+"aiguamolls": [
+"aiguamoll",
+"Terres amb aigua."
 ],
 "aigües": [
 "aigua",
@@ -190,6 +402,10 @@
 "aixecar": [
 "aixecar",
 "Posar una cosa més amunt. Aixecar-se = posar-se dret."
+],
+"aixecat": [
+"aixecar",
+"Pujat."
 ],
 "aixeques": [
 "aixecar",
@@ -223,9 +439,25 @@
 "ajudar",
 "Farà una cosa per algú (futur)."
 ],
+"ajudat": [
+"ajudar",
+"Donat ajuda."
+],
+"ajudava": [
+"ajudar",
+"Donava ajuda."
+],
 "ajuden": [
 "ajudar",
 "Fan una cosa per algú que ho necessita."
+],
+"ajudi": [
+"ajudar",
+"Forma d'\"ajudar\"."
+],
+"ajuntar": [
+"ajuntar",
+"Unir."
 ],
 "al": [
 "al",
@@ -259,6 +491,26 @@
 "al seu voltant",
 "Al costat, per tots els costats d'una cosa."
 ],
+"ala": [
+"ala",
+"Part de l'ocell per volar."
+],
+"alarma": [
+"alarma",
+"Avís de perill."
+],
+"aleatori": [
+"aleatori",
+"A l'atzar."
+],
+"alegrar": [
+"alegrar",
+"Posar content."
+],
+"alegria": [
+"alegria",
+"Felicitat."
+],
 "aleksei": [
 "Aleksei",
 "Nom d'Aleksei Pajitnov, el creador de Tetris."
@@ -266,6 +518,10 @@
 "alemany": [
 "alemany",
 "De l'Alemanya."
+],
+"alemanya": [
+"alemanya",
+"País d'Europa."
 ],
 "ales": [
 "ala",
@@ -282,6 +538,18 @@
 "alexander fleming": [
 "Alexander Fleming",
 "Nom d'un científic escocès que va descobrir la penicil·lina."
+],
+"alfabet": [
+"alfabet",
+"Lletres d'una llengua."
+],
+"alga": [
+"alga",
+"Planta del mar."
+],
+"algues": [
+"alga",
+"Plantes del mar."
 ],
 "algun": [
 "algun",
@@ -303,21 +571,57 @@
 "algú",
 "Una persona, sense dir qui."
 ],
+"alhora": [
+"alhora",
+"Al mateix temps."
+],
 "aliment": [
 "aliment",
 "Una cosa que es menja."
+],
+"alimenta": [
+"alimentar",
+"Menja."
 ],
 "alimentació": [
 "alimentació",
 "El menjar que prenem."
 ],
+"alimenten": [
+"alimentar",
+"Mengen."
+],
+"aliments": [
+"aliment",
+"Menjars."
+],
 "all": [
 "all",
 "Planta de gust molt fort que es fa servir per cuinar."
 ],
+"alleujament": [
+"alleujament",
+"Sensació bona quan s'acaba un problema."
+],
+"allibera": [
+"alliberar",
+"Deixa anar."
+],
+"alliberament": [
+"alliberar",
+"Deixar lliure."
+],
+"alliberat": [
+"alliberar",
+"Deixat lliure."
+],
 "allà": [
 "allà",
 "En aquell lloc."
+],
+"almenys": [
+"almenys",
+"Com a mínim."
 ],
 "alpha": [
 "Alpha",
@@ -363,6 +667,18 @@
 "altura",
 "Quant fa una cosa de baix a dalt."
 ],
+"alumnes": [
+"alumne",
+"Estudiants."
+],
+"alçat": [
+"alçar",
+"Aixecat."
+],
+"amable": [
+"amable",
+"Simpàtic."
+],
 "amaga": [
 "amagar",
 "Posa una cosa on no es pot veure."
@@ -379,13 +695,25 @@
 "amagar",
 "Posar-se on els altres no et poden veure."
 ],
+"amagava": [
+"amagar",
+"Tenia oculta."
+],
 "amaguen": [
 "amagar",
 "Posen una cosa on no es pot veure."
 ],
+"amagues": [
+"amagar",
+"Et poses on no et vegin."
+],
 "amaguis": [
 "amagar",
 "Forma de amagar: no t'amaguis = no et posis on no et veuen."
+],
+"amarg": [
+"amarg",
+"Sabor fort com el cafè."
 ],
 "amazònica": [
 "amazònic",
@@ -411,6 +739,14 @@
 "ambient",
 "El que hi ha al voltant: l'aire, la temperatura, el lloc."
 ],
+"amenaça": [
+"amenaça",
+"Perill."
+],
+"amenaçats": [
+"amenaçar",
+"En perill."
+],
 "americana": [
 "americà",
 "D'Amèrica."
@@ -418,6 +754,10 @@
 "americans": [
 "americà",
 "Persones d'Amèrica."
+],
+"americà": [
+"americà",
+"Dels EUA."
 ],
 "amfibi": [
 "amfibi",
@@ -439,9 +779,21 @@
 "amistat",
 "Relació bonica entre amics."
 ],
+"amistoses": [
+"amistós",
+"Com amics."
+],
+"amistós": [
+"amistós",
+"Com amics."
+],
 "among us": [
 "Among Us",
 "Nom d'un videojoc de naus i impostors."
+],
+"amplada": [
+"amplada",
+"Mida d'un costat a l'altre."
 ],
 "ampolla": [
 "ampolla",
@@ -459,9 +811,21 @@
 "Amèrica",
 "Continent on hi ha els Estats Units, Mèxic, el Brasil..."
 ],
+"analitzar": [
+"analitzar",
+"Estudiar amb detall."
+],
 "anar": [
 "anar",
 "Moure's d'un lloc a un altre."
+],
+"anat": [
+"anar",
+"Mogut."
+],
+"anava": [
+"anar",
+"Es movia."
 ],
 "anell": [
 "anell",
@@ -475,9 +839,17 @@
 "anar",
 "Nosaltres anem. Anem a veure = vinga, mirem."
 ],
+"anessin": [
+"anar",
+"Forma d'\"anar\"."
+],
 "anglaterra": [
 "Anglaterra",
 "País del Regne Unit, amb la ciutat de Londres."
+],
+"anglès": [
+"anglès",
+"D'Anglaterra."
 ],
 "anguila": [
 "anguila",
@@ -487,6 +859,10 @@
 "anguila",
 "Peixos llargs i prims com serps."
 ],
+"anima": [
+"animar",
+"Dona ganes."
+],
 "animal": [
 "animal",
 "Ésser viu que es mou, com un gos o un peix."
@@ -494,6 +870,14 @@
 "animals": [
 "animal",
 "Éssers vius que es mouen, com els gossos o els peixos."
+],
+"animar": [
+"animar",
+"Donar ganes."
+],
+"animats": [
+"animar",
+"Amb ganes."
 ],
 "anomena": [
 "anomenar",
@@ -503,9 +887,37 @@
 "anomenar",
 "Que té aquest nom."
 ],
+"anomenar": [
+"anomenar",
+"Posar nom."
+],
+"anomenat": [
+"anomenar",
+"Amb el nom de."
+],
+"anomenats": [
+"anomenar",
+"Amb el nom de."
+],
+"anomenem": [
+"anomenar",
+"Posem nom."
+],
 "anomenen": [
 "anomenar",
 "Donen un nom a algú o a una cosa."
+],
+"anotar": [
+"anotar",
+"Escriure."
+],
+"anotarà": [
+"anotar",
+"Escriurà."
+],
+"ansietat": [
+"ansietat",
+"Nervis i preocupació."
 ],
 "anterior": [
 "anterior",
@@ -527,6 +939,14 @@
 "antic",
 "Molt vella; de fa molt de temps."
 ],
+"antigues": [
+"antic",
+"Molt velles."
+],
+"antiquats": [
+"antiquat",
+"Vells."
+],
 "antàrtida": [
 "Antàrtida",
 "Continent de gel al sud de la Terra."
@@ -534,6 +954,10 @@
 "anuncia": [
 "anunciar",
 "Diu una notícia a molta gent."
+],
+"anunciar": [
+"anunciar",
+"Dir públicament."
 ],
 "anuncis": [
 "anunci",
@@ -547,9 +971,25 @@
 "any",
 "Temps de dotze mesos. Tinc deu anys = la meva edat és deu."
 ],
+"anècdota": [
+"anècdota",
+"Història curta."
+],
+"anés": [
+"anar",
+"Forma d'\"anar\"."
+],
+"apagats": [
+"apagar",
+"Sense llum."
+],
 "apaguen": [
 "apagar",
 "Fan que una llum o un foc s'acabi."
+],
+"aparcaments": [
+"aparcament",
+"Llocs per deixar cotxes."
 ],
 "apareix": [
 "aparèixer",
@@ -563,9 +1003,29 @@
 "aparèixer",
 "Començaran a existir o a veure's (futur)."
 ],
+"apareixien": [
+"aparèixer",
+"Es veien."
+],
 "aparell": [
 "aparell",
 "Màquina o objecte que serveix per a una feina."
+],
+"aparells": [
+"aparell",
+"Màquines."
+],
+"aparta": [
+"apartar",
+"Separa."
+],
+"apartats": [
+"apartar",
+"Separats."
+],
+"aparèixer": [
+"aparèixer",
+"Sortir."
 ],
 "aperitiu": [
 "aperitiu",
@@ -575,29 +1035,85 @@
 "apocalipsi",
 "El final del món."
 ],
+"aportar": [
+"aportar",
+"Donar."
+],
 "aprendre": [
 "aprendre",
 "Començar a saber una cosa nova."
+],
+"aprenem": [
+"aprendre",
+"Arribem a saber."
 ],
 "aprenen": [
 "aprendre",
 "Comencen a saber una cosa nova."
 ],
+"aprenent": [
+"aprendre",
+"Arribant a saber."
+],
+"aprenentatge": [
+"aprenentatge",
+"Acció d'aprendre."
+],
 "aprenguem": [
 "aprendre",
 "Forma de aprendre: que aprenguem = que nosaltres aprenem."
+],
+"aprimar": [
+"aprimar",
+"Perdre pes."
 ],
 "aprofitar": [
 "aprofitar",
 "Fer servir bé una cosa."
 ],
+"apropiat": [
+"apropiat",
+"Correcte."
+],
+"aprovat": [
+"aprovar",
+"Acceptat."
+],
+"aproximadament": [
+"aproximat",
+"Més o menys."
+],
 "aprèn": [
 "aprendre",
 "Comença a saber una cosa nova."
 ],
+"après": [
+"aprendre",
+"Que ja sap."
+],
+"apta": [
+"apte",
+"Adequada."
+],
 "apujar": [
 "apujar",
 "Fer més alt; fer pujar."
+],
+"apuntant": [
+"apuntar",
+"Assenyalant."
+],
+"apuntarà": [
+"apuntar",
+"Assenyalarà."
+],
+"aquari": [
+"aquari",
+"Lloc amb peixos i animals del mar."
+],
+"aquaris": [
+"aquari",
+"Llocs amb animals del mar."
 ],
 "aquell": [
 "aquell",
@@ -606,6 +1122,14 @@
 "aquella": [
 "aquell",
 "Aquella cosa d'allà, lluny."
+],
+"aquelles": [
+"aquell",
+"Aquestes d'allà."
+],
+"aquells": [
+"aquell",
+"Aquests d'allà."
 ],
 "aquest": [
 "aquest",
@@ -647,6 +1171,14 @@
 "arbre",
 "Plantes grans amb tronc, branques i fulles."
 ],
+"arbustos": [
+"arbust",
+"Plantes petites com arbres."
+],
+"archaeopteryx": [
+"archaeopteryx",
+"Un dinosaure amb plomes."
+],
 "argentina": [
 "Argentina",
 "País d'Amèrica del Sud."
@@ -671,6 +1203,10 @@
 "arqueòleg",
 "Científics que estudien les coses antigues de les persones."
 ],
+"arrencat": [
+"arrencar",
+"Tret amb força."
+],
 "arreu": [
 "arreu",
 "A tot arreu = a tots els llocs."
@@ -682,6 +1218,10 @@
 "arribar": [
 "arribar",
 "Venir a un lloc."
+],
+"arribat": [
+"arribar",
+"Vingut."
 ],
 "arriben": [
 "arribar",
@@ -715,13 +1255,37 @@
 "article",
 "Textos d'un diari o d'una revista."
 ],
+"artificial": [
+"artificial",
+"Fet per persones."
+],
 "ashrita furman": [
 "Ashrita Furman",
 "Nom d'un home de Nova York amb molts rècords."
 ],
+"asiàtica": [
+"asiàtic",
+"D'Àsia."
+],
 "aspirador": [
 "aspirador",
 "Màquina que neteja la pols del terra."
+],
+"aspirant": [
+"aspirant",
+"Persona que ho intenta."
+],
+"aspirants": [
+"aspirant",
+"Persones que ho intenten."
+],
+"aspre": [
+"aspre",
+"Que no és suau."
+],
+"assabentar": [
+"assabentar",
+"Assabentar-se: saber una notícia."
 ],
 "assecar": [
 "assecar",
@@ -735,13 +1299,41 @@
 "assegurança",
 "Contracte que paga diners si tens un accident."
 ],
+"asseien": [
+"asseure",
+"Es posaven a sobre."
+],
 "assembla": [
 "assemblar-se",
 "S'assembla = és semblant, gairebé igual."
 ],
+"assemblava": [
+"assemblar",
+"S'hi semblava."
+],
+"assemblen": [
+"assemblar",
+"S'hi semblen."
+],
+"assenyalen": [
+"assenyalar",
+"Indiquen."
+],
+"asseuen": [
+"asseure",
+"Es posen en una cadira."
+],
+"assignatures": [
+"assignatura",
+"Matèries d'estudi."
+],
 "assistents": [
 "assistent",
 "Persones o programes que ajuden."
+],
+"assolien": [
+"assolir",
+"Aconseguien."
 ],
 "asteroide": [
 "asteroide",
@@ -754,6 +1346,14 @@
 "astronautes": [
 "astronauta",
 "Persones que viatgen a l'espai."
+],
+"astronòmics": [
+"astronòmic",
+"De les estrelles."
+],
+"astrònoms": [
+"astrònom",
+"Experts en estrelles."
 ],
 "ataca": [
 "atacar",
@@ -771,9 +1371,29 @@
 "atacar",
 "Van contra algú per fer-li mal."
 ],
+"ataquessin": [
+"atacar",
+"Fessin mal."
+],
+"atenció": [
+"atenció",
+"Fixar-se bé."
+],
+"atenta": [
+"atent",
+"Que es fixa."
+],
+"atents": [
+"atent",
+"Que es fixen."
+],
 "aterrar": [
 "aterrar",
 "Baixar a terra després de volar o saltar."
+],
+"aterrida": [
+"aterrir",
+"Amb moltíssima por."
 ],
 "atlants": [
 "atlant",
@@ -787,9 +1407,29 @@
 "Atlàntida",
 "Illa de la llegenda de Plató."
 ],
+"atmosfera": [
+"atmosfera",
+"Aire d'un planeta."
+],
+"atractius": [
+"atractiu",
+"Que agraden."
+],
+"atraient": [
+"atreure",
+"Fent venir."
+],
 "atrapa": [
 "atrapar",
 "Agafa algú que s'escapa."
+],
+"atrapar": [
+"atrapar",
+"Agafar."
+],
+"atrapats": [
+"atrapar",
+"Que no poden sortir."
 ],
 "atrapen": [
 "atrapar",
@@ -803,9 +1443,29 @@
 "atraure",
 "Fer que algú vulgui venir o mirar."
 ],
+"atretes": [
+"atreure",
+"Que van cap a una cosa."
+],
+"atreu": [
+"atreure",
+"Fa venir."
+],
+"atreuen": [
+"atreure",
+"Fan venir."
+],
+"atreure": [
+"atreure",
+"Fer venir."
+],
 "atreveixes": [
 "atrevir-se",
 "T'atreveixes? = tens prou valor per fer-ho?"
+],
+"atrevir": [
+"atrevir-se",
+"Tenir valor per fer una cosa."
 ],
 "atreviries": [
 "atrevir-se",
@@ -815,9 +1475,17 @@
 "aturar",
 "Para; deixa de moure's."
 ],
+"aturar": [
+"aturar",
+"Parar."
+],
 "aturen": [
 "aturar",
 "Paren; deixen de moure's o de fer una cosa."
+],
+"atzar": [
+"atzar",
+"Sort."
 ],
 "au": [
 "au",
@@ -826,6 +1494,18 @@
 "au de caça": [
 "au de caça",
 "Ocell que la gent caça."
+],
+"augmentar": [
+"augmentar",
+"Fer-se més gran."
+],
+"aula": [
+"aula",
+"Classe d'una escola."
+],
+"aules": [
+"aula",
+"Classes."
 ],
 "austràlia": [
 "Austràlia",
@@ -843,6 +1523,22 @@
 "automàtic",
 "Que funciona tota sola, sense persones."
 ],
+"automàticament": [
+"automàtic",
+"Sol, sense fer res."
+],
+"autor": [
+"autor",
+"Persona que escriu."
+],
+"autora": [
+"autor",
+"Dona que escriu."
+],
+"autors": [
+"autor",
+"Persones que escriuen."
+],
 "autònom": [
 "autònom",
 "Que funciona tot sol."
@@ -855,17 +1551,45 @@
 "avall",
 "Cap a baix. Riu avall = seguint l'aigua."
 ],
+"avancen": [
+"avançar",
+"Van endavant."
+],
 "avantatge": [
 "avantatge",
 "Una cosa bona que tens i que els altres no tenen."
+],
+"avantpassat": [
+"avantpassat",
+"Familiar molt antic."
 ],
 "avantpassats": [
 "avantpassat",
 "Familiars que van viure fa molt de temps."
 ],
+"avança": [
+"avançar",
+"Va endavant."
+],
 "avançada": [
 "avançat",
 "Que sap o té coses molt modernes."
+],
+"avançar": [
+"avançar",
+"Anar endavant."
+],
+"avançat": [
+"avançar",
+"Anat endavant."
+],
+"avenç": [
+"avenç",
+"Pas endavant."
+],
+"avenços": [
+"avenç",
+"Passos endavant."
 ],
 "aviat": [
 "aviat",
@@ -875,9 +1599,17 @@
 "avió",
 "Màquines que volen i porten persones."
 ],
+"avisant": [
+"avisar",
+"Dient una cosa perquè ho sàpiguen."
+],
 "avisar": [
 "avisar",
 "Dir una cosa a algú perquè vagi amb compte."
+],
+"avisem": [
+"avisar",
+"Diem una cosa perquè algú ho sàpiga."
 ],
 "avisen": [
 "avisar",
@@ -919,9 +1651,25 @@
 "Açores",
 "Illes de l'oceà Atlàntic."
 ],
+"aïllament": [
+"aïllament",
+"Estar sol."
+],
+"aïllar": [
+"aïllar",
+"Separar."
+],
+"bacteri": [
+"bacteri",
+"Ésser viu minúscul."
+],
 "bacteris": [
 "bacteri",
 "Éssers vius molt petits; alguns ens fan emmalaltir."
+],
+"baix": [
+"baix",
+"Avall."
 ],
 "baixa": [
 "baixar",
@@ -934,6 +1682,10 @@
 "baixes": [
 "baix",
 "De poca altura."
+],
+"bala": [
+"bala",
+"Projectil d'una arma."
 ],
 "balena": [
 "balena",
@@ -959,13 +1711,33 @@
 "banc",
 "Seients llargs al carrer."
 ],
+"bancàries": [
+"banc",
+"Del banc."
+],
+"banda": [
+"banda",
+"Costat."
+],
 "banya": [
 "banya",
 "Part dura i punxeguda al cap d'alguns animals."
 ],
+"banyen": [
+"banyar",
+"Es posen a l'aigua."
+],
+"barallar": [
+"barallar",
+"Barallar-se: discutir."
+],
 "baranes": [
 "barana",
 "Barres per agafar-se a les escales o als balcons."
+],
+"barat": [
+"barat",
+"Que costa poc."
 ],
 "barreja": [
 "barreja",
@@ -974,6 +1746,10 @@
 "barrejades": [
 "barrejar",
 "Posades juntes."
+],
+"barrejat": [
+"barrejar",
+"Junt amb una altra cosa."
 ],
 "barrera": [
 "barrera",
@@ -995,17 +1771,37 @@
 "barri",
 "Part d'una ciutat."
 ],
+"bars": [
+"bar",
+"Llocs per beure."
+],
 "base": [
 "base",
 "Lloc on viuen i treballen científics o soldats."
+],
+"bastidors": [
+"bastidors",
+"Entre bastidors: on no es veu."
 ],
 "bastonets": [
 "bastonet",
 "Pals prims per menjar a l'Àsia."
 ],
+"bat": [
+"batre",
+"Supera."
+],
+"batalla": [
+"batalla",
+"Lluita."
+],
 "batega": [
 "bategar",
 "El cor batega = el cor es mou i fa soroll."
+],
+"bategui": [
+"bategar",
+"Faci cops el cor."
 ],
 "batre": [
 "batre",
@@ -1019,21 +1815,61 @@
 "batre",
 "Ha batut un rècord = ho ha fet millor que ningú."
 ],
+"baula": [
+"baula",
+"Peça d'una cadena."
+],
 "bear": [
 "BEAR",
 "Nom d'un joc de por de Roblox."
+],
+"beaver": [
+"beaver",
+"Cognom anglès."
+],
+"bec": [
+"bec",
+"Boca dura d'un ocell o d'un pop."
 ],
 "belle": [
 "Belle",
 "Nom: David Belle, un dels creadors del parkour."
 ],
+"ben": [
+"ben",
+"Bé."
+],
+"beneficiar": [
+"beneficiar",
+"Ajudar."
+],
+"beneficis": [
+"benefici",
+"Coses bones."
+],
 "benes": [
 "bena",
 "Tires de tela per embolicar una ferida o un cos."
 ],
+"benèfica": [
+"benèfic",
+"Que ajuda els altres."
+],
 "bermudes": [
 "Bermudes",
 "Illes de l'oceà Atlàntic."
+],
+"bessons": [
+"bessó",
+"Germans nascuts alhora."
+],
+"bestiar": [
+"bestiar",
+"Vaques i altres animals de granja."
+],
+"bestieses": [
+"bestiesa",
+"Coses sense sentit."
 ],
 "beure": [
 "beure",
@@ -1050,6 +1886,10 @@
 "bioluminescència": [
 "bioluminescència",
 "Llum que fan alguns éssers vius."
+],
+"biomimètica": [
+"biomimètica",
+"Copiar la natura."
 ],
 "bitxo": [
 "bitxo",
@@ -1083,6 +1923,10 @@
 "blau",
 "Del color del cel quan fa sol."
 ],
+"blauet": [
+"blauet",
+"Ocell blau que pesca."
+],
 "blaus": [
 "blau",
 "Del color del cel quan fa sol."
@@ -1099,9 +1943,17 @@
 "bloc",
 "Trossos grans i quadrats."
 ],
+"bloquejades": [
+"bloquejar",
+"Tancades."
+],
 "bmx": [
 "BMX",
 "Tipus de bicicleta petita per fer salts."
+],
+"bo": [
+"bo",
+"Que està bé."
 ],
 "boca": [
 "boca",
@@ -1111,13 +1963,29 @@
 "boig",
 "Que no pensa bé; molt excitat."
 ],
+"boles": [
+"bola",
+"Coses rodones."
+],
+"bolet": [
+"bolet",
+"Fong."
+],
 "boleta": [
 "bola",
 "Bola petita."
 ],
+"bolets": [
+"bolet",
+"Fongs."
+],
 "bolt": [
 "Bolt",
 "Nom: Usain Bolt, el corredor."
+],
+"bomben": [
+"bombar",
+"Empenyen líquid."
 ],
 "bomber": [
 "bomber",
@@ -1143,9 +2011,29 @@
 "Bond",
 "Nom: James Bond, un espia de pel·lícula."
 ],
+"bones": [
+"bo",
+"Que estan bé."
+],
 "bonic": [
 "bonic",
 "Que agrada mirar."
+],
+"bonics": [
+"bonic",
+"Macos."
+],
+"bons": [
+"bo",
+"Que estan bé."
+],
+"bonys": [
+"bony",
+"Parts que sobresurten."
+],
+"boníssim": [
+"bo",
+"Molt bo."
 ],
 "bosc": [
 "bosc",
@@ -1155,6 +2043,14 @@
 "bossa",
 "Sac per portar coses."
 ],
+"botigues": [
+"botiga",
+"Llocs per comprar."
+],
+"botons": [
+"botó",
+"Peces per tancar la roba."
+],
 "botó": [
 "botó",
 "Peça petita que prems perquè una màquina funcioni."
@@ -1163,9 +2059,25 @@
 "branca",
 "Parts de l'arbre on hi ha les fulles."
 ],
+"brasil": [
+"brasil",
+"País d'Amèrica del Sud."
+],
+"braç": [
+"braç",
+"Part del cos amb mà."
+],
 "braços": [
 "braç",
 "Parts del cos entre l'espatlla i la mà."
+],
+"bretanya": [
+"bretanya",
+"Gran Bretanya, un país."
+],
+"breu": [
+"breu",
+"Curt."
 ],
 "brilla": [
 "brillar",
@@ -1174,6 +2086,10 @@
 "brillant": [
 "brillant",
 "Que fa molta llum."
+],
+"brillantor": [
+"brillantor",
+"Llum que surt d'una cosa."
 ],
 "brillants": [
 "brillant",
@@ -1187,9 +2103,29 @@
 "britànic",
 "Del Regne Unit."
 ],
+"britànics": [
+"britànic",
+"De la Gran Bretanya."
+],
+"bronze": [
+"bronze",
+"Metall; tercera medalla."
+],
+"brou": [
+"brou",
+"Aigua on s'han bullit aliments."
+],
+"brown": [
+"brown",
+"Cognom."
+],
 "bruts": [
 "brut",
 "Que no són nets."
+],
+"brutícia": [
+"brut",
+"El que és brut."
 ],
 "brànquies": [
 "brànquia",
@@ -1202,6 +2138,10 @@
 "brúixoles": [
 "brúixola",
 "Instruments que indiquen el nord."
+],
+"buides": [
+"buit",
+"Sense res."
 ],
 "build the earth": [
 "Build the Earth",
@@ -1235,6 +2175,10 @@
 "buscar",
 "Miraven per trobar una cosa."
 ],
+"busquem": [
+"buscar",
+"Intentem trobar."
+],
 "busquen": [
 "buscar",
 "Miren per trobar una cosa."
@@ -1246,6 +2190,18 @@
 "butxaca": [
 "butxaca",
 "Bossa petita de la roba."
+],
+"bàsic": [
+"bàsic",
+"Principal."
+],
+"bàsica": [
+"bàsic",
+"Principal."
+],
+"bàsics": [
+"bàsic",
+"Principals."
 ],
 "bàsiques": [
 "bàsic",
@@ -1275,9 +2231,17 @@
 "cabre",
 "Hi poden entrar."
 ],
+"cable": [
+"cable",
+"Fil de metall."
+],
 "cacen": [
 "caçar",
 "Persegueixen i agafen animals."
+],
+"cacera": [
+"cacera",
+"Caçar animals."
 ],
 "cada": [
 "cada",
@@ -1287,13 +2251,33 @@
 "cada vegada més",
 "Més i més."
 ],
+"cadascuna": [
+"cadascun",
+"Cada una."
+],
+"cadascú": [
+"cadascú",
+"Cada persona."
+],
+"cadena": [
+"cadena",
+"Sèrie unida."
+],
 "caient": [
 "caure",
 "Anant cap a terra."
 ],
+"caiguda": [
+"caure",
+"Cop en caure."
+],
 "caigudes": [
 "caiguda",
 "Quan algú cau."
+],
+"caigués": [
+"caure",
+"Anés a terra."
 ],
 "caire": [
 "Caire",
@@ -1319,6 +2303,10 @@
 "calcular",
 "Fer comptes per saber un número."
 ],
+"caldre": [
+"caldre",
+"Ser necessari."
+],
 "calent": [
 "calent",
 "Que té temperatura alta. El contrari de fred."
@@ -1327,9 +2315,17 @@
 "calent",
 "Que té temperatura alta. El contrari de freda."
 ],
+"calia": [
+"caldre",
+"Era necessari."
+],
 "califòrnia": [
 "Califòrnia",
 "Estat de l'oest dels Estats Units."
+],
+"calma": [
+"calma",
+"Tranquil·litat."
 ],
 "calment": [
 "Calment",
@@ -1339,9 +2335,17 @@
 "calor",
 "Temperatura alta. Fa calor = la temperatura és alta."
 ],
+"calorosa": [
+"calor",
+"Amb molta calor."
+],
 "calorosos": [
 "calorós",
 "On fa molta calor."
+],
+"cal·ligrafia": [
+"cal·ligrafia",
+"Manera d'escriure a mà."
 ],
 "cama": [
 "cama",
@@ -1355,6 +2359,10 @@
 "caminar",
 "Anar a peu."
 ],
+"camp": [
+"camp",
+"Àrea de treball."
+],
 "campanya": [
 "campanya",
 "Moltes accions per aconseguir una cosa, com vendre."
@@ -1367,6 +2375,10 @@
 "campió",
 "Persona o animal que guanya; el millor."
 ],
+"camí": [
+"camí",
+"Ruta."
+],
 "canadenc": [
 "canadenc",
 "Del Canadà."
@@ -1375,9 +2387,17 @@
 "canal",
 "Camins d'aigua fets per les persones."
 ],
+"canonada": [
+"canonada",
+"Tub llarg per a l'aigua."
+],
 "canonades": [
 "canonada",
 "Tubs per on passa l'aigua."
+],
+"cansen": [
+"cansar",
+"Esgoten."
 ],
 "canta": [
 "cantar",
@@ -1391,6 +2411,10 @@
 "canviar",
 "Es fa diferent."
 ],
+"canviant": [
+"canviar",
+"Fent-se diferent."
+],
 "canviar": [
 "canviar",
 "Fer-se diferent; fer una cosa diferent."
@@ -1398,6 +2422,14 @@
 "canviarà": [
 "canviar",
 "Es farà diferent (futur)."
+],
+"canviat": [
+"canviar",
+"Fet diferent."
+],
+"canviaven": [
+"canviar",
+"Es feien diferents."
 ],
 "canvien": [
 "canviar",
@@ -1431,9 +2463,37 @@
 "capa",
 "Una cosa prima que en cobreix una altra."
 ],
+"capaces": [
+"capaç",
+"Que poden."
+],
+"capacitat": [
+"capacitat",
+"Poder fer una cosa."
+],
+"capacitats": [
+"capacitat",
+"El que es pot fer."
+],
+"capaç": [
+"capaç",
+"Que pot."
+],
+"capaços": [
+"capaç",
+"Que poden."
+],
 "capital": [
 "capital",
 "La ciutat més important d'un país."
+],
+"caps": [
+"cap",
+"Parts de dalt del cos."
+],
+"car": [
+"car",
+"Que costa molt."
 ],
 "cara": [
 "cara",
@@ -1443,9 +2503,21 @@
 "carambola",
 "Fruita groga amb forma d'estrella."
 ],
+"caramel": [
+"caramel",
+"Dolç petit."
+],
 "caramels": [
 "caramel",
 "Llaminadures dolces de sucre."
+],
+"carboni": [
+"carboni",
+"Element químic."
+],
+"cares": [
+"cara",
+"Parts davanteres del cap."
 ],
 "carn": [
 "carn",
@@ -1454,6 +2526,10 @@
 "carnarvon": [
 "Carnarvon",
 "Nom: Lord Carnarvon, que pagava l'excavació de Carter."
+],
+"carnívors": [
+"carnívor",
+"Que mengen carn."
 ],
 "carrer": [
 "carrer",
@@ -1467,9 +2543,29 @@
 "carro",
 "Vehicles antics amb rodes, que estiren els cavalls."
 ],
+"cars": [
+"car",
+"Que costen molt."
+],
 "carter": [
 "Carter",
 "Nom: Howard Carter, l'arqueòleg que va trobar Tutankamon."
+],
+"cartes": [
+"carta",
+"Missatges escrits."
+],
+"cartutxos": [
+"cartutx",
+"Òvals amb noms de reis en jeroglífics."
+],
+"caríssim": [
+"car",
+"Molt car."
+],
+"cas": [
+"cas",
+"Exemple."
 ],
 "casa": [
 "casa",
@@ -1479,9 +2575,17 @@
 "casc",
 "Barret dur que protegeix el cap."
 ],
+"cascada": [
+"cascada",
+"Sèrie d'efectes."
+],
 "cases": [
 "casa",
 "Edificis on viuen les famílies."
+],
+"cassini": [
+"cassini",
+"Nom d'una sonda."
 ],
 "castell": [
 "castell",
@@ -1490,6 +2594,14 @@
 "castells": [
 "castell",
 "Edificis grans i forts amb torres."
+],
+"castor": [
+"castor",
+"Animal que fa preses."
+],
+"castors": [
+"castor",
+"Animals que fan preses."
 ],
 "casualitat": [
 "casualitat",
@@ -1511,6 +2623,18 @@
 "categoria",
 "Grups de coses del mateix tipus."
 ],
+"catorze": [
+"catorze",
+"Número 14."
+],
+"catàstrofe": [
+"catàstrofe",
+"Desastre."
+],
+"catàstrofes": [
+"catàstrofe",
+"Desastres."
+],
 "cau": [
 "caure",
 "Va a terra."
@@ -1527,13 +2651,33 @@
 "caure",
 "Tu vas a terra."
 ],
+"causa": [
+"causa",
+"Raó."
+],
+"causen": [
+"causar",
+"Provoquen."
+],
+"causes": [
+"causa",
+"Raons."
+],
 "caça": [
 "caça",
 "Quan es persegueixen animals per agafar-los."
 ],
+"caçadors": [
+"caçador",
+"Que cacen."
+],
 "caçar": [
 "caçar",
 "Perseguir i agafar animals."
+],
+"caçava": [
+"caçar",
+"Perseguia per matar."
 ],
 "ceba": [
 "ceba",
@@ -1543,9 +2687,21 @@
 "cel",
 "L'espai blau de dalt, on hi ha els núvols."
 ],
+"celebra": [
+"celebrar",
+"Es fa."
+],
 "celebrar": [
 "celebrar",
 "Fer una festa o un acte especial."
+],
+"celebraven": [
+"celebrar",
+"Feien festa."
+],
+"celebren": [
+"celebrar",
+"Es fan."
 ],
 "cendra": [
 "cendra",
@@ -1571,6 +2727,10 @@
 "centre",
 "El punt del mig."
 ],
+"centres": [
+"centre",
+"Llocs."
+],
 "cents": [
 "cent",
 "Part de números com tres-cents (300)."
@@ -1591,13 +2751,41 @@
 "centímetre",
 "Mesures petites: cent centímetres fan un metre."
 ],
+"cert": [
+"cert",
+"Veritable."
+],
+"certes": [
+"cert",
+"Algunes."
+],
+"certs": [
+"cert",
+"Alguns."
+],
 "cervell": [
 "cervell",
 "Part de dins del cap que serveix per pensar."
 ],
+"cervesa": [
+"cervesa",
+"Beguda amb alcohol."
+],
+"cessen": [
+"cessar",
+"Paren."
+],
+"champollion": [
+"champollion",
+"Cognom francès."
+],
 "chapulines": [
 "chapulines",
 "Paraula mexicana: llagostes torrades per menjar."
+],
+"charles": [
+"charles",
+"Nom d'home."
 ],
 "cheedaman": [
 "Cheedaman",
@@ -1619,6 +2807,10 @@
 "científic",
 "Persona que estudia la natura amb experiments."
 ],
+"científica": [
+"científic",
+"De la ciència."
+],
 "científics": [
 "científic",
 "Persones que estudien la natura amb experiments."
@@ -1630,6 +2822,10 @@
 "cim": [
 "cim",
 "La part més alta d'una muntanya."
+],
+"ciment": [
+"ciment",
+"Material per construir."
 ],
 "cinc": [
 "cinc",
@@ -1647,9 +2843,17 @@
 "cinquanta",
 "El número 50."
 ],
+"cinquè": [
+"cinc",
+"Número cinc en ordre."
+],
 "circuit": [
 "circuit",
 "Camí tancat per on passa l'electricitat."
+],
+"circula": [
+"circular",
+"Es mou."
 ],
 "ciutat": [
 "ciutat",
@@ -1667,6 +2871,10 @@
 "civada",
 "Cereal; es menja a l'esmorzar."
 ],
+"civilitzacions": [
+"civilització",
+"Societats avançades."
+],
 "civilització": [
 "civilització",
 "Un poble amb la seva cultura, ciutats i lleis."
@@ -1675,13 +2883,53 @@
 "ciència",
 "El que sabem gràcies als científics."
 ],
+"clar": [
+"clar",
+"És clar: és evident."
+],
 "clara": [
 "clara",
 "1. La part blanca de l'ou. 2. Que es veu bé."
 ],
+"clarament": [
+"clar",
+"Molt bé."
+],
+"claredat": [
+"clar",
+"Llum."
+],
+"clares": [
+"clar",
+"Fàcils de veure."
+],
 "clariana": [
 "clariana",
 "Lloc sense arbres dins d'un bosc."
+],
+"clars": [
+"clar",
+"Fàcils de veure."
+],
+"classe": [
+"classe",
+"Lliçó a l'escola."
+],
+"classes": [
+"classe",
+"Lliçons."
+],
+"clau": [
+"clau",
+"El més important."
+],
+"claus": [
+"clau",
+"Codis secrets."
+],
+"clavar": [
+"clavar",
+"Ficar una cosa amb punta."
 ],
 "clavícula": [
 "clavícula",
@@ -1695,13 +2943,57 @@
 "clima",
 "El temps normal d'un lloc: fred, calor, pluja."
 ],
+"closques": [
+"closca",
+"Parts dures de fora."
+],
+"clàssics": [
+"clàssic",
+"De sempre."
+],
+"coaguli": [
+"coagular",
+"Es posi espessa la sang."
+],
+"cobert": [
+"cobrir",
+"Tapat."
+],
+"coberta": [
+"cobrir",
+"Tapada."
+],
+"cobertes": [
+"cobrir",
+"Tapades."
+],
+"coberts": [
+"cobrir",
+"Tapats."
+],
+"cobraven": [
+"cobrar",
+"Rebien diners."
+],
 "cobreixen": [
 "cobrir",
 "Posen una cosa damunt d'una altra."
 ],
+"cobren": [
+"cobrar",
+"Reben diners."
+],
+"cobri": [
+"cobrar",
+"Forma de \"cobrar\"."
+],
 "cobrien": [
 "cobrir",
 "Posaven una cosa damunt d'una altra."
+],
+"coco": [
+"coco",
+"Fruit amb closca dura."
 ],
 "cocodril": [
 "cocodril",
@@ -1719,13 +3011,25 @@
 "codi",
 "Senyals secrets per dir un missatge."
 ],
+"codis": [
+"codi",
+"Sistemes secrets d'escriptura."
+],
 "coet": [
 "coet",
 "Nau que vola cap a l'espai."
 ],
+"coincideix": [
+"coincidir",
+"És igual."
+],
 "coincideixen": [
 "coincidir",
 "Pensen el mateix."
+],
+"coincidia": [
+"coincidir",
+"Era igual."
 ],
 "cola": [
 "cola",
@@ -1751,6 +3055,14 @@
 "Columnes d'Hèrcules",
 "Nom antic de l'estret de Gibraltar."
 ],
+"col·legi": [
+"col·legi",
+"Escola."
+],
+"col·locar": [
+"col·locar",
+"Posar."
+],
 "colòmbia": [
 "Colòmbia",
 "País d'Amèrica del Sud."
@@ -1767,13 +3079,37 @@
 "com si res",
 "Com si no hagués passat res."
 ],
+"combatre": [
+"combatre",
+"Lluitar contra."
+],
+"combinant": [
+"combinar",
+"Ajuntant."
+],
+"combinen": [
+"combinar",
+"Ajunten."
+],
 "combustible": [
 "combustible",
 "El que es crema per fer funcionar un motor o una estrella."
 ],
+"comences": [
+"començar",
+"Comences a: inicies."
+],
+"comentaristes": [
+"comentarista",
+"Persones que comenten."
+],
 "comença": [
 "començar",
 "Fa la primera part d'una cosa."
+],
+"començament": [
+"començament",
+"Principi."
 ],
 "començar": [
 "començar",
@@ -1783,9 +3119,17 @@
 "començar",
 "Ja ha començat = ja està en marxa."
 ],
+"comercials": [
+"comercial",
+"De botigues."
+],
 "cometa": [
 "cometa",
 "Bola de gel i pols que viatja per l'espai."
+],
+"comitè": [
+"comitè",
+"Grup que decideix."
 ],
 "company": [
 "company",
@@ -1794,6 +3138,22 @@
 "companyies": [
 "companyia",
 "Empreses."
+],
+"compara": [
+"comparar",
+"Mira què és igual i què és diferent."
+],
+"comparació": [
+"comparar",
+"Mirar què és igual i què és diferent."
+],
+"comparant": [
+"comparar",
+"Mirant què és igual i què és diferent."
+],
+"comparar": [
+"comparar",
+"Mirar què és igual i què és diferent."
 ],
 "comparats": [
 "comparar",
@@ -1811,6 +3171,14 @@
 "compartir",
 "Donar una part als altres; fer junts."
 ],
+"competeixen": [
+"competir",
+"Lluiten per guanyar."
+],
+"competia": [
+"competir",
+"Participava."
+],
 "competicions": [
 "competició",
 "Proves on la gent vol guanyar."
@@ -1818,6 +3186,14 @@
 "competició": [
 "competició",
 "Prova on la gent vol guanyar."
+],
+"competidora": [
+"competidor",
+"Dona que competeix."
+],
+"competidors": [
+"competidor",
+"Persones que competeixen."
 ],
 "complet": [
 "complet",
@@ -1827,13 +3203,73 @@
 "complet",
 "Que té totes les parts."
 ],
+"completament": [
+"complet",
+"Del tot."
+],
+"completant": [
+"completar",
+"Acabant."
+],
 "completar": [
 "completar",
 "Acabar; posar totes les parts."
 ],
+"complex": [
+"complex",
+"Difícil, amb moltes parts."
+],
+"complexa": [
+"complex",
+"Difícil, amb moltes parts."
+],
+"complexes": [
+"complex",
+"Difícils."
+],
+"complexos": [
+"complex",
+"Difícils."
+],
+"complicada": [
+"complicat",
+"Difícil."
+],
+"complicades": [
+"complicat",
+"Difícils."
+],
+"complicats": [
+"complicat",
+"Difícils."
+],
+"complir": [
+"complir",
+"Fer el que es demana."
+],
+"compliria": [
+"complir",
+"Faria el que ha promès."
+],
+"comportament": [
+"comportar",
+"Manera d'actuar."
+],
+"comporten": [
+"comportar",
+"Actuen."
+],
+"compost": [
+"compost",
+"Mescla química."
+],
 "compra": [
 "comprar",
 "Dona diners per tenir una cosa."
+],
+"comprador": [
+"comprador",
+"Persona que compra."
 ],
 "comprar": [
 "comprar",
@@ -1843,6 +3279,26 @@
 "comprar",
 "Donen diners per tenir una cosa."
 ],
+"comprensió": [
+"comprendre",
+"Entendre."
+],
+"comprometre": [
+"comprometre",
+"Prometre."
+],
+"comprovar": [
+"comprovar",
+"Mirar si és veritat."
+],
+"compta": [
+"comptar",
+"Té."
+],
+"comptant": [
+"comptar",
+"Dient números."
+],
 "comptar": [
 "comptar",
 "Dir els números en ordre. Sense comptar = sense posar dins."
@@ -1850,6 +3306,22 @@
 "compte": [
 "compte",
 "Compte! = vés amb cura, perill!"
+],
+"compten": [
+"comptar",
+"Tenen."
+],
+"comuna": [
+"comú",
+"Normal."
+],
+"comunicació": [
+"comunicació",
+"Parlar amb altres."
+],
+"comunicar": [
+"comunicar",
+"Parlar amb altres."
 ],
 "comuniquen": [
 "comunicar-se",
@@ -1871,6 +3343,10 @@
 "concentrat",
 "Molta cosa en poc espai."
 ],
+"concentrin": [
+"concentrar",
+"Parin atenció."
+],
 "concert": [
 "concert",
 "Espectacle de música en directe."
@@ -1879,9 +3355,25 @@
 "concert",
 "Espectacles de música en directe."
 ],
+"concloure": [
+"concloure",
+"Decidir al final."
+],
+"concretes": [
+"concret",
+"Determinades."
+],
 "concurs": [
 "concurs",
 "Competició per guanyar un premi."
+],
+"condicionat": [
+"condicionar",
+"Aire condicionat: aparell que refreda."
+],
+"condicions": [
+"condició",
+"Situacions."
 ],
 "conductor": [
 "conductor",
@@ -1891,9 +3383,21 @@
 "conduir",
 "Porten un cotxe."
 ],
+"coneguda": [
+"conèixer",
+"Que se sap."
+],
+"conegudes": [
+"conèixer",
+"Que se saben."
+],
 "coneguis": [
 "conèixer",
 "Forma de conèixer: que no coneguis = que no saps què és."
+],
+"conegut": [
+"conèixer",
+"Que se sap."
 ],
 "coneguts": [
 "conegut",
@@ -1907,6 +3411,18 @@
 "conèixer",
 "Sabem qui és o què és."
 ],
+"coneixement": [
+"coneixement",
+"El que se sap."
+],
+"coneixements": [
+"coneixement",
+"El que se sap."
+],
+"coneixeran": [
+"conèixer",
+"Sabran."
+],
 "coneixerem": [
 "conèixer",
 "Sabrem com és (futur)."
@@ -1914,6 +3430,14 @@
 "coneixia": [
 "conèixer",
 "Sabia qui era o què era."
+],
+"confirmar": [
+"confirmar",
+"Assegurar."
+],
+"confon": [
+"confondre",
+"Fa dubtar."
 ],
 "confonen": [
 "confondre",
@@ -1923,9 +3447,25 @@
 "confusió",
 "Quan penses que una cosa és una altra."
 ],
+"conjunt": [
+"conjunt",
+"Grup."
+],
+"connectada": [
+"connectar",
+"Unida."
+],
+"connectades": [
+"connectar",
+"Unides."
+],
 "connectar": [
 "connectar",
 "Unir dues coses."
+],
+"connectem": [
+"connectar",
+"Entrem a internet."
 ],
 "conquerir": [
 "conquerir",
@@ -1939,6 +3479,42 @@
 "consell",
 "Idees que dones a algú per ajudar-lo."
 ],
+"conseqüències": [
+"conseqüència",
+"Resultats."
+],
+"conservat": [
+"conservar",
+"Guardat bé."
+],
+"conservats": [
+"conservar",
+"Guardats bé."
+],
+"considera": [
+"considerar",
+"Pensa."
+],
+"considerar": [
+"considerar",
+"Pensar."
+],
+"considerats": [
+"considerar",
+"Vistos."
+],
+"consideren": [
+"considerar",
+"Pensen."
+],
+"consisteixen": [
+"consistir",
+"Són."
+],
+"consistir": [
+"consistir",
+"Ser."
+],
 "consola": [
 "consola",
 "Màquina per jugar a videojocs a la tele."
@@ -1946,6 +3522,10 @@
 "consoles": [
 "consola",
 "Màquines per jugar a videojocs."
+],
+"constant": [
+"constant",
+"Sempre."
 ],
 "constantment": [
 "constantment",
@@ -1959,25 +3539,65 @@
 "construcció",
 "Cosa construïda, com una casa o un castell."
 ],
+"constructors": [
+"constructor",
+"Persones que construeixen."
+],
 "construeix": [
 "construir",
 "Fa una casa o una cosa gran."
+],
+"construeixen": [
+"construir",
+"Fan."
+],
+"construeixi": [
+"construir",
+"Faci."
+],
+"construint": [
+"construir",
+"Fent."
 ],
 "construir": [
 "construir",
 "Fer una casa o una cosa gran."
 ],
+"construïda": [
+"construir",
+"Feta."
+],
+"construïen": [
+"construir",
+"Feien."
+],
 "construït": [
 "construir",
 "Fet: han construït = han fet."
+],
+"consulta": [
+"consulta",
+"Llibre de consulta: per buscar dades."
 ],
 "consumidors": [
 "consumidor",
 "Persones que compren i fan servir coses."
 ],
+"contenen": [
+"contenir",
+"Tenen a dins."
+],
+"contenia": [
+"contenir",
+"Tenia a dins."
+],
 "content": [
 "content",
 "Feliç."
+],
+"contents": [
+"content",
+"Feliços."
 ],
 "contingut": [
 "contingut",
@@ -1991,6 +3611,10 @@
 "continuar",
 "No parar; seguir."
 ],
+"continuarà": [
+"continuar",
+"Seguirà."
+],
 "continuava": [
 "continuar",
 "Seguia; no parava."
@@ -2003,9 +3627,57 @@
 "contra",
 "Xocar contra = xocar amb força."
 ],
+"contractar": [
+"contractar",
+"Donar feina."
+],
+"contrari": [
+"contrari",
+"Oposat."
+],
+"contrariaven": [
+"contrariar",
+"Molestaven."
+],
+"contrasenyes": [
+"contrasenya",
+"Paraules secretes."
+],
+"contrast": [
+"contrast",
+"Diferència."
+],
+"contrastar": [
+"contrastar",
+"Veure diferències."
+],
+"control": [
+"control",
+"Poder sobre una cosa."
+],
+"controlar": [
+"controlar",
+"Manar sobre una cosa."
+],
+"conté": [
+"contenir",
+"Té a dins."
+],
+"convenientment": [
+"convenient",
+"De manera útil."
+],
 "convençut": [
 "convençut",
 "Que creu una cosa amb força."
+],
+"convençuts": [
+"convèncer",
+"Segurs."
+],
+"conversa": [
+"conversar",
+"Parla amb algú."
 ],
 "converteix": [
 "convertir",
@@ -2027,13 +3699,33 @@
 "convertir",
 "Es convertirà = serà una altra cosa (futur)."
 ],
+"convertissin": [
+"convertir",
+"Fessin una altra cosa."
+],
+"convertit": [
+"convertir",
+"Fet una altra cosa."
+],
 "convertits": [
 "convertir",
 "Que ara són una altra cosa."
 ],
+"convertís": [
+"convertir",
+"Fes una altra cosa."
+],
 "convida": [
 "convidar",
 "Demana a algú que vingui."
+],
+"convincents": [
+"convèncer",
+"Que convencen."
+],
+"conviure": [
+"conviure",
+"Viure junts."
 ],
 "conèixer": [
 "conèixer",
@@ -2043,9 +3735,33 @@
 "cop",
 "Xoc fort."
 ],
+"copiant": [
+"copiar",
+"Fent igual."
+],
+"copiar": [
+"copiar",
+"Fer igual."
+],
+"copiat": [
+"copiar",
+"Fet igual."
+],
+"copte": [
+"copte",
+"Llengua egípcia antiga."
+],
 "cor": [
 "cor",
 "Part del cos que fa córrer la sang."
+],
+"corbes": [
+"corb",
+"Arrodonides."
+],
+"corbs": [
+"corb",
+"Ocells negres."
 ],
 "corda": [
 "corda",
@@ -2063,6 +3779,14 @@
 "correcte",
 "Que està bé."
 ],
+"correctament": [
+"correcte",
+"Bé."
+],
+"correcte": [
+"correcte",
+"Bé."
+],
 "corredora": [
 "corredor",
 "Dona que corre en competicions."
@@ -2079,9 +3803,25 @@
 "corrent del Golf",
 "Corrent d'aigua calenta de l'oceà Atlàntic."
 ],
+"corrents": [
+"corrent",
+"Normals."
+],
+"corres": [
+"córrer",
+"Vas molt ràpid."
+],
+"correspon": [
+"correspondre",
+"És feina de."
+],
 "corro": [
 "córrer",
 "Jo vaig molt de pressa amb les cames."
+],
+"cors": [
+"cor",
+"Òrgans que mouen la sang."
 ],
 "cos": [
 "cos",
@@ -2107,6 +3847,10 @@
 "costat",
 "Parts de la dreta i de l'esquerra."
 ],
+"costi": [
+"costar",
+"Forma de \"costar\"."
+],
 "cotxe": [
 "cotxe",
 "Vehicle de quatre rodes per anar per la carretera."
@@ -2119,9 +3863,17 @@
 "cova",
 "Forats grans dins de la muntanya."
 ],
+"cranc": [
+"cranc",
+"Animal del mar amb pinces."
+],
 "crea": [
 "crear",
 "Fa una cosa nova."
+],
+"creacions": [
+"creació",
+"Coses creades."
 ],
 "creador": [
 "creador",
@@ -2131,6 +3883,10 @@
 "creador",
 "Persones que fan coses noves."
 ],
+"creant": [
+"crear",
+"Fent una cosa nova."
+],
 "crear": [
 "crear",
 "Fer una cosa nova."
@@ -2139,9 +3895,17 @@
 "creatiu",
 "Que inventa coses noves. Mode Creatiu: mode de Minecraft."
 ],
+"creatives": [
+"creatiu",
+"Amb idees noves."
+],
 "creativitat": [
 "creativitat",
 "Capacitat d'inventar coses noves."
+],
+"creaven": [
+"crear",
+"Feien de nou."
 ],
 "crec": [
 "creure",
@@ -2155,6 +3919,10 @@
 "creeper",
 "Monstre verd de Minecraft que explota."
 ],
+"creia": [
+"creure",
+"Pensava."
+],
 "creien": [
 "creure",
 "Pensaven que era veritat."
@@ -2162,6 +3930,10 @@
 "creix": [
 "créixer",
 "Es fa més gran."
+],
+"creixia": [
+"créixer",
+"Es feia més gran."
 ],
 "crema": [
 "cremar",
@@ -2187,6 +3959,10 @@
 "creure",
 "Pensen que és veritat."
 ],
+"creure": [
+"creure",
+"Pensar que és veritat."
+],
 "creus": [
 "creure",
 "Tu penses que és veritat."
@@ -2199,6 +3975,34 @@
 "criar",
 "Cuidar animals perquè creixin."
 ],
+"criat": [
+"criar",
+"Educat."
+],
+"criatura": [
+"criatura",
+"Ésser viu."
+],
+"criatures": [
+"criatura",
+"Éssers vius."
+],
+"crida": [
+"cridar",
+"Parla molt fort."
+],
+"cridant": [
+"cridar",
+"Parlant molt fort."
+],
+"cridar": [
+"cridar",
+"Parlar molt fort."
+],
+"cridem": [
+"cridar",
+"Parlem molt fort."
+],
 "criden l'atenció": [
 "cridar l'atenció",
 "Fan que la gent miri."
@@ -2210,6 +4014,10 @@
 "crispetes": [
 "crispetes",
 "Blat de moro que s'obre amb la calor. Es mengen al cinema."
+],
+"criticar": [
+"criticar",
+"Dir el que és dolent."
 ],
 "cronòmetre": [
 "cronòmetre",
@@ -2227,9 +4035,21 @@
 "crèdit",
 "Noms de les persones que han fet un joc o una pel·lícula."
 ],
+"crèiem": [
+"creure",
+"Pensàvem."
+],
 "créixer": [
 "créixer",
 "Fer-se més gran."
+],
+"crítics": [
+"crític",
+"Persones que diuen el que és dolent."
+],
+"crítiques": [
+"crítica",
+"Opinions negatives."
 ],
 "cua": [
 "cua",
@@ -2243,9 +4063,25 @@
 "cuboza australiana",
 "Medusa molt verinosa d'Austràlia."
 ],
+"cubs": [
+"cub",
+"Formes com caixes."
+],
 "cuc": [
 "cuc",
 "Animal petit, llarg i tou, sense potes."
+],
+"cuidadors": [
+"cuidador",
+"Persones que cuiden."
+],
+"cuidaven": [
+"cuidar",
+"Atenien."
+],
+"cuina": [
+"cuina",
+"Lloc per cuinar; manera de cuinar."
 ],
 "cuinar": [
 "cuinar",
@@ -2259,9 +4095,17 @@
 "cuiner",
 "Persona que cuina."
 ],
+"cuiners": [
+"cuiner",
+"Persones que cuinen."
+],
 "culpa": [
 "culpa",
 "Per culpa de = a causa de una cosa dolenta."
+],
+"cultura": [
+"cultura",
+"Manera de viure d'un grup."
 ],
 "cuques": [
 "cuca",
@@ -2271,17 +4115,41 @@
 "cura",
 "Atenció per no fer mal."
 ],
+"curar": [
+"curar",
+"Posar bé."
+],
+"curat": [
+"curar",
+"Assecat perquè duri."
+],
 "curiosa": [
 "curiós",
 "Estranya i interessant."
+],
+"curiosament": [
+"curiós",
+"De manera estranya."
 ],
 "curiositat": [
 "curiositat",
 "Ganes de saber coses."
 ],
+"curiosos": [
+"curiós",
+"Que volen saber."
+],
+"curiós": [
+"curiós",
+"Que vol saber."
+],
 "cursa": [
 "cursa",
 "Competició de velocitat."
+],
+"cursar": [
+"cursar",
+"Estudiar una assignatura."
 ],
 "curt": [
 "curt",
@@ -2295,6 +4163,10 @@
 "curt",
 "De poca llargada."
 ],
+"càlid": [
+"càlid",
+"Amb calor suau."
+],
 "càmera": [
 "càmera",
 "Màquina per fer fotos o vídeos."
@@ -2303,9 +4175,29 @@
 "càmera",
 "Màquines per fer fotos o vídeos."
 ],
+"càncer": [
+"càncer",
+"Malaltia greu."
+],
 "càstig": [
 "càstig",
 "Una cosa dolenta que reps perquè has fet mal."
+],
+"cèl·lules": [
+"cèl·lula",
+"Parts molt petites del cos."
+],
+"cèrcols": [
+"cèrcol",
+"Cercles."
+],
+"cérvol": [
+"cérvol",
+"Animal amb banyes grans."
+],
+"còpia": [
+"còpia",
+"Cosa igual a una altra."
 ],
 "còpies": [
 "còpia",
@@ -2318,6 +4210,10 @@
 "d": [
 "de",
 "De davant de vocal o h: d'or, d'Àsia."
+],
+"da": [
+"da",
+"Part d'un nom."
 ],
 "dades": [
 "dada",
@@ -2346,6 +4242,18 @@
 "darrere seu": [
 "darrere seu",
 "A la part de la seva esquena."
+],
+"darwin": [
+"darwin",
+"Cognom d'un científic."
+],
+"dashi": [
+"dashi",
+"Brou japonès."
+],
+"daurada": [
+"daurat",
+"Del color de l'or."
 ],
 "daurat": [
 "daurat",
@@ -2383,6 +4291,22 @@
 "debat",
 "Conversa on es diuen opinions diferents."
 ],
+"debò": [
+"debò",
+"De debò: de veritat."
+],
+"decebedor": [
+"decebre",
+"Que no és tan bo com s'esperava."
+],
+"decebedora": [
+"decebre",
+"Que no és tan bona com s'esperava."
+],
+"decepció": [
+"decepció",
+"Tristesa per una cosa que no ha sortit."
+],
 "decideixen": [
 "decidir",
 "Trien què fer."
@@ -2391,17 +4315,61 @@
 "decidir",
 "Tries què fer."
 ],
+"decidir": [
+"decidir",
+"Triar què fer."
+],
 "decisions": [
 "decisió",
 "Coses que tries."
+],
+"decisió": [
+"decisió",
+"El que es decideix."
+],
+"declaracions": [
+"declaració",
+"El que diu algú."
+],
+"dedicat": [
+"dedicar",
+"Donat temps."
+],
+"dediquen": [
+"dedicar",
+"Donen temps."
 ],
 "defensar": [
 "defensar",
 "Protegir d'un atac."
 ],
+"defensat": [
+"defensar",
+"Donat suport."
+],
 "defensen": [
 "defensar",
 "Protegeixen d'un atac."
+],
+"defensors": [
+"defensor",
+"Persones que donen suport."
+],
+"definitives": [
+"definitiu",
+"Finals."
+],
+"deien": [
+"dir",
+"Parlaven."
+],
+"deinonychus": [
+"deinonychus",
+"Un dinosaure."
+],
+"deixa": [
+"deixar",
+"Para; no continua."
 ],
 "deixar": [
 "deixar",
@@ -2411,6 +4379,10 @@
 "deixar",
 "Ho deixarà córrer = no ho farà més."
 ],
+"deixat": [
+"deixar",
+"Abandonat."
+],
 "deixaven": [
 "deixar",
 "Posaven en un lloc i no ho treien."
@@ -2418,6 +4390,10 @@
 "deixen": [
 "deixar",
 "Posen en un lloc; permeten."
+],
+"deixi": [
+"deixar",
+"Forma de \"deixar\"."
 ],
 "deixis": [
 "deixar",
@@ -2435,25 +4411,77 @@
 "delicat",
 "Que es trenca fàcilment; que necessita cura."
 ],
+"deliciós": [
+"deliciós",
+"Molt bo."
+],
 "dels": [
 "dels",
 "de + els."
+],
+"demanant": [
+"demanar",
+"Pregant."
+],
+"demanar": [
+"demanar",
+"Voler que et donin."
+],
+"demanat": [
+"demanar",
+"Sol·licitat."
 ],
 "demanen": [
 "demanar",
 "Necessiten; diuen que volen."
 ],
+"demanessin": [
+"demanar",
+"Volguessin."
+],
+"demostra": [
+"demostrar",
+"Prova."
+],
 "demostrar": [
 "demostrar",
 "Fer veure que una cosa és veritat."
+],
+"demostraria": [
+"demostrar",
+"Provaria."
+],
+"demostrat": [
+"demostrar",
+"Provat."
+],
+"demostrava": [
+"demostrar",
+"Provava."
+],
+"demostraven": [
+"demostrar",
+"Provaven."
 ],
 "demà": [
 "demà",
 "El dia després d'avui."
 ],
+"demòtic": [
+"demòtic",
+"Escriptura egípcia senzilla."
+],
+"dengue": [
+"dengue",
+"Malaltia que transmeten els mosquits."
+],
 "dents": [
 "dent",
 "Peces blanques i dures de la boca per menjar."
+],
+"depenen": [
+"dependre",
+"Necessiten d'una cosa."
 ],
 "depredador": [
 "depredador",
@@ -2462,6 +4490,22 @@
 "depredadors": [
 "depredador",
 "Animals que cacen i mengen altres animals."
+],
+"depèn": [
+"dependre",
+"Necessita d'una cosa."
+],
+"derrota": [
+"derrota",
+"Perdre una batalla."
+],
+"derrotat": [
+"derrotar",
+"Vençut."
+],
+"derrotessin": [
+"derrotar",
+"Vencessin."
 ],
 "des": [
 "des",
@@ -2479,6 +4523,22 @@
 "des de molt lluny",
 "Estant molt lluny."
 ],
+"desacord": [
+"desacord",
+"No estar d'acord."
+],
+"desagradable": [
+"desagradable",
+"Que no agrada."
+],
+"desaparegui": [
+"desaparèixer",
+"Deixi d'estar."
+],
+"desaparegut": [
+"desaparèixer",
+"Que ja no hi és."
+],
 "desapareix": [
 "desaparèixer",
 "Ja no es veu."
@@ -2490,6 +4550,18 @@
 "desaparèixer": [
 "desaparèixer",
 "Deixar de veure's; deixar d'existir."
+],
+"desastre": [
+"desastre",
+"Una cosa molt dolenta."
+],
+"desbloquejar": [
+"desbloquejar",
+"Obrir."
+],
+"descans": [
+"descans",
+"Temps per descansar."
 ],
 "descansar": [
 "descansar",
@@ -2503,9 +4575,29 @@
 "descansar",
 "Estan quiets; reposen."
 ],
+"descargolar": [
+"descargolar",
+"Obrir fent voltes."
+],
 "descarregar": [
 "descarregar",
 "Posar un programa d'internet a l'ordinador o al mòbil."
+],
+"descartar": [
+"descartar",
+"Deixar fora."
+],
+"descendeixen": [
+"descendir",
+"Venen de."
+],
+"descendents": [
+"descendent",
+"Fills, néts..."
+],
+"desclouen": [
+"descloure",
+"Surten de l'ou."
 ],
 "descobert": [
 "descobert",
@@ -2535,9 +4627,33 @@
 "descobrir",
 "Trobaràs per primera vegada (futur)."
 ],
+"desconcertant": [
+"desconcertar",
+"Que confon."
+],
+"desconeguda": [
+"desconegut",
+"Que no es coneix."
+],
+"desconegut": [
+"desconegut",
+"Que no es coneix."
+],
+"desconfiaven": [
+"desconfiar",
+"No es refiaven."
+],
+"descriu": [
+"descriure",
+"Diu com és."
+],
 "descriuen": [
 "descriure",
 "Diuen com és una cosa."
+],
+"descriure": [
+"descriure",
+"Dir com és."
 ],
 "desembre": [
 "desembre",
@@ -2555,6 +4671,18 @@
 "desenvolupador",
 "Persones que fan programes o jocs."
 ],
+"desenvolupar": [
+"desenvolupar",
+"Fer créixer; crear."
+],
+"desenvolupat": [
+"desenvolupar",
+"Fet créixer."
+],
+"desenvolupen": [
+"desenvolupar",
+"Fan créixer."
+],
 "desert": [
 "desert",
 "Lloc molt sec, amb sorra i sense pluja."
@@ -2567,9 +4695,21 @@
 "desert",
 "Llocs molt secs, amb sorra."
 ],
+"desesperat": [
+"desesperar",
+"Que vol molt una cosa."
+],
 "desfer": [
 "desfer",
 "Fer-se líquid amb la calor."
+],
+"desguàs": [
+"desguàs",
+"Tub per on se'n va l'aigua."
+],
+"desmaiar": [
+"desmaiar",
+"Desmaiar-se: perdre el sentit."
 ],
 "desordenat": [
 "desordenat",
@@ -2578,6 +4718,18 @@
 "desperta": [
 "despertar",
 "Deixa de dormir."
+],
+"despertant": [
+"despertar",
+"Provocant."
+],
+"desperts": [
+"despert",
+"Sense dormir; atents."
+],
+"desplaçat": [
+"desplaçar",
+"Mogut."
 ],
 "després": [
 "després",
@@ -2595,6 +4747,34 @@
 "destruir",
 "Trencar del tot."
 ],
+"desxifrador": [
+"desxifrador",
+"Persona que desxifra codis."
+],
+"desxifradors": [
+"desxifrador",
+"Persones que desxifren codis."
+],
+"desxifrar": [
+"desxifrar",
+"Entendre un codi."
+],
+"desxifrat": [
+"desxifrar",
+"Entès."
+],
+"detall": [
+"detall",
+"Part petita."
+],
+"detallats": [
+"detall",
+"Amb molts detalls."
+],
+"detalls": [
+"detall",
+"Parts petites."
+],
 "detectar": [
 "detectar",
 "Trobar una cosa amagada."
@@ -2606,6 +4786,14 @@
 "deu": [
 "deu",
 "1. El número 10. 2. Ha de: deu ser = segurament és."
+],
+"deures": [
+"deure",
+"Tasques de l'escola."
+],
+"devia": [
+"deure",
+"Havia de."
 ],
 "dia": [
 "dia",
@@ -2631,9 +4819,25 @@
 "dibuixar",
 "Fet amb un llapis en un paper."
 ],
+"dibuixos": [
+"dibuix",
+"Imatges fetes a mà."
+],
+"diccionaris": [
+"diccionari",
+"Llibres amb paraules i el seu significat."
+],
+"diem": [
+"dir",
+"Parlem."
+],
 "dies": [
 "dia",
 "Temps de vint-i-quatre hores."
+],
+"dieta": [
+"dieta",
+"El que menges."
 ],
 "diferent": [
 "diferent",
@@ -2647,6 +4851,18 @@
 "diferència",
 "El que fa que dues coses no siguin iguals."
 ],
+"dificilíssim": [
+"difícil",
+"Molt difícil."
+],
+"dificultat": [
+"dificultat",
+"El que és difícil."
+],
+"dificultats": [
+"dificultat",
+"Problemes."
+],
 "difícil": [
 "difícil",
 "Que costa de fer."
@@ -2654,6 +4870,14 @@
 "difícils": [
 "difícil",
 "Que costen de fer."
+],
+"digital": [
+"digital",
+"A l'ordinador o a internet."
+],
+"diguessis": [
+"dir",
+"Diguessis el nom."
 ],
 "dilluns": [
 "dilluns",
@@ -2666,6 +4890,14 @@
 "diminuts": [
 "diminut",
 "Molt i molt petits."
+],
+"dinar": [
+"dinar",
+"Menjar del migdia."
+],
+"dindi": [
+"dindi",
+"Gall dindi: au gran."
 ],
 "diners": [
 "diners",
@@ -2695,9 +4927,21 @@
 "dir",
 "Parlar; explicar amb paraules."
 ],
+"diran": [
+"dir",
+"Parlaran."
+],
+"direcció": [
+"direcció",
+"Cap on."
+],
 "directament": [
 "directament",
 "Sense passar per un altre lloc."
+],
+"directe": [
+"directe",
+"En directe: en el moment."
 ],
 "director": [
 "director",
@@ -2707,13 +4951,49 @@
 "dirigir",
 "Mana i organitza."
 ],
+"dirigien": [
+"dirigir",
+"Manaven."
+],
+"disciplina": [
+"disciplina",
+"Matèria d'estudi."
+],
+"discussions": [
+"discussió",
+"Baralles amb paraules."
+],
 "discussió": [
 "discussió",
 "Conversa on dues persones no pensen igual."
 ],
+"discutir": [
+"discutir",
+"Parlar sense estar d'acord."
+],
+"disfressa": [
+"disfressa",
+"Roba per semblar un altre."
+],
+"disminuir": [
+"disminuir",
+"Fer més petit."
+],
+"disponible": [
+"disponible",
+"Que es pot fer servir."
+],
 "dissabtes": [
 "dissabte",
 "El sisè dia de la setmana."
+],
+"disseny": [
+"disseny",
+"Forma d'una cosa."
+],
+"dissenyador": [
+"dissenyador",
+"Persona que dissenya."
 ],
 "dissenyadors": [
 "dissenyador",
@@ -2723,9 +5003,29 @@
 "dissenyar",
 "Inventar com serà una cosa i dibuixar-la."
 ],
+"dissenyats": [
+"dissenyar",
+"Fets."
+],
+"dissenys": [
+"disseny",
+"Formes de coses."
+],
 "disset": [
 "disset",
 "El número 17."
+],
+"distants": [
+"distant",
+"Llunyans."
+],
+"distingeixen": [
+"distingir",
+"Veuen la diferència."
+],
+"distància": [
+"distància",
+"El que hi ha de lluny."
 ],
 "dits": [
 "dit",
@@ -2739,9 +5039,25 @@
 "dir",
 "Parlen; expliquen amb paraules."
 ],
+"diverses": [
+"divers",
+"Unes quantes."
+],
+"diversió": [
+"divertir",
+"Passar-ho bé."
+],
 "diversos": [
 "diversos",
 "Uns quants, més d'un."
+],
+"divertida": [
+"divertit",
+"Que fa passar una bona estona."
+],
+"divertides": [
+"divertit",
+"Que fan passar una bona estona."
 ],
 "divertir": [
 "divertir",
@@ -2751,21 +5067,61 @@
 "divertit",
 "Que fa passar-ho bé."
 ],
+"divertits": [
+"divertit",
+"Que fan passar una bona estona."
+],
+"dividir": [
+"dividir",
+"Separar."
+],
 "divuit": [
 "divuit",
 "El número 18."
+],
+"diària": [
+"diari",
+"De cada dia."
+],
+"diòxid": [
+"diòxid",
+"Diòxid de carboni: gas que traiem en respirar."
 ],
 "doble": [
 "doble",
 "Dues vegades."
 ],
+"documents": [
+"document",
+"Papers escrits."
+],
+"dofins": [
+"dofí",
+"Mamífers del mar molt llestos."
+],
 "dofí": [
 "dofí",
 "Animal del mar molt intel·ligent que respira aire."
 ],
+"doldre": [
+"doldre",
+"Fer mal."
+],
+"dolent": [
+"dolent",
+"Que no és bo."
+],
 "dolents": [
 "dolent",
 "Que no són bons."
+],
+"dolls": [
+"doll",
+"Sortides fortes de líquid."
+],
+"dolor": [
+"dolor",
+"El que se sent quan una cosa fa mal."
 ],
 "dolç": [
 "dolç",
@@ -2783,9 +5139,33 @@
 "dona",
 "1. Persona adulta femenina. 2. Forma de donar: dona diners."
 ],
+"donacions": [
+"donació",
+"Diners donats per ajudar."
+],
+"donants": [
+"donant",
+"Persones que donen."
+],
 "donar": [
 "donar",
 "Passar una cosa a algú perquè la tingui."
+],
+"donat": [
+"donar",
+"Forma de \"donar\"."
+],
+"donava": [
+"donar",
+"Entregava."
+],
+"donaven": [
+"donar",
+"Entregaven."
+],
+"done": [
+"donar",
+"Doni per ajudar."
 ],
 "donen": [
 "donar",
@@ -2794,6 +5174,10 @@
 "dones": [
 "dona",
 "Persones adultes femenines."
+],
+"donin": [
+"donar",
+"Facin donacions."
 ],
 "dorm": [
 "dormir",
@@ -2831,6 +5215,22 @@
 "drac",
 "Animal de les llegendes, amb ales, que treu foc."
 ],
+"dret": [
+"dret",
+"Per dret propi: per si mateix."
+],
+"dreta": [
+"dreta",
+"El costat contrari a l'esquerra."
+],
+"dubtar": [
+"dubtar",
+"No estar segur."
+],
+"dubte": [
+"dubte",
+"No estar segur."
+],
 "dubto": [
 "dubtar",
 "No estic segur."
@@ -2851,6 +5251,10 @@
 "durar",
 "Passar un temps; no acabar-se."
 ],
+"duraria": [
+"durar",
+"Continuaria."
+],
 "durava": [
 "durar",
 "Passava un temps."
@@ -2859,9 +5263,21 @@
 "durar",
 "Es mantenen bé un temps."
 ],
+"duri": [
+"durar",
+"Continuï."
+],
 "durian": [
 "durian",
 "Fruita gran d'Àsia, amb punxes i molt mala olor."
+],
+"durin": [
+"durar",
+"Continuïn."
+],
+"dècades": [
+"dècada",
+"Deu anys."
 ],
 "dècima": [
 "dècima",
@@ -2874,6 +5290,18 @@
 "dòlars": [
 "dòlar",
 "Diners dels Estats Units."
+],
+"ecologia": [
+"ecologia",
+"Ciència de la natura."
+],
+"ecosistemes": [
+"ecosistema",
+"Éssers vius i el seu lloc."
+],
+"ecòlegs": [
+"ecòleg",
+"Científics de la natura."
 ],
 "edat": [
 "edat",
@@ -2891,13 +5319,29 @@
 "edifici",
 "Cases grans o construccions."
 ],
+"educació": [
+"educació",
+"Ensenyament."
+],
+"educativa": [
+"educar",
+"Per aprendre."
+],
 "efecte": [
 "efecte",
 "El que passa per una causa."
 ],
+"efectes": [
+"efecte",
+"Resultats."
+],
 "eficaç": [
 "eficaç",
 "Que fa bé la seva feina."
+],
+"egipci": [
+"egipci",
+"D'Egipte."
 ],
 "egipcis": [
 "egipci",
@@ -2906,6 +5350,10 @@
 "egipte": [
 "Egipte",
 "País del nord d'Àfrica, amb el riu Nil."
+],
+"egípcia": [
+"egipci",
+"D'Egipte."
 ],
 "eina": [
 "eina",
@@ -2927,9 +5375,17 @@
 "el més important",
 "La cosa que importa més."
 ],
+"elaborat": [
+"elaborar",
+"Molt treballat."
+],
 "electricitat": [
 "electricitat",
 "Energia que fa funcionar els llums i les màquines."
+],
+"electrònics": [
+"electrònic",
+"Amb aparells."
 ],
 "elefant": [
 "elefant",
@@ -2938,6 +5394,18 @@
 "elefants": [
 "elefant",
 "Animals molt grans, grisos, amb trompa."
+],
+"elegant": [
+"elegant",
+"Bonica i amb estil."
+],
+"elements": [
+"element",
+"Parts."
+],
+"eliminar": [
+"eliminar",
+"Treure."
 ],
 "ell": [
 "ell",
@@ -2975,13 +5443,57 @@
 "embolicar",
 "Cobrien una cosa amb tela o paper."
 ],
+"emboscada": [
+"emboscada",
+"Atac per sorpresa."
+],
 "embrutar": [
 "embrutar",
 "Fer que una cosa no estigui neta."
 ],
+"emocional": [
+"emoció",
+"De les emocions."
+],
+"emocionant": [
+"emoció",
+"Que emociona."
+],
+"emocions": [
+"emoció",
+"Sentiments forts."
+],
+"emoció": [
+"emoció",
+"Sentiment fort."
+],
+"empenyia": [
+"empènyer",
+"Movia amb força."
+],
+"emperador": [
+"emperador",
+"Governant molt poderós."
+],
+"empitjoren": [
+"empitjorar",
+"Fan pitjor."
+],
+"emporten": [
+"emportar",
+"Se'n porten."
+],
+"emporti": [
+"emportar",
+"S'endugui."
+],
 "empresa": [
 "empresa",
 "Grup de persones que treballen per vendre o fer coses."
+],
+"empresari": [
+"empresari",
+"Persona amb una empresa."
 ],
 "empreses": [
 "empresa",
@@ -3007,6 +5519,18 @@
 "en realitat",
 "De veritat."
 ],
+"enamorar": [
+"enamorar",
+"Agradar moltíssim."
+],
+"encaixar": [
+"encaixar",
+"Entrar bé."
+],
+"encaixen": [
+"encaixar",
+"Entren bé."
+],
 "encanta": [
 "encantar",
 "M'encanta = m'agrada moltíssim."
@@ -3015,6 +5539,10 @@
 "encantar",
 "Agradar moltíssim."
 ],
+"encantava": [
+"encantar",
+"Agradava molt."
+],
 "encara": [
 "encara",
 "1. Fins ara. 2. Encara que = tot i que."
@@ -3022,6 +5550,10 @@
 "encara avui": [
 "encara avui",
 "Fins avui."
+],
+"encendre": [
+"encendre",
+"Donar llum."
 ],
 "encenem": [
 "encendre",
@@ -3035,9 +5567,41 @@
 "encongir-se",
 "Es fa més petit."
 ],
+"encèlad": [
+"encèlad",
+"Una lluna de Saturn."
+],
+"encès": [
+"encendre",
+"Amb llum."
+],
 "endavant": [
 "endavant",
 "Cap a davant."
+],
+"endemà": [
+"endemà",
+"El dia després."
+],
+"endur": [
+"endur",
+"Endur-se: emportar-se."
+],
+"enemic": [
+"enemic",
+"Contrari."
+],
+"enemics": [
+"enemic",
+"Contraris."
+],
+"energia": [
+"energia",
+"Força per fer coses."
+],
+"enfadar": [
+"enfadar",
+"Posar de mal humor."
 ],
 "enfadat": [
 "enfadat",
@@ -3047,6 +5611,10 @@
 "enfadat",
 "Que no estan contents; amb ràbia."
 ],
+"enfilar": [
+"enfilar",
+"Pujar per una cosa."
+],
 "enfilen": [
 "enfilar-se",
 "Pugen agafant-se amb les mans i els peus."
@@ -3055,9 +5623,29 @@
 "enfonsar",
 "Fer anar a sota l'aigua."
 ],
+"enganxada": [
+"enganxar",
+"Unida."
+],
+"enganxades": [
+"enganxar",
+"Unides."
+],
+"enganxat": [
+"enganxar",
+"Unit."
+],
 "enganxava": [
 "enganxar",
 "Feia que dues coses quedessin juntes."
+],
+"enganxaven": [
+"enganxar",
+"S'agafaven."
+],
+"enganxi": [
+"enganxar",
+"S'aficioni molt."
 ],
 "enganxoses": [
 "enganxós",
@@ -3067,6 +5655,14 @@
 "enganxós",
 "Que s'enganxa als dits."
 ],
+"engany": [
+"engany",
+"Trampa."
+],
+"enganyar": [
+"enganyar",
+"Fer creure una cosa falsa."
+],
 "enginyer": [
 "enginyer",
 "Persona que dissenya màquines o construccions."
@@ -3074,6 +5670,34 @@
 "enginyers": [
 "enginyer",
 "Persones que dissenyen màquines o construccions."
+],
+"enginyosa": [
+"enginy",
+"Molt llesta."
+],
+"enginyosos": [
+"enginy",
+"Molt llestos."
+],
+"enginyós": [
+"enginy",
+"Molt llest."
+],
+"enigma": [
+"enigma",
+"Misteri."
+],
+"enigmes": [
+"enigma",
+"Misteris."
+],
+"enlairar": [
+"enlairar",
+"Enlairar-se: pujar a l'aire."
+],
+"enlloc": [
+"enlloc",
+"En cap lloc."
 ],
 "enllà": [
 "enllà",
@@ -3086,6 +5710,10 @@
 "enorme": [
 "enorme",
 "Molt i molt gran."
+],
+"enormement": [
+"enorme",
+"Moltíssim."
 ],
 "enormes": [
 "enorme",
@@ -3103,6 +5731,10 @@
 "ensenyar",
 "Fa que algú aprengui."
 ],
+"ensenyant": [
+"ensenyar",
+"Mostrant."
+],
 "ensenyar": [
 "ensenyar",
 "Fer que algú aprengui."
@@ -3119,9 +5751,21 @@
 "entendre",
 "Sabem què vol dir."
 ],
+"entengués": [
+"entendre",
+"Comprengués."
+],
+"entenia": [
+"entendre",
+"Comprenia."
+],
 "enter": [
 "Enter",
 "Tecla de l'ordinador per dir «sí» o canviar de línia."
+],
+"entorn": [
+"entorn",
+"El que hi ha al voltant."
 ],
 "entra": [
 "entrar",
@@ -3143,6 +5787,14 @@
 "entrenar",
 "Practica per fer-ho millor."
 ],
+"entrenador": [
+"entrenador",
+"Persona que entrena."
+],
+"entrenadors": [
+"entrenador",
+"Persones que entrenen."
+],
 "entrenament": [
 "entrenament",
 "Pràctica per fer-ho millor."
@@ -3155,13 +5807,53 @@
 "entrenar",
 "Practicaria (condicional)."
 ],
+"entrenat": [
+"entrenar",
+"Practicat."
+],
 "entrenen": [
 "entrenar",
 "Practiquen per fer-ho millor."
 ],
+"entrepà": [
+"entrepà",
+"Pa amb alguna cosa a dins."
+],
+"entreteniment": [
+"entreteniment",
+"Diversió."
+],
+"entretinguda": [
+"entretenir",
+"Divertida."
+],
 "entro": [
 "entrar",
 "Jo passo a dins."
+],
+"entusiasta": [
+"entusiasta",
+"Amb moltes ganes."
+],
+"entusiastes": [
+"entusiasta",
+"Persones amb moltes ganes."
+],
+"entès": [
+"entendre",
+"Comprès."
+],
+"enumera": [
+"enumerar",
+"Diu una llista."
+],
+"enverinar": [
+"enverinar",
+"Donar verí."
+],
+"envia": [
+"enviar",
+"Fa arribar."
 ],
 "enviar": [
 "enviar",
@@ -3171,6 +5863,14 @@
 "enviar",
 "Fan que una cosa vagi a un altre lloc."
 ],
+"envies": [
+"enviar",
+"Fas arribar."
+],
+"envolta": [
+"envoltar",
+"És al voltant."
+],
 "epic": [
 "Epic",
 "Part del nom de l'empresa Epic Games."
@@ -3179,9 +5879,21 @@
 "Epic Games",
 "Empresa que va crear Fortnite."
 ],
+"equilibrat": [
+"equilibrar",
+"Amb una mica de tot."
+],
+"equilibri": [
+"equilibri",
+"Estar sense caure."
+],
 "equip": [
 "equip",
 "Grup de persones que treballen o juguen juntes."
+],
+"equips": [
+"equip",
+"Aparells; grups."
 ],
 "equival": [
 "equivaler",
@@ -3190,6 +5902,18 @@
 "equivocar": [
 "equivocar",
 "Equivocar-se = fer un error."
+],
+"equivocats": [
+"equivocar",
+"Sense raó."
+],
+"equivocava": [
+"equivocar",
+"No tenia raó."
+],
+"equivoquen": [
+"equivocar",
+"No l'encerten."
 ],
 "era": [
 "ser",
@@ -3227,6 +5951,10 @@
 "dir-se",
 "El seu nom és."
 ],
+"esbrinar": [
+"esbrinar",
+"Descobrir."
+],
 "escala": [
 "escala",
 "Graons per pujar i baixar."
@@ -3243,6 +5971,10 @@
 "escalfar",
 "Fan més calent."
 ],
+"escalfor": [
+"escalfor",
+"Calor suau."
+],
 "escapar": [
 "escapar",
 "Sortir d'un lloc on estàs tancat o en perill."
@@ -3255,6 +5987,14 @@
 "escata",
 "Peces petites i dures de la pell dels peixos i rèptils."
 ],
+"escatós": [
+"escata",
+"Amb escates."
+],
+"escena": [
+"escena",
+"Moment d'una pel·lícula."
+],
 "esclata": [
 "esclatar",
 "Explota."
@@ -3263,9 +6003,21 @@
 "escola",
 "Lloc on els nens aprenen."
 ],
+"escolar": [
+"escolar",
+"De l'escola."
+],
+"escolars": [
+"escolar",
+"Alumnes."
+],
 "escoles": [
 "escola",
 "Llocs on els nens aprenen."
+],
+"escollida": [
+"escollir",
+"Triada."
 ],
 "escolta": [
 "escoltar",
@@ -3279,17 +6031,57 @@
 "escoltar",
 "Paren atenció als sons."
 ],
+"escoltin": [
+"escoltar",
+"Sentin."
+],
+"escribes": [
+"escriba",
+"Persones que escrivien textos."
+],
+"escriptors": [
+"escriptor",
+"Persones que escriuen."
+],
+"escriptura": [
+"escriptura",
+"Manera d'escriure."
+],
+"escriptures": [
+"escriptura",
+"Maneres d'escriure."
+],
+"escrit": [
+"escriure",
+"Amb lletres."
+],
+"escrita": [
+"escriure",
+"Amb lletres."
+],
 "escriure": [
 "escriure",
 "Posar paraules en un paper o una pantalla."
+],
+"escrivien": [
+"escriure",
+"Posaven lletres."
 ],
 "escàners": [
 "escàner",
 "Màquines que fan imatges de dins de les coses."
 ],
+"escèptics": [
+"escèptic",
+"Que dubten."
+],
 "escòcia": [
 "Escòcia",
 "País del nord del Regne Unit."
+],
+"esdeveniment": [
+"esdeveniment",
+"Fet important."
 ],
 "esdeveniments": [
 "esdeveniment",
@@ -3299,9 +6091,33 @@
 "Esfinx",
 "Estàtua amb cos de lleó i cap de persona."
 ],
+"esforcen": [
+"esforçar",
+"Treballen dur."
+],
+"esforç": [
+"esforç",
+"Treball dur."
+],
+"esmenta": [
+"esmentar",
+"Anomena."
+],
+"esmolades": [
+"esmolat",
+"Que tallen molt."
+],
 "esmorza": [
 "esmorzar",
 "Menja al matí."
+],
+"esmunyir": [
+"esmunyir",
+"Passar per un forat."
+],
+"esmunyit": [
+"esmunyir",
+"Passat per un forat."
 ],
 "espacial": [
 "espacial",
@@ -3323,9 +6139,17 @@
 "espai",
 "1. Lloc buit. 2. L'univers, on hi ha les estrelles."
 ],
+"espais": [
+"espai",
+"Llocs."
+],
 "espantar": [
 "espantar",
 "Fer por."
+],
+"espantem": [
+"espantar",
+"Tenim por."
 ],
 "espanya": [
 "Espanya",
@@ -3351,6 +6175,14 @@
 "especial",
 "Diferents dels altres."
 ],
+"espectadors": [
+"espectador",
+"Persones que miren."
+],
+"específics": [
+"específic",
+"Concrets."
+],
 "espelma": [
 "espelma",
 "Pal de cera que fa llum quan crema."
@@ -3363,17 +6195,45 @@
 "esperar",
 "Està en un lloc fins que passa una cosa."
 ],
+"esperant": [
+"esperar",
+"Aguardant."
+],
+"esperança": [
+"esperança",
+"El que es desitja."
+],
 "esperar": [
 "esperar",
 "Estar en un lloc fins que passa una cosa."
+],
+"esperava": [
+"esperar",
+"Creia."
 ],
 "esperaven": [
 "esperar",
 "Pensaven que passaria."
 ],
+"esperen": [
+"esperar",
+"Confien."
+],
+"esperit": [
+"esperit",
+"Manera de ser."
+],
+"espetec": [
+"espetec",
+"Soroll molt fort."
+],
 "espinosaure": [
 "espinosaure",
 "Dinosaure llarg amb una vela a l'esquena."
+],
+"esponjosos": [
+"esponja",
+"Suaus i tous."
 ],
 "esport": [
 "esport",
@@ -3407,6 +6267,22 @@
 "esquena",
 "Part de darrere del cos."
 ],
+"esquerdes": [
+"esquerda",
+"Obertures llargues."
+],
+"esquerra": [
+"esquerra",
+"El costat contrari a la dreta."
+],
+"esquinçat": [
+"esquinçar",
+"Trencat."
+],
+"esquitxar": [
+"esquitxar",
+"Llançar gotes d'aigua."
+],
 "est": [
 "est",
 "El costat per on surt el sol."
@@ -3414,6 +6290,14 @@
 "estació": [
 "estació",
 "1. Lloc on treballen científics. 2. Part de l'any."
+],
+"estadi": [
+"estadi",
+"Lloc gran per fer esport."
+],
+"estadístics": [
+"estadística",
+"Amb números."
 ],
 "estalviar": [
 "estalviar",
@@ -3423,13 +6307,33 @@
 "estar",
 "Forma de estar: estan bruts."
 ],
+"estancada": [
+"estancar",
+"Que no es mou."
+],
+"estanys": [
+"estany",
+"Llacs petits."
+],
 "estar": [
 "estar",
 "Trobar-se d'una manera: estar content."
 ],
+"estarem": [
+"estar",
+"Forma d'\"estar\"."
+],
+"estarien": [
+"estar",
+"Forma d'\"estar\"."
+],
 "estat": [
 "estat",
 "1. Manera de trobar-se. 2. Part d'un país."
+],
+"estats": [
+"estat",
+"Països."
 ],
 "estats units": [
 "Estats Units",
@@ -3438,6 +6342,34 @@
 "estava": [
 "estar",
 "Es trobava."
+],
+"estaven": [
+"estar",
+"Forma d'\"estar\"."
+],
+"estem": [
+"estar",
+"Forma d'\"estar\" per a \"nosaltres\"."
+],
+"estic": [
+"estar",
+"Forma d'\"estar\" per a \"jo\"."
+],
+"estigui": [
+"estar",
+"Forma d'\"estar\"."
+],
+"estil": [
+"estil",
+"Manera de fer."
+],
+"estimar": [
+"estimar",
+"Voler molt."
+],
+"estimo": [
+"estimar",
+"Prefereixo."
 ],
 "estiraria": [
 "estirar",
@@ -3451,6 +6383,10 @@
 "estona",
 "Una mica de temps."
 ],
+"estrany": [
+"estrany",
+"Rar."
+],
 "estranya": [
 "estrany",
 "Rara; que no és normal."
@@ -3462,6 +6398,10 @@
 "estranys": [
 "estrany",
 "Rars; que no són normals."
+],
+"estratègia": [
+"estratègia",
+"Pla per guanyar."
 ],
 "estratègies": [
 "estratègia",
@@ -3475,9 +6415,45 @@
 "estrella",
 "Punts de llum al cel de nit."
 ],
+"estressant": [
+"estrès",
+"Que posa nerviós."
+],
+"estret": [
+"estret",
+"Poc ample."
+],
 "estret de gibraltar": [
 "estret de Gibraltar",
 "Mar estret entre Espanya i Àfrica."
+],
+"estreta": [
+"estret",
+"Molt propera."
+],
+"estrictes": [
+"estricte",
+"Molt seriosos."
+],
+"estructura": [
+"estructura",
+"Forma d'una cosa."
+],
+"estrès": [
+"estrès",
+"Nervis i pressió."
+],
+"estudi": [
+"estudi",
+"Investigació."
+],
+"estudiant": [
+"estudiar",
+"Investigant."
+],
+"estudiants": [
+"estudiant",
+"Persones que estudien."
 ],
 "estudiar": [
 "estudiar",
@@ -3491,6 +6467,10 @@
 "estudiar",
 "Investigats."
 ],
+"estudiaven": [
+"estudiar",
+"Investigaven."
+],
 "estudien": [
 "estudiar",
 "Aprenen o investiguen."
@@ -3498,6 +6478,10 @@
 "estudio": [
 "estudiar",
 "Jo aprenc o investigo."
+],
+"estudis": [
+"estudi",
+"Investigacions."
 ],
 "està": [
 "estar",
@@ -3539,13 +6523,61 @@
 "Everest",
 "La muntanya més alta del món."
 ],
+"evident": [
+"evident",
+"Fàcil de veure."
+],
+"evitar": [
+"evitar",
+"Fer que no passi."
+],
+"evitaven": [
+"evitar",
+"S'allunyaven."
+],
+"eviten": [
+"evitar",
+"Fan que no passi."
+],
+"evolució": [
+"evolució",
+"Canvi lent dels éssers vius."
+],
 "exactament": [
 "exactament",
 "De manera exacta."
 ],
+"exagerar": [
+"exagerar",
+"Dir que és més del que és."
+],
+"exagerats": [
+"exagerar",
+"Més grans del que són."
+],
+"examina": [
+"examinar",
+"Mira amb cura."
+],
+"excavacions": [
+"excavació",
+"Treballs de cavar per buscar restes."
+],
 "excavació": [
 "excavació",
 "Quan es fa un forat a terra per buscar coses."
+],
+"excavant": [
+"excavar",
+"Cavant."
+],
+"excel·lent": [
+"excel·lent",
+"Molt bo."
+],
+"excel·lents": [
+"excel·lent",
+"Molt bons."
 ],
 "excrements": [
 "excrement",
@@ -3555,6 +6587,14 @@
 "excursionista",
 "Persones que fan passejades per la muntanya."
 ],
+"executar": [
+"executar",
+"Fer funcionar."
+],
+"exemple": [
+"exemple",
+"Cas que serveix per explicar."
+],
 "exemples": [
 "exemple",
 "Coses que serveixen per explicar."
@@ -3562,6 +6602,18 @@
 "exercici": [
 "exercici",
 "Activitat per moure el cos. També: pràctica."
+],
+"exigeix": [
+"exigir",
+"Necessita."
+],
+"exigeixen": [
+"exigir",
+"Necessiten."
+],
+"exigir": [
+"exigir",
+"Demanar amb força."
 ],
 "existeix": [
 "existir",
@@ -3591,9 +6643,25 @@
 "existir",
 "Ha existit = ha estat real."
 ],
+"experiment": [
+"experiment",
+"Prova per aprendre una cosa."
+],
+"experimentar": [
+"experimentar",
+"Provar."
+],
+"experimentats": [
+"experiència",
+"Amb experiència."
+],
 "experiments": [
 "experiment",
 "Proves dels científics."
+],
+"experiència": [
+"experiència",
+"Una cosa que vius."
 ],
 "expert": [
 "expert",
@@ -3603,6 +6671,10 @@
 "expert",
 "Persones que saben molt d'una cosa."
 ],
+"explica": [
+"explicar",
+"Fa que s'entengui."
+],
 "explicacions": [
 "explicació",
 "Raons de per què passa una cosa."
@@ -3611,9 +6683,29 @@
 "explicació",
 "Raó de per què passa una cosa."
 ],
+"explicar": [
+"explicar",
+"Fer que s'entengui."
+],
+"explicat": [
+"explicar",
+"Contat."
+],
+"explicava": [
+"explicar",
+"Feia entendre."
+],
+"expliquem": [
+"explicar",
+"Fem entendre."
+],
 "expliquen": [
 "explicar",
 "Diuen com és una cosa."
+],
+"exploració": [
+"exploració",
+"Viatjar per conèixer."
 ],
 "explorador": [
 "explorador",
@@ -3639,6 +6731,10 @@
 "explotar",
 "Esclatar amb molta força."
 ],
+"exposa": [
+"exposar",
+"S'ensenya al públic."
+],
 "exposats": [
 "exposat",
 "Sense protecció."
@@ -3647,13 +6743,45 @@
 "expressar",
 "Dir o fer veure el que sents."
 ],
+"expressió": [
+"expressió",
+"Manera de mostrar el que sents."
+],
 "expulsa": [
 "expulsar",
 "Treu fora."
 ],
+"extinció": [
+"extinció",
+"Desaparició d'una espècie."
+],
+"extra": [
+"extra",
+"Més."
+],
+"extraordinari": [
+"extraordinari",
+"Fora del normal."
+],
+"extraordinària": [
+"extraordinari",
+"Fora del normal."
+],
+"extraterrestre": [
+"extraterrestre",
+"De fora de la Terra."
+],
 "extraterrestres": [
 "extraterrestre",
 "Éssers d'altres planetes."
+],
+"extrema": [
+"extrem",
+"Molt forta."
+],
+"extremadament": [
+"extrem",
+"Moltíssim."
 ],
 "extreme": [
 "Extreme",
@@ -3662,6 +6790,10 @@
 "extrems": [
 "extrem",
 "Molt forts o perillosos."
+],
+"extreure": [
+"extreure",
+"Treure."
 ],
 "exèrcit": [
 "exèrcit",
@@ -3687,6 +6819,18 @@
 "fabricar",
 "Fan objectes."
 ],
+"faci": [
+"fer",
+"Forma de \"fer\"."
+],
+"facin": [
+"fer",
+"Forma de \"fer\"."
+],
+"factors": [
+"factor",
+"Causes."
+],
 "factory": [
 "Factory",
 "Paraula anglesa: fàbrica."
@@ -3695,9 +6839,37 @@
 "falcó",
 "Ocell que caça i vola molt de pressa."
 ],
+"falli": [
+"fallar",
+"Forma de \"fallar\"."
+],
+"falsa": [
+"fals",
+"No veritable."
+],
+"falsificació": [
+"falsificació",
+"Còpia falsa."
+],
 "falta": [
 "faltar",
 "Encara no hi és; en cal més."
+],
+"falti": [
+"faltar",
+"Forma de \"faltar\"."
+],
+"fama": [
+"fama",
+"Ser conegut."
+],
+"familiar": [
+"familiar",
+"De la família."
+],
+"familiars": [
+"familiar",
+"De família."
 ],
 "famosa": [
 "famós",
@@ -3714,6 +6886,10 @@
 "família": [
 "família",
 "Pares, fills, germans..."
+],
+"famílies": [
+"família",
+"Pares i fills."
 ],
 "famós": [
 "famós",
@@ -3759,6 +6935,22 @@
 "fer",
 "Tu fas."
 ],
+"fascinant": [
+"fascinar",
+"Molt interessant."
+],
+"fascinants": [
+"fascinar",
+"Molt interessants."
+],
+"fascinava": [
+"fascinar",
+"Li agradava moltíssim."
+],
+"febre": [
+"febre",
+"Temperatura alta del cos."
+],
 "feia": [
 "fer",
 "Forma de fer en el passat. Feia anys = feia molt de temps."
@@ -3775,9 +6967,25 @@
 "feina",
 "Treballs."
 ],
+"feixugues": [
+"feixuc",
+"Pesades."
+],
+"feliços": [
+"feliç",
+"Contents."
+],
 "fem": [
 "fer",
 "Nosaltres fem. Fem servir = utilitzem."
+],
+"femella": [
+"femella",
+"Animal que té cries."
+],
+"femelles": [
+"femella",
+"Animals que tenen cries."
 ],
 "fenomen": [
 "fenomen",
@@ -3795,6 +7003,10 @@
 "ferida",
 "Talls o cops a la pell."
 ],
+"ferir": [
+"ferir",
+"Fer mal."
+],
 "fermentades": [
 "fermentat",
 "Que han canviat amb el temps i els bacteris."
@@ -3803,6 +7015,10 @@
 "fermentat",
 "Que ha canviat amb el temps i els bacteris."
 ],
+"fermi": [
+"fermi",
+"Cognom d'un científic."
+],
 "ferro": [
 "ferro",
 "Metall gris i dur."
@@ -3810,6 +7026,10 @@
 "fes": [
 "fer",
 "Fes! = ordre de fer. Si fes = si fera."
+],
+"fessin": [
+"fer",
+"Forma de \"fer\"."
 ],
 "fessis": [
 "fer",
@@ -3823,13 +7043,45 @@
 "fet",
 "1. Forma de fer: ha fet. 2. De fet = en realitat."
 ],
+"feta": [
+"fer",
+"Feta."
+],
 "fi": [
 "fi",
 "Final."
 ],
+"fiable": [
+"fiable",
+"En qui es pot confiar."
+],
+"ficar": [
+"ficar",
+"Posar dins."
+],
+"ficat": [
+"ficar",
+"Posat dins."
+],
 "ficció": [
 "ficció",
 "Coses inventades."
+],
+"figura": [
+"figura",
+"Forma d'una persona o cosa."
+],
+"figures": [
+"figura",
+"Formes de persones."
+],
+"filaments": [
+"filament",
+"Fils molt fins."
+],
+"fills": [
+"fill",
+"Nens d'uns pares."
 ],
 "fils": [
 "fil",
@@ -3838,6 +7090,14 @@
 "filòsof": [
 "filòsof",
 "Persona que pensa sobre la vida i el món."
+],
+"filòsofs": [
+"filòsof",
+"Pensadors."
+],
+"fina": [
+"fi",
+"Prima."
 ],
 "final": [
 "final",
@@ -3851,6 +7111,10 @@
 "final",
 "Les últimes parts."
 ],
+"fines": [
+"fi",
+"Primes."
+],
 "fins": [
 "fins",
 "Fins a = arribar a un punt. Fins que = fins al moment que."
@@ -3862,6 +7126,14 @@
 "fins i tot": [
 "fins i tot",
 "També, encara que sigui sorprenent."
+],
+"fixar": [
+"fixar",
+"Fixar-se: adonar-se."
+],
+"fixen": [
+"fixar",
+"Es fixen: miren amb atenció."
 ],
 "flaix": [
 "flaix",
@@ -3875,6 +7147,14 @@
 "floridura",
 "Pelussa verda o blanca que surt al menjar vell."
 ],
+"flors": [
+"flor",
+"Parts boniques de les plantes."
+],
+"flotant": [
+"flotar",
+"Sense caure."
+],
 "fluixa": [
 "fluix",
 "Que no té força."
@@ -3887,6 +7167,10 @@
 "foca",
 "Animal del mar amb aletes que viu al fred."
 ],
+"fomenta": [
+"fomentar",
+"Ajuda a créixer."
+],
 "fonamental": [
 "fonamental",
 "Molt important."
@@ -3894,6 +7178,10 @@
 "fons": [
 "fons",
 "La part de baix."
+],
+"font": [
+"font",
+"Origen."
 ],
 "foques": [
 "foca",
@@ -3919,13 +7207,41 @@
 "forma",
 "Com és per fora: rodona, quadrada... També: manera."
 ],
+"formades": [
+"formar",
+"Fetes."
+],
 "formar": [
 "formar",
 "Fer; crear."
 ],
+"formaria": [
+"formar",
+"Seria part."
+],
+"format": [
+"formar",
+"Fet."
+],
 "formatge": [
 "formatge",
 "Menjar fet amb llet."
+],
+"formatges": [
+"formatge",
+"Aliment fet amb llet."
+],
+"formava": [
+"formar",
+"Era part."
+],
+"formaven": [
+"formar",
+"Feien."
+],
+"formen": [
+"formar",
+"Fan."
 ],
 "formiga": [
 "formiga",
@@ -3938,6 +7254,10 @@
 "forn": [
 "forn",
 "Aparell que cou el menjar amb calor."
+],
+"forns": [
+"forn",
+"Aparells per cuinar amb calor."
 ],
 "fort": [
 "fort",
@@ -3963,6 +7283,10 @@
 "força",
 "1. Energia del cos. 2. Força fràgil = bastant fràgil."
 ],
+"fos": [
+"fondre",
+"Fet líquid per la calor."
+],
 "fosc": [
 "fosc",
 "Sense llum."
@@ -3987,6 +7311,10 @@
 "fossa de les Marianes",
 "El lloc més profund de l'oceà."
 ],
+"fossin": [
+"ser",
+"Forma de \"ser\"."
+],
 "foto": [
 "foto",
 "Imatge feta amb una càmera."
@@ -3999,13 +7327,49 @@
 "fotografiar",
 "Que se n'ha fet una foto."
 ],
+"fotografies": [
+"fotografia",
+"Fotos."
+],
 "fotos": [
 "foto",
 "Imatges fetes amb una càmera."
 ],
+"fracassat": [
+"fracassar",
+"No aconseguit."
+],
+"fracassen": [
+"fracassar",
+"No ho aconsegueixen."
+],
+"fracció": [
+"fracció",
+"Part molt petita."
+],
+"franceses": [
+"francès",
+"De França."
+],
+"francesos": [
+"francès",
+"De França."
+],
+"francès": [
+"francès",
+"De França."
+],
 "frança": [
 "França",
 "País d'Europa, al nord d'Espanya."
+],
+"françois": [
+"françois",
+"Nom d'home francès."
+],
+"frase": [
+"frase",
+"Grup de paraules."
 ],
 "fred": [
 "fred",
@@ -4043,9 +7407,21 @@
 "fresc",
 "Una mica freds."
 ],
+"friedman": [
+"friedman",
+"Cognom."
+],
+"front": [
+"front",
+"Fer front: enfrontar."
+],
 "frontera": [
 "frontera",
 "Línia que separa dos llocs."
+],
+"fronteres": [
+"frontera",
+"Límits entre països."
 ],
 "fruita": [
 "fruita",
@@ -4067,6 +7443,22 @@
 "fràgil",
 "Que es trenquen fàcilment."
 ],
+"fuga": [
+"fuga",
+"Escapada."
+],
+"fugint": [
+"fugir",
+"Escapant."
+],
+"fugir": [
+"fugir",
+"Escapar corrent."
+],
+"fulla": [
+"fulla",
+"Part verda d'una planta."
+],
 "fulles": [
 "fulla",
 "Parts verdes i planes de les plantes."
@@ -4078,6 +7470,14 @@
 "funciona": [
 "funcionar",
 "Fa la seva feina; va bé."
+],
+"funcionar": [
+"funcionar",
+"Anar bé."
+],
+"funcionaran": [
+"funcionar",
+"Aniran bé."
 ],
 "funcionaven": [
 "funcionar",
@@ -4111,6 +7511,10 @@
 "futur",
 "El temps que vindrà."
 ],
+"futures": [
+"futur",
+"Que vindran."
+],
 "fàbrica": [
 "fàbrica",
 "Edifici on es fabriquen coses."
@@ -4134,6 +7538,10 @@
 "fàstic": [
 "fàstic",
 "Fa fàstic = no t'agrada gens, et fa venir ganes de vomitar."
+],
+"físic": [
+"físic",
+"Del cos."
 ],
 "fòssil": [
 "fòssil",
@@ -4159,6 +7567,10 @@
 "gairebé a tot arreu",
 "Quasi a tots els llocs."
 ],
+"gaires": [
+"gaire",
+"Gaires vegades: moltes vegades."
+],
 "galeta": [
 "galeta",
 "Dolç petit i sec fet amb farina."
@@ -4166,6 +7578,10 @@
 "galetes": [
 "galeta",
 "Dolços petits i secs fets amb farina."
+],
+"gall": [
+"gall",
+"Gall dindi: au gran de granja."
 ],
 "gallina": [
 "gallina",
@@ -4199,6 +7615,10 @@
 "ganxo",
 "Pal de metall corbat."
 ],
+"ganxos": [
+"ganxo",
+"Peces corbes que enganxen."
+],
 "garrotxa": [
 "Garrotxa",
 "Comarca de Catalunya amb volcans."
@@ -4210,6 +7630,14 @@
 "gasos": [
 "gas",
 "Substàncies com l'aire."
+],
+"gastaria": [
+"gastar",
+"Faria servir."
+],
+"gastava": [
+"gastar",
+"Feia servir."
 ],
 "gasten": [
 "gastar",
@@ -4227,6 +7655,14 @@
 "gat",
 "Animals petits de casa que fan «miau»."
 ],
+"gaudeix": [
+"gaudir",
+"S'ho passa bé."
+],
+"gaudir": [
+"gaudir",
+"Passar-ho bé."
+],
 "gegant": [
 "gegant",
 "Molt i molt gran."
@@ -4239,9 +7675,33 @@
 "gel",
 "Aigua gelada i dura."
 ],
+"gelades": [
+"gelar",
+"Molt fredes."
+],
+"gener": [
+"gener",
+"Primer mes de l'any."
+],
+"generació": [
+"generació",
+"Persones de la mateixa edat."
+],
+"general": [
+"general",
+"Comú."
+],
+"geni": [
+"geni",
+"Persona molt llesta."
+],
 "genial": [
 "genial",
 "Molt bo; extraordinari."
+],
+"genials": [
+"genial",
+"Molt bons."
 ],
 "genolleres": [
 "genollera",
@@ -4255,9 +7715,21 @@
 "gent",
 "Persones."
 ],
+"genèticament": [
+"gen",
+"Als gens."
+],
+"george": [
+"george",
+"Nom d'home."
+],
 "geps": [
 "gep",
 "Bonys a l'esquena, com els del camell."
+],
+"germans": [
+"germà",
+"Fills dels mateixos pares."
 ],
 "germà": [
 "germà",
@@ -4266,6 +7738,18 @@
 "gerros": [
 "gerro",
 "Recipients per guardar coses."
+],
+"gest": [
+"gest",
+"Acció que mostra un sentiment."
+],
+"gesta": [
+"gesta",
+"Acció admirable."
+],
+"gimnàs": [
+"gimnàs",
+"Lloc per fer exercici."
 ],
 "gimnàstica": [
 "gimnàstica",
@@ -4295,6 +7779,10 @@
 "glitch",
 "Errors d'un videojoc."
 ],
+"glutamat": [
+"glutamat",
+"Substància que dona el gust umami."
+],
 "gos": [
 "gos",
 "Animal de casa que borda."
@@ -4302,6 +7790,14 @@
 "gota": [
 "gota",
 "Tros molt petit d'un líquid."
+],
+"gra": [
+"gra",
+"Llavor petita."
+],
+"gramàtiques": [
+"gramàtica",
+"Llibres amb les regles d'una llengua."
 ],
 "gran": [
 "gran",
@@ -4311,6 +7807,10 @@
 "granja",
 "Llocs on es crien animals."
 ],
+"granja": [
+"granja",
+"Lloc amb animals al camp."
+],
 "granota": [
 "granota",
 "Amfibi verd que salta."
@@ -4318,6 +7818,10 @@
 "granota dard daurada": [
 "granota dard daurada",
 "Granota groga molt verinosa de Colòmbia."
+],
+"granotes": [
+"granota",
+"Animals verds que salten."
 ],
 "grans": [
 "gran",
@@ -4339,6 +7843,10 @@
 "gravar",
 "Fer un vídeo o guardar un so."
 ],
+"gravaven": [
+"gravar",
+"Filmaven."
+],
 "gravetat": [
 "gravetat",
 "Força que fa caure les coses."
@@ -4351,9 +7859,21 @@
 "grec",
 "De Grècia."
 ],
+"grecs": [
+"grec",
+"De Grècia."
+],
 "grega": [
 "grec",
 "De Grècia."
+],
+"greu": [
+"greu",
+"Em sap greu: em sento malament."
+],
+"greus": [
+"greu",
+"Seriosos."
 ],
 "grill": [
 "grill",
@@ -4367,6 +7887,14 @@
 "gris",
 "Color entre el blanc i el negre."
 ],
+"grisa": [
+"gris",
+"Color entre blanc i negre."
+],
+"grisos": [
+"gris",
+"Color entre blanc i negre."
+],
 "groc": [
 "groc",
 "Del color del sol o de la llimona."
@@ -4378,6 +7906,22 @@
 "groga": [
 "groc",
 "Del color del sol o de la llimona."
+],
+"gros": [
+"gros",
+"Gran."
+],
+"grossa": [
+"gros",
+"Gran."
+],
+"grosses": [
+"gros",
+"Grans."
+],
+"gruixuda": [
+"gruixut",
+"Ampla."
 ],
 "gruixudes": [
 "gruixut",
@@ -4399,6 +7943,10 @@
 "gràcies",
 "Gràcies a = per l'ajuda de."
 ],
+"gràfics": [
+"gràfic",
+"Imatges del joc."
+],
 "grècia": [
 "Grècia",
 "País del sud d'Europa."
@@ -4414,6 +7962,14 @@
 "guanyaries": [
 "guanyar",
 "Tu guanyaries (condicional)."
+],
+"guanyat": [
+"guanyar",
+"Aconseguit."
+],
+"guanyaven": [
+"guanyar",
+"Aconseguien."
 ],
 "guanyem": [
 "guanyar",
@@ -4435,6 +7991,10 @@
 "guardar",
 "Posar una cosa en un lloc per tenir-la."
 ],
+"guardat": [
+"guardar",
+"Conservat."
+],
 "guardava": [
 "guardar",
 "Posava una cosa en un lloc."
@@ -4443,6 +8003,10 @@
 "guardar",
 "Posaven una cosa en un lloc."
 ],
+"guardés": [
+"guardar",
+"Tingués."
+],
 "guepard": [
 "guepard",
 "Animal com un gat gran, el més ràpid a terra."
@@ -4450,6 +8014,10 @@
 "guerra": [
 "guerra",
 "Lluita entre països."
+],
+"guerres": [
+"guerra",
+"Lluites entre països."
 ],
 "guinness": [
 "Guinness",
@@ -4463,6 +8031,14 @@
 "gust",
 "El sabor del menjar."
 ],
+"gustos": [
+"gust",
+"Sabors."
+],
+"gèneres": [
+"gènere",
+"Tipus."
+],
 "ha": [
 "haver",
 "Ha fet = forma de passat amb haver."
@@ -4470,6 +8046,10 @@
 "habilitat": [
 "habilitat",
 "Capacitat de fer bé una cosa."
+],
+"habilitats": [
+"habilitat",
+"Coses que saps fer."
 ],
 "habitació": [
 "habitació",
@@ -4487,9 +8067,21 @@
 "haggis",
 "Plat típic d'Escòcia."
 ],
+"hagi": [
+"haver",
+"Forma d'\"haver\"."
+],
 "haguem": [
 "haver",
 "Forma de haver: que haguem d'aprendre = que hàgim d'aprendre."
+],
+"hagut": [
+"haver",
+"Forma d'\"haver\"."
+],
+"hagués": [
+"haver",
+"Forma d'\"haver\"."
 ],
 "hamburguesa": [
 "hamburguesa",
@@ -4503,9 +8095,21 @@
 "haver",
 "Has fet = forma de passat amb haver. Has de = cal que tu."
 ],
+"hauria": [
+"haver",
+"Forma d'\"haver\"."
+],
+"haurien": [
+"haver",
+"Haurien de: tindrien que."
+],
 "haurà": [
 "haver",
 "Hi haurà = existirà (futur de hi ha)."
+],
+"hauríem": [
+"haver",
+"Hauríem de: tindríem que."
 ],
 "haver": [
 "haver",
@@ -4526,6 +8130,10 @@
 "hawk": [
 "Hawk",
 "Nom: Tony Hawk, un skater famós."
+],
+"he": [
+"haver",
+"Forma d'\"haver\" per a \"jo\"."
 ],
 "hem": [
 "haver",
@@ -4551,6 +8159,14 @@
 "història",
 "El que va passar en el passat. També: un conte."
 ],
+"històric": [
+"història",
+"Important en la història."
+],
+"històries": [
+"història",
+"Relats."
+],
 "hivern": [
 "hivern",
 "L'estació de l'any que fa més fred."
@@ -4566,6 +8182,10 @@
 "hora": [
 "hora",
 "Temps de seixanta minuts."
+],
+"horari": [
+"horari",
+"Hores planejades."
 ],
 "hores": [
 "hora",
@@ -4583,9 +8203,37 @@
 "hospital",
 "Llocs on curen els malalts."
 ],
+"hotel": [
+"hotel",
+"Lloc per dormir de viatge."
+],
 "howard carter": [
 "Howard Carter",
 "Arqueòleg britànic que va trobar la tomba de Tutankamon."
+],
+"hugh": [
+"hugh",
+"Nom d'home."
+],
+"humana": [
+"humà",
+"De les persones."
+],
+"humanes": [
+"humà",
+"De les persones."
+],
+"humanitat": [
+"humanitat",
+"Totes les persones."
+],
+"humans": [
+"humà",
+"Persones."
+],
+"humit": [
+"humit",
+"Amb aigua."
 ],
 "humitat": [
 "humitat",
@@ -4598,6 +8246,10 @@
 "humà": [
 "humà",
 "Persona; de les persones."
+],
+"hàgim": [
+"haver",
+"Hàgim de: tinguem que."
 ],
 "hèrcules": [
 "Hèrcules",
@@ -4619,6 +8271,34 @@
 "idea",
 "Una cosa que penses."
 ],
+"idees": [
+"idea",
+"Pensaments."
+],
+"identificar": [
+"identificar",
+"Reconèixer."
+],
+"idèntica": [
+"idèntic",
+"Igual."
+],
+"ignorar": [
+"ignorar",
+"No fer cas."
+],
+"igual": [
+"igual",
+"El mateix."
+],
+"iguals": [
+"igual",
+"El mateix."
+],
+"ikeda": [
+"ikeda",
+"Cognom japonès."
+],
 "illa": [
 "illa",
 "Terra envoltada d'aigua."
@@ -4635,6 +8315,10 @@
 "il·luminar",
 "Es posa ple de llum."
 ],
+"il·lustracions": [
+"il·lustració",
+"Dibuixos."
+],
 "imagina": [
 "imaginar",
 "Pensa una cosa que no veus."
@@ -4647,21 +8331,65 @@
 "imaginar",
 "Pensar una cosa que no veus."
 ],
+"imaginaven": [
+"imaginar",
+"Pensaven."
+],
+"imaginem": [
+"imaginar",
+"Pensem."
+],
 "imaginen": [
 "imaginar",
 "Pensen una cosa que no veuen."
+],
+"imagines": [
+"imaginar",
+"Penses en una cosa que no veus."
 ],
 "imatge": [
 "imatge",
 "Foto o dibuix."
 ],
+"imatges": [
+"imatge",
+"Dibuixos o fotos."
+],
+"imitar": [
+"imitar",
+"Copiar."
+],
 "immediat": [
 "immediat",
 "Que passa de seguida."
 ],
+"immediatament": [
+"immediat",
+"Ara mateix."
+],
 "immortal": [
 "immortal",
 "Que no mor mai."
+],
+"impacte": [
+"impacte",
+"Cop."
+],
+"impedeix": [
+"impedir",
+"No deixa."
+],
+"impedir": [
+"impedir",
+"No deixar que passi."
+],
+"impliquen": [
+"implicar",
+"Tenen com a part."
+],
+"importa": [
+"importar",
+"Té importància."
 ],
 "important": [
 "important",
@@ -4671,13 +8399,53 @@
 "important",
 "Que importen molt."
 ],
+"importava": [
+"importar",
+"Era important."
+],
+"importància": [
+"importància",
+"Valor."
+],
 "impossible": [
 "impossible",
 "Que no es pot fer."
 ],
+"imprescindible": [
+"imprescindible",
+"Molt necessari."
+],
+"imprescindibles": [
+"imprescindible",
+"Molt necessaris."
+],
+"impressionant": [
+"impressionar",
+"Que sorprèn molt."
+],
+"impressionants": [
+"impressionar",
+"Que sorprenen molt."
+],
+"impressionar": [
+"impressionar",
+"Sorprendre."
+],
+"impressionat": [
+"impressionar",
+"Sorprès."
+],
 "incendis": [
 "incendi",
 "Focs molt grans."
+],
+"incloure": [
+"incloure",
+"Posar dins."
+],
+"inclusió": [
+"incloure",
+"Acció d'incloure."
 ],
 "increïble": [
 "increïble",
@@ -4691,6 +8459,30 @@
 "increïble",
 "Tan sorprenents que costen de creure."
 ],
+"independent": [
+"independent",
+"Que no depèn d'un altre."
+],
+"independents": [
+"independent",
+"Que no depenen de ningú."
+],
+"inesperada": [
+"inesperat",
+"Que no s'esperava."
+],
+"inesperat": [
+"inesperat",
+"Que no s'espera."
+],
+"inesperats": [
+"inesperat",
+"Que no s'esperaven."
+],
+"infants": [
+"infant",
+"Nens."
+],
 "infecció": [
 "infecció",
 "Malaltia causada per bacteris."
@@ -4699,13 +8491,33 @@
 "infectat",
 "Amb bacteris que fan mal."
 ],
+"infectat": [
+"infectar",
+"Amb una malaltia."
+],
 "infinita": [
 "infinit",
 "Que no s'acaba mai."
 ],
+"influir": [
+"influir",
+"Tenir efecte."
+],
+"influència": [
+"influència",
+"Efecte sobre una cosa."
+],
+"influït": [
+"influir",
+"Tingut efecte."
+],
 "informació": [
 "informació",
 "Coses que saps o que pots saber."
+],
+"informar": [
+"informar",
+"Donar informació."
 ],
 "ingredient": [
 "ingredient",
@@ -4715,6 +8527,22 @@
 "ingredient",
 "Coses que es fan servir per fer un menjar."
 ],
+"injecta": [
+"injectar",
+"Fica líquid."
+],
+"injustes": [
+"injust",
+"No justes."
+],
+"inky": [
+"inky",
+"Nom d'un pop."
+],
+"inscripcions": [
+"inscripció",
+"Textos escrits en pedra."
+],
 "insecte": [
 "insecte",
 "Animal petit de sis potes, com la formiga."
@@ -4723,9 +8551,49 @@
 "insecte",
 "Animals petits de sis potes."
 ],
+"insecticida": [
+"insecticida",
+"Producte que mata insectes."
+],
+"insecticides": [
+"insecticida",
+"Productes que maten insectes."
+],
+"insisteixen": [
+"insistir",
+"Repeteixen."
+],
+"insistir": [
+"insistir",
+"Repetir."
+],
 "inspira": [
 "inspirar",
 "S'inspira en = té la idea de."
+],
+"inspirar": [
+"inspirar",
+"Donar idees i ganes."
+],
+"inspirat": [
+"inspirar",
+"Amb idees de."
+],
+"inspirats": [
+"inspirar",
+"Amb idees de."
+],
+"instant": [
+"instant",
+"Moment molt curt."
+],
+"institut": [
+"institut",
+"Escola de secundària."
+],
+"instruccions": [
+"instrucció",
+"Ordres."
 ],
 "intacta": [
 "intacte",
@@ -4735,13 +8603,37 @@
 "intel·ligent",
 "Que pensa i aprèn molt bé."
 ],
+"intel·ligents": [
+"intel·ligent",
+"Llestos."
+],
+"intel·ligència": [
+"intel·ligència",
+"Ser llest."
+],
 "intel·ligència artificial": [
 "intel·ligència artificial",
 "Programes d'ordinador que aprenen."
 ],
+"intens": [
+"intens",
+"Fort."
+],
+"intensa": [
+"intens",
+"Forta."
+],
 "intent": [
 "intent",
 "Cada vegada que proves de fer una cosa."
+],
+"intenta": [
+"intentar",
+"Prova de fer."
+],
+"intentant": [
+"intentar",
+"Provant."
 ],
 "intentar": [
 "intentar",
@@ -4755,6 +8647,34 @@
 "intentar",
 "Provava de fer una cosa."
 ],
+"intenten": [
+"intentar",
+"Proven de fer."
+],
+"intents": [
+"intent",
+"Proves."
+],
+"interessa": [
+"interessar",
+"Agrada."
+],
+"interessant": [
+"interès",
+"Que interessa."
+],
+"interessava": [
+"interessar",
+"Li agradava."
+],
+"interessen": [
+"interessar",
+"Agraden."
+],
+"interior": [
+"interior",
+"De dins."
+],
 "internacional": [
 "internacional",
 "De molts països."
@@ -4766,6 +8686,18 @@
 "interruptor": [
 "interruptor",
 "Botó per encendre i apagar el llum."
+],
+"interès": [
+"interès",
+"Ganes de saber."
+],
+"intrigant": [
+"intrigar",
+"Que fa curiositat."
+],
+"intrigar": [
+"intrigar",
+"Fer curiositat."
 ],
 "inundacions": [
 "inundació",
@@ -4783,9 +8715,17 @@
 "inventar",
 "Crear una cosa nova."
 ],
+"inventat": [
+"inventar",
+"Creat."
+],
 "inventava": [
 "inventar",
 "Creava idees noves."
+],
+"inventaven": [
+"inventar",
+"Creaven."
 ],
 "inventors": [
 "inventor",
@@ -4795,13 +8735,29 @@
 "invent",
 "Coses noves que algú crea."
 ],
+"investigadora": [
+"investigador",
+"Dona que investiga."
+],
 "investigadors": [
 "investigador",
 "Persones que estudien per descobrir coses."
 ],
+"investigar": [
+"investigar",
+"Estudiar."
+],
 "invisible": [
 "invisible",
 "Que no es pot veure."
+],
+"irlanda": [
+"irlanda",
+"País d'Europa."
+],
+"irritable": [
+"irritable",
+"Que s'enfada fàcilment."
 ],
 "ja": [
 "ja",
@@ -4819,17 +8775,41 @@
 "japonès",
 "Del Japó."
 ],
+"japonesos": [
+"japonès",
+"Del Japó."
+],
+"japonès": [
+"japonès",
+"Del Japó."
+],
 "japó": [
 "Japó",
 "País d'Àsia, format per illes."
+],
+"jardins": [
+"jardí",
+"Zones amb plantes."
 ],
 "jardí": [
 "jardí",
 "Lloc amb plantes i flors al costat d'una casa."
 ],
+"jean": [
+"jean",
+"Nom d'home francès."
+],
 "jeanne": [
 "Jeanne",
 "Nom: Jeanne Calment."
+],
+"jeroglífic": [
+"jeroglífic",
+"Signe de l'escriptura egípcia."
+],
+"jeroglífics": [
+"jeroglífic",
+"Escriptura amb dibuixos de l'antic Egipte."
 ],
 "jo": [
 "jo",
@@ -4871,9 +8851,17 @@
 "jugador",
 "Persona que juga."
 ],
+"jugadora": [
+"jugador",
+"Dona que juga."
+],
 "jugadors": [
 "jugador",
 "Persones que juguen."
+],
+"jugant": [
+"jugar",
+"Fent un joc."
 ],
 "jugar": [
 "jugar",
@@ -4887,13 +8875,25 @@
 "jugar",
 "Ha fet un joc."
 ],
+"jugo": [
+"jugar",
+"Faig un joc."
+],
 "jugo (verb)": [
 "jugar",
 "Jo faig un joc per divertir-me."
 ],
+"juguem": [
+"jugar",
+"Fem un joc."
+],
 "juguen": [
 "jugar",
 "Fan un joc per divertir-se."
+],
+"juguis": [
+"jugar",
+"Forma de \"jugar\"."
 ],
 "juliane": [
 "Juliane",
@@ -4902,6 +8902,18 @@
 "juliane koepcke": [
 "Juliane Koepcke",
 "Noia que va sobreviure sola a la selva el 1971."
+],
+"juliol": [
+"juliol",
+"Setè mes."
+],
+"junta": [
+"junt",
+"Unida."
+],
+"juntes": [
+"junt",
+"Unides."
 ],
 "junts": [
 "junt",
@@ -4935,6 +8947,14 @@
 "Kheops",
 "Faraó d'Egipte de la Gran Piràmide."
 ],
+"kikunae": [
+"kikunae",
+"Nom d'home japonès."
+],
+"kombu": [
+"kombu",
+"Un tipus d'alga."
+],
 "krill": [
 "krill",
 "Animals molt petits del mar que mengen les balenes."
@@ -4959,6 +8979,14 @@
 "laboratori",
 "Lloc on els científics fan experiments."
 ],
+"laboratoris": [
+"laboratori",
+"Llocs d'experiments."
+],
+"larves": [
+"larva",
+"Nadons d'insectes."
+],
 "las vegas": [
 "Las Vegas",
 "Ciutat dels Estats Units."
@@ -4966,6 +8994,14 @@
 "lava": [
 "lava",
 "Roca líquida i calenta que surt d'un volcà."
+],
+"leal": [
+"leal",
+"Cognom."
+],
+"lectors": [
+"lector",
+"Persones que llegeixen."
 ],
 "led": [
 "LED",
@@ -4983,6 +9019,10 @@
 "lent",
 "Que va a poc a poc."
 ],
+"lents": [
+"lent",
+"No ràpids."
+],
 "lentíssimament": [
 "lent",
 "Molt i molt a poc a poc."
@@ -4991,9 +9031,17 @@
 "Leo",
 "Nom d'un noi de dotze anys."
 ],
+"leonardo": [
+"leonardo",
+"Nom d'home."
+],
 "les": [
 "les",
 "Article: les cases. També pronom: les veig."
+],
+"lesionar": [
+"lesionar",
+"Fer una ferida."
 ],
 "lesions": [
 "lesió",
@@ -5006,6 +9054,22 @@
 "li": [
 "li",
 "Pronom: a ell o a ella. Li agrada = a ell li agrada."
+],
+"liaoning": [
+"liaoning",
+"Província de la Xina."
+],
+"limita": [
+"limitar",
+"Es limita a: només fa."
+],
+"limitació": [
+"limitació",
+"Límit."
+],
+"lingüistes": [
+"lingüista",
+"Experts en llengües."
 ],
 "lisses": [
 "Lisses",
@@ -5039,6 +9103,10 @@
 "llamp",
 "Llum forta al cel quan hi ha tempesta."
 ],
+"llancen": [
+"llançar",
+"Tiren."
+],
 "llances": [
 "llançar",
 "Tires una cosa a l'aire."
@@ -5046,6 +9114,18 @@
 "llanterna": [
 "llanterna",
 "Llum petita que portes a la mà."
+],
+"llança": [
+"llançar",
+"Tira."
+],
+"llançar": [
+"llançar",
+"Tirar."
+],
+"llar": [
+"llar",
+"Casa."
 ],
 "llarg": [
 "llarg",
@@ -5059,6 +9139,10 @@
 "llarg",
 "De molta llargada."
 ],
+"llargues": [
+"llarg",
+"De molta longitud."
+],
 "llarguíssims": [
 "llarg",
 "Molt i molt llargs."
@@ -5071,6 +9155,10 @@
 "llavors",
 "1. Grans petits de les plantes. 2. En aquell moment."
 ],
+"llaços": [
+"llaç",
+"Petits cercles."
+],
 "llegeix": [
 "llegir",
 "Mira les lletres i entén el text."
@@ -5078,6 +9166,10 @@
 "llegenda": [
 "llegenda",
 "Història antiga que no sabem si és veritat."
+],
+"llegien": [
+"llegir",
+"Miraven un text."
 ],
 "llegir": [
 "llegir",
@@ -5087,17 +9179,57 @@
 "llegir",
 "Ha mirat les lletres i ha entès."
 ],
+"llengua": [
+"llengua",
+"Part de la boca per tastar; idioma."
+],
+"llengües": [
+"llengua",
+"Idiomes."
+],
 "llenyataires": [
 "llenyataire",
 "Persones que tallen arbres."
+],
+"llençar": [
+"llençar",
+"Tirar."
+],
+"llençat": [
+"llençar",
+"Tirat."
+],
+"lleons": [
+"lleó",
+"Grans felins."
+],
+"llestos": [
+"llest",
+"Intel·ligents."
 ],
 "llet": [
 "llet",
 "Líquid blanc que donen les vaques."
 ],
+"lleu": [
+"lleu",
+"Petit."
+],
+"lleugera": [
+"lleuger",
+"Que pesa poc."
+],
+"lleugers": [
+"lleuger",
+"Que pesen poc."
+],
 "lleó": [
 "lleó",
 "Animal gran i salvatge, el rei de la selva."
+],
+"llibertat": [
+"llibertat",
+"Ser lliure."
 ],
 "llibre": [
 "llibre",
@@ -5107,13 +9239,25 @@
 "Llibre Guinness dels Rècords",
 "Llibre famós amb els rècords del món."
 ],
+"llibreria": [
+"llibreria",
+"Botiga de llibres."
+],
 "llibres": [
 "llibre",
 "Moltes pàgines amb text unides."
 ],
+"llibreter": [
+"llibreter",
+"Persona que ven llibres."
+],
 "lligada": [
 "lligar",
 "Subjectada amb una corda o un cinturó."
+],
+"lligui": [
+"lligar",
+"Forma de \"lligar\"."
 ],
 "llimona": [
 "llimona",
@@ -5139,6 +9283,10 @@
 "lliure",
 "Que poden fer el que volen."
 ],
+"lliçons": [
+"lliçó",
+"Coses que s'aprenen."
+],
 "lliçó": [
 "lliçó",
 "Una cosa que aprens."
@@ -5150,6 +9298,38 @@
 "llocs": [
 "lloc",
 "Parts de l'espai."
+],
+"llop": [
+"llop",
+"Gos salvatge."
+],
+"llopada": [
+"llopada",
+"Grup de llops."
+],
+"llopades": [
+"llopada",
+"Grups de llops."
+],
+"llops": [
+"llop",
+"Gossos salvatges."
+],
+"llosa": [
+"llosa",
+"Pedra plana."
+],
+"llueix": [
+"lluir",
+"Ensenya."
+],
+"lluita": [
+"lluita",
+"Baralla."
+],
+"lluitar": [
+"lluitar",
+"Barallar-se."
 ],
 "llum": [
 "llum",
@@ -5163,9 +9343,17 @@
 "lluna",
 "Astre que veiem al cel de nit."
 ],
+"llunes": [
+"lluna",
+"Satèl·lits de planetes."
+],
 "lluny": [
 "lluny",
 "A molta distància."
+],
+"llunyana": [
+"llunyà",
+"Molt lluny."
 ],
 "lo": [
 "el",
@@ -5186,6 +9374,10 @@
 "los": [
 "els",
 "Pronom darrere del verb: menjar-los."
+],
+"lotus": [
+"lotus",
+"Flor de l'aigua."
 ],
 "ls": [
 "els",
@@ -5227,6 +9419,14 @@
 "líquid",
 "Que flueix, com l'aigua."
 ],
+"lògica": [
+"lògica",
+"Manera correcta de pensar."
+],
+"lògiques": [
+"lògic",
+"De la lògica."
+],
 "m": [
 "em",
 "Em davant de vocal: m'agrada."
@@ -5239,6 +9439,18 @@
 "Madrid",
 "Capital d'Espanya."
 ],
+"madura": [
+"madur",
+"A punt de menjar."
+],
+"maduren": [
+"madurar",
+"Es posen a punt de menjar."
+],
+"madurs": [
+"madur",
+"A punt de menjar."
+],
 "magma": [
 "magma",
 "Roca líquida i calenta de dins de la Terra."
@@ -5247,6 +9459,10 @@
 "magnètic",
 "Que atrauen el metall, com un imant."
 ],
+"magnífic": [
+"magnífic",
+"Molt bonic."
+],
 "mai": [
 "mai",
 "En cap moment."
@@ -5254,6 +9470,10 @@
 "maig": [
 "maig",
 "El cinquè mes de l'any."
+],
+"major": [
+"major",
+"Més gran."
 ],
 "majoria": [
 "majoria",
@@ -5279,6 +9499,10 @@
 "malaltia",
 "Quan no estàs bé de salut."
 ],
+"malament": [
+"mal",
+"No bé."
+],
 "malauradament": [
 "malauradament",
 "Per desgràcia."
@@ -5295,25 +9519,65 @@
 "maledicció",
 "Mal que algú desitja amb paraules màgiques."
 ],
+"malgrat": [
+"malgrat",
+"Encara que hi hagi."
+],
+"malmetre": [
+"malmetre",
+"Espatllar."
+],
+"malària": [
+"malària",
+"Malaltia que transmeten els mosquits."
+],
 "mamífers": [
 "mamífer",
 "Animals que alimenten les cries amb llet."
+],
+"manejar": [
+"manejar",
+"Fer servir."
+],
+"manejava": [
+"manejar",
+"Feia servir."
 ],
 "manera": [
 "manera",
 "Forma de fer una cosa."
 ],
+"maneres": [
+"manera",
+"Formes."
+],
 "mans": [
 "mà",
 "Parts del cos al final dels braços."
+],
+"mantenen": [
+"mantenir",
+"Conserven."
 ],
 "mantenen premuda": [
 "mantenir premut",
 "Pitgen i no deixen anar."
 ],
+"mantenir": [
+"mantenir",
+"Conservar."
+],
+"mantingut": [
+"mantenir",
+"Conservat."
+],
 "manual": [
 "manual",
 "Llibre que explica com funciona una cosa."
+],
+"manuscrit": [
+"manuscrit",
+"Llibre escrit a mà."
 ],
 "mapa": [
 "mapa",
@@ -5335,9 +9599,21 @@
 "marató",
 "Activitats molt llargues."
 ],
+"marató": [
+"marató",
+"Esdeveniment molt llarg."
+],
+"marca": [
+"marca",
+"Senyal."
+],
 "marcar": [
 "marcar",
 "Posar un senyal. També: indicar un número."
+],
+"marcarà": [
+"marcar",
+"Senyalarà."
 ],
 "marins": [
 "marí",
@@ -5359,6 +9635,10 @@
 "Marta",
 "Nom d'una amiga de Leo."
 ],
+"marxat": [
+"marxar",
+"Anat-se'n."
+],
 "mary anning": [
 "Mary Anning",
 "Paleontòloga anglesa molt famosa."
@@ -5366,6 +9646,14 @@
 "marí": [
 "marí",
 "Del mar."
+],
+"mascles": [
+"mascle",
+"Animals que no tenen cries."
+],
+"mascota": [
+"mascota",
+"Animal de casa."
 ],
 "mascotes": [
 "mascota",
@@ -5375,9 +9663,21 @@
 "massa",
 "1. Més del que cal. 2. Quantitat de matèria."
 ],
+"massissa": [
+"massís",
+"Sòlida."
+],
+"massiva": [
+"massiu",
+"Molt gran."
+],
 "massís": [
 "massís",
 "Tot d'un mateix material, sense res a dins."
+],
+"mataven": [
+"matar",
+"Treien la vida."
 ],
 "mateix": [
 "mateix",
@@ -5387,17 +9687,41 @@
 "mateix",
 "Igual."
 ],
+"mateixes": [
+"mateix",
+"Iguals."
+],
 "mateixos": [
 "mateix",
 "Iguals."
+],
+"matemàtiques": [
+"matemàtiques",
+"Ciència dels números."
 ],
 "maten": [
 "matar",
 "Fan morir."
 ],
+"material": [
+"material",
+"El que es fa servir per fer una cosa."
+],
 "materials": [
 "material",
 "Coses per fabricar o construir."
+],
+"materna": [
+"mare",
+"De la mare."
+],
+"matessin": [
+"matar",
+"Traguessin la vida."
+],
+"matinada": [
+"matinada",
+"Molt d'hora, de nit."
 ],
 "matèria": [
 "matèria",
@@ -5407,9 +9731,29 @@
 "matí",
 "Primera part del dia."
 ],
+"mcwhirter": [
+"mcwhirter",
+"Cognom."
+],
+"me": [
+"me",
+"Paraula que vol dir \"a mi\"."
+],
 "medalla": [
 "medalla",
 "Premi rodó de metall."
+],
+"medalles": [
+"medalla",
+"Premis de metall."
+],
+"medallista": [
+"medallista",
+"Persona que guanya una medalla."
+],
+"medallistes": [
+"medallista",
+"Persones que guanyen medalles."
 ],
 "medicaments": [
 "medicament",
@@ -5431,6 +9775,18 @@
 "meitat",
 "Una de dues parts iguals."
 ],
+"meitats": [
+"meitat",
+"Parts de dos."
+],
+"memòria": [
+"memòria",
+"Capacitat de recordar."
+],
+"mena": [
+"mena",
+"Tipus."
+],
 "mengem": [
 "menjar",
 "Nosaltres mengem."
@@ -5438,6 +9794,14 @@
 "mengen": [
 "menjar",
 "Ells mengen."
+],
+"menges": [
+"menjar",
+"Prens menjar."
+],
+"mengi": [
+"menjar",
+"Forma de \"menjar\"."
 ],
 "mengis": [
 "menjar",
@@ -5463,6 +9827,10 @@
 "menjar",
 "Tu menjaràs (futur)."
 ],
+"menjat": [
+"menjar",
+"Pres menjar."
+],
 "menjava": [
 "menjar",
 "Ell menjava."
@@ -5475,9 +9843,21 @@
 "ment",
 "El que pensa dins del cap."
 ],
+"mentals": [
+"mental",
+"De la ment."
+],
+"mentia": [
+"mentir",
+"No deia la veritat."
+],
 "mentre": [
 "mentre",
 "Al mateix temps que."
+],
+"ments": [
+"ment",
+"Maneres de pensar."
 ],
 "menys": [
 "menys",
@@ -5491,6 +9871,10 @@
 "meravella",
 "Coses meravelloses."
 ],
+"meravellosa": [
+"meravellós",
+"Molt bona."
+],
 "meravelloses": [
 "meravellós",
 "Molt boniques; extraordinàries."
@@ -5498,6 +9882,10 @@
 "mercuri": [
 "Mercuri",
 "El planeta més petit i més a prop del Sol."
+],
+"mereixien": [
+"merèixer",
+"Havien de tenir."
 ],
 "mes": [
 "mes",
@@ -5507,6 +9895,22 @@
 "mes",
 "Parts de l'any."
 ],
+"mestral": [
+"mestral",
+"Cognom."
+],
+"mestres": [
+"mestre",
+"Experts."
+],
+"mesura": [
+"mesura",
+"A mesura que: alhora que."
+],
+"mesurant": [
+"mesurar",
+"Veient la mida."
+],
 "mesurar": [
 "mesurar",
 "Saber quant fa una cosa."
@@ -5514,6 +9918,10 @@
 "mesurat": [
 "mesurar",
 "Que se n'ha sabut la mida."
+],
+"mesures": [
+"mesura",
+"Accions."
 ],
 "metabolisme": [
 "metabolisme",
@@ -5554,6 +9962,10 @@
 "meva": [
 "meu",
 "Que és de mi."
+],
+"mi": [
+"mi",
+"Jo (després d'\"a\" o \"per\")."
 ],
 "miami": [
 "Miami",
@@ -5599,13 +10011,33 @@
 "milió",
 "Mil vegades mil (1.000.000)."
 ],
+"militar": [
+"militar",
+"De l'exèrcit."
+],
+"millor": [
+"bo",
+"Més bo."
+],
+"millora": [
+"millorar",
+"Fa millor."
+],
 "millorar": [
 "millorar",
 "Fer millor."
 ],
+"milloren": [
+"millorar",
+"Fan millor."
+],
 "millors": [
 "millor",
 "Més bons que els altres."
+],
+"millorés": [
+"millorar",
+"Fes millor."
 ],
 "mil·límetre": [
 "mil·límetre",
@@ -5627,6 +10059,10 @@
 "minoic",
 "De Creta, una illa grega antiga."
 ],
+"minoria": [
+"minoria",
+"Grup petit."
+],
 "minut": [
 "minut",
 "Temps de seixanta segons."
@@ -5635,9 +10071,21 @@
 "minut",
 "Temps de seixanta segons."
 ],
+"minúscula": [
+"minúscul",
+"Molt petita."
+],
+"minúsculs": [
+"minúscul",
+"Molt petits."
+],
 "mira": [
 "mirar",
 "Fa servir els ulls per veure."
+],
+"miracle": [
+"miracle",
+"Una cosa meravellosa."
 ],
 "mirant": [
 "mirar",
@@ -5651,6 +10099,30 @@
 "mirar",
 "Jo miraria (condicional)."
 ],
+"mirat": [
+"mirar",
+"Vist."
+],
+"mirava": [
+"mirar",
+"Veia."
+],
+"miraven": [
+"mirar",
+"Veien."
+],
+"miren": [
+"mirar",
+"Veuen."
+],
+"miri": [
+"mirar",
+"Vegi."
+],
+"mirés": [
+"mirar",
+"Veiés."
+],
 "missatge": [
 "missatge",
 "Informació que una persona envia a una altra."
@@ -5658,6 +10130,14 @@
 "missatges": [
 "missatge",
 "Informacions que s'envien."
+],
+"misses": [
+"missa",
+"Cerimònies religioses."
+],
+"missions": [
+"missió",
+"Viatges amb un fi."
 ],
 "missió": [
 "missió",
@@ -5687,17 +10167,49 @@
 "mitjana",
 "Temperatura mitjana = la normal."
 ],
+"mitjanit": [
+"mitjanit",
+"Les dotze de la nit."
+],
 "mitjons": [
 "mitjó",
 "Roba per als peus."
+],
+"moda": [
+"moda",
+"El que es porta."
 ],
 "mode": [
 "mode",
 "Manera de jugar."
 ],
+"model": [
+"model",
+"Exemple."
+],
+"moderna": [
+"modern",
+"Actual."
+],
+"modernes": [
+"modern",
+"Actuals."
+],
 "modes": [
 "mode",
 "Maneres de jugar."
+],
+"modesta": [
+"modest",
+"Petita."
+],
+"modificar": [
+"modificar",
+"Canviar."
+],
+"modificats": [
+"modificar",
+"Canviats."
 ],
 "mojang": [
 "Mojang",
@@ -5706,6 +10218,14 @@
 "molesta": [
 "molest",
 "Que no agrada."
+],
+"molestava": [
+"molestar",
+"Emprenyava."
+],
+"molestes": [
+"molest",
+"Que emprenyen."
 ],
 "molsa": [
 "molsa",
@@ -5742,6 +10262,10 @@
 "moment": [
 "moment",
 "Temps molt curt."
+],
+"moments": [
+"moment",
+"Instants."
 ],
 "momiji": [
 "Momiji",
@@ -5819,6 +10343,14 @@
 "mosquit",
 "Insecte petit que pica."
 ],
+"mosquitera": [
+"mosquitera",
+"Xarxa contra mosquits."
+],
+"mosquiteres": [
+"mosquitera",
+"Xarxes contra mosquits."
+],
 "mosquits": [
 "mosquit",
 "Insectes petits que piquen."
@@ -5831,9 +10363,37 @@
 "mossegar",
 "Agafen amb les dents."
 ],
+"mosseguis": [
+"mossegar",
+"Tallis amb les dents."
+],
+"mostra": [
+"mostrar",
+"Ensenya."
+],
 "mostrar": [
 "mostrar",
 "Fer veure."
+],
+"mostrat": [
+"mostrar",
+"Ensenyat."
+],
+"mostrats": [
+"mostrar",
+"Ensenyats."
+],
+"mostren": [
+"mostrar",
+"Ensenyen."
+],
+"mostres": [
+"mostra",
+"Trossos per estudiar."
+],
+"motiu": [
+"motiu",
+"Raó."
 ],
 "moto": [
 "moto",
@@ -5863,9 +10423,17 @@
 "moure",
 "Canviaven de lloc."
 ],
+"moviment": [
+"moviment",
+"Acció de moure's."
+],
 "moviments": [
 "moviment",
 "Canvis de lloc."
+],
+"multipliquen": [
+"multiplicar",
+"Augmenten molt."
 ],
 "mundial": [
 "mundial",
@@ -5874,6 +10442,10 @@
 "muntanya": [
 "muntanya",
 "Terra molt alta."
+],
+"muntanya russa": [
+"muntanya russa",
+"Atracció amb vagons que pugen i baixen molt ràpid."
 ],
 "muntanyes": [
 "muntanya",
@@ -5911,6 +10483,10 @@
 "màgic",
 "Que té màgia."
 ],
+"màniga": [
+"màniga",
+"Part de la roba que cobreix el braç."
+],
 "màquina": [
 "màquina",
 "Aparell que fa una feina."
@@ -5922,6 +10498,26 @@
 "màscara": [
 "màscara",
 "Objecte que tapa la cara."
+],
+"màxima": [
+"màxim",
+"La més gran."
+],
+"mèdic": [
+"mèdic",
+"De la medicina."
+],
+"mèdica": [
+"mèdic",
+"De la medicina."
+],
+"mèdics": [
+"mèdic",
+"De la medicina."
+],
+"mètode": [
+"mètode",
+"Manera."
 ],
 "mèxic": [
 "Mèxic",
@@ -5959,9 +10555,29 @@
 "nacional",
 "D'un país."
 ],
+"nacionals": [
+"nacional",
+"Del país."
+],
 "nacions": [
 "nació",
 "Països."
+],
+"nadal": [
+"nadal",
+"Festa del 25 de desembre."
+],
+"nadons": [
+"nadó",
+"Nens molt petits."
+],
+"naixem": [
+"néixer",
+"Arribem al món."
+],
+"napoleó": [
+"napoleó",
+"Emperador de França."
 ],
 "nas": [
 "nas",
@@ -5983,6 +10599,14 @@
 "natura",
 "Les plantes, els animals, el món que no han fet les persones."
 ],
+"natural": [
+"natural",
+"De la natura."
+],
+"naturals": [
+"natural",
+"De la natura."
+],
 "nau": [
 "nau",
 "Vehicle per viatjar per l'espai o pel mar."
@@ -5990,6 +10614,10 @@
 "ne": [
 "en",
 "Pronom en darrere del verb: veure-ne."
+],
+"necessari": [
+"necessari",
+"Que cal."
 ],
 "necessita": [
 "necessitar",
@@ -6003,6 +10631,10 @@
 "necessitar",
 "Li calia."
 ],
+"necessitaven": [
+"necessitar",
+"Els calia."
+],
 "necessiten": [
 "necessitar",
 "Els cal."
@@ -6010,6 +10642,10 @@
 "necessites": [
 "necessitar",
 "Et cal."
+],
+"necessàriament": [
+"necessari",
+"Sempre."
 ],
 "neda": [
 "nedar",
@@ -6031,6 +10667,22 @@
 "nedar",
 "Et mous a l'aigua."
 ],
+"nega": [
+"negar",
+"Diu que no."
+],
+"negar": [
+"negar",
+"Dir que no."
+],
+"negat": [
+"negar",
+"Dit que no."
+],
+"negaven": [
+"negar",
+"Deien que no."
+],
 "negra": [
 "negre",
 "Del color de la nit."
@@ -6043,6 +10695,10 @@
 "negre",
 "Del color de la nit."
 ],
+"neguen": [
+"negar",
+"Diuen que no."
+],
 "neix": [
 "néixer",
 "Comença a viure."
@@ -6051,6 +10707,14 @@
 "néixer",
 "Comencen a viure."
 ],
+"neixin": [
+"néixer",
+"Arribin al món."
+],
+"nenes": [
+"nen",
+"Noies petites."
+],
 "nens": [
 "nen",
 "Persones petites."
@@ -6058,6 +10722,14 @@
 "neptú": [
 "Neptú",
 "Planeta blau i molt fred."
+],
+"nerviosa": [
+"nerviós",
+"Amb nervis."
+],
+"nerviós": [
+"nerviós",
+"Dels nervis."
 ],
 "nes": [
 "NES",
@@ -6079,9 +10751,21 @@
 "netejar",
 "Treu la brutícia."
 ],
+"netejar": [
+"netejar",
+"Treure la brutícia."
+],
+"netes": [
+"net",
+"Sense brutícia."
+],
 "neu": [
 "neu",
 "Aigua gelada que cau del cel en flocs blancs."
+],
+"neurones": [
+"neurona",
+"Cèl·lules del cervell."
 ],
 "nevera": [
 "nevera",
@@ -6123,6 +10807,14 @@
 "nit",
 "Quan és fosc."
 ],
+"niu": [
+"niu",
+"Casa d'ocells."
+],
+"nius": [
+"niu",
+"Cases d'ocells."
+],
 "nivell": [
 "nivell",
 "1. Pantalla d'un joc. 2. Altura o grau."
@@ -6147,9 +10839,21 @@
 "noia",
 "Persona jove femenina."
 ],
+"noies": [
+"noia",
+"Joves; nenes."
+],
 "nom": [
 "nom",
 "Paraula per dir qui és algú o què és una cosa."
+],
+"nombre": [
+"nombre",
+"Quantitat."
+],
+"noms": [
+"nom",
+"Paraules per dir algú."
 ],
 "només": [
 "només",
@@ -6163,6 +10867,10 @@
 "nord",
 "Direcció cap amunt en un mapa."
 ],
+"norma": [
+"norma",
+"Regla."
+],
 "normal": [
 "normal",
 "Com sempre; habitual."
@@ -6174,6 +10882,14 @@
 "normals": [
 "normal",
 "Habituals."
+],
+"normes": [
+"norma",
+"Regles."
+],
+"norris": [
+"norris",
+"Nom d'home."
 ],
 "nos": [
 "ens",
@@ -6195,6 +10911,10 @@
 "nostre",
 "Que són de nosaltres."
 ],
+"notable": [
+"notable",
+"Que crida l'atenció."
+],
 "notar": [
 "notar",
 "Sentir o veure una cosa."
@@ -6203,13 +10923,25 @@
 "Notch",
 "Nom d'internet de Markus Persson."
 ],
+"notem": [
+"notar",
+"Ens adonem."
+],
 "notes": [
 "nota",
 "Papers petits per escriure."
 ],
+"notin": [
+"notar",
+"S'adonin."
+],
 "notícia": [
 "notícia",
 "Informació nova."
+],
+"notícies": [
+"notícia",
+"Informació sobre el que passa."
 ],
 "nou": [
 "nou",
@@ -6239,6 +10971,10 @@
 "novetat",
 "Coses noves."
 ],
+"nutricionistes": [
+"nutricionista",
+"Experts en menjar sa."
+],
 "nutritius": [
 "nutritiu",
 "Bons per alimentar el cos."
@@ -6250,6 +10986,10 @@
 "número": [
 "número",
 "Signe que diu una quantitat: 1, 2, 3..."
+],
+"núvol": [
+"núvol",
+"Massa blanca al cel."
 ],
 "o": [
 "o",
@@ -6263,6 +11003,18 @@
 "obert",
 "Que no està tancat."
 ],
+"obertes": [
+"obrir",
+"No tancades."
+],
+"oberts": [
+"obrir",
+"Que no estan tancats."
+],
+"obertura": [
+"obertura",
+"Forat."
+],
 "objecte": [
 "objecte",
 "Cosa que es pot tocar."
@@ -6274,6 +11026,18 @@
 "objectiu": [
 "objectiu",
 "El que vols aconseguir."
+],
+"objectius": [
+"objectiu",
+"Metes."
+],
+"oblida": [
+"oblidar",
+"No recorda."
+],
+"obra": [
+"obra",
+"Treball fet."
 ],
 "obre": [
 "obrir",
@@ -6287,9 +11051,33 @@
 "obrir",
 "El contrari de tancar."
 ],
+"observació": [
+"observació",
+"Acció de mirar."
+],
+"observant": [
+"observar",
+"Mirant."
+],
+"observar": [
+"observar",
+"Mirar amb atenció."
+],
+"observats": [
+"observar",
+"Mirats."
+],
 "obstacles": [
 "obstacle",
 "Coses que et barren el pas."
+],
+"obtenen": [
+"obtenir",
+"Aconsegueixen."
+],
+"ocasions": [
+"ocasió",
+"Vegades."
 ],
 "oceans": [
 "oceà",
@@ -6319,9 +11107,17 @@
 "oferir",
 "Donen."
 ],
+"oferia": [
+"oferir",
+"Donava."
+],
 "oficial": [
 "oficial",
 "Que ve d'una autoritat; de veritat."
+],
+"oficialment": [
+"oficial",
+"De manera oficial."
 ],
 "oficials": [
 "oficial",
@@ -6363,6 +11159,10 @@
 "olímpic",
 "Dels Jocs Olímpics."
 ],
+"olímpica": [
+"olímpic",
+"Dels Jocs Olímpics."
+],
 "olímpics": [
 "olímpic",
 "Dels Jocs Olímpics."
@@ -6395,9 +11195,29 @@
 "operar",
 "Tallen el cos per curar."
 ],
+"opinions": [
+"opinió",
+"El que pensa la gent."
+],
+"oportunitat": [
+"oportunitat",
+"Ocasió."
+],
+"oposat": [
+"oposat",
+"Contrari."
+],
+"oposaven": [
+"oposar",
+"Estaven en contra."
+],
 "or": [
 "or",
 "Metall groc molt valuós."
+],
+"oracions": [
+"oració",
+"Pregàries."
 ],
 "orca": [
 "orca",
@@ -6423,9 +11243,33 @@
 "organització",
 "Grup organitzat de persones."
 ],
+"organització benèfica": [
+"organització benèfica",
+"Grup que ajuda la gent sense guanyar diners."
+],
+"organitzadors": [
+"organitzador",
+"Persones que preparen una cosa."
+],
+"organitzar": [
+"organitzar",
+"Preparar."
+],
 "orgull": [
 "orgull",
 "Quan et creus millor que els altres."
+],
+"origen": [
+"origen",
+"D'on ve."
+],
+"original": [
+"original",
+"Diferent, nou."
+],
+"originalitat": [
+"original",
+"Ser diferent."
 ],
 "orques": [
 "orca",
@@ -6467,6 +11311,10 @@
 "pa",
 "Menjar fet amb farina i aigua, cuit al forn."
 ],
+"pacient": [
+"pacient",
+"Que sap esperar."
+],
 "pacients": [
 "pacient",
 "Malalts que van al metge."
@@ -6479,6 +11327,18 @@
 "Pacífic",
 "L'oceà més gran."
 ],
+"paga": [
+"pagar",
+"Dona diners."
+],
+"pagant": [
+"pagar",
+"Donant diners."
+],
+"pagar": [
+"pagar",
+"Donar diners."
+],
 "pagesos": [
 "pagès",
 "Persones que treballen al camp."
@@ -6490,6 +11350,10 @@
 "pajitnov": [
 "Pajitnov",
 "Nom: Aleksei Pajitnov, creador de Tetris."
+],
+"paleontologia": [
+"paleontologia",
+"Ciència dels fòssils."
 ],
 "paleontòleg": [
 "paleontòleg",
@@ -6507,9 +11371,49 @@
 "paleontòleg",
 "Científiques que estudien els fòssils."
 ],
+"pantalla": [
+"pantalla",
+"Part de la tele o de l'ordinador on es veuen les imatges."
+],
+"pantalons": [
+"pantalons",
+"Roba per a les cames."
+],
 "paons": [
 "paó",
 "Moneda de Fortnite. També: ocells amb plomes boniques."
+],
+"paper": [
+"paper",
+"Full per escriure."
+],
+"papir": [
+"papir",
+"Paper fet d'una planta."
+],
+"para": [
+"parar",
+"Deixa de fer."
+],
+"paradoxa": [
+"paradoxa",
+"Idea que sembla impossible."
+],
+"paranys": [
+"parany",
+"Coses per atrapar animals."
+],
+"parar": [
+"parar",
+"Parar atenció: fixar-se."
+],
+"paraula": [
+"paraula",
+"Grup de lletres amb significat."
+],
+"paraules": [
+"paraula",
+"Grups de lletres amb significat."
 ],
 "parc": [
 "parc",
@@ -6519,6 +11423,10 @@
 "parc",
 "Llocs amb arbres a la ciutat."
 ],
+"pardal": [
+"pardal",
+"Ocell petit."
+],
 "pare": [
 "pare",
 "El pare d'algú: home que té un fill."
@@ -6526,6 +11434,10 @@
 "parella": [
 "parella",
 "Dos animals o persones junts."
+],
+"paren": [
+"parar",
+"Paren atenció: es fixen."
 ],
 "parent": [
 "parent",
@@ -6551,6 +11463,10 @@
 "parkour",
 "Esport de córrer i saltar per la ciutat."
 ],
+"parla": [
+"parlar",
+"Diu paraules."
+],
 "parlant": [
 "parlar",
 "Dient paraules."
@@ -6563,13 +11479,33 @@
 "parlar",
 "Tu parlaràs (futur)."
 ],
+"parlava": [
+"parlar",
+"Deia."
+],
+"parlem": [
+"parlar",
+"Diem paraules."
+],
 "parlen": [
 "parlar",
 "Diuen paraules."
 ],
+"parmesà": [
+"parmesà",
+"Un formatge italià."
+],
 "part": [
 "part",
 "Tros d'una cosa."
+],
+"participen": [
+"participar",
+"Prenen part."
+],
+"particular": [
+"particular",
+"Especial."
 ],
 "partida": [
 "partida",
@@ -6583,9 +11519,17 @@
 "partir",
 "A partir de = començant per."
 ],
+"partit": [
+"partir",
+"Trencat."
+],
 "parts": [
 "part",
 "Trossos d'una cosa."
+],
+"paràgraf": [
+"paràgraf",
+"Part d'un text."
 ],
 "paràsits": [
 "paràsit",
@@ -6595,9 +11539,17 @@
 "París",
 "Capital de França."
 ],
+"pas": [
+"pas",
+"Avenç."
+],
 "passa": [
 "passar",
 "Ocorre."
+],
+"passadissos": [
+"passadís",
+"Llocs llargs per passar."
 ],
 "passadís": [
 "passadís",
@@ -6619,13 +11571,49 @@
 "passat",
 "El temps que ja ha passat."
 ],
+"passatemps": [
+"passatemps",
+"Afició."
+],
 "passava": [
 "passar",
 "Ocorria."
 ],
+"passaven": [
+"passar",
+"Feien servir (temps)."
+],
+"passejada": [
+"passejada",
+"Caminada tranquil·la."
+],
+"passejar": [
+"passejar",
+"Caminar tranquil."
+],
 "passen": [
 "passar",
 "Van per un lloc."
+],
+"passes": [
+"pas",
+"Moviments dels peus."
+],
+"passi": [
+"passar",
+"Forma de \"passar\"."
+],
+"passin": [
+"passar",
+"Facin servir (temps)."
+],
+"passions": [
+"passió",
+"Sentiments forts."
+],
+"passió": [
+"passió",
+"Sentiment fort."
 ],
 "passos": [
 "pas",
@@ -6647,6 +11635,10 @@
 "patates fregides",
 "Patates cuinades amb oli."
 ],
+"patinadors": [
+"patinador",
+"Persones que patinen."
+],
 "patinar": [
 "patinar",
 "Lliscar amb patins o una taula."
@@ -6655,9 +11647,21 @@
 "patinar",
 "Llisquen amb una taula."
 ],
+"patines": [
+"patinar",
+"Vas en monopatí."
+],
+"patrons": [
+"patró",
+"Coses que es repeteixen."
+],
 "pau": [
 "Pau",
 "Nom d'un noi."
+],
+"pausa": [
+"pausa",
+"Parada."
 ],
 "país": [
 "país",
@@ -6667,6 +11671,10 @@
 "país",
 "Territoris amb un govern."
 ],
+"paó": [
+"paó",
+"Ocell amb una cua molt bonica."
+],
 "peces": [
 "peça",
 "Parts que s'uneixen."
@@ -6674,6 +11682,10 @@
 "pedra": [
 "pedra",
 "Tros dur de roca."
+],
+"pedrera": [
+"pedrera",
+"Lloc d'on es treu pedra."
 ],
 "pedres": [
 "pedra",
@@ -6690,6 +11702,10 @@
 "pel": [
 "pel",
 "per + el."
+],
+"pelades": [
+"pelar",
+"Sense res."
 ],
 "pelegrí": [
 "pelegrí",
@@ -6711,6 +11727,14 @@
 "pel·lícula",
 "Històries que es veuen al cinema."
 ],
+"pena": [
+"pena",
+"Valer la pena: ser bo fer-ho."
+],
+"pengi": [
+"penjar",
+"Forma de \"penjar\"."
+],
 "penicil·lina": [
 "penicil·lina",
 "Primer antibiòtic, descobert per Fleming."
@@ -6718,6 +11742,30 @@
 "pensa": [
 "pensar",
 "Fa servir el cap."
+],
+"pensada": [
+"pensar",
+"Feta."
+],
+"pensant": [
+"pensar",
+"Creient."
+],
+"pensar": [
+"pensar",
+"Fer servir el cap."
+],
+"pensaries": [
+"pensar",
+"Creuries."
+],
+"pensat": [
+"pensar",
+"Fet per a."
+],
+"pensava": [
+"pensar",
+"Creia."
 ],
 "pensaven": [
 "pensar",
@@ -6734,6 +11782,10 @@
 "penses": [
 "pensar",
 "Tu creus."
+],
+"pensis": [
+"pensar",
+"Forma de \"pensar\"."
 ],
 "penso": [
 "pensar",
@@ -6783,6 +11835,18 @@
 "perdre",
 "No guanya."
 ],
+"perden": [
+"perdre",
+"Deixen de tenir."
+],
+"perdent": [
+"perdre",
+"Deixant de tenir."
+],
+"perdi": [
+"perdre",
+"Forma de \"perdre\"."
+],
 "perdre": [
 "perdre",
 "1. No guanyar. 2. No trobar una cosa."
@@ -6795,9 +11859,25 @@
 "perdut",
 "Que no es troba."
 ],
+"perdut": [
+"perdre",
+"Que ja no té."
+],
+"perdés": [
+"perdre",
+"Deixés de tenir."
+],
+"perfecció": [
+"perfecte",
+"Sense errors."
+],
 "perfecta": [
 "perfecte",
 "Sense cap error."
+],
+"perfectament": [
+"perfecte",
+"Molt bé."
 ],
 "perfecte": [
 "perfecte",
@@ -6815,9 +11895,21 @@
 "perill",
 "Possibilitat de fer-se mal."
 ],
+"perillosa": [
+"perill",
+"Amb perill."
+],
+"perilloses": [
+"perillós",
+"Amb perill."
+],
 "perillosos": [
 "perillós",
 "Que poden fer mal."
+],
+"perills": [
+"perill",
+"Riscos."
 ],
 "perillós": [
 "perillós",
@@ -6827,6 +11919,14 @@
 "periodista",
 "Persones que escriuen notícies."
 ],
+"perjudica": [
+"perjudicar",
+"Fa mal."
+],
+"perjudiqui": [
+"perjudicar",
+"Faci mal."
+],
 "permet": [
 "permetre",
 "Deixa fer."
@@ -6835,9 +11935,21 @@
 "permetre",
 "Deixen fer."
 ],
+"permetia": [
+"permetre",
+"Deixava."
+],
+"permetre": [
+"permetre",
+"Deixar."
+],
 "permès": [
 "permès",
 "Que es pot fer."
+],
+"pernil": [
+"pernil",
+"Carn de porc curada."
 ],
 "perquè": [
 "perquè",
@@ -6866,6 +11978,14 @@
 "persones": [
 "persona",
 "Éssers humans."
+],
+"pertot": [
+"pertot",
+"A tot arreu."
+],
+"pertànyer": [
+"pertànyer",
+"Ser de."
 ],
 "però": [
 "però",
@@ -6899,6 +12019,10 @@
 "pesar",
 "Tenia pes."
 ],
+"pesaven": [
+"pesar",
+"Tenien un pes."
+],
 "pescar": [
 "pescar",
 "Agafar peixos."
@@ -6910,6 +12034,10 @@
 "peses": [
 "pesar",
 "Tu tens pes."
+],
+"pesi": [
+"pesar",
+"Forma de \"pesar\"."
 ],
 "petit": [
 "petit",
@@ -6947,9 +12075,29 @@
 "pic",
 "Eina per trencar pedra."
 ],
+"pica": [
+"picar",
+"Mossega un insecte."
+],
+"picada": [
+"picada",
+"Ferida d'un insecte."
+],
+"picades": [
+"picada",
+"Ferides d'insecte."
+],
 "picar": [
 "picar",
 "Trencar pedra amb un pic."
+],
+"picaran": [
+"picar",
+"Mossegaran."
+],
+"picor": [
+"picor",
+"Ganes de gratar-se."
 ],
 "pilot": [
 "pilot",
@@ -6963,6 +12111,10 @@
 "pintar",
 "Posar colors."
 ],
+"pintures": [
+"pintura",
+"Líquids per pintar."
+],
 "pinzell": [
 "pinzell",
 "Eina amb pèls per pintar o netejar."
@@ -6970,6 +12122,10 @@
 "pinzells": [
 "pinzell",
 "Eines amb pèls per pintar o netejar."
+],
+"piquen": [
+"picar",
+"Mosseguen."
 ],
 "pirineus": [
 "Pirineus",
@@ -6983,17 +12139,41 @@
 "piràmide",
 "Construccions amb forma de triangle."
 ],
+"piscines": [
+"piscina",
+"Llocs amb aigua per nedar."
+],
 "pitaia": [
 "pitaia",
 "Fruita rosa amb fulles verdes."
+],
+"pitjor": [
+"dolent",
+"Més dolent."
 ],
 "pizza": [
 "pizza",
 "Menjar italià rodó amb formatge i tomàquet."
 ],
+"pla": [
+"pla",
+"Idea del que es farà."
+],
 "places": [
 "plaça",
 "Espais oberts d'una ciutat."
+],
+"plagues": [
+"plaga",
+"Animals que causen problemes."
+],
+"planar": [
+"planar",
+"Volar sense moure les ales."
+],
+"planejar": [
+"planejar",
+"Pensar com fer."
 ],
 "planeta": [
 "planeta",
@@ -7010,6 +12190,18 @@
 "planificar": [
 "planificar",
 "Pensar abans què faràs."
+],
+"planta": [
+"planta",
+"Ésser viu verd."
+],
+"planteja": [
+"plantejar",
+"Presenta."
+],
+"plantejar": [
+"plantejar",
+"Presentar."
 ],
 "plantes": [
 "planta",
@@ -7043,6 +12235,18 @@
 "Plató",
 "Filòsof grec antic."
 ],
+"platós": [
+"plató",
+"Llocs on es grava la tele."
+],
+"ple": [
+"ple",
+"Que no hi cap més."
+],
+"plena": [
+"ple",
+"Amb molt."
+],
 "plens": [
 "ple",
 "Que tenen molta cosa a dins."
@@ -7063,6 +12267,10 @@
 "ploure",
 "Cau aigua del cel."
 ],
+"ploure": [
+"ploure",
+"Caure aigua del cel."
+],
 "pluja": [
 "pluja",
 "Aigua que cau del cel."
@@ -7075,6 +12283,10 @@
 "plàncton",
 "Éssers molt petits que viuen a l'aigua."
 ],
+"plàstic": [
+"plàstic",
+"Material lleuger."
+],
 "plàtan": [
 "plàtan",
 "Fruita llarga i groga."
@@ -7082,6 +12294,10 @@
 "plàtans": [
 "plàtan",
 "Fruites llargues i grogues."
+],
+"població": [
+"població",
+"Gent d'un lloc."
 ],
 "poc": [
 "poc",
@@ -7115,6 +12331,10 @@
 "poderós",
 "Amb molta força o molt poder."
 ],
+"podi": [
+"podi",
+"Lloc on pugen els guanyadors."
+],
 "podia": [
 "poder",
 "Era capaç."
@@ -7123,9 +12343,25 @@
 "poder",
 "Eren capaços."
 ],
+"podria": [
+"poder",
+"Forma de \"poder\"."
+],
+"podrien": [
+"poder",
+"Forma de \"poder\"."
+],
 "podràs": [
 "poder",
 "Tu seràs capaç (futur)."
+],
+"poemes": [
+"poema",
+"Textos en vers."
+],
+"poguessin": [
+"poder",
+"Forma de \"poder\"."
 ],
 "pogut": [
 "poder",
@@ -7135,17 +12371,49 @@
 "poder",
 "Si pogués = si fos capaç."
 ],
+"pol": [
+"pol",
+"Extrem d'un planeta."
+],
 "policia": [
 "policia",
 "Persones que vigilen que es compleixin les lleis."
+],
+"pollancres": [
+"pollancre",
+"Arbres alts."
+],
+"polonès": [
+"polonès",
+"De Polònia."
 ],
 "pols": [
 "pols",
 "1. Terra molt fina. 2. Els dos punts extrems de la Terra."
 ],
+"polsosos": [
+"pols",
+"Amb pols."
+],
+"polèmica": [
+"polèmica",
+"Discussió."
+],
 "poma": [
 "poma",
 "Fruita rodona, vermella o verda."
+],
+"ponen": [
+"pondre",
+"Fan ous."
+],
+"ponien": [
+"pondre",
+"Feien ous."
+],
+"pont": [
+"pont",
+"El que travessa un riu."
 ],
 "pop": [
 "pop",
@@ -7155,9 +12423,17 @@
 "pop d'anells blaus",
 "Pop petit i molt verinós."
 ],
+"pops": [
+"pop",
+"Animals del mar amb vuit braços."
+],
 "popular": [
 "popular",
 "Que agrada a molta gent."
+],
+"popularitat": [
+"popular",
+"Ser famós."
 ],
 "populars": [
 "popular",
@@ -7187,6 +12463,10 @@
 "portar",
 "Tu duràs (futur)."
 ],
+"portava": [
+"portar",
+"Es portava: es comportava."
+],
 "porten": [
 "portar",
 "Duen."
@@ -7195,9 +12475,21 @@
 "porta",
 "Obertures per entrar."
 ],
+"porti": [
+"portar",
+"Forma de \"portar\"."
+],
 "ports": [
 "port",
 "Llocs on paren els vaixells."
+],
+"portàtil": [
+"portàtil",
+"Que es pot portar."
+],
+"posa": [
+"posar",
+"Col·loca."
 ],
 "posar": [
 "posar",
@@ -7219,6 +12511,18 @@
 "posar",
 "Tu deixes en un lloc."
 ],
+"posició": [
+"posició",
+"Opinió."
+],
+"posin": [
+"posar",
+"Col·loquin."
+],
+"positiva": [
+"positiu",
+"Bona."
+],
 "poso": [
 "posar",
 "Jo deixo en un lloc."
@@ -7231,6 +12535,14 @@
 "possible",
 "Que pot passar."
 ],
+"possibles": [
+"possible",
+"Que poden ser."
+],
+"posterior": [
+"posterior",
+"De després."
+],
 "pot": [
 "poder",
 "És capaç."
@@ -7242,6 +12554,18 @@
 "pota": [
 "pota",
 "Cama d'un animal."
+],
+"potencial": [
+"potencial",
+"El que pot arribar a ser."
+],
+"potent": [
+"potent",
+"Fort."
+],
+"potents": [
+"potent",
+"Forts."
 ],
 "potes": [
 "pota",
@@ -7259,6 +12583,10 @@
 "potser",
 "Pot ser; no és segur."
 ],
+"practicar": [
+"practicar",
+"Fer per aprendre."
+],
 "practiquen": [
 "practicar",
 "Fan un esport."
@@ -7267,9 +12595,33 @@
 "practicar",
 "Tu fas un esport."
 ],
+"praga": [
+"praga",
+"Capital de la República Txeca."
+],
+"precaucions": [
+"precaució",
+"Cures."
+],
+"precisament": [
+"precís",
+"Justament."
+],
 "prefereixen": [
 "preferir",
 "Els agrada més."
+],
+"preferia": [
+"preferir",
+"Li agradava més."
+],
+"preferir": [
+"preferir",
+"Agradar més."
+],
+"preferiria": [
+"preferir",
+"Li agradaria més."
 ],
 "preferit": [
 "preferit",
@@ -7279,6 +12631,14 @@
 "preferit",
 "Els que t'agraden més."
 ],
+"preguen": [
+"pregar",
+"Demanen per favor."
+],
+"pregunta": [
+"pregunta",
+"El que es pregunta."
+],
 "preguntar": [
 "preguntar",
 "Fer una pregunta."
@@ -7286,6 +12646,22 @@
 "preguntes": [
 "pregunta",
 "Frases per saber una cosa."
+],
+"pregunteu": [
+"preguntar",
+"Feu una pregunta."
+],
+"premi": [
+"premi",
+"Regal per guanyar."
+],
+"premis": [
+"premi",
+"Regals per guanyar."
+],
+"premo": [
+"prémer",
+"Faig força amb el dit."
 ],
 "prems": [
 "prémer",
@@ -7299,17 +12675,65 @@
 "prendre",
 "Agafar; treure."
 ],
+"prenen": [
+"prendre",
+"Se la prenen seriosament: la creuen important."
+],
 "prenguin": [
 "prendre",
 "Que els treguin."
+],
+"preocupa": [
+"preocupar",
+"Posa nerviós."
+],
+"preocupacions": [
+"preocupació",
+"Nervis per una cosa."
+],
+"preocupació": [
+"preocupació",
+"Nervis per una cosa."
+],
+"preocupar": [
+"preocupar",
+"Posar nerviós."
+],
+"preocupats": [
+"preocupar",
+"Nerviosos."
+],
+"preocupen": [
+"preocupar",
+"Posen nerviosos."
 ],
 "prepara": [
 "preparar",
 "Fa a punt."
 ],
+"preparació": [
+"preparar",
+"El que es fa abans."
+],
+"preparar": [
+"preparar",
+"Fer abans."
+],
+"preparat": [
+"preparar",
+"Fet."
+],
 "preparen": [
 "preparar",
 "Fan a punt."
+],
+"presa": [
+"presa",
+"Mur per a l'aigua; animal caçat."
+],
+"present": [
+"present",
+"Que hi és."
 ],
 "presentar": [
 "presentar",
@@ -7319,6 +12743,18 @@
 "presentar",
 "Mostrat a la gent."
 ],
+"presentats": [
+"presentar",
+"Mostrats."
+],
+"presenten": [
+"presentar",
+"Donen."
+],
+"preses": [
+"presa",
+"Animals que es cacen."
+],
 "pressa": [
 "pressa",
 "De pressa = ràpid."
@@ -7327,9 +12763,33 @@
 "pressió",
 "Forces que pitgen."
 ],
+"pressió": [
+"pressió",
+"Nervis per haver de fer una cosa."
+],
+"prestatges": [
+"prestatge",
+"Mobles per a llibres."
+],
 "preu": [
 "preu",
 "Els diners que costa una cosa."
+],
+"prevenen": [
+"prevenir",
+"Eviten."
+],
+"prevenir": [
+"prevenir",
+"Evitar abans."
+],
+"preveure": [
+"preveure",
+"Veure abans."
+],
+"previst": [
+"preveure",
+"Planejat."
 ],
 "primer": [
 "primer",
@@ -7339,13 +12799,29 @@
 "primer",
 "Número 1 en una llista."
 ],
+"primeres": [
+"primer",
+"Les del principi."
+],
 "primers": [
 "primer",
 "Els de davant de tot."
 ],
+"primitiva": [
+"primitiu",
+"Molt antiga."
+],
+"prims": [
+"prim",
+"Fins."
+],
 "primíssimes": [
 "prim",
 "Molt i molt primes."
+],
+"principal": [
+"principal",
+"El més important."
 ],
 "principals": [
 "principal",
@@ -7354,6 +12830,18 @@
 "principi": [
 "principi",
 "Començament."
+],
+"principiants": [
+"principiant",
+"Persones que comencen."
+],
+"principis": [
+"principi",
+"Començaments."
+],
+"prioritaris": [
+"prioritat",
+"Més importants."
 ],
 "probable": [
 "probable",
@@ -7367,6 +12855,34 @@
 "problema",
 "Cosa difícil de resoldre."
 ],
+"problemes": [
+"problema",
+"Coses difícils."
+],
+"procediment": [
+"procediment",
+"Manera de fer una cosa."
+],
+"processó": [
+"processó",
+"Desfilada religiosa."
+],
+"procés": [
+"procés",
+"Sèrie de passos."
+],
+"producte": [
+"producte",
+"Cosa que es ven."
+],
+"productes": [
+"producte",
+"Coses que es venen."
+],
+"produeix": [
+"produir",
+"Fa."
+],
 "produeixen": [
 "produir",
 "Fan; fabriquen."
@@ -7375,9 +12891,21 @@
 "produir",
 "Fer; fabricar."
 ],
+"professional": [
+"professional",
+"De feina."
+],
+"professionals": [
+"professional",
+"Que ho fan de feina."
+],
 "professions": [
 "professió",
 "Feines."
+],
+"professió": [
+"professió",
+"Feina."
 ],
 "professor": [
 "professor",
@@ -7395,6 +12923,10 @@
 "profund",
 "Que va molt avall."
 ],
+"profundament": [
+"profund",
+"Molt."
+],
 "programa": [
 "programa",
 "Instruccions per a l'ordinador."
@@ -7410,6 +12942,26 @@
 "programadors": [
 "programador",
 "Persones que escriuen programes."
+],
+"programes": [
+"programa",
+"Plans."
+],
+"progrés": [
+"progrés",
+"Avenç."
+],
+"prohibeix": [
+"prohibir",
+"No deixa."
+],
+"prohibida": [
+"prohibir",
+"No permesa."
+],
+"prohibir": [
+"prohibir",
+"No deixar."
 ],
 "prohibit": [
 "prohibit",
@@ -7427,9 +12979,17 @@
 "projecte",
 "Plans per fer coses."
 ],
+"prometedor": [
+"prometre",
+"Que dona esperança."
+],
 "prop": [
 "prop",
 "A prop = a poca distància."
+],
+"propaguen": [
+"propagar",
+"Escampen."
 ],
 "propi": [
 "propi",
@@ -7439,6 +12999,18 @@
 "propi",
 "Seus, d'ells mateixos."
 ],
+"proposat": [
+"proposar",
+"Suggerit."
+],
+"propòsit": [
+"propòsit",
+"Fi."
+],
+"proteccions": [
+"protecció",
+"Coses que protegeixen."
+],
 "protecció": [
 "protecció",
 "Una cosa que protegeix."
@@ -7446,6 +13018,10 @@
 "protegeix": [
 "protegir",
 "Defensa del perill."
+],
+"protegeixen": [
+"protegir",
+"Cuiden."
 ],
 "protegida": [
 "protegir",
@@ -7459,6 +13035,10 @@
 "protegir",
 "Defensar del perill."
 ],
+"protegit": [
+"protegir",
+"Cuidat."
+],
 "proteïna": [
 "proteïna",
 "Part del menjar que fa créixer els músculs."
@@ -7471,6 +13051,10 @@
 "prou",
 "Tant com cal."
 ],
+"prova": [
+"prova",
+"Mostra que demostra una cosa."
+],
 "provant": [
 "provar",
 "Intentant."
@@ -7479,9 +13063,45 @@
 "provar",
 "Intentar; tastar."
 ],
+"provat": [
+"provar",
+"Intentat."
+],
+"proven": [
+"provar",
+"Intenten."
+],
+"provenien": [
+"provenir",
+"Venien."
+],
 "proves": [
 "prova",
 "Intents; coses que demostren que és veritat."
+],
+"provocar": [
+"provocar",
+"Causar."
+],
+"provocava": [
+"provocar",
+"Causava."
+],
+"provoquen": [
+"provocar",
+"Causen."
+],
+"província": [
+"província",
+"Part d'un país."
+],
+"pràctic": [
+"pràctic",
+"Útil."
+],
+"pràctica": [
+"pràctica",
+"Ús real."
 ],
 "pròpia": [
 "propi",
@@ -7491,9 +13111,25 @@
 "propi",
 "Seves, d'elles mateixes."
 ],
+"pròxima": [
+"pròxim",
+"La següent."
+],
+"pròximes": [
+"pròxim",
+"Següents."
+],
 "pròxims": [
 "pròxim",
 "Que vindran aviat."
+],
+"psicòlegs": [
+"psicòleg",
+"Experts en la ment."
+],
+"publicació": [
+"publicar",
+"Sortida d'un llibre."
 ],
 "publicar": [
 "publicar",
@@ -7502,6 +13138,10 @@
 "publicitat": [
 "publicitat",
 "Anuncis."
+],
+"publiqués": [
+"publicar",
+"Tragués un llibre."
 ],
 "pudent": [
 "pudent",
@@ -7519,6 +13159,10 @@
 "poder",
 "Que sigui capaç."
 ],
+"puguin": [
+"poder",
+"Forma de \"poder\"."
+],
 "puja": [
 "pujar",
 "Va cap amunt."
@@ -7530,6 +13174,10 @@
 "pujar": [
 "pujar",
 "Anar cap amunt."
+],
+"pujat": [
+"pujar",
+"Anat amunt."
 ],
 "pulmons": [
 "pulmó",
@@ -7579,6 +13227,10 @@
 "pèl",
 "Fils que creixen a la pell."
 ],
+"pèrdua": [
+"perdre",
+"Cosa que es perd."
+],
 "pòsits": [
 "pòsit",
 "Notes adhesives."
@@ -7586,6 +13238,10 @@
 "públic": [
 "públic",
 "Les persones que miren un espectacle."
+],
+"públics": [
+"públic",
+"De tothom."
 ],
 "quadrat": [
 "quadrat",
@@ -7598,6 +13254,10 @@
 "qual": [
 "qual",
 "Del qual = d'on."
+],
+"quals": [
+"qual",
+"Que."
 ],
 "qualsevol": [
 "qualsevol",
@@ -7635,6 +13295,14 @@
 "quaranta",
 "El número 40."
 ],
+"quart": [
+"quatre",
+"Número quatre en ordre."
+],
+"quartes": [
+"quart",
+"Parts de quatre."
+],
 "quatre": [
 "quatre",
 "El número 4."
@@ -7655,6 +13323,18 @@
 "quedar",
 "Hi restava."
 ],
+"queden": [
+"quedar",
+"Continuen."
+],
+"quedes": [
+"quedar",
+"Et quedes: no et mous."
+],
+"quedessin": [
+"quedar",
+"Estiguessin."
+],
 "quedi": [
 "quedar",
 "Que es quedi fora = que no entri."
@@ -7663,17 +13343,37 @@
 "queixar-se",
 "Deia que no estava content."
 ],
+"queixaven": [
+"queixar",
+"Protestaven."
+],
+"queixes": [
+"queixa",
+"Protestes."
+],
 "qui": [
 "qui",
 "Quina persona."
+],
+"quick": [
+"quick",
+"Ràpid (anglès)."
 ],
 "quidz": [
 "quidz",
 "Diners del joc BEAR (Alpha)."
 ],
+"quiet": [
+"quiet",
+"Sense moure's."
+],
 "quieta": [
 "quiet",
 "Que no es mou."
+],
+"quilo": [
+"quilo",
+"Mil grams."
 ],
 "quilos": [
 "quilo",
@@ -7711,9 +13411,29 @@
 "què",
 "Pregunta per una cosa."
 ],
+"quètxup": [
+"quètxup",
+"Salsa de tomàquet."
+],
+"químic": [
+"químic",
+"Expert en química."
+],
 "química": [
 "química",
 "Ciència de les substàncies i els seus canvis."
+],
+"químics": [
+"químic",
+"Productes de química."
+],
+"qüestió": [
+"qüestió",
+"Assumpte."
+],
+"racó": [
+"racó",
+"Cantonada."
 ],
 "radar": [
 "radar",
@@ -7731,6 +13451,14 @@
 "radiografia",
 "Fotos de dins del cos."
 ],
+"raigs": [
+"raig",
+"Dolls d'aigua."
+],
+"ramaders": [
+"ramader",
+"Persones que crien vaques."
+],
 "rambutan": [
 "rambutan",
 "Fruita vermella amb pèls."
@@ -7742,6 +13470,10 @@
 "rampes": [
 "rampa",
 "Superfícies inclinades."
+],
+"raons": [
+"raó",
+"Motius."
 ],
 "rap": [
 "rap",
@@ -7767,17 +13499,57 @@
 "rar",
 "Que no passen gaire."
 ],
+"rashid": [
+"rashid",
+"Ciutat d'Egipte."
+],
+"raspall": [
+"raspall",
+"Objecte per netejar o pentinar."
+],
 "raspalls": [
 "raspall",
 "Eines amb pèls per netejar."
+],
+"rastres": [
+"rastre",
+"Senyals."
+],
+"ratpenats": [
+"ratpenat",
+"Mamífers que volen de nit."
 ],
 "raymond": [
 "Raymond",
 "Nom del pare de David Belle."
 ],
+"rayssa": [
+"rayssa",
+"Nom de dona."
+],
 "raó": [
 "raó",
 "El perquè d'una cosa."
+],
+"reacciona": [
+"reaccionar",
+"Respon a una cosa."
+],
+"reaccionant": [
+"reaccionar",
+"Responent."
+],
+"reaccionar": [
+"reaccionar",
+"Respondre."
+],
+"reaccionen": [
+"reaccionar",
+"Responen."
+],
+"reaccions": [
+"reacció",
+"Respostes."
 ],
 "reacció": [
 "reacció",
@@ -7787,33 +13559,121 @@
 "real",
 "Que existeix de veritat."
 ],
+"realitat": [
+"realitat",
+"El que és real."
+],
+"realment": [
+"real",
+"De veritat."
+],
 "reals": [
 "real",
 "Que existeixen de veritat."
+],
+"rebels": [
+"rebel",
+"Que no obeeixen."
 ],
 "rebem": [
 "rebre",
 "Ens donen."
 ],
+"reben": [
+"rebre",
+"Els donen."
+],
 "rebre": [
 "rebre",
 "Agafar el que et donen."
+],
+"rebrem": [
+"rebre",
+"Ens arribarà."
+],
+"rebut": [
+"rebre",
+"Arribat."
+],
+"rebutgen": [
+"rebutjar",
+"Diuen que no."
+],
+"rebutgi": [
+"rebutjar",
+"Digui que no."
+],
+"rebutja": [
+"rebutjar",
+"Diu que no."
+],
+"rebuts": [
+"rebut",
+"Papers que demostren un pagament."
+],
+"recapta": [
+"recaptar",
+"Ajunta diners."
+],
+"recaptar": [
+"recaptar",
+"Ajuntar diners."
+],
+"recaptat": [
+"recaptar",
+"Ajuntat (diners)."
+],
+"recentment": [
+"recent",
+"Fa poc."
 ],
 "recepta": [
 "recepta",
 "Instruccions per cuinar."
 ],
+"receptors": [
+"receptor",
+"Parts que reben una cosa."
+],
 "recerca": [
 "recerca",
 "Investigació científica."
+],
+"recerques": [
+"recerca",
+"Investigacions."
+],
+"recollint": [
+"recollir",
+"Agafant."
+],
+"recomana": [
+"recomanar",
+"Aconsella."
 ],
 "recomanacions": [
 "recomanació",
 "Consells."
 ],
+"recompenses": [
+"recompensa",
+"Premis."
+],
 "reconeguts": [
 "reconegut",
 "Valorats per tothom."
+],
+"reconeixement": [
+"reconeixement",
+"Premi per una cosa ben feta."
+],
+"reconeixen": [
+"reconèixer",
+"Saben qui és."
+],
+"reconstruint": [
+"reconstruir",
+"Construint de nou."
 ],
 "reconstruir": [
 "reconstruir",
@@ -7831,25 +13691,93 @@
 "recordar",
 "Tenir al cap una cosa del passat."
 ],
+"recorregut": [
+"recórrer",
+"Viatjat."
+],
+"recrear": [
+"recrear",
+"Fer de nou."
+],
 "recull": [
 "recollir",
 "Agafa."
+],
+"recullen": [
+"recollir",
+"Agafen."
+],
+"recuperar": [
+"recuperar",
+"Tenir de nou."
+],
+"recuperat": [
+"recuperar",
+"Millorat."
+],
+"recursos": [
+"recurs",
+"Coses útils."
+],
+"redissenyar": [
+"redissenyar",
+"Dissenyar de nou."
 ],
 "redstone": [
 "redstone",
 "Mineral de Minecraft que funciona com l'electricitat."
 ],
+"reduir": [
+"reduir",
+"Fer més petit."
+],
+"refereix": [
+"referir",
+"Parla de."
+],
+"refiar": [
+"refiar",
+"Refiar-se: confiar."
+],
+"refiava": [
+"refiar",
+"Confiava."
+],
 "refreda": [
 "refredar",
 "Es fa freda."
+],
+"refredats": [
+"refredat",
+"Malalties lleus amb tos i mocs."
+],
+"refrescant": [
+"refrescant",
+"Que dona alegria."
+],
+"refugi": [
+"refugi",
+"Lloc per protegir-se."
+],
+"regal": [
+"regal",
+"Cosa que es dona."
 ],
 "regenerar": [
 "regenerar",
 "Tornar a fer créixer una part del cos."
 ],
+"registrar": [
+"registrar",
+"Apuntar oficialment."
+],
 "registrat": [
 "registrar",
 "Apuntat de manera oficial."
+],
+"regió": [
+"regió",
+"Zona."
 ],
 "regla": [
 "regla",
@@ -7863,9 +13791,61 @@
 "rei",
 "Home que mana en un regne."
 ],
+"reines": [
+"reina",
+"Dones que governen un regne."
+],
 "reis": [
 "rei",
 "Homes que manen en un regne."
+],
+"relacionar": [
+"relacionar",
+"Unir."
+],
+"relacionat": [
+"relacionar",
+"Unit a."
+],
+"relacions": [
+"relació",
+"Connexions entre persones."
+],
+"relació": [
+"relació",
+"Connexió."
+],
+"relativament": [
+"relatiu",
+"Bastant."
+],
+"relaxades": [
+"relaxar",
+"Tranquil·les."
+],
+"relaxant": [
+"relaxar",
+"Que tranquil·litza."
+],
+"relaxar": [
+"relaxar",
+"Descansar."
+],
+"religiosa": [
+"religiós",
+"De la religió."
+],
+"religió": [
+"religió",
+"Creença en Déu o en déus."
+],
+"religiós": [
+"religiós",
+"De la religió."
+],
+"rellisqui": [
+"relliscar",
+"Llisqui."
 ],
 "rellotge": [
 "rellotge",
@@ -7895,6 +13875,10 @@
 "rentar",
 "Netejaven amb aigua."
 ],
+"repel·lent": [
+"repel·lent",
+"Producte que allunya insectes."
+],
 "repeteixen": [
 "repetir",
 "Tornen a passar."
@@ -7903,13 +13887,45 @@
 "repetir",
 "Tornar a fer."
 ],
+"reporters": [
+"reporter",
+"Periodistes."
+],
 "reporters sense fronteres": [
 "Reporters sense Fronteres",
 "Organització que defensa els periodistes."
 ],
+"representar": [
+"representar",
+"Ser el signe de."
+],
+"representava": [
+"representar",
+"Era el signe de."
+],
+"representaven": [
+"representar",
+"Eren signes de."
+],
+"repte": [
+"repte",
+"Desafiament."
+],
 "reptes": [
 "repte",
 "Coses difícils que vols aconseguir."
+],
+"repèl": [
+"repèl",
+"Llavor que s'enganxa."
+],
+"repèls": [
+"repèl",
+"Llavors que s'enganxen."
+],
+"requereixen": [
+"requerir",
+"Necessiten."
 ],
 "res": [
 "res",
@@ -7923,9 +13939,41 @@
 "resistir",
 "Aguanta."
 ],
+"resisteixen": [
+"resistir",
+"Aguanten."
+],
 "resistent": [
 "resistent",
 "Que aguanta molt."
+],
+"resistents": [
+"resistir",
+"Que aguanten."
+],
+"resistir": [
+"resistir",
+"Aguantar."
+],
+"resistit": [
+"resistir",
+"Aguantat."
+],
+"resoldre": [
+"resoldre",
+"Trobar la solució."
+],
+"resoldrà": [
+"resoldre",
+"Solucionarà."
+],
+"resolt": [
+"resoldre",
+"Solucionat."
+],
+"resolució": [
+"resoldre",
+"Solució."
 ],
 "respecta": [
 "respectar",
@@ -7935,6 +13983,10 @@
 "respectar",
 "Tractar bé."
 ],
+"respecte": [
+"respecte",
+"Consideració."
+],
 "respira": [
 "respirar",
 "Fa entrar l'aire al cos."
@@ -7943,17 +13995,37 @@
 "respirar",
 "Fer entrar l'aire al cos."
 ],
+"respirem": [
+"respirar",
+"Agafem i traiem aire."
+],
 "respondre": [
 "respondre",
 "Contestar."
+],
+"responsabilitat": [
+"responsabilitat",
+"Deure."
 ],
 "responsable": [
 "responsable",
 "Qui té la culpa o la feina."
 ],
+"respost": [
+"respondre",
+"Contestat."
+],
 "resposta": [
 "resposta",
 "El que contestes."
+],
+"respostes": [
+"resposta",
+"Contestacions."
+],
+"resta": [
+"resta",
+"El que queda."
 ],
 "restaurant": [
 "restaurant",
@@ -7963,6 +14035,50 @@
 "resta",
 "Trossos que queden."
 ],
+"resulta": [
+"resultar",
+"És."
+],
+"resultar": [
+"resultar",
+"Acabar sent."
+],
+"resultat": [
+"resultat",
+"El que surt."
+],
+"resultats": [
+"resultat",
+"El que surt al final."
+],
+"resulten": [
+"resultar",
+"Són."
+],
+"retorn": [
+"retorn",
+"Tornada."
+],
+"retornar": [
+"retornar",
+"Tornar."
+],
+"retransmeten": [
+"retransmetre",
+"Emeten en directe."
+],
+"retransmetent": [
+"retransmetre",
+"Emetent en directe."
+],
+"retransmetre": [
+"retransmetre",
+"Emetre en directe."
+],
+"reunir": [
+"reunir",
+"Ajuntar."
+],
 "reunit": [
 "reunir",
 "Ajuntat."
@@ -7970,6 +14086,10 @@
 "reunís": [
 "reunir",
 "Que ajuntés."
+],
+"revelar": [
+"revelar",
+"Explicar un secret."
 ],
 "revisar": [
 "revisar",
@@ -7987,9 +14107,21 @@
 "rex",
 "Part del nom del tiranosaure rex."
 ],
+"ric": [
+"ric",
+"Amb molts diners."
+],
 "rics": [
 "ric",
 "Amb molts diners."
+],
+"riem": [
+"riure",
+"Fem \"ha, ha\"."
+],
+"rient": [
+"riure",
+"Fent \"ha, ha\"."
 ],
 "rierols": [
 "rierol",
@@ -8002,6 +14134,14 @@
 "rius": [
 "riu",
 "Aigües que corren cap al mar."
+],
+"rivalitat": [
+"rivalitat",
+"Competència entre rivals."
+],
+"rivals": [
+"rival",
+"Contraris."
 ],
 "roba": [
 "roba",
@@ -8039,6 +14179,10 @@
 "roca",
 "Pedra gran."
 ],
+"rocosos": [
+"roca",
+"De roca."
+],
 "roda": [
 "roda",
 "Peça rodona que gira."
@@ -8059,6 +14203,10 @@
 "Roma",
 "Capital d'Itàlia."
 ],
+"romans": [
+"romà",
+"De Roma."
+],
 "roques": [
 "roca",
 "Pedres grans."
@@ -8071,6 +14219,14 @@
 "rosa",
 "De color rosa."
 ],
+"rosetta": [
+"rosetta",
+"Nom europeu de Rashid."
+],
+"ross": [
+"ross",
+"Nom d'home."
+],
 "rovell": [
 "rovell",
 "La part groga de l'ou."
@@ -8078,6 +14234,10 @@
 "russa": [
 "rus",
 "De Rússia."
+],
+"ruta": [
+"ruta",
+"Camí."
 ],
 "ràdio": [
 "ràdio",
@@ -8091,7 +14251,15 @@
 "ràpid",
 "Que va de pressa."
 ],
+"ràpidament": [
+"ràpid",
+"De pressa."
+],
 "ràpides": [
+"ràpid",
+"Que van de pressa."
+],
+"ràpids": [
 "ràpid",
 "Que van de pressa."
 ],
@@ -8143,6 +14311,10 @@
 "saber",
 "Coneixem."
 ],
+"saben": [
+"saber",
+"Coneixen."
+],
 "saber": [
 "saber",
 "Conèixer una cosa."
@@ -8150,6 +14322,22 @@
 "sabia": [
 "saber",
 "Coneixia."
+],
+"sabien": [
+"saber",
+"Coneixien."
+],
+"saborós": [
+"sabor",
+"Que té bon gust."
+],
+"sabràs": [
+"saber",
+"Coneixeràs."
+],
+"sabés": [
+"saber",
+"Forma de \"saber\"."
 ],
 "sabó": [
 "sabó",
@@ -8170,6 +14358,26 @@
 "salada": [
 "salat",
 "Amb gust de sal."
+],
+"salari": [
+"salari",
+"Diners per treballar."
+],
+"salat": [
+"sal",
+"Amb sal."
+],
+"sales": [
+"sala",
+"Habitacions grans."
+],
+"saliva": [
+"saliva",
+"Líquid de la boca."
+],
+"salsa": [
+"salsa",
+"Líquid per acompanyar el menjar."
 ],
 "salt": [
 "salt",
@@ -8207,9 +14415,21 @@
 "salvar",
 "Treure d'un perill."
 ],
+"salvat": [
+"salvar",
+"Protegit de la mort."
+],
+"salvatge": [
+"salvatge",
+"Que viu lliure."
+],
 "salvatges": [
 "salvatge",
 "Que viuen lliures a la natura."
+],
+"salzes": [
+"salze",
+"Arbres de vora l'aigua."
 ],
 "sam": [
 "Sam",
@@ -8227,6 +14447,14 @@
 "sang",
 "Líquid vermell del cos."
 ],
+"sanguini": [
+"sang",
+"De la sang."
+],
+"sans": [
+"sa",
+"Amb bona salut."
+],
 "santorini": [
 "Santorini",
 "Illa grega amb un volcà."
@@ -8234,6 +14462,10 @@
 "sap": [
 "saber",
 "Coneix."
+],
+"sapiguem": [
+"saber",
+"Forma de \"saber\"."
 ],
 "saps": [
 "saber",
@@ -8251,6 +14483,10 @@
 "sarcòfag",
 "Caixes per guardar un mort."
 ],
+"satisfactoris": [
+"satisfer",
+"Que deixen content."
+],
 "saturn": [
 "Saturn",
 "Planeta famós pels anells."
@@ -8258,6 +14494,14 @@
 "satèl·lit": [
 "satèl·lit",
 "Aparell que gira al voltant de la Terra."
+],
+"saviesa": [
+"saviesa",
+"Molt saber."
+],
+"savis": [
+"savi",
+"Persones que saben molt."
 ],
 "se": [
 "es",
@@ -8270,6 +14514,10 @@
 "seca": [
 "sec",
 "Sense aigua."
+],
+"seccions": [
+"secció",
+"Parts."
 ],
 "secret": [
 "secret",
@@ -8287,9 +14535,17 @@
 "secret",
 "Coses que no es poden dir."
 ],
+"secs": [
+"sec",
+"Sense aigua."
+],
 "segats": [
 "penya-segat",
 "Penya-segats = roques altes al costat del mar."
+],
+"segle": [
+"segle",
+"Cent anys."
 ],
 "segles": [
 "segle",
@@ -8323,9 +14579,29 @@
 "seguir",
 "Anar darrere; continuar."
 ],
+"seguit": [
+"seguir",
+"Continuat."
+],
 "segur": [
 "segur",
 "Cert, sense dubte."
+],
+"segura": [
+"segur",
+"Sense perill."
+],
+"seguretat": [
+"segur",
+"Estar segur."
+],
+"següent": [
+"següent",
+"El que ve després."
+],
+"següents": [
+"següent",
+"Els de després."
 ],
 "seient": [
 "seient",
@@ -8334,6 +14610,14 @@
 "seixanta": [
 "seixanta",
 "El número 60."
+],
+"seleccionen": [
+"seleccionar",
+"Trien."
+],
+"selecció": [
+"seleccionar",
+"Elecció."
 ],
 "selva": [
 "selva",
@@ -8346,6 +14630,22 @@
 "semblant": [
 "semblant",
 "Gairebé igual."
+],
+"semblants": [
+"semblants",
+"Gairebé iguals."
+],
+"semblar": [
+"semblar",
+"Fer la impressió."
+],
+"semblava": [
+"semblar",
+"Feia la impressió."
+],
+"semblaven": [
+"semblar",
+"Feien la impressió."
 ],
 "semblen": [
 "semblar",
@@ -8363,6 +14663,18 @@
 "sencer",
 "Completes."
 ],
+"sencers": [
+"sencer",
+"Complets."
+],
+"sens": [
+"sens",
+"Sens dubte: segur."
+],
+"sensació": [
+"sensació",
+"El que se sent."
+],
 "sense": [
 "sense",
 "Que no té."
@@ -8375,13 +14687,41 @@
 "sentir",
 "Escolta; nota."
 ],
+"senta": [
+"sentar",
+"Li senta malament: no li agrada."
+],
 "senten": [
 "sentir",
 "Escolten; noten. Se senten = estan."
 ],
+"senti": [
+"sentir",
+"Forma de \"sentir\"."
+],
+"sentim": [
+"sentir",
+"Notem."
+],
+"sentiments": [
+"sentiment",
+"Emocions."
+],
+"sentir": [
+"sentir",
+"Notar."
+],
+"sentis": [
+"sentir",
+"Forma de \"sentir\"."
+],
 "sentit": [
 "sentit",
 "Significat. Sentit comú = pensar bé."
+],
+"sentits": [
+"sentit",
+"Vista, oïda, olfacte..."
 ],
 "sento": [
 "sentir",
@@ -8395,6 +14735,14 @@
 "senyal",
 "Marques o sons que avisen."
 ],
+"senzill": [
+"senzill",
+"Fàcil."
+],
+"senzilla": [
+"senzill",
+"Fàcil."
+],
 "senzilles": [
 "senzill",
 "Fàcils."
@@ -8406,6 +14754,14 @@
 "separades": [
 "separat",
 "Que no estan juntes."
+],
+"separar": [
+"separar",
+"Apartar."
+],
+"sequera": [
+"sequera",
+"Temps sense pluja."
 ],
 "ser": [
 "ser",
@@ -8419,9 +14775,21 @@
 "ser",
 "Seria (condicional)."
 ],
+"serietat": [
+"seriós",
+"Ser seriós."
+],
+"seriosament": [
+"seriós",
+"De manera seriosa."
+],
 "seriosos": [
 "seriós",
 "Importants; no de broma."
+],
+"seriós": [
+"seriós",
+"Important."
 ],
 "serp": [
 "serp",
@@ -8446,6 +14814,10 @@
 "servia": [
 "servir",
 "Era útil per a."
+],
+"servien": [
+"servir",
+"Es feien servir."
 ],
 "servir": [
 "servir",
@@ -8499,6 +14871,22 @@
 "si",
 "Paraula per a una condició: si plou, no surto."
 ],
+"signarà": [
+"signar",
+"Posarà el seu nom."
+],
+"signe": [
+"signe",
+"Senyal."
+],
+"signes": [
+"signe",
+"Marques amb significat."
+],
+"significat": [
+"significat",
+"El que vol dir una cosa."
+],
 "sigui": [
 "ser",
 "Que sigui = que és (subjuntiu)."
@@ -8507,9 +14895,25 @@
 "ser",
 "Que siguin (subjuntiu)."
 ],
+"silenci": [
+"silenci",
+"Sense soroll."
+],
+"silenciós": [
+"silenci",
+"Sense soroll."
+],
 "simple": [
 "simple",
 "Fàcil; sense res especial."
+],
+"simplement": [
+"simple",
+"Només."
+],
+"simples": [
+"simple",
+"Fàcils."
 ],
 "simpàtic": [
 "simpàtic",
@@ -8522,6 +14926,10 @@
 "sinó": [
 "sinó",
 "Paraula per corregir: no és A, sinó B."
+],
+"sir": [
+"sir",
+"Títol anglès."
 ],
 "sir hugh beaver": [
 "Sir Hugh Beaver",
@@ -8538,6 +14946,18 @@
 "sistema solar": [
 "sistema solar",
 "El Sol i els planetes que giren al seu voltant."
+],
+"sistemes": [
+"sistema",
+"Conjunts."
+],
+"sisè": [
+"sis",
+"Número sis en ordre."
+],
+"situacions": [
+"situació",
+"Moments."
 ],
 "skate": [
 "skate",
@@ -8559,6 +14979,14 @@
 "skin",
 "Roba o aspecte d'un personatge en un joc."
 ],
+"sky": [
+"sky",
+"Nom de dona."
+],
+"so": [
+"so",
+"El que se sent amb les orelles."
+],
 "sobre": [
 "sobre",
 "1. Damunt de. 2. Que parla de: un llibre sobre dinosaures."
@@ -8567,9 +14995,17 @@
 "sobretot",
 "Més que res."
 ],
+"sobreviscut": [
+"sobreviure",
+"Continuat viu."
+],
 "sobreviu": [
 "sobreviure",
 "Continua viu."
+],
+"sobreviuen": [
+"sobreviure",
+"Continuen vius."
 ],
 "sobreviure": [
 "sobreviure",
@@ -8579,6 +15015,14 @@
 "sobtat",
 "Que passen de cop."
 ],
+"sobtat": [
+"sobtat",
+"Que passa de cop."
+],
+"sociable": [
+"sociable",
+"Que li agrada estar amb gent."
+],
 "societat": [
 "societat",
 "Totes les persones que viuen juntes."
@@ -8586,6 +15030,10 @@
 "societats": [
 "societat",
 "Grups de persones."
+],
+"sofisticada": [
+"sofisticat",
+"Molt complexa."
 ],
 "soja": [
 "soja",
@@ -8607,25 +15055,73 @@
 "soldat",
 "Persona de l'exèrcit."
 ],
+"soldats": [
+"soldat",
+"Persones de l'exèrcit."
+],
+"solen": [
+"soler",
+"Ho fan normalment."
+],
 "soles": [
 "sol",
 "Sense ningú."
+],
+"solidaris": [
+"solidari",
+"Que ajuden els altres."
 ],
 "sols": [
 "sol",
 "Sense ningú."
 ],
+"solucionador": [
+"solucionar",
+"Que resol."
+],
+"solucions": [
+"solució",
+"Respostes a problemes."
+],
+"solució": [
+"solució",
+"Resposta a un problema."
+],
+"sol·licitud": [
+"sol·licitud",
+"Petició."
+],
+"sol·licituds": [
+"sol·licitud",
+"Peticions."
+],
 "som": [
 "ser",
 "Nosaltres som."
+],
+"somiada": [
+"somiar",
+"Desitjada."
+],
+"somiar": [
+"somiar",
+"Imaginar una cosa que es desitja."
 ],
 "somriure": [
 "somriure",
 "Posar la boca contenta."
 ],
+"son": [
+"son",
+"Ganes de dormir."
+],
 "sonar": [
 "sonar",
 "Aparell que troba coses sota l'aigua amb sons."
+],
+"sonda": [
+"sonda",
+"Nau sense persones."
 ],
 "sons": [
 "so",
@@ -8635,13 +15131,45 @@
 "Sony",
 "Empresa japonesa."
 ],
+"sopa": [
+"sopa",
+"Menjar líquid."
+],
+"sopava": [
+"sopar",
+"Menjava de nit."
+],
+"sorgir": [
+"sorgir",
+"Aparèixer."
+],
+"sorgit": [
+"sorgir",
+"Aparegut."
+],
 "soroll": [
 "soroll",
 "So fort o molest."
 ],
+"sorolloses": [
+"soroll",
+"Que fan soroll."
+],
+"sorollosos": [
+"soroll",
+"Que fan soroll."
+],
+"sorprendre": [
+"sorprendre",
+"Fer que algú no s'ho esperi."
+],
 "sorprenent": [
 "sorprenent",
 "Que sorprèn."
+],
+"sorprenentment": [
+"sorprendre",
+"De manera que sorprèn."
 ],
 "sorprenents": [
 "sorprenent",
@@ -8651,6 +15179,10 @@
 "sorpresa",
 "Una cosa que no esperaves."
 ],
+"sorprèn": [
+"sorprendre",
+"Fa que no s'ho esperi."
+],
 "sorra": [
 "sorra",
 "Pols groga de les platges i els deserts."
@@ -8659,9 +15191,37 @@
 "sort",
 "Una cosa bona que passa sense buscar-la."
 ],
+"sortia": [
+"sortir",
+"Se n'anava."
+],
+"sortida": [
+"sortida",
+"Lloc per on se surt."
+],
+"sortien": [
+"sortir",
+"Anaven fora."
+],
 "sortir": [
 "sortir",
 "Anar fora."
+],
+"sortirà": [
+"sortir",
+"Apareixerà."
+],
+"sospiten": [
+"sospitar",
+"Creuen una cosa sense proves."
+],
+"sostenen": [
+"sostenir",
+"Donen suport."
+],
+"sostenir": [
+"sostenir",
+"Aguantar."
 ],
 "sota": [
 "sota",
@@ -8674,6 +15234,10 @@
 "soterrani": [
 "soterrani",
 "Part de la casa sota terra."
+],
+"sou": [
+"sou",
+"Diners per treballar."
 ],
 "sovint": [
 "sovint",
@@ -8711,6 +15275,10 @@
 "streamer",
 "Persones que juguen en directe a internet."
 ],
+"suavitat": [
+"suau",
+"Ser suau."
+],
 "submarins": [
 "submarí",
 "Vaixells que van sota l'aigua."
@@ -8719,9 +15287,33 @@
 "submarí",
 "Vaixell que va sota l'aigua."
 ],
+"substitueix": [
+"substituir",
+"Ocupa el lloc."
+],
 "substituir": [
 "substituir",
 "Posar una cosa al lloc d'una altra."
+],
+"substituirà": [
+"substituir",
+"Ocuparà el lloc."
+],
+"substància": [
+"substància",
+"Matèria."
+],
+"substàncies": [
+"substància",
+"Matèries."
+],
+"subtil": [
+"subtil",
+"Difícil de notar."
+],
+"sucre": [
+"sucre",
+"El que fa dolç el menjar."
 ],
 "sud": [
 "sud",
@@ -8738,6 +15330,30 @@
 "suecs": [
 "suec",
 "Persones de Suècia."
+],
+"suen": [
+"suar",
+"Treuen aigua per la pell."
+],
+"suggereix": [
+"suggerir",
+"Dona una idea."
+],
+"suggereixen": [
+"suggerir",
+"Donen una idea."
+],
+"suggerir": [
+"suggerir",
+"Proposar."
+],
+"suggerit": [
+"suggerir",
+"Proposat."
+],
+"suma": [
+"suma",
+"Quantitat."
 ],
 "super": [
 "Super",
@@ -8759,6 +15375,14 @@
 "superar",
 "Passar per damunt; anar més enllà."
 ],
+"superfície": [
+"superfície",
+"Part de dalt."
+],
+"superfícies": [
+"superfície",
+"Parts de fora."
+],
 "supermassius": [
 "supermassiu",
 "Enormement pesants."
@@ -8771,6 +15395,10 @@
 "superpoder",
 "Poder especial, com els superherois."
 ],
+"supervisar": [
+"supervisar",
+"Vigilar."
+],
 "supervivent": [
 "supervivent",
 "Persona que continua viva."
@@ -8782,6 +15410,10 @@
 "supervivència": [
 "supervivència",
 "Continuar viu."
+],
+"suport": [
+"suport",
+"Ajuda."
 ],
 "suportar": [
 "suportar",
@@ -8819,6 +15451,14 @@
 "Suècia",
 "País del nord d'Europa."
 ],
+"suís": [
+"suís",
+"De Suïssa."
+],
+"sèrie": [
+"sèrie",
+"Grup de coses seguides."
+],
 "sèries": [
 "sèrie",
 "Programes de televisió amb molts capítols."
@@ -8830,6 +15470,10 @@
 "símbol": [
 "símbol",
 "Imatge que representa una cosa."
+],
+"símbols": [
+"símbol",
+"Dibuixos amb significat."
 ],
 "sòlides": [
 "sòlid",
@@ -8863,6 +15507,14 @@
 "tallar",
 "Fer trossos amb un ganivet."
 ],
+"tallat": [
+"tallar",
+"Partit."
+],
+"tallen": [
+"tallar",
+"Parteixen."
+],
 "talles": [
 "tallar",
 "Fas trossos."
@@ -8883,6 +15535,22 @@
 "tan gran com",
 "Igual de gran que."
 ],
+"tanc": [
+"tanc",
+"Caixa gran amb aigua."
+],
+"tancament": [
+"tancament",
+"El que tanca una cosa."
+],
+"tancats": [
+"tancar",
+"No oberts."
+],
+"tancs": [
+"tanc",
+"Caixes grans amb aigua."
+],
 "tanmateix": [
 "tanmateix",
 "Però; tot i això."
@@ -8899,6 +15567,18 @@
 "tant",
 "Tantes."
 ],
+"tants": [
+"tant",
+"Tan nombrosos."
+],
+"tap": [
+"tap",
+"Cosa que tanca una ampolla."
+],
+"tapa": [
+"tapar",
+"Cobreix."
+],
 "tapada": [
 "tapar",
 "Coberta."
@@ -8906,6 +15586,18 @@
 "tapar": [
 "tapar",
 "Cobrir."
+],
+"tard": [
+"tard",
+"Després de l'hora."
+],
+"tarda": [
+"tarda",
+"Part del dia després de dinar."
+],
+"tardana": [
+"tardà",
+"Més moderna."
 ],
 "tardígrad": [
 "tardígrad",
@@ -8919,6 +15611,10 @@
 "taronja",
 "1. Fruita rodona i dolça. 2. Color de la taronja."
 ],
+"tasca": [
+"tasca",
+"Feina."
+],
 "tasques": [
 "tasca",
 "Feines."
@@ -8926,6 +15622,10 @@
 "tastar": [
 "tastar",
 "Provar el gust d'un menjar."
+],
+"tatooine": [
+"tatooine",
+"Planeta d'una pel·lícula."
 ],
 "taula": [
 "taula",
@@ -8958,6 +15658,10 @@
 "tecla": [
 "tecla",
 "Botó d'un teclat."
+],
+"tecnologia": [
+"tecnologia",
+"Màquines i tècniques."
 ],
 "ted hastings": [
 "Ted Hastings",
@@ -8994,6 +15698,18 @@
 "tema": [
 "tema",
 "De què parla una cosa."
+],
+"temen": [
+"témer",
+"Tenen por."
+],
+"temien": [
+"témer",
+"Tenien por."
+],
+"temors": [
+"temor",
+"Pors."
 ],
 "temperatura": [
 "temperatura",
@@ -9043,6 +15759,10 @@
 "tenir",
 "Tenien (passat)."
 ],
+"tenim": [
+"tenir",
+"Forma de \"tenir\" per a \"nosaltres\"."
+],
 "tenir": [
 "tenir",
 "Ser l'amo d'una cosa."
@@ -9055,6 +15775,10 @@
 "tenir",
 "Tu tens."
 ],
+"tensió": [
+"tensió",
+"Nervis."
+],
 "tentacles": [
 "tentacle",
 "Braços llargs d'una medusa o un pop."
@@ -9063,6 +15787,10 @@
 "teoria",
 "Idea que explica una cosa."
 ],
+"teories": [
+"teoria",
+"Idees per explicar una cosa."
+],
 "tercer": [
 "tercer",
 "Número 3 en una llista."
@@ -9070,6 +15798,14 @@
 "tercera": [
 "tercer",
 "Número 3 en una llista."
+],
+"terceres": [
+"tercer",
+"Parts de tres."
+],
+"termiters": [
+"termiter",
+"Cases de tèrmits."
 ],
 "termòmetre": [
 "termòmetre",
@@ -9103,6 +15839,18 @@
 "territori",
 "Lloc on viu un animal."
 ],
+"terror": [
+"terror",
+"Por molt forta."
+],
+"terrorífic": [
+"terror",
+"Que fa molta por."
+],
+"testimonis": [
+"testimoni",
+"Persones que veuen una cosa."
+],
 "tetra": [
 "tetra",
 "Paraula grega que vol dir quatre."
@@ -9135,6 +15883,14 @@
 "text",
 "Paraules escrites."
 ],
+"textura": [
+"textura",
+"Com es nota una cosa en tocar-la."
+],
+"thomas": [
+"thomas",
+"Nom d'home."
+],
 "tinc": [
 "tenir",
 "Jo tinc."
@@ -9143,9 +15899,29 @@
 "tenir",
 "Tu tindries (condicional)."
 ],
+"tinguessin": [
+"tenir",
+"Forma de \"tenir\"."
+],
+"tingui": [
+"tenir",
+"Forma de \"tenir\"."
+],
 "tinguin": [
 "tenir",
 "Que tinguin (subjuntiu)."
+],
+"tingut": [
+"tenir",
+"Forma de \"tenir\"."
+],
+"tingués": [
+"tenir",
+"Forma de \"tenir\"."
+],
+"tinta": [
+"tinta",
+"Líquid per escriure."
 ],
 "tipus": [
 "tipus",
@@ -9155,9 +15931,33 @@
 "tiranosaure rex",
 "Dinosaure famós que menjava carn."
 ],
+"tirar": [
+"tirar",
+"Llançar."
+],
+"tiren": [
+"tirar",
+"Llancen."
+],
+"tires": [
+"tira",
+"Trossos llargs i prims."
+],
+"titllar": [
+"titllar",
+"Dir que algú és una cosa dolenta."
+],
+"tocar": [
+"tocar",
+"Posar la mà."
+],
 "tocat": [
 "tocar",
 "Tocat per un llamp = el llamp hi va caure."
+],
+"tocava": [
+"tocar",
+"Posava la mà."
 ],
 "tomba": [
 "tomba",
@@ -9170,6 +15970,14 @@
 "tombes": [
 "tomba",
 "Llocs on hi ha morts."
+],
+"tomàquet": [
+"tomàquet",
+"Fruit vermell."
+],
+"tomàquets": [
+"tomàquet",
+"Fruits vermells."
 ],
 "tones": [
 "tona",
@@ -9186,6 +15994,30 @@
 "tornar": [
 "tornar",
 "Venir una altra vegada. Tornar a = fer una altra vegada."
+],
+"tornat": [
+"tornar",
+"Fet."
+],
+"tornejos": [
+"torneig",
+"Competicions."
+],
+"tornen": [
+"tornar",
+"Fan que siguin."
+],
+"tornessin": [
+"tornar",
+"Vinguessin de nou."
+],
+"tornin": [
+"tornar",
+"Donin de nou."
+],
+"torns": [
+"torn",
+"Hores de feina."
 ],
 "torrades": [
 "torrat",
@@ -9215,13 +16047,45 @@
 "tot",
 "Sense deixar cap."
 ],
+"tova": [
+"tou",
+"Suau."
+],
 "traceurs": [
 "traceur",
 "Persones que fan parkour."
 ],
+"tracta": [
+"tractar",
+"Es tracta de: és."
+],
+"tractades": [
+"tractar",
+"Amb un producte."
+],
+"tractar": [
+"tractar",
+"Portar-se amb."
+],
+"tractat": [
+"tractar",
+"Parlat."
+],
+"tractava": [
+"tractar",
+"Es portava amb."
+],
+"tracten": [
+"tractar",
+"Intenten."
+],
 "tradicional": [
 "tradicional",
 "De la tradició."
+],
+"tradicionals": [
+"tradicional",
+"De sempre."
 ],
 "tradició": [
 "tradició",
@@ -9235,17 +16099,49 @@
 "traduir",
 "Passar a una altra llengua."
 ],
+"traduït": [
+"traduir",
+"Passat a una altra llengua."
+],
+"traiem": [
+"treure",
+"Fem sortir."
+],
 "tranquil": [
 "tranquil",
 "Sense soroll ni perill."
+],
+"tranquils": [
+"tranquil",
+"Sense nervis."
+],
+"transformat": [
+"transformar",
+"Canviat."
 ],
 "transmeten": [
 "transmetre",
 "Passen d'un a l'altre."
 ],
+"transmetre": [
+"transmetre",
+"Passar a un altre."
+],
 "transparent": [
 "transparent",
 "Que deixa veure a través."
+],
+"transporta": [
+"transportar",
+"Porta."
+],
+"trasllada": [
+"traslladar",
+"Passa a un altre lloc."
+],
+"trastorn": [
+"trastorn",
+"Malaltia."
 ],
 "travessa": [
 "travessar",
@@ -9259,6 +16155,10 @@
 "travessar",
 "Passaria a l'altre costat."
 ],
+"travessat": [
+"travessar",
+"Passat d'un costat a l'altre."
+],
 "travis pastrana": [
 "Travis Pastrana",
 "Pilot nord-americà de motocròs."
@@ -9266,6 +16166,14 @@
 "travis scott": [
 "Travis Scott",
 "Raper nord-americà."
+],
+"través": [
+"través",
+"A través de: per mitjà de."
+],
+"treball": [
+"treball",
+"Feina."
 ],
 "treballa": [
 "treballar",
@@ -9275,6 +16183,10 @@
 "treballador",
 "Persones que treballen."
 ],
+"treballant": [
+"treballar",
+"Fent una feina."
+],
 "treballar": [
 "treballar",
 "Fer una feina."
@@ -9282,6 +16194,10 @@
 "treballava": [
 "treballar",
 "Feia una feina."
+],
+"treballaven": [
+"treballar",
+"Feien la seva feina."
 ],
 "treballen": [
 "treballar",
@@ -9291,9 +16207,21 @@
 "treure",
 "Posaven fora."
 ],
+"tremolen": [
+"tremolar",
+"Es mouen de nervis."
+],
+"tren": [
+"tren",
+"Vehicle llarg que va per vies."
+],
 "trenca": [
 "trencar",
 "Fa trossos."
+],
+"trencaclosques": [
+"trencaclosques",
+"Joc per pensar."
 ],
 "trencada": [
 "trencar",
@@ -9302,6 +16230,10 @@
 "trencar": [
 "trencar",
 "Fer trossos."
+],
+"trencat": [
+"trencar",
+"Partit."
 ],
 "trenta": [
 "trenta",
@@ -9319,6 +16251,10 @@
 "tresor",
 "Coses molt valuoses."
 ],
+"trets": [
+"tret",
+"Característiques."
+],
 "tretze": [
 "tretze",
 "El número 13."
@@ -9326,6 +16262,14 @@
 "treu": [
 "treure",
 "Posa fora."
+],
+"treuen": [
+"treure",
+"Fan perdre."
+],
+"treure": [
+"treure",
+"Fer sortir."
 ],
 "tria": [
 "triar",
@@ -9339,6 +16283,22 @@
 "Triangle de les Bermudes",
 "Zona de l'oceà Atlàntic famosa per les desaparicions."
 ],
+"triar": [
+"triar",
+"Escollir."
+],
+"trien": [
+"triar",
+"Escullen."
+],
+"trigar": [
+"trigar",
+"Necessitar temps."
+],
+"trigarem": [
+"trigar",
+"Necessitarem temps."
+],
 "triguen": [
 "trigar",
 "Necessiten temps."
@@ -9346,6 +16306,10 @@
 "trineus": [
 "trineu",
 "Vehicles sense rodes que llisquen."
+],
+"tripulada": [
+"tripular",
+"Amb persones a dins."
 ],
 "troba": [
 "trobar",
@@ -9355,6 +16319,14 @@
 "trobar",
 "Vista després de buscar."
 ],
+"trobades": [
+"trobar",
+"Descobertes."
+],
+"troballa": [
+"troballa",
+"Cosa que es troba."
+],
 "troballes": [
 "troballa",
 "Coses trobades."
@@ -9362,6 +16334,10 @@
 "trobar": [
 "trobar",
 "Veure el que buscaves."
+],
+"trobarem": [
+"trobar",
+"Descobrirem."
 ],
 "trobat": [
 "trobar",
@@ -9375,9 +16351,21 @@
 "trobar",
 "Nosaltres veiem el que buscàvem."
 ],
+"troben": [
+"trobar",
+"Es troben: estan."
+],
+"trobin": [
+"trobar",
+"Pensin."
+],
 "tron": [
 "tron",
 "Cadira del rei."
+],
+"tropicals": [
+"tropical",
+"De zones molt caloroses."
 ],
 "tros": [
 "tros",
@@ -9399,6 +16387,14 @@
 "trànsit",
 "Vehicles que passen."
 ],
+"tròfica": [
+"tròfic",
+"Del menjar a la natura."
+],
+"tsunamis": [
+"tsunami",
+"Onades gegants."
+],
 "tu": [
 "tu",
 "Pronom per parlar amb una persona."
@@ -9415,6 +16411,10 @@
 "Tutankamon",
 "Faraó jove d'Egipte."
 ],
+"tyrannosaurus": [
+"tyrannosaurus",
+"Un dinosaure gran."
+],
 "té": [
 "tenir",
 "Ell té."
@@ -9427,17 +16427,45 @@
 "típic",
 "Normal en un lloc."
 ],
+"típics": [
+"típic",
+"Normals."
+],
 "tòquio": [
 "Tòquio",
 "Capital del Japó."
+],
+"túnel": [
+"túnel",
+"Camí sota terra."
+],
+"túnels": [
+"túnel",
+"Camins sota terra."
+],
+"udolen": [
+"udolar",
+"Criden com els llops."
+],
+"udols": [
+"udol",
+"Crits llargs de llop."
 ],
 "uf": [
 "uf",
 "Paraula per dir que estàs cansat o alleujat."
 ],
+"ull": [
+"ull",
+"Part de la cara per veure."
+],
 "ulls": [
 "ull",
 "Parts de la cara per veure."
+],
+"umami": [
+"umami",
+"Gust saborós, el cinquè gust."
 ],
 "un": [
 "un",
@@ -9471,13 +16499,33 @@
 "ungla",
 "Parts dures al final dels dits."
 ],
+"unida": [
+"unir",
+"Junta."
+],
 "unides": [
 "unit",
 "Juntes."
 ],
+"uniformes": [
+"uniforme",
+"Roba igual per a tots."
+],
+"units": [
+"unir",
+"Junts."
+],
 "univers": [
 "univers",
 "Tot el que existeix: estrelles, planetes..."
+],
+"universitat": [
+"universitat",
+"Centre d'estudis superiors."
+],
+"universitats": [
+"universitat",
+"Centres d'estudis superiors."
 ],
 "unió": [
 "unió",
@@ -9499,6 +16547,10 @@
 "Usain Bolt",
 "Corredor de Jamaica, el més ràpid."
 ],
+"usos": [
+"ús",
+"Maneres de fer servir."
+],
 "usuari": [
 "usuari",
 "Persona que fa servir un programa."
@@ -9519,6 +16571,14 @@
 "vacances",
 "Dies sense treball ni escola."
 ],
+"vacuna": [
+"vacuna",
+"Medicina que protegeix."
+],
+"vacunes": [
+"vacuna",
+"Medicines que protegeixen."
+],
 "vaig": [
 "anar",
 "Vaig + verb = passat: vaig fer."
@@ -9535,6 +16595,14 @@
 "valer",
 "No tot s'hi val = no tot és permès."
 ],
+"valen": [
+"valer",
+"Tenen valor."
+],
+"valgui": [
+"valer",
+"Forma de \"valer\"."
+],
 "vall": [
 "vall",
 "Terra baixa entre muntanyes."
@@ -9543,6 +16611,30 @@
 "Vall de la Mort",
 "Lloc molt calent dels Estats Units."
 ],
+"valls": [
+"vall",
+"Terres entre muntanyes."
+],
+"valor": [
+"valor",
+"Valentia."
+],
+"valorar": [
+"valorar",
+"Apreciar."
+],
+"valuosos": [
+"valor",
+"Que valen molt."
+],
+"vam": [
+"anar",
+"Forma d'\"anar\" per al passat."
+],
+"vambes": [
+"vamba",
+"Sabates d'esport."
+],
 "van": [
 "anar",
 "Van + verb = passat: van fer."
@@ -9550,6 +16642,18 @@
 "vaques": [
 "vaca",
 "Animals de granja que donen llet."
+],
+"varietat": [
+"varietat",
+"Moltes classes."
+],
+"variï": [
+"variar",
+"Canviï."
+],
+"vas": [
+"anar",
+"Forma d'\"anar\"."
 ],
 "ve": [
 "venir",
@@ -9567,6 +16671,14 @@
 "veure",
 "Que veiem (subjuntiu)."
 ],
+"vegi": [
+"veure",
+"Forma de \"veure\"."
+],
+"vegis": [
+"veure",
+"Forma de \"veure\"."
+],
 "veia": [
 "veure",
 "Mirava amb els ulls."
@@ -9575,13 +16687,29 @@
 "veure",
 "Mirem amb els ulls."
 ],
+"veien": [
+"veure",
+"Miraven."
+],
 "veient": [
 "veure",
 "Mirant."
 ],
+"veiessin": [
+"veure",
+"Miressin."
+],
+"veig": [
+"veure",
+"Miro."
+],
 "vela": [
 "vela",
 "Tela gran. També: part de l'esquena d'un dinosaure."
+],
+"velcro": [
+"velcro",
+"Tancament de ganxos i llaços."
 ],
 "vell": [
 "vell",
@@ -9591,9 +16719,21 @@
 "vell",
 "Que té molts anys."
 ],
+"velociraptor": [
+"velociraptor",
+"Un dinosaure petit."
+],
 "velocitat": [
 "velocitat",
 "Com va de ràpid."
+],
+"venda": [
+"venda",
+"Acció de vendre."
+],
+"vendes": [
+"venda",
+"Coses venudes."
 ],
 "vendre": [
 "vendre",
@@ -9603,6 +16743,18 @@
 "vendre",
 "Donen coses per diners."
 ],
+"vengués": [
+"vendre",
+"Donés per diners."
+],
+"venien": [
+"venir",
+"Arribaven."
+],
+"venir": [
+"venir",
+"Arribar."
+],
 "vent": [
 "vent",
 "Aire que es mou."
@@ -9610,6 +16762,10 @@
 "vents": [
 "vent",
 "Aire que es mou."
+],
+"venudes": [
+"vendre",
+"Donades per diners."
 ],
 "venus": [
 "Venus",
@@ -9622,6 +16778,10 @@
 "venuts": [
 "vendre",
 "Que s'han venut."
+],
+"vençut": [
+"vèncer",
+"Guanyat."
 ],
 "verd": [
 "verd",
@@ -9637,6 +16797,10 @@
 ],
 "verinoses": [
 "verinós",
+"Que tenen verí."
+],
+"verinosos": [
+"verí",
 "Que tenen verí."
 ],
 "verinós": [
@@ -9659,6 +16823,10 @@
 "vermell",
 "Del color de la sang."
 ],
+"versions": [
+"versió",
+"Formes d'un text."
+],
 "versió": [
 "versió",
 "Cada forma d'un joc o programa."
@@ -9666,6 +16834,14 @@
 "verí": [
 "verí",
 "Substància que fa mal o mata."
+],
+"vespre": [
+"vespre",
+"Quan es pon el sol."
+],
+"vestir": [
+"vestir",
+"Posar roba."
 ],
 "vestit": [
 "vestit",
@@ -9691,6 +16867,10 @@
 "veure",
 "Tu mires."
 ],
+"veïns": [
+"veí",
+"Persones que viuen a prop."
+],
 "via làctia": [
 "Via Làctia",
 "La nostra galàxia."
@@ -9703,9 +16883,17 @@
 "viatjar",
 "Anem a un altre lloc."
 ],
+"viatgers": [
+"viatger",
+"Persones que viatgen."
+],
 "viatges": [
 "viatge",
 "Anades a altres llocs."
+],
+"viatja": [
+"viatjar",
+"Va a un altre lloc."
 ],
 "viatjaria": [
 "viatjar",
@@ -9714,6 +16902,10 @@
 "viatjaràs": [
 "viatjar",
 "Aniràs a un altre lloc."
+],
+"victòria": [
+"victòria",
+"Guanyar."
 ],
 "vida": [
 "vida",
@@ -9731,9 +16923,25 @@
 "vida",
 "Vides."
 ],
+"vidre": [
+"vidre",
+"Material transparent."
+],
+"vidres": [
+"vidre",
+"Materials transparents."
+],
 "vieques": [
 "Vieques",
 "Illa de Puerto Rico."
+],
+"vinci": [
+"vinci",
+"Leonardo da Vinci, artista italià."
+],
+"vingui": [
+"venir",
+"Forma de \"venir\"."
 ],
 "vint": [
 "vint",
@@ -9747,9 +16955,21 @@
 "virtual",
 "D'ordinador."
 ],
+"virtuals": [
+"virtual",
+"A l'ordinador."
+],
+"virus": [
+"virus",
+"Cosa minúscula que causa malalties."
+],
 "viscut": [
 "viure",
 "Ha passat la vida."
+],
+"visibles": [
+"visible",
+"Que es veuen."
 ],
 "visita": [
 "visitar",
@@ -9758,6 +16978,10 @@
 "visitada": [
 "visitar",
 "Vista per algú."
+],
+"visitant": [
+"visitar",
+"Anant a veure."
 ],
 "visitants": [
 "visitant",
@@ -9771,6 +16995,18 @@
 "visitar",
 "Aniràs a veure."
 ],
+"visitat": [
+"visitar",
+"Que la gent va a veure."
+],
+"visitats": [
+"visitar",
+"Que la gent va a veure."
+],
+"visitaven": [
+"visitar",
+"Anaven a veure."
+],
 "visiten": [
 "visitar",
 "Van a veure."
@@ -9783,9 +17019,17 @@
 "visitar",
 "Vaig a veure."
 ],
+"visió": [
+"visió",
+"El que es veu."
+],
 "vist": [
 "veure",
 "Mirat."
+],
+"vista": [
+"vista",
+"El que es veu."
 ],
 "vitamines": [
 "vitamina",
@@ -9815,6 +17059,10 @@
 "viure",
 "Tenia casa en un lloc."
 ],
+"vivien": [
+"viure",
+"Tenien vida."
+],
 "vol": [
 "voler",
 "1. Vol = desitja. 2. Viatge en avió."
@@ -9827,9 +17075,25 @@
 "volador",
 "Que vola."
 ],
+"voladora": [
+"volar",
+"Que vola."
+],
+"voladors": [
+"volar",
+"Que volen."
+],
+"volant": [
+"volar",
+"Anant per l'aire."
+],
 "volar": [
 "volar",
 "Anar per l'aire."
+],
+"volarà": [
+"volar",
+"Anirà per l'aire."
 ],
 "volava": [
 "volar",
@@ -9851,6 +17115,10 @@
 "volcànic",
 "De volcà."
 ],
+"voldria": [
+"voler",
+"Forma de \"voler\"."
+],
 "volem": [
 "voler",
 "Desitgem."
@@ -9863,9 +17131,21 @@
 "voler",
 "Desitjar."
 ],
+"volia": [
+"voler",
+"Desitjava."
+],
+"volien": [
+"voler",
+"Desitjaven."
+],
 "vols": [
 "voler",
 "Desitges."
+],
+"volta": [
+"volta",
+"Tornada."
 ],
 "voltant": [
 "voltant",
@@ -9879,9 +17159,25 @@
 "voluntari",
 "Persones que ajuden sense cobrar."
 ],
+"vora": [
+"vora",
+"Costat."
+],
+"vores": [
+"vora",
+"Costats."
+],
 "vostok": [
 "Vostok",
 "Base russa a l'Antàrtida."
+],
+"votar": [
+"votar",
+"Triar."
+],
+"voynich": [
+"voynich",
+"Cognom."
 ],
 "vuit": [
 "vuit",
@@ -9899,9 +17195,17 @@
 "vàlid",
 "Correcte; que compta."
 ],
+"vénen": [
+"venir",
+"Arriben."
+],
 "vés": [
 "anar",
 "Vés amb compte = ten cura."
+],
+"víctima": [
+"víctima",
+"Persona a qui fan mal."
 ],
 "vídeo": [
 "vídeo",
@@ -9915,13 +17219,33 @@
 "Wadlow",
 "Nom: Robert Wadlow."
 ],
+"wapitis": [
+"wapiti",
+"Cérvols grans."
+],
 "web": [
 "web",
 "Pàgina d'internet."
 ],
+"webs": [
+"web",
+"Pàgines d'internet."
+],
 "whitey": [
 "Whitey",
 "Nom d'un científic de BEAR."
+],
+"wilfrid": [
+"wilfrid",
+"Nom d'home."
+],
+"william": [
+"william",
+"Nom d'home."
+],
+"wolbachia": [
+"wolbachia",
+"Un tipus de bacteri."
 ],
 "x": [
 "X",
@@ -9931,6 +17255,18 @@
 "xai",
 "Cria de l'ovella."
 ],
+"xerra": [
+"xerrar",
+"Parla."
+],
+"xifra": [
+"xifra",
+"Número."
+],
+"xifres": [
+"xifra",
+"Números."
+],
 "xile": [
 "Xile",
 "País d'Amèrica del Sud."
@@ -9938,6 +17274,10 @@
 "xina": [
 "Xina",
 "País molt gran d'Àsia."
+],
+"xinesos": [
+"xinès",
+"De la Xina."
 ],
 "xoc": [
 "xoc",
@@ -9947,6 +17287,10 @@
 "xocar",
 "Topar amb força."
 ],
+"xocaven": [
+"xocar",
+"Es picaven."
+],
 "xochimilco": [
 "Xochimilco",
 "Zona de llacs de Mèxic."
@@ -9955,13 +17299,29 @@
 "xocolata",
 "Dolç marró de cacau."
 ],
+"xocolatina": [
+"xocolatina",
+"Barreta de xocolata."
+],
 "xoquen": [
 "xocar",
 "Topen amb força."
 ],
+"yale": [
+"yale",
+"Universitat dels EUA."
+],
+"yellowstone": [
+"yellowstone",
+"Parc nacional dels EUA."
+],
 "york": [
 "York",
 "Part del nom de Nova York."
+],
+"young": [
+"young",
+"Cognom."
 ],
 "youtube": [
 "YouTube",
@@ -9970,6 +17330,14 @@
 "yucatán": [
 "Yucatán",
 "Península de Mèxic."
+],
+"yutyrannus": [
+"yutyrannus",
+"Un dinosaure amb plomes."
+],
+"zelanda": [
+"zelanda",
+"Nova Zelanda, un país."
 ],
 "zombis": [
 "zombi",
@@ -9983,9 +17351,25 @@
 "zona",
 "Parts d'un lloc."
 ],
+"àcid": [
+"àcid",
+"Com la llimona."
+],
 "àfrica": [
 "Àfrica",
 "Continent al sud d'Europa."
+],
+"àguila": [
+"àguila",
+"Au gran que caça."
+],
+"àguiles": [
+"àguila",
+"Aus grans que cacen."
+],
+"àmpliament": [
+"ampli",
+"Per molta gent."
 ],
 "àsia": [
 "Àsia",
@@ -10031,6 +17415,10 @@
 "òrgan",
 "Parts de dins del cos."
 ],
+"òvals": [
+"oval",
+"Formes com un ou."
+],
 "òxid": [
 "òxid",
 "Capa vermella que surt al ferro vell."
@@ -10051,6 +17439,18 @@
 "últim",
 "El del final."
 ],
+"última": [
+"últim",
+"La del final."
+],
+"últimes": [
+"últim",
+"Les del final."
+],
+"últims": [
+"últim",
+"Del final."
+],
 "únic": [
 "únic",
 "Només un."
@@ -10058,6 +17458,14 @@
 "única": [
 "únic",
 "Només una."
+],
+"únics": [
+"únic",
+"Sols."
+],
+"ús": [
+"ús",
+"Manera de fer servir."
 ],
 "útil": [
 "útil",

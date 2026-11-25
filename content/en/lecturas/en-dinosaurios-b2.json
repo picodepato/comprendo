@@ -1,0 +1,498 @@
+{
+ "id": "en-dinosaurios-b2",
+ "topic": "dinosaurios",
+ "level": "B2",
+ "title": "The dinosaurs that never died",
+ "short": "The dinosaurs that never died",
+ "text": [
+  "Sixty-six million years ago, an asteroid about ten kilometres wide crashed into what is now Mexico. The impact caused fires, tsunamis and years of darkness, and around three quarters of all species on Earth disappeared. Among them, as every schoolchild knows, were the dinosaurs. Or were they? According to most palaeontologists today, one group of dinosaurs survived the disaster, and its descendants are still all around us. You may even have eaten one for lunch.",
+  "The idea that birds are living dinosaurs is not as new as it sounds. In 1861, just two years after Charles Darwin published his theory of evolution, workers in a quarry in Germany found the fossil of a strange creature. It had teeth, claws on its wings and a long bony tail like a reptile, but it also had clear feathers. They called it Archaeopteryx, and it immediately became famous as a possible link between reptiles and birds.",
+  "For more than a century, however, the connection remained controversial. Many experts believed that birds had developed from some other group of reptiles, and dinosaurs were generally imagined as slow, cold-blooded giants that had little in common with a sparrow. That image began to change in the nineteen sixties and seventies, when researchers studying a small, fast predator called Deinonychus noticed how similar its skeleton was to that of a bird.",
+  "The most convincing evidence, though, came from China. In 1996, farmers in the province of Liaoning discovered a small dinosaur whose body was covered in a fine layer of fuzzy filaments, an early form of feathers. Over the following years, the same region produced dozens of other feathered dinosaurs, preserved in extraordinary detail by volcanic ash. One of them, Yutyrannus, was a relative of Tyrannosaurus rex, which suggests that even some large meat eaters may have been at least partly covered in feathers.",
+  "These discoveries have transformed the way dinosaurs are pictured. The famous Velociraptor, shown in films as a scaly monster the size of a man, was in reality about as big as a turkey and almost certainly had feathers. Scientists have also found that many dinosaurs laid eggs in nests, sat on them to keep them warm and had lungs and bones similar to those of modern birds.",
+  "Why did feathers appear in the first place? Interestingly, it seems they did not evolve for flying. The earliest feathers were probably used to keep warm or to attract a partner, in the same way that a peacock shows off its tail. Only later did some small dinosaurs begin to use them to glide and eventually to fly.",
+  "So when you next see a pigeon in the park or a chicken on a farm, it is worth remembering their family history. The dinosaurs did not completely vanish when the asteroid hit. Some of them simply became smaller, grew wings and took to the skies."
+ ],
+ "q": [
+  [
+   "What does the writer suggest in the first paragraph?",
+   [
+    "The asteroid destroyed every species on Earth.",
+    "Dinosaurs disappeared before the asteroid hit.",
+    "What most people know about dinosaurs is not completely true.",
+    "Schoolchildren know more than palaeontologists."
+   ],
+   2
+  ],
+  [
+   "Why was Archaeopteryx so important?",
+   [
+    "It had features of both reptiles and birds.",
+    "It was the largest dinosaur ever discovered.",
+    "It proved that Darwin was wrong.",
+    "It was the first fossil ever found in Germany."
+   ],
+   0
+  ],
+  [
+   "In the third paragraph, the writer explains that for many years",
+   [
+    "dinosaurs were imagined as fast and warm-blooded",
+    "most experts did not think dinosaurs were related to birds",
+    "nobody was interested in Archaeopteryx",
+    "everyone agreed that birds came from dinosaurs"
+   ],
+   1
+  ],
+  [
+   "Why were the fossils from Liaoning so valuable?",
+   [
+    "They were the largest dinosaurs ever found.",
+    "Volcanic ash had preserved small details such as feathers.",
+    "They were the first fossils with teeth.",
+    "They were discovered by famous scientists."
+   ],
+   1
+  ],
+  [
+   "What does the writer say about Velociraptor?",
+   [
+    "It had no feathers at all.",
+    "Films have given a false image of it.",
+    "It was the ancestor of the turkey.",
+    "It was bigger than a man."
+   ],
+   1
+  ],
+  [
+   "According to the sixth paragraph, the first feathers",
+   [
+    "were probably not used for flying",
+    "were used to catch prey",
+    "appeared only on large dinosaurs",
+    "were longer than those of a peacock"
+   ],
+   0
+  ],
+  [
+   "In which paragraph does the writer describe how dinosaurs looked after their eggs?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ],
+  [
+   "In which paragraph does the writer mention a discovery made soon after a famous scientific theory?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ],
+  [
+   "In which paragraph does the writer explain the cause of a mass extinction?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   0
+  ],
+  [
+   "In which paragraph does the writer mention a relative of a very famous dinosaur?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "feather",
+   "🪶"
+  ],
+  [
+   "egg",
+   "🥚"
+  ],
+  [
+   "chicken",
+   "🐔"
+  ],
+  [
+   "fossil",
+   "🦴"
+  ],
+  [
+   "wing",
+   "🪽"
+  ],
+  [
+   "nest",
+   "🪺"
+  ]
+ ],
+ "halves": [
+  [
+   "An asteroid crashed...",
+   "...into what is now Mexico."
+  ],
+  [
+   "Archaeopteryx had teeth...",
+   "...but also clear feathers."
+  ],
+  [
+   "Farmers in China discovered...",
+   "...a small dinosaur covered in filaments."
+  ],
+  [
+   "Velociraptor was...",
+   "...about as big as a turkey."
+  ],
+  [
+   "Some small dinosaurs began...",
+   "...to use their feathers to glide."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Palaeontologists often spend weeks working in hot, dusty places, {{0}} search of fossils. When they find one, they have to {{1}} it from the rock very slowly, using small tools and brushes. A single mistake could {{2}} a fossil that has survived for millions of years. Back in the laboratory, the bones are cleaned and studied in {{3}}. Sometimes it takes years before a new species is officially {{4}}. It is slow work, but for many scientists there is nothing more exciting than being the first person to {{5}} eyes on a creature nobody has ever seen.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Not all dinosaurs were giants. In fact, many of them were no bigger {{6}} a chicken. Some of the smallest dinosaurs ever found weighed less than a kilogram, and several of them could probably climb trees. Scientists believe that it was among these small, light dinosaurs {{7}} flight first developed. Being small also helped some of them to survive {{8}} the asteroid hit, because they needed less food. Large animals, on {{9}} other hand, found it much harder to find enough to eat. This may explain why the only dinosaurs left today are the ones {{10}} can fly, or {{11}} ancestors could.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "The discovery of feathered dinosaurs was one of the most {{12}} moments in modern palaeontology. It showed that the {{13}} between dinosaurs and birds was much closer than people had thought. Many scientists were {{14}} sceptical, but the evidence was too strong to ignore. Today, most experts are in {{15}}. The {{16}} of dinosaurs in books and films has changed as a result, and modern illustrations are much more {{17}}.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Palaeontologists often spend weeks working in hot, dusty places, ___ search of fossils.",
+    [
+     "for",
+     "in",
+     "at",
+     "on"
+    ],
+    1
+   ],
+   [
+    "When they find one, they have to ___ it from the rock very slowly, using small tools and brushes.",
+    [
+     "pull",
+     "take off",
+     "remove",
+     "draw"
+    ],
+    2
+   ],
+   [
+    "A single mistake could ___ a fossil that has survived for millions of years.",
+    [
+     "injure",
+     "wound",
+     "damage",
+     "hurt"
+    ],
+    2
+   ],
+   [
+    "Back in the laboratory, the bones are cleaned and studied in ___.",
+    [
+     "deep",
+     "close",
+     "near",
+     "detail"
+    ],
+    3
+   ],
+   [
+    "Sometimes it takes years before a new species is officially ___.",
+    [
+     "said",
+     "spoken",
+     "told",
+     "described"
+    ],
+    3
+   ],
+   [
+    "It is slow work, but for many scientists there is nothing more exciting than being the first person to ___ eyes on a creature nobody has ever seen.",
+    [
+     "put",
+     "stand",
+     "set",
+     "place"
+    ],
+    2
+   ],
+   [
+    "In fact, many of them were no bigger ___ a chicken.",
+    [
+     "than"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Scientists believe that it was among these small, light dinosaurs ___ flight first developed.",
+    [
+     "that"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Being small also helped some of them to survive ___ the asteroid hit, because they needed less food.",
+    [
+     "when",
+     "after"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Large animals, on ___ other hand, found it much harder to find enough to eat.",
+    [
+     "the"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "This may explain why the only dinosaurs left today are the ones ___ can fly, or … ancestors could.",
+    [
+     "that",
+     "which"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "This may explain why the only dinosaurs left today are the ones … can fly, or ___ ancestors could.",
+    [
+     "whose"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "The discovery of feathered dinosaurs was one of the most ___ moments in modern palaeontology.",
+    [
+     "exciting"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXCITE"
+    }
+   ],
+   [
+    "It showed that the ___ between dinosaurs and birds was much closer than people had thought.",
+    [
+     "relationship"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "RELATION"
+    }
+   ],
+   [
+    "Many scientists were ___ sceptical, but the evidence was too strong to ignore.",
+    [
+     "initially"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INITIAL"
+    }
+   ],
+   [
+    "Today, most experts are in ___.",
+    [
+     "agreement"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "AGREE"
+    }
+   ],
+   [
+    "The ___ of dinosaurs in books and films has changed as a result, and modern illustrations are much more ….",
+    [
+     "appearance"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "APPEAR"
+    }
+   ],
+   [
+    "The … of dinosaurs in books and films has changed as a result, and modern illustrations are much more ___.",
+    [
+     "accurate"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ACCURACY"
+    }
+   ],
+   [
+    "Most experts now agree that birds are dinosaurs. → Most experts are now ___ birds are dinosaurs.",
+    [
+     "in agreement that"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Most experts now agree that birds are dinosaurs.",
+     "w": "AGREEMENT",
+     "p": "Most experts are now ___ birds are dinosaurs."
+    }
+   ],
+   [
+    "Velociraptor was much smaller than it is in films. → Velociraptor was ___ as it is in films.",
+    [
+     "not as big",
+     "not nearly as big"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Velociraptor was much smaller than it is in films.",
+     "w": "NOT",
+     "p": "Velociraptor was ___ as it is in films."
+    }
+   ],
+   [
+    "Farmers discovered the fossil in 1996. → The fossil ___ farmers in 1996.",
+    [
+     "was discovered by"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Farmers discovered the fossil in 1996.",
+     "w": "WAS",
+     "p": "The fossil ___ farmers in 1996."
+    }
+   ],
+   [
+    "It is possible that Tyrannosaurus rex had feathers. → Tyrannosaurus rex ___ feathers.",
+    [
+     "may have had"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "It is possible that Tyrannosaurus rex had feathers.",
+     "w": "MAY",
+     "p": "Tyrannosaurus rex ___ feathers."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los dinosaurios que nunca se extinguieron",
+   "sub": "Por qué las aves son dinosaurios",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "pluma",
+    "huevo",
+    "gallina",
+    "fósil",
+    "ala",
+    "nido"
+   ]
+  }
+ }
+}

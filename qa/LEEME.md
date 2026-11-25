@@ -47,3 +47,9 @@ Nota: `prueba-mascota.js` a veces falla en la línea 35 («Node is detached») p
 
 ## Flashcards (fichas/)
 `prueba-fichas.js <url> [carpeta]` (playwright; con servidor-prueba.mjs también prueba la cuenta): crear tarjetas con dibujo, emoji, enlace, Wikimedia y Pixabay (simulados), álbum (2 páginas de 4, flechas, teclado, deslizar), carta en grande, tocar palabra del diccionario, repaso espaciado, «¿Qué es?», «Dibújalo» (antigua o nueva), XP y dibujos en la nube.
+
+## Doblaje (doblaje/)
+`prueba-doblaje.mjs`: `node qa/servidor-prueba.mjs /ruta/absoluta/al/repo 8790` y `NODE_PATH=/opt/node22/lib/node_modules node qa/prueba-doblaje.mjs http://localhost:8790 [capturas]`.
+Simula YouTube y usa el micrófono falso de Chrome. Revisa: escena pegada con «NOMBRE: frase», marcar tiempos tocando, el profe la manda a la clase,
+dos alumnos la ven en sus deberes, graban (vídeo en silencio, frases iluminadas), ven su doblaje (su voz suena), lo mandan a la votación,
+votan (no a sí mismos), el profe lo ve hecho en su panel, y una canción con la letra automática.

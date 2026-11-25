@@ -3,9 +3,9 @@
 (() => {
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const TX = {
-  ca: {deb: "📚 Els teus deures", hasta: "Fins al {d}", hoy: "Avui és l'últim dia!", tarde: "S'ha acabat el termini", hecha: "Feta", ir: "Llegir", oir: "Escoltar", msg: "📬 Missatge del teu profe", msgs: "📬 Missatges del teu profe", ok: "Entesos!", dict: "Dictat", escribir: "Escriure"},
-  es: {deb: "📚 Tus deberes", hasta: "Hasta el {d}", hoy: "¡Hoy es el último día!", tarde: "Se acabó el plazo", hecha: "Hecha", ir: "Leer", oir: "Escuchar", msg: "📬 Mensaje de tu profe", msgs: "📬 Mensajes de tu profe", ok: "¡Entendido!", dict: "Dictado", escribir: "Escribir"},
-  en: {deb: "📚 Your homework", hasta: "Due {d}", hoy: "Today is the last day!", tarde: "Past the due date", hecha: "Done", ir: "Read", oir: "Listen", msg: "📬 A message from your teacher", msgs: "📬 Messages from your teacher", ok: "Got it!", dict: "Dictation", escribir: "Write"},
+  ca: {deb: "📚 Els teus deures", hasta: "Fins al {d}", hoy: "Avui és l'últim dia!", tarde: "S'ha acabat el termini", hecha: "Feta", ir: "Llegir", oir: "Escoltar", msg: "📬 Missatge del teu profe", msgs: "📬 Missatges del teu profe", ok: "Entesos!", dict: "Dictat", escribir: "Escriure", doblar: "Doblar"},
+  es: {deb: "📚 Tus deberes", hasta: "Hasta el {d}", hoy: "¡Hoy es el último día!", tarde: "Se acabó el plazo", hecha: "Hecha", ir: "Leer", oir: "Escuchar", msg: "📬 Mensaje de tu profe", msgs: "📬 Mensajes de tu profe", ok: "¡Entendido!", dict: "Dictado", escribir: "Escribir", doblar: "Doblar"},
+  en: {deb: "📚 Your homework", hasta: "Due {d}", hoy: "Today is the last day!", tarde: "Past the due date", hecha: "Done", ir: "Read", oir: "Listen", msg: "📬 A message from your teacher", msgs: "📬 Messages from your teacher", ok: "Got it!", dict: "Dictation", escribir: "Write", doblar: "Dub"},
 };
 let A = null;
 const S = () => (window.LYA && window.LYA.S) || {learn: "es", know: "en"};
@@ -20,9 +20,9 @@ function html() {
   const cn = (s.g && s.g.cn) || {}, hechoDe = d => d.cancion ? cn[d.cancion] : /^dictado-/.test(d.lectura) ? ((s.g && s.g.dc) || {})[d.lectura.slice(8)] : rd[d.lectura];  /* canciones de YouTube: S.g.cn */
   const items = [...A.deberes].sort((a, b) => (!!hechoDe(a)) - (!!hechoDe(b)) || a.limite.localeCompare(b.limite)).map(d => {
     const dic = /^dictado-/.test(d.lectura || ""), r = !d.cancion && window.LYA.rdById ? window.LYA.rdById(dic ? d.lectura.slice(8) : d.lectura) : null, hecha = hechoDe(d);
-    const titulo = d.cancion ? "🎵 " + (d.titulo || "") : r ? (dic ? "✍️ " + t("dict") + ": " : "") + (r.title[s.learn] || r.title.es) + ` · ${r.level}` : d.lectura;
+    const titulo = d.cancion ? (d.doblaje ? "🎬 " : "🎵 ") + (d.titulo || "") : r ? (dic ? "✍️ " + t("dict") + ": " : "") + (r.title[s.learn] || r.title.es) + ` · ${r.level}` : d.lectura;
     const cuando = hecha ? `✅ ${T("hecha")} ${"★".repeat(hecha.best)}${"☆".repeat(3 - hecha.best)}` : d.limite < h ? T("tarde") : d.limite === h ? `<b>${T("hoy")}</b>` : T("hasta", {d: dia(d.limite)});
-    return `<li class="${hecha ? "ok" : ""}"><div><b>${esc(titulo)}</b><small>${cuando}${d.nota ? " · " + esc(d.nota) : ""}</small></div>${d.cancion ? `<a class="btn${hecha ? "" : " main"}" href="#cancion-${esc(d.cancion)}">${T("oir")}</a>` : r && r.file ? `<a class="btn${hecha ? "" : " main"}" href="#${esc(d.lectura)}">${T(dic ? "escribir" : "ir")}</a>` : ""}</li>`;
+    return `<li class="${hecha ? "ok" : ""}"><div><b>${esc(titulo)}</b><small>${cuando}${d.nota ? " · " + esc(d.nota) : ""}</small></div>${d.cancion ? `<a class="btn${hecha ? "" : " main"}" href="#${d.doblaje ? "doblaje-e-" : "cancion-"}${esc(d.cancion)}">${T(d.doblaje ? "doblar" : "oir")}</a>` : r && r.file ? `<a class="btn${hecha ? "" : " main"}" href="#${esc(d.lectura)}">${T(dic ? "escribir" : "ir")}</a>` : ""}</li>`;
   }).join("");
   return `<section class="deb" id="deberes"><h2>${T("deb")}</h2><ul>${items}</ul></section>`;
 }

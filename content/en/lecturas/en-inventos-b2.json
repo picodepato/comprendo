@@ -1,0 +1,497 @@
+{
+ "id": "en-inventos-b2",
+ "topic": "inventos",
+ "level": "B2",
+ "title": "Copying nature",
+ "short": "Copying nature",
+ "text": [
+  "In 1941, a Swiss engineer called George de Mestral returned from a walk in the mountains with his dog and noticed that both his trousers and the fur of the dog were covered in burrs, the small seed heads of a common plant. Most people would simply have pulled them off and thrown them away. De Mestral, however, was curious. He put one under a microscope and discovered that it was covered in hundreds of tiny hooks, which caught on anything with loops, such as fabric or hair.",
+  "It took him years of experiments to copy the idea, but the result was Velcro, a fastener made of two strips of material, one with hooks and the other with loops. At first, the fashion industry was not impressed, and some people thought it looked cheap. Its big break came when space agencies began to use it, because it allowed astronauts to fix objects to the walls so that they would not float away. Today it can be found on everything from trainers to medical equipment.",
+  "De Mestral was not the first person to learn from nature, and he certainly was not the last. The practice of solving human problems by copying solutions from living things now has a name: biomimicry. Its supporters point out that plants and animals have had millions of years of evolution to test their designs, so it would be foolish not to learn from them.",
+  "One of the most famous examples comes from Japan. In the nineteen nineties, engineers working on the bullet train faced a serious problem. Whenever the train came out of a tunnel at high speed, it pushed a wave of air in front of it, causing a loud bang that disturbed people living nearby. The solution came from an engineer who was also a keen birdwatcher. He knew that the kingfisher dives into water to catch fish with hardly a splash, thanks to its long, narrow beak. When the front of the train was redesigned in the shape of that beak, the noise was reduced, and the train used less electricity too.",
+  "Other examples are just as clever. The leaves of the lotus plant always stay clean because their surface is covered in tiny bumps that make water roll off, taking the dirt with it. This discovery has inspired self-cleaning paints and glass. Termite mounds in Africa, which stay cool even in extreme heat thanks to a system of tunnels that let air flow through them, have influenced the design of buildings that need much less air conditioning.",
+  "Not every attempt to copy nature is successful, of course. Living things are incredibly complex, and what works for an insect does not always work on a human scale. Some designs that seem brilliant in a laboratory turn out to be too expensive to produce. Nevertheless, as engineers search for ways to use less energy and fewer resources, interest in biomimicry is growing fast.",
+  "Perhaps the most important lesson is the one de Mestral learnt on his walk. Great ideas are not always the result of complicated research. Sometimes they are stuck to your trousers, waiting for someone curious enough to take a closer look."
+ ],
+ "q": [
+  [
+   "What made de Mestral different from most people?",
+   [
+    "He had a microscope at home.",
+    "He wanted to understand why the burrs stuck.",
+    "He owned a very large dog.",
+    "He enjoyed walking in the mountains."
+   ],
+   1
+  ],
+  [
+   "How did people in the fashion industry first react to Velcro?",
+   [
+    "They preferred it to buttons.",
+    "They wanted to use it immediately.",
+    "They thought it was too expensive.",
+    "They did not think much of it."
+   ],
+   3
+  ],
+  [
+   "According to the third paragraph, why should we learn from nature?",
+   [
+    "Evolution has finished testing all designs.",
+    "Nature has tested its designs over a very long time.",
+    "Copying nature is cheaper than research.",
+    "Animals are more intelligent than engineers."
+   ],
+   1
+  ],
+  [
+   "What problem did the engineers in Japan need to solve?",
+   [
+    "The train made a loud noise when it left a tunnel.",
+    "The train used too much water.",
+    "Birds were flying into the train.",
+    "The train was too slow in tunnels."
+   ],
+   0
+  ],
+  [
+   "What do the lotus plant and termite mounds have in common in the fifth paragraph?",
+   [
+    "They are both found only in Africa.",
+    "They both use water to stay cool.",
+    "They have both inspired useful products or buildings.",
+    "They both have surfaces with tiny hooks."
+   ],
+   2
+  ],
+  [
+   "What is the writer suggesting in the last sentence?",
+   [
+    "Complicated research is a waste of time.",
+    "People should clean their trousers after a walk.",
+    "Only engineers can have great ideas.",
+    "Good ideas can come from paying attention to ordinary things."
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer mention a person whose hobby helped to solve a problem?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer mention some difficulties of copying nature?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   5
+  ],
+  [
+   "In which paragraph does the writer explain how a product became successful thanks to space travel?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ],
+  [
+   "In which paragraph does the writer give a name to the practice of learning from living things?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "dog",
+   "🐕"
+  ],
+  [
+   "microscope",
+   "🔬"
+  ],
+  [
+   "train",
+   "🚄"
+  ],
+  [
+   "leaf",
+   "🍃"
+  ],
+  [
+   "tunnel",
+   "🚇"
+  ],
+  [
+   "trousers",
+   "👖"
+  ]
+ ],
+ "halves": [
+  [
+   "The burrs were covered...",
+   "...in hundreds of tiny hooks."
+  ],
+  [
+   "Astronauts used Velcro...",
+   "...to fix objects to the walls."
+  ],
+  [
+   "The kingfisher dives into water...",
+   "...with hardly a splash."
+  ],
+  [
+   "The leaves of the lotus...",
+   "...always stay clean."
+  ],
+  [
+   "Interest in biomimicry...",
+   "...is growing fast."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Many of the objects we use every day were invented {{0}} accident. The microwave oven is a good example. In the nineteen forties, an engineer was working on radar equipment when he {{1}} that a chocolate bar in his pocket had melted. Instead of {{2}} it, he decided to experiment with other foods, such as popcorn. Within a few years, his company had {{3}} the first microwave oven. It was enormous and very expensive, but it {{4}} the way for the ovens we have in our kitchens today. Sometimes, it seems, a mistake can {{5}} to something wonderful.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Biomimicry is not a new idea. More than five hundred years {{6}}, Leonardo da Vinci studied birds in the hope {{7}} building a flying machine. Although his designs never left the ground, they showed that he understood how important it was to observe nature closely. Today, engineers have tools {{8}} Leonardo could only dream of. Computers allow them to study the movement of a fish or the structure of a leaf in incredible detail. As a {{9}}, the number of inventions inspired by nature has grown rapidly. {{10}} knows what the next one will be? It could {{11}} waiting in your garden right now.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "George de Mestral was a {{12}} engineer. His {{13}} was not successful at first, but he never gave up. Today, Velcro is used by millions of people for its {{14}}. Biomimicry shows that nature can be a {{15}} source of ideas. Many {{16}} advances have come from careful {{17}} of plants and animals.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Many of the objects we use every day were invented ___ accident.",
+    [
+     "of",
+     "from",
+     "by",
+     "with"
+    ],
+    2
+   ],
+   [
+    "In the nineteen forties, an engineer was working on radar equipment when he ___ that a chocolate bar in his pocket had melted.",
+    [
+     "noticed",
+     "regarded",
+     "watched",
+     "looked"
+    ],
+    0
+   ],
+   [
+    "Instead of ___ it, he decided to experiment with other foods, such as popcorn.",
+    [
+     "missing",
+     "refusing",
+     "passing",
+     "ignoring"
+    ],
+    3
+   ],
+   [
+    "Within a few years, his company had ___ the first microwave oven.",
+    [
+     "risen",
+     "grown",
+     "developed",
+     "raised"
+    ],
+    2
+   ],
+   [
+    "It was enormous and very expensive, but it ___ the way for the ovens we have in our kitchens today.",
+    [
+     "drew",
+     "built",
+     "filled",
+     "paved"
+    ],
+    3
+   ],
+   [
+    "Sometimes, it seems, a mistake can ___ to something wonderful.",
+    [
+     "carry",
+     "lead",
+     "bring",
+     "cause"
+    ],
+    1
+   ],
+   [
+    "More than five hundred years ___, Leonardo da Vinci studied birds in the hope … building a flying machine.",
+    [
+     "ago"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "More than five hundred years …, Leonardo da Vinci studied birds in the hope ___ building a flying machine.",
+    [
+     "of"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Today, engineers have tools ___ Leonardo could only dream of.",
+    [
+     "that",
+     "which"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "As a ___, the number of inventions inspired by nature has grown rapidly.",
+    [
+     "result"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ knows what the next one will be?",
+    [
+     "Who"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "It could ___ waiting in your garden right now.",
+    [
+     "be"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "George de Mestral was a ___ engineer.",
+    [
+     "creative"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CREATE"
+    }
+   ],
+   [
+    "His ___ was not successful at first, but he never gave up.",
+    [
+     "invention"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INVENT"
+    }
+   ],
+   [
+    "Today, Velcro is used by millions of people for its ___.",
+    [
+     "simplicity"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SIMPLE"
+    }
+   ],
+   [
+    "Biomimicry shows that nature can be a ___ source of ideas.",
+    [
+     "valuable"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "VALUE"
+    }
+   ],
+   [
+    "Many ___ advances have come from careful … of plants and animals.",
+    [
+     "scientific"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SCIENCE"
+    }
+   ],
+   [
+    "Many … advances have come from careful ___ of plants and animals.",
+    [
+     "observation"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "OBSERVE"
+    }
+   ],
+   [
+    "De Mestral looked at the burr under a microscope. → De Mestral ___ the burr under a microscope.",
+    [
+     "took a look at"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "De Mestral looked at the burr under a microscope.",
+     "w": "TOOK",
+     "p": "De Mestral ___ the burr under a microscope."
+    }
+   ],
+   [
+    "The new design made the train much quieter. → After the new design, the train was much ___ before.",
+    [
+     "less noisy than"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "The new design made the train much quieter.",
+     "w": "LESS",
+     "p": "After the new design, the train was much ___ before."
+    }
+   ],
+   [
+    "Engineers have copied many ideas from nature. → Many ideas ___ from nature by engineers.",
+    [
+     "have been copied"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Engineers have copied many ideas from nature.",
+     "w": "BEEN",
+     "p": "Many ideas ___ from nature by engineers."
+    }
+   ],
+   [
+    "He did not stop working on his idea, even though it was difficult. → Although it was difficult, he never ___ his idea.",
+    [
+     "gave up on",
+     "gave up"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "He did not stop working on his idea, even though it was difficult.",
+     "w": "GAVE",
+     "p": "Although it was difficult, he never ___ his idea."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Copiando a la naturaleza",
+   "sub": "Inventos inspirados en plantas y animales",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "perro",
+    "microscopio",
+    "tren",
+    "hoja",
+    "túnel",
+    "pantalones"
+   ]
+  }
+ }
+}

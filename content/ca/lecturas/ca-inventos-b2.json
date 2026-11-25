@@ -1,0 +1,497 @@
+{
+ "id": "ca-inventos-b2",
+ "topic": "inventos",
+ "level": "B2",
+ "title": "Copiant la natura",
+ "short": "Copiant la natura",
+ "text": [
+  "El 1941, un enginyer suís anomenat George de Mestral va tornar d'una passejada per la muntanya amb el seu gos i es va adonar que tant els seus pantalons com el pèl de l'animal eren plens de repèls, els petits caps de llavors d'una planta molt comuna. La majoria de la gent simplement els hauria arrencat i llençat. De Mestral, en canvi, va sentir curiositat. En va posar un sota el microscopi i va descobrir que estava cobert de centenars de ganxos minúsculs que s'enganxaven a qualsevol cosa amb llaços, com la roba o el pèl.",
+  "Va trigar anys d'experiments a copiar la idea, però el resultat va ser el velcro, un tancament format per dues tires de material, una amb ganxos i l'altra amb llaços. Al principi, al món de la moda no li va impressionar, i algunes persones pensaven que semblava barat. La seva gran oportunitat va arribar quan les agències espacials van començar a fer-lo servir, perquè permetia als astronautes fixar objectes a les parets perquè no se n'anessin flotant. Avui es troba en tota mena de coses, des de vambes fins a material mèdic.",
+  "De Mestral no va ser el primer a aprendre de la natura, i segur que no en va ser l'últim. La pràctica de resoldre problemes humans copiant solucions dels éssers vius ja té un nom: biomimètica. Els seus defensors assenyalen que les plantes i els animals han tingut milions d'anys d'evolució per posar a prova els seus dissenys, així que seria absurd no aprendre'n.",
+  "Un dels exemples més famosos ve del Japó. Als anys noranta, els enginyers que treballaven en el tren bala tenien un problema seriós. Cada vegada que el tren sortia d'un túnel a gran velocitat, empenyia una onada d'aire al davant, cosa que provocava un fort espetec que molestava els veïns. La solució va arribar d'un enginyer que també era molt aficionat a observar ocells. Sabia que el blauet es llança a l'aigua per atrapar peixos gairebé sense esquitxar, gràcies al seu bec llarg i estret. Quan es va redissenyar la part del davant del tren amb la forma d'aquest bec, el soroll es va reduir, i a més el tren gastava menys electricitat.",
+  "Altres exemples són igual d'enginyosos. Les fulles del lotus sempre estan netes perquè la seva superfície està coberta de petits bonys que fan que l'aigua rellisqui i s'emporti la brutícia. Aquest descobriment ha inspirat pintures i vidres que es netegen sols. Els termiters d'Àfrica, que es mantenen frescos fins i tot amb una calor extrema gràcies a un sistema de túnels per on circula l'aire, han influït en el disseny d'edificis que necessiten molt menys aire condicionat.",
+  "És clar que no tots els intents de copiar la natura surten bé. Els éssers vius són increïblement complexos, i el que funciona per a un insecte no sempre funciona a escala humana. Alguns dissenys que semblen genials en un laboratori resulten massa cars de fabricar. Tot i així, a mesura que els enginyers busquen maneres de fer servir menys energia i menys recursos, l'interès per la biomimètica creix ràpidament.",
+  "Potser la lliçó més important és la que va aprendre De Mestral en la seva passejada. Les grans idees no sempre són el resultat de recerques complicades. De vegades estan enganxades als teus pantalons, esperant que algú prou curiós les miri de prop."
+ ],
+ "q": [
+  [
+   "Què va fer De Mestral diferent de la majoria de la gent?",
+   [
+    "Li agradava passejar per la muntanya.",
+    "Tenia un gos molt gros.",
+    "Tenia un microscopi a casa.",
+    "Va voler entendre per què s'enganxaven els repèls."
+   ],
+   3
+  ],
+  [
+   "Com va reaccionar al principi el món de la moda davant del velcro?",
+   [
+    "Va pensar que era massa car.",
+    "El va voler fer servir de seguida.",
+    "No li va donar gaire importància.",
+    "El va preferir als botons."
+   ],
+   2
+  ],
+  [
+   "Segons el tercer paràgraf, per què hauríem d'aprendre de la natura?",
+   [
+    "Els animals són més intel·ligents que els enginyers.",
+    "Copiar la natura és més barat que investigar.",
+    "L'evolució ja ha acabat de provar tots els dissenys.",
+    "La natura ha provat els seus dissenys durant moltíssim temps."
+   ],
+   3
+  ],
+  [
+   "Quin problema havien de resoldre els enginyers japonesos?",
+   [
+    "El tren feia un soroll fort en sortir dels túnels.",
+    "El tren gastava massa aigua.",
+    "El tren anava massa lent als túnels.",
+    "Els ocells xocaven contra el tren."
+   ],
+   0
+  ],
+  [
+   "Què tenen en comú el lotus i els termiters al cinquè paràgraf?",
+   [
+    "Tots dos tenen superfícies amb ganxos.",
+    "Tots dos han inspirat productes o edificis útils.",
+    "Tots dos només es troben a l'Àfrica.",
+    "Tots dos fan servir aigua per mantenir-se frescos."
+   ],
+   1
+  ],
+  [
+   "Què suggereix l'autor a l'última frase?",
+   [
+    "Les recerques complicades són una pèrdua de temps.",
+    "Cal netejar-se els pantalons després de passejar.",
+    "Només els enginyers tenen grans idees.",
+    "Les bones idees poden sorgir de fixar-se en coses corrents."
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf esmenta l'autor una persona l'afició de la qual va ajudar a resoldre un problema?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf esmenta l'autor algunes dificultats de copiar la natura?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   5
+  ],
+  [
+   "En quin paràgraf explica l'autor com un producte va tenir èxit gràcies als viatges espacials?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   1
+  ],
+  [
+   "En quin paràgraf posa nom l'autor a la pràctica d'aprendre dels éssers vius?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "gos",
+   "🐕"
+  ],
+  [
+   "microscopi",
+   "🔬"
+  ],
+  [
+   "tren",
+   "🚄"
+  ],
+  [
+   "fulla",
+   "🍃"
+  ],
+  [
+   "túnel",
+   "🚇"
+  ],
+  [
+   "pantalons",
+   "👖"
+  ]
+ ],
+ "halves": [
+  [
+   "Els repèls estaven coberts...",
+   "...de centenars de ganxos minúsculs."
+  ],
+  [
+   "Els astronautes feien servir el velcro...",
+   "...per fixar objectes a les parets."
+  ],
+  [
+   "El blauet es llança a l'aigua...",
+   "...gairebé sense esquitxar."
+  ],
+  [
+   "Les fulles del lotus...",
+   "...sempre estan netes."
+  ],
+  [
+   "L'interès per la biomimètica...",
+   "...creix ràpidament."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "Molts dels objectes que fem servir cada dia es van inventar {{0}} casualitat. El forn de microones n'és un bon exemple. Als anys quaranta, un enginyer treballava amb equips de radar quan es va {{1}} que una xocolatina que portava a la butxaca s'havia fos. En lloc de no fer-ne {{2}}, va decidir experimentar amb altres aliments, com les crispetes. Pocs anys després, la seva empresa havia {{3}} el primer forn de microones. Era enorme i caríssim, però va {{4}} el camí als forns que tenim avui a la cuina. De vegades, pel que sembla, un error pot {{5}} lloc a una cosa meravellosa.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "La biomimètica no és una idea nova. Fa més de cinc-cents anys, Leonardo da Vinci va estudiar els ocells amb l'esperança {{6}} construir una màquina voladora. Tot i que els seus dissenys no van enlairar-se mai, demostraven que entenia {{7}} era d'important observar la natura de prop. Avui els enginyers tenen eines amb {{8}} quals Leonardo només podia somiar. Els ordinadors els permeten estudiar el moviment d'un peix o l'estructura d'una fulla amb un detall increïble. Com a {{9}}, el nombre d'invents inspirats en la natura ha crescut molt de pressa. Qui {{10}} quin serà el següent? Podria estar esperant al teu jardí {{11}} mateix.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "George de Mestral va ser un enginyer molt {{12}}. El seu {{13}} no va tenir èxit al principi, però no es va rendir mai. Avui milions de persones fan servir el velcro per la seva {{14}}. La biomimètica demostra que la natura pot ser una font {{15}} d'idees. Molts avenços {{16}} han sorgit de l'{{17}} atenta de plantes i animals.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Molts dels objectes que fem servir cada dia es van inventar ___ casualitat.",
+    [
+     "a",
+     "en",
+     "per",
+     "amb"
+    ],
+    2
+   ],
+   [
+    "Als anys quaranta, un enginyer treballava amb equips de radar quan es va ___ que una xocolatina que portava a la butxaca s'havia fos.",
+    [
+     "fixar",
+     "adonar",
+     "veure",
+     "posar"
+    ],
+    1
+   ],
+   [
+    "En lloc de no fer-ne ___, va decidir experimentar amb altres aliments, com les crispetes.",
+    [
+     "compte",
+     "lloc",
+     "cosa",
+     "cas"
+    ],
+    3
+   ],
+   [
+    "Pocs anys després, la seva empresa havia ___ el primer forn de microones.",
+    [
+     "pujat",
+     "desenvolupat",
+     "crescut",
+     "criat"
+    ],
+    1
+   ],
+   [
+    "Era enorme i caríssim, però va ___ el camí als forns que tenim avui a la cuina.",
+    [
+     "començar",
+     "obrir",
+     "aixecar",
+     "construir"
+    ],
+    1
+   ],
+   [
+    "De vegades, pel que sembla, un error pot ___ lloc a una cosa meravellosa.",
+    [
+     "posar",
+     "fer",
+     "donar",
+     "treure"
+    ],
+    2
+   ],
+   [
+    "Fa més de cinc-cents anys, Leonardo da Vinci va estudiar els ocells amb l'esperança ___ construir una màquina voladora.",
+    [
+     "de"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Tot i que els seus dissenys no van enlairar-se mai, demostraven que entenia ___ era d'important observar la natura de prop.",
+    [
+     "com"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Avui els enginyers tenen eines amb ___ quals Leonardo només podia somiar.",
+    [
+     "les"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Com a ___, el nombre d'invents inspirats en la natura ha crescut molt de pressa.",
+    [
+     "resultat",
+     "conseqüència"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Qui ___ quin serà el següent?",
+    [
+     "sap"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Podria estar esperant al teu jardí ___ mateix.",
+    [
+     "ara"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "George de Mestral va ser un enginyer molt ___.",
+    [
+     "creatiu"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CREAR"
+    }
+   ],
+   [
+    "El seu ___ no va tenir èxit al principi, però no es va rendir mai.",
+    [
+     "invent"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INVENTAR"
+    }
+   ],
+   [
+    "Avui milions de persones fan servir el velcro per la seva ___.",
+    [
+     "senzillesa"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SENZILL"
+    }
+   ],
+   [
+    "La biomimètica demostra que la natura pot ser una font ___ d'idees.",
+    [
+     "valuosa"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "VALOR"
+    }
+   ],
+   [
+    "Molts avenços ___ han sorgit de l'… atenta de plantes i animals.",
+    [
+     "científics"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CIÈNCIA"
+    }
+   ],
+   [
+    "Molts avenços … han sorgit de l'___ atenta de plantes i animals.",
+    [
+     "observació"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "OBSERVAR"
+    }
+   ],
+   [
+    "De Mestral va mirar el repèl amb el microscopi. → De Mestral va ___ al repèl amb el microscopi.",
+    [
+     "fer un cop d'ull"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "De Mestral va mirar el repèl amb el microscopi.",
+     "w": "COP",
+     "p": "De Mestral va ___ al repèl amb el microscopi."
+    }
+   ],
+   [
+    "Amb el nou disseny, el tren era molt més silenciós. → Amb el nou disseny, el tren feia molt ___ abans.",
+    [
+     "menys soroll que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Amb el nou disseny, el tren era molt més silenciós.",
+     "w": "MENYS",
+     "p": "Amb el nou disseny, el tren feia molt ___ abans."
+    }
+   ],
+   [
+    "Els enginyers han copiat moltes idees de la natura. → Moltes idees han ___ la natura pels enginyers.",
+    [
+     "estat copiades de"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Els enginyers han copiat moltes idees de la natura.",
+     "w": "ESTAT",
+     "p": "Moltes idees han ___ la natura pels enginyers."
+    }
+   ],
+   [
+    "No va deixar de treballar en la seva idea, tot i que era difícil. → Va continuar treballant en la seva idea ___ difícil.",
+    [
+     "malgrat que era",
+     "malgrat ser"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "No va deixar de treballar en la seva idea, tot i que era difícil.",
+     "w": "MALGRAT",
+     "p": "Va continuar treballant en la seva idea ___ difícil."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Copiando a la naturaleza",
+   "sub": "Inventos inspirados en plantas y animales",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "perro",
+    "microscopio",
+    "tren",
+    "hoja",
+    "túnel",
+    "pantalones"
+   ]
+  }
+ }
+}

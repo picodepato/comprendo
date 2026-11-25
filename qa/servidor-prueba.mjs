@@ -13,7 +13,7 @@ http.createServer((q, r) => { let b = ""; q.on("data", c => b += c); q.on("end",
   else if (c === "SREM") { const st = vivo(k) ? kv.get(k) : new Set(); res = a.slice(2).filter(x => st.delete(x)).length; }
   else if (c === "LPUSH") { const l = vivo(k) ? kv.get(k) : []; kv.set(k, l); l.unshift(...a.slice(2).reverse()); res = l.length; }
   else if (c === "MGET") res = a.slice(1).map(x => vivo(x) ? kv.get(x) : null);
-  else if (c === "KEYS") { const re = new RegExp("^" + k.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, ".*") + "$"); res = [...kv.keys()].filter(x => vivo(x) && re.test(x) && !Array.isArray(kv.get(x)) && !(kv.get(x) instanceof Set)); }
+  else if (c === "KEYS") { const re = new RegExp("^" + k.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, ".*") + "$"); res = [...kv.keys()].filter(x => vivo(x) && re.test(x) && !Array.isArray(kv.get(x)) && !(kv.get(x) instanceof Set) && !(kv.get(x) instanceof Map)); }
   else if (c === "SADD") { const st = vivo(k) ? kv.get(k) : new Set(); kv.set(k, st); let n = 0; for (const x of a.slice(2)) if (!st.has(x)) { st.add(x); n++; } res = n; }
   else if (c === "SMEMBERS") res = vivo(k) ? [...kv.get(k)] : [];
   else if (c === "RPUSH") { const l = vivo(k) ? kv.get(k) : []; kv.set(k, l); l.push(...a.slice(2)); res = l.length; }
@@ -28,8 +28,10 @@ http.createServer((q, r) => { let b = ""; q.on("data", c => b += c); q.on("end",
     else if (c === "HMGET") res = a.slice(2).map(f => h.has(f) ? h.get(f) : null);
     else if (c === "HGETALL") res = [...h].flat();
     else if (c === "HDEL") res = a.slice(2).filter(f => h.delete(f)).length;
+    else if (c === "HEXISTS") res = h.has(a[2]) ? 1 : 0;
     else if (c === "HLEN") res = h.size;
     else if (c === "HINCRBY") { const n = (+h.get(a[2]) || 0) + +a[3]; h.set(a[2], String(n)); kv.set(k, h); res = n; }
+    else if (c === "HEXISTS") res = h.has(a[2]) ? 1 : 0;
   }
   r.setHeader("content-type", "application/json"); r.end(JSON.stringify({result: res}));
 }); }).listen(PUERTO + 1);

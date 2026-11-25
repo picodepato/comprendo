@@ -1,0 +1,497 @@
+{
+ "id": "ca-peligrosos-b2",
+ "topic": "peligrosos",
+ "level": "B2",
+ "title": "L'animal més mortal de la Terra",
+ "short": "L'animal més mortal de la Terra",
+ "text": [
+  "Si et demanessin que diguessis quin és l'animal més perillós del món, probablement pensaries en un tauró, un lleó o potser un cocodril. Aquests depredadors tenen, és clar, dents esmolades i una fama terrible, però entre tots maten només uns quants centenars de persones l'any. El veritable campió és molt més petit, pesa menys que un gra d'arròs i potser aquesta nit volarà per la teva habitació: el mosquit.",
+  "Els mosquits no són perillosos per la picada, que normalment no és més que una taca vermella que fa picor. El problema és el que poden portar. Quan un mosquit s'alimenta de la sang d'una persona o d'un animal infectat, uns paràsits o virus minúsculs poden passar al seu cos. La vegada següent que pica algú, els hi pot transmetre. D'aquesta manera, els mosquits propaguen malalties com la malària, el dengue o la febre groga, que causen centenars de milers de morts cada any, sobretot als països tropicals.",
+  "Sorprenentment, només piquen les femelles. Els mascles s'alimenten del sucre de les flors i de la fruita, i les femelles també, la major part del temps. Tanmateix, una femella necessita les proteïnes de la sang per poder produir els ous. Per trobar la víctima, compta amb un conjunt de sentits impressionant. És capaç de detectar el diòxid de carboni que traiem en respirar a diversos metres de distància i, a mesura que s'hi acosta, segueix la calor i l'olor de la nostra pell. Per això algunes persones semblen rebre moltes més picades que d'altres.",
+  "La picada, a més, és més sofisticada del que sembla. Un mosquit no es limita a clavar una sola agulla a la pell. La seva boca té sis peces fines que treballen juntes: unes tallen la pell, una altra busca un vas sanguini i una altra injecta saliva. La saliva impedeix que la sang es coaguli i, molt convenientment per a l'insecte, fa que la picada gairebé no faci mal al principi. Quan notem la picor, normalment el mosquit ja se n'ha anat volant.",
+  "Lluitar contra un enemic tan petit no ha estat mai fàcil. Durant dècades, la gent ha recorregut als insecticides, a les mosquiteres i a assecar l'aigua estancada on els mosquits ponen els ous. Les mosquiteres tractades amb insecticida han salvat milions de vides, sobretot d'infants petits. Tanmateix, molts mosquits s'han tornat resistents als productes químics, així que els científics busquen solucions noves.",
+  "Algunes d'aquestes solucions semblen de ciència-ficció. En diversos països, els investigadors han deixat anar mosquits que porten un bacteri natural anomenat Wolbachia, que els fa molt difícil transmetre certs virus. D'altres desenvolupen mosquits modificats genèticament amb unes cries que no poden sobreviure. A més, fa poc s'han aprovat les primeres vacunes contra la malària, una cosa que molts experts consideren un pas històric.",
+  "Ara bé, no tothom està d'acord que hàgim d'eliminar els mosquits del tot. Són aliment d'ocells, ratpenats, peixos i granotes, i alguns ecòlegs adverteixen que fer-los desaparèixer podria tenir conseqüències que no podem preveure. De moment, la batalla continua, i ens recorda que a la natura la mida no ho és tot. La criatura més perillosa del planeta no és la que té les dents més grosses, sinó la que gairebé no podem veure."
+ ],
+ "q": [
+  [
+   "Per què l'autor esmenta els taurons, els lleons i els cocodrils al primer paràgraf?",
+   [
+    "per explicar quins animals maten més persones",
+    "per contrastar animals que semblen perillosos amb el que ho és de debò",
+    "per descriure els animals que ataquen els mosquits",
+    "per mostrar que els depredadors són cada vegada menys perillosos"
+   ],
+   1
+  ],
+  [
+   "Segons el segon paràgraf, els mosquits són perillosos perquè",
+   [
+    "només viuen als països tropicals",
+    "la seva picada fa molt de mal",
+    "poden portar malalties d'una persona a una altra",
+    "ataquen sobretot de nit"
+   ],
+   2
+  ],
+  [
+   "Què aprenem sobre les femelles al tercer paràgraf?",
+   [
+    "Poden veure les persones a diversos metres.",
+    "Necessiten sang per poder produir ous.",
+    "Prefereixen picar les persones que tenen fred.",
+    "No mengen mai sucre de les plantes."
+   ],
+   1
+  ],
+  [
+   "Al paràgraf 4, l'expressió molt convenientment per a l'insecte suggereix que la picada sense dolor",
+   [
+    "és útil per als metges que estudien insectes",
+    "ajuda el mosquit a escapar abans que el notin",
+    "fa que la picor desaparegui abans",
+    "demostra que el mosquit no és perillós"
+   ],
+   1
+  ],
+  [
+   "Per què els científics busquen noves maneres de lluitar contra els mosquits?",
+   [
+    "Els infants no volen dormir amb mosquitera.",
+    "Molts mosquits ja no queden afectats pels insecticides.",
+    "Assecar l'aigua és massa car.",
+    "Les mosquiteres no han salvat cap vida."
+   ],
+   1
+  ],
+  [
+   "Quina és l'actitud d'alguns ecòlegs a l'últim paràgraf?",
+   [
+    "No els interessa el problema de la malària.",
+    "Pensen que les vacunes no funcionaran.",
+    "Els preocupen els efectes d'eliminar els mosquits.",
+    "Creuen que cal eliminar-los com més aviat millor."
+   ],
+   2
+  ],
+  [
+   "En quin paràgraf descriu l'autor com troben els mosquits les persones que piquen?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   2
+  ],
+  [
+   "En quin paràgraf esmenta l'autor un mètode senzill que ha protegit molts infants?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   4
+  ],
+  [
+   "En quin paràgraf explica l'autor per què no notem la picada de seguida?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf descriu l'autor solucions que poden semblar increïbles?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   5
+  ]
+ ],
+ "vocab": [
+  [
+   "mosquit",
+   "🦟"
+  ],
+  [
+   "sang",
+   "🩸"
+  ],
+  [
+   "tauró",
+   "🦈"
+  ],
+  [
+   "vacuna",
+   "💉"
+  ],
+  [
+   "pell",
+   "✋"
+  ],
+  [
+   "mosquitera",
+   "🕸️"
+  ]
+ ],
+ "halves": [
+  [
+   "Només les femelles...",
+   "...piquen les persones."
+  ],
+  [
+   "Una femella necessita sang...",
+   "...per produir els ous."
+  ],
+  [
+   "La saliva fa que la picada...",
+   "...gairebé no faci mal al principi."
+  ],
+  [
+   "Molts mosquits s'han tornat resistents...",
+   "...als productes químics."
+  ],
+  [
+   "A la natura,...",
+   "...la mida no ho és tot."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "Quan la gent viatja a països tropicals, sol {{0}} precaucions contra el sol, però de vegades s'oblida dels mosquits. Els metges {{1}} que es faci servir repel·lent, sobretot al vespre, quan molts mosquits són més actius. També és bona idea portar màniga llarga, perquè als mosquits els costa més {{2}} a la pell a través de la roba. En algunes zones, els viatgers han de prendre medicaments per {{3}} la malària abans, durant i després del viatge. Aquestes mesures poden semblar molestes, però poden {{4}} la diferència. Al cap i a la fi, més {{5}} prevenir que curar.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "Els mosquits fa més {{6}} cent milions d'anys que són a la Terra, cosa que vol dir que van viure a la mateixa època {{7}} els dinosaures. Hi ha unes tres mil cinc-centes espècies, però només unes {{8}} piquen els éssers humans. Els mosquits ponen els ous en aigua estancada, {{9}} que fins i tot un tap d'ampolla ple d'aigua de pluja es pot convertir en una llar d'infants. Els ous es desclouen en {{10}} dies, i les larves viuen a l'aigua fins que estan a punt per volar. Per això els experts aconsellen eliminar qualsevol aigua {{11}} s'acumuli als jardins.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "Sovint es diu que el mosquit és l'animal més {{12}} del món. La seva picada pot semblar {{13}}, però pot transmetre malalties greus. {{14}}, els científics avancen. Les noves vacunes són un {{15}} important, i molts experts es mostren {{16}} sobre el futur. Tanmateix, la {{17}} dels mosquits per adaptar-se fa que la lluita estigui lluny d'acabar.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Quan la gent viatja a països tropicals, sol ___ precaucions contra el sol, però de vegades s'oblida dels mosquits.",
+    [
+     "treure",
+     "fer",
+     "prendre",
+     "donar"
+    ],
+    2
+   ],
+   [
+    "Els metges ___ que es faci servir repel·lent, sobretot al vespre, quan molts mosquits són més actius.",
+    [
+     "exigeixen",
+     "insisteixen",
+     "demanen",
+     "preguen"
+    ],
+    1
+   ],
+   [
+    "També és bona idea portar màniga llarga, perquè als mosquits els costa més ___ a la pell a través de la roba.",
+    [
+     "arribar",
+     "acostar",
+     "agafar",
+     "tocar"
+    ],
+    0
+   ],
+   [
+    "En algunes zones, els viatgers han de prendre medicaments per ___ la malària abans, durant i després del viatge.",
+    [
+     "protegir",
+     "defensar",
+     "prevenir",
+     "resistir"
+    ],
+    2
+   ],
+   [
+    "Aquestes mesures poden semblar molestes, però poden ___ la diferència.",
+    [
+     "fer",
+     "donar",
+     "posar",
+     "marcar"
+    ],
+    3
+   ],
+   [
+    "Al cap i a la fi, més ___ prevenir que curar.",
+    [
+     "pesa",
+     "val",
+     "costa",
+     "serveix"
+    ],
+    1
+   ],
+   [
+    "Els mosquits fa més ___ cent milions d'anys que són a la Terra, cosa que vol dir que van viure a la mateixa època … els dinosaures.",
+    [
+     "de"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els mosquits fa més … cent milions d'anys que són a la Terra, cosa que vol dir que van viure a la mateixa època ___ els dinosaures.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Hi ha unes tres mil cinc-centes espècies, però només unes ___ piquen els éssers humans.",
+    [
+     "quantes"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els mosquits ponen els ous en aigua estancada, ___ que fins i tot un tap d'ampolla ple d'aigua de pluja es pot convertir en una llar d'infants.",
+    [
+     "així"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els ous es desclouen en ___ dies, i les larves viuen a l'aigua fins que estan a punt per volar.",
+    [
+     "pocs"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Per això els experts aconsellen eliminar qualsevol aigua ___ s'acumuli als jardins.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Sovint es diu que el mosquit és l'animal més ___ del món.",
+    [
+     "perillós"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "PERILL"
+    }
+   ],
+   [
+    "La seva picada pot semblar ___, però pot transmetre malalties greus.",
+    [
+     "inofensiva"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "OFENDRE"
+    }
+   ],
+   [
+    "___, els científics avancen.",
+    [
+     "Afortunadament"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SORT"
+    }
+   ],
+   [
+    "Les noves vacunes són un ___ important, i molts experts es mostren … sobre el futur.",
+    [
+     "assoliment"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ACONSEGUIR"
+    }
+   ],
+   [
+    "Les noves vacunes són un … important, i molts experts es mostren ___ sobre el futur.",
+    [
+     "optimistes"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "OPTIMISME"
+    }
+   ],
+   [
+    "Tanmateix, la ___ dels mosquits per adaptar-se fa que la lluita estigui lluny d'acabar.",
+    [
+     "capacitat"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CAPAÇ"
+    }
+   ],
+   [
+    "Només piquen les femelles. → No piquen ___.",
+    [
+     "sinó les femelles"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Només piquen les femelles.",
+     "w": "SINÓ",
+     "p": "No piquen ___."
+    }
+   ],
+   [
+    "Li van picar tantes vegades que no va poder dormir. → Va rebre ___ que no va poder dormir.",
+    [
+     "tantes picades"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Li van picar tantes vegades que no va poder dormir.",
+     "w": "TANTES",
+     "p": "Va rebre ___ que no va poder dormir."
+    }
+   ],
+   [
+    "Els científics han aprovat fa poc les primeres vacunes. → Les primeres vacunes han ___ fa poc pels científics.",
+    [
+     "estat aprovades"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Els científics han aprovat fa poc les primeres vacunes.",
+     "w": "ESTAT",
+     "p": "Les primeres vacunes han ___ fa poc pels científics."
+    }
+   ],
+   [
+    "Fes servir una mosquitera, o els mosquits et picaran. → Els mosquits et picaran, ___ una mosquitera.",
+    [
+     "tret que facis servir",
+     "tret que utilitzis",
+     "tret que usis"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Fes servir una mosquitera, o els mosquits et picaran.",
+     "w": "TRET",
+     "p": "Els mosquits et picaran, ___ una mosquitera."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El animal más mortal de la Tierra",
+   "sub": "Por qué el mosquito es más peligroso que el tiburón",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "mosquito",
+    "sangre",
+    "tiburón",
+    "vacuna",
+    "piel",
+    "mosquitera"
+   ]
+  }
+ }
+}
