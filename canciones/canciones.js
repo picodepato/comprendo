@@ -84,8 +84,8 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&
 const both = () => { try { return L().both(); } catch (e) { return false; } };
 const lg = () => { try { return st().S.learn; } catch (e) { return "es"; } };
 const tl = (k, l, v) => { let s = (TX[l] || TX.es)[k] ?? TX.es[k] ?? k; for (const x in v || {}) s = s.split(`{${x}}`).join(v[x]); return s; };
-const T = (k, v) => { const S = st().S; return esc(tl(k, S.learn, v)) + (both() && S.know !== S.learn ? " · " + esc(tl(k, S.know, v)) : ""); };
-const TB = (k, v) => { const S = st().S; return esc(tl(k, S.learn, v)) + (both() && S.know !== S.learn ? `<span class="en">${esc(tl(k, S.know, v))}</span>` : ""); };
+const T = (k, v) => { const S = st().S; const a = tl(k, S.learn, v), b = tl(k, S.know, v); return esc(a) + (both() && S.know !== S.learn && b !== a ? " · " + esc(b) : ""); };
+const TB = (k, v) => { const S = st().S; const a = tl(k, S.learn, v), b = tl(k, S.know, v); return esc(a) + (both() && S.know !== S.learn && b !== a ? `<span class="en">${esc(b)}</span>` : ""); };
 /* botón con icono + texto (en el móvil solo el icono) */
 const IB = k => { const S = st().S, full = tl(k, S.learn), i = full.indexOf(" "), ic = full.slice(0, i), tx = full.slice(i + 1), tx2 = both() && S.know !== S.learn ? " · " + tl(k, S.know).replace(/^\S+\s/, "") : "";
   return `<span class="cnic" aria-hidden="true">${esc(ic)}</span><span class="cnlbl">${esc(tx + tx2)}</span>`; };

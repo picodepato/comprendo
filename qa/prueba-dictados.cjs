@@ -1,5 +1,5 @@
 // Comprueba la sección de dictados (dictados/dictados.js)
-// Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-dictados.js http://localhost:8765/index.html [/tmp/capturas]
+// Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-dictados.cjs http://localhost:8765/index.html [/tmp/capturas]
 const { chromium } = require('playwright');
 const BASE = process.argv[2] || 'http://localhost:8765/index.html', OUT = process.argv[3] || '/tmp/qa';
 const wait = ms => new Promise(r => setTimeout(r, ms));

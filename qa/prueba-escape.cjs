@@ -1,5 +1,5 @@
 // Prueba el escape room de clase (escape/escape.js + api/_escape.js) con 1 pizarra y 4 alumnos (3 en un equipo, 1 en otro).
-// Uso: node qa/servidor-prueba.mjs . 8790  y luego  NODE_PATH=/opt/node22/lib/node_modules node qa/prueba-escape.js http://localhost:8790/index.html [/tmp/capturas] [en|es|ca]
+// Uso: node qa/servidor-prueba.mjs . 8790  y luego  NODE_PATH=/opt/node22/lib/node_modules node qa/prueba-escape.cjs http://localhost:8790/index.html [/tmp/capturas] [en|es|ca]
 const { chromium } = require('playwright');
 const BASE = process.argv[2] || 'http://localhost:8790/index.html', OUT = process.argv[3] || '/tmp/qa-escape', LANG = process.argv[4] || 'en';
 const wait = ms => new Promise(r => setTimeout(r, ms));

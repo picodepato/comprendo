@@ -1,6 +1,6 @@
 /* Cuentas: invitado → crear cuenta llevando el progreso → otro dispositivo entra y lo ve → salir → copia (exportar/importar).
    Necesita la web con /api (servidor de prueba: node qa/servidor-prueba.mjs <carpeta-web+api> 8790).
-   Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-cuentas.js http://localhost:8790/index.html [http://localhost:8765/index.html sin servidor] */
+   Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-cuentas.cjs http://localhost:8790/index.html [http://localhost:8765/index.html sin servidor] */
 const { chromium } = require("playwright");
 const URL = process.argv[2], URL_SIN = process.argv[3];
 const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c) ERR.push(m); };

@@ -17,8 +17,8 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&
 const shuf = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const tl = (k, lang, v) => { let s = (TX?.[lang] || TX?.es || {})[k] ?? (TX?.es || {})[k] ?? k; for (const x in v || {}) s = s.split(`{${x}}`).join(v[x]); return s; };
 const both = () => { try { return L().both(); } catch (e) { return false; } };
-const T = (k, v) => { const {S} = st(); return esc(tl(k, S.learn, v)) + (both() ? " · " + esc(tl(k, S.know, v)) : ""); };
-const TB = (k, v) => { const {S} = st(); return esc(tl(k, S.learn, v)) + (both() ? `<span class="en" style="display:block">${esc(tl(k, S.know, v))}</span>` : ""); };
+const T = (k, v) => { const {S} = st(); const a = tl(k, S.learn, v), b = tl(k, S.know, v); return esc(a) + (both() && b !== a ? " · " + esc(b) : ""); };
+const TB = (k, v) => { const {S} = st(); const a = tl(k, S.learn, v), b = tl(k, S.know, v); return esc(a) + (both() && b !== a ? `<span class="en" style="display:block">${esc(b)}</span>` : ""); };
 const xp = d => { try { dispatchEvent(new CustomEvent("lya:xp", {detail: d})); } catch (e) {} };
 const say = w => { try { if (st().S.say) L().speak(w, 1); } catch (e) {} };
 const prog = () => { const {S} = st(); S.gram ||= {best: {}, plays: 0}; S.gram.best ||= {}; return S.gram; };
@@ -88,7 +88,7 @@ function fromSrc(arr, min) {
 }
 const TENSES = {es: {A1: ["pres"], A2: ["pres", "pret"], B1: ["pret", "imp", "fut", "pres"], B2: ["pret", "imp", "fut", "pres"]}, en: {A1: ["pres"], A2: ["pres", "past"], B1: ["past", "fut", "perf"], B2: ["past", "fut", "perf"]}};
 const tname = (t, lang) => tl(t === "pret" && (G.lvl === "B1" || G.lvl === "B2") ? "t_pret_b1" : "t_" + t, lang);
-const tLabel = t => { const {S} = st(); return esc(tname(t, S.learn)) + (both() ? ` · ${esc(tname(t, S.know))}` : ""); };
+const tLabel = t => { const {S} = st(); const a = tname(t, S.learn), b = tname(t, S.know); return esc(a) + (both() && b !== a ? ` · ${esc(b)}` : ""); };
 
 /* ---------- setup ---------- */
 function setup() {

@@ -53,7 +53,7 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Si YouTube no da los subtítulos (a los servidores de Vercel suele bloquearlos), el servidor busca la canción por el título del vídeo en **LRCLIB** (lrclib.net: letras sincronizadas, gratis y sin clave) y la usa con el vídeo. Botones «Antes / Después» para ajustar si la letra va adelantada o atrasada.
 - `GET /api/canciones?q=artista canción`: buscar la letra por su nombre (hasta 5 resultados). También se puede pegar la letra (texto, LRC o SRT).
 - Profes: «Mandar como deberes» guarda esa canción para su clase (`cancion:<id>`, caduca a los 180 días y se borra al quitar el deber). Es lo único que se guarda.
-- Prueba: `qa/prueba-canciones.js`.
+- Prueba: `qa/prueba-canciones.cjs`.
 
 ## Publicar
 1. Importar este repositorio en Vercel (Framework: Other, sin build).
@@ -62,7 +62,7 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 4. Redeploy. Comprobar que `/api/estado` dice `"db": true`.
 
 ## Probar en local
-`node qa/servidor-prueba.mjs <carpeta> 8790` (simula Vercel y la base de datos) y `qa/prueba-cuentas.js`.
+`node qa/servidor-prueba.mjs <carpeta> 8790` (simula Vercel y la base de datos) y `qa/prueba-cuentas.cjs`.
 
 ## Flashcards (fichas/)
 - En «Mi diccionario»: «Álbum de flashcards» (#fichas). Cada palabra puede tener su tarjeta con un dibujo, un emoji o una imagen de internet (pegar enlace, Pixabay o Wikimedia Commons). De internet solo se guarda el enlace.
@@ -71,7 +71,7 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - «Jugar»: repaso espaciado (1, 3, 7, 14, 30 y 60 días; la que fallas vuelve hoy), «¿Qué es?» (ves la imagen y escribes la palabra) y «Dibújalo» (dibujas la palabra; si ya tenía imagen, eliges la antigua o la nueva). Todo da XP.
 - Las tarjetas van en el progreso (`S.fc`). Los dibujos (≈2-8 KB) van aparte: en el aparato y, con cuenta, en `api/dibujos` (máx. 2000 por cuenta), así el progreso no crece.
 - **Pixabay**: crea una cuenta gratis en https://pixabay.com/api/docs/, copia tu clave y ponla en Vercel → Settings → Environment Variables → `PIXABAY_KEY`, y haz Redeploy. Sin clave, la web avisa de que Pixabay no está activado (enlace y Wikimedia funcionan igual). Las búsquedas usan «safesearch» y se guardan 24 h.
-- Prueba: `qa/prueba-fichas.js <url> [carpeta-capturas]` (con `servidor-prueba.mjs` prueba también la cuenta y otro dispositivo).
+- Prueba: `qa/prueba-fichas.cjs <url> [carpeta-capturas]` (con `servidor-prueba.mjs` prueba también la cuenta y otro dispositivo).
 
 ## Duelos en directo (duelo/)
 - Pestaña «⚔️ Duelo» (`#duelo`, sala en `#duelo-<código>`). Hace falta cuenta.
@@ -89,7 +89,7 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - 4 candados de preguntas (`R.q`) + 1 de «frases rotas» (`R.halves`) + candado final con los 5 números. Un fallo congela el candado 15 s y suma 30 s. Funciona con las 135 lecturas (es, en, ca). Sin IA: todo sale de la lectura, con la misma semilla en todos los móviles.
 - La pizarra enseña el código, los equipos, los candados abiertos y la clasificación. El profe puede quitar a alguien antes de empezar.
 - Servidor: `api/_escape.js` (módulo, no cuenta como función), montado en `api/propuestas?escape=1`. Claves `esc:<código>`, `esc:<código>:j` y `esc:<código>:e`, caducan a las 4 h. El GET del estado lleva caché de Vercel de 1 s: toda la clase comparte una lectura de Upstash por segundo.
-- Prueba: `qa/prueba-escape.js <url> [carpeta] [en|es|ca]` con `servidor-prueba.mjs` (1 pizarra y 4 alumnos).
+- Prueba: `qa/prueba-escape.cjs <url> [carpeta] [en|es|ca]` con `servidor-prueba.mjs` (1 pizarra y 4 alumnos).
 ## Concursos (concursos/)
 - Pestaña «🏆 Concursos»: preguntas tipo test para jugar en clase. La pregunta se ve en la pantalla grande (proyector) y cada alumno contesta desde su móvil; cuanto antes acierta, más puntos (500 por acertar + hasta 500 por rapidez + racha). Ranking entre preguntas y podio al final. También se puede jugar solo.
 - **Crear con IA**: la web da un prompt (con número de preguntas, idioma, nivel y notas) para copiar en cualquier IA (ChatGPT, Claude, Gemini…) junto con la foto de la página del libro o un texto. Lo que responde la IA se pega en «Pega aquí lo que te responda la IA» y salen las preguntas, que se pueden corregir en el editor. Formato en `concursos/formato.js` (TÍTULO / PREGUNTA / A) B) C) D) / CORRECTA / TIEMPO); acepta lo que suelen añadir las IA (negritas, bloques de código, «1.», «a)», ✅…).
