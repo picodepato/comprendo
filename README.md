@@ -73,3 +73,11 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - La pizarra enseña el código, los equipos, los candados abiertos y la clasificación. El profe puede quitar a alguien antes de empezar.
 - Servidor: `api/_escape.js` (módulo, no cuenta como función), montado en `api/propuestas?escape=1`. Claves `esc:<código>`, `esc:<código>:j` y `esc:<código>:e`, caducan a las 4 h. El GET del estado lleva caché de Vercel de 1 s: toda la clase comparte una lectura de Upstash por segundo.
 - Prueba: `qa/prueba-escape.js <url> [carpeta] [en|es|ca]` con `servidor-prueba.mjs` (1 pizarra y 4 alumnos).
+
+## Garabatos: dibuja y adivina en grupo (garabatos/)
+- En «Juegos» → «Garabatos» (#garabatos). Uno crea una sala (código de 6 cifras, enlace #garabatos-<código>, máx. 30) y los demás se unen con su nombre, sin cuenta.
+- Por turnos, al que dibuja le salen 3 palabras del idioma del curso y del nivel elegido (con su traducción) y elige una; los demás escriben lo que creen que es. Vale sin tildes o con artículo; «¡Casi!» si falla una letra. Pistas: se descubren letras al pasar el tiempo.
+- Puntos: acertar antes da más (100-500, +50 el primero); quien dibuja gana 60 por cada acierto. XP al acertar y al terminar. El anfitrión elige nivel, rondas, tiempo y, si quiere, sus propias palabras.
+- El dibujo se manda en tandas cada segundo y se vuelve a pintar poco a poco en los demás. El estado lo comparte la caché de Vercel durante 1 s (30 jugadores gastan casi como 2). Unos 300-400 comandos de Upstash por turno.
+- API dentro de `api/dibujos.js` (no gasta otra función): código en `api/_garabatos.js`, palabras en `api/_garabatos-palabras.js`.
+- Pruebas: `qa/prueba-garabatos-api.mjs` y `qa/prueba-garabatos.cjs` (3 navegadores a la vez).
