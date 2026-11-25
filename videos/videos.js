@@ -20,6 +20,14 @@ const STR = {
     seguro: "¿Borrar «{t}»? No se puede deshacer.", volver: "← Vídeos", e_noexiste: "Este vídeo no existe o se ha borrado.", e_red: "No hay conexión con el servidor. Inténtalo otra vez.",
     local: "Sin cuenta, tus vídeos se guardan solo en este aparato.",
     ed_url: "Enlace de YouTube", ed_cargar: "Cargar", ed_titulo: "Título", ed_aqui: "➕ Añadir pregunta aquí ({t})", ed_ayuda: "Pon el vídeo, páralo donde quieras preguntar y pulsa «Añadir pregunta aquí».",
+    ia: "✨ Proponer preguntas con IA", ia_sub: "La web saca lo que se dice en el vídeo (sus subtítulos, con el minuto de cada frase) y te da un prompt para cualquier IA (ChatGPT, Claude, Gemini, Copilot…). Pegas su respuesta y cada pregunta se pone justo después del momento en que el vídeo da la respuesta. Luego puedes cambiar lo que quieras.",
+    ia_novid: "Primero carga un vídeo de YouTube.", ia_buscando: "Buscando los subtítulos del vídeo…", ia_subs: "✓ Tenemos los subtítulos de YouTube ({n} frases, {l}).", ia_tr: "✓ Usando la transcripción que has pegado ({n} frases).",
+    ia_nosubs: "YouTube no nos da los subtítulos de este vídeo. Pégalos tú: en YouTube, debajo del vídeo, pulsa «…más» → «Mostrar transcripción», selecciona todo el texto (con los minutos) y pégalo aquí.",
+    ia_pegartr: "Pegar la transcripción a mano", ia_trph: "0:00\nHola a todos…\n0:04\nHoy vamos a ver…", ia_trusar: "Usar esta transcripción", ia_trmal: "No encuentro minutos (como 1:23) en lo que has pegado. Copia la transcripción con sus marcas de tiempo.",
+    ia_p1: "1. Copia este prompt", ia_p1b: "Pégalo en cualquier IA. Ya lleva todo lo que se dice en el vídeo con sus minutos.", ia_n: "Preguntas", ia_idioma: "Idioma de las preguntas", ia_mismo: "El del vídeo", ia_nivel: "Nivel (opcional)", ia_nivelej: "Por ejemplo: 2º ESO, A2",
+    ia_extra: "Algo más (opcional)", ia_extraej: "Por ejemplo: solo sobre las fechas", ia_copiar: "📋 Copiar el prompt", ia_copiado: "Copiado", ia_sintexto: "Primero hacen falta los subtítulos o la transcripción del vídeo.",
+    ia_p2: "2. Pega aquí lo que te responda la IA", ia_pegaej: "TÍTULO: …\n---\nMOMENTO: 1:23\nPREGUNTA: …\nA) …\nB) …\nC) …\nCORRECTA: A\n---", ia_poner: "✨ Poner las preguntas en el vídeo",
+    ia_puestas: "Se han puesto {n} preguntas en su momento. Revísalas abajo y pulsa «Guardar».", ia_sinmom: "{m} no traían MOMENTO y se han repartido por el vídeo: colócalas con «⏱ Ahora».", ia_nada: "No encuentro preguntas en lo que has pegado. Comprueba que has copiado toda la respuesta de la IA.",
     ed_momento: "Momento", ed_ahora: "⏱ Ahora", ed_ir: "▶ Ver", pregunta: "Pregunta {n}", textop: "Escribe la pregunta", respuesta: "Respuesta {l}", correcta: "Correcta", tiempo: "Tiempo (en directo)",
     seg: "{n} s", masr: "+ Respuesta", quitar: "Quitar la pregunta", guardar: "💾 Guardar", guardado: "Guardado.",
     e_url: "Ese enlace no es de un vídeo de YouTube.", e_titulo: "Ponle un título.", e_vacio: "Añade al menos una pregunta.", e_preg: "La pregunta {n} está incompleta: necesita texto, al menos 2 respuestas y la correcta marcada.",
@@ -45,6 +53,14 @@ const STR = {
     seguro: "Delete “{t}”? This can't be undone.", volver: "← Videos", e_noexiste: "This video doesn't exist or has been deleted.", e_red: "No connection to the server. Try again.",
     local: "Without an account, your videos are only saved on this device.",
     ed_url: "YouTube link", ed_cargar: "Load", ed_titulo: "Title", ed_aqui: "➕ Add a question here ({t})", ed_ayuda: "Play the video, pause where you want to ask and press “Add a question here”.",
+    ia: "✨ Suggest questions with AI", ia_sub: "The site gets what is said in the video (its subtitles, with the time of each sentence) and gives you a prompt for any AI (ChatGPT, Claude, Gemini, Copilot…). Paste its answer and each question is placed right after the video gives the answer. Then change anything you like.",
+    ia_novid: "Load a YouTube video first.", ia_buscando: "Looking for the video's subtitles…", ia_subs: "✓ We have the YouTube subtitles ({n} lines, {l}).", ia_tr: "✓ Using the transcript you pasted ({n} lines).",
+    ia_nosubs: "YouTube doesn't give us this video's subtitles. Paste them yourself: on YouTube, under the video, press “…more” → “Show transcript”, select all the text (with the times) and paste it here.",
+    ia_pegartr: "Paste the transcript by hand", ia_trph: "0:00\nHi everyone…\n0:04\nToday we're going to see…", ia_trusar: "Use this transcript", ia_trmal: "I can't find any times (like 1:23) in what you pasted. Copy the transcript with its timestamps.",
+    ia_p1: "1. Copy this prompt", ia_p1b: "Paste it into any AI. It already includes everything said in the video, with the times.", ia_n: "Questions", ia_idioma: "Language of the questions", ia_mismo: "The video's", ia_nivel: "Level (optional)", ia_nivelej: "For example: Year 8, A2",
+    ia_extra: "Anything else (optional)", ia_extraej: "For example: only about the dates", ia_copiar: "📋 Copy the prompt", ia_copiado: "Copied", ia_sintexto: "First we need the video's subtitles or transcript.",
+    ia_p2: "2. Paste the AI's answer here", ia_pegaej: "TÍTULO: …\n---\nMOMENTO: 1:23\nPREGUNTA: …\nA) …\nB) …\nC) …\nCORRECTA: A\n---", ia_poner: "✨ Put the questions in the video",
+    ia_puestas: "{n} questions have been placed at their time. Check them below and press “Save”.", ia_sinmom: "{m} had no MOMENTO and were spread across the video: place them with “⏱ Now”.", ia_nada: "I can't find any questions in what you pasted. Check you copied the AI's whole answer.",
     ed_momento: "Time", ed_ahora: "⏱ Now", ed_ir: "▶ See", pregunta: "Question {n}", textop: "Write the question", respuesta: "Answer {l}", correcta: "Correct", tiempo: "Time (live)",
     seg: "{n} s", masr: "+ Answer", quitar: "Remove the question", guardar: "💾 Save", guardado: "Saved.",
     e_url: "That isn't a YouTube video link.", e_titulo: "Give it a title.", e_vacio: "Add at least one question.", e_preg: "Question {n} is incomplete: it needs text, at least 2 answers and the correct one marked.",
@@ -70,6 +86,14 @@ const STR = {
     seguro: "Esborrar «{t}»? No es pot desfer.", volver: "← Vídeos", e_noexiste: "Aquest vídeo no existeix o s'ha esborrat.", e_red: "No hi ha connexió amb el servidor. Torna-ho a provar.",
     local: "Sense compte, els teus vídeos només es guarden en aquest aparell.",
     ed_url: "Enllaç de YouTube", ed_cargar: "Carregar", ed_titulo: "Títol", ed_aqui: "➕ Afegir una pregunta aquí ({t})", ed_ayuda: "Posa el vídeo, atura'l on vulguis preguntar i prem «Afegir una pregunta aquí».",
+    ia: "✨ Proposar preguntes amb IA", ia_sub: "La web treu el que es diu al vídeo (els subtítols, amb el minut de cada frase) i et dona un prompt per a qualsevol IA (ChatGPT, Claude, Gemini, Copilot…). Enganxes la resposta i cada pregunta es posa just després del moment en què el vídeo dona la resposta. Després pots canviar el que vulguis.",
+    ia_novid: "Primer carrega un vídeo de YouTube.", ia_buscando: "Buscant els subtítols del vídeo…", ia_subs: "✓ Tenim els subtítols de YouTube ({n} frases, {l}).", ia_tr: "✓ Fent servir la transcripció que has enganxat ({n} frases).",
+    ia_nosubs: "YouTube no ens dona els subtítols d'aquest vídeo. Enganxa'ls tu: a YouTube, sota el vídeo, prem «…més» → «Mostra la transcripció», selecciona tot el text (amb els minuts) i enganxa'l aquí.",
+    ia_pegartr: "Enganxar la transcripció a mà", ia_trph: "0:00\nHola a tothom…\n0:04\nAvui veurem…", ia_trusar: "Fer servir aquesta transcripció", ia_trmal: "No trobo minuts (com 1:23) en el que has enganxat. Copia la transcripció amb les marques de temps.",
+    ia_p1: "1. Copia aquest prompt", ia_p1b: "Enganxa'l a qualsevol IA. Ja porta tot el que es diu al vídeo amb els minuts.", ia_n: "Preguntes", ia_idioma: "Idioma de les preguntes", ia_mismo: "El del vídeo", ia_nivel: "Nivell (opcional)", ia_nivelej: "Per exemple: 2n d'ESO, A2",
+    ia_extra: "Alguna cosa més (opcional)", ia_extraej: "Per exemple: només sobre les dates", ia_copiar: "📋 Copiar el prompt", ia_copiado: "Copiat", ia_sintexto: "Primer calen els subtítols o la transcripció del vídeo.",
+    ia_p2: "2. Enganxa aquí el que et respongui la IA", ia_pegaej: "TÍTULO: …\n---\nMOMENTO: 1:23\nPREGUNTA: …\nA) …\nB) …\nC) …\nCORRECTA: A\n---", ia_poner: "✨ Posar les preguntes al vídeo",
+    ia_puestas: "S'han posat {n} preguntes al seu moment. Revisa-les a sota i prem «Guardar».", ia_sinmom: "{m} no portaven MOMENTO i s'han repartit pel vídeo: col·loca-les amb «⏱ Ara».", ia_nada: "No trobo preguntes en el que has enganxat. Comprova que has copiat tota la resposta de la IA.",
     ed_momento: "Moment", ed_ahora: "⏱ Ara", ed_ir: "▶ Veure", pregunta: "Pregunta {n}", textop: "Escriu la pregunta", respuesta: "Resposta {l}", correcta: "Correcta", tiempo: "Temps (en directe)",
     seg: "{n} s", masr: "+ Resposta", quitar: "Treure la pregunta", guardar: "💾 Guardar", guardado: "Guardat.",
     e_url: "Aquest enllaç no és d'un vídeo de YouTube.", e_titulo: "Posa-li un títol.", e_vacio: "Afegeix almenys una pregunta.", e_preg: "La pregunta {n} no està completa: necessita text, almenys 2 respostes i la correcta marcada.",
@@ -212,15 +236,18 @@ async function editor(app, id) {
   app.innerHTML = `<section class="wrap cc vd vd-ed">${cab("✏️ " + (E.titulo ? esc(E.titulo) : T("crear").replace(/^✏️\s*/, "")))}
     <form class="vd-urlf" id="vd-urlf"><label>${T("ed_url")}<input name="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://www.youtube.com/watch?v=…" value="${E.v ? "https://youtu.be/" + esc(E.v) : ""}"></label><button class="btn">${T("ed_cargar")}</button></form>
     <label class="cc-lab">${T("ed_titulo")}<input class="cc-tit" id="vd-tit" maxlength="80" value="${esc(E.titulo)}"></label>
+    <details class="cc-paso vd-ia" id="vd-ia"${IA.abierto ? " open" : ""}><summary>${T("ia")}</summary><div id="vd-iac"></div></details>
     <div class="vd-edcol"><div class="vd-edvid"><div class="vd-stage"><div id="vd-yt"></div></div>
       <p class="cc-small">${T("ed_ayuda")}</p><button class="btn main cc-big" id="vd-aqui" type="button"${E.v ? "" : " disabled"}>${T("ed_aqui", {t: "0:00"})}</button></div>
     <div class="vd-qs" id="vd-qs"></div></div>
     <div class="cc-guardar"><p class="cc-msg" id="vd-msg" hidden></p><button class="btn main cc-big" data-vd="guardar">${T("guardar")}</button></div>
   </section>`;
   app.querySelector("#vd-tit").oninput = e => { E.titulo = e.target.value; };
+  app.querySelector("#vd-ia").addEventListener("toggle", e => { IA.abierto = e.target.open; if (IA.abierto) pintarIA(); });
+  if (IA.abierto) pintarIA();
   app.querySelector("#vd-urlf").onsubmit = e => {
     e.preventDefault(); const v = ytId(e.target.url.value); if (!v) return aviso(t("e_url"), true);
-    if (v === E.v && V.player) return; E.v = v; ponerVideo(); app.querySelector("#vd-aqui").disabled = false;
+    if (v === E.v && V.player) return; E.v = v; ponerVideo(); app.querySelector("#vd-aqui").disabled = false; if (IA.abierto) pintarIA();
     if (!E.titulo) fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${v}&format=json`).then(r => r.json()).then(j => { if (!E.titulo && j.title) { E.titulo = j.title.slice(0, 80); const ti = $("#vd-tit"); if (ti) ti.value = E.titulo; } }).catch(() => {});
   };
   app.querySelector("#vd-aqui").onclick = () => {
@@ -232,6 +259,73 @@ async function editor(app, id) {
   pintarPreguntas();
   clearInterval(reloj); reloj = setInterval(() => { const b = $("#vd-aqui"); if (!b) return clearInterval(reloj); if (V.player) b.textContent = t("ed_aqui", {t: mmss(ahora(V.player))}); }, 400);
 }
+/* ---------- ✨ proponer preguntas con IA (videos/ia.js): subtítulos → prompt → respuesta pegada → preguntas en su segundo ---------- */
+const IA = {abierto: false, v: "", subs: null, estado: "", fuente: "", idioma: "", tr: "", pegado: "", op: {n: 8, idioma: "", nivel: "", extra: ""}};
+const VIA = () => window.LYAVideosIA;
+const IDIOMAS_IA = ["", "es", "en", "ca", "fr", "de", "it", "pt"], NOM_IA = {es: "Español", en: "English", ca: "Català", fr: "Français", de: "Deutsch", it: "Italiano", pt: "Português"};
+function avisoIA(txt, mal) { const el = $("#vd-iamsg"); if (!el) return; el.textContent = txt; el.className = "cc-msg" + (mal ? " mal" : " bien"); el.hidden = !txt; }
+const promptIA = () => IA.subs && IA.subs.length ? VIA().prompt({...IA.op, titulo: E.titulo, texto: VIA().textoPrompt(IA.subs)}) : "";
+async function subsIA() {
+  const v = E.v; IA.v = v; IA.subs = null; IA.estado = "cargando"; IA.fuente = ""; IA.tr = "";
+  const r = await api(`canciones?v=${encodeURIComponent(v)}&lang=${IA.op.idioma || lang()}&yt=1`).catch(() => null);
+  if (IA.v !== v) return;
+  const ls = r && r.ok && Array.isArray(r.j.lineas) ? r.j.lineas.filter(l => l && l.x) : [];
+  if (ls.length >= 2) { IA.subs = ls.map(l => ({t: +l.t || 0, d: +l.d || 0, x: String(l.x)})); IA.estado = "ok"; IA.fuente = "yt"; IA.idioma = r.j.idioma || ""; }
+  else IA.estado = "no";
+  if (IA.abierto) pintarIA();
+}
+function pintarIA() {
+  const c = $("#vd-iac"); if (!c) return;
+  if (!E.v) { c.innerHTML = `<p class="cc-small">${T("ia_sub")}</p><p class="cc-msg mal">${T("ia_novid")}</p>`; return; }
+  if (IA.v !== E.v) { subsIA(); }
+  const est = IA.estado === "cargando" ? `<p class="cc-small vd-iaest">${T("ia_buscando")}</p>`
+    : IA.subs ? `<p class="cc-msg bien vd-iaest">${IA.fuente === "yt" ? T("ia_subs", {n: IA.subs.length, l: NOM_IA[IA.idioma] || IA.idioma || "?"}) : T("ia_tr", {n: IA.subs.length})}</p>`
+    : `<p class="cc-msg mal vd-iaest">${T("ia_nosubs")}</p>`;
+  const o = IA.op, pr = promptIA();
+  c.innerHTML = `<p class="cc-small">${T("ia_sub")}</p>${est}
+    <details class="vd-iatr"${IA.estado === "no" && IA.fuente !== "tr" ? " open" : ""}><summary>${T("ia_pegartr")}</summary>
+      <textarea class="cc-pega" id="vd-iatr" rows="6" placeholder="${esc(t("ia_trph"))}">${esc(IA.tr)}</textarea>
+      <button type="button" class="btn" data-vd="iatr">${T("ia_trusar")}</button></details>
+    <h3>${T("ia_p1")}</h3><p class="cc-small">${T("ia_p1b")}</p>
+    <div class="cc-ops">
+      <label>${T("ia_n")}<select data-ia="n">${[5, 8, 10, 12, 15].map(n => `<option${n === o.n ? " selected" : ""}>${n}</option>`).join("")}</select></label>
+      <label>${T("ia_idioma")}<select data-ia="idioma">${IDIOMAS_IA.map(i => `<option value="${i}"${i === o.idioma ? " selected" : ""}>${i ? NOM_IA[i] : T("ia_mismo")}</option>`).join("")}</select></label>
+      <label>${T("ia_nivel")}<input data-ia="nivel" maxlength="40" value="${esc(o.nivel)}" placeholder="${T("ia_nivelej")}"></label>
+      <label class="cc-ancho">${T("ia_extra")}<input data-ia="extra" maxlength="120" value="${esc(o.extra)}" placeholder="${T("ia_extraej")}"></label></div>
+    <textarea class="cc-prompt" id="vd-iaprompt" readonly rows="7" placeholder="${T("ia_sintexto")}">${esc(pr)}</textarea>
+    <button type="button" class="btn main" data-vd="iacopiar"${pr ? "" : " disabled"}>${T("ia_copiar")}</button> <span class="cc-ok" id="vd-iacop" hidden>✓ ${T("ia_copiado")}</span>
+    <h3>${T("ia_p2")}</h3>
+    <textarea class="cc-pega" id="vd-iapega" rows="8" placeholder="${esc(t("ia_pegaej"))}">${esc(IA.pegado)}</textarea>
+    <p class="cc-msg" id="vd-iamsg" hidden></p>
+    <button type="button" class="btn main" data-vd="iaponer">${T("ia_poner")}</button>`;
+  c.querySelectorAll("[data-ia]").forEach(el => el.addEventListener(el.tagName === "INPUT" ? "input" : "change", () => {
+    const k = el.dataset.ia; o[k] = k === "n" ? +el.value : el.value;
+    const p = $("#vd-iaprompt"); if (p) p.value = promptIA();
+  }));
+  c.querySelector("#vd-iapega").addEventListener("input", e => { IA.pegado = e.target.value; });
+  c.querySelector("#vd-iatr").addEventListener("input", e => { IA.tr = e.target.value; });
+}
+function usarTranscripcion() {
+  const L = VIA().transcripcion(IA.tr || "");
+  if (L.length < 2) return avisoIA(t("ia_trmal"), true);
+  IA.subs = L; IA.estado = "ok"; IA.fuente = "tr"; pintarIA();
+}
+function ponerIA() {
+  let durac = 0; try { durac = V.player ? +V.player.getDuration() || 0 : 0; } catch (e) {}
+  const r = VIA().leer(IA.pegado || "", IA.subs || [], durac);
+  if (!r.preguntas.length) return avisoIA(t("ia_nada"), true);
+  E.preguntas.push(...r.preguntas.map(q => ({t: q.t, p: q.p, o: q.o, c: q.c, s: q.s || 20})));
+  E.preguntas.sort((a, b) => a.t - b.t);
+  if (!E.titulo && r.titulo) { E.titulo = r.titulo.slice(0, 80); const ti = $("#vd-tit"); if (ti) ti.value = E.titulo; }
+  pintarPreguntas();
+  avisoIA(t("ia_puestas", {n: r.preguntas.length}) + (r.sinMomento ? " " + t("ia_sinmom", {m: r.sinMomento}) : ""), false);
+  IA.pegado = ""; const pg = $("#vd-iapega"); if (pg) pg.value = "";
+}
+async function copiarTxt(txt) {
+  try { await navigator.clipboard.writeText(txt); return true; }
+  catch (e) { const ta = document.createElement("textarea"); ta.value = txt; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e2) {} ta.remove(); return ok; }
+}
+
 function ponerVideo() {
   try { V.player && V.player.destroy(); } catch (e) {}
   V.player = null; const st0 = $(".vd-stage"); if (st0) st0.innerHTML = `<div id="vd-yt"></div>`;
@@ -654,6 +748,9 @@ document.addEventListener("click", async ev => {
   const b = ev.target.closest("[data-vd]"); if (!b || !V.app || !V.app.contains(b)) return;
   const a = b.dataset.vd, i = +b.dataset.i;
   if (a === "guardar") guardar();
+  else if (a === "iatr") usarTranscripcion();
+  else if (a === "iaponer") ponerIA();
+  else if (a === "iacopiar") { const p = $("#vd-iaprompt"); if (await copiarTxt(p.value)) { const ok = $("#vd-iacop"); ok.hidden = false; setTimeout(() => { ok.hidden = true; }, 2500); } else p.select(); }
   else if (a === "masr") { E.preguntas[i].o.push(""); pintarPreguntas(); }
   else if (a === "menosr") { const q = E.preguntas[i]; q.o.pop(); if (q.c >= q.o.length) q.c = 0; pintarPreguntas(); }
   else if (a === "quitarp") { E.preguntas.splice(i, 1); pintarPreguntas(); }

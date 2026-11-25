@@ -108,6 +108,7 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 
 ## Vídeos con preguntas (videos/), Actividades creadas y Deberes
 - Pestaña «📺 Vídeos»: un vídeo de YouTube que se para en ciertos momentos y no sigue hasta contestar. Preparados por nosotros (`videos/preparados.js`, con los tiempos sacados de los subtítulos del vídeo) y creados por los profes: pegar el enlace, ir al momento y «➕ Añadir pregunta aquí». Se guardan con los concursos (`concurso:<id>` con `tipo: "video"`, `v` = id de YouTube y `t` = segundo de cada pregunta).
+- **✨ Proponer preguntas con IA** (en el editor, sin API de IA, como en los concursos; `videos/ia.js`): la web pide los subtítulos del vídeo con sus tiempos (`api/canciones?v=…&yt=1`, solo YouTube, sin buscar letras de canciones). Si YouTube no los da, el profe pega la transcripción («…más» → «Mostrar transcripción»; también vale SRT/VTT). Con ella arma un prompt para copiar en cualquier IA, que responde con `MOMENTO: m:ss` en cada pregunta. Al pegar la respuesta, cada pregunta se pone al final de la frase de los subtítulos donde se dice la respuesta, y el profe la puede cambiar. Las que vienen sin MOMENTO se reparten por el vídeo y se avisa.
 - A solas (`#video-solo-<id>`): se para en cada pregunta (si alguien adelanta el vídeo, la pregunta sale igual). Resultado en `S.g.ac[id]`.
 - En directo, con la misma sala que los concursos (código de 6 cifras, `api/concursos`). Antes de lanzar, el profe elige:
   - 📺 **Proyección**: el vídeo en la pantalla grande; a los móviles solo les sale la pregunta cuando el vídeo se para (puntos por rapidez, resultado y ranking, y sigue el vídeo).
@@ -118,7 +119,7 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - **Deberes del alumno**: caja en la portada y página `#deberes` (pestaña «📚 Deberes»). Tocar un deber abre directamente la actividad (lectura, dictado, canción, concurso, vídeo; doblaje en `#doblaje-e-<id>`).
 - Deberes de actividades en `admin:deberes`: `{lectura: "actividad", actividad, tipo: quiz|video|doblaje, titulo, directo}`. El profe ve quién lo ha hecho con `S.g.ac`.
 - Código compartido en `actividades.js` (mandar como deberes, avisar a la clase, guardar el resultado, entrar solo en la sala).
-- Pruebas: `qa/prueba-videos-api.mjs` (API) y `qa/prueba-videos.cjs` (navegador, con un YouTube simulado: crear, mandar, entrar solo, individual, proyección, a solas y Actividades creadas).
+- Pruebas: `qa/prueba-videos-api.mjs` (API), `qa/prueba-videos-ia.mjs` (leer transcripciones y respuestas de la IA) y `qa/prueba-videos.cjs` (navegador, con un YouTube simulado: crear, mandar, entrar solo, individual, proyección, a solas, Actividades creadas y proponer con IA).
 
 ## Valencià C1 (lectura de fitxa)
 - «La cuina del rap» (`content/ca/lecturas/va-rap-c1.json`), tema «Valencià» (`valencia` al catàleg), nivell **C1**, només al curs de català. Font: J. M. Campos, *La cuina del rap* (adaptació), Llengua catalana i Literatura 1r ESO, Grup Promotor / Santillana (material fotocopiable).

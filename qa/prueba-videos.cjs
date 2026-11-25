@@ -62,7 +62,7 @@ const api = async (ruta, datos, token) => { const r = await fetch(BASE + '/api/'
   const al = await pagina({usuario: Al.usuario, token: Al.token, rol: 'alumno'}, {...devices['iPhone 13']});
   await al.goto(BASE + '/#deberes'); await al.waitForSelector('.deb-pag li');
   ok(/Prueba de vídeo/.test(await al.locator('.deb-pag').textContent()), 'el alumno ve el deber en «Deberes»');
-  ok(await al.locator('a[href="#deberes"]').count() >= 1, 'pestaña Deberes');
+  await al.goto(BASE + '/#mizona'); await al.waitForSelector('a[href="#deberes"]'); ok(true, 'Deberes en «Mi zona»'); await al.goto(BASE + '/#deberes'); await al.waitForSelector('.deb-pag li');
   await shot(al, '04-deberes-alumno');
   /* profe abre la sala avisando a la clase → el alumno entra solo */
   await h.selectOption('#ac-grupo', cl.id); await h.click('[data-vd=directo]');
@@ -111,6 +111,39 @@ const api = async (ruta, datos, token) => { const r = await fetch(BASE + '/api/'
   await h.goto(BASE + '/#inicio'); await h.waitForSelector('#app');
   await h.evaluate(() => window.LYACuentas.panel('actividades')); await h.waitForSelector('#admact .ctali');
   ok(/Prueba de vídeo/.test(await h.locator('#admact').textContent()), 'Actividades creadas lista el vídeo'); await shot(h, '15-actividades-creadas');
+  /* ---------- ✨ proponer preguntas con IA ---------- */
+  const ia = await pagina({usuario: P.usuario, token: P.token, rol: 'profe'});
+  let subsYT = null;  /* lo que «devuelve YouTube»: null = no da los subtítulos */
+  await ia.route(/\/api\/canciones\?v=/, r => { ok(/yt=1/.test(r.request().url()), 'pide solo los subtítulos de YouTube (yt=1)');
+    r.fulfill(subsYT ? {contentType: 'application/json', body: JSON.stringify({v: 'x', idioma: 'en', lineas: subsYT})} : {status: 404, contentType: 'application/json', body: '{"error":"sin_subtitulos"}'}); });
+  await ia.goto(BASE + '/#videos-editar'); await ia.waitForSelector('#vd-ia');
+  await ia.click('#vd-ia summary'); await ia.waitForSelector('#vd-iac p'); ok(/carga un vídeo/i.test(await ia.locator('#vd-iac').textContent()), 'IA: primero hay que cargar el vídeo');
+  await ia.fill('#vd-urlf input', 'https://youtu.be/aaaaaaaaaaa'); await ia.click('#vd-urlf button');
+  await ia.waitForSelector('#vd-iatr'); await ia.waitForFunction(() => /no nos da/.test(document.querySelector('.vd-iaest').textContent));
+  ok(await ia.locator('[data-vd=iacopiar]').isDisabled(), 'sin subtítulos no hay prompt'); ok(await ia.locator('.vd-iatr[open]').count() === 1, 'se abre «Pegar la transcripción a mano»');
+  await ia.fill('#vd-iatr', 'transcripción mala'); await ia.click('[data-vd=iatr]'); ok(/No encuentro minutos/.test(await ia.locator('#vd-iamsg').textContent()), 'transcripción sin tiempos: aviso');
+  await ia.fill('#vd-iatr', '0:00\nHello everyone\n0:05\nthe water cycle starts in the ocean\n0:21\nwater vapor condenses into clouds\n0:26\nand then it rains');
+  await ia.click('[data-vd=iatr]'); await ia.waitForFunction(() => /transcripción que has pegado \(4/.test(document.querySelector('.vd-iaest').textContent));
+  const pr = await ia.locator('#vd-iaprompt').inputValue(); ok(/\[0:21\] water vapor condenses into clouds/.test(pr) && /Crea 8 preguntas/.test(pr), 'el prompt lleva la transcripción con sus minutos');
+  await ia.selectOption('[data-ia=n]', '5'); await ia.selectOption('[data-ia=idioma]', 'es'); await ia.fill('[data-ia=nivel]', '1º ESO');
+  const pr2 = await ia.locator('#vd-iaprompt').inputValue(); ok(/Crea 5 preguntas/.test(pr2) && /en español/.test(pr2) && /1º ESO/.test(pr2), 'las opciones cambian el prompt');
+  await ia.click('[data-vd=iacopiar]'); await ia.waitForSelector('#vd-iacop:not([hidden])'); ok(true, 'copiar el prompt');
+  await ia.fill('#vd-iapega', 'Aquí tienes:\n```\nTÍTULO: El ciclo del agua\n---\nMOMENTO: 0:21\nPREGUNTA: ¿Qué forman las nubes?\nA) El vapor que se condensa\nB) La sal\nC) El viento\nCORRECTA: A\n---\nMOMENTO: 0:05\nPREGUNTA: ¿Dónde empieza?\nA) En la montaña\nB) En el océano\nCORRECTA: B\n---\n```');
+  await ia.click('[data-vd=iaponer]');
+  const qa = ia.locator('#vd-qs fieldset'); await ia.waitForFunction(() => document.querySelectorAll('#vd-qs fieldset').length === 2);
+  ok(await qa.nth(0).locator('.vd-t').inputValue() === '0:13' && await qa.nth(1).locator('.vd-t').inputValue() === '0:26', 'cada pregunta al acabar su frase (0:05→0:13, 0:21→0:26)');
+  ok(await qa.nth(0).locator('textarea').inputValue() === '¿Dónde empieza?' && await qa.nth(0).locator('[data-e=c][data-j="1"]').isChecked(), 'pregunta y correcta bien puestas');
+  ok(await ia.locator('#vd-tit').inputValue() === 'El ciclo del agua', 'pone el título');
+  ok(/Se han puesto 2 preguntas/.test(await ia.locator('#vd-iamsg').textContent()), 'aviso: 2 preguntas puestas'); await shot(ia, '16-ia-editor');
+  await qa.nth(1).locator('textarea').fill('¿Qué forma las nubes?'); ok(await qa.count() === 2, 'se pueden editar');
+  /* con los subtítulos de YouTube */
+  subsYT = [{t: 0, d: 4, x: 'Hi'}, {t: 10, d: 5, x: 'Plants give off water'}, {t: 40, d: 3, x: 'it is called transpiration'}];
+  await ia.fill('#vd-urlf input', 'https://youtu.be/bbbbbbbbbbb'); await ia.click('#vd-urlf button');
+  await ia.waitForFunction(() => /subtítulos de YouTube \(3 frases, English\)/.test(document.querySelector('.vd-iaest')?.textContent || ''));
+  ok(/\[0:40\] it is called transpiration/.test(await ia.locator('#vd-iaprompt').inputValue()) && await ia.locator('[data-vd=iacopiar]').isEnabled(), 'con subtítulos de YouTube el prompt sale solo');
+  await ia.fill('#vd-iapega', 'PREGUNTA: ¿Qué es?\nA) Transpiración\nB) Lluvia\nCORRECTA: A'); await ia.click('[data-vd=iaponer]');
+  await ia.waitForFunction(() => document.querySelectorAll('#vd-qs fieldset').length === 3);
+  ok(/no traían MOMENTO/.test(await ia.locator('#vd-iamsg').textContent()), 'sin MOMENTO: avisa'); await shot(ia, '17-ia-youtube');
   ok(!errs.length, 'sin errores de JavaScript' + (errs.length ? ': ' + errs.join(' | ') : ''));
   await b.close();
   console.log(fallos.length ? `\n${fallos.length} fallos` : '\nTodo bien');
