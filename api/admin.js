@@ -15,7 +15,8 @@ function resumen(u, d, p, grupo) {
     estrellas: fin.reduce((n, id) => n + (rd[id].best || 0), 0), tres: fin.filter(id => rd[id].best === 3).length,
     cromos: Object.keys(g.album || {}).length, medallas: Object.keys(g.medals || {}).length, palabras: (s.dict || []).length,
     lecturas: Object.fromEntries([...fin.map(id => [id, rd[id].best || 0]), ...Object.entries(g.dc || {}).map(([k, v]) => ["dictado-" + k, (v && v.best) || 0])]),  /* S.g.dc[lectura] = dictados */
-    canciones: Object.fromEntries(Object.entries(g.cn || {}).map(([k, v]) => [k, (v && v.best) || 0])) };  /* S.g.cn[cancion] = {n, best, bp, last} (canciones de YouTube) */
+    canciones: Object.fromEntries(Object.entries(g.cn || {}).map(([k, v]) => [k, (v && v.best) || 0])),  /* S.g.cn[cancion] = {n, best, bp, last} (canciones de YouTube) */
+    actividades: Object.fromEntries(Object.entries(g.ac || {}).map(([k, v]) => [k, (v && v.best) || 0])) };  /* S.g.ac[actividad] = {n, best, bp, last} (concursos y vídeos con preguntas) */
 }
 const leer = x => { try { return JSON.parse(x || "null") || {}; } catch (e) { return {}; } };
 /* qué ve cada uno: el admin todo; un profe sus clases y los alumnos que están en ellas */
@@ -71,6 +72,17 @@ async function accion(b, yo) {
       await guardarJSON("admin:grupos", G); return [200, {}];
     }
     case "deber_crear": {
+      if (b.actividad) {
+        /* una actividad creada (concurso o vídeo con preguntas, propio o de los preparados «p-…»): a solas en casa o en clase en directo */
+        const aid = String(b.actividad), limite = String(b.limite || "");
+        if (!/^([a-f0-9]{12}|p-[a-z0-9-]{1,30})$/.test(aid) || !/^\d{4}-\d{2}-\d{2}$/.test(limite)) return [400, "datos_no_validos"];
+        let tipo = ["quiz", "video", "doblaje"].includes(b.tipo) ? b.tipo : "quiz", titulo = String(b.titulo || "").slice(0, 80);
+        if (!aid.startsWith("p-")) { const c = leer(await redis("GET", "concurso:" + aid)); if (!c.titulo) return [404, "no_existe"]; tipo = c.tipo === "video" ? "video" : "quiz"; titulo = c.titulo; }
+        if (!yo.admin && !A.grupos.length) return [400, "sin_clases"];
+        const D = await leerJSON("admin:deberes", []);
+        D.push({ id: nuevoId(), lectura: "actividad", actividad: aid, tipo, titulo, directo: !!b.directo, grupo: b.grupo && G.grupos[b.grupo] ? b.grupo : null, profe: yo.admin ? null : yo.usuario, limite, nota: String(b.nota || "").slice(0, 200), creado: Date.now() });
+        await guardarJSON("admin:deberes", D); return [200, {}];
+      }
       const lectura = String(b.lectura || ""), limite = String(b.limite || "");
       if (!/^[a-z0-9-]{3,40}$/.test(lectura) || !/^\d{4}-\d{2}-\d{2}$/.test(limite)) return [400, "datos_no_validos"];
       const D = await leerJSON("admin:deberes", []);
@@ -148,7 +160,7 @@ export default (req, res) => seguro(res, async () => {
   const misGrupos = Object.fromEntries(A.grupos.map(id => [id, { ...G.grupos[id], alumnos: Object.keys(G.miembros).filter(k => G.miembros[k] === id).length }]));
   const deberes = (await leerJSON("admin:deberes", [])).filter(d => yo.admin || d.profe === yo.usuario).map(d => {
     const para = alumnos.filter(x => d.grupo ? x.grupo === d.grupo : !d.profe || (x.grupo && (G.grupos[x.grupo] || {}).profe === d.profe)).map(x => x.usuario);
-    return { ...d, alumnos: para.map(u => { const m = d.cancion ? porU[u].canciones : porU[u].lecturas, k = d.cancion || d.lectura; return { usuario: u, hecho: m[k] !== undefined, estrellas: m[k] || 0 }; }) };
+    return { ...d, alumnos: para.map(u => { const m = d.actividad ? porU[u].actividades : d.cancion ? porU[u].canciones : porU[u].lecturas, k = d.actividad || d.cancion || d.lectura; return { usuario: u, hecho: m[k] !== undefined, estrellas: m[k] || 0 }; }) };
   });
   const base = { soy: yo, usuarios, grupos: misGrupos, deberes, fallos: fallos(lista.filter(x => (x.d.rol || "alumno") !== "profe")), enviados: await leerJSON("enviados:" + yo.usuario, []) };
   if (!yo.admin) return responder(res, 200, { ...base, propuestas: [], votos: {}, temasExtra: [] });

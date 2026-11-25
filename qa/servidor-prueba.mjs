@@ -22,6 +22,7 @@ http.createServer((q, r) => { let b = ""; q.on("data", c => b += c); q.on("end",
   else if (c === "LREM") { const l = vivo(k) ? kv.get(k) : []; const i = l.indexOf(a[3]); if (i >= 0) l.splice(i, 1); res = i >= 0 ? 1 : 0; }
   else if (c === "HSET") { const h = vivo(k) ? kv.get(k) : new Map(); kv.set(k, h); let n = 0; for (let i = 2; i < a.length; i += 2) { if (!h.has(a[i])) n++; h.set(a[i], a[i + 1]); } res = n; }
   else if (c === "HSETNX") { const h = vivo(k) ? kv.get(k) : new Map(); kv.set(k, h); if (h.has(a[2])) res = 0; else { h.set(a[2], a[3]); res = 1; } }
+  else if (c === "HGET") { res = vivo(k) && kv.get(k).has(a[2]) ? kv.get(k).get(a[2]) : null; }
   else if (c === "HGETALL") { res = vivo(k) ? [...kv.get(k)].flat() : []; }
   else if (c === "HLEN") { res = vivo(k) ? kv.get(k).size : 0; }
   else if (c === "HEXISTS") { res = vivo(k) && kv.get(k).has(a[2]) ? 1 : 0; }
