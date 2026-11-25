@@ -41,8 +41,8 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   /* ---------- invitado, ordenador ---------- */
   const P = await nueva();
   await P.goto(URL + "#canciones"); await listo(P); await P.waitForSelector("#cnform");
-  ok(/Canciones/.test(await P.textContent("#tabs")), "pestaña «Canciones» en el menú");
-  ok(await P.getAttribute('#tabs a[href="#canciones"]', "aria-current") === "page", "la pestaña se marca");
+  ok(await P.locator('#tabs a[href="#aprender"]').count() === 1, "apartado «Aprender» en el menú");
+  ok(await P.getAttribute('#tabs a[href="#aprender"]', "aria-current") === "page", "se marca «Aprender»");
   await P.fill("#cnurl", "no es un enlace"); await P.click("#cnform [type=submit]");
   ok(/no parece de YouTube/.test(await P.textContent(".cnerr")), "enlace malo: avisa");
   await P.click('[data-cn="pref"][data-n="2"]');

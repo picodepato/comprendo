@@ -17,6 +17,17 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Sin cuenta, la web funciona como invitado y guarda en el navegador.
 - «Copia de mi progreso» (botón de la cuenta o 💾): exportar e importar el progreso como texto.
 
+## Navegación (nav/)
+- 5 apartados en una barra (abajo en el móvil, como una app; arriba en el ordenador). Las etiquetas salen en el idioma que el alumno ya sabe.
+  - 🏠 **Inicio** (`#inicio`): deberes pendientes (al tocarlos se abre la actividad), «Sigue donde lo dejaste» (última lectura y última actividad) y la semana (racha, XP de la semana en `S.g.wk`, nivel).
+  - 📖 **Aprender** (`#aprender`, también `#lecturas` y `#nivel-a1…b2`): dictados, cámara, canciones, vídeos con preguntas, doblaje, pronunciación y las lecturas por nivel.
+  - 🎮 **Practicar** (`#practicar`, igual que `#juegos`): vocabulario (diccionario y flashcards), gramática y verbos, y mini-juegos.
+  - 🏫 **En grupo** (`#grupo`): «Entrar con código» (busca el código en concursos, vídeos en directo, duelos, escape room y Garabatos) y crear sala.
+  - 📚 **Mi zona** (`#mizona`): diccionario, palabras de canciones, flashcards, mascota, logros y progreso, historial de deberes.
+  - 👩‍🏫 **Profe** (`#profe`, solo profes y admin): mis clases, crear actividad, actividades creadas, deberes, resultados, fallos y mensajes (abre el panel del profe en la pestaña que toca).
+- Arriba siempre: 🔍 buscador de palabras (también con la tecla «/»; las palabras añadidas salen en el diccionario como «🔍 Palabras buscadas»), 🌐 idioma, 🔥 racha y la cuenta.
+- Las direcciones antiguas (`#juegos`, `#duelo`, `#canciones`, `#deberes`…) siguen funcionando; cada pantalla marca su apartado.
+
 ## Dictados
 - Pestaña «✍️ Dictados» (`dictados/`): la web lee una frase de una lectura (voz del navegador) y el alumno la escribe. Corrección palabra a palabra sin IA: bien, tilde, mayúscula, mal escrita (letras marcadas), falta, sobra y puntuación. Botones Escuchar, Más lento y Por partes. 5 frases por dictado, XP por frase y premio al terminar.
 - Progreso en `S.g.dc[lectura]` (se guarda con la cuenta). Si el alumno dijo que no puede escuchar, explica que hace falta sonido.
@@ -116,3 +127,14 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - `tr.es.text`: traducció de cada paràgraf (botó «Mostra la traducció»). `font`: font citada sota el text.
 - «Juga en grup» a cada lectura: duel, escape room i `#concursos-lectura-<id>` (crea un concurs amb les preguntes de la lectura).
 - Generador: `/mnt/project-files/build/valencia/rap_c1.py` i `merge.py` (diccionari).
+
+## Retos en grupo (retos/)
+- Cinco juegos de clase en «En grupo», con sala y código como el escape room. Funcionan con **todas** las lecturas sin preparar nada a mano:
+  - 🔎 **Encuentra la prueba** (`#reto-prueba`): pregunta o definición en la pizarra; se toca la frase (o la palabra) del texto que la responde. Más puntos al más rápido, 3 s bloqueado si fallas y mapa de calor de dónde ha tocado la clase. Individual o por equipos.
+  - 🎲 **Atrapa los puntos** (`#reto-apuesta`): afirmaciones verdadero/falso sacadas de las preguntas (respuesta buena = verdadero, una mala = falso). Saldo de 1000 y apuesta; si el equipo toca la frase que lo demuestra, gana el doble.
+  - 🃏 **Cartas a la mesa** (`#reto-cartas`): texto con huecos de palabras clave, repartidas como cartas entre los móviles del equipo; 2 cartas trampa y un comodín (primera letra y quién tiene la carta).
+  - 🤐 **Palabra secreta** (`#reto-tabu`): el guía (va rotando) explica una palabra clave sin decir las prohibidas (sacadas de su definición); los demás la tocan en el texto; botón «¡Tabú!».
+  - 🧭 **Lector y piloto** (`#reto-piloto`): lectores solo ven el texto, pilotos solo los retos (las preguntas); máximo 3 preguntas por reto (menos preguntas, más puntos); a mitad se cambian los papeles.
+- Datos: `content/<idioma>/retos.json`, generados con `node retos/generar.mjs` (sin IA): frases de cada lectura, la frase que demuestra cada pregunta, palabras clave con definición y prohibidas, y trampas. **Volver a ejecutarlo al añadir o cambiar lecturas.**
+- Servidor: `api/_retos.js`, montado en `api/propuestas?retos=1` (no gasta otra función de Vercel). Rutas: `#reto-<código>` (alumno) y `#reto-pizarra-<código>` (pizarra).
+- Prueba: `qa/prueba-retos.cjs` (pizarra + 3 alumnos, los 5 juegos).

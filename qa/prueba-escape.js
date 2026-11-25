@@ -18,7 +18,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   /* pizarra */
   const prof = await nueva(1280, 800);
   await prof.goto(BASE + '#escape', {waitUntil: 'networkidle'}); await wait(400);
-  ok(await prof.locator('.tabs a[href="#escape"][aria-current=page]').count() === 1, 'pestaña Escape room marcada');
+  ok(await prof.locator('.tabs a[href="#grupo"][aria-current=page]').count() === 1, 'apartado En grupo marcado');
   await prof.selectOption('[data-esc-c="lang"]', LANG); await wait(150);
   await prof.selectOption('[data-esc-c="nivel"]', 'A2'); await wait(150);
   await prof.selectOption('[data-esc-c="equipos"]', '3'); await wait(150);

@@ -14,7 +14,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   await p.evaluate(() => localStorage.clear()); await p.reload({waitUntil: 'networkidle0'}); await wait(400);
   const go = async h => { await p.evaluate(h => { location.hash = h; }, h); await wait(600); };
   const pet = () => p.evaluate(() => { const P = JSON.parse(localStorage.getItem('lyaPerfiles')); const s = P.list[0].s; return {pet: s.pet, xp: s.g.xp, spent: s.g.spent}; });
-  out.push('pestaña: ' + await p.evaluate(() => !!document.querySelector('#tabs a[href="#mascota"]')));
+  out.push('apartado Mi zona: ' + await p.evaluate(() => !!document.querySelector('#tabs a[href="#mizona"]')));
   out.push('tarjeta portada (sin mascota): ' + await p.evaluate(() => document.querySelector('.phome')?.textContent.trim()));
   await p.screenshot({path: SHOTS + '/m-portada.png'});
   await go('mascota');

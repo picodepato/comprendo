@@ -36,7 +36,7 @@ const api = async (ruta, datos, token) => { const r = await fetch(BASE + '/api/'
   /* ---------- profe: crear un vídeo ---------- */
   const h = await pagina({usuario: P.usuario, token: P.token, rol: 'profe'});
   await h.goto(BASE + '/#videos'); await h.waitForSelector('.vd-grid'); await shot(h, '01-inicio');
-  ok(await h.locator('nav, #tabs').locator('a[href="#videos"]').count() === 1, 'pestaña Vídeos');
+  ok(await h.locator('#tabs a[href="#aprender"]').count() === 1, 'apartado Aprender (Vídeos)');
   await h.click('a[href="#videos-editar"]');
   await h.fill('#vd-urlf input', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=3'); await h.click('#vd-urlf button');
   await h.waitForSelector('.ytfalso'); await h.fill('#vd-tit', 'Prueba de vídeo');
