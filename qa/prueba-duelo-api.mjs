@@ -1,0 +1,48 @@
+// Prueba de la API de duelos con qa/servidor-prueba.mjs: node qa/prueba-duelo-api.mjs http://localhost:8790
+const B = process.argv[2] || "http://localhost:8790";
+let fallos = 0; const ok = (c, m) => { console.log((c ? "ok  " : "MAL ") + m); if (!c) fallos++; };
+const api = async (ruta, tk, metodo = "GET", datos) => { const r = await fetch(B + "/api/" + ruta, {method: metodo, headers: {"Content-Type": "application/json", ...(tk ? {Authorization: "Bearer " + tk} : {})}, body: datos ? JSON.stringify(datos) : undefined}); let j = {}; try { j = await r.json(); } catch (e) {} return {code: r.status, j}; };
+const id = Date.now().toString(36).slice(-5);
+ok((await api("estado")).j.ok === true, "ruta antigua /api/estado sigue funcionando");
+ok((await api("cuenta?a=estado")).j.db === true, "cuenta?a=estado");
+const pr = await api("registro", null, "POST", {usuario: "pduelo" + id, clave: "clave123", rol: "profe"}); ok(!!pr.j.token, "registro (ruta antigua) de un profe");
+const tp = pr.j.token;
+ok((await api("cuenta?a=entrar", null, "POST", {usuario: "pduelo" + id, clave: "clave123"})).j.token, "entrar con la ruta nueva");
+const al = []; for (let i = 0; i < 31; i++) al.push((await api("cuenta?a=registro", null, "POST", {usuario: `a${i}d${id}`, clave: "clave123"})).j.token);
+ok(al.every(Boolean), "31 alumnos registrados");
+ok((await api("duelo", null, "POST", {a: "crear", file: "en/lecturas/en-bear-a1.json"})).code === 401, "sin sesión no se crea");
+ok((await api("duelo", tp, "POST", {a: "crear", file: "../api/_db.js"})).code === 400, "lectura rara: no");
+const cr = await api("duelo", tp, "POST", {a: "crear", file: "en/lecturas/en-bear-a1.json", D: 10, TL: 30, juega: false, xp: {todos: 5, p1: 100, p2: 50, p3: 999}, logro: {ic: "🏆", n: "Campeón del oso", para: 1}});
+ok(/^\d{6}$/.test(cr.j.c), "el profe crea una mesa: código " + cr.j.c); const c = cr.j.c;
+let s = (await api("duelo?c=" + c)).j;
+ok(s.fase.f === "lobby" && s.jugadores.length === 0, "mesa en espera, el profe no juega");
+ok(!s.mesa.key && s.mesa.sol.length === 0 && s.mesa.xp.p3 === 200 && s.mesa.logro.n === "Campeón del oso", "no se ven las soluciones; XP y logro guardados (máx. 200)");
+const tks = [];
+for (let i = 0; i < 30; i++) { const u = await api("duelo", al[i], "POST", {a: "unir", c}); tks.push(u.j.tk); }
+ok(tks.every(Boolean), "se unen 30");
+ok((await api("duelo", al[30], "POST", {a: "unir", c})).j.error === "llena", "el 31 no cabe");
+ok((await api("duelo", al[0], "POST", {a: "unir", c})).j.tk === tks[0], "volver a entrar da el mismo token");
+ok((await api("duelo", al[0], "POST", {a: "avanzar", c})).code === 403, "un alumno no puede empezar");
+await api("duelo", tp, "POST", {a: "avanzar", c, de: "lobby"});
+s = (await api("duelo?c=" + c)).j; ok(s.fase.f === "read", "empieza: tiempo de lectura");
+await api("duelo", tp, "POST", {a: "avanzar", c, de: "read"});
+s = (await api("duelo?c=" + c)).j; ok(s.fase.f === "q" && s.fase.k === 0, "pregunta 1 abierta");
+const r0 = await api("duelo", null, "POST", {a: "resp", c, tk: tks[0], k: 0, r: 1});
+ok(r0.j.ok && r0.j.nuevo, "contesta el alumno 0");
+ok((await api("duelo", null, "POST", {a: "resp", c, tk: tks[0], k: 0, r: 0})).j.nuevo === false, "no puede cambiar la respuesta");
+ok((await api("duelo", null, "POST", {a: "resp", c, tk: "inventado", k: 0, r: 0})).code === 403, "token inventado: no");
+ok((await api("duelo", null, "POST", {a: "resp", c, tk: tks[1], k: 1, r: 0})).code === 409, "no se contesta otra pregunta");
+for (let i = 1; i < 30; i++) await api("duelo", null, "POST", {a: "resp", c, tk: tks[i], k: 0, r: i % 3});
+s = (await api("duelo?c=" + c)).j; ok(s.jugadores.every(j => j.ya) && s.dist === null && s.mesa.sol.length === 0, "todos han contestado y no se ve nada aún");
+await api("duelo", tp, "POST", {a: "avanzar", c, de: "q0"});
+await api("duelo", tp, "POST", {a: "avanzar", c, de: "q0"});
+s = (await api("duelo?c=" + c)).j; ok(s.fase.id === "r0", "pasa a la solución (y no salta dos veces)");
+ok(s.dist.reduce((a, b) => a + b, 0) === 30 && s.mesa.sol.length === 1, "reparto de respuestas: " + s.dist.join("/") + ", solución " + s.mesa.sol[0]);
+const g = s.jugadores.filter(j => j.ok === 1); ok(g.length > 0 && g.every(j => j.pts > 500) && s.jugadores[0].pts >= s.jugadores[29].pts, "puntos por acertar y rápido; ranking ordenado");
+const pid5 = s.jugadores.find(j => j.n === `a5d${id}`).pid;
+await api("duelo", tp, "POST", {a: "echar", c, pid: pid5}); s = (await api("duelo?c=" + c)).j; ok(s.jugadores.length === 29, "el profe puede echar a alguien");
+for (let k = 1; k < s.mesa.nq; k++) { await api("duelo", tp, "POST", {a: "avanzar", c, de: "r" + (k - 1)}); await api("duelo", tp, "POST", {a: "avanzar", c, de: "q" + k}); }
+await api("duelo", tp, "POST", {a: "avanzar", c, de: "r" + (s.mesa.nq - 1)});
+s = (await api("duelo?c=" + c)).j; ok(s.fase.f === "end" && s.mesa.sol.length === s.mesa.nq, "fin del duelo");
+ok((await api("duelo?c=000001")).code === 404, "código que no existe: 404");
+console.log(fallos ? `FALLOS: ${fallos}` : "TODO BIEN");
