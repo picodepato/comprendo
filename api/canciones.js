@@ -2,6 +2,7 @@
    GET  /api/canciones?v=VIDEO&lang=es → letra con tiempos. Primero los subtítulos de YouTube; si YouTube no los da
         (a los servidores de Vercel suele bloquearlos), busca la canción por su título en LRCLIB (lrclib.net, letras
         sincronizadas, gratis y sin clave). NO se guarda nada.
+   GET  /api/canciones?v=VIDEO&lang=es&yt=1 → solo los subtítulos de YouTube (para proponer preguntas de un vídeo con IA)
    GET  /api/canciones?q=artista canción → hasta 5 letras de LRCLIB para elegir (cuando no encuentra la buena)
    GET  /api/canciones?tr=palabra&de=es&a=en → traducción de una palabra (traductor gratis MyMemory; se guarda 30 días en caché)
    GET  /api/canciones?id=x            → canción que un profe mandó como deberes (hace falta haber entrado)
@@ -218,7 +219,9 @@ export default async function handler(req, res) {
     if (req.method === "GET" && q.v !== undefined) {
       if (!videoValido(q.v)) return responder(res, 400, { error: "enlace_no_valido" });
       if (hayDB() && (await contar("subs:" + ipDe(req), 3600)) > 150) return responder(res, 429, { error: "demasiadas" });
-      const [c, d] = await subtitulos(q.v, /^[a-z]{2}$/.test(q.lang) ? q.lang : "es");
+      const lang = /^[a-z]{2}$/.test(q.lang) ? q.lang : "es";
+      /* ?yt=1: solo los subtítulos de YouTube, sin buscar letras de canciones (vídeos con preguntas) */
+      const [c, d] = q.yt ? await subtitulosYT(q.v, lang).catch(() => [404, { error: "youtube_no_responde" }]) : await subtitulos(q.v, lang);
       return responder(res, c, d);
     }
     if (req.method === "GET" && q.q !== undefined) {

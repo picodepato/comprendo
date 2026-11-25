@@ -78,3 +78,13 @@ h2.vd-c{text-align:center}
 .vd-tabla td:nth-child(3){width:40%}
 .vd-prog{height:12px;border-radius:999px;background:var(--panel2);overflow:hidden}
 .vd-prog i{display:block;height:100%;background:var(--ok);transition:width .4s}
+/* ✨ proponer preguntas con IA (editor) */
+.vd-ia>summary{cursor:pointer;font-weight:800;font-size:18px;list-style:none}
+.vd-ia>summary::-webkit-details-marker{display:none}
+.vd-ia>summary::after{content:" ▾";color:var(--mute)}
+.vd-ia[open]>summary::after{content:" ▴"}
+.vd-ia h3{margin:18px 0 2px;font-size:16px}
+.vd-ia .cc-msg{margin:8px 0}
+.vd-iatr{margin:6px 0 4px}
+.vd-iatr>summary{cursor:pointer;color:var(--mute);font-size:14px}
+.vd-iatr textarea{width:100%;margin-top:6px}
