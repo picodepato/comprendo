@@ -30,6 +30,12 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - API: `GET|POST /api/admin` (admin y profes, según quién), `GET|POST /api/avisos` (alumno: su clase, mensajes, deberes, unirse a una clase).
 - Límites: 10 contraseñas mal seguidas por usuario y conexión (15 min); 100 cuentas nuevas por hora y conexión (una clase entera puede registrarse a la vez).
 
+## Lectura con cámara (camara/)
+- Pestaña «📷 Cámara» (`#camara`): el alumno hace una foto (o elige una) de un cartel, menú o etiqueta en el idioma que aprende. **Tesseract.js** la lee dentro del navegador (OCR gratis, sin IA de pago): la foto no se sube a ningún sitio. La primera vez se descargan el programa y el modelo del idioma desde cdn.jsdelivr.net.
+- El texto leído se puede corregir a mano. Tocar una palabra muestra la traducción con el diccionario de la web y se puede guardar (`r: "camara"`, sale en «Mi diccionario» como «📷 Palabras de fotos»).
+- 6 preguntas con reglas: qué significa (4 opciones), toca la palabra que significa…, toca la palabra…, ordena la frase. XP con `lya:xp` (src `camara`).
+- «Próximamente» (`pronto/`): explica lo que aún no está hecho (doblaje). La pestaña se esconde sola cuando existe `window.LYADoblaje`.
+
 ## Canciones de YouTube (canciones/)
 - Pestaña «Canciones»: se pega un enlace de YouTube, el vídeo se ve en la web con la letra, y se para en cada hueco hasta escribir la palabra. 4 niveles. Da XP y estrellas (`S.g.cn`).
 - `GET /api/canciones?v=<vídeo>&lang=es`: el servidor coge los subtítulos de YouTube (los del autor o los automáticos) y los devuelve con sus tiempos. **No se guardan.**

@@ -22,7 +22,7 @@ const STR = {
       "El vídeo se queda sin sonido y las frases van saliendo a su tiempo.",
       "Tú lees en voz alta y el móvil graba tu voz encima del vídeo. Luego lo escuchas y lo repites si quieres."],
     dob_n: "Tus grabaciones se quedan en tu aparato. Solo salen si tú decides mandar una a una votación de tu clase.",
-    how: "Cómo funcionará", back: "Volver al inicio"},
+    how: "Cómo funcionará", sub1: "Estamos preparando una actividad nueva. Todavía no funciona, pero así es como será.", back: "Volver al inicio"},
   en: {tab: "Coming soon", title: "Coming soon", soon: "Coming soon",
     sub: "We are getting two new activities ready. They don't work yet, but this is how they will be.",
     cam_t: "Camera reading", cam_p: "Read the things around you: signs, menus, labels…",
@@ -37,7 +37,7 @@ const STR = {
       "The video has no sound and the lines appear at the right time.",
       "You read aloud and the phone records your voice over the video. Then you listen and try again if you want."],
     dob_n: "Your recordings stay on your device. They only leave it if you choose to send one to a class vote.",
-    how: "How it will work", back: "Back to the start"},
+    how: "How it will work", sub1: "We are getting a new activity ready. It doesn't work yet, but this is how it will be.", back: "Back to the start"},
   ca: {tab: "Properament", title: "Properament", soon: "Properament",
     sub: "Estem preparant dues activitats noves. Encara no funcionen, però així és com seran.",
     cam_t: "Lectura amb càmera", cam_p: "Llegeix el que tens al voltant: cartells, menús, etiquetes…",
@@ -52,7 +52,7 @@ const STR = {
       "El vídeo es queda sense so i les frases van sortint al seu moment.",
       "Tu llegeixes en veu alta i el mòbil grava la teva veu damunt del vídeo. Després l'escoltes i ho repeteixes si vols."],
     dob_n: "Les teves gravacions es queden al teu aparell. Només en surten si tu decideixes enviar-ne una a una votació de la classe.",
-    how: "Com funcionarà", back: "Tornar a l'inici"}
+    how: "Com funcionarà", sub1: "Estem preparant una activitat nova. Encara no funciona, però així és com serà.", back: "Tornar a l'inici"}
 };
 const s1 = (k, lang) => (STR[lang] || STR.en)[k] ?? STR.en[k];
 const both = () => { try { return L().both(); } catch (e) { return false; } };
@@ -70,11 +70,13 @@ function card(id, icon, color) {
 function render(app) {
   const {S} = st();
   app.innerHTML = `<section class="wrap pr"><div class="ghead"><div><h1>🔜 ${esc(s1("title", S.learn))}</h1>${S.know !== S.learn && both() ? `<p class="en">${esc(s1("title", S.know))}</p>` : ""}</div></div>
-    <p class="pr-lead">${TB("sub")}</p>
-    ${card("cam", "📷", "#4cc9f0")}${card("dob", "🎬", "#ff6b9d")}
+    <p class="pr-lead">${TB(window.LYACamara ? "sub1" : "sub")}</p>
+    ${window.LYACamara ? "" : card("cam", "📷", "#4cc9f0")}${card("dob", "🎬", "#ff6b9d")}
     <p><a class="btn" href="#inicio">${esc(s1("back", S.learn))}</a></p></section>`;
 }
 const isPronto = h => h === "proximamente";
+/* when dubbing is built (window.LYADoblaje) there is nothing left «coming soon»: the tab hides itself */
+const pending = () => !window.LYADoblaje;
 const tab = () => { const {S} = st(); return "🔜 " + esc(s1("tab", S.learn)) + (both() ? `<span class="tk"> · ${esc(s1("tab", S.know))}</span>` : ""); };
-window.LYAPronto = {render, isPronto, tab};
+window.LYAPronto = {render, isPronto, tab, pending};
 })();
