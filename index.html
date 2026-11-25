@@ -293,6 +293,23 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 .runstars p{margin:0}
 .meta .stars{font-size:16px}
 .meta .rt{color:var(--mute);font-weight:500}
+/* fitxa questions (open, true/false), translation, source */
+.fx textarea{display:block;width:100%;box-sizing:border-box;min-height:76px;margin:0 0 4px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font:inherit;font-size:17px;line-height:1.45;resize:vertical}
+.fx .mine{background:var(--panel2);border-radius:10px;padding:8px 12px;margin:0;font-size:16px;white-space:pre-wrap}
+.fx .mine.bad{border-left:3px solid var(--red)}
+.fx .model{border-left:3px solid var(--ok);padding:4px 12px;margin:10px 0 0;font-size:16px}
+.fx .ev,.vf .ev{display:block;font-size:14px;color:var(--mute);margin:8px 0 0;line-height:1.45}
+.fxj{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.vf{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 0;border-top:1px solid var(--line);font-size:17px}
+.vf .seg{flex:none;display:flex;gap:6px}.vf .seg button{min-width:48px;font-weight:700}
+.vf.right .seg button[aria-pressed="true"]{border-color:var(--ok);background:rgba(63,214,156,.25);color:var(--ink)}
+.vf.wrong .seg button[aria-pressed="true"]{border-color:var(--red);background:rgba(255,65,65,.25);color:var(--ink)}
+.trx{display:block;color:var(--mute);font-size:15px;line-height:1.55;font-style:italic;margin:4px 0 10px}
+.reading .trx{font-size:16px;margin:-.6em 0 1.2em;padding-left:30px}
+.reading:not(.num) .trx{padding-left:0}
+.trbtn{margin:0 0 12px}.trbtn .btn[aria-pressed="true"]{border-color:var(--ok)}
+.src{font-size:14px;color:var(--mute);margin:10px 0 0;line-height:1.5}
+@media(max-width:560px){.rule td:first-child{white-space:normal}}
 </style>
 <link rel="stylesheet" href="voz.css">
 <link rel="stylesheet" href="juegos/juegos.css">
@@ -331,7 +348,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 {
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const KEYS = "ABCDEFGH", LV = ["A1","A2","B1","B2"];
+const KEYS = "ABCDEFGH", LV = ["A1","A2","B1","B2","C1"];
 const LET = "A-Za-zÁÉÍÓÚÜÑáéíóúüñÄÖÜäößÀÈÌÒÙàèìòùçÇÏï·";
 const RE = new RegExp(`\\[([^\\]|]+)(?:\\|([^\\]]+))?\\]|([${LET}0-9]+)|([^\\[${LET}0-9]+)`, "g");
 const shuf = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -350,6 +367,7 @@ const topicOf = id => CAT.topics.find(t => t.id === id);
 const rdList = () => CAT.topics.flatMap(t => (t.readings[S.learn] || []).map(r => ({...r, t, id: r.id || `${t.id}-${r.level.toLowerCase()}`})));
 const rdOf = (tid, level) => rdList().find(r => r.t.id === tid && r.level === level);
 const rdById = id => rdList().find(r => r.id === id);
+const lvList = () => LV.filter(l => rdList().some(r => r.level === l)); /* levels of the current course (C1 only where there are readings) */
 
 /* ---------- profiles & state ---------- */
 const PKEY = "lyaPerfiles";
@@ -419,7 +437,7 @@ const GTXT = {
   es: {progress: "Mi progreso", rlevel: "Nivel de lector", lvl: "Nivel {n}", xp_next: "{n} XP para el nivel {l}", spend: "Puntos para gastar", streak: "Racha", streak_days: "Días seguidos: {n}", streak_best: "Tu mejor racha: {n}", streak_help: "Lee, juega o repasa algo cada día para no perder la racha.", shields: "Escudos", shield_help: "Un escudo salva tu racha si un día no entras. Puedes tener 2.", buy_shield: "Comprar escudo · {n} puntos", shield_full: "Ya tienes el máximo de escudos.", shield_need: "Te faltan {n} puntos para un escudo.", album: "Álbum de cromos", album_help: "Termina todos los ejercicios de una lectura para ganar su cromo.", medals: "Medallas", secret: "Medalla secreta", secret_help: "Sigue jugando para descubrirla.", t_level: "¡Subes al nivel {n}!", t_sticker: "¡Cromo nuevo para tu álbum!", t_medal: "¡Medalla: {m}!", t_secret: "¡Medalla secreta: {m}!", t_shield: "Un escudo ha salvado tu racha", t_streak: "🔥 Racha de {n} días", t_bought: "¡Escudo comprado!", tier1: "bronce", tier2: "plata", tier3: "oro", next_tier: "{v} / {g} para {t}", maxed: "¡Oro conseguido!", won: "¡Has ganado el cromo de esta lectura!", won_how: "Termina todos los ejercicios para ganar el cromo de esta lectura.", see_album: "Ver mi álbum", xp_here: "XP ganados en esta lectura: {n}", r1: "Lector novato", r2: "Explorador de páginas", r3: "Cazador de palabras", r4: "Maestro lector", r5: "Leyenda de la lectura", m_lector: "Lector", md_lector: "Termina lecturas", m_racha: "En racha", md_racha: "Días seguidos leyendo", m_dicc: "Coleccionista", md_dicc: "Palabras en tu diccionario", m_juego: "Jugador", md_juego: "Aciertos en juegos y repasos", m_explora: "Explorador", md_explora: "Temas con algún cromo", s_buho: "Búho nocturno", sd_buho: "Leer de noche", s_madruga: "Madrugador", sd_madruga: "Leer antes de las 8", s_perfecto: "Sin fallos", sd_perfecto: "Una lectura sin ningún fallo", s_combo: "Imparable", sd_combo: "10 aciertos seguidos al repasar", s_maraton: "Maratón", sd_maraton: "3 cromos en un mismo día", stickers: "cromos"},
   en: {progress: "My progress", rlevel: "Reader level", lvl: "Level {n}", xp_next: "{n} XP to level {l}", spend: "Points to spend", streak: "Streak", streak_days: "Days in a row: {n}", streak_best: "Your best streak: {n}", streak_help: "Read, play or review something every day to keep your streak.", shields: "Shields", shield_help: "A shield saves your streak if you miss a day. You can hold 2.", buy_shield: "Buy a shield · {n} points", shield_full: "You already have the most shields.", shield_need: "You need {n} more points for a shield.", album: "Sticker album", album_help: "Finish every exercise in a reading to win its sticker.", medals: "Medals", secret: "Secret medal", secret_help: "Keep playing to discover it.", t_level: "Level up! Level {n}", t_sticker: "New sticker for your album!", t_medal: "Medal: {m}!", t_secret: "Secret medal: {m}!", t_shield: "A shield saved your streak", t_streak: "🔥 {n}-day streak", t_bought: "Shield bought!", tier1: "bronze", tier2: "silver", tier3: "gold", next_tier: "{v} / {g} for {t}", maxed: "Gold won!", won: "You won this reading's sticker!", won_how: "Finish every exercise to win this reading's sticker.", see_album: "See my album", xp_here: "XP won in this reading: {n}", r1: "Rookie reader", r2: "Page explorer", r3: "Word hunter", r4: "Master reader", r5: "Reading legend", m_lector: "Reader", md_lector: "Finish readings", m_racha: "On a roll", md_racha: "Days in a row", m_dicc: "Collector", md_dicc: "Words in your dictionary", m_juego: "Player", md_juego: "Right answers in games and reviews", m_explora: "Explorer", md_explora: "Topics with a sticker", s_buho: "Night owl", sd_buho: "Read at night", s_madruga: "Early bird", sd_madruga: "Read before 8 am", s_perfecto: "Flawless", sd_perfecto: "A reading with no mistakes", s_combo: "Unstoppable", sd_combo: "10 right answers in a row", s_maraton: "Marathon", sd_maraton: "3 stickers in one day", stickers: "stickers"}
 };
-const MULT = {A1: 1, A2: 1.5, B1: 2, B2: 2.5}, SHIELD_COST = 150, SHIELD_MAX = 2;
+const MULT = {A1: 1, A2: 1.5, B1: 2, B2: 2.5, C1: 3}, SHIELD_COST = 150, SHIELD_MAX = 2;
 const freshG = () => ({xp: 0, spent: 0, streak: 0, best: 0, last: null, shields: 0, got: {}, rx: {}, album: {}, medals: {}, secrets: {}, st: {ok: 0, combo: 0}});
 const fixG = () => { const f = freshG(); if (!S.g || typeof S.g !== "object") S.g = f; for (const k in f) if (S.g[k] === undefined) S.g[k] = f[k]; };
 const dstr = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -505,10 +523,10 @@ function starGroups() {
   const best = r => (rdStat(r.id) || {}).best || 0;
   const grp = (k, ic, name, rs, need, xp, c) => ({k: `${C}:${k}`, ic, name, rs, need, xp, c, have: rs.filter(r => best(r) === 3).length});
   return [
-    ...LV.map(lv => grp("l:" + lv, "🎖️", l => U("a_level", l, {lv}), all.filter(r => r.level === lv), CAT.topics.length, 300)),
-    grp("all", "👑", l => U("a_all", l), all, CAT.topics.length * LV.length, 1000),
-    ...CAT.topics.map(t => grp("t:" + t.id, "🏅", l => U("a_topic", l, {t: nm(t.name, l)}), all.filter(r => r.t.id === t.id), LV.length, 100, t.color))
-  ];
+    ...LV.map(lv => grp("l:" + lv, "🎖️", l => U("a_level", l, {lv}), all.filter(r => r.level === lv), rdList().filter(r => r.level === lv).length, 300)),
+    grp("all", "👑", l => U("a_all", l), all, rdList().length, 1000),
+    ...CAT.topics.map(t => grp("t:" + t.id, "🏅", l => U("a_topic", l, {t: nm(t.name, l)}), all.filter(r => r.t.id === t.id), rdList().filter(r => r.t.id === t.id).length, 100, t.color))
+  ].filter(a => a.need > 0);
 }
 function checkStarAch() {
   const g = S.g; g.ach = g.ach || {};
@@ -609,6 +627,7 @@ function renderHome() {
   const okKnow = c => CAT.courses.some(x => x.ready && x.know.includes(c));
   const okLearn = c => CAT.courses.some(x => x.ready && x.learn === c);
   const chip = (c, on, ok, act) => `<button class="chip" data-act="${act}" data-l="${c}" aria-pressed="${on}" ${ok ? "" : "disabled"}>${esc(lname(c, c))}${ok ? (c !== S.know ? `<small>${esc(lname(c, S.know))}</small>` : "") : `<small>${TI("soon")}</small>`}</button>`;
+  const lvs = lvList(); if (!lvs.includes(S.level)) S.level = lvs[0] || "A1";
   const rs = rdList().filter(r => r.level === S.level);
   rs.sort((a, b) => (!!b.file) - (!!a.file));
   $("app").innerHTML = `<section class="intro"><div class="in">
@@ -618,7 +637,7 @@ function renderHome() {
       <div class="pk"><h2>${esc(U("learn", S.know))}${S.know !== S.learn ? `<span class="en">${esc(U("learn", S.learn))}</span>` : ""}</h2><div class="chips" role="group">${langs.map(c => chip(c, c === S.learn, okLearn(c), "learn")).join("")}</div></div>
     </div></div></section>
     ${window.LYAAvisos ? LYAAvisos.html() : ""}
-    <div class="lvbar"><h2>${TI("level")}</h2><nav class="lv">${LV.map(l => `<a href="#nivel-${l.toLowerCase()}" aria-current="${l === S.level}"><b>${l}</b><span>${esc(U("level_" + l, S.learn))}</span></a>`).join("")}</nav></div>
+    <div class="lvbar"><h2>${TI("level")}</h2><nav class="lv">${lvList().map(l => `<a href="#nivel-${l.toLowerCase()}" aria-current="${l === S.level}"><b>${l}</b><span>${esc(U("level_" + l, S.learn))}</span></a>`).join("")}</nav></div>
     <div class="lvbar" style="padding-top:14px"><p class="en" style="margin:0">${TI("pick")}</p></div>
     <div class="grid">${rs.map(r => cardHTML(r)).join("")}</div>${window.LYAVotos ? LYAVotos.html() : ""}${window.LYAPropuestas ? LYAPropuestas.html() : ""}`;
 }
@@ -635,6 +654,45 @@ function mcq(id, kind, i, stem, hint, opts, ans, tips) {
   const pr = opts.length > 4 && opts.every(o => /^\S+ \d+$/.test(o));
   const fb = done ? (ch === ans ? `<p class="fb ok">${TI("correct")}</p>` : `<p class="fb no">${esc(U("wrong", S.learn))} ${KEYS[ans]}.${both() ? ` · ${esc(U("wrong", S.know))} ${KEYS[ans]}.` : ""}</p>`) : "";
   return `<div class="q"><p class="stem">${i + 1}. ${st}${hint ? ` <i>(${esc(hint)})</i>` : ""}</p><div class="opts${pr ? " pr" : ""}">${ob}</div>${fb}</div>`;
+}
+/* ---------- fitxa: questions with their own format in q[3] (open = written answer, mc (+ just), vf = true/false) ----------
+   saved: "<id>:q<i>" = q[2] when right, -1 when wrong · "<id>:qt<i>" what was written · "<id>:qs<i>" waiting for self-check
+   · "<id>:qv<i>" true/false answers · "<id>:qj<i>" written justification. q[1] and q[2] are still the multiple choice the games use. */
+const foldK = s => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/·/g, "");
+function keysOk(m, txt) {
+  const t = foldK(txt); if (!m.k || !m.k.length) return false;
+  const hit = g => g.some(a => { const whole = a.endsWith("$"), k = foldK(whole ? a.slice(0, -1) : a).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); return new RegExp(`(^|[^a-z0-9])${k}${whole ? "($|[^a-z0-9])" : ""}`).test(t); });
+  return m.k.filter(hit).length >= (m.min || m.k.length);
+}
+const evHTML = m => m.ev?.length ? `<p class="ev">🔎 ${TI("fx_ev")}: ${m.ev.map(e => `«${tok(e)}»`).join(" ")}</p>` : "";
+const trxHTML = t => S.trx && t ? `<p class="trx">${esc(t)}</p>` : "";
+function fitxaQ(id, q, i) {
+  const m = q[3], key = `${id}:q${i}`, ch = S.a[key], done = ch !== undefined, ok = ch === q[2];
+  if (m.t === "mc") {
+    const jk = `${id}:qj${i}`, jv = S.a[jk];
+    const just = m.just ? `<div class="fxj"><p class="stem">■ ${tok(m.just)}</p>${trxHTML(m.just_es)}${jv === undefined
+      ? `<textarea class="qta" data-k="${jk}" rows="3" placeholder="${esc(U("fx_write", S.learn))}" aria-label="${esc(m.just)}">${esc(DRAFT[jk] || "")}</textarea><div class="row"><button class="btn" data-act="qj" data-i="${i}">${TI("fx_see")}</button></div>`
+      : `${jv ? `<p class="mine">${esc(jv)}</p>` : ""}<p class="model"><b>${TI("fx_model")}:</b> ${tok(m.a)}</p>`}</div>` : "";
+    return mcq(id, "q", i, q[0], "", q[1], q[2], true).replace('</p><div class="opts', `</p>${trxHTML(m.es)}<div class="opts`).replace(/<\/div>$/, `${done ? evHTML(m) : ""}${just}</div>`);
+  }
+  if (m.t === "vf") {
+    const vk = `${id}:qv${i}`, got = S.a[vk], dr = DRAFT[vk] || [], n = got ? m.items.filter(([, v], j) => got[j] === v).length : 0;
+    const rows = m.items.map(([s, v, e], j) => {
+      const pick = got ? got[j] : dr[j], res = got ? (got[j] === v ? " right" : " wrong") : "";
+      const b = (val, lab) => `<button data-act="vf" data-i="${i}" data-j="${j}" data-v="${val ? 1 : 0}" aria-pressed="${pick === val}" ${got ? "disabled" : ""}>${lab}</button>`;
+      return `<div class="vf${res}"><div><span>${tok(s)}</span>${S.trx && m.items_es ? `<span class="trx">${esc(m.items_es[j])}</span>` : ""}${got && got[j] !== v ? `<span class="ev">${v ? "C" : "F"} · 🔎 «${tok(e)}»</span>` : ""}</div><div class="seg" role="group">${b(true, "C")}${b(false, "F")}</div></div>`;
+    }).join("");
+    const all = m.items.every((_, j) => typeof dr[j] === "boolean");
+    const foot = got ? `<p class="fb ${n === m.items.length ? "ok" : "no"}">${TI("fx_vf_res", {n, t: m.items.length})}</p>` : `<div class="row"><button class="btn main" data-act="vfc" data-i="${i}" ${all ? "" : "disabled"}>${TI("check")}</button></div>`;
+    return `<div class="q fx"><p class="stem">${i + 1}. ${tok(m.orig || q[0])}</p>${trxHTML(m.es)}${rows}${foot}</div>`;
+  }
+  const tk = `${id}:qt${i}`, pend = !done && S.a[`${id}:qs${i}`];
+  const body = !done && !pend
+    ? `<textarea class="qta" data-k="${tk}" rows="3" placeholder="${esc(U("fx_write", S.learn))}" aria-label="${esc(q[0])}">${esc(DRAFT[tk] || "")}</textarea><div class="row"><button class="btn main" data-act="qo" data-i="${i}">${TI("check")}</button></div>`
+    : `<p class="mine${done && !ok ? " bad" : ""}">${esc(S.a[tk] || "")}</p><p class="model"><b>${TI("fx_model")}:</b> ${tok(m.a)}</p>`
+      + (pend ? `<p class="mnote">${TI("fx_self")}</p><div class="row"><button class="btn main" data-act="qself" data-i="${i}" data-v="1">✓ ${TI("fx_self_ok")}</button><button class="btn" data-act="qself" data-i="${i}" data-v="0">✗ ${TI("fx_self_no")}</button></div>`
+        : `<p class="fb ${ok ? "ok" : "no"}">${ok ? TI("correct") : TI("fx_review")}</p>${evHTML(m)}`);
+  return `<div class="q fx"><p class="stem">${i + 1}. ${tok(q[0])}</p>${trxHTML(m.es)}${body}</div>`;
 }
 /* ---------- B2: Use of English (multiple-choice cloze, open cloze, word formation, key word transformation) ----------
    typed items: [stem, [accepted answers], 0, {t, w, s, p}] · saved as 0 (right) or 1 (wrong), and what was written in "<id>:t<i>" */
@@ -707,9 +765,11 @@ function renderRead() {
     <div class="howto"><p>${TB("howto")}</p>
       <button class="btn" data-act="listen"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>${TI("listen")}</button>
       <label class="check"><input type="checkbox" id="say" ${S.say ? "checked" : ""}> ${TI("say")}</label></div>
-    <article class="reading${L.level === "B2" ? " num" : ""}">${L.text.map(p => `<p>${tok(p)}</p>`).join("")}</article>
+    ${tr.text ? `<div class="row trbtn"><button class="btn" data-act="trx" aria-pressed="${!!S.trx}">${TI(S.trx ? "tr_hide" : "tr_show", {l: lname(S.know, S.learn)})}</button></div>` : ""}
+    <article class="reading${L.level === "B2" || L.level === "C1" ? " num" : ""}">${L.text.map((p, i) => `<p>${tok(p)}</p>${S.trx && tr.text?.[i] ? `<div class="trx">${esc(tr.text[i])}</div>` : ""}`).join("")}</article>
+    ${L.font ? `<p class="src">${TI("src")}: ${esc(L.font.autor)}, <i>${esc(L.font.obra)}</i>${L.font.nota ? ` (${esc(L.font.nota)})` : ""}. ${esc(L.font.llibre)}. ${esc(L.font.editorial)}.</p>` : ""}
     <section class="ex"><h2><span>1.</span> ${esc(U("s_q", S.learn))}</h2><p class="en">${TB("s_q_help")}</p>
-      ${L.q.map((q, i) => mcq(id, "q", i, q[0], "", q[1], q[2], true)).join("")}</section>
+      ${L.q.map((q, i) => q[3] ? fitxaQ(id, q, i) : mcq(id, "q", i, q[0], "", q[1], q[2], true)).join("")}</section>
     <section class="ex"><h2><span>2.</span> ${esc(U("s_vocab", S.learn))}</h2><p class="en">${TB("s_vocab_help")}</p>
       ${matcher(id, "vocab", L.vocab.map(v => v[0]), L.vocab.map((v, i) => `${v[1]} ${(tr.vocab || [])[i] || ""}`), false)}</section>
     <section class="ex"><h2><span>3.</span> ${esc(U("s_halves", S.learn))}</h2><p class="en">${TB("s_halves_help")}</p>
@@ -722,6 +782,7 @@ function renderRead() {
         ${r.done >= r.tot ? `<div class="runstars">${starsHTML(starsOf(r.pts, r.tot), "big")}<div><p style="font-weight:700">${TI("run_stars")}</p><p class="small">${TI(starsOf(r.pts, r.tot) === 3 ? "got3" : "go3")}</p>${rdStat(id) ? `<p class="small">${TI("best", {n: rdStat(id).best})} · ${timesTxt(rdStat(id).n)}</p>` : ""}</div></div>` : ""}
         <div class="bars">${bars}</div>${S.g.album[id] ? `<div class="won" style="--c:${t.color}">${stkHTML(meta)}<div><p style="font-weight:700">${TI("won")}</p><p class="small">${TI("xp_here", {n: S.g.rx[id] || 0})}</p><a class="btn" href="#progreso" style="text-decoration:none;margin-top:8px">${TI("see_album")}</a></div></div>` : `<p class="small" style="margin-top:12px">${TI("won_how")} · ${TI("xp_here", {n: S.g.rx[id] || 0})}</p>`}<div class="row"><button class="btn${r.done >= r.tot && starsOf(r.pts, r.tot) < 3 ? " main" : ""}" data-act="reset">${TI(r.done >= r.tot ? "reread" : "retry")}</button></div></div></section>
     ${window.LYAJuegos ? LYAJuegos.offer(meta) : ""}
+    <section class="ex grp"><h2>${TI("grp_h")}</h2><p class="en">${TB("grp_p")}</p><div class="row">${window.LYADuelo ? `<a class="btn" href="#duelo">⚔️ ${TI("grp_duelo")}</a>` : ""}${window.LYAEscape ? `<a class="btn" href="#escape">🔐 ${TI("grp_escape")}</a>` : ""}${window.LYAConcursos ? `<a class="btn" href="#concursos-lectura-${esc(id)}">🏆 ${TI("grp_cc")}</a>` : ""}</div></section>
     <section class="ex"><h2><span>6.</span> ${esc(U("more", S.learn))}</h2>${both() ? `<p class="en">${esc(U("more", S.know))}</p>` : ""}
       <h3>${TI("more_topic")}</h3><div class="next">${same.map(x => cardHTML(x, 1)).join("")}</div>
       <h3>${TI("more_level")}</h3><div class="next">${lvl.map(x => cardHTML(x, 1)).join("")}</div>
@@ -999,7 +1060,7 @@ addBtn.addEventListener("click", () => {
 
 /* ---------- actions ---------- */
 $("app").addEventListener("change", e => { if (e.target.id === "say") { S.say = e.target.checked; save(); } });
-$("app").addEventListener("input", e => { if (e.target.classList.contains("gin")) DRAFT[e.target.dataset.k] = e.target.value; });
+$("app").addEventListener("input", e => { if (e.target.classList.contains("gin") || e.target.classList.contains("qta")) DRAFT[e.target.dataset.k] = e.target.value; });
 $("app").addEventListener("keydown", e => { if (e.key === "Enter" && e.target.classList.contains("gin") && R?.grammar?.parts) { e.preventDefault(); const i = +e.target.dataset.i, pi = R.grammar.parts.findIndex(p => p.items.includes(i)); if (pi >= 0) checkTyped(pi); } });
 $("app").addEventListener("click", async e => {
   const b = e.target.closest("[data-act]"); if (!b) return;
@@ -1013,6 +1074,28 @@ $("app").addEventListener("click", async e => {
     }
   }
   else if (act === "gt") checkTyped(+b.dataset.p);
+  else if (act === "trx") { S.trx = !S.trx; save(); render(); }
+  else if (act === "qo") {
+    const i = +b.dataset.i, q = R.q[i], tk = `${id}:qt${i}`, v = (DRAFT[tk] || "").trim();
+    if (!v) { toast(TI("fx_write_first")); return; }
+    S.a[tk] = v.slice(0, 600); delete DRAFT[tk];
+    if (keysOk(q[3], v)) { S.a[`${id}:q${i}`] = q[2]; award(10, `a:${id}:q${i}`, id); checkReading(R); } else S.a[`${id}:qs${i}`] = 1;
+    save(); render();
+  }
+  else if (act === "qself") {
+    const i = +b.dataset.i, q = R.q[i], ok = b.dataset.v === "1";
+    if (S.a[`${id}:q${i}`] !== undefined) return;
+    S.a[`${id}:q${i}`] = ok ? q[2] : -1; delete S.a[`${id}:qs${i}`]; award(ok ? 8 : 2, `a:${id}:q${i}`, id); checkReading(R); save(); render();
+  }
+  else if (act === "qj") { const jk = `${id}:qj${+b.dataset.i}`; S.a[jk] = (DRAFT[jk] || "").trim().slice(0, 600); delete DRAFT[jk]; save(); render(); }
+  else if (act === "vf") { const vk = `${id}:qv${+b.dataset.i}`; if (S.a[vk]) return; (DRAFT[vk] ||= [])[+b.dataset.j] = b.dataset.v === "1"; render(); }
+  else if (act === "vfc") {
+    const i = +b.dataset.i, q = R.q[i], vk = `${id}:qv${i}`, dr = DRAFT[vk] || [], it = q[3].items;
+    if (S.a[vk] || it.some((_, j) => typeof dr[j] !== "boolean")) return;
+    S.a[vk] = it.map((_, j) => dr[j]); delete DRAFT[vk];
+    const n = it.filter(([, v], j) => dr[j] === v).length;
+    S.a[`${id}:q${i}`] = n === it.length ? q[2] : -1; award(n * 2, `a:${id}:q${i}`, id); checkReading(R); save(); render();
+  }
   else if (act === "shield") { const g = S.g; if (g.shields < SHIELD_MAX && g.xp - g.spent >= SHIELD_COST) { g.spent += SHIELD_COST; g.shields++; save(); toast(TI("t_bought")); render(); } }
   else if (act === "m") {
     const k = b.dataset.m, side = b.dataset.side, i = +b.dataset.i, key = `${id}:${k}`;
@@ -1054,7 +1137,7 @@ async function route() {
   let h = location.hash.slice(1);
   const old = h.match(/^lectura-(\d)$/); if (old) h = ["bear-a1", "bear-a2", "bear-b1"][+old[1] - 1] || "inicio";
   try { PK = await loadPack(S.learn, S.know); } catch (e) { $("app").innerHTML = `<p class="msg">${esc(U("load_error", "es"))}<br>${esc(U("load_error", "en"))}</p>`; return; }
-  const lv = h.match(/^nivel-(a1|a2|b1|b2)$/);
+  const lv = h.match(/^nivel-(a1|a2|b1|b2|c1)$/);
   if (h === "diccionario") S.view = "dict";
   else if (window.LYAFichas?.isFc(h)) S.view = "fc";
   else if (window.LYAJuegos?.isGames(h)) S.view = "games";

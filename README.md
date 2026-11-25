@@ -108,3 +108,11 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Deberes de actividades en `admin:deberes`: `{lectura: "actividad", actividad, tipo: quiz|video|doblaje, titulo, directo}`. El profe ve quién lo ha hecho con `S.g.ac`.
 - Código compartido en `actividades.js` (mandar como deberes, avisar a la clase, guardar el resultado, entrar solo en la sala).
 - Pruebas: `qa/prueba-videos-api.mjs` (API) y `qa/prueba-videos.cjs` (navegador, con un YouTube simulado: crear, mandar, entrar solo, individual, proyección, a solas y Actividades creadas).
+
+## Valencià C1 (lectura de fitxa)
+- «La cuina del rap» (`content/ca/lecturas/va-rap-c1.json`), tema «Valencià» (`valencia` al catàleg), nivell **C1**, només al curs de català. Font: J. M. Campos, *La cuina del rap* (adaptació), Llengua catalana i Literatura 1r ESO, Grup Promotor / Santillana (material fotocopiable).
+- El nivell C1 només surt als cursos que tenen lectures C1 (inici, duel, escape room i dictats).
+- Preguntes amb format propi a `q[i][3]` (les de la fitxa): `t: "open"` resposta escrita amb correcció orientativa (paraules clau `k`, `min`; si no hi són, l'alumne compara amb la resposta orientativa `a`), `t: "mc"` (amb `just` = justificació), `t: "vf"` (afirmacions C/F a `items`). `q[i][0..2]` continua sent el test de 3-4 opcions que fan servir els jocs. `ev` = frase-prova del text per a cada pregunta.
+- `tr.es.text`: traducció de cada paràgraf (botó «Mostra la traducció»). `font`: font citada sota el text.
+- «Juga en grup» a cada lectura: duel, escape room i `#concursos-lectura-<id>` (crea un concurs amb les preguntes de la lectura).
+- Generador: `/mnt/project-files/build/valencia/rap_c1.py` i `merge.py` (diccionari).

@@ -22,7 +22,7 @@ const TB = (k, v) => { const {S} = st(); return esc(tl(k, S.learn, v)) + (both()
 const xp = d => { try { dispatchEvent(new CustomEvent("lya:xp", {detail: d})); } catch (e) {} };
 const say = w => { try { if (st().S.say) L().speak(w, 1); } catch (e) {} };
 const prog = () => { const {S} = st(); S.gram ||= {best: {}, plays: 0}; S.gram.best ||= {}; return S.gram; };
-const lvN = lv => LVS.indexOf(lv);
+const lvN = lv => LVS.indexOf(lv === "C1" ? "B2" : lv); /* C1 readings use the B2 grammar games */
 const plainA = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ñ/g, "n");
 const pickSome = (arr, n) => shuf(arr).slice(0, n);
 

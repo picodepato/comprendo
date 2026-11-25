@@ -60,7 +60,7 @@ const s1 = (k, lang, v) => { let o = (STR[lang] || STR.es)[k] ?? STR.es[k] ?? k;
 const both = () => { try { return L().both(); } catch (e) { return false; } };
 const T = (k, v) => { const {S} = st(); const a = s1(k, S.learn, v), b = s1(k, S.know, v); return esc(a) + (both() && b !== a ? ` · ${esc(b)}` : ""); };
 const TB = (k, v) => { const {S} = st(); const a = s1(k, S.learn, v), b = s1(k, S.know, v); return esc(a) + (both() && b !== a ? `<span class="en" style="display:block">${esc(b)}</span>` : ""); };
-const R = 6, LV = ["A1", "A2", "B1"], COL = ["#e23b4a", "#2f7de1", "#e9a400", "#22a55b"], FORM = ["▲", "◆", "●", "■"];
+const R = 6, LV = ["A1", "A2", "B1", "C1"], COL = ["#e23b4a", "#2f7de1", "#e9a400", "#22a55b"], FORM = ["▲", "◆", "●", "■"];
 const ICONS = ["🏆", "🥇", "⭐", "🔥", "🚀", "📚", "🦉", "💎", "🦖", "👑"];
 const store = {get: k => { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }};
 const TKEY = "lyaDuelos"; /* {código: {tk, pid, host, t}} */
@@ -203,7 +203,8 @@ const head = (sub) => { const {S} = st(); return `<div class="ghead"><div><h1>�
 function hub(app) {
   const {S, CAT} = st(), u = cuenta()?.usuario, rol = cuenta()?.rol, profe = rol === "profe" || rol === "admin";
   const ls = cursos(); if (!ls.includes(OPC.lang)) OPC.lang = ls.includes(S.learn) ? S.learn : ls[0];
-  if (!LV.includes(OPC.level)) OPC.level = S.level || "A1";
+  const lvs = LV.filter(l => lecturas(OPC.lang, l).length); /* C1 only where the course has it */
+  if (!lvs.includes(OPC.level)) OPC.level = lvs.includes(S.level) ? S.level : lvs[0] || "A1";
   const rs = lecturas(OPC.lang, OPC.level); if (!rs.some(r => r.file === OPC.file)) OPC.file = rs[0]?.file || null;
   const lname = l => esc(CAT.languages[l].name[S.learn] || CAT.languages[l].name.es);
   const sel = (name, vals, cur, fmt) => `<select name="${name}">${vals.map(v => `<option value="${v}" ${+cur === v ? "selected" : ""}>${fmt(v)}</option>`).join("")}</select>`;
@@ -219,7 +220,7 @@ function hub(app) {
       <button class="btn main" type="submit">${T("join_b")} →</button></form>
     <form class="du-box du-new" id="du-new"><h2>⚔️ ${T("create")}</h2>
       <div class="du-row"><span>${T("lang")}</span><div class="du-seg">${ls.map(l => `<button type="button" class="btn" data-du="lang" data-l="${l}" aria-pressed="${l === OPC.lang}">${lname(l)}</button>`).join("")}</div></div>
-      <div class="du-row"><span>${T("level")}</span><div class="du-seg">${LV.map(l => `<button type="button" class="btn" data-du="lv" data-l="${l}" aria-pressed="${l === OPC.level}">${l}</button>`).join("")}</div></div>
+      <div class="du-row"><span>${T("level")}</span><div class="du-seg">${lvs.map(l => `<button type="button" class="btn" data-du="lv" data-l="${l}" aria-pressed="${l === OPC.level}">${l}</button>`).join("")}</div></div>
       <p class="du-small">${T("pick")}</p>
       <div class="du-grid">${rs.length ? rs.map(r => `<button type="button" class="du-card" data-du="rd" data-f="${esc(r.file)}" aria-pressed="${r.file === OPC.file}" style="--c:${esc(r.t.color)}"><img src="${esc(r.art || r.t.art)}" alt="" loading="lazy"><span><b>${esc(r.t.name[OPC.lang] || r.t.name.es)}</b><small>${esc(r.title[OPC.lang] || r.title.es)}</small></span></button>`).join("") : `<p>${T("none_rd")}</p>`}</div>
       <fieldset class="du-opts"><legend>${T("opts")}</legend>

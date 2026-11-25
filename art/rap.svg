@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Un rap al fons del mar amb la boca oberta">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#f5b800" stop-opacity=".4"/><stop offset=".5" stop-color="#f5b800" stop-opacity=".1"/><stop offset="1" stop-color="#f5b800" stop-opacity="0"/></radialGradient>
+<radialGradient id="lure"><stop offset="0" stop-color="#fff1c9"/><stop offset=".4" stop-color="#f5b800" stop-opacity=".8"/><stop offset="1" stop-color="#f5b800" stop-opacity="0"/></radialGradient>
+<style>.glow{animation:p 5s ease-in-out infinite}@keyframes p{0%,100%{opacity:.7}50%{opacity:1}}
+.lu{transform-origin:600px 120px;animation:lu 4s ease-in-out infinite}@keyframes lu{0%,100%{transform:rotate(0)}50%{transform:rotate(6deg)}}
+.bl{animation:bl 6s ease-in infinite}.bl:nth-of-type(2){animation-delay:-2s}.bl:nth-of-type(3){animation-delay:-4s}
+@keyframes bl{0%{transform:translateY(0);opacity:0}15%{opacity:.7}100%{transform:translateY(-160px);opacity:0}}
+.jaw{transform-box:fill-box;transform-origin:0% 0%;animation:jaw 5s ease-in-out infinite}@keyframes jaw{0%,100%{transform:rotate(0)}45%,55%{transform:rotate(7deg)}}
+.sm{animation:sm 7s ease-in-out infinite}@keyframes sm{0%,100%{transform:translateX(0)}50%{transform:translateX(-40px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style></defs>
+<rect width="1000" height="360" fill="#0c1220"/>
+<circle class="glow" cx="560" cy="200" r="280" fill="url(#g)"/>
+<g fill="#f4eee6" opacity=".35"><circle class="bl" cx="300" cy="260" r="5"/><circle class="bl" cx="760" cy="230" r="4"/><circle class="bl" cx="840" cy="280" r="6"/></g>
+<path d="M0 300 Q250 278 500 296 T1000 292 V360 H0Z" fill="#1b2030"/>
+<path d="M0 312 Q250 290 500 308 T1000 304" stroke="#f5b800" stroke-opacity=".25" stroke-width="2" fill="none"/>
+<path d="M120 300 q10 -50 -6 -90 M136 300 q-4 -40 14 -70 M880 296 q-12 -44 6 -84 M900 296 q8 -30 -8 -60" stroke="#3fd69c" stroke-opacity=".55" stroke-width="7" fill="none" stroke-linecap="round"/>
+<ellipse cx="520" cy="300" rx="250" ry="14" fill="#070a12"/>
+<!-- rap: cos aplanat, cap enorme -->
+<path d="M330 262 Q300 230 250 212 L226 186 L238 240 L214 268 L250 262 Q300 270 330 276Z" fill="#7a5b48"/>
+<path d="M340 250 Q420 160 560 160 Q690 160 720 236 Q730 270 700 286 Q560 300 420 290 Q350 284 340 250Z" fill="#9b7558"/>
+<path d="M400 210 q20 -30 50 -40 M470 180 q10 -14 30 -20" stroke="#7a5b48" stroke-width="6" fill="none" stroke-linecap="round"/>
+<g fill="#7a5b48"><circle cx="430" cy="236" r="6"/><circle cx="470" cy="252" r="5"/><circle cx="520" cy="222" r="5"/><circle cx="560" cy="248" r="6"/><circle cx="500" cy="270" r="4"/><circle cx="610" cy="214" r="4"/></g>
+<path d="M480 284 Q440 320 400 312 Q440 300 452 282Z" fill="#7a5b48"/>
+<!-- boca oberta amb dents -->
+<path d="M622 232 Q700 214 760 236 Q700 250 640 248Z" fill="#2a1620"/>
+<g class="jaw"><path d="M640 248 Q700 250 760 236 Q740 282 690 286 Q650 282 640 248Z" fill="#b48a68"/></g>
+<path d="M650 240 l6 -12 l6 12 M670 236 l6 -13 l6 13 M690 233 l6 -13 l6 13 M710 232 l6 -13 l6 13 M730 233 l5 -11 l5 11" fill="#f4eee6"/>
+<!-- ulls sortits -->
+<circle cx="610" cy="176" r="18" fill="#f4eee6"/><circle cx="616" cy="178" r="8" fill="#0c1220"/>
+<circle cx="572" cy="170" r="14" fill="#f4eee6"/><circle cx="577" cy="172" r="6" fill="#0c1220"/>
+<!-- esquer -->
+<g class="lu"><path d="M600 160 Q610 100 680 92" stroke="#7a5b48" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="684" cy="92" r="34" fill="url(#lure)"/><circle cx="684" cy="92" r="9" fill="#fff1c9"/></g>
+<!-- peixet que s'acosta -->
+<g class="sm"><g transform="translate(860 200)"><ellipse rx="26" ry="12" fill="#3fd69c"/><path d="M24 0 l18 -12 v24z" fill="#3fd69c"/><circle cx="-14" cy="-3" r="3" fill="#0c1220"/></g></g>
+</svg>
