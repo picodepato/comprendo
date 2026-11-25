@@ -30,7 +30,17 @@
   const palabras = fr => trozos(fr).filter(x => x.w >= 0).map(x => x.t);
   const base = w => String(w).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/’/g, "'");
   const parrafos = R => (R.text || []).map(frases);
-  const X = {plain, frases, trozos, palabras, base, parrafos};
+  /* frases del texto que coinciden con las «pruebas» escritas a mano en una pregunta (q[i][3].ev: frases exactas del texto) */
+  const norm = t => base(plain(t)).replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  function evDeFrases(P, evs) {
+    const out = [];
+    for (const e of evs || []) {
+      const ne = norm(e); if (!ne) continue;
+      P.forEach((par, p) => par.forEach((fr, s) => { const nf = norm(fr); if (nf && (nf.includes(ne) || (nf.length > 12 && ne.includes(nf))) && !out.some(x => x[0] === p && x[1] === s)) out.push([p, s]); }));
+    }
+    return out.length ? out : null;
+  }
+  const X = {plain, frases, trozos, palabras, base, parrafos, evDeFrases};
   root.LYARetosTexto = X;
   if (typeof module === "object" && module && module.exports) module.exports = X;
 })(typeof window !== "undefined" ? window : globalThis);

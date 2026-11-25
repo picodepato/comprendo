@@ -12,7 +12,7 @@ import {fileURLToPath} from "node:url";
 
 const RAIZ = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ctx = {}; ctx.globalThis = ctx; vm.runInNewContext(fs.readFileSync(path.join(RAIZ, "retos/texto.js"), "utf8"), ctx);
-const {parrafos, palabras, base} = ctx.LYARetosTexto;
+const {parrafos, palabras, base, evDeFrases} = ctx.LYARetosTexto;
 
 const STOP = {
   es: "el la los las un una unos unas de del al a en y o u e ni que qué con por para sin sobre entre hasta desde como cómo cuando cuándo donde dónde muy más menos mucho mucha muchos muchas poco poca pocos pocas este esta estos estas ese esa esos esas aquel aquella esto eso lo le les se me te nos os su sus mi mis tu tus nuestro nuestra es son ser fue fueron era eran está están estar estaba han ha hay había tiene tienen tener hace hacen hacer puede pueden poder también pero porque aunque si sí no ya todo toda todos todas otro otra otros otras cada mismo misma algo alguno alguna algunos algunas varios varias alguien nada nadie así entonces después antes luego siempre nunca solo sólo bien mal tan tanto tanta cual cuál cuales quien quién según durante mientras dice dicen va van vez veces año años día días parte forma manera cosa cosas gente persona personas ejemplo hoy aquí allí ahora",
@@ -42,7 +42,10 @@ function generar(lang) {
     const P = parrafos(R), id = R.id;
     const S = P.map(fs_ => fs_.map(fr => stems(fr)));
     /* evidencias */
-    const ev = (R.q || []).map(([preg, ops, ok]) => {
+    const ev = (R.q || []).map(([preg, ops, ok, extra]) => {
+      /* si la lectura trae las pruebas escritas a mano (q[i][3].ev), mandan ellas */
+      const aMano = extra && Array.isArray(extra.ev) ? evDeFrases(P, extra.ev) : null;
+      if (aMano) return aMano.slice(0, 3);
       let solo = null; for (const [re, n] of ORD[lang]) if (re.test(preg)) { solo = n < 0 ? P.length - 1 : n; break; }
       const qa = stems(preg.replace(/párrafo|paragraph|paràgraf/gi, "")), an = stems(ops[ok]), mal = new Map();
       ops.forEach((o, i) => { if (i !== ok) for (const [t] of stems(o)) mal.set(t, 1); });

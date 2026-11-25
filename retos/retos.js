@@ -59,12 +59,29 @@ const mezcla = (a, r) => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { 
 const limpio = t => TX().plain(t);
 const DATOS = {};
 const cargarDatos = lang => DATOS[lang] ||= fetch(`content/${lang}/retos.json`).then(r => { if (!r.ok) throw new Error("retos"); return r.json(); });
+/* lectura nueva que aún no está en retos.json: se prepara aquí, más sencillo (pruebas de q[i][3].ev y palabras del vocabulario) */
+const DEFS = {};
+async function datosAlVuelo(R, lang) {
+  const X = TX(), P = X.parrafos(R);
+  const ev = (R.q || []).map(q => (q[3] && Array.isArray(q[3].ev) ? X.evDeFrases(P, q[3].ev) : null));
+  let def = {}; try { def = await (DEFS[lang] ||= fetch(`content/${lang}/definiciones.json`).then(r => r.json())); } catch (e) {}
+  const kw = [];
+  for (const [w] of R.vocab || []) {
+    const b = X.base(w), o = [];
+    P.forEach((par, p) => par.forEach((fr, s) => X.palabras(fr).forEach((t, wi) => { if (X.base(t) === b || (b.length > 4 && X.base(t).startsWith(b.slice(0, -1)))) o.push([p, s, wi]); })));
+    if (!o.length) continue;
+    const f = X.palabras(P[o[0][0]][o[0][1]])[o[0][2]].toLowerCase(), d = (def[f] || def[w.toLowerCase()] || [])[1] || "";
+    const x = X.palabras(d).filter(t => t.length >= 4 && X.base(t).slice(0, 4) !== X.base(f).slice(0, 4)).map(t => t.toLowerCase()).filter((t, i, a) => a.indexOf(t) === i).slice(0, 3);
+    kw.push({f, l: w, d, x, o});
+  }
+  return {s: P, ev, kw, tr: []};
+}
 const palabraEn = (D, p, s, w) => (TX().palabras(D.s[p]?.[s] || "")[w]) || "";
 
 function preparar(juego, R, D, semilla) {
   const r = rnd(semilla), Q = R.q || [];
   if (juego === "prueba") {
-    const qs = mezcla(Q.map((q, i) => ({q, i, ev: D.ev[i]})).filter(x => x.ev), r).slice(0, R.level === "B2" ? 7 : 5).sort((a, b) => a.i - b.i);
+    const qs = mezcla(Q.map((q, i) => ({q, i, ev: D.ev[i]})).filter(x => x.ev), r).slice(0, /^(B2|C)/.test(R.level) ? 7 : 5).sort((a, b) => a.i - b.i);
     const defs = mezcla(D.kw.filter(k => k.d && k.o.length), r).slice(0, 3);
     const rondas = [];
     qs.forEach((x, n) => { rondas.push({tipo: "q", txt: x.q[0], ok: x.ev.map(e => e.join("."))}); if (n % 2 === 1 && defs.length) { const k = defs.shift(); rondas.push({tipo: "d", txt: k.d, w: k.f, ok: k.o.map(o => o.join("."))}); } });
@@ -80,7 +97,7 @@ function preparar(juego, R, D, semilla) {
     return {rondas};
   }
   if (juego === "cartas") {
-    const N = {A1: 6, A2: 7, B1: 8, B2: 10}[R.level] || 8, huecos = [], usadas = new Set();
+    const N = {A1: 6, A2: 7, B1: 8, B2: 10, C1: 10, C2: 10}[R.level] || 8, huecos = [], usadas = new Set();
     for (const k of D.kw) {
       if (huecos.length >= N) break;
       const [p, s, w] = k.o[0], f = p + "." + s;
@@ -103,7 +120,7 @@ async function cargarLectura() {
   const firma = s.file + s.semilla;
   if (E.G && E.G.firma === firma) return;
   const [R, todos] = await Promise.all([L().loadReading(s.file), cargarDatos(s.lang)]);
-  E.R = R; E.D = todos[s.lectura]; if (!E.D) throw new Error("sin datos");
+  E.R = R; E.D = todos[s.lectura] || await datosAlVuelo(R, s.lang); if (!E.D) throw new Error("sin datos");
   E.G = {...preparar(s.juego, R, E.D, s.semilla), firma};
 }
 
@@ -568,7 +585,7 @@ document.addEventListener("submit", async ev => {
   if (tipoF === "crear") {
     const j = juegoRuta, c = E.crear[j], r0 = lecturasDe(c.lang, c.nivel).find(r => r.id === c.lectura); if (!r0) return;
     E.busy = true; E.err = ""; pintar(true);
-    try { const [R, todos] = await Promise.all([L().loadReading(r0.file), cargarDatos(c.lang)]); const G = todos[r0.id] && preparar(j, R, todos[r0.id], 1); if (!G || (G.rondas || G.huecos || G.palabras || G.retos || []).length < 3) { E.busy = false; E.err = "e_datos"; return pintar(true); } } catch (e) {}
+    try { const [R, todos] = await Promise.all([L().loadReading(r0.file), cargarDatos(c.lang)]); const D0 = todos[r0.id] || await datosAlVuelo(R, c.lang), G = D0 && preparar(j, R, D0, 1); if (!G || (G.rondas || G.huecos || G.palabras || G.retos || []).length < 3) { E.busy = false; E.err = "e_datos"; return pintar(true); } } catch (e) {}
     const r = await api("POST", {accion: "crear", juego: j, lectura: r0.id, file: r0.file, lang: c.lang, equipos: c.equipos, dur: c.dur, rd: c.rd});
     E.busy = false;
     if (!r.ok) { E.err = ERR[r.error] || "e_red"; return pintar(true); }
