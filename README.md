@@ -86,7 +86,7 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 ## Escape room de clase (escape/)
 - Pestaña «🔐 Escape room». El profe crea una sala en la pizarra (idioma, nivel, lectura, nº de equipos y minutos) y sale un código de 6 cifras. Los alumnos entran con el código en el móvil, escriben su nombre y eligen equipo. No hace falta cuenta.
 - Al empezar, cada miembro del equipo ve una parte distinta: trozos de la lectura, preguntas, las respuestas con símbolos (🔺🔵⭐), principios y finales de frase, y los números del candado final. Solo hablando (en el idioma que aprenden) pueden abrir los candados.
-- 4 candados de preguntas (`R.q`) + 1 de «frases rotas» (`R.halves`) + candado final con los 5 números. Un fallo congela el candado 15 s y suma 30 s. Funciona con las 135 lecturas (es, en, ca). Sin IA: todo sale de la lectura, con la misma semilla en todos los móviles.
+- 4 candados de preguntas (`R.q`) + 1 de «frases rotas» (`R.halves`) + candado final con los 5 números. Un fallo congela el candado 15 s y suma 30 s. Funciona con todas las lecturas (es, en, ca; hoy 181). Sin IA: todo sale de la lectura, con la misma semilla en todos los móviles.
 - La pizarra enseña el código, los equipos, los candados abiertos y la clasificación. El profe puede quitar a alguien antes de empezar.
 - Servidor: `api/_escape.js` (módulo, no cuenta como función), montado en `api/propuestas?escape=1`. Claves `esc:<código>`, `esc:<código>:j` y `esc:<código>:e`, caducan a las 4 h. El GET del estado lleva caché de Vercel de 1 s: toda la clase comparte una lectura de Upstash por segundo.
 - Prueba: `qa/prueba-escape.cjs <url> [carpeta] [en|es|ca]` con `servidor-prueba.mjs` (1 pizarra y 4 alumnos).

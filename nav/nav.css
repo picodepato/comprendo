@@ -186,3 +186,4 @@ h2.gmini+.ggrid{padding-top:10px}
 }
 @media(max-width:380px){.top .brand,.top:has(#score:not([hidden])) .brand{font-size:13px;letter-spacing:.01em}.top .nvtool{min-width:36px;padding:4px 6px}.top .me{padding:6px 7px}}
 @media(max-width:340px){.top .brand::before{display:none}}
+.nven{font-weight:400;opacity:.75;font-size:.85em}.nvenb{display:block;margin-top:2px}.nvtt .nvenb{font-size:13px;margin:0 0 2px}.nvgrh h3 .nven,.nvh2 .nven{font-size:.7em}

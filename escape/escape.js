@@ -112,7 +112,7 @@ const STR = {
     quien_h: "🧩 Principis: {a} · Finals: {b}",
     t_eq: ["Guineus", "Pops", "Mussols", "Llops", "Tortugues", "Unicorns", "Abelles", "Dinos"]}
 };
-const IDIOMA = {es: {es: "español", en: "inglés", ca: "catalán"}, en: {es: "Spanish", en: "English", ca: "Catalan"}, ca: {es: "castellà", en: "anglès", ca: "català"}};
+const IDIOMA = {es: {es: "español", en: "inglés", ca: "catalán"}, en: {es: "Spanish", en: "English", ca: "Catalan"}, ca: {es: "espanyol", en: "anglès", ca: "català"}};
 
 /* ---------- estado ---------- */
 const E = {st: null, R: null, file: null, P: null, msg: "", inp: {}, err: "", busy: false, poll: null, tick: null, firma: "", off: 0, crear: null};

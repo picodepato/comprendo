@@ -53,3 +53,6 @@ Nota: `prueba-mascota.cjs` a veces falla en la línea 35 («Node is detached») 
 Simula YouTube y usa el micrófono falso de Chrome. Revisa: escena pegada con «NOMBRE: frase», marcar tiempos tocando, el profe la manda a la clase,
 dos alumnos la ven en sus deberes, graban (vídeo en silencio, frases iluminadas), ven su doblaje (su voz suena), lo mandan a la votación,
 votan (no a sí mismos), el profe lo ve hecho en su panel, y una canción con la letra automática.
+
+## Idiomas de cada pantalla
+`comprobar-idiomas.cjs <url> [B1|A1|todos]` (con `servidor-prueba.mjs`): abre las pantallas principales en los tres cursos y saca las líneas que parecen de otro idioma. Regla: de A2 en adelante todo va en el idioma que se aprende (también la barra, Inicio, En grupo, Mi zona y la cuenta); en A1, con el idioma que ya sabe al lado. Debe acabar en «Ninguna línea en otro idioma» (o solo falsos avisos que se ven a ojo).

@@ -115,7 +115,9 @@ const STR = {
 };
 const lang = () => { try { const l = st().S.learn; return STR[l] ? l : (STR[st().S.know] ? st().S.know : "es"); } catch (e) { return "es"; } };
 const t = (k, v) => { let o = STR[lang()][k] ?? STR.es[k] ?? k; for (const x in v || {}) o = o.split(`{${x}}`).join(v[x]); return o; };
-const T = (k, v) => esc(t(k, v));
+/* A1: con el idioma que ya sabe al lado, como el resto de la web (solo si dice algo distinto) */
+const t2 = (k, v) => { try { const S = st().S, b = STR[S.know] && S.know !== lang() && window.LYA?.both?.() ? S.know : null; if (!b) return ""; let o = STR[b][k] ?? STR.es[k] ?? k; for (const x in v || {}) o = o.split(`{${x}}`).join(v[x]); return o === t(k, v) ? "" : o; } catch (e) { return ""; } };
+const T = (k, v) => { const b = t2(k, v); return esc(t(k, v)) + (b ? " · " + esc(b) : ""); };
 const SIMB = ["★", "♥", "☾", "✚"];
 const barra = (quedan, s, parado) => `<div class="cc-tiempo"><i class="${parado ? "parado" : ""}" style="--f:${Math.max(0, Math.min(1, quedan / (s * 1000))).toFixed(3)};animation-duration:${Math.round(quedan)}ms"></i></div>`;
 const opcHTML = (o, i, extra = "") => `<span class="cc-sim" aria-hidden="true">${SIMB[i]}</span><span class="cc-ot">${esc(o)}</span>${extra}`;
