@@ -228,7 +228,7 @@ function reloj() {
   const s = sala(); if (!s) return;
   let t;
   if (s.fase !== "juego") t = s.fase === "fin" ? 0 : (tipo() === "rondas" ? s.rd * 1000 : s.dur * 60000);
-  else t = tipo() === "rondas" ? finRonda() - ahora() : fin() - ahora();
+  else t = tipo() === "rondas" ? (rondaAbierta() ? finRonda() - ahora() : 0) : fin() - ahora();
   for (const el of document.querySelectorAll("[data-rt-reloj]")) el.textContent = mmss(t);
   for (const el of document.querySelectorAll("[data-rt-bloq]")) { const q = +el.dataset.rtBloq - ahora(); el.textContent = q > 0 ? `🔒 ${Math.ceil(q / 1000)}` : ""; }
 }
@@ -649,5 +649,5 @@ document.addEventListener("visibilitychange", () => { if (!document.hidden && en
 
 const isRetos = h => /^reto-(prueba|apuesta|cartas|tabu|piloto|\d{6}|pizarra-\d{6})$/.test(h);
 const nombre = j => s1("n_" + j, st().S.know);
-window.LYARetos = {render, isRetos, nombre, JUEGOS, preparar};
+window.LYARetos = {render, isRetos, nombre, JUEGOS, preparar, _E: E};
 })();

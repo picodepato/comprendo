@@ -313,6 +313,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="fichas/fichas.css">
 <link rel="stylesheet" href="garabatos/garabatos.css">
 <link rel="stylesheet" href="escape/escape.css">
+<link rel="stylesheet" href="retos/retos.css">
 <link rel="stylesheet" href="concursos/concursos.css">
 <link rel="stylesheet" href="videos/videos.css">
 <link rel="stylesheet" href="diseno.css">
@@ -1054,6 +1055,7 @@ function render() {
   if (S.view === "dictado" && window.LYADictados) return LYADictados.render($("app"));
   if (S.view === "duelo" && window.LYADuelo) return LYADuelo.render($("app"));
   if (S.view === "escape" && window.LYAEscape) return LYAEscape.render($("app"));
+  if (S.view === "retos" && window.LYARetos) return LYARetos.render($("app"));
   if (S.view === "cc" && window.LYAConcursos) return LYAConcursos.render($("app"));
   if (S.view === "vd" && window.LYAVideos) return LYAVideos.render($("app"));
   if (S.view === "deb" && window.LYAAvisos?.render) return LYAAvisos.render($("app"));
@@ -1083,6 +1085,7 @@ async function route() {
   else if (window.LYADictados?.isDict(h)) S.view = "dictado";
   else if (window.LYADuelo?.isDuelo(h)) S.view = "duelo";
   else if (window.LYAEscape?.isEscape(h)) S.view = "escape";
+  else if (window.LYARetos?.isRetos(h)) S.view = "retos";
   else if (window.LYAConcursos?.isCc(h)) S.view = "cc";
   else if (window.LYAVideos?.isVd(h)) S.view = "vd";
   else if (window.LYAAvisos?.isDeb?.(h)) S.view = "deb";
@@ -1136,6 +1139,9 @@ start();
 <script src="fichas/fichas.js"></script>
 <script src="garabatos/garabatos.js"></script>
 <script src="escape/escape.js"></script>
+<script src="retos/texto.js"></script>
+<script src="retos/textos.js"></script>
+<script src="retos/retos.js"></script>
 <script src="concursos/formato.js"></script>
 <script src="concursos/concursos.js"></script>
 <script src="actividades.js"></script>

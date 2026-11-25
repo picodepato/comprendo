@@ -119,3 +119,14 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Deberes de actividades en `admin:deberes`: `{lectura: "actividad", actividad, tipo: quiz|video|doblaje, titulo, directo}`. El profe ve quién lo ha hecho con `S.g.ac`.
 - Código compartido en `actividades.js` (mandar como deberes, avisar a la clase, guardar el resultado, entrar solo en la sala).
 - Pruebas: `qa/prueba-videos-api.mjs` (API) y `qa/prueba-videos.cjs` (navegador, con un YouTube simulado: crear, mandar, entrar solo, individual, proyección, a solas y Actividades creadas).
+
+## Retos en grupo (retos/)
+- Cinco juegos de clase en «En grupo», con sala y código como el escape room. Funcionan con **todas** las lecturas sin preparar nada a mano:
+  - 🔎 **Encuentra la prueba** (`#reto-prueba`): pregunta o definición en la pizarra; se toca la frase (o la palabra) del texto que la responde. Más puntos al más rápido, 3 s bloqueado si fallas y mapa de calor de dónde ha tocado la clase. Individual o por equipos.
+  - 🎲 **Atrapa los puntos** (`#reto-apuesta`): afirmaciones verdadero/falso sacadas de las preguntas (respuesta buena = verdadero, una mala = falso). Saldo de 1000 y apuesta; si el equipo toca la frase que lo demuestra, gana el doble.
+  - 🃏 **Cartas a la mesa** (`#reto-cartas`): texto con huecos de palabras clave, repartidas como cartas entre los móviles del equipo; 2 cartas trampa y un comodín (primera letra y quién tiene la carta).
+  - 🤐 **Palabra secreta** (`#reto-tabu`): el guía (va rotando) explica una palabra clave sin decir las prohibidas (sacadas de su definición); los demás la tocan en el texto; botón «¡Tabú!».
+  - 🧭 **Lector y piloto** (`#reto-piloto`): lectores solo ven el texto, pilotos solo los retos (las preguntas); máximo 3 preguntas por reto (menos preguntas, más puntos); a mitad se cambian los papeles.
+- Datos: `content/<idioma>/retos.json`, generados con `node retos/generar.mjs` (sin IA): frases de cada lectura, la frase que demuestra cada pregunta, palabras clave con definición y prohibidas, y trampas. **Volver a ejecutarlo al añadir o cambiar lecturas.**
+- Servidor: `api/_retos.js`, montado en `api/propuestas?retos=1` (no gasta otra función de Vercel). Rutas: `#reto-<código>` (alumno) y `#reto-pizarra-<código>` (pizarra).
+- Prueba: `qa/prueba-retos.cjs` (pizarra + 3 alumnos, los 5 juegos).

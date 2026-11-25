@@ -40,6 +40,7 @@ const TX = {
     t_concursos: "Concursos", t_concursos_p: "Preguntas en la pantalla grande y respondes en el móvil.",
     t_escape: "Escape room", t_escape_p: "Habla con tu equipo para abrir los candados.",
     t_garabatos: "Garabatos", t_garabatos_p: "Uno dibuja y los demás adivinan la palabra.",
+    t_rprueba: "Encuentra la prueba", t_rprueba_p: "Toca en el texto la frase que lo demuestra.", t_rapuesta: "Atrapa los puntos", t_rapuesta_p: "¿Verdadero o falso? Apuesta y demuéstralo.", t_rcartas: "Cartas a la mesa", t_rcartas_p: "Lanza tus palabras a los huecos del texto.", t_rtabu: "Palabra secreta", t_rtabu_p: "Explícala sin decir las prohibidas.", t_rpiloto: "Lector y piloto", t_rpiloto_p: "Unos ven el texto y otros las preguntas.",
     t_vdirecto: "Vídeos en directo", t_vdirecto_p: "Un vídeo con preguntas para toda la clase.",
     t_juegos: "Mini-juegos", t_gram: "Gramática y verbos",
     f_clases_p: "Tus alumnos y los códigos de clase.", f_creadas_p: "Pruébalas, lánzalas en directo o mándalas como deberes.", f_deberes_p: "Mandados, entregados y notas.", f_result_p: "El progreso de cada alumno y de la clase.", f_fallos: "Fallos", f_fallos_p: "Las preguntas que más fallan.", f_msgs: "Mensajes", f_msgs_p: "Escribe a tu clase.", f_admin: "Propuestas y votos", f_admin_p: "Temas propuestos y votación.",
@@ -73,6 +74,7 @@ const TX = {
     t_concursos: "Quizzes", t_concursos_p: "Questions on the big screen, answers on your phone.",
     t_escape: "Escape room", t_escape_p: "Talk to your team to open the locks.",
     t_garabatos: "Scribbles", t_garabatos_p: "One draws and the others guess the word.",
+    t_rprueba: "Find the proof", t_rprueba_p: "Tap the sentence in the text that proves it.", t_rapuesta: "Catch the points", t_rapuesta_p: "True or false? Bet and prove it.", t_rcartas: "Cards on the table", t_rcartas_p: "Play your words into the gaps in the text.", t_rtabu: "Secret word", t_rtabu_p: "Explain it without the forbidden words.", t_rpiloto: "Reader and pilot", t_rpiloto_p: "Some see the text, others the questions.",
     t_vdirecto: "Live videos", t_vdirecto_p: "A video with questions for the whole class.",
     t_juegos: "Mini-games", t_gram: "Grammar and verbs",
     f_clases_p: "Your students and class codes.", f_creadas_p: "Try them, play them live or set them as homework.", f_deberes_p: "Set, handed in and marks.", f_result_p: "Each student's and the class's progress.", f_fallos: "Mistakes", f_fallos_p: "The questions they get wrong most.", f_msgs: "Messages", f_msgs_p: "Write to your class.", f_admin: "Ideas and votes", f_admin_p: "Topic ideas and voting.",
@@ -106,6 +108,7 @@ const TX = {
     t_concursos: "Concursos", t_concursos_p: "Preguntes a la pantalla gran i respons al mòbil.",
     t_escape: "Escape room", t_escape_p: "Parla amb el teu equip per obrir els cadenats.",
     t_garabatos: "Gargots", t_garabatos_p: "Un dibuixa i els altres endevinen la paraula.",
+    t_rprueba: "Troba la prova", t_rprueba_p: "Toca al text la frase que ho demostra.", t_rapuesta: "Atrapa els punts", t_rapuesta_p: "Vertader o fals? Aposta i demostra-ho.", t_rcartas: "Cartes a la taula", t_rcartas_p: "Llança les teves paraules als buits del text.", t_rtabu: "Paraula secreta", t_rtabu_p: "Explica-la sense dir les prohibides.", t_rpiloto: "Lector i pilot", t_rpiloto_p: "Uns veuen el text i altres les preguntes.",
     t_vdirecto: "Vídeos en directe", t_vdirecto_p: "Un vídeo amb preguntes per a tota la classe.",
     t_juegos: "Minijocs", t_gram: "Gramàtica i verbs",
     f_clases_p: "Els teus alumnes i els codis de classe.", f_creadas_p: "Prova-les, llança-les en directe o envia-les com a deures.", f_deberes_p: "Enviats, entregats i notes.", f_result_p: "El progrés de cada alumne i de la classe.", f_fallos: "Errades", f_fallos_p: "Les preguntes que més fallen.", f_msgs: "Missatges", f_msgs_p: "Escriu a la teva classe.", f_admin: "Propostes i vots", f_admin_p: "Temes proposats i votació.",
@@ -131,7 +134,7 @@ function secOf(view, h = hash()) {
   if (view === "vd") return /^(videos-proyectar|vjugar)/.test(h) ? "grupo" : /^videos-editar/.test(h) && esProfe() ? "profe" : "aprender";
   if (view === "cc") return /^concursos-(crear|editar)/.test(h) && esProfe() ? "profe" : "grupo";
   if (view === "games") return /^garabatos/.test(h) ? "grupo" : "practicar";
-  if (view === "duelo" || view === "escape") return "grupo";
+  if (view === "duelo" || view === "escape" || view === "retos") return "grupo";
   if (["dict", "fc", "pet", "prog"].includes(view)) return "mizona";
   return "inicio";
 }
@@ -177,7 +180,8 @@ function renderGrupo(el) {
       window.LYAConcursos && tile("#concursos", "🏆", "t_concursos"),
       window.LYAEscape && tile("#escape", "🔐", "t_escape"),
       window.LYAGarabatos && tile("#garabatos", "✏️", "t_garabatos"),
-      window.LYAVideos && tile("#videos", "📺", "t_vdirecto")].filter(Boolean).join("")}</div></section>`;
+      window.LYAVideos && tile("#videos", "📺", "t_vdirecto"),
+      ...(window.LYARetos ? Object.entries(LYARetos.JUEGOS).map(([j, x]) => tile("#reto-" + j, x.ic, "t_r" + j)) : [])].filter(Boolean).join("")}</div></section>`;
   const f = el.querySelector("#nvcode"), inp = f.querySelector("input"), msg = f.querySelector(".nvmsg");
   inp.addEventListener("input", () => { inp.value = inp.value.replace(/\D/g, "").slice(0, 6); msg.textContent = ""; });
   f.addEventListener("submit", async e => {
@@ -197,7 +201,8 @@ async function buscarSala(c) {
     prueba("api/concursos?sala=" + c, j => (j.tipo === "video" ? "vjugar-" : "jugar-") + c),
     prueba("api/duelo?c=" + c, () => "duelo-" + c),
     prueba("api/propuestas?escape=1&sala=" + c, () => "escape-" + c),
-    prueba("api/dibujos?sala=" + c, () => "garabatos-" + c)
+    prueba("api/dibujos?sala=" + c, () => "garabatos-" + c),
+    prueba("api/propuestas?retos=1&sala=" + c, () => "reto-" + c)
   ]);
   return rs.find(Boolean) || null;
 }
@@ -263,7 +268,7 @@ function mapa() {
   const G = [
     ["aprender", "📖", "#aprender", [["#aprender", "📚", "t_lect"], ...APRENDER()]],
     ["practicar", "🎮", "#practicar", [window.LYAGram && ["#practicar", "✏️", "t_gram"], ["#diccionario", "📝", "p_vocab"], window.LYAFichas && ["#fichas", "🃏", "t_fichas"], window.LYAJuegos && ["#practicar", "🎲", "t_juegos"]]],
-    ["grupo", "🏫", "#grupo", [["#grupo", "🔑", "codigo_t"], window.LYADuelo && ["#duelo", "⚔️", "t_duelo"], window.LYAConcursos && ["#concursos", "🏆", "t_concursos"], window.LYAEscape && ["#escape", "🔐", "t_escape"], window.LYAGarabatos && ["#garabatos", "✏️", "t_garabatos"], window.LYAVideos && ["#videos", "📺", "t_vdirecto"]]],
+    ["grupo", "🏫", "#grupo", [["#grupo", "🔑", "codigo_t"], window.LYADuelo && ["#duelo", "⚔️", "t_duelo"], window.LYAConcursos && ["#concursos", "🏆", "t_concursos"], window.LYAEscape && ["#escape", "🔐", "t_escape"], window.LYAGarabatos && ["#garabatos", "✏️", "t_garabatos"], window.LYAVideos && ["#videos", "📺", "t_vdirecto"], ...(window.LYARetos ? Object.entries(LYARetos.JUEGOS).map(([j, x]) => ["#reto-" + j, x.ic, "t_r" + j]) : [])]],
     ["mizona", "📚", "#mizona", [["#diccionario", "📖", "t_dicc"], window.LYACanciones && ["#diccionario", "🎵", "t_canpal"], window.LYAFichas && ["#fichas", "🃏", "t_fichas"], window.LYAMascota && ["#mascota", "🐾", "t_mascota"], ["#progreso", "🏅", "t_logros"], window.LYAAvisos && ["#deberes", "🗂️", "t_debhist"]]]
   ];
   if (esProfe()) G.push(["profe", "👩‍🏫", "#profe", [["#profe", "🏫", "f_clases"], window.LYAConcursos && ["#concursos-crear", "🏆", "c_quiz"], window.LYAVideos && ["#videos-editar", "📺", "c_video"], window.LYADoblaje && ["#doblaje", "🎬", "c_dob"], window.LYACanciones && ["#canciones", "🎵", "c_cancion"], ["#profe", "📋", "f_seg"]]]);
