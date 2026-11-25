@@ -1,0 +1,498 @@
+{
+ "id": "ca-records-b2",
+ "topic": "records",
+ "level": "B2",
+ "title": "Qui comprova els rècords?",
+ "short": "Qui comprova els rècords?",
+ "text": [
+  "El 1951, un empresari britànic anomenat Sir Hugh Beaver era de cacera a Irlanda quan es va posar a discutir amb els seus amics. Volien saber quin era l'ocell de caça més ràpid d'Europa, però cap dels llibres de consulta de la casa no els donava la resposta. Beaver, que era director de la fàbrica de cervesa Guinness, va pensar que als bars de tot el país la gent devia tenir discussions semblants cada nit. El que calia, va pensar, era un llibre que les pogués resoldre.",
+  "Per escriure'l, va contractar dos germans bessons, Norris i Ross McWhirter, que dirigien una agència de dades a Londres i eren coneguts per la seva memòria extraordinària per a les dades i les xifres. La primera edició del Llibre Guinness dels Rècords es va publicar el 1955. Per sorpresa de gairebé tothom, per Nadal ja era un èxit de vendes. Des d'aleshores, el llibre s'ha traduït a desenes de llengües, i avui és un dels llibres més venuts del món.",
+  "Però un llibre de rècords només serveix si la gent s'hi pot refiar. Avui aquesta responsabilitat correspon a un equip de jutges oficials, les persones que decideixen si un rècord s'ha batut de debò. La seva feina els porta per tot el món, des d'escoles i centres comercials fins a platós de televisió, i un dia poden estar comptant cèrcols de gimnàstica i l'endemà mesurant les ungles més llargues del planeta.",
+  "Batre un rècord no és tan senzill com fer una cosa impressionant. Primer, qui ho intenta ha de presentar una sol·licitud i rebre unes normes que expliquen exactament com s'ha de fer l'intent. Aquestes normes poden ser sorprenentment estrictes. En un rècord de menjar, per exemple, normalment tot el menjar s'ha de menjar després en lloc de llençar-lo. En un rècord de distància, pot ser que un expert hagi de comprovar abans els aparells de mesura.",
+  "No tots els intents compten amb un jutge present. Molta gent envia proves, com ara vídeos, fotografies i declaracions de testimonis independents, que després l'equip examina amb atenció. Aquest procés pot durar diverses setmanes, i moltes sol·licituds es rebutgen, sovint perquè no es va complir una petita norma. Alguns aspirants s'emporten una decepció, però els jutges insisteixen que les normes són el que dona valor a un rècord.",
+  "Alguns rècords ja no s'accepten. Amb els anys, l'organització ha deixat de supervisar reptes que podien posar en perill persones o animals, com menjar la màxima quantitat possible d'alguna cosa en molt poc temps o fer que una mascota pesi tant com sigui possible. L'objectiu, diuen, és celebrar els èxits, no animar la gent a fer-se mal.",
+  "Curiosament, la pregunta amb què va començar tot no s'ha respost mai del tot. Sovint es diu que l'ocell de caça més ràpid d'Europa és la daurada grossa, però els experts encara no es posen d'acord sobre com s'hauria de mesurar una cosa així. Potser és el més apropiat. Com els jutges saben millor que ningú, un rècord només val el que valen les proves que el sostenen."
+ ],
+ "q": [
+  [
+   "Què li va donar a Sir Hugh Beaver la idea del llibre?",
+   [
+    "Havia guanyat una discussió amb els amics.",
+    "No va trobar en cap llibre la resposta a una pregunta.",
+    "Havia batut un rècord mentre caçava.",
+    "Volia vendre més llibres a la fàbrica."
+   ],
+   1
+  ],
+  [
+   "Per què Beaver va triar els germans McWhirter?",
+   [
+    "Eren experts a trobar i recordar dades.",
+    "Eren amics seus d'Irlanda.",
+    "Tenien una famosa llibreria a Londres.",
+    "Ja havien escrit un èxit de vendes."
+   ],
+   0
+  ],
+  [
+   "Què suggereix l'autor sobre l'èxit de la primera edició?",
+   [
+    "Pocs esperaven que es vengués tan bé.",
+    "Es va pensar com un regal de Nadal.",
+    "Només va tenir èxit als bars.",
+    "Es va traduir de seguida a moltes llengües."
+   ],
+   0
+  ],
+  [
+   "Al quart paràgraf, per què l'autor esmenta els rècords de menjar?",
+   [
+    "per explicar per què als jutges els agrada la feina",
+    "per advertir la gent que no mengi massa",
+    "per donar un exemple de com d'estrictes poden ser les normes",
+    "per mostrar que són els rècords més populars"
+   ],
+   2
+  ],
+  [
+   "Què pensen els jutges sobre les normes?",
+   [
+    "Són massa difícils per a la majoria.",
+    "S'haurien de canviar per acceptar més rècords.",
+    "Són el que dona sentit a un rècord.",
+    "Són menys importants que els vídeos."
+   ],
+   2
+  ],
+  [
+   "Per què l'autor diu que la pregunta sense resposta és el més apropiat?",
+   [
+    "Demostra que la daurada és l'ocell més ràpid.",
+    "Suggereix que els jutges no són experts.",
+    "Explica per què el llibre té tant d'èxit.",
+    "Mostra que tot rècord depèn de bones proves."
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf descriu l'autor la varietat de llocs on treballen els jutges?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   2
+  ],
+  [
+   "En quin paràgraf explica l'autor com es pot demostrar un rècord sense jutge?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   4
+  ],
+  [
+   "En quin paràgraf esmenta l'autor reptes que l'organització no accepta?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   5
+  ],
+  [
+   "En quin paràgraf esmenta l'autor l'any que va aparèixer el llibre?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "ocell",
+   "🐦"
+  ],
+  [
+   "llibre",
+   "📖"
+  ],
+  [
+   "bessons",
+   "👯"
+  ],
+  [
+   "jutge",
+   "⚖️"
+  ],
+  [
+   "vídeo",
+   "📹"
+  ],
+  [
+   "ungla",
+   "💅"
+  ]
+ ],
+ "halves": [
+  [
+   "Beaver va pensar que als bars...",
+   "...la gent tenia discussions semblants."
+  ],
+  [
+   "La primera edició...",
+   "...es va publicar el 1955."
+  ],
+  [
+   "Els jutges decideixen...",
+   "...si un rècord s'ha batut de debò."
+  ],
+  [
+   "Moltes sol·licituds es rebutgen...",
+   "...perquè no es va complir una norma."
+  ],
+  [
+   "Un rècord només val...",
+   "...el que valen les seves proves."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "Cada any, milers de persones {{0}} batre un rècord mundial. Algunes ho fan per recaptar diners per a una causa benèfica, i d'altres simplement volen {{1}} una cosa que ningú no ha fet abans. Sigui quin sigui el motiu, és important {{2}} les normes amb cura. Un petit error pot {{3}} que es rebutgi un intent. També es recomana {{4}} tot l'intent en vídeo, perquè els jutges puguin revisar cada detall. Sense bones proves, ni tan sols la {{5}} més sorprenent es pot convertir en un rècord oficial.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "Ser jutge de rècords és la feina somiada de molta gent, però és més difícil {{6}} que sembla. Els jutges han de mantenir la calma i ser justos, fins i tot {{7}} el públic crida i l'aspirant està desesperat per aconseguir-ho. També s'han de saber les normes {{8}} memòria. De vegades han de dir a algú que el seu intent ha fracassat, {{9}} que no és mai fàcil. {{10}} altra banda, també hi ha moments de gran alegria. Veure algú aconseguir una cosa per a la qual s'ha entrenat durant anys és, segons molts jutges, el millor {{11}} la feina.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "La primera edició del llibre va ser un èxit {{12}}. La seva {{13}} va créixer ràpidament, i aviat es va convertir en una publicació {{14}}. Avui, un equip de jutges és {{15}} de comprovar cada rècord. Les seves {{16}} són definitives, i han de ser completament {{17}}.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Cada any, milers de persones ___ batre un rècord mundial.",
+    [
+     "proven",
+     "intenten",
+     "tracten",
+     "esforcen"
+    ],
+    1
+   ],
+   [
+    "Algunes ho fan per recaptar diners per a una causa benèfica, i d'altres simplement volen ___ una cosa que ningú no ha fet abans.",
+    [
+     "aconseguir",
+     "guanyar",
+     "arribar",
+     "acudir"
+    ],
+    0
+   ],
+   [
+    "Sigui quin sigui el motiu, és important ___ les normes amb cura.",
+    [
+     "anar",
+     "caminar",
+     "passar",
+     "seguir"
+    ],
+    3
+   ],
+   [
+    "Un petit error pot ___ que es rebutgi un intent.",
+    [
+     "posar",
+     "donar",
+     "fer",
+     "portar"
+    ],
+    2
+   ],
+   [
+    "També es recomana ___ tot l'intent en vídeo, perquè els jutges puguin revisar cada detall.",
+    [
+     "anotar",
+     "registrar",
+     "gravar",
+     "marcar"
+    ],
+    2
+   ],
+   [
+    "Sense bones proves, ni tan sols la ___ més sorprenent es pot convertir en un rècord oficial.",
+    [
+     "obra",
+     "acció",
+     "gesta",
+     "fet"
+    ],
+    2
+   ],
+   [
+    "Ser jutge de rècords és la feina somiada de molta gent, però és més difícil ___ que sembla.",
+    [
+     "del"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els jutges han de mantenir la calma i ser justos, fins i tot ___ el públic crida i l'aspirant està desesperat per aconseguir-ho.",
+    [
+     "quan"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "També s'han de saber les normes ___ memòria.",
+    [
+     "de"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "De vegades han de dir a algú que el seu intent ha fracassat, ___ que no és mai fàcil.",
+    [
+     "cosa"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ altra banda, també hi ha moments de gran alegria.",
+    [
+     "Per"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Veure algú aconseguir una cosa per a la qual s'ha entrenat durant anys és, segons molts jutges, el millor ___ la feina.",
+    [
+     "de"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "La primera edició del llibre va ser un èxit ___.",
+    [
+     "inesperat"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ESPERAR"
+    }
+   ],
+   [
+    "La seva ___ va créixer ràpidament, i aviat es va convertir en una publicació ….",
+    [
+     "popularitat"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "POPULAR"
+    }
+   ],
+   [
+    "La seva … va créixer ràpidament, i aviat es va convertir en una publicació ___.",
+    [
+     "anual"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ANY"
+    }
+   ],
+   [
+    "Avui, un equip de jutges és ___ de comprovar cada rècord.",
+    [
+     "responsable"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "RESPONDRE"
+    }
+   ],
+   [
+    "Les seves ___ són definitives, i han de ser completament ….",
+    [
+     "decisions"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DECIDIR"
+    }
+   ],
+   [
+    "Les seves … són definitives, i han de ser completament ___.",
+    [
+     "independents"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DEPENDRE"
+    }
+   ],
+   [
+    "És la primera vegada que veig com es bat un rècord. → ___ com es bat un rècord.",
+    [
+     "Mai no havia vist",
+     "No havia vist mai",
+     "Mai havia vist"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "És la primera vegada que veig com es bat un rècord.",
+     "w": "MAI",
+     "p": "___ com es bat un rècord."
+    }
+   ],
+   [
+    "Els jutges van revisar les proves amb molta cura. → Les proves ___ amb molta cura pels jutges.",
+    [
+     "van ser revisades"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Els jutges van revisar les proves amb molta cura.",
+     "w": "VAN",
+     "p": "Les proves ___ amb molta cura pels jutges."
+    }
+   ],
+   [
+    "Només acceptaran el rècord si envies un vídeo. → No acceptaran el rècord ___ un vídeo.",
+    [
+     "tret que enviïs"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Només acceptaran el rècord si envies un vídeo.",
+     "w": "TRET",
+     "p": "No acceptaran el rècord ___ un vídeo."
+    }
+   ],
+   [
+    "Ningú no sabia la resposta, així que van decidir escriure un llibre. → ___ la resposta, van decidir escriure un llibre.",
+    [
+     "Com que ningú no sabia",
+     "Com que ningú sabia"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Ningú no sabia la resposta, així que van decidir escriure un llibre.",
+     "w": "COM",
+     "p": "___ la resposta, van decidir escriure un llibre."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Quién comprueba los récords?",
+   "sub": "El trabajo de los jueces de los récords",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "pájaro",
+    "libro",
+    "gemelos",
+    "juez",
+    "vídeo",
+    "uña"
+   ]
+  }
+ }
+}

@@ -1,0 +1,496 @@
+{
+ "id": "en-records-b2",
+ "topic": "records",
+ "level": "B2",
+ "title": "Who checks the records?",
+ "short": "Who checks the records?",
+ "text": [
+  "In 1951, a British businessman called Sir Hugh Beaver was out hunting in Ireland when he got into an argument with his friends. They wanted to know which was the fastest game bird in Europe, but none of the reference books in the house could give them an answer. Beaver, who was the managing director of the Guinness brewery, realised that people in pubs all over the country must be having similar arguments every night. What they needed, he thought, was a book that could settle them.",
+  "To write it, he hired two twin brothers, Norris and Ross McWhirter, who ran a fact-finding agency in London and were known for their extraordinary memory for facts and figures. The first edition of the Guinness Book of Records was published in 1955. To the surprise of almost everyone, it became a bestseller by Christmas. Since then, the book has been translated into dozens of languages, and it is now one of the best-selling books in the world.",
+  "But a book of records is only useful if people can trust it. Today, that responsibility belongs to a team of official adjudicators, the judges who decide whether a record has really been broken. Their job takes them all over the world, from schools and shopping centres to television studios, and they may spend one day counting hula hoops and the next measuring the longest fingernails on the planet.",
+  "Breaking a record is not as simple as doing something impressive. First, the challenger must apply and receive a set of guidelines, which explain exactly how the attempt must be carried out. These rules can be surprisingly strict. For a food record, for example, all of the food usually has to be eaten afterwards rather than wasted. For a distance record, the measuring equipment may need to be checked by an expert beforehand.",
+  "Not every attempt has an adjudicator present. Many people instead send in evidence, such as videos, photographs and statements from independent witnesses, which is then carefully examined by the team. This process can take several weeks, and many applications are rejected, often because a small rule was not followed. Some challengers are disappointed, but the adjudicators insist that the rules are what give a record its value.",
+  "Certain records are no longer accepted at all. Over the years, the organisation has stopped monitoring challenges that could put people or animals in danger, such as eating the most of something in a very short time or making a pet as heavy as possible. The aim, they say, is to celebrate achievement, not to encourage people to harm themselves.",
+  "Interestingly, the question that started it all has never been fully answered. The fastest game bird in Europe is often said to be the golden plover, but experts still disagree about how such a thing should be measured. Perhaps that is fitting. As the adjudicators know better than anyone, a record is only as good as the evidence behind it."
+ ],
+ "q": [
+  [
+   "What gave Sir Hugh Beaver the idea for the book?",
+   [
+    "He had broken a record while hunting.",
+    "He could not find the answer to a question in any book.",
+    "He had won an argument with his friends.",
+    "He wanted to sell more books in his brewery."
+   ],
+   1
+  ],
+  [
+   "Why did Beaver choose the McWhirter brothers?",
+   [
+    "They were his friends from Ireland.",
+    "They owned a famous London bookshop.",
+    "They had already written a bestseller.",
+    "They were experts at finding and remembering facts."
+   ],
+   3
+  ],
+  [
+   "What does the writer suggest about the success of the first edition?",
+   [
+    "It was planned to be a Christmas present.",
+    "It was immediately translated into many languages.",
+    "It was only popular in pubs.",
+    "Few people expected it to sell so well."
+   ],
+   3
+  ],
+  [
+   "In the fourth paragraph, why does the writer mention food records?",
+   [
+    "to explain why adjudicators enjoy their job",
+    "to warn people about eating too much",
+    "to give an example of how strict the rules can be",
+    "to show that food records are the most popular"
+   ],
+   2
+  ],
+  [
+   "What do the adjudicators believe about the rules?",
+   [
+    "They are what make a record meaningful.",
+    "They are less important than the videos.",
+    "They are too difficult for most people.",
+    "They should be changed to accept more records."
+   ],
+   0
+  ],
+  [
+   "Why does the writer describe the unanswered question as fitting?",
+   [
+    "It suggests that the adjudicators are not experts.",
+    "It proves the golden plover is the fastest bird.",
+    "It shows that every record depends on good evidence.",
+    "It explains why the book is so successful."
+   ],
+   2
+  ],
+  [
+   "In which paragraph does the writer describe the variety of places where adjudicators work?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   2
+  ],
+  [
+   "In which paragraph does the writer explain how people can prove a record without a judge?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ],
+  [
+   "In which paragraph does the writer mention challenges that the organisation refuses to accept?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   5
+  ],
+  [
+   "In which paragraph does the writer mention the year the book first appeared?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "bird",
+   "🐦"
+  ],
+  [
+   "book",
+   "📖"
+  ],
+  [
+   "twins",
+   "👯"
+  ],
+  [
+   "judge",
+   "⚖️"
+  ],
+  [
+   "video",
+   "📹"
+  ],
+  [
+   "fingernail",
+   "💅"
+  ]
+ ],
+ "halves": [
+  [
+   "Beaver realised that...",
+   "...people in pubs had similar arguments."
+  ],
+  [
+   "The first edition...",
+   "...was published in 1955."
+  ],
+  [
+   "Adjudicators decide...",
+   "...whether a record has really been broken."
+  ],
+  [
+   "Many applications are rejected...",
+   "...because a small rule was not followed."
+  ],
+  [
+   "A record is only as good...",
+   "...as the evidence behind it."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Every year, thousands of people {{0}} an attempt to break a world record. Some do it to raise money for charity, while others simply want to {{1}} something nobody has done before. Whatever the reason, it is important to {{2}} the guidelines carefully. Even a small mistake can {{3}} in an attempt being rejected. Challengers are also advised to {{4}} the whole attempt on video, so that the judges can check every detail. Without good evidence, even the most amazing {{5}} cannot become an official record.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Being an adjudicator is a dream job for many people, but it is harder {{6}} it looks. Adjudicators have to stay calm and fair, even {{7}} the crowd is shouting and the challenger is desperate to succeed. They must also know the rules {{8}} heart. Sometimes they have to tell people that their attempt has failed, which is never easy. {{9}} the other hand, there are moments of great joy. Seeing someone achieve {{10}} they have trained for years to do is, according to many adjudicators, the best part {{11}} the job.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "The first edition of the book was an {{12}} success. Its {{13}} grew quickly, and it was soon published {{14}}. Today, a team of adjudicators has {{15}} for checking every record. Their {{16}} are final, and they must remain completely {{17}}.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Every year, thousands of people ___ an attempt to break a world record.",
+    [
+     "do",
+     "make",
+     "give",
+     "put"
+    ],
+    1
+   ],
+   [
+    "Some do it to raise money for charity, while others simply want to ___ something nobody has done before.",
+    [
+     "gain",
+     "reach",
+     "arrive",
+     "achieve"
+    ],
+    3
+   ],
+   [
+    "Whatever the reason, it is important to ___ the guidelines carefully.",
+    [
+     "follow",
+     "obey to",
+     "keep",
+     "respect to"
+    ],
+    0
+   ],
+   [
+    "Even a small mistake can ___ in an attempt being rejected.",
+    [
+     "cause",
+     "lead",
+     "bring",
+     "result"
+    ],
+    3
+   ],
+   [
+    "Challengers are also advised to ___ the whole attempt on video, so that the judges can check every detail.",
+    [
+     "register",
+     "note",
+     "record",
+     "mark"
+    ],
+    2
+   ],
+   [
+    "Without good evidence, even the most amazing ___ cannot become an official record.",
+    [
+     "fate",
+     "fit",
+     "fact",
+     "feat"
+    ],
+    3
+   ],
+   [
+    "Being an adjudicator is a dream job for many people, but it is harder ___ it looks.",
+    [
+     "than"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Adjudicators have to stay calm and fair, even ___ the crowd is shouting and the challenger is desperate to succeed.",
+    [
+     "when"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "They must also know the rules ___ heart.",
+    [
+     "by"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ the other hand, there are moments of great joy.",
+    [
+     "On"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Seeing someone achieve ___ they have trained for years to do is, according to many adjudicators, the best part … the job.",
+    [
+     "what"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Seeing someone achieve … they have trained for years to do is, according to many adjudicators, the best part ___ the job.",
+    [
+     "of"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "The first edition of the book was an ___ success.",
+    [
+     "unexpected"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXPECT"
+    }
+   ],
+   [
+    "Its ___ grew quickly, and it was soon published ….",
+    [
+     "popularity"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "POPULAR"
+    }
+   ],
+   [
+    "Its … grew quickly, and it was soon published ___.",
+    [
+     "annually"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ANNUAL"
+    }
+   ],
+   [
+    "Today, a team of adjudicators has ___ for checking every record.",
+    [
+     "responsibility"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "RESPONSIBLE"
+    }
+   ],
+   [
+    "Their ___ are final, and they must remain completely ….",
+    [
+     "decisions"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DECIDE"
+    }
+   ],
+   [
+    "Their … are final, and they must remain completely ___.",
+    [
+     "independent"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DEPEND"
+    }
+   ],
+   [
+    "It is the first time I have seen a record being broken. → I ___ a record being broken before.",
+    [
+     "have never seen"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "It is the first time I have seen a record being broken.",
+     "w": "NEVER",
+     "p": "I ___ a record being broken before."
+    }
+   ],
+   [
+    "The adjudicators checked the evidence very carefully. → The evidence ___ very carefully by the adjudicators.",
+    [
+     "was checked"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "The adjudicators checked the evidence very carefully.",
+     "w": "WAS",
+     "p": "The evidence ___ very carefully by the adjudicators."
+    }
+   ],
+   [
+    "They will only accept the record if you send a video. → They will not accept the record ___ a video.",
+    [
+     "unless you send"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "They will only accept the record if you send a video.",
+     "w": "UNLESS",
+     "p": "They will not accept the record ___ a video."
+    }
+   ],
+   [
+    "Nobody knew the answer, so they decided to write a book. → They decided to write a book ___ knew the answer.",
+    [
+     "because nobody",
+     "because no one"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Nobody knew the answer, so they decided to write a book.",
+     "w": "BECAUSE",
+     "p": "They decided to write a book ___ knew the answer."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Quién comprueba los récords?",
+   "sub": "El trabajo de los jueces de los récords",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "pájaro",
+    "libro",
+    "gemelos",
+    "juez",
+    "vídeo",
+    "uña"
+   ]
+  }
+ }
+}

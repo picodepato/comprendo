@@ -1,0 +1,499 @@
+{
+ "id": "egipto-b2",
+ "topic": "egipto",
+ "level": "B2",
+ "title": "Descifrando el código de los faraones",
+ "short": "Descifrando el código de los faraones",
+ "text": [
+  "Durante más de mil años, nadie en el mundo fue capaz de leer los jeroglíficos egipcios. Los viajeros que visitaban las pirámides y los templos veían paredes cubiertas de hermosos dibujos de pájaros, ojos, serpientes y pies, pero no tenían ni idea de lo que significaban. Muchos sabios creían que cada símbolo representaba una idea y no un sonido, y que la escritura escondía una sabiduría religiosa secreta. Resultó que estaban casi del todo equivocados, y la clave del misterio era un trozo roto de piedra gris.",
+  "En 1799, unos soldados franceses que habían llegado a Egipto con Napoleón estaban reconstruyendo un viejo fuerte cerca de la ciudad de Rashid, conocida en Europa como Rosetta, cuando encontraron una gran losa cubierta de escritura. Enseguida se dieron cuenta de que era importante. La piedra contenía el mismo texto escrito tres veces: en jeroglíficos, en una escritura egipcia posterior llamada demótico y en griego antiguo. Como los sabios todavía sabían leer griego, la piedra ofrecía una oportunidad única de comparar las tres versiones.",
+  "Sin embargo, la piedra no estuvo mucho tiempo en manos francesas. Después de que los británicos derrotaran al ejército francés en Egipto, se la llevaron a Londres, donde se expone en el Museo Británico desde 1802. Se enviaron copias de las inscripciones a expertos de toda Europa, y empezó una carrera para ser el primero en descifrarlas.",
+  "Uno de los principales competidores fue Thomas Young, un brillante científico inglés que ya había hecho descubrimientos importantes sobre la luz. Young avanzó de verdad. Demostró que algunos jeroglíficos que aparecían dentro de unos óvalos, llamados cartuchos, formaban los nombres de reyes y reinas, e identificó correctamente varios signos. Pero seguía convencido de que la mayoría de los jeroglíficos eran símbolos de ideas, y no pudo ir más allá.",
+  "El gran avance llegó de la mano de un joven francés, Jean-François Champollion. Le fascinaba Egipto desde niño y había aprendido un número impresionante de idiomas, entre ellos el copto, una forma tardía del egipcio que todavía se usaba en las misas. Ese conocimiento resultó fundamental. Comparando los nombres de los cartuchos con otras inscripciones, Champollion se dio cuenta de que los jeroglíficos eran una mezcla de signos que representaban sonidos y signos que representaban ideas. Según una famosa anécdota, cuando por fin entendió el sistema en 1822, corrió a ver a su hermano gritando que lo había conseguido, y luego se desmayó de la emoción.",
+  "Su descubrimiento abrió la puerta a toda una civilización. Por primera vez en siglos, se podían leer las palabras de los propios egipcios antiguos: sus oraciones, sus poemas, sus cartas e incluso sus quejas. La historia ya no era solo lo que los escritores griegos y romanos habían contado sobre Egipto.",
+  "Hoy, la piedra de Rosetta es uno de los objetos más visitados del Museo Británico, y su nombre se ha convertido en símbolo de cualquier cosa que ayude a resolver un problema difícil. Egipto ha pedido en varias ocasiones que se la devuelvan, y el debate sobre dónde debe estar continúa."
+ ],
+ "q": [
+  [
+   "¿Qué creían muchos sabios sobre los jeroglíficos antes de descifrarlos?",
+   [
+    "Que era imposible entenderlos.",
+    "Que cada símbolo representaba una idea, no un sonido.",
+    "Que no significaban nada.",
+    "Que eran una forma de griego antiguo."
+   ],
+   1
+  ],
+  [
+   "¿Por qué era tan útil la piedra de Rosetta?",
+   [
+    "Tenía el mismo texto en una lengua que los expertos aún sabían leer.",
+    "Explicaba el significado de cada jeroglífico.",
+    "Solo estaba escrita en jeroglíficos.",
+    "Era la piedra más grande encontrada en Egipto."
+   ],
+   0
+  ],
+  [
+   "¿Qué pasó con la piedra después de encontrarla?",
+   [
+    "Se devolvió a Egipto en 1802.",
+    "Acabó en Londres tras una derrota militar.",
+    "Se quedó muchos años en Francia.",
+    "Se rompió en tres trozos."
+   ],
+   1
+  ],
+  [
+   "¿Cuál fue la principal limitación del trabajo de Thomas Young?",
+   [
+    "Se negó a estudiar los cartuchos.",
+    "No aceptaba que la mayoría de los signos pudieran representar sonidos.",
+    "No sabía nada sobre la luz.",
+    "Nunca vio una copia de las inscripciones."
+   ],
+   1
+  ],
+  [
+   "¿Por qué fue importante para Champollion saber copto?",
+   [
+    "Era la lengua de la piedra.",
+    "Era la lengua que hablaba su hermano.",
+    "Le permitió leer griego con más facilidad.",
+    "Le ayudó a relacionar los signos con los sonidos del egipcio."
+   ],
+   3
+  ],
+  [
+   "¿Qué dice el autor sobre el resultado del descubrimiento?",
+   [
+    "Se descubrió la religión secreta egipcia.",
+    "Por fin se pudo conocer Egipto a través de los propios egipcios.",
+    "El Museo Británico se convirtió en el más visitado del mundo.",
+    "Los escritores griegos y romanos se hicieron más populares."
+   ],
+   1
+  ],
+  [
+   "¿En qué párrafo menciona el autor un desacuerdo que no se ha resuelto?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   6
+  ],
+  [
+   "¿En qué párrafo describe el autor una fuerte reacción emocional?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   4
+  ],
+  [
+   "¿En qué párrafo explica el autor cómo se descubrió la piedra?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   1
+  ],
+  [
+   "¿En qué párrafo describe el autor a un científico famoso por su trabajo en otro campo?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "piedra",
+   "🪨"
+  ],
+  [
+   "pirámide",
+   "🔺"
+  ],
+  [
+   "serpiente",
+   "🐍"
+  ],
+  [
+   "ojo",
+   "👁️"
+  ],
+  [
+   "museo",
+   "🏛️"
+  ],
+  [
+   "soldado",
+   "💂"
+  ]
+ ],
+ "halves": [
+  [
+   "La piedra contenía...",
+   "...el mismo texto escrito tres veces."
+  ],
+  [
+   "Se expone en el Museo Británico...",
+   "...desde 1802."
+  ],
+  [
+   "Algunos jeroglíficos formaban...",
+   "...los nombres de reyes y reinas."
+  ],
+  [
+   "A Champollion le fascinaba Egipto...",
+   "...desde niño."
+  ],
+  [
+   "Su descubrimiento abrió la puerta...",
+   "...a toda una civilización."
+  ]
+ ],
+ "grammar": {
+  "title": "Uso de la lengua",
+  "rule": "Cuatro partes como el examen <b>Use of English</b> de Cambridge, pero en español. Partes 2, 3 y 4: escribe tus respuestas y pulsa <b>Comprobar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Parte 1 · Huecos con opciones",
+    "help": "Lee el texto y elige la palabra o expresión que mejor completa cada hueco.",
+    "text": "Aprender a leer jeroglíficos fue un {{0}} largo y difícil. Incluso después de que Champollion entendiera el sistema básico, {{1}} falta muchos años más de trabajo para traducir textos complicados. Los expertos tuvieron que {{2}} el significado de cientos de signos, algunos de los cuales podían leerse de varias formas. Poco a poco, sin embargo, se publicaron diccionarios y gramáticas, y el tema se convirtió en una disciplina académica {{3}} derecho propio. Hoy los estudiantes de muchas universidades pueden {{4}} asignaturas de egipcio antiguo. Algunos incluso {{5}} trabajando en excavaciones en Egipto.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Parte 2 · Huecos abiertos",
+    "help": "Escribe una sola palabra en cada hueco.",
+    "text": "Los escribas del antiguo Egipto pasaban años aprendiendo a escribir. Solo una pequeña parte de la población sabía leer, {{6}} que los escribas estaban muy bien considerados. Escribían en papiro, un tipo de papel hecho {{7}} una planta que crecía a orillas del Nilo. Los jeroglíficos podían escribirse de izquierda a derecha, de derecha a izquierda o incluso de arriba abajo. Para saber en qué dirección {{8}} leían, había que fijarse en los animales y las personas del texto: siempre miraban hacia el principio de la línea. Los jeroglíficos se usaban sobre todo para inscripciones importantes en templos y tumbas, {{9}} que para los documentos de cada día, {{10}} cartas y recibos, se usaban escrituras más sencillas. Fue un sistema que duró {{11}} de tres mil años.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Parte 3 · Formación de palabras",
+    "help": "Usa la palabra en mayúsculas para formar la palabra que falta.",
+    "text": "El {{12}} de la piedra de Rosetta marcó un antes y un después. Sus tres {{13}} permitieron a los expertos comparar las lenguas. Champollion trabajó con gran {{14}} durante muchos años. Su éxito lo hizo {{15}} en toda Europa. Hoy la piedra es uno de los objetos más {{16}} del Museo Británico, y para Egipto recuperarla es una cuestión de orgullo {{17}}.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Parte 4 · Transformaciones",
+    "help": "Completa la segunda frase para que signifique lo mismo que la primera. Usa la palabra dada sin cambiarla. Escribe entre dos y cinco palabras.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Aprender a leer jeroglíficos fue un ___ largo y difícil.",
+    [
+     "procedimiento",
+     "procesión",
+     "progreso",
+     "proceso"
+    ],
+    3
+   ],
+   [
+    "Incluso después de que Champollion entendiera el sistema básico, ___ falta muchos años más de trabajo para traducir textos complicados.",
+    [
+     "hicieron",
+     "pasaron",
+     "tuvieron",
+     "tardaron"
+    ],
+    0
+   ],
+   [
+    "Los expertos tuvieron que ___ el significado de cientos de signos, algunos de los cuales podían leerse de varias formas.",
+    [
+     "informar",
+     "averiguar",
+     "enterar",
+     "avisar"
+    ],
+    1
+   ],
+   [
+    "Poco a poco, sin embargo, se publicaron diccionarios y gramáticas, y el tema se convirtió en una disciplina académica ___ derecho propio.",
+    [
+     "en",
+     "para",
+     "de",
+     "por"
+    ],
+    3
+   ],
+   [
+    "Hoy los estudiantes de muchas universidades pueden ___ asignaturas de egipcio antiguo.",
+    [
+     "andar",
+     "correr",
+     "pasar",
+     "cursar"
+    ],
+    3
+   ],
+   [
+    "Algunos incluso ___ trabajando en excavaciones en Egipto.",
+    [
+     "cesan",
+     "dejan",
+     "acaban",
+     "paran"
+    ],
+    2
+   ],
+   [
+    "Solo una pequeña parte de la población sabía leer, ___ que los escribas estaban muy bien considerados.",
+    [
+     "así"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Escribían en papiro, un tipo de papel hecho ___ una planta que crecía a orillas del Nilo.",
+    [
+     "con",
+     "de"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Para saber en qué dirección ___ leían, había que fijarse en los animales y las personas del texto: siempre miraban hacia el principio de la línea.",
+    [
+     "se"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Los jeroglíficos se usaban sobre todo para inscripciones importantes en templos y tumbas, ___ que para los documentos de cada día, … cartas y recibos, se usaban escrituras más sencillas.",
+    [
+     "mientras"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Los jeroglíficos se usaban sobre todo para inscripciones importantes en templos y tumbas, … que para los documentos de cada día, ___ cartas y recibos, se usaban escrituras más sencillas.",
+    [
+     "como"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Fue un sistema que duró ___ de tres mil años.",
+    [
+     "más"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El ___ de la piedra de Rosetta marcó un antes y un después.",
+    [
+     "descubrimiento"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DESCUBRIR"
+    }
+   ],
+   [
+    "Sus tres ___ permitieron a los expertos comparar las lenguas.",
+    [
+     "inscripciones"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INSCRIBIR"
+    }
+   ],
+   [
+    "Champollion trabajó con gran ___ durante muchos años.",
+    [
+     "determinación"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DETERMINAR"
+    }
+   ],
+   [
+    "Su éxito lo hizo ___ en toda Europa.",
+    [
+     "famoso"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "FAMA"
+    }
+   ],
+   [
+    "Hoy la piedra es uno de los objetos más ___ del Museo Británico, y para Egipto recuperarla es una cuestión de orgullo ….",
+    [
+     "valiosos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "VALOR"
+    }
+   ],
+   [
+    "Hoy la piedra es uno de los objetos más … del Museo Británico, y para Egipto recuperarla es una cuestión de orgullo ___.",
+    [
+     "nacional"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "NACIÓN"
+    }
+   ],
+   [
+    "Champollion fue el primero en descifrar los jeroglíficos. → ___ los jeroglíficos antes que Champollion.",
+    [
+     "Nadie había descifrado",
+     "Nadie descifró"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Champollion fue el primero en descifrar los jeroglíficos.",
+     "w": "NADIE",
+     "p": "___ los jeroglíficos antes que Champollion."
+    }
+   ],
+   [
+    "Unos soldados franceses encontraron la piedra en 1799. → La piedra ___ unos soldados franceses en 1799.",
+    [
+     "fue encontrada por",
+     "fue hallada por"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Unos soldados franceses encontraron la piedra en 1799.",
+     "w": "FUE",
+     "p": "La piedra ___ unos soldados franceses en 1799."
+    }
+   ],
+   [
+    "Young no pudo avanzar más porque no aceptó la idea. → Young habría avanzado más ___ la idea.",
+    [
+     "si hubiera aceptado",
+     "si hubiese aceptado"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Young no pudo avanzar más porque no aceptó la idea.",
+     "w": "SI",
+     "p": "Young habría avanzado más ___ la idea."
+    }
+   ],
+   [
+    "Mucha gente visita la piedra cada año. → La piedra es ___ mucha gente cada año.",
+    [
+     "visitada por"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Mucha gente visita la piedra cada año.",
+     "w": "VISITADA",
+     "p": "La piedra es ___ mucha gente cada año."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Cracking the code of the pharaohs",
+   "sub": "The Rosetta Stone and hieroglyphs",
+   "grammar": "Use of English: four tasks like the Cambridge B2 First exam (multiple-choice cloze, open cloze, word formation and key word transformation), in Spanish.",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "stone",
+    "pyramid",
+    "snake",
+    "eye",
+    "museum",
+    "soldier"
+   ]
+  }
+ }
+}

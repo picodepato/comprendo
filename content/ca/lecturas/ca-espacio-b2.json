@@ -1,0 +1,499 @@
+{
+ "id": "ca-espacio-b2",
+ "topic": "espacio",
+ "level": "B2",
+ "title": "Hi ha algú allà fora?",
+ "short": "Hi ha algú allà fora?",
+ "text": [
+  "En una nit clara, lluny dels llums de la ciutat, es poden veure milers d'estrelles a simple vista. Cadascuna és un sol, i avui sabem que moltes tenen planetes que hi giren al voltant. Davant de xifres tan enormes, és difícil no fer-se una de les preguntes més antigues de totes: estem sols a l'univers? Durant segles, aquesta va ser una pregunta per a filòsofs i escriptors de ciència-ficció. Avui, els científics intenten respondre-la seriosament.",
+  "La recerca comença sorprenentment a prop de casa. Durant molt de temps, Mart es va considerar el lloc més prometedor per buscar-hi, i diversos robots exploradors n'han recorregut la superfície. Hi han trobat proves clares que hi va haver rius i llacs fa milers de milions d'anys, quan el planeta era més càlid i humit. Si mai hi va aparèixer vida, els científics esperen trobar-ne rastres en roques antigues, i ja s'estan recollint mostres amb aquest objectiu.",
+  "Més recentment, però, l'atenció s'ha desplaçat cap a llocs inesperats: les llunes gelades de Júpiter i Saturn. Europa, una de les llunes de Júpiter, està coberta per una capa gruixuda de gel, però es creu que a sota hi ha un oceà enorme d'aigua líquida. Encèlad, una petita lluna de Saturn, és encara més intrigant. El 2005, la sonda Cassini va observar uns enormes dolls d'aigua que sortien d'unes esquerdes a prop del seu pol sud. A la Terra, allà on hi ha aigua líquida hi ha vida, així que aquestes llunes s'han convertit en objectius prioritaris de futures missions.",
+  "Més enllà del nostre sistema solar, les possibilitats es multipliquen. Des que es van confirmar els primers planetes que giren al voltant d'altres estrelles, als anys noranta, els astrònoms n'han descobert més de cinc mil. Alguns són enormes boles de gas, però d'altres són mons rocosos d'una mida semblant a la de la Terra, que giren a una distància de la seva estrella on podria existir aigua líquida. Els nous telescopis ja poden estudiar l'atmosfera d'alguns d'aquests planetes a la recerca de gasos que podrien produir els éssers vius.",
+  "És clar que trobar bacteris en una lluna llunyana seria molt diferent de conèixer éssers intel·ligents. Des del 1960, alguns investigadors escolten l'espai a la recerca de senyals de ràdio d'altres civilitzacions, de moment sense èxit. Aquest silenci ha donat lloc a un famós enigma, conegut com la paradoxa de Fermi. Si l'univers és tan gran i tan antic, i la vida no és una cosa rara, on és tothom?",
+  "Hi ha moltes respostes possibles. Potser la vida intel·ligent és extremadament rara. Potser hi ha civilitzacions, però són massa lluny o es comuniquen de maneres que no entenem. Alguns científics fins i tot suggereixen que simplement no fa prou temps que busquem, ja que la nostra tecnologia només existeix des de fa una part minúscula de la història de l'univers.",
+  "Sigui quina sigui la veritat, la mateixa recerca està canviant la nostra manera de veure el nostre planeta. Cada descobriment ens recorda com són d'especials les condicions de la Terra. I si algun dia rebem un missatge de les estrelles, probablement serà la notícia més important de la història de la humanitat."
+ ],
+ "q": [
+  [
+   "Quina és la idea principal del primer paràgraf?",
+   [
+    "Els escriptors de ciència-ficció han respost la pregunta.",
+    "És impossible veure estrelles a prop d'una ciutat.",
+    "La majoria de les estrelles no tenen planetes.",
+    "Una pregunta que abans era de filòsofs ara l'estudien els científics."
+   ],
+   3
+  ],
+  [
+   "Què han descobert els robots a Mart?",
+   [
+    "que Mart és més càlid del que es creia",
+    "rius i llacs que encara existeixen",
+    "senyals que hi va haver aigua al planeta fa molt de temps",
+    "bacteris vius sota la superfície"
+   ],
+   2
+  ],
+  [
+   "Per què interessen als científics Europa i Encèlad?",
+   [
+    "Són més a prop de la Terra que Mart.",
+    "Probablement tenen aigua líquida.",
+    "Estan cobertes del tot d'oceans.",
+    "Tenen la mateixa atmosfera que la Terra."
+   ],
+   1
+  ],
+  [
+   "Què busquen els nous telescopis?",
+   [
+    "missatges de ràdio d'altres civilitzacions",
+    "gasos a l'atmosfera d'altres planetes que podrien venir de la vida",
+    "estrelles noves semblants al Sol",
+    "boles de gas a prop del nostre sistema solar"
+   ],
+   1
+  ],
+  [
+   "Què és la paradoxa de Fermi?",
+   [
+    "una teoria sobre com es formen els planetes",
+    "la idea que la vida a la Terra va venir de l'espai",
+    "la pregunta de per què no hem trobat senyals de vida intel·ligent",
+    "un senyal de ràdio rebut el 1960"
+   ],
+   2
+  ],
+  [
+   "Què diu l'autor a l'últim paràgraf?",
+   [
+    "La recerca és una pèrdua de diners.",
+    "Altres planetes tenen millors condicions que la Terra.",
+    "Rebrem un missatge molt aviat.",
+    "Buscar vida ens ajuda a valorar la Terra."
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf descriu l'autor una observació feta per una sonda?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   2
+  ],
+  [
+   "En quin paràgraf dona l'autor diverses explicacions per a un misteri?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   5
+  ],
+  [
+   "En quin paràgraf esmenta l'autor que s'estan recollint mostres?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   1
+  ],
+  [
+   "En quin paràgraf esmenta l'autor el nombre de planetes trobats al voltant d'altres estrelles?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "telescopi",
+   "🔭"
+  ],
+  [
+   "coet",
+   "🚀"
+  ],
+  [
+   "lluna",
+   "🌙"
+  ],
+  [
+   "gel",
+   "🧊"
+  ],
+  [
+   "oceà",
+   "🌊"
+  ],
+  [
+   "senyal",
+   "📡"
+  ]
+ ],
+ "halves": [
+  [
+   "Fa milers de milions d'anys...",
+   "...hi va haver rius i llacs a Mart."
+  ],
+  [
+   "Europa està coberta...",
+   "...per una capa gruixuda de gel."
+  ],
+  [
+   "A la Terra, allà on hi ha aigua líquida,...",
+   "...hi ha vida."
+  ],
+  [
+   "Des del 1960 alguns investigadors...",
+   "...escolten senyals de ràdio."
+  ],
+  [
+   "Cada descobriment ens recorda...",
+   "...com són d'especials les condicions de la Terra."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "Enviar persones a Mart és un dels reptes més grans que han {{0}} mai les agències espacials. El viatge {{1}} uns set mesos en cada sentit. Durant aquest temps, els astronautes estarien {{2}} a nivells alts de radiació. També haurien de {{3}} front a l'aïllament, ja que els missatges des de la Terra poden trigar fins a vint minuts a arribar. Malgrat aquestes dificultats, molts experts creuen que una missió tripulada podria {{4}} lloc en les pròximes dècades. Si surt bé, {{5}} el començament d'una nova era d'exploració.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "Els astrònoms han trobat planetes en els llocs més inesperats. Alguns giren al voltant de dos sols {{6}}, com el planeta Tatooine de La guerra de les galàxies. D'altres són tan a prop de la seva estrella {{7}} un any dura menys d'un dia. Es creu que un planeta està cobert {{8}} un oceà de lava, mentre que en un altre podria ploure vidre. Els científics creuen que a la nostra galàxia hi ha més planetes {{9}} estrelles. {{10}} tants mons allà fora, sembla poc probable que la Terra sigui l'únic {{11}} existeix vida.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "L'{{12}} espacial ha avançat molt en les últimes dècades. Gràcies a telescopis potents, els astrònoms han fet descobriments {{13}}. Tanmateix, l'{{14}} de vida fora de la Terra encara no s'ha demostrat. Alguns científics {{15}} que la trobarem aviat, mentre que d'altres són més {{16}}. En tot cas, la recerca és {{17}} emocionant.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Enviar persones a Mart és un dels reptes més grans que han ___ mai les agències espacials.",
+    [
+     "oposat",
+     "afrontat",
+     "negat",
+     "resistit"
+    ],
+    1
+   ],
+   [
+    "El viatge ___ uns set mesos en cada sentit.",
+    [
+     "compliria",
+     "gastaria",
+     "duraria",
+     "passaria"
+    ],
+    2
+   ],
+   [
+    "Durant aquest temps, els astronautes estarien ___ a nivells alts de radiació.",
+    [
+     "oberts",
+     "mostrats",
+     "presentats",
+     "exposats"
+    ],
+    3
+   ],
+   [
+    "També haurien de ___ front a l'aïllament, ja que els missatges des de la Terra poden trigar fins a vint minuts a arribar.",
+    [
+     "fer",
+     "tenir",
+     "donar",
+     "posar"
+    ],
+    0
+   ],
+   [
+    "Malgrat aquestes dificultats, molts experts creuen que una missió tripulada podria ___ lloc en les pròximes dècades.",
+    [
+     "donar",
+     "haver",
+     "tenir",
+     "fer"
+    ],
+    2
+   ],
+   [
+    "Si surt bé, ___ el començament d'una nova era d'exploració.",
+    [
+     "apuntarà",
+     "anotarà",
+     "marcarà",
+     "signarà"
+    ],
+    2
+   ],
+   [
+    "Alguns giren al voltant de dos sols ___, com el planeta Tatooine de La guerra de les galàxies.",
+    [
+     "alhora"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "D'altres són tan a prop de la seva estrella ___ un any dura menys d'un dia.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Es creu que un planeta està cobert ___ un oceà de lava, mentre que en un altre podria ploure vidre.",
+    [
+     "per",
+     "d'"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els científics creuen que a la nostra galàxia hi ha més planetes ___ estrelles.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ tants mons allà fora, sembla poc probable que la Terra sigui l'únic … existeix vida.",
+    [
+     "Amb"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "… tants mons allà fora, sembla poc probable que la Terra sigui l'únic ___ existeix vida.",
+    [
+     "on"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "L'___ espacial ha avançat molt en les últimes dècades.",
+    [
+     "exploració"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXPLORAR"
+    }
+   ],
+   [
+    "Gràcies a telescopis potents, els astrònoms han fet descobriments ___.",
+    [
+     "notables"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "NOTAR"
+    }
+   ],
+   [
+    "Tanmateix, l'___ de vida fora de la Terra encara no s'ha demostrat.",
+    [
+     "existència"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXISTIR"
+    }
+   ],
+   [
+    "Alguns científics ___ que la trobarem aviat, mentre que d'altres són més ….",
+    [
+     "confien"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CONFIANÇA"
+    }
+   ],
+   [
+    "Alguns científics … que la trobarem aviat, mentre que d'altres són més ___.",
+    [
+     "escèptics"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ESCEPTICISME"
+    }
+   ],
+   [
+    "En tot cas, la recerca és ___ emocionant.",
+    [
+     "increïblement"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INCREÏBLE"
+    }
+   ],
+   [
+    "Els científics creuen que hi ha un oceà sota el gel d'Europa. → Es ___ un oceà sota el gel d'Europa.",
+    [
+     "creu que hi ha"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Els científics creuen que hi ha un oceà sota el gel d'Europa.",
+     "w": "CREU",
+     "p": "Es ___ un oceà sota el gel d'Europa."
+    }
+   ],
+   [
+    "Fins ara no hem rebut cap senyal. → No ___ cap senyal.",
+    [
+     "hem rebut encara",
+     "hem encara rebut"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Fins ara no hem rebut cap senyal.",
+     "w": "ENCARA",
+     "p": "No ___ cap senyal."
+    }
+   ],
+   [
+    "És possible que hi hagués vida a Mart fa molt de temps. → ___ vida a Mart fa molt de temps.",
+    [
+     "Hi podria haver hagut",
+     "Podria haver-hi hagut"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "És possible que hi hagués vida a Mart fa molt de temps.",
+     "w": "PODRIA",
+     "p": "___ vida a Mart fa molt de temps."
+    }
+   ],
+   [
+    "Ningú no ha vist mai un extraterrestre. → Cap extraterrestre no ha ___ ningú.",
+    [
+     "estat vist mai per",
+     "estat vist per"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Ningú no ha vist mai un extraterrestre.",
+     "w": "ESTAT",
+     "p": "Cap extraterrestre no ha ___ ningú."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Hay alguien ahí fuera?",
+   "sub": "La búsqueda de vida fuera de la Tierra",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "telescopio",
+    "cohete",
+    "luna",
+    "hielo",
+    "océano",
+    "señal"
+   ]
+  }
+ }
+}

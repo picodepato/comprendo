@@ -1,0 +1,499 @@
+{
+ "id": "en-naturaleza-b2",
+ "topic": "naturaleza",
+ "level": "B2",
+ "title": "The wolves that changed a park",
+ "short": "The wolves that changed a park",
+ "text": [
+  "In January 1995, a small group of grey wolves was released into Yellowstone National Park in the United States. For most visitors, it was simply a chance to see a magnificent animal in the wild. For scientists, however, it was the beginning of one of the most closely watched experiments in the history of ecology. Wolves had been absent from the park for around seventy years, and nobody knew exactly what would happen when they returned.",
+  "The wolves had not disappeared by accident. In the early twentieth century, they were seen as dangerous pests that killed farm animals, and they were hunted, trapped and poisoned until the last ones in the park were gone by the nineteen twenties. At the time, this was considered a success. Without their main predator, however, the number of elk, a large kind of deer, grew rapidly. The elk ate young trees and bushes, especially along the rivers, and some areas of the park began to look bare.",
+  "When the wolves came back, the most obvious change was that the number of elk fell. But many researchers believe that something more subtle also happened. The elk seemed to change their behaviour, spending less time in open valleys and along riverbanks, where they could easily be ambushed. In some of those places, young willows and aspens, which had struggled to grow for decades, began to recover.",
+  "According to this view, the effects did not stop there. As trees returned along the rivers, beavers came back too, using the wood to build dams that created ponds and wetlands for fish, frogs and birds. The carcasses left by wolves provided food for ravens, eagles and even bears. Scientists call this kind of chain reaction a trophic cascade, and the story of Yellowstone became one of the most famous examples in the world, especially after a short online video about it was watched by millions of people.",
+  "More recently, however, some ecologists have argued that the popular version of the story is too simple. They point out that other factors were also changing at the same time. Hunting by humans outside the park reduced the number of elk, the population of bears increased, and a series of dry years affected the plants. In some areas, the trees have recovered far less than the famous video suggests. The wolves, these researchers say, played a part, but they were not the only reason for the changes.",
+  "This debate does not mean that the return of the wolves was unimportant. On the contrary, it shows how complex natural systems are, and how difficult it can be to separate cause and effect. Most scientists agree that predators play a vital role in keeping ecosystems healthy, even if their influence varies from place to place.",
+  "Today, around one hundred wolves live in the park, and they are one of its main attractions. Their story is a reminder that every species is connected to many others, and that removing just one of them can have consequences that take decades to understand."
+ ],
+ "q": [
+  [
+   "Why was the release of the wolves important for scientists?",
+   [
+    "It proved that wolves are not dangerous.",
+    "It was the first time wolves had lived in the park.",
+    "It gave them a chance to observe the effects of a predator returning.",
+    "It allowed them to count the visitors to the park."
+   ],
+   2
+  ],
+  [
+   "How did people in the early twentieth century feel about removing the wolves?",
+   [
+    "They thought it was a good thing.",
+    "They did not notice that it had happened.",
+    "They regretted it immediately.",
+    "They wanted to bring them back."
+   ],
+   0
+  ],
+  [
+   "What change in elk behaviour is described in the third paragraph?",
+   [
+    "They started to hunt in groups.",
+    "They began to eat more trees along the rivers.",
+    "They moved into the open valleys.",
+    "They avoided places where they could be attacked easily."
+   ],
+   3
+  ],
+  [
+   "What is a trophic cascade?",
+   [
+    "a series of effects passing from one species to others",
+    "a waterfall in Yellowstone",
+    "a type of dam built by beavers",
+    "a video watched by millions of people"
+   ],
+   0
+  ],
+  [
+   "What do some ecologists say about the popular version of the story?",
+   [
+    "It is completely false.",
+    "It shows that wolves were the only cause.",
+    "It was invented by the makers of the video.",
+    "It ignores other reasons for the changes."
+   ],
+   3
+  ],
+  [
+   "What is the attitude of the writer in the sixth paragraph?",
+   [
+    "The debate shows how complicated nature is.",
+    "Scientists will never agree about anything.",
+    "Predators are not important for ecosystems.",
+    "The return of the wolves was a mistake."
+   ],
+   0
+  ],
+  [
+   "In which paragraph does the writer describe animals that benefited from the food left by wolves?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer explain why the wolves had disappeared?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ],
+  [
+   "In which paragraph does the writer mention the current number of wolves in the park?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   6
+  ],
+  [
+   "In which paragraph does the writer mention the effect of weather on the plants?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ]
+ ],
+ "vocab": [
+  [
+   "wolf",
+   "🐺"
+  ],
+  [
+   "deer",
+   "🦌"
+  ],
+  [
+   "tree",
+   "🌳"
+  ],
+  [
+   "beaver",
+   "🦫"
+  ],
+  [
+   "river",
+   "🏞️"
+  ],
+  [
+   "eagle",
+   "🦅"
+  ]
+ ],
+ "halves": [
+  [
+   "Wolves had been absent...",
+   "...for around seventy years."
+  ],
+  [
+   "The elk ate young trees...",
+   "...especially along the rivers."
+  ],
+  [
+   "Beavers used the wood...",
+   "...to build dams."
+  ],
+  [
+   "Some ecologists argue...",
+   "...that the story is too simple."
+  ],
+  [
+   "Removing just one species...",
+   "...can have serious consequences."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Bringing wolves back to Yellowstone was not an easy {{0}}. Many farmers living near the park were strongly {{1}} to the plan, as they were afraid the wolves would attack their cattle. To {{2}} with their concerns, an organisation agreed to pay farmers for any animals killed by wolves. Over the years, the number of attacks has {{3}} relatively low, but the subject still causes strong feelings. For some people, the wolf is a {{4}} of wild nature; for others, it is a threat to their way of life. Finding a balance that {{5}} everyone is still a challenge.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Wolves live in family groups called packs, {{6}} usually consist of a pair of adults and their young. Each pack has its own territory, and wolves will defend it {{7}} other packs. They are excellent hunters, but most of their attempts to catch prey actually fail. {{8}} of this, they often go several days without eating. When they do catch something, a single wolf can eat {{9}} to ten kilograms of meat in one meal. Wolves communicate {{10}} howling, which can be heard from many kilometres away. Contrary to popular belief, they do {{11}} howl at the moon.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "Yellowstone is one of the most {{12}} national parks in the world. Its {{13}} attracts millions of visitors every year. The return of the wolves was a {{14}} decision, but today many people see it as a {{15}}. Scientists continue to study the park, hoping to improve their {{16}} of how ecosystems work. The story shows that nature is often more {{17}} than we think.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Bringing wolves back to Yellowstone was not an easy ___.",
+    [
+     "decision",
+     "election",
+     "selection",
+     "determination"
+    ],
+    0
+   ],
+   [
+    "Many farmers living near the park were strongly ___ to the plan, as they were afraid the wolves would attack their cattle.",
+    [
+     "against",
+     "contrary",
+     "disagreed",
+     "opposed"
+    ],
+    3
+   ],
+   [
+    "To ___ with their concerns, an organisation agreed to pay farmers for any animals killed by wolves.",
+    [
+     "manage",
+     "treat",
+     "deal",
+     "handle"
+    ],
+    2
+   ],
+   [
+    "Over the years, the number of attacks has ___ relatively low, but the subject still causes strong feelings.",
+    [
+     "remained",
+     "stood",
+     "kept",
+     "lasted"
+    ],
+    0
+   ],
+   [
+    "For some people, the wolf is a ___ of wild nature; for others, it is a threat to their way of life.",
+    [
+     "symbol",
+     "signal",
+     "mark",
+     "sign"
+    ],
+    0
+   ],
+   [
+    "Finding a balance that ___ everyone is still a challenge.",
+    [
+     "satisfies",
+     "accepts",
+     "agrees",
+     "approves"
+    ],
+    0
+   ],
+   [
+    "Wolves live in family groups called packs, ___ usually consist of a pair of adults and their young.",
+    [
+     "which"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Each pack has its own territory, and wolves will defend it ___ other packs.",
+    [
+     "against"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ of this, they often go several days without eating.",
+    [
+     "Because",
+     "As",
+     "Since"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "When they do catch something, a single wolf can eat ___ to ten kilograms of meat in one meal.",
+    [
+     "up"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Wolves communicate ___ howling, which can be heard from many kilometres away.",
+    [
+     "by",
+     "through"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Contrary to popular belief, they do ___ howl at the moon.",
+    [
+     "not"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Yellowstone is one of the most ___ national parks in the world.",
+    [
+     "famous"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "FAME"
+    }
+   ],
+   [
+    "Its ___ attracts millions of visitors every year.",
+    [
+     "beauty"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "BEAUTIFUL"
+    }
+   ],
+   [
+    "The return of the wolves was a ___ decision, but today many people see it as a ….",
+    [
+     "controversial"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CONTROVERSY"
+    }
+   ],
+   [
+    "The return of the wolves was a … decision, but today many people see it as a ___.",
+    [
+     "success"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SUCCEED"
+    }
+   ],
+   [
+    "Scientists continue to study the park, hoping to improve their ___ of how ecosystems work.",
+    [
+     "understanding"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "UNDERSTAND"
+    }
+   ],
+   [
+    "The story shows that nature is often more ___ than we think.",
+    [
+     "unpredictable"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "PREDICT"
+    }
+   ],
+   [
+    "Wolves had not lived in the park for seventy years. → It had been seventy years ___ lived in the park.",
+    [
+     "since wolves had",
+     "since wolves"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Wolves had not lived in the park for seventy years.",
+     "w": "SINCE",
+     "p": "It had been seventy years ___ lived in the park."
+    }
+   ],
+   [
+    "It was the first time the scientists had seen such a thing. → The scientists ___ such a thing before.",
+    [
+     "had never seen"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "It was the first time the scientists had seen such a thing.",
+     "w": "NEVER",
+     "p": "The scientists ___ such a thing before."
+    }
+   ],
+   [
+    "People say that wolves howl at the moon. → Wolves ___ howl at the moon.",
+    [
+     "are said to"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "People say that wolves howl at the moon.",
+     "w": "SAID",
+     "p": "Wolves ___ howl at the moon."
+    }
+   ],
+   [
+    "The trees did not recover as much as people expected. → The trees recovered ___ people expected.",
+    [
+     "less than"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "The trees did not recover as much as people expected.",
+     "w": "LESS",
+     "p": "The trees recovered ___ people expected."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los lobos que cambiaron un parque",
+   "sub": "Lo que pasó en Yellowstone cuando volvieron los lobos",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "lobo",
+    "ciervo",
+    "árbol",
+    "castor",
+    "río",
+    "águila"
+   ]
+  }
+ }
+}

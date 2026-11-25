@@ -1,0 +1,499 @@
+{
+ "id": "ca-dinosaurios-b2",
+ "topic": "dinosaurios",
+ "level": "B2",
+ "title": "Els dinosaures que mai no es van extingir",
+ "short": "Els dinosaures que mai no es van extingir",
+ "text": [
+  "Fa seixanta-sis milions d'anys, un asteroide d'uns deu quilòmetres d'amplada va xocar contra el que avui és Mèxic. L'impacte va provocar incendis, tsunamis i anys de foscor, i van desaparèixer prop de tres quartes parts de les espècies de la Terra. Entre elles, com sap qualsevol escolar, hi havia els dinosaures. O no? Segons la majoria dels paleontòlegs actuals, un grup de dinosaures va sobreviure a la catàstrofe, i els seus descendents encara són al nostre voltant. Potser fins i tot te n'has menjat un per dinar.",
+  "La idea que els ocells són dinosaures vius no és tan nova com sembla. El 1861, només dos anys després que Charles Darwin publiqués la seva teoria de l'evolució, uns treballadors d'una pedrera d'Alemanya van trobar el fòssil d'una criatura estranya. Tenia dents, urpes a les ales i una cua llarga amb ossos com la d'un rèptil, però també tenia plomes clarament visibles. La van anomenar Archaeopteryx, i de seguida es va fer famosa com a possible baula entre els rèptils i els ocells.",
+  "Tanmateix, durant més d'un segle la relació va continuar sent polèmica. Molts experts creien que els ocells provenien d'un altre grup de rèptils, i els dinosaures s'imaginaven en general com a gegants lents i de sang freda que tenien poca cosa en comú amb un pardal. Aquesta imatge va començar a canviar als anys seixanta i setanta, quan uns investigadors que estudiaven un depredador petit i ràpid anomenat Deinonychus es van adonar de com s'assemblava el seu esquelet al d'un ocell.",
+  "Les proves més convincents, però, van arribar de la Xina. El 1996, uns pagesos de la província de Liaoning van descobrir un petit dinosaure amb el cos cobert d'una capa fina de filaments esponjosos, una forma primitiva de plomes. Els anys següents, la mateixa regió va aportar desenes de dinosaures amb plomes, conservats amb un detall extraordinari gràcies a la cendra volcànica. Un d'ells, el Yutyrannus, era parent del Tyrannosaurus rex, cosa que suggereix que fins i tot alguns grans carnívors podien estar coberts de plomes, almenys en part.",
+  "Aquests descobriments han transformat la manera com imaginem els dinosaures. El famós Velociraptor, que a les pel·lícules apareix com un monstre escatós de la mida d'una persona, en realitat era més o menys com un gall dindi i gairebé segur que tenia plomes. Els científics també han descobert que molts dinosaures ponien ous en nius, s'hi asseien a sobre per donar-los escalfor i tenien pulmons i ossos semblants als dels ocells actuals.",
+  "Per què van aparèixer les plomes? Curiosament, sembla que no van sorgir per volar. Les primeres plomes probablement servien per mantenir la calor o per atreure parella, igual que un paó llueix la cua. Només més endavant alguns dinosaures petits van començar a fer-les servir per planar i, finalment, per volar.",
+  "Així que la pròxima vegada que vegis un colom al parc o una gallina en una granja, val la pena recordar la seva història familiar. Els dinosaures no van desaparèixer del tot quan va caure l'asteroide. Alguns simplement es van fer més petits, van desenvolupar ales i es van llançar al cel."
+ ],
+ "q": [
+  [
+   "Què suggereix l'autor al primer paràgraf?",
+   [
+    "Els dinosaures van desaparèixer abans de l'asteroide.",
+    "L'asteroide va acabar amb totes les espècies.",
+    "Els escolars saben més que els paleontòlegs.",
+    "El que gairebé tothom sap dels dinosaures no és del tot cert."
+   ],
+   3
+  ],
+  [
+   "Per què va ser tan important l'Archaeopteryx?",
+   [
+    "Tenia trets de rèptil i d'ocell.",
+    "Era el dinosaure més gran descobert.",
+    "Va demostrar que Darwin s'equivocava.",
+    "Va ser el primer fòssil trobat a Alemanya."
+   ],
+   0
+  ],
+  [
+   "Al tercer paràgraf, l'autor explica que durant molts anys",
+   [
+    "els dinosaures s'imaginaven ràpids i de sang calenta",
+    "a ningú no li interessava l'Archaeopteryx",
+    "tothom acceptava que els ocells venien dels dinosaures",
+    "la majoria dels experts no creien que els dinosaures fossin parents dels ocells"
+   ],
+   3
+  ],
+  [
+   "Per què eren tan valuosos els fòssils de Liaoning?",
+   [
+    "Van ser els primers fòssils amb dents.",
+    "La cendra volcànica havia conservat petits detalls com les plomes.",
+    "Eren els dinosaures més grans trobats.",
+    "Els van descobrir científics famosos."
+   ],
+   1
+  ],
+  [
+   "Què diu l'autor sobre el Velociraptor?",
+   [
+    "Era més gran que una persona.",
+    "Les pel·lícules n'han donat una imatge falsa.",
+    "Era l'avantpassat del gall dindi.",
+    "No tenia cap ploma."
+   ],
+   1
+  ],
+  [
+   "Segons el sisè paràgraf, les primeres plomes",
+   [
+    "només van aparèixer en dinosaures grans",
+    "probablement no servien per volar",
+    "eren més llargues que les d'un paó",
+    "servien per atrapar preses"
+   ],
+   1
+  ],
+  [
+   "En quin paràgraf descriu l'autor com cuidaven els dinosaures els seus ous?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   4
+  ],
+  [
+   "En quin paràgraf esmenta l'autor un descobriment fet poc després d'una famosa teoria científica?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   1
+  ],
+  [
+   "En quin paràgraf explica l'autor la causa d'una extinció massiva?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   0
+  ],
+  [
+   "En quin paràgraf esmenta l'autor un parent d'un dinosaure molt famós?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "ploma",
+   "🪶"
+  ],
+  [
+   "ou",
+   "🥚"
+  ],
+  [
+   "gallina",
+   "🐔"
+  ],
+  [
+   "fòssil",
+   "🦴"
+  ],
+  [
+   "ala",
+   "🪽"
+  ],
+  [
+   "niu",
+   "🪺"
+  ]
+ ],
+ "halves": [
+  [
+   "Un asteroide va xocar...",
+   "...contra el que avui és Mèxic."
+  ],
+  [
+   "L'Archaeopteryx tenia dents...",
+   "...però també plomes."
+  ],
+  [
+   "Uns pagesos xinesos van descobrir...",
+   "...un dinosaure cobert de filaments."
+  ],
+  [
+   "El Velociraptor era...",
+   "...més o menys com un gall dindi."
+  ],
+  [
+   "Alguns dinosaures petits van començar...",
+   "...a fer servir les plomes per planar."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "Els paleontòlegs solen passar setmanes treballant en llocs calorosos i polsosos, a la {{0}} de fòssils. Quan en troben un, l'han d'{{1}} de la roca molt a poc a poc, amb eines petites i pinzells. Un sol error podria {{2}} un fòssil que ha sobreviscut milions d'anys. Ja al laboratori, els ossos es netegen i s'estudien a {{3}}. De vegades passen anys fins que una espècie nova es {{4}} oficialment. És una feina lenta, però per a molts científics no hi ha res més emocionant que ser el primer a {{5}} els ulls en una criatura que ningú no ha vist mai.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "No tots els dinosaures eren gegants. De fet, molts no eren més grans {{6}} una gallina. Alguns dels dinosaures més petits pesaven menys d'un quilo, i diversos probablement podien enfilar-se als arbres. Els científics creuen que va ser entre aquests dinosaures petits i lleugers on va {{7}} el vol. Ser petit també va ajudar alguns a sobreviure {{8}} va caure l'asteroide, perquè necessitaven menys menjar. Els animals grans, en {{9}}, ho tenien molt més difícil per trobar prou aliment. Això podria explicar per {{10}} els únics dinosaures que queden avui són els que volen, o {{11}} que descendeixen de dinosaures voladors.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "El descobriment de dinosaures amb plomes va ser un dels moments més {{12}} de la paleontologia moderna. Va demostrar que la {{13}} entre els dinosaures i els ocells era molt més estreta del que es pensava. Molts científics es van mostrar escèptics {{14}}, però les proves eren massa fortes per ignorar-les. Avui la majoria dels experts hi estan d'{{15}}. L'{{16}} dels dinosaures en llibres i pel·lícules ha canviat, i les il·lustracions modernes són molt més {{17}}.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Els paleontòlegs solen passar setmanes treballant en llocs calorosos i polsosos, a la ___ de fòssils.",
+    [
+     "troballa",
+     "recerca",
+     "descoberta",
+     "trobada"
+    ],
+    1
+   ],
+   [
+    "Quan en troben un, l'han d'___ de la roca molt a poc a poc, amb eines petites i pinzells.",
+    [
+     "llençar",
+     "extreure",
+     "tirar",
+     "treure's"
+    ],
+    1
+   ],
+   [
+    "Un sol error podria ___ un fòssil que ha sobreviscut milions d'anys.",
+    [
+     "lesionar",
+     "ferir",
+     "doldre",
+     "malmetre"
+    ],
+    3
+   ],
+   [
+    "Ja al laboratori, els ossos es netegen i s'estudien a ___.",
+    [
+     "baix",
+     "profund",
+     "fons",
+     "fosc"
+    ],
+    2
+   ],
+   [
+    "De vegades passen anys fins que una espècie nova es ___ oficialment.",
+    [
+     "explica",
+     "parla",
+     "diu",
+     "descriu"
+    ],
+    3
+   ],
+   [
+    "És una feina lenta, però per a molts científics no hi ha res més emocionant que ser el primer a ___ els ulls en una criatura que ningú no ha vist mai.",
+    [
+     "donar",
+     "llançar",
+     "ficar",
+     "posar"
+    ],
+    3
+   ],
+   [
+    "De fet, molts no eren més grans ___ una gallina.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els científics creuen que va ser entre aquests dinosaures petits i lleugers on va ___ el vol.",
+    [
+     "sorgir",
+     "aparèixer"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Ser petit també va ajudar alguns a sobreviure ___ va caure l'asteroide, perquè necessitaven menys menjar.",
+    [
+     "quan"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els animals grans, en ___, ho tenien molt més difícil per trobar prou aliment.",
+    [
+     "canvi"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Això podria explicar per ___ els únics dinosaures que queden avui són els que volen, o … que descendeixen de dinosaures voladors.",
+    [
+     "què"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Això podria explicar per … els únics dinosaures que queden avui són els que volen, o ___ que descendeixen de dinosaures voladors.",
+    [
+     "els"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El descobriment de dinosaures amb plomes va ser un dels moments més ___ de la paleontologia moderna.",
+    [
+     "emocionants"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EMOCIONAR"
+    }
+   ],
+   [
+    "Va demostrar que la ___ entre els dinosaures i els ocells era molt més estreta del que es pensava.",
+    [
+     "relació"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "RELACIONAR"
+    }
+   ],
+   [
+    "Molts científics es van mostrar escèptics ___, però les proves eren massa fortes per ignorar-les.",
+    [
+     "inicialment"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INICI"
+    }
+   ],
+   [
+    "Avui la majoria dels experts hi estan d'___.",
+    [
+     "acord"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ACORDAR"
+    }
+   ],
+   [
+    "L'___ dels dinosaures en llibres i pel·lícules ha canviat, i les il·lustracions modernes són molt més ….",
+    [
+     "aparença"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "APARÈIXER"
+    }
+   ],
+   [
+    "L'… dels dinosaures en llibres i pel·lícules ha canviat, i les il·lustracions modernes són molt més ___.",
+    [
+     "precises"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "PRECISIÓ"
+    }
+   ],
+   [
+    "Avui la majoria dels experts creu que els ocells són dinosaures. → Avui la majoria dels experts ___ els ocells són dinosaures.",
+    [
+     "està d'acord que",
+     "estan d'acord que",
+     "està d'acord en què"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Avui la majoria dels experts creu que els ocells són dinosaures.",
+     "w": "ACORD",
+     "p": "Avui la majoria dels experts ___ els ocells són dinosaures."
+    }
+   ],
+   [
+    "El Velociraptor era molt més petit que a les pel·lícules. → El Velociraptor no era ___ com a les pel·lícules.",
+    [
+     "tan gran"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "El Velociraptor era molt més petit que a les pel·lícules.",
+     "w": "TAN",
+     "p": "El Velociraptor no era ___ com a les pel·lícules."
+    }
+   ],
+   [
+    "Uns pagesos van descobrir el fòssil el 1996. → El fòssil ___ uns pagesos el 1996.",
+    [
+     "va ser descobert per"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Uns pagesos van descobrir el fòssil el 1996.",
+     "w": "VA",
+     "p": "El fòssil ___ uns pagesos el 1996."
+    }
+   ],
+   [
+    "És possible que el Tyrannosaurus rex tingués plomes. → El Tyrannosaurus rex ___ plomes.",
+    [
+     "podria haver tingut",
+     "podria tenir"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "És possible que el Tyrannosaurus rex tingués plomes.",
+     "w": "PODRIA",
+     "p": "El Tyrannosaurus rex ___ plomes."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los dinosaurios que nunca se extinguieron",
+   "sub": "Por qué las aves son dinosaurios",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "pluma",
+    "huevo",
+    "gallina",
+    "fósil",
+    "ala",
+    "nido"
+   ]
+  }
+ }
+}
