@@ -3,6 +3,7 @@
         (a los servidores de Vercel suele bloquearlos), busca la canción por su título en LRCLIB (lrclib.net, letras
         sincronizadas, gratis y sin clave). NO se guarda nada.
    GET  /api/canciones?q=artista canción → hasta 5 letras de LRCLIB para elegir (cuando no encuentra la buena)
+   GET  /api/canciones?tr=palabra&de=es&a=en → traducción de una palabra (traductor gratis MyMemory; se guarda 30 días en caché)
    GET  /api/canciones?id=x            → canción que un profe mandó como deberes (hace falta haber entrado)
    GET  /api/canciones?clases=1        → clases del profe (o todas, el admin), para elegir a quién mandarla
    POST /api/canciones {accion: "asignar", v, titulo, idioma, nivel, lineas, grupo, limite, nota}
@@ -187,6 +188,20 @@ async function subtitulosYT(v, lang) {
 }
 
 /* la canción que manda un profe: se comprueba y se recorta */
+/* traducción de una palabra con MyMemory (gratis, sin clave). null = el traductor no responde */
+export function limpiarTraduccion(j, w) {
+  const t = String(j && j.responseData && j.responseData.translatedText || "").trim();
+  if (!t || /MYMEMORY|QUERY LENGTH|INVALID|PLEASE SELECT/i.test(t) || t.length > 60 || t.toLowerCase() === w.toLowerCase()) return "";
+  return w === w.toLowerCase() ? t.toLowerCase() : t;
+}
+async function traducir(w, de, a) {
+  try {
+    const r = await pedir(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(w)}&langpair=${de}|${a}`, { headers: { "User-Agent": "Comprendo (web educativa de lectura e idiomas)" } }, 5000);
+    if (!r.ok) return null;
+    return limpiarTraduccion(await r.json(), w);
+  } catch (e) { return null; }
+}
+
 function validarCancion(b) {
   const v = videoValido(b.v) ? b.v : "";
   const lineas = Array.isArray(b.lineas) ? b.lineas.slice(0, 600).map(l => ({ t: Math.max(0, +l.t || 0), d: Math.max(0, +l.d || 0), x: String(l.x || "").slice(0, 300) })).filter(l => l.x.trim()) : [];
@@ -207,6 +222,20 @@ export default async function handler(req, res) {
       if (hayDB() && (await contar("subs:" + ipDe(req), 3600)) > 150) return responder(res, 429, { error: "demasiadas" });
       const r = (await buscarLrclib(String(q.q).trim())).sort((a, b) => !!b.syncedLyrics - !!a.syncedLyrics).slice(0, 5).map(aCancion).filter(c => c.lineas.length >= 2);
       return responder(res, r.length ? 200 : 404, r.length ? { resultados: r } : { error: "sin_resultados" });
+    }
+    if (req.method === "GET" && q.tr !== undefined) {
+      const w = String(q.tr).trim(), de = String(q.de || ""), a = String(q.a || "");
+      if (!w || w.length > 40 || !/^[a-z]{2}$/.test(de) || !/^[a-z]{2}$/.test(a) || de === a) return responder(res, 400, { error: "no_valido" });
+      const clave = `trad:${de}:${a}:${w.toLowerCase()}`;
+      if (hayDB()) {
+        const c = await redis("GET", clave).catch(() => null);
+        if (c !== null && c !== undefined) return responder(res, c ? 200 : 404, c ? { t: c } : { error: "sin_traduccion" });
+        if ((await contar("tr:" + ipDe(req), 3600)) > 300) return responder(res, 429, { error: "demasiadas" });
+      }
+      const t = await traducir(w, de, a);
+      if (t === null) return responder(res, 502, { error: "traductor" });
+      if (hayDB()) await redis("SET", clave, t, "EX", 30 * 86400).catch(() => {});
+      return responder(res, t ? 200 : 404, t ? { t } : { error: "sin_traduccion" });
     }
     if (req.method === "GET" && q.id !== undefined) {
       if (!(await usuarioDeSesion(req))) return responder(res, 401, { error: "entra" });

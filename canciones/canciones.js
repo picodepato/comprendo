@@ -8,7 +8,7 @@
    Rutas: #canciones (inicio), #canciones-<vídeo> (jugar ese vídeo), #canciones-texto (letra pegada), #cancion-<id> (deberes). */
 (() => {
 const TX = {
-  ca: {buscar: "🔎 Busca la lletra pel nom", buscarq: "Artista i cançó", buscarb: "Buscar", buscando: "Buscant…", sinres: "No l'hem trobada. Prova amb un altre nom o enganxa la lletra.", sinsync: "sense temps", usar: "Fer servir", s_lrc: "LRCLIB (lletres sincronitzades)", lrcnota: "Lletra trobada: {n}.", noes: "No és aquesta?", ajuste: "Si la lletra va avançada o endarrerida, ajusta-la:", antes: "⏪ Abans", despues: "Després ⏩", tab: "🎵 Cançons", h1: "Cançons", sub: "Escolta una cançó o un vídeo de YouTube i escriu les paraules que falten.",
+  ca: {toca: "👆 Toca una paraula per veure què vol dir i desar-la al teu diccionari.", addw: "＋ Afegir al diccionari", savedw: "✓ Al teu diccionari", trad: "Traduint…", sintr: "No hem trobat la traducció.", dictit: "🎵 Paraules de cançons", buscar: "🔎 Busca la lletra pel nom", buscarq: "Artista i cançó", buscarb: "Buscar", buscando: "Buscant…", sinres: "No l'hem trobada. Prova amb un altre nom o enganxa la lletra.", sinsync: "sense temps", usar: "Fer servir", s_lrc: "LRCLIB (lletres sincronitzades)", lrcnota: "Lletra trobada: {n}.", noes: "No és aquesta?", ajuste: "Si la lletra va avançada o endarrerida, ajusta-la:", antes: "⏪ Abans", despues: "Després ⏩", tab: "🎵 Cançons", h1: "Cançons", sub: "Escolta una cançó o un vídeo de YouTube i escriu les paraules que falten.",
     pega: "Enganxa l'enllaç de YouTube", ej: "https://www.youtube.com/watch?v=…", empezar: "Començar", nivel: "Nivell", n1: "Fàcil", n2: "Normal", n3: "Difícil", n4: "Expert",
     nd1: "1 buit cada 2 frases", nd2: "1 buit per frase", nd3: "2 buits per frase", nd4: "1 de cada 3 paraules",
     como: "Com funciona", como1: "El vídeo s'atura al final de cada frase amb un buit.", como2: "Escriu la paraula que has sentit. Si l'encertes, continua sol.", como3: "🔁 repeteix la frase, 💡 et dona una lletra i 👀 et mostra la paraula (sense punts).",
@@ -30,7 +30,7 @@ const TX = {
     deber: "📚 Deures del teu profe", mandar: "🧑‍🏫 Enviar com a deures", para: "Per a", todas: "Totes les meves classes", todos: "Tots els alumnes", hasta: "Data límit", nota: "Nota (opcional)",
     mandarb: "Enviar a la classe", mandada: "✓ Enviada. Els teus alumnes la veuran a la portada, a «Els teus deures».", sinclases: "Primer crea una classe al teu Tauler del profe.", e_mandar: "No s'ha pogut enviar. Torna-ho a provar.",
     letra_de: "Lletra: {s}", s_auto: "subtítols automàtics de YouTube", s_yt: "subtítols de YouTube", s_tuya: "enganxada per tu"},
-  es: {buscar: "🔎 Busca la letra por su nombre", buscarq: "Artista y canción", buscarb: "Buscar", buscando: "Buscando…", sinres: "No la hemos encontrado. Prueba con otro nombre o pega la letra.", sinsync: "sin tiempos", usar: "Usar", s_lrc: "LRCLIB (letras sincronizadas)", lrcnota: "Letra encontrada: {n}.", noes: "¿No es esta?", ajuste: "Si la letra va adelantada o atrasada, ajústala:", antes: "⏪ Antes", despues: "Después ⏩", tab: "🎵 Canciones", h1: "Canciones", sub: "Escucha una canción o un vídeo de YouTube y escribe las palabras que faltan.",
+  es: {toca: "👆 Toca una palabra para ver qué significa y guardarla en tu diccionario.", addw: "＋ Añadir al diccionario", savedw: "✓ En tu diccionario", trad: "Traduciendo…", sintr: "No hemos encontrado la traducción.", dictit: "🎵 Palabras de canciones", buscar: "🔎 Busca la letra por su nombre", buscarq: "Artista y canción", buscarb: "Buscar", buscando: "Buscando…", sinres: "No la hemos encontrado. Prueba con otro nombre o pega la letra.", sinsync: "sin tiempos", usar: "Usar", s_lrc: "LRCLIB (letras sincronizadas)", lrcnota: "Letra encontrada: {n}.", noes: "¿No es esta?", ajuste: "Si la letra va adelantada o atrasada, ajústala:", antes: "⏪ Antes", despues: "Después ⏩", tab: "🎵 Canciones", h1: "Canciones", sub: "Escucha una canción o un vídeo de YouTube y escribe las palabras que faltan.",
     pega: "Pega el enlace de YouTube", ej: "https://www.youtube.com/watch?v=…", empezar: "Empezar", nivel: "Nivel", n1: "Fácil", n2: "Normal", n3: "Difícil", n4: "Experto",
     nd1: "1 hueco cada 2 frases", nd2: "1 hueco por frase", nd3: "2 huecos por frase", nd4: "1 de cada 3 palabras",
     como: "Cómo funciona", como1: "El vídeo se para al final de cada frase con un hueco.", como2: "Escribe la palabra que has oído. Si aciertas, sigue solo.", como3: "🔁 repite la frase, 💡 te da una letra y 👀 te enseña la palabra (sin puntos).",
@@ -52,7 +52,7 @@ const TX = {
     deber: "📚 Deberes de tu profe", mandar: "🧑‍🏫 Mandar como deberes", para: "Para", todas: "Todas mis clases", todos: "Todos los alumnos", hasta: "Fecha límite", nota: "Nota (opcional)",
     mandarb: "Mandar a la clase", mandada: "✓ Mandada. Tus alumnos la verán en la portada, en «Tus deberes».", sinclases: "Primero crea una clase en tu Panel del profe.", e_mandar: "No se ha podido mandar. Prueba otra vez.",
     letra_de: "Letra: {s}", s_auto: "subtítulos automáticos de YouTube", s_yt: "subtítulos de YouTube", s_tuya: "pegada por ti"},
-  en: {buscar: "🔎 Search the lyrics by name", buscarq: "Artist and song", buscarb: "Search", buscando: "Searching…", sinres: "We could not find it. Try another name or paste the lyrics.", sinsync: "no times", usar: "Use", s_lrc: "LRCLIB (synced lyrics)", lrcnota: "Lyrics found: {n}.", noes: "Not this one?", ajuste: "If the lyrics come too early or too late, adjust them:", antes: "⏪ Earlier", despues: "Later ⏩", tab: "🎵 Songs", h1: "Songs", sub: "Listen to a song or a YouTube video and type the missing words.",
+  en: {toca: "👆 Tap a word to see what it means and save it to your dictionary.", addw: "＋ Add to dictionary", savedw: "✓ In your dictionary", trad: "Translating…", sintr: "We couldn't find a translation.", dictit: "🎵 Words from songs", buscar: "🔎 Search the lyrics by name", buscarq: "Artist and song", buscarb: "Search", buscando: "Searching…", sinres: "We could not find it. Try another name or paste the lyrics.", sinsync: "no times", usar: "Use", s_lrc: "LRCLIB (synced lyrics)", lrcnota: "Lyrics found: {n}.", noes: "Not this one?", ajuste: "If the lyrics come too early or too late, adjust them:", antes: "⏪ Earlier", despues: "Later ⏩", tab: "🎵 Songs", h1: "Songs", sub: "Listen to a song or a YouTube video and type the missing words.",
     pega: "Paste the YouTube link", ej: "https://www.youtube.com/watch?v=…", empezar: "Start", nivel: "Level", n1: "Easy", n2: "Normal", n3: "Hard", n4: "Expert",
     nd1: "1 gap every 2 lines", nd2: "1 gap per line", nd3: "2 gaps per line", nd4: "1 in 3 words",
     como: "How it works", como1: "The video stops at the end of each line with a gap.", como2: "Type the word you heard. If it is right, the video goes on.", como3: "🔁 repeats the line, 💡 gives you a letter and 👀 shows the word (no points).",
@@ -169,6 +169,7 @@ const isSongs = h => h === "canciones" || h === "canciones-texto" || /^canciones
 const tabLink = () => { try { const S = st().S; return esc(tl("tab", S.learn)) + (both() && S.know !== S.learn ? `<span class="tk"> · ${esc(tl("tab", S.know).replace(/^\S+\s/, ""))}</span>` : ""); } catch (e) { return "🎵 Canciones"; } };
 addEventListener("hashchange", () => { if (!isSongs(location.hash.slice(1)) || (M && M.h !== location.hash.slice(1))) parar(); });
 function parar() {
+  tipHide();
   clearInterval(timer); timer = null;
   try { if (player) { if (M) M.pos = player.getCurrentTime() || 0; player.destroy(); } } catch (e) {}
   player = null; root = null;
@@ -287,12 +288,12 @@ function usarResultado(i) {
 /* ---------- juego ---------- */
 const hechos = () => M.gaps.filter(g => g.st).length;
 function gapHTML(g, i) {
-  if (g.st === "ok") return `<span class="cnw ok" data-gi="${i}">${esc(g.w)}</span>`;
-  if (g.st === "skip") return `<span class="cnw skip" data-gi="${i}">${esc(g.w)}</span>`;
+  if (g.st === "ok") return `<span class="cnw ok cnwd" data-gi="${i}">${esc(g.w)}</span>`;
+  if (g.st === "skip") return `<span class="cnw skip cnwd" data-gi="${i}">${esc(g.w)}</span>`;
   const ph = g.pista ? g.w.slice(0, g.pista) + "…" : "";
   return `<input class="cngap" data-gi="${i}" style="width:${Math.max(4, g.w.length + 1.5)}ch" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done" aria-label="${esc(tl("hueco", lg()))}" placeholder="${esc(ph)}">`;
 }
-function lineaHTML(l, i) { return `<li data-li="${i}">${l.tok.map(t => t.g !== undefined ? gapHTML(M.gaps[t.g], t.g) : esc(t.s)).join("")}</li>`; }
+function lineaHTML(l, i) { return `<li data-li="${i}">${l.tok.map(t => t.g !== undefined ? gapHTML(M.gaps[t.g], t.g) : t.w && /\p{L}/u.test(t.s) ? `<span class="cnwd">${esc(t.s)}</span>` : esc(t.s)).join("")}</li>`; }
 function pintarJuego(el) {
   const S = st().S, sync = M.tiempos;
   const nota = [M.lrc ? `${T("lrcnota", {n: M.lrc.nombre})} <a href="#canciones" data-cn="noes">${T("noes")}</a>` : "", M.auto ? T("auto") : "", M.idioma && M.idioma !== S.learn ? T("otroidioma", {l: lname(M.idioma)}) : ""].filter(Boolean).map(x => `<p class="cnnote">${x}</p>`).join("");
@@ -315,6 +316,7 @@ function pintarJuego(el) {
         <div id="cnprof"></div>
       </div>
       <div class="cnright">
+        <p class="cntoca">${T("toca")}</p>
         <ol class="cnlyr" id="cnlyr">${M.lineas.map(lineaHTML).join("")}</ol>
         <p class="cnsrc">${M.origen ? esc(tl("letra_de", lg(), {s: tl(M.origen, lg())})) : ""}</p>
         <div id="cnend"><p><button type="button" class="btn" data-cn="fin">${T("fin")}</button></p></div>
@@ -337,7 +339,7 @@ function resolver(i, como) {
   const g = M.gaps[i]; if (!g || g.st) return;
   g.st = como;
   const inp = inputDe(i);
-  if (inp) { const s = document.createElement("span"); s.className = "cnw " + como + " pop"; s.dataset.gi = i; s.textContent = g.w; inp.replaceWith(s); }
+  if (inp) { const s = document.createElement("span"); s.className = "cnw cnwd " + como + " pop"; s.dataset.gi = i; s.textContent = g.w; inp.replaceWith(s); }
   if (como === "ok") { xp({n: 0, xp: 0, ok: true, src: "juego", juego: "cancion"}); msg("bien"); }
   prog();
   if (M.gaps.every(x => x.st)) return terminar();
@@ -489,14 +491,96 @@ async function profe() {
   };
 }
 
+/* ---------- tocar una palabra: traducción y guardarla en el diccionario ----------
+   Primero el diccionario de la web (el paquete del curso); si no está, el traductor gratis MyMemory
+   (por api/canciones?tr=…, o directamente desde el navegador si no hay servidor). Se guarda con r: "canciones". */
+const TRC = {};
+let tipEl = null, tipW = null, tipInfo = null;
+const enDict = (k, l) => { try { return st().S.dict.some(d => d.k === k && d.l === l); } catch (e) { return false; } };
+function tipBox() {
+  if (tipEl && document.body.contains(tipEl)) return tipEl;
+  tipEl = document.createElement("div"); tipEl.className = "tip cntip"; tipEl.id = "cntip"; tipEl.setAttribute("role", "status");
+  tipEl.innerHTML = `<small></small><b></b><p class="def" hidden></p><button type="button" class="add" data-cn="addw"></button>`;
+  document.body.appendChild(tipEl); return tipEl;
+}
+function tipPlace() {
+  const tip = tipBox(), w = tipW; if (!w || !document.body.contains(w)) return tipHide();
+  const r = w.getBoundingClientRect();
+  if (r.bottom < 0 || r.top > innerHeight) return tipHide();
+  tip.classList.remove("below"); tip.style.left = "0px"; tip.style.top = "0px";
+  const tw = tip.offsetWidth, th = tip.offsetHeight;
+  let x = Math.max(8, Math.min(r.left + r.width / 2 - tw / 2, innerWidth - tw - 8)), y = r.top - th - 12;
+  if (y < 64) { y = r.bottom + 12; tip.classList.add("below"); }
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+  tip.style.setProperty("--ax", Math.max(14, Math.min(tw - 14, r.left + r.width / 2 - x)) + "px");
+}
+function tipHide() { if (tipEl) tipEl.classList.remove("show"); if (tipW) tipW.classList.remove("on"); tipW = null; tipInfo = null; }
+function tipBtn() {
+  const b = tipBox().querySelector(".add"), i = tipInfo; if (!i) return;
+  const has = enDict(i.k, i.l);
+  b.hidden = !i.listo || (!i.t && !i.d);
+  b.disabled = has; b.innerHTML = T(has ? "savedw" : "addw");
+}
+const limpiaTr = (j, w) => {
+  const t = String(j && j.responseData && j.responseData.translatedText || "").trim();
+  if (!t || /MYMEMORY|QUERY LENGTH|INVALID|PLEASE SELECT/i.test(t) || t.length > 60 || t.toLowerCase() === w.toLowerCase()) return "";
+  return w === w.toLowerCase() ? t.toLowerCase() : t;
+};
+async function traducir(w, de, a) {
+  const k = de + "|" + a + "|" + w.toLowerCase();
+  if (TRC[k] !== undefined) return TRC[k];
+  let t = "", ok = false;
+  try {
+    if (await servidor()) { const r = await C().api(`canciones?tr=${encodeURIComponent(w)}&de=${de}&a=${a}`); ok = r.ok || r.status === 404; t = r.ok ? String(r.j.t || "") : ""; }
+    else { const r = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(w)}&langpair=${de}|${a}`); if (r.ok) { t = limpiaTr(await r.json(), w); ok = true; } }
+  } catch (e) {}
+  if (ok) TRC[k] = t;
+  return t;
+}
+async function tipShow(w) {
+  if (tipW === w && tipEl && tipEl.classList.contains("show")) return tipHide();
+  tipHide();
+  const S = st().S, txt = w.textContent.trim(), k = txt.toLowerCase(), de = (M && M.idioma) || S.learn, a = S.know;
+  let pk = null; try { pk = de === S.learn ? st().PK : null; } catch (e) {}
+  const t0 = pk && pk.tr && pk.tr[k] || "", d0 = pk && pk.def && pk.def[k] || null;
+  tipW = w; w.classList.add("on");
+  const info = tipInfo = {w: txt, k, l: de, t: t0, d: d0 ? `${d0[0]}: ${d0[1]}` : "", listo: !!t0 || de === a};
+  const tip = tipBox();
+  tip.querySelector("small").textContent = txt;
+  tip.querySelector("b").innerHTML = info.t ? esc(info.t) : info.listo ? "" : T("trad");
+  const def = tip.querySelector(".def"); def.hidden = !d0; def.innerHTML = d0 ? `<i>${esc(d0[0])}</i> · ${esc(d0[1])}` : "";
+  tipBtn(); tipPlace(); tip.classList.add("show");
+  if (info.listo) return;
+  const t = await traducir(txt, de, a);
+  if (tipInfo !== info) return;
+  info.t = t; info.listo = true;
+  tip.querySelector("b").innerHTML = t ? esc(t) : `<span style="font-size:15px;font-weight:500">${T("sintr")}</span>`;
+  tipBtn(); tipPlace();
+}
+function tipGuardar() {
+  const i = tipInfo; if (!i || !i.listo || (!i.t && !i.d) || enDict(i.k, i.l)) return;
+  const {S} = st();
+  S.dict.push({w: i.w.toLowerCase(), k: i.k, r: "canciones", l: i.l, t: i.t, tr: i.t ? {[S.know]: i.t} : {}, d: i.d, miss: false});
+  xp({xp: 1, src: "dict-save", ok: true, word: i.w});
+  L().save(); tipBtn();
+  setTimeout(() => { if (tipInfo === i) tipHide(); }, 1400);
+}
+addEventListener("scroll", () => { if (tipW) tipPlace(); }, {passive: true, capture: true});
+addEventListener("resize", () => { if (tipW) tipPlace(); });
+addEventListener("hashchange", tipHide);
+
 /* ---------- eventos ---------- */
 document.addEventListener("click", e => {
   const b = e.target.closest("[data-cn]");
+  const wd = !b && M && e.target.closest(".cnlyr .cnwd");
+  if (wd) return tipShow(wd);
+  if (tipW && !e.target.closest("#cntip")) tipHide();
   if (!b) {
     const li = e.target.closest(".cnlyr li"); if (li && M && !e.target.closest("input")) irALinea(+li.dataset.li);
     return;
   }
   const a = b.dataset.cn;
+  if (a === "addw") return tipGuardar();
   if (a === "pref") { st().S.cnNivel = +b.dataset.n; L().save(); b.parentElement.querySelectorAll(".cnlv").forEach(x => { const on = x === b; x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); }); return; }
   if (a === "usarres") return usarResultado(+b.dataset.i);
   if (a === "noes") { e.preventDefault(); const v = M && M.v, q = M ? String(M.titulo || "").replace(/\([^)]*\)|\[[^\]]*\]/g, " ").replace(/\b(official|oficial|video|vídeo|lyrics?|letra|audio)\b/gi, " ").replace(/\s+/g, " ").trim() : ""; parar(); M = null; F = {v, q}; if (location.hash.slice(1) === "canciones") pintarInicio(app()); else location.hash = "canciones"; return; }
@@ -535,5 +619,5 @@ document.addEventListener("keydown", e => {
 });
 document.addEventListener("focusin", e => { const inp = e.target.closest && e.target.closest(".cngap"); if (inp && M) M.sel = +inp.dataset.gi; });
 
-window.LYACanciones = {render, isSongs, tab: tabLink, _test: {idVideo, parseLetra, huecos, norm, get M() { return M; }}};
+window.LYACanciones = {render, isSongs, tab: tabLink, dictTitulo: () => { try { return tl("dictit", lg()); } catch (e) { return "🎵"; } }, _test: {idVideo, parseLetra, huecos, norm, get M() { return M; }}};
 })();

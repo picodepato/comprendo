@@ -136,6 +136,32 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   await P.click('[data-cn="usarres"][data-i="0"]'); await P.waitForSelector(".cnplay .cnvid iframe");
   ok(/Grupo - Canción buena/.test(await P.textContent(".cnhead")) && (await M(P)).gaps.length >= 3, "«Usar» abre la letra elegida con el vídeo");
 
+  /* ---------- tocar una palabra: traducción y guardarla en el diccionario ---------- */
+  let pedidas = 0;
+  await P.route(/\/api\/canciones\?tr=/, r => { pedidas++; const w = decodeURIComponent((r.request().url().match(/[?&]tr=([^&]*)/) || [])[1] || ""); r.fulfill({ contentType: "application/json", body: JSON.stringify({ t: w === "música" ? "music" : "zzz" }) }); });
+  const esp0 = (await M(P)).espera;
+  ok(/Toca una palabra/.test(await P.textContent(".cntoca")), "la letra avisa de que se pueden tocar las palabras");
+  await P.click('.cnlyr .cnwd:text-is("música")'); await P.waitForSelector("#cntip.show");
+  await P.waitForFunction(() => /music/.test(document.querySelector("#cntip b").textContent));
+  ok(/música/.test(await P.textContent("#cntip small")) && (await M(P)).espera === esp0, "tocar «música»: burbuja con la traducción (y no salta de frase)");
+  ok(await P.evaluate(() => { const t = document.querySelector("#cntip").getBoundingClientRect(), w = document.querySelector(".cnwd.on").getBoundingClientRect(); return t.width > 0 && Math.abs((t.left + t.width / 2) - (w.left + w.width / 2)) < 200; }), "la burbuja sale junto a la palabra");
+  await wait(300); if (OUT) await P.screenshot({ path: OUT + "/canciones-traduccion.png" });
+  const xp0 = await P.evaluate(() => LYA.get().S.g.xp);
+  await P.click("#cntip .add");
+  const ent = await P.evaluate(() => LYA.get().S.dict.find(d => d.k === "música"));
+  ok(ent && ent.r === "canciones" && ent.t === "music" && ent.tr.en === "music", "«Añadir al diccionario» la guarda (apartado canciones)");
+  ok(await P.evaluate(x => LYA.get().S.g.xp > x, xp0), "y da 1 punto");
+  ok(await P.$eval("#cntip .add", b => b.disabled && /En tu diccionario/.test(b.textContent)), "el botón pasa a «En tu diccionario»");
+  await P.click('.cnlyr .cnwd:text-is("música")'); await P.click('.cnlyr .cnwd:text-is("música")'); await P.waitForSelector("#cntip.show");
+  ok(pedidas === 1 && await P.$eval("#cntip .add", b => b.disabled), "la segunda vez no vuelve a traducir y ya sale guardada");
+  await P.click(".cnhead h1"); ok(!(await P.$("#cntip.show")), "tocar fuera cierra la burbuja");
+  await P.goto(URL + "#diccionario"); await P.waitForSelector(".wrap h1");
+  await P.waitForFunction(() => /Palabras de canciones/.test(document.querySelector("#app").textContent));
+  ok(/música/.test(await P.textContent("#app")), "diccionario: apartado «Palabras de canciones» con la palabra");
+  await P.click('[data-act="prac"][data-r="canciones"]'); await wait(400);
+  ok(/Pregunta 1/.test(await P.textContent("#app")) && /música/.test(await P.textContent("#app")) && /music/.test(await P.textContent("#app")), "«Practicar» las palabras de canciones abre el repaso");
+  if (OUT) await P.screenshot({ path: OUT + "/canciones-diccionario.png" });
+
   /* ---------- móvil ---------- */
   const Mv = await nueva(390, 800);
   await Mv.goto(URL + "#canciones-" + V); await listo(Mv); await Mv.waitForSelector(".cnvid iframe");
