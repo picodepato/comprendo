@@ -10,6 +10,7 @@
   "level_A1": "Empiezo",
   "level_A2": "Ya sé un poco",
   "level_B1": "Me defiendo",
+  "level_B2": "Me expreso bien",
   "pick": "Elige una lectura",
   "dict": "Mi diccionario",
   "points": "Puntos",
@@ -74,7 +75,9 @@
   "retry_mistakes": "Repetir fallos",
   "loading": "Cargando…",
   "load_error": "No se ha podido cargar el contenido. Vuelve a abrir la página.",
-  "reading": "Lectura"
+  "reading": "Lectura",
+  "check": "Comprobar",
+  "write_first": "Escribe al menos una respuesta."
  },
  "en": {
   "brand": "COMPRENDO",
@@ -87,6 +90,7 @@
   "level_A1": "Beginner",
   "level_A2": "I know a little",
   "level_B1": "I can get by",
+  "level_B2": "I feel confident",
   "pick": "Choose a reading",
   "dict": "My dictionary",
   "points": "Points",
@@ -151,7 +155,9 @@
   "retry_mistakes": "Retry mistakes",
   "loading": "Loading…",
   "load_error": "The content could not be loaded. Please reopen the page.",
-  "reading": "Reading"
+  "reading": "Reading",
+  "check": "Check",
+  "write_first": "Write at least one answer first."
  },
  "ca": {
   "brand": "COMPRENDO",
@@ -164,6 +170,7 @@
   "level_A1": "Començo",
   "level_A2": "Ja en sé una mica",
   "level_B1": "Me'n surto",
+  "level_B2": "M'expresso bé",
   "pick": "Tria una lectura",
   "dict": "El meu diccionari",
   "points": "Punts",
@@ -228,6 +235,8 @@
   "retry_mistakes": "Repetir les errades",
   "loading": "Carregant…",
   "load_error": "No s'ha pogut carregar el contingut. Torna a obrir la pàgina.",
-  "reading": "Lectura"
+  "reading": "Lectura",
+  "check": "Comprovar",
+  "write_first": "Escriu almenys una resposta."
  }
 }

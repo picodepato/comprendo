@@ -1,0 +1,497 @@
+{
+ "id": "en-misterios-b2",
+ "topic": "misterios",
+ "level": "B2",
+ "title": "The book nobody can read",
+ "short": "The book nobody can read",
+ "text": [
+  "In a library at Yale University in the United States, there is a small book that has defeated some of the most brilliant minds of the last hundred years. It contains around two hundred and forty pages of elegant handwriting, accompanied by colourful drawings of plants, stars and strange human figures. The problem is that nobody knows what language it is written in, or whether it is a language at all.",
+  "The book is known as the Voynich manuscript, after Wilfrid Voynich, a Polish bookseller who bought it in 1912 from a religious college near Rome. Voynich was convinced that he had found something extraordinary and spent the rest of his life trying to understand it, without success. Since then, the manuscript has been studied by professional codebreakers, linguists, historians and thousands of enthusiastic amateurs. All of them have failed.",
+  "We do know a few things about it. In 2009, scientists used radiocarbon dating to analyse the animal skin on which the book is written, and concluded that it was made in the early fifteenth century, between about 1404 and 1438. This ruled out one popular theory, which claimed that the book was a fake created by Voynich himself. Letters found with the manuscript also show that it once belonged to an emperor in Prague, who is said to have paid a large amount of gold for it.",
+  "The contents, however, remain a complete mystery. About half of the book is filled with drawings of plants, but most of them do not match any species known to science. Other sections seem to show astronomical charts, while one particularly odd part contains images of small figures bathing in pools connected by pipes. The text itself uses an alphabet of around twenty to thirty symbols that appear nowhere else.",
+  "Over the years, people have suggested all kinds of explanations. Some believe it is written in a secret code designed to hide medical or scientific knowledge. Others think it may be an unknown language written in an invented alphabet. Statistical studies have shown that the text has some patterns typical of real languages, which makes it unlikely to be completely random. Yet every few years, someone announces that they have finally solved the puzzle, and every time their solution is quickly rejected by other experts.",
+  "Some researchers suspect that the most disappointing answer may also be the correct one: that the book is an elaborate hoax from the fifteenth century, written to impress or deceive a wealthy buyer. If so, its author would have needed great patience, since producing so many pages of convincing nonsense would have been extremely difficult.",
+  "Whatever its origin, the manuscript has become famous precisely because it refuses to give up its secret. Today, anyone can look at every page online, and new theories appear constantly. Perhaps one day someone will finally read it. Until then, it remains one of the most fascinating puzzles in the world."
+ ],
+ "q": [
+  [
+   "What does the writer mean by saying the book has defeated brilliant minds?",
+   [
+    "The book was written by several experts.",
+    "Readers have been harmed by the book.",
+    "The book contains information about famous scientists.",
+    "Very clever people have tried and failed to understand it."
+   ],
+   3
+  ],
+  [
+   "What do we learn about Wilfrid Voynich?",
+   [
+    "He never managed to understand the book.",
+    "He wrote the book himself.",
+    "He sold the book to a college near Rome.",
+    "He was a professional codebreaker."
+   ],
+   0
+  ],
+  [
+   "Why was the radiocarbon dating important?",
+   [
+    "It showed the book could not have been made by Voynich.",
+    "It proved who wrote the book.",
+    "It revealed what language the text was in.",
+    "It showed the book was made in Prague."
+   ],
+   0
+  ],
+  [
+   "What is strange about the drawings of plants?",
+   [
+    "They are the only drawings in the book.",
+    "They are all drawn in black and white.",
+    "They show plants used to make medicine.",
+    "Most of them do not look like any real plant."
+   ],
+   3
+  ],
+  [
+   "What have statistical studies suggested?",
+   [
+    "The text is probably not just random symbols.",
+    "The book has been fully understood.",
+    "The text is definitely written in a code.",
+    "The alphabet was copied from another book."
+   ],
+   0
+  ],
+  [
+   "Why does the writer describe the possible hoax as disappointing?",
+   [
+    "Many people would prefer the book to contain a real secret.",
+    "A hoax would be very easy to make.",
+    "It would mean the emperor paid too little.",
+    "It would prove that Voynich was a liar."
+   ],
+   0
+  ],
+  [
+   "In which paragraph does the writer mention a person who once owned the book before Voynich?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   2
+  ],
+  [
+   "In which paragraph does the writer explain where the name of the book comes from?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ],
+  [
+   "In which paragraph does the writer say that people keep claiming to have solved the mystery?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ],
+  [
+   "In which paragraph does the writer mention that the book can now be seen by anyone?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   6
+  ]
+ ],
+ "vocab": [
+  [
+   "manuscript",
+   "📜"
+  ],
+  [
+   "plant",
+   "🌿"
+  ],
+  [
+   "code",
+   "🔐"
+  ],
+  [
+   "emperor",
+   "👑"
+  ],
+  [
+   "gold",
+   "🪙"
+  ],
+  [
+   "alphabet",
+   "🔤"
+  ]
+ ],
+ "halves": [
+  [
+   "The book was bought...",
+   "...by a Polish bookseller in 1912."
+  ],
+  [
+   "The animal skin was made...",
+   "...in the early fifteenth century."
+  ],
+  [
+   "Most of the plants do not match...",
+   "...any species known to science."
+  ],
+  [
+   "The alphabet appears...",
+   "...nowhere else."
+  ],
+  [
+   "Anyone can look...",
+   "...at every page online."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Codes and ciphers have been used for thousands of years to {{0}} messages secret. During wars, the ability to read enemy messages could {{1}} the difference between victory and defeat. One of the most famous examples is the German Enigma machine, which was finally {{2}} by a team of codebreakers in Britain. Their work was {{3}} secret for decades, and many of them never received the recognition they {{4}}. Today, codes are still essential, as they {{5}} our passwords and bank details every time we go online.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Many people have dedicated years of {{6}} lives to the Voynich manuscript. One of the most famous was William Friedman, an American codebreaker who had helped to break enemy codes {{7}} the Second World War. He worked on the manuscript for decades but, like everyone else, he was unable to read a {{8}} word. Towards the end of his life, he suggested that it might be written in an artificial language {{9}} somebody had invented. {{10}} his theory was never proved, many experts still take it seriously. The manuscript continues to attract new researchers, {{11}} convinced that they will be the one to solve it.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "The Voynich manuscript is one of the most {{12}} books in the world. Its {{13}} is still unknown. Many {{14}} have tried to understand its strange alphabet. Some believe the book is a clever {{15}}, while others think it contains real knowledge. The drawings are {{16}} detailed, and their {{17}} remains a mystery.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Codes and ciphers have been used for thousands of years to ___ messages secret.",
+    [
+     "keep",
+     "save",
+     "hold",
+     "maintain"
+    ],
+    0
+   ],
+   [
+    "During wars, the ability to read enemy messages could ___ the difference between victory and defeat.",
+    [
+     "take",
+     "make",
+     "give",
+     "do"
+    ],
+    1
+   ],
+   [
+    "One of the most famous examples is the German Enigma machine, which was finally ___ by a team of codebreakers in Britain.",
+    [
+     "cut",
+     "broken",
+     "torn",
+     "split"
+    ],
+    1
+   ],
+   [
+    "Their work was ___ secret for decades, and many of them never received the recognition they ….",
+    [
+     "kept",
+     "remained",
+     "stayed",
+     "held"
+    ],
+    0
+   ],
+   [
+    "Their work was … secret for decades, and many of them never received the recognition they ___.",
+    [
+     "reached",
+     "won",
+     "deserved",
+     "gained"
+    ],
+    2
+   ],
+   [
+    "Today, codes are still essential, as they ___ our passwords and bank details every time we go online.",
+    [
+     "prevent",
+     "resist",
+     "avoid",
+     "protect"
+    ],
+    3
+   ],
+   [
+    "Many people have dedicated years of ___ lives to the Voynich manuscript.",
+    [
+     "their"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "One of the most famous was William Friedman, an American codebreaker who had helped to break enemy codes ___ the Second World War.",
+    [
+     "during"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "He worked on the manuscript for decades but, like everyone else, he was unable to read a ___ word.",
+    [
+     "single"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Towards the end of his life, he suggested that it might be written in an artificial language ___ somebody had invented.",
+    [
+     "that",
+     "which"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ his theory was never proved, many experts still take it seriously.",
+    [
+     "Although",
+     "Though"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "The manuscript continues to attract new researchers, ___ convinced that they will be the one to solve it.",
+    [
+     "each"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "The Voynich manuscript is one of the most ___ books in the world.",
+    [
+     "mysterious"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "MYSTERY"
+    }
+   ],
+   [
+    "Its ___ is still unknown.",
+    [
+     "origin"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ORIGINAL"
+    }
+   ],
+   [
+    "Many ___ have tried to understand its strange alphabet.",
+    [
+     "researchers"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "RESEARCH"
+    }
+   ],
+   [
+    "Some believe the book is a clever ___, while others think it contains real knowledge.",
+    [
+     "invention"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INVENT"
+    }
+   ],
+   [
+    "The drawings are ___ detailed, and their … remains a mystery.",
+    [
+     "extremely"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXTREME"
+    }
+   ],
+   [
+    "The drawings are … detailed, and their ___ remains a mystery.",
+    [
+     "meaning"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "MEAN"
+    }
+   ],
+   [
+    "Nobody has been able to read the manuscript. → Nobody has ___ the manuscript.",
+    [
+     "succeeded in reading"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Nobody has been able to read the manuscript.",
+     "w": "SUCCEEDED",
+     "p": "Nobody has ___ the manuscript."
+    }
+   ],
+   [
+    "People say the emperor paid a lot of gold for it. → The emperor ___ a lot of gold for it.",
+    [
+     "is said to have paid"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "People say the emperor paid a lot of gold for it.",
+     "w": "SAID",
+     "p": "The emperor ___ a lot of gold for it."
+    }
+   ],
+   [
+    "It is possible that the book is a hoax. → The book ___ a hoax.",
+    [
+     "might be"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "It is possible that the book is a hoax.",
+     "w": "MIGHT",
+     "p": "The book ___ a hoax."
+    }
+   ],
+   [
+    "Voynich was sure that he had found something extraordinary. → Voynich had ___ he had found something extraordinary.",
+    [
+     "no doubt that"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Voynich was sure that he had found something extraordinary.",
+     "w": "DOUBT",
+     "p": "Voynich had ___ he had found something extraordinary."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El libro que nadie puede leer",
+   "sub": "El misterio del manuscrito Voynich",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "manuscrito",
+    "planta",
+    "código",
+    "emperador",
+    "oro",
+    "alfabeto"
+   ]
+  }
+ }
+}

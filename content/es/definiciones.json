@@ -35,9 +35,17 @@
 "abeja",
 "Insecto amarillo y negro que hace miel."
 ],
+"abertura": [
+"abertura",
+"Hueco."
+],
 "abierto": [
 "abrir",
 "Abrir: quitar lo que cierra algo; empezar algo nuevo."
+],
+"abiertos": [
+"abrir",
+"Que no están cerrados."
 ],
 "abre": [
 "abrir",
@@ -51,9 +59,21 @@
 "abrir",
 "Abrir: quitar lo que cierra algo; empezar algo nuevo."
 ],
+"abrir": [
+"abrir",
+"Quitar lo que cierra."
+],
 "abrió": [
 "abrir",
 "Abrir: quitar lo que cierra algo; empezar algo nuevo."
+],
+"abstractas": [
+"abstracto",
+"De ideas."
+],
+"absurdo": [
+"absurdo",
+"Sin sentido."
 ],
 "absurdos": [
 "absurdo",
@@ -79,6 +99,22 @@
 "acabar",
 "Acabar de + verbo: haber hecho algo hace muy poco."
 ],
+"acababan": [
+"acabar",
+"Habían terminado."
+],
+"acaban": [
+"acabar",
+"Terminan."
+],
+"acabó": [
+"acabar",
+"Terminó."
+],
+"académica": [
+"académico",
+"De la universidad."
+],
 "acantilados": [
 "acantilado",
 "Pared de roca muy alta al lado del mar."
@@ -91,9 +127,61 @@
 "accidente",
 "Algo malo que pasa sin querer."
 ],
+"acción": [
+"acción",
+"Algo que se hace."
+],
 "aceite": [
 "aceite",
 "Líquido de las plantas, como el de oliva, que usamos para cocinar."
+],
+"acelerado": [
+"acelerar",
+"Más rápido."
+],
+"acepta": [
+"aceptar",
+"Dice que sí."
+],
+"aceptaba": [
+"aceptar",
+"Decía que sí."
+],
+"aceptada": [
+"aceptar",
+"Que se cree."
+],
+"aceptado": [
+"aceptar",
+"Admitido."
+],
+"aceptan": [
+"aceptar",
+"Dicen que sí."
+],
+"aceptar": [
+"aceptar",
+"Decir que sí."
+],
+"aceptarán": [
+"aceptar",
+"Dirán que sí."
+],
+"aceptó": [
+"aceptar",
+"Dijo que sí."
+],
+"acerca": [
+"acercar",
+"Se pone más cerca."
+],
+"acercan": [
+"acercar",
+"Se ponen más cerca."
+],
+"acercar": [
+"acercar",
+"Poner cerca."
 ],
 "acercara": [
 "acercarse",
@@ -103,9 +191,29 @@
 "acercarse",
 "Acercarse: ir más cerca de algo o de alguien."
 ],
+"acompañadas": [
+"acompañar",
+"Con."
+],
+"acondicionado": [
+"acondicionar",
+"Aire acondicionado: aparato que enfría."
+],
+"aconsejan": [
+"aconsejar",
+"Dicen qué hacer."
+],
 "acrobacias": [
 "acrobacia",
 "Salto o giro difícil con el cuerpo."
+],
+"actitud": [
+"actitud",
+"Forma de pensar."
+],
+"actividades": [
+"actividad",
+"Cosas que se hacen."
 ],
 "activos": [
 "activo",
@@ -115,6 +223,14 @@
 "actor",
 "Mujer que trabaja en el cine, el teatro o la televisión."
 ],
+"actuaba": [
+"actuar",
+"Hacía."
+],
+"actual": [
+"actual",
+"De ahora."
+],
 "actuales": [
 "actual",
 "De hoy."
@@ -123,6 +239,30 @@
 "actualización",
 "Cambio que añade cosas nuevas a un juego o programa."
 ],
+"acuario": [
+"acuario",
+"Lugar con peces y animales del mar."
+],
+"acuarios": [
+"acuario",
+"Lugares con animales del mar."
+],
+"acudir": [
+"acudir",
+"Ir."
+],
+"acuerdo": [
+"acuerdo",
+"Estar de acuerdo: pensar igual."
+],
+"acumule": [
+"acumular",
+"Se junte."
+],
+"adaptarse": [
+"adaptar",
+"Cambiar para encajar."
+],
 "adecuada": [
 "adecuado",
 "Correcto, bueno para ese momento."
@@ -130,6 +270,10 @@
 "adecuado": [
 "adecuado",
 "Correcto, bueno para ese momento."
+],
+"adelgazar": [
+"adelgazar",
+"Perder peso."
 ],
 "además": [
 "además",
@@ -143,17 +287,77 @@
 "ADN",
 "Información dentro de cada ser vivo que dice cómo es."
 ],
+"adolescente": [
+"adolescente",
+"Joven de 12 a 18 años."
+],
 "adolescentes": [
 "adolescente",
 "Chico o chica de entre doce y dieciocho años, más o menos."
+],
+"adrenalina": [
+"adrenalina",
+"Sustancia del cuerpo que da energía cuando hay peligro."
+],
+"adulta": [
+"adulto",
+"Mayor."
+],
+"adultos": [
+"adulto",
+"Personas mayores."
+],
+"advertir": [
+"advertir",
+"Avisar."
+],
+"advierten": [
+"advertir",
+"Avisan."
+],
+"afecta": [
+"afectar",
+"Tiene efecto."
+],
+"afectados": [
+"afectar",
+"Con efecto."
 ],
 "afectó": [
 "afectar",
 "Afectar: cambiar algo, normalmente para mal."
 ],
+"aficionado": [
+"aficionado",
+"Persona que hace algo por gusto."
+],
+"aficionados": [
+"aficionado",
+"Personas a las que les gusta algo."
+],
+"aficiones": [
+"afición",
+"Cosas que gustan hacer."
+],
 "afición": [
 "afición",
 "Algo que te gusta mucho hacer en tu tiempo libre."
+],
+"afilados": [
+"afilar",
+"Muy cortantes."
+],
+"afirma": [
+"afirmar",
+"Dice que es verdad."
+],
+"afirman": [
+"afirmar",
+"Dicen que es verdad."
+],
+"agencia": [
+"agencia",
+"Empresa de servicios."
 ],
 "agencias": [
 "agencia",
@@ -191,9 +395,17 @@
 "aguantar",
 "Aguantar: soportar algo difícil sin romperse."
 ],
+"aguantarte": [
+"aguantar",
+"Soportar."
+],
 "aguas": [
 "agua",
 "Líquido sin color que bebemos; está en el mar y en los ríos."
+],
+"aguja": [
+"aguja",
+"Punta fina."
 ],
 "agujero": [
 "agujero",
@@ -211,9 +423,21 @@
 "ahorrar",
 "Ahorrar: gastar menos tiempo o dinero."
 ],
+"ahí": [
+"ahí",
+"En ese lugar."
+],
 "aire": [
 "aire",
 "Lo que respiramos. No se ve."
+],
+"aislamiento": [
+"aislamiento",
+"Estar solo."
+],
+"aislar": [
+"aislar",
+"Separar."
 ],
 "ajo": [
 "ajo",
@@ -251,17 +475,61 @@
 "tiempo",
 "A la vez; en el mismo momento."
 ],
+"ala": [
+"ala",
+"Parte del ave para volar."
+],
+"alarma": [
+"alarma",
+"Aviso de peligro."
+],
 "alas": [
 "ala",
 "Parte del cuerpo de los pájaros para volar."
+],
+"alcanza": [
+"alcanzar",
+"Llega."
+],
+"alcanzaban": [
+"alcanzar",
+"Llegaban."
 ],
 "alcanzado": [
 "alcanzar",
 "Alcanzar: llegar a tocar algo."
 ],
+"alcanzan": [
+"alcanzar",
+"Llegan."
+],
+"alcanzar": [
+"alcanzar",
+"Llegar a."
+],
+"aleatorio": [
+"aleatorio",
+"Al azar."
+],
+"alegraron": [
+"alegrar",
+"Se pusieron contentos."
+],
+"alegría": [
+"alegría",
+"Felicidad."
+],
 "alekséi": [
 "alekséi",
 "Nombre de persona (ruso)."
+],
+"alemana": [
+"alemán",
+"De Alemania."
+],
+"alemania": [
+"alemania",
+"País de Europa."
 ],
 "alemán": [
 "alemán",
@@ -275,6 +543,18 @@
 "Alexander Fleming",
 "Nombre de un científico escocés."
 ],
+"alfabeto": [
+"alfabeto",
+"Letras de una lengua."
+],
+"alga": [
+"alga",
+"Planta del mar."
+],
+"algas": [
+"alga",
+"Plantas del mar."
+],
 "algo": [
 "algo",
 "Una cosa."
@@ -282,6 +562,10 @@
 "alguien": [
 "alguien",
 "Una persona (no sabemos quién)."
+],
+"alguna": [
+"alguno",
+"Una."
 ],
 "alguna vez": [
 "vez",
@@ -299,13 +583,29 @@
 "alguno",
 "Unos pocos de un grupo."
 ],
+"alimenta": [
+"alimentar",
+"Come."
+],
 "alimentación": [
 "alimentación",
 "Todo lo que comemos."
 ],
+"alimentan": [
+"alimentar",
+"Comen."
+],
 "alimento": [
 "alimento",
 "Comida."
+],
+"alimentos": [
+"alimento",
+"Comidas."
+],
+"alivio": [
+"alivio",
+"Sensación buena cuando se acaba un problema."
 ],
 "allá": [
 "allá",
@@ -314,6 +614,10 @@
 "allí": [
 "allí",
 "En ese lugar, lejos."
+],
+"almuerzo": [
+"almuerzo",
+"Comida del mediodía."
 ],
 "alpha": [
 "alpha",
@@ -347,6 +651,26 @@
 "altura",
 "Lo que mide algo de abajo a arriba."
 ],
+"alumnos": [
+"alumno",
+"Estudiantes."
+],
+"alzado": [
+"alzar",
+"Levantado."
+],
+"amable": [
+"amable",
+"Simpático."
+],
+"amanecer": [
+"amanecer",
+"Cuando sale el sol."
+],
+"amargo": [
+"amargo",
+"Sabor fuerte como el café."
+],
 "amarilla": [
 "amarillo",
 "Color del sol y del limón."
@@ -354,6 +678,10 @@
 "amarillo": [
 "amarillo",
 "Color del sol y del limón."
+],
+"amaron": [
+"amar",
+"Quisieron mucho."
 ],
 "amazónica": [
 "amazónico",
@@ -370,6 +698,14 @@
 "ambiente": [
 "ambiente",
 "El lugar y las condiciones donde vive un ser."
+],
+"amenaza": [
+"amenaza",
+"Peligro."
+],
+"amenazados": [
+"amenazar",
+"En peligro."
 ],
 "americanos": [
 "americano",
@@ -391,9 +727,21 @@
 "amistad",
 "Lo que hay entre dos amigos."
 ],
+"amistosas": [
+"amistoso",
+"Como amigos."
+],
+"amistoso": [
+"amistoso",
+"Como amigos."
+],
 "among us": [
 "among us",
 "Nombre de un videojuego de 2018."
+],
+"ampliamente": [
+"amplio",
+"Por mucha gente."
 ],
 "amuletos": [
 "amuleto",
@@ -402,6 +750,18 @@
 "américa": [
 "América",
 "Nombre de un continente."
+],
+"analizar": [
+"analizar",
+"Estudiar con detalle."
+],
+"ancho": [
+"ancho",
+"Grande de lado a lado."
+],
+"andar": [
+"andar",
+"Caminar."
 ],
 "anfibio": [
 "anfibio",
@@ -423,6 +783,14 @@
 "anillo",
 "Círculo pequeño, como el que llevas en el dedo."
 ],
+"anima": [
+"animar",
+"Da ganas."
+],
+"animados": [
+"animar",
+"Con ganas."
+],
 "animal": [
 "animal",
 "Ser vivo que se mueve, come y respira."
@@ -431,9 +799,33 @@
 "animal",
 "Ser vivo que se mueve, come y respira."
 ],
+"animar": [
+"animar",
+"Dar ganas."
+],
+"anotar": [
+"anotar",
+"Escribir."
+],
+"anotará": [
+"anotar",
+"Escribirá."
+],
+"ansiedad": [
+"ansiedad",
+"Nervios y preocupación."
+],
+"ante": [
+"ante",
+"Delante de; frente a."
+],
 "ante todo": [
 "todo",
 "Lo primero y lo más importante."
+],
+"antepasado": [
+"antepasado",
+"Familiar muy antiguo."
 ],
 "antepasados": [
 "antepasado",
@@ -451,9 +843,17 @@
 "antibiótico",
 "Medicina que mata las bacterias."
 ],
+"anticuados": [
+"anticuado",
+"Viejos."
+],
 "antigua": [
 "antiguo",
 "Muy viejo; de hace mucho tiempo."
+],
+"antiguas": [
+"antiguo",
+"Muy viejas."
 ],
 "antiguo": [
 "antiguo",
@@ -471,13 +871,29 @@
 "anunciar",
 "Anunciar: decir algo a todos."
 ],
+"anunciar": [
+"anunciar",
+"Decir públicamente."
+],
 "anuncios": [
 "anuncio",
 "Vídeo o imagen para vender algo."
 ],
+"anunció": [
+"anunciar",
+"Dijo públicamente."
+],
 "any": [
 "any",
 "Palabra inglesa: «cualquier». «Any%» = terminar de cualquier forma."
+],
+"anécdota": [
+"anécdota",
+"Historia corta."
+],
+"apagadas": [
+"apagar",
+"Sin luz."
 ],
 "apagan": [
 "apagar",
@@ -487,6 +903,14 @@
 "aparato",
 "Máquina pequeña."
 ],
+"aparatos": [
+"aparato",
+"Máquinas."
+],
+"aparcamientos": [
+"aparcamiento",
+"Sitios para dejar coches."
+],
 "aparece": [
 "aparecer",
 "Aparecer: empezar a verse."
@@ -495,9 +919,37 @@
 "aparecer",
 "Aparecer: empezar a verse."
 ],
+"aparecer": [
+"aparecer",
+"Salir."
+],
+"aparecerá": [
+"aparecer",
+"Saldrá."
+],
 "aparecerán": [
 "aparecer",
 "Aparecer: empezar a verse."
+],
+"aparecieron": [
+"aparecer",
+"Salieron."
+],
+"apareció": [
+"aparecer",
+"Se vio."
+],
+"aparecían": [
+"aparecer",
+"Se veían."
+],
+"aparta": [
+"apartar",
+"Separa."
+],
+"apartados": [
+"apartar",
+"Separados."
 ],
 "apenas": [
 "apenas",
@@ -518,6 +970,26 @@
 "apocalipsis": [
 "apocalipsis",
 "El fin del mundo."
+],
+"aportó": [
+"aportar",
+"Dio."
+],
+"apoya": [
+"apoyar",
+"Ayuda."
+],
+"apoyaban": [
+"apoyar",
+"Ayudaban."
+],
+"apoyar": [
+"apoyar",
+"Ayudar."
+],
+"apoyo": [
+"apoyo",
+"Ayuda."
 ],
 "aprendamos": [
 "aprender",
@@ -543,6 +1015,18 @@
 "aprender",
 "Aprender: llegar a saber algo nuevo."
 ],
+"aprendido": [
+"aprender",
+"Que ya sabe."
+],
+"aprendiendo": [
+"aprender",
+"Llegando a saber."
+],
+"aprendizaje": [
+"aprendizaje",
+"Acto de aprender."
+],
 "aprendió": [
 "aprender",
 "Aprender: llegar a saber algo nuevo."
@@ -551,9 +1035,45 @@
 "aprender",
 "Aprender: llegar a saber algo nuevo."
 ],
+"aprobado": [
+"aprobar",
+"Aceptado."
+],
+"apropiado": [
+"apropiado",
+"Correcto."
+],
+"aprovechar": [
+"aprovechar",
+"Usar bien."
+],
 "aprovecharlos": [
 "aprovechar",
 "Aprovechar: usar algo para sacar algo bueno."
+],
+"aproximadamente": [
+"aproximado",
+"Más o menos."
+],
+"apta": [
+"apto",
+"Adecuada."
+],
+"apuntará": [
+"apuntar",
+"Señalará."
+],
+"apuntándoles": [
+"apuntar",
+"Señalándoles."
+],
+"aquel": [
+"aquel",
+"Ese."
+],
+"aquella": [
+"aquel",
+"Esa."
 ],
 "aquí": [
 "aquí",
@@ -566,6 +1086,14 @@
 "arañas": [
 "araña",
 "Animal pequeño con ocho patas que hace telas."
+],
+"arbustos": [
+"arbusto",
+"Plantas pequeñas como árboles."
+],
+"archaeopteryx": [
+"archaeopteryx",
+"Un dinosaurio con plumas."
 ],
 "arena": [
 "arena",
@@ -591,9 +1119,17 @@
 "arma",
 "Objeto para atacar o defenderse."
 ],
+"aros": [
+"aro",
+"Círculos."
+],
 "arqueólogos": [
 "arqueólogo",
 "Persona que estudia los restos de pueblos antiguos."
+],
+"arrepiento": [
+"arrepentirse",
+"Me arrepiento: siento haberlo hecho."
 ],
 "arriba": [
 "arriba",
@@ -627,6 +1163,10 @@
 "Art Fry",
 "Nombre de un inventor de Estados Unidos."
 ],
+"artificial": [
+"artificial",
+"Hecho por personas."
+],
 "artículos": [
 "artículo",
 "Texto que escribe un periodista."
@@ -647,13 +1187,41 @@
 "asiento",
 "Lugar para sentarse."
 ],
+"asignaturas": [
+"asignatura",
+"Materias de estudio."
+],
 "asistentes": [
 "asistente",
 "Persona o programa que ayuda."
 ],
+"asiática": [
+"asiático",
+"De Asia."
+],
+"asombra": [
+"asombrar",
+"Sorprende mucho."
+],
+"asombrosa": [
+"asombro",
+"Increíble."
+],
+"asombrosos": [
+"asombro",
+"Increíbles."
+],
 "aspirador": [
 "aspirador",
 "Máquina que limpia el polvo del suelo."
+],
+"aspirante": [
+"aspirante",
+"Persona que lo intenta."
+],
+"aspirantes": [
+"aspirante",
+"Personas que lo intentan."
 ],
 "asteroide": [
 "asteroide",
@@ -666,6 +1234,18 @@
 "astronautas": [
 "astronauta",
 "Persona que viaja al espacio."
+],
+"astronómicos": [
+"astronómico",
+"De las estrellas."
+],
+"astrónomos": [
+"astrónomo",
+"Expertos en estrellas."
+],
+"asustamos": [
+"asustar",
+"Tenemos miedo."
 ],
 "asustar": [
 "asustar",
@@ -695,17 +1275,49 @@
 "atacar",
 "Atacar: ir contra alguien para hacerle daño."
 ],
+"atacaran": [
+"atacar",
+"Hicieran daño."
+],
 "atacarlas": [
 "atacar",
 "Atacar: ir contra alguien para hacerle daño."
+],
+"atacarlos": [
+"atacar",
+"Hacerles daño."
 ],
 "atacarnos": [
 "atacar",
 "Atacar: ir contra alguien para hacerle daño."
 ],
+"atada": [
+"atar",
+"Unida con cuerda."
+],
 "ataques": [
 "ataque",
 "Acción de atacar."
+],
+"atardecer": [
+"atardecer",
+"Cuando se pone el sol."
+],
+"ate": [
+"atar",
+"Forma de \"atar\"."
+],
+"atención": [
+"atención",
+"Fijarse bien."
+],
+"atenta": [
+"atento",
+"Que se fija."
+],
+"aterradora": [
+"aterrar",
+"Que da mucho miedo."
 ],
 "aterrizar": [
 "aterrizar",
@@ -714,6 +1326,10 @@
 "aterrizó": [
 "aterrizar",
 "Aterrizar: bajar a tierra un avión."
+],
+"aterrorizada": [
+"aterrorizar",
+"Con muchísimo miedo."
 ],
 "atlantes": [
 "atlante",
@@ -726,6 +1342,14 @@
 "atlántida": [
 "Atlántida",
 "Nombre de una isla de leyenda."
+],
+"atmósfera": [
+"atmósfera",
+"Aire de un planeta."
+],
+"atractivos": [
+"atractivo",
+"Que gustan."
 ],
 "atrae": [
 "atraer",
@@ -743,9 +1367,21 @@
 "atrapar",
 "Atrapar: coger a alguien que intenta escapar."
 ],
+"atrapados": [
+"atrapar",
+"Que no pueden salir."
+],
 "atrapan": [
 "atrapar",
 "Atrapar: coger a alguien que intenta escapar."
+],
+"atrapar": [
+"atrapar",
+"Coger."
+],
+"atrapó": [
+"atrapar",
+"Cogió."
 ],
 "atravesar": [
 "atravesar",
@@ -759,6 +1395,18 @@
 "atravesar",
 "Atravesar: pasar de un lado al otro de algo."
 ],
+"atrayendo": [
+"atraer",
+"Llamando."
+],
+"atraídas": [
+"atraer",
+"Que vienen hacia algo."
+],
+"atreverme": [
+"atreverse",
+"Tener valor para hacer algo."
+],
 "atreverías": [
 "atreverse",
 "Atreverse: tener valor para hacer algo."
@@ -770,6 +1418,26 @@
 "atrás": [
 "atrás",
 "Hacia la parte de detrás."
+],
+"aula": [
+"aula",
+"Clase de una escuela."
+],
+"aulas": [
+"aula",
+"Clases."
+],
+"aullidos": [
+"aullido",
+"Gritos largos de lobo."
+],
+"aumentar": [
+"aumentar",
+"Hacer más grande."
+],
+"aumentó": [
+"aumentar",
+"Creció."
 ],
 "aun": [
 "aun",
@@ -795,6 +1463,22 @@
 "automático",
 "Que funciona solo, sin ayuda."
 ],
+"automáticamente": [
+"automático",
+"Solo, sin hacer nada."
+],
+"autor": [
+"autor",
+"Persona que escribe."
+],
+"autora": [
+"autor",
+"Mujer que escribe."
+],
+"autores": [
+"autor",
+"Personas que escriben."
+],
 "autónomo": [
 "autónomo",
 "Que funciona solo, sin una persona."
@@ -803,9 +1487,37 @@
 "autónomo",
 "Que funciona solo, sin una persona."
 ],
+"avance": [
+"avance",
+"Paso adelante."
+],
+"avances": [
+"avance",
+"Pasos adelante."
+],
+"avanza": [
+"avanzar",
+"Va hacia delante."
+],
 "avanzada": [
 "avanzado",
 "Muy desarrollado para su tiempo."
+],
+"avanzado": [
+"avanzar",
+"Ido hacia delante."
+],
+"avanzando": [
+"avanzar",
+"Yendo hacia delante."
+],
+"avanzar": [
+"avanzar",
+"Ir hacia delante."
+],
+"avanzó": [
+"avanzar",
+"Fue hacia delante."
 ],
 "ave": [
 "ave",
@@ -819,9 +1531,21 @@
 "avena",
 "Cereal que se come, por ejemplo, en el desayuno."
 ],
+"averiguar": [
+"averiguar",
+"Descubrir."
+],
+"aves": [
+"ave",
+"Pájaros."
+],
 "aviones": [
 "avión",
 "Máquina que vuela y lleva personas."
+],
+"avisamos": [
+"avisar",
+"Decimos algo para que alguien sepa."
 ],
 "avisan": [
 "avisar",
@@ -835,6 +1559,10 @@
 "avispa de mar",
 "Medusa de Australia con un veneno muy fuerte."
 ],
+"avisándoles": [
+"avisar",
+"Diciéndoles algo para que sepan."
+],
 "avión": [
 "avión",
 "Máquina que vuela y lleva personas."
@@ -842,6 +1570,14 @@
 "ayuda": [
 "ayudar",
 "Ayudar: hacer algo para que otra persona pueda hacer lo suyo."
+],
+"ayudaba": [
+"ayudar",
+"Daba ayuda."
+],
+"ayudado": [
+"ayudar",
+"Dado ayuda."
 ],
 "ayudan": [
 "ayudar",
@@ -863,6 +1599,10 @@
 "ayudar",
 "Ayudar: hacer algo para que otra persona pueda hacer lo suyo."
 ],
+"azar": [
+"azar",
+"Suerte."
+],
 "azores": [
 "Azores",
 "Nombre de unas islas de Portugal, en el Atlántico."
@@ -875,9 +1615,21 @@
 "azul",
 "Color del cielo cuando hace sol."
 ],
+"azúcar": [
+"azúcar",
+"Lo que hace dulce la comida."
+],
 "añaden": [
 "añadir",
 "Añadir: poner algo más."
+],
+"añadido": [
+"añadir",
+"Puesto de más."
+],
+"añadir": [
+"añadir",
+"Poner más."
 ],
 "año": [
 "año",
@@ -886,6 +1638,18 @@
 "años": [
 "año",
 "Tiempo de doce meses."
+],
+"aúllan": [
+"aullar",
+"Gritan como lobos."
+],
+"aún": [
+"aún",
+"Todavía."
+],
+"bacteria": [
+"bacteria",
+"Ser vivo diminuto."
 ],
 "bacterias": [
 "bacteria",
@@ -919,6 +1683,14 @@
 "cero",
 "Con una temperatura menor de cero grados: muchísimo frío."
 ],
+"bajó": [
+"bajar",
+"Se hizo más pequeño."
+],
+"bala": [
+"bala",
+"Proyectil de un arma."
+],
 "ballena": [
 "ballena",
 "Animal enorme que vive en el mar y respira aire."
@@ -930,6 +1702,10 @@
 "baloncesto": [
 "baloncesto",
 "Deporte con una pelota que se mete en una canasta."
+],
+"bancarios": [
+"banco",
+"Del banco."
 ],
 "banco": [
 "banco",
@@ -943,6 +1719,10 @@
 "barandilla",
 "Barra para agarrarse en una escalera o un puente."
 ],
+"barato": [
+"barato",
+"Que cuesta poco."
+],
 "barco": [
 "barco",
 "Vehículo que va por el agua."
@@ -950,6 +1730,10 @@
 "barcos": [
 "barco",
 "Vehículo que va por el agua."
+],
+"bares": [
+"bar",
+"Sitios para beber."
 ],
 "barrera": [
 "barrera",
@@ -979,6 +1763,18 @@
 "bastante",
 "Mucho, pero no muchísimo."
 ],
+"bastidores": [
+"bastidores",
+"Entre bastidores: donde no se ve."
+],
+"batalla": [
+"batalla",
+"Lucha."
+],
+"bate": [
+"batir",
+"Supera."
+],
 "batido": [
 "batir",
 "Batir un récord: hacer algo mejor que nadie antes."
@@ -995,9 +1791,17 @@
 "battle royale",
 "Modo de juego: muchos jugadores luchan y gana el último."
 ],
+"bañan": [
+"bañar",
+"Se meten en el agua."
+],
 "bear": [
 "bear",
 "Nombre de un juego de terror de Roblox."
+],
+"beaver": [
+"beaver",
+"Apellido inglés."
 ],
 "beber": [
 "beber",
@@ -1011,9 +1815,25 @@
 "bebé",
 "Niño o animal muy pequeño, que acaba de nacer."
 ],
+"bebés": [
+"bebé",
+"Niños muy pequeños."
+],
 "belle": [
 "belle",
 "Nombre de familia de David Belle."
+],
+"beneficiaron": [
+"beneficiar",
+"Ayudaron."
+],
+"beneficios": [
+"beneficio",
+"Cosas buenas."
+],
+"benéfica": [
+"benéfico",
+"Que ayuda a otros."
 ],
 "bermudas": [
 "Bermudas",
@@ -1035,6 +1855,10 @@
 "bioluminiscencia",
 "La luz que producen algunos seres vivos."
 ],
+"biomímesis": [
+"biomímesis",
+"Copiar a la naturaleza."
+],
 "bióloga": [
 "biólogo",
 "Persona que estudia los seres vivos."
@@ -1055,9 +1879,17 @@
 "blanco",
 "Color de la nieve y la leche."
 ],
+"blanda": [
+"blando",
+"Suave."
+],
 "bloque": [
 "bloque",
 "Pieza con forma de cubo."
+],
+"bloqueadas": [
+"bloquear",
+"Cerradas."
 ],
 "bloques": [
 "bloque",
@@ -1070,6 +1902,14 @@
 "boca": [
 "boca",
 "Parte de la cara para comer y hablar."
+],
+"bocadillo": [
+"bocadillo",
+"Pan con algo dentro."
+],
+"bolas": [
+"bola",
+"Cosas redondas."
 ],
 "bolita": [
 "bola",
@@ -1086,6 +1926,10 @@
 "bolt": [
 "bolt",
 "Nombre de familia de Usain Bolt."
+],
+"bombean": [
+"bombear",
+"Empujan líquido."
 ],
 "bombero": [
 "bombero",
@@ -1119,6 +1963,10 @@
 "botella",
 "Recipiente para líquidos."
 ],
+"botones": [
+"botón",
+"Piezas para cerrar la ropa."
+],
 "botón": [
 "botón",
 "Pieza que pulsas para poner una máquina."
@@ -1127,9 +1975,25 @@
 "branquia",
 "Parte del cuerpo de los peces para respirar en el agua."
 ],
+"brasil": [
+"brasil",
+"País de América del Sur."
+],
+"brazo": [
+"brazo",
+"Parte del cuerpo con mano."
+],
 "brazos": [
 "brazo",
 "Parte del cuerpo entre el hombro y la mano."
+],
+"bretaña": [
+"bretaña",
+"Gran Bretaña, un país."
+],
+"breve": [
+"breve",
+"Corto."
 ],
 "brilla": [
 "brillar",
@@ -1147,9 +2011,25 @@
 "brillante",
 "Que brilla; con un color muy fuerte."
 ],
+"brillo": [
+"brillo",
+"Luz que sale de algo."
+],
 "británico": [
 "británico",
 "Del Reino Unido."
+],
+"británicos": [
+"británico",
+"De Gran Bretaña."
+],
+"bronce": [
+"bronce",
+"Metal; tercera medalla."
+],
+"brown": [
+"brown",
+"Apellido."
 ],
 "brusco": [
 "brusco",
@@ -1171,9 +2051,29 @@
 "bueno",
 "Que está bien."
 ],
+"buenas": [
+"bueno",
+"Que están bien."
+],
+"bueno": [
+"bueno",
+"Que está bien."
+],
+"buenos": [
+"bueno",
+"Que están bien."
+],
+"buenísimo": [
+"bueno",
+"Muy rico."
+],
 "build the earth": [
 "Build the Earth",
 "Nombre de un proyecto de Minecraft (en inglés)."
+],
+"bultos": [
+"bulto",
+"Partes que sobresalen."
 ],
 "busca": [
 "buscar",
@@ -1187,9 +2087,17 @@
 "buscar",
 "Buscar: intentar encontrar algo."
 ],
+"buscadora": [
+"buscador",
+"Mujer que busca."
+],
 "buscan": [
 "buscar",
 "Buscar: intentar encontrar algo."
+],
+"buscando": [
+"buscar",
+"Intentando encontrar."
 ],
 "buscar": [
 "buscar",
@@ -1211,9 +2119,25 @@
 "buscar",
 "Buscar: intentar encontrar algo."
 ],
+"básica": [
+"básico",
+"Principal."
+],
 "básicas": [
 "básico",
 "Lo más importante, lo primero."
+],
+"básico": [
+"básico",
+"Principal."
+],
+"básicos": [
+"básico",
+"Principales."
+],
+"búsqueda": [
+"buscar",
+"Acción de buscar."
 ],
 "cabaña": [
 "cabaña",
@@ -1227,6 +2151,18 @@
 "cabeza",
 "Parte del cuerpo donde están los ojos, la boca y el cerebro."
 ],
+"cabezas": [
+"cabeza",
+"Parte de arriba del cuerpo."
+],
+"cable": [
+"cable",
+"Hilo de metal."
+],
+"cabo": [
+"cabo",
+"Fin."
+],
 "cada": [
 "cada",
 "Todos, uno por uno."
@@ -1234,6 +2170,18 @@
 "cada vez más": [
 "vez",
 "Más y más con el tiempo."
+],
+"cadena": [
+"cadena",
+"Serie unida."
+],
+"cadillo": [
+"cadillo",
+"Semilla que se pega."
+],
+"cadillos": [
+"cadillo",
+"Semillas que se pegan."
 ],
 "cae": [
 "caer",
@@ -1275,6 +2223,10 @@
 "calcular",
 "Calcular: hacer cuentas para saber algo."
 ],
+"caldo": [
+"caldo",
+"Agua donde se han cocido alimentos."
+],
 "calentar": [
 "calentar",
 "Calentar: dar calor a algo."
@@ -1299,6 +2251,10 @@
 "california",
 "Nombre de un estado de Estados Unidos."
 ],
+"caligrafía": [
+"caligrafía",
+"Forma de escribir a mano."
+],
 "calle": [
 "calle",
 "Camino en una ciudad, con casas a los lados."
@@ -1307,6 +2263,10 @@
 "calle",
 "Camino en una ciudad, con casas a los lados."
 ],
+"calma": [
+"calma",
+"Tranquilidad."
+],
 "calment": [
 "calment",
 "Nombre de familia de Jeanne Calment."
@@ -1314,6 +2274,10 @@
 "calor": [
 "calor",
 "Temperatura alta."
+],
+"calurosa": [
+"calor",
+"Con mucho calor."
 ],
 "calurosos": [
 "caluroso",
@@ -1331,13 +2295,25 @@
 "cambiar",
 "Cambiar: hacer que algo sea diferente."
 ],
+"cambiado": [
+"cambiar",
+"Hecho distinto."
+],
 "cambian": [
 "cambiar",
 "Cambiar: hacer que algo sea diferente."
 ],
+"cambiando": [
+"cambiar",
+"Haciéndose distinto."
+],
 "cambiar": [
 "cambiar",
 "Cambiar: hacer que algo sea diferente."
+],
+"cambiarse": [
+"cambiar",
+"Ponerse otra cosa."
 ],
 "cambiará": [
 "cambiar",
@@ -1363,6 +2339,10 @@
 "caminar",
 "Caminar: ir a pie."
 ],
+"camino": [
+"camino",
+"Ruta."
+],
 "caminó": [
 "caminar",
 "Caminar: ir a pie."
@@ -1387,6 +2367,10 @@
 "campeón",
 "El que gana; el mejor."
 ],
+"campo": [
+"campo",
+"Área de trabajo."
+],
 "canadiense": [
 "canadiense",
 "De Canadá."
@@ -1407,9 +2391,21 @@
 "canción",
 "Música con palabras para cantar."
 ],
+"cangrejo": [
+"cangrejo",
+"Animal del mar con pinzas."
+],
+"cansan": [
+"cansar",
+"Agotan."
+],
 "canta": [
 "cantar",
 "Cantar: hacer música con la voz."
+],
+"cantera": [
+"cantera",
+"Lugar de donde se saca piedra."
 ],
 "cantidad": [
 "cantidad",
@@ -1423,6 +2419,22 @@
 "capa",
 "Parte que cubre algo."
 ],
+"capaces": [
+"capaz",
+"Que pueden."
+],
+"capacidad": [
+"capacidad",
+"Poder hacer algo."
+],
+"capacidades": [
+"capacidad",
+"Lo que se puede hacer."
+],
+"capaz": [
+"capaz",
+"Que puede."
+],
 "capital": [
 "capital",
 "Ciudad más importante de un país."
@@ -1435,9 +2447,21 @@
 "carambola",
 "Fruta amarilla con forma de estrella."
 ],
+"caramelo": [
+"caramelo",
+"Dulce pequeño."
+],
 "caramelos": [
 "caramelo",
 "Dulce pequeño de azúcar."
+],
+"caras": [
+"cara",
+"Partes delanteras de la cabeza."
+],
+"carbono": [
+"carbono",
+"Elemento químico."
 ],
 "carnarvon": [
 "carnarvon",
@@ -1447,6 +2471,18 @@
 "carne",
 "Parte del cuerpo de los animales que comemos."
 ],
+"carnívoros": [
+"carnívoro",
+"Que comen carne."
+],
+"caro": [
+"caro",
+"Que cuesta mucho."
+],
+"caros": [
+"caro",
+"Que cuestan mucho."
+],
 "carrera": [
 "carrera",
 "Competición para ver quién llega antes."
@@ -1455,9 +2491,21 @@
 "carro",
 "Vehículo antiguo con ruedas, tirado por caballos."
 ],
+"cartas": [
+"carta",
+"Mensajes escritos."
+],
 "carter": [
 "carter",
 "Nombre de familia de Howard Carter."
+],
+"cartuchos": [
+"cartucho",
+"Óvalos con nombres de reyes en jeroglíficos."
+],
+"carísimo": [
+"caro",
+"Muy caro."
 ],
 "casa": [
 "casa",
@@ -1466,6 +2514,10 @@
 "casas": [
 "casa",
 "Edificio donde vive una familia."
+],
+"cascada": [
+"cascada",
+"Serie de efectos."
 ],
 "casco": [
 "casco",
@@ -1479,6 +2531,14 @@
 "parte",
 "En casi todos los lugares."
 ],
+"caso": [
+"caso",
+"Ejemplo."
+],
+"cassini": [
+"cassini",
+"Nombre de una sonda."
+],
 "castigo": [
 "castigo",
 "Algo malo que recibes por hacer algo mal."
@@ -1490,6 +2550,14 @@
 "castillos": [
 "castillo",
 "Casa enorme y fuerte de reyes, con torres."
+],
+"castor": [
+"castor",
+"Animal que hace presas."
+],
+"castores": [
+"castor",
+"Animales que hacen presas."
 ],
 "casualidad": [
 "casualidad",
@@ -1503,9 +2571,41 @@
 "categoría",
 "Grupo de cosas del mismo tipo."
 ],
+"catorce": [
+"catorce",
+"Número 14."
+],
+"catástrofe": [
+"catástrofe",
+"Desastre."
+],
+"catástrofes": [
+"catástrofe",
+"Desastres."
+],
+"causa": [
+"causa",
+"Razón."
+],
+"causan": [
+"causar",
+"Provocan."
+],
+"causas": [
+"causa",
+"Razones."
+],
 "cayendo": [
 "caer",
 "Caer: ir de arriba a abajo sin control."
+],
+"cayera": [
+"caer",
+"Se fuera al suelo."
+],
+"cayeron": [
+"caer",
+"Se fueron al suelo."
 ],
 "cayó": [
 "caer",
@@ -1515,6 +2615,14 @@
 "cazar",
 "Cazar: buscar y atrapar animales para comerlos."
 ],
+"cazaba": [
+"cazar",
+"Perseguía para matar."
+],
+"cazadores": [
+"cazador",
+"Que cazan."
+],
 "cazan": [
 "cazar",
 "Cazar: buscar y atrapar animales para comerlos."
@@ -1522,6 +2630,14 @@
 "cazar": [
 "cazar",
 "Cazar: buscar y atrapar animales."
+],
+"cazó": [
+"cazar",
+"Persiguió para matar."
+],
+"caída": [
+"caer",
+"Golpe al caer."
 ],
 "caídas": [
 "caída",
@@ -1535,9 +2651,33 @@
 "cebolla",
 "Verdura redonda que hace llorar cuando la cortas."
 ],
+"celebra": [
+"celebrar",
+"Hace fiesta."
+],
+"celebraban": [
+"celebrar",
+"Festejaban."
+],
+"celebran": [
+"celebrar",
+"Hacen."
+],
+"celebrar": [
+"celebrar",
+"Hacer fiesta."
+],
 "celebró": [
 "celebrar",
 "Celebrarse: hacerse un evento."
+],
+"cemento": [
+"cemento",
+"Material para construir."
+],
+"cenando": [
+"cenar",
+"Comiendo por la noche."
 ],
 "ceniza": [
 "ceniza",
@@ -1551,6 +2691,10 @@
 "centro",
 "El medio de algo."
 ],
+"centros": [
+"centro",
+"Medios; lugares."
+],
 "centésimas": [
 "centésima",
 "Una parte de cien."
@@ -1562,6 +2706,10 @@
 "centímetros": [
 "centímetro",
 "Medida pequeña: cien centímetros son un metro."
+],
+"cepillo": [
+"cepillo",
+"Objeto para limpiar o peinar."
 ],
 "cepillos": [
 "cepillo",
@@ -1579,9 +2727,33 @@
 "cero",
 "El número 0."
 ],
+"cerrados": [
+"cerrar",
+"No abiertos."
+],
+"cerveza": [
+"cerveza",
+"Bebida con alcohol."
+],
+"cesan": [
+"cesar",
+"Paran."
+],
+"champollion": [
+"champollion",
+"Apellido francés."
+],
 "chapulines": [
 "chapulín",
 "En México, saltamontes."
+],
+"charla": [
+"charlar",
+"Habla."
+],
+"charles": [
+"charles",
+"Nombre de hombre."
 ],
 "cheedaman": [
 "cheedaman",
@@ -1595,6 +2767,10 @@
 "chica",
 "Niña o mujer joven."
 ],
+"chicas": [
+"chica",
+"Niñas o jóvenes."
+],
 "chicxulub": [
 "Chicxulub",
 "Nombre de un cráter enorme en México."
@@ -1607,6 +2783,10 @@
 "China",
 "Nombre de un país muy grande de Asia."
 ],
+"chinos": [
+"chino",
+"De China."
+],
 "chiste": [
 "chiste",
 "Historia corta y graciosa."
@@ -1614,6 +2794,10 @@
 "choca": [
 "chocar",
 "Chocar: darse un golpe dos cosas."
+],
+"chocaban": [
+"chocar",
+"Se golpeaban."
 ],
 "chocan": [
 "chocar",
@@ -1627,6 +2811,10 @@
 "chocolate",
 "Dulce marrón hecho con cacao."
 ],
+"chocolatina": [
+"chocolatina",
+"Barrita de chocolate."
+],
 "chocó": [
 "chocar",
 "Chocar: darse un golpe dos cosas."
@@ -1634,6 +2822,14 @@
 "choque": [
 "choque",
 "Golpe fuerte entre dos cosas."
+],
+"chorlito": [
+"chorlito",
+"Pájaro pequeño."
+],
+"chorros": [
+"chorro",
+"Salidas fuertes de líquido."
 ],
 "ciclistas": [
 "ciclista",
@@ -1663,6 +2859,10 @@
 "ciento",
 "Muchos grupos de cien."
 ],
+"científica": [
+"científico",
+"De la ciencia."
+],
 "científicas": [
 "científico",
 "De la ciencia."
@@ -1675,9 +2875,33 @@
 "científico",
 "Persona que estudia y hace experimentos."
 ],
+"cierre": [
+"cierre",
+"Lo que cierra algo."
+],
+"ciertas": [
+"cierto",
+"Algunas."
+],
 "cierto": [
 "cierto",
 "«Cada cierto tiempo»: de vez en cuando."
+],
+"ciertos": [
+"cierto",
+"Algunos."
+],
+"ciervo": [
+"ciervo",
+"Animal con cuernos grandes."
+],
+"cifra": [
+"cifra",
+"Número."
+],
+"cifras": [
+"cifra",
+"Números."
 ],
 "cima": [
 "cima",
@@ -1703,6 +2927,10 @@
 "circuito",
 "Camino por donde pasa la electricidad."
 ],
+"circula": [
+"circular",
+"Se mueve."
+],
 "ciudad": [
 "ciudad",
 "Lugar grande con muchas casas, calles y personas."
@@ -1715,6 +2943,10 @@
 "ciudad",
 "Lugar grande con muchas casas, calles y personas."
 ],
+"civilizaciones": [
+"civilización",
+"Sociedades avanzadas."
+],
 "civilización": [
 "civilización",
 "Pueblo con su cultura, sus ciudades y sus leyes."
@@ -1723,9 +2955,41 @@
 "clara",
 "La parte blanca del huevo."
 ],
+"claramente": [
+"claro",
+"Muy bien."
+],
+"claras": [
+"claro",
+"Fáciles de ver."
+],
+"claridad": [
+"claro",
+"Luz."
+],
 "claro": [
 "claro",
 "Lugar sin árboles en un bosque; también, con luz."
+],
+"clase": [
+"clase",
+"Lección en la escuela."
+],
+"clases": [
+"clase",
+"Lecciones."
+],
+"clavar": [
+"clavar",
+"Meter algo con punta."
+],
+"clave": [
+"clave",
+"Lo más importante."
+],
+"claves": [
+"clave",
+"Códigos secretos."
 ],
 "clavícula": [
 "clavícula",
@@ -1739,6 +3003,26 @@
 "clima",
 "El tiempo normal de un lugar: calor, frío, lluvia..."
 ],
+"clásicos": [
+"clásico",
+"De siempre."
+],
+"coagule": [
+"coagular",
+"Se ponga espesa la sangre."
+],
+"cobraban": [
+"cobrar",
+"Recibían dinero."
+],
+"cobran": [
+"cobrar",
+"Reciben dinero."
+],
+"cobre": [
+"cobrar",
+"Reciba dinero."
+],
 "coche": [
 "coche",
 "Vehículo con cuatro ruedas."
@@ -1746,6 +3030,10 @@
 "coches": [
 "coche",
 "Vehículo con cuatro ruedas para viajar."
+],
+"cocina": [
+"cocina",
+"Sitio para cocinar."
 ],
 "cocinaba": [
 "cocinar",
@@ -1759,6 +3047,14 @@
 "cocinero",
 "Persona que cocina."
 ],
+"cocineros": [
+"cocinero",
+"Personas que cocinan."
+],
+"coco": [
+"coco",
+"Fruto con cáscara dura."
+],
 "cocodrilo": [
 "cocodrilo",
 "Reptil grande con muchos dientes que vive en ríos."
@@ -1771,17 +3067,37 @@
 "cocodrilo",
 "Reptil grande con muchos dientes que vive en ríos."
 ],
+"cogen": [
+"coger",
+"Toman."
+],
+"coger": [
+"coger",
+"Tomar."
+],
 "cohete": [
 "cohete",
 "Máquina que vuela al espacio."
+],
+"coincide": [
+"coincidir",
+"Es igual."
 ],
 "coinciden": [
 "coincidir",
 "Coincidir: pensar lo mismo."
 ],
+"coincidía": [
+"coincidir",
+"Era igual."
+],
 "cola": [
 "cola",
 "Parte del cuerpo de un animal, al final de la espalda."
+],
+"colado": [
+"colar",
+"Pasado por un hueco."
 ],
 "colegio": [
 "colegio",
@@ -1790,6 +3106,10 @@
 "colegios": [
 "colegio",
 "Lugar donde los niños estudian."
+],
+"colocar": [
+"colocar",
+"Poner."
 ],
 "colombia": [
 "Colombia",
@@ -1807,9 +3127,29 @@
 "Columnas de Hércules",
 "Nombre antiguo del estrecho de Gibraltar."
 ],
+"coló": [
+"colar",
+"Se metió por un hueco."
+],
+"coma": [
+"comer",
+"Forma de \"comer\"."
+],
 "comas": [
 "comer",
 "Comer: meter comida en la boca."
+],
+"combatir": [
+"combatir",
+"Luchar contra."
+],
+"combinan": [
+"combinar",
+"Juntan."
+],
+"combinándola": [
+"combinar",
+"Juntándola."
 ],
 "combustible": [
 "combustible",
@@ -1827,13 +3167,29 @@
 "comer",
 "Comer: meter comida en la boca."
 ],
+"comentaristas": [
+"comentarista",
+"Personas que comentan."
+],
+"comenzaron": [
+"comenzar",
+"Empezaron."
+],
 "comer": [
 "comer",
 "Comer: meter comida en la boca."
 ],
+"comerciales": [
+"comercial",
+"De tiendas."
+],
 "comeremos": [
 "comer",
 "Comer: meter comida en la boca."
+],
+"comerse": [
+"comer",
+"Comer todo."
 ],
 "comes": [
 "comer",
@@ -1851,6 +3207,22 @@
 "comida",
 "Lo que comemos."
 ],
+"comido": [
+"comer",
+"Tomado comida."
+],
+"comiendo": [
+"comer",
+"Tomando comida."
+],
+"comienzo": [
+"comienzo",
+"Principio."
+],
+"comité": [
+"comité",
+"Grupo que decide."
+],
 "comió": [
 "comer",
 "Comer: meter comida en la boca."
@@ -1867,9 +3239,29 @@
 "nada",
 "Como si no pasara nada."
 ],
+"compara": [
+"comparar",
+"Mira lo igual y lo distinto."
+],
+"comparación": [
+"comparar",
+"Mirar lo igual y lo distinto."
+],
 "comparados": [
 "comparar",
 "Comparar: mirar dos cosas para ver si son iguales."
+],
+"comparando": [
+"comparar",
+"Mirando lo igual y lo distinto."
+],
+"comparar": [
+"comparar",
+"Mirar lo igual y lo distinto."
+],
+"compararla": [
+"comparar",
+"Mirar lo igual y lo distinto."
 ],
 "compartan": [
 "compartir",
@@ -1911,9 +3303,49 @@
 "competición",
 "Evento en el que varias personas intentan ganar."
 ],
+"competidora": [
+"competidor",
+"Mujer que compite."
+],
+"competidores": [
+"competidor",
+"Personas que compiten."
+],
+"competía": [
+"competir",
+"Participaba."
+],
+"compiten": [
+"competir",
+"Luchan por ganar."
+],
+"compleja": [
+"complejo",
+"Difícil, con muchas partes."
+],
+"complejas": [
+"complejo",
+"Difíciles."
+],
+"complejo": [
+"complejo",
+"Difícil, con muchas partes."
+],
+"complejos": [
+"complejo",
+"Difíciles."
+],
 "completa": [
 "completo",
 "Que tiene todas sus partes; entero."
+],
+"completamente": [
+"completo",
+"Del todo."
+],
+"completando": [
+"completar",
+"Terminando."
 ],
 "completar": [
 "completar",
@@ -1923,9 +3355,33 @@
 "completo",
 "Con todas sus partes."
 ],
+"complicada": [
+"complicado",
+"Difícil."
+],
+"complicadas": [
+"complicado",
+"Difíciles."
+],
+"complicados": [
+"complicado",
+"Difíciles."
+],
+"comportamiento": [
+"comportar",
+"Forma de actuar."
+],
+"comportan": [
+"comportar",
+"Actúan."
+],
 "compra": [
 "comprar",
 "Comprar: conseguir algo pagando dinero."
+],
+"comprador": [
+"comprador",
+"Persona que compra."
 ],
 "compran": [
 "comprar",
@@ -1939,17 +3395,49 @@
 "comprar",
 "Comprar: conseguir algo pagando dinero."
 ],
+"comprender": [
+"comprender",
+"Entender."
+],
+"comprensión": [
+"comprender",
+"Entender."
+],
 "compro": [
 "comprar",
 "Comprar: conseguir algo pagando dinero."
+],
+"comprobar": [
+"comprobar",
+"Ver si es verdad."
+],
+"comprobarlo": [
+"comprobar",
+"Mirar si es verdad."
+],
+"comprometió": [
+"comprometer",
+"Prometió."
 ],
 "compró": [
 "comprar",
 "Comprar: conseguir algo pagando dinero."
 ],
+"compuesto": [
+"compuesto",
+"Mezcla química."
+],
+"comunicación": [
+"comunicación",
+"Hablar con otros."
+],
 "comunican": [
 "comunicarse",
 "Comunicarse: decir cosas a otros."
+],
+"comunicarse": [
+"comunicar",
+"Hablar con otros."
 ],
 "comunidad": [
 "comunidad",
@@ -1958,6 +3446,10 @@
 "comunidades": [
 "comunidad",
 "Grupo de personas con algo en común."
+],
+"comuniquen": [
+"comunicar",
+"Hablen."
 ],
 "comérselos": [
 "comer",
@@ -1991,6 +3483,10 @@
 "concentrado",
 "Muy junto, en poco espacio."
 ],
+"concentren": [
+"concentrar",
+"Pongan atención."
+],
 "concierto": [
 "concierto",
 "Espectáculo de música en directo."
@@ -1999,9 +3495,21 @@
 "concierto",
 "Espectáculo de música en directo."
 ],
+"conclusión": [
+"conclusión",
+"Lo que se decide al final."
+],
+"concretas": [
+"concreto",
+"Determinadas."
+],
 "concurso": [
 "concurso",
 "Competición para ganar un premio."
+],
+"condiciones": [
+"condición",
+"Situaciones."
 ],
 "conducen": [
 "conducir",
@@ -2011,9 +3519,25 @@
 "conductor",
 "Persona que conduce."
 ],
+"conectada": [
+"conectar",
+"Unida."
+],
+"conectadas": [
+"conectar",
+"Unidas."
+],
+"conectamos": [
+"conectar",
+"Entramos en internet."
+],
 "conectaron": [
 "conectar",
 "Conectar: unir."
+],
+"confirmaron": [
+"confirmar",
+"Aseguraron."
 ],
 "confunde": [
 "confundir",
@@ -2026,6 +3550,10 @@
 "confusión": [
 "confusión",
 "Error: pensar que una cosa es otra."
+],
+"conjunto": [
+"conjunto",
+"Grupo."
 ],
 "conoce": [
 "conocer",
@@ -2043,9 +3571,33 @@
 "conocer",
 "Conocer: saber quién es alguien o cómo es algo."
 ],
+"conocerán": [
+"conocer",
+"Sabrán."
+],
+"conocida": [
+"conocer",
+"Que se sabe."
+],
+"conocidas": [
+"conocer",
+"Que se saben."
+],
+"conocido": [
+"conocer",
+"Que se sabe."
+],
 "conocidos": [
 "conocido",
 "Que mucha gente sabe quién es."
+],
+"conocimiento": [
+"conocimiento",
+"Lo que se sabe."
+],
+"conocimientos": [
+"conocimiento",
+"Lo que se sabe."
 ],
 "conocía": [
 "conocer",
@@ -2058,6 +3610,14 @@
 "conquistar": [
 "conquistar",
 "Conquistar: ganar un territorio en una guerra."
+],
+"consecuencias": [
+"consecuencia",
+"Resultados."
+],
+"conseguido": [
+"conseguir",
+"Logrado."
 ],
 "conseguir": [
 "conseguir",
@@ -2079,9 +3639,53 @@
 "consejo",
 "Idea que das a alguien para ayudarle."
 ],
+"conservado": [
+"conservar",
+"Guardado bien."
+],
+"conservados": [
+"conservar",
+"Guardados bien."
+],
+"considera": [
+"considerar",
+"Piensa."
+],
+"considerados": [
+"considerar",
+"Vistos."
+],
+"consideran": [
+"considerar",
+"Piensan."
+],
+"considerar": [
+"considerar",
+"Pensar."
+],
+"consideró": [
+"considerar",
+"Pensó."
+],
 "consiga": [
 "conseguir",
 "Conseguir: lograr lo que quieres."
+],
+"consiguen": [
+"conseguir",
+"Logran."
+],
+"consiguió": [
+"conseguir",
+"Logró."
+],
+"consisten": [
+"consistir",
+"Son."
+],
+"consistir": [
+"consistir",
+"Ser."
 ],
 "consola": [
 "consola",
@@ -2090,6 +3694,10 @@
 "consolas": [
 "consola",
 "Máquina para jugar a videojuegos en la tele."
+],
+"constante": [
+"constante",
+"Siempre."
 ],
 "constantemente": [
 "constante",
@@ -2103,6 +3711,14 @@
 "construcción",
 "Algo que alguien construye: una casa, un edificio..."
 ],
+"constructores": [
+"constructor",
+"Personas que construyen."
+],
+"construida": [
+"construir",
+"Hecha."
+],
 "construido": [
 "construir",
 "Construir: hacer una casa o un edificio."
@@ -2111,17 +3727,49 @@
 "construir",
 "Construir: hacer una casa o un edificio."
 ],
+"construya": [
+"construir",
+"Haga."
+],
 "construye": [
 "construir",
 "Construir: hacer una casa o un edificio."
+],
+"construyen": [
+"construir",
+"Hacen."
+],
+"construyendo": [
+"construir",
+"Haciendo."
 ],
 "construyó": [
 "construir",
 "Construir: hacer una casa o un edificio."
 ],
+"construían": [
+"construir",
+"Hacían."
+],
+"consulta": [
+"consulta",
+"Libro de consulta: para buscar datos."
+],
 "consumidores": [
 "consumidor",
 "Persona que compra y usa cosas."
+],
+"contado": [
+"contar",
+"Explicado."
+],
+"contamos": [
+"contar",
+"Explicamos."
+],
+"contando": [
+"contar",
+"Diciendo números."
 ],
 "contar": [
 "contar",
@@ -2135,6 +3783,22 @@
 "contento",
 "Feliz."
 ],
+"contentos": [
+"contento",
+"Felices."
+],
+"contenía": [
+"contener",
+"Tenía dentro."
+],
+"contiene": [
+"contener",
+"Tiene dentro."
+],
+"contienen": [
+"contener",
+"Tienen dentro."
+],
 "continuó": [
 "continuar",
 "Continuar: no parar; seguir."
@@ -2147,13 +3811,65 @@
 "contra",
 "Para chocar o luchar con algo."
 ],
+"contrariaban": [
+"contrariar",
+"Molestaban."
+],
+"contrario": [
+"contrario",
+"Opuesto."
+],
+"contraseñas": [
+"contraseña",
+"Palabras secretas."
+],
+"contrastar": [
+"contrastar",
+"Ver diferencias."
+],
+"contraste": [
+"contraste",
+"Diferencia."
+],
+"contrató": [
+"contratar",
+"Dio trabajo."
+],
+"control": [
+"control",
+"Poder sobre algo."
+],
+"controlar": [
+"controlar",
+"Mandar sobre algo."
+],
 "convencido": [
 "convencido",
 "Seguro de algo."
 ],
+"convencidos": [
+"convencer",
+"Seguros."
+],
+"convenientemente": [
+"conveniente",
+"De forma útil."
+],
+"conversa": [
+"conversar",
+"Habla con alguien."
+],
+"convertido": [
+"convertir",
+"Hecho otra cosa."
+],
 "convertidos": [
 "convertirse",
 "Convertirse: cambiar y ser otra cosa."
+],
+"convertir": [
+"convertir",
+"Hacer otra cosa."
 ],
 "convertirse": [
 "convertirse",
@@ -2175,13 +3891,57 @@
 "convertir",
 "Convertir: cambiar una cosa en otra."
 ],
+"convincentes": [
+"convencer",
+"Que convencen."
+],
+"convirtiera": [
+"convertir",
+"Hiciera otra cosa."
+],
+"convirtieran": [
+"convertir",
+"Hicieran otra cosa."
+],
 "convirtió": [
 "convertir",
 "Convertirse: cambiar y pasar a ser otra cosa."
 ],
+"convivir": [
+"convivir",
+"Vivir juntos."
+],
+"copia": [
+"copia",
+"Algo igual a otro."
+],
+"copiado": [
+"copiar",
+"Hecho igual."
+],
+"copiando": [
+"copiar",
+"Haciendo igual."
+],
+"copiar": [
+"copiar",
+"Hacer igual."
+],
 "copias": [
 "copia",
 "Algo igual a otra cosa. Un juego vendido es una copia."
+],
+"copió": [
+"copiar",
+"Hizo igual."
+],
+"copto": [
+"copto",
+"Lengua egipcia antigua."
+],
+"corazones": [
+"corazón",
+"Órganos que mueven la sangre."
 ],
 "corazón": [
 "corazón",
@@ -2199,6 +3959,14 @@
 "correcto",
 "Que está bien; sin errores."
 ],
+"correctamente": [
+"correcto",
+"Bien."
+],
+"correcto": [
+"correcto",
+"Bien."
+],
 "corredora": [
 "corredor",
 "Persona que corre en carreras."
@@ -2210,6 +3978,10 @@
 "correr": [
 "correr",
 "Ir muy rápido con las piernas."
+],
+"corresponde": [
+"corresponder",
+"Es tarea de."
 ],
 "corriendo": [
 "correr",
@@ -2223,6 +3995,14 @@
 "corriente",
 "Corriente de agua caliente en el océano Atlántico."
 ],
+"corrientes": [
+"corriente",
+"Normales."
+],
+"corrió": [
+"correr",
+"Fue muy rápido."
+],
 "corro": [
 "correr",
 "Correr: ir muy rápido con las piernas."
@@ -2234,6 +4014,14 @@
 "cortaba": [
 "cortar",
 "Cortar: dividir algo en partes."
+],
+"cortado": [
+"cortar",
+"Partido."
+],
+"cortan": [
+"cortar",
+"Parten."
 ],
 "cortas": [
 "cortar",
@@ -2259,6 +4047,10 @@
 "cosa",
 "Objeto o idea."
 ],
+"costado": [
+"costar",
+"Sido difícil."
+],
 "crea": [
 "crear",
 "Crear: hacer algo nuevo."
@@ -2266,6 +4058,10 @@
 "creaban": [
 "crear",
 "Crear: hacer algo nuevo."
+],
+"creaciones": [
+"creación",
+"Cosas creadas."
 ],
 "creador": [
 "creador",
@@ -2279,6 +4075,10 @@
 "crear",
 "Crear: hacer algo nuevo."
 ],
+"creando": [
+"crear",
+"Haciendo algo nuevo."
+],
 "crear": [
 "crear",
 "Crear: hacer algo nuevo."
@@ -2286,6 +4086,10 @@
 "crearon": [
 "crear",
 "Crear: hacer algo nuevo."
+],
+"creativas": [
+"creativo",
+"Con ideas nuevas."
 ],
 "creatividad": [
 "creatividad",
@@ -2306,6 +4110,14 @@
 "crecido": [
 "crecer",
 "Crecer: hacerse más grande."
+],
+"creció": [
+"crecer",
+"Se hizo más grande."
+],
+"crecía": [
+"crecer",
+"Se hacía más grande."
 ],
 "cree": [
 "creer",
@@ -2335,6 +4147,14 @@
 "creer",
 "Creer: pensar que algo es verdad."
 ],
+"creía": [
+"creer",
+"Pensaba."
+],
+"creíamos": [
+"creer",
+"Pensábamos."
+],
 "creían": [
 "creer",
 "Creer: pensar que algo es verdad."
@@ -2343,9 +4163,33 @@
 "crear",
 "Crear: hacer algo nuevo."
 ],
+"criado": [
+"criar",
+"Educado."
+],
 "criar": [
 "criar",
 "Criar: cuidar animales para que crezcan."
+],
+"criatura": [
+"criatura",
+"Ser vivo."
+],
+"criaturas": [
+"criatura",
+"Seres vivos."
+],
+"cristal": [
+"cristal",
+"Vidrio."
+],
+"cristales": [
+"cristal",
+"Vidrios."
+],
+"criticar": [
+"criticar",
+"Decir lo malo."
 ],
 "cronómetro": [
 "cronómetro",
@@ -2359,6 +4203,10 @@
 "cruzar",
 "Cruzar: pasar al otro lado."
 ],
+"cruzado": [
+"cruzar",
+"Pasado de un lado a otro."
+],
 "cráter": [
 "cráter",
 "Agujero grande en el suelo."
@@ -2371,6 +4219,14 @@
 "cría",
 "Hijo pequeño de un animal."
 ],
+"críticas": [
+"crítica",
+"Opiniones negativas."
+],
+"críticos": [
+"crítico",
+"Personas que dicen lo malo."
+],
 "cuadrado": [
 "cuadrado",
 "Figura con cuatro lados iguales."
@@ -2379,17 +4235,45 @@
 "cuadrado",
 "Figura con cuatro lados iguales."
 ],
+"cual": [
+"cual",
+"Que."
+],
+"cuales": [
+"cual",
+"Que."
+],
 "cualquier": [
 "cualquiera",
 "Uno o otro, no importa cuál."
+],
+"cualquiera": [
+"cualquiera",
+"Cualquier persona."
 ],
 "cuando": [
 "cuando",
 "En el momento en que."
 ],
+"cuantas": [
+"cuanto",
+"Algunas."
+],
+"cuanto": [
+"cuanto",
+"Qué cantidad."
+],
 "cuarenta": [
 "cuarenta",
 "El número 40."
+],
+"cuartas": [
+"cuarto",
+"Partes de cuatro."
+],
+"cuarto": [
+"cuatro",
+"Número cuatro en orden."
 ],
 "cuatro": [
 "cuatro",
@@ -2403,6 +4287,26 @@
 "Cuba",
 "Nombre de una isla y país del Caribe."
 ],
+"cubierta": [
+"cubrir",
+"Tapada."
+],
+"cubiertas": [
+"cubrir",
+"Tapadas."
+],
+"cubierto": [
+"cubrir",
+"Tapado."
+],
+"cubiertos": [
+"cubrir",
+"Tapados."
+],
+"cubos": [
+"cubo",
+"Formas como cajas."
+],
 "cubren": [
 "cubrir",
 "Cubrir: poner algo encima."
@@ -2411,9 +4315,21 @@
 "cubrir",
 "Cubrir: poner algo encima de otra cosa."
 ],
+"cuelgue": [
+"colgar",
+"Forma de \"colgar\"."
+],
 "cuello": [
 "cuello",
 "Parte del cuerpo entre la cabeza y el pecho."
+],
+"cuenta": [
+"cuenta",
+"Darse cuenta: notar."
+],
+"cuentan": [
+"contar",
+"Tienen."
 ],
 "cuerda": [
 "cuerda",
@@ -2431,17 +4347,65 @@
 "cuerpo",
 "Todas las partes de una persona o un animal."
 ],
+"cuervos": [
+"cuervo",
+"Pájaros negros."
+],
 "cuesta": [
 "costar",
 "Costar: ser difícil."
+],
+"cueste": [
+"costar",
+"Forma de \"costar\"."
+],
+"cuestión": [
+"cuestión",
+"Asunto."
 ],
 "cuevas": [
 "cueva",
 "Agujero grande en una montaña o bajo la tierra."
 ],
+"cuidaban": [
+"cuidar",
+"Atendían."
+],
 "cuidado": [
 "cuidado",
 "Atención para no tener problemas."
+],
+"cuidadores": [
+"cuidador",
+"Personas que cuidan."
+],
+"cultura": [
+"cultura",
+"Forma de vivir de un grupo."
+],
+"cumplir": [
+"cumplir",
+"Hacer lo que se pide."
+],
+"cumpliría": [
+"cumplir",
+"Haría lo prometido."
+],
+"cumplió": [
+"cumplir",
+"Hizo lo que pide."
+],
+"curado": [
+"curar",
+"Secado para que dure."
+],
+"curar": [
+"curar",
+"Poner bien."
+],
+"curiosamente": [
+"curioso",
+"De forma extraña."
 ],
 "curiosidad": [
 "curiosidad",
@@ -2450,6 +4414,30 @@
 "curioso": [
 "curioso",
 "Raro e interesante."
+],
+"curiosos": [
+"curioso",
+"Que quieren saber."
+],
+"cursar": [
+"cursar",
+"Estudiar una asignatura."
+],
+"curvas": [
+"curva",
+"Líneas redondeadas."
+],
+"cuya": [
+"cuyo",
+"De la cual."
+],
+"cuyas": [
+"cuyo",
+"De los cuales."
+],
+"cuyo": [
+"cuyo",
+"Del cual."
 ],
 "cuál": [
 "cuál",
@@ -2475,6 +4463,10 @@
 "cuánto",
 "Palabra para preguntar por un número."
 ],
+"cálido": [
+"cálido",
+"Con calor suave."
+],
 "cámara": [
 "cámara",
 "Aparato para hacer fotos o vídeos."
@@ -2483,9 +4475,25 @@
 "cámara",
 "Aparato para hacer fotos o vídeos."
 ],
+"cáncer": [
+"cáncer",
+"Enfermedad grave."
+],
+"cáscaras": [
+"cáscara",
+"Partes duras de fuera."
+],
+"células": [
+"célula",
+"Partes muy pequeñas del cuerpo."
+],
 "código": [
 "código",
 "Sistema de señales para decir algo."
+],
+"códigos": [
+"código",
+"Sistemas secretos de escritura."
 ],
 "cómo": [
 "cómo",
@@ -2503,6 +4511,18 @@
 "dar",
 "Dar: poner algo en las manos de otra persona; producir."
 ],
+"daba": [
+"dar",
+"Entregaba."
+],
+"daban": [
+"dar",
+"Entregaban."
+],
+"dado": [
+"dar",
+"Forma de \"dar\"."
+],
 "dan": [
 "dar",
 "Dar: poner algo en las manos de otra persona; producir."
@@ -2515,6 +4535,22 @@
 "dar",
 "Dar: poner algo en las manos de otra persona."
 ],
+"darse": [
+"dar",
+"Darse (por vencido)."
+],
+"darte": [
+"dar",
+"Entregar a ti."
+],
+"darwin": [
+"darwin",
+"Apellido de un científico."
+],
+"dashi": [
+"dashi",
+"Caldo japonés."
+],
 "datos": [
 "dato",
 "Información."
@@ -2522,6 +4558,10 @@
 "david": [
 "david",
 "Nombre de hombre."
+],
+"dañar": [
+"dañar",
+"Hacer daño."
 ],
 "daño": [
 "daño",
@@ -2555,6 +4595,10 @@
 "debajo",
 "En una parte más baja que algo."
 ],
+"debamos": [
+"deber",
+"Tengamos que."
+],
 "debate": [
 "debate",
 "Conversación con opiniones diferentes."
@@ -2567,13 +4611,45 @@
 "deber",
 "Deber: tener la obligación de hacer algo."
 ],
+"deben": [
+"deber",
+"Tienen que."
+],
+"deberes": [
+"deber",
+"Tareas de la escuela."
+],
+"debería": [
+"deber",
+"Tendría que."
+],
+"deberíamos": [
+"deber",
+"Tendríamos que."
+],
+"deberían": [
+"deber",
+"Tendrían que."
+],
 "debes": [
 "deber",
 "Deber: tener la obligación de hacer algo."
 ],
+"debía": [
+"deber",
+"Tenía que."
+],
 "decenas": [
 "decena",
 "Grupo de diez."
+],
+"decepcionante": [
+"decepcionar",
+"Que no es tan bueno como se esperaba."
+],
+"decepción": [
+"decepción",
+"Tristeza por algo que no salió."
 ],
 "deciden": [
 "decidir",
@@ -2583,41 +4659,117 @@
 "decidir",
 "Decidir: elegir qué hacer."
 ],
+"decidieron": [
+"decidir",
+"Eligieron."
+],
+"decidir": [
+"decidir",
+"Elegir qué hacer."
+],
+"decidió": [
+"decidir",
+"Eligió."
+],
 "decieron": [
 "decir",
 "Forma incorrecta. Lo correcto es «dijeron»."
+],
+"decimos": [
+"decir",
+"Hablamos."
 ],
 "decir": [
 "decir",
 "Decir: hablar para comunicar algo."
 ],
+"decirle": [
+"decir",
+"Contarle."
+],
 "decisiones": [
 "decisión",
 "Lo que eliges hacer."
+],
+"decisión": [
+"decisión",
+"Lo que se decide."
+],
+"declaraciones": [
+"declaración",
+"Lo que dice alguien."
+],
+"decían": [
+"decir",
+"Hablaban."
+],
+"dedicado": [
+"dedicar",
+"Dado tiempo."
+],
+"dedican": [
+"dedicar",
+"Dan tiempo."
 ],
 "dedos": [
 "dedo",
 "Cada parte larga de la mano."
 ],
+"defender": [
+"defender",
+"Proteger."
+],
 "defenderse": [
 "defenderse",
 "Defenderse: protegerse de un ataque."
+],
+"defendido": [
+"defender",
+"Apoyado."
+],
+"defensores": [
+"defensor",
+"Personas que apoyan algo."
 ],
 "defienden": [
 "defenderse",
 "Defenderse: protegerse de un ataque."
 ],
+"definitivas": [
+"definitivo",
+"Finales."
+],
+"deinonychus": [
+"deinonychus",
+"Un dinosaurio."
+],
+"deja": [
+"dejar",
+"Para; no sigue."
+],
 "dejaban": [
 "dejar",
 "Dejar: no quitar; permitir."
+],
+"dejado": [
+"dejar",
+"Abandonado."
 ],
 "dejan": [
 "dejar",
 "Dejar: irse de un sitio o no hacer algo más."
 ],
+"dejar": [
+"dejar",
+"Permitir; abandonar."
+],
 "dejaron": [
 "dejar",
 "Dejar: permitir."
+],
+"deje": [
+"dejar",
+"Forma de \"dejar\"."
 ],
 "dejes": [
 "dejar",
@@ -2635,6 +4787,14 @@
 "delante",
 "En la parte de enfrente."
 ],
+"delantera": [
+"delante",
+"Parte de delante."
+],
+"delfines": [
+"delfín",
+"Mamíferos del mar muy listos."
+],
 "delfín": [
 "delfín",
 "Animal del mar muy inteligente que respira aire."
@@ -2643,13 +4803,57 @@
 "delicado",
 "Que se debe hacer con mucho cuidado."
 ],
+"delicioso": [
+"delicioso",
+"Muy rico."
+],
+"demasiada": [
+"demasiado",
+"Más de lo necesario."
+],
 "demasiado": [
 "demasiado",
 "Más de lo necesario."
 ],
+"demostraba": [
+"demostrar",
+"Probaba."
+],
+"demostraban": [
+"demostrar",
+"Probaban."
+],
+"demostrado": [
+"demostrar",
+"Probado."
+],
 "demostrar": [
 "demostrar",
 "Demostrar: enseñar que algo es verdad."
+],
+"demostraría": [
+"demostrar",
+"Probaría."
+],
+"demostró": [
+"demostrar",
+"Probó."
+],
+"demuestra": [
+"demostrar",
+"Prueba."
+],
+"demás": [
+"demás",
+"Los otros."
+],
+"demótico": [
+"demótico",
+"Escritura egipcia sencilla."
+],
+"dengue": [
+"dengue",
+"Enfermedad que transmiten los mosquitos."
 ],
 "dentro": [
 "dentro",
@@ -2658,6 +4862,14 @@
 "dentro de": [
 "dentro",
 "En el interior de algo."
+],
+"depende": [
+"depender",
+"Necesita de algo."
+],
+"dependen": [
+"depender",
+"Necesitan de algo."
 ],
 "deporte": [
 "deporte",
@@ -2679,6 +4891,22 @@
 "depredador",
 "Animal que caza y come a otros animales."
 ],
+"deprisa": [
+"deprisa",
+"Rápido."
+],
+"derecha": [
+"derecha",
+"El lado contrario a la izquierda."
+],
+"derecho": [
+"derecho",
+"Por derecho propio: por sí mismo."
+],
+"derretido": [
+"derretir",
+"Hecho líquido por el calor."
+],
 "derretía": [
 "derretirse",
 "Derretirse: pasar de duro a líquido con el calor."
@@ -2691,6 +4919,30 @@
 "derretirse",
 "Derretirse: pasar de duro a líquido con el calor."
 ],
+"derrota": [
+"derrota",
+"Perder una batalla."
+],
+"derrotado": [
+"derrotar",
+"Vencido."
+],
+"derrotaran": [
+"derrotar",
+"Vencieran."
+],
+"desacuerdo": [
+"desacuerdo",
+"No estar de acuerdo."
+],
+"desagradable": [
+"desagradable",
+"Que no gusta."
+],
+"desagüe": [
+"desagüe",
+"Tubo por donde se va el agua."
+],
 "desaparece": [
 "desaparecer",
 "Desaparecer: dejar de verse; no estar."
@@ -2698,6 +4950,14 @@
 "desaparecen": [
 "desaparecer",
 "Desaparecer: dejar de verse; no estar."
+],
+"desaparecer": [
+"desaparecer",
+"Dejar de estar."
+],
+"desaparecido": [
+"desaparecer",
+"Que ya no está."
 ],
 "desaparecieron": [
 "desaparecer",
@@ -2707,13 +4967,49 @@
 "desaparecer",
 "Desaparecer: dejar de verse; no estar."
 ],
+"desaparezca": [
+"desaparecer",
+"Deje de estar."
+],
+"desarrollado": [
+"desarrollar",
+"Hecho crecer."
+],
 "desarrolladores": [
 "desarrollador",
 "Persona que hace programas o videojuegos."
 ],
+"desarrollan": [
+"desarrollar",
+"Hacen crecer."
+],
+"desarrollando": [
+"desarrollar",
+"Creando."
+],
+"desarrollar": [
+"desarrollar",
+"Hacer crecer."
+],
+"desarrollaron": [
+"desarrollar",
+"Crearon."
+],
+"desarrolló": [
+"desarrollar",
+"Hizo crecer; creó."
+],
+"desastre": [
+"desastre",
+"Algo muy malo."
+],
 "desayuna": [
 "desayunar",
 "Desayunar: comer por la mañana."
+],
+"desbloquear": [
+"desbloquear",
+"Abrir."
 ],
 "descansaba": [
 "descansar",
@@ -2727,17 +5023,81 @@
 "descansar",
 "Descansar: parar para recuperar energía."
 ],
+"descanso": [
+"descanso",
+"Tiempo para descansar."
+],
 "descargaron": [
 "descargar",
 "Descargar: pasar un juego o un archivo de internet a tu aparato."
+],
+"descartó": [
+"descartar",
+"Dejó fuera."
+],
+"descendientes": [
+"descendiente",
+"Hijos, nietos..."
+],
+"descifrado": [
+"descifrar",
+"Entendido."
+],
+"descifrador": [
+"descifrador",
+"Persona que descifra códigos."
+],
+"descifradores": [
+"descifrador",
+"Personas que descifran códigos."
+],
+"descifrar": [
+"descifrar",
+"Entender un código."
+],
+"descifrarlas": [
+"descifrar",
+"Entender un código."
+],
+"descifrarlos": [
+"descifrar",
+"Entender un código."
+],
+"desconcertante": [
+"desconcertar",
+"Que confunde."
+],
+"desconfiaban": [
+"desconfiar",
+"No se fiaban."
+],
+"desconocida": [
+"desconocido",
+"Que no se conoce."
 ],
 "desconocidas": [
 "desconocido",
 "Que no conoces."
 ],
+"desconocido": [
+"desconocido",
+"Que no se conoce."
+],
+"describe": [
+"describir",
+"Dice cómo es."
+],
 "describen": [
 "describir",
 "Describir: decir cómo es algo."
+],
+"describir": [
+"describir",
+"Decir cómo es."
+],
+"describirse": [
+"describir",
+"Decirse cómo es."
 ],
 "descubierto": [
 "descubrir",
@@ -2771,6 +5131,10 @@
 "descubrir",
 "Descubrir: encontrar algo que nadie conocía."
 ],
+"descubrirlo": [
+"descubrir",
+"Encontrarlo."
+],
 "descubrió": [
 "descubrir",
 "Descubrir: encontrar algo nuevo."
@@ -2791,6 +5155,14 @@
 "lejos",
 "A muchísima distancia."
 ],
+"desenroscar": [
+"desenroscar",
+"Abrir dando vueltas."
+],
+"desesperado": [
+"desesperar",
+"Que quiere mucho algo."
+],
 "desierto": [
 "desierto",
 "Lugar muy seco, con arena y casi sin agua."
@@ -2803,9 +5175,17 @@
 "desierto",
 "Lugar muy seco, con arena y casi sin agua."
 ],
+"deslizado": [
+"deslizar",
+"Movido suavemente."
+],
 "deslizan": [
 "deslizar",
 "Deslizarse: moverse suavemente sobre algo."
+],
+"desmayó": [
+"desmayarse",
+"Perdió el sentido."
 ],
 "desordenado": [
 "desordenado",
@@ -2823,9 +5203,29 @@
 "despegar",
 "Despegar: separar algo pegado."
 ],
+"despegaron": [
+"despegar",
+"Subieron al aire."
+],
+"despejada": [
+"despejar",
+"Sin nubes."
+],
+"despertando": [
+"despertar",
+"Provocando."
+],
 "despierta": [
 "despertarse",
 "Despertarse: dejar de dormir."
+],
+"despiertos": [
+"despertar",
+"Sin dormir; atentos."
+],
+"desplazado": [
+"desplazar",
+"Movido."
 ],
 "después": [
 "después",
@@ -2847,6 +5247,18 @@
 "destruir",
 "Destruir: romper algo por completo."
 ],
+"detallados": [
+"detalle",
+"Con muchos detalles."
+],
+"detalle": [
+"detalle",
+"Parte pequeña."
+],
+"detalles": [
+"detalle",
+"Partes pequeñas."
+],
 "detectan": [
 "detectar",
 "Detectar: descubrir algo."
@@ -2867,6 +5279,18 @@
 "detrás",
 "En la parte de atrás de algo."
 ],
+"devolver": [
+"devolver",
+"Dar otra vez."
+],
+"devolvió": [
+"devolver",
+"Dio otra vez."
+],
+"devuelvan": [
+"devolver",
+"Den otra vez."
+],
 "diamante": [
 "diamante",
 "Piedra preciosa muy dura y brillante."
@@ -2875,9 +5299,21 @@
 "diamante",
 "Piedra preciosa muy dura y brillante."
 ],
+"diaria": [
+"diario",
+"De cada día."
+],
 "dibujado": [
 "dibujar",
 "Dibujar: hacer un dibujo."
+],
+"dibujos": [
+"dibujo",
+"Imágenes hechas a mano."
+],
+"diccionarios": [
+"diccionario",
+"Libros con palabras y su significado."
 ],
 "dice": [
 "decir",
@@ -2911,6 +5347,14 @@
 "diente",
 "Parte blanca de la boca para morder."
 ],
+"dieron": [
+"dar",
+"Entregaron."
+],
+"dieta": [
+"dieta",
+"Lo que comes."
+],
 "diez": [
 "diez",
 "El número 10."
@@ -2927,6 +5371,22 @@
 "diferente",
 "Que no es igual."
 ],
+"dificilísimo": [
+"difícil",
+"Muy difícil."
+],
+"dificulta": [
+"dificultar",
+"Hace difícil."
+],
+"dificultad": [
+"dificultad",
+"Lo difícil."
+],
+"dificultades": [
+"dificultad",
+"Problemas."
+],
 "difícil": [
 "difícil",
 "Que no es fácil."
@@ -2935,6 +5395,10 @@
 "difícil",
 "Que no es fácil."
 ],
+"digital": [
+"digital",
+"En el ordenador o internet."
+],
 "dijeron": [
 "decir",
 "Decir: expresar algo con palabras."
@@ -2942,6 +5406,10 @@
 "dijo": [
 "decir",
 "Decir: expresar algo con palabras."
+],
+"diminuta": [
+"diminuto",
+"Muy pequeña."
 ],
 "diminuto": [
 "diminuto",
@@ -2967,9 +5435,17 @@
 "dar",
 "Dar: poner algo en las manos de otra persona; producir."
 ],
+"dirección": [
+"dirección",
+"Hacia dónde."
+],
 "directamente": [
 "directo",
 "Sin nada en medio."
+],
+"directo": [
+"directo",
+"En directo: en el momento."
 ],
 "director": [
 "director",
@@ -2979,25 +5455,137 @@
 "dirigir",
 "Dirigir: mandar en un grupo o lugar."
 ],
+"dirigían": [
+"dirigir",
+"Mandaban."
+],
+"disciplina": [
+"disciplina",
+"Materia de estudio."
+],
+"discusiones": [
+"discusión",
+"Peleas con palabras."
+],
 "discusión": [
 "discusión",
 "Conversación en la que las personas no piensan igual."
+],
+"discutir": [
+"discutir",
+"Hablar sin estar de acuerdo."
+],
+"diseñador": [
+"diseñador",
+"Persona que diseña."
 ],
 "diseñadores": [
 "diseñador",
 "Persona que inventa cómo es algo."
 ],
+"diseñados": [
+"diseñar",
+"Hechos."
+],
+"diseñar": [
+"diseñar",
+"Crear un plan o una forma."
+],
 "diseñaron": [
 "diseñar",
 "Diseñar: inventar cómo va a ser algo."
+],
+"diseño": [
+"diseño",
+"Forma de algo."
+],
+"diseños": [
+"diseño",
+"Formas de cosas."
+],
+"disfraz": [
+"disfraz",
+"Ropa para parecer otro."
+],
+"disfruta": [
+"disfrutar",
+"Lo pasa bien."
+],
+"disfrutar": [
+"disfrutar",
+"Pasarlo bien."
+],
+"disminuir": [
+"disminuir",
+"Hacer más pequeño."
+],
+"disponible": [
+"disponible",
+"Que se puede usar."
+],
+"distancia": [
+"distancia",
+"Lo lejos que está algo."
+],
+"distantes": [
+"distante",
+"Lejanos."
+],
+"distinguen": [
+"distinguir",
+"Ven la diferencia."
+],
+"distinta": [
+"distinto",
+"Diferente."
+],
+"distintas": [
+"distinto",
+"Diferentes."
+],
+"distinto": [
+"distinto",
+"Diferente."
+],
+"distintos": [
+"distinto",
+"Diferentes."
+],
+"diversas": [
+"diverso",
+"Distintas."
+],
+"diversión": [
+"divertir",
+"Pasarlo bien."
+],
+"divertida": [
+"divertido",
+"Que hace pasar un buen rato."
+],
+"divertidas": [
+"divertido",
+"Que hacen pasar un buen rato."
 ],
 "divertido": [
 "divertido",
 "Que te hace pasarlo bien."
 ],
+"divertidos": [
+"divertido",
+"Que hacen pasar un buen rato."
+],
 "divertirse": [
 "divertirse",
 "Divertirse: pasarlo bien."
+],
+"dividió": [
+"dividir",
+"Separó."
+],
+"dióxido": [
+"dióxido",
+"Dióxido de carbono: gas que echamos al respirar."
 ],
 "doble": [
 "doble",
@@ -3007,6 +5595,22 @@
 "doce",
 "El número 12."
 ],
+"documentos": [
+"documento",
+"Papeles escritos."
+],
+"doler": [
+"doler",
+"Hacer daño."
+],
+"dolor": [
+"dolor",
+"Lo que se siente cuando algo duele."
+],
+"dolorosa": [
+"dolor",
+"Que duele."
+],
 "dominar": [
 "dominar",
 "Dominar: saber hacer algo muy bien."
@@ -3015,9 +5619,33 @@
 "doméstico",
 "De la casa."
 ],
+"donado": [
+"donar",
+"Dado para ayudar."
+],
+"donantes": [
+"donante",
+"Personas que dan."
+],
+"donar": [
+"donar",
+"Dar para ayudar."
+],
+"donaran": [
+"donar",
+"Dieran para ayudar."
+],
 "donde": [
 "donde",
 "En el lugar que."
+],
+"done": [
+"donar",
+"Dé para ayudar."
+],
+"donen": [
+"donar",
+"Den para ayudar."
 ],
 "dorado": [
 "dorado",
@@ -3051,6 +5679,14 @@
 "dragón",
 "Animal de cuento, grande, con alas, que echa fuego."
 ],
+"dudaron": [
+"dudar",
+"No estaban seguros."
+],
+"duela": [
+"doler",
+"Haga daño."
+],
 "duermas": [
 "dormir",
 "Dormir: descansar con los ojos cerrados."
@@ -3083,6 +5719,18 @@
 "durar",
 "Durar: seguir existiendo un tiempo."
 ],
+"duraría": [
+"durar",
+"Seguiría."
+],
+"dure": [
+"durar",
+"Siga."
+],
+"duren": [
+"durar",
+"Sigan."
+],
 "durián": [
 "durián",
 "Fruta grande de Asia con pinchos y mal olor."
@@ -3091,9 +5739,21 @@
 "duro",
 "Difícil; que no es blando."
 ],
+"duró": [
+"durar",
+"Siguió."
+],
+"dé": [
+"dar",
+"Forma de \"dar\"."
+],
 "débil": [
 "débil",
 "Sin fuerza."
+],
+"décadas": [
+"década",
+"Diez años."
 ],
 "décima": [
 "décimo",
@@ -3123,6 +5783,42 @@
 "e",
 "«Y» antes de una palabra que empieza por «i»."
 ],
+"echaban": [
+"echar",
+"Hacían salir."
+],
+"echar": [
+"echar",
+"Tirar."
+],
+"echarlo": [
+"echar",
+"Tirarlo."
+],
+"echarse": [
+"echar",
+"Tirarse."
+],
+"echó": [
+"echar",
+"Tiró."
+],
+"ecologistas": [
+"ecologista",
+"Defensores de la naturaleza."
+],
+"ecología": [
+"ecología",
+"Ciencia de la naturaleza."
+],
+"ecosistemas": [
+"ecosistema",
+"Seres vivos y su lugar."
+],
+"ecólogos": [
+"ecólogo",
+"Científicos de la naturaleza."
+],
 "edad": [
 "edad",
 "Los años que tiene algo o alguien."
@@ -3139,13 +5835,33 @@
 "edificio",
 "Construcción grande, con muchas habitaciones."
 ],
+"educación": [
+"educación",
+"Enseñanza."
+],
+"educativa": [
+"educar",
+"Para aprender."
+],
 "efecto": [
 "efecto",
 "Lo que pasa por una causa."
 ],
+"efectos": [
+"efecto",
+"Resultados."
+],
 "eficaz": [
 "eficaz",
 "Que consigue lo que quiere."
+],
+"egipcia": [
+"egipcio",
+"De Egipto."
+],
+"egipcio": [
+"egipcio",
+"De Egipto."
 ],
 "egipcios": [
 "egipcio",
@@ -3154,6 +5870,10 @@
 "egipto": [
 "Egipto",
 "Nombre de un país del norte de África."
+],
+"ejecutar": [
+"ejecutar",
+"Hacer funcionar."
 ],
 "ejemplo": [
 "ejemplo",
@@ -3179,9 +5899,17 @@
 "el",
 "Artículo: habla de una cosa concreta (masculino)."
 ],
+"elaborado": [
+"elaborar",
+"Muy trabajado."
+],
 "electricidad": [
 "electricidad",
 "Energía que hace funcionar las máquinas y las luces."
+],
+"electrónicos": [
+"electrónico",
+"Con aparatos."
 ],
 "elefante": [
 "elefante",
@@ -3191,9 +5919,41 @@
 "elefante",
 "Animal muy grande y gris, con trompa."
 ],
+"elegante": [
+"elegante",
+"Bonita y con estilo."
+],
+"elegida": [
+"elegir",
+"Escogida."
+],
+"elegir": [
+"elegir",
+"Escoger."
+],
+"elementos": [
+"elemento",
+"Partes."
+],
 "elige": [
 "elegir",
 "Elegir: tomar una cosa entre varias."
+],
+"eligen": [
+"elegir",
+"Escogen."
+],
+"eligió": [
+"elegir",
+"Escogió."
+],
+"eliminar": [
+"eliminar",
+"Quitar."
+],
+"eliminarlos": [
+"eliminar",
+"Quitarlos."
 ],
 "ella": [
 "ella",
@@ -3202,6 +5962,10 @@
 "ellas": [
 "ellas",
 "Ellas: varias personas o cosas femeninas."
+],
+"ello": [
+"ello",
+"Eso."
 ],
 "ellos": [
 "ellos",
@@ -3214,6 +5978,42 @@
 "embargo": [
 "sin embargo",
 "Va en «sin embargo»: palabras para decir algo contrario."
+],
+"emboscada": [
+"emboscada",
+"Ataque por sorpresa."
+],
+"emocional": [
+"emoción",
+"De las emociones."
+],
+"emocionante": [
+"emoción",
+"Que emociona."
+],
+"emociones": [
+"emoción",
+"Sentimientos fuertes."
+],
+"emoción": [
+"emoción",
+"Sentimiento fuerte."
+],
+"emparentados": [
+"emparentar",
+"De la misma familia."
+],
+"empecé": [
+"empezar",
+"Comencé."
+],
+"empeoran": [
+"empeorar",
+"Ponen peor."
+],
+"emperador": [
+"emperador",
+"Gobernante muy poderoso."
 ],
 "empezado": [
 "empezar",
@@ -3247,9 +6047,17 @@
 "empresa",
 "Grupo de personas que trabaja para vender algo."
 ],
+"empresario": [
+"empresario",
+"Persona con una empresa."
+],
 "empresas": [
 "empresa",
 "Grupo de personas que trabaja para vender algo."
+],
+"empujaba": [
+"empujar",
+"Movía con fuerza."
 ],
 "en": [
 "en",
@@ -3271,13 +6079,45 @@
 "realidad",
 "De verdad; lo que pasa realmente."
 ],
+"enamoraron": [
+"enamorar",
+"Se aficionaron mucho."
+],
+"encajan": [
+"encajar",
+"Entran bien."
+],
+"encajar": [
+"encajar",
+"Entrar bien."
+],
+"encanta": [
+"encantar",
+"Gusta mucho."
+],
+"encantaba": [
+"encantar",
+"Gustaba mucho."
+],
 "encantaron": [
 "encantar",
 "Encantar: gustar mucho."
 ],
+"encantó": [
+"encantar",
+"Gustó mucho."
+],
 "encendemos": [
 "encender",
 "Encender: poner una luz o una máquina."
+],
+"encender": [
+"encender",
+"Dar luz."
+],
+"encendida": [
+"encender",
+"Con luz."
 ],
 "enciende": [
 "encender",
@@ -3298,6 +6138,14 @@
 "encoge": [
 "encogerse",
 "Encogerse: hacerse más pequeño."
+],
+"encontrada": [
+"encontrar",
+"Hallada."
+],
+"encontradas": [
+"encontrar",
+"Halladas."
 ],
 "encontrado": [
 "encontrar",
@@ -3351,6 +6199,26 @@
 "encontrar",
 "Encontrar: ver lo que buscas."
 ],
+"encélado": [
+"encélado",
+"Una luna de Saturno."
+],
+"enemigo": [
+"enemigo",
+"Contrario."
+],
+"enemigos": [
+"enemigo",
+"Contrarios."
+],
+"energía": [
+"energía",
+"Fuerza para hacer cosas."
+],
+"enero": [
+"enero",
+"Primer mes del año."
+],
 "enfadado": [
 "enfadado",
 "Que tiene rabia; no está contento."
@@ -3358,6 +6226,14 @@
 "enfadados": [
 "enfadado",
 "Que tiene rabia; no está contento."
+],
+"enfadaron": [
+"enfadar",
+"Se pusieron de mal humor."
+],
+"enfadarse": [
+"enfadar",
+"Ponerse de mal humor."
 ],
 "enfermas": [
 "enfermo",
@@ -3371,13 +6247,45 @@
 "enfermedad",
 "Cuando una persona no está bien de salud."
 ],
+"enfrentado": [
+"enfrentar",
+"Puesto delante."
+],
 "enfría": [
 "enfriarse",
 "Enfriarse: ponerse frío."
 ],
+"enganchaban": [
+"enganchar",
+"Se cogían."
+],
+"enganche": [
+"enganchar",
+"Se aficione mucho."
+],
+"engañar": [
+"engañar",
+"Hacer creer algo falso."
+],
+"engaño": [
+"engaño",
+"Trampa."
+],
+"enigma": [
+"enigma",
+"Misterio."
+],
+"enigmas": [
+"enigma",
+"Misterios."
+],
 "enorme": [
 "enorme",
 "Muy, muy grande."
+],
+"enormemente": [
+"enorme",
+"Muchísimo."
 ],
 "enormes": [
 "enorme",
@@ -3399,6 +6307,10 @@
 "enseñar",
 "Enseñar: ayudar a aprender."
 ],
+"enseñándoles": [
+"enseñar",
+"Mostrándoles."
+],
 "enseñó": [
 "enseñar",
 "Enseñar: ayudar a alguien a aprender."
@@ -3415,17 +6327,53 @@
 "entender",
 "Entender: saber qué significa algo."
 ],
+"entenderlo": [
+"entender",
+"Comprenderlo."
+],
+"entenderlos": [
+"entender",
+"Comprenderlos."
+],
+"entendido": [
+"entender",
+"Comprendido."
+],
+"entendiera": [
+"entender",
+"Comprendiera."
+],
+"entendió": [
+"entender",
+"Comprendió."
+],
+"entendía": [
+"entender",
+"Comprendía."
+],
 "enter": [
 "enter",
 "Tecla del teclado. Sirve para confirmar o pasar de línea."
+],
+"enterar": [
+"enterar",
+"Llegar a saber."
 ],
 "enteras": [
 "entero",
 "Completo, todo."
 ],
+"enteros": [
+"entero",
+"Completos."
+],
 "entonces": [
 "entonces",
 "En ese momento; también para preguntar qué pasa después."
+],
+"entorno": [
+"entorno",
+"Lo que hay alrededor."
 ],
 "entra": [
 "entrar",
@@ -3447,6 +6395,18 @@
 "entrenar",
 "Entrenar: practicar mucho para ser mejor."
 ],
+"entrenado": [
+"entrenar",
+"Practicado."
+],
+"entrenador": [
+"entrenador",
+"Persona que entrena."
+],
+"entrenadores": [
+"entrenador",
+"Personas que entrenan."
+],
 "entrenamiento": [
 "entrenamiento",
 "Práctica para aprender a hacer algo bien."
@@ -3463,9 +6423,33 @@
 "entrenar",
 "Entrenar: practicar mucho para ser mejor."
 ],
+"entretenida": [
+"entretener",
+"Divertida."
+],
+"entretenimiento": [
+"entretenimiento",
+"Diversión."
+],
 "entro": [
 "entrar",
 "Entrar: pasar al interior de un lugar."
+],
+"entusiasta": [
+"entusiasta",
+"Con muchas ganas."
+],
+"entusiastas": [
+"entusiasta",
+"Personas con muchas ganas."
+],
+"enumera": [
+"enumerar",
+"Dice una lista."
+],
+"envenenó": [
+"envenenar",
+"Dio veneno."
 ],
 "enviar": [
 "enviar",
@@ -3483,9 +6467,17 @@
 "envolver",
 "Envolver: cubrir algo por todos los lados."
 ],
+"envía": [
+"enviar",
+"Manda."
+],
 "envían": [
 "enviar",
 "Enviar: mandar algo a otro lugar."
+],
+"envías": [
+"enviar",
+"Mandas."
 ],
 "epic": [
 "epic",
@@ -3495,13 +6487,37 @@
 "epic games",
 "Nombre de la empresa que hizo Fortnite."
 ],
+"equilibrada": [
+"equilibrar",
+"Con un poco de todo."
+],
+"equilibrio": [
+"equilibrio",
+"Estar sin caerse."
+],
 "equipo": [
 "equipo",
 "Grupo de personas que trabajan o juegan juntas."
 ],
+"equipos": [
+"equipo",
+"Aparatos; grupos."
+],
 "equivale": [
 "equivaler",
 "Equivaler: ser igual en valor."
+],
+"equivocado": [
+"equivocar",
+"Que no tiene razón."
+],
+"equivocados": [
+"equivocar",
+"Sin razón."
+],
+"equivocan": [
+"equivocar",
+"No aciertan."
 ],
 "equivocarse": [
 "equivocarse",
@@ -3555,6 +6571,14 @@
 "eso",
 "Esa cosa."
 ],
+"esas": [
+"ese",
+"Aquellas."
+],
+"escala": [
+"escala",
+"Tamaño."
+],
 "escalera": [
 "escalera",
 "Escalones para subir o bajar."
@@ -3566,6 +6590,10 @@
 "escamas": [
 "escama",
 "Piel dura de los peces y reptiles, en piezas pequeñas."
+],
+"escamoso": [
+"escama",
+"Con escamas."
 ],
 "escapan": [
 "escapar",
@@ -3579,9 +6607,25 @@
 "escapar",
 "Irse rápido de un lugar peligroso."
 ],
+"escena": [
+"escena",
+"Momento de una película."
+],
 "escocia": [
 "Escocia",
 "Nombre de un país del norte del Reino Unido."
+],
+"escolar": [
+"escolar",
+"De la escuela."
+],
+"escolares": [
+"escolar",
+"Alumnos."
+],
+"escondas": [
+"esconder",
+"Te pongas donde no te vean."
 ],
 "esconde": [
 "esconderse",
@@ -3591,13 +6635,29 @@
 "esconder",
 "Esconder: poner algo donde nadie lo ve."
 ],
+"escondernos": [
+"esconder",
+"Ponernos donde no nos vean."
+],
 "esconderse": [
 "esconderse",
 "Ponerse donde nadie te puede ver."
 ],
+"esconderte": [
+"esconder",
+"Ponerte donde no te vean."
+],
 "escondida": [
 "esconder",
 "Esconder: poner algo donde nadie lo ve."
+],
+"escondía": [
+"esconder",
+"Tenía oculto."
+],
+"escribas": [
+"escriba",
+"Personas que escribían textos."
 ],
 "escribido": [
 "escribir",
@@ -3607,17 +6667,49 @@
 "escribir",
 "Escribir: poner palabras en un papel."
 ],
+"escribir": [
+"escribir",
+"Poner letras."
+],
+"escribirlo": [
+"escribir",
+"Ponerlo por escrito."
+],
+"escribirse": [
+"escribir",
+"Ser escrito."
+],
 "escribió": [
 "escribir",
 "Escribir: poner palabras en un papel."
+],
+"escribían": [
+"escribir",
+"Ponían letras."
+],
+"escrita": [
+"escribir",
+"Con letras."
 ],
 "escrito": [
 "escribir",
 "Escribir: poner palabras en un papel o una pantalla."
 ],
+"escritores": [
+"escritor",
+"Personas que escriben."
+],
 "escritos": [
 "escribir",
 "Escribir: poner palabras en un papel o una pantalla."
+],
+"escritura": [
+"escritura",
+"Forma de escribir."
+],
+"escrituras": [
+"escritura",
+"Formas de escribir."
 ],
 "escucha": [
 "escuchar",
@@ -3631,6 +6723,10 @@
 "escuchar",
 "Poner atención a lo que se oye."
 ],
+"escuchen": [
+"escuchar",
+"Oigan."
+],
 "escucho": [
 "escuchar",
 "Escuchar: poner atención a lo que se oye."
@@ -3639,6 +6735,10 @@
 "escáner",
 "Máquina que hace imágenes del interior de las cosas."
 ],
+"escépticos": [
+"escéptico",
+"Que dudan."
+],
 "ese": [
 "ese",
 "Indica una cosa que no está cerca."
@@ -3646,6 +6746,18 @@
 "esfinge": [
 "esfinge",
 "Estatua con cuerpo de león y cabeza de persona."
+],
+"esfuerzan": [
+"esforzar",
+"Trabajan duro."
+],
+"esfuerzo": [
+"esfuerzo",
+"Trabajo duro."
+],
+"eslabón": [
+"eslabón",
+"Pieza de una cadena."
 ],
 "eso": [
 "eso",
@@ -3670,6 +6782,10 @@
 "espacio": [
 "espacio",
 "La tecla más larga del teclado."
+],
+"espacios": [
+"espacio",
+"Lugares."
 ],
 "espada": [
 "espada",
@@ -3715,13 +6831,37 @@
 "especie",
 "Grupo de animales o plantas iguales."
 ],
+"espectadores": [
+"espectador",
+"Personas que miran."
+],
+"específicos": [
+"específico",
+"Concretos."
+],
 "espera": [
 "esperar",
 "Esperar: quedarse en un sitio hasta que pasa algo."
 ],
+"esperaba": [
+"esperar",
+"Creía."
+],
 "esperaban": [
 "esperar",
 "Esperar: creer que algo va a pasar."
+],
+"esperan": [
+"esperar",
+"Confían."
+],
+"esperando": [
+"esperar",
+"Aguardando."
+],
+"esperanza": [
+"esperanza",
+"Lo que se desea."
 ],
 "esperar": [
 "esperar",
@@ -3731,6 +6871,14 @@
 "espinosaurio",
 "Dinosaurio con una vela en la espalda que comía peces."
 ],
+"esponjosos": [
+"esponja",
+"Suaves y blandos."
+],
+"espíritu": [
+"espíritu",
+"Forma de ser."
+],
 "esqueleto": [
 "esqueleto",
 "Todos los huesos del cuerpo."
@@ -3738,6 +6886,10 @@
 "esqueletos": [
 "esqueleto",
 "Todos los huesos del cuerpo. En Minecraft, un monstruo."
+],
+"esquina": [
+"esquina",
+"Rincón."
 ],
 "esta": [
 "este",
@@ -3755,9 +6907,17 @@
 "estación",
 "Lugar con edificios para un trabajo, como la investigación."
 ],
+"estadio": [
+"estadio",
+"Lugar grande para hacer deporte."
+],
 "estado": [
 "estado",
 "Cómo está algo o alguien en un momento."
+],
+"estados": [
+"estado",
+"Países."
 ],
 "estados unidos": [
 "Estados Unidos",
@@ -3766,6 +6926,38 @@
 "estadounidense": [
 "estadounidense",
 "De Estados Unidos."
+],
+"estadísticos": [
+"estadística",
+"Con números."
+],
+"estamos": [
+"estar",
+"Forma de \"estar\" para \"nosotros\"."
+],
+"estancada": [
+"estancar",
+"Que no se mueve."
+],
+"estanques": [
+"estanque",
+"Lagos pequeños."
+],
+"estanterías": [
+"estantería",
+"Muebles para libros."
+],
+"estar": [
+"estar",
+"Encontrarse en un lugar o estado."
+],
+"estaremos": [
+"estar",
+"Forma de \"estar\"."
+],
+"estarían": [
+"estar",
+"Forma de \"estar\"."
 ],
 "estas": [
 "este",
@@ -3779,17 +6971,41 @@
 "este",
 "Indica una cosa que está cerca."
 ],
+"estilo": [
+"estilo",
+"Forma de hacer las cosas."
+],
 "estiraría": [
 "estirar",
 "Estirar: hacer algo más largo."
+],
+"esto": [
+"esto",
+"Esta cosa."
 ],
 "estos": [
 "este",
 "Este: palabra para señalar algo cerca."
 ],
+"estoy": [
+"estar",
+"Forma de \"estar\" para \"yo\"."
+],
+"estrategia": [
+"estrategia",
+"Plan para ganar."
+],
 "estrategias": [
 "estrategia",
 "Plan para conseguir algo."
+],
+"estrecha": [
+"estrecho",
+"Muy cercana."
+],
+"estrecho": [
+"estrecho",
+"Poco ancho."
 ],
 "estrecho de gibraltar": [
 "estrecho de Gibraltar",
@@ -3803,9 +7019,37 @@
 "estrella",
 "Punto de luz en el cielo; en un juego, premio con esa forma."
 ],
+"estresante": [
+"estrés",
+"Que pone nervioso."
+],
+"estrictas": [
+"estricto",
+"Muy serias."
+],
+"estrictos": [
+"estricto",
+"Muy serios."
+],
 "estropeaba": [
 "estropear",
 "Estropearse: ponerse malo o romperse."
+],
+"estructura": [
+"estructura",
+"Forma de algo."
+],
+"estruendo": [
+"estruendo",
+"Ruido muy fuerte."
+],
+"estrés": [
+"estrés",
+"Nervios y presión."
+],
+"estudiaban": [
+"estudiar",
+"Investigaban."
 ],
 "estudiado": [
 "estudiar",
@@ -3819,6 +7063,18 @@
 "estudiar",
 "Estudiar: trabajar para aprender."
 ],
+"estudiando": [
+"estudiar",
+"Investigando."
+],
+"estudiantes": [
+"estudiante",
+"Personas que estudian."
+],
+"estudiar": [
+"estudiar",
+"Aprender."
+],
 "estudiaron": [
 "estudiar",
 "Estudiar: trabajar para aprender."
@@ -3826,6 +7082,22 @@
 "estudio": [
 "estudiar",
 "Estudiar: trabajar para aprender."
+],
+"estudios": [
+"estudio",
+"Investigaciones."
+],
+"estudiándolo": [
+"estudiar",
+"Investigándolo."
+],
+"estudió": [
+"estudiar",
+"Investigó."
+],
+"estuvieran": [
+"estar",
+"Forma de \"estar\"."
 ],
 "estuvieron": [
 "estar",
@@ -3851,6 +7123,14 @@
 "estar",
 "Estar: decir dónde o cómo está algo."
 ],
+"estén": [
+"estar",
+"Forma de \"estar\"."
+],
+"estés": [
+"estar",
+"Forma de \"estar\"."
+],
 "estómago": [
 "estómago",
 "Parte del cuerpo donde va la comida."
@@ -3867,6 +7147,10 @@
 "europeo",
 "De Europa."
 ],
+"evento": [
+"evento",
+"Acontecimiento."
+],
 "eventos": [
 "evento",
 "Algo especial que pasa en un momento concreto."
@@ -3875,17 +7159,65 @@
 "Everest",
 "Nombre de la montaña más alta de la Tierra."
 ],
+"evidente": [
+"evidente",
+"Fácil de ver."
+],
+"evitaban": [
+"evitar",
+"Se alejaban."
+],
+"evitan": [
+"evitar",
+"Hacen que no pase."
+],
+"evitar": [
+"evitar",
+"Hacer que no pase."
+],
+"evolución": [
+"evolución",
+"Cambio lento de los seres vivos."
+],
 "exactamente": [
 "exacto",
 "Sin error."
+],
+"exagerados": [
+"exagerar",
+"Más grandes de lo real."
+],
+"exagerar": [
+"exagerar",
+"Decir que es más de lo que es."
 ],
 "examen": [
 "examen",
 "Prueba en el colegio para ver qué sabes."
 ],
+"examina": [
+"examinar",
+"Mira con cuidado."
+],
+"excavaciones": [
+"excavación",
+"Trabajos de cavar para buscar restos."
+],
 "excavación": [
 "excavación",
 "Trabajo de sacar algo de la tierra con cuidado."
+],
+"excavando": [
+"excavar",
+"Cavando."
+],
+"excelente": [
+"excelente",
+"Muy bueno."
+],
+"excelentes": [
+"excelente",
+"Muy buenos."
 ],
 "excrementos": [
 "excremento",
@@ -3895,13 +7227,25 @@
 "excursionista",
 "Persona que camina por el campo o la montaña."
 ],
+"exige": [
+"exigir",
+"Necesita."
+],
 "exigen": [
 "exigir",
 "Exigir: necesitar algo de forma obligatoria."
 ],
+"exigir": [
+"exigir",
+"Pedir con fuerza."
+],
 "exista": [
 "existir",
 "Existir: ser real."
+],
+"existan": [
+"existir",
+"Haya."
 ],
 "existe": [
 "existir",
@@ -3919,6 +7263,10 @@
 "existir",
 "Existir: ser real; estar en el mundo."
 ],
+"existir": [
+"existir",
+"Haber."
+],
 "existió": [
 "existir",
 "Existir: ser real."
@@ -3930,6 +7278,22 @@
 "existían": [
 "existir",
 "Existir: ser real."
+],
+"experiencia": [
+"experiencia",
+"Algo que vives."
+],
+"experimentados": [
+"experiencia",
+"Con experiencia."
+],
+"experimentar": [
+"experimentar",
+"Probar."
+],
+"experimento": [
+"experimento",
+"Prueba para aprender algo."
 ],
 "experimentos": [
 "experimento",
@@ -3943,6 +7307,14 @@
 "experto",
 "Persona que sabe mucho de algo."
 ],
+"explica": [
+"explicar",
+"Hace que se entienda."
+],
+"explicaba": [
+"explicar",
+"Hacía entender."
+],
 "explicaciones": [
 "explicación",
 "Lo que dices para que alguien entienda algo."
@@ -3954,6 +7326,18 @@
 "explican": [
 "explicar",
 "Explicar: decir algo de forma clara."
+],
+"explicar": [
+"explicar",
+"Hacer que se entienda."
+],
+"explicarlo": [
+"explicar",
+"Hacerlo entender."
+],
+"exploración": [
+"exploración",
+"Viajar para conocer."
 ],
 "explorador": [
 "explorador",
@@ -3975,9 +7359,17 @@
 "explotar",
 "Explotar: romperse de golpe con mucho ruido y fuego."
 ],
+"expone": [
+"exponer",
+"Se enseña al público."
+],
 "expresarse": [
 "expresar",
 "Expresarse: mostrar lo que sientes o piensas."
+],
+"expresión": [
+"expresión",
+"Forma de mostrar lo que sientes."
 ],
 "expuestos": [
 "expuesto",
@@ -3991,6 +7383,34 @@
 "expulsar",
 "Expulsar: sacar algo fuera."
 ],
+"expulsamos": [
+"expulsar",
+"Echamos fuera."
+],
+"extinción": [
+"extinción",
+"Desaparición de una especie."
+],
+"extra": [
+"extra",
+"Más."
+],
+"extraerlo": [
+"extraer",
+"Sacarlo."
+],
+"extraordinaria": [
+"extraordinario",
+"Fuera de lo normal."
+],
+"extraordinario": [
+"extraordinario",
+"Fuera de lo normal."
+],
+"extraterrestre": [
+"extraterrestre",
+"De fuera de la Tierra."
+],
 "extraterrestres": [
 "extraterrestre",
 "Ser de otro planeta."
@@ -3998,6 +7418,10 @@
 "extraña": [
 "extraño",
 "Raro; diferente de lo normal."
+],
+"extrañar": [
+"extrañar",
+"Echar de menos; sorprender."
 ],
 "extrañas": [
 "extraño",
@@ -4011,9 +7435,17 @@
 "extraño",
 "Raro; diferente de lo normal."
 ],
+"extremadamente": [
+"extremo",
+"Muchísimo."
+],
 "extreme": [
 "extreme",
 "Palabra inglesa: «extremo»."
+],
+"extremo": [
+"extremo",
+"Muy fuerte."
 ],
 "extremos": [
 "extremo",
@@ -4027,17 +7459,69 @@
 "fabricar",
 "Fabricar: hacer cosas con materiales."
 ],
+"fabricó": [
+"fabricar",
+"Hizo."
+],
+"facilidad": [
+"fácil",
+"Ser fácil."
+],
+"factores": [
+"factor",
+"Causas."
+],
 "factory": [
 "factory",
 "Palabra inglesa: «fábrica»."
+],
+"fallar": [
+"fallar",
+"Equivocarse."
+],
+"fallo": [
+"fallo",
+"Error."
+],
+"fallos": [
+"fallo",
+"Errores."
+],
+"falsa": [
+"falso",
+"No verdadera."
+],
+"falsificación": [
+"falsificación",
+"Copia falsa."
 ],
 "falta": [
 "faltar",
 "Faltar: no estar algo que es necesario."
 ],
+"faltar": [
+"faltar",
+"No estar."
+],
+"fama": [
+"fama",
+"Ser conocido."
+],
 "familia": [
 "familia",
 "Padres, hijos, hermanos..."
+],
+"familiar": [
+"familiar",
+"De la familia."
+],
+"familiares": [
+"familiar",
+"De familia."
+],
+"familias": [
+"familia",
+"Padres e hijos."
 ],
 "famosa": [
 "famoso",
@@ -4071,6 +7555,18 @@
 "faraón",
 "Rey del antiguo Egipto."
 ],
+"fascinaba": [
+"fascinar",
+"Le gustaba muchísimo."
+],
+"fascinante": [
+"fascinar",
+"Muy interesante."
+],
+"fascinantes": [
+"fascinar",
+"Muy interesantes."
+],
 "favorita": [
 "favorito",
 "La que más te gusta."
@@ -4082,6 +7578,10 @@
 "favoritos": [
 "favorito",
 "El que más te gusta."
+],
+"felices": [
+"feliz",
+"Contentos."
 ],
 "femenino": [
 "femenino",
@@ -4099,21 +7599,77 @@
 "fermentar",
 "Fermentar: cambiar la comida con bacterias, despacio."
 ],
+"fermi": [
+"fermi",
+"Apellido de un científico."
+],
+"fiaba": [
+"fiar",
+"Confiaba."
+],
+"fiable": [
+"fiable",
+"En la que se puede confiar."
+],
+"fiarse": [
+"fiar",
+"Confiar."
+],
 "ficción": [
 "ficción",
 "Historia inventada."
+],
+"fiebre": [
+"fiebre",
+"Temperatura alta del cuerpo."
 ],
 "fiesta": [
 "fiesta",
 "Reunión de personas para celebrar algo."
 ],
+"figura": [
+"figura",
+"Forma de una persona o cosa."
+],
+"figuras": [
+"figura",
+"Formas de personas."
+],
+"fijan": [
+"fijar",
+"Miran con atención."
+],
+"fijar": [
+"fijar",
+"Sujetar."
+],
+"fijarse": [
+"fijarse",
+"Mirar con atención."
+],
+"fijó": [
+"fijar",
+"Se dio cuenta."
+],
+"filamentos": [
+"filamento",
+"Hilos muy finos."
+],
 "filósofo": [
 "filósofo",
 "Persona que piensa sobre las grandes preguntas de la vida."
 ],
+"filósofos": [
+"filósofo",
+"Pensadores."
+],
 "fin": [
 "fin",
 "El final."
+],
+"fina": [
+"fino",
+"Delgada."
 ],
 "final": [
 "final",
@@ -4123,13 +7679,29 @@
 "final",
 "La última parte."
 ],
+"finalmente": [
+"final",
+"Al final."
+],
 "finas": [
 "fino",
 "Delgado."
 ],
+"fines": [
+"fin",
+"Finales."
+],
+"finos": [
+"fino",
+"Delgados."
+],
 "finísimas": [
 "fino",
 "Fino: delgado. «Finísimo» es muy, muy fino."
+],
+"firmará": [
+"firmar",
+"Pondrá su nombre."
 ],
 "flash": [
 "flash",
@@ -4139,6 +7711,18 @@
 "Fleming",
 "Nombre de un científico escocés."
 ],
+"flor": [
+"flor",
+"Parte bonita de una planta."
+],
+"flores": [
+"flor",
+"Partes bonitas de las plantas."
+],
+"flotando": [
+"flotar",
+"Sin caer."
+],
 "foca": [
 "foca",
 "Animal del mar con el cuerpo gordo, que vive en zonas frías."
@@ -4146,6 +7730,10 @@
 "focas": [
 "foca",
 "Animal del mar con el cuerpo gordo, que vive en zonas frías."
+],
+"fomenta": [
+"fomentar",
+"Ayuda a crecer."
 ],
 "fondo": [
 "fondo",
@@ -4155,9 +7743,37 @@
 "forma",
 "Cómo es algo por fuera."
 ],
+"formaba": [
+"formar",
+"Era parte."
+],
+"formaban": [
+"formar",
+"Hacían."
+],
+"formadas": [
+"formar",
+"Hechas."
+],
+"formado": [
+"formar",
+"Hecho."
+],
+"forman": [
+"formar",
+"Hacen."
+],
 "formar": [
 "formar",
 "Formar: crear, hacer."
+],
+"formaría": [
+"formar",
+"Sería parte."
+],
+"formas": [
+"forma",
+"Maneras."
 ],
 "fortnite": [
 "fortnite",
@@ -4183,13 +7799,49 @@
 "fotografía",
 "Imagen que haces con una cámara."
 ],
+"fotografías": [
+"fotografía",
+"Fotos."
+],
 "fotos": [
 "foto",
 "Imagen hecha con una cámara."
 ],
+"fracasado": [
+"fracasar",
+"No conseguido."
+],
+"fracasan": [
+"fracasar",
+"No lo consiguen."
+],
+"fracción": [
+"fracción",
+"Parte muy pequeña."
+],
+"francesas": [
+"francés",
+"De Francia."
+],
+"franceses": [
+"francés",
+"De Francia."
+],
 "francia": [
 "francia",
 "Nombre de un país de Europa."
+],
+"francés": [
+"francés",
+"De Francia."
+],
+"françois": [
+"françois",
+"Nombre de hombre francés."
+],
+"frase": [
+"frase",
+"Grupo de palabras."
 ],
 "freerunning": [
 "freerunning",
@@ -4207,6 +7859,10 @@
 "fresco",
 "Un poco frío; también, comida nueva y buena."
 ],
+"friedman": [
+"friedman",
+"Apellido."
+],
 "fritas": [
 "frito",
 "Cocinado en aceite muy caliente."
@@ -4222,6 +7878,10 @@
 "frontera": [
 "frontera",
 "Línea que separa dos lugares."
+],
+"fronteras": [
+"frontera",
+"Límites entre países."
 ],
 "fruta": [
 "fruta",
@@ -4267,6 +7927,10 @@
 "fuego",
 "Lo que da calor y luz cuando algo se quema."
 ],
+"fuente": [
+"fuente",
+"Origen."
+],
 "fuera": [
 "fuera",
 "En la parte de afuera."
@@ -4283,9 +7947,17 @@
 "fuerte",
 "Que tiene mucha fuerza."
 ],
+"fuerza": [
+"fuerza",
+"Poder."
+],
 "fuerzas": [
 "fuerza",
 "Lo que mueve o empuja algo."
+],
+"fuga": [
+"fuga",
+"Escape."
 ],
 "fui": [
 "ser / ir",
@@ -4307,6 +7979,14 @@
 "funcionar",
 "Funcionar: hacer bien su trabajo una máquina."
 ],
+"funcionar": [
+"funcionar",
+"Ir bien."
+],
+"funcionarán": [
+"funcionar",
+"Irán bien."
+],
 "funcione": [
 "funcionar",
 "Funcionar: trabajar bien una máquina o una idea."
@@ -4318,6 +7998,10 @@
 "fundaron": [
 "fundar",
 "Fundar: crear algo nuevo, como una empresa."
+],
+"futuras": [
+"futuro",
+"Que vendrán."
 ],
 "futuro": [
 "futuro",
@@ -4342,6 +8026,10 @@
 "fácilmente": [
 "fácil",
 "Que no es difícil."
+],
+"físico": [
+"físico",
+"Del cuerpo."
 ],
 "fórmula": [
 "fórmula",
@@ -4391,6 +8079,18 @@
 "ganar",
 "Ganar: ser el mejor en un juego o una competición."
 ],
+"ganaban": [
+"ganar",
+"Conseguían."
+],
+"ganaderos": [
+"ganadero",
+"Personas que crían vacas."
+],
+"ganado": [
+"ganado",
+"Vacas y otros animales de granja."
+],
 "ganamos": [
 "ganar",
 "Ganar: ser el mejor en un juego o una competición."
@@ -4403,6 +8103,10 @@
 "ganar",
 "Ser el mejor en un juego o una competición."
 ],
+"ganarse": [
+"ganar",
+"Conseguir."
+],
 "ganarías": [
 "ganar",
 "Ganar: ser el mejor en un juego; también, recibir dinero."
@@ -4414,6 +8118,10 @@
 "gancho": [
 "gancho",
 "Trozo de metal curvo para coger algo."
+],
+"ganchos": [
+"gancho",
+"Piezas curvas que enganchan."
 ],
 "ganó": [
 "ganar",
@@ -4431,9 +8139,17 @@
 "gas",
 "Cosa como el aire, sin forma."
 ],
+"gastaba": [
+"gastar",
+"Usaba."
+],
 "gastan": [
 "gastar",
 "Gastar: usar dinero o energía."
+],
+"gastaría": [
+"gastar",
+"Usaría."
 ],
 "gata": [
 "gato",
@@ -4447,13 +8163,45 @@
 "gato",
 "Animal pequeño de casa que dice «miau»."
 ],
+"gemelos": [
+"gemelo",
+"Hermanos nacidos a la vez."
+],
+"generación": [
+"generación",
+"Personas de la misma edad."
+],
+"general": [
+"general",
+"Común."
+],
 "genial": [
 "genial",
 "Muy bueno."
 ],
+"geniales": [
+"genial",
+"Muy buenos."
+],
+"genio": [
+"genio",
+"Persona muy lista."
+],
 "gente": [
 "gente",
 "Personas."
+],
+"genéticamente": [
+"gen",
+"En los genes."
+],
+"george": [
+"george",
+"Nombre de hombre."
+],
+"gesto": [
+"gesto",
+"Acción que muestra un sentimiento."
 ],
 "gigante": [
 "gigante",
@@ -4467,6 +8215,10 @@
 "gimnasia",
 "Ejercicios para el cuerpo."
 ],
+"gimnasio": [
+"gimnasio",
+"Lugar para hacer ejercicio."
+],
 "gira": [
 "girar",
 "Girar: dar vueltas."
@@ -4474,6 +8226,10 @@
 "giran": [
 "girar",
 "Girar: dar vueltas."
+],
+"girando": [
+"girar",
+"Dando vueltas."
 ],
 "giros": [
 "giro",
@@ -4487,9 +8243,17 @@
 "glitch",
 "Palabra inglesa: error de un juego."
 ],
+"glutamato": [
+"glutamato",
+"Sustancia que da el sabor umami."
+],
 "golpe": [
 "golpe",
 "Choque fuerte."
+],
+"gorrión": [
+"gorrión",
+"Pájaro pequeño."
 ],
 "gota": [
 "gota",
@@ -4498,6 +8262,10 @@
 "graba": [
 "grabar",
 "Grabar: guardar imágenes o sonido."
+],
+"grababan": [
+"grabar",
+"Filmaban."
 ],
 "grabar": [
 "grabar",
@@ -4519,6 +8287,10 @@
 "gramática",
 "Las reglas de un idioma."
 ],
+"gramáticas": [
+"gramática",
+"Libros con las reglas de una lengua."
+],
 "gran": [
 "grande",
 "Grande: que mide mucho."
@@ -4531,9 +8303,17 @@
 "grande",
 "Grande: que mide mucho."
 ],
+"granja": [
+"granja",
+"Lugar con animales en el campo."
+],
 "granjas": [
 "granja",
 "Lugar en el campo donde se crían animales."
+],
+"grano": [
+"grano",
+"Semilla pequeña."
 ],
 "gratis": [
 "gratis",
@@ -4547,6 +8327,10 @@
 "gravedad",
 "Fuerza que atrae las cosas hacia abajo."
 ],
+"graves": [
+"grave",
+"Serios."
+],
 "grecia": [
 "Grecia",
 "Nombre de un país del sur de Europa."
@@ -4558,6 +8342,14 @@
 "griego": [
 "griego",
 "De Grecia; la lengua de Grecia."
+],
+"griegos": [
+"griego",
+"De Grecia."
+],
+"grietas": [
+"grieta",
+"Aberturas largas."
 ],
 "grillo": [
 "grillo",
@@ -4571,9 +8363,33 @@
 "gris",
 "Color entre el blanco y el negro."
 ],
+"grises": [
+"gris",
+"Color entre blanco y negro."
+],
+"grita": [
+"gritar",
+"Habla muy fuerte."
+],
+"gritamos": [
+"gritar",
+"Hablamos muy fuerte."
+],
+"gritando": [
+"gritar",
+"Hablando muy fuerte."
+],
+"gritar": [
+"gritar",
+"Hablar muy fuerte."
+],
 "groenlandia": [
 "groenlandia",
 "Nombre de una isla muy grande y fría."
+],
+"gruesa": [
+"grueso",
+"Ancha."
 ],
 "gruesas": [
 "grueso",
@@ -4591,6 +8407,10 @@
 "gruñir",
 "Gruñir: hacer un ruido fuerte para avisar que estás enfadado."
 ],
+"gráficos": [
+"gráfico",
+"Imágenes del juego."
+],
 "guarda": [
 "guardar",
 "Guardar: poner algo en un sitio para tenerlo."
@@ -4607,6 +8427,10 @@
 "guardacostas",
 "Policía del mar."
 ],
+"guardado": [
+"guardar",
+"Conservado."
+],
 "guardan": [
 "guardar",
 "Guardar: poner algo en un sitio para tenerlo."
@@ -4615,6 +8439,18 @@
 "guardar",
 "Guardar: poner algo en un sitio para tenerlo."
 ],
+"guardara": [
+"guardar",
+"Tuviera."
+],
+"guardarte": [
+"guardar",
+"Esconderte."
+],
+"guardería": [
+"guardería",
+"Lugar donde crecen los pequeños."
+],
 "guepardo": [
 "guepardo",
 "Gran gato con manchas, muy rápido."
@@ -4622,6 +8458,10 @@
 "guerra": [
 "guerra",
 "Lucha entre países o grupos."
+],
+"guerras": [
+"guerra",
+"Luchas entre países."
 ],
 "guinness": [
 "guinness",
@@ -4639,6 +8479,10 @@
 "gustar",
 "Gustar: ser agradable para alguien."
 ],
+"gustaba": [
+"gustar",
+"Le parecía bien."
+],
 "gustamos": [
 "gustar",
 "Gustar: ser agradable para alguien."
@@ -4646,6 +8490,10 @@
 "gustan": [
 "gustar",
 "Gustar: ser agradable para alguien."
+],
+"gustaron": [
+"gustar",
+"Les parecieron bien."
 ],
 "gustaría": [
 "gustar",
@@ -4659,6 +8507,10 @@
 "gustar",
 "Gustar: ser agradable para alguien."
 ],
+"géneros": [
+"género",
+"Tipos."
+],
 "ha": [
 "haber",
 "Haber: verbo para formar el pasado («ha hecho»)."
@@ -4671,6 +8523,10 @@
 "habilidad",
 "Capacidad para hacer algo bien."
 ],
+"habilidades": [
+"habilidad",
+"Cosas que sabes hacer."
+],
 "habitación": [
 "habitación",
 "Cada sala de una casa."
@@ -4682,6 +8538,18 @@
 "habitual": [
 "habitual",
 "Normal; que se hace muchas veces."
+],
+"habla": [
+"hablar",
+"Dice palabras."
+],
+"hablaba": [
+"hablar",
+"Decía."
+],
+"hablamos": [
+"hablar",
+"Decimos."
 ],
 "hablan": [
 "hablar",
@@ -4702,6 +8570,14 @@
 "habrá": [
 "haber",
 "Haber: forma del pasado de «hay»."
+],
+"habría": [
+"haber",
+"Forma de \"haber\"."
+],
+"habrían": [
+"haber",
+"Forma de \"haber\"."
 ],
 "había": [
 "haber",
@@ -4735,9 +8611,21 @@
 "hacer",
 "Hacer: crear o producir algo."
 ],
+"hacerla": [
+"hacer",
+"Hacer algo."
+],
 "hacerles": [
 "hacer",
 "Hacer: crear o producir algo."
+],
+"hacerlo": [
+"hacer",
+"Realizarlo."
+],
+"hacerlos": [
+"hacer",
+"Hacer que."
 ],
 "hacerse": [
 "hacer",
@@ -4763,6 +8651,10 @@
 "hacer",
 "Forma incorrecta. Lo correcto es «hicieron»."
 ],
+"haciéndolo": [
+"hacer",
+"Realizándolo."
+],
 "hació": [
 "hacer",
 "Forma incorrecta. Lo correcto es «hizo»."
@@ -4774,6 +8666,10 @@
 "hacían": [
 "hacer",
 "Hacer: crear o producir algo."
+],
+"haga": [
+"hacer",
+"Forma de \"hacer\"."
 ],
 "haggis": [
 "haggis",
@@ -4839,17 +8735,45 @@
 "haber",
 "Haber: decir que algo existe o está en un lugar."
 ],
+"haya": [
+"haber",
+"Forma de \"haber\"."
+],
+"hayas": [
+"haber",
+"Forma de \"haber\"."
+],
 "haz": [
 "hacer",
 "Hacer: crear o producir algo."
+],
+"hazaña": [
+"hazaña",
+"Acción admirable."
 ],
 "he": [
 "haber",
 "Haber: verbo para formar el pasado («ha hecho»)."
 ],
+"hecha": [
+"hacer",
+"Realizada."
+],
 "hecho": [
 "hacer",
 "Hacer: crear o producir algo."
+],
+"heladas": [
+"helar",
+"Muy frías."
+],
+"hembra": [
+"hembra",
+"Animal que tiene crías."
+],
+"hembras": [
+"hembra",
+"Animales que tienen crías."
 ],
 "hemos": [
 "haber",
@@ -4859,9 +8783,21 @@
 "herida",
 "Daño en la piel o en el cuerpo."
 ],
+"herir": [
+"herir",
+"Hacer daño."
+],
 "hermano": [
 "hermano",
 "Chico con tus mismos padres."
+],
+"hermanos": [
+"hermano",
+"Hijos de los mismos padres."
+],
+"hermosos": [
+"hermoso",
+"Bonitos."
 ],
 "herramienta": [
 "herramienta",
@@ -4887,6 +8823,10 @@
 "hierro",
 "Metal gris y fuerte."
 ],
+"hijos": [
+"hijo",
+"Niños de unos padres."
+],
 "hilos": [
 "hilo",
 "Línea muy fina, como para coser."
@@ -4907,6 +8847,10 @@
 "historia",
 "Cuento de cosas que pasan."
 ],
+"histórico": [
+"historia",
+"Importante en la historia."
+],
 "hizo": [
 "hacer",
 "Hacer: crear o producir algo."
@@ -4914,6 +8858,10 @@
 "hiérvela": [
 "hervir",
 "Hervir: calentar un líquido hasta que hace burbujas."
+],
+"hoja": [
+"hoja",
+"Parte verde de una planta."
 ],
 "hojas": [
 "hoja",
@@ -4923,9 +8871,21 @@
 "hombre",
 "Persona adulta masculina."
 ],
+"hombros": [
+"hombro",
+"Partes del cuerpo entre el cuello y el brazo."
+],
+"hondo": [
+"hondo",
+"Profundo."
+],
 "hora": [
 "hora",
 "Sesenta minutos."
+],
+"horario": [
+"horario",
+"Horas planeadas."
 ],
 "horas": [
 "hora",
@@ -4951,6 +8911,14 @@
 "horno",
 "Aparato de cocina para calentar o cocinar."
 ],
+"hornos": [
+"horno",
+"Aparatos para cocinar con calor."
+],
+"hotel": [
+"hotel",
+"Lugar para dormir de viaje."
+],
 "howard carter": [
 "howard carter",
 "Nombre de un arqueólogo británico."
@@ -4958,6 +8926,10 @@
 "hoy": [
 "hoy",
 "Este día, el día de ahora."
+],
+"hubiera": [
+"haber",
+"Forma de \"haber\"."
 ],
 "hubo": [
 "haber",
@@ -4995,13 +8967,41 @@
 "huevo",
 "Lo que ponen las gallinas."
 ],
+"hugh": [
+"hugh",
+"Nombre de hombre."
+],
+"huir": [
+"huir",
+"Escapar corriendo."
+],
+"humana": [
+"humano",
+"De las personas."
+],
+"humanas": [
+"humano",
+"De las personas."
+],
+"humanidad": [
+"humanidad",
+"Todas las personas."
+],
 "humano": [
 "humano",
 "Persona."
 ],
+"humanos": [
+"humano",
+"Personas."
+],
 "humedad": [
 "humedad",
 "Agua en el aire o en el suelo."
+],
+"humedales": [
+"humedal",
+"Tierras con agua."
 ],
 "humo": [
 "humo",
@@ -5019,13 +9019,25 @@
 "hundir",
 "Hundir: hacer que algo baje bajo el agua."
 ],
+"huyendo": [
+"huir",
+"Escapando."
+],
 "hércules": [
 "Hércules",
 "Nombre de un héroe de las leyendas griegas."
 ],
+"húmedo": [
+"húmedo",
+"Con agua."
+],
 "ia": [
 "IA",
 "Inteligencia artificial: programa que aprende."
+],
+"iba": [
+"ir",
+"Se movía."
 ],
 "ictiosaurio": [
 "ictiosaurio",
@@ -5035,9 +9047,57 @@
 "idea",
 "Algo que piensas; un plan."
 ],
+"ideas": [
+"idea",
+"Pensamientos."
+],
+"identificaron": [
+"identificar",
+"Reconocieron."
+],
+"identificó": [
+"identificar",
+"Reconoció."
+],
+"idioma": [
+"idioma",
+"Lengua."
+],
+"idiomas": [
+"idioma",
+"Lenguas."
+],
+"ido": [
+"ir",
+"Marchado."
+],
+"idéntica": [
+"idéntico",
+"Igual."
+],
+"ignorarlas": [
+"ignorar",
+"No hacerles caso."
+],
+"igual": [
+"igual",
+"Lo mismo."
+],
+"iguales": [
+"igual",
+"Lo mismo."
+],
+"ikeda": [
+"ikeda",
+"Apellido japonés."
+],
 "ilumina": [
 "iluminar",
 "Iluminar: dar luz."
+],
+"ilustraciones": [
+"ilustración",
+"Dibujos."
 ],
 "imagen": [
 "imagen",
@@ -5047,9 +9107,17 @@
 "imaginar",
 "Imaginar: pensar en algo que no ves."
 ],
+"imaginaban": [
+"imaginar",
+"Pensaban."
+],
 "imaginación": [
 "imaginación",
 "Capacidad de pensar cosas nuevas."
+],
+"imaginamos": [
+"imaginar",
+"Pensamos."
 ],
 "imaginan": [
 "imaginar",
@@ -5063,6 +9131,46 @@
 "imaginar",
 "Imaginar: pensar en algo que no ves."
 ],
+"imaginaron": [
+"imaginar",
+"Pensaron."
+],
+"imaginas": [
+"imaginar",
+"Piensas en algo que no ves."
+],
+"imitar": [
+"imitar",
+"Copiar."
+],
+"impacto": [
+"impacto",
+"Golpe."
+],
+"impedir": [
+"impedir",
+"No dejar que pase."
+],
+"impide": [
+"impedir",
+"No deja."
+],
+"implican": [
+"implicar",
+"Tienen como parte."
+],
+"importa": [
+"importar",
+"Tiene importancia."
+],
+"importaba": [
+"importar",
+"Era importante."
+],
+"importancia": [
+"importancia",
+"Valor."
+],
 "importante": [
 "importante",
 "Que tiene mucho valor."
@@ -5075,13 +9183,53 @@
 "imposible",
 "Que no se puede hacer."
 ],
+"imprescindible": [
+"imprescindible",
+"Muy necesario."
+],
+"imprescindibles": [
+"imprescindible",
+"Muy necesarios."
+],
+"impresionado": [
+"impresionar",
+"Sorprendido."
+],
+"impresionante": [
+"impresionar",
+"Que sorprende mucho."
+],
+"impresionantes": [
+"impresionar",
+"Que sorprenden mucho."
+],
+"impresionar": [
+"impresionar",
+"Sorprender."
+],
+"impresionó": [
+"impresionar",
+"Sorprendió."
+],
+"imágenes": [
+"imagen",
+"Dibujos o fotos."
+],
 "incendios": [
 "incendio",
 "Fuego grande que destruye."
 ],
+"inclusión": [
+"incluir",
+"Acto de incluir."
+],
 "incluso": [
 "incluso",
 "También (algo que sorprende)."
+],
+"incluyó": [
+"incluir",
+"Metió."
 ],
 "increíble": [
 "increíble",
@@ -5095,9 +9243,29 @@
 "increíble",
 "Muy difícil de creer; fantástico."
 ],
+"independiente": [
+"independiente",
+"Que no depende de otro."
+],
+"independientes": [
+"independiente",
+"Que no dependen de nadie."
+],
 "india": [
 "india",
 "Nombre de un país grande de Asia."
+],
+"inesperada": [
+"inesperado",
+"Que no se esperaba."
+],
+"inesperado": [
+"inesperado",
+"Que no se espera."
+],
+"inesperados": [
+"inesperado",
+"Que no se esperaban."
 ],
 "infección": [
 "infección",
@@ -5107,13 +9275,37 @@
 "infectado",
 "Con bacterias que hacen daño."
 ],
+"infectado": [
+"infectar",
+"Con una enfermedad."
+],
 "infinita": [
 "infinito",
 "Que no tiene fin."
 ],
+"influencia": [
+"influencia",
+"Efecto sobre algo."
+],
+"influido": [
+"influir",
+"Tenido efecto."
+],
+"influir": [
+"influir",
+"Tener efecto."
+],
+"influyeron": [
+"influir",
+"Tuvieron efecto."
+],
 "información": [
 "información",
 "Datos que te dicen algo."
+],
+"informar": [
+"informar",
+"Dar información."
 ],
 "ingeniero": [
 "ingeniero",
@@ -5123,9 +9315,25 @@
 "ingeniero",
 "Persona que diseña máquinas o construcciones."
 ],
+"ingeniosa": [
+"ingenio",
+"Muy lista."
+],
+"ingenioso": [
+"ingenioso",
+"Muy listo."
+],
+"ingeniosos": [
+"ingenio",
+"Muy listos."
+],
 "inglaterra": [
 "Inglaterra",
 "Nombre de un país del Reino Unido."
+],
+"inglés": [
+"inglés",
+"De Inglaterra."
 ],
 "ingrediente": [
 "ingrediente",
@@ -5135,6 +9343,18 @@
 "ingrediente",
 "Cosa que se usa para hacer una comida."
 ],
+"injustas": [
+"injusto",
+"No justas."
+],
+"inky": [
+"inky",
+"Nombre de un pulpo."
+],
+"inmediatamente": [
+"inmediato",
+"Ahora mismo, sin esperar."
+],
 "inmediato": [
 "inmediato",
 "Que pasa enseguida."
@@ -5142,6 +9362,18 @@
 "inmortal": [
 "inmortal",
 "Que no muere nunca."
+],
+"inscripciones": [
+"inscripción",
+"Textos escritos en piedra."
+],
+"insecticida": [
+"insecticida",
+"Producto que mata insectos."
+],
+"insecticidas": [
+"insecticida",
+"Productos que matan insectos."
 ],
 "insecto": [
 "insecto",
@@ -5151,13 +9383,57 @@
 "insecto",
 "Animal pequeño con seis patas, como la mosca."
 ],
+"insisten": [
+"insistir",
+"Repiten."
+],
+"insistir": [
+"insistir",
+"Repetir."
+],
 "inspirada": [
 "inspirado",
 "Que tiene la idea de otra cosa."
 ],
+"inspirado": [
+"inspirar",
+"Con ideas de."
+],
+"inspirados": [
+"inspirar",
+"Con ideas de."
+],
+"inspirar": [
+"inspirar",
+"Dar ideas y ganas."
+],
+"inspiraron": [
+"inspirar",
+"Dieron ideas y ganas."
+],
+"inspirarse": [
+"inspirar",
+"Tomar ideas."
+],
+"instante": [
+"instante",
+"Momento muy corto."
+],
+"instituto": [
+"instituto",
+"Escuela de secundaria."
+],
+"instrucciones": [
+"instrucción",
+"Órdenes."
+],
 "intacta": [
 "intacto",
 "Que nadie lo ha tocado ni roto."
+],
+"inteligencia": [
+"inteligencia",
+"Ser listo."
 ],
 "inteligencia artificial": [
 "inteligencia",
@@ -5166,6 +9442,18 @@
 "inteligente": [
 "inteligente",
 "Que piensa y aprende muy bien."
+],
+"inteligentes": [
+"inteligente",
+"Listos."
+],
+"intensa": [
+"intenso",
+"Fuerte."
+],
+"intenso": [
+"intenso",
+"Fuerte."
 ],
 "intenta": [
 "intentar",
@@ -5178,6 +9466,10 @@
 "intentado": [
 "intentar",
 "Intentar: probar a hacer algo."
+],
+"intentan": [
+"intentar",
+"Tratan de."
 ],
 "intentando": [
 "intentar",
@@ -5199,9 +9491,33 @@
 "intento",
 "Cada vez que tratas de hacer algo."
 ],
+"intentos": [
+"intento",
+"Pruebas."
+],
 "intentó": [
 "intentar",
 "Intentar: probar a hacer algo."
+],
+"interesa": [
+"interesar",
+"Gusta."
+],
+"interesaba": [
+"interesar",
+"Le gustaba."
+],
+"interesan": [
+"interesar",
+"Gustan."
+],
+"interesante": [
+"interés",
+"Que interesa."
+],
+"interior": [
+"interior",
+"De dentro."
 ],
 "internacional": [
 "internacional",
@@ -5215,6 +9531,18 @@
 "interruptor",
 "Botón para encender o apagar la luz."
 ],
+"interés": [
+"interés",
+"Ganas de saber."
+],
+"intrigante": [
+"intrigar",
+"Que da curiosidad."
+],
+"intrigó": [
+"intrigar",
+"Dio curiosidad."
+],
 "inundaciones": [
 "inundación",
 "Cuando el agua cubre la tierra."
@@ -5227,13 +9555,25 @@
 "inventar",
 "Inventar: crear algo nuevo; también decir algo que no es verdad."
 ],
+"inventaban": [
+"inventar",
+"Creaban."
+],
 "inventada": [
 "inventado",
 "Que no es real; alguien lo imagina."
 ],
+"inventado": [
+"inventar",
+"Creado."
+],
 "inventar": [
 "inventar",
 "Inventar: crear algo que no existía."
+],
+"inventaron": [
+"inventar",
+"Crearon."
 ],
 "inventarse": [
 "inventar",
@@ -5255,13 +9595,29 @@
 "inventar",
 "Inventar: crear algo nuevo; también decir algo que no es verdad."
 ],
+"investigaciones": [
+"investigación",
+"Estudios."
+],
 "investigación": [
 "investigación",
 "Estudio para descubrir cosas."
 ],
+"investigadora": [
+"investigador",
+"Mujer que investiga."
+],
 "investigadores": [
 "investigador",
 "Persona que estudia algo para descubrir cosas."
+],
+"investigar": [
+"investigar",
+"Estudiar."
+],
+"investigarlo": [
+"investigar",
+"Estudiarlo."
 ],
 "invierno": [
 "invierno",
@@ -5275,9 +9631,21 @@
 "invitar",
 "Invitar: decirle a alguien que venga contigo."
 ],
+"inyecta": [
+"inyectar",
+"Mete líquido."
+],
 "ir": [
 "ir",
 "Ir: moverse a otro lugar."
+],
+"irlanda": [
+"irlanda",
+"País de Europa."
+],
+"irritable": [
+"irritable",
+"Que se enfada fácil."
 ],
 "isla": [
 "isla",
@@ -5291,6 +9659,10 @@
 "Islas Canarias",
 "Nombre de unas islas de España, en el Atlántico."
 ],
+"izquierda": [
+"izquierda",
+"El lado contrario a la derecha."
+],
 "jabón": [
 "jabón",
 "Producto para lavar."
@@ -5303,7 +9675,19 @@
 "james",
 "Nombre de hombre (inglés)."
 ],
+"jamón": [
+"jamón",
+"Carne de cerdo curada."
+],
 "japonesa": [
+"japonés",
+"De Japón."
+],
+"japoneses": [
+"japonés",
+"De Japón."
+],
+"japonés": [
 "japonés",
 "De Japón."
 ],
@@ -5311,13 +9695,29 @@
 "Japón",
 "Nombre de un país de islas, en Asia."
 ],
+"jardines": [
+"jardín",
+"Zonas con plantas."
+],
 "jardín": [
 "jardín",
 "Lugar con plantas y flores al lado de una casa."
 ],
+"jean": [
+"jean",
+"Nombre de hombre francés."
+],
 "jeanne": [
 "jeanne",
 "Nombre de mujer (francés)."
+],
+"jeroglífico": [
+"jeroglífico",
+"Signo de la escritura egipcia."
+],
+"jeroglíficos": [
+"jeroglífico",
+"Escritura con dibujos del antiguo Egipto."
 ],
 "johann goeze": [
 "Johann Goeze",
@@ -5363,6 +9763,10 @@
 "jugar",
 "Jugar: hacer algo para divertirse."
 ],
+"juegues": [
+"jugar",
+"Forma de \"jugar\"."
+],
 "juez": [
 "juez",
 "Persona que decide si algo vale o no."
@@ -5375,6 +9779,10 @@
 "jugador",
 "Persona que juega."
 ],
+"jugadora": [
+"jugador",
+"Mujer que juega."
+],
 "jugadores": [
 "jugador",
 "Persona que juega."
@@ -5382,6 +9790,10 @@
 "jugamos": [
 "jugar",
 "Jugar: hacer algo para divertirse."
+],
+"jugando": [
+"jugar",
+"Haciendo un juego."
 ],
 "jugar": [
 "jugar",
@@ -5407,9 +9819,33 @@
 "Juliane Koepcke",
 "Nombre de una bióloga que sobrevivió en la selva."
 ],
+"julio": [
+"julio",
+"Séptimo mes."
+],
+"junta": [
+"junto",
+"Unida."
+],
+"juntar": [
+"juntar",
+"Unir."
+],
+"juntas": [
+"junto",
+"Unidas."
+],
+"junto": [
+"junto",
+"Al lado."
+],
 "juntos": [
 "junto",
 "Uno con otro, en compañía."
+],
+"justo": [
+"justo",
+"Exactamente."
 ],
 "justos": [
 "justo",
@@ -5431,6 +9867,14 @@
 "keops",
 "Nombre de un faraón de Egipto."
 ],
+"kikunae": [
+"kikunae",
+"Nombre de un hombre japonés."
+],
+"kilo": [
+"kilo",
+"Mil gramos."
+],
 "kilos": [
 "kilo",
 "Medida de peso: mil gramos."
@@ -5443,9 +9887,17 @@
 "kilómetro",
 "Medida de distancia: mil metros."
 ],
+"kombu": [
+"kombu",
+"Un tipo de alga."
+],
 "kril": [
 "kril",
 "Animales muy pequeños del mar."
+],
+"kétchup": [
+"kétchup",
+"Salsa de tomate."
 ],
 "la": [
 "la",
@@ -5462,6 +9914,10 @@
 "laboratorio": [
 "laboratorio",
 "Sala donde los científicos hacen experimentos."
+],
+"laboratorios": [
+"laboratorio",
+"Lugares de experimentos."
 ],
 "lado": [
 "lado",
@@ -5491,9 +9947,29 @@
 "lago",
 "Mucha agua dentro de la tierra, sin salida al mar."
 ],
+"lanza": [
+"lanzar",
+"Tira."
+],
+"lanzan": [
+"lanzar",
+"Tiran."
+],
+"lanzaron": [
+"lanzar",
+"Tiraron; sacaron."
+],
+"lanzó": [
+"lanzar",
+"Sacó."
+],
 "larga": [
 "largo",
 "Que mide mucho de un extremo a otro."
+],
+"largas": [
+"largo",
+"De mucha longitud."
 ],
 "largo": [
 "largo",
@@ -5506,6 +9982,10 @@
 "larguísimos": [
 "largo",
 "Largo: que mide mucho. «Larguísimo» es muy, muy largo."
+],
+"larvas": [
+"larva",
+"Bebés de insectos."
 ],
 "las": [
 "la",
@@ -5555,9 +10035,21 @@
 "lavar",
 "Forma incorrecta. Lo correcto es «lavaban»."
 ],
+"lazos": [
+"lazo",
+"Pequeños aros."
+],
 "le": [
 "le",
 "A él o a ella."
+],
+"leal": [
+"leal",
+"Apellido."
+],
+"lecciones": [
+"lección",
+"Cosas que se aprenden."
 ],
 "lección": [
 "lección",
@@ -5566,6 +10058,10 @@
 "leche": [
 "leche",
 "Bebida blanca de la vaca."
+],
+"lectores": [
+"lector",
+"Personas que leen."
 ],
 "led": [
 "LED",
@@ -5583,21 +10079,57 @@
 "leer",
 "Leer: mirar palabras y entenderlas."
 ],
+"leerlo": [
+"leer",
+"Mirar el texto."
+],
+"leerse": [
+"leer",
+"Ser leído."
+],
+"lejana": [
+"lejano",
+"Muy lejos."
+],
 "lejos": [
 "lejos",
 "A mucha distancia."
+],
+"lengua": [
+"lengua",
+"Parte de la boca con la que saboreamos."
+],
+"lenguas": [
+"lengua",
+"Idiomas."
 ],
 "lento": [
 "lento",
 "Que tarda mucho. Lo contrario de rápido."
 ],
+"lentos": [
+"lento",
+"No rápidos."
+],
 "leo": [
 "leo",
 "Nombre de chico."
 ],
+"leonardo": [
+"leonardo",
+"Nombre de hombre."
+],
+"leones": [
+"león",
+"Grandes felinos."
+],
 "les": [
 "les",
 "A ellos o a ellas."
+],
+"lesionar": [
+"lesionar",
+"Hacer una herida."
 ],
 "lesiones": [
 "lesión",
@@ -5611,9 +10143,17 @@
 "levantar",
 "Levantar: poner algo más arriba."
 ],
+"levantado": [
+"levantar",
+"Subido."
+],
 "levantamos": [
 "levantar",
 "Levantarse: ponerse de pie."
+],
+"levantaron": [
+"levantar",
+"Subieron."
 ],
 "levantarse": [
 "levantar",
@@ -5623,9 +10163,21 @@
 "levantar",
 "Levantar: poner algo más arriba."
 ],
+"levantó": [
+"levantar",
+"Subió."
+],
+"leve": [
+"leve",
+"Pequeño."
+],
 "leyenda": [
 "leyenda",
 "Historia antigua; puede ser verdad o no."
+],
+"leían": [
+"leer",
+"Miraban un texto."
 ],
 "leías": [
 "leer",
@@ -5643,9 +10195,37 @@
 "león",
 "Animal grande y fuerte de África, el «rey de la selva»."
 ],
+"liaoning": [
+"liaoning",
+"Provincia de China."
+],
+"libera": [
+"liberar",
+"Suelta."
+],
+"liberación": [
+"liberar",
+"Soltar."
+],
+"liberado": [
+"liberar",
+"Soltado."
+],
+"libertad": [
+"libertad",
+"Ser libre."
+],
 "libre": [
 "libre",
 "Que puede hacer lo que quiere; sin prisión."
+],
+"librero": [
+"librero",
+"Persona que vende libros."
+],
+"librería": [
+"librería",
+"Tienda de libros."
 ],
 "libres": [
 "libre",
@@ -5663,6 +10243,22 @@
 "libro",
 "Muchas páginas con texto para leer."
 ],
+"ligera": [
+"ligero",
+"Que pesa poco."
+],
+"ligeros": [
+"ligero",
+"Que pesan poco."
+],
+"limita": [
+"limitar",
+"Se limita: solo hace."
+],
+"limitación": [
+"limitación",
+"Límite."
+],
 "limpia": [
 "limpiar",
 "Limpiar: quitar la suciedad."
@@ -5671,9 +10267,21 @@
 "limpiar",
 "Limpiar: quitar la suciedad."
 ],
+"limpiarse": [
+"limpiar",
+"Quedar limpio."
+],
+"limpias": [
+"limpio",
+"Sin suciedad."
+],
 "limón": [
 "limón",
 "Fruta amarilla y ácida."
+],
+"lingüistas": [
+"lingüista",
+"Expertos en lenguas."
 ],
 "linterna": [
 "linterna",
@@ -5687,6 +10295,14 @@
 "lisses",
 "Nombre de una ciudad de Francia."
 ],
+"listas": [
+"listo",
+"Preparadas."
+],
+"listos": [
+"listo",
+"Inteligentes."
+],
 "llama": [
 "llamarse",
 "Llamarse: tener un nombre."
@@ -5699,6 +10315,14 @@
 "llamar",
 "Llamar: dar un nombre a algo."
 ],
+"llamados": [
+"llamar",
+"Con el nombre de."
+],
+"llamamos": [
+"llamar",
+"Damos el nombre."
+],
 "llaman": [
 "llamar",
 "Llamar: dar un nombre a algo."
@@ -5707,13 +10331,25 @@
 "atención",
 "Hacen que la gente mire."
 ],
+"llamaron": [
+"llamar",
+"Dieron el nombre."
+],
 "llamas": [
 "llamar",
 "Llamarse: tener un nombre."
 ],
+"llamó": [
+"llamar",
+"Dio el nombre."
+],
 "llega": [
 "llegar",
 "Llegar: venir a un lugar."
+],
+"llegado": [
+"llegar",
+"Venido."
 ],
 "llegan": [
 "llegar",
@@ -5735,13 +10371,33 @@
 "llegar",
 "Llegar: venir a un sitio."
 ],
+"llena": [
+"lleno",
+"Con mucho."
+],
+"lleno": [
+"lleno",
+"Que no cabe más."
+],
 "llenos": [
 "lleno",
 "Que no tiene espacio libre."
 ],
+"lleva": [
+"llevar",
+"Tiene puesto."
+],
 "llevaba": [
 "llevar",
 "Llevar + tiempo: estar haciendo algo desde hace un tiempo."
+],
+"llevaban": [
+"llevar",
+"Llevaban tiempo: hacía tiempo que."
+],
+"llevamos": [
+"llevar",
+"Llevamos tiempo: hace tiempo que."
 ],
 "llevan": [
 "llevar",
@@ -5751,9 +10407,25 @@
 "llevar",
 "Llevar: tener algo contigo de un sitio a otro; tener puesto."
 ],
+"llevaron": [
+"llevar",
+"Trasladaron."
+],
+"lleve": [
+"llevar",
+"Coja."
+],
+"llevó": [
+"llevar",
+"Tardó; trasladó."
+],
 "llora": [
 "llorar",
 "Llorar: echar lágrimas por los ojos."
+],
+"llover": [
+"llover",
+"Caer agua del cielo."
 ],
 "llueve": [
 "llover",
@@ -5787,9 +10459,29 @@
 "rápido",
 "Con la máxima velocidad."
 ],
+"lobo": [
+"lobo",
+"Perro salvaje."
+],
+"lobos": [
+"lobo",
+"Perros salvajes."
+],
 "loco": [
 "loco",
 "Que no piensa bien. Volverse loco: emocionarse muchísimo."
+],
+"logrado": [
+"lograr",
+"Conseguido."
+],
+"lograr": [
+"lograr",
+"Conseguir."
+],
+"logros": [
+"logro",
+"Cosas conseguidas."
 ],
 "logró": [
 "lograr",
@@ -5815,17 +10507,41 @@
 "buscar",
 "Buscar: intentar encontrar algo."
 ],
+"losa": [
+"losa",
+"Piedra plana."
+],
+"loto": [
+"loto",
+"Flor del agua."
+],
 "lucas": [
 "lucas",
 "Nombre de chico."
+],
+"luce": [
+"lucir",
+"Enseña."
 ],
 "luces": [
 "luz",
 "Lo que nos deja ver; viene del sol o de una lámpara."
 ],
+"lucha": [
+"lucha",
+"Pelea."
+],
+"luchar": [
+"luchar",
+"Pelear."
+],
 "luciérnagas": [
 "luciérnaga",
 "Insecto pequeño que brilla por la noche."
+],
+"luego": [
+"luego",
+"Después."
 ],
 "lugar": [
 "lugar",
@@ -5838,6 +10554,10 @@
 "luna": [
 "luna",
 "Lo que brilla en el cielo por la noche."
+],
+"lunas": [
+"luna",
+"Satélites de planetas."
 ],
 "lunes": [
 "lunes",
@@ -5854,6 +10574,10 @@
 "lámpara": [
 "lámpara",
 "Objeto que da luz."
+],
+"lámparas": [
+"lámpara",
+"Luces."
 ],
 "líder": [
 "líder",
@@ -5879,6 +10603,22 @@
 "líquido",
 "Que corre, como el agua."
 ],
+"lógica": [
+"lógica",
+"Forma correcta de pensar."
+],
+"lógicas": [
+"lógico",
+"De la lógica."
+],
+"machos": [
+"macho",
+"Animales que no tienen crías."
+],
+"maciza": [
+"macizo",
+"Sólida."
+],
 "macizo": [
 "macizo",
 "Lleno por dentro; sin huecos."
@@ -5891,6 +10631,26 @@
 "Madrid",
 "Nombre de la capital de España."
 ],
+"madrugada": [
+"madrugada",
+"Muy temprano de noche."
+],
+"madura": [
+"maduro",
+"Lista para comer."
+],
+"maduran": [
+"madurar",
+"Se ponen listos para comer."
+],
+"maduros": [
+"maduro",
+"Listos para comer."
+],
+"maestros": [
+"maestro",
+"Expertos."
+],
 "magma": [
 "magma",
 "Roca muy caliente y líquida dentro de la Tierra."
@@ -5899,13 +10659,29 @@
 "magnético",
 "Que atrae el hierro, como un imán."
 ],
+"magnífico": [
+"magnífico",
+"Muy bonito."
+],
 "mal": [
 "mal",
 "No bien."
 ],
+"mala": [
+"malo",
+"No buena."
+],
+"malaria": [
+"malaria",
+"Enfermedad que transmiten los mosquitos."
+],
 "maldición": [
 "maldición",
 "Algo malo que, según una historia, le pasa a alguien por castigo."
+],
+"malo": [
+"malo",
+"Que no es bueno."
 ],
 "malos": [
 "malo",
@@ -5915,9 +10691,33 @@
 "mamífero",
 "Animal que da leche a sus crías."
 ],
+"manada": [
+"manada",
+"Grupo de animales."
+],
+"manadas": [
+"manada",
+"Grupos de animales."
+],
 "mancha": [
 "mancha",
 "Zona de otro color."
+],
+"manejaba": [
+"manejar",
+"Usaba."
+],
+"manejar": [
+"manejar",
+"Usar."
+],
+"manera": [
+"manera",
+"Forma."
+],
+"manga": [
+"manga",
+"Parte de la ropa que cubre el brazo."
 ],
 "mano": [
 "mano",
@@ -5931,13 +10731,41 @@
 "mano",
 "Parte del cuerpo al final del brazo, con cinco dedos."
 ],
+"mantener": [
+"mantener",
+"Conservar."
+],
+"mantenerse": [
+"mantener",
+"Seguir."
+],
+"mantenerte": [
+"mantener",
+"Seguir estando."
+],
+"mantenido": [
+"mantener",
+"Conservado."
+],
+"mantienen": [
+"mantener",
+"Conservan."
+],
 "mantienen pulsada": [
 "mantener pulsado",
 "Apretar un botón o una tecla sin soltarla."
 ],
+"mantuvo": [
+"mantener",
+"Siguió."
+],
 "manual": [
 "manual",
 "Libro que explica cómo usar algo."
+],
+"manuscrito": [
+"manuscrito",
+"Libro escrito a mano."
 ],
 "manzana": [
 "manzana",
@@ -5963,6 +10791,10 @@
 "maratón",
 "Actividad muy larga, de muchas horas."
 ],
+"maratón": [
+"maratón",
+"Evento muy largo."
+],
 "maravilla": [
 "maravilla",
 "Cosa extraordinaria y muy bonita."
@@ -5975,15 +10807,31 @@
 "maravilloso",
 "Extraordinario; muy bonito."
 ],
+"maravilloso": [
+"maravilloso",
+"Muy bueno."
+],
+"marca": [
+"marca",
+"Señal."
+],
 "marcar": [
 "marcar",
 "Marcar: poner una señal."
+],
+"marcará": [
+"marcar",
+"Señalará."
 ],
 "marcó": [
 "marcar",
 "Marcar: enseñar un número un aparato."
 ],
 "marino": [
+"marino",
+"Del mar."
+],
+"marinos": [
 "marino",
 "Del mar."
 ],
@@ -6003,6 +10851,14 @@
 "Marte",
 "Nombre de un planeta rojo."
 ],
+"martín": [
+"martín",
+"Martín pescador: pájaro azul que pesca."
+],
+"martín pescador": [
+"martín pescador",
+"Pájaro azul que pesca."
+],
 "mary anning": [
 "Mary Anning",
 "Nombre de una paleontóloga inglesa."
@@ -6010,6 +10866,10 @@
 "masa": [
 "masa",
 "Cuánta materia tiene algo."
+],
+"mascota": [
+"mascota",
+"Animal de casa."
 ],
 "mascotas": [
 "mascota",
@@ -6019,17 +10879,41 @@
 "masculino",
 "Género de palabras como «el oso»."
 ],
+"masiva": [
+"masivo",
+"Muy grande."
+],
+"mataban": [
+"matar",
+"Quitaban la vida."
+],
 "matan": [
 "matar",
 "Matar: quitar la vida."
+],
+"mataran": [
+"matar",
+"Quitaran la vida."
+],
+"matemáticas": [
+"matemáticas",
+"Ciencia de los números."
 ],
 "materia": [
 "materia",
 "Lo que forma las cosas."
 ],
+"material": [
+"material",
+"Lo que se usa para hacer algo."
+],
 "materiales": [
 "material",
 "Cosa con la que se hace algo, como la madera."
+],
+"materna": [
+"madre",
+"De la madre."
 ],
 "mayo": [
 "mayo",
@@ -6038,6 +10922,10 @@
 "mayor": [
 "mayor",
 "Más grande."
+],
+"mayores": [
+"mayor",
+"Personas viejas."
 ],
 "mayoría": [
 "mayoría",
@@ -6050,6 +10938,10 @@
 "mañana": [
 "mañana",
 "Primera parte del día."
+],
+"mcwhirter": [
+"mcwhirter",
+"Apellido."
 ],
 "me": [
 "me",
@@ -6067,9 +10959,25 @@
 "medalla",
 "Premio de metal para los mejores."
 ],
+"medallas": [
+"medalla",
+"Premios de metal."
+],
+"medallista": [
+"medallista",
+"Persona que gana una medalla."
+],
+"medallistas": [
+"medallista",
+"Personas que ganan medallas."
+],
 "media": [
 "medio",
 "Normal, en el centro entre lo más y lo menos."
+],
+"medianoche": [
+"medianoche",
+"Las doce de la noche."
 ],
 "medicina": [
 "medicina",
@@ -6078,6 +10986,10 @@
 "medicinas": [
 "medicina",
 "Ciencia que cura; también algo para curarse."
+],
+"medición": [
+"medir",
+"Acto de medir."
 ],
 "medida": [
 "medir",
@@ -6103,6 +11015,10 @@
 "medir",
 "Medir: ser de un tamaño."
 ],
+"medirse": [
+"medir",
+"Ver el tamaño."
+],
 "medusa": [
 "medusa",
 "Animal del mar transparente y blando, con tentáculos."
@@ -6123,13 +11039,37 @@
 "mejor",
 "Más bueno."
 ],
+"mejora": [
+"mejorar",
+"Hace mejor."
+],
+"mejoran": [
+"mejorar",
+"Hacen mejor."
+],
 "mejorar": [
 "mejorar",
 "Mejorar: hacer algo mejor."
 ],
+"mejorara": [
+"mejorar",
+"Hiciera mejor."
+],
+"mejoraron": [
+"mejorar",
+"Se hicieron mejores."
+],
 "mejores": [
 "mejor",
 "Más bueno que los otros."
+],
+"memoria": [
+"memoria",
+"Capacidad de recordar."
+],
+"menciona": [
+"mencionar",
+"Nombra."
 ],
 "menos": [
 "menos",
@@ -6143,9 +11083,21 @@
 "mensaje",
 "Algo que comunicas a otra persona."
 ],
+"mentales": [
+"mental",
+"De la mente."
+],
 "mente": [
 "mente",
 "Lo que piensa en nuestra cabeza."
+],
+"mentes": [
+"mente",
+"Formas de pensar."
+],
+"mentía": [
+"mentir",
+"No decía la verdad."
 ],
 "menudo": [
 "menudo",
@@ -6154,6 +11106,18 @@
 "mercurio": [
 "Mercurio",
 "Nombre del planeta más cercano al Sol."
+],
+"merece": [
+"merecer",
+"Vale."
+],
+"merecían": [
+"merecer",
+"Debían tener."
+],
+"merezca": [
+"merecer",
+"Valga."
 ],
 "mes": [
 "mes",
@@ -6171,6 +11135,10 @@
 "mes",
 "Una de las doce partes del año."
 ],
+"mestral": [
+"mestral",
+"Apellido."
+],
 "metabolismo": [
 "metabolismo",
 "Todo lo que hace el cuerpo para vivir."
@@ -6182,6 +11150,10 @@
 "mete": [
 "meter",
 "Meter: poner algo dentro."
+],
+"meter": [
+"meter",
+"Poner dentro."
 ],
 "metes": [
 "meter",
@@ -6206,6 +11178,10 @@
 "mezcladas": [
 "mezcla",
 "Varias cosas juntas."
+],
+"mezclado": [
+"mezclar",
+"Junto con otra cosa."
 ],
 "mi": [
 "mi",
@@ -6235,6 +11211,10 @@
 "medir",
 "Medir: ser de un tamaño."
 ],
+"midiendo": [
+"medir",
+"Viendo el tamaño."
+],
 "midieron": [
 "medir",
 "Medir: saber el tamaño de algo."
@@ -6251,9 +11231,17 @@
 "mil",
 "El número 1000."
 ],
+"milagro": [
+"milagro",
+"Algo maravilloso."
+],
 "miles": [
 "mil",
 "Muchos grupos de mil."
+],
+"militar": [
+"militar",
+"Del ejército."
 ],
 "millones": [
 "millón",
@@ -6279,6 +11267,10 @@
 "minoico",
 "De una civilización antigua de la isla de Creta."
 ],
+"minoría": [
+"minoría",
+"Grupo pequeño."
+],
 "minuto": [
 "minuto",
 "Sesenta segundos."
@@ -6291,13 +11283,33 @@
 "mirar",
 "Mirar: poner los ojos en algo."
 ],
+"miraban": [
+"mirar",
+"Veían."
+],
+"mirado": [
+"mirar",
+"Visto."
+],
 "mirando": [
 "mirar",
 "Mirar: usar los ojos para ver."
 ],
+"mirara": [
+"mirar",
+"Viera."
+],
 "mirarlos": [
 "mirar",
 "Mirar: usar los ojos para ver."
+],
+"mirarte": [
+"mirar",
+"Ver a ti."
+],
+"mire": [
+"mirar",
+"Vea."
 ],
 "miró": [
 "mirar",
@@ -6307,6 +11319,14 @@
 "mi",
 "Que es de la persona que habla."
 ],
+"misas": [
+"misa",
+"Ceremonias religiosas."
+],
+"misiones": [
+"misión",
+"Viajes con un fin."
+],
 "misión": [
 "misión",
 "Trabajo importante que alguien tiene que hacer."
@@ -6315,9 +11335,17 @@
 "mismo",
 "Igual; no otro."
 ],
+"mismas": [
+"mismo",
+"Iguales."
+],
 "mismo": [
 "mismo",
 "Igual; no otro."
+],
+"mismos": [
+"mismo",
+"Iguales."
 ],
 "misterio": [
 "misterio",
@@ -6335,9 +11363,41 @@
 "mitad",
 "Una de las dos partes iguales."
 ],
+"mitades": [
+"mitad",
+"Partes de dos."
+],
 "mitchie brusco": [
 "mitchie brusco",
 "Nombre de un skater de Estados Unidos."
+],
+"moda": [
+"moda",
+"Lo que se lleva."
+],
+"modelo": [
+"modelo",
+"Ejemplo."
+],
+"moderna": [
+"moderno",
+"Actual."
+],
+"modernas": [
+"moderno",
+"Actuales."
+],
+"modesta": [
+"modesto",
+"Pequeña."
+],
+"modificados": [
+"modificar",
+"Cambiados."
+],
+"modificar": [
+"modificar",
+"Cambiar."
 ],
 "modo": [
 "modo",
@@ -6355,6 +11415,14 @@
 "Mojang",
 "Nombre de la empresa de Minecraft."
 ],
+"molestaba": [
+"molestar",
+"Fastidiaba."
+],
+"molestas": [
+"molestar",
+"Que fastidian."
+],
 "molesto": [
 "molesto",
 "Que te hace sentir mal o enfadado."
@@ -6362,6 +11430,10 @@
 "momento": [
 "momento",
 "Un tiempo muy corto."
+],
+"momentos": [
+"momento",
+"Instantes."
 ],
 "momia": [
 "momia",
@@ -6407,6 +11479,10 @@
 "montaña",
 "Tierra muy alta."
 ],
+"montaña rusa": [
+"montaña rusa",
+"Atracción con vagones que suben y bajan muy rápido."
+],
 "montañas": [
 "montaña",
 "Tierra muy alta."
@@ -6419,6 +11495,10 @@
 "moral",
 "Sobre lo que está bien y mal."
 ],
+"morir": [
+"morir",
+"Dejar de vivir."
+],
 "mortal": [
 "mortal",
 "Que mata."
@@ -6426,6 +11506,14 @@
 "moría": [
 "morir",
 "Morir: dejar de vivir."
+],
+"mosquitera": [
+"mosquitera",
+"Red contra mosquitos."
+],
+"mosquiteras": [
+"mosquitera",
+"Redes contra mosquitos."
 ],
 "mosquito": [
 "mosquito",
@@ -6435,9 +11523,29 @@
 "mosquito",
 "Insecto pequeño que pica."
 ],
+"mostrado": [
+"mostrar",
+"Enseñado."
+],
+"mostrados": [
+"mostrar",
+"Enseñados."
+],
+"mostrar": [
+"mostrar",
+"Enseñar."
+],
+"mostraron": [
+"mostrar",
+"Enseñaron."
+],
 "mostró": [
 "mostrar",
 "Mostrar: enseñar algo."
+],
+"motivo": [
+"motivo",
+"Razón."
 ],
 "moto": [
 "moto",
@@ -6454,6 +11562,10 @@
 "moverse": [
 "moverse",
 "Moverse: cambiar de sitio."
+],
+"movimiento": [
+"movimiento",
+"Acción de moverse."
 ],
 "movimientos": [
 "movimiento",
@@ -6491,6 +11603,10 @@
 "mucho",
 "Mucho. «Muchísimo» es muchísimo más."
 ],
+"muerdas": [
+"morder",
+"Cortes con los dientes."
+],
 "muerde": [
 "morder",
 "Morder: atacar con los dientes."
@@ -6515,9 +11631,25 @@
 "muerte",
 "El final de la vida."
 ],
+"muertes": [
+"muerte",
+"Fin de la vida."
+],
 "muerto": [
 "muerto",
 "Persona que ya no vive."
+],
+"muestra": [
+"mostrar",
+"Enseña."
+],
+"muestran": [
+"mostrar",
+"Enseñan."
+],
+"muestras": [
+"muestra",
+"Trozos para estudiar."
 ],
 "mueve": [
 "mover",
@@ -6539,6 +11671,10 @@
 "mujer",
 "Persona adulta femenina."
 ],
+"multiplican": [
+"multiplicar",
+"Aumentan mucho."
+],
 "mundial": [
 "mundial",
 "De todo el mundo."
@@ -6550,6 +11686,10 @@
 "mundos": [
 "mundo",
 "El planeta; también, un lugar de un juego."
+],
+"murciélagos": [
+"murciélago",
+"Mamíferos que vuelan de noche."
 ],
 "murieron": [
 "morir",
@@ -6603,6 +11743,14 @@
 "máscara",
 "Objeto que tapa la cara."
 ],
+"máximo": [
+"máximo",
+"Lo más."
+],
+"médica": [
+"médico",
+"De la medicina."
+],
 "médico": [
 "médico",
 "Persona que cura a los enfermos."
@@ -6610,6 +11758,10 @@
 "médicos": [
 "médico",
 "Persona que cura a los enfermos."
+],
+"método": [
+"método",
+"Forma."
 ],
 "méxico": [
 "México",
@@ -6631,6 +11783,10 @@
 "nacer",
 "Nacer: empezar a vivir."
 ],
+"nacemos": [
+"nacer",
+"Llegamos al mundo."
+],
 "nacen": [
 "nacer",
 "Nacer: empezar a vivir."
@@ -6642,6 +11798,10 @@
 "nacional": [
 "nacional",
 "De un país."
+],
+"nacionales": [
+"nacional",
+"Del país."
 ],
 "naciones": [
 "nación",
@@ -6679,6 +11839,10 @@
 "nadar",
 "Nadar: moverse en el agua."
 ],
+"napoleón": [
+"napoleón",
+"Emperador de Francia."
+],
 "naranja": [
 "naranja",
 "Fruta redonda; también un color."
@@ -6699,6 +11863,14 @@
 "natto",
 "Comida de Japón: soja fermentada."
 ],
+"natural": [
+"natural",
+"De la naturaleza."
+],
+"naturales": [
+"natural",
+"De la naturaleza."
+],
 "naturaleza": [
 "naturaleza",
 "Plantas, animales, montañas... lo que no hace el ser humano."
@@ -6706,6 +11878,18 @@
 "nave": [
 "nave",
 "Vehículo que viaja por el espacio."
+],
+"navidad": [
+"navidad",
+"Fiesta del 25 de diciembre."
+],
+"nazcan": [
+"nacer",
+"Lleguen al mundo."
+],
+"necesariamente": [
+"necesario",
+"Siempre."
 ],
 "necesario": [
 "necesario",
@@ -6719,6 +11903,10 @@
 "necesitar",
 "Necesitar: tener que tener algo."
 ],
+"necesitaban": [
+"necesitar",
+"Les hacía falta."
+],
 "necesitado": [
 "necesitar",
 "Necesitar: no poder estar sin algo."
@@ -6730,6 +11918,18 @@
 "necesitas": [
 "necesitar",
 "Necesitar: no poder estar sin algo."
+],
+"negaban": [
+"negar",
+"Decían que no."
+],
+"negado": [
+"negar",
+"Dicho que no."
+],
+"negar": [
+"negar",
+"Decir que no."
 ],
 "negra": [
 "negro",
@@ -6747,9 +11947,21 @@
 "negro",
 "Color de la noche."
 ],
+"negó": [
+"negar",
+"Dijo que no."
+],
 "neptuno": [
 "Neptuno",
 "Nombre del planeta más lejano del Sol."
+],
+"nerviosa": [
+"nervioso",
+"Con nervios."
+],
+"nervioso": [
+"nervioso",
+"De los nervios."
 ],
 "nes": [
 "nes",
@@ -6763,6 +11975,10 @@
 "Nessie",
 "Nombre del monstruo del lago Ness."
 ],
+"neuronas": [
+"neurona",
+"Células del cerebro."
+],
 "nevera": [
 "nevera",
 "Aparato que guarda la comida fría."
@@ -6774,6 +11990,22 @@
 "ni": [
 "ni",
 "Y tampoco."
+],
+"nido": [
+"nido",
+"Casa de pájaros."
+],
+"nidos": [
+"nido",
+"Casas de pájaros."
+],
+"niega": [
+"negar",
+"Dice que no."
+],
+"niegan": [
+"negar",
+"Dicen que no."
 ],
 "nieve": [
 "nieve",
@@ -6815,6 +12047,14 @@
 "nivel",
 "Una parte de un juego."
 ],
+"niñas": [
+"niño",
+"Chicas pequeñas."
+],
+"niño": [
+"niño",
+"Persona pequeña."
+],
 "niños": [
 "niño",
 "Persona joven, de pocos años."
@@ -6847,9 +12087,29 @@
 "noche",
 "Parte del día sin sol."
 ],
+"nombraras": [
+"nombrar",
+"Dijeras el nombre."
+],
+"nombraron": [
+"nombrar",
+"Dieron un cargo."
+],
+"nombrará": [
+"nombrar",
+"Dirá el nombre."
+],
 "nombre": [
 "nombre",
 "Palabra que usamos para llamar a alguien o algo."
+],
+"nombres": [
+"nombre",
+"Palabras para llamar a alguien."
+],
+"norma": [
+"norma",
+"Regla."
 ],
 "normal": [
 "normal",
@@ -6863,6 +12123,14 @@
 "normal",
 "Casi siempre."
 ],
+"normas": [
+"norma",
+"Reglas."
+],
+"norris": [
+"norris",
+"Nombre de hombre."
+],
 "nos": [
 "nos",
 "A nosotros."
@@ -6875,6 +12143,22 @@
 "nota",
 "Número que te dan en un examen."
 ],
+"notable": [
+"notable",
+"Que llama la atención."
+],
+"notado": [
+"notar",
+"Dado cuenta."
+],
+"notamos": [
+"notar",
+"Nos damos cuenta."
+],
+"notarlo": [
+"notar",
+"Darse cuenta."
+],
 "notas": [
 "nota",
 "Papel pequeño para escribir algo."
@@ -6883,9 +12167,17 @@
 "Notch",
 "Nombre en internet de Markus Persson."
 ],
+"noten": [
+"notar",
+"Se den cuenta."
+],
 "noticia": [
 "noticia",
 "Información nueva."
+],
+"noticias": [
+"noticia",
+"Información sobre lo que pasa."
 ],
 "notó": [
 "notar",
@@ -6903,7 +12195,15 @@
 "noviembre",
 "Mes once del año."
 ],
+"nube": [
+"nube",
+"Masa blanca en el cielo."
+],
 "nuestra": [
+"nuestro",
+"De nosotros."
+],
+"nuestras": [
 "nuestro",
 "De nosotros."
 ],
@@ -6943,6 +12243,10 @@
 "nunca",
 "En ningún momento."
 ],
+"nutricionistas": [
+"nutricionista",
+"Expertos en comida sana."
+],
 "nutritivos": [
 "nutritivo",
 "Que es bueno para alimentar el cuerpo."
@@ -6963,6 +12267,10 @@
 "objetivo",
 "Lo que quieres conseguir."
 ],
+"objetivos": [
+"objetivo",
+"Metas."
+],
 "objeto": [
 "objeto",
 "Cosa."
@@ -6971,13 +12279,53 @@
 "objeto",
 "Cosa."
 ],
+"obra": [
+"obra",
+"Trabajo hecho."
+],
 "obras": [
 "obra",
 "Algo que una persona hace o construye."
 ],
+"observación": [
+"observación",
+"Acto de mirar."
+],
+"observado": [
+"observar",
+"Mirado."
+],
+"observados": [
+"observar",
+"Mirados."
+],
+"observando": [
+"observar",
+"Mirando."
+],
+"observar": [
+"observar",
+"Mirar con atención."
+],
+"observó": [
+"observar",
+"Miró."
+],
+"obstante": [
+"obstante",
+"No obstante: sin embargo."
+],
 "obstáculos": [
 "obstáculo",
 "Algo que no te deja pasar fácilmente."
+],
+"obtienen": [
+"obtener",
+"Consiguen."
+],
+"ocasiones": [
+"ocasión",
+"Veces."
 ],
 "ochenta": [
 "ochenta",
@@ -6991,6 +12339,10 @@
 "ochocientos",
 "El número 800."
 ],
+"ocultar": [
+"ocultar",
+"Esconder."
+],
 "ocupa": [
 "ocupar",
 "Ocupar: llenar un espacio."
@@ -6998,6 +12350,14 @@
 "ocurre": [
 "ocurrir",
 "Ocurrir: pasar, suceder."
+],
+"ocurrido": [
+"ocurrir",
+"Pasado."
+],
+"ocurrió": [
+"ocurrir",
+"Pasó."
 ],
 "océano": [
 "océano",
@@ -7015,6 +12375,10 @@
 "oficial",
 "Que tiene permiso de una organización."
 ],
+"oficialmente": [
+"oficial",
+"De forma oficial."
+],
 "ofrece": [
 "ofrecer",
 "Ofrecer: decir «¿quieres?» y dar algo."
@@ -7022,6 +12386,18 @@
 "ofrecen": [
 "ofrecer",
 "Ofrecer: dar algo a alguien."
+],
+"ofrecía": [
+"ofrecer",
+"Daba."
+],
+"oigas": [
+"oír",
+"Forma de \"oír\"."
+],
+"ojo": [
+"ojo",
+"Parte de la cara para ver."
 ],
 "ojos": [
 "ojo",
@@ -7055,9 +12431,17 @@
 "olor",
 "Lo que notas con la nariz."
 ],
+"olvida": [
+"olvidar",
+"No recuerda."
+],
 "olympus mons": [
 "Olympus Mons",
 "Nombre del volcán más alto del sistema solar, en Marte."
+],
+"olímpica": [
+"olímpico",
+"De los Juegos Olímpicos."
 ],
 "olímpico": [
 "olímpico",
@@ -7078,6 +12462,26 @@
 "opinas": [
 "opinar",
 "Opinar: decir lo que piensas."
+],
+"opiniones": [
+"opinión",
+"Lo que piensa la gente."
+],
+"oponían": [
+"oponer",
+"Estaban en contra."
+],
+"oportunidad": [
+"oportunidad",
+"Ocasión."
+],
+"opuesto": [
+"opuesto",
+"Contrario."
+],
+"oraciones": [
+"oración",
+"Rezos."
 ],
 "orca": [
 "orca",
@@ -7107,9 +12511,37 @@
 "organización",
 "Grupo de personas que trabaja para un objetivo."
 ],
+"organización benéfica": [
+"organización benéfica",
+"Grupo que ayuda a la gente sin ganar dinero."
+],
+"organizadores": [
+"organizador",
+"Personas que preparan algo."
+],
+"organizaron": [
+"organizar",
+"Prepararon."
+],
 "orgullo": [
 "orgullo",
 "Cuando alguien se cree muy importante."
+],
+"origen": [
+"origen",
+"De dónde viene."
+],
+"original": [
+"original",
+"Distinto, nuevo."
+],
+"originalidad": [
+"original",
+"Ser distinto."
+],
+"orillas": [
+"orilla",
+"Bordes de un río."
 ],
 "oro": [
 "oro",
@@ -7183,9 +12615,17 @@
 "oxígeno",
 "Gas del aire que necesitamos para respirar."
 ],
+"oyen": [
+"oír",
+"Notan sonidos."
+],
 "paciencia": [
 "paciencia",
 "Capacidad de esperar sin enfadarse."
+],
+"paciente": [
+"paciente",
+"Que sabe esperar."
 ],
 "pacientes": [
 "paciente",
@@ -7203,13 +12643,45 @@
 "padre",
 "El padre y la madre."
 ],
+"paga": [
+"pagar",
+"Da dinero."
+],
+"pagar": [
+"pagar",
+"Dar dinero."
+],
+"pagarles": [
+"pagar",
+"Darles dinero."
+],
+"pagándoselo": [
+"pagar",
+"Dándole el dinero."
+],
+"pagó": [
+"pagar",
+"Dio dinero."
+],
 "paisaje": [
 "paisaje",
 "Lo que ves en un lugar: montañas, campos..."
 ],
+"palabra": [
+"palabra",
+"Grupo de letras con significado."
+],
+"palabras": [
+"palabra",
+"Grupos de letras con significado."
+],
 "palacio": [
 "palacio",
 "Casa muy grande de un rey."
+],
+"paleontología": [
+"paleontología",
+"Ciencia de los fósiles."
 ],
 "paleontóloga": [
 "paleontólogo",
@@ -7243,6 +12715,22 @@
 "pan",
 "Comida de harina que se hace en el horno."
 ],
+"pantalla": [
+"pantalla",
+"Parte de la tele o del ordenador donde se ven las imágenes."
+],
+"pantalones": [
+"pantalón",
+"Ropa para las piernas."
+],
+"papel": [
+"papel",
+"Hoja para escribir."
+],
+"papiro": [
+"papiro",
+"Papel hecho de una planta."
+],
 "para": [
 "para",
 "Dice el objetivo de algo."
@@ -7250,6 +12738,10 @@
 "para eso": [
 "para eso",
 "Con ese objetivo."
+],
+"paradoja": [
+"paradoja",
+"Idea que parece imposible."
 ],
 "paran": [
 "parar",
@@ -7263,13 +12755,37 @@
 "parecer",
 "Parecer: ser parecido a algo, o dar esa idea."
 ],
+"parecer": [
+"parecer",
+"Dar la impresión."
+],
 "parecida": [
 "parecido",
 "Casi igual."
 ],
+"parecidas": [
+"parecido",
+"Casi iguales."
+],
 "parecido": [
 "parecido",
 "Casi igual."
+],
+"parecidos": [
+"parecer",
+"Casi iguales."
+],
+"parecieron": [
+"parecer",
+"Dieron la impresión."
+],
+"parecía": [
+"parecer",
+"Daba la impresión."
+],
+"parecían": [
+"parecer",
+"Daban la impresión."
 ],
 "pared": [
 "pared",
@@ -7299,6 +12815,10 @@
 "parkour",
 "Deporte: moverse por la ciudad corriendo, saltando y trepando."
 ],
+"parmesano": [
+"parmesano",
+"Un queso italiano."
+],
 "parque": [
 "parque",
 "Lugar con árboles en una ciudad."
@@ -7315,6 +12835,18 @@
 "parte",
 "Un trozo de algo."
 ],
+"participan": [
+"participar",
+"Toman parte."
+],
+"participar": [
+"participar",
+"Tomar parte."
+],
+"particular": [
+"particular",
+"Especial."
+],
 "partida": [
 "partida",
 "Una vez que juegas un juego, desde el principio hasta el final."
@@ -7322,6 +12854,10 @@
 "partidas": [
 "partida",
 "Una vez que juegas a un juego, del principio al final."
+],
+"partido": [
+"partir",
+"Roto."
 ],
 "partir": [
 "partir",
@@ -7339,6 +12875,10 @@
 "pasar",
 "Pasar: ocurrir algo."
 ],
+"pasaban": [
+"pasar",
+"Usaban (tiempo)."
+],
 "pasado": [
 "pasado",
 "El tiempo de antes."
@@ -7351,13 +12891,53 @@
 "pasar",
 "Pasar: estar un tiempo en un sitio; ocurrir."
 ],
+"pasaron": [
+"pasar",
+"Fueron (tiempo)."
+],
 "pasaría": [
 "pasar",
 "Pasar: ocurrir."
 ],
+"pasatiempo": [
+"pasatiempo",
+"Afición."
+],
+"pase": [
+"pasar",
+"Ocurra."
+],
+"pasear": [
+"pasear",
+"Caminar tranquilo."
+],
+"pasen": [
+"pasar",
+"Usen (tiempo)."
+],
+"paseo": [
+"paseo",
+"Caminata tranquila."
+],
 "pasillo": [
 "pasillo",
 "Parte larga y estrecha de una casa que une las habitaciones."
+],
+"pasillos": [
+"pasillo",
+"Lugares largos para pasar."
+],
+"pasiones": [
+"pasión",
+"Sentimientos fuertes."
+],
+"pasión": [
+"pasión",
+"Sentimiento fuerte."
+],
+"paso": [
+"paso",
+"Avance."
 ],
 "pasos": [
 "paso",
@@ -7391,6 +12971,10 @@
 "patata",
 "Patatas cortadas y cocinadas en aceite."
 ],
+"patinadores": [
+"patinador",
+"Personas que patinan."
+],
 "patinan": [
 "patinar",
 "Patinar: moverse sobre ruedas o sobre hielo."
@@ -7398,6 +12982,22 @@
 "patinar": [
 "patinar",
 "Patinar: moverse sobre ruedas o sobre hielo."
+],
+"patinas": [
+"patinar",
+"Vas en monopatín."
+],
+"patrones": [
+"patrón",
+"Cosas que se repiten."
+],
+"pausa": [
+"pausa",
+"Parada."
+],
+"pavo": [
+"pavo",
+"Ave grande."
 ],
 "pavos": [
 "pavo",
@@ -7415,9 +13015,29 @@
 "pez",
 "Animal que vive en el agua y nada."
 ],
+"pedido": [
+"pedir",
+"Solicitado."
+],
 "pegaba": [
 "pegar",
 "Pegar: unir con pegamento."
+],
+"pegaban": [
+"pegar",
+"Se unían."
+],
+"pegada": [
+"pegar",
+"Unida."
+],
+"pegadas": [
+"pegar",
+"Unidas."
+],
+"pegado": [
+"pegar",
+"Unido."
 ],
 "pegajosas": [
 "pegajoso",
@@ -7431,9 +13051,25 @@
 "pegamento",
 "Producto para pegar cosas."
 ],
+"pegue": [
+"pegar",
+"Forma de \"pegar\"."
+],
+"peladas": [
+"pelar",
+"Sin nada."
+],
+"pelearse": [
+"pelear",
+"Discutir."
+],
 "peligro": [
 "peligro",
 "Algo que puede hacer daño."
+],
+"peligros": [
+"peligro",
+"Riesgos."
 ],
 "peligrosa": [
 "peligroso",
@@ -7467,13 +13103,29 @@
 "película",
 "Historia que ves en el cine o en la tele."
 ],
+"pena": [
+"pena",
+"Esfuerzo; tristeza."
+],
 "penicilina": [
 "penicilina",
 "El primer antibiótico, para matar bacterias."
 ],
+"pensaba": [
+"pensar",
+"Creía."
+],
 "pensaban": [
 "pensar",
 "Pensar: usar la mente; tener una opinión."
+],
+"pensada": [
+"pensar",
+"Hecha."
+],
+"pensado": [
+"pensar",
+"Hecho para."
 ],
 "pensamos": [
 "pensar",
@@ -7490,6 +13142,18 @@
 "pensara": [
 "pensar",
 "Pensar: usar la cabeza para tener ideas."
+],
+"pensarías": [
+"pensar",
+"Creerías."
+],
+"pensemos": [
+"pensar",
+"Forma de \"pensar\"."
+],
+"pensó": [
+"pensar",
+"Creyó."
 ],
 "península": [
 "península",
@@ -7531,6 +13195,18 @@
 "perdido",
 "Que no se sabe dónde está."
 ],
+"perdido": [
+"perder",
+"Que ya no tiene."
+],
+"perdiendo": [
+"perder",
+"Dejando de tener."
+],
+"perdiera": [
+"perder",
+"Dejara de tener."
+],
 "perdió": [
 "perder",
 "Perder: dejar de tener algo."
@@ -7539,9 +13215,17 @@
 "peregrino",
 "Halcón peregrino: un tipo de halcón muy rápido."
 ],
+"perfección": [
+"perfecto",
+"Sin errores."
+],
 "perfecta": [
 "perfecto",
 "Sin errores."
+],
+"perfectamente": [
+"perfecto",
+"Muy bien."
 ],
 "perfecto": [
 "perfecto",
@@ -7567,6 +13251,14 @@
 "periódico",
 "Hojas con noticias que salen cada día."
 ],
+"perjudica": [
+"perjudicar",
+"Hace daño."
+],
+"perjudique": [
+"perjudicar",
+"Haga daño."
+],
 "permite": [
 "permitir",
 "Permitir: dejar hacer algo."
@@ -7578,6 +13270,18 @@
 "permitido": [
 "permitir",
 "Permitir: dejar hacer algo."
+],
+"permitieron": [
+"permitir",
+"Dejaron."
+],
+"permitió": [
+"permitir",
+"Dejó."
+],
+"permitía": [
+"permitir",
+"Dejaba."
 ],
 "pero": [
 "pero",
@@ -7611,6 +13315,10 @@
 "persona",
 "Hombre, mujer, niño o niña."
 ],
+"perteneció": [
+"pertenecer",
+"Fue de."
+],
 "perú": [
 "Perú",
 "Nombre de un país de América del Sur."
@@ -7622,6 +13330,10 @@
 "pesaba": [
 "pesar",
 "Pesar: tener un peso en kilos."
+],
+"pesaban": [
+"pesar",
+"Tenían un peso."
 ],
 "pesado": [
 "pesado",
@@ -7647,21 +13359,73 @@
 "pescado",
 "Pez que comemos."
 ],
+"pescador": [
+"pescador",
+"Persona que pesca."
+],
 "pescar": [
 "pescar",
 "Pescar: coger peces."
+],
+"pese": [
+"pesar",
+"Forma de \"pesar\"."
 ],
 "pez": [
 "pez",
 "Animal que vive en el agua y nada."
 ],
+"pica": [
+"picar",
+"Muerde un insecto."
+],
+"picadura": [
+"picadura",
+"Herida de un insecto."
+],
+"picaduras": [
+"picadura",
+"Heridas de insecto."
+],
+"pican": [
+"picar",
+"Muerden."
+],
 "picar": [
 "picar",
 "Picar: romper piedra con un pico."
 ],
+"picaron": [
+"picar",
+"Mordieron."
+],
+"picarán": [
+"picar",
+"Morderán."
+],
 "pico": [
 "pico",
 "Herramienta para romper piedra."
+],
+"picor": [
+"picor",
+"Ganas de rascarse."
+],
+"piden": [
+"pedir",
+"Quieren que les den."
+],
+"pidiendo": [
+"pedir",
+"Rogando."
+],
+"pidieran": [
+"pedir",
+"Quisieran."
+],
+"pidió": [
+"pedir",
+"Quiso que le dieran."
 ],
 "piedra": [
 "piedra",
@@ -7683,6 +13447,10 @@
 "pensar",
 "Pensar: usar la cabeza para tener ideas."
 ],
+"pienses": [
+"pensar",
+"Forma de \"pensar\"."
+],
 "pienso": [
 "pensar",
 "Pensar: usar la cabeza para tener ideas."
@@ -7690,6 +13458,10 @@
 "pierde": [
 "perder",
 "Perder: no ganar."
+],
+"pierden": [
+"perder",
+"Dejan de tener."
 ],
 "pierdes": [
 "perder",
@@ -7743,6 +13515,10 @@
 "pintar",
 "Pintar: poner color."
 ],
+"pinturas": [
+"pintura",
+"Líquidos para pintar."
+],
 "pirineos": [
 "Pirineos",
 "Nombre de unas montañas entre España y Francia."
@@ -7759,6 +13535,10 @@
 "pisar",
 "Pisar: poner el pie encima de algo."
 ],
+"piscinas": [
+"piscina",
+"Sitios con agua para nadar."
+],
 "pitaya": [
 "pitaya",
 "Fruta rosa por fuera, blanca o roja por dentro."
@@ -7767,9 +13547,25 @@
 "pizza",
 "Comida italiana: pan plano con tomate y queso."
 ],
+"plagas": [
+"plaga",
+"Animales que causan problemas."
+],
+"plan": [
+"plan",
+"Idea de lo que se hará."
+],
 "plancton": [
 "plancton",
 "Seres muy pequeños que viven en el agua del mar."
+],
+"planear": [
+"planear",
+"Volar sin mover las alas."
+],
+"planearon": [
+"planear",
+"Pensaron cómo hacer."
 ],
 "planeta": [
 "planeta",
@@ -7787,9 +13583,21 @@
 "planificar",
 "Planificar: pensar antes qué vas a hacer."
 ],
+"planta": [
+"planta",
+"Ser vivo verde."
+],
 "plantas": [
 "planta",
 "Ser vivo verde que vive en la tierra, como un árbol."
+],
+"plantea": [
+"plantear",
+"Presenta."
+],
+"planteó": [
+"plantear",
+"Presentó."
 ],
 "plata": [
 "plata",
@@ -7810,6 +13618,10 @@
 "platón": [
 "Platón",
 "Nombre de un filósofo griego."
+],
+"platós": [
+"plató",
+"Lugares donde se graba la tele."
 ],
 "playa": [
 "playa",
@@ -7839,6 +13651,10 @@
 "Plutón",
 "Nombre de un planeta enano."
 ],
+"plástico": [
+"plástico",
+"Material ligero."
+],
 "plátano": [
 "plátano",
 "Fruta larga y amarilla."
@@ -7846,6 +13662,10 @@
 "plátanos": [
 "plátano",
 "Fruta larga y amarilla."
+],
+"población": [
+"población",
+"Gente de un lugar."
 ],
 "poca": [
 "poco",
@@ -7887,6 +13707,10 @@
 "poder",
 "Poder: ser posible hacer algo."
 ],
+"podio": [
+"podio",
+"Lugar donde suben los ganadores."
+],
 "podió": [
 "poder",
 "Forma incorrecta. Lo correcto es «pudo»."
@@ -7894,6 +13718,10 @@
 "podría": [
 "poder",
 "Poder: ser capaz de hacer algo."
+],
+"podrían": [
+"poder",
+"Forma de \"poder\"."
 ],
 "podía": [
 "poder",
@@ -7903,9 +13731,21 @@
 "poder",
 "Poder: ser posible hacer algo."
 ],
+"poemas": [
+"poema",
+"Textos en verso."
+],
+"polaco": [
+"polaco",
+"De Polonia."
+],
 "policía": [
 "policía",
 "Grupo de personas que protegen a la gente y cuidan las leyes."
+],
+"polo": [
+"polo",
+"Extremo de un planeta."
 ],
 "polos": [
 "polo",
@@ -7915,13 +13755,41 @@
 "polvo",
 "Trocitos muy pequeños de tierra."
 ],
+"polvorientos": [
+"polvo",
+"Con polvo."
+],
+"polémica": [
+"polémica",
+"Discusión."
+],
+"pone": [
+"poner",
+"Coloca."
+],
 "ponen": [
 "poner",
 "Ponerse algo: llevarlo en el cuerpo."
 ],
+"poner": [
+"poner",
+"Colocar."
+],
+"ponerles": [
+"poner",
+"Colocarles."
+],
+"ponerse": [
+"poner",
+"Colocarse."
+],
 "pones": [
 "poner",
 "Poner: colocar algo en un sitio."
+],
+"pongan": [
+"poner",
+"Coloquen."
 ],
 "pongo": [
 "poner",
@@ -7946,6 +13814,10 @@
 "populares": [
 "popular",
 "Que gusta a mucha gente."
+],
+"popularidad": [
+"popular",
+"Ser famoso."
 ],
 "por": [
 "por",
@@ -7983,33 +13855,113 @@
 "último",
 "Para terminar."
 ],
+"porción": [
+"porción",
+"Trozo."
+],
 "porque": [
 "porque",
 "Palabra para explicar la causa."
+],
+"portaba": [
+"portar",
+"Se comportaba."
+],
+"portátil": [
+"portátil",
+"Que se puede llevar."
 ],
 "posibilidad": [
 "posibilidad",
 "Algo que puede pasar."
 ],
+"posibilidades": [
+"posibilidad",
+"Lo que puede pasar."
+],
 "posible": [
 "posible",
 "Que puede pasar."
+],
+"posibles": [
+"posible",
+"Que pueden ser."
+],
+"positivo": [
+"positivo",
+"Bueno."
+],
+"posterior": [
+"posterior",
+"De después."
+],
+"postura": [
+"postura",
+"Opinión."
+],
+"potencial": [
+"potencial",
+"Lo que puede llegar a ser."
+],
+"potente": [
+"potente",
+"Fuerte."
+],
+"potentes": [
+"potente",
+"Fuertes."
 ],
 "practican": [
 "practicar",
 "Practicar: hacer algo muchas veces para hacerlo mejor."
 ],
+"practicar": [
+"practicar",
+"Hacer algo para aprender."
+],
 "practicas": [
 "practicar",
 "Practicar: hacer algo muchas veces para hacerlo mejor."
+],
+"praga": [
+"praga",
+"Capital de la República Checa."
+],
+"precauciones": [
+"precaución",
+"Cuidados."
 ],
 "precio": [
 "precio",
 "Cuánto dinero cuesta algo."
 ],
+"precisamente": [
+"preciso",
+"Justamente."
+],
+"preferiría": [
+"preferir",
+"Le gustaría más."
+],
+"prefería": [
+"preferir",
+"Le gustaba más."
+],
 "prefieren": [
 "preferir",
 "Preferir: gustar más una cosa que otra."
+],
+"prefiero": [
+"preferir",
+"Me gusta más."
+],
+"prefirió": [
+"preferir",
+"Le gustó más."
+],
+"pregunta": [
+"pregunta",
+"Lo que se pregunta."
 ],
 "preguntas": [
 "pregunta",
@@ -8019,21 +13971,85 @@
 "preguntar",
 "Preguntar: decir algo para saber una respuesta."
 ],
+"premio": [
+"premio",
+"Regalo por ganar."
+],
+"premios": [
+"premio",
+"Regalos por ganar."
+],
 "prensa": [
 "prensa",
 "Periódicos y periodistas."
+],
+"preocupa": [
+"preocupar",
+"Pone nervioso."
+],
+"preocupaciones": [
+"preocupación",
+"Nervios por algo."
+],
+"preocupación": [
+"preocupación",
+"Nervios por algo."
+],
+"preocupados": [
+"preocupar",
+"Nerviosos."
+],
+"preocupan": [
+"preocupar",
+"Ponen nerviosos."
+],
+"preocuparse": [
+"preocupar",
+"Estar nervioso por algo."
 ],
 "prepara": [
 "preparar",
 "Preparar: hacer lo necesario antes; cocinar."
 ],
+"preparación": [
+"preparar",
+"Lo que se hace antes."
+],
+"preparado": [
+"preparar",
+"Hecho."
+],
 "preparan": [
 "preparar",
 "Preparar: hacer lo necesario antes."
 ],
+"preparar": [
+"preparar",
+"Hacer antes."
+],
+"presa": [
+"presa",
+"Muro para el agua; animal cazado."
+],
+"presas": [
+"presa",
+"Animales que se cazan."
+],
 "presentado": [
 "presentar",
 "Presentar: enseñar algo nuevo a la gente."
+],
+"presentados": [
+"presentar",
+"Mostrados."
+],
+"presentan": [
+"presentar",
+"Dan."
+],
+"presentar": [
+"presentar",
+"Dar."
 ],
 "presente": [
 "presente",
@@ -8047,6 +14063,34 @@
 "presión",
 "Fuerza que empuja algo."
 ],
+"presión": [
+"presión",
+"Nervios por tener que hacer algo."
+],
+"prestan": [
+"prestar",
+"Dan (atención)."
+],
+"prestar": [
+"prestar",
+"Dar (atención)."
+],
+"prevenir": [
+"prevenir",
+"Evitar antes."
+],
+"prever": [
+"prever",
+"Ver antes."
+],
+"previenen": [
+"prevenir",
+"Evitan."
+],
+"previsto": [
+"prever",
+"Planeado."
+],
 "primer": [
 "primero",
 "Que va antes que los otros."
@@ -8054,6 +14098,10 @@
 "primera": [
 "primero",
 "Que va antes que los otros."
+],
+"primeras": [
+"primero",
+"Las del principio."
 ],
 "primero": [
 "primero",
@@ -8063,13 +14111,33 @@
 "primero",
 "Que va antes que los otros."
 ],
+"primitiva": [
+"primitivo",
+"Muy antigua."
+],
+"principal": [
+"principal",
+"Lo más importante."
+],
 "principales": [
 "principal",
 "El más importante."
 ],
+"principiantes": [
+"principiante",
+"Personas que empiezan."
+],
 "principio": [
 "principio",
 "La primera parte."
+],
+"principios": [
+"principio",
+"Comienzos."
+],
+"prioritarios": [
+"prioridad",
+"Más importantes."
 ],
 "probable": [
 "probable",
@@ -8078,6 +14146,10 @@
 "probablemente": [
 "probable",
 "Que puede pasar fácilmente."
+],
+"probado": [
+"probar",
+"Intentado."
 ],
 "probando": [
 "probar",
@@ -8091,6 +14163,10 @@
 "probar",
 "Probar: comer algo para ver su sabor; intentar."
 ],
+"probarte": [
+"probar",
+"Intentarlo."
+],
 "probaré": [
 "probar",
 "Probar: comer algo para ver su sabor; intentar."
@@ -8098,6 +14174,10 @@
 "problema": [
 "problema",
 "Algo difícil o malo."
+],
+"problemas": [
+"problema",
+"Cosas difíciles."
 ],
 "probé": [
 "probar",
@@ -8107,6 +14187,26 @@
 "probar",
 "Probar: comer algo para ver su sabor; intentar."
 ],
+"procedimiento": [
+"procedimiento",
+"Forma de hacer algo."
+],
+"procedían": [
+"proceder",
+"Venían."
+],
+"procesión": [
+"procesión",
+"Desfile religioso."
+],
+"proceso": [
+"proceso",
+"Serie de pasos."
+],
+"produce": [
+"producir",
+"Hace; crea."
+],
 "producen": [
 "producir",
 "Producir: hacer, crear."
@@ -8115,7 +14215,27 @@
 "producir",
 "Producir: hacer, crear."
 ],
+"producto": [
+"producto",
+"Cosa que se vende."
+],
+"productos": [
+"producto",
+"Cosas que se venden."
+],
+"profesional": [
+"profesional",
+"De trabajo."
+],
+"profesionales": [
+"profesional",
+"Que lo hacen de trabajo."
+],
 "profesiones": [
+"profesión",
+"Trabajo."
+],
+"profesión": [
 "profesión",
 "Trabajo."
 ],
@@ -8134,6 +14254,10 @@
 "profunda": [
 "profundo",
 "Que tiene mucha distancia hacia abajo."
+],
+"profundamente": [
+"profundo",
+"Mucho."
 ],
 "profundo": [
 "profundo",
@@ -8155,6 +14279,14 @@
 "programador",
 "Persona que escribe programas de ordenador."
 ],
+"programas": [
+"programa",
+"Planes."
+],
+"progreso": [
+"progreso",
+"Avance."
+],
 "prohibidas": [
 "prohibir",
 "Prohibir: no dejar hacer algo."
@@ -8167,9 +14299,29 @@
 "prohibir",
 "Prohibir: no dejar hacer algo."
 ],
+"prohibir": [
+"prohibir",
+"No dejar."
+],
+"prohibió": [
+"prohibir",
+"No dejó."
+],
+"prohíbe": [
+"prohibir",
+"No deja."
+],
+"prometedor": [
+"prometer",
+"Que da esperanza."
+],
 "pronto": [
 "pronto",
 "Dentro de poco tiempo."
+],
+"propagan": [
+"propagar",
+"Extienden."
 ],
 "propia": [
 "propio",
@@ -8187,6 +14339,18 @@
 "propio",
 "De uno mismo."
 ],
+"propuesto": [
+"proponer",
+"Sugerido."
+],
+"propósito": [
+"propósito",
+"Fin."
+],
+"protecciones": [
+"protección",
+"Cosas que protegen."
+],
 "protección": [
 "protección",
 "Algo que cuida y evita el daño."
@@ -8194,6 +14358,10 @@
 "protegemos": [
 "proteger",
 "Proteger: cuidar a alguien de un peligro."
+],
+"protegen": [
+"proteger",
+"Cuidan."
 ],
 "proteger": [
 "proteger",
@@ -8211,6 +14379,10 @@
 "proteger",
 "Proteger: cuidar para evitar el daño."
 ],
+"protegido": [
+"proteger",
+"Cuidado."
+],
 "proteína": [
 "proteína",
 "Parte de la comida que ayuda a crecer los músculos."
@@ -8222,6 +14394,22 @@
 "protégete": [
 "proteger",
 "Proteger: cuidar a alguien de un peligro."
+],
+"provincia": [
+"provincia",
+"Parte de un país."
+],
+"provocaba": [
+"provocar",
+"Causaba."
+],
+"provocan": [
+"provocar",
+"Causan."
+],
+"provocó": [
+"provocar",
+"Causó."
 ],
 "proyecto": [
 "proyecto",
@@ -8235,6 +14423,10 @@
 "probar",
 "Probar: comer algo para ver su sabor; intentar."
 ],
+"prueban": [
+"probar",
+"Intentan."
+],
 "pruebas": [
 "prueba",
 "Cuando intentas algo para ver si funciona."
@@ -8243,13 +14435,41 @@
 "probar",
 "Probar: comer algo para ver su sabor; intentar."
 ],
+"práctica": [
+"práctica",
+"Uso real."
+],
+"práctico": [
+"práctico",
+"Útil."
+],
+"próxima": [
+"próximo",
+"La siguiente."
+],
+"próximas": [
+"próximo",
+"Siguientes."
+],
+"próximo": [
+"próximo",
+"Siguiente."
+],
 "próximos": [
 "próximo",
 "Que viene después."
 ],
+"psicólogos": [
+"psicólogo",
+"Expertos en la mente."
+],
 "publica": [
 "publicar",
 "Publicar: hacer que todos puedan ver algo."
+],
+"publicación": [
+"publicar",
+"Salida de un libro."
 ],
 "publicada": [
 "publicar",
@@ -8262,6 +14482,10 @@
 "publicado": [
 "publicar",
 "Publicar: sacar un libro o un texto para que la gente lo lea."
+],
+"publicara": [
+"publicar",
+"Sacara un libro."
 ],
 "publicaron": [
 "publicar",
@@ -8323,9 +14547,17 @@
 "poder",
 "Poder: ser posible hacer algo."
 ],
+"puente": [
+"puente",
+"Lo que cruza un río."
+],
 "puerta": [
 "puerta",
 "Abertura para entrar y salir."
+],
+"puertas": [
+"puerta",
+"Lo que se abre para entrar."
 ],
 "puerto": [
 "puerto",
@@ -8359,9 +14591,17 @@
 "pulpo",
 "Pulpo pequeño con anillos azules y un veneno muy fuerte."
 ],
+"pulpos": [
+"pulpo",
+"Animales del mar con ocho brazos."
+],
 "pulsas": [
 "pulsar",
 "Pulsar: apretar un botón."
+],
+"pulso": [
+"pulso",
+"Los golpes del corazón que se notan."
 ],
 "puntas": [
 "punta",
@@ -8407,9 +14647,17 @@
 "pánico",
 "Miedo muy fuerte."
 ],
+"párrafo": [
+"párrafo",
+"Parte de un texto."
+],
 "pázhitnov": [
 "pázhitnov",
 "Nombre de familia del creador de Tetris."
+],
+"pérdida": [
+"perder",
+"Algo malo que se pierde."
 ],
 "pósits": [
 "pósit",
@@ -8418,6 +14666,10 @@
 "público": [
 "público",
 "Las personas que miran un espectáculo."
+],
+"públicos": [
+"público",
+"De todos."
 ],
 "que": [
 "que",
@@ -8430,6 +14682,22 @@
 "quedaba": [
 "quedar",
 "Quedar: seguir habiendo."
+],
+"quedan": [
+"quedar",
+"Siguen."
+],
+"quedar": [
+"quedar",
+"Estar."
+],
+"quedaran": [
+"quedar",
+"Estuvieran."
+],
+"quedaron": [
+"quedar",
+"Se pusieron."
 ],
 "quedarse": [
 "quedarse",
@@ -8455,6 +14723,14 @@
 "quejarse",
 "Quejarse: decir que algo no te gusta."
 ],
+"quejaban": [
+"quejar",
+"Protestaban."
+],
+"quejas": [
+"queja",
+"Protestas."
+],
 "quema": [
 "quemar",
 "Quemar: hacer daño con fuego o calor."
@@ -8463,13 +14739,45 @@
 "querer",
 "Querer: desear algo."
 ],
+"querer": [
+"querer",
+"Desear."
+],
+"quería": [
+"querer",
+"Deseaba."
+],
+"querían": [
+"querer",
+"Deseaban."
+],
 "queso": [
 "queso",
 "Comida blanca o amarilla que se hace con leche."
 ],
+"quesos": [
+"queso",
+"Alimento hecho con leche."
+],
+"quick": [
+"quick",
+"Rápido (inglés)."
+],
 "quidz": [
 "quidz",
 "Dinero que se gana en el juego BEAR."
+],
+"quien": [
+"quien",
+"La persona que."
+],
+"quienes": [
+"quien",
+"Las personas que."
+],
+"quiere": [
+"querer",
+"Desea."
 ],
 "quieren": [
 "querer",
@@ -8483,17 +14791,37 @@
 "quieto",
 "Sin moverse."
 ],
+"quieto": [
+"quieto",
+"Sin moverse."
+],
 "quince": [
 "quince",
 "El número 15."
+],
+"quinientas": [
+"quinientos",
+"Número 500."
 ],
 "quinientos": [
 "quinientos",
 "El número 500."
 ],
+"quinto": [
+"cinco",
+"Número cinco en orden."
+],
 "quisieron": [
 "querer",
 "Querer: desear algo."
+],
+"quiso": [
+"querer",
+"Deseó."
+],
+"quitado": [
+"quitar",
+"Sacado."
 ],
 "quitan": [
 "quitar",
@@ -8539,6 +14867,14 @@
 "químico",
 "De la química: cuando las cosas se mezclan y cambian."
 ],
+"químico": [
+"químico",
+"Experto en química."
+],
+"químicos": [
+"químico",
+"Productos de química."
+],
 "radar": [
 "radar",
 "Aparato que descubre objetos lejanos con ondas."
@@ -8583,6 +14919,10 @@
 "rana",
 "Rana pequeña y amarilla de Colombia, muy venenosa."
 ],
+"ranas": [
+"rana",
+"Animales verdes que saltan."
+],
 "rape": [
 "rape",
 "Pez de boca enorme."
@@ -8594,6 +14934,14 @@
 "rapero": [
 "rapero",
 "Persona que canta rap."
+],
+"rapidez": [
+"rápido",
+"Velocidad."
+],
+"rara": [
+"raro",
+"Poco común."
 ],
 "raras": [
 "raro",
@@ -8607,6 +14955,22 @@
 "raro",
 "Que no pasa muchas veces."
 ],
+"rasgado": [
+"rasgar",
+"Roto."
+],
+"rasgos": [
+"rasgo",
+"Características."
+],
+"rashid": [
+"rashid",
+"Ciudad de Egipto."
+],
+"rastros": [
+"rastro",
+"Señales."
+],
 "raymond": [
 "raymond",
 "Nombre de hombre (francés)."
@@ -8615,9 +14979,41 @@
 "rayo",
 "Luz y electricidad que cae del cielo en una tormenta."
 ],
+"rayssa": [
+"rayssa",
+"Nombre de mujer."
+],
+"razones": [
+"razón",
+"Motivos."
+],
 "razón": [
 "razón",
 "El porqué de algo."
+],
+"reacciona": [
+"reaccionar",
+"Responde a algo."
+],
+"reaccionan": [
+"reaccionar",
+"Responden."
+],
+"reaccionando": [
+"reaccionar",
+"Respondiendo."
+],
+"reaccionar": [
+"reaccionar",
+"Responder."
+],
+"reacciones": [
+"reacción",
+"Respuestas."
+],
+"reaccionó": [
+"reaccionar",
+"Respondió."
 ],
 "reacción": [
 "reacción",
@@ -8635,9 +15031,69 @@
 "realidad",
 "Lo que es verdad."
 ],
+"realizado": [
+"realizar",
+"Hecho."
+],
+"realmente": [
+"real",
+"De verdad."
+],
+"rebeldes": [
+"rebelde",
+"Que no obedecen."
+],
+"recauda": [
+"recaudar",
+"Junta dinero."
+],
+"recaudado": [
+"recaudar",
+"Juntado (dinero)."
+],
+"recaudar": [
+"recaudar",
+"Juntar dinero."
+],
+"recaudó": [
+"recaudar",
+"Juntó dinero."
+],
+"receptores": [
+"receptor",
+"Partes que reciben algo."
+],
 "receta": [
 "receta",
 "Instrucciones para hacer una comida."
+],
+"rechace": [
+"rechazar",
+"Diga que no."
+],
+"rechaza": [
+"rechazar",
+"Dice que no."
+],
+"rechazan": [
+"rechazar",
+"Dicen que no."
+],
+"reciben": [
+"recibir",
+"Les dan."
+],
+"recibida": [
+"recibir",
+"Que llegó."
+],
+"recibido": [
+"recibir",
+"Llegado."
+],
+"recibieron": [
+"recibir",
+"Les dieron."
 ],
 "recibimos": [
 "recibir",
@@ -8647,13 +15103,49 @@
 "recibir",
 "Recibir: llegarte algo."
 ],
+"recibiremos": [
+"recibir",
+"Nos llegará."
+],
+"recibió": [
+"recibir",
+"Le dieron."
+],
+"recibos": [
+"recibo",
+"Papeles que demuestran un pago."
+],
+"recientemente": [
+"reciente",
+"Hace poco."
+],
 "recoge": [
 "recoger",
 "Recoger: coger cosas."
 ],
+"recogen": [
+"recoger",
+"Cogen."
+],
+"recogiendo": [
+"recoger",
+"Cogiendo."
+],
 "recomendaciones": [
 "recomendación",
 "Consejo."
+],
+"recomienda": [
+"recomendar",
+"Aconseja."
+],
+"recompensas": [
+"recompensa",
+"Premios."
+],
+"reconocen": [
+"reconocer",
+"Saben quién es."
 ],
 "reconocer": [
 "reconocer",
@@ -8663,17 +15155,69 @@
 "reconocido",
 "Que la gente sabe que es importante."
 ],
+"reconocimiento": [
+"reconocimiento",
+"Premio por algo bien hecho."
+],
+"reconoció": [
+"reconocer",
+"Aceptó oficialmente."
+],
 "reconstruir": [
 "reconstruir",
 "Reconstruir: construir otra vez."
+],
+"reconstruyendo": [
+"reconstruir",
+"Construyendo otra vez."
+],
+"recordar": [
+"recordar",
+"Tener en la memoria."
 ],
 "recordó": [
 "recordar",
 "Recordar: tener algo en la memoria."
 ],
+"recorrido": [
+"recorrer",
+"Viajado."
+],
+"recrear": [
+"recrear",
+"Hacer otra vez."
+],
 "recuerda": [
 "recordar",
 "Recordar: tener algo en la memoria."
+],
+"recuperado": [
+"recuperar",
+"Mejorado."
+],
+"recuperarla": [
+"recuperar",
+"Tenerla otra vez."
+],
+"recuperaron": [
+"recuperar",
+"Mejoraron."
+],
+"recuperarse": [
+"recuperar",
+"Mejorar."
+],
+"recurrido": [
+"recurrir",
+"Usado."
+],
+"recursos": [
+"recurso",
+"Cosas útiles."
+],
+"rediseñó": [
+"rediseñar",
+"Diseñó otra vez."
 ],
 "redondo": [
 "redondo",
@@ -8683,9 +15227,37 @@
 "redstone",
 "Mineral rojo de Minecraft (en inglés: «piedra roja»)."
 ],
+"reducir": [
+"reducir",
+"Hacer más pequeño."
+],
+"reducirse": [
+"reducir",
+"Hacerse más pequeño."
+],
+"redujo": [
+"reducir",
+"Hizo más pequeño."
+],
 "reemplazar": [
 "reemplazar",
 "Reemplazar: poner una cosa en el lugar de otra."
+],
+"refiere": [
+"referir",
+"Habla de."
+],
+"refrescante": [
+"refrescante",
+"Que da alegría."
+],
+"refugio": [
+"refugio",
+"Lugar para protegerse."
+],
+"regalo": [
+"regalo",
+"Cosa que se da."
 ],
 "regenerar": [
 "regenerar",
@@ -8695,6 +15267,14 @@
 "registrar",
 "Registrar: escribir algo de forma oficial."
 ],
+"registrar": [
+"registrar",
+"Apuntar oficialmente."
+],
+"región": [
+"región",
+"Zona."
+],
 "regla": [
 "regla",
 "Lo que hay que hacer."
@@ -8702,6 +15282,54 @@
 "reglas": [
 "regla",
 "Lo que hay que hacer."
+],
+"reinas": [
+"reina",
+"Mujeres que gobiernan un reino."
+],
+"relacionado": [
+"relacionar",
+"Unido a."
+],
+"relacionar": [
+"relacionar",
+"Unir."
+],
+"relaciones": [
+"relación",
+"Conexiones entre personas."
+],
+"relación": [
+"relación",
+"Conexión."
+],
+"relajadas": [
+"relajar",
+"Tranquilas."
+],
+"relajante": [
+"relajar",
+"Que tranquiliza."
+],
+"relajarse": [
+"relajar",
+"Descansar."
+],
+"relativamente": [
+"relativo",
+"Bastante."
+],
+"religiosa": [
+"religioso",
+"De la religión."
+],
+"religioso": [
+"religioso",
+"De la religión."
+],
+"religión": [
+"religión",
+"Creencia en Dios o dioses."
 ],
 "reloj": [
 "reloj",
@@ -8711,9 +15339,17 @@
 "rendir",
 "Rendirse: dejar de intentar algo."
 ],
+"repelente": [
+"repelente",
+"Producto que aleja insectos."
+],
 "repentinas": [
 "repentino",
 "Que pasa de repente."
+],
+"repentino": [
+"repentino",
+"Que pasa de golpe."
 ],
 "repetir": [
 "repetir",
@@ -8723,9 +15359,25 @@
 "repetir",
 "Repetir: hacer otra vez."
 ],
+"reporteros": [
+"reportero",
+"Periodistas."
+],
 "reporteros sin fronteras": [
 "Reporteros sin Fronteras",
 "Nombre de una organización que defiende a los periodistas."
+],
+"representaba": [
+"representar",
+"Era el signo de."
+],
+"representaban": [
+"representar",
+"Eran signos de."
+],
+"representar": [
+"representar",
+"Ser el signo de."
 ],
 "reptil": [
 "reptil",
@@ -8735,6 +15387,18 @@
 "reptil",
 "Animal con escamas, como la serpiente."
 ],
+"requieren": [
+"requerir",
+"Necesitan."
+],
+"resbale": [
+"resbalar",
+"Se deslice."
+],
+"resfriados": [
+"resfriado",
+"Enfermedades leves con tos y mocos."
+],
 "residuos": [
 "residuo",
 "Basura."
@@ -8743,9 +15407,41 @@
 "resistir",
 "Resistir: aguantar sin romperse."
 ],
+"resisten": [
+"resistir",
+"Aguantan."
+],
 "resistente": [
 "resistente",
 "Que aguanta mucho sin romperse."
+],
+"resistentes": [
+"resistir",
+"Que aguantan."
+],
+"resistido": [
+"resistir",
+"Aguantado."
+],
+"resistir": [
+"resistir",
+"Aguantar."
+],
+"resolución": [
+"resolver",
+"Solución."
+],
+"resolver": [
+"resolver",
+"Encontrar la solución."
+],
+"resolverlas": [
+"resolver",
+"Solucionarlas."
+],
+"respaldan": [
+"respaldar",
+"Apoyan."
 ],
 "respeta": [
 "respetar",
@@ -8759,17 +15455,41 @@
 "respetar",
 "Respetar: tratar bien y con cuidado."
 ],
+"respeto": [
+"respeto",
+"Consideración."
+],
 "respira": [
 "respirar",
 "Respirar: meter y sacar aire del cuerpo."
+],
+"respiramos": [
+"respirar",
+"Tomamos y echamos aire."
 ],
 "respirar": [
 "respirar",
 "Respirar: meter y sacar aire del cuerpo."
 ],
+"responder": [
+"responder",
+"Contestar."
+],
+"responderla": [
+"responder",
+"Contestarla."
+],
+"respondido": [
+"responder",
+"Contestado."
+],
 "respondió": [
 "responder",
 "Responder: contestar."
+],
+"responsabilidad": [
+"responsabilidad",
+"Deber."
 ],
 "responsable": [
 "responsable",
@@ -8779,17 +15499,81 @@
 "respuesta",
 "Lo que dices después de una pregunta."
 ],
+"respuestas": [
+"respuesta",
+"Contestaciones."
+],
 "restaurante": [
 "restaurante",
 "Lugar donde pagas para comer."
+],
+"resto": [
+"resto",
+"Lo que queda."
 ],
 "restos": [
 "resto",
 "Lo que queda de algo."
 ],
+"resuelto": [
+"resolver",
+"Solucionado."
+],
+"resuelva": [
+"resolver",
+"Solucione."
+],
+"resulta": [
+"resultar",
+"Es."
+],
+"resultado": [
+"resultado",
+"Lo que sale."
+],
+"resultados": [
+"resultado",
+"Lo que sale al final."
+],
+"resultan": [
+"resultar",
+"Son."
+],
+"resultar": [
+"resultar",
+"Acabar siendo."
+],
+"resultaron": [
+"resultar",
+"Fueron."
+],
+"resulten": [
+"resultar",
+"Sean."
+],
+"resultó": [
+"resultar",
+"Fue."
+],
+"reto": [
+"reto",
+"Desafío."
+],
 "retos": [
 "reto",
 "Algo difícil que quieres conseguir."
+],
+"retransmiten": [
+"retransmitir",
+"Emiten en directo."
+],
+"retransmitiendo": [
+"retransmitir",
+"Emitiendo en directo."
+],
+"retransmitió": [
+"retransmitir",
+"Emitió en directo."
 ],
 "reunido": [
 "reunir",
@@ -8799,13 +15583,37 @@
 "reunir",
 "Reunir: juntar en un solo sitio."
 ],
+"reunieron": [
+"reunir",
+"Juntaron."
+],
+"reunió": [
+"reunir",
+"Juntó."
+],
+"revelar": [
+"revelar",
+"Contar un secreto."
+],
+"reveló": [
+"revelar",
+"Contó."
+],
 "revisados": [
 "revisar",
 "Revisar: mirar algo con atención para ver si está bien."
 ],
+"revisar": [
+"revisar",
+"Mirar otra vez."
+],
 "revisarlas": [
 "revisar",
 "Revisar: mirar algo otra vez con atención."
+],
+"revisaron": [
+"revisar",
+"Miraron otra vez."
 ],
 "revise": [
 "revisar",
@@ -8823,9 +15631,33 @@
 "rey",
 "Hombre que manda en un país."
 ],
+"reímos": [
+"reír",
+"Hacemos \"ja, ja\"."
+],
+"rico": [
+"rico",
+"Con mucho dinero."
+],
 "ricos": [
 "rico",
 "Que tiene mucho dinero."
+],
+"rindió": [
+"rendirse",
+"Dejó de intentar."
+],
+"rivales": [
+"rival",
+"Contrarios."
+],
+"rivalidad": [
+"rivalidad",
+"Competencia entre rivales."
+],
+"riéndose": [
+"reír",
+"Haciendo \"ja, ja\"."
 ],
 "robert": [
 "robert",
@@ -8863,9 +15695,17 @@
 "roca",
 "Piedra grande."
 ],
+"rocosos": [
+"roca",
+"De roca."
+],
 "rodar": [
 "rodar",
 "Rodar: dar vueltas por el suelo."
+],
+"rodea": [
+"rodear",
+"Está alrededor."
 ],
 "rodilleras": [
 "rodillera",
@@ -8891,9 +15731,17 @@
 "roma",
 "Nombre de la capital de Italia."
 ],
+"romanos": [
+"romano",
+"De Roma."
+],
 "rompe": [
 "romper",
 "Romper: hacer trozos algo."
+],
+"rompecabezas": [
+"rompecabezas",
+"Juego para pensar."
 ],
 "rompió": [
 "romper",
@@ -8911,9 +15759,21 @@
 "rosa",
 "Color entre el rojo y el blanco."
 ],
+"rosetta": [
+"rosetta",
+"Nombre europeo de Rashid."
+],
+"ross": [
+"ross",
+"Nombre de hombre."
+],
 "rota": [
 "roto",
 "Que tiene partes separadas."
+],
+"roto": [
+"romper",
+"Partido."
 ],
 "rover": [
 "rover",
@@ -8927,9 +15787,21 @@
 "rueda",
 "Pieza redonda que gira para moverse."
 ],
+"ruegan": [
+"rogar",
+"Piden por favor."
+],
 "ruido": [
 "ruido",
 "Sonido fuerte."
+],
+"ruidosas": [
+"ruido",
+"Que hacen ruido."
+],
+"ruidosos": [
+"ruido",
+"Que hacen ruido."
 ],
 "rusa": [
 "ruso",
@@ -8939,9 +15811,17 @@
 "rusia",
 "Nombre de un país muy grande."
 ],
+"ruta": [
+"ruta",
+"Camino."
+],
 "rápida": [
 "rápido",
 "Que va muy deprisa."
+],
+"rápidamente": [
+"rápido",
+"Deprisa."
 ],
 "rápidas": [
 "rápido",
@@ -8979,6 +15859,10 @@
 "saber",
 "Saber: tener información; ser capaz de algo."
 ],
+"saben": [
+"saber",
+"Conocen."
+],
 "saber": [
 "saber",
 "Saber: tener información; ser capaz de algo."
@@ -8987,25 +15871,65 @@
 "saber",
 "Saber: tener información; ser capaz de algo."
 ],
+"saberse": [
+"saber",
+"Saber de memoria."
+],
 "sabes": [
 "saber",
 "Saber: tener información; ser capaz de algo."
+],
+"sabiduría": [
+"sabiduría",
+"Mucho saber."
+],
+"sabios": [
+"sabio",
+"Personas que saben mucho."
 ],
 "sabor": [
 "sabor",
 "Lo que notas con la boca al comer."
 ],
+"saborear": [
+"saborear",
+"Notar el sabor."
+],
+"sabores": [
+"sabor",
+"Gustos de la comida."
+],
+"sabroso": [
+"sabroso",
+"Que sabe bien."
+],
+"sabrás": [
+"saber",
+"Conocerás."
+],
 "sabía": [
 "saber",
 "Saber: tener información; ser capaz de algo."
+],
+"sabían": [
+"saber",
+"Conocían."
 ],
 "sacaban": [
 "sacar",
 "Sacar: poner fuera."
 ],
+"sacarse": [
+"sacar",
+"Quitarse."
+],
 "sacude": [
 "sacudir",
 "Sacudir: mover algo fuerte para quitarle cosas."
+],
+"sacó": [
+"sacar",
+"Lanzó."
 ],
 "sagitario": [
 "Sagitario",
@@ -9019,6 +15943,14 @@
 "salado",
 "Con sal."
 ],
+"salado": [
+"sal",
+"Con sal."
+],
+"salario": [
+"salario",
+"Dinero por trabajar."
+],
 "sale": [
 "salir",
 "Salir: ir de dentro a fuera."
@@ -9026,6 +15958,14 @@
 "salen": [
 "salir",
 "Salir: ir fuera."
+],
+"salida": [
+"salida",
+"Lugar por donde se sale."
+],
+"salieran": [
+"salir",
+"Se fueran."
 ],
 "salieron": [
 "salir",
@@ -9035,9 +15975,25 @@
 "salir",
 "Salir: ir fuera."
 ],
+"saliva": [
+"saliva",
+"Líquido de la boca."
+],
 "salió": [
 "salir",
 "Salir: ir fuera."
+],
+"salones": [
+"salón",
+"Salas grandes."
+],
+"salpicar": [
+"salpicar",
+"Echar gotas de agua."
+],
+"salsa": [
+"salsa",
+"Líquido para acompañar la comida."
 ],
 "salta": [
 "saltar",
@@ -9087,6 +16043,14 @@
 "saludar",
 "Saludar: decir hola."
 ],
+"salvado": [
+"salvar",
+"Protegido de la muerte."
+],
+"salvaje": [
+"salvaje",
+"Que vive libre."
+],
 "salvajes": [
 "salvaje",
 "Que vive libre en la naturaleza."
@@ -9094,6 +16058,14 @@
 "salvarlo": [
 "salvar",
 "Salvar: sacar de un peligro."
+],
+"salvarnos": [
+"salvar",
+"Sacarnos del peligro."
+],
+"salvo": [
+"salvo",
+"Fuera de peligro."
 ],
 "salvó": [
 "salvar",
@@ -9103,6 +16075,14 @@
 "salir",
 "Salir: ir fuera."
 ],
+"salía": [
+"salir",
+"Se iba."
+],
+"salían": [
+"salir",
+"Iban fuera."
+],
 "sam": [
 "sam",
 "Nombre de persona. En BEAR, uno de los dos científicos."
@@ -9110,6 +16090,14 @@
 "sangre": [
 "sangre",
 "Líquido rojo dentro del cuerpo."
+],
+"sanguíneo": [
+"sangre",
+"De la sangre."
+],
+"sanos": [
+"sano",
+"Con buena salud."
 ],
 "santorini": [
 "Santorini",
@@ -9131,6 +16119,10 @@
 "sarcófago",
 "Caja de piedra o de madera para un muerto."
 ],
+"satisfactorios": [
+"satisfacer",
+"Que dejan contento."
+],
 "saturno": [
 "Saturno",
 "Nombre del planeta con anillos."
@@ -9138,6 +16130,10 @@
 "satélite": [
 "satélite",
 "Máquina que va por el espacio alrededor de la Tierra."
+],
+"sauces": [
+"sauce",
+"Árboles junto al agua."
 ],
 "se": [
 "se",
@@ -9179,7 +16175,15 @@
 "secar",
 "Secar: quitar el agua."
 ],
+"secciones": [
+"sección",
+"Partes."
+],
 "seco": [
+"seco",
+"Sin agua."
+],
+"secos": [
 "seco",
 "Sin agua."
 ],
@@ -9207,9 +16211,21 @@
 "secar",
 "Forma incorrecta. Lo correcto es «secaba»."
 ],
+"seguido": [
+"seguir",
+"Continuado."
+],
 "seguir": [
 "seguir",
 "Seguir: ir detrás; continuar."
+],
+"seguirlo": [
+"seguir",
+"Verlo."
+],
+"seguirá": [
+"seguir",
+"Continuará."
 ],
 "segunda": [
 "segundo",
@@ -9222,6 +16238,14 @@
 "segundos": [
 "segundo",
 "Parte muy corta del tiempo: 60 forman un minuto."
+],
+"segura": [
+"seguro",
+"Sin peligro."
+],
+"seguridad": [
+"seguro",
+"Estar seguro."
 ],
 "seguro": [
 "seguro",
@@ -9255,9 +16279,21 @@
 "seiscientos",
 "El número 600."
 ],
+"seleccionan": [
+"seleccionar",
+"Eligen."
+],
+"selección": [
+"seleccionar",
+"Elección."
+],
 "selva": [
 "selva",
 "Bosque enorme y caliente, con muchas plantas."
+],
+"semana": [
+"semana",
+"Siete días."
 ],
 "semanas": [
 "semana",
@@ -9267,21 +16303,77 @@
 "semilla",
 "Parte pequeña de la fruta de donde nace una planta."
 ],
+"sencilla": [
+"sencillo",
+"Fácil."
+],
 "sencillas": [
 "sencillo",
 "Fácil, simple."
+],
+"sencillo": [
+"sencillo",
+"Fácil."
 ],
 "sencillos": [
 "sencillo",
 "Fácil, simple."
 ],
+"sensación": [
+"sensación",
+"Lo que se siente."
+],
+"sentaban": [
+"sentar",
+"Se ponían encima."
+],
+"sentarse": [
+"sentar",
+"Ponerse en una silla."
+],
 "sentido": [
 "sentido",
 "«Sentido común»: pensar con lógica."
 ],
+"sentidos": [
+"sentido",
+"Vista, oído, olfato..."
+],
+"sentimientos": [
+"sentimiento",
+"Emociones."
+],
+"sentimos": [
+"sentir",
+"Notamos."
+],
+"sentir": [
+"sentir",
+"Notar algo en el cuerpo o en el corazón."
+],
+"sentirse": [
+"sentir",
+"Notar cómo está uno."
+],
+"sentía": [
+"sentir",
+"Notaba."
+],
+"sepamos": [
+"saber",
+"Forma de \"saber\"."
+],
 "separadas": [
 "separado",
 "Que no está junto."
+],
+"separar": [
+"separar",
+"Apartar."
+],
+"sequía": [
+"sequía",
+"Tiempo sin lluvia."
 ],
 "sequísimo": [
 "seco",
@@ -9299,9 +16391,25 @@
 "ser",
 "Ser vivo: animal, planta o persona."
 ],
+"seriamente": [
+"serio",
+"De forma grave."
+],
+"serie": [
+"serie",
+"Grupo de cosas seguidas."
+],
+"seriedad": [
+"serio",
+"Ser serio."
+],
 "series": [
 "serie",
 "Historia de televisión en varios capítulos."
+],
+"serio": [
+"serio",
+"Importante."
 ],
 "serios": [
 "serio",
@@ -9319,9 +16427,17 @@
 "serpiente",
 "Reptil largo sin patas."
 ],
+"servir": [
+"servir",
+"Ser útil."
+],
 "servía": [
 "servir",
 "Servir: ser útil."
+],
+"servían": [
+"servir",
+"Se usaban."
 ],
 "será": [
 "ser",
@@ -9335,13 +16451,29 @@
 "sesenta",
 "El número 60."
 ],
+"seta": [
+"seta",
+"Hongo."
+],
+"setas": [
+"seta",
+"Hongos."
+],
 "setenta": [
 "setenta",
 "El número 70."
 ],
+"sexto": [
+"seis",
+"Número seis en orden."
+],
 "señal": [
 "señal",
 "Algo que avisa o comunica."
+],
+"señalan": [
+"señalar",
+"Indican."
 ],
 "señales": [
 "señal",
@@ -9350,6 +16482,10 @@
 "shift": [
 "shift",
 "Tecla del teclado. Sirve para escribir mayúsculas."
+],
+"shock": [
+"shock",
+"Gran susto."
 ],
 "si": [
 "si",
@@ -9363,6 +16499,14 @@
 "siempre",
 "En todo momento."
 ],
+"siendo": [
+"ser",
+"Forma de \"ser\"."
+],
+"sienta": [
+"sentir",
+"Forma de \"sentir\"."
+],
 "sienten": [
 "sentirse",
 "Sentirse: estar de una forma (con miedo, feliz...)."
@@ -9371,6 +16515,10 @@
 "siete",
 "El número 7."
 ],
+"siglo": [
+"siglo",
+"Cien años."
+],
 "siglos": [
 "siglo",
 "Cien años."
@@ -9378,6 +16526,26 @@
 "significa": [
 "significar",
 "Significar: querer decir."
+],
+"significaban": [
+"significar",
+"Querían decir."
+],
+"significado": [
+"significado",
+"Lo que quiere decir algo."
+],
+"significaría": [
+"significar",
+"Querría decir."
+],
+"signo": [
+"signo",
+"Señal."
+],
+"signos": [
+"signo",
+"Marcas con significado."
 ],
 "sigue": [
 "seguir",
@@ -9391,9 +16559,25 @@
 "seguir",
 "Seguir: continuar; hacer lo que alguien dice."
 ],
+"siguiente": [
+"siguiente",
+"El que va después."
+],
+"siguientes": [
+"siguiente",
+"Los de después."
+],
 "siguió": [
 "seguir",
 "Seguir: continuar."
+],
+"silencio": [
+"silencio",
+"Sin ruido."
+],
+"silencioso": [
+"silencio",
+"Sin ruido."
 ],
 "silver": [
 "Silver",
@@ -9402,6 +16586,14 @@
 "simple": [
 "simple",
 "Fácil."
+],
+"simplemente": [
+"simple",
+"Solo."
+],
+"simples": [
+"simple",
+"Fáciles."
 ],
 "simpático": [
 "simpático",
@@ -9427,9 +16619,21 @@
 "sino",
 "Palabra para corregir: «no es A, sino B»."
 ],
+"sintieron": [
+"sentir",
+"Notaron."
+],
+"sintió": [
+"sentir",
+"Notó."
+],
 "siquiera": [
 "siquiera",
 "«Ni siquiera»: tampoco, aunque parece raro."
+],
+"sir": [
+"sir",
+"Título inglés."
 ],
 "sir hugh beaver": [
 "sir hugh beaver",
@@ -9447,13 +16651,25 @@
 "servir",
 "Servir: ser útil."
 ],
+"sistema": [
+"sistema",
+"Conjunto de reglas."
+],
 "sistema solar": [
 "sistema",
 "El Sol y los planetas que giran a su alrededor."
 ],
+"sistemas": [
+"sistema",
+"Conjuntos."
+],
 "sitio": [
 "sitio",
 "Lugar."
+],
+"situaciones": [
+"situación",
+"Momentos."
 ],
 "siéntate": [
 "sentarse",
@@ -9475,6 +16691,10 @@
 "skins",
 "Ropa o aspecto nuevo para tu personaje en un juego."
 ],
+"sky": [
+"sky",
+"Nombre de mujer."
+],
 "snowboarders": [
 "snowboarder",
 "Palabra inglesa: persona que baja la nieve con una tabla."
@@ -9491,6 +16711,14 @@
 "sobrevivir",
 "Sobrevivir: seguir vivo después de un peligro."
 ],
+"sobreviven": [
+"sobrevivir",
+"Siguen vivos."
+],
+"sobrevivido": [
+"sobrevivir",
+"Seguido vivo."
+],
 "sobrevivieron": [
 "sobrevivir",
 "Sobrevivir: seguir vivo después de un peligro."
@@ -9503,6 +16731,10 @@
 "sobrevivir",
 "Sobrevivir: seguir vivo después de un peligro."
 ],
+"sociable": [
+"sociable",
+"Que le gusta estar con gente."
+],
 "sociedad": [
 "sociedad",
 "Grupo de personas que viven juntas."
@@ -9510,6 +16742,10 @@
 "sociedades": [
 "sociedad",
 "Grupo de personas que viven juntas."
+],
+"sofisticada": [
+"sofisticado",
+"Muy compleja."
 ],
 "soja": [
 "soja",
@@ -9523,6 +16759,10 @@
 "solo",
 "Sin otros."
 ],
+"solar": [
+"sol",
+"Del Sol."
+],
 "solas": [
 "solo",
 "Sin otros."
@@ -9531,9 +16771,53 @@
 "soldado",
 "Persona que trabaja en el ejército."
 ],
+"soldados": [
+"soldado",
+"Personas del ejército."
+],
+"soles": [
+"sol",
+"Estrellas."
+],
+"solicitud": [
+"solicitud",
+"Petición."
+],
+"solicitudes": [
+"solicitud",
+"Peticiones."
+],
+"solidarios": [
+"solidario",
+"Que ayudan a otros."
+],
 "solo": [
 "solo",
 "Nada más; únicamente."
+],
+"solos": [
+"solo",
+"Sin nadie más."
+],
+"soltado": [
+"soltar",
+"Dejado libre."
+],
+"soltar": [
+"soltar",
+"Dejar ir."
+],
+"solucionador": [
+"solucionar",
+"Que resuelve."
+],
+"soluciones": [
+"solución",
+"Respuestas a problemas."
+],
+"solución": [
+"solución",
+"Respuesta a un problema."
 ],
 "sombra": [
 "sombra",
@@ -9555,6 +16839,14 @@
 "sonar",
 "Aparato que usa sonidos para ver bajo el agua."
 ],
+"sonda": [
+"sonda",
+"Nave sin personas."
+],
+"sonido": [
+"sonido",
+"Lo que se oye."
+],
 "sonidos": [
 "sonido",
 "Lo que oyes."
@@ -9567,6 +16859,14 @@
 "Sony",
 "Nombre de una empresa de videojuegos."
 ],
+"sopa": [
+"sopa",
+"Comida líquida."
+],
+"soportan": [
+"soportar",
+"Aguantan."
+],
 "soportar": [
 "soportar",
 "Soportar: aguantar algo difícil."
@@ -9575,17 +16875,45 @@
 "sorprendente",
 "Que no esperas."
 ],
+"sorprendentemente": [
+"sorprender",
+"De forma que sorprende."
+],
 "sorprendentes": [
 "sorprendente",
 "Que no esperas."
+],
+"sorprendieron": [
+"sorprender",
+"Se asombraron."
 ],
 "sorpresa": [
 "sorpresa",
 "Algo que no esperas."
 ],
+"sospechan": [
+"sospechar",
+"Creen algo sin pruebas."
+],
+"sostener": [
+"sostener",
+"Sujetar."
+],
+"sostenerte": [
+"sostener",
+"Sujetarte."
+],
 "soy": [
 "ser",
 "Ser: decir cómo es algo o qué es algo."
+],
+"soñado": [
+"soñar",
+"Deseado."
+],
+"soñar": [
+"soñar",
+"Imaginar algo que se desea."
 ],
 "speedrun": [
 "speedrun",
@@ -9623,6 +16951,10 @@
 "su",
 "Que es de él, de ella o de ellos."
 ],
+"suavidad": [
+"suave",
+"Ser suave."
+],
 "sube": [
 "subir",
 "Subir: ir hacia arriba."
@@ -9630,6 +16962,10 @@
 "suben": [
 "subir",
 "Subir: ir hacia arriba."
+],
+"subido": [
+"subir",
+"Ido arriba."
 ],
 "subiendo": [
 "subir",
@@ -9651,9 +16987,17 @@
 "submarino",
 "Barco que va debajo del agua."
 ],
+"suciedad": [
+"sucio",
+"Lo sucio."
+],
 "sucios": [
 "sucio",
 "Que no está limpio."
+],
+"sudan": [
+"sudar",
+"Echan agua por la piel."
 ],
 "sudeste": [
 "sudeste",
@@ -9675,6 +17019,18 @@
 "sueco",
 "De Suecia."
 ],
+"sueldo": [
+"sueldo",
+"Dinero por trabajar."
+],
+"suele": [
+"soler",
+"Lo hace normalmente."
+],
+"suelen": [
+"soler",
+"Lo hacen normalmente."
+],
 "suelo": [
 "suelo",
 "Lo que pisas."
@@ -9683,13 +17039,41 @@
 "suerte",
 "Cuando algo bueno pasa sin buscarlo."
 ],
+"sueño": [
+"sueño",
+"Ganas de dormir; lo que imaginas dormido."
+],
 "suficiente": [
 "suficiente",
 "Lo que se necesita."
 ],
+"sugerido": [
+"sugerir",
+"Propuesto."
+],
+"sugiere": [
+"sugerir",
+"Da una idea."
+],
+"sugieren": [
+"sugerir",
+"Dan una idea."
+],
+"sugirió": [
+"sugerir",
+"Propuso."
+],
+"suizo": [
+"suizo",
+"De Suiza."
+],
 "sujeta": [
 "sujeto",
 "Atado, que no se puede soltar."
+],
+"suma": [
+"suma",
+"Cantidad."
 ],
 "super": [
 "super",
@@ -9711,6 +17095,18 @@
 "superar",
 "Superar: pasar un obstáculo."
 ],
+"superficie": [
+"superficie",
+"Parte de arriba."
+],
+"superficies": [
+"superficie",
+"Partes de fuera."
+],
+"superior": [
+"superior",
+"De arriba."
+],
 "supermasivos": [
 "supermasivo",
 "Con una masa enorme."
@@ -9722,6 +17118,10 @@
 "superpoder": [
 "superpoder",
 "Poder especial, como de superhéroe."
+],
+"supervisar": [
+"supervisar",
+"Vigilar."
 ],
 "supervivencia": [
 "supervivencia",
@@ -9738,6 +17138,10 @@
 "supo": [
 "saber",
 "Saber: tener información; ser capaz de algo."
+],
+"supuesto": [
+"supuesto",
+"Que se da por cierto."
 ],
 "sur": [
 "sur",
@@ -9759,6 +17163,18 @@
 "surfista",
 "Persona que hace surf en las olas."
 ],
+"surgido": [
+"surgir",
+"Aparecido."
+],
+"surgieron": [
+"surgir",
+"Aparecieron."
+],
+"surgir": [
+"surgir",
+"Aparecer."
+],
 "surströmming": [
 "surströmming",
 "Pescado fermentado de Suecia."
@@ -9766,6 +17182,34 @@
 "sus": [
 "su",
 "Que es de él, de ella o de ellos."
+],
+"sustancia": [
+"sustancia",
+"Materia."
+],
+"sustancias": [
+"sustancia",
+"Materias."
+],
+"sustituir": [
+"sustituir",
+"Poner en lugar de otro."
+],
+"sustituirá": [
+"sustituir",
+"Ocupará el lugar."
+],
+"sustituye": [
+"sustituir",
+"Ocupa el lugar."
+],
+"sutil": [
+"sutil",
+"Difícil de notar."
+],
+"suyos": [
+"suyo",
+"De él."
 ],
 "sábados": [
 "sábado",
@@ -9778,6 +17222,10 @@
 "símbolo": [
 "símbolo",
 "Cosa que representa otra."
+],
+"símbolos": [
+"símbolo",
+"Dibujos con significado."
 ],
 "sólidas": [
 "sólido",
@@ -9798,6 +17246,10 @@
 "tablas": [
 "tabla",
 "Trozo plano y largo, como la tabla de surf."
+],
+"tacharon": [
+"tachar",
+"Llamaron (algo malo)."
 ],
 "tailandia": [
 "Tailandia",
@@ -9827,6 +17279,14 @@
 "grande",
 "Igual de grande que."
 ],
+"tanque": [
+"tanque",
+"Caja grande con agua."
+],
+"tanques": [
+"tanque",
+"Cajas grandes con agua."
+],
 "tanta": [
 "tanto",
 "Tanto: tan grande, tan mucho."
@@ -9843,6 +17303,10 @@
 "tanto",
 "Tan muchos."
 ],
+"tapa": [
+"tapa",
+"Lo que cierra un bote."
+],
 "tapado": [
 "tapar",
 "Tapar: cubrir."
@@ -9851,9 +17315,33 @@
 "tapar",
 "Tapar: cubrir algo."
 ],
+"tapón": [
+"tapón",
+"Cosa que cierra una botella."
+],
+"tardamos": [
+"tardar",
+"Necesitamos tiempo."
+],
 "tardan": [
 "tardar",
 "Tardar: necesitar un tiempo."
+],
+"tardar": [
+"tardar",
+"Necesitar tiempo."
+],
+"tardaron": [
+"tardar",
+"Necesitaron tiempo."
+],
+"tarde": [
+"tarde",
+"Parte del día después de comer; después de tiempo."
+],
+"tardía": [
+"tardío",
+"Más moderna."
 ],
 "tardígrado": [
 "tardígrado",
@@ -9863,9 +17351,29 @@
 "tardígrado",
 "Animal diminuto y resistentísimo, «oso de agua»."
 ],
+"tardó": [
+"tardar",
+"Necesitó tiempo."
+],
+"tarea": [
+"tarea",
+"Trabajo."
+],
 "tareas": [
 "tarea",
 "Trabajo que hay que hacer."
+],
+"tarro": [
+"tarro",
+"Bote de cristal."
+],
+"tarros": [
+"tarro",
+"Botes de cristal."
+],
+"tatooine": [
+"tatooine",
+"Planeta de una película."
 ],
 "te": [
 "te",
@@ -9874,6 +17382,10 @@
 "tecla": [
 "tecla",
 "Cada botón de un teclado."
+],
+"tecnología": [
+"tecnología",
+"Máquinas y técnicas."
 ],
 "ted hastings": [
 "ted hastings",
@@ -9919,6 +17431,10 @@
 "temer",
 "Temer: tener miedo de algo."
 ],
+"temores": [
+"temor",
+"Miedos."
+],
 "temperatura": [
 "temperatura",
 "Cuánto calor o frío hay."
@@ -9939,9 +17455,17 @@
 "temporada",
 "Período de tiempo con algo especial."
 ],
+"temían": [
+"temer",
+"Tenían miedo."
+],
 "ten": [
 "tener",
 "Tener: poseer algo; ser el dueño de algo."
+],
+"tenderles": [
+"tender",
+"Prepararles."
 ],
 "tendrá": [
 "tener",
@@ -9950,6 +17474,10 @@
 "tendría": [
 "tener",
 "Tener: ser dueño de algo."
+],
+"tendrían": [
+"tener",
+"Forma de \"tener\"."
 ],
 "tendrías": [
 "tener",
@@ -9967,6 +17495,10 @@
 "tener",
 "Poseer algo; ser el dueño de algo."
 ],
+"tenga": [
+"tener",
+"Forma de \"tener\"."
+],
 "tengamos": [
 "tener",
 "Tener: forma del pasado («tuvieron» = «tienen» en el pasado)."
@@ -9979,9 +17511,17 @@
 "tener",
 "Tener: poseer algo; ser el dueño de algo."
 ],
+"tenido": [
+"tener",
+"Forma de \"tener\"."
+],
 "tenis": [
 "tenis",
 "Deporte con raquetas y una pelota pequeña."
+],
+"tensión": [
+"tensión",
+"Nervios."
 ],
 "tentáculos": [
 "tentáculo",
@@ -9999,6 +17539,10 @@
 "teoría",
 "Idea que explica algo. En teoría: según las reglas."
 ],
+"teorías": [
+"teoría",
+"Ideas para explicar algo."
+],
 "tercer": [
 "tercero",
 "Que va después del segundo."
@@ -10010,6 +17554,10 @@
 "tercero": [
 "tercero",
 "El número tres de una lista."
+],
+"tercios": [
+"tercio",
+"Partes de tres."
 ],
 "termina": [
 "terminar",
@@ -10027,9 +17575,17 @@
 "terminar",
 "Terminar: llegar al final."
 ],
+"terminaron": [
+"terminar",
+"Acabaron."
+],
 "terminó": [
 "terminar",
 "Terminar: llegar al final."
+],
+"termiteros": [
+"termitero",
+"Casas de termitas."
 ],
 "termómetro": [
 "termómetro",
@@ -10059,6 +17615,10 @@
 "terror",
 "Miedo muy grande. Un juego de terror da miedo."
 ],
+"terrorífico": [
+"terror",
+"Que da mucho miedo."
+],
 "tesoro": [
 "tesoro",
 "Cosa de mucho valor."
@@ -10066,6 +17626,10 @@
 "tesoros": [
 "tesoro",
 "Cosa de mucho valor."
+],
+"testigos": [
+"testigo",
+"Personas que ven algo."
 ],
 "tetra": [
 "tetra",
@@ -10083,6 +17647,14 @@
 "texto",
 "Palabras escritas."
 ],
+"textura": [
+"textura",
+"Cómo se nota algo al tocarlo."
+],
+"thomas": [
+"thomas",
+"Nombre de hombre."
+],
 "ti": [
 "tú",
 "Tú, después de a, para, de..."
@@ -10099,9 +17671,17 @@
 "tiburón",
 "El tiburón depredador más grande."
 ],
+"tiemblan": [
+"temblar",
+"Se mueven de nervios."
+],
 "tiempo": [
 "tiempo",
 "Los segundos, minutos y horas que pasan."
+],
+"tiendas": [
+"tienda",
+"Sitios para comprar."
 ],
 "tiene": [
 "tener",
@@ -10127,17 +17707,49 @@
 "tierra",
 "El suelo; también el nombre de nuestro planeta."
 ],
+"tinta": [
+"tinta",
+"Líquido para escribir."
+],
 "tipo": [
 "tipo",
 "Clase o grupo de cosas parecidas."
+],
+"tipos": [
+"tipo",
+"Clases."
+],
+"tirado": [
+"tirar",
+"Lanzado."
+],
+"tiran": [
+"tirar",
+"Lanzan."
 ],
 "tiranosaurio rex": [
 "tiranosaurio",
 "Dinosaurio carnívoro muy famoso."
 ],
+"tirarlo": [
+"tirar",
+"Lanzarlo."
+],
+"tirarse": [
+"tirar",
+"Lanzarse."
+],
 "tiras": [
 "tirar",
 "Tirar: lanzar algo."
+],
+"tocaba": [
+"tocar",
+"Ponía la mano."
+],
+"tocar": [
+"tocar",
+"Poner la mano."
 ],
 "toda": [
 "todo",
@@ -10167,9 +17779,29 @@
 "tokio",
 "Nombre de la capital de Japón."
 ],
+"toman": [
+"tomar",
+"Toman en serio: creen importante."
+],
+"tomar": [
+"tomar",
+"Comer o beber."
+],
 "tomarlas": [
 "tomar",
 "Tomar: coger; también decidir."
+],
+"tomarse": [
+"tomar",
+"Hacer (un descanso)."
+],
+"tomate": [
+"tomate",
+"Fruto rojo."
+],
+"tomates": [
+"tomate",
+"Fruto rojo."
 ],
 "tonel": [
 "tonel",
@@ -10178,6 +17810,10 @@
 "toneladas": [
 "tonelada",
 "Mil kilos."
+],
+"tonterías": [
+"tontería",
+"Cosas sin sentido."
 ],
 "tony hawk": [
 "tony hawk",
@@ -10191,6 +17827,10 @@
 "tormenta",
 "Mal tiempo con viento, lluvia y rayos."
 ],
+"torneos": [
+"torneo",
+"Competiciones."
+],
 "torpe": [
 "torpe",
 "Que se mueve mal."
@@ -10203,6 +17843,10 @@
 "total",
 "Todo junto."
 ],
+"totalmente": [
+"total",
+"Del todo."
+],
 "trabaja": [
 "trabajar",
 "Trabajar: hacer una tarea, normalmente para ganar dinero."
@@ -10210,6 +17854,10 @@
 "trabajaba": [
 "trabajar",
 "Trabajar: hacer una tarea, normalmente para ganar dinero."
+],
+"trabajaban": [
+"trabajar",
+"Hacían su trabajo."
 ],
 "trabajadores": [
 "trabajador",
@@ -10222,6 +17870,10 @@
 "trabajan": [
 "trabajar",
 "Trabajar: hacer una tarea, normalmente para ganar dinero."
+],
+"trabajando": [
+"trabajar",
+"Haciendo un trabajo."
 ],
 "trabajar": [
 "trabajar",
@@ -10247,6 +17899,10 @@
 "tradicional",
 "De siempre, de antes."
 ],
+"tradicionales": [
+"tradicional",
+"De siempre."
+],
 "tradición": [
 "tradición",
 "Costumbre antigua."
@@ -10255,29 +17911,105 @@
 "traducción",
 "Texto pasado a otro idioma."
 ],
+"traducido": [
+"traducir",
+"Pasado a otra lengua."
+],
 "traducir": [
 "traducir",
 "Traducir: pasar a otro idioma."
+],
+"tradujo": [
+"traducir",
+"Pasó a otra lengua."
+],
+"traen": [
+"traer",
+"Llevan hacia aquí."
 ],
 "traje": [
 "traje",
 "Ropa especial."
 ],
+"trampas": [
+"trampa",
+"Cosas para atrapar animales."
+],
 "tranquilo": [
 "tranquilo",
 "Sin nervios; en calma."
+],
+"tranquilos": [
+"tranquilo",
+"Sin nervios."
+],
+"transformado": [
+"transformar",
+"Cambiado."
 ],
 "transmiten": [
 "transmitir",
 "Transmitir: pasar algo a otro."
 ],
+"transmitir": [
+"transmitir",
+"Pasar a otro."
+],
+"transmitírselos": [
+"transmitir",
+"Pasárselos."
+],
 "transparente": [
 "transparente",
 "Que se ve a través de él, como el cristal."
 ],
+"transporta": [
+"transportar",
+"Lleva."
+],
+"transportan": [
+"transportar",
+"Llevan."
+],
+"transportar": [
+"transportar",
+"Llevar."
+],
 "tras": [
 "tras",
 "Después de."
+],
+"traslada": [
+"trasladar",
+"Pasa a otro lugar."
+],
+"trastorno": [
+"trastorno",
+"Enfermedad."
+],
+"trata": [
+"tratar",
+"Trata de: es."
+],
+"trataba": [
+"tratar",
+"Se portaba con."
+],
+"tratadas": [
+"tratar",
+"Con un producto."
+],
+"tratado": [
+"tratar",
+"Hablado."
+],
+"tratan": [
+"tratar",
+"Intentan."
+],
+"tratar": [
+"tratar",
+"Portarse con."
 ],
 "travis pastrana": [
 "travis pastrana",
@@ -10287,6 +18019,10 @@
 "travis scott",
 "Nombre de un rapero de Estados Unidos."
 ],
+"través": [
+"través",
+"A través de: por medio de."
+],
 "trece": [
 "trece",
 "El número 13."
@@ -10295,9 +18031,17 @@
 "treinta",
 "El número 30."
 ],
+"tren": [
+"tren",
+"Vehículo largo que va por vías."
+],
 "trepan": [
 "trepar",
 "Trepar: subir usando las manos y los pies."
+],
+"trepar": [
+"trepar",
+"Subir por algo."
 ],
 "tres": [
 "tres",
@@ -10311,6 +18055,10 @@
 "trineo",
 "Vehículo sin ruedas que se arrastra por el suelo o la nieve."
 ],
+"tripulada": [
+"tripular",
+"Con personas dentro."
+],
 "triángulo": [
 "triángulo",
 "Figura con tres lados."
@@ -10322,6 +18070,10 @@
 "trono": [
 "trono",
 "Silla del rey. Llegar al trono: ser rey."
+],
+"tropicales": [
+"tropical",
+"De zonas muy calurosas."
 ],
 "trozo": [
 "trozo",
@@ -10343,9 +18095,21 @@
 "tráfico",
 "Muchos vehículos que van y vienen."
 ],
+"trófica": [
+"trófico",
+"De la comida en la naturaleza."
+],
+"tsunamis": [
+"tsunami",
+"Olas gigantes."
+],
 "tu": [
 "tu",
 "Que es de la persona con quien hablas."
+],
+"tubería": [
+"tubería",
+"Tubo largo para el agua."
 ],
 "tuberías": [
 "tubería",
@@ -10367,6 +18131,10 @@
 "turista",
 "Persona que viaja para conocer lugares."
 ],
+"turnos": [
+"turno",
+"Horas de trabajo."
+],
 "tus": [
 "tu",
 "Que es de la persona con quien hablas."
@@ -10379,6 +18147,10 @@
 "tener",
 "Tener: ser dueño de algo."
 ],
+"tuvieran": [
+"tener",
+"Forma de \"tener\"."
+],
 "tuvieron": [
 "tener",
 "Tener: forma del pasado («tuvieron» = «tienen» en el pasado)."
@@ -10386,6 +18158,14 @@
 "tuvo": [
 "tener",
 "Tener: forma del pasado («tuvieron» = «tienen» en el pasado)."
+],
+"tyrannosaurus": [
+"tyrannosaurus",
+"Un dinosaurio grande."
+],
+"tápate": [
+"tapar",
+"Cúbrete."
 ],
 "tímida": [
 "tímido",
@@ -10407,13 +18187,33 @@
 "típico",
 "Normal y propio de un lugar."
 ],
+"típicos": [
+"típico",
+"Normales."
+],
 "tú": [
 "tú",
 "La persona que escucha."
 ],
+"túnel": [
+"túnel",
+"Camino bajo tierra."
+],
+"túneles": [
+"túnel",
+"Caminos bajo tierra."
+],
+"uapitíes": [
+"uapití",
+"Ciervos grandes."
+],
 "uf": [
 "uf",
 "Sonido que hacemos cuando terminamos algo difícil."
+],
+"umami": [
+"umami",
+"Sabor sabroso, el quinto sabor."
 ],
 "un": [
 "uno",
@@ -10439,9 +18239,29 @@
 "undécimo",
 "El número once de una lista."
 ],
+"unida": [
+"unir",
+"Junta."
+],
 "unidas": [
 "unido",
 "Junto."
+],
+"unidos": [
+"unir",
+"Juntos."
+],
+"uniformes": [
+"uniforme",
+"Ropa igual para todos."
+],
+"universidad": [
+"universidad",
+"Centro de estudios superiores."
+],
+"universidades": [
+"universidad",
+"Centros de estudios superiores."
 ],
 "universo": [
 "universo",
@@ -10479,6 +18299,10 @@
 "usar",
 "Usar: hacer servir algo."
 ],
+"usado": [
+"usar",
+"Utilizado."
+],
 "usain bolt": [
 "usain bolt",
 "Nombre de un corredor de Jamaica."
@@ -10511,13 +18335,41 @@
 "usar",
 "Usar: hacer algo con un objeto."
 ],
+"usarlas": [
+"usar",
+"Utilizarlas."
+],
+"usarlo": [
+"usar",
+"Utilizarlo."
+],
+"usaron": [
+"usar",
+"Utilizaron."
+],
+"usarse": [
+"usar",
+"Ser usado."
+],
 "usas": [
 "usar",
 "Usar: hacer algo con un objeto."
 ],
+"use": [
+"usar",
+"Forma de \"usar\"."
+],
+"usen": [
+"usar",
+"Utilicen."
+],
 "uso": [
 "usar",
 "Usar: hacer algo con un objeto."
+],
+"usos": [
+"uso",
+"Formas de usar."
 ],
 "usuario": [
 "usuario",
@@ -10530,6 +18382,10 @@
 "usó": [
 "usar",
 "Usar: hacer algo con un objeto."
+],
+"utiliza": [
+"utilizar",
+"Usa."
 ],
 "uña": [
 "uña",
@@ -10555,6 +18411,18 @@
 "vaca",
 "Animal grande que da leche."
 ],
+"vacuna": [
+"vacuna",
+"Medicina que protege."
+],
+"vacunas": [
+"vacuna",
+"Medicinas que protegen."
+],
+"vacías": [
+"vacío",
+"Sin nada."
+],
 "vacío": [
 "vacío",
 "Sin nada dentro; en el espacio, sin aire."
@@ -10562,6 +18430,14 @@
 "vale": [
 "valer",
 "Valer: estar permitido; ser bueno."
+],
+"valen": [
+"valer",
+"Tienen valor."
+],
+"valiosos": [
+"valor",
+"Que valen mucho."
 ],
 "valle": [
 "valle",
@@ -10571,6 +18447,18 @@
 "Valle de la Muerte",
 "Nombre de un desierto muy caluroso de Estados Unidos."
 ],
+"valles": [
+"valle",
+"Tierras entre montañas."
+],
+"valor": [
+"valor",
+"Valentía."
+],
+"valorar": [
+"valorar",
+"Apreciar."
+],
 "vamos": [
 "ir",
 "Ir: moverse a otro sitio."
@@ -10579,13 +18467,29 @@
 "ir",
 "Ir: moverse a otro sitio."
 ],
+"varias": [
+"vario",
+"Unas cuantas."
+],
+"variedad": [
+"variedad",
+"Muchas clases."
+],
 "varios": [
 "varios",
 "Algunos; más de uno."
 ],
+"varíe": [
+"variar",
+"Cambie."
+],
 "vas": [
 "ir",
 "Ir: moverse a otro sitio."
+],
+"vaso": [
+"vaso",
+"Tubo de sangre."
 ],
 "vasos": [
 "vaso",
@@ -10595,13 +18499,25 @@
 "ver",
 "Ver: usar los ojos."
 ],
+"vea": [
+"ver",
+"Forma de \"ver\"."
+],
 "veamos": [
 "ver",
 "Ver: usar los ojos."
 ],
+"veas": [
+"ver",
+"Forma de \"ver\"."
+],
 "veces": [
 "vez",
 "Momento en que pasa algo."
+],
+"vecinos": [
+"vecino",
+"Personas que viven cerca."
 ],
 "veinte": [
 "veinte",
@@ -10627,9 +18543,17 @@
 "vela",
 "Objeto de cera que da luz con fuego."
 ],
+"velcro": [
+"velcro",
+"Cierre de ganchos y lazos."
+],
 "velocidad": [
 "velocidad",
 "Lo rápido que va algo."
+],
+"velociraptor": [
+"velociraptor",
+"Un dinosaurio pequeño."
 ],
 "vemos": [
 "ver",
@@ -10638,6 +18562,10 @@
 "ven": [
 "ver",
 "Ver: usar los ojos."
+],
+"vencido": [
+"vencer",
+"Ganado."
 ],
 "vendas": [
 "venda",
@@ -10651,6 +18579,10 @@
 "vender",
 "Vender: dar algo por dinero."
 ],
+"venderla": [
+"vender",
+"Darla por dinero."
+],
 "venderlas": [
 "vender",
 "Vender: dar algo a cambio de dinero."
@@ -10659,6 +18591,10 @@
 "vender",
 "Vender: dar algo por dinero."
 ],
+"vendidas": [
+"vender",
+"Dadas por dinero."
+],
 "vendido": [
 "vender",
 "Vender: dar algo por dinero."
@@ -10666,6 +18602,10 @@
 "vendidos": [
 "vender",
 "Vender: dar algo a cambio de dinero."
+],
+"vendiera": [
+"vender",
+"Diera por dinero."
 ],
 "vendió": [
 "vender",
@@ -10683,13 +18623,37 @@
 "venenoso",
 "Que tiene veneno."
 ],
+"venenosos": [
+"veneno",
+"Que tienen veneno."
+],
+"venir": [
+"venir",
+"Llegar."
+],
+"venta": [
+"venta",
+"Acción de vender."
+],
 "ventaja": [
 "ventaja",
 "Algo que es mejor."
 ],
+"ventas": [
+"venta",
+"Cosas vendidas."
+],
 "venus": [
 "Venus",
 "Nombre del planeta más caliente."
+],
+"venían": [
+"venir",
+"Llegaban."
+],
+"veo": [
+"ver",
+"Miro."
 ],
 "ver": [
 "ver",
@@ -10727,9 +18691,17 @@
 "ver",
 "Ver: usar los ojos."
 ],
+"versiones": [
+"versión",
+"Formas de un texto."
+],
 "versión": [
 "versión",
 "Una forma de un juego o programa."
+],
+"verte": [
+"ver",
+"Mirarte."
 ],
 "verás": [
 "ver",
@@ -10746,6 +18718,14 @@
 "veía": [
 "ver",
 "Ver: usar los ojos."
+],
+"veían": [
+"ver",
+"Miraban."
+],
+"viaja": [
+"viajar",
+"Va a otro lugar."
 ],
 "viajamos": [
 "viajar",
@@ -10771,9 +18751,17 @@
 "viaje",
 "Ir de un sitio a otro lejos."
 ],
+"viajeros": [
+"viajero",
+"Personas que viajan."
+],
 "viajes": [
 "viaje",
 "Ir de un sitio a otro lejos."
+],
+"victoria": [
+"victoria",
+"Ganar."
 ],
 "vida": [
 "vida",
@@ -10811,6 +18799,10 @@
 "venir",
 "Venir: moverse hacia aquí."
 ],
+"vienen": [
+"venir",
+"Llegan."
+],
 "viento": [
 "viento",
 "Aire que se mueve."
@@ -10823,9 +18815,21 @@
 "Vieques",
 "Nombre de una isla de Puerto Rico."
 ],
+"vieran": [
+"ver",
+"Miraran."
+],
 "vieron": [
 "ver",
 "Ver: usar los ojos para mirar."
+],
+"vinci": [
+"vinci",
+"Leonardo da Vinci, artista italiano."
+],
+"vino": [
+"venir",
+"Llegó."
 ],
 "vio": [
 "ver",
@@ -10839,17 +18843,41 @@
 "virtual",
 "Que no es físico; está en el ordenador."
 ],
+"virtuales": [
+"virtual",
+"En el ordenador."
+],
+"virus": [
+"virus",
+"Cosa diminuta que causa enfermedades."
+],
+"visibles": [
+"visible",
+"Que se ven."
+],
 "visita": [
 "visitar",
 "Visitar: ir a ver un lugar o a alguien."
+],
+"visitaban": [
+"visitar",
+"Iban a ver."
 ],
 "visitado": [
 "visitar",
 "Visitar: ir a ver un lugar o a alguien."
 ],
+"visitados": [
+"visitar",
+"Que la gente va a ver."
+],
 "visitan": [
 "visitar",
 "Visitar: ir a ver un lugar o a alguien."
+],
+"visitando": [
+"visitar",
+"Yendo a ver."
 ],
 "visitantes": [
 "visitante",
@@ -10871,6 +18899,18 @@
 "visitar",
 "Visitar: ir a ver un lugar o a alguien."
 ],
+"visión": [
+"visión",
+"Lo que se ve."
+],
+"vista": [
+"vista",
+"Lo que se ve."
+],
+"vistieron": [
+"vestir",
+"Pusieron ropa."
+],
 "visto": [
 "ver",
 "Ver: usar los ojos."
@@ -10886,6 +18926,10 @@
 "vivaba": [
 "vivir",
 "Forma incorrecta. Lo correcto es «vivía»."
+],
+"vivas": [
+"vivo",
+"Con vida."
 ],
 "vive": [
 "vivir",
@@ -10931,9 +18975,21 @@
 "volar",
 "Volar: moverse por el aire."
 ],
+"volaban": [
+"volar",
+"Iban por el aire."
+],
 "volador": [
 "volador",
 "Que vuela."
+],
+"voladora": [
+"volar",
+"Que vuela."
+],
+"volando": [
+"volar",
+"Yendo por el aire."
 ],
 "volar": [
 "volar",
@@ -10967,6 +19023,10 @@
 "volver",
 "Volver: ir otra vez a un sitio."
 ],
+"volvieran": [
+"volver",
+"Regresaran."
+],
 "volvieron": [
 "volver",
 "Volver: ir otra vez a un sitio."
@@ -10979,9 +19039,17 @@
 "Vostok",
 "Nombre de una base científica en la Antártida."
 ],
+"votar": [
+"votar",
+"Elegir."
+],
 "voy": [
 "ir",
 "Ir: moverse a otro sitio."
+],
+"voynich": [
+"voynich",
+"Apellido."
 ],
 "voz": [
 "voz",
@@ -10999,13 +19067,29 @@
 "vuelo",
 "Viaje en avión."
 ],
+"vuelta": [
+"vuelta",
+"Regreso."
+],
 "vueltas": [
 "vuelta",
 "Giro completo."
 ],
+"vuelto": [
+"volver",
+"Hecho."
+],
+"vuelvan": [
+"volver",
+"Regresen."
+],
 "vuelve": [
 "volver",
 "Volver: ir otra vez. «Se vuelve»: cambia, se hace."
+],
+"vuelven": [
+"volver",
+"Hacen que sean."
 ],
 "válido": [
 "válido",
@@ -11014,6 +19098,10 @@
 "vía láctea": [
 "Vía Láctea",
 "Nombre de nuestra galaxia."
+],
+"víctima": [
+"víctima",
+"Persona a la que hacen daño."
 ],
 "vídeo": [
 "vídeo",
@@ -11031,9 +19119,25 @@
 "web",
 "Página de internet."
 ],
+"webs": [
+"web",
+"Páginas de internet."
+],
 "whitey": [
 "whitey",
 "Nombre de persona. En BEAR, uno de los dos científicos."
+],
+"wilfrid": [
+"wilfrid",
+"Nombre de hombre."
+],
+"william": [
+"william",
+"Nombre de hombre."
+],
+"wolbachia": [
+"wolbachia",
+"Un tipo de bacteria."
 ],
 "x": [
 "x",
@@ -11051,6 +19155,14 @@
 "ya",
 "Antes de ahora."
 ],
+"yale": [
+"yale",
+"Universidad de EE. UU."
+],
+"yellowstone": [
+"yellowstone",
+"Parque nacional de EE. UU."
+],
 "yema": [
 "yema",
 "La parte amarilla del huevo."
@@ -11063,6 +19175,10 @@
 "yo",
 "La persona que habla."
 ],
+"young": [
+"young",
+"Apellido."
+],
 "youtube": [
 "YouTube",
 "Nombre de una web de vídeos."
@@ -11071,6 +19187,14 @@
 "Yucatán",
 "Nombre de una península de México."
 ],
+"yutyrannus": [
+"yutyrannus",
+"Un dinosaurio con plumas."
+],
+"zapatillas": [
+"zapatilla",
+"Calzado para deporte."
+],
 "zapato": [
 "zapato",
 "Lo que llevas en los pies para caminar."
@@ -11078,6 +19202,10 @@
 "zapatos": [
 "zapato",
 "Lo que llevas en los pies para caminar."
+],
+"zelanda": [
+"zelanda",
+"Nueva Zelanda, un país."
 ],
 "zombis": [
 "zombi",
@@ -11091,9 +19219,25 @@
 "zona",
 "Parte de un lugar."
 ],
+"ácido": [
+"ácido",
+"Como el limón."
+],
 "áfrica": [
 "África",
 "Nombre de un continente grande."
+],
+"águila": [
+"águila",
+"Ave grande que caza."
+],
+"águilas": [
+"águila",
+"Aves grandes que cazan."
+],
+"álamos": [
+"álamo",
+"Árboles altos."
 ],
 "árbol": [
 "árbol",
@@ -11102,6 +19246,10 @@
 "árboles": [
 "árbol",
 "Planta grande con tronco."
+],
+"áspero": [
+"áspero",
+"Que no es suave."
 ],
 "él": [
 "él",
@@ -11127,13 +19275,29 @@
 "órgano",
 "Parte del cuerpo con una función, como el corazón."
 ],
+"óvalos": [
+"óvalo",
+"Formas como un huevo."
+],
 "óxido": [
 "óxido",
 "Capa roja que sale en el hierro viejo."
 ],
+"última": [
+"último",
+"La del final."
+],
+"últimas": [
+"último",
+"Las del final."
+],
 "último": [
 "último",
 "El que va al final."
+],
+"últimos": [
+"último",
+"Del final."
 ],
 "única": [
 "único",
@@ -11142,6 +19306,10 @@
 "único": [
 "único",
 "Solo uno."
+],
+"únicos": [
+"único",
+"Solos."
 ],
 "útil": [
 "útil",

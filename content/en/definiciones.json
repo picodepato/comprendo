@@ -15,13 +15,53 @@
 "a",
 "A word before a noun: one thing, any thing."
 ],
+"abilities": [
+"ability",
+"Things you can do."
+],
+"ability": [
+"ability",
+"Being able to do something."
+],
+"able": [
+"able",
+"Can."
+],
 "about": [
 "about",
 "1. On the subject of. 2. Almost, more or less."
 ],
+"absent": [
+"absent",
+"Not there."
+],
+"absolutely": [
+"absolutely",
+"Completely."
+],
+"abstract": [
+"abstract",
+"About ideas, not things."
+],
 "absurd": [
 "absurd",
 "Very silly; it makes no sense."
+],
+"academic": [
+"academic",
+"Of universities."
+],
+"accept": [
+"accept",
+"Agree that something is true."
+],
+"accepted": [
+"accept",
+"Agreed it is true."
+],
+"accepts": [
+"accept",
+"Says yes to."
 ],
 "accident": [
 "accident",
@@ -31,9 +71,29 @@
 "accident",
 "Something bad that happens by chance."
 ],
+"accompanied": [
+"accompany",
+"With."
+],
 "according": [
 "according to",
 "As someone says."
+],
+"achieve": [
+"achieve",
+"Succeed in doing."
+],
+"achievement": [
+"achievement",
+"Something done well."
+],
+"across": [
+"across",
+"All over."
+],
+"acted": [
+"act",
+"Did something."
 ],
 "action": [
 "action",
@@ -43,6 +103,18 @@
 "active",
 "Working, doing things. An active volcano can erupt."
 ],
+"activities": [
+"activity",
+"Things you do."
+],
+"actually": [
+"actually",
+"In fact; really."
+],
+"adapt": [
+"adapt",
+"Change to fit."
+],
 "add": [
 "add",
 "Put something more with another thing."
@@ -51,9 +123,37 @@
 "add",
 "Put something more with another thing."
 ],
+"addition": [
+"addition",
+"Something added."
+],
+"adjudicator": [
+"adjudicator",
+"An official judge."
+],
+"adjudicators": [
+"adjudicator",
+"Official judges."
+],
+"admit": [
+"admit",
+"Say something is true."
+],
+"adrenaline": [
+"adrenaline",
+"A chemical your body makes when you are scared or excited."
+],
 "adults": [
 "adult",
 "A person who is not a child any more."
+],
+"advances": [
+"advance",
+"Steps forward."
+],
+"advantage": [
+"advantage",
+"To your advantage: in a way that helps you."
 ],
 "advantages": [
 "advantage",
@@ -66,6 +166,22 @@
 "advice": [
 "advice",
 "Words that help someone decide what to do."
+],
+"advise": [
+"advise",
+"Tell what to do."
+],
+"advised": [
+"advise",
+"Told what to do."
+],
+"affected": [
+"affect",
+"Changed."
+],
+"affects": [
+"affect",
+"Changes."
 ],
 "afraid": [
 "afraid",
@@ -83,6 +199,14 @@
 "afterlife",
 "A life after death."
 ],
+"afternoon": [
+"afternoon",
+"The time between midday and evening."
+],
+"afterwards": [
+"afterwards",
+"Later."
+],
 "again": [
 "again",
 "One more time."
@@ -91,9 +215,21 @@
 "against",
 "Touching or pushing on something; or fighting with someone."
 ],
+"age": [
+"age",
+"How old someone is."
+],
+"aged": [
+"aged",
+"Left to become old (cheese, wine)."
+],
 "agencies": [
 "agency",
 "A big organization that does a special job."
+],
+"agency": [
+"agency",
+"A business that gives a service."
 ],
 "ago": [
 "ago",
@@ -103,13 +239,37 @@
 "agree",
 "Think the same as another person."
 ],
+"agreed": [
+"agree",
+"Had the same opinion."
+],
+"agrees": [
+"agree",
+"Thinks the same."
+],
+"ahead": [
+"ahead",
+"In the future."
+],
 "ai": [
 "AI",
 "Artificial intelligence: computers that can learn."
 ],
+"aim": [
+"aim",
+"A goal."
+],
+"aiming": [
+"aim",
+"Pointing at a target."
+],
 "air": [
 "air",
 "What we breathe. It is all around us."
+],
+"alert": [
+"alert",
+"Awake and ready to act."
 ],
 "alexander": [
 "alexander",
@@ -139,6 +299,10 @@
 "allow",
 "Let someone do something."
 ],
+"allows": [
+"allow",
+"Lets."
+],
 "almost": [
 "almost",
 "Nearly; not completely."
@@ -147,9 +311,17 @@
 "alone",
 "With no other people."
 ],
+"along": [
+"along",
+"From one end towards the other."
+],
 "alpha": [
 "alpha",
 "Name of a version of the game BEAR."
+],
+"alphabet": [
+"alphabet",
+"The letters of a language."
 ],
 "already": [
 "already",
@@ -159,6 +331,14 @@
 "also",
 "Too; in addition."
 ],
+"alter": [
+"alter",
+"Change."
+],
+"although": [
+"although",
+"But; even if."
+],
 "always": [
 "always",
 "Every time; at all times."
@@ -166,6 +346,14 @@
 "am": [
 "be",
 "Form of the verb to be with I."
+],
+"amateurs": [
+"amateur",
+"People who do it for fun."
+],
+"amazed": [
+"amaze",
+"Very surprised."
 ],
 "amazing": [
 "amazing",
@@ -175,13 +363,25 @@
 "ambulance",
 "A vehicle that takes sick people to hospital."
 ],
+"ambushed": [
+"ambush",
+"Attacked by surprise."
+],
 "america": [
 "america",
 "Name of a continent. Also the United States."
 ],
+"american": [
+"american",
+"From the USA."
+],
 "among": [
 "among",
 "In the middle of a group."
+],
+"amount": [
+"amount",
+"How much of something."
 ],
 "amulets": [
 "amulet",
@@ -190,6 +390,18 @@
 "an": [
 "a",
 "A, before a vowel sound."
+],
+"analyse": [
+"analyse",
+"Study closely."
+],
+"ancestor": [
+"ancestor",
+"A family member from long ago."
+],
+"ancestors": [
+"ancestor",
+"Family members who lived long ago."
 ],
 "ancient": [
 "ancient",
@@ -215,6 +427,14 @@
 "animal",
 "A living thing that moves and eats."
 ],
+"announced": [
+"announce",
+"Said officially."
+],
+"announces": [
+"announce",
+"Says publicly."
+],
 "annoying": [
 "annoying",
 "It makes you a little angry."
@@ -223,9 +443,17 @@
 "another",
 "One more; a different one."
 ],
+"answer": [
+"answer",
+"What you say or write to reply to a question."
+],
 "answered": [
 "answer",
 "Say something when someone asks you."
+],
+"answers": [
+"answer",
+"Replies."
 ],
 "ant": [
 "ant",
@@ -239,13 +467,25 @@
 "antibiotic",
 "A medicine that kills bacteria."
 ],
+"antisocial": [
+"antisocial",
+"Not liking people."
+],
 "ants": [
 "ant",
 "A very small insect that lives in big groups."
 ],
+"anxious": [
+"anxious",
+"Worried and nervous."
+],
 "any": [
 "any",
 "Some, it does not matter which."
+],
+"anybody": [
+"anybody",
+"Any person."
 ],
 "anyone": [
 "anyone",
@@ -267,9 +507,33 @@
 "appear",
 "Start to be seen."
 ],
+"appears": [
+"appear",
+"Seems."
+],
 "apple": [
 "apple",
 "A round fruit, red or green."
+],
+"applications": [
+"application",
+"Official requests."
+],
+"apply": [
+"apply",
+"Ask officially."
+],
+"appreciate": [
+"appreciate",
+"Value."
+],
+"approved": [
+"approve",
+"Accepted officially."
+],
+"approves": [
+"approve",
+"Thinks is good."
 ],
 "aquarium": [
 "aquarium",
@@ -291,6 +555,10 @@
 "archaeology",
 "The study of the past with old objects and buildings."
 ],
+"archaeopteryx": [
+"archaeopteryx",
+"Name of an early bird-like dinosaur."
+],
 "architecture": [
 "architecture",
 "The art of designing buildings."
@@ -310,6 +578,26 @@
 "argentinosaurus": [
 "argentinosaurus",
 "Name of a giant dinosaur from South America."
+],
+"argue": [
+"argue",
+"Say why you think something."
+],
+"argued": [
+"argue",
+"Said why they think."
+],
+"arguing": [
+"argue",
+"Saying why you think something."
+],
+"argument": [
+"argument",
+"A fight with words."
+],
+"arguments": [
+"argument",
+"Reasons or fights with words."
 ],
 "arm": [
 "arm",
@@ -339,6 +627,10 @@
 "arrive",
 "Come to a place."
 ],
+"articles": [
+"article",
+"Pieces of writing."
+],
 "artificial": [
 "artificial",
 "Made by people; not natural."
@@ -355,13 +647,29 @@
 "asia",
 "Name of the biggest continent."
 ],
+"asian": [
+"asian",
+"From Asia."
+],
+"ask": [
+"ask",
+"Say a question."
+],
 "asked": [
 "ask",
 "Say a question."
 ],
+"asking": [
+"ask",
+"Requesting."
+],
 "asleep": [
 "asleep",
 "Sleeping."
+],
+"aspens": [
+"aspen",
+"Trees with shaking leaves."
 ],
 "assistants": [
 "assistant",
@@ -375,6 +683,10 @@
 "asteroid",
 "A big rock that moves in space."
 ],
+"astonishing": [
+"astonish",
+"Very surprising."
+],
 "astronaut": [
 "astronaut",
 "A person who travels into space."
@@ -386,6 +698,10 @@
 "astronomers": [
 "astronomer",
 "A scientist who studies the stars and planets."
+],
+"astronomical": [
+"astronomical",
+"About stars."
 ],
 "at": [
 "at",
@@ -415,13 +731,65 @@
 "atlantis",
 "Name of a lost island from an old legend."
 ],
+"atmosphere": [
+"atmosphere",
+"The gases around a planet."
+],
+"atmospheres": [
+"atmosphere",
+"Gases around planets."
+],
+"attached": [
+"attached",
+"Fixed to something."
+],
+"attaching": [
+"attach",
+"Fixing to something."
+],
 "attack": [
 "attack",
 "Try to hurt someone."
 ],
+"attacked": [
+"attack",
+"Hurt with violence."
+],
 "attacks": [
 "attack",
 "Try to hurt someone."
+],
+"attempt": [
+"attempt",
+"A try."
+],
+"attempts": [
+"attempt",
+"Tries."
+],
+"attention": [
+"attention",
+"Looking or listening carefully."
+],
+"attitude": [
+"attitude",
+"A way of thinking."
+],
+"attract": [
+"attract",
+"Pull towards; get interest."
+],
+"attracted": [
+"attract",
+"Pulled towards."
+],
+"attractions": [
+"attraction",
+"Things people visit."
+],
+"attracts": [
+"attract",
+"Pulls towards it."
 ],
 "audience": [
 "audience",
@@ -431,6 +799,18 @@
 "australia",
 "Name of a big country and continent."
 ],
+"author": [
+"author",
+"A writer."
+],
+"automatically": [
+"automatic",
+"By itself."
+],
+"available": [
+"available",
+"Ready to use."
+],
 "average": [
 "average",
 "Normal; in the middle."
@@ -438,6 +818,14 @@
 "avoid": [
 "avoid",
 "Try not to do something."
+],
+"avoided": [
+"avoid",
+"Stayed away from."
+],
+"awake": [
+"awake",
+"Not sleeping."
 ],
 "away": [
 "away",
@@ -471,6 +859,10 @@
 "bad",
 "Not good."
 ],
+"badly": [
+"badly",
+"In a bad way."
+],
 "balance": [
 "balance",
 "Keep something still so it does not fall."
@@ -487,13 +879,33 @@
 "ball",
 "A round object for games."
 ],
+"bang": [
+"bang",
+"A sudden loud noise."
+],
+"bank": [
+"bank",
+"A place that keeps money."
+],
 "banned": [
 "ban",
 "Say that something is not allowed."
 ],
+"banning": [
+"ban",
+"Not allowing."
+],
 "bar": [
 "bar",
 "A long piece of something, like chocolate."
+],
+"bare": [
+"bare",
+"Empty, with nothing on it."
+],
+"barely": [
+"barely",
+"Almost not."
 ],
 "bars": [
 "bar",
@@ -507,6 +919,10 @@
 "base",
 "Use something as the start for another."
 ],
+"basement": [
+"basement",
+"A room under a house."
+],
 "bases": [
 "base",
 "A place where people live and work."
@@ -515,9 +931,17 @@
 "basic",
 "Simple and important."
 ],
+"bathing": [
+"bathe",
+"Swimming or washing."
+],
 "bathroom": [
 "bathroom",
 "The room with the toilet and shower."
+],
+"bats": [
+"bat",
+"Flying mammals of the night."
 ],
 "battle": [
 "battle",
@@ -535,6 +959,10 @@
 "beach",
 "Land with sand next to the sea."
 ],
+"beak": [
+"beak",
+"The hard mouth of a bird or octopus."
+],
 "beans": [
 "beans",
 "Small seeds that we cook and eat."
@@ -547,13 +975,29 @@
 "bear",
 "A big strong animal with a lot of hair."
 ],
+"beat": [
+"beat",
+"Move with a regular rhythm (the heart)."
+],
 "beating": [
 "beat",
 "Move again and again (the heart)."
 ],
+"beats": [
+"beat",
+"Moves with a regular rhythm (the heart)."
+],
 "beautiful": [
 "beautiful",
 "Very nice to look at."
+],
+"beaver": [
+"beaver",
+"An animal that builds dams."
+],
+"beavers": [
+"beaver",
+"Animals that build dams."
 ],
 "became": [
 "become",
@@ -566,6 +1010,10 @@
 "become": [
 "become",
 "Start to be."
+],
+"becoming": [
+"become",
+"Starting to be."
 ],
 "bed": [
 "bed",
@@ -591,7 +1039,15 @@
 "before",
 "Earlier than something."
 ],
+"beforehand": [
+"beforehand",
+"Before."
+],
 "began": [
+"begin",
+"Start."
+],
+"begin": [
 "begin",
 "Start."
 ],
@@ -603,9 +1059,25 @@
 "beginning",
 "The start."
 ],
+"begins": [
+"begin",
+"Starts."
+],
+"behaved": [
+"behave",
+"Acted."
+],
 "behaves": [
 "behave",
 "Act in a certain way."
+],
+"behaving": [
+"behave",
+"Acting in a certain way."
+],
+"behaviour": [
+"behaviour",
+"The way you act."
 ],
 "behind": [
 "behind",
@@ -614,6 +1086,14 @@
 "being": [
 "be",
 "Form of to be with -ing."
+],
+"beings": [
+"being",
+"Living creatures."
+],
+"belief": [
+"belief",
+"Something you think is true."
 ],
 "believe": [
 "believe",
@@ -627,17 +1107,45 @@
 "belle",
 "Name of a person (David Belle)."
 ],
+"belonged": [
+"belong",
+"Was owned by."
+],
+"belongs": [
+"belong",
+"Should be."
+],
 "below": [
 "below",
 "Under; in a lower place."
+],
+"beneath": [
+"beneath",
+"Under."
+],
+"benefited": [
+"benefit",
+"Got something good."
+],
+"benefits": [
+"benefit",
+"Good effects."
 ],
 "bermuda": [
 "bermuda",
 "Name of an island in the Atlantic Ocean."
 ],
+"beside": [
+"beside",
+"Next to."
+],
 "best": [
 "good",
 "Better than all the others."
+],
+"bestseller": [
+"bestseller",
+"A book many people buy."
 ],
 "better": [
 "good",
@@ -646,6 +1154,10 @@
 "between": [
 "between",
 "In the middle of two things."
+],
+"beyond": [
+"beyond",
+"Further than."
 ],
 "big": [
 "big",
@@ -671,9 +1183,17 @@
 "billion",
 "One thousand million (1 000 000 000)."
 ],
+"billions": [
+"billion",
+"Thousands of millions."
+],
 "bioluminescence": [
 "bioluminescence",
 "Light that a living thing makes."
+],
+"biomimicry": [
+"biomimicry",
+"Copying nature in designs."
 ],
 "bird": [
 "bird",
@@ -683,6 +1203,14 @@
 "bird",
 "An animal with feathers and wings."
 ],
+"birdwatcher": [
+"birdwatcher",
+"A person who watches birds."
+],
+"birth": [
+"birth",
+"The moment you are born."
+],
 "bit": [
 "bit",
 "A small piece. A bit = a little."
@@ -691,13 +1219,33 @@
 "bite",
 "Cut with your teeth."
 ],
+"bites": [
+"bite",
+"Cuts with teeth."
+],
+"bitten": [
+"bite",
+"Cut with teeth."
+],
+"bitter": [
+"bitter",
+"With a strong unpleasant taste, like strong coffee."
+],
 "black": [
 "black",
 "The color of the night."
 ],
+"blind": [
+"blind",
+"Not able to see."
+],
 "block": [
 "block",
 "A piece with straight sides, like a cube."
+],
+"blocked": [
+"block",
+"Stopped."
 ],
 "blocks": [
 "block",
@@ -706,6 +1254,10 @@
 "blood": [
 "blood",
 "The red liquid in your body."
+],
+"blooded": [
+"blooded",
+"Cold-blooded: with a body temperature that changes."
 ],
 "blue": [
 "blue",
@@ -718,6 +1270,10 @@
 "board": [
 "board",
 "A flat piece of wood or plastic."
+],
+"boards": [
+"board",
+"Flat pieces of wood."
 ],
 "boat": [
 "boat",
@@ -751,6 +1307,10 @@
 "bone",
 "A hard white part inside the body."
 ],
+"bony": [
+"bony",
+"With bones."
+],
 "book": [
 "book",
 "Pages with words, to read."
@@ -763,9 +1323,25 @@
 "book",
 "Pages with words, to read."
 ],
+"bookseller": [
+"bookseller",
+"A person who sells books."
+],
+"bookshop": [
+"bookshop",
+"A shop that sells books."
+],
+"borders": [
+"border",
+"Lines between countries."
+],
 "bored": [
 "bored",
 "Not interested; with nothing to do."
+],
+"boring": [
+"boring",
+"Not interesting."
 ],
 "born": [
 "be born",
@@ -775,9 +1351,21 @@
 "both",
 "The two."
 ],
+"bottle": [
+"bottle",
+"A container for drinks."
+],
+"bottom": [
+"bottom",
+"The lowest part."
+],
 "bought": [
 "buy",
 "Get something with money."
+],
+"bowl": [
+"bowl",
+"A round deep dish."
 ],
 "box": [
 "box",
@@ -794,6 +1382,14 @@
 "brachiosaurus": [
 "brachiosaurus",
 "Name of a very tall dinosaur."
+],
+"brain": [
+"brain",
+"The organ in your head that thinks."
+],
+"brains": [
+"brain",
+"The organ in the head that thinks."
 ],
 "branch": [
 "branch",
@@ -827,13 +1423,33 @@
 "breakfast",
 "The first meal of the day."
 ],
+"breaking": [
+"break",
+"Beating."
+],
+"breakthrough": [
+"breakthrough",
+"An important discovery."
+],
+"breast": [
+"breast",
+"The front of the body; breast milk: milk from a mother."
+],
 "breathe": [
 "breathe",
 "Take air in and out."
 ],
+"brewery": [
+"brewery",
+"A place that makes beer."
+],
 "bricks": [
 "brick",
 "A block for building walls."
+],
+"bridge": [
+"bridge",
+"Something to cross a river."
 ],
 "bright": [
 "bright",
@@ -843,6 +1459,10 @@
 "bright",
 "With strong light or color."
 ],
+"brilliant": [
+"brilliant",
+"Very clever."
+],
 "bring": [
 "bring",
 "Take something with you to a place."
@@ -851,9 +1471,17 @@
 "bring",
 "Take something with you to a place."
 ],
+"britain": [
+"britain",
+"Name of a country: Great Britain."
+],
 "british": [
 "british",
 "From Britain."
+],
+"broadcast": [
+"broadcast",
+"Shown on TV or online."
 ],
 "broke": [
 "break",
@@ -863,6 +1491,10 @@
 "break",
 "In pieces; not working."
 ],
+"bronze": [
+"bronze",
+"A brown metal; third prize."
+],
 "bros": [
 "brothers",
 "Name of a game (Super Mario Bros.); short for brothers."
@@ -870,6 +1502,10 @@
 "brother": [
 "brother",
 "A boy with the same parents as you."
+],
+"brothers": [
+"brother",
+"Boys with the same parents."
 ],
 "brown": [
 "brown",
@@ -907,6 +1543,14 @@
 "building",
 "A house or other structure with walls and a roof."
 ],
+"buildings": [
+"building",
+"Houses, offices and so on."
+],
+"builds": [
+"build",
+"Makes."
+],
 "built": [
 "build",
 "Make something by putting parts together."
@@ -915,9 +1559,25 @@
 "bulb",
 "The glass part of a lamp that gives light."
 ],
+"bullet": [
+"bullet",
+"Small metal thing shot from a gun."
+],
+"bumps": [
+"bump",
+"Small raised parts."
+],
 "burns": [
 "burn",
 "Destroy with fire."
+],
+"burr": [
+"burr",
+"A seed that sticks to things."
+],
+"burrs": [
+"burr",
+"Seeds that stick to things."
 ],
 "bus": [
 "bus",
@@ -927,9 +1587,17 @@
 "bus",
 "A big vehicle that carries many people."
 ],
+"bushes": [
+"bush",
+"Small trees."
+],
 "busiest": [
 "busy",
 "With the most activity."
+],
+"businessman": [
+"businessman",
+"A man who runs a business."
 ],
 "busy": [
 "busy",
@@ -950,6 +1618,10 @@
 "buy": [
 "buy",
 "Get something with money."
+],
+"buyer": [
+"buyer",
+"A person who buys."
 ],
 "buying": [
 "buy",
@@ -975,6 +1647,22 @@
 "cake",
 "A sweet food for parties."
 ],
+"calculator": [
+"calculator",
+"A machine that does maths."
+],
+"calculators": [
+"calculator",
+"Machines that do maths."
+],
+"california": [
+"california",
+"Name of a state in the west of the USA."
+],
+"call": [
+"call",
+"Give a name."
+],
 "called": [
 "call",
 "Have a name; or give a name."
@@ -983,9 +1671,21 @@
 "calm",
 "Quiet and relaxed; not nervous."
 ],
+"calmly": [
+"calmly",
+"In a calm way."
+],
 "came": [
 "come",
 "Move to this place."
+],
+"camera": [
+"camera",
+"A machine that takes pictures."
+],
+"cameras": [
+"camera",
+"Machines that take pictures."
 ],
 "can": [
 "can",
@@ -1003,6 +1703,10 @@
 "canary",
 "Name of Spanish islands in the Atlantic (the Canary Islands)."
 ],
+"cancer": [
+"cancer",
+"A serious illness."
+],
 "candle": [
 "candle",
 "A stick of wax that you burn for light."
@@ -1015,13 +1719,37 @@
 "can",
 "Not be able to."
 ],
+"cap": [
+"cap",
+"A lid."
+],
+"capable": [
+"capable",
+"Able."
+],
 "car": [
 "car",
 "A vehicle with four wheels."
 ],
+"carbon": [
+"carbon",
+"A chemical element."
+],
+"carcasses": [
+"carcass",
+"Dead animal bodies."
+],
 "card": [
 "card",
 "A small flat piece of paper."
+],
+"care": [
+"care",
+"Being careful."
+],
+"career": [
+"career",
+"A job for life."
 ],
 "careful": [
 "careful",
@@ -1039,9 +1767,21 @@
 "carnarvon",
 "Name of an English lord (Lord Carnarvon)."
 ],
+"carried": [
+"carry",
+"Took with you."
+],
+"carries": [
+"carry",
+"Takes with it."
+],
 "carry": [
 "carry",
 "Take something from one place to another."
+],
+"carrying": [
+"carry",
+"Holding and taking."
 ],
 "cars": [
 "car",
@@ -1050,6 +1790,26 @@
 "carter": [
 "carter",
 "Name of a British archaeologist (Howard Carter)."
+],
+"cartouches": [
+"cartouche",
+"Ovals with royal names in hieroglyphs."
+],
+"cascade": [
+"cascade",
+"A series of effects."
+],
+"case": [
+"case",
+"An example or situation."
+],
+"cash": [
+"cash",
+"Money."
+],
+"cassini": [
+"cassini",
+"Name of a space probe that studied Saturn."
 ],
 "castle": [
 "castle",
@@ -1083,6 +1843,10 @@
 "cat",
 "A small animal that lives in houses."
 ],
+"cattle": [
+"cattle",
+"Cows."
+],
 "caught": [
 "catch",
 "Get something that is moving."
@@ -1099,6 +1863,10 @@
 "cause",
 "The reason something happens."
 ],
+"causing": [
+"cause",
+"Making happen."
+],
 "cave": [
 "cave",
 "A big hole in a mountain or under the ground."
@@ -1106,6 +1874,14 @@
 "caves": [
 "cave",
 "A big hole in a mountain or under the ground."
+],
+"celebrate": [
+"celebrate",
+"Have fun because of something good."
+],
+"celebrated": [
+"celebrate",
+"Showed happiness for."
 ],
 "cells": [
 "cell",
@@ -1123,6 +1899,14 @@
 "centimeter",
 "A small unit of length; 100 make a meter."
 ],
+"centres": [
+"centre",
+"Places for an activity."
+],
+"centuries": [
+"century",
+"Periods of 100 years."
+],
 "century": [
 "century",
 "One hundred years."
@@ -1131,9 +1915,29 @@
 "ceremony",
 "A special event with traditions."
 ],
+"certain": [
+"certain",
+"Some."
+],
+"certainly": [
+"certainly",
+"Without doubt."
+],
+"chain": [
+"chain",
+"Things linked one after another."
+],
 "challenge": [
 "challenge",
 "Something difficult that tests you."
+],
+"challenger": [
+"challenger",
+"A person who tries to beat a record."
+],
+"challengers": [
+"challenger",
+"People who try to beat a record."
 ],
 "challenges": [
 "challenge",
@@ -1147,13 +1951,29 @@
 "champion",
 "The winner of a competition."
 ],
+"champollion": [
+"champollion",
+"Name of a French scholar who read hieroglyphs."
+],
+"chance": [
+"chance",
+"Opportunity."
+],
 "change": [
 "change",
 "Make or become different."
 ],
+"changed": [
+"change",
+"Made different."
+],
 "changes": [
 "change",
 "Make or become different."
+],
+"changing": [
+"change",
+"Making different."
 ],
 "chapulines": [
 "chapulines",
@@ -1175,9 +1995,53 @@
 "charity",
 "A group that helps people in need."
 ],
+"charity": [
+"charity",
+"A group that helps people."
+],
+"charles": [
+"charles",
+"Name: Charles Darwin, a British scientist."
+],
+"charts": [
+"chart",
+"Maps or diagrams."
+],
+"chase": [
+"chase",
+"Running after someone to catch them."
+],
+"chased": [
+"chase",
+"Ran after to make leave."
+],
+"cheap": [
+"cheap",
+"Not expensive."
+],
+"cheaper": [
+"cheap",
+"Costing less."
+],
+"check": [
+"check",
+"Look at carefully."
+],
+"checked": [
+"check",
+"Looked at carefully."
+],
+"checking": [
+"check",
+"Looking at carefully."
+],
 "cheedaman": [
 "cheedaman",
 "Name of the user who made BEAR (Alpha)."
+],
+"cheering": [
+"cheer",
+"Shouting happily."
 ],
 "cheese": [
 "cheese",
@@ -1191,9 +2055,25 @@
 "chef",
 "A person who cooks in a restaurant."
 ],
+"chefs": [
+"chef",
+"Professional cooks."
+],
 "chemical": [
 "chemical",
 "About substances and how they change."
+],
+"chemicals": [
+"chemical",
+"A substance made by chemistry."
+],
+"chemist": [
+"chemist",
+"A scientist who studies chemistry."
+],
+"chemistry": [
+"chemistry",
+"The science of substances."
 ],
 "chess": [
 "chess",
@@ -1206,6 +2086,10 @@
 "chicxulub": [
 "chicxulub",
 "Name of a town in Mexico."
+],
+"childhood": [
+"childhood",
+"The time when you are a child."
 ],
 "children": [
 "child",
@@ -1227,6 +2111,10 @@
 "chip",
 "A thin fried piece of potato."
 ],
+"chips": [
+"chips",
+"Fried pieces of potato."
+],
 "chocolate": [
 "chocolate",
 "A sweet brown food made from cacao."
@@ -1243,6 +2131,22 @@
 "choose",
 "Take one from many."
 ],
+"chosen": [
+"choose",
+"Picked."
+],
+"christmas": [
+"christmas",
+"The holiday on 25 December."
+],
+"church": [
+"church",
+"A Christian building for prayer."
+],
+"ciphers": [
+"cipher",
+"Secret codes."
+],
 "circle": [
 "circle",
 "A round shape."
@@ -1255,9 +2159,53 @@
 "city",
 "A very big town."
 ],
+"civilisation": [
+"civilisation",
+"A society with its culture."
+],
+"civilisations": [
+"civilisation",
+"Advanced societies."
+],
 "civilization": [
 "civilization",
 "A big society with its own culture."
+],
+"claim": [
+"claim",
+"Say something is true."
+],
+"claimed": [
+"claim",
+"Said was true."
+],
+"claiming": [
+"claim",
+"Saying it is true."
+],
+"classic": [
+"classic",
+"Traditional and well known."
+],
+"classroom": [
+"classroom",
+"A room in a school."
+],
+"classrooms": [
+"classroom",
+"Rooms in a school."
+],
+"claws": [
+"claws",
+"Sharp nails of an animal."
+],
+"clean": [
+"clean",
+"Not dirty."
+],
+"cleaned": [
+"clean",
+"Made clean."
 ],
 "cleaning": [
 "clean",
@@ -1266,6 +2214,18 @@
 "clear": [
 "clear",
 "Easy to see through or to understand."
+],
+"clearest": [
+"clear",
+"Easiest to understand."
+],
+"clearly": [
+"clearly",
+"In a clear way."
+],
+"clever": [
+"clever",
+"Intelligent."
 ],
 "clicks": [
 "click",
@@ -1287,17 +2247,41 @@
 "climber",
 "A person who climbs mountains."
 ],
+"clock": [
+"clock",
+"A thing that shows the time."
+],
 "close": [
 "close",
 "Near."
+],
+"closed": [
+"close",
+"Not open."
+],
+"closely": [
+"closely",
+"Very; in a close way."
 ],
 "closer": [
 "close",
 "More near."
 ],
+"closest": [
+"close",
+"The nearest."
+],
 "clothes": [
 "clothes",
 "Things you wear, like shirts and trousers."
+],
+"clothing": [
+"clothing",
+"Clothes."
+],
+"clotting": [
+"clot",
+"Blood becoming thick."
 ],
 "cloud": [
 "cloud",
@@ -1311,6 +2295,14 @@
 "clue",
 "Information that helps you solve a mystery."
 ],
+"coach": [
+"coach",
+"A person who trains sportspeople."
+],
+"coaches": [
+"coach",
+"People who train sportspeople."
+],
 "coal": [
 "coal",
 "A black rock that burns."
@@ -1319,9 +2311,25 @@
 "coast",
 "The land next to the sea."
 ],
+"coconut": [
+"coconut",
+"A big brown nut from a palm tree."
+],
 "code": [
 "code",
 "Instructions for a computer."
+],
+"codebreaker": [
+"codebreaker",
+"A person who reads secret codes."
+],
+"codebreakers": [
+"codebreaker",
+"People who read secret codes."
+],
+"codes": [
+"code",
+"Secret ways of writing."
 ],
 "coffin": [
 "coffin",
@@ -1355,6 +2363,18 @@
 "collect",
 "Take things and put them together."
 ],
+"collected": [
+"collect",
+"Gathered."
+],
+"collects": [
+"collect",
+"Gathers."
+],
+"college": [
+"college",
+"A school."
+],
 "colombia": [
 "colombia",
 "Name of a country in South America."
@@ -1374,6 +2394,30 @@
 "colors": [
 "color",
 "Red, blue, green and yellow are colors."
+],
+"colour": [
+"colour",
+"Red, blue, green…"
+],
+"colourful": [
+"colour",
+"With many colours."
+],
+"colours": [
+"colour",
+"Red, blue, green and so on."
+],
+"combination": [
+"combination",
+"A mix."
+],
+"combine": [
+"combine",
+"Put together."
+],
+"combining": [
+"combine",
+"Putting together."
 ],
 "come": [
 "come",
@@ -1395,9 +2439,25 @@
 "come",
 "Move to this place."
 ],
+"commentators": [
+"commentator",
+"People who talk about an event on TV."
+],
+"committee": [
+"committee",
+"A group of people who decide things."
+],
 "common": [
 "common",
 "Normal; that happens often."
+],
+"communicate": [
+"communicate",
+"Exchange messages."
+],
+"communication": [
+"communication",
+"Sharing information."
 ],
 "community": [
 "community",
@@ -1411,6 +2471,14 @@
 "company",
 "A business."
 ],
+"compare": [
+"compare",
+"Look at how things are the same or different."
+],
+"comparing": [
+"compare",
+"Looking at differences."
+],
 "compass": [
 "compass",
 "A tool that shows where north is."
@@ -1418,6 +2486,10 @@
 "compasses": [
 "compass",
 "A tool that shows where north is."
+],
+"competed": [
+"compete",
+"Took part in a competition."
 ],
 "competes": [
 "compete",
@@ -1427,9 +2499,49 @@
 "competition",
 "An event where people try to win."
 ],
+"competitions": [
+"competition",
+"Events where people try to win."
+],
+"competitive": [
+"compete",
+"Wanting to win."
+],
+"competitor": [
+"competitor",
+"A person in a competition."
+],
+"competitors": [
+"competitor",
+"People trying to win."
+],
+"complaints": [
+"complaint",
+"Saying something is wrong."
+],
+"complete": [
+"complete",
+"Total."
+],
 "completely": [
 "complete",
 "Totally."
+],
+"completing": [
+"complete",
+"Finishing."
+],
+"complex": [
+"complex",
+"Complicated."
+],
+"complicated": [
+"complicated",
+"Difficult."
+],
+"compound": [
+"compound",
+"A substance made of two or more things."
 ],
 "computer": [
 "computer",
@@ -1439,6 +2551,18 @@
 "computer",
 "A machine for working, playing and using the internet."
 ],
+"concentrate": [
+"concentrate",
+"Think hard about one thing."
+],
+"concern": [
+"concern",
+"Worry."
+],
+"concerns": [
+"concern",
+"Worries."
+],
 "concert": [
 "concert",
 "A music show."
@@ -1446,6 +2570,18 @@
 "concerts": [
 "concert",
 "A music show."
+],
+"concluded": [
+"conclude",
+"Decided after thinking."
+],
+"concrete": [
+"concrete",
+"Hard grey building material."
+],
+"condition": [
+"condition",
+"A health problem."
 ],
 "conditioning": [
 "air conditioning",
@@ -1459,9 +2595,49 @@
 "cone",
 "A shape with a round base and a point. Cone snail: a sea snail."
 ],
+"conference": [
+"conference",
+"A big meeting."
+],
+"confirmed": [
+"confirm",
+"Shown to be true."
+],
+"confuses": [
+"confuse",
+"Makes unsure."
+],
+"connect": [
+"connect",
+"Join."
+],
+"connected": [
+"connected",
+"Joined."
+],
+"connection": [
+"connection",
+"A link between things."
+],
 "conquer": [
 "conquer",
 "Take a place by fighting."
+],
+"consequences": [
+"consequence",
+"Results."
+],
+"considered": [
+"consider",
+"Thought to be."
+],
+"considers": [
+"consider",
+"Thinks."
+],
+"consist": [
+"consist",
+"Be made of."
 ],
 "console": [
 "console",
@@ -1471,6 +2647,18 @@
 "console",
 "A machine for playing video games."
 ],
+"constant": [
+"constant",
+"All the time."
+],
+"constantly": [
+"constant",
+"All the time."
+],
+"constructing": [
+"construct",
+"Building."
+],
 "construction": [
 "construction",
 "The work of building."
@@ -1479,9 +2667,41 @@
 "contain",
 "Have something inside."
 ],
+"contained": [
+"contain",
+"Had inside."
+],
+"contains": [
+"contain",
+"Has inside."
+],
+"contents": [
+"content",
+"What is inside."
+],
 "continent": [
 "continent",
 "A very big piece of land, like Africa or Europe."
+],
+"continue": [
+"continue",
+"Keep doing."
+],
+"continues": [
+"continue",
+"Goes on."
+],
+"contrary": [
+"contrary",
+"Opposite."
+],
+"contrast": [
+"contrast",
+"A big difference."
+],
+"control": [
+"control",
+"Have power over something."
 ],
 "controller": [
 "controller",
@@ -1491,29 +2711,85 @@
 "controller",
 "The thing you hold to play a video game."
 ],
+"controversial": [
+"controversial",
+"Causing disagreement."
+],
+"conveniently": [
+"convenient",
+"Usefully."
+],
+"convinced": [
+"convinced",
+"Sure."
+],
+"convincing": [
+"convincing",
+"Making you believe."
+],
 "cook": [
 "cook",
 "Make food hot to eat it."
+],
+"cooking": [
+"cooking",
+"Making food."
 ],
 "cooks": [
 "cook",
 "A person who makes food."
 ],
+"cool": [
+"cool",
+"A bit cold."
+],
+"cope": [
+"cope",
+"Manage a difficulty."
+],
+"coped": [
+"cope",
+"Managed."
+],
+"copied": [
+"copy",
+"Did the same as."
+],
 "copies": [
 "copy",
 "One of many things that are the same."
+],
+"coptic": [
+"coptic",
+"A late form of the Egyptian language."
 ],
 "copy": [
 "copy",
 "A thing that is the same as another."
 ],
+"copying": [
+"copy",
+"Doing the same as."
+],
 "corner": [
 "corner",
 "The point where two walls meet."
 ],
+"correct": [
+"correct",
+"Right."
+],
 "correctly": [
 "correct",
 "In the right way."
+],
+"corridor": [
+"corridor",
+"A long passage in a building."
+],
+"corridors": [
+"corridor",
+"Long passages in a building."
 ],
 "cost": [
 "cost",
@@ -1522,6 +2798,14 @@
 "could": [
 "can",
 "Past of can; or it is possible."
+],
+"count": [
+"count",
+"Say numbers in order."
+],
+"counting": [
+"count",
+"Saying numbers."
 ],
 "countries": [
 "country",
@@ -1535,9 +2819,17 @@
 "couple",
 "Two people together."
 ],
+"courage": [
+"courage",
+"Being brave."
+],
 "course": [
 "course",
 "Of course = yes, naturally."
+],
+"courses": [
+"course",
+"Series of classes."
 ],
 "cousin": [
 "cousin",
@@ -1559,9 +2851,21 @@
 "cow",
 "A big farm animal that gives milk."
 ],
+"crab": [
+"crab",
+"A sea animal with claws."
+],
+"cracks": [
+"crack",
+"Thin breaks."
+],
 "crash": [
 "crash",
 "Hit something very hard."
+],
+"crashed": [
+"crash",
+"Hit with force."
 ],
 "crater": [
 "crater",
@@ -1579,17 +2883,45 @@
 "create",
 "Make something new."
 ],
+"creating": [
+"create",
+"Making something new."
+],
+"creations": [
+"creation",
+"Things that are made."
+],
 "creative": [
 "creative",
 "Creative mode: in Minecraft, a mode where you can build freely."
+],
+"creativity": [
+"creativity",
+"Being able to make new things."
 ],
 "creators": [
 "creator",
 "A person who makes something new."
 ],
+"creature": [
+"creature",
+"An animal."
+],
+"creatures": [
+"creature",
+"Living animals."
+],
+"creeper": [
+"creeper",
+"A monster in Minecraft."
+],
 "creepers": [
 "creeper",
 "A green monster in Minecraft that explodes."
+],
+"crewed": [
+"crewed",
+"With people on board."
 ],
 "cricket": [
 "cricket",
@@ -1598,6 +2930,18 @@
 "crickets": [
 "cricket",
 "A small insect that jumps and sings."
+],
+"criticise": [
+"criticise",
+"Say what is bad about."
+],
+"criticism": [
+"criticism",
+"Saying what is bad."
+],
+"critics": [
+"critic",
+"People who say what is bad."
 ],
 "crocodile": [
 "crocodile",
@@ -1611,6 +2955,10 @@
 "cross",
 "Go from one side to the other."
 ],
+"crossed": [
+"cross",
+"Went across."
+],
 "crowd": [
 "crowd",
 "A lot of people together."
@@ -1619,13 +2967,25 @@
 "crunchy",
 "Hard and noisy when you eat it."
 ],
+"cubes": [
+"cube",
+"Shapes like boxes."
+],
 "culture": [
 "culture",
 "The way of life, art and ideas of a group of people."
 ],
+"cured": [
+"cured",
+"Dried and salted to keep it (meat)."
+],
 "curious": [
 "curious",
 "Wanting to know or learn things."
+],
+"current": [
+"current",
+"Now."
 ],
 "currents": [
 "current",
@@ -1639,6 +2999,10 @@
 "curse",
 "With a curse; with bad luck."
 ],
+"curved": [
+"curved",
+"Bent, not straight."
+],
 "customer": [
 "customer",
 "A person who buys something."
@@ -1646,6 +3010,30 @@
 "cut": [
 "cut",
 "Divide with a knife."
+],
+"da": [
+"da",
+"Part of a name."
+],
+"dam": [
+"dam",
+"A wall that holds back water."
+],
+"damage": [
+"damage",
+"Harm; break."
+],
+"damaged": [
+"damage",
+"Hurt or broken."
+],
+"damages": [
+"damage",
+"Hurts."
+],
+"dams": [
+"dam",
+"Walls that hold back water."
 ],
 "dance": [
 "dance",
@@ -1663,6 +3051,10 @@
 "dangerous",
 "It can hurt you."
 ],
+"dangers": [
+"danger",
+"Things that can hurt you."
+],
 "danish": [
 "danish",
 "From Denmark."
@@ -1671,9 +3063,33 @@
 "dare",
 "Be brave enough to do something."
 ],
+"daring": [
+"dare",
+"Being brave enough to do something."
+],
 "dark": [
 "dark",
 "With little or no light."
+],
+"darker": [
+"dark",
+"With less light."
+],
+"darkness": [
+"darkness",
+"When there is no light."
+],
+"darwin": [
+"darwin",
+"Name: Charles Darwin, a British scientist."
+],
+"dashi": [
+"dashi",
+"A Japanese soup stock."
+],
+"dating": [
+"date",
+"Finding how old."
 ],
 "david": [
 "david",
@@ -1687,13 +3103,41 @@
 "day",
 "Twenty-four hours."
 ],
+"de": [
+"de",
+"Part of a name."
+],
 "dead": [
 "dead",
 "Not alive."
 ],
+"deal": [
+"deal",
+"A great deal: a lot."
+],
+"dealt": [
+"deal",
+"Managed."
+],
 "death": [
 "death",
 "The end of life."
+],
+"deaths": [
+"death",
+"Times when people die."
+],
+"debate": [
+"debate",
+"A discussion with different opinions."
+],
+"decades": [
+"decade",
+"Periods of ten years."
+],
+"deceive": [
+"deceive",
+"Trick."
 ],
 "decide": [
 "decide",
@@ -1703,17 +3147,65 @@
 "decide",
 "Choose what to do."
 ],
+"decipher": [
+"decipher",
+"Find the meaning of a code."
+],
+"deciphered": [
+"decipher",
+"Found the meaning of."
+],
+"decision": [
+"decision",
+"Choosing what to do."
+],
+"decisions": [
+"decision",
+"Choices."
+],
+"dedicated": [
+"dedicate",
+"Gave time to."
+],
+"deed": [
+"deed",
+"An action."
+],
 "deep": [
 "deep",
 "Going far down."
+],
+"deeply": [
+"deeply",
+"Very."
+],
+"deer": [
+"deer",
+"A wild animal with antlers."
+],
+"defeat": [
+"defeat",
+"Losing a fight."
+],
+"defeated": [
+"defeat",
+"Beat in a war."
 ],
 "defend": [
 "defend",
 "Protect from an attack."
 ],
+"definitely": [
+"definite",
+"Certainly."
+],
 "degrees": [
 "degree",
 "A unit for temperature."
+],
+"deinonychus": [
+"deinonychus",
+"Name of a small, fast dinosaur."
 ],
 "delete": [
 "delete",
@@ -1723,13 +3215,57 @@
 "delicious",
 "It tastes very good."
 ],
+"delighted": [
+"delighted",
+"Very happy."
+],
+"demotic": [
+"demotic",
+"A later form of Egyptian writing."
+],
+"dengue": [
+"dengue",
+"An illness from mosquitoes."
+],
 "denmark": [
 "denmark",
 "Name of a country in the north of Europe."
 ],
+"deny": [
+"deny",
+"Say something is not true."
+],
+"depend": [
+"depend",
+"Need."
+],
+"depending": [
+"depend",
+"Based on."
+],
+"depends": [
+"depend",
+"Is decided by."
+],
 "descendants": [
 "descendant",
 "A child, grandchild and so on, of a family."
+],
+"describe": [
+"describe",
+"Say what something is like."
+],
+"described": [
+"describe",
+"Said what it is like."
+],
+"describes": [
+"describe",
+"Says what something is like."
+],
+"describing": [
+"describe",
+"Saying what something is like."
 ],
 "desert": [
 "desert",
@@ -1739,17 +3275,93 @@
 "desert",
 "A very dry place with sand or rocks."
 ],
+"deserved": [
+"deserve",
+"Should have got."
+],
+"design": [
+"design",
+"The way something is planned."
+],
+"designed": [
+"design",
+"Planned and made."
+],
+"designer": [
+"designer",
+"A person who plans how things will look or work."
+],
+"designers": [
+"designer",
+"People who plan how things will look or work."
+],
+"designs": [
+"design",
+"Plans for how things look or work."
+],
+"desperate": [
+"desperate",
+"Wanting very much."
+],
+"despite": [
+"despite",
+"Without being stopped by."
+],
 "destroyed": [
 "destroy",
 "Break completely."
+],
+"detail": [
+"detail",
+"A small part."
+],
+"detailed": [
+"detailed",
+"With many small parts."
+],
+"details": [
+"detail",
+"Small parts."
+],
+"detect": [
+"detect",
+"Notice or find."
 ],
 "detectives": [
 "detective",
 "A person who solves crimes and mysteries."
 ],
+"determination": [
+"determination",
+"Not giving up."
+],
+"develop": [
+"develop",
+"Grow; make."
+],
+"developed": [
+"develop",
+"Created and made better."
+],
 "developers": [
 "developer",
 "A person or company that makes software or games."
+],
+"developing": [
+"develop",
+"Making."
+],
+"diamond": [
+"diamond",
+"A very hard, shiny stone."
+],
+"diamonds": [
+"diamond",
+"Very hard, shiny stones."
+],
+"dictionaries": [
+"dictionary",
+"Books of words and meanings."
 ],
 "did": [
 "do",
@@ -1771,6 +3383,10 @@
 "die",
 "Stop living."
 ],
+"diet": [
+"diet",
+"The food you usually eat."
+],
 "difference": [
 "difference",
 "What makes two things not the same."
@@ -1787,13 +3403,29 @@
 "difficult",
 "Not easy."
 ],
+"difficulties": [
+"difficulty",
+"Problems."
+],
+"difficulty": [
+"difficulty",
+"How hard something is."
+],
 "dig": [
 "dig",
 "Make a hole in the ground."
 ],
+"digging": [
+"dig",
+"Making holes in the ground."
+],
 "digital": [
 "digital",
 "Made with computers."
+],
+"dinner": [
+"dinner",
+"The evening meal."
 ],
 "dinosaur": [
 "dinosaur",
@@ -1803,9 +3435,37 @@
 "dinosaur",
 "A big animal that lived millions of years ago."
 ],
+"dioxide": [
+"dioxide",
+"A gas we breathe out."
+],
+"direction": [
+"direction",
+"The way something goes."
+],
 "directly": [
 "direct",
 "With nothing in the middle."
+],
+"director": [
+"director",
+"A boss."
+],
+"dirt": [
+"dirt",
+"Mud or dust."
+],
+"disagree": [
+"disagree",
+"Not agree."
+],
+"disagreed": [
+"disagree",
+"Did not agree."
+],
+"disagreement": [
+"disagreement",
+"Different opinions."
 ],
 "disappear": [
 "disappear",
@@ -1814,6 +3474,26 @@
 "disappeared": [
 "disappear",
 "Go away and not be seen."
+],
+"disappointed": [
+"disappoint",
+"Sad that it was not as hoped."
+],
+"disappointing": [
+"disappoint",
+"Not as good as hoped."
+],
+"disaster": [
+"disaster",
+"A terrible event."
+],
+"disasters": [
+"disaster",
+"Terrible events."
+],
+"discipline": [
+"discipline",
+"A subject of study."
 ],
 "discover": [
 "discover",
@@ -1835,6 +3515,10 @@
 "disease",
 "An illness."
 ],
+"disguise": [
+"disguise",
+"Looking like something else."
+],
 "disgust": [
 "disgust",
 "A strong feeling that something is horrible."
@@ -1843,9 +3527,33 @@
 "dish",
 "A plate or a flat container."
 ],
+"dislike": [
+"dislike",
+"Not like."
+],
+"dismissed": [
+"dismiss",
+"Decided it was not important."
+],
+"disorder": [
+"disorder",
+"An illness."
+],
+"displayed": [
+"display",
+"Shown to the public."
+],
+"distance": [
+"distance",
+"How far."
+],
 "distant": [
 "distant",
 "Far away."
+],
+"disturbed": [
+"disturb",
+"Bothered."
 ],
 "dives": [
 "dive",
@@ -1854,6 +3562,10 @@
 "divide": [
 "divide",
 "Separate into parts."
+],
+"divided": [
+"divide",
+"Split into parts."
 ],
 "do": [
 "do",
@@ -1866,6 +3578,10 @@
 "doctors": [
 "doctor",
 "A person who helps sick people."
+],
+"documents": [
+"document",
+"Official papers."
 ],
 "does": [
 "do",
@@ -1887,6 +3603,26 @@
 "dollar",
 "The money of the United States."
 ],
+"dolphins": [
+"dolphin",
+"Clever sea mammals."
+],
+"donate": [
+"donate",
+"Give to help."
+],
+"donated": [
+"donate",
+"Given to help."
+],
+"donation": [
+"donation",
+"Money given to help."
+],
+"donations": [
+"donation",
+"Money given to help."
+],
 "done": [
 "do",
 "Past participle of do."
@@ -1894,6 +3630,14 @@
 "door": [
 "door",
 "You open it to go into a room."
+],
+"doors": [
+"door",
+"Things you open to go in."
+],
+"doubted": [
+"doubt",
+"Did not believe."
 ],
 "down": [
 "down",
@@ -1903,17 +3647,49 @@
 "downstream",
 "In the same direction as the water of a river."
 ],
+"dozens": [
+"dozen",
+"Groups of twelve; many."
+],
 "dragon": [
 "dragon",
 "A big monster that flies and has fire. Dragon fruit: a pink fruit."
+],
+"draining": [
+"drain",
+"Taking water away."
+],
+"drainpipe": [
+"drainpipe",
+"A pipe that takes water away."
+],
+"draw": [
+"draw",
+"Pull out."
 ],
 "drawings": [
 "drawing",
 "A picture made with a pencil."
 ],
+"drawn": [
+"draw",
+"Pictured."
+],
+"dream": [
+"dream",
+"Something you hope for."
+],
 "dreamed": [
 "dream",
 "Want something very much; or see things when you sleep."
+],
+"dressed": [
+"dress",
+"Wearing clothes."
+],
+"drew": [
+"draw",
+"Made a picture."
 ],
 "dried": [
 "dry",
@@ -1951,6 +3727,10 @@
 "drop",
 "A very small amount of liquid."
 ],
+"drought": [
+"drought",
+"A long time without rain."
+],
 "dry": [
 "dry",
 "Without water."
@@ -1967,13 +3747,53 @@
 "dust",
 "Very small pieces of dirt or earth."
 ],
+"dusty": [
+"dusty",
+"Full of dust."
+],
 "each": [
 "each",
 "Every one, one by one."
 ],
+"eagle": [
+"eagle",
+"A big hunting bird."
+],
+"eagles": [
+"eagle",
+"Big hunting birds."
+],
+"earlier": [
+"earlier",
+"Before."
+],
+"earliest": [
+"early",
+"The first."
+],
+"early": [
+"early",
+"Near the beginning."
+],
+"earned": [
+"earn",
+"Got for work."
+],
+"earning": [
+"earn",
+"Getting (money or respect)."
+],
 "earth": [
 "earth",
 "Our planet; also the ground."
+],
+"easier": [
+"easy",
+"More easy."
+],
+"easily": [
+"easily",
+"Without difficulty."
 ],
 "easy": [
 "easy",
@@ -1983,9 +3803,17 @@
 "eat",
 "Put food in your mouth."
 ],
+"eaten": [
+"eat",
+"Had as food."
+],
 "eater": [
 "eater",
 "An animal that eats. Meat eater = carnivore."
+],
+"eaters": [
+"eater",
+"Meat eaters: animals that eat meat."
 ],
 "eating": [
 "eat",
@@ -1995,13 +3823,45 @@
 "eat",
 "Put food in your mouth."
 ],
+"ecologists": [
+"ecologist",
+"Scientists who study nature."
+],
+"ecology": [
+"ecology",
+"The study of nature."
+],
+"ecosystems": [
+"ecosystem",
+"Living things and their place."
+],
+"edge": [
+"edge",
+"On the edge of your seat: very excited and tense."
+],
 "edible": [
 "edible",
 "Good to eat."
 ],
+"edition": [
+"edition",
+"A version."
+],
+"education": [
+"education",
+"Teaching and learning."
+],
 "effect": [
 "effect",
 "A result."
+],
+"effective": [
+"effective",
+"Working well."
+],
+"effects": [
+"effect",
+"Results."
 ],
 "efficient": [
 "efficient",
@@ -2023,6 +3883,10 @@
 "egypt",
 "Name of a country in Africa, with pyramids."
 ],
+"egyptian": [
+"egyptian",
+"From Egypt."
+],
 "egyptians": [
 "egyptian",
 "People from Egypt."
@@ -2035,6 +3899,18 @@
 "eighty",
 "The number 80."
 ],
+"either": [
+"either",
+"Either A or B: one of the two."
+],
+"elaborate": [
+"elaborate",
+"Very detailed."
+],
+"election": [
+"election",
+"A vote to choose someone."
+],
 "elections": [
 "election",
 "When people vote to choose a leader."
@@ -2042,6 +3918,14 @@
 "electricity": [
 "electricity",
 "Energy for lights and machines."
+],
+"elegant": [
+"elegant",
+"Beautiful and stylish."
+],
+"elements": [
+"element",
+"Basic parts."
 ],
 "elephant": [
 "elephant",
@@ -2051,6 +3935,10 @@
 "eleven",
 "The number 11."
 ],
+"elk": [
+"elk",
+"A large deer."
+],
 "else": [
 "else",
 "Other; different."
@@ -2058,6 +3946,38 @@
 "emotes": [
 "emote",
 "A dance or move of a character in a game."
+],
+"emotional": [
+"emotional",
+"About feelings."
+],
+"emotions": [
+"emotion",
+"Feelings."
+],
+"emperor": [
+"emperor",
+"A very powerful ruler."
+],
+"empty": [
+"empty",
+"With nothing inside."
+],
+"enceladus": [
+"enceladus",
+"Name of a moon of Saturn."
+],
+"encourage": [
+"encourage",
+"Help someone want to do."
+],
+"encouraged": [
+"encourage",
+"Helped want to do."
+],
+"encourages": [
+"encourage",
+"Helps someone want to do."
 ],
 "end": [
 "end",
@@ -2075,6 +3995,10 @@
 "enemy",
 "A person or monster that fights against you."
 ],
+"energy": [
+"energy",
+"The power to be active."
+],
 "engineer": [
 "engineer",
 "A person who designs machines or buildings."
@@ -2083,13 +4007,33 @@
 "engineer",
 "A person who designs machines or buildings."
 ],
+"english": [
+"english",
+"From England."
+],
+"enigma": [
+"enigma",
+"A mystery; also a German code machine."
+],
 "enjoy": [
 "enjoy",
 "Like doing something very much."
 ],
+"enjoyable": [
+"enjoyable",
+"Fun."
+],
+"enjoyed": [
+"enjoy",
+"Liked."
+],
 "enormous": [
 "enormous",
 "Very, very big."
+],
+"enormously": [
+"enormous",
+"Very much."
 ],
 "enough": [
 "enough",
@@ -2103,9 +4047,37 @@
 "enter",
 "Go into a place."
 ],
+"entertaining": [
+"entertain",
+"Fun to watch."
+],
+"entertainment": [
+"entertainment",
+"Things like films and games that amuse people."
+],
+"enthusiastic": [
+"enthusiasm",
+"Very keen."
+],
+"enthusiasts": [
+"enthusiast",
+"People who love something."
+],
+"entire": [
+"entire",
+"Whole."
+],
+"entirely": [
+"entirely",
+"Completely."
+],
 "equipment": [
 "equipment",
 "The things you need for an activity."
+],
+"era": [
+"era",
+"A period of history."
 ],
 "error": [
 "error",
@@ -2139,6 +4111,26 @@
 "escape",
 "Get away from a dangerous place."
 ],
+"escaping": [
+"escape",
+"Getting away."
+],
+"especially": [
+"especially",
+"More than usual; particularly."
+],
+"esports": [
+"esports",
+"Video game competitions."
+],
+"essential": [
+"essential",
+"Necessary."
+],
+"europa": [
+"europa",
+"Name of a moon of Jupiter."
+],
 "europe": [
 "europe",
 "Name of a continent."
@@ -2163,6 +4155,10 @@
 "event",
 "Something important that happens."
 ],
+"eventually": [
+"eventually",
+"In the end."
+],
 "ever": [
 "ever",
 "At any time."
@@ -2174,6 +4170,14 @@
 "every": [
 "every",
 "All, one by one."
+],
+"everybody": [
+"everybody",
+"All people."
+],
+"everyday": [
+"everyday",
+"Normal, of every day."
 ],
 "everyone": [
 "everyone",
@@ -2187,13 +4191,37 @@
 "everywhere",
 "In all places."
 ],
+"evidence": [
+"evidence",
+"Facts that show something is true."
+],
 "evil": [
 "evil",
 "Very bad."
 ],
+"evolution": [
+"evolution",
+"How living things change over a long time."
+],
+"evolve": [
+"evolve",
+"Develop slowly over time."
+],
 "exactly": [
 "exactly",
 "Perfectly; with no difference."
+],
+"exaggerate": [
+"exaggerate",
+"Say it is bigger than it is."
+],
+"exaggerated": [
+"exaggerated",
+"Made bigger than it really is."
+],
+"examined": [
+"examine",
+"Looked at closely."
 ],
 "example": [
 "example",
@@ -2207,9 +4235,17 @@
 "exam",
 "A test at school."
 ],
+"excavations": [
+"excavation",
+"Digging to find old things."
+],
 "excellent": [
 "excellent",
 "Very, very good."
+],
+"excitement": [
+"excitement",
+"A strong happy and nervous feeling."
 ],
 "exciting": [
 "exciting",
@@ -2231,17 +4267,49 @@
 "exist",
 "Be real."
 ],
+"existence": [
+"existence",
+"Being real."
+],
 "exists": [
 "exist",
 "Be real."
+],
+"exit": [
+"exit",
+"The way out."
 ],
 "exotic": [
 "exotic",
 "From a far country; unusual."
 ],
+"expect": [
+"expect",
+"Think something will happen."
+],
+"expected": [
+"expect",
+"Thought would happen."
+],
+"expense": [
+"expense",
+"Cost."
+],
 "expensive": [
 "expensive",
 "It costs a lot of money."
+],
+"experience": [
+"experience",
+"Something that happens to you."
+],
+"experienced": [
+"experienced",
+"With a lot of practice."
+],
+"experiment": [
+"experiment",
+"A test to find something out."
 ],
 "experiments": [
 "experiment",
@@ -2255,9 +4323,21 @@
 "expert",
 "A person who knows a lot about a subject."
 ],
+"explain": [
+"explain",
+"Make something clear."
+],
 "explained": [
 "explain",
 "Make something clear."
+],
+"explaining": [
+"explain",
+"Making clear."
+],
+"explains": [
+"explain",
+"Makes clear."
 ],
 "explanation": [
 "explanation",
@@ -2275,6 +4355,14 @@
 "explode",
 "Break with a big noise."
 ],
+"exploration": [
+"exploration",
+"Travelling to discover."
+],
+"explored": [
+"explore",
+"Travelled to discover."
+],
 "explorer": [
 "explorer",
 "A person who travels to discover places."
@@ -2283,17 +4371,53 @@
 "explorer",
 "A person who travels to discover places."
 ],
+"exposed": [
+"exposed",
+"Open to something harmful."
+],
+"expression": [
+"expression",
+"Showing your feelings or ideas."
+],
+"extinction": [
+"extinction",
+"When a species dies out."
+],
+"extra": [
+"extra",
+"More."
+],
+"extraordinary": [
+"extraordinary",
+"Very unusual."
+],
 "extreme": [
 "extreme",
 "Very, very strong; to the limit."
+],
+"extremely": [
+"extremely",
+"Very, very."
+],
+"eye": [
+"eye",
+"The organ you see with."
 ],
 "eyes": [
 "eye",
 "The part of the face you see with."
 ],
+"fabric": [
+"fabric",
+"Cloth."
+],
 "face": [
 "face",
 "The front of your head."
+],
+"faced": [
+"face",
+"Looked towards."
 ],
 "faces": [
 "face",
@@ -2307,9 +4431,37 @@
 "factory",
 "A building where machines make things."
 ],
+"factors": [
+"factor",
+"Things that cause results."
+],
 "factory": [
 "factory",
 "A building where machines make things."
+],
+"facts": [
+"fact",
+"True things."
+],
+"fail": [
+"fail",
+"Not succeed."
+],
+"failed": [
+"fail",
+"Did not succeed."
+],
+"fainted": [
+"faint",
+"Fell unconscious for a short time."
+],
+"fair": [
+"fair",
+"Right and equal."
+],
+"fake": [
+"fake",
+"Not real."
 ],
 "falcon": [
 "falcon",
@@ -2327,6 +4479,14 @@
 "fall",
 "Go down."
 ],
+"false": [
+"false",
+"Not true."
+],
+"families": [
+"family",
+"Parents and children."
+],
 "family": [
 "family",
 "Parents, children, brothers and sisters..."
@@ -2334,6 +4494,10 @@
 "famous": [
 "famous",
 "Many people know it."
+],
+"fans": [
+"fan",
+"People who love something."
 ],
 "fantasy": [
 "fantasy",
@@ -2343,9 +4507,37 @@
 "far",
 "At a big distance; not near."
 ],
+"farm": [
+"farm",
+"Land for crops and animals."
+],
+"farmers": [
+"farmer",
+"People who work on a farm."
+],
+"fascinated": [
+"fascinated",
+"Very interested."
+],
+"fascinating": [
+"fascinate",
+"Very interesting."
+],
+"fashion": [
+"fashion",
+"Popular style of clothes."
+],
+"fashioned": [
+"fashion",
+"Made."
+],
 "fast": [
 "fast",
 "Quick; not slow."
+],
+"fastener": [
+"fastener",
+"Something that closes clothes."
 ],
 "faster": [
 "fast",
@@ -2354,6 +4546,10 @@
 "fastest": [
 "fast",
 "The most fast."
+],
+"fate": [
+"fate",
+"What will happen."
 ],
 "fats": [
 "fat",
@@ -2367,21 +4563,53 @@
 "fear",
 "The feeling when there is danger."
 ],
+"feared": [
+"fear",
+"Were afraid."
+],
+"fears": [
+"fear",
+"Feelings of being afraid."
+],
+"feat": [
+"feat",
+"An achievement."
+],
 "feather": [
 "feather",
 "A light part that covers birds."
+],
+"feathered": [
+"feathered",
+"With feathers."
 ],
 "feathers": [
 "feather",
 "A light part that covers birds."
 ],
+"features": [
+"feature",
+"Characteristics."
+],
 "feeding": [
 "feed",
 "Give food to."
 ],
+"feeds": [
+"feed",
+"Eats."
+],
 "feel": [
 "feel",
 "Have a feeling."
+],
+"feeling": [
+"feeling",
+"Something you feel."
+],
+"feelings": [
+"feeling",
+"Emotions like joy or fear."
 ],
 "feels": [
 "feel",
@@ -2394,6 +4622,26 @@
 "fell": [
 "fall",
 "Go down to the ground."
+],
+"female": [
+"female",
+"A woman or girl animal."
+],
+"females": [
+"female",
+"Women or girl animals."
+],
+"fermented": [
+"fermented",
+"Changed by bacteria or yeast."
+],
+"fermi": [
+"fermi",
+"Name: Enrico Fermi, a physicist."
+],
+"fever": [
+"fever",
+"High body temperature."
 ],
 "few": [
 "few",
@@ -2419,6 +4667,18 @@
 "fifteen",
 "The number 15."
 ],
+"fifteenth": [
+"fifteen",
+"Number fifteen in order."
+],
+"fifth": [
+"fifth",
+"Number five in order."
+],
+"fifties": [
+"fifties",
+"The fifties: the years from 1950 to 1959."
+],
 "fifty": [
 "fifty",
 "The number 50."
@@ -2427,9 +4687,37 @@
 "fight",
 "Try to hurt or win against someone."
 ],
+"fighting": [
+"fight",
+"Battling."
+],
+"fights": [
+"fight",
+"Battles against."
+],
+"figure": [
+"figure",
+"A shape of a person or thing."
+],
+"figures": [
+"figure",
+"Shapes of people."
+],
+"filaments": [
+"filament",
+"Very thin threads."
+],
+"filled": [
+"fill",
+"Made full."
+],
 "film": [
 "film",
 "A story you watch on a screen."
+],
+"filmed": [
+"film",
+"Recorded on video."
 ],
 "films": [
 "film",
@@ -2451,9 +4739,29 @@
 "find",
 "See something you were looking for."
 ],
+"findings": [
+"finding",
+"Things you discover."
+],
 "finds": [
 "find",
 "See something you were looking for."
+],
+"fine": [
+"fine",
+"Thin."
+],
+"fingernail": [
+"fingernail",
+"The hard part at the end of a finger."
+],
+"fingernails": [
+"fingernail",
+"Hard parts at the end of fingers."
+],
+"fingers": [
+"finger",
+"Parts of your hand."
 ],
 "finish": [
 "finish",
@@ -2495,9 +4803,29 @@
 "fish",
 "Catching fish."
 ],
+"fit": [
+"fit",
+"Be the right size or type."
+],
+"fits": [
+"fit",
+"Is the right size or kind."
+],
+"fitting": [
+"fit",
+"Putting in."
+],
 "five": [
 "five",
 "The number 5."
+],
+"fix": [
+"fix",
+"Repair."
+],
+"fixed": [
+"fixed",
+"Not changing."
 ],
 "flash": [
 "flash",
@@ -2506,6 +4834,10 @@
 "flashes": [
 "flash",
 "A light for a very short time."
+],
+"flavour": [
+"flavour",
+"Taste."
 ],
 "fleming": [
 "fleming",
@@ -2519,13 +4851,33 @@
 "flight",
 "A trip by plane."
 ],
+"float": [
+"float",
+"Stay on top of water."
+],
+"floor": [
+"floor",
+"The ground in a room."
+],
 "flour": [
 "flour",
 "White powder from wheat, to make bread."
 ],
+"flow": [
+"flow",
+"Move smoothly."
+],
 "flower": [
 "flower",
 "The colorful part of a plant."
+],
+"flowers": [
+"flower",
+"Colourful parts of plants."
+],
+"flown": [
+"fly",
+"Gone through the air."
 ],
 "fly": [
 "fly",
@@ -2543,6 +4895,10 @@
 "follow",
 "Go after someone or something."
 ],
+"followed": [
+"follow",
+"Went after."
+],
 "follower": [
 "follower",
 "A person who follows someone on the internet."
@@ -2551,9 +4907,25 @@
 "follower",
 "A person who follows someone on the internet."
 ],
+"following": [
+"following",
+"Next."
+],
+"follows": [
+"follow",
+"Goes after."
+],
 "food": [
 "food",
 "What we eat."
+],
+"foods": [
+"food",
+"Things you eat."
+],
+"foolish": [
+"foolish",
+"Silly."
 ],
 "foot": [
 "foot",
@@ -2579,6 +4951,10 @@
 "for",
 "A word to say the purpose or the time."
 ],
+"forbid": [
+"forbid",
+"Not allow."
+],
 "forces": [
 "force",
 "Power that pushes or pulls."
@@ -2587,6 +4963,10 @@
 "forest",
 "A place with a lot of trees."
 ],
+"forget": [
+"forget",
+"Not remember."
+],
 "forgets": [
 "forget",
 "Not remember."
@@ -2594,6 +4974,18 @@
 "form": [
 "form",
 "Start to exist."
+],
+"formed": [
+"form",
+"Made."
+],
+"fort": [
+"fort",
+"A strong building for soldiers."
+],
+"forties": [
+"forty",
+"The years 1940 to 1949."
 ],
 "fortnite": [
 "fortnite",
@@ -2627,6 +5019,14 @@
 "fourteen",
 "The number 14."
 ],
+"fourth": [
+"four",
+"Number four in order."
+],
+"fraction": [
+"fraction",
+"A small part."
+],
 "frame": [
 "frame",
 "One picture of a video. Frame by frame = one picture at a time."
@@ -2635,13 +5035,29 @@
 "france",
 "Name of a country in Europe."
 ],
+"françois": [
+"françois",
+"Name: Jean-François Champollion."
+],
 "free": [
 "free",
 "1. It costs no money. 2. Not controlled."
 ],
+"freedom": [
+"freedom",
+"Being free."
+],
 "freeze": [
 "freeze",
 "Make very cold until it is ice."
+],
+"french": [
+"french",
+"From France."
+],
+"frenchman": [
+"frenchman",
+"A man from France."
 ],
 "fresh": [
 "fresh",
@@ -2659,6 +5075,10 @@
 "fry",
 "Cook in hot oil."
 ],
+"friedman": [
+"friedman",
+"A surname."
+],
 "friend": [
 "friend",
 "A person you like and spend time with."
@@ -2671,9 +5091,21 @@
 "friend",
 "A person you like and spend time with."
 ],
+"frightened": [
+"frightened",
+"Scared."
+],
+"frightening": [
+"frightening",
+"Making you scared."
+],
 "frog": [
 "frog",
 "A small green animal that jumps and lives near water."
+],
+"frogs": [
+"frog",
+"Small green jumping animals."
 ],
 "from": [
 "from",
@@ -2695,21 +5127,53 @@
 "full",
 "With no space for more."
 ],
+"fuller": [
+"full",
+"More full."
+],
+"fully": [
+"full",
+"Completely."
+],
 "fun": [
 "fun",
 "Enjoyment. Have fun = enjoy yourself."
+],
+"fundraising": [
+"fundraising",
+"Collecting money for a cause."
 ],
 "funny": [
 "funny",
 "It makes you laugh."
 ],
+"fur": [
+"fur",
+"Soft hair of an animal."
+],
 "furniture": [
 "furniture",
 "Tables, chairs, beds..."
 ],
+"further": [
+"further",
+"More far."
+],
 "future": [
 "future",
 "The time after now."
+],
+"fuzzy": [
+"fuzzy",
+"Soft and fluffy."
+],
+"gain": [
+"gain",
+"Get."
+],
+"gained": [
+"gain",
+"Got."
 ],
 "galaxy": [
 "galaxy",
@@ -2719,6 +5183,10 @@
 "game",
 "An activity with rules, for fun."
 ],
+"gamers": [
+"gamer",
+"People who play video games."
+],
 "games": [
 "game",
 "An activity with rules, for fun."
@@ -2726,6 +5194,10 @@
 "gaming": [
 "game",
 "Playing video games."
+],
+"gap": [
+"gap",
+"A small opening."
 ],
 "garden": [
 "garden",
@@ -2735,6 +5207,10 @@
 "garden",
 "Land with plants next to a house."
 ],
+"gas": [
+"gas",
+"Air-like substance."
+],
 "gases": [
 "gas",
 "Something like air, not solid or liquid."
@@ -2743,13 +5219,65 @@
 "gates",
 "Name of a man (Bill Gates)."
 ],
+"gave": [
+"give",
+"Handed."
+],
+"general": [
+"general",
+"Not specific."
+],
+"generally": [
+"generally",
+"Usually."
+],
+"generation": [
+"generation",
+"People born around the same time."
+],
+"genetically": [
+"gene",
+"By changing genes."
+],
+"genuinely": [
+"genuinely",
+"Really; truly."
+],
+"george": [
+"george",
+"A man's name."
+],
+"german": [
+"german",
+"From Germany."
+],
+"germany": [
+"germany",
+"Name of a country in Europe."
+],
+"gesture": [
+"gesture",
+"An action that shows a feeling."
+],
 "get": [
 "get",
 "Receive or obtain. Get lost = lose your way."
 ],
+"gets": [
+"get",
+"Becomes."
+],
+"getting": [
+"get",
+"Becoming."
+],
 "giant": [
 "giant",
 "Very, very big."
+],
+"giants": [
+"giant",
+"Very big creatures."
 ],
 "gills": [
 "gill",
@@ -2763,13 +5291,37 @@
 "girl",
 "A young female person."
 ],
+"girls": [
+"girl",
+"Young females."
+],
 "give": [
 "give",
 "Hand something to someone."
 ],
+"given": [
+"give",
+"Handed."
+],
+"gives": [
+"give",
+"Hands something to someone."
+],
+"giving": [
+"give",
+"Handing."
+],
 "giza": [
 "giza",
 "Name of a place in Egypt with pyramids."
+],
+"glass": [
+"glass",
+"Hard clear material."
+],
+"glide": [
+"glide",
+"Fly without flapping."
 ],
 "glitch": [
 "glitch",
@@ -2802,6 +5354,14 @@
 "glue": [
 "glue",
 "Something you use to stick things together."
+],
+"glued": [
+"glue",
+"Stuck with glue."
+],
+"glutamate": [
+"glutamate",
+"A natural substance that gives the umami taste."
 ],
 "go": [
 "go",
@@ -2839,6 +5399,10 @@
 "golden",
 "Made of gold or the color of gold."
 ],
+"gone": [
+"go",
+"Went."
+],
 "good": [
 "good",
 "Nice; of high quality."
@@ -2851,9 +5415,17 @@
 "government",
 "The people who control a country."
 ],
+"gradually": [
+"gradually",
+"Little by little."
+],
 "grain": [
 "grain",
 "A very small piece, like sand."
+],
+"grammar": [
+"grammar",
+"The rules of a language."
 ],
 "grape": [
 "grape",
@@ -2879,6 +5451,10 @@
 "great",
 "Very big or very good."
 ],
+"greatest": [
+"great",
+"The biggest."
+],
 "greece": [
 "greece",
 "Name of a country in the south of Europe."
@@ -2899,9 +5475,17 @@
 "greenhouse",
 "A glass building for growing plants."
 ],
+"greeted": [
+"greet",
+"Welcomed."
+],
 "grew": [
 "grow",
 "Get bigger."
+],
+"grey": [
+"grey",
+"Between black and white."
 ],
 "grind": [
 "grind",
@@ -2927,6 +5511,14 @@
 "grow",
 "Getting bigger."
 ],
+"growingly": [
+"growingly",
+"Not a real word here."
+],
+"grown": [
+"grow",
+"Got bigger."
+],
 "grows": [
 "grow",
 "Gets bigger."
@@ -2934,6 +5526,10 @@
 "gui": [
 "gui",
 "Name of a boy (Gui Khury)."
+],
+"guidelines": [
+"guideline",
+"Rules."
 ],
 "guinness": [
 "guinness",
@@ -2971,9 +5567,33 @@
 "hallway",
 "A long narrow space with doors to the rooms."
 ],
+"halves": [
+"half",
+"Two equal parts."
+],
+"ham": [
+"ham",
+"Salted meat from a pig."
+],
 "hand": [
 "hand",
 "The end of your arm, with five fingers."
+],
+"handle": [
+"handle",
+"Deal with."
+],
+"handled": [
+"handle",
+"Dealt with."
+],
+"hands": [
+"hand",
+"The part at the end of your arm."
+],
+"handwriting": [
+"handwriting",
+"Writing by hand."
 ],
 "happen": [
 "happen",
@@ -2983,13 +5603,37 @@
 "happen",
 "Take place."
 ],
+"happening": [
+"happen",
+"Taking place."
+],
 "happens": [
 "happen",
 "Takes place."
 ],
+"happy": [
+"happy",
+"Feeling good."
+],
 "hard": [
 "hard",
 "1. Not soft. 2. Difficult."
+],
+"harder": [
+"hard",
+"More difficult."
+],
+"hardly": [
+"hardly",
+"Almost not."
+],
+"harm": [
+"harm",
+"Hurt."
+],
+"harmed": [
+"harm",
+"Hurt."
 ],
 "has": [
 "have",
@@ -2998,6 +5642,10 @@
 "hat": [
 "hat",
 "Something you wear on your head."
+],
+"hatch": [
+"hatch",
+"Come out of an egg."
 ],
 "hate": [
 "hate",
@@ -3010,6 +5658,10 @@
 "have": [
 "have",
 "Own or hold. Also used to make the present perfect."
+],
+"having": [
+"have",
+"Eating (a meal)."
 ],
 "hawaii": [
 "hawaii",
@@ -3031,9 +5683,17 @@
 "head",
 "The top part of the body."
 ],
+"health": [
+"health",
+"How well your body is."
+],
 "healthy": [
 "healthy",
 "Good for your body."
+],
+"hear": [
+"hear",
+"Notice a sound with your ears."
 ],
 "heard": [
 "hear",
@@ -3042,6 +5702,10 @@
 "heart": [
 "heart",
 "The part of the body that moves the blood."
+],
+"hearts": [
+"heart",
+"Organs that pump blood."
 ],
 "heat": [
 "heat",
@@ -3075,6 +5739,14 @@
 "help",
 "Do something to make things easier for someone."
 ],
+"helped": [
+"help",
+"Made easier for someone."
+],
+"helping": [
+"help",
+"Giving help."
+],
 "helps": [
 "help",
 "Does something to make things easier."
@@ -3103,6 +5775,14 @@
 "hide",
 "Going where nobody can see you."
 ],
+"hieroglyph": [
+"hieroglyph",
+"An ancient Egyptian picture sign."
+],
+"hieroglyphs": [
+"hieroglyph",
+"Ancient Egyptian picture signs."
+],
 "high": [
 "high",
 "Far from the ground."
@@ -3111,9 +5791,17 @@
 "high",
 "The most high."
 ],
+"highly": [
+"highly",
+"Very."
+],
 "him": [
 "he",
 "That man or boy."
+],
+"himself": [
+"he",
+"Him and no one else."
 ],
 "hippo": [
 "hippo",
@@ -3123,6 +5811,10 @@
 "hippo",
 "A very big animal that lives in African rivers."
 ],
+"hired": [
+"hire",
+"Gave a job to."
+],
 "his": [
 "he",
 "Of a man or boy."
@@ -3130,6 +5822,10 @@
 "historians": [
 "historian",
 "A person who studies history."
+],
+"historic": [
+"historic",
+"Very important in history."
 ],
 "history": [
 "history",
@@ -3139,9 +5835,29 @@
 "hit",
 "Touch with force."
 ],
+"hoax": [
+"hoax",
+"A trick."
+],
+"hobbies": [
+"hobby",
+"Things you do for fun."
+],
+"hobby": [
+"hobby",
+"Something you do for fun."
+],
+"hold": [
+"hold",
+"Have in your hands."
+],
 "holders": [
 "holder",
 "Record holder: the person who has a record."
+],
+"holding": [
+"hold",
+"Having in your hands."
 ],
 "holds": [
 "hold",
@@ -3171,6 +5887,30 @@
 "homework",
 "Work from school that you do at home."
 ],
+"hooked": [
+"hooked",
+"Hooked on: liking something very much."
+],
+"hooks": [
+"hook",
+"Small bent pieces that catch things."
+],
+"hoops": [
+"hoop",
+"Rings."
+],
+"hope": [
+"hope",
+"Want and expect."
+],
+"hoped": [
+"hope",
+"Wanted."
+],
+"hoping": [
+"hope",
+"Wanting something to happen."
+],
 "horns": [
 "horn",
 "A hard point on the head of some animals."
@@ -3194,6 +5934,10 @@
 "hot": [
 "hot",
 "With a high temperature."
+],
+"hotel": [
+"hotel",
+"A place to stay when you travel."
 ],
 "hotels": [
 "hotel",
@@ -3231,9 +5975,29 @@
 "however",
 "But."
 ],
+"howl": [
+"howl",
+"A long cry."
+],
+"howling": [
+"howl",
+"Making a long cry."
+],
 "huge": [
 "huge",
 "Very big."
+],
+"hugh": [
+"hugh",
+"A man's name."
+],
+"hula": [
+"hula",
+"A kind of dance."
+],
+"human": [
+"human",
+"Of people."
 ],
 "humans": [
 "human",
@@ -3267,6 +6031,10 @@
 "hunt",
 "Chase and catch animals to eat them."
 ],
+"hunted": [
+"hunt",
+"Chased to kill."
+],
 "hunter": [
 "hunter",
 "An animal or person that hunts."
@@ -3275,9 +6043,17 @@
 "hunter",
 "An animal or person that hunts."
 ],
+"hunting": [
+"hunt",
+"Chasing to kill."
+],
 "hunts": [
 "hunt",
 "Chases and catches animals."
+],
+"hurt": [
+"hurt",
+"Cause pain."
 ],
 "i": [
 "i",
@@ -3291,6 +6067,10 @@
 "iceland",
 "Name of a cold island country in the north of Europe."
 ],
+"icy": [
+"icy",
+"Covered in ice."
+],
 "idea": [
 "idea",
 "A thought or a plan."
@@ -3299,17 +6079,57 @@
 "idea",
 "A thought or a plan."
 ],
+"identical": [
+"identical",
+"Exactly the same."
+],
+"identified": [
+"identify",
+"Found and named."
+],
+"identify": [
+"identify",
+"Recognise and name."
+],
 "if": [
 "if",
 "A word for a condition."
+],
+"ignore": [
+"ignore",
+"Pay no attention to."
+],
+"ignores": [
+"ignore",
+"Pays no attention to."
+],
+"ignoring": [
+"ignore",
+"Not paying attention to."
+],
+"ikeda": [
+"ikeda",
+"Name of a Japanese chemist (Kikunae Ikeda)."
 ],
 "illegal": [
 "illegal",
 "Not allowed by law."
 ],
+"illnesses": [
+"illness",
+"Diseases."
+],
+"illustrations": [
+"illustration",
+"Drawings."
+],
 "image": [
 "image",
 "A picture."
+],
+"images": [
+"image",
+"Pictures."
 ],
 "imagination": [
 "imagination",
@@ -3319,6 +6139,10 @@
 "imagine",
 "Make a picture in your mind."
 ],
+"imagined": [
+"imagine",
+"Pictured in the mind."
+],
 "immediately": [
 "immediately",
 "At once; now."
@@ -3326,6 +6150,10 @@
 "impact": [
 "impact",
 "When one thing hits another very hard."
+],
+"imply": [
+"imply",
+"Suggest without saying."
 ],
 "important": [
 "important",
@@ -3335,6 +6163,34 @@
 "impossible",
 "It cannot happen."
 ],
+"impress": [
+"impress",
+"Make people admire."
+],
+"impressed": [
+"impress",
+"Made people admire."
+],
+"impressive": [
+"impressive",
+"Making you admire."
+],
+"improve": [
+"improve",
+"Make better."
+],
+"improvement": [
+"improvement",
+"A change for the better."
+],
+"improvements": [
+"improvement",
+"Changes that make things better."
+],
+"improves": [
+"improve",
+"Makes better."
+],
 "in": [
 "in",
 "Inside."
@@ -3343,9 +6199,25 @@
 "include",
 "Have as a part."
 ],
+"included": [
+"include",
+"Made part of."
+],
 "including": [
 "include",
 "With; as a part."
+],
+"inclusion": [
+"inclusion",
+"Being included."
+],
+"increased": [
+"increase",
+"Grew."
+],
+"increasingly": [
+"increasingly",
+"More and more."
 ],
 "incredible": [
 "incredible",
@@ -3355,9 +6227,41 @@
 "incredible",
 "Very, very."
 ],
+"independent": [
+"independent",
+"Not connected."
+],
+"individual": [
+"individual",
+"One single person or animal."
+],
+"individuals": [
+"individual",
+"Single people."
+],
+"industry": [
+"industry",
+"A type of business."
+],
+"infected": [
+"infect",
+"Carrying an illness."
+],
 "infection": [
 "infection",
 "An illness from bacteria or a virus."
+],
+"influence": [
+"influence",
+"An effect on something."
+],
+"influenced": [
+"influence",
+"Had an effect on."
+],
+"information": [
+"information",
+"Facts."
 ],
 "ingredient": [
 "ingredient",
@@ -3367,13 +6271,41 @@
 "ingredient",
 "One of the things you mix to make something."
 ],
+"injects": [
+"inject",
+"Puts liquid in with a needle."
+],
+"injure": [
+"injure",
+"Hurt (a person)."
+],
 "injury": [
 "injury",
 "Damage to the body."
 ],
+"ink": [
+"ink",
+"Dark liquid."
+],
+"inky": [
+"inky",
+"Name of a famous octopus."
+],
+"inscriptions": [
+"inscription",
+"Words cut in stone."
+],
 "insect": [
 "insect",
 "A very small animal with six legs."
+],
+"insecticide": [
+"insecticide",
+"A chemical that kills insects."
+],
+"insecticides": [
+"insecticide",
+"Chemicals that kill insects."
 ],
 "insects": [
 "insect",
@@ -3383,13 +6315,29 @@
 "inside",
 "In; in the interior."
 ],
+"insist": [
+"insist",
+"Say firmly."
+],
+"inspire": [
+"inspire",
+"Give people ideas and energy."
+],
 "inspired": [
 "inspire",
 "Give someone an idea."
 ],
+"instead": [
+"instead",
+"In place of something."
+],
 "instruction": [
 "instruction",
 "Words that tell you what to do."
+],
+"instructions": [
+"instruction",
+"Information about how to do something."
 ],
 "insurance": [
 "insurance",
@@ -3403,6 +6351,30 @@
 "intelligent",
 "Clever; able to learn and think."
 ],
+"intense": [
+"intense",
+"Very strong."
+],
+"interest": [
+"interest",
+"Wanting to know about something."
+],
+"interested": [
+"interested",
+"Wanting to know more."
+],
+"interesting": [
+"interest",
+"Not boring."
+],
+"interestingly": [
+"interestingly",
+"It is interesting that…"
+],
+"international": [
+"international",
+"Between countries."
+],
 "internet": [
 "internet",
 "The network that connects computers all over the world."
@@ -3410,6 +6382,18 @@
 "into": [
 "into",
 "To the inside of."
+],
+"intrigued": [
+"intrigued",
+"Very interested and curious."
+],
+"intriguing": [
+"intriguing",
+"Very interesting."
+],
+"introduced": [
+"introduce",
+"Brought in for the first time."
 ],
 "invent": [
 "invent",
@@ -3431,6 +6415,14 @@
 "inventor",
 "A person who invents things."
 ],
+"investigate": [
+"investigate",
+"Try to find out the truth."
+],
+"investigating": [
+"investigate",
+"Trying to find out the truth."
+],
 "invite": [
 "invite",
 "Ask someone to come or to join."
@@ -3443,6 +6435,10 @@
 "involve",
 "Need; include."
 ],
+"involved": [
+"involve",
+"Taking part."
+],
 "involves": [
 "involve",
 "Needs; includes."
@@ -3451,6 +6447,10 @@
 "iran",
 "Name of a country in Asia."
 ],
+"ireland": [
+"ireland",
+"A country."
+],
 "iridium": [
 "iridium",
 "A rare metal."
@@ -3458,6 +6458,10 @@
 "iron": [
 "iron",
 "A strong grey metal."
+],
+"irritable": [
+"irritable",
+"Easily angry."
 ],
 "is": [
 "be",
@@ -3471,6 +6475,14 @@
 "island",
 "Land with water all around it."
 ],
+"isolate": [
+"isolate",
+"Separate from others."
+],
+"isolation": [
+"isolation",
+"Being alone."
+],
 "it": [
 "it",
 "A thing or animal."
@@ -3478,6 +6490,14 @@
 "italy": [
 "italy",
 "Name of a country in the south of Europe."
+],
+"itch": [
+"itch",
+"A feeling that makes you scratch."
+],
+"itchy": [
+"itchy",
+"Making you want to scratch."
 ],
 "its": [
 "it",
@@ -3495,6 +6515,10 @@
 "jamaica",
 "Name of an island country in the Caribbean."
 ],
+"january": [
+"january",
+"The first month."
+],
 "japan": [
 "japan",
 "Name of an island country in Asia."
@@ -3511,9 +6535,17 @@
 "jar",
 "A glass or clay container."
 ],
+"jean": [
+"jean",
+"Name: Jean-François Champollion."
+],
 "jellyfish": [
 "jellyfish",
 "A soft sea animal with long tentacles."
+],
+"jets": [
+"jet",
+"Strong streams of liquid or gas."
 ],
 "jewelry": [
 "jewelry",
@@ -3527,9 +6559,17 @@
 "job",
 "Work that you do for money."
 ],
+"joined": [
+"join",
+"Put together."
+],
 "jonathan": [
 "jonathan",
 "Name of a very old giant tortoise."
+],
+"journalists": [
+"journalist",
+"People who write news."
 ],
 "journey": [
 "journey",
@@ -3538,6 +6578,18 @@
 "joy": [
 "joy",
 "Great happiness."
+],
+"judge": [
+"judge",
+"A person who decides."
+],
+"judges": [
+"judge",
+"People who decide results."
+],
+"july": [
+"july",
+"The seventh month."
 ],
 "jump": [
 "jump",
@@ -3563,9 +6615,21 @@
 "just",
 "Only; simply."
 ],
+"keen": [
+"keen",
+"Very interested."
+],
 "keep": [
 "keep",
 "Continue; or have something in a place."
+],
+"keepers": [
+"keeper",
+"People who look after animals."
+],
+"keeping": [
+"keep",
+"Holding."
 ],
 "keeps": [
 "keep",
@@ -3574,6 +6638,10 @@
 "kept": [
 "keep",
 "Continued; held."
+],
+"ketchup": [
+"ketchup",
+"A red tomato sauce."
 ],
 "key": [
 "key",
@@ -3591,13 +6659,29 @@
 "kid",
 "A child."
 ],
+"kikunae": [
+"kikunae",
+"Name of a Japanese chemist (Kikunae Ikeda)."
+],
 "kill": [
 "kill",
 "Make someone die."
 ],
+"killed": [
+"kill",
+"Made dead."
+],
 "killer": [
 "killer",
 "Killer whale: another name for the orca."
+],
+"kilogram": [
+"kilogram",
+"1,000 grams."
+],
+"kilograms": [
+"kilogram",
+"Units of weight."
 ],
 "kilometer": [
 "kilometer",
@@ -3607,9 +6691,29 @@
 "kilometer",
 "One thousand meters."
 ],
+"kilometres": [
+"kilometre",
+"1,000 metres."
+],
+"kind": [
+"kind",
+"A type."
+],
+"kindly": [
+"kind",
+"In a nice way."
+],
+"kinds": [
+"kind",
+"Types."
+],
 "king": [
 "king",
 "A man who rules a country."
+],
+"kingfisher": [
+"kingfisher",
+"A small, bright blue bird."
 ],
 "kings": [
 "king",
@@ -3623,6 +6727,14 @@
 "kitchen",
 "The room where you cook."
 ],
+"kitchens": [
+"kitchen",
+"Rooms for cooking."
+],
+"knew": [
+"know",
+"Had information."
+],
 "knife": [
 "knife",
 "A tool for cutting."
@@ -3635,6 +6747,14 @@
 "know",
 "Have information in your head."
 ],
+"knowing": [
+"know",
+"Having information."
+],
+"knowledge": [
+"knowledge",
+"What you know."
+],
 "known": [
 "know",
 "Famous as."
@@ -3642,6 +6762,10 @@
 "knows": [
 "know",
 "Has information in his or her head."
+],
+"kombu": [
+"kombu",
+"A kind of Japanese seaweed."
 ],
 "kosmic": [
 "kosmic",
@@ -3655,9 +6779,17 @@
 "la",
 "La Palma: name of an island in the Canary Islands."
 ],
+"laboratories": [
+"laboratory",
+"Rooms for science."
+],
 "laboratory": [
 "laboratory",
 "A room for scientific experiments."
+],
+"laid": [
+"lay",
+"Produced eggs."
 ],
 "lake": [
 "lake",
@@ -3667,6 +6799,14 @@
 "lake",
 "A big area of water with land all around it."
 ],
+"lamp": [
+"lamp",
+"A light."
+],
+"lamps": [
+"lamp",
+"Lights."
+],
 "land": [
 "land",
 "1. The ground, not the sea. 2. Come down to the ground."
@@ -3675,9 +6815,25 @@
 "land",
 "Came down well after a jump."
 ],
+"landing": [
+"land",
+"Doing a trick correctly."
+],
+"language": [
+"language",
+"A system of words."
+],
 "languages": [
 "language",
 "The words people use to speak, like English."
+],
+"large": [
+"large",
+"Big."
+],
+"larger": [
+"large",
+"Bigger."
 ],
 "largest": [
 "large",
@@ -3686,6 +6842,14 @@
 "last": [
 "last",
 "1. At the end. 2. The one before this one."
+],
+"lasted": [
+"last",
+"Continued."
+],
+"lasts": [
+"last",
+"Continues."
 ],
 "late": [
 "late",
@@ -3703,9 +6867,21 @@
 "laugh",
 "Make sounds when something is funny."
 ],
+"laughing": [
+"laugh",
+"Making the sound of being amused."
+],
+"launched": [
+"launch",
+"Started."
+],
 "lava": [
 "lava",
 "Very hot liquid rock from a volcano."
+],
+"lay": [
+"lay",
+"Put eggs."
 ],
 "layer": [
 "layer",
@@ -3719,6 +6895,18 @@
 "lead",
 "Go to a place; show the way."
 ],
+"leading": [
+"leading",
+"Main."
+],
+"leaf": [
+"leaf",
+"A green part of a plant."
+],
+"leal": [
+"leal",
+"Name of a Brazilian skateboarder (Rayssa Leal)."
+],
 "learn": [
 "learn",
 "Get new knowledge."
@@ -3731,6 +6919,14 @@
 "learn",
 "Gets new knowledge."
 ],
+"learnt": [
+"learn",
+"Found out; got knowledge."
+],
+"least": [
+"least",
+"At least: not less than."
+],
 "leather": [
 "leather",
 "Material made from animal skin."
@@ -3742,6 +6938,14 @@
 "leaves": [
 "leaf",
 "The green parts of a tree."
+],
+"leaving": [
+"leave",
+"Going away from."
+],
+"led": [
+"lead",
+"Caused."
 ],
 "left": [
 "leave",
@@ -3762,6 +6966,10 @@
 "leo": [
 "leo",
 "Name of a boy."
+],
+"leonardo": [
+"leonardo",
+"A man's name."
 ],
 "less": [
 "less",
@@ -3791,6 +6999,26 @@
 "level",
 "A part of a game."
 ],
+"liaoning": [
+"liaoning",
+"Name of a province in China."
+],
+"liar": [
+"liar",
+"A person who lies."
+],
+"library": [
+"library",
+"A place with many books."
+],
+"lid": [
+"lid",
+"A cover."
+],
+"lies": [
+"lie",
+"Is found; is."
+],
 "life": [
 "life",
 "The time from birth to death; living things."
@@ -3798,6 +7026,10 @@
 "lift": [
 "lift",
 "Move something up."
+],
+"lifted": [
+"lift",
+"Raised."
 ],
 "light": [
 "light",
@@ -3815,6 +7047,18 @@
 "like",
 "1. Enjoy. 2. The same as."
 ],
+"likely": [
+"likely",
+"Probably going to happen."
+],
+"likes": [
+"like",
+"Enjoys."
+],
+"liking": [
+"liking",
+"A taste for something."
+],
 "lime": [
 "lime",
 "A small green fruit, like a lemon."
@@ -3822,6 +7066,14 @@
 "limit": [
 "limit",
 "The end; the most that is possible."
+],
+"limitation": [
+"limitation",
+"A weak point."
+],
+"limited": [
+"limit",
+"Not much."
 ],
 "limits": [
 "limit",
@@ -3839,6 +7091,14 @@
 "line",
 "A long thin mark."
 ],
+"linguists": [
+"linguist",
+"Experts in languages."
+],
+"link": [
+"link",
+"A connection."
+],
 "lion": [
 "lion",
 "A big wild cat from Africa."
@@ -3851,9 +7111,17 @@
 "liquid",
 "Like water; not solid."
 ],
+"list": [
+"list",
+"Write or say one after the other."
+],
 "listen": [
 "listen",
 "Pay attention to sounds."
+],
+"listening": [
+"listen",
+"Paying attention to sounds."
 ],
 "liters": [
 "liter",
@@ -3891,6 +7159,10 @@
 "lochy",
 "A name (an invented name)."
 ],
+"logic": [
+"logic",
+"Clear thinking."
+],
 "london": [
 "london",
 "Name of the capital of England."
@@ -3923,6 +7195,10 @@
 "look",
 "Seems; is similar."
 ],
+"loops": [
+"loop",
+"Small circles of string."
+],
 "lord": [
 "lord",
 "A title for an important man in Britain."
@@ -3935,6 +7211,10 @@
 "lose",
 "Does not win."
 ],
+"losing": [
+"lose",
+"Not winning."
+],
 "lost": [
 "lost",
 "Not able to find your way; or not found."
@@ -3942,6 +7222,14 @@
 "lot": [
 "lot",
 "A lot of = many, much."
+],
+"lotus": [
+"lotus",
+"A water flower."
+],
+"loud": [
+"loud",
+"Making a lot of noise."
 ],
 "louder": [
 "loud",
@@ -3963,6 +7251,10 @@
 "love",
 "Likes very much."
 ],
+"low": [
+"low",
+"Not high."
+],
 "lucas": [
 "lucas",
 "Name of a boy."
@@ -3970,6 +7262,10 @@
 "luck": [
 "luck",
 "Good or bad things that happen by chance."
+],
+"lunch": [
+"lunch",
+"The meal in the middle of the day."
 ],
 "lungs": [
 "lung",
@@ -4007,13 +7303,29 @@
 "magnetic",
 "With the force of a magnet."
 ],
+"magnificent": [
+"magnificent",
+"Very beautiful."
+],
 "main": [
 "main",
 "Most important."
 ],
+"mainly": [
+"mainly",
+"Mostly."
+],
+"maintain": [
+"maintain",
+"Keep."
+],
 "make": [
 "make",
 "Create; build."
+],
+"makers": [
+"maker",
+"People who make things."
 ],
 "makes": [
 "make",
@@ -4023,9 +7335,37 @@
 "make",
 "Creating; building."
 ],
+"malaria": [
+"malaria",
+"A serious illness from mosquitoes."
+],
+"males": [
+"male",
+"Men or boy animals."
+],
+"mammals": [
+"mammal",
+"Animals that feed milk to their babies."
+],
 "man": [
 "man",
 "An adult male person."
+],
+"manage": [
+"manage",
+"Succeed in doing something difficult."
+],
+"managed": [
+"manage",
+"Succeeded in doing."
+],
+"managing": [
+"manage",
+"Running."
+],
+"manuscript": [
+"manuscript",
+"A book written by hand."
 ],
 "many": [
 "many",
@@ -4039,6 +7379,14 @@
 "map",
 "A drawing of a place from above."
 ],
+"marathon": [
+"marathon",
+"A very long event."
+],
+"marathons": [
+"marathon",
+"Very long events."
+],
 "maria": [
 "maria",
 "Name of a woman."
@@ -4046,6 +7394,10 @@
 "mario": [
 "mario",
 "Name of a famous video game character."
+],
+"mark": [
+"mark",
+"Show; be the sign of."
 ],
 "market": [
 "market",
@@ -4083,9 +7435,17 @@
 "mass",
 "How much matter something has."
 ],
+"masters": [
+"master",
+"Experts."
+],
 "match": [
 "match",
 "One game from start to end."
+],
+"matches": [
+"match",
+"Is the same as."
 ],
 "material": [
 "material",
@@ -4095,17 +7455,69 @@
 "maths",
 "The study of numbers."
 ],
+"matter": [
+"matter",
+"A subject; an issue."
+],
+"mattered": [
+"matter",
+"Was important."
+],
+"mature": [
+"mature",
+"Become fully developed."
+],
+"may": [
+"may",
+"Perhaps; it is possible."
+],
 "maybe": [
 "maybe",
 "Perhaps."
+],
+"mcwhirter": [
+"mcwhirter",
+"A surname."
 ],
 "me": [
 "i",
 "The person who is speaking."
 ],
+"meal": [
+"meal",
+"Food you eat at one time."
+],
 "mean": [
 "mean",
 "Have a meaning; show."
+],
+"meaning": [
+"meaning",
+"What something means."
+],
+"meaningful": [
+"meaning",
+"Important."
+],
+"means": [
+"mean",
+"Has the meaning of."
+],
+"meant": [
+"mean",
+"Had as a result."
+],
+"measured": [
+"measure",
+"Found the size."
+],
+"measures": [
+"measure",
+"Actions."
+],
+"measuring": [
+"measure",
+"Finding the size."
 ],
 "meat": [
 "meat",
@@ -4114,6 +7526,26 @@
 "medal": [
 "medal",
 "A metal prize for the winner."
+],
+"medallist": [
+"medallist",
+"A person who has won a medal."
+],
+"medallists": [
+"medallist",
+"People who have won medals."
+],
+"medals": [
+"medal",
+"Prizes for sport."
+],
+"medical": [
+"medical",
+"About medicine."
+],
+"medicine": [
+"medicine",
+"Something to make you better."
 ],
 "medicines": [
 "medicine",
@@ -4127,13 +7559,37 @@
 "meet",
 "See and join other people."
 ],
+"meeting": [
+"meet",
+"Seeing someone for the first time."
+],
+"melted": [
+"melt",
+"Turned to liquid with heat."
+],
 "melting": [
 "melt",
 "Becoming liquid because of heat."
 ],
+"memory": [
+"memory",
+"Being able to remember."
+],
 "men": [
 "man",
 "Adult male people."
+],
+"mental": [
+"mental",
+"Of the mind."
+],
+"mention": [
+"mention",
+"Talk about briefly."
+],
+"mentions": [
+"mention",
+"Talks about briefly."
 ],
 "mercury": [
 "mercury",
@@ -4146,6 +7602,10 @@
 "messages": [
 "message",
 "Words you send to someone."
+],
+"mestral": [
+"mestral",
+"A surname."
 ],
 "met": [
 "meet",
@@ -4162,6 +7622,14 @@
 "meters": [
 "meter",
 "A unit of length; 100 centimeters."
+],
+"method": [
+"method",
+"A way of doing something."
+],
+"metres": [
+"metre",
+"Units of length."
 ],
 "mexico": [
 "mexico",
@@ -4182,6 +7650,10 @@
 "microwave": [
 "microwave",
 "A machine that heats food very fast."
+],
+"midnight": [
+"midnight",
+"Twelve o'clock at night."
 ],
 "might": [
 "might",
@@ -4211,9 +7683,17 @@
 "mind",
 "The part of you that thinks."
 ],
+"minds": [
+"mind",
+"Ways of thinking."
+],
 "minecraft": [
 "minecraft",
 "Name of a famous video game of blocks."
+],
+"minority": [
+"minority",
+"A small part of a group."
 ],
 "minus": [
 "minus",
@@ -4227,9 +7707,25 @@
 "minute",
 "Sixty seconds."
 ],
+"miracle": [
+"miracle",
+"A wonderful thing."
+],
+"miss": [
+"miss",
+"Not catch; not have."
+],
+"missing": [
+"miss",
+"Not there."
+],
 "mission": [
 "mission",
 "An important job."
+],
+"missions": [
+"mission",
+"Space trips with a goal."
 ],
 "mistake": [
 "mistake",
@@ -4243,9 +7739,21 @@
 "mix",
 "Things put together."
 ],
+"mixed": [
+"mixed",
+"Some good and some bad."
+],
+"mixture": [
+"mixture",
+"A mix."
+],
 "mode": [
 "mode",
 "A way to play."
+],
+"model": [
+"model",
+"Role model: a person others want to copy."
 ],
 "modern": [
 "modern",
@@ -4254,6 +7762,14 @@
 "modes": [
 "mode",
 "A way to play."
+],
+"modest": [
+"modest",
+"Small."
+],
+"modified": [
+"modify",
+"Changed."
 ],
 "mojang": [
 "mojang",
@@ -4271,6 +7787,10 @@
 "moment",
 "A very short time."
 ],
+"momiji": [
+"momiji",
+"Name of a Japanese skateboarder (Momiji Nishiya)."
+],
 "monday": [
 "monday",
 "The first day of the week."
@@ -4282,6 +7802,10 @@
 "money": [
 "money",
 "What you use to buy things."
+],
+"monitoring": [
+"monitor",
+"Watching carefully."
 ],
 "monster": [
 "monster",
@@ -4299,6 +7823,10 @@
 "moon",
 "It goes around the Earth and shines at night."
 ],
+"moons": [
+"moon",
+"Bodies that go round planets."
+],
 "moral": [
 "moral",
 "About right and wrong."
@@ -4310,6 +7838,14 @@
 "morning": [
 "morning",
 "The first part of the day."
+],
+"mosquito": [
+"mosquito",
+"A small insect that bites."
+],
+"mosquitoes": [
+"mosquito",
+"Small insects that bite."
 ],
 "moss": [
 "moss",
@@ -4331,9 +7867,17 @@
 "mother",
 "A woman with children."
 ],
+"motive": [
+"motive",
+"A reason."
+],
 "motocross": [
 "motocross",
 "Racing with motorbikes on dirt."
+],
+"mounds": [
+"mound",
+"Small hills."
 ],
 "mount": [
 "mount",
@@ -4347,13 +7891,25 @@
 "mountain",
 "A very high piece of land."
 ],
+"mountingly": [
+"mountingly",
+"Not a real word here."
+],
 "mouse": [
 "mouse",
 "A very small animal with a long tail."
 ],
+"mouth": [
+"mouth",
+"The part of the face for eating."
+],
 "move": [
 "move",
 "Go from one place to another."
+],
+"moved": [
+"move",
+"Changed place."
 ],
 "movement": [
 "movement",
@@ -4370,6 +7926,10 @@
 "much": [
 "much",
 "A big amount."
+],
+"multiply": [
+"multiply",
+"Increase a lot."
 ],
 "mummies": [
 "mummy",
@@ -4399,6 +7959,10 @@
 "museum",
 "A building with old or important objects."
 ],
+"mushroom": [
+"mushroom",
+"A small plant shaped like an umbrella, often eaten."
+],
 "mushrooms": [
 "mushroom",
 "A plant-like thing with a round top."
@@ -4427,13 +7991,29 @@
 "nail",
 "The hard part at the end of your fingers."
 ],
+"naked": [
+"naked",
+"With the naked eye: without a telescope."
+],
 "name": [
 "name",
 "The word for a person or thing."
 ],
+"named": [
+"name",
+"Gave a name to."
+],
 "names": [
 "name",
 "The word for a person or thing."
+],
+"napoleon": [
+"napoleon",
+"Name of a French emperor."
+],
+"narrow": [
+"narrow",
+"Not wide."
 ],
 "national": [
 "national",
@@ -4447,6 +8027,14 @@
 "natto",
 "A Japanese food made from beans."
 ],
+"natural": [
+"natural",
+"From nature."
+],
+"naturally": [
+"naturally",
+"In a natural way."
+],
 "nature": [
 "nature",
 "Plants, animals and the world."
@@ -4454,6 +8042,14 @@
 "near": [
 "near",
 "Close."
+],
+"nearby": [
+"nearby",
+"Near."
+],
+"necessarily": [
+"necessary",
+"Always."
 ],
 "necessary": [
 "necessary",
@@ -4467,13 +8063,33 @@
 "need",
 "Must have."
 ],
+"needed": [
+"need",
+"Necessary."
+],
+"needle": [
+"needle",
+"A thin sharp point."
+],
 "needs": [
 "need",
 "Must have."
 ],
+"neighbouring": [
+"neighbouring",
+"Next to or near."
+],
+"neither": [
+"neither",
+"Not one and not the other."
+],
 "neptune": [
 "neptune",
 "Name of the planet farthest from the Sun."
+],
+"nervous": [
+"nervous",
+"Nervous system: the brain and nerves."
 ],
 "ness": [
 "ness",
@@ -4483,13 +8099,37 @@
 "nessie",
 "Name of the monster of Loch Ness."
 ],
+"nest": [
+"nest",
+"A home a bird makes for its eggs."
+],
+"nests": [
+"nest",
+"Homes birds make for eggs."
+],
+"net": [
+"net",
+"Material with holes."
+],
+"nets": [
+"net",
+"Material with holes."
+],
 "network": [
 "network",
 "A group of connected people or things."
 ],
+"neurons": [
+"neuron",
+"Cells of the brain and nerves."
+],
 "never": [
 "never",
 "At no time."
+],
+"nevertheless": [
+"nevertheless",
+"However."
 ],
 "new": [
 "new",
@@ -4527,6 +8167,18 @@
 "nine",
 "The number 9."
 ],
+"nineteen": [
+"nineteen",
+"The number 19; the nineteen fifties: 1950–1959."
+],
+"nineties": [
+"nineties",
+"The years from 1990 to 1999."
+],
+"nishiya": [
+"nishiya",
+"Name of a Japanese skateboarder (Momiji Nishiya)."
+],
 "no": [
 "no",
 "Not any."
@@ -4543,9 +8195,29 @@
 "noisy",
 "With a lot of noise."
 ],
+"none": [
+"none",
+"Not one."
+],
+"nonsense": [
+"nonsense",
+"Words with no meaning."
+],
+"nor": [
+"nor",
+"And not."
+],
 "normal": [
 "normal",
 "Usual; common."
+],
+"normally": [
+"normal",
+"Usually."
+],
+"norris": [
+"norris",
+"A man's name."
 ],
 "north": [
 "north",
@@ -4563,6 +8235,10 @@
 "notch",
 "Nickname of Markus Persson, the creator of Minecraft."
 ],
+"note": [
+"note",
+"Notice; write down."
+],
 "notes": [
 "note",
 "A short piece of writing. Sticky notes: small papers that stick."
@@ -4579,6 +8255,14 @@
 "notice",
 "Saw; became aware of."
 ],
+"notices": [
+"notice",
+"Sees or becomes aware of."
+],
+"noticing": [
+"notice",
+"Seeing."
+],
 "novels": [
 "novel",
 "A long book with a story."
@@ -4591,17 +8275,73 @@
 "now",
 "At this moment."
 ],
+"nowhere": [
+"nowhere",
+"Not anywhere."
+],
+"number": [
+"number",
+"How many."
+],
+"numbers": [
+"number",
+"Amounts."
+],
+"nursery": [
+"nursery",
+"A place where young ones grow."
+],
+"nutritionists": [
+"nutritionist",
+"An expert in food and health."
+],
+"obey": [
+"obey",
+"Do what you are told."
+],
 "objects": [
 "object",
 "A thing."
+],
+"observation": [
+"observation",
+"Watching carefully."
+],
+"observe": [
+"observe",
+"Watch carefully."
+],
+"observed": [
+"observe",
+"Saw."
+],
+"obvious": [
+"obvious",
+"Easy to see."
+],
+"occasions": [
+"occasion",
+"Times."
 ],
 "ocean": [
 "ocean",
 "A very big sea."
 ],
+"oceans": [
+"ocean",
+"Very big seas."
+],
 "octopus": [
 "octopus",
 "A sea animal with eight arms."
+],
+"octopuses": [
+"octopus",
+"Sea animals with eight arms."
+],
+"odd": [
+"odd",
+"Strange."
 ],
 "of": [
 "of",
@@ -4611,9 +8351,21 @@
 "off",
 "Not on. Turn off = stop a machine or light."
 ],
+"offered": [
+"offer",
+"Gave a chance."
+],
 "official": [
 "official",
 "From the government."
+],
+"officially": [
+"officially",
+"In an official way."
+],
+"offspring": [
+"offspring",
+"Babies of an animal."
 ],
 "often": [
 "often",
@@ -4659,6 +8411,10 @@
 "one",
 "Things of that type."
 ],
+"online": [
+"online",
+"On the internet."
+],
 "only": [
 "only",
 "Just; no more."
@@ -4666,6 +8422,10 @@
 "onto": [
 "onto",
 "To a position on."
+],
+"open": [
+"open",
+"Make not closed."
 ],
 "opened": [
 "open",
@@ -4679,6 +8439,18 @@
 "open",
 "Makes it not closed."
 ],
+"opinion": [
+"opinion",
+"What you think."
+],
+"opportunity": [
+"opportunity",
+"A chance."
+],
+"opposed": [
+"oppose",
+"Against."
+],
 "or": [
 "or",
 "A word for choosing."
@@ -4686,6 +8458,14 @@
 "orange": [
 "orange",
 "The color between red and yellow; also a fruit."
+],
+"orbit": [
+"orbit",
+"Go round."
+],
+"orbiting": [
+"orbit",
+"Going round."
 ],
 "orca": [
 "orca",
@@ -4695,13 +8475,53 @@
 "orca",
 "A big black and white sea animal."
 ],
+"order": [
+"order",
+"To make something happen."
+],
+"ordinary": [
+"ordinary",
+"Normal."
+],
 "organ": [
 "organ",
 "A part inside the body with a job, like the heart."
 ],
+"organisation": [
+"organisation",
+"A group of people."
+],
+"organisations": [
+"organisation",
+"Groups of people."
+],
+"organised": [
+"organise",
+"Planned and arranged."
+],
+"organisers": [
+"organiser",
+"People who plan events."
+],
+"organization": [
+"organization",
+"A group of people."
+],
 "organs": [
 "organ",
 "A part inside the body with a job."
+],
+"origin": [
+"origin",
+"Where it comes from."
+],
+"original": [
+"original",
+"New and different."
+],
+"originality": [
+"originality",
+"Being new and different."
 ],
 "other": [
 "other",
@@ -4723,9 +8543,17 @@
 "outside",
 "Not inside."
 ],
+"oval": [
+"oval",
+"Shaped like an egg."
+],
 "oven": [
 "oven",
 "A box for cooking with heat."
+],
+"ovens": [
+"oven",
+"Boxes for cooking with heat."
 ],
 "over": [
 "over",
@@ -4739,6 +8567,10 @@
 "own",
 "Of yourself."
 ],
+"owned": [
+"own",
+"Had as property."
+],
 "oxygen": [
 "oxygen",
 "The gas in the air that we need."
@@ -4747,17 +8579,57 @@
 "pacific",
 "Name of the biggest ocean."
 ],
+"pack": [
+"pack",
+"A group of wolves."
+],
+"packs": [
+"pack",
+"Groups of wolves."
+],
 "pads": [
 "pad",
 "A soft piece that protects knees or elbows."
+],
+"page": [
+"page",
+"One side of paper in a book."
+],
+"pages": [
+"page",
+"Sides of paper in a book."
+],
+"paid": [
+"pay",
+"Gave money."
+],
+"painful": [
+"pain",
+"Hurting."
+],
+"painless": [
+"painless",
+"Not painful."
 ],
 "paint": [
 "paint",
 "Put color on something."
 ],
+"paints": [
+"paint",
+"Coloured liquids for walls."
+],
+"pair": [
+"pair",
+"Two."
+],
 "palaeontologists": [
 "palaeontologist",
 "A scientist who studies fossils."
+],
+"palaeontology": [
+"palaeontology",
+"The study of fossils."
 ],
 "palma": [
 "palma",
@@ -4770,6 +8642,18 @@
 "paper": [
 "paper",
 "Thin material for writing."
+],
+"papyrus": [
+"papyrus",
+"Ancient paper made from a plant."
+],
+"paradox": [
+"paradox",
+"A strange contradiction."
+],
+"paragraph": [
+"paragraph",
+"A part of a text that begins on a new line."
 ],
 "parasites": [
 "parasite",
@@ -4795,9 +8679,25 @@
 "park",
 "A public place with grass and trees."
 ],
+"parmesan": [
+"parmesan",
+"A hard Italian cheese."
+],
 "part": [
 "part",
 "A piece of something."
+],
+"particular": [
+"particular",
+"In particular: especially."
+],
+"particularly": [
+"particularly",
+"Especially."
+],
+"partly": [
+"partly",
+"In part."
 ],
 "partner": [
 "partner",
@@ -4815,6 +8715,22 @@
 "pass",
 "Go by (time)."
 ],
+"passed": [
+"pass",
+"Went by."
+],
+"passing": [
+"pass",
+"Going past."
+],
+"passion": [
+"passion",
+"A strong love."
+],
+"passwords": [
+"password",
+"Secret words to log in."
+],
 "past": [
 "past",
 "The time before now."
@@ -4827,17 +8743,37 @@
 "path",
 "A small road for walking."
 ],
+"patience": [
+"patience",
+"Being able to wait calmly."
+],
+"patient": [
+"patient",
+"Able to wait calmly."
+],
 "pattern": [
 "pattern",
 "A way that repeats."
+],
+"patterns": [
+"pattern",
+"Things that repeat."
 ],
 "pausing": [
 "pause",
 "Stopping for a short time."
 ],
+"paved": [
+"pave",
+"Covered with stones."
+],
 "paws": [
 "paw",
 "The foot of an animal."
+],
+"pay": [
+"pay",
+"Pay attention: listen or look carefully."
 ],
 "paying": [
 "pay",
@@ -4850,6 +8786,10 @@
 "peaceful": [
 "peaceful",
 "Quiet and calm."
+],
+"peacock": [
+"peacock",
+"A bird with a big colourful tail."
 ],
 "pencil": [
 "pencil",
@@ -4879,21 +8819,53 @@
 "perfect",
 "With no mistakes."
 ],
+"perfectly": [
+"perfectly",
+"Completely."
+],
+"perform": [
+"perform",
+"Do in front of people."
+],
+"performing": [
+"perform",
+"Doing in front of people."
+],
 "perhaps": [
 "perhaps",
 "Maybe."
+],
+"period": [
+"period",
+"A length of time."
 ],
 "person": [
 "person",
 "A man, woman or child."
 ],
+"personal": [
+"personal",
+"About one person."
+],
 "persson": [
 "persson",
 "Name of a man (Markus Persson)."
 ],
+"pests": [
+"pest",
+"Animals that cause problems."
+],
+"pet": [
+"pet",
+"An animal at home."
+],
 "pharaoh": [
 "pharaoh",
 "A king of ancient Egypt."
+],
+"phenomenon": [
+"phenomenon",
+"Something that happens."
 ],
 "phew": [
 "phew",
@@ -4902,6 +8874,10 @@
 "philosopher": [
 "philosopher",
 "A person who thinks about big questions of life."
+],
+"philosophers": [
+"philosopher",
+"People who think about big questions."
 ],
 "phone": [
 "phone",
@@ -4915,13 +8891,41 @@
 "photo",
 "A picture made with a camera."
 ],
+"photographs": [
+"photograph",
+"Photos."
+],
 "photos": [
 "photo",
 "A picture made with a camera."
 ],
+"phrase": [
+"phrase",
+"A small group of words."
+],
+"physical": [
+"physical",
+"Of the body."
+],
+"physically": [
+"physical",
+"With the body."
+],
 "pickaxe": [
 "pickaxe",
 "A tool with a sharp metal end, for breaking rock."
+],
+"picture": [
+"picture",
+"An image."
+],
+"pictured": [
+"picture",
+"Imagined."
+],
+"pictures": [
+"picture",
+"Drawings."
 ],
 "piece": [
 "piece",
@@ -4930,6 +8934,10 @@
 "pieces": [
 "piece",
 "A part of something."
+],
+"pigeon": [
+"pigeon",
+"A grey bird common in cities."
 ],
 "pigs": [
 "pig",
@@ -4971,6 +8979,10 @@
 "place",
 "A position or area."
 ],
+"plan": [
+"plan",
+"Decide what to do."
+],
 "plane": [
 "plane",
 "A machine that flies."
@@ -4995,6 +9007,10 @@
 "planning",
 "Deciding before how to do something."
 ],
+"plant": [
+"plant",
+"A living thing like a tree or flower."
+],
 "plants": [
 "plant",
 "A living thing that grows in the ground."
@@ -5002,6 +9018,14 @@
 "plaster": [
 "plaster",
 "A white material that becomes hard."
+],
+"plastic": [
+"plastic",
+"A light material made from oil."
+],
+"plate": [
+"plate",
+"A flat dish."
 ],
 "platform": [
 "platform",
@@ -5027,13 +9051,33 @@
 "player",
 "A person who plays."
 ],
+"playing": [
+"play",
+"Taking part in a game."
+],
 "plays": [
 "play",
 "Has fun with a game."
 ],
+"pleased": [
+"please",
+"Happy."
+],
+"plover": [
+"plover",
+"A small bird."
+],
 "pocket": [
 "pocket",
 "A small bag in your clothes."
+],
+"podium": [
+"podium",
+"A platform where winners stand."
+],
+"poems": [
+"poem",
+"Writing with rhythm."
 ],
 "point": [
 "point",
@@ -5047,13 +9091,37 @@
 "poison",
 "Something that can kill or make you very ill if you eat or touch it."
 ],
+"poisoned": [
+"poison",
+"Killed with poison."
+],
+"poisonous": [
+"poison",
+"Can make you ill or kill you."
+],
+"pole": [
+"pole",
+"The most northern or southern point."
+],
 "police": [
 "police",
 "People who protect the law."
 ],
+"polish": [
+"polish",
+"From Poland."
+],
 "pollution": [
 "pollution",
 "Dirty air, water or land."
+],
+"ponds": [
+"pond",
+"Small lakes."
+],
+"pools": [
+"pool",
+"Places with water for swimming."
 ],
 "popcorn": [
 "popcorn",
@@ -5063,9 +9131,25 @@
 "popular",
 "Many people like it."
 ],
+"population": [
+"population",
+"The people of a place."
+],
+"portable": [
+"portable",
+"Easy to carry."
+],
 "position": [
 "position",
 "The place where something is."
+],
+"positive": [
+"positive",
+"Good."
+],
+"possibilities": [
+"possibility",
+"Things that could happen."
 ],
 "possible": [
 "possible",
@@ -5079,6 +9163,14 @@
 "potato",
 "A vegetable that grows under the ground."
 ],
+"potential": [
+"potential",
+"Possible in the future."
+],
+"powder": [
+"powder",
+"Very small dry pieces, like dust."
+],
 "power": [
 "power",
 "Strength; or a special ability."
@@ -5086,6 +9178,10 @@
 "powerful": [
 "powerful",
 "Very strong."
+],
+"practical": [
+"practical",
+"Useful in real life."
 ],
 "practice": [
 "practice",
@@ -5095,9 +9191,33 @@
 "practice",
 "Doing something many times to get better."
 ],
+"practise": [
+"practise",
+"Do again and again to get better."
+],
+"practising": [
+"practise",
+"Doing again to get better."
+],
+"prague": [
+"prague",
+"A city in the Czech Republic."
+],
+"prayers": [
+"prayer",
+"Words said to a god."
+],
+"precautions": [
+"precaution",
+"Things done to stay safe."
+],
 "precise": [
 "precise",
 "Exact."
+],
+"precisely": [
+"precise",
+"Exactly."
 ],
 "precision": [
 "precision",
@@ -5119,13 +9239,61 @@
 "prefer",
 "Like one thing more than another."
 ],
+"preferred": [
+"prefer",
+"Liked more."
+],
+"preparation": [
+"preparation",
+"Getting ready."
+],
+"prepare": [
+"prepare",
+"Get ready."
+],
+"prepared": [
+"prepare",
+"Made ready."
+],
+"prepares": [
+"prepare",
+"Makes ready."
+],
+"present": [
+"present",
+"There."
+],
+"preserved": [
+"preserve",
+"Kept in good condition."
+],
+"press": [
+"press",
+"Push with your finger."
+],
 "pressing": [
 "press",
 "Pushing a button."
 ],
+"pressure": [
+"pressure",
+"Stress."
+],
 "pretty": [
 "pretty",
 "Nice to look at."
+],
+"prevent": [
+"prevent",
+"Stop something happening."
+],
+"prey": [
+"prey",
+"An animal hunted for food."
+],
+"pride": [
+"pride",
+"Feeling proud."
 ],
 "priest": [
 "priest",
@@ -5143,6 +9311,10 @@
 "prize",
 "Something you win."
 ],
+"prizes": [
+"prize",
+"Things you win."
+],
 "probably": [
 "probably",
 "Very possibly."
@@ -5151,13 +9323,61 @@
 "problem",
 "Something difficult or wrong."
 ],
+"problems": [
+"problem",
+"Difficult things."
+],
+"procedure": [
+"procedure",
+"A way of doing something."
+],
+"proceeding": [
+"proceeding",
+"A legal action."
+],
+"process": [
+"process",
+"A series of steps."
+],
 "produce": [
 "produce",
 "Make."
 ],
+"produced": [
+"produce",
+"Made."
+],
+"produces": [
+"produce",
+"Makes."
+],
+"producing": [
+"produce",
+"Making."
+],
+"product": [
+"product",
+"Something made to sell."
+],
+"products": [
+"product",
+"Things that are made and sold."
+],
+"professional": [
+"professional",
+"Doing it as a job."
+],
 "programmer": [
 "programmer",
 "A person who writes computer programs."
+],
+"programmes": [
+"programme",
+"Plans of activities."
+],
+"programming": [
+"program",
+"Writing computer code."
 ],
 "progress": [
 "progress",
@@ -5171,9 +9391,21 @@
 "project",
 "A planned piece of work."
 ],
+"promising": [
+"promising",
+"Likely to be good."
+],
+"promote": [
+"promote",
+"Help grow."
+],
 "proof": [
 "proof",
 "Something that shows that a thing is true."
+],
+"propose": [
+"propose",
+"Suggest."
 ],
 "protect": [
 "protect",
@@ -5195,17 +9427,69 @@
 "proud",
 "Thinking you are better than others."
 ],
+"prove": [
+"prove",
+"Show it is true."
+],
+"proved": [
+"prove",
+"Showed that something is true."
+],
+"proves": [
+"prove",
+"Shows is true."
+],
+"provided": [
+"provide",
+"Gave."
+],
+"provides": [
+"provide",
+"Gives."
+],
+"province": [
+"province",
+"A region of a country."
+],
+"psychologists": [
+"psychologist",
+"A person who studies the mind."
+],
+"public": [
+"public",
+"For everyone."
+],
 "published": [
 "publish",
 "Made public."
+],
+"pubs": [
+"pub",
+"Bars."
 ],
 "puerto": [
 "puerto",
 "Puerto Rico: name of an island in the Caribbean."
 ],
+"pull": [
+"pull",
+"Move towards you."
+],
+"pulled": [
+"pull",
+"Moved towards you."
+],
+"pump": [
+"pump",
+"Push liquid with force."
+],
 "punished": [
 "punish",
 "Made someone suffer for doing wrong."
+],
+"pupils": [
+"pupil",
+"School students."
 ],
 "purin": [
 "purin",
@@ -5219,9 +9503,29 @@
 "push",
 "Move something with force."
 ],
+"pushed": [
+"push",
+"Moved away with force."
+],
 "put": [
 "put",
 "Place something somewhere."
+],
+"putting": [
+"put",
+"Placing."
+],
+"puzzle": [
+"puzzle",
+"A mystery."
+],
+"puzzles": [
+"puzzle",
+"Mysteries."
+],
+"puzzling": [
+"puzzle",
+"Hard to understand."
 ],
 "pyramid": [
 "pyramid",
@@ -5239,9 +9543,33 @@
 "quadruple",
 "Four times."
 ],
+"quarry": [
+"quarry",
+"A place where stone is dug out."
+],
+"quarters": [
+"quarter",
+"One of four equal parts."
+],
 "queen": [
 "queen",
 "A woman who rules a country, or the wife of a king."
+],
+"queens": [
+"queen",
+"Female rulers."
+],
+"question": [
+"question",
+"Something you ask."
+],
+"questions": [
+"question",
+"Things you ask."
+],
+"quick": [
+"quick",
+"Fast."
 ],
 "quickly": [
 "quick",
@@ -5251,6 +9579,10 @@
 "quidz",
 "Money in the game BEAR."
 ],
+"quieter": [
+"quiet",
+"Less noisy."
+],
 "race": [
 "race",
 "A competition to be the fastest."
@@ -5259,13 +9591,25 @@
 "race",
 "A competition to be the fastest."
 ],
+"racing": [
+"race",
+"Beating very fast."
+],
 "radar": [
 "radar",
 "A machine that finds planes and ships with radio waves."
 ],
+"radiation": [
+"radiation",
+"Dangerous energy from the Sun."
+],
 "radio": [
 "radio",
 "A device to listen to programs."
+],
+"radiocarbon": [
+"radiocarbon",
+"A way to find the age of old things."
 ],
 "railings": [
 "railing",
@@ -5291,6 +9635,18 @@
 "rainwater",
 "Water from the rain."
 ],
+"raise": [
+"raise",
+"Collect money."
+],
+"raised": [
+"raise",
+"Lifted up."
+],
+"raises": [
+"raise",
+"Collects."
+],
 "rambutan": [
 "rambutan",
 "A small red fruit with soft hairs."
@@ -5302,6 +9658,10 @@
 "ramps": [
 "ramp",
 "A surface that goes up."
+],
+"ran": [
+"run",
+"Went fast on foot."
 ],
 "random": [
 "random",
@@ -5319,9 +9679,25 @@
 "rare",
 "Not often."
 ],
+"rashid": [
+"rashid",
+"Name of a town in Egypt."
+],
+"rather": [
+"rather",
+"Rather than: instead of."
+],
+"ravens": [
+"raven",
+"Large black birds."
+],
 "rays": [
 "ray",
 "A line of light. X-rays: photos of your bones."
+],
+"rayssa": [
+"rayssa",
+"Name of a Brazilian skateboarder (Rayssa Leal)."
 ],
 "reach": [
 "reach",
@@ -5335,6 +9711,10 @@
 "reach",
 "Arrives at."
 ],
+"react": [
+"react",
+"Do something because of what happens."
+],
 "reaction": [
 "reaction",
 "A change that happens because of something."
@@ -5343,9 +9723,29 @@
 "read",
 "Look at words and understand them."
 ],
+"readers": [
+"reader",
+"People who read."
+],
+"ready": [
+"ready",
+"Prepared."
+],
 "real": [
 "real",
 "True; not imaginary."
+],
+"realise": [
+"realise",
+"Understand."
+],
+"realised": [
+"realise",
+"Understood."
+],
+"reality": [
+"reality",
+"In reality: really."
 ],
 "really": [
 "really",
@@ -5355,9 +9755,61 @@
 "reason",
 "Why something happens."
 ],
+"reasons": [
+"reason",
+"Why things happen."
+],
+"rebellious": [
+"rebellious",
+"Not wanting to obey rules."
+],
+"rebuilding": [
+"rebuild",
+"Building again."
+],
+"receipts": [
+"receipt",
+"Papers showing you paid."
+],
+"receive": [
+"receive",
+"Get."
+],
+"received": [
+"receive",
+"Got."
+],
+"recent": [
+"recent",
+"Happening not long ago."
+],
+"recently": [
+"recently",
+"Not long ago."
+],
+"receptors": [
+"receptor",
+"A part of the body that reacts to something."
+],
+"recognise": [
+"recognise",
+"Know who or what something is."
+],
+"recognised": [
+"recognise",
+"Accepted officially."
+],
+"recognition": [
+"recognition",
+"Being thanked or praised."
+],
 "recognize": [
 "recognize",
 "Know who or what something is."
+],
+"recommend": [
+"recommend",
+"Say is good."
 ],
 "recommends": [
 "recommend",
@@ -5375,6 +9827,18 @@
 "record",
 "The best result ever."
 ],
+"recover": [
+"recover",
+"Get better."
+],
+"recovered": [
+"recover",
+"Got better."
+],
+"recreate": [
+"recreate",
+"Make again."
+],
 "recreated": [
 "recreate",
 "Made again."
@@ -5383,13 +9847,193 @@
 "red",
 "The color of blood."
 ],
+"redesigned": [
+"redesign",
+"Designed again."
+],
 "redstone": [
 "redstone",
 "A material in Minecraft that works like electricity."
 ],
+"reduce": [
+"reduce",
+"Make smaller or less."
+],
+"reduced": [
+"reduce",
+"Made smaller."
+],
+"reducing": [
+"reduce",
+"Making smaller."
+],
+"refer": [
+"refer",
+"Talk about; point to."
+],
+"reference": [
+"reference",
+"A book of facts."
+],
+"refreshing": [
+"refreshing",
+"New and pleasant."
+],
+"refuse": [
+"refuse",
+"Say no."
+],
+"refused": [
+"refuse",
+"Said no."
+],
+"refuses": [
+"refuse",
+"Says no."
+],
+"refusing": [
+"refuse",
+"Saying no."
+],
+"regard": [
+"regard",
+"Think of in a certain way."
+],
+"regarded": [
+"regard",
+"Thought of."
+],
+"region": [
+"region",
+"An area."
+],
+"register": [
+"register",
+"Write your name officially."
+],
+"regret": [
+"regret",
+"Feel sorry for."
+],
+"regretful": [
+"regret",
+"Sorry."
+],
+"regretted": [
+"regret",
+"Was sorry for."
+],
+"regular": [
+"regular",
+"Happening often."
+],
+"rejected": [
+"reject",
+"Said no to."
+],
+"related": [
+"related",
+"Connected; of the same family."
+],
+"relationships": [
+"relationship",
+"Connections between people."
+],
+"relative": [
+"relative",
+"Family member."
+],
+"relatively": [
+"relative",
+"Quite."
+],
+"relax": [
+"relax",
+"Rest."
+],
+"relaxed": [
+"relaxed",
+"Calm."
+],
+"relaxing": [
+"relax",
+"Resting."
+],
+"release": [
+"release",
+"Let go or let out."
+],
+"released": [
+"release",
+"Set free."
+],
+"releases": [
+"release",
+"Lets something go out."
+],
+"reliable": [
+"rely",
+"You can trust it."
+],
+"reliably": [
+"rely",
+"In a way you can trust."
+],
+"relied": [
+"rely",
+"Needed."
+],
+"relief": [
+"relief",
+"A good feeling when something bad ends."
+],
+"relies": [
+"rely",
+"Needs."
+],
+"religion": [
+"religion",
+"Belief in a god or gods."
+],
+"religious": [
+"religious",
+"About religion."
+],
+"remain": [
+"remain",
+"Stay."
+],
+"remained": [
+"remain",
+"Stayed."
+],
+"remains": [
+"remain",
+"Stays."
+],
+"remarkable": [
+"remarkable",
+"Surprising; special."
+],
+"remarkably": [
+"remarkable",
+"Surprisingly."
+],
 "remember": [
 "remember",
 "Keep in your mind."
+],
+"remembering": [
+"remember",
+"Keeping in mind."
+],
+"reminder": [
+"reminder",
+"Something that makes you remember."
+],
+"reminds": [
+"remind",
+"Makes you remember."
 ],
 "remove": [
 "remove",
@@ -5399,9 +10043,25 @@
 "remove",
 "Took away."
 ],
+"removing": [
+"remove",
+"Taking away."
+],
 "repeat": [
 "repeat",
 "Do again."
+],
+"repellent": [
+"repellent",
+"Something that keeps insects away."
+],
+"replace": [
+"replace",
+"Take the place of."
+],
+"replaces": [
+"replace",
+"Takes the place of."
 ],
 "reporters": [
 "reporter",
@@ -5411,6 +10071,26 @@
 "report",
 "Tells about something."
 ],
+"represent": [
+"represent",
+"Stand for."
+],
+"represented": [
+"represent",
+"Stood for."
+],
+"reptile": [
+"reptile",
+"An animal like a lizard or snake."
+],
+"reptiles": [
+"reptile",
+"Animals like lizards and snakes."
+],
+"reputation": [
+"reputation",
+"What people think of you."
+],
 "require": [
 "require",
 "Need."
@@ -5419,9 +10099,17 @@
 "require",
 "Needed."
 ],
+"requires": [
+"require",
+"Needs."
+],
 "rescuers": [
 "rescuer",
 "A person who saves people in danger."
+],
+"research": [
+"research",
+"Careful study."
 ],
 "researcher": [
 "researcher",
@@ -5431,17 +10119,77 @@
 "researcher",
 "A person who studies something carefully."
 ],
+"residents": [
+"resident",
+"People who live in a place."
+],
+"resist": [
+"resist",
+"Fight against."
+],
+"resistant": [
+"resist",
+"Not affected by."
+],
+"resources": [
+"resource",
+"Useful things."
+],
 "respect": [
 "respect",
 "Treat well."
+],
+"respected": [
+"respected",
+"Admired."
 ],
 "respecting": [
 "respect",
 "Treating well."
 ],
+"responsibility": [
+"responsibility",
+"A duty."
+],
+"responsible": [
+"responsible",
+"Being the cause."
+],
+"rest": [
+"rest",
+"The others."
+],
 "restaurant": [
 "restaurant",
 "A place where you pay to eat."
+],
+"result": [
+"result",
+"What happens because of something."
+],
+"results": [
+"result",
+"What happens in the end."
+],
+"return": [
+"return",
+"Go or come back."
+],
+"returned": [
+"return",
+"Given back."
+],
+"returning": [
+"return",
+"Coming back."
+],
+"revealed": [
+"reveal",
+"Shown."
+],
+"rewards": [
+"reward",
+"Prizes for doing well."
 ],
 "rewrite": [
 "rewrite",
@@ -5462,6 +10210,10 @@
 "rico": [
 "rico",
 "Puerto Rico: name of an island in the Caribbean."
+],
+"rid": [
+"rid",
+"Free of."
 ],
 "ride": [
 "ride",
@@ -5491,13 +10243,45 @@
 "ring",
 "A circle."
 ],
+"ripe": [
+"ripe",
+"Ready to eat (fruit)."
+],
+"ripen": [
+"ripen",
+"Become ready to eat."
+],
+"risen": [
+"rise",
+"Gone up."
+],
+"rising": [
+"rise",
+"Going up."
+],
+"risingly": [
+"risingly",
+"Not a real word here."
+],
 "risk": [
 "risk",
 "The possibility of danger."
 ],
+"rivalry": [
+"rivalry",
+"Competition between rivals."
+],
+"rivals": [
+"rival",
+"People you compete against."
+],
 "river": [
 "river",
 "Water that moves across the land to the sea."
+],
+"riverbanks": [
+"riverbank",
+"Land next to a river."
 ],
 "rivers": [
 "river",
@@ -5559,9 +10343,25 @@
 "rock",
 "Hard material from the ground."
 ],
+"rocky": [
+"rocky",
+"Made of rock."
+],
+"role": [
+"role",
+"Role model: a person others want to copy."
+],
 "roll": [
 "roll",
 "Turn over and over."
+],
+"rollercoaster": [
+"rollercoaster",
+"A fast ride with steep ups and downs at a funfair."
+],
+"roman": [
+"roman",
+"From ancient Rome."
 ],
 "rome": [
 "rome",
@@ -5579,17 +10379,45 @@
 "room",
 "A part of a house with walls."
 ],
+"rooms": [
+"room",
+"Parts of a building."
+],
 "ropes": [
 "rope",
 "A thick string."
+],
+"rose": [
+"rise",
+"Went up."
 ],
 "roses": [
 "rose",
 "A beautiful flower."
 ],
+"rosetta": [
+"rosetta",
+"European name of the town of Rashid."
+],
+"ross": [
+"ross",
+"A man's name."
+],
+"rough": [
+"rough",
+"Not gentle."
+],
+"roughly": [
+"roughly",
+"About; more or less."
+],
 "route": [
 "route",
 "The way from one place to another."
+],
+"rovers": [
+"rover",
+"Robot vehicles that explore planets."
 ],
 "royale": [
 "royale",
@@ -5602,6 +10430,10 @@
 "rule": [
 "rule",
 "What you must or must not do."
+],
+"ruled": [
+"rule",
+"Decided officially."
 ],
 "rules": [
 "rule",
@@ -5627,6 +10459,10 @@
 "run",
 "A game played as fast as possible."
 ],
+"rush": [
+"rush",
+"A sudden strong feeling."
+],
 "russia": [
 "russia",
 "Name of a very big country in Europe and Asia."
@@ -5634,6 +10470,10 @@
 "s": [
 "s",
 "The letter S."
+],
+"sad": [
+"sad",
+"Not happy."
 ],
 "safe": [
 "safe",
@@ -5663,9 +10503,25 @@
 "saint",
 "A holy person. In names: Saint Helena."
 ],
+"salary": [
+"salary",
+"Money for work each month."
+],
+"sale": [
+"sale",
+"On sale: available to buy."
+],
+"saliva": [
+"saliva",
+"Spit."
+],
 "salt": [
 "salt",
 "A white thing that gives flavor to food."
+],
+"saltier": [
+"salty",
+"More salty."
 ],
 "saltwater": [
 "saltwater",
@@ -5682,6 +10538,10 @@
 "same": [
 "same",
 "Not different."
+],
+"samples": [
+"sample",
+"Small pieces to study."
 ],
 "sand": [
 "sand",
@@ -5703,6 +10563,18 @@
 "sardinia",
 "Name of an Italian island."
 ],
+"sat": [
+"sit",
+"Rested on."
+],
+"satisfies": [
+"satisfy",
+"Makes happy."
+],
+"satisfying": [
+"satisfying",
+"Making you feel happy and full."
+],
 "saturday": [
 "saturday",
 "The sixth day of the week."
@@ -5715,6 +10587,10 @@
 "saturn",
 "Name of the planet with big rings."
 ],
+"sauce": [
+"sauce",
+"A liquid you put on food."
+],
 "save": [
 "save",
 "1. Keep safe. 2. Not waste."
@@ -5722,6 +10598,10 @@
 "saved": [
 "save",
 "Kept safe."
+],
+"savoury": [
+"savoury",
+"Salty and tasty, not sweet."
 ],
 "saw": [
 "see",
@@ -5731,6 +10611,10 @@
 "say",
 "Tell with words."
 ],
+"saying": [
+"say",
+"Speaking words."
+],
 "says": [
 "say",
 "Tells with words."
@@ -5739,9 +10623,25 @@
 "scale",
 "Size. At a real scale = the same size as the real thing."
 ],
+"scaly": [
+"scaly",
+"Covered in scales."
+],
 "scare": [
 "scare",
 "Make afraid."
+],
+"scared": [
+"scared",
+"Afraid."
+],
+"scarier": [
+"scary",
+"More scary."
+],
+"scariest": [
+"scary",
+"The most scary."
 ],
 "scary": [
 "scary",
@@ -5751,9 +10651,33 @@
 "scene",
 "A part of a film or game."
 ],
+"scenes": [
+"scene",
+"Places where things happen."
+],
+"sceptical": [
+"sceptical",
+"Not easily believing."
+],
+"schedule": [
+"schedule",
+"A plan of times."
+],
+"scholars": [
+"scholar",
+"Experts who study."
+],
 "school": [
 "school",
 "A place where children learn."
+],
+"schoolchild": [
+"schoolchild",
+"A child who goes to school."
+],
+"schoolchildren": [
+"schoolchild",
+"Children at school."
 ],
 "schools": [
 "school",
@@ -5762,6 +10686,10 @@
 "science": [
 "science",
 "The study of the world with experiments."
+],
+"scientific": [
+"scientific",
+"Of science."
 ],
 "scientist": [
 "scientist",
@@ -5779,9 +10707,25 @@
 "scotty",
 "A name (an invented name)."
 ],
+"scream": [
+"scream",
+"Shout with a high loud voice."
+],
 "screen": [
 "screen",
 "The flat part of a TV or computer."
+],
+"scribes": [
+"scribe",
+"People whose job was writing."
+],
+"script": [
+"script",
+"A system of writing."
+],
+"scripts": [
+"script",
+"Writing systems."
 ],
 "sea": [
 "sea",
@@ -5790,6 +10734,22 @@
 "search": [
 "search",
 "Looking for something."
+],
+"searches": [
+"search",
+"Looks for."
+],
+"searching": [
+"search",
+"Looking for."
+],
+"seat": [
+"seat",
+"Something you sit on."
+],
+"seaweed": [
+"seaweed",
+"A plant that grows in the sea."
 ],
 "second": [
 "second",
@@ -5807,6 +10767,14 @@
 "secret",
 "Something that few people know."
 ],
+"section": [
+"section",
+"A part."
+],
+"sections": [
+"section",
+"Parts."
+],
 "see": [
 "see",
 "Notice with your eyes."
@@ -5823,6 +10791,14 @@
 "see",
 "Noticing with your eyes."
 ],
+"seem": [
+"seem",
+"Look like; appear."
+],
+"seemed": [
+"seem",
+"Looked like."
+],
 "seems": [
 "seem",
 "Looks like."
@@ -5830,6 +10806,22 @@
 "seen": [
 "see",
 "Past participle of see."
+],
+"sees": [
+"see",
+"Looks at."
+],
+"selected": [
+"select",
+"Chosen."
+],
+"selection": [
+"selection",
+"Choosing."
+],
+"self": [
+"self",
+"Self-expression: showing who you are."
 ],
 "sell": [
 "sell",
@@ -5843,6 +10835,22 @@
 "send",
 "Make something go to another person or place."
 ],
+"sending": [
+"send",
+"Making go somewhere."
+],
+"sends": [
+"send",
+"Makes something go to another place."
+],
+"sense": [
+"sense",
+"Sight, hearing, taste, smell or touch."
+],
+"senses": [
+"sense",
+"Sight, smell, hearing and so on."
+],
 "sent": [
 "send",
 "Made something go to another place."
@@ -5850,6 +10858,10 @@
 "sentence": [
 "sentence",
 "A group of words with a complete idea."
+],
+"separate": [
+"separate",
+"Different; not joined."
 ],
 "series": [
 "series",
@@ -5859,9 +10871,33 @@
 "serious",
 "Very bad; important."
 ],
+"seriously": [
+"seriously",
+"In a serious way."
+],
+"services": [
+"service",
+"Religious ceremonies."
+],
+"set": [
+"set",
+"Put."
+],
+"settle": [
+"settle",
+"End a discussion."
+],
+"settled": [
+"settled",
+"Decided; ended."
+],
 "seven": [
 "seven",
 "The number 7."
+],
+"seventies": [
+"seventies",
+"The years from 1970 to 1979."
 ],
 "seventy": [
 "seventy",
@@ -5875,13 +10911,25 @@
 "shadow",
 "The dark shape that something makes in the light."
 ],
+"shake": [
+"shake",
+"Move quickly from side to side."
+],
 "shape": [
 "shape",
 "The form of something."
 ],
+"shaped": [
+"shape",
+"Having a certain form."
+],
 "shapes": [
 "shape",
 "The form of something."
+],
+"share": [
+"share",
+"Use or have with others."
 ],
 "shared": [
 "share",
@@ -5903,6 +10951,10 @@
 "sharp",
 "It can cut easily."
 ],
+"sharply": [
+"sharply",
+"Quickly and a lot."
+],
 "she": [
 "she",
 "A woman or girl."
@@ -5911,9 +10963,29 @@
 "shell",
 "The hard cover of some animals."
 ],
+"shells": [
+"shell",
+"Hard covers."
+],
+"shelter": [
+"shelter",
+"A safe place."
+],
+"shelves": [
+"shelf",
+"Boards for books."
+],
 "shift": [
 "shift",
 "A key on the keyboard."
+],
+"shifted": [
+"shift",
+"Moved."
+],
+"shifts": [
+"shift",
+"Periods of work."
 ],
 "shine": [
 "shine",
@@ -5931,9 +11003,29 @@
 "ship",
 "A big boat."
 ],
+"shocked": [
+"shock",
+"Very surprised and upset."
+],
+"shocking": [
+"shock",
+"Very surprising and bad."
+],
 "shoes": [
 "shoe",
 "You wear them on your feet."
+],
+"shooting": [
+"shoot",
+"Coming out fast."
+],
+"shopping": [
+"shopping",
+"Buying things; shopping centre: a big building with shops."
+],
+"shops": [
+"shop",
+"Places where you buy things."
 ],
 "short": [
 "short",
@@ -5951,9 +11043,17 @@
 "should",
 "It is a good idea to."
 ],
+"shoulders": [
+"shoulder",
+"The parts between your neck and arms."
+],
 "shout": [
 "shout",
 "Speak very loudly."
+],
+"shouting": [
+"shout",
+"Speaking very loudly."
 ],
 "show": [
 "show",
@@ -5963,17 +11063,53 @@
 "show",
 "Let people see."
 ],
+"showing": [
+"show",
+"Letting people see."
+],
+"shown": [
+"show",
+"Made clear."
+],
+"shows": [
+"show",
+"Shows off: proudly lets others see."
+],
 "shy": [
 "shy",
 "Afraid to meet people."
+],
+"side": [
+"side",
+"Side by side: together."
+],
+"sight": [
+"sight",
+"The ability to see."
+],
+"sign": [
+"sign",
+"Something that shows something."
 ],
 "signal": [
 "signal",
 "A sign that gives a message."
 ],
+"signals": [
+"signal",
+"Messages sent by radio."
+],
 "signs": [
 "sign",
 "A mark that gives information."
+],
+"silence": [
+"silence",
+"No sound."
+],
+"silver": [
+"silver",
+"A grey precious metal; second prize."
 ],
 "similar": [
 "similar",
@@ -5983,6 +11119,14 @@
 "simple",
 "Easy; not complicated."
 ],
+"simpler": [
+"simple",
+"More simple."
+],
+"simply": [
+"simply",
+"Just; only."
+],
 "since": [
 "since",
 "From a time in the past until now."
@@ -5990,6 +11134,10 @@
 "single": [
 "single",
 "Only one."
+],
+"sir": [
+"sir",
+"A title for a knight."
 ],
 "sit": [
 "sit",
@@ -5999,13 +11147,29 @@
 "sit",
 "Resting on something."
 ],
+"situations": [
+"situation",
+"What is happening at a time and place."
+],
 "six": [
 "six",
 "The number 6."
 ],
+"sixth": [
+"sixth",
+"Number six in order."
+],
+"sixties": [
+"sixties",
+"The years from 1960 to 1969."
+],
 "sixty": [
 "sixty",
 "The number 60."
+],
+"size": [
+"size",
+"How big something is."
 ],
 "skate": [
 "skate",
@@ -6047,6 +11211,22 @@
 "skeleton",
 "All the bones of a body. In Minecraft, a monster."
 ],
+"skies": [
+"sky",
+"The space above us."
+],
+"skilful": [
+"skill",
+"Very good at something."
+],
+"skill": [
+"skill",
+"Ability."
+],
+"skills": [
+"skill",
+"Abilities."
+],
 "skin": [
 "skin",
 "The outside cover of a body or fruit."
@@ -6071,6 +11251,10 @@
 "sky",
 "The space above the Earth."
 ],
+"slab": [
+"slab",
+"A big flat piece of stone."
+],
 "sleep": [
 "sleep",
 "Rest with your eyes closed."
@@ -6079,9 +11263,29 @@
 "sleep",
 "Resting with your eyes closed."
 ],
+"sleeps": [
+"sleep",
+"Rests with eyes closed."
+],
+"sleeves": [
+"sleeve",
+"The arm parts of clothes."
+],
+"slice": [
+"slice",
+"A thin flat piece."
+],
+"slipped": [
+"slip",
+"Moved smoothly."
+],
 "slow": [
 "slow",
 "Not fast."
+],
+"slowing": [
+"slow",
+"Making slower."
 ],
 "slowly": [
 "slow",
@@ -6110,6 +11314,10 @@
 "smoke": [
 "smoke",
 "The grey cloud from a fire."
+],
+"smoothly": [
+"smoothly",
+"Without bumps."
 ],
 "snack": [
 "snack",
@@ -6171,6 +11379,14 @@
 "sell",
 "Gave for money."
 ],
+"soldier": [
+"soldier",
+"A person in an army."
+],
+"soldiers": [
+"soldier",
+"People in an army."
+],
 "solid": [
 "solid",
 "Hard; not liquid. Solid gold = only gold."
@@ -6179,9 +11395,33 @@
 "solution",
 "The answer to a problem."
 ],
+"solutions": [
+"solution",
+"Answers to problems."
+],
+"solve": [
+"solve",
+"Find the answer."
+],
+"solved": [
+"solve",
+"Found the answer."
+],
+"solver": [
+"solver",
+"A person who solves."
+],
+"solving": [
+"solve",
+"Finding the answer."
+],
 "some": [
 "some",
 "A number or amount of."
+],
+"somebody": [
+"somebody",
+"A person."
 ],
 "someone": [
 "someone",
@@ -6199,17 +11439,49 @@
 "soon",
 "In a short time."
 ],
+"sophisticated": [
+"sophisticated",
+"Very clever and complex."
+],
+"sorry": [
+"sorry",
+"Feeling bad about something."
+],
+"sound": [
+"sound",
+"Something you hear."
+],
 "sounds": [
 "sound",
 "Seems."
+],
+"soup": [
+"soup",
+"Hot liquid food."
+],
+"sour": [
+"sour",
+"With a sharp taste, like lemon."
+],
+"source": [
+"source",
+"Where something comes from."
 ],
 "south": [
 "south",
 "The direction of the South Pole."
 ],
+"soy": [
+"soy",
+"A bean used to make sauce and milk."
+],
 "space": [
 "space",
 "1. The place outside the Earth. 2. An empty area. 3. A key."
+],
+"spacecraft": [
+"spacecraft",
+"A vehicle for space."
 ],
 "spaceship": [
 "spaceship",
@@ -6227,6 +11499,10 @@
 "spain",
 "Name of a country in Europe."
 ],
+"sparrow": [
+"sparrow",
+"A small brown bird."
+],
 "special": [
 "special",
 "Different; not common."
@@ -6234,6 +11510,18 @@
 "species": [
 "species",
 "A type of animal or plant."
+],
+"specific": [
+"specific",
+"Particular; exact."
+],
+"specifically": [
+"specific",
+"Especially."
+],
+"spectators": [
+"spectator",
+"People who watch an event."
 ],
 "speed": [
 "speed",
@@ -6259,9 +11547,25 @@
 "speedrun",
 "Finishing a game as fast as possible."
 ],
+"spelled": [
+"spell",
+"Formed (a word with letters)."
+],
 "spencer": [
 "spencer",
 "Name of a man (Percy Spencer)."
+],
+"spend": [
+"spend",
+"Use time."
+],
+"spending": [
+"spend",
+"Using time or money."
+],
+"spent": [
+"spend",
+"Used (time)."
 ],
 "sperm": [
 "sperm",
@@ -6287,6 +11591,26 @@
 "spin",
 "A turn in a circle."
 ],
+"spirit": [
+"spirit",
+"Character; attitude."
+],
+"splash": [
+"splash",
+"Noise of something hitting water."
+],
+"split": [
+"split",
+"A split second: a very short moment."
+],
+"spoke": [
+"speak",
+"Said words."
+],
+"spoken": [
+"speak",
+"Said."
+],
 "sponsor": [
 "sponsor",
 "A person who pays for a project."
@@ -6311,6 +11635,10 @@
 "spot",
 "A round mark."
 ],
+"spread": [
+"spread",
+"Move to more places."
+],
 "spreads": [
 "spread",
 "Goes to more and more people."
@@ -6331,13 +11659,37 @@
 "squeeze",
 "Press hard."
 ],
+"squeezed": [
+"squeeze",
+"Pushed through a small space."
+],
 "squid": [
 "squid",
 "A sea animal with ten arms."
 ],
+"squirt": [
+"squirt",
+"Shoot out a thin stream of liquid."
+],
+"stab": [
+"stab",
+"Push in a sharp point."
+],
+"stadium": [
+"stadium",
+"A big place for sport with seats."
+],
+"staff": [
+"staff",
+"The people who work in a place."
+],
 "stairs": [
 "stair",
 "Steps to go up and down."
+],
+"stand": [
+"stand",
+"Be on your feet."
 ],
 "star": [
 "star",
@@ -6363,6 +11715,10 @@
 "state",
 "A situation; the condition."
 ],
+"statements": [
+"statement",
+"Things said officially."
+],
 "states": [
 "state",
 "Name of a country, with United: the United States."
@@ -6370,6 +11726,10 @@
 "station": [
 "station",
 "A building with a special job."
+],
+"statistical": [
+"statistics",
+"Using numbers."
 ],
 "statue": [
 "statue",
@@ -6395,6 +11755,10 @@
 "step",
 "A flat place to put your foot on stairs."
 ],
+"stepped": [
+"step",
+"Moved with your foot."
+],
 "sticky": [
 "sticky",
 "It sticks to things."
@@ -6402,6 +11766,10 @@
 "still": [
 "still",
 "1. Not moving. 2. Continuing until now."
+],
+"stock": [
+"stock",
+"A liquid made by boiling meat, fish or vegetables."
 ],
 "stomach": [
 "stomach",
@@ -6414,6 +11782,10 @@
 "stones": [
 "stone",
 "Small rocks."
+],
+"stood": [
+"stand",
+"Was on her feet."
 ],
 "stop": [
 "stop",
@@ -6455,17 +11827,45 @@
 "strange",
 "In a strange way."
 ],
+"strategy": [
+"strategy",
+"A plan to win."
+],
+"streamed": [
+"stream",
+"Shown live online."
+],
 "streamers": [
 "streamer",
 "A person who plays games live on the internet."
+],
+"streaming": [
+"stream",
+"Showing live online."
 ],
 "street": [
 "street",
 "A road in a town."
 ],
+"stress": [
+"stress",
+"Worry and pressure."
+],
+"stressful": [
+"stressful",
+"Making you feel worried and tense."
+],
 "stretched": [
 "stretch",
 "Made longer."
+],
+"strict": [
+"strict",
+"With rules that must be obeyed."
+],
+"strips": [
+"strip",
+"Long thin pieces."
 ],
 "strong": [
 "strong",
@@ -6483,9 +11883,33 @@
 "strong",
 "With force."
 ],
+"struck": [
+"strike",
+"Impressed."
+],
+"structure": [
+"structure",
+"The way something is built."
+],
+"struggled": [
+"struggle",
+"Tried hard."
+],
+"stuck": [
+"stick",
+"Not able to move."
+],
+"students": [
+"student",
+"People who study."
+],
 "studied": [
 "study",
 "Learned about something."
+],
+"studies": [
+"study",
+"Research."
 ],
 "studio": [
 "studio",
@@ -6499,9 +11923,57 @@
 "study",
 "Learn about something."
 ],
+"studying": [
+"study",
+"Learning about."
+],
+"style": [
+"style",
+"A way of doing something."
+],
+"subject": [
+"subject",
+"A topic of study."
+],
+"subjects": [
+"subject",
+"Things you study."
+],
+"submit": [
+"submit",
+"Give officially."
+],
+"substance": [
+"substance",
+"A material."
+],
+"subtle": [
+"subtle",
+"Not easy to notice."
+],
 "suburbs": [
 "suburb",
 "An area at the edge of a city."
+],
+"succeed": [
+"succeed",
+"Do well."
+],
+"succeeds": [
+"succeed",
+"Goes well."
+],
+"success": [
+"success",
+"Doing well."
+],
+"successful": [
+"successful",
+"Having success."
+],
+"such": [
+"such",
+"Very (before a noun)."
 ],
 "sudden": [
 "sudden",
@@ -6514,6 +11986,22 @@
 "sugar": [
 "sugar",
 "Something sweet in food."
+],
+"suggest": [
+"suggest",
+"Give an idea."
+],
+"suggested": [
+"suggest",
+"Gave an idea."
+],
+"suggesting": [
+"suggest",
+"Giving an idea."
+],
+"suggests": [
+"suggest",
+"Shows that something may be true."
 ],
 "summer": [
 "summer",
@@ -6531,6 +12019,10 @@
 "sunlight",
 "The light of the sun."
 ],
+"suns": [
+"sun",
+"Stars."
+],
 "sunset": [
 "sunset",
 "When the sun goes down."
@@ -6543,9 +12035,45 @@
 "supermassive",
 "Very, very big."
 ],
+"support": [
+"support",
+"Help; agree with."
+],
+"supported": [
+"support",
+"Helped."
+],
+"supporters": [
+"supporter",
+"People who agree with something."
+],
+"supports": [
+"support",
+"Helps."
+],
 "sure": [
 "sure",
 "Certain."
+],
+"surf": [
+"surf",
+"Ride waves on a board."
+],
+"surface": [
+"surface",
+"The top or outside."
+],
+"surfaces": [
+"surface",
+"Outsides of things."
+],
+"surfers": [
+"surfer",
+"People who ride waves on a board."
+],
+"surprise": [
+"surprise",
+"Something unexpected."
 ],
 "surprised": [
 "surprised",
@@ -6555,9 +12083,17 @@
 "surprising",
 "Unexpected."
 ],
+"surprisingly": [
+"surprisingly",
+"In a way that surprises."
+],
 "surrounded": [
 "surround",
 "With something all around."
+],
+"surroundings": [
+"surroundings",
+"The place around you."
 ],
 "survival": [
 "survival",
@@ -6583,6 +12119,18 @@
 "survivor",
 "A person who stays alive."
 ],
+"suspect": [
+"suspect",
+"Think something is true."
+],
+"suspicious": [
+"suspicious",
+"Not trusting."
+],
+"sweating": [
+"sweat",
+"Producing water through your skin because you are hot or nervous."
+],
 "swedish": [
 "swedish",
 "From Sweden."
@@ -6591,17 +12139,49 @@
 "sweet",
 "With the taste of sugar."
 ],
+"sweeter": [
+"sweet",
+"More sweet."
+],
 "swim": [
 "swim",
 "Move in water."
+],
+"swimming": [
+"swimming",
+"Moving in water."
 ],
 "swims": [
 "swim",
 "Moves in water."
 ],
+"swiss": [
+"swiss",
+"From Switzerland."
+],
+"switch": [
+"switch",
+"Change from one thing to another."
+],
+"symbol": [
+"symbol",
+"A sign that means something."
+],
+"symbols": [
+"symbol",
+"Signs that mean something."
+],
+"sympathy": [
+"sympathy",
+"Feeling sorry for someone."
+],
 "system": [
 "system",
 "A group of things that work together."
+],
+"systems": [
+"system",
+"Groups of connected things."
 ],
 "t": [
 "t",
@@ -6631,6 +12211,10 @@
 "take",
 "Past participle of take."
 ],
+"takes": [
+"take",
+"Needs (time)."
+],
 "taking": [
 "take",
 "Getting; carrying."
@@ -6643,6 +12227,10 @@
 "talk",
 "Spoke."
 ],
+"talking": [
+"talk",
+"Speaking."
+],
 "tall": [
 "tall",
 "High."
@@ -6651,6 +12239,14 @@
 "tall",
 "The most tall."
 ],
+"tank": [
+"tank",
+"A big glass box for fish."
+],
+"tanks": [
+"tank",
+"Big glass boxes for water animals."
+],
 "tardigrade": [
 "tardigrade",
 "A tiny animal that can survive almost anything."
@@ -6658,6 +12254,30 @@
 "tardigrades": [
 "tardigrade",
 "A tiny animal that can survive almost anything."
+],
+"targets": [
+"target",
+"Goals."
+],
+"task": [
+"task",
+"A job."
+],
+"taste": [
+"taste",
+"Flavour; the sense in your tongue."
+],
+"tasted": [
+"taste",
+"Had a flavour."
+],
+"tastes": [
+"taste",
+"Flavours: sweet, salty…"
+],
+"tatooine": [
+"tatooine",
+"Name of a planet in Star Wars."
 ],
 "tattoos": [
 "tattoo",
@@ -6679,6 +12299,10 @@
 "teacher",
 "A person who teaches."
 ],
+"teaching": [
+"teach",
+"Showing someone how to do something."
+],
 "team": [
 "team",
 "A group that works or plays together."
@@ -6686,6 +12310,14 @@
 "teamwork": [
 "teamwork",
 "Working together as a team."
+],
+"technology": [
+"technology",
+"Machines and science."
+],
+"teenager": [
+"teenager",
+"A person aged 13 to 19."
 ],
 "teenagers": [
 "teenager",
@@ -6739,9 +12371,37 @@
 "ten",
 "The number 10."
 ],
+"tend": [
+"tend",
+"Usually do."
+],
+"tens": [
+"ten",
+"Groups of ten."
+],
 "tentacles": [
 "tentacle",
 "A long soft arm of a sea animal."
+],
+"termite": [
+"termite",
+"An insect like an ant."
+],
+"terrified": [
+"terrified",
+"Very, very scared."
+],
+"territory": [
+"territory",
+"An area an animal controls."
+],
+"test": [
+"test",
+"Try to check."
+],
+"tested": [
+"test",
+"Tried out."
 ],
 "testing": [
 "test",
@@ -6755,13 +12415,29 @@
 "text",
 "Written words."
 ],
+"textbook": [
+"textbook",
+"A book for school."
+],
+"textbooks": [
+"textbook",
+"Books for school."
+],
 "texts": [
 "text",
 "Written words."
 ],
+"texture": [
+"texture",
+"How a surface feels."
+],
 "than": [
 "than",
 "A word to compare."
+],
+"thanks": [
+"thanks",
+"Thanks to: because of."
 ],
 "that": [
 "that",
@@ -6779,9 +12455,21 @@
 "they",
 "Those people or things."
 ],
+"themselves": [
+"themselves",
+"Them, not others."
+],
 "then": [
 "then",
 "After that."
+],
+"theories": [
+"theory",
+"Ideas that explain something."
+],
+"theory": [
+"theory",
+"An idea that explains something."
 ],
 "there": [
 "there",
@@ -6803,6 +12491,10 @@
 "thin",
 "Not thick."
 ],
+"thing": [
+"thing",
+"An object or idea."
+],
 "things": [
 "thing",
 "Objects."
@@ -6811,9 +12503,17 @@
 "think",
 "Use your mind; have an opinion."
 ],
+"thinner": [
+"thin",
+"Less thick."
+],
 "third": [
 "third",
 "Number 3 in order."
+],
+"thirds": [
+"third",
+"Two thirds: two of three equal parts."
 ],
 "thirteen": [
 "thirteen",
@@ -6827,9 +12527,17 @@
 "this",
 "The one here."
 ],
+"thomas": [
+"thomas",
+"Name: Thomas Young, an English scientist."
+],
 "those": [
 "that",
 "The ones there."
+],
+"though": [
+"though",
+"However."
 ],
 "thought": [
 "think",
@@ -6847,6 +12555,14 @@
 "thread",
 "A very thin line, like hair."
 ],
+"threat": [
+"threat",
+"Something that may cause danger."
+],
+"threatened": [
+"threaten",
+"In danger."
+],
 "three": [
 "three",
 "The number 3."
@@ -6858,6 +12574,10 @@
 "thrown": [
 "throw",
 "Sent through the air. Thrown away = put in the rubbish."
+],
+"tied": [
+"tie",
+"Fastened with string."
 ],
 "time": [
 "time",
@@ -6875,9 +12595,17 @@
 "tiny",
 "Very small."
 ],
+"tip": [
+"tip",
+"A useful piece of advice."
+],
 "tired": [
 "tired",
 "Needing rest."
+],
+"tiring": [
+"tire",
+"Making you tired."
 ],
 "to": [
 "to",
@@ -6903,6 +12631,14 @@
 "tell",
 "Said to someone."
 ],
+"tomato": [
+"tomato",
+"A red fruit used as a vegetable."
+],
+"tomatoes": [
+"tomato",
+"Red fruits used as vegetables."
+],
 "tomb": [
 "tomb",
 "A place for a dead body."
@@ -6914,6 +12650,18 @@
 "tomorrow": [
 "tomorrow",
 "The day after today."
+],
+"tongue": [
+"tongue",
+"The soft part in your mouth that tastes."
+],
+"tongues": [
+"tongue",
+"The soft parts in our mouths that taste."
+],
+"tonight": [
+"tonight",
+"This night."
 ],
 "tony": [
 "tony",
@@ -6947,13 +12695,29 @@
 "top",
 "The highest part."
 ],
+"topic": [
+"topic",
+"A subject."
+],
+"torn": [
+"tear",
+"Ripped."
+],
 "tortoise": [
 "tortoise",
 "A slow animal with a hard shell that lives on land."
 ],
+"total": [
+"total",
+"Everything added together."
+],
 "touch": [
 "touch",
 "Put your hand on something."
+],
+"touched": [
+"touch",
+"Put a hand on."
 ],
 "tourist": [
 "tourist",
@@ -6962,6 +12726,10 @@
 "tourists": [
 "tourist",
 "A person who visits a place on holiday."
+],
+"tournaments": [
+"tournament",
+"Big competitions."
 ],
 "towards": [
 "towards",
@@ -6983,6 +12751,10 @@
 "toy",
 "A thing for children to play with."
 ],
+"traces": [
+"trace",
+"Small signs."
+],
 "traceur": [
 "traceur",
 "A person who does parkour."
@@ -6990,6 +12762,10 @@
 "traceurs": [
 "traceur",
 "A person who does parkour."
+],
+"traditional": [
+"traditional",
+"Done in the same way for a long time."
 ],
 "train": [
 "train",
@@ -6999,13 +12775,33 @@
 "train",
 "Practiced to get better."
 ],
+"trainers": [
+"trainer",
+"Sports shoes."
+],
+"training": [
+"training",
+"Practising for a sport."
+],
 "traitor": [
 "traitor",
 "A person who helps the enemy."
 ],
+"transfer": [
+"transfer",
+"Move from one place to another."
+],
+"transformed": [
+"transform",
+"Changed completely."
+],
 "translate": [
 "translate",
 "Change words into another language."
+],
+"translated": [
+"translate",
+"Put in another language."
 ],
 "transparent": [
 "transparent",
@@ -7015,6 +12811,26 @@
 "trapped",
 "Not able to escape."
 ],
+"travel": [
+"travel",
+"Go to another place."
+],
+"travelled": [
+"travel",
+"Went from one place to another."
+],
+"travellers": [
+"traveller",
+"People who travel."
+],
+"travelling": [
+"travel",
+"Moving."
+],
+"travels": [
+"travel",
+"Goes to other places."
+],
 "treasure": [
 "treasure",
 "Very valuable things, like gold."
@@ -7022,6 +12838,14 @@
 "treasures": [
 "treasure",
 "Very valuable things, like gold."
+],
+"treat": [
+"treat",
+"Behave towards."
+],
+"treated": [
+"treat",
+"Behaved towards."
 ],
 "tree": [
 "tree",
@@ -7063,9 +12887,17 @@
 "trip",
 "A journey."
 ],
+"trophic": [
+"trophic",
+"About food in nature."
+],
 "tropical": [
 "tropical",
 "From the hot parts of the world."
+],
+"trousers": [
+"trousers",
+"Clothes for your legs."
 ],
 "true": [
 "true",
@@ -7075,6 +12907,10 @@
 "trust",
 "Believe that someone is good."
 ],
+"truth": [
+"truth",
+"What is true."
+],
 "try": [
 "try",
 "Make an effort to do something; or taste."
@@ -7083,13 +12919,37 @@
 "try",
 "Making an effort."
 ],
+"tsunamis": [
+"tsunami",
+"Giant sea waves."
+],
 "tun": [
 "tun",
 "The dry ball state of a tardigrade."
 ],
+"tunnel": [
+"tunnel",
+"A path under the ground."
+],
+"tunnels": [
+"tunnel",
+"Paths under the ground."
+],
+"turkey": [
+"turkey",
+"A large bird eaten at Christmas."
+],
 "turn": [
 "turn",
 "Move around; or change. Turn on = start a machine."
+],
+"turned": [
+"turn",
+"It turned out: in the end it was."
+],
+"turning": [
+"turning",
+"Turning point: a moment of great change."
 ],
 "turns": [
 "turn",
@@ -7103,9 +12963,29 @@
 "twelve",
 "The number 12."
 ],
+"twenties": [
+"twenty",
+"The years 1920 to 1929."
+],
+"twentieth": [
+"twentieth",
+"Number twenty in order."
+],
 "twenty": [
 "twenty",
 "The number 20."
+],
+"twice": [
+"twice",
+"Two times."
+],
+"twin": [
+"twin",
+"One of two born together."
+],
+"twins": [
+"twin",
+"Two born together."
 ],
 "two": [
 "two",
@@ -7115,9 +12995,41 @@
 "type",
 "A kind."
 ],
+"types": [
+"type",
+"Kinds."
+],
+"typical": [
+"typical",
+"Normal for something."
+],
 "tyrannosaurus": [
 "tyrannosaurus",
 "Tyrannosaurus rex: a big meat-eating dinosaur."
+],
+"umami": [
+"umami",
+"A savoury taste, the fifth basic taste."
+],
+"unable": [
+"unable",
+"Not able."
+],
+"unanswered": [
+"unanswered",
+"With no answer."
+],
+"unbelievable": [
+"believe",
+"Hard to believe."
+],
+"uncensored": [
+"uncensored",
+"Not changed by the government."
+],
+"unconvinced": [
+"unconvinced",
+"Not believing something."
 ],
 "under": [
 "under",
@@ -7127,9 +13039,69 @@
 "understand",
 "Know the meaning."
 ],
+"understood": [
+"understand",
+"Knew the meaning."
+],
+"unexpected": [
+"unexpected",
+"Surprising."
+],
+"unfair": [
+"unfair",
+"Not fair."
+],
+"unhappy": [
+"unhappy",
+"Sad."
+],
+"uniforms": [
+"uniform",
+"Special clothes for a group."
+],
+"unimportant": [
+"unimportant",
+"Not important."
+],
+"unique": [
+"unique",
+"The only one."
+],
 "united": [
 "united",
 "Name of a country, with States: the United States."
+],
+"universe": [
+"universe",
+"All of space."
+],
+"universities": [
+"university",
+"Places for higher study."
+],
+"university": [
+"university",
+"A place to study after school."
+],
+"unknown": [
+"unknown",
+"Not known."
+],
+"unlike": [
+"unlike",
+"Different from."
+],
+"unlikely": [
+"unlikely",
+"Not probable."
+],
+"unlock": [
+"unlock",
+"Open; solve."
+],
+"unscrew": [
+"unscrew",
+"Turn to open."
 ],
 "until": [
 "until",
@@ -7142,6 +13114,10 @@
 "up": [
 "up",
 "To a higher place."
+],
+"upsetting": [
+"upsetting",
+"Making you sad or worried."
 ],
 "uranus": [
 "uranus",
@@ -7179,6 +13155,10 @@
 "use",
 "Doing something with a thing."
 ],
+"usual": [
+"usual",
+"Normal."
+],
 "usually": [
 "usually",
 "Normally."
@@ -7187,13 +13167,57 @@
 "v",
 "The letter V. V-Bucks: money in Fortnite."
 ],
+"vaccine": [
+"vaccine",
+"A medicine that stops illness."
+],
+"vaccines": [
+"vaccine",
+"Medicines that stop illness."
+],
 "valley": [
 "valley",
 "Low land between mountains."
 ],
+"valleys": [
+"valley",
+"Low land between hills."
+],
+"valuable": [
+"valuable",
+"Worth a lot."
+],
+"value": [
+"value",
+"How important something is."
+],
+"vanish": [
+"vanish",
+"Disappear."
+],
+"varies": [
+"vary",
+"Changes."
+],
+"variety": [
+"variety",
+"Many different kinds."
+],
+"vast": [
+"vast",
+"Very big."
+],
 "vegetables": [
 "vegetable",
 "A plant we eat, like a carrot."
+],
+"velcro": [
+"velcro",
+"A fastener with hooks and loops."
+],
+"velociraptor": [
+"velociraptor",
+"Name of a small dinosaur."
 ],
 "venom": [
 "venom",
@@ -7211,6 +13235,10 @@
 "version",
 "One form of something."
 ],
+"versions": [
+"version",
+"Forms of something."
+],
 "vertical": [
 "vertical",
 "Going straight up."
@@ -7218,6 +13246,18 @@
 "very": [
 "very",
 "A lot."
+],
+"vessel": [
+"vessel",
+"A tube for blood."
+],
+"victim": [
+"victim",
+"Someone who is hurt."
+],
+"victory": [
+"victory",
+"Winning."
 ],
 "video": [
 "video",
@@ -7227,6 +13267,14 @@
 "video",
 "Moving pictures on a screen."
 ],
+"view": [
+"view",
+"A thing you can see."
+],
+"viewers": [
+"viewer",
+"People who watch."
+],
 "village": [
 "village",
 "A very small town."
@@ -7234,6 +13282,10 @@
 "villages": [
 "village",
 "A very small town."
+],
+"vinci": [
+"vinci",
+"Part of a name."
 ],
 "viral": [
 "viral",
@@ -7243,13 +13295,25 @@
 "virtual",
 "On a computer; not real."
 ],
+"viruses": [
+"virus",
+"Tiny things that cause illness."
+],
 "visible": [
 "visible",
 "You can see it."
 ],
+"vision": [
+"vision",
+"Sight."
+],
 "visit": [
 "visit",
 "Go to see a place or a person."
+],
+"visited": [
+"visit",
+"Went to see."
 ],
 "visiting": [
 "visit",
@@ -7262,6 +13326,10 @@
 "visits": [
 "visit",
 "Times people go to see something."
+],
+"vital": [
+"vital",
+"Very important."
 ],
 "vitamins": [
 "vitamin",
@@ -7279,13 +13347,33 @@
 "volcano",
 "A mountain that can throw out lava."
 ],
+"volunteers": [
+"volunteer",
+"People who help for free."
+],
+"vote": [
+"vote",
+"Choose."
+],
+"voynich": [
+"voynich",
+"A surname."
+],
 "wadlow": [
 "wadlow",
 "Name of the tallest man in history (Robert Wadlow)."
 ],
+"wage": [
+"wage",
+"Money for work."
+],
 "waited": [
 "wait",
 "Stayed until something happened."
+],
+"waiting": [
+"wait",
+"Staying until something happens."
 ],
 "waits": [
 "wait",
@@ -7331,6 +13419,10 @@
 "want",
 "Wished to have or do."
 ],
+"wants": [
+"want",
+"Would like."
+],
 "war": [
 "war",
 "Fighting between countries."
@@ -7351,9 +13443,21 @@
 "warm",
 "More warm."
 ],
+"warn": [
+"warn",
+"Tell someone about a danger."
+],
+"warning": [
+"warn",
+"Telling someone about a danger."
+],
 "warp": [
 "warp",
 "Warp pipe: a pipe in Mario that takes you to another place."
+],
+"wars": [
+"war",
+"Star Wars: a famous film series."
 ],
 "was": [
 "be",
@@ -7363,9 +13467,25 @@
 "wash",
 "Cleans with water."
 ],
+"waste": [
+"waste",
+"A bad use."
+],
+"wasted": [
+"waste",
+"Used badly."
+],
 "watch": [
 "watch",
 "Look at something for some time."
+],
+"watched": [
+"watch",
+"Looked at."
+],
+"watches": [
+"watch",
+"Looks at."
 ],
 "watching": [
 "watch",
@@ -7374,6 +13494,10 @@
 "water": [
 "water",
 "The clear liquid in rivers and seas."
+],
+"waterfall": [
+"waterfall",
+"Water falling from a high place."
 ],
 "wave": [
 "wave",
@@ -7399,6 +13523,10 @@
 "weak",
 "Not strong."
 ],
+"wealthy": [
+"wealthy",
+"Rich."
+],
 "weapons": [
 "weapon",
 "Something to fight with."
@@ -7415,9 +13543,37 @@
 "website",
 "A place on the internet."
 ],
+"websites": [
+"website",
+"Pages on the internet."
+],
+"week": [
+"week",
+"Seven days."
+],
+"weekend": [
+"weekend",
+"Saturday and Sunday."
+],
 "weeks": [
 "week",
 "Seven days."
+],
+"weighed": [
+"weigh",
+"Had a weight of."
+],
+"weighs": [
+"weigh",
+"Has a weight of."
+],
+"weight": [
+"weight",
+"How heavy something is."
+],
+"well": [
+"well",
+"As well: also."
 ],
 "went": [
 "go",
@@ -7439,13 +13595,29 @@
 "wet",
 "With water on it."
 ],
+"wetlands": [
+"wetland",
+"Wet land."
+],
+"wetter": [
+"wet",
+"More wet."
+],
 "whale": [
 "whale",
 "A very big sea animal."
 ],
+"whales": [
+"whale",
+"Very big sea mammals."
+],
 "what": [
 "what",
 "Which thing."
+],
+"whatever": [
+"whatever",
+"Whatever you do: in any case."
 ],
 "wheel": [
 "wheel",
@@ -7459,9 +13631,17 @@
 "when",
 "At what time."
 ],
+"whenever": [
+"whenever",
+"Every time that."
+],
 "where": [
 "where",
 "In what place."
+],
+"wherever": [
+"wherever",
+"In any place where."
 ],
 "whether": [
 "whether",
@@ -7491,6 +13671,10 @@
 "whole",
 "All; complete."
 ],
+"whose": [
+"whose",
+"Of whom; of which."
+],
 "why": [
 "why",
 "For what reason."
@@ -7499,13 +13683,33 @@
 "wide",
 "Big from side to side."
 ],
+"widely": [
+"widely",
+"By many people."
+],
+"wife": [
+"wife",
+"The woman someone is married to."
+],
 "wild": [
 "wild",
 "Living in nature, not with people."
 ],
+"wilfrid": [
+"wilfrid",
+"A man's name."
+],
 "will": [
 "will",
 "A word for the future."
+],
+"william": [
+"william",
+"A man's name."
+],
+"willows": [
+"willow",
+"Trees near water."
 ],
 "win": [
 "win",
@@ -7519,6 +13723,10 @@
 "window",
 "1. A glass part in a wall. 2. A short time to do something."
 ],
+"wing": [
+"wing",
+"The part of a bird used to fly."
+],
 "wings": [
 "wing",
 "The part a bird uses to fly."
@@ -7526,6 +13734,10 @@
 "winner": [
 "winner",
 "The person who wins."
+],
+"winning": [
+"win",
+"Being first."
 ],
 "wins": [
 "win",
@@ -7535,13 +13747,45 @@
 "winter",
 "The coldest season."
 ],
+"wire": [
+"wire",
+"A thin metal thread."
+],
+"wisdom": [
+"wisdom",
+"Deep knowledge."
+],
+"wish": [
+"wish",
+"Want."
+],
 "with": [
 "with",
 "Together."
 ],
+"within": [
+"within",
+"Inside; in less than."
+],
 "without": [
 "without",
 "Not with."
+],
+"witnesses": [
+"witness",
+"People who see something happen."
+],
+"wolbachia": [
+"wolbachia",
+"A kind of bacteria."
+],
+"wolf": [
+"wolf",
+"A wild dog."
+],
+"wolves": [
+"wolf",
+"Wild dogs."
 ],
 "woman": [
 "woman",
@@ -7551,9 +13795,17 @@
 "win",
 "Was the best in a game."
 ],
+"wonder": [
+"wonder",
+"Ask yourself."
+],
 "wonderful": [
 "wonderful",
 "Very, very good."
+],
+"wondering": [
+"wonder",
+"Asking yourself."
 ],
 "wonders": [
 "wonder",
@@ -7562,6 +13814,18 @@
 "wood": [
 "wood",
 "Material from trees."
+],
+"wooden": [
+"wooden",
+"Made of wood."
+],
+"word": [
+"word",
+"A unit of language."
+],
+"words": [
+"word",
+"Units of language."
 ],
 "work": [
 "work",
@@ -7595,13 +13859,41 @@
 "world",
 "A place in a game."
 ],
+"worldwide": [
+"worldwide",
+"All over the world."
+],
+"worried": [
+"worried",
+"Feeling nervous about a problem."
+],
 "worries": [
 "worry",
 "A feeling that something bad can happen."
 ],
+"worry": [
+"worry",
+"Feel nervous about a problem."
+],
+"worse": [
+"bad",
+"More bad."
+],
+"worth": [
+"worth",
+"Good enough to deserve something."
+],
+"worthwhile": [
+"worthwhile",
+"Worth the effort."
+],
 "would": [
 "would",
 "A word for imaginary situations."
+],
+"wound": [
+"wound",
+"Hurt with a cut."
 ],
 "wrap": [
 "wrap",
@@ -7615,6 +13907,22 @@
 "write",
 "Put words on paper or a screen."
 ],
+"writer": [
+"writer",
+"A person who writes."
+],
+"writers": [
+"writer",
+"People who write."
+],
+"writing": [
+"writing",
+"Written words."
+],
+"written": [
+"write",
+"Put in words on paper."
+],
 "wrong": [
 "wrong",
 "Not correct."
@@ -7627,6 +13935,10 @@
 "x",
 "The letter X. X-rays: photos of your bones."
 ],
+"yale": [
+"yale",
+"A US university."
+],
 "year": [
 "year",
 "Twelve months."
@@ -7638,6 +13950,10 @@
 "yellow": [
 "yellow",
 "The color of the sun."
+],
+"yellowstone": [
+"yellowstone",
+"A national park in the USA."
 ],
 "yes": [
 "yes",
@@ -7679,9 +13995,17 @@
 "youtuber",
 "A person who makes videos for YouTube."
 ],
+"yutyrannus": [
+"yutyrannus",
+"Name of a large feathered dinosaur."
+],
 "z": [
 "z",
 "The letter Z."
+],
+"zealand": [
+"zealand",
+"New Zealand: a country in the Pacific."
 ],
 "zero": [
 "zero",
@@ -7690,5 +14014,9 @@
 "zombies": [
 "zombie",
 "A dead person who walks, in stories."
+],
+"zones": [
+"zone",
+"Areas."
 ]
 }

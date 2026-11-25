@@ -1,0 +1,496 @@
+{
+ "id": "ca-comida-b2",
+ "topic": "comida",
+ "level": "B2",
+ "title": "El cinquè gust",
+ "short": "El cinquè gust",
+ "text": [
+  "Si pregunteu a la majoria de la gent quants gustos bàsics hi ha, probablement en diran quatre: dolç, salat, àcid i amarg. Durant molt de temps, els científics europeus haurien donat la mateixa resposta. Tanmateix, hi ha un cinquè gust que notes gairebé cada dia, tant si menges un tros de pizza com un plat de sopa o unes patates fregides amb quètxup. Es diu umami, i la història del seu descobriment comença en una cuina del Japó fa més d'un segle.",
+  "El 1907, un químic anomenat Kikunae Ikeda sopava a casa seva, a Tòquio, quan es va fixar en una cosa de la sopa que havia preparat la seva dona. Era dashi, un brou tradicional japonès que es fa amb un tipus d'alga anomenada kombu. La sopa tenia un gust intens i saborós que no semblava encaixar en cap de les quatre categories conegudes. A Ikeda el va intrigar tant que va decidir investigar-ho al seu laboratori.",
+  "Després de mesos d'experiments, va aconseguir aïllar la substància responsable d'aquell gust. Era el glutamat, un compost natural present en molts aliments. Ikeda va anomenar aquest gust umami, d'una paraula japonesa que vol dir més o menys deliciós, i el 1908 va publicar els seus resultats. Com que era un home pràctic, també va desenvolupar una manera de produir glutamat en forma de pols blanca que es podia afegir al menjar. Es va posar a la venda l'any següent i es va fer molt popular a la cuina asiàtica.",
+  "Fora del Japó, però, molts científics no n'estaven convençuts. Durant bona part del segle vint, l'umami es va considerar sovint una simple barreja dels altres gustos. No va ser fins a principis dels anys dos mil que els investigadors van identificar a la llengua uns receptors específics que reaccionen al glutamat. Aquest descobriment va demostrar per fi que l'umami és un gust bàsic independent, i que Ikeda, que havia mort dècades abans, sempre havia tingut raó.",
+  "Un cop saps què és l'umami, comences a notar-lo pertot arreu. Els tomàquets madurs, els bolets, formatges com el parmesà, el pernil curat i la salsa de soja són rics en glutamat. De fet, molts plats clàssics de tot el món combinen diversos d'aquests ingredients, cosa que podria explicar per què resulten tan satisfactoris. Alguns investigadors fins i tot suggereixen que naixem amb gust per l'umami, ja que la llet materna conté molt de glutamat.",
+  "Els cuiners també han après a aprofitar l'umami. Una mica d'aquest gust pot fer que el menjar sembli més complet i equilibrat, cosa que vol dir que cal menys sal. Per això, alguns nutricionistes creuen que l'umami podria ajudar a reduir la quantitat de sal de la dieta, sobretot en la gent gran, que de vegades ha perdut una part del sentit del gust.",
+  "Així que la pròxima vegada que mosseguis un entrepà de formatge i tomàquet i pensis que és boníssim, sabràs per què. Gràcies a un científic curiós i a un plat de sopa, ara sabem que la nostra llengua és una mica més complexa del que crèiem."
+ ],
+ "q": [
+  [
+   "Quina idea planteja l'autor al primer paràgraf?",
+   [
+    "A la majoria de la gent no li agrada la pizza.",
+    "Els científics europeus van descobrir el cinquè gust.",
+    "Sovint notem un gust sense saber com es diu.",
+    "Només hi ha quatre gustos bàsics."
+   ],
+   2
+  ],
+  [
+   "Per què va començar Ikeda a investigar la sopa?",
+   [
+    "El seu gust no coincidia amb cap dels que coneixia.",
+    "La seva dona li va demanar que la millorés.",
+    "Era molt més salada del normal.",
+    "La volia vendre a les botigues."
+   ],
+   0
+  ],
+  [
+   "Què vol dir l'autor quan descriu Ikeda com un home pràctic?",
+   [
+    "Preferia cuinar a treballar al laboratori.",
+    "No es refiava de les teories.",
+    "Va trobar una manera de fer servir el descobriment a la vida diària.",
+    "Va guanyar molts diners amb la sopa."
+   ],
+   2
+  ],
+  [
+   "Què va passar a principis dels anys dos mil?",
+   [
+    "Els científics van trobar proves que l'umami és un gust independent.",
+    "Ikeda va rebre un premi important.",
+    "El glutamat es va prohibir en alguns països.",
+    "L'umami es va fer popular a Europa per primera vegada."
+   ],
+   0
+  ],
+  [
+   "Per què l'autor esmenta la llet materna?",
+   [
+    "per donar suport a la idea que ens agrada l'umami des que naixem",
+    "per mostrar que el glutamat és perillós per als nadons",
+    "per comparar-la amb la sopa japonesa",
+    "per explicar com es produeix el glutamat"
+   ],
+   0
+  ],
+  [
+   "Segons el sisè paràgraf, l'umami podria ser útil perquè",
+   [
+    "millora el sentit de l'olfacte",
+    "ajuda a aprimar-se",
+    "fa el menjar més dolç per a la gent gran",
+    "permet fer servir menys sal"
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf explica l'autor d'on ve el nom umami?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   2
+  ],
+  [
+   "En quin paràgraf enumera l'autor diversos aliments que contenen glutamat?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   4
+  ],
+  [
+   "En quin paràgraf diu l'autor que alguns experts van dubtar del descobriment?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf descriu l'autor el moment que va portar al descobriment?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "tomàquet",
+   "🍅"
+  ],
+  [
+   "bolet",
+   "🍄"
+  ],
+  [
+   "formatge",
+   "🧀"
+  ],
+  [
+   "sopa",
+   "🍲"
+  ],
+  [
+   "sal",
+   "🧂"
+  ],
+  [
+   "llengua",
+   "👅"
+  ]
+ ],
+ "halves": [
+  [
+   "Ikeda es va fixar en una cosa...",
+   "...de la sopa que havia preparat la seva dona."
+  ],
+  [
+   "Va aconseguir aïllar la substància...",
+   "...responsable d'aquell gust."
+  ],
+  [
+   "Umami ve d'una paraula japonesa...",
+   "...que vol dir més o menys deliciós."
+  ],
+  [
+   "Els receptors de la llengua...",
+   "...reaccionen al glutamat."
+  ],
+  [
+   "Cal menys sal...",
+   "...quan el menjar té més umami."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "El sentit del gust està molt {{0}} amb el de l'olfacte. De fet, bona part del que {{1}} gust ve en realitat del nas. Ho pots {{2}} tu mateix: tapa't el nas mentre menges un caramel i veuràs que et costa molt més {{3}} el gust. Per això sembla que el menjar {{4}} el gust quan estem refredats. Així que, si vols gaudir del menjar, val la {{5}} parar atenció també a la seva olor.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "El glutamat és present de manera natural en {{6}} aliments, sobretot en els que s'han curat o fermentat. Per exemple, com més temps madura un formatge, {{7}} glutamat conté. El mateix passa amb els tomàquets, {{8}} desenvolupen més umami a mesura que maduren. Hi ha qui creu que el glutamat afegit és dolent per a la salut, però la majoria dels estudis científics no n'han trobat {{9}} prova. {{10}} amb la sal i el sucre, això sí, és millor no prendre'n {{11}}.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "Kikunae Ikeda va ser un científic {{12}} a qui li encantava el menjar. El seu {{13}} va canviar la nostra manera d'entendre el gust. Al principi, molta gent no n'estava {{14}}, però avui l'{{15}} de l'umami està àmpliament acceptada. Els cuiners el fan servir perquè els plats siguin més {{16}}, i els {{17}} el continuen estudiant.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "El sentit del gust està molt ___ amb el de l'olfacte.",
+    [
+     "relacionat",
+     "tractat",
+     "enganxat",
+     "barrejat"
+    ],
+    0
+   ],
+   [
+    "De fet, bona part del que ___ gust ve en realitat del nas.",
+    [
+     "diem",
+     "expliquem",
+     "parlem",
+     "anomenem"
+    ],
+    3
+   ],
+   [
+    "Ho pots ___ tu mateix: tapa't el nas mentre menges un caramel i veuràs que et costa molt més … el gust.",
+    [
+     "comprovar",
+     "provar-te",
+     "veure't",
+     "mirar-te"
+    ],
+    0
+   ],
+   [
+    "Ho pots … tu mateix: tapa't el nas mentre menges un caramel i veuràs que et costa molt més ___ el gust.",
+    [
+     "reconèixer",
+     "adonar",
+     "assabentar",
+     "caure"
+    ],
+    0
+   ],
+   [
+    "Per això sembla que el menjar ___ el gust quan estem refredats.",
+    [
+     "falli",
+     "falti",
+     "deixi",
+     "perdi"
+    ],
+    3
+   ],
+   [
+    "Així que, si vols gaudir del menjar, val la ___ parar atenció també a la seva olor.",
+    [
+     "gana",
+     "força",
+     "pena",
+     "raó"
+    ],
+    2
+   ],
+   [
+    "El glutamat és present de manera natural en ___ aliments, sobretot en els que s'han curat o fermentat.",
+    [
+     "molts"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Per exemple, com més temps madura un formatge, ___ glutamat conté.",
+    [
+     "més"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El mateix passa amb els tomàquets, ___ desenvolupen més umami a mesura que maduren.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Hi ha qui creu que el glutamat afegit és dolent per a la salut, però la majoria dels estudis científics no n'han trobat ___ prova.",
+    [
+     "cap"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ amb la sal i el sucre, això sí, és millor no prendre'n ….",
+    [
+     "Com"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "… amb la sal i el sucre, això sí, és millor no prendre'n ___.",
+    [
+     "massa"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Kikunae Ikeda va ser un científic ___ a qui li encantava el menjar.",
+    [
+     "curiós"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CURIOSITAT"
+    }
+   ],
+   [
+    "El seu ___ va canviar la nostra manera d'entendre el gust.",
+    [
+     "descobriment"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DESCOBRIR"
+    }
+   ],
+   [
+    "Al principi, molta gent no n'estava ___, però avui l'… de l'umami està àmpliament acceptada.",
+    [
+     "convençuda"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CONVÈNCER"
+    }
+   ],
+   [
+    "Al principi, molta gent no n'estava …, però avui l'___ de l'umami està àmpliament acceptada.",
+    [
+     "existència"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXISTIR"
+    }
+   ],
+   [
+    "Els cuiners el fan servir perquè els plats siguin més ___, i els … el continuen estudiant.",
+    [
+     "saborosos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SABOR"
+    }
+   ],
+   [
+    "Els cuiners el fan servir perquè els plats siguin més …, i els ___ el continuen estudiant.",
+    [
+     "científics"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CIÈNCIA"
+    }
+   ],
+   [
+    "Ikeda va començar a investigar la sopa perquè tenia curiositat. → Ikeda va començar a investigar la sopa ___.",
+    [
+     "per curiositat"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Ikeda va començar a investigar la sopa perquè tenia curiositat.",
+     "w": "PER",
+     "p": "Ikeda va començar a investigar la sopa ___."
+    }
+   ],
+   [
+    "No es va acceptar l'umami com a gust bàsic fins fa poc. → L'umami ___ acceptat com a gust bàsic fa poc.",
+    [
+     "només ha estat",
+     "només va ser"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "No es va acceptar l'umami com a gust bàsic fins fa poc.",
+     "w": "NOMÉS",
+     "p": "L'umami ___ acceptat com a gust bàsic fa poc."
+    }
+   ],
+   [
+    "És possible que l'umami ajudi a menjar menys sal. → ___ l'umami ajudi a menjar menys sal.",
+    [
+     "Pot ser que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "És possible que l'umami ajudi a menjar menys sal.",
+     "w": "POT",
+     "p": "___ l'umami ajudi a menjar menys sal."
+    }
+   ],
+   [
+    "M'estimo més la pizza que la pasta. → M'___ la pizza que la pasta.",
+    [
+     "agrada més"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "M'estimo més la pizza que la pasta.",
+     "w": "AGRADA",
+     "p": "M'___ la pizza que la pasta."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El quinto sabor",
+   "sub": "La historia del umami",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "tomate",
+    "seta",
+    "queso",
+    "sopa",
+    "sal",
+    "lengua"
+   ]
+  }
+ }
+}

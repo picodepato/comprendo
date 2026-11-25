@@ -7,7 +7,7 @@
 (() => {
 const GAMES = ["conj", "orden", "error", "tiempos", "memoria"];
 const ICON = {conj: "⚡", orden: "🧩", error: "🔍", tiempos: "⏳", memoria: "🧠"};
-const LVS = ["A1", "A2", "B1"];
+const LVS = ["A1", "A2", "B1", "B2"];
 let TX = null;
 const txP = fetch("content/textos-gramatica.json").then(r => r.json()).then(j => (TX = j)).catch(() => (TX = {}));
 const DATA = {};
@@ -86,8 +86,8 @@ function fromSrc(arr, min) {
   const now = arr.filter(x => x.lv === G.lvl);
   return now.length >= min ? now : upTo(arr, G.lvl);
 }
-const TENSES = {es: {A1: ["pres"], A2: ["pres", "pret"], B1: ["pret", "imp", "fut", "pres"]}, en: {A1: ["pres"], A2: ["pres", "past"], B1: ["past", "fut", "perf"]}};
-const tname = (t, lang) => tl(t === "pret" && G.lvl === "B1" ? "t_pret_b1" : "t_" + t, lang);
+const TENSES = {es: {A1: ["pres"], A2: ["pres", "pret"], B1: ["pret", "imp", "fut", "pres"], B2: ["pret", "imp", "fut", "pres"]}, en: {A1: ["pres"], A2: ["pres", "past"], B1: ["past", "fut", "perf"], B2: ["past", "fut", "perf"]}};
+const tname = (t, lang) => tl(t === "pret" && (G.lvl === "B1" || G.lvl === "B2") ? "t_pret_b1" : "t_" + t, lang);
 const tLabel = t => { const {S} = st(); return esc(tname(t, S.learn)) + (both() ? ` · ${esc(tname(t, S.know))}` : ""); };
 
 /* ---------- setup ---------- */
@@ -111,7 +111,7 @@ function setup() {
     G.queue = []; const order = [];
     for (let i = 0; i < 10; i++) order.push(...shuf(["past", "pres", "fut"]));
     for (const k of order) { const x = by[k].shift(); if (x) G.queue.push(x); }
-    G.size = G.queue.length; G.lives = 3; G.started = false; G.dur = {A1: 12, A2: 10, B1: 8.5}[G.lvl] * 1000; G.max = 20;
+    G.size = G.queue.length; G.lives = 3; G.started = false; G.dur = {A1: 12, A2: 10, B1: 8.5, B2: 7.5}[G.lvl] * 1000; G.max = 20;
   } else if (g === "memoria") {
     setupMem();
   }

@@ -1,0 +1,498 @@
+{
+ "id": "dinosaurios-b2",
+ "topic": "dinosaurios",
+ "level": "B2",
+ "title": "Los dinosaurios que nunca se extinguieron",
+ "short": "Los dinosaurios que nunca se extinguieron",
+ "text": [
+  "Hace sesenta y seis millones de años, un asteroide de unos diez kilómetros de ancho chocó contra lo que hoy es México. El impacto provocó incendios, tsunamis y años de oscuridad, y desaparecieron cerca de tres cuartas partes de las especies de la Tierra. Entre ellas, como sabe cualquier escolar, estaban los dinosaurios. ¿O no? Según la mayoría de los paleontólogos actuales, un grupo de dinosaurios sobrevivió a la catástrofe, y sus descendientes siguen a nuestro alrededor. Puede que incluso te hayas comido uno en el almuerzo.",
+  "La idea de que las aves son dinosaurios vivos no es tan nueva como parece. En 1861, solo dos años después de que Charles Darwin publicara su teoría de la evolución, unos trabajadores de una cantera de Alemania encontraron el fósil de una criatura extraña. Tenía dientes, garras en las alas y una larga cola con huesos como la de un reptil, pero también tenía plumas claramente visibles. La llamaron Archaeopteryx, y enseguida se hizo famosa como posible eslabón entre los reptiles y las aves.",
+  "Sin embargo, durante más de un siglo la relación siguió siendo polémica. Muchos expertos creían que las aves procedían de otro grupo de reptiles, y los dinosaurios se imaginaban por lo general como gigantes lentos y de sangre fría que tenían poco en común con un gorrión. Esa imagen empezó a cambiar en los años sesenta y setenta, cuando unos investigadores que estudiaban un depredador pequeño y rápido llamado Deinonychus se dieron cuenta de lo mucho que se parecía su esqueleto al de un ave.",
+  "Las pruebas más convincentes, no obstante, llegaron de China. En 1996, unos agricultores de la provincia de Liaoning descubrieron un pequeño dinosaurio con el cuerpo cubierto de una fina capa de filamentos esponjosos, una forma primitiva de plumas. En los años siguientes, la misma región aportó decenas de dinosaurios con plumas, conservados con un detalle extraordinario gracias a la ceniza volcánica. Uno de ellos, Yutyrannus, era pariente del Tyrannosaurus rex, lo que sugiere que incluso algunos grandes carnívoros podían estar cubiertos de plumas, al menos en parte.",
+  "Estos descubrimientos han transformado la forma en que imaginamos a los dinosaurios. El famoso Velociraptor, que en las películas aparece como un monstruo escamoso del tamaño de una persona, en realidad era más o menos como un pavo y casi seguro tenía plumas. Los científicos también han descubierto que muchos dinosaurios ponían huevos en nidos, se sentaban sobre ellos para darles calor y tenían pulmones y huesos parecidos a los de las aves actuales.",
+  "¿Por qué aparecieron las plumas? Curiosamente, parece que no surgieron para volar. Las primeras plumas probablemente servían para mantener el calor o para atraer pareja, igual que un pavo real luce su cola. Solo más tarde algunos dinosaurios pequeños empezaron a usarlas para planear y, finalmente, para volar.",
+  "Así que la próxima vez que veas una paloma en el parque o una gallina en una granja, merece la pena recordar su historia familiar. Los dinosaurios no desaparecieron del todo cuando cayó el asteroide. Algunos simplemente se hicieron más pequeños, desarrollaron alas y se lanzaron al cielo."
+ ],
+ "q": [
+  [
+   "¿Qué sugiere el autor en el primer párrafo?",
+   [
+    "Los escolares saben más que los paleontólogos.",
+    "Lo que casi todo el mundo sabe de los dinosaurios no es del todo cierto.",
+    "El asteroide acabó con todas las especies.",
+    "Los dinosaurios desaparecieron antes del asteroide."
+   ],
+   1
+  ],
+  [
+   "¿Por qué fue tan importante Archaeopteryx?",
+   [
+    "Tenía rasgos de reptil y de ave.",
+    "Demostró que Darwin estaba equivocado.",
+    "Fue el primer fósil encontrado en Alemania.",
+    "Era el dinosaurio más grande descubierto."
+   ],
+   0
+  ],
+  [
+   "En el tercer párrafo, el autor explica que durante muchos años",
+   [
+    "los dinosaurios se imaginaban rápidos y de sangre caliente",
+    "a nadie le interesaba Archaeopteryx",
+    "todo el mundo aceptaba que las aves venían de los dinosaurios",
+    "la mayoría de los expertos no creía que los dinosaurios estuvieran emparentados con las aves"
+   ],
+   3
+  ],
+  [
+   "¿Por qué eran tan valiosos los fósiles de Liaoning?",
+   [
+    "Fueron los primeros fósiles con dientes.",
+    "Los descubrieron científicos famosos.",
+    "La ceniza volcánica había conservado pequeños detalles como las plumas.",
+    "Eran los dinosaurios más grandes encontrados."
+   ],
+   2
+  ],
+  [
+   "¿Qué dice el autor sobre el Velociraptor?",
+   [
+    "Era más grande que una persona.",
+    "Las películas han dado una imagen falsa de él.",
+    "No tenía ninguna pluma.",
+    "Era el antepasado del pavo."
+   ],
+   1
+  ],
+  [
+   "Según el sexto párrafo, las primeras plumas",
+   [
+    "servían para atrapar presas",
+    "solo aparecieron en dinosaurios grandes",
+    "eran más largas que las de un pavo real",
+    "probablemente no servían para volar"
+   ],
+   3
+  ],
+  [
+   "¿En qué párrafo describe el autor cómo cuidaban los dinosaurios sus huevos?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   4
+  ],
+  [
+   "¿En qué párrafo menciona el autor un descubrimiento hecho poco después de una famosa teoría científica?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   1
+  ],
+  [
+   "¿En qué párrafo explica el autor la causa de una extinción masiva?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   0
+  ],
+  [
+   "¿En qué párrafo menciona el autor a un pariente de un dinosaurio muy famoso?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "pluma",
+   "🪶"
+  ],
+  [
+   "huevo",
+   "🥚"
+  ],
+  [
+   "gallina",
+   "🐔"
+  ],
+  [
+   "fósil",
+   "🦴"
+  ],
+  [
+   "ala",
+   "🪽"
+  ],
+  [
+   "nido",
+   "🪺"
+  ]
+ ],
+ "halves": [
+  [
+   "Un asteroide chocó...",
+   "...contra lo que hoy es México."
+  ],
+  [
+   "Archaeopteryx tenía dientes...",
+   "...pero también plumas."
+  ],
+  [
+   "Unos agricultores chinos descubrieron...",
+   "...un dinosaurio cubierto de filamentos."
+  ],
+  [
+   "El Velociraptor era...",
+   "...más o menos como un pavo."
+  ],
+  [
+   "Algunos dinosaurios pequeños empezaron...",
+   "...a usar las plumas para planear."
+  ]
+ ],
+ "grammar": {
+  "title": "Uso de la lengua",
+  "rule": "Cuatro partes como el examen <b>Use of English</b> de Cambridge, pero en español. Partes 2, 3 y 4: escribe tus respuestas y pulsa <b>Comprobar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Parte 1 · Huecos con opciones",
+    "help": "Lee el texto y elige la palabra o expresión que mejor completa cada hueco.",
+    "text": "Los paleontólogos suelen pasar semanas trabajando en lugares calurosos y polvorientos, en {{0}} de fósiles. Cuando encuentran uno, tienen que {{1}} de la roca muy despacio, con herramientas pequeñas y pinceles. Un solo error podría {{2}} un fósil que ha sobrevivido millones de años. Ya en el laboratorio, los huesos se limpian y se estudian a {{3}}. A veces pasan años hasta que una nueva especie se {{4}} oficialmente. Es un trabajo lento, pero para muchos científicos no hay nada más emocionante que ser el primero en {{5}} los ojos en una criatura que nadie ha visto nunca.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Parte 2 · Huecos abiertos",
+    "help": "Escribe una sola palabra en cada hueco.",
+    "text": "No todos los dinosaurios eran gigantes. De hecho, muchos no eran más grandes {{6}} una gallina. Algunos de los dinosaurios más pequeños pesaban menos de un kilo, y varios probablemente podían trepar a los árboles. Los científicos creen que fue entre estos dinosaurios pequeños y ligeros donde {{7}} el vuelo. Ser pequeño también ayudó a algunos a sobrevivir {{8}} cayó el asteroide, porque necesitaban menos comida. Los animales grandes, {{9}} cambio, lo tenían mucho más difícil para encontrar suficiente alimento. Esto podría explicar por {{10}} los únicos dinosaurios que quedan hoy son los que vuelan, o {{11}} antepasados volaban.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Parte 3 · Formación de palabras",
+    "help": "Usa la palabra en mayúsculas para formar la palabra que falta.",
+    "text": "El descubrimiento de dinosaurios con plumas fue uno de los momentos más {{12}} de la paleontología moderna. Demostró que la {{13}} entre los dinosaurios y las aves era mucho más estrecha de lo que se pensaba. Muchos científicos se mostraron escépticos {{14}}, pero las pruebas eran demasiado fuertes para ignorarlas. Hoy la mayoría de los expertos están de {{15}}. La {{16}} de los dinosaurios en libros y películas ha cambiado, y las ilustraciones modernas son mucho más {{17}}.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Parte 4 · Transformaciones",
+    "help": "Completa la segunda frase para que signifique lo mismo que la primera. Usa la palabra dada sin cambiarla. Escribe entre dos y cinco palabras.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Los paleontólogos suelen pasar semanas trabajando en lugares calurosos y polvorientos, en ___ de fósiles.",
+    [
+     "buscadora",
+     "buscar",
+     "buscado",
+     "busca"
+    ],
+    3
+   ],
+   [
+    "Cuando encuentran uno, tienen que ___ de la roca muy despacio, con herramientas pequeñas y pinceles.",
+    [
+     "sacarse",
+     "tirarlo",
+     "echarlo",
+     "extraerlo"
+    ],
+    3
+   ],
+   [
+    "Un solo error podría ___ un fósil que ha sobrevivido millones de años.",
+    [
+     "herir",
+     "dañar",
+     "lesionar",
+     "doler"
+    ],
+    1
+   ],
+   [
+    "Ya en el laboratorio, los huesos se limpian y se estudian a ___.",
+    [
+     "fondo",
+     "profundo",
+     "hondo",
+     "bajo"
+    ],
+    0
+   ],
+   [
+    "A veces pasan años hasta que una nueva especie se ___ oficialmente.",
+    [
+     "habla",
+     "cuenta",
+     "dice",
+     "describe"
+    ],
+    3
+   ],
+   [
+    "Es un trabajo lento, pero para muchos científicos no hay nada más emocionante que ser el primero en ___ los ojos en una criatura que nadie ha visto nunca.",
+    [
+     "dar",
+     "meter",
+     "poner",
+     "echar"
+    ],
+    2
+   ],
+   [
+    "De hecho, muchos no eran más grandes ___ una gallina.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Los científicos creen que fue entre estos dinosaurios pequeños y ligeros donde ___ el vuelo.",
+    [
+     "surgió",
+     "apareció"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Ser pequeño también ayudó a algunos a sobrevivir ___ cayó el asteroide, porque necesitaban menos comida.",
+    [
+     "cuando"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Los animales grandes, ___ cambio, lo tenían mucho más difícil para encontrar suficiente alimento.",
+    [
+     "en"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Esto podría explicar por ___ los únicos dinosaurios que quedan hoy son los que vuelan, o … antepasados volaban.",
+    [
+     "qué"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Esto podría explicar por … los únicos dinosaurios que quedan hoy son los que vuelan, o ___ antepasados volaban.",
+    [
+     "cuyos"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El descubrimiento de dinosaurios con plumas fue uno de los momentos más ___ de la paleontología moderna.",
+    [
+     "emocionantes"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EMOCIONAR"
+    }
+   ],
+   [
+    "Demostró que la ___ entre los dinosaurios y las aves era mucho más estrecha de lo que se pensaba.",
+    [
+     "relación"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "RELACIONAR"
+    }
+   ],
+   [
+    "Muchos científicos se mostraron escépticos ___, pero las pruebas eran demasiado fuertes para ignorarlas.",
+    [
+     "inicialmente"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INICIO"
+    }
+   ],
+   [
+    "Hoy la mayoría de los expertos están de ___.",
+    [
+     "acuerdo"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ACORDAR"
+    }
+   ],
+   [
+    "La ___ de los dinosaurios en libros y películas ha cambiado, y las ilustraciones modernas son mucho más ….",
+    [
+     "apariencia"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "APARECER"
+    }
+   ],
+   [
+    "La … de los dinosaurios en libros y películas ha cambiado, y las ilustraciones modernas son mucho más ___.",
+    [
+     "precisas"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "PRECISIÓN"
+    }
+   ],
+   [
+    "Hoy la mayoría de los expertos cree que las aves son dinosaurios. → Hoy la mayoría de los expertos ___ las aves son dinosaurios.",
+    [
+     "está de acuerdo en que",
+     "están de acuerdo en que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Hoy la mayoría de los expertos cree que las aves son dinosaurios.",
+     "w": "ACUERDO",
+     "p": "Hoy la mayoría de los expertos ___ las aves son dinosaurios."
+    }
+   ],
+   [
+    "El Velociraptor era mucho más pequeño que en las películas. → El Velociraptor no era ___ como en las películas.",
+    [
+     "tan grande"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "El Velociraptor era mucho más pequeño que en las películas.",
+     "w": "TAN",
+     "p": "El Velociraptor no era ___ como en las películas."
+    }
+   ],
+   [
+    "Unos agricultores descubrieron el fósil en 1996. → El fósil ___ unos agricultores en 1996.",
+    [
+     "fue descubierto por"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Unos agricultores descubrieron el fósil en 1996.",
+     "w": "FUE",
+     "p": "El fósil ___ unos agricultores en 1996."
+    }
+   ],
+   [
+    "Es posible que el Tyrannosaurus rex tuviera plumas. → El Tyrannosaurus rex ___ plumas.",
+    [
+     "podría haber tenido",
+     "podría tener"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Es posible que el Tyrannosaurus rex tuviera plumas.",
+     "w": "PODRÍA",
+     "p": "El Tyrannosaurus rex ___ plumas."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The dinosaurs that never died",
+   "sub": "Why birds are dinosaurs",
+   "grammar": "Use of English: four tasks like the Cambridge B2 First exam (multiple-choice cloze, open cloze, word formation and key word transformation), in Spanish.",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "feather",
+    "egg",
+    "chicken",
+    "fossil",
+    "wing",
+    "nest"
+   ]
+  }
+ }
+}
