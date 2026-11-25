@@ -298,7 +298,7 @@ function lecturasDe(lang, nivel) {
 }
 function inicioHTML() {
   const j = juegoRuta, {S, CAT} = st(), cfg = JUEGOS[j];
-  const c = E.crear[j] ||= {lang: CAT.courses.find(x => x.learn === S.learn && x.ready) ? S.learn : "en", nivel: S.level || "A1", lectura: "", equipos: cfg.tipo === "rondas" ? 0 : 4, dur: j === "piloto" ? 15 : 10, rd: j === "apuesta" ? 60 : 40};
+  const c = E.crear[j] ||= {lang: CAT.courses.find(x => x.learn === S.learn && x.ready) ? S.learn : "en", nivel: S.level || "A1", lectura: "", juega: null, equipos: cfg.tipo === "rondas" ? 0 : 4, dur: j === "piloto" ? 15 : 10, rd: j === "apuesta" ? 60 : 40};
   const cursos = CAT.courses.filter(x => x.ready).map(x => x.learn);
   const lvs = CAT.levels.filter(l => lecturasDe(c.lang, l).length); if (!lvs.includes(c.nivel)) c.nivel = lvs[0] || "A1"; /* C1 only where the course has it */
   const ls = lecturasDe(c.lang, c.nivel); if (!ls.some(r => r.id === c.lectura)) c.lectura = ls[0]?.id || "";
@@ -320,6 +320,7 @@ function inicioHTML() {
         <div class="rt-fila"><label>${T("equipos")}<select data-rt-c="equipos">${eqOps.map(n => `<option value="${n}" ${n === c.equipos ? "selected" : ""}>${n ? n : esc(s1("solos", lenG()))}</option>`).join("")}</select></label>
         ${cfg.tipo === "rondas" ? `<label>${T("segundos")}<select data-rt-c="rd">${[20, 30, 40, 60, 90, 120].map(n => `<option ${n === c.rd ? "selected" : ""}>${n}</option>`).join("")}</select></label>`
           : `<label>${T("minutos")}<select data-rt-c="dur">${[5, 8, 10, 15, 20, 25, 30].map(n => `<option ${n === c.dur ? "selected" : ""}>${n}</option>`).join("")}</select></label>`}</div>
+        <label class="rt-check"><input type="checkbox" data-rt-c="juega" ${(c.juega ?? !esProfe()) ? "checked" : ""}> ${T("juego_yo")}</label>
         <p class="rt-err" role="alert">${E.err ? T(E.err) : ""}</p>
         <button class="btn main" ${E.busy || !c.lectura ? "disabled" : ""}>✨ ${T("crearb")}</button>
         ${mias.length ? `<p class="rt-small">${mias.map(([k]) => `<a href="#reto-pizarra-${k}">${T("pizarra")} ${k}</a>`).join(" · ")}</p>` : ""}</form>
@@ -340,25 +341,36 @@ function cabeza(extra = "") {
 const aviso = () => E.msg ? `<p class="rt-aviso ${E.msgOk ? "ok" : ""}" role="status">${T(E.msg, E.msgV)}</p>` : "";
 function avisar(k, ok, v) { E.msg = k; E.msgOk = ok; E.msgV = v; clearTimeout(avisar.t); avisar.t = setTimeout(() => { E.msg = ""; pintar(true); }, 2600); if (!ok && navigator.vibrate) try { navigator.vibrate(150); } catch (e) {} }
 
+const esProfe = () => { const r = window.LYACuentas?.rol; return r === "profe" || r === "admin"; };
+/* quien ha creado la sala y también juega: lleva los botones de la pizarra en su móvil */
+function mandoHTML() {
+  const s = sala(), clave = mem().host[s.codigo]?.clave; if (!clave || s.fase === "fin" || acabado()) return "";
+  let b = "";
+  if (s.fase === "espera") b = `<button class="btn main" data-rt="empezar" ${E.st.jugadores.length && !E.busy ? "" : "disabled"}>${T("empezar")}</button>`;
+  else if (tipo() === "rondas" && E.G) { const ultima = s.r >= E.G.rondas.length - 1; b = `<button class="btn ${rondaAbierta() ? "" : "main"}" data-rt="${ultima ? "terminar" : "siguiente"}">${ultima ? T("verres") : T("siguiente")}</button>`; }
+  else b = `<button class="btn" data-rt="terminar">${T("terminar")}</button>`;
+  return `<div class="rt-mando"><p class="rt-small">🧑‍🏫 ${T("anfitrion")}</p>${s.fase === "espera" ? `<p class="rt-codigo rt-codigo-s">${s.codigo.slice(0, 3)} ${s.codigo.slice(3)}</p><p class="rt-small">${T("jugadores", {n: E.st.jugadores.length})}</p>` : ""}
+    <div class="rt-mando-b">${b}<a class="btn" href="#reto-pizarra-${s.codigo}">${T("ver_piz")}</a></div></div>`;
+}
 function jugarHTML() {
   const s = sala(), y = yo(), m = mem(), nombreG = m.nombre || (window.LYACuentas?.usuario || "");
   const tit = E.R ? limpio(E.R.title) : "";
   if (!y && s.fase === "fin") return `<section class="wrap rt"><div class="rt-box"><p>${T("e_fin")}</p><a class="btn" href="#reto-${s.juego}">← ${T("otro")}</a></div></section>`;
   if (!y || (s.fase === "espera" && E.ui.cambiar)) {
     const sel = +(E.ui.equipo || (y && y.e) || 0);
-    return `<section class="wrap rt" style="--c:${JUEGOS[s.juego].c}"><h1 class="rt-h">${titulo(s.juego)} <small>#${s.codigo}</small></h1>${tit ? `<p class="en">${esc(tit)}</p>` : ""}
+    return `<section class="wrap rt" style="--c:${JUEGOS[s.juego].c}"><h1 class="rt-h">${titulo(s.juego)} <small>#${s.codigo}</small></h1>${mandoHTML()}${tit ? `<p class="en">${esc(tit)}</p>` : ""}
       <form class="rt-box" data-rt-form="unirme"><label for="rt-nom">${T("nombre")}</label><input id="rt-nom" data-rt-in maxlength="20" autocomplete="nickname" value="${esc(nombreG)}">
       ${s.equipos ? `<p class="rt-small">${T("elige")}</p>${equiposHTML(sel)}` : ""}
       <p class="rt-err" role="alert">${E.msg ? T(E.msg) : ""}</p><button class="btn main" ${E.busy ? "disabled" : ""}>🚀 ${T("unirme")}</button></form>${comoHTML(s.juego)}</section>`;
   }
   if (s.fase === "espera") {
-    return `<section class="wrap rt">${cabeza()}<div class="rt-box rt-espera"><p class="rt-big">⏳ ${T("espera")}</p>
+    return `<section class="wrap rt">${cabeza()}${mandoHTML()}<div class="rt-box rt-espera"><p class="rt-big">⏳ ${T("espera")}</p>
       ${s.equipos ? `<p>${T("tuequipo")}: <b>${esc(eqNombre(y.e))}</b> — ${delEquipo(y.e).map(j => esc(j.n)).join(", ")}</p><button class="btn" data-rt="cambiar">🔁 ${T("cambiar")}</button>` : ""}</div>${comoHTML(s.juego)}</section>`;
   }
   if (!E.G) return `<section class="wrap rt"><p class="msg">${T("cargando")}</p></section>`;
   if (acabado()) return finHTML();
   const J = {prueba: jPrueba, apuesta: jApuesta, cartas: jCartas, tabu: jTabu, piloto: jPiloto}[s.juego];
-  return `<section class="wrap rt" style="--c:${JUEGOS[s.juego].c}">${J()}</section>`;
+  return `<section class="wrap rt" style="--c:${JUEGOS[s.juego].c}">${J()}${mandoHTML()}</section>`;
 }
 function rankingHTML(rk, yoU) {
   return `<ol class="rt-rk">${rk.map((u, i) => `<li class="${u.u === yoU ? "yo" : ""}" style="--c:${u.c}"><span class="rt-pos">${i + 1}</span><b>${esc(u.n)}</b>${u.det ? `<small>${esc(u.det)}</small>` : ""}<span class="rt-pts">${esc(s1("puntos", lenG(), {n: u.pts}))}</span></li>`).join("")}</ol>`;
@@ -525,7 +537,7 @@ function pizarraHTML() {
     h += `<div class="rt-box rt-codbox"><p>${T("entrad", {url: esc(url)})}</p><p class="rt-codigo">${s.codigo.slice(0, 3)} ${s.codigo.slice(3)}</p><p class="rt-small">${T("jugadores", {n: E.st.jugadores.length})}</p></div>`;
     h += s.equipos ? `<div class="rt-tabla">${Array.from({length: s.equipos}, (_, i) => i + 1).map(e => `<div class="rt-fila-eq" style="--c:${COLORES[(e - 1) % 8]}"><b>${esc(eqNombre(e))}</b><span class="rt-js">${jugadoresHTML(delEquipo(e), clave)}</span></div>`).join("")}</div>`
       : `<div class="rt-tabla"><div class="rt-fila-eq"><span class="rt-js">${jugadoresHTML(E.st.jugadores, clave)}</span></div></div>`;
-    if (clave) h += `<button class="btn main rt-grande" data-rt="empezar" ${E.st.jugadores.length && !E.busy ? "" : "disabled"}>${T("empezar")}</button>${E.st.jugadores.length ? "" : `<p class="rt-small">${T("sinjug")}</p>`}`;
+    if (clave) h += `<div class="rt-mando-b"><button class="btn main rt-grande" data-rt="empezar" ${E.st.jugadores.length && !E.busy ? "" : "disabled"}>${T("empezar")}</button><a class="btn rt-grande" href="#reto-${s.codigo}">${T("jugar_yo")}</a></div>${E.st.jugadores.length ? "" : `<p class="rt-small">${T("sinjug")}</p>`}`;
     return h + comoHTML(s.juego) + `</section>`;
   }
   if (!E.G) return h + `<p class="msg">${T("cargando")}</p></section>`;
@@ -591,7 +603,7 @@ document.addEventListener("submit", async ev => {
     E.busy = false;
     if (!r.ok) { E.err = ERR[r.error] || "e_red"; return pintar(true); }
     const m = mem(); m.host[r.sala] = {clave: r.clave, t: Date.now(), j}; for (const k in m.host) if (Date.now() - m.host[k].t > 864e5) delete m.host[k]; guard.set(m);
-    recibir(r.estado); location.hash = "#reto-pizarra-" + r.sala; return;
+    recibir(r.estado); location.hash = ((c.juega ?? !esProfe()) ? "#reto-" : "#reto-pizarra-") + r.sala; return;
   }
   if (tipoF === "unirme") {
     const nombre = document.getElementById("rt-nom").value.trim(), e = sala().equipos ? +(E.ui.equipo || yo()?.e || 0) : 0;
@@ -607,7 +619,7 @@ document.addEventListener("submit", async ev => {
 document.addEventListener("change", ev => {
   const el = ev.target.closest("[data-rt-c]"); if (!el) return;
   const c = E.crear[juegoRuta]; if (!c) return;
-  const k = el.dataset.rtC; c[k] = ["equipos", "dur", "rd"].includes(k) ? +el.value : el.value; E.err = ""; pintar(true);
+  const k = el.dataset.rtC; c[k] = el.type === "checkbox" ? el.checked : ["equipos", "dur", "rd"].includes(k) ? +el.value : el.value; E.err = ""; pintar(true);
 });
 document.addEventListener("input", ev => {
   const el = ev.target;

@@ -23,6 +23,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
     await prof.selectOption('[data-rt-c="lang"]', LANG); await wait(100);
     await prof.selectOption('[data-rt-c="nivel"]', nivel); await wait(100);
     await prof.selectOption('[data-rt-c="equipos"]', String(equipos)); await wait(100);
+    await prof.uncheck('[data-rt-c="juega"]'); await wait(100); /* la pizarra del profe, sin jugar */
     await prof.click('[data-rt-form="crear"] .btn.main'); await wait(900);
     const h = await prof.evaluate(() => location.hash); ok(/^#reto-pizarra-\d{6}$/.test(h), juego + ': sala creada ' + h);
     const cod = h.slice(-6);

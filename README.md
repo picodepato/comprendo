@@ -138,4 +138,5 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
   - 🧭 **Lector y piloto** (`#reto-piloto`): lectores solo ven el texto, pilotos solo los retos (las preguntas); máximo 3 preguntas por reto (menos preguntas, más puntos); a mitad se cambian los papeles.
 - Datos: `content/<idioma>/retos.json`, generados con `node retos/generar.mjs` (sin IA): frases de cada lectura, la frase que demuestra cada pregunta, palabras clave con definición y prohibidas, y trampas. **Volver a ejecutarlo al añadir o cambiar lecturas.**
 - Servidor: `api/_retos.js`, montado en `api/propuestas?retos=1` (no gasta otra función de Vercel). Rutas: `#reto-<código>` (alumno) y `#reto-pizarra-<código>` (pizarra).
-- Prueba: `qa/prueba-retos.cjs` (pizarra + 3 alumnos, los 5 juegos).
+- Quien crea la sala puede jugar también: casilla «Voy a jugar yo también» (marcada por defecto si no es profe; el profe por defecto solo lleva la pizarra y tiene «Jugar yo también»). Si juega, lleva en su móvil los botones de la pizarra (empezar, siguiente, terminar).
+- Pruebas: `qa/prueba-retos.cjs` (pizarra + 3 alumnos, los 5 juegos) y `qa/prueba-retos-creador.cjs` (el creador juega).
