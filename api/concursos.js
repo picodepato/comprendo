@@ -267,6 +267,14 @@ export default (req, res) => seguro(res, async () => {
     return res.status(200).json(await publico(cod, S));
   }
 
+  /* ?aviso=<id de la clase>: ¿ha abierto el profe una sala para esta clase? Lo preguntan los alumnos desde «Deberes»
+     cada pocos segundos; Vercel guarda la respuesta 4 s y la comparte entre toda la clase (1 consulta a Upstash). */
+  if (req.method === "GET" && q.aviso) {
+    if (!/^[a-f0-9]{12}$/.test(String(q.aviso))) return res.status(400).json({ error: "no_valido" });
+    res.setHeader("Cache-Control", "public, max-age=0, s-maxage=4, stale-while-revalidate=0");
+    res.setHeader("Vercel-CDN-Cache-Control", "max-age=4");
+    return res.status(200).json({ ok: true, sala: jsonDe(await redis("GET", avisoClave(q.aviso))) });
+  }
   const u = await usuarioDeSesion(req).catch(() => null);
   if (req.method === "GET") {
     if (q.id) {

@@ -77,3 +77,37 @@
 .ctaclf{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .ctaclf input{flex:1 1 160px}
 .ctab .ctak input{width:auto;flex:none;margin:3px 0 0}
+/* Deberes: cada deber se toca y abre la actividad (avisos.js) */
+.deb li{padding:0;background:none}
+.deb .deb-a{display:flex;gap:12px;align-items:center;justify-content:space-between;width:100%;padding:10px 12px;border-radius:12px;background:var(--panel2);color:inherit;text-decoration:none;border:1px solid transparent;font:inherit;text-align:left;cursor:pointer;box-sizing:border-box}
+.deb div.deb-a{cursor:default}
+.deb a.deb-a:hover,.deb button.deb-a:hover{border-color:color-mix(in srgb,var(--acc) 60%,var(--line))}
+.deb .deb-a:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.deb .deb-a > .btn{flex:none;pointer-events:none}
+.deb li.deb-vivo .deb-a{border-color:#ff4d6d;background:color-mix(in srgb,#ff4d6d 12%,var(--panel2))}
+.deb-sala{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;margin:0 0 10px;padding:12px 14px;border-radius:12px;border:2px solid #ff4d6d;background:color-mix(in srgb,#ff4d6d 14%,var(--panel));color:var(--ink);font:inherit;font-weight:700;text-align:left;cursor:pointer;animation:deb-late 1.6s ease-in-out infinite}
+.deb-sala .btn{pointer-events:none;flex:none}
+@keyframes deb-late{50%{box-shadow:0 0 0 6px color-mix(in srgb,#ff4d6d 25%,transparent)}}
+@media(prefers-reduced-motion:reduce){.deb-sala{animation:none}}
+.deb-mas{margin:10px 0 0;text-align:right}
+.deb-pag{margin:18px auto;max-width:860px}
+.deb-pag h1{margin:0 0 4px;font-size:clamp(26px,5vw,36px)}
+.deb-pag h2{margin:18px 0 8px;font-size:18px}
+.deb-sub{color:var(--mute);margin:0 0 14px}
+.deb-n{display:inline-block;min-width:1.4em;padding:0 5px;border-radius:999px;background:#ff4d6d;color:#fff;font-size:12px;line-height:1.4em;text-align:center}
+/* actividades.js: mandar como deberes y avisar a la clase */
+.ac-deber{margin:14px 0;padding:10px 14px;border-radius:14px;background:var(--panel);border:1px solid var(--line)}
+.ac-deber summary{cursor:pointer;font-weight:700;min-height:32px;display:flex;align-items:center}
+.ac-form{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end;margin-top:10px}
+.ac-form label{display:flex;flex-direction:column;gap:4px;font-size:14px}
+.ac-form .ac-ancho{flex-basis:100%}
+.ac-form input,.ac-form select{font:inherit;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink)}
+.ac-como{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.ac-como legend{font-size:14px;margin-bottom:4px}
+.ac-como label{flex-direction:row;align-items:center;gap:8px}
+.ac-como small{color:var(--mute)}
+.ac-ok{font-size:14px;color:var(--ok)}
+.ac-clase{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0 0;font-weight:700}
+.ac-clase select{font:inherit;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink)}
+.ac-nota{font-size:14px;color:var(--mute);margin:4px 0 10px}
+.admh3{margin:18px 0 8px;font-size:17px}
