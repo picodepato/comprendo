@@ -86,3 +86,11 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - En directo: `api/concursos` abre una partida con código de 6 cifras (máx. 30 jugadores, caduca a las 4 h). Los móviles consultan el estado cada 1-2 s y Vercel comparte esa respuesta 1 s entre todos, así que una partida de 30 alumnos gasta del orden de 2.000 operaciones de Upstash. El tiempo de cada respuesta lo mide el servidor.
 - `api/votos` ahora vive en `api/_votos.js` y se sirve desde `api/propuestas?votos=1` (y una redirección en `vercel.json`), para no pasar del máximo de funciones de Vercel.
 - Pruebas: `qa/prueba-concursos-api.mjs` (API) y `qa/prueba-concursos.cjs` (navegador: crear, editar, jugar solo y partida con 3 móviles).
+
+## Garabatos: dibuja y adivina en grupo (garabatos/)
+- En «Juegos» → «Garabatos» (#garabatos). Uno crea una sala (código de 6 cifras, enlace #garabatos-<código>, máx. 30) y los demás se unen con su nombre, sin cuenta.
+- Por turnos, al que dibuja le salen 3 palabras del idioma del curso y del nivel elegido (con su traducción) y elige una; los demás escriben lo que creen que es. Vale sin tildes o con artículo; «¡Casi!» si falla una letra. Pistas: se descubren letras al pasar el tiempo.
+- Puntos: acertar antes da más (100-500, +50 el primero); quien dibuja gana 60 por cada acierto. XP al acertar y al terminar. El anfitrión elige nivel, rondas, tiempo y, si quiere, sus propias palabras.
+- El dibujo se manda en tandas cada segundo y se vuelve a pintar poco a poco en los demás. El estado lo comparte la caché de Vercel durante 1 s (30 jugadores gastan casi como 2). Unos 300-400 comandos de Upstash por turno.
+- API dentro de `api/dibujos.js` (no gasta otra función): código en `api/_garabatos.js`, palabras en `api/_garabatos-palabras.js`.
+- Pruebas: `qa/prueba-garabatos-api.mjs` y `qa/prueba-garabatos.cjs` (3 navegadores a la vez).
