@@ -14,7 +14,7 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
   await p.goto(BASE, {waitUntil: 'networkidle0'});
   const out = [];
   const go = async h => { await p.evaluate(h => { location.hash = h; }, h); await wait(700); };
-  out.push('pestaña Juegos: ' + await p.evaluate(() => !!document.querySelector('#tabs a[href="#juegos"]')));
+  out.push('apartado Practicar: ' + await p.evaluate(() => !!document.querySelector('#tabs a[href="#practicar"]')));
   await go('bear-a1');
   out.push('oferta en lectura: ' + await p.evaluate(() => document.querySelectorAll('.goffer .gtile').length) + ' juegos');
   await go('juegos'); await wait(500);

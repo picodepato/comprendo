@@ -20,7 +20,7 @@ const fake = () => {
   p.on('pageerror', e => errs.push('pageerror: ' + e.message));
   p.on('response', r => { if (r.status() >= 400 && !/api\//.test(r.url())) errs.push(r.status() + ' ' + r.url()); });
   await p.goto(BASE + '#dictados', {waitUntil: 'networkidle'}); await wait(400);
-  ok(await p.locator('.tabs a[href="#dictados"][aria-current=page]').count() === 1, 'pestaña Dictados marcada');
+  ok(await p.locator('.tabs a[href="#aprender"][aria-current=page]').count() === 1, 'apartado Aprender marcado');
   const cards = await p.locator('.dc-card').count(); ok(cards === 15, 'hay 15 tarjetas de dictado en A1, hay ' + cards);
   await p.click('.dc-lv [data-l="B1"]'); await wait(200);
   ok(await p.locator('.dc-card[href="#dictado-bear-b1"]').count() === 1, 'nivel B1 cambia la lista');
@@ -68,7 +68,7 @@ const fake = () => {
   await p.click('[data-dc="oir"]'); await wait(200);
   ok(await p.locator('.dc-warn').count() === 0 && await p.evaluate(() => LYAVoz.oir()), 'activar el sonido desde el dictado');
   // inglés
-  await p.goto(BASE + '#inicio'); await wait(300); await p.click('.chip[data-act="learn"][data-l="en"]'); await wait(500);
+  await p.goto(BASE + '#inicio'); await wait(300); await p.click('.nvtools [data-nv=idioma]'); await p.click('.chip[data-nvl="learn"][data-l="en"]'); await p.keyboard.press('Escape'); await wait(500);
   await p.goto(BASE + '#dictados'); await wait(400);
   ok(await p.locator('.dc-card[href="#dictado-en-bear-a1"]').count() === 1, 'curso de inglés: dictados en inglés');
   await p.click('.dc-card[href="#dictado-en-bear-a1"]'); await wait(400);

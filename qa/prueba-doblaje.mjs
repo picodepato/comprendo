@@ -49,7 +49,7 @@ const esperaT = (p, t) => p.waitForFunction(t => window.__yt && window.__yt.t >=
 /* ---------- profe: escena pegada sin tiempos → marcar tiempos → mandar a la clase ---------- */
 const P = await pagina(prof.j.token, "prof" + id);
 await P.goto(B + "/index.html#doblaje", { waitUntil: "networkidle" }); await P.waitForTimeout(600);
-ok(await P.locator('.tabs a[href="#doblaje"], a[href="#doblaje"]').count() > 0, "pestaña Doblaje en la barra");
+ok(await P.locator('.tabs a[href="#aprender"], a[href="#doblaje"]').count() > 0, "Doblaje en «Aprender»");
 await P.fill("#dburl", "https://www.youtube.com/watch?v=" + V);
 await P.click('[data-db="tipo"][data-t="escena"]');
 ok(await P.inputValue("#dburl") === "https://youtu.be/" + V, "cambiar a «escena» conserva el enlace");

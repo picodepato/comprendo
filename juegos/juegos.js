@@ -71,7 +71,7 @@ async function poolFor(src) {
 let G = null, runN = 0, timer = null;
 const parse = h => {
   h = (h || location.hash).replace(/^#/, "");
-  if (h === "juegos") return {room: true};
+  if (h === "juegos" || h === "practicar") return {room: true}; /* #practicar: apartado «Practicar» de la barra */
   const m = h.match(/^juego-(cartas|reloj|ahorcado)(?:--(.+))?$/);
   return m ? {game: m[1], src: m[2] || null} : null;
 };
@@ -115,7 +115,8 @@ async function renderRoom(el, n) {
   el.innerHTML = `<section class="intro gintro"><div class="in"><h1>${esc(tl("sala_title", S.learn))}</h1>
     ${both() ? `<p class="en">${esc(tl("sala_title", S.know))}</p>` : ""}<p class="lead">${TB("sala_sub")}</p>
     <p class="gnote">${pool.few ? TB("sala_few", {n: pool.have}) : TB("sala_dict", {n: pool.words.length})}</p></div></section>
-    <div class="ggrid">${GAMES.map(g => tile(g, null)).join("")}</div>${window.LYAGarabatos ? window.LYAGarabatos.room() : ""}${window.LYAGram ? window.LYAGram.room() : ""}`;
+    ${window.LYANav ? window.LYANav.practicarExtra() : ""}${window.LYAGram ? window.LYAGram.room() : ""}
+    ${window.LYANav ? `<h2 class="nvh2 gmini">🎲 ${esc(window.LYANav.t("t_juegos"))}</h2>` : ""}<div class="ggrid">${GAMES.map(g => tile(g, null)).join("")}</div>${!window.LYANav && window.LYAGarabatos ? window.LYAGarabatos.room() : ""}`;  /* Garabatos está en «En grupo» */
 }
 function offer(meta) {
   if (!TX || !meta) return "";
