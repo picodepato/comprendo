@@ -73,3 +73,11 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - `api/duelo.js`: toda la mesa en **una clave** de Upstash (hash `duelo:<código>`, caduca a las 3 h). El estado (`GET ?c=`) es igual para todos y Vercel lo guarda 1 s en su CDN (`Vercel-CDN-Cache-Control`), así que con 5 o con 30 jugadores Upstash recibe como mucho ~1 lectura por segundo. Contestar = 2 operaciones. Un duelo de toda la clase gasta del orden de 1.000 operaciones (el plan gratis da 500.000 al mes).
 - Las soluciones las saca el servidor del archivo de la lectura (`includeFiles` en `vercel.json`); no se ven hasta que se cierra cada pregunta.
 - Pruebas: `node qa/prueba-duelo-api.mjs http://localhost:8790` y `node qa/prueba-duelo.mjs http://localhost:8790 [capturas]` (con `qa/servidor-prueba.mjs`, que ya entiende los rewrites y los comandos H* de Redis).
+
+## Escape room de clase (escape/)
+- Pestaña «🔐 Escape room». El profe crea una sala en la pizarra (idioma, nivel, lectura, nº de equipos y minutos) y sale un código de 6 cifras. Los alumnos entran con el código en el móvil, escriben su nombre y eligen equipo. No hace falta cuenta.
+- Al empezar, cada miembro del equipo ve una parte distinta: trozos de la lectura, preguntas, las respuestas con símbolos (🔺🔵⭐), principios y finales de frase, y los números del candado final. Solo hablando (en el idioma que aprenden) pueden abrir los candados.
+- 4 candados de preguntas (`R.q`) + 1 de «frases rotas» (`R.halves`) + candado final con los 5 números. Un fallo congela el candado 15 s y suma 30 s. Funciona con las 135 lecturas (es, en, ca). Sin IA: todo sale de la lectura, con la misma semilla en todos los móviles.
+- La pizarra enseña el código, los equipos, los candados abiertos y la clasificación. El profe puede quitar a alguien antes de empezar.
+- Servidor: `api/_escape.js` (módulo, no cuenta como función), montado en `api/propuestas?escape=1`. Claves `esc:<código>`, `esc:<código>:j` y `esc:<código>:e`, caducan a las 4 h. El GET del estado lleva caché de Vercel de 1 s: toda la clase comparte una lectura de Upstash por segundo.
+- Prueba: `qa/prueba-escape.js <url> [carpeta] [en|es|ca]` con `servidor-prueba.mjs` (1 pizarra y 4 alumnos).

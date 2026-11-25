@@ -285,6 +285,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="dictados/dictados.css">
 <link rel="stylesheet" href="duelo/duelo.css">
 <link rel="stylesheet" href="fichas/fichas.css">
+<link rel="stylesheet" href="escape/escape.css">
 <link rel="stylesheet" href="concursos/concursos.css">
 <link rel="stylesheet" href="diseno.css">
 </head>
@@ -557,7 +558,7 @@ function renderProg() {
 function renderTop() {
   const rd = S.view === "read", L = rd ? R : null;
   $("tabs").innerHTML = `<a href="#inicio" ${S.view === "home" ? 'aria-current="page"' : ""}>${TT("home")}</a>
-    <a href="#diccionario" ${S.view === "dict" || S.view === "fc" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}${window.LYADictados ? `<a href="#dictados" ${S.view === "dictado" ? 'aria-current="page"' : ""}>${LYADictados.tab()}</a>` : ""}${window.LYACanciones ? `<a href="#canciones" ${S.view === "songs" ? 'aria-current="page"' : ""}>${LYACanciones.tab()}</a>` : ""}${window.LYADuelo ? `<a href="#duelo" ${S.view === "duelo" ? 'aria-current="page"' : ""}>${LYADuelo.tab()}</a>` : ""}${window.LYAConcursos ? `<a href="#concursos" ${S.view === "cc" ? 'aria-current="page"' : ""}>${LYAConcursos.tab()}</a>` : ""}`;
+    <a href="#diccionario" ${S.view === "dict" || S.view === "fc" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}${window.LYADictados ? `<a href="#dictados" ${S.view === "dictado" ? 'aria-current="page"' : ""}>${LYADictados.tab()}</a>` : ""}${window.LYACanciones ? `<a href="#canciones" ${S.view === "songs" ? 'aria-current="page"' : ""}>${LYACanciones.tab()}</a>` : ""}${window.LYADuelo ? `<a href="#duelo" ${S.view === "duelo" ? 'aria-current="page"' : ""}>${LYADuelo.tab()}</a>` : ""}${window.LYAEscape ? `<a href="#escape" ${S.view === "escape" ? 'aria-current="page"' : ""}>${LYAEscape.tab()}</a>` : ""}${window.LYAConcursos ? `<a href="#concursos" ${S.view === "cc" ? 'aria-current="page"' : ""}>${LYAConcursos.tab()}</a>` : ""}`;
   if (rd && L) { const r = scoreOf(L); $("score").innerHTML = `${esc(U("points", S.learn))} <b>${r.pts}</b> / ${r.tot}`; $("score").hidden = false; }
   else if (S && S.view === "dict") { $("score").innerHTML = `${esc(U("to_review", S.learn))} <b>${S.dict.filter(d => d.miss && d.l === S.learn).length}</b>`; $("score").hidden = false; }
   else $("score").hidden = true;
@@ -962,6 +963,7 @@ function render() {
   if (S.view === "songs" && window.LYACanciones) return LYACanciones.render($("app"));
   if (S.view === "dictado" && window.LYADictados) return LYADictados.render($("app"));
   if (S.view === "duelo" && window.LYADuelo) return LYADuelo.render($("app"));
+  if (S.view === "escape" && window.LYAEscape) return LYAEscape.render($("app"));
   if (S.view === "cc" && window.LYAConcursos) return LYAConcursos.render($("app"));
   if (S.view === "read" && R) return renderRead();
   return renderHome();
@@ -981,6 +983,7 @@ async function route() {
   else if (window.LYACanciones?.isSongs(h)) S.view = "songs";
   else if (window.LYADictados?.isDict(h)) S.view = "dictado";
   else if (window.LYADuelo?.isDuelo(h)) S.view = "duelo";
+  else if (window.LYAEscape?.isEscape(h)) S.view = "escape";
   else if (window.LYAConcursos?.isCc(h)) S.view = "cc";
   else if (lv) { S.view = "home"; S.level = lv[1].toUpperCase(); }
   else if (rdById(h)?.file) {
@@ -1022,6 +1025,7 @@ start();
 <script src="dictados/dictados.js"></script>
 <script src="duelo/duelo.js"></script>
 <script src="fichas/fichas.js"></script>
+<script src="escape/escape.js"></script>
 <script src="concursos/formato.js"></script>
 <script src="concursos/concursos.js"></script>
 </body>
