@@ -20,6 +20,13 @@ http.createServer((q, r) => { let b = ""; q.on("data", c => b += c); q.on("end",
   else if (c === "LRANGE") { const l = vivo(k) ? kv.get(k) : []; const n = l.length, i0 = a[2] < 0 ? Math.max(0, n + a[2]) : a[2], i1 = a[3] < 0 ? n + a[3] : Math.min(a[3], n - 1); res = l.slice(i0, i1 + 1); }
   else if (c === "LTRIM") { const l = vivo(k) ? kv.get(k) : []; const n = l.length, i0 = a[2] < 0 ? Math.max(0, n + a[2]) : a[2], i1 = a[3] < 0 ? n + a[3] : a[3]; kv.set(k, l.slice(i0, i1 + 1)); res = "OK"; }
   else if (c === "LREM") { const l = vivo(k) ? kv.get(k) : []; const i = l.indexOf(a[3]); if (i >= 0) l.splice(i, 1); res = i >= 0 ? 1 : 0; }
+  else if (c[0] === "H") { const h = vivo(k) ? kv.get(k) : new Map(); if (!(h instanceof Map)) { res = null; } else {
+    if (c === "HSET") { kv.set(k, h); let n = 0; for (let i = 2; i + 1 < a.length; i += 2) { if (!h.has(a[i])) n++; h.set(a[i], String(a[i + 1])); } res = n; }
+    else if (c === "HSETNX") { kv.set(k, h); res = h.has(a[2]) ? 0 : (h.set(a[2], String(a[3])), 1); }
+    else if (c === "HGET") res = h.get(a[2]) ?? null;
+    else if (c === "HGETALL") res = [...h].flat();
+    else if (c === "HDEL") res = a.slice(2).filter(x => h.delete(x)).length;
+    else if (c === "HINCRBY") { kv.set(k, h); const n = (+h.get(a[2]) || 0) + +a[3]; h.set(a[2], String(n)); res = n; } } }
   r.setHeader("content-type", "application/json"); r.end(JSON.stringify({result: res}));
 }); }).listen(PUERTO + 1);
 process.env.KV_REST_API_URL = `http://localhost:${PUERTO + 1}`; process.env.KV_REST_API_TOKEN = "x";
