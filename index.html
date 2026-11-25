@@ -729,7 +729,10 @@ function renderDict() {
         ${ws.length ? `<ul class="words">${ws.map(li).join("")}</ul>`
           : `<p class="empty">${TB("no_words")} <a href="#${r.id}">${TI("open")}</a></p>`}
         <div class="row"><button class="btn" data-act="addvocab" data-r="${r.id}">${TI("add_key")}</button></div></section>`;
-    }).join("")}</div>`;
+    }).join("")}
+    ${(() => { const ws = all.filter(([d]) => d.r === "canciones"); return ws.length ? `<section class="ex"><div class="dh"><h2>${esc(window.LYACanciones?.dictTitulo?.() || "🎵")}</h2>
+        <button class="btn" data-act="prac" data-r="canciones">${TI("practise")} · ${ws.length}</button></div>
+        <ul class="words">${ws.map(li).join("")}</ul></section>` : ""; })()}</div>`;
 }
 /* multiple-choice options; dir "learn": answer in the language you know, "know": answer in the language you learn */
 function options(d, dir) {
@@ -849,6 +852,7 @@ async function dictAct(act, b) {
     if (n) xp(n, "dict-save", {ok: true, count: n});
     await fillTr(); save(); render();
   }
+  else if (act === "prac" && b.dataset.r === "canciones") startQuiz(mine().filter(([d]) => d.r === "canciones").map(([, i]) => i), `${U("practise", S.learn)}: ${window.LYACanciones?.dictTitulo?.() || "🎵"}`);
   else if (act === "prac") { const r = rdById(b.dataset.r); startQuiz(mine().filter(([d]) => d.r === r.id).map(([, i]) => i), `${U("practise", S.learn)}: ${r.title[S.learn]}`); }
   else if (act === "remix") startQuiz(shuf(mine().filter(([d]) => S.rxall || d.miss).map(([, i]) => i)).slice(0, RXMAX), "Remix");
   else if (act === "again") startQuiz([...new Set(Q.fails)], U("retry_fails", S.learn));
