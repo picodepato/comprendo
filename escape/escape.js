@@ -21,8 +21,8 @@ const STR = {
   es: {tab: "🔐 Escape room", h1: "Escape room de clase", sub: "Cada uno ve en su móvil un trozo distinto de la lectura y de las pistas. Solo hablando con tu equipo podéis abrir los candados y escapar.",
     entrar: "Entrar en una sala", codigo: "Código de la sala", ir: "Entrar", crear: "Crear una sala (profe)", crear_p: "Para la pizarra: eliges la lectura y salen un código y los equipos.",
     curso: "Idioma", nivel: "Nivel", lectura: "Lectura", equipos: "Equipos", minutos: "Minutos", crearb: "Crear la sala", como: "Cómo se juega",
-    como1: "El profe crea la sala en la pizarra y cada alumno entra con el código en su móvil.", como2: "Equipos de 3 a 5. Cada miembro ve una parte diferente: trozos de la lectura, preguntas, respuestas, medias frases…",
-    como3: "No enseñéis la pantalla: leed vuestra parte en voz alta y hablad en {idioma}.", como4: "Cada candado abierto da un número a alguien del equipo. Con todos los números, se abre el candado final.",
+    como1: "El profe crea la sala en la pizarra. Cada alumno entra con el código en su móvil y elige equipo (mejor de 3 a 5).", como2: "Al empezar, cada uno ve una parte distinta: trozos del texto 📜, preguntas ❓, respuestas con símbolos 🔣 y medias frases 🧩. Lo normal es que tu pregunta NO esté en tu trozo: la respuesta la tiene otra persona.",
+    como3: "Candados 1-4: quien tiene la pregunta la lee en voz alta; quien tiene el trozo con la respuesta la busca y la dice; quien tiene las respuestas dice qué símbolo es. Cualquiera pulsa ese símbolo abajo, en «Candados del equipo».", como4: "Candado 5 (frases rotas): uno tiene los principios (1-4) y otro los finales (A-D). Juntadlos hablando y escribid la letra del final de cada principio.",
     nombre: "Tu nombre", elige: "Elige tu equipo", unirme: "¡Dentro!", cambiar: "Cambiar de equipo", tuequipo: "Tu equipo", espera: "Esperando a que el profe empiece…",
     nadie: "nadie todavía", no_existe: "No hay ninguna sala con ese código. Mira bien los números.", e_codigo: "El código tiene 6 números.", e_nombre: "Escribe tu nombre.",
     e_red: "No hay conexión. Prueba otra vez.", e_muchas: "Demasiadas salas en poco tiempo. Espera un poco.", e_llena: "La sala está llena.", e_fin: "Esta partida ya ha terminado.", e_serv: "Aquí no funciona la sala en directo (falta el servidor).",
@@ -30,19 +30,30 @@ const STR = {
     habla: "🗣️ Habla en {idioma}. Lee tu parte en voz alta. ¡No enseñes tu pantalla!", tuparte: "🤫 Lo que solo ves tú", candados: "🔐 Candados del equipo",
     trozo: "📜 Trozo {n} de la lectura", pregunta: "❓ Pregunta del candado {n}", respuestas: "🔣 Respuestas del candado {n}", principios: "🧩 Principios de frase (candado {n})", finales: "🧩 Finales de frase (candado {n})",
     numero: "🔢 Número del candado {n}", numero_no: "Cuando abráis el candado {n}, aquí saldrá un número. ¡Recuérdalo!", numero_si: "Tu número es",
-    cand: "Candado {n}", c_q: "Elegid el símbolo de la respuesta correcta.", c_h: "Unid cada principio (1-{m}) con su final: escribid la letra.", abierto: "Abierto", congelado: "❄️ Congelado {s} s",
-    probar: "Probar", mal: "¡No! Candado congelado 15 s.", bien: "¡Abierto! 🔓", final: "🚪 Candado final", final_p: "Juntad los números de todos los candados, en orden (1, 2, 3…).", escapar: "Abrir la puerta",
+    cand: "Candado {n}", c_q: "Pulsad el símbolo de la respuesta correcta. Vale el móvil de cualquiera.", c_h: "Unid cada principio (1-{m}) con su final: escribid la letra.", abierto: "Abierto", congelado: "❄️ Congelado {s} s",
+    probar: "Probar", mal: "¡No! Candado congelado 15 s.", bien: "¡Abierto! 🔓", final: "🚪 Candado final", final_p: "Cada uno dice su número. Escribidlos en orden: primero el del candado 1, luego el del 2…", escapar: "Abrir la puerta",
     final_no: "Abrid primero los otros candados.", escapado: "¡Habéis escapado! 🎉", en: "en {t}", fallos: "{n} fallos (+{p})", puesto: "Puesto {n} de {m}",
     tiempo: "⏳ ¡Se acabó el tiempo!", acabada: "La partida ha terminado.", otro: "Volver al escape room", xp: "+{n} XP",
     pizarra: "Pizarra del profe", entrad: "Entrad en {url} → 🔐 Escape room, con el código:", empezar: "▶ Empezar", terminar: "⏹ Terminar la partida", nueva: "Crear otra sala",
     jugadores: "{n} jugadores", echar: "Quitar", vacio: "Esperando jugadores…", resultados: "Clasificación", sinjug: "Aún no hay nadie en la sala.", quedan: "Quedan",
     sinpiezas: "Esta lectura no tiene preguntas para un escape room. Elige otra.", lect_q: "{q} preguntas", cargando: "Cargando…", ver: "Ver el texto entero",
+    como5: "Cada candado abierto da un número a una sola persona. Con los 5 abiertos, decid vuestros números y escribid el código en orden (candado 1, 2, 3…) en el candado final.",
+    como6: "No enseñéis la pantalla: hablad en {idioma}. Si falláis, el candado se congela 15 s y suma 30 s a vuestro tiempo.",
+    ayuda: "¿Cómo se juega?",
+    h_trozo: "Escucha las preguntas de tu equipo: si la respuesta está en tu trozo, léela en voz alta.",
+    h_preg: "Léela en voz alta. Otra persona tiene el trozo con la respuesta y otra, los símbolos.",
+    h_ops: "Cuando sepáis la respuesta, di qué símbolo es y pulsadlo en el candado {n}.",
+    h_princ: "Lee cada principio en voz alta. Quien tiene los finales dice cuál encaja.",
+    h_fin: "Escucha los principios y di qué letra encaja con cada uno.",
+    h_num: "Al final, di este número cuando os toque el candado {n}.",
+    quien: "❓ Pregunta: {a} · 🔣 Respuestas: {b} · 📜 La respuesta está en el trozo de alguien: ¡buscadla!",
+    quien_h: "🧩 Principios: {a} · Finales: {b}",
     t_eq: ["Zorros", "Pulpos", "Búhos", "Lobos", "Tortugas", "Unicornios", "Abejas", "Dinos"]},
   en: {tab: "🔐 Escape room", h1: "Class escape room", sub: "Everyone sees a different part of the reading and the clues on their phone. Only by talking with your team can you open the locks and escape.",
     entrar: "Join a room", codigo: "Room code", ir: "Join", crear: "Create a room (teacher)", crear_p: "For the whiteboard: choose the reading and you get a code and the teams.",
     curso: "Language", nivel: "Level", lectura: "Reading", equipos: "Teams", minutos: "Minutes", crearb: "Create the room", como: "How to play",
-    como1: "The teacher creates the room on the whiteboard and each student joins with the code on their phone.", como2: "Teams of 3 to 5. Each member sees a different part: pieces of the text, questions, answers, half sentences…",
-    como3: "Don't show your screen: read your part aloud and speak {idioma}.", como4: "Each lock you open gives a number to someone in the team. With all the numbers, the final lock opens.",
+    como1: "The teacher creates the room on the whiteboard. Each student joins with the code on their phone and chooses a team (3 to 5 is best).", como2: "When the game starts, everyone sees a different part: pieces of the text 📜, questions ❓, answers with symbols 🔣 and half sentences 🧩. Your question is usually NOT in your piece: someone else has the answer.",
+    como3: "Locks 1-4: the person with the question reads it aloud; the person with the piece of text that has the answer finds it and says it; the person with the answers says which symbol it is. Anyone presses that symbol below, in “Team locks”.", como4: "Lock 5 (broken sentences): one person has the beginnings (1-4) and another has the endings (A-D). Match them by talking and type the letter of each ending.",
     nombre: "Your name", elige: "Choose your team", unirme: "I'm in!", cambiar: "Change team", tuequipo: "Your team", espera: "Waiting for the teacher to start…",
     nadie: "nobody yet", no_existe: "There is no room with that code. Check the numbers.", e_codigo: "The code has 6 numbers.", e_nombre: "Write your name.",
     e_red: "No connection. Try again.", e_muchas: "Too many rooms in a short time. Wait a little.", e_llena: "The room is full.", e_fin: "This game has finished.", e_serv: "The live room doesn't work here (no server).",
@@ -50,19 +61,30 @@ const STR = {
     habla: "🗣️ Speak {idioma}. Read your part aloud. Don't show your screen!", tuparte: "🤫 Only you can see this", candados: "🔐 Team locks",
     trozo: "📜 Piece {n} of the text", pregunta: "❓ Question for lock {n}", respuestas: "🔣 Answers for lock {n}", principios: "🧩 Sentence beginnings (lock {n})", finales: "🧩 Sentence endings (lock {n})",
     numero: "🔢 Number from lock {n}", numero_no: "When your team opens lock {n}, a number will appear here. Remember it!", numero_si: "Your number is",
-    cand: "Lock {n}", c_q: "Choose the symbol of the right answer.", c_h: "Match each beginning (1-{m}) with its ending: write the letter.", abierto: "Open", congelado: "❄️ Frozen {s} s",
-    probar: "Try", mal: "No! Lock frozen for 15 s.", bien: "Open! 🔓", final: "🚪 Final lock", final_p: "Put together the numbers from all the locks, in order (1, 2, 3…).", escapar: "Open the door",
+    cand: "Lock {n}", c_q: "Press the symbol of the right answer. Anyone's phone works.", c_h: "Match each beginning (1-{m}) with its ending: write the letter.", abierto: "Open", congelado: "❄️ Frozen {s} s",
+    probar: "Try", mal: "No! Lock frozen for 15 s.", bien: "Open! 🔓", final: "🚪 Final lock", final_p: "Everyone says their number. Type them in order: first the one from lock 1, then lock 2…", escapar: "Open the door",
     final_no: "Open the other locks first.", escapado: "You escaped! 🎉", en: "in {t}", fallos: "{n} mistakes (+{p})", puesto: "Place {n} of {m}",
     tiempo: "⏳ Time is up!", acabada: "The game has finished.", otro: "Back to the escape room", xp: "+{n} XP",
     pizarra: "Teacher's board", entrad: "Go to {url} → 🔐 Escape room, with the code:", empezar: "▶ Start", terminar: "⏹ End the game", nueva: "Create another room",
     jugadores: "{n} players", echar: "Remove", vacio: "Waiting for players…", resultados: "Ranking", sinjug: "Nobody is in the room yet.", quedan: "Left",
     sinpiezas: "This reading has no questions for an escape room. Choose another one.", lect_q: "{q} questions", cargando: "Loading…", ver: "See the whole text",
+    como5: "Each lock you open shows a number to just one person. With all 5 open, say your numbers and type the code in order (lock 1, 2, 3…) in the final lock.",
+    como6: "Don't show your screen: speak {idioma}. A wrong answer freezes the lock for 15 s and adds 30 s to your time.",
+    ayuda: "How to play",
+    h_trozo: "Listen to your team's questions: if the answer is in your piece, read it aloud.",
+    h_preg: "Read it aloud. Someone else has the piece of text with the answer, and someone else has the symbols.",
+    h_ops: "When you know the answer, say which symbol it is and press it in lock {n}.",
+    h_princ: "Read each beginning aloud. The person with the endings says which one fits.",
+    h_fin: "Listen to the beginnings and say which letter fits each one.",
+    h_num: "At the end, say this number when it's the turn of lock {n}.",
+    quien: "❓ Question: {a} · 🔣 Answers: {b} · 📜 The answer is in someone's piece of text: find it!",
+    quien_h: "🧩 Beginnings: {a} · Endings: {b}",
     t_eq: ["Foxes", "Octopuses", "Owls", "Wolves", "Turtles", "Unicorns", "Bees", "Dinos"]},
   ca: {tab: "🔐 Escape room", h1: "Escape room de classe", sub: "Cadascú veu al mòbil un tros diferent de la lectura i de les pistes. Només parlant amb el teu equip podeu obrir els cadenats i escapar.",
     entrar: "Entrar en una sala", codigo: "Codi de la sala", ir: "Entrar", crear: "Crear una sala (profe)", crear_p: "Per a la pissarra: tries la lectura i surten un codi i els equips.",
     curso: "Llengua", nivel: "Nivell", lectura: "Lectura", equipos: "Equips", minutos: "Minuts", crearb: "Crear la sala", como: "Com es juga",
-    como1: "El profe crea la sala a la pissarra i cada alumne entra amb el codi al seu mòbil.", como2: "Equips de 3 a 5. Cada membre veu una part diferent: trossos de la lectura, preguntes, respostes, mitges frases…",
-    como3: "No ensenyeu la pantalla: llegiu la vostra part en veu alta i parleu en {idioma}.", como4: "Cada cadenat obert dona un número a algú de l'equip. Amb tots els números, s'obre el cadenat final.",
+    como1: "El profe crea la sala a la pissarra. Cada alumne entra amb el codi al seu mòbil i tria equip (millor de 3 a 5).", como2: "En començar, cadascú veu una part diferent: trossos del text 📜, preguntes ❓, respostes amb símbols 🔣 i mitges frases 🧩. El normal és que la teva pregunta NO sigui al teu tros: la resposta la té una altra persona.",
+    como3: "Cadenats 1-4: qui té la pregunta la llegeix en veu alta; qui té el tros amb la resposta la busca i la diu; qui té les respostes diu quin símbol és. Qualsevol prem aquest símbol a baix, a «Cadenats de l'equip».", como4: "Cadenat 5 (frases trencades): un té els principis (1-4) i un altre els finals (A-D). Ajunteu-los parlant i escriviu la lletra del final de cada principi.",
     nombre: "El teu nom", elige: "Tria el teu equip", unirme: "Som-hi!", cambiar: "Canviar d'equip", tuequipo: "El teu equip", espera: "Esperant que el profe comenci…",
     nadie: "ningú encara", no_existe: "No hi ha cap sala amb aquest codi. Mira bé els números.", e_codigo: "El codi té 6 números.", e_nombre: "Escriu el teu nom.",
     e_red: "No hi ha connexió. Torna-ho a provar.", e_muchas: "Massa sales en poc temps. Espera una mica.", e_llena: "La sala és plena.", e_fin: "Aquesta partida ja s'ha acabat.", e_serv: "Aquí no funciona la sala en directe (falta el servidor).",
@@ -70,13 +92,24 @@ const STR = {
     habla: "🗣️ Parla en {idioma}. Llegeix la teva part en veu alta. No ensenyis la pantalla!", tuparte: "🤫 El que només veus tu", candados: "🔐 Cadenats de l'equip",
     trozo: "📜 Tros {n} de la lectura", pregunta: "❓ Pregunta del cadenat {n}", respuestas: "🔣 Respostes del cadenat {n}", principios: "🧩 Principis de frase (cadenat {n})", finales: "🧩 Finals de frase (cadenat {n})",
     numero: "🔢 Número del cadenat {n}", numero_no: "Quan obriu el cadenat {n}, aquí sortirà un número. Recorda'l!", numero_si: "El teu número és",
-    cand: "Cadenat {n}", c_q: "Trieu el símbol de la resposta correcta.", c_h: "Uniu cada principi (1-{m}) amb el seu final: escriviu la lletra.", abierto: "Obert", congelado: "❄️ Congelat {s} s",
-    probar: "Provar", mal: "No! Cadenat congelat 15 s.", bien: "Obert! 🔓", final: "🚪 Cadenat final", final_p: "Ajunteu els números de tots els cadenats, en ordre (1, 2, 3…).", escapar: "Obrir la porta",
+    cand: "Cadenat {n}", c_q: "Premeu el símbol de la resposta correcta. Val el mòbil de qualsevol.", c_h: "Uniu cada principi (1-{m}) amb el seu final: escriviu la lletra.", abierto: "Obert", congelado: "❄️ Congelat {s} s",
+    probar: "Provar", mal: "No! Cadenat congelat 15 s.", bien: "Obert! 🔓", final: "🚪 Cadenat final", final_p: "Cadascú diu el seu número. Escriviu-los en ordre: primer el del cadenat 1, després el del 2…", escapar: "Obrir la porta",
     final_no: "Obriu primer els altres cadenats.", escapado: "Heu escapat! 🎉", en: "en {t}", fallos: "{n} errades (+{p})", puesto: "Posició {n} de {m}",
     tiempo: "⏳ S'ha acabat el temps!", acabada: "La partida s'ha acabat.", otro: "Tornar a l'escape room", xp: "+{n} XP",
     pizarra: "Pissarra del profe", entrad: "Entreu a {url} → 🔐 Escape room, amb el codi:", empezar: "▶ Començar", terminar: "⏹ Acabar la partida", nueva: "Crear una altra sala",
     jugadores: "{n} jugadors", echar: "Treure", vacio: "Esperant jugadors…", resultados: "Classificació", sinjug: "Encara no hi ha ningú a la sala.", quedan: "Queden",
     sinpiezas: "Aquesta lectura no té preguntes per a un escape room. Tria'n una altra.", lect_q: "{q} preguntes", cargando: "Carregant…", ver: "Veure el text sencer",
+    como5: "Cada cadenat obert dona un número a una sola persona. Amb els 5 oberts, digueu els vostres números i escriviu el codi en ordre (cadenat 1, 2, 3…) al cadenat final.",
+    como6: "No ensenyeu la pantalla: parleu en {idioma}. Si falleu, el cadenat es congela 15 s i suma 30 s al vostre temps.",
+    ayuda: "Com es juga?",
+    h_trozo: "Escolta les preguntes del teu equip: si la resposta és al teu tros, llegeix-la en veu alta.",
+    h_preg: "Llegeix-la en veu alta. Una altra persona té el tros amb la resposta i una altra, els símbols.",
+    h_ops: "Quan sapigueu la resposta, digues quin símbol és i premeu-lo al cadenat {n}.",
+    h_princ: "Llegeix cada principi en veu alta. Qui té els finals diu quin hi encaixa.",
+    h_fin: "Escolta els principis i digues quina lletra encaixa amb cadascun.",
+    h_num: "Al final, digues aquest número quan toqui el cadenat {n}.",
+    quien: "❓ Pregunta: {a} · 🔣 Respostes: {b} · 📜 La resposta és al tros d'algú: busqueu-la!",
+    quien_h: "🧩 Principis: {a} · Finals: {b}",
     t_eq: ["Guineus", "Pops", "Mussols", "Llops", "Tortugues", "Unicorns", "Abelles", "Dinos"]}
 };
 const IDIOMA = {es: {es: "español", en: "inglés", ca: "catalán"}, en: {es: "Spanish", en: "English", ca: "Catalan"}, ca: {es: "castellà", en: "anglès", ca: "català"}};
@@ -224,8 +257,8 @@ function pintar(forzar) {
   if (idf) { const el = document.getElementById(idf); if (el) { el.focus(); try { el.setSelectionRange(sel, sel); } catch (e) {} } }
   reloj();
 }
-function comoHTML(lang) {
-  return `<details class="esc-como" open><summary>${T("como")}</summary><ol>${["como1", "como2", "como3", "como4"].map(k => `<li>${TB(k, {idioma: IDIOMA[lang]?.[lenG()] || lang})}</li>`).join("")}</ol></details>`;
+function comoHTML(lang, cerrado) {
+  return `<details class="esc-como" ${cerrado ? "" : "open"}><summary>${T(cerrado ? "ayuda" : "como")}</summary><ol>${["como1", "como2", "como3", "como4", "como5", "como6"].map(k => `<li>${TB(k, {idioma: IDIOMA[lang]?.[lenG()] || lang})}</li>`).join("")}</ol></details>`;
 }
 function lecturasDe(lang, nivel) {
   const {CAT} = st();
@@ -293,14 +326,17 @@ function jugarHTML() {
   /* mis piezas */
   const piezas = mio.map(x => {
     const c = P.candados[x.k];
-    if (x.que === "trozo") return `<div class="esc-pz trozo"><h3>${T("trozo", {n: x.i + 1})}</h3><p lang="${esc(s.lang)}">${esc(P.trozos[x.i])}</p></div>`;
-    if (x.que === "preg") return `<div class="esc-pz preg"><h3>${T("pregunta", {n: x.k + 1})}</h3><p class="esc-q" lang="${esc(s.lang)}">${esc(c.preg)}</p></div>`;
-    if (x.que === "ops") return `<div class="esc-pz ops"><h3>${T("respuestas", {n: x.k + 1})}</h3><ul lang="${esc(s.lang)}">${c.ops.map(o => `<li><span class="esc-s">${o.s}</span> ${esc(o.t)}</li>`).join("")}</ul></div>`;
-    if (x.que === "princ") return `<div class="esc-pz h"><h3>${T("principios", {n: x.k + 1})}</h3><ol lang="${esc(s.lang)}">${c.princ.map(t => `<li>${esc(t)}</li>`).join("")}</ol></div>`;
-    if (x.que === "fin") return `<div class="esc-pz h"><h3>${T("finales", {n: x.k + 1})}</h3><ul class="esc-let" lang="${esc(s.lang)}">${c.finales.map(f => `<li><b>${f.l}</b> ${esc(f.t)}</li>`).join("")}</ul></div>`;
-    if (x.que === "num") return `<div class="esc-pz num ${X.abiertos[x.k] ? "si" : ""}"><h3>${T("numero", {n: x.k + 1})}</h3>${X.abiertos[x.k] ? `<p>${T("numero_si")}</p><p class="esc-dig">${c.num}</p>` : `<p class="esc-small">${T("numero_no", {n: x.k + 1})}</p>`}</div>`;
+    if (x.que === "trozo") return `<div class="esc-pz trozo"><h3>${T("trozo", {n: x.i + 1})}</h3><p lang="${esc(s.lang)}">${esc(P.trozos[x.i])}</p><p class="esc-ayuda">💡 ${T("h_trozo")}</p></div>`;
+    if (x.que === "preg") return `<div class="esc-pz preg"><h3>${T("pregunta", {n: x.k + 1})}</h3><p class="esc-q" lang="${esc(s.lang)}">${esc(c.preg)}</p><p class="esc-ayuda">💡 ${T("h_preg")}</p></div>`;
+    if (x.que === "ops") return `<div class="esc-pz ops"><h3>${T("respuestas", {n: x.k + 1})}</h3><ul lang="${esc(s.lang)}">${c.ops.map(o => `<li><span class="esc-s">${o.s}</span> ${esc(o.t)}</li>`).join("")}</ul><p class="esc-ayuda">💡 ${T("h_ops", {n: x.k + 1})}</p></div>`;
+    if (x.que === "princ") return `<div class="esc-pz h"><h3>${T("principios", {n: x.k + 1})}</h3><ol lang="${esc(s.lang)}">${c.princ.map(t => `<li>${esc(t)}</li>`).join("")}</ol><p class="esc-ayuda">💡 ${T("h_princ")}</p></div>`;
+    if (x.que === "fin") return `<div class="esc-pz h"><h3>${T("finales", {n: x.k + 1})}</h3><ul class="esc-let" lang="${esc(s.lang)}">${c.finales.map(f => `<li><b>${f.l}</b> ${esc(f.t)}</li>`).join("")}</ul><p class="esc-ayuda">💡 ${T("h_fin")}</p></div>`;
+    if (x.que === "num") return `<div class="esc-pz num ${X.abiertos[x.k] ? "si" : ""}"><h3>${T("numero", {n: x.k + 1})}</h3>${X.abiertos[x.k] ? `<p>${T("numero_si")}</p><p class="esc-dig">${c.num}</p>` : `<p class="esc-small">${T("numero_no", {n: x.k + 1})}</p>`}<p class="esc-ayuda">💡 ${T("h_num", {n: x.k + 1})}</p></div>`;
     return "";
   }).join("");
+  /* quién tiene cada cosa en el equipo (para saber a quién preguntar) */
+  const miembros = delEquipo(y.e), rep = reparto(P, n);
+  const quienes = (que, k) => { const r = rep.find(x => x.que === que && x.k === k); const ns = r ? miembros.filter((j, i) => i % n === r.rol).map(j => j.id === y.id ? "👉 " + j.n : j.n) : []; return ns.join(", ") || "?"; };
   /* candados */
   const cands = P.candados.map((c, k) => {
     const ab = X.abiertos[k], hielo = (X.z[k] || 0) + CONGELA, frio = !ab && hielo > ahora();
@@ -309,13 +345,14 @@ function jugarHTML() {
     else if (frio) cuerpoC = `<p class="esc-hielo" data-esc-hielo="${hielo}"></p>`;
     else if (c.tipo === "q") cuerpoC = `<p class="esc-small">${T("c_q")}</p><div class="esc-simbs">${SIMB.slice(0, c.ops.length).map(sb => `<button type="button" class="btn esc-sb" data-esc="q" data-k="${k}" data-s="${sb}" ${E.busy ? "disabled" : ""}>${sb}</button>`).join("")}</div>`;
     else cuerpoC = `<p class="esc-small">${T("c_h", {m: c.princ.length})}</p><form class="esc-hs" data-esc-form="h" data-k="${k}">${c.princ.map((_, i) => `<label>${i + 1} <input id="esc-h${k}-${i}" data-esc-in maxlength="1" autocomplete="off" autocapitalize="characters"></label>`).join("")}<button class="btn main" ${E.busy ? "disabled" : ""}>${T("probar")}</button></form>`;
-    return `<div class="esc-cand ${ab ? "ab" : ""} ${frio ? "frio" : ""}"><h3>${ab ? "🔓" : "🔒"} ${T("cand", {n: k + 1})}</h3>${cuerpoC}</div>`;
+    const quien = ab || n < 2 ? "" : `<p class="esc-quien">${c.tipo === "q" ? T("quien", {a: quienes("preg", k), b: quienes("ops", k)}) : T("quien_h", {a: quienes("princ", k), b: quienes("fin", k)})}</p>`;
+    return `<div class="esc-cand ${ab ? "ab" : ""} ${frio ? "frio" : ""}"><h3>${ab ? "🔓" : "🔒"} ${T("cand", {n: k + 1})}</h3>${quien}${cuerpoC}</div>`;
   }).join("");
   const final = `<div class="esc-cand final ${todos ? "" : "cerrado"}"><h3>${T("final")}</h3>${todos ? `<p class="esc-small">${T("final_p")}</p>
     <form class="esc-hs" data-esc-form="final"><input id="esc-fin" data-esc-in class="esc-cod" inputmode="numeric" maxlength="${P.candados.length}" autocomplete="off" placeholder="${"•".repeat(P.candados.length)}"><button class="btn main" ${E.busy ? "disabled" : ""}>🚪 ${T("escapar")}</button></form>` : `<p class="esc-small">${T("final_no")}</p>`}</div>`;
   return `<section class="wrap esc">${cabeza(prog)}
     <p class="esc-hist">${T("historia", {n: P.candados.length + 1, t: tit})}</p>
-    <p class="esc-habla">${T("habla", {idioma: idioma()})}</p>
+    <p class="esc-habla">${T("habla", {idioma: idioma()})}</p>${comoHTML(s.lang, true)}
     ${E.msg ? `<p class="esc-aviso ${E.msg === "bien" ? "ok" : ""}" role="status">${T(E.msg)}</p>` : ""}
     <h2>${T("tuparte")}</h2><div class="esc-pzs">${piezas}</div>
     <h2>${T("candados")}</h2><div class="esc-cands">${cands}${final}</div></section>`;
