@@ -132,5 +132,5 @@ document.addEventListener("click", e => { const b = e.target.closest("[data-deb=
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && A) vigilar(); });
 addEventListener("hashchange", () => { if (A && location.hash === "#deberes") setTimeout(cargar, 0); });  /* deberes al día, y después de que index.html cambie la vista */
 
-window.LYAAvisos = {html, cargar, render, isDeb, tabHTML, deberes: () => (A && A.deberes) || []};
+window.LYAAvisos = {html, cargar, render, isDeb, tabHTML, deberes: () => (A && A.deberes) || [], pendientes: () => A && A.rol === "alumno" ? A.deberes.filter(d => !info(d).hecha).length : 0};
 })();

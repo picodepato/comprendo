@@ -1,0 +1,151 @@
+/* COMPRENDO: navegación (nav/nav.js). Se carga después de diseno.css.
+   Móvil (≤760px): barra fija abajo con los apartados, como una app. Ordenador: los apartados en la barra de arriba. */
+:root{--navh:0px}
+
+/* ---------- barra de apartados ---------- */
+.top .tabs a::before{content:none!important}
+.tabs a{position:relative}
+.tabs .nvi{font-size:18px;line-height:1}
+.tabs .nvn{position:absolute;top:2px;right:4px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--red);color:#fff;font-size:11px;font-weight:700;line-height:18px;text-align:center}
+.nvtools{display:flex;gap:6px}
+.nvtool{display:inline-flex;align-items:center;justify-content:center;gap:4px;min-width:44px;min-height:40px;padding:4px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font:inherit;font-size:16px;cursor:pointer}
+.nvtool:hover{border-color:var(--mute)}
+.nvtool:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.nvtl{font-size:12px;font-weight:700;letter-spacing:.04em}
+
+@media(min-width:761px){
+ .top{flex-wrap:nowrap;padding-bottom:8px}
+ .top .brand{margin-right:6px}
+ .top .tabs{order:1;flex:1 1 auto;flex-wrap:nowrap;padding:0;margin:0;mask-image:none;overflow-x:auto}
+ .top .nvtools{order:3}
+ .top .me{order:4}
+ .top .cta{order:5}
+ .top .score{order:2}
+ .tabs a{padding:6px 12px}
+}
+@media(min-width:761px) and (max-width:1080px){
+ .top .tabs a .nvl{font-size:14px}
+ .top .me .lvn,.top .cta .ctan{display:none}
+}
+@media(max-width:760px){
+ :root{--navh:62px}
+ body{padding-bottom:calc(var(--navh) + env(safe-area-inset-bottom,0px))}
+ /* backdrop-filter haría que la barra fija se pegase a la cabecera y no a la pantalla */
+ .top{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--bg);padding-bottom:8px;flex-wrap:nowrap;gap:6px}
+ .top .brand{font-size:17px;min-width:0;overflow:hidden}
+ .top .nvtools{order:3}
+ .top .me{order:4;padding:6px 9px}
+ .top .cta{order:5}
+ .top .score{order:2;padding:6px 8px;font-size:13px}
+ .top .me .lvn,.top .cta .ctan{display:none}
+ .top .tabs{position:fixed;left:0;right:0;bottom:0;z-index:40;order:9;display:flex;flex-wrap:nowrap;justify-content:space-around;gap:2px;margin:0;padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px));overflow:visible;mask-image:none;-webkit-mask-image:none;background:var(--panel);border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(0,0,0,.6)}
+ .tabs a,.tabs a:first-child{flex:1 1 0;min-width:0;margin:0;flex-direction:column;justify-content:center;gap:2px;min-height:52px;padding:4px 2px;border-radius:12px;font-size:11.5px;line-height:1.15;text-align:center}
+ .tabs a .nvl{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .tabs .nvi{font-size:21px}
+ .tabs .nvn{right:calc(50% - 22px)}
+ .tabs a[aria-current=page]{background:color-mix(in srgb,var(--acc) 22%,transparent);border-color:transparent;color:var(--ink)}
+ .tabs a[aria-current=page] .nvl{color:var(--acc);font-weight:700}
+ /* lo que flota abajo sube por encima de la barra */
+ .toasts{bottom:calc(var(--navh) + 14px + env(safe-area-inset-bottom,0px))}
+ #fctoast{bottom:calc(var(--navh) + 18px)}
+ .vz-barw.fx .vz-bar{bottom:calc(var(--navh) + 8px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:380px){
+ .top .brand{font-size:0;gap:0}
+ .nvtool{min-width:40px;padding:4px 7px}
+ .nvtl{display:none}
+}
+
+/* ---------- páginas de cada apartado ---------- */
+.nvhub{max-width:1000px}
+.nvhub h1{color:var(--brand,var(--acc))}
+.nvsub{color:var(--mute);margin:6px 0 0;font-size:16px}
+.nvh2{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:21px;margin:26px 0 10px}
+.nvlearn{max-width:1180px;padding-bottom:0}
+.nvlearn #lecturas{margin-bottom:0}
+.nvtiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:12px;margin-top:16px}
+.nvtiles.nvsmall{grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:10px;margin-top:10px}
+.nvt{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:16px;background:var(--panel);border:1px solid var(--line);color:var(--ink);text-decoration:none;text-align:left;font:inherit;cursor:pointer;box-shadow:var(--shadow);transition:transform .15s,border-color .15s;position:relative}
+.nvt:hover{transform:translateY(-2px);border-color:var(--acc)}
+.nvt:active{transform:scale(.98)}
+.nvt:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
+.nvti{flex:none;font-size:30px;line-height:1;width:44px;text-align:center}
+.nvtt{display:flex;flex-direction:column;min-width:0}
+.nvtt b{font-size:17px;line-height:1.25}
+.nvtt span{font-size:14px;color:var(--mute);line-height:1.35}
+.nvt[data-n]::after{content:attr(data-n);position:absolute;top:10px;right:12px;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;background:var(--panel2);color:var(--mute)}
+.nvsmall .nvt{padding:10px 12px;gap:10px;box-shadow:none}
+.nvsmall .nvti{font-size:24px;width:32px}
+.nvsmall .nvtt b{font-size:15.5px}
+.nvsmall .nvtt span{font-size:13px}
+@media(prefers-reduced-motion:reduce){.nvt{transition:none}.nvt:hover{transform:none}}
+
+/* En grupo: entrar con código */
+.nvcode{margin-top:20px;padding:18px;border-radius:18px;background:var(--panel);border:2px solid var(--acc);box-shadow:var(--shadow)}
+.nvcode label{display:block;font-family:Bungee,Impact,sans-serif;font-size:22px;margin-bottom:10px}
+.nvcrow{display:flex;gap:10px;flex-wrap:wrap}
+.nvcrow input{flex:1 1 180px;min-width:0;min-height:56px;padding:6px 16px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:700 28px/1 Lexend,system-ui,sans-serif;letter-spacing:.3em;text-align:center}
+.nvcrow input:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:1px}
+.nvcrow .btn{min-height:56px;font-size:18px;padding:8px 26px}
+.nvmsg{margin:8px 0 0;min-height:1.4em;color:var(--mute);font-size:15px}
+
+/* Practicar (dentro de la sala de juegos) */
+.gintro+.nvsec,.ggrid+.nvsec{max-width:1180px;margin:0 auto;padding:8px max(4vw,16px) 0}
+.nvsec h2{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:clamp(22px,4.6vw,30px);margin:10px 0 2px}
+h2.gmini{max-width:1180px;margin:26px auto 0;padding:0 max(4vw,16px);font-size:clamp(22px,4.6vw,30px)}
+h2.gmini+.ggrid{padding-top:10px}
+
+/* Inicio */
+.nvintro{padding-bottom:18px}
+.nvlang{margin:10px 0 0;font-size:15px;color:var(--mute)}
+.nvlink{background:none;border:0;padding:4px 2px;color:var(--acc);font:inherit;font-weight:700;text-decoration:underline;cursor:pointer;min-height:32px}
+.nvhome{max-width:1180px;margin:0 auto;padding:8px max(4vw,16px) 8px;display:grid;gap:8px 28px;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+.nvhome .nvsec{padding:0}
+.nvhome .nvsec h2{font-size:22px;margin:14px 0 10px}
+.nvsg{display:grid;gap:10px;grid-template-columns:minmax(0,1fr)}
+.nvsg .card{max-width:420px}
+.nvstats{display:grid;grid-template-columns:1fr 1fr;gap:10px;color:var(--ink);text-decoration:none}
+.nvst{display:flex;flex-direction:column;gap:2px;padding:14px 16px;border-radius:16px;background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow)}
+.nvst b{font-size:26px;line-height:1.1}
+.nvst span{font-size:13.5px;color:var(--mute)}
+.nvst.nvlv{grid-column:1/-1}
+.nvst.nvlv b{font-size:20px}
+.nvxpb{display:block;height:10px;border-radius:6px;background:var(--panel2);overflow:hidden;margin:6px 0 2px}
+.nvxpb i{display:block;height:100%;background:var(--ok);border-radius:6px}
+.nvstats:hover .nvst{border-color:var(--mute)}
+.nvstats:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:4px;border-radius:16px}
+@media(max-width:760px){.nvhome{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- capas: buscador e idioma ---------- */
+.nvov{position:fixed;inset:0;z-index:90;display:none;align-items:flex-start;justify-content:center;padding:max(5vh,16px) 12px 12px;background:rgba(8,5,12,.66)}
+.nvov.on{display:flex}
+.nvbox{position:relative;width:min(560px,100%);max-height:calc(100dvh - 10vh);overflow:auto;padding:18px 18px 20px;border-radius:18px;background:var(--panel);border:1px solid var(--line);box-shadow:0 24px 60px -20px rgba(0,0,0,.8)}
+.nvbox h2{margin:0 44px 12px 0;font-size:20px}
+.nvx{position:absolute;top:10px;right:10px;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font-size:16px;cursor:pointer}
+.nvsf input{width:100%;box-sizing:border-box;min-height:52px;padding:8px 16px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:500 19px Lexend,system-ui,sans-serif}
+.nvsf input:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:1px}
+.nvres{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
+.nvres li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:12px;background:var(--panel2);border:1px solid var(--line)}
+.nvres li>div:first-child{display:flex;flex-direction:column;min-width:0}
+.nvres b{font-size:18px}
+.nvres li span{color:var(--ink)}
+.nvres small{color:var(--mute);font-size:13px;line-height:1.35}
+.nvra{display:flex;gap:6px;flex:none}
+.nvra .btn{min-height:40px;padding:6px 10px;font-size:14px}
+.nvres .nvnada{justify-content:center;color:var(--mute)}
+.nvidioma .pk{margin-top:10px;background:var(--panel2)}
+.nvidioma h3{margin:0 0 8px;font-size:15px}
+@media(max-width:520px){.nvres li{flex-direction:column;align-items:stretch}.nvra{justify-content:flex-end}}
+
+/* ---------- ajustes ---------- */
+.nvhome{box-sizing:content-box}
+.nvsg .card{display:grid;grid-template-columns:minmax(110px,38%) 1fr;max-width:520px}
+.nvsg .card .art{aspect-ratio:auto;height:100%;min-height:120px;border-bottom:0;border-right:1px solid var(--line)}
+.nvsg .card .art img{height:100%;object-fit:cover}
+@media(max-width:760px){
+ .top .brand{font-size:15px}
+ .nvtiles.nvsmall{grid-template-columns:1fr 1fr;gap:8px}
+ .nvsmall .nvt{flex-direction:column;align-items:flex-start;gap:4px;padding:10px 12px}
+ .nvsmall .nvtt span{display:none}
+ .nvsmall .nvsigue .nvtt span,.nvsigue .nvsmall .nvtt span{display:block}
+}

@@ -316,12 +316,15 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="concursos/concursos.css">
 <link rel="stylesheet" href="videos/videos.css">
 <link rel="stylesheet" href="diseno.css">
+<link rel="stylesheet" href="nav/nav.css">
+<script src="nav/nav.js"></script>
 </head>
 <body>
 <header class="top">
   <a class="brand" id="brand" href="#inicio">COMPRENDO</a>
   <nav class="tabs" id="tabs" aria-label="Menú"></nav>
   <div class="score" id="score" hidden></div>
+  <div class="nvtools" id="nvtools"></div>
   <a class="me" id="me" href="#progreso" hidden></a>
 </header>
 <main id="app"><p class="msg">Cargando… · Loading…</p></main>
@@ -425,6 +428,7 @@ const fixG = () => { const f = freshG(); if (!S.g || typeof S.g !== "object") S.
 const dstr = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 const dayN = s => { const [y, m, d] = s.split("-").map(Number); return Math.round(Date.UTC(y, m - 1, d) / 864e5); };
 const today = () => dstr(new Date());
+const weekId = () => { const d = new Date(); d.setDate(d.getDate() - (d.getDay() + 6) % 7); return dstr(d); }; /* lunes de esta semana */
 const lvStart = n => 50 * n * (n - 1); /* XP needed to reach level n: 0, 100, 300, 600, 1000… */
 const lvOf = xp => { let n = 1; while (xp >= lvStart(n + 1)) n++; return n; };
 const rankOf = n => [[1, "r1"], [3, "r2"], [5, "r3"], [8, "r4"], [12, "r5"]].filter(([m]) => n >= m).pop()[1];
@@ -457,6 +461,7 @@ function award(n, key, rid) {
   const h = new Date().getHours();
   if (h >= 22 || h < 5) secret("buho"); else if (h < 8) secret("madruga");
   if (n > 0) {
+    const wk = weekId(); if (!g.wk || g.wk.w !== wk) g.wk = {w: wk, xp: 0}; g.wk.xp += n; /* XP de la semana (Inicio) */
     const before = lvOf(g.xp); g.xp += n; if (rid) g.rx[rid] = (g.rx[rid] || 0) + n;
     xpPop(n); const after = lvOf(g.xp); if (after > before) toast(TI("t_level", {n: after}), 1);
     try { dispatchEvent(new CustomEvent("lya:gain", {detail: {n, key, up: after > before}})); } catch (e) {} /* mascota */
@@ -585,7 +590,8 @@ function renderProg() {
 /* ---------- top bar ---------- */
 function renderTop() {
   const rd = S.view === "read", L = rd ? R : null;
-  $("tabs").innerHTML = `<a href="#inicio" ${S.view === "home" ? 'aria-current="page"' : ""}>${TT("home")}</a>
+  if (window.LYANav) { $("tabs").innerHTML = LYANav.bar(S.view); $("nvtools").innerHTML = LYANav.tools(); }
+  else $("tabs").innerHTML = `<a href="#inicio" ${S.view === "home" ? 'aria-current="page"' : ""}>${TT("home")}</a>
     <a href="#diccionario" ${S.view === "dict" || S.view === "fc" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}${window.LYADictados ? `<a href="#dictados" ${S.view === "dictado" ? 'aria-current="page"' : ""}>${LYADictados.tab()}</a>` : ""}${window.LYACanciones ? `<a href="#canciones" ${S.view === "songs" ? 'aria-current="page"' : ""}>${LYACanciones.tab()}</a>` : ""}${window.LYADuelo ? `<a href="#duelo" ${S.view === "duelo" ? 'aria-current="page"' : ""}>${LYADuelo.tab()}</a>` : ""}${window.LYAEscape ? `<a href="#escape" ${S.view === "escape" ? 'aria-current="page"' : ""}>${LYAEscape.tab()}</a>` : ""}${window.LYAConcursos ? `<a href="#concursos" ${S.view === "cc" ? 'aria-current="page"' : ""}>${LYAConcursos.tab()}</a>` : ""}${window.LYADoblaje ? `<a href="#doblaje" ${S.view === "dub" ? 'aria-current="page"' : ""}>${LYADoblaje.tab()}</a>` : ""}${window.LYACamara ? `<a href="#camara" ${S.view === "camara" ? 'aria-current="page"' : ""}>${LYACamara.tab()}</a>` : ""}${window.LYAPronto?.pending() ? `<a href="#proximamente" ${S.view === "pronto" ? 'aria-current="page"' : ""}>${LYAPronto.tab()}</a>` : ""}${window.LYAVideos ? `<a href="#videos" ${S.view === "vd" ? 'aria-current="page"' : ""}>${LYAVideos.tab()}</a>` : ""}${window.LYAAvisos?.tabHTML ? LYAAvisos.tabHTML(S.view) : ""}`;
   if (rd && L) { const r = scoreOf(L); $("score").innerHTML = `${esc(U("points", S.learn))} <b>${r.pts}</b> / ${r.tot}`; $("score").hidden = false; }
   else if (S && S.view === "dict") { $("score").innerHTML = `${esc(U("to_review", S.learn))} <b>${S.dict.filter(d => d.miss && d.l === S.learn).length}</b>`; $("score").hidden = false; }
@@ -605,22 +611,25 @@ function cardHTML(r, small) {
 }
 function renderHome() {
   setAcc("#ff4141");
-  const langs = Object.keys(CAT.languages);
-  const okKnow = c => CAT.courses.some(x => x.ready && x.know.includes(c));
-  const okLearn = c => CAT.courses.some(x => x.ready && x.learn === c);
-  const chip = (c, on, ok, act) => `<button class="chip" data-act="${act}" data-l="${c}" aria-pressed="${on}" ${ok ? "" : "disabled"}>${esc(lname(c, c))}${ok ? (c !== S.know ? `<small>${esc(lname(c, S.know))}</small>` : "") : `<small>${TI("soon")}</small>`}</button>`;
+  if (!window.LYANav) return renderLearn();
+  const g = S.g, n = lvOf(g.xp), last = rdById(S.read);
+  $("app").innerHTML = `<section class="intro nvintro"><div class="in">
+    <h1>${esc(U("home_title", S.learn))}</h1><p class="lead">${TB("home_sub")}</p>${LYANav.idiomaLinea()}${window.LYAMascota ? LYAMascota.homeCard() : ""}</div></section>
+    ${window.LYAAvisos ? LYAAvisos.html() : ""}
+    <div class="nvhome">${LYANav.inicio({card: last && last.file ? cardHTML(last) : "", streak: streakNow(), lvl: n, xp: g.xp, a: lvStart(n), b: lvStart(n + 1), wk: g.wk && g.wk.w === weekId() ? g.wk.xp : 0})}</div>
+    ${window.LYAVotos ? LYAVotos.html() : ""}${window.LYAPropuestas ? LYAPropuestas.html() : ""}`;
+}
+/* Aprender: más formas de aprender + lecturas por nivel (antes era la portada) */
+function renderLearn() {
+  setAcc("#ff4141");
   const rs = rdList().filter(r => r.level === S.level);
   rs.sort((a, b) => (!!b.file) - (!!a.file));
-  $("app").innerHTML = `<section class="intro"><div class="in">
-    <h1>${esc(U("home_title", S.learn))}</h1><p class="lead">${TB("home_sub")}</p>${window.LYAMascota ? LYAMascota.homeCard() : ""}
-    <div class="pickers">
-      <div class="pk"><h2>${esc(U("know", S.know))}${S.know !== S.learn ? `<span class="en">${esc(U("know", S.learn))}</span>` : ""}</h2><div class="chips" role="group">${langs.map(c => chip(c, c === S.know, okKnow(c), "know")).join("")}</div></div>
-      <div class="pk"><h2>${esc(U("learn", S.know))}${S.know !== S.learn ? `<span class="en">${esc(U("learn", S.learn))}</span>` : ""}</h2><div class="chips" role="group">${langs.map(c => chip(c, c === S.learn, okLearn(c), "learn")).join("")}</div></div>
-    </div></div></section>
-    ${window.LYAAvisos ? LYAAvisos.html() : ""}
+  const N = window.LYANav;
+  $("app").innerHTML = `${N ? `<section class="wrap nvhub nvlearn"><h1>📖 ${esc(N.t("a_h1"))}</h1><p class="nvsub">${esc(N.t("a_sub"))}</p>
+    <h2 class="nvh2">${esc(N.t("mas"))}</h2>${N.aprenderTiles()}<h2 class="nvh2" id="lecturas">📚 ${esc(N.t("lecturas"))}</h2></section>` : ""}
     <div class="lvbar"><h2>${TI("level")}</h2><nav class="lv">${LV.map(l => `<a href="#nivel-${l.toLowerCase()}" aria-current="${l === S.level}"><b>${l}</b><span>${esc(U("level_" + l, S.learn))}</span></a>`).join("")}</nav></div>
     <div class="lvbar" style="padding-top:14px"><p class="en" style="margin:0">${TI("pick")}</p></div>
-    <div class="grid">${rs.map(r => cardHTML(r)).join("")}</div>${window.LYAVotos ? LYAVotos.html() : ""}${window.LYAPropuestas ? LYAPropuestas.html() : ""}`;
+    <div class="grid">${rs.map(r => cardHTML(r)).join("")}</div>`;
 }
 
 /* ---------- reading ---------- */
@@ -803,6 +812,9 @@ function renderDict() {
     ${(() => { const ws = all.filter(([d]) => d.r === "canciones"); return ws.length ? `<section class="ex"><div class="dh"><h2>${esc(window.LYACanciones?.dictTitulo?.() || "🎵")}</h2>
         <button class="btn" data-act="prac" data-r="canciones">${TI("practise")} · ${ws.length}</button></div>
         <ul class="words">${ws.map(li).join("")}</ul></section>` : ""; })()}
+    ${(() => { const ws = all.filter(([d]) => d.r === "buscar"); return ws.length ? `<section class="ex"><div class="dh"><h2>${esc(window.LYANav?.t("buscadas") || "🔍")}</h2>
+        <button class="btn" data-act="prac" data-r="buscar">${TI("practise")} · ${ws.length}</button></div>
+        <ul class="words">${ws.map(li).join("")}</ul></section>` : ""; })()}
     ${(() => { const ws = all.filter(([d]) => d.r === "camara"); return ws.length ? `<section class="ex"><div class="dh"><h2>${esc(window.LYACamara?.dictTitulo?.() || "📷")}</h2>
         <button class="btn" data-act="prac" data-r="camara">${TI("practise")} · ${ws.length}</button></div>
         <ul class="words">${ws.map(li).join("")}</ul></section>` : ""; })()}</div>`;
@@ -925,6 +937,7 @@ async function dictAct(act, b) {
     if (n) xp(n, "dict-save", {ok: true, count: n});
     await fillTr(); save(); render();
   }
+  else if (act === "prac" && b.dataset.r === "buscar") startQuiz(mine().filter(([d]) => d.r === "buscar").map(([, i]) => i), `${U("practise", S.learn)}: ${window.LYANav?.t("buscadas") || "🔍"}`);
   else if (act === "prac" && b.dataset.r === "camara") startQuiz(mine().filter(([d]) => d.r === "camara").map(([, i]) => i), `${U("practise", S.learn)}: ${window.LYACamara?.dictTitulo?.() || "📷"}`);
   else if (act === "prac" && b.dataset.r === "canciones") startQuiz(mine().filter(([d]) => d.r === "canciones").map(([, i]) => i), `${U("practise", S.learn)}: ${window.LYACanciones?.dictTitulo?.() || "🎵"}`);
   else if (act === "prac") { const r = rdById(b.dataset.r); startQuiz(mine().filter(([d]) => d.r === r.id).map(([, i]) => i), `${U("practise", S.learn)}: ${r.title[S.learn]}`); }
@@ -1046,6 +1059,8 @@ function render() {
   if (S.view === "pronto" && window.LYAPronto) return LYAPronto.render($("app"));
   if (S.view === "camara" && window.LYACamara) return LYACamara.render($("app"));
   if (S.view === "read" && R) return renderRead();
+  if (S.view === "learn") return renderLearn();
+  if (S.view === "hub" && window.LYANav) return LYANav.render($("app"));
   return renderHome();
 }
 let routeN = 0;
@@ -1055,7 +1070,9 @@ async function route() {
   const old = h.match(/^lectura-(\d)$/); if (old) h = ["bear-a1", "bear-a2", "bear-b1"][+old[1] - 1] || "inicio";
   try { PK = await loadPack(S.learn, S.know); } catch (e) { $("app").innerHTML = `<p class="msg">${esc(U("load_error", "es"))}<br>${esc(U("load_error", "en"))}</p>`; return; }
   const lv = h.match(/^nivel-(a1|a2|b1|b2)$/);
-  if (h === "diccionario") S.view = "dict";
+  if (h === "aprender" || h === "lecturas") S.view = "learn";
+  else if (window.LYANav?.isHub(h)) S.view = "hub";
+  else if (h === "diccionario") S.view = "dict";
   else if (window.LYAFichas?.isFc(h)) S.view = "fc";
   else if (window.LYAJuegos?.isGames(h)) S.view = "games";
   else if (h === "progreso") S.view = "prog";
@@ -1070,7 +1087,7 @@ async function route() {
   else if (window.LYAAvisos?.isDeb?.(h)) S.view = "deb";
   else if (window.LYAPronto?.isPronto(h)) S.view = "pronto";
   else if (window.LYACamara?.isCam(h)) S.view = "camara";
-  else if (lv) { S.view = "home"; S.level = lv[1].toUpperCase(); }
+  else if (lv) { S.view = "learn"; S.level = lv[1].toUpperCase(); }
   else if (rdById(h)?.file) {
     const meta = rdById(h);
     if (R?.id !== h) { $("app").innerHTML = `<p class="msg">${TI("loading")}</p>`; try { R = await loadReading(meta.file); } catch (e) { $("app").innerHTML = `<p class="msg">${TI("load_error")}</p>`; return; } }
@@ -1097,7 +1114,10 @@ async function start() {
 /* bridge for voz.js (voice, karaoke, recording) */
 window.LYA = window.LYA || {}; for (const [k, f] of Object.entries({S: () => S, R: () => R, CAT: () => CAT})) Object.defineProperty(window.LYA, k, {get: f, configurable: true}); Object.assign(window.LYA, {tok, plain, both, save});
 window.LYA = Object.assign(window.LYA || {}, {award: (...a) => award(...a)});
-{ const LYA = window.LYA = window.LYA || {}; const mine = {rdList, rdById, loadReading, setAcc, speak, NAME, both, save}; for (const k in mine) if (!(k in LYA)) LYA[k] = mine[k]; LYA.get = () => ({S, CAT, PK, R}); LYA.renderPage = render; } /* mini-juegos */
+{ const LYA = window.LYA = window.LYA || {}; const mine = {rdList, rdById, loadReading, setAcc, speak, NAME, both, save}; for (const k in mine) if (!(k in LYA)) LYA[k] = mine[k]; LYA.get = () => ({S, CAT, PK, R}); LYA.renderPage = render;
+  /* nav/nav.js: idioma desde la barra superior y «＋ Al diccionario» desde el buscador */
+  LYA.setLang = (act, l) => { if ((act === "know" || act === "learn") && CAT.languages[l]) { S[act] = l; fixCourse(act); save(); route(); } };
+  LYA.addWord = d => { if (!d || !d.k || inDict(d.k, "buscar")) return false; S.dict.push({w: d.w, k: d.k, r: "buscar", l: S.learn, t: d.t || "", tr: {[S.know]: d.t || ""}, d: d.d || "", miss: false}); xp(1, "dict-save", {ok: true, word: d.w}); fillTr(); save(); renderTop(); if (S.view === "dict") render(); return true; }; } /* mini-juegos */
 start();
 }
 </script>

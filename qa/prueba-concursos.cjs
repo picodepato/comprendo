@@ -41,7 +41,7 @@ TIEMPO: 10
   const ctx = await b.newContext({viewport: {width: 1280, height: 800}, permissions: ['clipboard-read', 'clipboard-write']});
   const h = await ctx.newPage(); vigila(h);
   await h.goto(BASE + '/index.html#concursos'); await h.waitForSelector('.cc-unir');
-  ok(await h.locator('.tabs a[href="#concursos"]').count() === 1, 'pestaña Concursos en el menú');
+  ok(await h.locator('.tabs a[href="#grupo"]').count() === 1, 'apartado «En grupo» en el menú');
   await shot(h, '01-inicio');
   await h.click('a[href="#concursos-crear"]'); await h.waitForSelector('#cc-prompt');
   await h.selectOption('[data-op=n]', '15'); await h.fill('[data-op=nivel]', '5º de primaria');

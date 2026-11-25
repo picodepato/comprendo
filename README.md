@@ -17,6 +17,17 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Sin cuenta, la web funciona como invitado y guarda en el navegador.
 - «Copia de mi progreso» (botón de la cuenta o 💾): exportar e importar el progreso como texto.
 
+## Navegación (nav/)
+- 5 apartados en una barra (abajo en el móvil, como una app; arriba en el ordenador). Las etiquetas salen en el idioma que el alumno ya sabe.
+  - 🏠 **Inicio** (`#inicio`): deberes pendientes (al tocarlos se abre la actividad), «Sigue donde lo dejaste» (última lectura y última actividad) y la semana (racha, XP de la semana en `S.g.wk`, nivel).
+  - 📖 **Aprender** (`#aprender`, también `#lecturas` y `#nivel-a1…b2`): dictados, cámara, canciones, vídeos con preguntas, doblaje, pronunciación y las lecturas por nivel.
+  - 🎮 **Practicar** (`#practicar`, igual que `#juegos`): vocabulario (diccionario y flashcards), gramática y verbos, y mini-juegos.
+  - 🏫 **En grupo** (`#grupo`): «Entrar con código» (busca el código en concursos, vídeos en directo, duelos, escape room y Garabatos) y crear sala.
+  - 📚 **Mi zona** (`#mizona`): diccionario, palabras de canciones, flashcards, mascota, logros y progreso, historial de deberes.
+  - 👩‍🏫 **Profe** (`#profe`, solo profes y admin): mis clases, crear actividad, actividades creadas, deberes, resultados, fallos y mensajes (abre el panel del profe en la pestaña que toca).
+- Arriba siempre: 🔍 buscador de palabras (también con la tecla «/»; las palabras añadidas salen en el diccionario como «🔍 Palabras buscadas»), 🌐 idioma, 🔥 racha y la cuenta.
+- Las direcciones antiguas (`#juegos`, `#duelo`, `#canciones`, `#deberes`…) siguen funcionando; cada pantalla marca su apartado.
+
 ## Dictados
 - Pestaña «✍️ Dictados» (`dictados/`): la web lee una frase de una lectura (voz del navegador) y el alumno la escribe. Corrección palabra a palabra sin IA: bien, tilde, mayúscula, mal escrita (letras marcadas), falta, sobra y puntuación. Botones Escuchar, Más lento y Por partes. 5 frases por dictado, XP por frase y premio al terminar.
 - Progreso en `S.g.dc[lectura]` (se guarda con la cuenta). Si el alumno dijo que no puede escuchar, explica que hace falta sonido.
