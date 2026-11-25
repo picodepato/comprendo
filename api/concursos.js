@@ -177,7 +177,7 @@ export default (req, res) => seguro(res, async () => {
     }
     /* respuesta compartida por la caché de Vercel durante 1 segundo */
     res.setHeader("Cache-Control", "public, max-age=0, s-maxage=1, stale-while-revalidate=0");
-    res.setHeader("CDN-Cache-Control", "public, s-maxage=1");
+    res.setHeader("Vercel-CDN-Cache-Control", "max-age=1");
     if (!S || !S.c) return res.status(404).json({ error: "no_existe" });
     return res.status(200).json(await publico(cod, S));
   }
