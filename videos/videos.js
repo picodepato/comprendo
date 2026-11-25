@@ -13,7 +13,7 @@ const A = () => window.LYAActividades;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const $ = s => document.querySelector(s);
 const STR = {
-  es: {tab: "🎬 Vídeos", h1: "Vídeos con preguntas", sub: "El vídeo se para y no sigue hasta que contestas. Míralo tú solo o en clase, todos a la vez.",
+  es: {tab: "📺 Vídeos", h1: "Vídeos con preguntas", sub: "El vídeo se para y no sigue hasta que contestas. Míralo tú solo o en clase, todos a la vez.",
     unirse: "Unirse con un código", codigo: "Código", entrar: "Entrar", crear: "✏️ Crear un vídeo con preguntas",
     prep: "Preparados por COMPRENDO", mios: "Mis vídeos", ninguno: "Todavía no has creado ninguno. Pega un enlace de YouTube y añade preguntas en los momentos que quieras.",
     npreg: "{n} preguntas", solo: "▶ Verlo yo", directo: "📺 En clase, en directo", editar: "✏️ Editar", copia: "Guardar una copia para editarla", borrar: "🗑 Borrar",
@@ -38,7 +38,7 @@ const STR = {
     j_puesto: "Vas en el puesto {p} de {n}", j_final: "Has quedado en el puesto {p} de {n}", j_pts: "{n} puntos", tunombre: "Tu nombre",
     e_codigo: "Ese código no existe. Mira bien la pantalla.", e_nombre: "Escribe tu nombre (al menos 2 letras).", e_usado: "Ese nombre ya está en la sala. Ponte otro.",
     e_llena: "La sala está llena (30).", e_terminado: "Esta sala ya ha terminado.", salir: "Salir", e_gen: "Algo ha fallado. Inténtalo otra vez."},
-  en: {tab: "🎬 Videos", h1: "Videos with questions", sub: "The video stops and won't go on until you answer. Watch it alone or in class, all at the same time.",
+  en: {tab: "📺 Videos", h1: "Videos with questions", sub: "The video stops and won't go on until you answer. Watch it alone or in class, all at the same time.",
     unirse: "Join with a code", codigo: "Code", entrar: "Join", crear: "✏️ Create a video with questions",
     prep: "Made by COMPRENDO", mios: "My videos", ninguno: "You haven't made any yet. Paste a YouTube link and add questions wherever you like.",
     npreg: "{n} questions", solo: "▶ Watch it", directo: "📺 Live in class", editar: "✏️ Edit", copia: "Save a copy to edit", borrar: "🗑 Delete",
@@ -63,7 +63,7 @@ const STR = {
     j_puesto: "You're in position {p} of {n}", j_final: "You finished {p} of {n}", j_pts: "{n} points", tunombre: "Your name",
     e_codigo: "That code doesn't exist. Check the screen.", e_nombre: "Write your name (at least 2 letters).", e_usado: "That name is already in the room. Choose another.",
     e_llena: "The room is full (30).", e_terminado: "This room has already finished.", salir: "Leave", e_gen: "Something went wrong. Try again."},
-  ca: {tab: "🎬 Vídeos", h1: "Vídeos amb preguntes", sub: "El vídeo s'atura i no continua fins que contestes. Mira'l tot sol o a classe, tots alhora.",
+  ca: {tab: "📺 Vídeos", h1: "Vídeos amb preguntes", sub: "El vídeo s'atura i no continua fins que contestes. Mira'l tot sol o a classe, tots alhora.",
     unirse: "Unir-se amb un codi", codigo: "Codi", entrar: "Entrar", crear: "✏️ Crear un vídeo amb preguntes",
     prep: "Preparats per COMPRENDO", mios: "Els meus vídeos", ninguno: "Encara no n'has creat cap. Enganxa un enllaç de YouTube i afegeix preguntes on vulguis.",
     npreg: "{n} preguntes", solo: "▶ Mirar-lo", directo: "📺 A classe, en directe", editar: "✏️ Editar", copia: "Guardar-ne una còpia per editar-la", borrar: "🗑 Esborrar",
@@ -179,7 +179,7 @@ async function inicio(app) {
   const C = cuenta(), ls = locales(), lg = lang();
   const preps = PREP().slice().sort((a, b) => (a.idioma !== lg) - (b.idioma !== lg));
   app.innerHTML = `<section class="wrap cc vd">
-    <div class="ghead"><h1 class="cc-h1">🎬 ${T("h1")}</h1></div>
+    <div class="ghead"><h1 class="cc-h1">📺 ${T("h1")}</h1></div>
     <p class="cc-lead">${T("sub")}</p>
     <form class="cc-unir" id="vd-unir"><h2>📱 ${T("unirse")}</h2>
       <div class="cc-fila"><label>${T("codigo")}<input name="codigo" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="123456" required></label><button class="btn main">${T("entrar")}</button></div></form>
@@ -300,7 +300,7 @@ async function ficha(app, id) {
   if (!r) { app.innerHTML = `<section class="wrap cc">${cab("")}<p class="cc-msg mal">${T("e_noexiste")}</p></section>`; return; }
   V.c = r.c; V.id = id;
   const c = r.c;
-  app.innerHTML = `<section class="wrap cc vd">${cab("🎬 " + esc(c.titulo))}
+  app.innerHTML = `<section class="wrap cc vd">${cab("📺 " + esc(c.titulo))}
     <p class="cc-small">${T("npreg", {n: c.preguntas.length})}${c.autor && !r.mio ? " · " + esc(c.autor) : ""}${r.prep ? " · ⭐ COMPRENDO" : id.startsWith("l") ? " · 📱" : " · ☁️"}</p>
     <p class="cc-msg" id="vd-msg" hidden></p>
     <img class="vd-portada" src="${miniatura(c.v)}" alt="">
@@ -324,7 +324,7 @@ async function solo(app, id) {
     V.s = {id, c: r.c, resp: {}, ok: 0, abierta: -1, fin: false};
   }
   const s = V.s;
-  app.innerHTML = `<section class="wrap cc vd vd-solo">${cab("🎬 " + esc(s.c.titulo), "#video-" + esc(id))}
+  app.innerHTML = `<section class="wrap cc vd vd-solo">${cab("📺 " + esc(s.c.titulo), "#video-" + esc(id))}
     <div class="vd-sbar"><span id="vd-cuenta"></span><b id="vd-pts"></b></div>
     <div class="vd-stage"><div id="vd-yt"></div><div class="vd-ov" id="vd-ov" hidden></div></div>
     <div id="vd-fin"></div></section>`;
@@ -574,7 +574,7 @@ function pintarJug() {
   if (!e) return caja(`<p>…</p>`);
   if (e.fase === "cerrada") return caja(`<h2>${T("e_terminado")}</h2><a class="btn" href="#videos">${T("volver")}</a>`);
   const yo = (e.ranking || []).find(x => x.n === J.nombre), pos = yo ? e.ranking.indexOf(yo) + 1 : 0;
-  if (e.fase === "espera") return caja(`<div class="cc-gran">✅</div><h2>${T("j_dentro")}</h2><p>${T("j_espera")}</p><p class="cc-small">🎬 ${esc(e.titulo)}</p>`);
+  if (e.fase === "espera") return caja(`<div class="cc-gran">✅</div><h2>${T("j_dentro")}</h2><p>${T("j_espera")}</p><p class="cc-small">📺 ${esc(e.titulo)}</p>`);
   if (e.fase === "lectura") { const q = Math.max(0, e.t0 - (Date.now() + (J.off || 0))); return caja(`<h2>📖 ${T("leed")}</h2><p class="cc-small">⏱ ${Math.ceil(q / 1000)} s</p>${preguntasHTML(e.todas || [])}`, "vd-lee"); }
   if (e.fase === "fin") return caja(`<div class="cc-gran">${pos === 1 ? "🥇" : pos === 2 ? "🥈" : pos === 3 ? "🥉" : "🏁"}</div><h2>${T("podio")}</h2>${yo ? `<p class="cc-pts">${T("j_pts", {n: yo.pts})}</p><p>${T("j_final", {p: pos, n: e.ranking.length})}</p>` : ""}<a class="btn" href="#videos">${T("volver")}</a>`, "fin");
   if (individual) return jugIndividual();

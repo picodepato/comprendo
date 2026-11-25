@@ -22,7 +22,7 @@ async function api(ruta, metodo = "GET", datos, extra = {}) {
 }
 async function hayServidor() {
   if (servidor !== null) return servidor;
-  try { const r = await api("estado"); servidor = r.ok && r.j.ok === true; } catch (e) { servidor = false; }
+  try { const r = await api("cuenta?a=estado"); servidor = r.ok && r.j.ok === true; } catch (e) { servidor = false; }
   return servidor;
 }
 
@@ -150,7 +150,7 @@ function panelEntrar(modo) {
     b.disabled = true; m.textContent = "Un momento…";
     try {
       const prog = crear ? conCurso(llevar ? copiaLocal() : null, extra.curso) : null;
-      const r = await api(crear ? "registro" : "entrar", "POST", {usuario, clave, ...(crear ? {rol: extra.rol, codigo: extra.codigo, progreso: prog} : {})});
+      const r = await api(crear ? "cuenta?a=registro" : "cuenta?a=entrar", "POST", {usuario, clave, ...(crear ? {rol: extra.rol, codigo: extra.codigo, progreso: prog} : {})});
       if (!r.ok) { m.textContent = MSG[r.j.error] || r.j.error || "No se ha podido. Inténtalo otra vez."; b.disabled = false; return; }
       C = {usuario: r.j.usuario, token: r.j.token, rol: r.j.rol || "alumno", pend: false};
       const g = await api("progreso");
@@ -196,7 +196,7 @@ function panelCuenta() {
   $d("#ctas").onclick = async () => {
     $d("#ctas").disabled = true;
     if (C.pend) await subir();
-    try { await api("salir", "POST", {}); } catch (e) {}
+    try { await api("cuenta?a=salir", "POST", {}); } catch (e) {}
     const id = pid(C.usuario); P.list = P.list.filter(x => x.id !== id);
     if (!P.list.some(x => x.id === "local")) P.list.push({id: "local", name: "", s: nuevo()});
     P.cur = "local"; C = null; escribir(null); guardarP(); location.reload();
@@ -255,6 +255,6 @@ function panelCopia() {
   };
 }
 
-window.LYACuentas = {preparar, cambio, boton, abrir, subir, api, hayServidor, get usuario() { return C && C.usuario; }, get rol() { return C && (C.usuario === "admin" ? "admin" : C.rol); }, panel: tab => panelAdmin(tab),
+window.LYACuentas = {preparar, cambio, boton, abrir, subir, api, hayServidor, get usuario() { return C && C.usuario; }, get rol() { return C && C.token ? (C.usuario === "admin" ? "admin" : C.rol || "alumno") : null; }, panel: tab => panelAdmin(tab),
   ui: {ventana, cerrar, esc, get dlg() { return dlg; }, $d: s => dlg.querySelector(s)}};
 })();

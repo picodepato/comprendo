@@ -1,18 +1,18 @@
 /* Para el alumno con cuenta: «Deberes» (caja en la portada y página #deberes) y mensajes del profe (ventana al entrar).
-   - Cada deber se toca y abre directamente la actividad: lectura, dictado, canción, concurso, vídeo con preguntas o doblaje.
+   - Cada deber se toca y abre directamente la actividad: lectura, dictado, canción, doblaje, concurso o vídeo con preguntas.
    - Deberes «en clase, en directo»: cuando el profe abre la sala avisando a la clase, el alumno entra solo
      (se pregunta cada 5 s a api/concursos?aviso=<clase>, que va con caché y lo comparte toda la clase).
    Solo en la web con servidor. Usa LYACuentas (cuentas.js), LYA (index.html) y LYAActividades (actividades.js). */
 (() => {
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const TX = {
-  ca: {tab: "📚 Deures", deb: "📚 Els teus deures", hasta: "Fins al {d}", hoy: "Avui és l'últim dia!", tarde: "S'ha acabat el termini", hecha: "Feta", ir: "Llegir", oir: "Escoltar", msg: "📬 Missatge del teu profe", msgs: "📬 Missatges del teu profe", ok: "Entesos!", dict: "Dictat", escribir: "Escriure",
+  ca: {tab: "📚 Deures", deb: "📚 Els teus deures", hasta: "Fins al {d}", hoy: "Avui és l'últim dia!", tarde: "S'ha acabat el termini", hecha: "Feta", ir: "Llegir", oir: "Escoltar", msg: "📬 Missatge del teu profe", msgs: "📬 Missatges del teu profe", ok: "Entesos!", dict: "Dictat", escribir: "Escriure", doblar: "Doblar",
     hacer: "Fer", jugar: "Jugar", ver: "Mirar", directo: "🔴 A classe, en directe", espera: "Quan el teu profe obri la sala, hi entraràs sol.", abierta: "🔴 El teu profe ha obert «{t}»", entrar: "Entrar ara", entrando: "Entrant…",
     todos: "Veure tots els deures", vacio: "No tens deures. 🎉", h1: "Els meus deures", sub: "Toca un deure per fer-lo. Els de «a classe, en directe» s'obren sols quan el teu profe obre la sala.", sinclase: "Encara no ets a cap classe. Posa el codi que et doni el teu profe a «El meu compte».", entra: "Entra amb el teu compte per veure els teus deures.", pendientes: "Per fer", hechos: "Fets"},
-  es: {tab: "📚 Deberes", deb: "📚 Tus deberes", hasta: "Hasta el {d}", hoy: "¡Hoy es el último día!", tarde: "Se acabó el plazo", hecha: "Hecha", ir: "Leer", oir: "Escuchar", msg: "📬 Mensaje de tu profe", msgs: "📬 Mensajes de tu profe", ok: "¡Entendido!", dict: "Dictado", escribir: "Escribir",
+  es: {tab: "📚 Deberes", deb: "📚 Tus deberes", hasta: "Hasta el {d}", hoy: "¡Hoy es el último día!", tarde: "Se acabó el plazo", hecha: "Hecha", ir: "Leer", oir: "Escuchar", msg: "📬 Mensaje de tu profe", msgs: "📬 Mensajes de tu profe", ok: "¡Entendido!", dict: "Dictado", escribir: "Escribir", doblar: "Doblar",
     hacer: "Hacer", jugar: "Jugar", ver: "Ver", directo: "🔴 En clase, en directo", espera: "Cuando tu profe abra la sala, entrarás solo.", abierta: "🔴 Tu profe ha abierto «{t}»", entrar: "Entrar ahora", entrando: "Entrando…",
     todos: "Ver todos los deberes", vacio: "No tienes deberes. 🎉", h1: "Mis deberes", sub: "Toca un deber para hacerlo. Los de «en clase, en directo» se abren solos cuando tu profe abre la sala.", sinclase: "Todavía no estás en ninguna clase. Pon el código que te dé tu profe en «Mi cuenta».", entra: "Entra con tu cuenta para ver tus deberes.", pendientes: "Por hacer", hechos: "Hechos"},
-  en: {tab: "📚 Homework", deb: "📚 Your homework", hasta: "Due {d}", hoy: "Today is the last day!", tarde: "Past the due date", hecha: "Done", ir: "Read", oir: "Listen", msg: "📬 A message from your teacher", msgs: "📬 Messages from your teacher", ok: "Got it!", dict: "Dictation", escribir: "Write",
+  en: {tab: "📚 Homework", deb: "📚 Your homework", hasta: "Due {d}", hoy: "Today is the last day!", tarde: "Past the due date", hecha: "Done", ir: "Read", oir: "Listen", msg: "📬 A message from your teacher", msgs: "📬 Messages from your teacher", ok: "Got it!", dict: "Dictation", escribir: "Write", doblar: "Dub",
     hacer: "Do it", jugar: "Play", ver: "Watch", directo: "🔴 Live in class", espera: "When your teacher opens the room, you'll join automatically.", abierta: "🔴 Your teacher has opened “{t}”", entrar: "Join now", entrando: "Joining…",
     todos: "See all homework", vacio: "No homework. 🎉", h1: "My homework", sub: "Tap a task to do it. “Live in class” ones open by themselves when your teacher opens the room.", sinclase: "You're not in a class yet. Enter the code your teacher gives you in “My account”.", entra: "Sign in to see your homework.", pendientes: "To do", hechos: "Done"},
 };
@@ -25,16 +25,17 @@ const T = (k, v) => esc(t(k, v)) + (both() && S().know !== S().learn ? ` · ${es
 const hoy = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const dia = d => new Date(d + "T12:00:00").toLocaleDateString(S().learn === "en" ? "en-GB" : "es-ES", {weekday: "long", day: "numeric", month: "long"});
 const C = () => window.LYACuentas || {};
-const ICONO = {quiz: "🏆", video: "🎬", doblaje: "🎙️"};
+const ICONO = {quiz: "🏆", video: "📺", doblaje: "🎬"};
 
 /* qué abre cada deber y si está hecho */
 function info(d) {
   const s = S(), g = s.g || {};
   if (d.actividad) {
     const id = d.actividad, h = (g.ac || {})[id];
-    const ruta = d.tipo === "video" ? "#video-solo-" + id : d.tipo === "doblaje" ? "#doblaje-" + id : "#concurso-solo-" + id;
+    const ruta = d.tipo === "video" ? "#video-solo-" + id : d.tipo === "doblaje" ? "#doblaje-e-" + id : "#concurso-solo-" + id;
     return {titulo: `${ICONO[d.tipo] || "🧩"} ${d.titulo || ""}`, hecha: h, ruta: d.directo ? null : ruta, boton: d.tipo === "video" ? "ver" : d.tipo === "quiz" ? "jugar" : "hacer", directo: !!d.directo};
   }
+  if (d.cancion && d.doblaje) return {titulo: "🎬 " + (d.titulo || ""), hecha: (g.cn || {})[d.cancion], ruta: "#doblaje-e-" + d.cancion, boton: "doblar"};  /* doblaje (doblaje/) */
   if (d.cancion) return {titulo: "🎵 " + (d.titulo || ""), hecha: (g.cn || {})[d.cancion], ruta: "#cancion-" + d.cancion, boton: "oir"};
   const dic = /^dictado-/.test(d.lectura || ""), r = window.LYA && window.LYA.rdById ? window.LYA.rdById(dic ? d.lectura.slice(8) : d.lectura) : null;
   const titulo = r ? (dic ? "✍️ " + t("dict") + ": " : "📖 ") + (r.title[s.learn] || r.title.es) + ` · ${r.level}` : d.lectura;

@@ -1,0 +1,497 @@
+{
+ "id": "misterios-b2",
+ "topic": "misterios",
+ "level": "B2",
+ "title": "El libro que nadie puede leer",
+ "short": "El libro que nadie puede leer",
+ "text": [
+  "En una biblioteca de la Universidad de Yale, en Estados Unidos, hay un pequeño libro que ha derrotado a algunas de las mentes más brillantes de los últimos cien años. Contiene unas doscientas cuarenta páginas de una caligrafía elegante, acompañadas de dibujos de colores de plantas, estrellas y extrañas figuras humanas. El problema es que nadie sabe en qué idioma está escrito, ni siquiera si se trata de un idioma.",
+  "El libro se conoce como el manuscrito Voynich, por Wilfrid Voynich, un librero polaco que lo compró en 1912 a un colegio religioso cerca de Roma. Voynich estaba convencido de haber encontrado algo extraordinario y pasó el resto de su vida intentando entenderlo, sin éxito. Desde entonces, el manuscrito lo han estudiado descifradores profesionales, lingüistas, historiadores y miles de aficionados entusiastas. Todos han fracasado.",
+  "Sí sabemos algunas cosas. En 2009, unos científicos usaron la prueba del carbono catorce para analizar la piel de animal sobre la que está escrito el libro, y llegaron a la conclusión de que se fabricó a principios del siglo quince, entre 1404 y 1438 aproximadamente. Esto descartó una teoría muy popular según la cual el libro era una falsificación del propio Voynich. Unas cartas encontradas junto al manuscrito muestran además que perteneció a un emperador en Praga, que, según se dice, pagó por él una gran cantidad de oro.",
+  "Su contenido, sin embargo, sigue siendo un completo misterio. Cerca de la mitad del libro está llena de dibujos de plantas, pero la mayoría no se parecen a ninguna especie conocida por la ciencia. Otras secciones parecen mostrar mapas astronómicos, y una parte especialmente rara contiene imágenes de pequeñas figuras que se bañan en piscinas conectadas por tuberías. El texto utiliza un alfabeto de entre veinte y treinta símbolos que no aparecen en ningún otro lugar.",
+  "A lo largo de los años, se han propuesto todo tipo de explicaciones. Algunos creen que está escrito en un código secreto pensado para ocultar conocimientos médicos o científicos. Otros piensan que podría ser una lengua desconocida escrita con un alfabeto inventado. Algunos estudios estadísticos han mostrado que el texto tiene patrones típicos de las lenguas reales, lo que hace poco probable que sea totalmente aleatorio. Aun así, cada pocos años alguien anuncia que por fin ha resuelto el enigma, y cada vez otros expertos rechazan enseguida su solución.",
+  "Algunos investigadores sospechan que la respuesta más decepcionante puede ser también la correcta: que el libro sea un engaño muy elaborado del siglo quince, escrito para impresionar o engañar a un comprador rico. Si es así, su autor habría necesitado una enorme paciencia, porque producir tantas páginas de tonterías convincentes habría sido dificilísimo.",
+  "Sea cual sea su origen, el manuscrito se ha hecho famoso precisamente porque se niega a revelar su secreto. Hoy cualquiera puede ver todas sus páginas en internet, y no dejan de aparecer teorías nuevas. Quizá algún día alguien consiga leerlo por fin. Hasta entonces, seguirá siendo uno de los enigmas más fascinantes del mundo."
+ ],
+ "q": [
+  [
+   "¿Qué quiere decir el autor con que el libro ha derrotado a mentes brillantes?",
+   [
+    "El libro lo escribieron varios expertos.",
+    "El libro ha hecho daño a sus lectores.",
+    "Personas muy inteligentes han intentado entenderlo sin conseguirlo.",
+    "El libro habla de científicos famosos."
+   ],
+   2
+  ],
+  [
+   "¿Qué sabemos de Wilfrid Voynich?",
+   [
+    "Vendió el libro a un colegio cerca de Roma.",
+    "Escribió él mismo el libro.",
+    "Nunca consiguió entender el libro.",
+    "Era descifrador profesional."
+   ],
+   2
+  ],
+  [
+   "¿Por qué fue importante la prueba del carbono catorce?",
+   [
+    "Demostró que el libro no podía ser obra de Voynich.",
+    "Demostró quién escribió el libro.",
+    "Reveló en qué idioma estaba el texto.",
+    "Demostró que el libro se hizo en Praga."
+   ],
+   0
+  ],
+  [
+   "¿Qué tienen de raro los dibujos de plantas?",
+   [
+    "La mayoría no se parecen a ninguna planta real.",
+    "Muestran plantas para hacer medicinas.",
+    "Son los únicos dibujos del libro.",
+    "Están todos en blanco y negro."
+   ],
+   0
+  ],
+  [
+   "¿Qué han sugerido los estudios estadísticos?",
+   [
+    "Que el libro ya se ha entendido.",
+    "Que el texto probablemente no son símbolos al azar.",
+    "Que el texto está escrito en código, seguro.",
+    "Que el alfabeto se copió de otro libro."
+   ],
+   1
+  ],
+  [
+   "¿Por qué describe el autor el posible engaño como decepcionante?",
+   [
+    "Significaría que el emperador pagó muy poco.",
+    "Un engaño sería muy fácil de hacer.",
+    "Demostraría que Voynich mentía.",
+    "Mucha gente preferiría que el libro guardara un secreto real."
+   ],
+   3
+  ],
+  [
+   "¿En qué párrafo menciona el autor a alguien que tuvo el libro antes que Voynich?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   2
+  ],
+  [
+   "¿En qué párrafo explica el autor de dónde viene el nombre del libro?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   1
+  ],
+  [
+   "¿En qué párrafo dice el autor que hay gente que afirma una y otra vez haber resuelto el misterio?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   4
+  ],
+  [
+   "¿En qué párrafo menciona el autor que hoy cualquiera puede ver el libro?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   6
+  ]
+ ],
+ "vocab": [
+  [
+   "manuscrito",
+   "📜"
+  ],
+  [
+   "planta",
+   "🌿"
+  ],
+  [
+   "código",
+   "🔐"
+  ],
+  [
+   "emperador",
+   "👑"
+  ],
+  [
+   "oro",
+   "🪙"
+  ],
+  [
+   "alfabeto",
+   "🔤"
+  ]
+ ],
+ "halves": [
+  [
+   "El libro lo compró...",
+   "...un librero polaco en 1912."
+  ],
+  [
+   "La piel de animal se fabricó...",
+   "...a principios del siglo quince."
+  ],
+  [
+   "La mayoría de las plantas no se parecen...",
+   "...a ninguna especie conocida."
+  ],
+  [
+   "El alfabeto no aparece...",
+   "...en ningún otro lugar."
+  ],
+  [
+   "Cualquiera puede ver...",
+   "...todas sus páginas en internet."
+  ]
+ ],
+ "grammar": {
+  "title": "Uso de la lengua",
+  "rule": "Cuatro partes como el examen <b>Use of English</b> de Cambridge, pero en español. Partes 2, 3 y 4: escribe tus respuestas y pulsa <b>Comprobar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Parte 1 · Huecos con opciones",
+    "help": "Lee el texto y elige la palabra o expresión que mejor completa cada hueco.",
+    "text": "Los códigos y las claves secretas se han usado durante miles de años para {{0}} en secreto los mensajes. En las guerras, la capacidad de leer los mensajes del enemigo podía {{1}} la diferencia entre la victoria y la derrota. Uno de los ejemplos más famosos es la máquina alemana Enigma, cuyo código fue finalmente {{2}} por un equipo de expertos en Gran Bretaña. Su trabajo se {{3}} en secreto durante décadas, y muchos de ellos nunca recibieron el reconocimiento que {{4}}. Hoy los códigos siguen siendo imprescindibles, ya que {{5}} nuestras contraseñas y datos bancarios cada vez que nos conectamos.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Parte 2 · Huecos abiertos",
+    "help": "Escribe una sola palabra en cada hueco.",
+    "text": "Mucha gente ha dedicado años de {{6}} vida al manuscrito Voynich. Uno de los más famosos fue William Friedman, un experto estadounidense que había ayudado a descifrar códigos enemigos {{7}} la Segunda Guerra Mundial. Trabajó en el manuscrito durante décadas pero, como todos los demás, no fue capaz de leer {{8}} una sola palabra. Hacia el final de su vida, sugirió que podría estar escrito en una lengua artificial {{9}} alguien había inventado. {{10}} su teoría nunca se demostró, muchos expertos todavía la toman en serio. El manuscrito sigue atrayendo a nuevos investigadores, {{11}} uno convencido de que será quien lo resuelva.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Parte 3 · Formación de palabras",
+    "help": "Usa la palabra en mayúsculas para formar la palabra que falta.",
+    "text": "El manuscrito Voynich es uno de los libros más {{12}} del mundo. Su {{13}} sigue siendo desconocido. Muchos {{14}} han intentado entender su extraño alfabeto. Algunos creen que el libro es un ingenioso {{15}}, mientras que otros piensan que contiene conocimientos reales. Los dibujos son {{16}} detallados, y su {{17}} sigue siendo un misterio.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Parte 4 · Transformaciones",
+    "help": "Completa la segunda frase para que signifique lo mismo que la primera. Usa la palabra dada sin cambiarla. Escribe entre dos y cinco palabras.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Los códigos y las claves secretas se han usado durante miles de años para ___ en secreto los mensajes.",
+    [
+     "aguantar",
+     "soportar",
+     "sostener",
+     "mantener"
+    ],
+    3
+   ],
+   [
+    "En las guerras, la capacidad de leer los mensajes del enemigo podía ___ la diferencia entre la victoria y la derrota.",
+    [
+     "tomar",
+     "dar",
+     "marcar",
+     "hacer"
+    ],
+    2
+   ],
+   [
+    "Uno de los ejemplos más famosos es la máquina alemana Enigma, cuyo código fue finalmente ___ por un equipo de expertos en Gran Bretaña.",
+    [
+     "partido",
+     "descifrado",
+     "rasgado",
+     "cortado"
+    ],
+    1
+   ],
+   [
+    "Su trabajo se ___ en secreto durante décadas, y muchos de ellos nunca recibieron el reconocimiento que ….",
+    [
+     "siguió",
+     "mantuvo",
+     "estuvo",
+     "tuvo"
+    ],
+    1
+   ],
+   [
+    "Su trabajo se … en secreto durante décadas, y muchos de ellos nunca recibieron el reconocimiento que ___.",
+    [
+     "merecían",
+     "alcanzaban",
+     "ganaban",
+     "cobraban"
+    ],
+    0
+   ],
+   [
+    "Hoy los códigos siguen siendo imprescindibles, ya que ___ nuestras contraseñas y datos bancarios cada vez que nos conectamos.",
+    [
+     "protegen",
+     "resisten",
+     "previenen",
+     "evitan"
+    ],
+    0
+   ],
+   [
+    "Mucha gente ha dedicado años de ___ vida al manuscrito Voynich.",
+    [
+     "su"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Uno de los más famosos fue William Friedman, un experto estadounidense que había ayudado a descifrar códigos enemigos ___ la Segunda Guerra Mundial.",
+    [
+     "durante"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Trabajó en el manuscrito durante décadas pero, como todos los demás, no fue capaz de leer ___ una sola palabra.",
+    [
+     "ni"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Hacia el final de su vida, sugirió que podría estar escrito en una lengua artificial ___ alguien había inventado.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ su teoría nunca se demostró, muchos expertos todavía la toman en serio.",
+    [
+     "Aunque"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El manuscrito sigue atrayendo a nuevos investigadores, ___ uno convencido de que será quien lo resuelva.",
+    [
+     "cada"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El manuscrito Voynich es uno de los libros más ___ del mundo.",
+    [
+     "misteriosos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "MISTERIO"
+    }
+   ],
+   [
+    "Su ___ sigue siendo desconocido.",
+    [
+     "origen"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ORIGINAL"
+    }
+   ],
+   [
+    "Muchos ___ han intentado entender su extraño alfabeto.",
+    [
+     "investigadores"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INVESTIGAR"
+    }
+   ],
+   [
+    "Algunos creen que el libro es un ingenioso ___, mientras que otros piensan que contiene conocimientos reales.",
+    [
+     "invento"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INVENTAR"
+    }
+   ],
+   [
+    "Los dibujos son ___ detallados, y su … sigue siendo un misterio.",
+    [
+     "extremadamente"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXTREMO"
+    }
+   ],
+   [
+    "Los dibujos son … detallados, y su ___ sigue siendo un misterio.",
+    [
+     "significado"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SIGNIFICAR"
+    }
+   ],
+   [
+    "Nadie ha podido leer el manuscrito. → Nadie ha ___ el manuscrito.",
+    [
+     "conseguido leer"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Nadie ha podido leer el manuscrito.",
+     "w": "CONSEGUIDO",
+     "p": "Nadie ha ___ el manuscrito."
+    }
+   ],
+   [
+    "La gente dice que el emperador pagó mucho oro por él. → ___ el emperador pagó mucho oro por él.",
+    [
+     "Parece ser que",
+     "Parece que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "La gente dice que el emperador pagó mucho oro por él.",
+     "w": "PARECE",
+     "p": "___ el emperador pagó mucho oro por él."
+    }
+   ],
+   [
+    "Es posible que el libro sea un engaño. → ___ el libro sea un engaño.",
+    [
+     "Puede que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Es posible que el libro sea un engaño.",
+     "w": "PUEDE",
+     "p": "___ el libro sea un engaño."
+    }
+   ],
+   [
+    "Voynich estaba seguro de haber encontrado algo extraordinario. → Voynich no tenía ___ había encontrado algo extraordinario.",
+    [
+     "ninguna duda de que",
+     "duda de que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Voynich estaba seguro de haber encontrado algo extraordinario.",
+     "w": "DUDA",
+     "p": "Voynich no tenía ___ había encontrado algo extraordinario."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The book nobody can read",
+   "sub": "The mystery of the Voynich manuscript",
+   "grammar": "Use of English: four tasks like the Cambridge B2 First exam (multiple-choice cloze, open cloze, word formation and key word transformation), in Spanish.",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "manuscript",
+    "plant",
+    "code",
+    "emperor",
+    "gold",
+    "alphabet"
+   ]
+  }
+ }
+}

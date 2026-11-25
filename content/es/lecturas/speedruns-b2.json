@@ -1,0 +1,497 @@
+{
+ "id": "speedruns-b2",
+ "topic": "speedruns",
+ "level": "B2",
+ "title": "Carreras por una buena causa",
+ "short": "Carreras por una buena causa",
+ "text": [
+  "Son las tres de la madrugada y más de cien mil personas están viendo cómo una joven intenta terminar un videojuego de los años noventa en menos de una hora. Detrás de ella, un pequeño público la anima, y en una esquina de la pantalla un número no deja de subir: el dinero que los espectadores han donado a una organización benéfica. Esto es Games Done Quick, un maratón de speedruns que dura una semana, se celebra dos veces al año y se ha convertido en uno de los eventos solidarios más curiosos del mundo.",
+  "La idea empezó de una forma sorprendentemente modesta. En 2010, un grupo de speedrunners se reunió en un sótano de Estados Unidos y retransmitió sus partidas por internet, pidiendo a los espectadores que donaran a una organización benéfica. Esperaban recaudar unos pocos miles de dólares. En cambio, reunieron más de diez mil. Animados por el éxito, organizaron otro evento, y después otro. Hoy los maratones se celebran en grandes salones de hotel, las partidas se retransmiten sin pausa durante siete días y el total recaudado a lo largo de los años alcanza decenas de millones de dólares.",
+  "Cada maratón apoya una causa distinta. El de invierno, que se celebra en enero, recauda dinero para una organización que lucha contra el cáncer, mientras que el de verano apoya a Médicos Sin Fronteras, que ofrece atención médica en zonas de guerra y lugares afectados por catástrofes. Para muchos espectadores, eso es lo que hace especiales los maratones. No solo ven una habilidad increíble, sino que también ayudan a personas a las que nunca conocerán.",
+  "Los organizadores han encontrado formas creativas de animar a donar. Los espectadores pueden pagar para elegir el nombre de un personaje, votar qué camino debe seguir un jugador o desbloquear un reto extra, como superar un nivel con los ojos cerrados. Los jugadores suelen explicar los trucos que usan mientras juegan, así que incluso quien no sabe nada del juego puede seguir lo que pasa. El ambiente es amistoso y entusiasta, y los errores se reciben con comprensión en lugar de con críticas.",
+  "Entre bastidores, el evento exige muchísima preparación. Cientos de jugadores se presentan para participar, y un comité de selección ve sus vídeos para decidir quién aparecerá. Cada partida tiene que ser entretenida, fiable y apta para todos los públicos. Los voluntarios trabajan por turnos para manejar las cámaras, leer los mensajes de los donantes y cumplir el horario, lo cual no es fácil cuando un fallo inesperado puede hacer que una partida dure veinte minutos más de lo previsto.",
+  "No todos los jugadores lo llevan bien. Jugar delante de un público en directo es muy diferente de practicar solo en casa, e incluso los más experimentados reconocen que les tiemblan las manos al sentarse. Aun así, la mayoría dice que la presión merece la pena. Para una comunidad a la que a menudo se ve como rara o poco sociable, los maratones son una oportunidad de demostrar lo que los jugadores pueden hacer cuando trabajan juntos.",
+  "Quizá ese sea el verdadero secreto de su éxito. El speedrun suele consistir en personas que compiten solas contra el reloj. En Games Done Quick, en cambio, el número más importante de la pantalla no es el tiempo, sino el total de abajo: la prueba de que una afición puede cambiar las cosas de verdad."
+ ],
+ "q": [
+  [
+   "¿Cuál es el objetivo del primer párrafo?",
+   [
+    "crear una imagen del evento antes de explicarlo",
+    "criticar a quienes se quedan despiertos toda la noche",
+    "explicar cuánto dinero ganó la jugadora",
+    "describir un récord mundial en un juego antiguo"
+   ],
+   0
+  ],
+  [
+   "¿Cómo fue el primer evento en comparación con lo que esperaban los organizadores?",
+   [
+    "Duró mucho más de siete días.",
+    "Tuvo menos éxito del previsto.",
+    "Recaudó más dinero del que esperaban.",
+    "Se celebró en un hotel en lugar de en un sótano."
+   ],
+   2
+  ],
+  [
+   "Según el tercer párrafo, ¿qué hace especiales los maratones para muchos espectadores?",
+   [
+    "Pueden conocer a las personas que reciben el dinero.",
+    "Pueden ver jugar con gran habilidad y ayudar a otros a la vez.",
+    "Pueden ganar premios de las organizaciones.",
+    "Pueden trabajar como médicos en zonas de guerra."
+   ],
+   1
+  ],
+  [
+   "¿Por qué explican los jugadores sus trucos mientras juegan?",
+   [
+    "para que sus partidas duren más",
+    "porque los organizadores lo exigen por seguridad",
+    "para que quien no conoce el juego pueda seguirlo",
+    "para que les donen más dinero a ellos"
+   ],
+   2
+  ],
+  [
+   "¿Qué dice el autor sobre el trabajo de los voluntarios?",
+   [
+    "Eligen a los jugadores que participan.",
+    "A menudo provocan fallos sin querer.",
+    "Cobran por trabajar por turnos.",
+    "Cumplir el horario puede ser difícil."
+   ],
+   3
+  ],
+  [
+   "¿Qué dicen los jugadores sobre jugar delante del público?",
+   [
+    "Es estresante, pero merece la pena.",
+    "Les hace jugar mucho mejor.",
+    "Es la razón por la que muchos no participan.",
+    "Es más fácil que practicar en casa."
+   ],
+   0
+  ],
+  [
+   "¿En qué párrafo describe el autor cómo los espectadores pueden influir en una partida?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   3
+  ],
+  [
+   "¿En qué párrafo menciona el autor a las personas que deciden quién aparece?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   4
+  ],
+  [
+   "¿En qué párrafo dice el autor que los maratones cambian la imagen de los jugadores?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   5
+  ],
+  [
+   "¿En qué párrafo menciona el autor las dos organizaciones que reciben el dinero?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "organización benéfica",
+   "🤝"
+  ],
+  [
+   "hotel",
+   "🏨"
+  ],
+  [
+   "cámara",
+   "🎥"
+  ],
+  [
+   "reloj",
+   "⏱️"
+  ],
+  [
+   "médico",
+   "🩺"
+  ],
+  [
+   "público",
+   "👥"
+  ]
+ ],
+ "halves": [
+  [
+   "El primer maratón se celebró...",
+   "...en un sótano en 2010."
+  ],
+  [
+   "El evento de verano apoya...",
+   "...a Médicos Sin Fronteras."
+  ],
+  [
+   "Los espectadores pueden pagar...",
+   "...para elegir el nombre de un personaje."
+  ],
+  [
+   "Los errores se reciben...",
+   "...con comprensión en lugar de críticas."
+  ],
+  [
+   "Una afición puede...",
+   "...cambiar las cosas de verdad."
+  ]
+ ],
+ "grammar": {
+  "title": "Uso de la lengua",
+  "rule": "Cuatro partes como el examen <b>Use of English</b> de Cambridge, pero en español. Partes 2, 3 y 4: escribe tus respuestas y pulsa <b>Comprobar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Parte 1 · Huecos con opciones",
+    "help": "Lee el texto y elige la palabra o expresión que mejor completa cada hueco.",
+    "text": "El speedrun es una afición que exige una {{0}} increíble de práctica. Los mejores jugadores pueden repetir la misma parte de un juego cientos de veces hasta que {{1}} hacerla a la perfección. También tienen que estar al {{2}} de los nuevos descubrimientos, porque un solo truco nuevo puede cambiar toda la ruta. Por eso la comunidad está muy {{3}}: los jugadores comparten información y se ayudan a mejorar. La mayoría lo hace por diversión y no por {{4}}, y muchos tienen un trabajo a tiempo completo. Aun así, algunos de los mejores han logrado {{5}} su pasión en una profesión retransmitiendo en internet.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Parte 2 · Huecos abiertos",
+    "help": "Escribe una sola palabra en cada hueco.",
+    "text": "Cualquiera puede presentar una partida a Games Done Quick, pero solo se aceptan {{6}} pocas. El comité busca partidas que sean a la vez impresionantes {{7}} divertidas de ver. Los jugadores también tienen que demostrar que pueden terminar el juego sin fallos, {{8}} que durante el maratón no hay tiempo para empezar de nuevo. Si una partida {{9}} elegida, el jugador suele viajar al evento pagándoselo él mismo. Muchos dicen que {{10}} la mejor semana del año. {{11}} pesar de las largas horas y la presión, vuelven una y otra vez.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Parte 3 · Formación de palabras",
+    "help": "Usa la palabra en mayúsculas para formar la palabra que falta.",
+    "text": "Los maratones han tenido un {{12}} enorme desde que empezaron en 2010. Gracias a la {{13}} de los espectadores, han recaudado decenas de millones de dólares. Los {{14}} trabajan durante meses para preparar cada evento. Los jugadores se seleccionan {{15}}, y cada partida se prueba {{16}}. El ambiente siempre es {{17}}, incluso cuando las cosas salen mal.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Parte 4 · Transformaciones",
+    "help": "Completa la segunda frase para que signifique lo mismo que la primera. Usa la palabra dada sin cambiarla. Escribe entre dos y cinco palabras.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "El speedrun es una afición que exige una ___ increíble de práctica.",
+    [
+     "suma",
+     "cantidad",
+     "cifra",
+     "número"
+    ],
+    1
+   ],
+   [
+    "Los mejores jugadores pueden repetir la misma parte de un juego cientos de veces hasta que ___ hacerla a la perfección.",
+    [
+     "ganan",
+     "consiguen",
+     "alcanzan",
+     "obtienen"
+    ],
+    1
+   ],
+   [
+    "También tienen que estar al ___ de los nuevos descubrimientos, porque un solo truco nuevo puede cambiar toda la ruta.",
+    [
+     "tiempo",
+     "momento",
+     "punto",
+     "día"
+    ],
+    3
+   ],
+   [
+    "Por eso la comunidad está muy ___: los jugadores comparten información y se ayudan a mejorar.",
+    [
+     "atada",
+     "junta",
+     "unida",
+     "pegada"
+    ],
+    2
+   ],
+   [
+    "La mayoría lo hace por diversión y no por ___, y muchos tienen un trabajo a tiempo completo.",
+    [
+     "paga",
+     "sueldo",
+     "dinero",
+     "salario"
+    ],
+    2
+   ],
+   [
+    "Aun así, algunos de los mejores han logrado ___ su pasión en una profesión retransmitiendo en internet.",
+    [
+     "volver",
+     "convertir",
+     "pasar",
+     "cambiar"
+    ],
+    1
+   ],
+   [
+    "Cualquiera puede presentar una partida a Games Done Quick, pero solo se aceptan ___ pocas.",
+    [
+     "unas"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El comité busca partidas que sean a la vez impresionantes ___ divertidas de ver.",
+    [
+     "y"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Los jugadores también tienen que demostrar que pueden terminar el juego sin fallos, ___ que durante el maratón no hay tiempo para empezar de nuevo.",
+    [
+     "ya"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Si una partida ___ elegida, el jugador suele viajar al evento pagándoselo él mismo.",
+    [
+     "es"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Muchos dicen que ___ la mejor semana del año.",
+    [
+     "es"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ pesar de las largas horas y la presión, vuelven una y otra vez.",
+    [
+     "A"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Los maratones han tenido un ___ enorme desde que empezaron en 2010.",
+    [
+     "crecimiento"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CRECER"
+    }
+   ],
+   [
+    "Gracias a la ___ de los espectadores, han recaudado decenas de millones de dólares.",
+    [
+     "generosidad"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "GENEROSO"
+    }
+   ],
+   [
+    "Los ___ trabajan durante meses para preparar cada evento.",
+    [
+     "organizadores"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ORGANIZAR"
+    }
+   ],
+   [
+    "Los jugadores se seleccionan ___, y cada partida se prueba ….",
+    [
+     "cuidadosamente"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CUIDADO"
+    }
+   ],
+   [
+    "Los jugadores se seleccionan …, y cada partida se prueba ___.",
+    [
+     "previamente"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "PREVIO"
+    }
+   ],
+   [
+    "El ambiente siempre es ___, incluso cuando las cosas salen mal.",
+    [
+     "amistoso"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "AMIGO"
+    }
+   ],
+   [
+    "El maratón recaudó más dinero de lo que esperaban los organizadores. → Los organizadores no esperaban que el maratón ___ dinero.",
+    [
+     "recaudara tanto",
+     "recaudase tanto"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "El maratón recaudó más dinero de lo que esperaban los organizadores.",
+     "w": "TANTO",
+     "p": "Los organizadores no esperaban que el maratón ___ dinero."
+    }
+   ],
+   [
+    "Al principio, los eventos se celebraban en un sótano. → Al principio, los eventos ___ en un sótano.",
+    [
+     "solían celebrarse"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Al principio, los eventos se celebraban en un sótano.",
+     "w": "SOLÍAN",
+     "p": "Al principio, los eventos ___ en un sótano."
+    }
+   ],
+   [
+    "Me arrepiento de no haber visto el maratón el año pasado. → ___ el maratón el año pasado.",
+    [
+     "Ojalá hubiera visto",
+     "Ojalá hubiese visto"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Me arrepiento de no haber visto el maratón el año pasado.",
+     "w": "OJALÁ",
+     "p": "___ el maratón el año pasado."
+    }
+   ],
+   [
+    "Aunque estaba nerviosa, terminó la partida. → A ___ nerviosa, terminó la partida.",
+    [
+     "pesar de estar"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Aunque estaba nerviosa, terminó la partida.",
+     "w": "PESAR",
+     "p": "A ___ nerviosa, terminó la partida."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Racing for a good cause",
+   "sub": "Charity speedrun marathons",
+   "grammar": "Use of English: four tasks like the Cambridge B2 First exam (multiple-choice cloze, open cloze, word formation and key word transformation), in Spanish.",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "charity",
+    "hotel",
+    "camera",
+    "clock",
+    "doctor",
+    "audience"
+   ]
+  }
+ }
+}

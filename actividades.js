@@ -13,7 +13,7 @@ let cache = null;
 /* las clases del profe (api/canciones ya las da y no gasta otra función de Vercel) */
 const clases = () => cache ||= (esProfe() ? C().api("canciones").then(r => r.ok ? r.j.clases || [] : []).catch(() => []) : Promise.resolve([]));
 const hoyMas = n => { const d = new Date(Date.now() + n * 864e5); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
-const ICONO = {quiz: "🏆", video: "🎬", doblaje: "🎙️", cancion: "🎵"};
+const ICONO = {quiz: "🏆", video: "📺", doblaje: "🎬", cancion: "🎵"};
 
 async function formDeber(caja, act) {
   if (!caja) return;

@@ -1,0 +1,498 @@
+{
+ "id": "ca-naturaleza-b2",
+ "topic": "naturaleza",
+ "level": "B2",
+ "title": "Els llops que van canviar un parc",
+ "short": "Els llops que van canviar un parc",
+ "text": [
+  "El gener del 1995, un petit grup de llops grisos va ser alliberat al Parc Nacional de Yellowstone, als Estats Units. Per a la majoria dels visitants, era simplement una oportunitat de veure un animal magnífic en llibertat. Per als científics, en canvi, era el començament d'un dels experiments més observats de la història de l'ecologia. Els llops feia uns setanta anys que no vivien al parc, i ningú no sabia exactament què passaria quan hi tornessin.",
+  "Els llops no havien desaparegut per casualitat. A principis del segle vint se'ls veia com a plagues perilloses que mataven el bestiar, i se'ls va caçar, atrapar amb paranys i enverinar fins que els últims del parc van desaparèixer als anys vint. En aquella època, es va considerar un èxit. Tanmateix, sense el seu principal depredador, el nombre de wapitis, un tipus de cérvol gran, va créixer ràpidament. Els wapitis es menjaven els arbres joves i els arbustos, sobretot a la vora dels rius, i algunes zones del parc van començar a quedar pelades.",
+  "Quan van tornar els llops, el canvi més evident va ser que el nombre de wapitis va baixar. Però molts investigadors creuen que també va passar una cosa més subtil. Els wapitis van semblar canviar de comportament i passaven menys temps a les valls obertes i a la vora dels rius, on era fàcil parar-los una emboscada. En alguns d'aquests llocs, els salzes i els pollancres joves, als quals havia costat créixer durant dècades, van començar a recuperar-se.",
+  "Segons aquesta visió, els efectes no es van aturar aquí. Quan els arbres van tornar a les vores, també hi van tornar els castors, que van fer servir la fusta per construir preses que van crear estanys i aiguamolls per a peixos, granotes i ocells. Les restes de les preses dels llops donaven menjar a corbs, àguiles i fins i tot óssos. Els científics anomenen aquest tipus de reacció en cadena cascada tròfica, i la història de Yellowstone es va convertir en un dels exemples més famosos del món, sobretot després que milions de persones veiessin un breu vídeo sobre el tema a internet.",
+  "Més recentment, però, alguns ecòlegs han defensat que la versió popular de la història és massa simple. Assenyalen que al mateix temps canviaven altres factors. La caça humana fora del parc va reduir el nombre de wapitis, la població d'óssos va augmentar i una sèrie d'anys secs va afectar les plantes. En algunes zones, els arbres s'han recuperat molt menys del que suggereix el famós vídeo. Els llops, diuen aquests investigadors, hi van influir, però no van ser l'única causa dels canvis.",
+  "Aquest debat no vol dir que el retorn dels llops no tingués importància. Al contrari, mostra com són de complexos els sistemes naturals i com pot ser de difícil separar la causa de l'efecte. La majoria dels científics coincideixen que els depredadors tenen un paper fonamental per mantenir sans els ecosistemes, encara que la seva influència variï d'un lloc a un altre.",
+  "Avui viuen al parc uns cent llops, i són un dels seus principals atractius. La seva història ens recorda que cada espècie està connectada amb moltes altres, i que eliminar-ne només una pot tenir conseqüències que trigarem dècades a entendre."
+ ],
+ "q": [
+  [
+   "Per què era important per als científics l'alliberament dels llops?",
+   [
+    "Demostrava que els llops no són perillosos.",
+    "Els permetia comptar els visitants.",
+    "Era la primera vegada que hi havia llops al parc.",
+    "Els permetia observar els efectes del retorn d'un depredador."
+   ],
+   3
+  ],
+  [
+   "Què pensava la gent de principis del segle vint sobre eliminar els llops?",
+   [
+    "Que havia estat un error.",
+    "No es va adonar que havia passat.",
+    "Que era una cosa bona.",
+    "Volia que tornessin."
+   ],
+   2
+  ],
+  [
+   "Quin canvi en el comportament dels wapitis es descriu al tercer paràgraf?",
+   [
+    "Evitaven els llocs on els podien atacar fàcilment.",
+    "Van començar a caçar en grup.",
+    "Van començar a menjar més arbres vora els rius.",
+    "Se'n van anar a les valls obertes."
+   ],
+   0
+  ],
+  [
+   "Què és una cascada tròfica?",
+   [
+    "una cascada de Yellowstone",
+    "un vídeo vist per milions de persones",
+    "una sèrie d'efectes que passen d'una espècie a d'altres",
+    "un tipus de presa construïda pels castors"
+   ],
+   2
+  ],
+  [
+   "Què diuen alguns ecòlegs sobre la versió popular de la història?",
+   [
+    "Que no té en compte altres causes dels canvis.",
+    "Que la van inventar els autors del vídeo.",
+    "Que demostra que els llops van ser l'única causa.",
+    "Que és completament falsa."
+   ],
+   0
+  ],
+  [
+   "Quina és la posició de l'autor al sisè paràgraf?",
+   [
+    "El retorn dels llops va ser un error.",
+    "Els depredadors no són importants.",
+    "Els científics no es posen mai d'acord.",
+    "El debat mostra com és de complicada la natura."
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf descriu l'autor animals que es van beneficiar del menjar que deixaven els llops?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf explica l'autor per què havien desaparegut els llops?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   1
+  ],
+  [
+   "En quin paràgraf esmenta l'autor el nombre actual de llops del parc?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   6
+  ],
+  [
+   "En quin paràgraf esmenta l'autor l'efecte del temps sec en les plantes?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   4
+  ]
+ ],
+ "vocab": [
+  [
+   "llop",
+   "🐺"
+  ],
+  [
+   "cérvol",
+   "🦌"
+  ],
+  [
+   "arbre",
+   "🌳"
+  ],
+  [
+   "castor",
+   "🦫"
+  ],
+  [
+   "riu",
+   "🏞️"
+  ],
+  [
+   "àguila",
+   "🦅"
+  ]
+ ],
+ "halves": [
+  [
+   "Els llops feia uns setanta anys...",
+   "...que no vivien al parc."
+  ],
+  [
+   "Els wapitis es menjaven els arbres...",
+   "...sobretot a la vora dels rius."
+  ],
+  [
+   "Els castors van fer servir la fusta...",
+   "...per construir preses."
+  ],
+  [
+   "Alguns ecòlegs defensen...",
+   "...que la història és massa simple."
+  ],
+  [
+   "Eliminar una sola espècie...",
+   "...pot tenir grans conseqüències."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "Retornar els llops a Yellowstone no va ser una decisió {{0}}. Molts ramaders que vivien a prop del parc s'{{1}} al pla perquè temien que els llops ataquessin les seves vaques. Per {{2}} a les seves preocupacions, una organització es va comprometre a pagar-los per cada animal que matessin els llops. Amb els anys, el nombre d'atacs s'ha {{3}} relativament baix, però el tema continua despertant passions. Per a alguns, el llop és un {{4}} de la natura salvatge; per a d'altres, una amenaça per a la seva manera de viure. Trobar un equilibri que {{5}} contents a tothom continua sent un repte.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "Els llops viuen en grups familiars anomenats llopades, {{6}} normalment estan formades per una parella adulta i les seves cries. Cada llopada té el seu propi territori, i els llops el defensen {{7}} altres llopades. Són caçadors excel·lents, encara que la majoria dels seus intents d'atrapar una presa fracassen. {{8}} això, sovint passen diversos dies sense menjar. Quan aconsegueixen alguna cosa, un sol llop pot menjar {{9}} a deu quilos de carn d'un sol cop. Els llops es comuniquen {{10}} udols, que se senten a molts quilòmetres. Al contrari del que es creu, {{11}} udolen a la lluna.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "Yellowstone és un dels parcs nacionals més {{12}} del món. La seva {{13}} atreu milions de visitants cada any. El retorn dels llops va provocar una gran {{14}}, però avui molta gent el considera un {{15}}. Els científics continuen estudiant el parc per millorar la seva {{16}} dels ecosistemes. La història demostra que la natura és sovint més {{17}} del que pensem.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Retornar els llops a Yellowstone no va ser una decisió ___.",
+    [
+     "tova",
+     "fàcil",
+     "lleu",
+     "lleugera"
+    ],
+    1
+   ],
+   [
+    "Molts ramaders que vivien a prop del parc s'___ al pla perquè temien que els llops ataquessin les seves vaques.",
+    [
+     "oposaven",
+     "contrariaven",
+     "negaven",
+     "queixaven"
+    ],
+    0
+   ],
+   [
+    "Per ___ a les seves preocupacions, una organització es va comprometre a pagar-los per cada animal que matessin els llops.",
+    [
+     "manejar",
+     "respondre",
+     "tractar",
+     "resoldre"
+    ],
+    1
+   ],
+   [
+    "Amb els anys, el nombre d'atacs s'ha ___ relativament baix, però el tema continua despertant passions.",
+    [
+     "guardat",
+     "seguit",
+     "conservat",
+     "mantingut"
+    ],
+    3
+   ],
+   [
+    "Per a alguns, el llop és un ___ de la natura salvatge; per a d'altres, una amenaça per a la seva manera de viure.",
+    [
+     "símbol",
+     "signe",
+     "marca",
+     "senyal"
+    ],
+    0
+   ],
+   [
+    "Trobar un equilibri que ___ contents a tothom continua sent un repte.",
+    [
+     "tingui",
+     "porti",
+     "faci",
+     "deixi"
+    ],
+    3
+   ],
+   [
+    "Els llops viuen en grups familiars anomenats llopades, ___ normalment estan formades per una parella adulta i les seves cries.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Cada llopada té el seu propi territori, i els llops el defensen ___ altres llopades.",
+    [
+     "de",
+     "contra"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ això, sovint passen diversos dies sense menjar.",
+    [
+     "Per"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Quan aconsegueixen alguna cosa, un sol llop pot menjar ___ a deu quilos de carn d'un sol cop.",
+    [
+     "fins"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els llops es comuniquen ___ udols, que se senten a molts quilòmetres.",
+    [
+     "mitjançant",
+     "amb"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Al contrari del que es creu, ___ udolen a la lluna.",
+    [
+     "no"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Yellowstone és un dels parcs nacionals més ___ del món.",
+    [
+     "famosos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "FAMA"
+    }
+   ],
+   [
+    "La seva ___ atreu milions de visitants cada any.",
+    [
+     "bellesa"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "BELL"
+    }
+   ],
+   [
+    "El retorn dels llops va provocar una gran ___, però avui molta gent el considera un ….",
+    [
+     "polèmica"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "POLÈMIC"
+    }
+   ],
+   [
+    "El retorn dels llops va provocar una gran …, però avui molta gent el considera un ___.",
+    [
+     "triomf"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "TRIOMFAR"
+    }
+   ],
+   [
+    "Els científics continuen estudiant el parc per millorar la seva ___ dels ecosistemes.",
+    [
+     "comprensió"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "COMPRENDRE"
+    }
+   ],
+   [
+    "La història demostra que la natura és sovint més ___ del que pensem.",
+    [
+     "imprevisible"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "PREVEURE"
+    }
+   ],
+   [
+    "Els llops no vivien al parc des de feia setanta anys. → ___ que els llops no vivien al parc.",
+    [
+     "Feia setanta anys"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Els llops no vivien al parc des de feia setanta anys.",
+     "w": "FEIA",
+     "p": "___ que els llops no vivien al parc."
+    }
+   ],
+   [
+    "És la primera vegada que els científics veuen una cosa així. → Els científics no ___ una cosa així.",
+    [
+     "havien vist mai",
+     "han vist mai"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "És la primera vegada que els científics veuen una cosa així.",
+     "w": "MAI",
+     "p": "Els científics no ___ una cosa així."
+    }
+   ],
+   [
+    "La gent diu que els llops udolen a la lluna. → Es ___ udolen a la lluna.",
+    [
+     "diu que els llops"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "La gent diu que els llops udolen a la lluna.",
+     "w": "DIU",
+     "p": "Es ___ udolen a la lluna."
+    }
+   ],
+   [
+    "Els arbres no es van recuperar tant com s'esperava. → Els arbres es van recuperar ___ s'esperava.",
+    [
+     "menys del que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Els arbres no es van recuperar tant com s'esperava.",
+     "w": "MENYS",
+     "p": "Els arbres es van recuperar ___ s'esperava."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Los lobos que cambiaron un parque",
+   "sub": "Lo que pasó en Yellowstone cuando volvieron los lobos",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "lobo",
+    "ciervo",
+    "árbol",
+    "castor",
+    "río",
+    "águila"
+   ]
+  }
+ }
+}

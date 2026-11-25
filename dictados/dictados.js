@@ -72,7 +72,7 @@ function split(p) {
   }
   return out;
 }
-const LIM = {A1: [3, 14], A2: [4, 18], B1: [5, 24]};
+const LIM = {A1: [3, 14], A2: [4, 18], B1: [5, 24], B2: [6, 28]};
 function sentencesOf(R, level) {
   const all = (R.text || []).flatMap(p => split(clean(p))), [lo, hi] = LIM[level] || LIM.B1;
   const ok = all.filter(s => { const n = words(s).length; return n >= lo && n <= hi && hintsOf(s).length <= 3 && !/[:;"“”«»]/.test(s); });
@@ -190,7 +190,7 @@ function audioBlock() {
 }
 function stars(n) { return `<span class="dc-st" aria-label="${n}/3">${"★".repeat(n)}${"☆".repeat(3 - n)}</span>`; }
 function hub(app) {
-  const {S} = st(), P = prog(), LV = ["A1", "A2", "B1"];
+  const {S} = st(), P = prog(), LV = ["A1", "A2", "B1", "B2"];
   const rs = L().rdList().filter(r => r.level === S.level && r.file);
   app.innerHTML = `<section class="wrap dc"><div class="ghead"><div><h1>✍️ ${esc(s1("title", S.learn))}</h1>${S.know !== S.learn && both() ? `<p class="en">${esc(s1("title", S.know))}</p>` : ""}</div></div>
     <p class="dc-lead">${TB("sub")}</p>${audioBlock()}
