@@ -300,6 +300,7 @@ function inicioHTML() {
   const j = juegoRuta, {S, CAT} = st(), cfg = JUEGOS[j];
   const c = E.crear[j] ||= {lang: CAT.courses.find(x => x.learn === S.learn && x.ready) ? S.learn : "en", nivel: S.level || "A1", lectura: "", equipos: cfg.tipo === "rondas" ? 0 : 4, dur: j === "piloto" ? 15 : 10, rd: j === "apuesta" ? 60 : 40};
   const cursos = CAT.courses.filter(x => x.ready).map(x => x.learn);
+  const lvs = CAT.levels.filter(l => lecturasDe(c.lang, l).length); if (!lvs.includes(c.nivel)) c.nivel = lvs[0] || "A1"; /* C1 only where the course has it */
   const ls = lecturasDe(c.lang, c.nivel); if (!ls.some(r => r.id === c.lectura)) c.lectura = ls[0]?.id || "";
   const mias = Object.entries(mem().host).filter(([, v]) => Date.now() - v.t < 4 * 3600e3 && v.j === j);
   const eqOps = (cfg.tipo === "rondas" ? [0] : []).concat([1, 2, 3, 4, 5, 6, 7, 8]);
@@ -314,7 +315,7 @@ function inicioHTML() {
         <button class="btn main">${T("ir")} →</button></form>
       <form class="rt-box" data-rt-form="crear"><h2>🧑‍🏫 ${T("crear")}</h2><p class="rt-small">${T("crear_p")}</p>
         <div class="rt-fila"><label>${T("curso")}<select data-rt-c="lang">${cursos.map(l => `<option value="${l}" ${l === c.lang ? "selected" : ""}>${esc(CAT.languages[l].name[lenG()] || l)}</option>`).join("")}</select></label>
-        <label>${T("nivel")}<select data-rt-c="nivel">${CAT.levels.map(l => `<option ${l === c.nivel ? "selected" : ""}>${l}</option>`).join("")}</select></label></div>
+        <label>${T("nivel")}<select data-rt-c="nivel">${lvs.map(l => `<option ${l === c.nivel ? "selected" : ""}>${l}</option>`).join("")}</select></label></div>
         <label>${T("lectura")}<select data-rt-c="lectura">${ls.map(r => `<option value="${esc(r.id)}" ${r.id === c.lectura ? "selected" : ""}>${esc(r.topic)} · ${esc(r.title)}</option>`).join("")}</select></label>
         <div class="rt-fila"><label>${T("equipos")}<select data-rt-c="equipos">${eqOps.map(n => `<option value="${n}" ${n === c.equipos ? "selected" : ""}>${n ? n : esc(s1("solos", lenG()))}</option>`).join("")}</select></label>
         ${cfg.tipo === "rondas" ? `<label>${T("segundos")}<select data-rt-c="rd">${[20, 30, 40, 60, 90, 120].map(n => `<option ${n === c.rd ? "selected" : ""}>${n}</option>`).join("")}</select></label>`

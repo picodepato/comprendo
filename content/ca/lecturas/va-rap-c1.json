@@ -1,0 +1,745 @@
+{
+ "id": "va-rap-c1",
+ "topic": "valencia",
+ "level": "C1",
+ "variant": "va",
+ "title": "La cuina del rap",
+ "short": "La cuina del rap",
+ "font": {
+  "autor": "J. M. Campos",
+  "obra": "La cuina del rap",
+  "nota": "adaptació",
+  "llibre": "Llengua catalana i Literatura 1r ESO · Lectura 4 · Material fotocopiable",
+  "editorial": "© Grup Promotor / Santillana"
+ },
+ "text": [
+  "Amb el nom comú de rap es coneixen fins a 265 peixos que hi estan emparentats. El rap comú viu al llarg de les costes d'Europa i l'Amèrica del Nord, des de les Illes Britàniques i Nova Escòcia fins a Barbados.",
+  "Són peixos que poden arribar a fer més d'1,5 m de longitud. Viuen al fons oceànic, per on s'arrosseguen mitjançant unes aletes pectorals modificades per buscar-hi aliment. Gràcies a la seva boca enorme i al seu estómac extensible, un rap pot arribar a engolir un peix de la seva mateixa grandària. Les espècies més freqüents són el rap comú, el vermell i l'americà.",
+  "Els ulls sortits i una boca enorme que ocupa pràcticament la meitat del seu cos són els trets que li donen un aspecte inconfusible. Al litoral peninsular abunda sobretot a la cornisa cantàbrica. En moltes espècies el mascle és deu vegades més petit que la femella.",
+  "El particular sabor i la textura de la carn del rap en fan un aliment de qualitat, especialment deliciós preparat de la manera més senzilla: a la planxa, rostit al forn, al vapor, a la graella... Són molts els ingredients que casen amb el gust del rap. A l'hora de cuinar-lo es pot acompanyar de pràcticament qualsevol guarnició, amb la qual cosa s'obtenen plats sorprenents i molt apetitosos.",
+  "És un peix de bona carn (fina, compacta i gelatinosa) i molt apreciat a la cuina, ja que té un fort gust de marisc. A més, es pot utilitzar com a ingredient en l'elaboració de sopes, guisats o en plats d'arròs. La part del rap més excel·lent en gastronomia per la seva qualitat són les cues. Es poden fer múltiples receptes amb les cues com a protagonistes: amb gambes, amb ametlles, amb xerès, a les fines herbes... A més, el rap pot usar-se per elaborar plats més propis d'ocasions especials, com ara la crema de rap o el còctel de rap i llagostins.",
+  "Al mercat el podem trobar fresc o congelat. Fresques es comercialitzen dues espècies, el rap comú i el rap vermell. El rap congelat es presenta tallat a filets i les cues sense pell. El rap és un dels peixos amb menys contingut en greix. És un peix blanc, amb proteïnes de qualitat; per tant, si es cuina sense excés de greixos i salses calòriques, és també un peix idoni en les dietes de control de pes. En la composició mineral del rap trobarem calci, ferro, magnesi, sodi i potassi, a més de la presència d'àcid fòlic."
+ ],
+ "q": [
+  [
+   "A les costes de quins continents es poden trobar raps? Anomena'ls.",
+   [
+    "Europa i Amèrica",
+    "Àsia i Amèrica",
+    "Àfrica i Europa",
+    "Oceania i Àsia"
+   ],
+   0,
+   {
+    "t": "open",
+    "a": "A les costes d'Europa i d'Amèrica (l'Amèrica del Nord, des de les Illes Britàniques i Nova Escòcia fins a Barbados).",
+    "k": [
+     [
+      "europa"
+     ],
+     [
+      "america"
+     ]
+    ],
+    "ev": [
+     "El rap comú viu al llarg de les costes d'Europa i l'Amèrica del Nord, des de les Illes Britàniques i Nova Escòcia fins a Barbados."
+    ],
+    "es": "¿En las costas de qué continentes se pueden encontrar rapes? Nómbralos."
+   }
+  ],
+  [
+   "Digues a quina part de la península Ibèrica abunda especialment el rap.",
+   [
+    "A les costes de Portugal",
+    "A la cornisa cantàbrica",
+    "Al golf de Cadis",
+    "A la costa mediterrània"
+   ],
+   1,
+   {
+    "t": "open",
+    "a": "A la cornisa cantàbrica.",
+    "k": [
+     [
+      "cantabric"
+     ]
+    ],
+    "ev": [
+     "Al litoral peninsular abunda sobretot a la cornisa cantàbrica."
+    ],
+    "es": "Di en qué parte de la península ibérica abunda especialmente el rape."
+   }
+  ],
+  [
+   "Indica quines són les espècies més freqüents de rap.",
+   [
+    "El rap comú, el blanc i l'europeu",
+    "El rap vermell, el negre i el britànic",
+    "El rap comú, el vermell i l'americà",
+    "El rap americà, l'europeu i el cantàbric"
+   ],
+   2,
+   {
+    "t": "open",
+    "a": "El rap comú, el rap vermell i el rap americà.",
+    "k": [
+     [
+      "comu"
+     ],
+     [
+      "vermell",
+      "roig"
+     ],
+     [
+      "americ"
+     ]
+    ],
+    "ev": [
+     "Les espècies més freqüents són el rap comú, el vermell i l'americà."
+    ],
+    "es": "Indica cuáles son las especies más frecuentes de rape."
+   }
+  ],
+  [
+   "Marca la resposta correcta: El rap viu...",
+   [
+    "...prop de la superfície marina.",
+    "...prop del fons marí.",
+    "...només a grans profunditats."
+   ],
+   1,
+   {
+    "t": "mc",
+    "ev": [
+     "Viuen al fons oceànic, per on s'arrosseguen mitjançant unes aletes pectorals modificades per buscar-hi aliment."
+    ],
+    "es": "Marca la respuesta correcta: El rape vive..."
+   }
+  ],
+  [
+   "Podem afirmar que el cos del rap és molt gran en relació al cap? Justifica la teva resposta a partir del text.",
+   [
+    "Sí: el cap només és una desena part del cos.",
+    "No: la boca ocupa pràcticament la meitat del seu cos.",
+    "No: el rap no té cap, només boca.",
+    "Sí: el cos fa més d'1,5 m i el cap és molt petit."
+   ],
+   1,
+   {
+    "t": "open",
+    "a": "No. El cap del rap és molt gran: té una boca enorme que ocupa pràcticament la meitat del seu cos, de manera que el cos no és gaire gran en relació al cap.",
+    "k": [
+     [
+      "no"
+     ],
+     [
+      "meitat"
+     ]
+    ],
+    "ev": [
+     "Els ulls sortits i una boca enorme que ocupa pràcticament la meitat del seu cos són els trets que li donen un aspecte inconfusible."
+    ],
+    "es": "¿Podemos afirmar que el cuerpo del rape es muy grande en relación con la cabeza? Justifica tu respuesta a partir del texto."
+   }
+  ],
+  [
+   "Explica quina creus que pot ser la relació que té la mida de la boca del rap amb la seva alimentació.",
+   [
+    "La boca gran l'ajuda a respirar al fons del mar.",
+    "La boca gran li serveix per filtrar l'aigua i menjar plàncton.",
+    "Com que té la boca tan gran, pot engolir peixos tan grans com ell.",
+    "No hi té cap relació: només menja algues."
+   ],
+   2,
+   {
+    "t": "open",
+    "a": "Com que té una boca enorme (i un estómac extensible), el rap pot engolir preses molt grans, fins i tot un peix de la seua mateixa grandària.",
+    "k": [
+     [
+      "engol",
+      "empass",
+      "menj",
+      "caç",
+      "pres"
+     ],
+     [
+      "gran",
+      "mida",
+      "grandaria",
+      "tamany"
+     ]
+    ],
+    "ev": [
+     "Gràcies a la seva boca enorme i al seu estómac extensible, un rap pot arribar a engolir un peix de la seva mateixa grandària."
+    ],
+    "es": "Explica cuál crees que puede ser la relación que tiene el tamaño de la boca del rape con su alimentación."
+   }
+  ],
+  [
+   "Digues quina és la part del rap més ben considerada en gastronomia.",
+   [
+    "El cap",
+    "Les cues",
+    "Les aletes",
+    "El fetge"
+   ],
+   1,
+   {
+    "t": "open",
+    "a": "Les cues.",
+    "k": [
+     [
+      "cua",
+      "cues"
+     ]
+    ],
+    "ev": [
+     "La part del rap més excel·lent en gastronomia per la seva qualitat són les cues."
+    ],
+    "es": "Di cuál es la parte del rape mejor considerada en gastronomía."
+   }
+  ],
+  [
+   "Cita tres característiques de la carn del rap.",
+   [
+    "És tova, dolça i fosca.",
+    "És fina, compacta i gelatinosa.",
+    "És seca, salada i amarga.",
+    "És dura, fibrosa i greixosa."
+   ],
+   1,
+   {
+    "t": "open",
+    "a": "És fina, compacta i gelatinosa (i, a més, té un fort gust de marisc i molt poc greix).",
+    "k": [
+     [
+      "fina"
+     ],
+     [
+      "compacta"
+     ],
+     [
+      "gelatinosa"
+     ],
+     [
+      "marisc"
+     ],
+     [
+      "greix"
+     ],
+     [
+      "blanc"
+     ],
+     [
+      "protein"
+     ],
+     [
+      "qualitat"
+     ]
+    ],
+    "ev": [
+     "És un peix de bona carn (fina, compacta i gelatinosa) i molt apreciat a la cuina, ja que té un fort gust de marisc."
+    ],
+    "es": "Cita tres características de la carne del rape.",
+    "min": 3
+   }
+  ],
+  [
+   "Quina d'aquestes afirmacions és certa (C), a partir de les explicacions del text?",
+   [
+    "No és recomanable utilitzar el rap en l'elaboració de sopes.",
+    "El rap mascle és més gran que la femella.",
+    "El rap es pot trobar fàcilment fresc i rarament congelat.",
+    "El rap pot sobrepassar el metre de longitud."
+   ],
+   3,
+   {
+    "t": "vf",
+    "orig": "Indica quines de les afirmacions següents són certes (C) i quines són falses (F), a partir de les explicacions del text:",
+    "items": [
+     [
+      "El rap es pot trobar fàcilment fresc i rarament congelat.",
+      false,
+      "Al mercat el podem trobar fresc o congelat."
+     ],
+     [
+      "No és recomanable utilitzar el rap en l'elaboració de sopes.",
+      false,
+      "A més, es pot utilitzar com a ingredient en l'elaboració de sopes, guisats o en plats d'arròs."
+     ],
+     [
+      "La carn del rap té un fort sabor a marisc.",
+      true,
+      "És un peix de bona carn (fina, compacta i gelatinosa) i molt apreciat a la cuina, ja que té un fort gust de marisc."
+     ],
+     [
+      "El rap mascle és més gran que la femella.",
+      false,
+      "En moltes espècies el mascle és deu vegades més petit que la femella."
+     ],
+     [
+      "El rap pot sobrepassar el metre de longitud.",
+      true,
+      "Són peixos que poden arribar a fer més d'1,5 m de longitud."
+     ],
+     [
+      "El rap no s'ha d'utilitzar mai en dietes de control de pes.",
+      false,
+      "si es cuina sense excés de greixos i salses calòriques, és també un peix idoni en les dietes de control de pes."
+     ],
+     [
+      "Només podrem gaudir bé del sabor del rap en plats molt elaborats.",
+      false,
+      "especialment deliciós preparat de la manera més senzilla: a la planxa, rostit al forn, al vapor, a la graella..."
+     ],
+     [
+      "Les gambes i els llagostins casen amb el gust del rap.",
+      true,
+      "Es poden fer múltiples receptes amb les cues com a protagonistes: amb gambes, amb ametlles, amb xerès, a les fines herbes..."
+     ]
+    ],
+    "items_es": [
+     "El rape se puede encontrar fácilmente fresco y raramente congelado.",
+     "No es recomendable utilizar el rape en la elaboración de sopas.",
+     "La carne del rape tiene un fuerte sabor a marisco.",
+     "El rape macho es más grande que la hembra.",
+     "El rape puede sobrepasar el metro de longitud.",
+     "El rape no se debe utilizar nunca en dietas de control de peso.",
+     "Solo podremos disfrutar bien del sabor del rape en platos muy elaborados.",
+     "Las gambas y los langostinos casan con el sabor del rape."
+    ],
+    "ev": [
+     "És un peix de bona carn (fina, compacta i gelatinosa) i molt apreciat a la cuina, ja que té un fort gust de marisc.",
+     "Són peixos que poden arribar a fer més d'1,5 m de longitud.",
+     "Es poden fer múltiples receptes amb les cues com a protagonistes: amb gambes, amb ametlles, amb xerès, a les fines herbes..."
+    ],
+    "es": "Indica cuáles de las afirmaciones siguientes son verdaderas (C) y cuáles son falsas (F), a partir de las explicaciones del texto."
+   }
+  ],
+  [
+   "Marca la resposta correcta: El text que has llegit...",
+   [
+    "...fa un estudi profund del medi ambient en què es desenvolupa la vida dels raps.",
+    "...divulga les excel·lències de la cuina marinera.",
+    "...fa una senzilla explicació de l'ús del rap a la cuina."
+   ],
+   2,
+   {
+    "t": "mc",
+    "just": "Explica per què has rebutjat les altres dues.",
+    "a": "No fa un estudi profund del medi ambient del rap, perquè només en dona unes quantes dades (on viu, com és i com s'alimenta). Tampoc no divulga les excel·lències de la cuina marinera en general: parla només d'un peix, el rap, i explica de manera senzilla com es cuina, com es compra i per què és saludable.",
+    "ev": [
+     "El particular sabor i la textura de la carn del rap en fan un aliment de qualitat, especialment deliciós preparat de la manera més senzilla: a la planxa, rostit al forn, al vapor, a la graella..."
+    ],
+    "es": "Marca la respuesta correcta: El texto que has leído...",
+    "just_es": "Explica por qué has descartado las otras dos."
+   }
+  ]
+ ],
+ "vocab": [
+  [
+   "boca",
+   "👄"
+  ],
+  [
+   "ulls",
+   "👀"
+  ],
+  [
+   "gamba",
+   "🦐"
+  ],
+  [
+   "ametlla",
+   "🌰"
+  ],
+  [
+   "mercat",
+   "🏪"
+  ],
+  [
+   "peix",
+   "🐟"
+  ]
+ ],
+ "halves": [
+  [
+   "Amb el nom comú de rap es coneixen...",
+   "...fins a 265 peixos que hi estan emparentats."
+  ],
+  [
+   "Un rap pot arribar a engolir...",
+   "...un peix de la seva mateixa grandària."
+  ],
+  [
+   "En moltes espècies el mascle és...",
+   "...deu vegades més petit que la femella."
+  ],
+  [
+   "La part del rap més excel·lent en gastronomia...",
+   "...són les cues."
+  ],
+  [
+   "El rap congelat es presenta...",
+   "...tallat a filets i les cues sense pell."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua · Formes valencianes",
+  "rule": "Nivell <b>C1 de valencià</b>. Les formes del quadre són les pròpies del valencià estàndard (AVL). El text original fa servir <i>seva</i>; en valencià també diem <i>seua</i>. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [
+   "Demostratius: este, esta, estos, estes",
+   "Possessius: meua, teua, seua (meues, teues, seues)",
+   "Verbs incoatius: servix, servixen; patix, patixen",
+   "Present de subjuntiu: tinga, cuine, puga, siga",
+   "Haver-hi és impersonal: hi ha peixaters (mai «hi han»)"
+  ],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Formes valencianes",
+    "help": "Tria la forma correcta del valencià estàndard per a cada buit.",
+    "text": "{{0}} peix de cap enorme és un dels més apreciats als mercats valencians. La {{1}} carn, fina i compacta, {{2}} per a fer arrossos, suquets i cremes. Quan el compres, cal que {{3}} els ulls brillants i la pell neta. Per a {{4}} bé, no calen salses complicades. A la llotja {{5}} peixaters que el venen ja tallat a filets.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "El rap viu al fons del mar, {{6}} s'arrossega amb les aletes per buscar aliment. Té una boca tan gran {{7}} pot engolir peixos de la seua mateixa grandària. Les cues, {{8}} quals són la part més apreciada, es poden cuinar de moltes maneres. Al mercat {{9}} trobem de fresc i de congelat. Si el cuinem {{10}} salses calòriques, és ideal per a les dietes de control de pes. {{11}} que siga un peix lleig, és un dels més bons del mar.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "Els ulls sortits donen al rap un aspecte {{12}}. La seua carn té un gran valor {{13}}. Es pot fer servir en l'{{14}} de sopes i arrossos. Amb qualsevol guarnició s'obtenen plats molt {{15}}. Fresques, només es {{16}} dues espècies. Per a no engreixar-se, cal evitar les salses {{17}}.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulga dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "___ peix de cap enorme és un dels més apreciats als mercats valencians.",
+    [
+     "Este",
+     "Estes",
+     "Estos",
+     "Esta"
+    ],
+    0
+   ],
+   [
+    "La ___ carn, fina i compacta, … per a fer arrossos, suquets i cremes.",
+    [
+     "seu",
+     "seues",
+     "seus",
+     "seua"
+    ],
+    3
+   ],
+   [
+    "La … carn, fina i compacta, ___ per a fer arrossos, suquets i cremes.",
+    [
+     "servixc",
+     "servixen",
+     "servim",
+     "servix"
+    ],
+    3
+   ],
+   [
+    "Quan el compres, cal que ___ els ulls brillants i la pell neta.",
+    [
+     "tinga",
+     "tindre",
+     "tinguen",
+     "tinc"
+    ],
+    0
+   ],
+   [
+    "Per a ___ bé, no calen salses complicades.",
+    [
+     "cuinar-la",
+     "cuinar-lo",
+     "cuinar-los",
+     "cuinar-li"
+    ],
+    1
+   ],
+   [
+    "A la llotja ___ peixaters que el venen ja tallat a filets.",
+    [
+     "hi han",
+     "ha hi",
+     "n'hi han",
+     "hi ha"
+    ],
+    3
+   ],
+   [
+    "El rap viu al fons del mar, ___ s'arrossega amb les aletes per buscar aliment.",
+    [
+     "on"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Té una boca tan gran ___ pot engolir peixos de la seua mateixa grandària.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Les cues, ___ quals són la part més apreciada, es poden cuinar de moltes maneres.",
+    [
+     "les"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Al mercat ___ trobem de fresc i de congelat.",
+    [
+     "en"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Si el cuinem ___ salses calòriques, és ideal per a les dietes de control de pes.",
+    [
+     "sense"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ que siga un peix lleig, és un dels més bons del mar.",
+    [
+     "Encara",
+     "Malgrat"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Els ulls sortits donen al rap un aspecte ___.",
+    [
+     "inconfusible"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CONFONDRE"
+    }
+   ],
+   [
+    "La seua carn té un gran valor ___.",
+    [
+     "gastronòmic"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "GASTRONOMIA"
+    }
+   ],
+   [
+    "Es pot fer servir en l'___ de sopes i arrossos.",
+    [
+     "elaboració"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ELABORAR"
+    }
+   ],
+   [
+    "Amb qualsevol guarnició s'obtenen plats molt ___.",
+    [
+     "apetitosos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "APETIT"
+    }
+   ],
+   [
+    "Fresques, només es ___ dues espècies.",
+    [
+     "comercialitzen"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "COMERÇ"
+    }
+   ],
+   [
+    "Per a no engreixar-se, cal evitar les salses ___.",
+    [
+     "calòriques"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CALORIA"
+    }
+   ],
+   [
+    "El rap té una boca enorme; per això pot engolir peixos molt grans. → ___ boca enorme, el rap pot engolir peixos molt grans.",
+    [
+     "Gràcies a la seua",
+     "Gràcies a la seva",
+     "Gràcies a la"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "El rap té una boca enorme; per això pot engolir peixos molt grans.",
+     "w": "GRÀCIES",
+     "p": "___ boca enorme, el rap pot engolir peixos molt grans."
+    }
+   ],
+   [
+    "En moltes espècies, la femella és deu vegades més gran que el mascle. → En moltes espècies, el mascle ___ que la femella.",
+    [
+     "és deu vegades més petit"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "En moltes espècies, la femella és deu vegades més gran que el mascle.",
+     "w": "PETIT",
+     "p": "En moltes espècies, el mascle ___ que la femella."
+    }
+   ],
+   [
+    "El rap és un dels peixos que tenen menys greix. → El rap és un dels peixos ___ en greix.",
+    [
+     "amb menys contingut",
+     "que tenen menys contingut",
+     "de menys contingut"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "El rap és un dels peixos que tenen menys greix.",
+     "w": "CONTINGUT",
+     "p": "El rap és un dels peixos ___ en greix."
+    }
+   ],
+   [
+    "Al mercat podem trobar rap fresc i també congelat. → Al mercat podem trobar rap ___ congelat.",
+    [
+     "tant fresc com"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Al mercat podem trobar rap fresc i també congelat.",
+     "w": "TANT",
+     "p": "Al mercat podem trobar rap ___ congelat."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "La cocina del rape",
+   "sub": "Valenciano C1 · J. M. Campos (adaptación)",
+   "grammar": "Uso de la lengua (C1): formas propias del valenciano estándar, huecos abiertos, formación de palabras y transformaciones.",
+   "rows": [
+    "Demostrativos: este, esta, estos, estas",
+    "Posesivos: mía, tuya, suya (mías, tuyas, suyas)",
+    "Verbos incoativos: sirve, sirven; sufre, sufren",
+    "Presente de subjuntivo: tenga, cocine, pueda, sea",
+    "Haber es impersonal: hay pescaderos (nunca «hi han»)"
+   ],
+   "hints": [],
+   "vocab": [
+    "boca",
+    "ojos",
+    "gamba",
+    "almendra",
+    "mercado",
+    "pez"
+   ],
+   "text": [
+    "Con el nombre común de rape se conocen hasta 265 peces emparentados entre sí. El rape común vive a lo largo de las costas de Europa y de América del Norte, desde las islas Británicas y Nueva Escocia hasta Barbados.",
+    "Son peces que pueden llegar a medir más de 1,5 m de longitud. Viven en el fondo oceánico, por donde se arrastran mediante unas aletas pectorales modificadas para buscar alimento. Gracias a su boca enorme y a su estómago extensible, un rape puede llegar a engullir un pez de su mismo tamaño. Las especies más frecuentes son el rape común, el rojo y el americano.",
+    "Los ojos saltones y una boca enorme que ocupa prácticamente la mitad de su cuerpo son los rasgos que le dan un aspecto inconfundible. En el litoral peninsular abunda sobre todo en la cornisa cantábrica. En muchas especies el macho es diez veces más pequeño que la hembra.",
+    "El particular sabor y la textura de la carne del rape hacen de él un alimento de calidad, especialmente delicioso preparado de la manera más sencilla: a la plancha, asado al horno, al vapor, a la parrilla... Son muchos los ingredientes que casan con el sabor del rape. A la hora de cocinarlo se puede acompañar de prácticamente cualquier guarnición, con lo cual se obtienen platos sorprendentes y muy apetitosos.",
+    "Es un pescado de buena carne (fina, compacta y gelatinosa) y muy apreciado en la cocina, ya que tiene un fuerte sabor a marisco. Además, se puede utilizar como ingrediente en la elaboración de sopas, guisos o en platos de arroz. La parte del rape más excelente en gastronomía por su calidad son las colas. Se pueden hacer múltiples recetas con las colas como protagonistas: con gambas, con almendras, con jerez, a las finas hierbas... Además, el rape puede usarse para elaborar platos más propios de ocasiones especiales, como la crema de rape o el cóctel de rape y langostinos.",
+    "En el mercado lo podemos encontrar fresco o congelado. Frescas se comercializan dos especies, el rape común y el rape rojo. El rape congelado se presenta cortado en filetes y las colas sin piel. El rape es uno de los pescados con menos contenido en grasa. Es un pescado blanco, con proteínas de calidad; por tanto, si se cocina sin exceso de grasas ni salsas calóricas, es también un pescado idóneo en las dietas de control de peso. En la composición mineral del rape encontraremos calcio, hierro, magnesio, sodio y potasio, además de la presencia de ácido fólico."
+   ],
+   "words": {
+    "rap": "rape (pez)",
+    "raps": "rapes",
+    "cues": "colas",
+    "gust": "sabor",
+    "fan": "hacen",
+    "fons": "fondo",
+    "cap": "cabeza",
+    "trets": "rasgos",
+    "casen": "casan; combinan",
+    "planxa": "plancha",
+    "graella": "parrilla",
+    "rostit": "asado",
+    "sortits": "saltones",
+    "fresques": "frescas"
+   }
+  }
+ }
+}

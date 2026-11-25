@@ -43,6 +43,10 @@
 "absurd",
 "Que no tenen sentit; molt estranys i divertits."
 ],
+"abunda": [
+"abundar",
+"N'hi ha molt."
+],
 "acaba": [
 "acabar",
 "Arribar al final d'una cosa."
@@ -114,6 +118,10 @@
 "acompanyades": [
 "acompanyar",
 "Amb."
+],
+"acompanyar": [
+"acompanyar",
+"Servir un menjar amb un altre."
 ],
 "aconsegueixen": [
 "aconseguir",
@@ -302,6 +310,14 @@
 "afirma": [
 "afirmar",
 "Diu que és veritat."
+],
+"afirmacions": [
+"afirmació",
+"Frases que diuen que una cosa és així."
+],
+"afirmar": [
+"afirmar",
+"Dir que una cosa és així."
 ],
 "afirmen": [
 "afirmar",
@@ -531,6 +547,10 @@
 "aleshores",
 "En aquell moment; llavors."
 ],
+"aletes": [
+"aleta",
+"Parts del cos dels peixos que els serveixen per a nadar."
+],
 "alex": [
 "Alex",
 "Nom d'un personatge de Minecraft."
@@ -715,6 +735,10 @@
 "amarg",
 "Sabor fort com el cafè."
 ],
+"amarga": [
+"amarg",
+"Amb un gust fort i desagradable, com el del cafè sense sucre."
+],
 "amazònica": [
 "amazònic",
 "De l'Amazones, la gran selva d'Amèrica del Sud."
@@ -758,6 +782,14 @@
 "americà": [
 "americà",
 "Dels EUA."
+],
+"ametlla": [
+"ametlla",
+"Fruit sec de l'ametler; en valencià també ametla."
+],
+"ametlles": [
+"ametlla",
+"Fruits secs de l'ametler (en valencià també «ametles»)."
 ],
 "amfibi": [
 "amfibi",
@@ -1031,6 +1063,10 @@
 "aperitiu",
 "Menjar petit que es pren abans del dinar."
 ],
+"apetitosos": [
+"apetitós",
+"Que fan venir ganes de menjar-los."
+],
 "apocalipsi": [
 "apocalipsi",
 "El final del món."
@@ -1038,6 +1074,18 @@
 "aportar": [
 "aportar",
 "Donar."
+],
+"apreciada": [
+"apreciat",
+"Valorada, que agrada molt."
+],
+"apreciat": [
+"apreciat",
+"Valorat, que agrada molt."
+],
+"apreciats": [
+"apreciat",
+"Valorats, que agraden molt."
 ],
 "aprendre": [
 "aprendre",
@@ -1239,6 +1287,18 @@
 "arrogància",
 "Quan algú es creu millor que els altres."
 ],
+"arrossega": [
+"arrossegar",
+"Es mou fregant el terra."
+],
+"arrosseguen": [
+"arrossegar",
+"Es mouen fregant el terra, sense alçar-se."
+],
+"arrossos": [
+"arròs",
+"Plats fets amb arròs, com la paella."
+],
 "arruïnar": [
 "arruïnar",
 "Fer malbé una cosa del tot."
@@ -1266,6 +1326,10 @@
 "asiàtica": [
 "asiàtic",
 "D'Àsia."
+],
+"aspecte": [
+"aspecte",
+"Com es veu una persona o una cosa per fora."
 ],
 "aspirador": [
 "aspirador",
@@ -1739,6 +1803,10 @@
 "barat",
 "Que costa poc."
 ],
+"barbados": [
+"barbados",
+"Nom d'una illa i país del mar Carib."
+],
 "barreja": [
 "barreja",
 "Diverses coses juntes."
@@ -2107,6 +2175,10 @@
 "britànic",
 "De la Gran Bretanya."
 ],
+"britàniques": [
+"britànic",
+"De la Gran Bretanya."
+],
 "bronze": [
 "bronze",
 "Metall; tercera medalla."
@@ -2263,6 +2335,10 @@
 "cadena",
 "Sèrie unida."
 ],
+"cadis": [
+"cadis",
+"Nom d'una ciutat i d'un golf del sud d'Andalusia."
+],
 "caient": [
 "caure",
 "Anant cap a terra."
@@ -2291,6 +2367,10 @@
 "calamar",
 "Animals del mar amb deu braços."
 ],
+"calci": [
+"calci",
+"Mineral que fa forts els ossos."
+],
 "calculadora": [
 "calculadora",
 "Màquina per fer comptes."
@@ -2306,6 +2386,10 @@
 "caldre": [
 "caldre",
 "Ser necessari."
+],
+"calen": [
+"caldre",
+"Fan falta, són necessàries."
 ],
 "calent": [
 "calent",
@@ -2346,6 +2430,10 @@
 "cal·ligrafia": [
 "cal·ligrafia",
 "Manera d'escriure a mà."
+],
+"calòriques": [
+"calòric",
+"Que tenen moltes calories i engreixen."
 ],
 "cama": [
 "cama",
@@ -2402,6 +2490,14 @@
 "canta": [
 "cantar",
 "Fa música amb la veu."
+],
+"cantàbric": [
+"cantàbric",
+"De la mar Cantàbrica, al nord de la Península."
+],
+"cantàbrica": [
+"cantàbric",
+"De la mar Cantàbrica, al nord de la Península."
 ],
 "canvi": [
 "canvi",
@@ -2499,6 +2595,10 @@
 "cara",
 "Part davantera del cap, amb els ulls i la boca."
 ],
+"característiques": [
+"característica",
+"Coses que fan com és una persona o una cosa."
+],
 "carambola": [
 "carambola",
 "Fruita groga amb forma d'estrella."
@@ -2578,6 +2678,10 @@
 "cascada": [
 "cascada",
 "Sèrie d'efectes."
+],
+"casen": [
+"casar",
+"Combinen bé, van bé junts."
 ],
 "cases": [
 "casa",
@@ -2755,6 +2859,10 @@
 "cert",
 "Veritable."
 ],
+"certa": [
+"cert",
+"Vertadera."
+],
 "certes": [
 "cert",
 "Algunes."
@@ -2854,6 +2962,10 @@
 "circula": [
 "circular",
 "Es mou."
+],
+"cita": [
+"citar",
+"Anomena, digues."
 ],
 "ciutat": [
 "ciutat",
@@ -3119,6 +3231,10 @@
 "començar",
 "Ja ha començat = ja està en marxa."
 ],
+"comercialitzen": [
+"comercialitzar",
+"Es venen a les botigues i mercats."
+],
 "comercials": [
 "comercial",
 "De botigues."
@@ -3130,6 +3246,10 @@
 "comitè": [
 "comitè",
 "Grup que decideix."
+],
+"compacta": [
+"compacte",
+"Atapeïda, ferma, sense forats."
 ],
 "company": [
 "company",
@@ -3259,6 +3379,10 @@
 "comportar",
 "Actuen."
 ],
+"composició": [
+"composició",
+"Les parts o substàncies de què està fet una cosa."
+],
 "compost": [
 "compost",
 "Mescla química."
@@ -3282,6 +3406,10 @@
 "comprensió": [
 "comprendre",
 "Entendre."
+],
+"compres": [
+"comprar",
+"Forma de comprar: tu compres."
 ],
 "comprometre": [
 "comprometre",
@@ -3419,6 +3547,10 @@
 "coneixement",
 "El que se sap."
 ],
+"coneixen": [
+"conèixer",
+"Saben qui són o com es diuen; aquí: es diuen, s'anomenen."
+],
 "coneixeran": [
 "conèixer",
 "Sabran."
@@ -3446,6 +3578,10 @@
 "confusió": [
 "confusió",
 "Quan penses que una cosa és una altra."
+],
+"congelat": [
+"congelat",
+"Que s'ha posat molt fred, gelat, per a conservar-lo."
 ],
 "conjunt": [
 "conjunt",
@@ -3494,6 +3630,10 @@
 "considera": [
 "considerar",
 "Pensa."
+],
+"considerada": [
+"considerat",
+"Valorada, que es pensa d'ella."
 ],
 "considerar": [
 "considerar",
@@ -3598,6 +3738,10 @@
 "contents": [
 "content",
 "Feliços."
+],
+"continents": [
+"continent",
+"Grans parts de terra del món: Europa, Àfrica, Amèrica, Àsia i Oceania."
 ],
 "contingut": [
 "contingut",
@@ -3771,6 +3915,10 @@
 "corda",
 "Fils gruixuts per lligar coses."
 ],
+"cornisa": [
+"cornisa",
+"Franja de costa estreta; la cornisa cantàbrica és la costa del nord de la Península."
+],
 "corre": [
 "córrer",
 "Va molt de pressa amb les cames."
@@ -3846,6 +3994,10 @@
 "costats": [
 "costat",
 "Parts de la dreta i de l'esquerra."
+],
+"costes": [
+"costa",
+"Terres que toquen la mar."
 ],
 "costi": [
 "costar",
@@ -3946,6 +4098,10 @@
 "creme puff": [
 "Creme Puff",
 "Nom de la gata més vella del món."
+],
+"cremes": [
+"crema",
+"Sopes espesses i fines."
 ],
 "crescut": [
 "créixer",
@@ -4071,6 +4227,10 @@
 "cuc",
 "Animal petit, llarg i tou, sense potes."
 ],
+"cues": [
+"cua",
+"Parts del cos d'un animal al final de l'esquena."
+],
 "cuidadors": [
 "cuidador",
 "Persones que cuiden."
@@ -4090,6 +4250,14 @@
 "cuinava": [
 "cuinar",
 "Es preparava amb foc."
+],
+"cuine": [
+"cuinar",
+"Forma valenciana del subjuntiu de cuinar (= cuini)."
+],
+"cuinem": [
+"cuinar",
+"Forma de cuinar: nosaltres cuinem."
 ],
 "cuiner": [
 "cuiner",
@@ -4194,6 +4362,10 @@
 "cérvol": [
 "cérvol",
 "Animal amb banyes grans."
+],
+"còctel": [
+"còctel",
+"Plat fred de marisc amb salsa, que se sol menjar com a entrant."
 ],
 "còpia": [
 "còpia",
@@ -4455,6 +4627,10 @@
 "demostrar",
 "Provat."
 ],
+"demostratius": [
+"demostratiu",
+"Paraules que assenyalen: este, eixe, aquell."
+],
 "demostrava": [
 "demostrar",
 "Provava."
@@ -4659,6 +4835,10 @@
 "desembre",
 "El dotzè mes de l'any."
 ],
+"desena": [
+"desena",
+"Una de deu parts."
+],
 "desenes": [
 "desena",
 "Grups de deu."
@@ -4666,6 +4846,10 @@
 "desenganxava": [
 "desenganxar",
 "Se separava fàcilment."
+],
+"desenvolupa": [
+"desenvolupar",
+"Fa, té lloc."
 ],
 "desenvolupadors": [
 "desenvolupador",
@@ -4839,6 +5023,10 @@
 "dieta",
 "El que menges."
 ],
+"dietes": [
+"dieta",
+"Manera de menjar per a cuidar la salut o el pes."
+],
 "diferent": [
 "diferent",
 "Que no és igual."
@@ -4874,6 +5062,10 @@
 "digital": [
 "digital",
 "A l'ordinador o a internet."
+],
+"digues": [
+"dir",
+"Forma de dir per a manar: digues-ho."
 ],
 "diguessis": [
 "dir",
@@ -5079,6 +5271,10 @@
 "divuit",
 "El número 18."
 ],
+"divulga": [
+"divulgar",
+"Explica una cosa a tothom."
+],
 "diària": [
 "diari",
 "De cada dia."
@@ -5124,6 +5320,10 @@
 "El que se sent quan una cosa fa mal."
 ],
 "dolç": [
+"dolç",
+"Amb gust de sucre."
+],
+"dolça": [
 "dolç",
 "Amb gust de sucre."
 ],
@@ -5375,9 +5575,21 @@
 "el més important",
 "La cosa que importa més."
 ],
+"elaboració": [
+"elaboració",
+"Preparació d'una cosa."
+],
+"elaborar": [
+"elaborar",
+"Preparar."
+],
 "elaborat": [
 "elaborar",
 "Molt treballat."
+],
+"elaborats": [
+"elaborat",
+"Preparats amb molta feina."
 ],
 "electricitat": [
 "electricitat",
@@ -5466,6 +5678,10 @@
 "emoció": [
 "emoció",
 "Sentiment fort."
+],
+"emparentats": [
+"emparentat",
+"Que són família, que tenen un origen comú."
 ],
 "empenyia": [
 "empènyer",
@@ -5682,6 +5898,14 @@
 "enginyós": [
 "enginy",
 "Molt llest."
+],
+"engolir": [
+"engolir",
+"Empassar-se una cosa sencera, sense mastegar."
+],
+"engreixar": [
+"engreixar",
+"Fer-se més gros, pujar de pes."
 ],
 "enigma": [
 "enigma",
@@ -6287,6 +6511,10 @@
 "est",
 "El costat per on surt el sol."
 ],
+"esta": [
+"esta",
+"Aquesta (forma valenciana)."
+],
 "estació": [
 "estació",
 "1. Lloc on treballen científics. 2. Part de l'any."
@@ -6347,9 +6575,17 @@
 "estar",
 "Forma d'\"estar\"."
 ],
+"este": [
+"este",
+"Aquest (forma valenciana)."
+],
 "estem": [
 "estar",
 "Forma d'\"estar\" per a \"nosaltres\"."
+],
+"estes": [
+"estes",
+"Aquestes (forma valenciana)."
 ],
 "estic": [
 "estar",
@@ -6382,6 +6618,10 @@
 "estona": [
 "estona",
 "Una mica de temps."
+],
+"estos": [
+"estos",
+"Aquests (forma valenciana)."
 ],
 "estrany": [
 "estrany",
@@ -6515,6 +6755,10 @@
 "europeu",
 "D'Europa."
 ],
+"europeu": [
+"europeu",
+"D'Europa."
+],
 "europeus": [
 "europeu",
 "Persones d'Europa."
@@ -6579,6 +6823,10 @@
 "excel·lent",
 "Molt bons."
 ],
+"excel·lències": [
+"excel·lència",
+"Qualitats molt bones."
+],
 "excrements": [
 "excrement",
 "Caca dels animals."
@@ -6586,6 +6834,10 @@
 "excursionistes": [
 "excursionista",
 "Persones que fan passejades per la muntanya."
+],
+"excés": [
+"excés",
+"Massa quantitat."
 ],
 "executar": [
 "executar",
@@ -6751,6 +7003,10 @@
 "expulsar",
 "Treu fora."
 ],
+"extensible": [
+"extensible",
+"Que es pot fer més gran o més llarg."
+],
 "extinció": [
 "extinció",
 "Desaparició d'una espècie."
@@ -6846,6 +7102,10 @@
 "falsa": [
 "fals",
 "No veritable."
+],
+"falses": [
+"fals",
+"Que no són vertaderes."
 ],
 "falsificació": [
 "falsificació",
@@ -7047,6 +7307,10 @@
 "fer",
 "Feta."
 ],
+"fetge": [
+"fetge",
+"Òrgan gran de dins del cos que neteja la sang."
+],
 "fi": [
 "fi",
 "Final."
@@ -7054,6 +7318,10 @@
 "fiable": [
 "fiable",
 "En qui es pot confiar."
+],
+"fibrosa": [
+"fibrós",
+"Que té fils i és dura de mastegar."
 ],
 "ficar": [
 "ficar",
@@ -7079,6 +7347,10 @@
 "filament",
 "Fils molt fins."
 ],
+"filets": [
+"filet",
+"Talls prims de carn o de peix sense espines."
+],
 "fills": [
 "fill",
 "Nens d'uns pares."
@@ -7086,6 +7358,10 @@
 "fils": [
 "fil",
 "Línies molt primes."
+],
+"filtrar": [
+"filtrar",
+"Fer passar per un filtre per a separar una cosa."
 ],
 "filòsof": [
 "filòsof",
@@ -7403,9 +7679,21 @@
 "fregit",
 "Cuinats amb oli molt calent."
 ],
+"freqüents": [
+"freqüent",
+"Que es troben o passen molt sovint."
+],
+"fresc": [
+"fresc",
+"Que no està congelat ni passat, acabat de pescar o de collir."
+],
 "frescos": [
 "fresc",
 "Una mica freds."
+],
+"fresques": [
+"fresc",
+"Que no estan congelades."
 ],
 "friedman": [
 "friedman",
@@ -7543,6 +7831,10 @@
 "físic",
 "Del cos."
 ],
+"fòlic": [
+"fòlic",
+"Àcid fòlic: vitamina necessària per al cos."
+],
 "fòssil": [
 "fòssil",
 "Resta d'un animal o planta antic convertida en pedra."
@@ -7595,6 +7887,10 @@
 "galàxia",
 "Grups enormes d'estrelles."
 ],
+"gambes": [
+"gamba",
+"Animals de la mar xicotets, amb closca, que es mengen."
+],
 "games": [
 "Games",
 "Paraula anglesa: jocs."
@@ -7643,6 +7939,10 @@
 "gastar",
 "Fan servir energia o diners."
 ],
+"gastronomia": [
+"gastronomia",
+"L'art de cuinar i de menjar bé."
+],
 "gat": [
 "gat",
 "Animal petit de casa que fa «miau»."
@@ -7678,6 +7978,10 @@
 "gelades": [
 "gelar",
 "Molt fredes."
+],
+"gelatinosa": [
+"gelatinós",
+"Tova i elàstica com la gelatina."
 ],
 "gener": [
 "gener",
@@ -7783,6 +8087,10 @@
 "glutamat",
 "Substància que dona el gust umami."
 ],
+"golf": [
+"golf",
+"Part de la mar que entra a la terra."
+],
 "gos": [
 "gos",
 "Animal de casa que borda."
@@ -7795,6 +8103,10 @@
 "gra",
 "Llavor petita."
 ],
+"graella": [
+"graella",
+"Reixeta de metall per a coure aliments damunt de les brases."
+],
 "gramàtiques": [
 "gramàtica",
 "Llibres amb les regles d'una llengua."
@@ -7802,6 +8114,10 @@
 "gran": [
 "gran",
 "Que té molta mida."
+],
+"grandària": [
+"grandària",
+"Mida, com és de gran una cosa."
 ],
 "granges": [
 "granja",
@@ -7866,6 +8182,18 @@
 "grega": [
 "grec",
 "De Grècia."
+],
+"greix": [
+"greix",
+"Part grassa dels aliments."
+],
+"greixos": [
+"greix",
+"Parts grasses dels aliments, com l'oli o la mantega."
+],
+"greixosa": [
+"greixós",
+"Que té molt de greix."
 ],
 "greu": [
 "greu",
@@ -8007,6 +8335,10 @@
 "guardar",
 "Tingués."
 ],
+"guarnició": [
+"guarnició",
+"Menjar que es posa al costat del plat principal."
+],
 "guepard": [
 "guepard",
 "Animal com un gat gran, el més ràpid a terra."
@@ -8022,6 +8354,10 @@
 "guinness": [
 "Guinness",
 "Nom de l'empresa del llibre de rècords."
+],
+"guisats": [
+"guisat",
+"Menjars cuinats a foc lent amb salsa."
 ],
 "guix": [
 "guix",
@@ -8143,6 +8479,10 @@
 "haver de",
 "És necessari que nosaltres..."
 ],
+"herbes": [
+"herba",
+"Plantes xicotetes; fines herbes: plantes aromàtiques per a cuinar."
+],
 "hi": [
 "hi",
 "Pronom de lloc: hi viu = viu allà. Hi ha = existeix."
@@ -8263,6 +8603,10 @@
 "IA",
 "Intel·ligència artificial: programes que aprenen."
 ],
+"ibèrica": [
+"ibèric",
+"De la península Ibèrica (Espanya i Portugal)."
+],
 "ictiosaure": [
 "ictiosaure",
 "Rèptil marí gegant de l'època dels dinosaures."
@@ -8271,6 +8615,10 @@
 "idea",
 "Una cosa que penses."
 ],
+"ideal": [
+"ideal",
+"Perfecte per a una cosa."
+],
 "idees": [
 "idea",
 "Pensaments."
@@ -8278,6 +8626,10 @@
 "identificar": [
 "identificar",
 "Reconèixer."
+],
+"idoni": [
+"idoni",
+"Adequat, el més convenient."
 ],
 "idèntica": [
 "idèntic",
@@ -8383,6 +8735,10 @@
 "impedir",
 "No deixar que passi."
 ],
+"impersonal": [
+"impersonal",
+"Que no té subjecte: hi ha."
+],
 "impliquen": [
 "implicar",
 "Tenen com a part."
@@ -8447,6 +8803,14 @@
 "incloure",
 "Acció d'incloure."
 ],
+"incoatius": [
+"incoatiu",
+"Verbs com servir o patir, que fan servix, patix."
+],
+"inconfusible": [
+"inconfusible",
+"Que no es pot confondre amb cap altre."
+],
 "increïble": [
 "increïble",
 "Tan sorprenent que costa de creure."
@@ -8466,6 +8830,10 @@
 "independents": [
 "independent",
 "Que no depenen de ningú."
+],
+"indica": [
+"indicar",
+"Assenyala, diu."
 ],
 "inesperada": [
 "inesperat",
@@ -8923,6 +9291,10 @@
 "just",
 "Exactament."
 ],
+"justifica": [
+"justificar",
+"Dona les raons que ho demostren."
+],
 "justos": [
 "just",
 "Correctes per a tothom."
@@ -9075,6 +9447,10 @@
 "Lisses",
 "Ciutat de França on va néixer el parkour."
 ],
+"litoral": [
+"litoral",
+"Zona de terra que toca la mar."
+],
 "llac": [
 "llac",
 "Molta aigua envoltada de terra."
@@ -9098,6 +9474,10 @@
 "llagostes": [
 "llagosta",
 "Insectes que salten molt."
+],
+"llagostins": [
+"llagostí",
+"Animals de la mar semblants a la gamba però més grans."
 ],
 "llamp": [
 "llamp",
@@ -9178,6 +9558,10 @@
 "llegit": [
 "llegir",
 "Ha mirat les lletres i ha entès."
+],
+"lleig": [
+"lleig",
+"Que no és bonic."
 ],
 "llengua": [
 "llengua",
@@ -9319,6 +9703,10 @@
 "llosa",
 "Pedra plana."
 ],
+"llotja": [
+"llotja",
+"Lloc del port on es ven el peix acabat de pescar."
+],
 "llueix": [
 "lluir",
 "Ensenya."
@@ -9362,6 +9750,10 @@
 "londres": [
 "Londres",
 "Capital del Regne Unit."
+],
+"longitud": [
+"longitud",
+"Llargària d'una cosa, de punta a punta."
 ],
 "lord": [
 "lord",
@@ -9454,6 +9846,10 @@
 "magma": [
 "magma",
 "Roca líquida i calenta de dins de la Terra."
+],
+"magnesi": [
+"magnesi",
+"Mineral necessari per al cos."
 ],
 "magnètiques": [
 "magnètic",
@@ -9615,6 +10011,14 @@
 "marcar",
 "Senyalarà."
 ],
+"marina": [
+"marí",
+"De la mar."
+],
+"marinera": [
+"mariner",
+"De la mar; cuina marinera: plats de peix i marisc."
+],
 "marins": [
 "marí",
 "Del mar."
@@ -9622,6 +10026,10 @@
 "mario": [
 "Mario",
 "Personatge famós de Nintendo."
+],
+"marisc": [
+"marisc",
+"Animals de la mar amb closca, com les gambes o els musclos, que es mengen."
 ],
 "markus persson": [
 "Markus Persson",
@@ -9646,6 +10054,10 @@
 "marí": [
 "marí",
 "Del mar."
+],
+"mascle": [
+"mascle",
+"Animal de sexe masculí."
 ],
 "mascles": [
 "mascle",
@@ -9755,6 +10167,10 @@
 "medallista",
 "Persones que guanyen medalles."
 ],
+"medi": [
+"medi",
+"Medi ambient: el lloc i les condicions on viu un ésser viu."
+],
 "medicaments": [
 "medicament",
 "Coses que prens per curar-te."
@@ -9762,6 +10178,10 @@
 "medicina": [
 "medicina",
 "Ciència que cura les malalties."
+],
+"mediterrània": [
+"mediterrani",
+"De la mar Mediterrània."
 ],
 "medusa": [
 "medusa",
@@ -9879,6 +10299,14 @@
 "meravellós",
 "Molt boniques; extraordinàries."
 ],
+"mercat": [
+"mercat",
+"Lloc on es venen aliments."
+],
+"mercats": [
+"mercat",
+"Llocs on es venen aliments."
+],
 "mercuri": [
 "Mercuri",
 "El planeta més petit i més a prop del Sol."
@@ -9954,6 +10382,14 @@
 "meu": [
 "meu",
 "Que és de mi."
+],
+"meua": [
+"meu",
+"De mi (forma valenciana de «meva»)."
+],
+"meues": [
+"meu",
+"De mi, en femení plural (forma valenciana de «meves»)."
 ],
 "meus": [
 "meu",
@@ -10171,6 +10607,10 @@
 "mitjanit",
 "Les dotze de la nit."
 ],
+"mitjançant": [
+"mitjançant",
+"Per mitjà de, fent servir."
+],
 "mitjons": [
 "mitjó",
 "Roba per als peus."
@@ -10202,6 +10642,10 @@
 "modesta": [
 "modest",
 "Petita."
+],
+"modificades": [
+"modificat",
+"Canviades, que tenen una forma diferent."
 ],
 "modificar": [
 "modificar",
@@ -10543,6 +10987,10 @@
 "món",
 "La Terra i tot el que hi ha."
 ],
+"múltiples": [
+"múltiple",
+"Molts, de moltes classes."
+],
 "múscul": [
 "múscul",
 "Part del cos que fa moure els ossos."
@@ -10742,6 +11190,10 @@
 "nessie": [
 "Nessie",
 "Nom del monstre del llac Ness."
+],
+"neta": [
+"net",
+"Sense brutícia."
 ],
 "netegen": [
 "netejar",
@@ -11079,6 +11531,10 @@
 "ocasió",
 "Vegades."
 ],
+"oceania": [
+"oceania",
+"Nom del continent format per Austràlia i moltes illes del Pacífic."
+],
 "oceans": [
 "oceà",
 "Mars molt grans."
@@ -11094,6 +11550,10 @@
 "oceà": [
 "oceà",
 "Mar molt gran."
+],
+"oceànic": [
+"oceànic",
+"De l'oceà."
 ],
 "ocupa": [
 "ocupar",
@@ -11651,6 +12111,14 @@
 "patinar",
 "Vas en monopatí."
 ],
+"patix": [
+"patir",
+"Forma valenciana de «pateix»: sofreix."
+],
+"patixen": [
+"patir",
+"Forma valenciana de «pateixen»."
+],
 "patrons": [
 "patró",
 "Coses que es repeteixen."
@@ -11679,6 +12147,10 @@
 "peça",
 "Parts que s'uneixen."
 ],
+"pectorals": [
+"pectoral",
+"Del pit."
+],
 "pedra": [
 "pedra",
 "Tros dur de roca."
@@ -11694,6 +12166,10 @@
 "peix": [
 "peix",
 "Animal que viu a l'aigua i neda."
+],
+"peixaters": [
+"peixater",
+"Persones que venen peix."
 ],
 "peixos": [
 "peix",
@@ -11738,6 +12214,10 @@
 "penicil·lina": [
 "penicil·lina",
 "Primer antibiòtic, descobert per Fleming."
+],
+"peninsular": [
+"peninsular",
+"De la península (Ibèrica)."
 ],
 "pensa": [
 "pensar",
@@ -11995,6 +12475,10 @@
 "Perú",
 "País d'Amèrica del Sud."
 ],
+"pes": [
+"pes",
+"El que pesa una persona o una cosa."
+],
 "pesa": [
 "pesar",
 "Té pes."
@@ -12207,6 +12691,10 @@
 "planta",
 "Éssers vius verds amb arrels, com els arbres."
 ],
+"planxa": [
+"planxa",
+"Placa de metall calenta per a cuinar sense oli o amb molt poc."
+],
 "plat": [
 "plat",
 "1. Recipient per menjar. 2. Un menjar."
@@ -12342,6 +12830,10 @@
 "podien": [
 "poder",
 "Eren capaços."
+],
+"podrem": [
+"poder",
+"Forma de poder en el futur."
 ],
 "podria": [
 "poder",
@@ -12483,6 +12975,10 @@
 "port",
 "Llocs on paren els vaixells."
 ],
+"portugal": [
+"portugal",
+"Nom del país que està a l'oest de la península Ibèrica."
+],
 "portàtil": [
 "portàtil",
 "Que es pot portar."
@@ -12527,6 +13023,10 @@
 "posar",
 "Jo deixo en un lloc."
 ],
+"possessius": [
+"possessiu",
+"Paraules que diuen de qui és una cosa: meu, teu, seu."
+],
 "possibilitats": [
 "possibilitat",
 "Coses que poden passar."
@@ -12554,6 +13054,10 @@
 "pota": [
 "pota",
 "Cama d'un animal."
+],
+"potassi": [
+"potassi",
+"Mineral necessari per al cos."
 ],
 "potencial": [
 "potencial",
@@ -12735,6 +13239,10 @@
 "present",
 "Que hi és."
 ],
+"presenta": [
+"presentar",
+"Es ven, es mostra d'una manera."
+],
 "presentar": [
 "presentar",
 "Mostrar a la gent."
@@ -12770,6 +13278,10 @@
 "prestatges": [
 "prestatge",
 "Mobles per a llibres."
+],
+"presència": [
+"presència",
+"Fet d'estar en un lloc."
 ],
 "preu": [
 "preu",
@@ -12927,6 +13439,10 @@
 "profund",
 "Molt."
 ],
+"profunditats": [
+"profunditat",
+"Llocs molt fondos de la mar."
+],
 "programa": [
 "programa",
 "Instruccions per a l'ordinador."
@@ -13006,6 +13522,10 @@
 "propòsit": [
 "propòsit",
 "Fi."
+],
+"protagonistes": [
+"protagonista",
+"Els més importants."
 ],
 "proteccions": [
 "protecció",
@@ -13103,6 +13623,10 @@
 "pràctica",
 "Ús real."
 ],
+"pràcticament": [
+"pràcticament",
+"Gairebé, quasi."
+],
 "pròpia": [
 "propi",
 "Seva, d'ella mateixa."
@@ -13154,6 +13678,10 @@
 "puff": [
 "Puff",
 "Part del nom de la gata Creme Puff."
+],
+"puga": [
+"poder",
+"Forma valenciana del subjuntiu de poder (= pugui)."
 ],
 "pugui": [
 "poder",
@@ -13254,6 +13782,10 @@
 "qual": [
 "qual",
 "Del qual = d'on."
+],
+"qualitat": [
+"qualitat",
+"Com és de bo una cosa."
 ],
 "quals": [
 "qual",
@@ -13487,9 +14019,17 @@
 "raper",
 "Persona que canta rap."
 ],
+"raps": [
+"rap",
+"Peixos del fons del mar amb una boca enorme."
+],
 "rara": [
 "rar",
 "Estranya."
+],
+"rarament": [
+"rarament",
+"Poques vegades."
 ],
 "rares": [
 "rar",
@@ -13631,6 +14171,10 @@
 "recepta",
 "Instruccions per cuinar."
 ],
+"receptes": [
+"recepta",
+"Instruccions per a cuinar un plat."
+],
 "receptors": [
 "receptor",
 "Parts que reben una cosa."
@@ -13650,6 +14194,10 @@
 "recomana": [
 "recomanar",
 "Aconsella."
+],
+"recomanable": [
+"recomanable",
+"Que és bo fer-ho."
 ],
 "recomanacions": [
 "recomanació",
@@ -14227,6 +14775,10 @@
 "ross",
 "Nom d'home."
 ],
+"rostit": [
+"rostir",
+"Cuinat al forn o al foc fins que es daura."
+],
 "rovell": [
 "rovell",
 "La part groga de l'ou."
@@ -14327,6 +14879,10 @@
 "saber",
 "Coneixien."
 ],
+"sabor": [
+"sabor",
+"El gust que té un menjar."
+],
 "saborós": [
 "sabor",
 "Que té bon gust."
@@ -14379,6 +14935,10 @@
 "salsa",
 "Líquid per acompanyar el menjar."
 ],
+"salses": [
+"salsa",
+"Líquids espessos per a acompanyar el menjar."
+],
 "salt": [
 "salt",
 "Moviment per saltar."
@@ -14402,6 +14962,10 @@
 "salts": [
 "salt",
 "Moviments per saltar."
+],
+"saludable": [
+"saludable",
+"Bo per a la salut."
 ],
 "saludaràs": [
 "saludar",
@@ -14819,9 +15383,25 @@
 "servir",
 "Es feien servir."
 ],
+"servim": [
+"servir",
+"Forma de servir: nosaltres servim."
+],
 "servir": [
 "servir",
 "Ser útil. Fer servir = utilitzar."
+],
+"servix": [
+"servir",
+"Forma valenciana de «serveix»: és útil per a una cosa."
+],
+"servixc": [
+"servir",
+"Forma valenciana de «serveixo»: jo servixc."
+],
+"servixen": [
+"servir",
+"Forma valenciana de «serveixen»."
 ],
 "serà": [
 "ser",
@@ -14851,6 +15431,14 @@
 "seu",
 "D'ell o d'ella."
 ],
+"seua": [
+"seu",
+"D'ell, d'ella o d'ells (forma valenciana de «seva»)."
+],
+"seues": [
+"seu",
+"D'ell, d'ella o d'ells, en femení plural (forma valenciana de «seves»)."
+],
 "seus": [
 "seu",
 "D'ell o d'ella."
@@ -14870,6 +15458,10 @@
 "si": [
 "si",
 "Paraula per a una condició: si plou, no surto."
+],
+"siga": [
+"ser",
+"Forma valenciana del subjuntiu de ser (= sigui)."
 ],
 "signarà": [
 "signar",
@@ -14991,6 +15583,10 @@
 "sobre",
 "1. Damunt de. 2. Que parla de: un llibre sobre dinosaures."
 ],
+"sobrepassar": [
+"sobrepassar",
+"Passar per damunt, ser més gran que."
+],
 "sobretot": [
 "sobretot",
 "Més que res."
@@ -15030,6 +15626,10 @@
 "societats": [
 "societat",
 "Grups de persones."
+],
+"sodi": [
+"sodi",
+"Mineral que hi ha, per exemple, a la sal."
 ],
 "sofisticada": [
 "sofisticat",
@@ -15139,6 +15739,10 @@
 "sopar",
 "Menjava de nit."
 ],
+"sopes": [
+"sopa",
+"Plats líquids i calents."
+],
 "sorgir": [
 "sorgir",
 "Aparèixer."
@@ -15211,6 +15815,10 @@
 "sortir",
 "Apareixerà."
 ],
+"sortits": [
+"sortit",
+"Que ixen cap a fora; ulls sortits: molt grossos i cap a fora."
+],
 "sospiten": [
 "sospitar",
 "Creuen una cosa sense proves."
@@ -15278,6 +15886,10 @@
 "suavitat": [
 "suau",
 "Ser suau."
+],
+"subjuntiu": [
+"subjuntiu",
+"Mode del verb per a desitjos, dubtes i ordres: que tinga, que siga."
 ],
 "submarins": [
 "submarí",
@@ -15419,6 +16031,10 @@
 "suportar",
 "Aguantar."
 ],
+"suquets": [
+"suquet",
+"Guisat de peix amb patates i un suc espés."
+],
 "surf": [
 "surf",
 "Esport de lliscar sobre les onades."
@@ -15522,6 +16138,10 @@
 "també": [
 "també",
 "També = a més."
+],
+"tampoc": [
+"tampoc",
+"Tampoc no: ni això."
 ],
 "tan": [
 "tan",
@@ -15863,6 +16483,14 @@
 "teu",
 "Que és de tu."
 ],
+"teua": [
+"teu",
+"De tu (forma valenciana de «teva»)."
+],
+"teues": [
+"teu",
+"De tu, en femení plural (forma valenciana de «teves»)."
+],
 "teulada": [
 "teulada",
 "Part de dalt d'una casa."
@@ -15895,9 +16523,21 @@
 "tenir",
 "Jo tinc."
 ],
+"tindre": [
+"tindre",
+"Forma valenciana de «tenir»."
+],
 "tindries": [
 "tenir",
 "Tu tindries (condicional)."
+],
+"tinga": [
+"tindre",
+"Forma valenciana del subjuntiu de tindre (= tingui)."
+],
+"tinguen": [
+"tindre",
+"Forma valenciana del subjuntiu de tindre (= tinguin)."
 ],
 "tinguessin": [
 "tenir",
@@ -16547,6 +17187,10 @@
 "Usain Bolt",
 "Corredor de Jamaica, el més ràpid."
 ],
+"usar": [
+"usar",
+"Fer servir."
+],
 "usos": [
 "ús",
 "Maneres de fer servir."
@@ -16558,6 +17202,10 @@
 "usuaris": [
 "usuari",
 "Persones que fan servir un programa."
+],
+"utilitzar": [
+"utilitzar",
+"Fer servir."
 ],
 "va": [
 "anar",
@@ -16599,6 +17247,10 @@
 "valer",
 "Tenen valor."
 ],
+"valencians": [
+"valencià",
+"Del País Valencià."
+],
 "valgui": [
 "valer",
 "Forma de \"valer\"."
@@ -16638,6 +17290,10 @@
 "van": [
 "anar",
 "Van + verb = passat: van fer."
+],
+"vapor": [
+"vapor",
+"Aigua en forma de gas, com la que ix quan bull."
 ],
 "vaques": [
 "vaca",
@@ -16782,6 +17438,10 @@
 "vençut": [
 "vèncer",
 "Guanyat."
+],
+"verbs": [
+"verb",
+"Paraules que diuen accions: menjar, córrer."
 ],
 "verd": [
 "verd",
@@ -17258,6 +17918,10 @@
 "xerra": [
 "xerrar",
 "Parla."
+],
+"xerès": [
+"xerès",
+"Vi de la zona de Jerez, a Andalusia."
 ],
 "xifra": [
 "xifra",

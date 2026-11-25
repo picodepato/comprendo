@@ -234,6 +234,7 @@ function lecturasDe(lang, nivel) {
 function inicioHTML() {
   const {S, CAT} = st(); const c = E.crear ||= {lang: (CAT.courses.find(x => x.learn === S.learn && x.ready) ? S.learn : "en"), nivel: S.level || "A1", lectura: "", equipos: 4, dur: 20};
   const cursos = CAT.courses.filter(x => x.ready).map(x => x.learn);
+  const lvs = CAT.levels.filter(l => lecturasDe(c.lang, l).length); if (!lvs.includes(c.nivel)) c.nivel = lvs[0] || "A1"; /* C1 only where the course has it */
   const ls = lecturasDe(c.lang, c.nivel); if (!ls.some(r => r.id === c.lectura)) c.lectura = ls[0]?.id || "";
   const m = mem(), mias = Object.entries(m.host).filter(([, v]) => Date.now() - v.t < 4 * 3600e3);
   return `<section class="wrap esc"><div class="ghead"><div><h1>🔐 ${esc(s1("h1", lenG()))}</h1>${both() && know() !== lenG() ? `<p class="en">${esc(s1("h1", know()))}</p>` : ""}</div></div>
@@ -246,7 +247,7 @@ function inicioHTML() {
         <button class="btn main">${T("ir")} →</button></form>
       <form class="esc-box" data-esc-form="crear"><h2>🧑‍🏫 ${T("crear")}</h2><p class="esc-small">${T("crear_p")}</p>
         <div class="esc-fila"><label>${T("curso")}<select data-esc-c="lang">${cursos.map(l => `<option value="${l}" ${l === c.lang ? "selected" : ""}>${esc(CAT.languages[l].name[lenG()] || l)}</option>`).join("")}</select></label>
-        <label>${T("nivel")}<select data-esc-c="nivel">${CAT.levels.map(l => `<option ${l === c.nivel ? "selected" : ""}>${l}</option>`).join("")}</select></label></div>
+        <label>${T("nivel")}<select data-esc-c="nivel">${lvs.map(l => `<option ${l === c.nivel ? "selected" : ""}>${l}</option>`).join("")}</select></label></div>
         <label>${T("lectura")}<select data-esc-c="lectura">${ls.map(r => `<option value="${esc(r.id)}" ${r.id === c.lectura ? "selected" : ""}>${esc(r.topic)} · ${esc(r.title)}</option>`).join("")}</select></label>
         <div class="esc-fila"><label>${T("equipos")}<select data-esc-c="equipos">${[1, 2, 3, 4, 5, 6, 7, 8].map(n => `<option ${n === c.equipos ? "selected" : ""}>${n}</option>`).join("")}</select></label>
         <label>${T("minutos")}<select data-esc-c="dur">${[10, 15, 20, 25, 30, 40].map(n => `<option ${n === c.dur ? "selected" : ""}>${n}</option>`).join("")}</select></label></div>

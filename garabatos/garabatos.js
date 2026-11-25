@@ -268,7 +268,7 @@ function arranca(el) {
 function nombreDef() { const s = leerSes(); return (s && s.nombre) || (window.LYACuentas && LYACuentas.usuario) || ""; }
 function pantallaInicio(el, msg, cod) {
   el = el || $("#app"); const {S} = st(), ses = leerSes();
-  const niv = ["A1", "A2", "B1"].includes(S.level) ? S.level : S.level === "B2" ? "B1" : "A1";
+  const niv = ["A1", "A2", "B1"].includes(S.level) ? S.level : S.level === "B2" || S.level === "C1" ? "B1" : "A1";
   el.innerHTML = `<section class="intro gintro"><div class="in"><h1>✏️ ${esc(t1("title"))}</h1>${both() && s1("title", kn()) !== t1("title") ? `<p class="en">${esc(s1("title", kn()))}</p>` : ""}
     <p class="lead">${TB("sub")}</p></div></section>
     <div class="wrap gb">
