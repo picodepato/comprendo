@@ -149,3 +149,25 @@ h2.gmini+.ggrid{padding-top:10px}
  .nvsmall .nvtt span{display:none}
  .nvsmall .nvsigue .nvtt span,.nvsigue .nvsmall .nvtt span{display:block}
 }
+
+/* Inicio: «Todo COMPRENDO» */
+.nvhome2{display:block;padding-top:18px;padding-bottom:28px}
+.nvmapa>h2{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:clamp(24px,4.6vw,32px);margin:14px 0 0}
+.nvgr{margin-top:22px;padding:16px;border-radius:20px;background:color-mix(in srgb,var(--panel) 55%,transparent);border:1px solid var(--line)}
+.nvgrh{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.nvgrh h3{margin:0;font-size:20px}
+.nvgrh a{color:var(--acc);font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap;min-height:40px;display:inline-flex;align-items:center}
+.nvgr .nvtiles{margin-top:12px}
+.nvgr-aprender{border-color:color-mix(in srgb,#4aa8ff 45%,var(--line))}
+.nvgr-practicar{border-color:color-mix(in srgb,#3fd69c 45%,var(--line))}
+.nvgr-grupo{border-color:color-mix(in srgb,#ffb238 50%,var(--line))}
+.nvgr-mizona{border-color:color-mix(in srgb,#c58cff 45%,var(--line))}
+.nvgr-profe{border-color:color-mix(in srgb,#ff6b8b 45%,var(--line))}
+@media(max-width:760px){
+ .nvgr{padding:12px}
+ .nvgr .nvtiles{grid-template-columns:1fr 1fr;gap:8px}
+ .nvgr .nvt{flex-direction:column;align-items:flex-start;gap:6px;padding:12px}
+ .nvgr .nvti{width:auto;font-size:28px}
+ .nvgr .nvtt b{font-size:15px}
+ .nvgr .nvtt span{font-size:12.5px}
+}

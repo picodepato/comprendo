@@ -617,6 +617,7 @@ function renderHome() {
     <h1>${esc(U("home_title", S.learn))}</h1><p class="lead">${TB("home_sub")}</p>${LYANav.idiomaLinea()}${window.LYAMascota ? LYAMascota.homeCard() : ""}</div></section>
     ${window.LYAAvisos ? LYAAvisos.html() : ""}
     <div class="nvhome">${LYANav.inicio({card: last && last.file ? cardHTML(last) : "", streak: streakNow(), lvl: n, xp: g.xp, a: lvStart(n), b: lvStart(n + 1), wk: g.wk && g.wk.w === weekId() ? g.wk.xp : 0})}</div>
+    <div class="nvhome nvhome2">${LYANav.mapa()}</div>
     ${window.LYAVotos ? LYAVotos.html() : ""}${window.LYAPropuestas ? LYAPropuestas.html() : ""}`;
 }
 /* Aprender: más formas de aprender + lecturas por nivel (antes era la portada) */
