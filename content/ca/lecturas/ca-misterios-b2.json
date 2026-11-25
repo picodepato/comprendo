@@ -1,0 +1,497 @@
+{
+ "id": "ca-misterios-b2",
+ "topic": "misterios",
+ "level": "B2",
+ "title": "El llibre que ningú no pot llegir",
+ "short": "El llibre que ningú no pot llegir",
+ "text": [
+  "En una biblioteca de la Universitat de Yale, als Estats Units, hi ha un petit llibre que ha derrotat algunes de les ments més brillants dels últims cent anys. Conté unes dues-centes quaranta pàgines d'una cal·ligrafia elegant, acompanyades de dibuixos de colors de plantes, estrelles i estranyes figures humanes. El problema és que ningú no sap en quina llengua està escrit, ni tan sols si es tracta d'una llengua.",
+  "El llibre es coneix com el manuscrit Voynich, per Wilfrid Voynich, un llibreter polonès que el va comprar el 1912 a un col·legi religiós a prop de Roma. Voynich estava convençut d'haver trobat una cosa extraordinària i es va passar la resta de la vida intentant entendre'l, sense èxit. Des d'aleshores, l'han estudiat desxifradors professionals, lingüistes, historiadors i milers d'aficionats entusiastes. Tots han fracassat.",
+  "Sí que en sabem algunes coses. El 2009, uns científics van fer servir la prova del carboni catorze per analitzar la pell d'animal sobre la qual està escrit el llibre, i van concloure que es va fabricar a principis del segle quinze, aproximadament entre el 1404 i el 1438. Això va descartar una teoria molt popular segons la qual el llibre era una falsificació del mateix Voynich. Unes cartes trobades amb el manuscrit mostren, a més, que va pertànyer a un emperador a Praga, que, segons es diu, en va pagar una gran quantitat d'or.",
+  "El seu contingut, però, continua sent un misteri complet. Gairebé la meitat del llibre està plena de dibuixos de plantes, però la majoria no s'assemblen a cap espècie coneguda per la ciència. Altres seccions semblen mostrar mapes astronòmics, i una part especialment estranya conté imatges de petites figures que es banyen en piscines connectades per canonades. El text fa servir un alfabet d'entre vint i trenta símbols que no apareixen enlloc més.",
+  "Al llarg dels anys, s'han proposat tota mena d'explicacions. Alguns creuen que està escrit en un codi secret pensat per amagar coneixements mèdics o científics. D'altres pensen que podria ser una llengua desconeguda escrita amb un alfabet inventat. Alguns estudis estadístics han mostrat que el text té patrons típics de les llengües reals, cosa que fa poc probable que sigui del tot aleatori. Tot i així, cada pocs anys algú anuncia que per fi ha resolt l'enigma, i cada vegada altres experts en rebutgen de seguida la solució.",
+  "Alguns investigadors sospiten que la resposta més decebedora pot ser també la correcta: que el llibre sigui un engany molt elaborat del segle quinze, escrit per impressionar o enganyar un comprador ric. Si és així, el seu autor hauria necessitat una paciència enorme, perquè produir tantes pàgines de bestieses convincents hauria estat dificilíssim.",
+  "Sigui quin sigui el seu origen, el manuscrit s'ha fet famós precisament perquè es nega a revelar el seu secret. Avui qualsevol en pot veure totes les pàgines a internet, i no paren d'aparèixer teories noves. Potser algun dia algú aconseguirà llegir-lo per fi. Fins aleshores, continuarà sent un dels enigmes més fascinants del món."
+ ],
+ "q": [
+  [
+   "Què vol dir l'autor amb que el llibre ha derrotat ments brillants?",
+   [
+    "Persones molt intel·ligents han intentat entendre'l sense aconseguir-ho.",
+    "El llibre ha fet mal als seus lectors.",
+    "El llibre el van escriure diversos experts.",
+    "El llibre parla de científics famosos."
+   ],
+   0
+  ],
+  [
+   "Què sabem de Wilfrid Voynich?",
+   [
+    "Va escriure ell mateix el llibre.",
+    "No va aconseguir mai entendre el llibre.",
+    "Va vendre el llibre a un col·legi a prop de Roma.",
+    "Era desxifrador professional."
+   ],
+   1
+  ],
+  [
+   "Per què va ser important la prova del carboni catorze?",
+   [
+    "Va demostrar que el llibre es va fer a Praga.",
+    "Va demostrar que el llibre no podia ser obra de Voynich.",
+    "Va revelar en quina llengua era el text.",
+    "Va demostrar qui va escriure el llibre."
+   ],
+   1
+  ],
+  [
+   "Què tenen d'estrany els dibuixos de plantes?",
+   [
+    "Mostren plantes per fer medicaments.",
+    "Són tots en blanc i negre.",
+    "La majoria no s'assemblen a cap planta real.",
+    "Són els únics dibuixos del llibre."
+   ],
+   2
+  ],
+  [
+   "Què han suggerit els estudis estadístics?",
+   [
+    "Que l'alfabet es va copiar d'un altre llibre.",
+    "Que el text segur que està escrit en codi.",
+    "Que el text probablement no són símbols a l'atzar.",
+    "Que el llibre ja s'ha entès."
+   ],
+   2
+  ],
+  [
+   "Per què l'autor descriu el possible engany com a decebedor?",
+   [
+    "Voldria dir que l'emperador va pagar massa poc.",
+    "Un engany seria molt fàcil de fer.",
+    "Demostraria que Voynich mentia.",
+    "Molta gent preferiria que el llibre guardés un secret real."
+   ],
+   3
+  ],
+  [
+   "En quin paràgraf esmenta l'autor algú que va tenir el llibre abans que Voynich?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   2
+  ],
+  [
+   "En quin paràgraf explica l'autor d'on ve el nom del llibre?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   1
+  ],
+  [
+   "En quin paràgraf diu l'autor que hi ha gent que afirma una vegada i una altra haver resolt el misteri?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   4
+  ],
+  [
+   "En quin paràgraf esmenta l'autor que avui qualsevol pot veure el llibre?",
+   [
+    "Paràgraf 1",
+    "Paràgraf 2",
+    "Paràgraf 3",
+    "Paràgraf 4",
+    "Paràgraf 5",
+    "Paràgraf 6",
+    "Paràgraf 7"
+   ],
+   6
+  ]
+ ],
+ "vocab": [
+  [
+   "manuscrit",
+   "📜"
+  ],
+  [
+   "planta",
+   "🌿"
+  ],
+  [
+   "codi",
+   "🔐"
+  ],
+  [
+   "emperador",
+   "👑"
+  ],
+  [
+   "or",
+   "🪙"
+  ],
+  [
+   "alfabet",
+   "🔤"
+  ]
+ ],
+ "halves": [
+  [
+   "El llibre el va comprar...",
+   "...un llibreter polonès el 1912."
+  ],
+  [
+   "La pell d'animal es va fabricar...",
+   "...a principis del segle quinze."
+  ],
+  [
+   "La majoria de les plantes no s'assemblen...",
+   "...a cap espècie coneguda."
+  ],
+  [
+   "L'alfabet no apareix...",
+   "...enlloc més."
+  ],
+  [
+   "Qualsevol en pot veure...",
+   "...totes les pàgines a internet."
+  ]
+ ],
+ "grammar": {
+  "title": "Ús de la llengua",
+  "rule": "Quatre parts com l’examen <b>Use of English</b> de Cambridge, però en català. Parts 2, 3 i 4: escriu les respostes i prem <b>Comprovar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Buits amb opcions",
+    "help": "Llegeix el text i tria la paraula o expressió que completa millor cada buit.",
+    "text": "Els codis i les claus secretes s'han fet servir durant milers d'anys per {{0}} en secret els missatges. A les guerres, la capacitat de llegir els missatges de l'enemic podia {{1}} la diferència entre la victòria i la derrota. Un dels exemples més famosos és la màquina alemanya Enigma, el codi de la qual va ser finalment {{2}} per un equip d'experts a la Gran Bretanya. La seva feina es va {{3}} en secret durant dècades, i molts d'ells no van rebre mai el reconeixement que {{4}}. Avui els codis continuen sent imprescindibles, ja que {{5}} les nostres contrasenyes i dades bancàries cada vegada que ens connectem.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Buits oberts",
+    "help": "Escriu una sola paraula a cada buit.",
+    "text": "Molta gent ha dedicat anys de la {{6}} vida al manuscrit Voynich. Un dels més famosos va ser William Friedman, un expert nord-americà que havia ajudat a desxifrar codis enemics {{7}} la Segona Guerra Mundial. Va treballar en el manuscrit durant dècades però, com tots els altres, no va ser capaç de llegir-ne {{8}} una sola paraula. Cap al final de la seva vida, va suggerir que podia estar escrit en una llengua artificial {{9}} algú havia inventat. {{10}} que la seva teoria no es va demostrar mai, molts experts encara se la prenen seriosament. El manuscrit continua atraient nous investigadors, {{11}} convençut que serà qui el resoldrà.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Formació de paraules",
+    "help": "Fes servir la paraula en majúscules per formar la paraula que falta.",
+    "text": "El manuscrit Voynich és un dels llibres més {{12}} del món. El seu {{13}} continua sent desconegut. Molts {{14}} han intentat entendre el seu alfabet estrany. Alguns creuen que el llibre és un {{15}} enginyós, mentre que d'altres pensen que conté coneixements reals. Els dibuixos són {{16}} detallats, i el seu {{17}} continua sent un misteri.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Transformacions",
+    "help": "Completa la segona frase perquè vulgui dir el mateix que la primera. Fes servir la paraula donada sense canviar-la. Escriu entre dues i cinc paraules.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Els codis i les claus secretes s'han fet servir durant milers d'anys per ___ en secret els missatges.",
+    [
+     "mantenir",
+     "aguantar",
+     "sostenir",
+     "suportar"
+    ],
+    0
+   ],
+   [
+    "A les guerres, la capacitat de llegir els missatges de l'enemic podia ___ la diferència entre la victòria i la derrota.",
+    [
+     "prendre",
+     "marcar",
+     "fer",
+     "donar"
+    ],
+    1
+   ],
+   [
+    "Un dels exemples més famosos és la màquina alemanya Enigma, el codi de la qual va ser finalment ___ per un equip d'experts a la Gran Bretanya.",
+    [
+     "esquinçat",
+     "tallat",
+     "desxifrat",
+     "partit"
+    ],
+    2
+   ],
+   [
+    "La seva feina es va ___ en secret durant dècades, i molts d'ells no van rebre mai el reconeixement que ….",
+    [
+     "mantenir",
+     "tenir",
+     "seguir",
+     "estar"
+    ],
+    0
+   ],
+   [
+    "La seva feina es va … en secret durant dècades, i molts d'ells no van rebre mai el reconeixement que ___.",
+    [
+     "guanyaven",
+     "assolien",
+     "mereixien",
+     "cobraven"
+    ],
+    2
+   ],
+   [
+    "Avui els codis continuen sent imprescindibles, ja que ___ les nostres contrasenyes i dades bancàries cada vegada que ens connectem.",
+    [
+     "eviten",
+     "resisteixen",
+     "protegeixen",
+     "prevenen"
+    ],
+    2
+   ],
+   [
+    "Molta gent ha dedicat anys de la ___ vida al manuscrit Voynich.",
+    [
+     "seva"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Un dels més famosos va ser William Friedman, un expert nord-americà que havia ajudat a desxifrar codis enemics ___ la Segona Guerra Mundial.",
+    [
+     "durant"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Va treballar en el manuscrit durant dècades però, com tots els altres, no va ser capaç de llegir-ne ___ una sola paraula.",
+    [
+     "ni"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Cap al final de la seva vida, va suggerir que podia estar escrit en una llengua artificial ___ algú havia inventat.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ que la seva teoria no es va demostrar mai, molts experts encara se la prenen seriosament.",
+    [
+     "Encara"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El manuscrit continua atraient nous investigadors, ___ convençut que serà qui el resoldrà.",
+    [
+     "cadascun"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "El manuscrit Voynich és un dels llibres més ___ del món.",
+    [
+     "misteriosos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "MISTERI"
+    }
+   ],
+   [
+    "El seu ___ continua sent desconegut.",
+    [
+     "origen"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ORIGINAL"
+    }
+   ],
+   [
+    "Molts ___ han intentat entendre el seu alfabet estrany.",
+    [
+     "investigadors"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INVESTIGAR"
+    }
+   ],
+   [
+    "Alguns creuen que el llibre és un ___ enginyós, mentre que d'altres pensen que conté coneixements reals.",
+    [
+     "invent"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INVENTAR"
+    }
+   ],
+   [
+    "Els dibuixos són ___ detallats, i el seu … continua sent un misteri.",
+    [
+     "extremadament"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXTREM"
+    }
+   ],
+   [
+    "Els dibuixos són … detallats, i el seu ___ continua sent un misteri.",
+    [
+     "significat"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SIGNIFICAR"
+    }
+   ],
+   [
+    "Ningú no ha pogut llegir el manuscrit. → Ningú no ha ___ el manuscrit.",
+    [
+     "aconseguit llegir"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Ningú no ha pogut llegir el manuscrit.",
+     "w": "ACONSEGUIT",
+     "p": "Ningú no ha ___ el manuscrit."
+    }
+   ],
+   [
+    "La gent diu que l'emperador va pagar molt d'or per ell. → ___ l'emperador va pagar molt d'or per ell.",
+    [
+     "Sembla que",
+     "Sembla ser que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "La gent diu que l'emperador va pagar molt d'or per ell.",
+     "w": "SEMBLA",
+     "p": "___ l'emperador va pagar molt d'or per ell."
+    }
+   ],
+   [
+    "És possible que el llibre sigui un engany. → ___ el llibre sigui un engany.",
+    [
+     "Pot ser que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "És possible que el llibre sigui un engany.",
+     "w": "POT",
+     "p": "___ el llibre sigui un engany."
+    }
+   ],
+   [
+    "Voynich estava segur d'haver trobat una cosa extraordinària. → Voynich no tenia ___ havia trobat una cosa extraordinària.",
+    [
+     "cap dubte que",
+     "dubte que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Voynich estava segur d'haver trobat una cosa extraordinària.",
+     "w": "DUBTE",
+     "p": "Voynich no tenia ___ havia trobat una cosa extraordinària."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El libro que nadie puede leer",
+   "sub": "El misterio del manuscrito Voynich",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "manuscrito",
+    "planta",
+    "código",
+    "emperador",
+    "oro",
+    "alfabeto"
+   ]
+  }
+ }
+}

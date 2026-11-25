@@ -1,0 +1,496 @@
+{
+ "id": "en-comida-b2",
+ "topic": "comida",
+ "level": "B2",
+ "title": "The fifth taste",
+ "short": "The fifth taste",
+ "text": [
+  "Ask most people how many basic tastes there are, and they will probably name four: sweet, salty, sour and bitter. For a long time, scientists in Europe would have given the same answer. Yet there is a fifth taste that you experience almost every day, whether you are eating a slice of pizza, a bowl of soup or a plate of chips with ketchup. It is called umami, and the story of how it was discovered begins in a kitchen in Japan more than a century ago.",
+  "In 1907, a chemist called Kikunae Ikeda was having dinner at home in Tokyo when he noticed something about the soup his wife had made. It was dashi, a traditional Japanese stock prepared with a type of seaweed called kombu. The soup had a rich, savoury flavour that did not seem to fit into any of the four known categories. Ikeda was so intrigued that he decided to investigate it in his laboratory.",
+  "After months of experiments, he managed to isolate the substance responsible for the flavour. It was glutamate, a natural compound found in many foods. Ikeda named the taste umami, from a Japanese word that means something like delicious, and in 1908 he published his findings. Being a practical man, he also developed a way to produce glutamate in the form of a white powder that could be added to food. It went on sale the following year and became extremely popular in Asian cooking.",
+  "Outside Japan, however, many scientists remained unconvinced. For most of the twentieth century, umami was often dismissed as simply a combination of the other tastes. It was not until the early two thousands that researchers identified specific receptors on the tongue that react to glutamate. This discovery finally proved that umami is a separate basic taste, and Ikeda, who had died decades earlier, was shown to have been right all along.",
+  "Once you know what umami is, you start to notice it everywhere. Ripe tomatoes, mushrooms, cheese such as parmesan, cured ham and soy sauce are all rich in glutamate. In fact, many classic dishes from around the world combine several of these ingredients, which may explain why they are so satisfying. Some researchers have even suggested that we are born with a liking for umami, since human breast milk contains a high level of glutamate.",
+  "Chefs have also learnt to use umami to their advantage. A little of it can make food taste fuller and more balanced, which means that less salt is needed. For this reason, some nutritionists believe umami could help people reduce the amount of salt in their diet, especially older people who may have lost some of their sense of taste.",
+  "So the next time you take a bite of a cheese and tomato sandwich and think it tastes good, you will know why. Thanks to one curious scientist and a bowl of soup, we now understand that our tongues are a little more complex than we once believed."
+ ],
+ "q": [
+  [
+   "What point does the writer make in the first paragraph?",
+   [
+    "We often experience a taste without knowing its name.",
+    "There are only four basic tastes.",
+    "Most people do not like the taste of pizza.",
+    "Scientists in Europe discovered the fifth taste."
+   ],
+   0
+  ],
+  [
+   "Why did Ikeda start investigating the soup?",
+   [
+    "Its flavour did not match any taste he knew.",
+    "He wanted to sell it in shops.",
+    "His wife asked him to improve it.",
+    "It tasted much saltier than usual."
+   ],
+   0
+  ],
+  [
+   "What does the writer mean by describing Ikeda as a practical man?",
+   [
+    "He found a way to use his discovery in everyday life.",
+    "He made a lot of money from soup.",
+    "He did not trust theories.",
+    "He preferred cooking to working in a laboratory."
+   ],
+   0
+  ],
+  [
+   "What happened in the early two thousands?",
+   [
+    "Umami became popular in Europe for the first time.",
+    "Scientists found evidence that umami is a separate taste.",
+    "Glutamate was banned in some countries.",
+    "Ikeda received an important prize."
+   ],
+   1
+  ],
+  [
+   "Why does the writer mention breast milk?",
+   [
+    "to show that glutamate is dangerous for babies",
+    "to explain how glutamate is produced",
+    "to support the idea that humans like umami from birth",
+    "to compare it with Japanese soup"
+   ],
+   2
+  ],
+  [
+   "According to the sixth paragraph, umami could be useful because it",
+   [
+    "helps people to lose weight",
+    "makes food sweeter for older people",
+    "improves the sense of smell",
+    "allows people to use less salt"
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer explain where the name umami comes from?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   2
+  ],
+  [
+   "In which paragraph does the writer list several foods that contain glutamate?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ],
+  [
+   "In which paragraph does the writer say that some experts doubted the discovery?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer describe the moment that led to the discovery?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ]
+ ],
+ "vocab": [
+  [
+   "tomato",
+   "🍅"
+  ],
+  [
+   "mushroom",
+   "🍄"
+  ],
+  [
+   "cheese",
+   "🧀"
+  ],
+  [
+   "soup",
+   "🍲"
+  ],
+  [
+   "salt",
+   "🧂"
+  ],
+  [
+   "tongue",
+   "👅"
+  ]
+ ],
+ "halves": [
+  [
+   "Ikeda noticed something...",
+   "...about the soup his wife had made."
+  ],
+  [
+   "He managed to isolate...",
+   "...the substance responsible for the flavour."
+  ],
+  [
+   "Umami comes from a Japanese word...",
+   "...that means something like delicious."
+  ],
+  [
+   "Receptors on the tongue...",
+   "...react to glutamate."
+  ],
+  [
+   "Less salt is needed...",
+   "...when food has more umami."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Our sense of taste is closely {{0}} to our sense of smell. In fact, much of what we {{1}} flavour actually comes from the nose. You can easily {{2}} this to the test yourself: hold your nose while eating a sweet, and you will find it much harder to {{3}} the flavour. This is also why food seems to {{4}} its taste when we have a cold. So, if you want to enjoy your meal, it is worth {{5}} attention to its smell as well.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Glutamate is found naturally in {{6}} foods, especially those that have been aged or fermented. For example, the longer a cheese is left to mature, the {{7}} glutamate it contains. The same is true of tomatoes, {{8}} develop more umami as they ripen. Some people believe that added glutamate is bad for {{9}} health, but most scientific studies have found no evidence of this. {{10}} with salt and sugar, however, it is best not to eat too {{11}} of it.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "Kikunae Ikeda was a {{12}} scientist who loved food. His {{13}} of umami changed the way we think about taste. At first, many people were {{14}}, but today the existence of umami is widely {{15}}. Chefs use it to make dishes more {{16}}, and food {{17}} continue to study it.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Our sense of taste is closely ___ to our sense of smell.",
+    [
+     "connected",
+     "attached",
+     "put",
+     "joined"
+    ],
+    0
+   ],
+   [
+    "In fact, much of what we ___ flavour actually comes from the nose.",
+    [
+     "call",
+     "say",
+     "tell",
+     "name"
+    ],
+    0
+   ],
+   [
+    "You can easily ___ this to the test yourself: hold your nose while eating a sweet, and you will find it much harder to … the flavour.",
+    [
+     "put",
+     "take",
+     "bring",
+     "set"
+    ],
+    0
+   ],
+   [
+    "You can easily … this to the test yourself: hold your nose while eating a sweet, and you will find it much harder to ___ the flavour.",
+    [
+     "regard",
+     "identify",
+     "wonder",
+     "realise"
+    ],
+    1
+   ],
+   [
+    "This is also why food seems to ___ its taste when we have a cold.",
+    [
+     "lose",
+     "miss",
+     "fail",
+     "drop"
+    ],
+    0
+   ],
+   [
+    "So, if you want to enjoy your meal, it is worth ___ attention to its smell as well.",
+    [
+     "paying",
+     "putting",
+     "giving",
+     "making"
+    ],
+    0
+   ],
+   [
+    "Glutamate is found naturally in ___ foods, especially those that have been aged or fermented.",
+    [
+     "many"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "For example, the longer a cheese is left to mature, the ___ glutamate it contains.",
+    [
+     "more"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "The same is true of tomatoes, ___ develop more umami as they ripen.",
+    [
+     "which"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Some people believe that added glutamate is bad for ___ health, but most scientific studies have found no evidence of this.",
+    [
+     "their"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ with salt and sugar, however, it is best not to eat too … of it.",
+    [
+     "As"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "… with salt and sugar, however, it is best not to eat too ___ of it.",
+    [
+     "much"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Kikunae Ikeda was a ___ scientist who loved food.",
+    [
+     "talented"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "TALENT"
+    }
+   ],
+   [
+    "His ___ of umami changed the way we think about taste.",
+    [
+     "discovery"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DISCOVER"
+    }
+   ],
+   [
+    "At first, many people were ___, but today the existence of umami is widely ….",
+    [
+     "unconvinced"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CONVINCE"
+    }
+   ],
+   [
+    "At first, many people were …, but today the existence of umami is widely ___.",
+    [
+     "accepted"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "ACCEPT"
+    }
+   ],
+   [
+    "Chefs use it to make dishes more ___, and food … continue to study it.",
+    [
+     "flavourful"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "FLAVOUR"
+    }
+   ],
+   [
+    "Chefs use it to make dishes more …, and food ___ continue to study it.",
+    [
+     "scientists"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SCIENCE"
+    }
+   ],
+   [
+    "Ikeda started investigating the soup because he was curious. → Ikeda started investigating the soup ___.",
+    [
+     "out of curiosity"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Ikeda started investigating the soup because he was curious.",
+     "w": "CURIOSITY",
+     "p": "Ikeda started investigating the soup ___."
+    }
+   ],
+   [
+    "People did not accept umami as a basic taste until recently. → Umami has ___ as a basic taste recently.",
+    [
+     "only been accepted"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "People did not accept umami as a basic taste until recently.",
+     "w": "ONLY",
+     "p": "Umami has ___ as a basic taste recently."
+    }
+   ],
+   [
+    "It is possible that umami helps people to eat less salt. → Umami ___ people to eat less salt.",
+    [
+     "may help"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "It is possible that umami helps people to eat less salt.",
+     "w": "MAY",
+     "p": "Umami ___ people to eat less salt."
+    }
+   ],
+   [
+    "I prefer pizza to pasta. → I would ___ pasta.",
+    [
+     "rather have pizza than",
+     "rather eat pizza than"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "I prefer pizza to pasta.",
+     "w": "RATHER",
+     "p": "I would ___ pasta."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "El quinto sabor",
+   "sub": "La historia del umami",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "tomate",
+    "champiñón",
+    "queso",
+    "sopa",
+    "sal",
+    "lengua"
+   ]
+  }
+ }
+}

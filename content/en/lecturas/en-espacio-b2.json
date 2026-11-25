@@ -1,0 +1,500 @@
+{
+ "id": "en-espacio-b2",
+ "topic": "espacio",
+ "level": "B2",
+ "title": "Is anybody out there?",
+ "short": "Is anybody out there?",
+ "text": [
+  "On a clear night, far from the lights of a city, you can see thousands of stars with the naked eye. Each of them is a sun, and we now know that many of them have planets travelling around them. Faced with such enormous numbers, it is hard not to ask one of the oldest questions of all: are we alone in the universe? For centuries, this was a question for philosophers and science fiction writers. Today, it is one that scientists are seriously trying to answer.",
+  "The search begins surprisingly close to home. For a long time, Mars was considered the most promising place to look, and several robotic rovers have explored its surface. They have found clear evidence that rivers and lakes once existed there, billions of years ago, when the planet was warmer and wetter. If life ever appeared on Mars, scientists hope to find traces of it in ancient rocks, and samples are already being collected for that purpose.",
+  "More recently, however, attention has shifted to some unexpected places: the icy moons of Jupiter and Saturn. Europa, one of the moons of Jupiter, is covered by a thick shell of ice, but beneath it there is thought to be a huge ocean of liquid water. Enceladus, a small moon of Saturn, is even more intriguing. In 2005, the Cassini spacecraft observed giant jets of water shooting out of cracks near its south pole. On Earth, wherever there is liquid water, there is life, so these moons have become top targets for future missions.",
+  "Beyond our solar system, the possibilities multiply. Since the first planets orbiting other stars were confirmed in the nineteen nineties, astronomers have discovered more than five thousand of them. Some are giant balls of gas, but others are rocky worlds of a similar size to Earth, orbiting at a distance from their star where water could exist as a liquid. New telescopes are now able to study the atmospheres of a few of these planets, looking for gases that might be produced by living things.",
+  "Of course, finding bacteria on a distant moon would be very different from meeting intelligent beings. Since 1960, some researchers have been listening for radio signals from other civilisations, so far without success. This silence has led to a famous puzzle, known as the Fermi paradox. If the universe is so vast and so old, and life is not unusual, then where is everybody?",
+  "There are many possible answers. Perhaps intelligent life is extremely rare. Perhaps civilisations exist but are too far away, or communicate in ways we do not understand. Some scientists even suggest that we simply have not been searching for long enough, since our technology has existed for only a tiny fraction of the history of the universe.",
+  "Whatever the truth, the search itself is changing the way we see our own planet. Every discovery reminds us how special the conditions on Earth are. And if one day we do receive a message from the stars, it will probably be the most important news in human history."
+ ],
+ "q": [
+  [
+   "What is the main idea of the first paragraph?",
+   [
+    "Science fiction writers have answered the question.",
+    "Most stars do not have any planets.",
+    "A question once left to philosophers is now studied by scientists.",
+    "It is impossible to see stars near a city."
+   ],
+   2
+  ],
+  [
+   "What have the rovers on Mars discovered?",
+   [
+    "signs that there was water on the planet long ago",
+    "rivers and lakes that still exist today",
+    "that Mars is warmer than scientists thought",
+    "living bacteria under the surface"
+   ],
+   0
+  ],
+  [
+   "Why are scientists interested in Europa and Enceladus?",
+   [
+    "They are closer to Earth than Mars.",
+    "They are completely covered by oceans.",
+    "They probably have liquid water.",
+    "They have the same atmosphere as Earth."
+   ],
+   2
+  ],
+  [
+   "What are the new telescopes looking for?",
+   [
+    "new stars that are similar to the Sun",
+    "giant balls of gas near our solar system",
+    "radio messages from other civilisations",
+    "gases in the atmospheres of other planets that could come from life"
+   ],
+   3
+  ],
+  [
+   "What is the Fermi paradox?",
+   [
+    "the question of why we have found no sign of intelligent life",
+    "a theory about how planets are formed",
+    "the idea that life on Earth came from space",
+    "a radio signal received in 1960"
+   ],
+   0
+  ],
+  [
+   "What does the writer say in the last paragraph?",
+   [
+    "We will receive a message very soon.",
+    "The search is a waste of money.",
+    "Other planets have better conditions than Earth.",
+    "Searching for life helps us to appreciate the Earth."
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer describe an observation made by a spacecraft?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   2
+  ],
+  [
+   "In which paragraph does the writer give several explanations for a mystery?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   5
+  ],
+  [
+   "In which paragraph does the writer mention samples being collected?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ],
+  [
+   "In which paragraph does the writer mention the number of planets found around other stars?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   3
+  ]
+ ],
+ "vocab": [
+  [
+   "telescope",
+   "🔭"
+  ],
+  [
+   "rocket",
+   "🚀"
+  ],
+  [
+   "moon",
+   "🌙"
+  ],
+  [
+   "ice",
+   "🧊"
+  ],
+  [
+   "ocean",
+   "🌊"
+  ],
+  [
+   "signal",
+   "📡"
+  ]
+ ],
+ "halves": [
+  [
+   "Rivers and lakes once existed...",
+   "...on Mars, billions of years ago."
+  ],
+  [
+   "Europa is covered...",
+   "...by a thick shell of ice."
+  ],
+  [
+   "Wherever there is liquid water...",
+   "...on Earth, there is life."
+  ],
+  [
+   "Some researchers have been listening...",
+   "...for radio signals since 1960."
+  ],
+  [
+   "Every discovery reminds us...",
+   "...how special the conditions on Earth are."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "Sending humans to Mars is one of the greatest challenges space agencies have ever {{0}}. The journey would {{1}} around seven months in each direction. During that time, astronauts would be {{2}} to high levels of radiation. They would also have to cope {{3}} isolation, as messages from Earth can take up to twenty minutes to arrive. Despite these difficulties, many experts believe a crewed mission could {{4}} place within the next few decades. If it succeeds, it will {{5}} the beginning of a new era of exploration.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Astronomers have found planets in the most unexpected places. Some orbit two suns at the {{6}} time, like the planet Tatooine in Star Wars. Others are so close to their star {{7}} a year lasts less than a day. One planet is thought to be covered {{8}} an ocean of lava, while another may rain glass. Scientists believe there are more planets in our galaxy {{9}} there are stars. {{10}} so many worlds out there, it seems unlikely that Earth is the only one {{11}} life exists.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "Space {{12}} has made great progress in recent decades. Thanks to powerful telescopes, astronomers have made many {{13}} discoveries. However, the {{14}} of life beyond Earth has not yet been proved. Some scientists have great {{15}} that we will find it soon, while others are more {{16}}. Either way, the search is {{17}} exciting.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Sending humans to Mars is one of the greatest challenges space agencies have ever ___.",
+    [
+     "struggled",
+     "dealt",
+     "faced",
+     "coped"
+    ],
+    2
+   ],
+   [
+    "The journey would ___ around seven months in each direction.",
+    [
+     "spend",
+     "pass",
+     "cost",
+     "take"
+    ],
+    3
+   ],
+   [
+    "During that time, astronauts would be ___ to high levels of radiation.",
+    [
+     "shown",
+     "exposed",
+     "revealed",
+     "opened"
+    ],
+    1
+   ],
+   [
+    "They would also have to cope ___ isolation, as messages from Earth can take up to twenty minutes to arrive.",
+    [
+     "at",
+     "to",
+     "for",
+     "with"
+    ],
+    3
+   ],
+   [
+    "Despite these difficulties, many experts believe a crewed mission could ___ place within the next few decades.",
+    [
+     "do",
+     "have",
+     "make",
+     "take"
+    ],
+    3
+   ],
+   [
+    "If it succeeds, it will ___ the beginning of a new era of exploration.",
+    [
+     "sign",
+     "note",
+     "point",
+     "mark"
+    ],
+    3
+   ],
+   [
+    "Some orbit two suns at the ___ time, like the planet Tatooine in Star Wars.",
+    [
+     "same"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Others are so close to their star ___ a year lasts less than a day.",
+    [
+     "that"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "One planet is thought to be covered ___ an ocean of lava, while another may rain glass.",
+    [
+     "in",
+     "by",
+     "with"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Scientists believe there are more planets in our galaxy ___ there are stars.",
+    [
+     "than"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ so many worlds out there, it seems unlikely that Earth is the only one … life exists.",
+    [
+     "With"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "… so many worlds out there, it seems unlikely that Earth is the only one ___ life exists.",
+    [
+     "where",
+     "that"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Space ___ has made great progress in recent decades.",
+    [
+     "exploration"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXPLORE"
+    }
+   ],
+   [
+    "Thanks to powerful telescopes, astronomers have made many ___ discoveries.",
+    [
+     "remarkable"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "REMARK"
+    }
+   ],
+   [
+    "However, the ___ of life beyond Earth has not yet been proved.",
+    [
+     "existence"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EXIST"
+    }
+   ],
+   [
+    "Some scientists have great ___ that we will find it soon, while others are more ….",
+    [
+     "confidence"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CONFIDENT"
+    }
+   ],
+   [
+    "Some scientists have great … that we will find it soon, while others are more ___.",
+    [
+     "doubtful"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "DOUBT"
+    }
+   ],
+   [
+    "Either way, the search is ___ exciting.",
+    [
+     "incredibly"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INCREDIBLE"
+    }
+   ],
+   [
+    "Scientists think there is an ocean under the ice of Europa. → There ___ an ocean under the ice of Europa.",
+    [
+     "is thought to be"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Scientists think there is an ocean under the ice of Europa.",
+     "w": "THOUGHT",
+     "p": "There ___ an ocean under the ice of Europa."
+    }
+   ],
+   [
+    "We have not received any signals so far. → We ___ any signals.",
+    [
+     "have not yet received",
+     "have yet to receive",
+     "haven't yet received"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "We have not received any signals so far.",
+     "w": "YET",
+     "p": "We ___ any signals."
+    }
+   ],
+   [
+    "It is possible that life existed on Mars long ago. → Life ___ on Mars long ago.",
+    [
+     "might have existed"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "It is possible that life existed on Mars long ago.",
+     "w": "MIGHT",
+     "p": "Life ___ on Mars long ago."
+    }
+   ],
+   [
+    "Nobody has ever seen an alien. → An alien has ___ by anybody.",
+    [
+     "never been seen"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Nobody has ever seen an alien.",
+     "w": "BEEN",
+     "p": "An alien has ___ by anybody."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "¿Hay alguien ahí fuera?",
+   "sub": "La búsqueda de vida fuera de la Tierra",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "telescopio",
+    "cohete",
+    "luna",
+    "hielo",
+    "océano",
+    "señal"
+   ]
+  }
+ }
+}

@@ -1,0 +1,496 @@
+{
+ "id": "en-minecraft-b2",
+ "topic": "minecraft",
+ "level": "B2",
+ "title": "More than just a game",
+ "short": "More than just a game",
+ "text": [
+  "When most people think of Minecraft, they imagine someone building a house, digging for diamonds or running away from a creeper. With more than three hundred million copies sold, it is the best-selling video game of all time, and for millions of players that is exactly what it is: a fun way to spend an afternoon. Yet over the years, a growing number of people have discovered that this world of blocks can be used for things its creators probably never imagined.",
+  "Take redstone, for example. In the game, redstone is a red dust that carries power, a little like electricity. At first, players used it to open doors or switch on lamps. Then some of them realised that, by combining it in clever ways, they could build the same logic gates that are found inside real computers. Before long, enthusiasts were constructing working calculators, and later entire computers, block by block. In 2022, one player even built a machine inside Minecraft that could run a simple version of Minecraft itself.",
+  "Such projects can take months of patient work, and they are not just impressive tricks. Many of the people who build them say they learnt more about how computers work from redstone than from any textbook. Because every wire and switch is visible, the game turns abstract ideas into something you can walk around and touch, at least on a screen.",
+  "Teachers soon noticed this potential. In 2016, an Education Edition of the game was launched, designed specifically for schools. Today it is used in classrooms all over the world to teach subjects as different as chemistry, history and programming. Pupils might recreate an ancient city, experiment with elements in a virtual laboratory or write simple code that makes a robot build a bridge. Supporters argue that students who would normally lose interest become fully involved, simply because the lesson takes place in a world they already love.",
+  "Perhaps the most surprising use of Minecraft, however, has nothing to do with science. In 2020, the organisation Reporters Without Borders opened the Uncensored Library, an enormous digital building inside the game. Its shelves contain articles by journalists whose work has been banned in their own countries. The idea was clever: in places where news websites are blocked, Minecraft is often still available, so young people can find the articles by visiting the library in the game.",
+  "Not everyone is convinced, of course. Some parents and teachers worry that using games in education makes it even harder for children to concentrate on traditional lessons, and that time spent in front of a screen should be limited, not increased. Others point out that a game cannot replace a good teacher, however popular it is.",
+  "Even so, it is difficult to deny that Minecraft has become something unusual: a tool as much as a toy. The blocks are the same for everyone, but what people build with them depends entirely on their imagination. And if a group of players can build a computer, a classroom and a library out of nothing but virtual cubes, it is hard to say where the limits really are."
+ ],
+ "q": [
+  [
+   "What is the main point of the first paragraph?",
+   [
+    "Most players only want to find diamonds.",
+    "Minecraft is used for more than entertainment.",
+    "The creators planned every use of the game.",
+    "Minecraft is losing players to other games."
+   ],
+   1
+  ],
+  [
+   "What did players discover about redstone?",
+   [
+    "It could only be used to open doors.",
+    "It was more powerful than real electricity.",
+    "It made the game run much faster.",
+    "It could be used to build the basic parts of a computer."
+   ],
+   3
+  ],
+  [
+   "According to the third paragraph, why is redstone useful for learning?",
+   [
+    "It can be touched in real life.",
+    "It is easier to understand than a game.",
+    "It replaces the need for textbooks.",
+    "It makes difficult ideas visible."
+   ],
+   3
+  ],
+  [
+   "What do supporters of the Education Edition believe?",
+   [
+    "Pupils should play it at home instead of at school.",
+    "Students pay more attention when lessons happen in a world they like.",
+    "It is better than any traditional teacher.",
+    "It should only be used to teach programming."
+   ],
+   1
+  ],
+  [
+   "Why was the Uncensored Library built inside Minecraft?",
+   [
+    "Reporters Without Borders wanted to promote the game.",
+    "It was cheaper than building a real library.",
+    "Journalists wanted to sell their articles there.",
+    "The game is often available where news websites are blocked."
+   ],
+   3
+  ],
+  [
+   "In the last paragraph, the writer suggests that",
+   [
+    "everyone builds the same things in Minecraft",
+    "Minecraft will soon replace real classrooms",
+    "the game has reached the limit of what it can do",
+    "the possibilities of Minecraft depend on the imagination of players"
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer mention people who disagree with using games at school?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   5
+  ],
+  [
+   "In which paragraph does the writer describe how a simple material became the base for complex machines?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   1
+  ],
+  [
+   "In which paragraph does the writer give examples of school subjects taught with the game?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   3
+  ],
+  [
+   "In which paragraph does the writer explain how the game helps people to read banned texts?",
+   [
+    "Paragraph 1",
+    "Paragraph 2",
+    "Paragraph 3",
+    "Paragraph 4",
+    "Paragraph 5",
+    "Paragraph 6",
+    "Paragraph 7"
+   ],
+   4
+  ]
+ ],
+ "vocab": [
+  [
+   "block",
+   "🧱"
+  ],
+  [
+   "diamond",
+   "💎"
+  ],
+  [
+   "library",
+   "📚"
+  ],
+  [
+   "calculator",
+   "🧮"
+  ],
+  [
+   "lamp",
+   "💡"
+  ],
+  [
+   "classroom",
+   "🏫"
+  ]
+ ],
+ "halves": [
+  [
+   "Minecraft is the best-selling...",
+   "...video game of all time."
+  ],
+  [
+   "Redstone carries power,...",
+   "...a little like electricity."
+  ],
+  [
+   "In 2016, an Education Edition...",
+   "...was launched for schools."
+  ],
+  [
+   "The library contains articles...",
+   "...that have been banned."
+  ],
+  [
+   "What people build...",
+   "...depends on their imagination."
+  ]
+ ],
+ "grammar": {
+  "title": "Use of English",
+  "rule": "Four parts like the <b>Use of English</b> paper of the Cambridge B2 First exam. Parts 2, 3 and 4: write your answers and press <b>Check</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Part 1 · Multiple-choice cloze",
+    "help": "Read the text and choose the word or phrase that best fits each gap.",
+    "text": "When Minecraft first {{0}} out, few people expected it to become a worldwide phenomenon. The game had no clear goal, no story and very simple graphics, which some critics {{1}} as old-fashioned. However, players quickly {{2}} in love with the freedom it offered. Instead of following instructions, they could {{3}} up their own minds about what to build. This sense of freedom is still the main {{4}} why so many people play it today. In {{5}}, many of the most famous creations were made by players who simply wanted to see what was possible.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Part 2 · Open cloze",
+    "help": "Write one word in each gap.",
+    "text": "Building a computer in Minecraft is {{6}} an easy task. First, you need to understand the basic logic {{7}} all computers use. Then you have to place thousands of blocks in exactly the right position, {{8}} a single mistake can stop the whole machine from working. Some builders spend months {{9}} a single project. The results, however, are often amazing. Videos of these machines have been watched by millions of people, many of {{10}} had no idea such things were possible. {{11}} you love computers or not, it is hard not to be impressed.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Part 3 · Word formation",
+    "help": "Use the word in capitals at the end of each gap to form a word that fits.",
+    "text": "Minecraft is one of the most {{12}} games ever made. Its simple blocks give players almost {{13}} freedom to build. Many {{14}} projects use the game because it encourages {{15}} and teamwork. Teachers say that even pupils who are usually {{16}} become interested. The {{17}} of the game shows no sign of slowing down.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Part 4 · Key word transformation",
+    "help": "Complete the second sentence so that it means the same as the first. Use the word given and do not change it. Write between two and five words.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "When Minecraft first ___ out, few people expected it to become a worldwide phenomenon.",
+    [
+     "turned",
+     "came",
+     "went",
+     "got"
+    ],
+    1
+   ],
+   [
+    "The game had no clear goal, no story and very simple graphics, which some critics ___ as old-fashioned.",
+    [
+     "said",
+     "called",
+     "named",
+     "described"
+    ],
+    3
+   ],
+   [
+    "However, players quickly ___ in love with the freedom it offered.",
+    [
+     "fell",
+     "got",
+     "became",
+     "went"
+    ],
+    0
+   ],
+   [
+    "Instead of following instructions, they could ___ up their own minds about what to build.",
+    [
+     "do",
+     "take",
+     "have",
+     "make"
+    ],
+    3
+   ],
+   [
+    "This sense of freedom is still the main ___ why so many people play it today.",
+    [
+     "motive",
+     "cause",
+     "reason",
+     "purpose"
+    ],
+    2
+   ],
+   [
+    "In ___, many of the most famous creations were made by players who simply wanted to see what was possible.",
+    [
+     "fact",
+     "truth",
+     "deed",
+     "reality"
+    ],
+    0
+   ],
+   [
+    "Building a computer in Minecraft is ___ an easy task.",
+    [
+     "not"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "First, you need to understand the basic logic ___ all computers use.",
+    [
+     "that",
+     "which"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Then you have to place thousands of blocks in exactly the right position, ___ a single mistake can stop the whole machine from working.",
+    [
+     "because"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Some builders spend months ___ a single project.",
+    [
+     "on"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Videos of these machines have been watched by millions of people, many of ___ had no idea such things were possible.",
+    [
+     "whom"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ you love computers or not, it is hard not to be impressed.",
+    [
+     "Whether"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Minecraft is one of the most ___ games ever made.",
+    [
+     "influential"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INFLUENCE"
+    }
+   ],
+   [
+    "Its simple blocks give players almost ___ freedom to build.",
+    [
+     "unlimited"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "LIMIT"
+    }
+   ],
+   [
+    "Many ___ projects use the game because it encourages … and teamwork.",
+    [
+     "educational"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "EDUCATE"
+    }
+   ],
+   [
+    "Many … projects use the game because it encourages ___ and teamwork.",
+    [
+     "creativity"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CREATE"
+    }
+   ],
+   [
+    "Teachers say that even pupils who are usually ___ become interested.",
+    [
+     "unmotivated"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "MOTIVATE"
+    }
+   ],
+   [
+    "The ___ of the game shows no sign of slowing down.",
+    [
+     "popularity"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "POPULAR"
+    }
+   ],
+   [
+    "Many teachers use Minecraft in their lessons. → Minecraft ___ many teachers in their lessons.",
+    [
+     "is used by"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Many teachers use Minecraft in their lessons.",
+     "w": "USED",
+     "p": "Minecraft ___ many teachers in their lessons."
+    }
+   ],
+   [
+    "It took her three months to build the computer. → She ___ the computer.",
+    [
+     "spent three months building"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "It took her three months to build the computer.",
+     "w": "SPENT",
+     "p": "She ___ the computer."
+    }
+   ],
+   [
+    "I wish I knew more about redstone. → If ___ more about redstone.",
+    [
+     "only I knew"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "I wish I knew more about redstone.",
+     "w": "ONLY",
+     "p": "If ___ more about redstone."
+    }
+   ],
+   [
+    "The game is so popular that it is used in schools. → It is ___ that it is used in schools.",
+    [
+     "such a popular game"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "The game is so popular that it is used in schools.",
+     "w": "SUCH",
+     "p": "It is ___ that it is used in schools."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "es": {
+   "title": "Mucho más que un juego",
+   "sub": "Ordenadores, bibliotecas y clases dentro de Minecraft",
+   "grammar": "Uso de la lengua: cuatro ejercicios como los del examen Cambridge B2 First (huecos con opciones, huecos abiertos, formación de palabras y transformaciones).",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "bloque",
+    "diamante",
+    "biblioteca",
+    "calculadora",
+    "lámpara",
+    "aula"
+   ]
+  }
+ }
+}

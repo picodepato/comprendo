@@ -1,0 +1,498 @@
+{
+ "id": "naturaleza-b2",
+ "topic": "naturaleza",
+ "level": "B2",
+ "title": "Los lobos que cambiaron un parque",
+ "short": "Los lobos que cambiaron un parque",
+ "text": [
+  "En enero de 1995, un pequeño grupo de lobos grises fue liberado en el Parque Nacional de Yellowstone, en Estados Unidos. Para la mayoría de los visitantes, era simplemente una oportunidad de ver un animal magnífico en libertad. Para los científicos, en cambio, era el comienzo de uno de los experimentos más observados de la historia de la ecología. Los lobos llevaban unos setenta años sin vivir en el parque, y nadie sabía exactamente qué pasaría cuando volvieran.",
+  "Los lobos no habían desaparecido por casualidad. A principios del siglo veinte se los veía como plagas peligrosas que mataban al ganado, y se los cazó, se los atrapó con trampas y se los envenenó hasta que los últimos del parque desaparecieron en los años veinte. En aquella época, se consideró un éxito. Sin embargo, sin su principal depredador, el número de uapitíes, un tipo de ciervo grande, creció rápidamente. Los uapitíes se comían los árboles jóvenes y los arbustos, sobre todo a orillas de los ríos, y algunas zonas del parque empezaron a quedarse peladas.",
+  "Cuando volvieron los lobos, el cambio más evidente fue que el número de uapitíes bajó. Pero muchos investigadores creen que también ocurrió algo más sutil. Los uapitíes parecieron cambiar su comportamiento y pasaban menos tiempo en los valles abiertos y en las orillas de los ríos, donde era fácil tenderles una emboscada. En algunos de esos lugares, los sauces y álamos jóvenes, a los que les había costado crecer durante décadas, empezaron a recuperarse.",
+  "Según esta visión, los efectos no terminaron ahí. Al volver los árboles a las orillas, también volvieron los castores, que usaron la madera para construir presas que crearon estanques y humedales para peces, ranas y aves. Los restos de las presas de los lobos daban de comer a cuervos, águilas e incluso osos. Los científicos llaman a este tipo de reacción en cadena cascada trófica, y la historia de Yellowstone se convirtió en uno de los ejemplos más famosos del mundo, sobre todo después de que millones de personas vieran un breve vídeo sobre ella en internet.",
+  "Más recientemente, sin embargo, algunos ecólogos han defendido que la versión popular de la historia es demasiado simple. Señalan que al mismo tiempo estaban cambiando otros factores. La caza humana fuera del parque redujo el número de uapitíes, la población de osos aumentó y una serie de años secos afectó a las plantas. En algunas zonas, los árboles se han recuperado mucho menos de lo que sugiere el famoso vídeo. Los lobos, dicen estos investigadores, influyeron, pero no fueron la única causa de los cambios.",
+  "Este debate no significa que la vuelta de los lobos no tuviera importancia. Al contrario, muestra lo complejos que son los sistemas naturales y lo difícil que puede ser separar la causa del efecto. La mayoría de los científicos coinciden en que los depredadores tienen un papel fundamental para mantener sanos los ecosistemas, aunque su influencia varíe de un lugar a otro.",
+  "Hoy viven en el parque unos cien lobos, y son uno de sus principales atractivos. Su historia nos recuerda que cada especie está conectada con muchas otras, y que eliminar solo una puede tener consecuencias que tardamos décadas en comprender."
+ ],
+ "q": [
+  [
+   "¿Por qué era importante para los científicos la liberación de los lobos?",
+   [
+    "Demostraba que los lobos no son peligrosos.",
+    "Les permitía contar a los visitantes.",
+    "Era la primera vez que había lobos en el parque.",
+    "Les permitía observar los efectos de la vuelta de un depredador."
+   ],
+   3
+  ],
+  [
+   "¿Qué pensaba la gente de principios del siglo veinte sobre eliminar a los lobos?",
+   [
+    "Que había sido un error.",
+    "Que era algo bueno.",
+    "Quería que volvieran.",
+    "No se dio cuenta de que había ocurrido."
+   ],
+   1
+  ],
+  [
+   "¿Qué cambio en el comportamiento de los uapitíes se describe en el tercer párrafo?",
+   [
+    "Empezaron a cazar en grupo.",
+    "Se fueron a los valles abiertos.",
+    "Empezaron a comer más árboles junto a los ríos.",
+    "Evitaban los lugares donde podían atacarlos fácilmente."
+   ],
+   3
+  ],
+  [
+   "¿Qué es una cascada trófica?",
+   [
+    "una cascada de Yellowstone",
+    "un vídeo visto por millones de personas",
+    "una serie de efectos que pasan de una especie a otras",
+    "un tipo de presa construida por castores"
+   ],
+   2
+  ],
+  [
+   "¿Qué dicen algunos ecólogos sobre la versión popular de la historia?",
+   [
+    "Que demuestra que los lobos fueron la única causa.",
+    "Que no tiene en cuenta otras causas de los cambios.",
+    "Que es completamente falsa.",
+    "Que la inventaron los autores del vídeo."
+   ],
+   1
+  ],
+  [
+   "¿Cuál es la postura del autor en el sexto párrafo?",
+   [
+    "El debate muestra lo complicada que es la naturaleza.",
+    "Los científicos nunca se ponen de acuerdo.",
+    "Los depredadores no son importantes.",
+    "La vuelta de los lobos fue un error."
+   ],
+   0
+  ],
+  [
+   "¿En qué párrafo describe el autor animales que se beneficiaron de la comida que dejaban los lobos?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   3
+  ],
+  [
+   "¿En qué párrafo explica el autor por qué habían desaparecido los lobos?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   1
+  ],
+  [
+   "¿En qué párrafo menciona el autor el número actual de lobos del parque?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   6
+  ],
+  [
+   "¿En qué párrafo menciona el autor el efecto del tiempo seco en las plantas?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   4
+  ]
+ ],
+ "vocab": [
+  [
+   "lobo",
+   "🐺"
+  ],
+  [
+   "ciervo",
+   "🦌"
+  ],
+  [
+   "árbol",
+   "🌳"
+  ],
+  [
+   "castor",
+   "🦫"
+  ],
+  [
+   "río",
+   "🏞️"
+  ],
+  [
+   "águila",
+   "🦅"
+  ]
+ ],
+ "halves": [
+  [
+   "Los lobos llevaban...",
+   "...unos setenta años sin vivir en el parque."
+  ],
+  [
+   "Los uapitíes se comían los árboles...",
+   "...sobre todo a orillas de los ríos."
+  ],
+  [
+   "Los castores usaron la madera...",
+   "...para construir presas."
+  ],
+  [
+   "Algunos ecólogos defienden...",
+   "...que la historia es demasiado simple."
+  ],
+  [
+   "Eliminar una sola especie...",
+   "...puede tener grandes consecuencias."
+  ]
+ ],
+ "grammar": {
+  "title": "Uso de la lengua",
+  "rule": "Cuatro partes como el examen <b>Use of English</b> de Cambridge, pero en español. Partes 2, 3 y 4: escribe tus respuestas y pulsa <b>Comprobar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Parte 1 · Huecos con opciones",
+    "help": "Lee el texto y elige la palabra o expresión que mejor completa cada hueco.",
+    "text": "Devolver los lobos a Yellowstone no fue una decisión {{0}}. Muchos ganaderos que vivían cerca del parque se {{1}} al plan porque temían que los lobos atacaran a sus vacas. Para {{2}} a sus preocupaciones, una organización se comprometió a pagarles por cada animal que mataran los lobos. Con los años, el número de ataques se ha {{3}} relativamente bajo, pero el tema sigue despertando pasiones. Para algunos, el lobo es un {{4}} de la naturaleza salvaje; para otros, una amenaza para su forma de vida. Encontrar un equilibrio que {{5}} contentos a todos sigue siendo un reto.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Parte 2 · Huecos abiertos",
+    "help": "Escribe una sola palabra en cada hueco.",
+    "text": "Los lobos viven en grupos familiares llamados manadas, {{6}} normalmente están formadas por una pareja adulta y sus crías. Cada manada tiene su propio territorio, y los lobos lo defienden {{7}} otras manadas. Son excelentes cazadores, aunque la mayoría de sus intentos de atrapar una presa fracasan. {{8}} eso, a menudo pasan varios días sin comer. Cuando consiguen algo, un solo lobo puede comer {{9}} diez kilos de carne de una vez. Los lobos se comunican {{10}} aullidos, que se oyen a muchos kilómetros. Al contrario de lo que se cree, {{11}} aúllan a la luna.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Parte 3 · Formación de palabras",
+    "help": "Usa la palabra en mayúsculas para formar la palabra que falta.",
+    "text": "Yellowstone es uno de los parques nacionales más {{12}} del mundo. Su {{13}} atrae a millones de visitantes cada año. La vuelta de los lobos provocó una gran {{14}}, pero hoy mucha gente la considera un {{15}}. Los científicos siguen estudiando el parque para mejorar su {{16}} de los ecosistemas. La historia demuestra que la naturaleza es a menudo más {{17}} de lo que pensamos.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Parte 4 · Transformaciones",
+    "help": "Completa la segunda frase para que signifique lo mismo que la primera. Usa la palabra dada sin cambiarla. Escribe entre dos y cinco palabras.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Devolver los lobos a Yellowstone no fue una decisión ___.",
+    [
+     "fácil",
+     "leve",
+     "ligera",
+     "blanda"
+    ],
+    0
+   ],
+   [
+    "Muchos ganaderos que vivían cerca del parque se ___ al plan porque temían que los lobos atacaran a sus vacas.",
+    [
+     "contrariaban",
+     "oponían",
+     "quejaban",
+     "negaban"
+    ],
+    1
+   ],
+   [
+    "Para ___ a sus preocupaciones, una organización se comprometió a pagarles por cada animal que mataran los lobos.",
+    [
+     "tratar",
+     "resolver",
+     "manejar",
+     "responder"
+    ],
+    3
+   ],
+   [
+    "Con los años, el número de ataques se ha ___ relativamente bajo, pero el tema sigue despertando pasiones.",
+    [
+     "seguido",
+     "mantenido",
+     "guardado",
+     "conservado"
+    ],
+    1
+   ],
+   [
+    "Para algunos, el lobo es un ___ de la naturaleza salvaje; para otros, una amenaza para su forma de vida.",
+    [
+     "señal",
+     "símbolo",
+     "signo",
+     "marca"
+    ],
+    1
+   ],
+   [
+    "Encontrar un equilibrio que ___ contentos a todos sigue siendo un reto.",
+    [
+     "haga",
+     "tenga",
+     "lleve",
+     "deje"
+    ],
+    3
+   ],
+   [
+    "Los lobos viven en grupos familiares llamados manadas, ___ normalmente están formadas por una pareja adulta y sus crías.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Cada manada tiene su propio territorio, y los lobos lo defienden ___ otras manadas.",
+    [
+     "de",
+     "contra"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "___ eso, a menudo pasan varios días sin comer.",
+    [
+     "Por"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Cuando consiguen algo, un solo lobo puede comer ___ diez kilos de carne de una vez.",
+    [
+     "hasta"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Los lobos se comunican ___ aullidos, que se oyen a muchos kilómetros.",
+    [
+     "mediante",
+     "con"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Al contrario de lo que se cree, ___ aúllan a la luna.",
+    [
+     "no"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Yellowstone es uno de los parques nacionales más ___ del mundo.",
+    [
+     "famosos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "FAMA"
+    }
+   ],
+   [
+    "Su ___ atrae a millones de visitantes cada año.",
+    [
+     "belleza"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "BELLO"
+    }
+   ],
+   [
+    "La vuelta de los lobos provocó una gran ___, pero hoy mucha gente la considera un ….",
+    [
+     "polémica"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "POLÉMICO"
+    }
+   ],
+   [
+    "La vuelta de los lobos provocó una gran …, pero hoy mucha gente la considera un ___.",
+    [
+     "triunfo"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "TRIUNFAR"
+    }
+   ],
+   [
+    "Los científicos siguen estudiando el parque para mejorar su ___ de los ecosistemas.",
+    [
+     "comprensión"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "COMPRENDER"
+    }
+   ],
+   [
+    "La historia demuestra que la naturaleza es a menudo más ___ de lo que pensamos.",
+    [
+     "impredecible"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "PREDECIR"
+    }
+   ],
+   [
+    "Los lobos llevaban setenta años sin vivir en el parque. → ___ que los lobos no vivían en el parque.",
+    [
+     "Hacía setenta años"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Los lobos llevaban setenta años sin vivir en el parque.",
+     "w": "HACÍA",
+     "p": "___ que los lobos no vivían en el parque."
+    }
+   ],
+   [
+    "Es la primera vez que los científicos ven algo así. → Los científicos ___ algo así.",
+    [
+     "nunca habían visto",
+     "nunca han visto"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Es la primera vez que los científicos ven algo así.",
+     "w": "NUNCA",
+     "p": "Los científicos ___ algo así."
+    }
+   ],
+   [
+    "La gente dice que los lobos aúllan a la luna. → Se ___ aúllan a la luna.",
+    [
+     "dice que los lobos"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "La gente dice que los lobos aúllan a la luna.",
+     "w": "DICE",
+     "p": "Se ___ aúllan a la luna."
+    }
+   ],
+   [
+    "Los árboles no se recuperaron tanto como se esperaba. → Los árboles se recuperaron ___ se esperaba.",
+    [
+     "menos de lo que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Los árboles no se recuperaron tanto como se esperaba.",
+     "w": "MENOS",
+     "p": "Los árboles se recuperaron ___ se esperaba."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "The wolves that changed a park",
+   "sub": "What happened in Yellowstone when the wolves returned",
+   "grammar": "Use of English: four tasks like the Cambridge B2 First exam (multiple-choice cloze, open cloze, word formation and key word transformation), in Spanish.",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "wolf",
+    "deer",
+    "tree",
+    "beaver",
+    "river",
+    "eagle"
+   ]
+  }
+ }
+}

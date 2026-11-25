@@ -1,0 +1,497 @@
+{
+ "id": "inventos-b2",
+ "topic": "inventos",
+ "level": "B2",
+ "title": "Copiando a la naturaleza",
+ "short": "Copiando a la naturaleza",
+ "text": [
+  "En 1941, un ingeniero suizo llamado George de Mestral volvió de un paseo por la montaña con su perro y se dio cuenta de que tanto sus pantalones como el pelo del animal estaban llenos de cadillos, las pequeñas cabezas de semillas de una planta muy común. La mayoría de la gente simplemente se los habría quitado y los habría tirado. De Mestral, en cambio, sintió curiosidad. Puso uno bajo el microscopio y descubrió que estaba cubierto de cientos de ganchos diminutos que se enganchaban a cualquier cosa con lazos, como la tela o el pelo.",
+  "Tardó años de experimentos en copiar la idea, pero el resultado fue el velcro, un cierre formado por dos tiras de material, una con ganchos y otra con lazos. Al principio, al mundo de la moda no le impresionó, y algunas personas pensaban que parecía barato. Su gran oportunidad llegó cuando las agencias espaciales empezaron a usarlo, porque permitía a los astronautas fijar objetos a las paredes para que no salieran flotando. Hoy se encuentra en todo tipo de cosas, desde zapatillas hasta material médico.",
+  "De Mestral no fue el primero en aprender de la naturaleza, y desde luego no fue el último. La práctica de resolver problemas humanos copiando soluciones de los seres vivos tiene ya un nombre: biomímesis. Sus defensores señalan que las plantas y los animales han tenido millones de años de evolución para poner a prueba sus diseños, así que sería absurdo no aprender de ellos.",
+  "Uno de los ejemplos más famosos viene de Japón. En los años noventa, los ingenieros que trabajaban en el tren bala tenían un problema serio. Cada vez que el tren salía de un túnel a gran velocidad, empujaba una ola de aire por delante, lo que provocaba un fuerte estruendo que molestaba a los vecinos. La solución llegó de un ingeniero que también era muy aficionado a observar aves. Sabía que el martín pescador se lanza al agua para atrapar peces casi sin salpicar, gracias a su pico largo y estrecho. Cuando se rediseñó la parte delantera del tren con la forma de ese pico, el ruido se redujo, y además el tren gastaba menos electricidad.",
+  "Otros ejemplos son igual de ingeniosos. Las hojas de la flor de loto siempre están limpias porque su superficie está cubierta de pequeños bultos que hacen que el agua resbale y se lleve la suciedad. Este descubrimiento ha inspirado pinturas y cristales que se limpian solos. Los termiteros de África, que se mantienen frescos incluso con un calor extremo gracias a un sistema de túneles por los que circula el aire, han influido en el diseño de edificios que necesitan mucho menos aire acondicionado.",
+  "Por supuesto, no todos los intentos de copiar a la naturaleza salen bien. Los seres vivos son increíblemente complejos, y lo que funciona para un insecto no siempre funciona a escala humana. Algunos diseños que parecen geniales en un laboratorio resultan demasiado caros de fabricar. Aun así, a medida que los ingenieros buscan formas de usar menos energía y menos recursos, el interés por la biomímesis crece rápidamente.",
+  "Quizá la lección más importante sea la que aprendió De Mestral en su paseo. Las grandes ideas no siempre son el resultado de investigaciones complicadas. A veces están pegadas a tus pantalones, esperando a que alguien lo bastante curioso las mire de cerca."
+ ],
+ "q": [
+  [
+   "¿Qué hizo diferente a De Mestral de la mayoría de la gente?",
+   [
+    "Le gustaba pasear por la montaña.",
+    "Quiso entender por qué se pegaban los cadillos.",
+    "Tenía un perro muy grande.",
+    "Tenía un microscopio en casa."
+   ],
+   1
+  ],
+  [
+   "¿Cómo reaccionó al principio el mundo de la moda ante el velcro?",
+   [
+    "Pensó que era demasiado caro.",
+    "Lo prefirió a los botones.",
+    "Quiso usarlo enseguida.",
+    "No le dio mucha importancia."
+   ],
+   3
+  ],
+  [
+   "Según el tercer párrafo, ¿por qué deberíamos aprender de la naturaleza?",
+   [
+    "Los animales son más inteligentes que los ingenieros.",
+    "Copiar a la naturaleza es más barato que investigar.",
+    "La evolución ya ha terminado de probar todos los diseños.",
+    "La naturaleza ha probado sus diseños durante muchísimo tiempo."
+   ],
+   3
+  ],
+  [
+   "¿Qué problema tenían que resolver los ingenieros japoneses?",
+   [
+    "El tren hacía un ruido fuerte al salir de los túneles.",
+    "Los pájaros chocaban contra el tren.",
+    "El tren iba demasiado lento en los túneles.",
+    "El tren gastaba demasiada agua."
+   ],
+   0
+  ],
+  [
+   "¿Qué tienen en común la flor de loto y los termiteros en el quinto párrafo?",
+   [
+    "Los dos usan agua para mantenerse frescos.",
+    "Los dos solo se encuentran en África.",
+    "Los dos tienen superficies con ganchos.",
+    "Los dos han inspirado productos o edificios útiles."
+   ],
+   3
+  ],
+  [
+   "¿Qué sugiere el autor en la última frase?",
+   [
+    "Las investigaciones complicadas son una pérdida de tiempo.",
+    "Las buenas ideas pueden surgir de fijarse en cosas corrientes.",
+    "Hay que limpiarse los pantalones después de pasear.",
+    "Solo los ingenieros tienen grandes ideas."
+   ],
+   1
+  ],
+  [
+   "¿En qué párrafo menciona el autor a una persona cuya afición ayudó a resolver un problema?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   3
+  ],
+  [
+   "¿En qué párrafo menciona el autor algunas dificultades de copiar a la naturaleza?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   5
+  ],
+  [
+   "¿En qué párrafo explica el autor cómo un producto tuvo éxito gracias a los viajes espaciales?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   1
+  ],
+  [
+   "¿En qué párrafo pone nombre el autor a la práctica de aprender de los seres vivos?",
+   [
+    "Párrafo 1",
+    "Párrafo 2",
+    "Párrafo 3",
+    "Párrafo 4",
+    "Párrafo 5",
+    "Párrafo 6",
+    "Párrafo 7"
+   ],
+   2
+  ]
+ ],
+ "vocab": [
+  [
+   "perro",
+   "🐕"
+  ],
+  [
+   "microscopio",
+   "🔬"
+  ],
+  [
+   "tren",
+   "🚄"
+  ],
+  [
+   "hoja",
+   "🍃"
+  ],
+  [
+   "túnel",
+   "🚇"
+  ],
+  [
+   "pantalones",
+   "👖"
+  ]
+ ],
+ "halves": [
+  [
+   "Los cadillos estaban cubiertos...",
+   "...de cientos de ganchos diminutos."
+  ],
+  [
+   "Los astronautas usaban el velcro...",
+   "...para fijar objetos a las paredes."
+  ],
+  [
+   "El martín pescador se lanza al agua...",
+   "...casi sin salpicar."
+  ],
+  [
+   "Las hojas de la flor de loto...",
+   "...siempre están limpias."
+  ],
+  [
+   "El interés por la biomímesis...",
+   "...crece rápidamente."
+  ]
+ ],
+ "grammar": {
+  "title": "Uso de la lengua",
+  "rule": "Cuatro partes como el examen <b>Use of English</b> de Cambridge, pero en español. Partes 2, 3 y 4: escribe tus respuestas y pulsa <b>Comprobar</b>.",
+  "rows": [],
+  "parts": [
+   {
+    "type": "mc",
+    "title": "Parte 1 · Huecos con opciones",
+    "help": "Lee el texto y elige la palabra o expresión que mejor completa cada hueco.",
+    "text": "Muchos de los objetos que usamos cada día se inventaron {{0}} casualidad. El horno microondas es un buen ejemplo. En los años cuarenta, un ingeniero trabajaba con equipos de radar cuando se {{1}} cuenta de que una chocolatina que llevaba en el bolsillo se había derretido. En lugar de no {{2}} caso, decidió experimentar con otros alimentos, como las palomitas. Pocos años después, su empresa había {{3}} el primer horno microondas. Era enorme y carísimo, pero {{4}} el camino a los hornos que tenemos hoy en la cocina. A veces, por lo visto, un error puede {{5}} lugar a algo maravilloso.",
+    "items": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "type": "open",
+    "title": "Parte 2 · Huecos abiertos",
+    "help": "Escribe una sola palabra en cada hueco.",
+    "text": "La biomímesis no es una idea nueva. Hace más de quinientos años, Leonardo da Vinci estudió a los pájaros con la esperanza {{6}} construir una máquina voladora. Aunque sus diseños nunca despegaron, demostraban que entendía lo importante {{7}} era observar la naturaleza de cerca. Hoy los ingenieros tienen herramientas con {{8}} que Leonardo solo podía soñar. Los ordenadores les permiten estudiar el movimiento de un pez o la estructura de una hoja con un detalle increíble. Como {{9}}, el número de inventos inspirados en la naturaleza ha crecido muy deprisa. ¿Quién {{10}} cuál será el próximo? Podría estar esperando en tu jardín {{11}} mismo.",
+    "items": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "type": "wf",
+    "title": "Parte 3 · Formación de palabras",
+    "help": "Usa la palabra en mayúsculas para formar la palabra que falta.",
+    "text": "George de Mestral fue un ingeniero muy {{12}}. Su {{13}} no tuvo éxito al principio, pero nunca se rindió. Hoy millones de personas usan el velcro por su {{14}}. La biomímesis demuestra que la naturaleza puede ser una fuente {{15}} de ideas. Muchos avances {{16}} han surgido de la {{17}} atenta de plantas y animales.",
+    "items": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "type": "kwt",
+    "title": "Parte 4 · Transformaciones",
+    "help": "Completa la segunda frase para que signifique lo mismo que la primera. Usa la palabra dada sin cambiarla. Escribe entre dos y cinco palabras.",
+    "items": [
+     18,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "items": [
+   [
+    "Muchos de los objetos que usamos cada día se inventaron ___ casualidad.",
+    [
+     "a",
+     "con",
+     "por",
+     "en"
+    ],
+    2
+   ],
+   [
+    "En los años cuarenta, un ingeniero trabajaba con equipos de radar cuando se ___ cuenta de que una chocolatina que llevaba en el bolsillo se había derretido.",
+    [
+     "vio",
+     "puso",
+     "hizo",
+     "dio"
+    ],
+    3
+   ],
+   [
+    "En lugar de no ___ caso, decidió experimentar con otros alimentos, como las palomitas.",
+    [
+     "hacer",
+     "poner",
+     "tener",
+     "dar"
+    ],
+    0
+   ],
+   [
+    "Pocos años después, su empresa había ___ el primer horno microondas.",
+    [
+     "criado",
+     "desarrollado",
+     "crecido",
+     "subido"
+    ],
+    1
+   ],
+   [
+    "Era enorme y carísimo, pero ___ el camino a los hornos que tenemos hoy en la cocina.",
+    [
+     "abrió",
+     "empezó",
+     "construyó",
+     "levantó"
+    ],
+    0
+   ],
+   [
+    "A veces, por lo visto, un error puede ___ lugar a algo maravilloso.",
+    [
+     "dar",
+     "hacer",
+     "echar",
+     "poner"
+    ],
+    0
+   ],
+   [
+    "Hace más de quinientos años, Leonardo da Vinci estudió a los pájaros con la esperanza ___ construir una máquina voladora.",
+    [
+     "de"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Aunque sus diseños nunca despegaron, demostraban que entendía lo importante ___ era observar la naturaleza de cerca.",
+    [
+     "que"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Hoy los ingenieros tienen herramientas con ___ que Leonardo solo podía soñar.",
+    [
+     "las"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Como ___, el número de inventos inspirados en la naturaleza ha crecido muy deprisa.",
+    [
+     "resultado",
+     "consecuencia"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "¿Quién ___ cuál será el próximo?",
+    [
+     "sabe"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "Podría estar esperando en tu jardín ___ mismo.",
+    [
+     "ahora"
+    ],
+    0,
+    {
+     "t": "open"
+    }
+   ],
+   [
+    "George de Mestral fue un ingeniero muy ___.",
+    [
+     "creativo"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CREAR"
+    }
+   ],
+   [
+    "Su ___ no tuvo éxito al principio, pero nunca se rindió.",
+    [
+     "invento"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "INVENTAR"
+    }
+   ],
+   [
+    "Hoy millones de personas usan el velcro por su ___.",
+    [
+     "sencillez"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "SENCILLO"
+    }
+   ],
+   [
+    "La biomímesis demuestra que la naturaleza puede ser una fuente ___ de ideas.",
+    [
+     "valiosa"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "VALOR"
+    }
+   ],
+   [
+    "Muchos avances ___ han surgido de la … atenta de plantas y animales.",
+    [
+     "científicos"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "CIENCIA"
+    }
+   ],
+   [
+    "Muchos avances … han surgido de la ___ atenta de plantas y animales.",
+    [
+     "observación"
+    ],
+    0,
+    {
+     "t": "wf",
+     "w": "OBSERVAR"
+    }
+   ],
+   [
+    "De Mestral miró el cadillo con el microscopio. → De Mestral ___ al cadillo con el microscopio.",
+    [
+     "echó un vistazo"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "De Mestral miró el cadillo con el microscopio.",
+     "w": "VISTAZO",
+     "p": "De Mestral ___ al cadillo con el microscopio."
+    }
+   ],
+   [
+    "Con el nuevo diseño, el tren era mucho más silencioso. → Con el nuevo diseño, el tren hacía mucho ___ antes.",
+    [
+     "menos ruido que"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Con el nuevo diseño, el tren era mucho más silencioso.",
+     "w": "MENOS",
+     "p": "Con el nuevo diseño, el tren hacía mucho ___ antes."
+    }
+   ],
+   [
+    "Los ingenieros han copiado muchas ideas de la naturaleza. → Muchas ideas han ___ la naturaleza por los ingenieros.",
+    [
+     "sido copiadas de"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "Los ingenieros han copiado muchas ideas de la naturaleza.",
+     "w": "SIDO",
+     "p": "Muchas ideas han ___ la naturaleza por los ingenieros."
+    }
+   ],
+   [
+    "No dejó de trabajar en su idea, aunque era difícil. → Siguió trabajando en su idea a ___ difícil.",
+    [
+     "pesar de que era",
+     "pesar de ser"
+    ],
+    0,
+    {
+     "t": "kwt",
+     "s": "No dejó de trabajar en su idea, aunque era difícil.",
+     "w": "PESAR",
+     "p": "Siguió trabajando en su idea a ___ difícil."
+    }
+   ]
+  ]
+ },
+ "tr": {
+  "en": {
+   "title": "Copying nature",
+   "sub": "Inventions inspired by plants and animals",
+   "grammar": "Use of English: four tasks like the Cambridge B2 First exam (multiple-choice cloze, open cloze, word formation and key word transformation), in Spanish.",
+   "rows": [],
+   "hints": [],
+   "vocab": [
+    "dog",
+    "microscope",
+    "train",
+    "leaf",
+    "tunnel",
+    "trousers"
+   ]
+  }
+ }
+}
