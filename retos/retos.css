@@ -95,3 +95,9 @@
 .rt-pts{margin-left:auto;font-weight:800;font-variant-numeric:tabular-nums}
 .rt-fin details{margin:12px 0}
 @media (max-width:520px){.rt-fila-eq > b{min-width:0}.rt-txt{font-size:17px}}
+.rt-check{display:flex!important;align-items:center;gap:8px;color:var(--ink)!important;font-size:15px!important;margin:12px 0 4px!important}
+.rt-check input{width:22px!important;height:22px;margin:0!important;accent-color:var(--c,var(--acc))}
+.rt-mando{margin:12px 0;padding:10px 14px;border-radius:14px;border:2px dashed var(--c,var(--acc));background:color-mix(in srgb,var(--c,var(--acc)) 8%,transparent)}
+.rt-mando .rt-small{margin:0 0 6px}
+.rt-mando-b{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.rt-codigo-s{font-size:clamp(36px,11vw,56px);margin:0;text-align:center}
