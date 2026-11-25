@@ -6,8 +6,8 @@
    GET  /api/canciones?tr=palabra&de=es&a=en → traducción de una palabra (traductor gratis MyMemory; se guarda 30 días en caché)
    GET  /api/canciones?id=x            → canción que un profe mandó como deberes (hace falta haber entrado)
    GET  /api/canciones?clases=1        → clases del profe (o todas, el admin), para elegir a quién mandarla
-   POST /api/canciones {accion: "asignar", v, titulo, idioma, nivel, lineas, grupo, limite, nota}
-        → guarda la canción (solo las de deberes; caduca a los 180 días) y la añade a los deberes */
+   POST /api/canciones {accion: "asignar", v, titulo, idioma, nivel, lineas, grupo, limite, nota[, doblaje: true, inicio, fin, ajuste]}
+        → guarda la canción (o la escena para doblar, con doblaje: true) (solo las de deberes; caduca a los 180 días) y la añade a los deberes */
 import { redis, hayDB, usuarioDeSesion, quienPanel, leerJSON, guardarJSON, leerGrupos, nuevoId, contar, ipDe, responder, cuerpo, seguro } from "./_db.js";
 
 const DIAS = 180;
@@ -204,9 +204,12 @@ async function traducir(w, de, a) {
 
 function validarCancion(b) {
   const v = videoValido(b.v) ? b.v : "";
-  const lineas = Array.isArray(b.lineas) ? b.lineas.slice(0, 600).map(l => ({ t: Math.max(0, +l.t || 0), d: Math.max(0, +l.d || 0), x: String(l.x || "").slice(0, 300) })).filter(l => l.x.trim()) : [];
-  if (lineas.length < 2) return null;
-  return { v, titulo: String(b.titulo || "").slice(0, 120) || "Canción", idioma: /^[a-z]{2}$/.test(b.idioma) ? b.idioma : "es", nivel: Math.min(4, Math.max(1, +b.nivel || 2)), tiempos: lineas.some(l => l.t > 0), lineas };
+  const lineas = Array.isArray(b.lineas) ? b.lineas.slice(0, 600).map(l => ({ t: Math.max(0, +l.t || 0), d: Math.max(0, +l.d || 0), x: String(l.x || "").slice(0, 300), ...(l.who ? { who: String(l.who).slice(0, 30) } : {}) })).filter(l => l.x.trim()) : [];
+  if (lineas.length < (b.doblaje ? 1 : 2)) return null;
+  const c = { v, titulo: String(b.titulo || "").slice(0, 120) || (b.doblaje ? "Doblaje" : "Canción"), idioma: /^[a-z]{2}$/.test(b.idioma) ? b.idioma : "es", nivel: Math.min(4, Math.max(1, +b.nivel || 2)), tiempos: lineas.some(l => l.t > 0), lineas };
+  /* escena para doblar (doblaje/doblaje.js): necesita vídeo; trozo del vídeo de inicio a fin (segundos) */
+  if (b.doblaje) { if (!v) return null; const inicio = Math.max(0, +b.inicio || 0); Object.assign(c, { doblaje: true, inicio, fin: Math.max(inicio, +b.fin || 0), ajuste: Math.max(-30, Math.min(30, +b.ajuste || 0)) }); }
+  return c;
 }
 
 export default async function handler(req, res) {
@@ -258,7 +261,7 @@ export default async function handler(req, res) {
     const id = nuevoId();
     await redis("SET", "cancion:" + id, JSON.stringify({ ...c, profe: yo.admin ? null : yo.usuario, creado: Date.now() }), "EX", DIAS * 86400);
     const D = await leerJSON("admin:deberes", []);
-    D.push({ id: nuevoId(), lectura: "cancion", cancion: id, titulo: c.titulo, grupo, profe: yo.admin ? null : yo.usuario, limite, nota: String(b.nota || "").slice(0, 200), creado: Date.now() });
+    D.push({ id: nuevoId(), lectura: c.doblaje ? "doblaje" : "cancion", cancion: id, ...(c.doblaje ? { doblaje: true } : {}), titulo: c.titulo, grupo, profe: yo.admin ? null : yo.usuario, limite, nota: String(b.nota || "").slice(0, 200), creado: Date.now() });
     await guardarJSON("admin:deberes", D);
     responder(res, 200, { id });
   });

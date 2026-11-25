@@ -30,6 +30,12 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - API: `GET|POST /api/admin` (admin y profes, según quién), `GET|POST /api/avisos` (alumno: su clase, mensajes, deberes, unirse a una clase).
 - Límites: 10 contraseñas mal seguidas por usuario y conexión (15 min); 100 cuentas nuevas por hora y conexión (una clase entera puede registrarse a la vez).
 
+## Lectura con cámara (camara/)
+- Pestaña «📷 Cámara» (`#camara`): el alumno hace una foto (o elige una) de un cartel, menú o etiqueta en el idioma que aprende. **Tesseract.js** la lee dentro del navegador (OCR gratis, sin IA de pago): la foto no se sube a ningún sitio. La primera vez se descargan el programa y el modelo del idioma desde cdn.jsdelivr.net.
+- El texto leído se puede corregir a mano. Tocar una palabra muestra la traducción con el diccionario de la web y se puede guardar (`r: "camara"`, sale en «Mi diccionario» como «📷 Palabras de fotos»).
+- 6 preguntas con reglas: qué significa (4 opciones), toca la palabra que significa…, toca la palabra…, ordena la frase. XP con `lya:xp` (src `camara`).
+- «Próximamente» (`pronto/`): explica lo que aún no está hecho (doblaje). La pestaña se esconde sola cuando existe `window.LYADoblaje`.
+
 ## Canciones de YouTube (canciones/)
 - Pestaña «Canciones»: se pega un enlace de YouTube, el vídeo se ve en la web con la letra, y se para en cada hueco hasta escribir la palabra. 4 niveles. Da XP y estrellas (`S.g.cn`).
 - `GET /api/canciones?v=<vídeo>&lang=es`: el servidor coge los subtítulos de YouTube (los del autor o los automáticos) y los devuelve con sus tiempos. **No se guardan.**
@@ -56,14 +62,6 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - **Pixabay**: crea una cuenta gratis en https://pixabay.com/api/docs/, copia tu clave y ponla en Vercel → Settings → Environment Variables → `PIXABAY_KEY`, y haz Redeploy. Sin clave, la web avisa de que Pixabay no está activado (enlace y Wikimedia funcionan igual). Las búsquedas usan «safesearch» y se guardan 24 h.
 - Prueba: `qa/prueba-fichas.js <url> [carpeta-capturas]` (con `servidor-prueba.mjs` prueba también la cuenta y otro dispositivo).
 
-## Concursos (concursos/)
-- Pestaña «🏆 Concursos»: preguntas tipo test para jugar en clase. La pregunta se ve en la pantalla grande (proyector) y cada alumno contesta desde su móvil; cuanto antes acierta, más puntos (500 por acertar + hasta 500 por rapidez + racha). Ranking entre preguntas y podio al final. También se puede jugar solo.
-- **Crear con IA**: la web da un prompt (con número de preguntas, idioma, nivel y notas) para copiar en cualquier IA (ChatGPT, Claude, Gemini…) junto con la foto de la página del libro o un texto. Lo que responde la IA se pega en «Pega aquí lo que te responda la IA» y salen las preguntas, que se pueden corregir en el editor. Formato en `concursos/formato.js` (TÍTULO / PREGUNTA / A) B) C) D) / CORRECTA / TIEMPO); acepta lo que suelen añadir las IA (negritas, bloques de código, «1.», «a)», ✅…).
-- Con cuenta se guardan en Upstash (`concurso:<id>`, índice `concursos:<usuario>`, máx. 100 por cuenta, ~2-5 KB cada uno); cualquiera puede abrirlos con el enlace y guardarse una copia. Sin cuenta se guardan en el aparato y se pueden subir al entrar.
-- En directo: `api/concursos` abre una partida con código de 6 cifras (máx. 30 jugadores, caduca a las 4 h). Los móviles consultan el estado cada 1-2 s y Vercel comparte esa respuesta 1 s entre todos, así que una partida de 30 alumnos gasta del orden de 2.000 operaciones de Upstash. El tiempo de cada respuesta lo mide el servidor.
-- `api/votos` ahora vive en `api/_votos.js` y se sirve desde `api/propuestas?votos=1` (y una redirección en `vercel.json`), para no pasar del máximo de funciones de Vercel.
-- Pruebas: `qa/prueba-concursos-api.mjs` (API) y `qa/prueba-concursos.cjs` (navegador: crear, editar, jugar solo y partida con 3 móviles).
-
 ## Duelos en directo (duelo/)
 - Pestaña «⚔️ Duelo» (`#duelo`, sala en `#duelo-<código>`). Hace falta cuenta.
 - Crear: idioma del curso (español, inglés, catalán), nivel y lectura; tiempo por pregunta y para leer, y si se puede mirar el texto. Sale un **código de 6 cifras**; los demás lo escriben para unirse. **Máximo 30 jugadores.**
@@ -81,6 +79,14 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - La pizarra enseña el código, los equipos, los candados abiertos y la clasificación. El profe puede quitar a alguien antes de empezar.
 - Servidor: `api/_escape.js` (módulo, no cuenta como función), montado en `api/propuestas?escape=1`. Claves `esc:<código>`, `esc:<código>:j` y `esc:<código>:e`, caducan a las 4 h. El GET del estado lleva caché de Vercel de 1 s: toda la clase comparte una lectura de Upstash por segundo.
 - Prueba: `qa/prueba-escape.js <url> [carpeta] [en|es|ca]` con `servidor-prueba.mjs` (1 pizarra y 4 alumnos).
+## Concursos (concursos/)
+- Pestaña «🏆 Concursos»: preguntas tipo test para jugar en clase. La pregunta se ve en la pantalla grande (proyector) y cada alumno contesta desde su móvil; cuanto antes acierta, más puntos (500 por acertar + hasta 500 por rapidez + racha). Ranking entre preguntas y podio al final. También se puede jugar solo.
+- **Crear con IA**: la web da un prompt (con número de preguntas, idioma, nivel y notas) para copiar en cualquier IA (ChatGPT, Claude, Gemini…) junto con la foto de la página del libro o un texto. Lo que responde la IA se pega en «Pega aquí lo que te responda la IA» y salen las preguntas, que se pueden corregir en el editor. Formato en `concursos/formato.js` (TÍTULO / PREGUNTA / A) B) C) D) / CORRECTA / TIEMPO); acepta lo que suelen añadir las IA (negritas, bloques de código, «1.», «a)», ✅…).
+- Con cuenta se guardan en Upstash (`concurso:<id>`, índice `concursos:<usuario>`, máx. 100 por cuenta, ~2-5 KB cada uno); cualquiera puede abrirlos con el enlace y guardarse una copia. Sin cuenta se guardan en el aparato y se pueden subir al entrar.
+- En directo: `api/concursos` abre una partida con código de 6 cifras (máx. 30 jugadores, caduca a las 4 h). Los móviles consultan el estado cada 1-2 s y Vercel comparte esa respuesta 1 s entre todos, así que una partida de 30 alumnos gasta del orden de 2.000 operaciones de Upstash. El tiempo de cada respuesta lo mide el servidor.
+- `api/votos` ahora vive en `api/_votos.js` y se sirve desde `api/propuestas?votos=1` (y una redirección en `vercel.json`), para no pasar del máximo de funciones de Vercel.
+- Pruebas: `qa/prueba-concursos-api.mjs` (API) y `qa/prueba-concursos.cjs` (navegador: crear, editar, jugar solo y partida con 3 móviles).
+
 
 ## Garabatos: dibuja y adivina en grupo (garabatos/)
 - En «Juegos» → «Garabatos» (#garabatos). Uno crea una sala (código de 6 cifras, enlace #garabatos-<código>, máx. 30) y los demás se unen con su nombre, sin cuenta.

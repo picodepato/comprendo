@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/api/votos", "destination": "/api/propuestas?votos=1" },
     { "source": "/api/entrar", "destination": "/api/cuenta?a=entrar" },
     { "source": "/api/registro", "destination": "/api/cuenta?a=registro" },
     { "source": "/api/salir", "destination": "/api/cuenta?a=salir" },

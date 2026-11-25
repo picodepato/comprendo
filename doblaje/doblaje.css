@@ -1,0 +1,58 @@
+/* Doblaje (doblaje/doblaje.js). Usa también las clases de canciones/canciones.css (.cn, .cnform, .cnvid, .cnbar, .cnlyr…) */
+.db .dblab{display:block;margin-top:12px;font-weight:700;font-size:15px}
+.db .dblab textarea,.db .dblab input,.db .dblab select{display:block;width:100%;margin-top:4px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font:inherit;font-size:16px;font-weight:400}
+.db .dblab textarea:focus,.db .dblab input:focus,.db .dblab select:focus{outline:3px solid var(--hi,var(--beam));outline-offset:1px}
+.db .dbhelp{margin:6px 0 0;color:var(--mute)}
+.dbrango{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dbhow{list-style:none;padding-left:0!important}
+.dbhow li{margin:6px 0}
+.dbclase{display:flex;flex-direction:column;gap:4px;margin-top:16px;padding:14px 16px;border-radius:14px;text-decoration:none;color:var(--ink);background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 22%,var(--panel)),var(--panel) 75%);border:1px solid color-mix(in srgb,var(--acc) 45%,transparent)}
+.dbclase[hidden]{display:none}
+.dbclase span{color:var(--mute);font-size:15px}
+.dbclase:hover{border-color:var(--acc)}
+.dbdeb{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.dbdeb li{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.dbdeb small{color:var(--mute)}
+.dbn{color:var(--mute)!important;letter-spacing:0!important}
+/* estudio */
+.dbvid{position:relative}
+.dbsub{position:absolute;left:0;right:0;bottom:8%;display:flex;justify-content:center;pointer-events:none;padding:0 4%}
+.dbsub span{max-width:100%;padding:6px 12px;border-radius:10px;background:rgba(0,0,0,.72);color:#fff;font-size:clamp(15px,2.6vw,21px);line-height:1.35;text-align:center;font-weight:600}
+.dbsub b{color:var(--w,#ffcc4d)}
+.dbsub:empty{display:none}
+.dbcount{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.55);color:#fff;font-family:Bungee,Impact,sans-serif;font-size:min(30vw,120px);animation:dbpulse .8s infinite}
+.dbgrabando .dbvid{box-shadow:0 0 0 3px #ff4141}
+.dbgrabando .dbvid::after{content:"● REC";position:absolute;top:10px;left:10px;padding:2px 8px;border-radius:6px;background:#ff4141;color:#fff;font-weight:800;font-size:13px;letter-spacing:1px;animation:dbblink 1s infinite}
+.btn.dbrec{background:#ff4141;border-color:#ff4141;color:#fff}
+.btn.dbbig{font-size:18px;min-height:52px;flex:1 1 auto}
+.dblyr li{cursor:pointer;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;line-height:1.5}
+.dbwho{flex:none;padding:1px 8px;border-radius:99px;font-size:13px;font-weight:800;letter-spacing:.3px;color:#1a1208;background:var(--w,#ffcc4d)}
+.dblyr li.dbotro{opacity:.5}
+.dblyr li.dbotro.cur{opacity:.8}
+.dblyr li.cur .dbx{font-weight:700}
+.dbtrozo .dbbtns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0}
+.dbtrozo .dbbtns .btn{margin-top:0}
+.dbyo{align-self:center;color:var(--mute);font-weight:700;margin-right:2px}
+.dbtomas h2{font-size:18px;margin:20px 0 8px}
+.dbtl{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.dbtl li{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;border-radius:12px;background:var(--panel);border:1px solid var(--line)}
+.dbtl li>span:first-child{display:flex;flex-direction:column;line-height:1.35}
+.dbtl li small{color:var(--mute);font-size:13px}
+.dbtb{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.dbtb .btn{min-height:40px;padding:6px 12px;font-size:14px;text-decoration:none}
+.dbtb .cnok{margin:0;color:var(--ok)!important}
+.dbtl li.dbwin{border-color:#ffcc4d;background:linear-gradient(135deg,rgba(255,204,77,.16),var(--panel) 70%)}
+.dbgana{color:#ffcc4d!important;font-weight:800}
+.dbesc{margin-top:18px}
+.dbeh{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.dbeh img{width:96px;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:var(--panel2)}
+.dbeh h2{margin:0;font-size:19px}
+.dbvotos{font-weight:800;font-size:18px;margin:12px 0 4px}
+@keyframes dbpulse{0%{transform:scale(1)}50%{transform:scale(1.06)}100%{transform:scale(1)}}
+@keyframes dbblink{50%{opacity:.35}}
+@media(max-width:820px){
+  .btn.dbbig{font-size:17px}
+  .dbbar .btn.dbbig .cnlbl{display:inline}
+  .dbrango{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){.dbcount,.dbgrabando .dbvid::after{animation:none}}
