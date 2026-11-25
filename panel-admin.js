@@ -53,7 +53,7 @@ const optsLectura = () => { const ls = Object.values(T).sort((a, b) => (a.lengua
 
 function pintar() {
   const tabs = [["propuestas", `💡 Propuestas (${D.propuestas.length})`], ["usuarios", esAdmin() ? `👥 Usuarios (${D.usuarios.length})` : `🎒 Mis alumnos (${D.usuarios.length})`], ["clases", `🏫 ${esAdmin() ? "Clases" : "Mis clases"} (${Object.keys(D.grupos).length})`],
-    ["deberes", `📚 Deberes (${D.deberes.length})`], ["fallos", "❌ Fallos"], ["mensajes", "✉️ Mensajes"], ["votos", "🗳 Votos"]].filter(([k]) => esAdmin() || !["propuestas", "votos"].includes(k));
+    ["actividades", "🧩 Actividades creadas"], ["deberes", `📚 Deberes (${D.deberes.length})`], ["fallos", "❌ Fallos"], ["mensajes", "✉️ Mensajes"], ["votos", "🗳 Votos"]].filter(([k]) => esAdmin() || !["propuestas", "votos"].includes(k));
   if (!tabs.some(([k]) => k === tabActual)) tabActual = tabs[0][0];
   ventana(`<h2>${titulo()}</h2>
     ${!esAdmin() && !Object.keys(D.grupos).length ? `<p class="ctas">👋 Empieza creando una clase en «Mis clases». Da su código a tus alumnos: lo ponen al crear su cuenta o en «Mi cuenta».</p>` : ""}
@@ -177,14 +177,44 @@ VISTAS.deberes = () => `<form id="admdc" class="admform"><label class="admw">Lec
   <label>Para<select name="grupo">${optsGrupo("", esAdmin() ? "Todos los alumnos" : "Todas mis clases")}</select></label><label>Fecha límite<input name="limite" type="date" required value="${hoy()}"></label>
   <label class="admw">Nota (opcional)<input name="nota" maxlength="200" placeholder="Por ejemplo: intenta sacar 3 estrellas"></label><button class="btn main" type="submit">📚 Asignar lectura</button></form>
   ${D.deberes.length ? `<ul class="ctali">${[...D.deberes].sort((a, b) => a.limite.localeCompare(b.limite)).map(d => { const hechos = d.alumnos.filter(a => a.hecho).length, venc = d.limite < hoy();
-    return `<li><p><b>${d.cancion ? (d.doblaje ? "🎬 " : "🎵 ") + esc(d.titulo || (d.doblaje ? "Doblaje" : "Canción")) : esc(nombreL(T, d.lectura))}</b></p><small>Para: ${d.grupo ? esc(nGrupo(d.grupo)) : esAdmin() ? "todos" : "todas mis clases"} · Hasta: ${dia(d.limite)}${venc ? " (terminado el plazo)" : ""}${d.nota ? " · " + esc(d.nota) : ""}</small>
+    return `<li><p><b>${d.actividad ? `${{quiz: "🏆", video: "📺", doblaje: "🎬"}[d.tipo] || "🧩"} ${esc(d.titulo || "Actividad")}${d.directo ? " · 🔴 en clase, en directo" : ""}` : d.cancion ? (d.doblaje ? "🎬 " : "🎵 ") + esc(d.titulo || (d.doblaje ? "Doblaje" : "Canción")) : esc(nombreL(T, d.lectura))}</b></p>
+    ${d.actividad && d.directo && d.tipo !== "doblaje" ? `<p class="admbt"><a class="btn main" href="#${d.tipo === "video" ? "video-" : "concurso-"}${esc(d.actividad)}" data-sala="${esc(d.actividad)}" data-grupo="${esc(d.grupo || "")}">📺 Abrir la sala ahora</a></p>` : ""}<small>Para: ${d.grupo ? esc(nGrupo(d.grupo)) : esAdmin() ? "todos" : "todas mis clases"} · Hasta: ${dia(d.limite)}${venc ? " (terminado el plazo)" : ""}${d.nota ? " · " + esc(d.nota) : ""}</small>
     <p style="margin-top:6px">✅ <b>${hechos}</b> de ${d.alumnos.length} la han hecho</p>
     <details class="ctapal"><summary>Ver quién</summary><p>${d.alumnos.map(a => `<span${a.hecho ? "" : ' class="fallo"'}>${a.hecho ? "✓" : "✗"} ${esc(a.usuario)}${a.hecho ? " " + "★".repeat(a.estrellas) : ""}</span>`).join(" ") || "Nadie en esta clase."}</p></details>
     <button type="button" class="ctal" data-borrad="${esc(d.id)}">Quitar</button></li>`; }).join("")}</ul>` : `<p class="ctas">No hay deberes. Puedes mandar una lectura o un dictado; los alumnos los verán en la portada con la fecha límite.</p>`}
-  <p class="ctas">🎵 Para mandar una canción de YouTube, ábrela en la pestaña «Canciones» y pulsa «Mandar como deberes».</p><p class="ctas">🎬 Para mandar una escena para doblar, prepárala en la pestaña «Doblaje» y pulsa «Mandar a la clase».</p>`;
+  <p class="ctas">🎵 Para mandar una canción de YouTube, ábrela en la pestaña «Canciones» y pulsa «Mandar como deberes».<br>🧩 Los concursos y los vídeos con preguntas se mandan desde «Actividades creadas».</p><p class="ctas">🎬 Para mandar una escena para doblar, prepárala en la pestaña «Doblaje» y pulsa «Mandar a la clase».</p>`;
 ACCIONES.deberes = () => {
   $d("#admdc").onsubmit = async e => { e.preventDefault(); const f = e.target; if (await hacer({accion: "deber_crear", lectura: f.lectura.value, grupo: f.grupo.value, limite: f.limite.value, nota: f.nota.value}, f.querySelector("[type=submit]"))) { await abrir("deberes"); alerta("✓ Deber asignado."); } };
+  $$("[data-sala]").forEach(a => a.onclick = () => { window.LYAActividades?.preparar(a.dataset.sala, a.dataset.grupo); C.ui.cerrar(); });
   $$("[data-borrad]").forEach(b => b.onclick = async () => { if (b.dataset.ok !== "1") { b.dataset.ok = "1"; b.textContent = "¿Seguro? Pulsa otra vez"; return; } if (await hacer({accion: "deber_borrar", id: b.dataset.borrad}, b)) abrir("deberes"); });
+};
+
+/* ---------- actividades creadas: concursos, vídeos con preguntas, doblajes y canciones mandadas, y los vídeos preparados ---------- */
+const ICO = {quiz: "🏆", video: "📺", doblaje: "🎬"};
+VISTAS.actividades = () => `<p class="ctas">Todo lo que has creado. Ábrelo, juégalo en directo con tu clase o mándalo como deberes (en casa, o en clase en directo: tus alumnos entran solos desde «Deberes»).</p>
+  <p class="admbt"><a class="btn" href="#concursos-crear" data-cierra>✨ Crear un concurso</a> <a class="btn" href="#videos-editar" data-cierra>📺 Crear un vídeo con preguntas</a></p>
+  <div id="admact"><p class="ctas">Cargando…</p></div>`;
+ACCIONES.actividades = async () => {
+  $$("[data-cierra]").forEach(a => a.onclick = () => C.ui.cerrar());
+  const r = await api("concursos?mios=1").catch(() => ({ok: false}));
+  const box = $d("#admact"); if (!box) return;
+  const mias = r.ok ? (r.j.concursos || []).map(x => ({...x, tipo: x.tipo === "video" ? "video" : "quiz"})) : [];
+  const prep = (window.LYAVideosPreparados || []).map(x => ({id: x.id, titulo: x.titulo, n: x.preguntas.length, tipo: "video", nivel: x.nivel, prep: true}));
+  const canciones = D.deberes.filter(d => d.cancion && !d.doblaje), doblajes = D.deberes.filter(d => d.cancion && d.doblaje);
+  const mandada = (d, ico, ruta) => `<li><p><b>${ico} ${esc(d.titulo || "")}</b></p><small>Para: ${d.grupo ? esc(nGrupo(d.grupo)) : "todas mis clases"} · Hasta: ${dia(d.limite)} · ✅ ${d.alumnos.filter(a => a.hecho).length} de ${d.alumnos.length}</small><p class="admbt"><a class="btn" href="#${ruta}${esc(d.cancion)}" data-cierra>▶ Abrir</a></p></li>`;
+  const fila = x => `<li><p><b>${ICO[x.tipo]} ${esc(x.titulo)}</b></p><small>${x.tipo === "video" ? "Vídeo con preguntas" : "Concurso"} · ${x.n} preguntas${x.nivel ? " · " + esc(x.nivel) : ""}${x.f ? " · " + fecha(x.f) : ""}</small>
+    <p class="admbt"><a class="btn" href="#${x.tipo === "video" ? "video-solo-" : "concurso-solo-"}${esc(x.id)}" data-cierra>▶ Probar</a> <a class="btn" href="#${x.tipo === "video" ? "video-" : "concurso-"}${esc(x.id)}" data-cierra>📺 En directo</a>${x.prep ? "" : ` <a class="btn" href="#${x.tipo === "video" ? "videos-editar-" : "concursos-editar-"}${esc(x.id)}" data-cierra>✏️ Editar</a>`}</p>
+    <div data-act="${esc(x.id)}" data-tipo="${x.tipo}" data-tit="${esc(x.titulo)}"></div></li>`;
+  const sec = (tit, xs, vacio) => `<h3 class="admh3">${tit}</h3>${xs.length ? `<ul class="ctali">${xs.map(fila).join("")}</ul>` : `<p class="ctas">${vacio}</p>`}`;
+  const quiz = mias.filter(x => x.tipo === "quiz"), vids = mias.filter(x => x.tipo === "video");
+  box.innerHTML = (r.ok ? "" : `<p class="ctam">No se han podido cargar tus actividades.</p>`)
+    + sec(`🏆 Mis concursos (${quiz.length})`, quiz, "Aún no has creado ninguno. Se crean con IA en un minuto en «Concursos».")
+    + sec(`📺 Mis vídeos con preguntas (${vids.length})`, vids, "Aún no has creado ninguno: pega un enlace de YouTube y añade preguntas en los momentos que quieras.")
+    + `<h3 class="admh3">🎬 Doblajes mandados (${doblajes.length})</h3>${doblajes.length ? `<ul class="ctali">${doblajes.map(d => mandada(d, "🎬", "doblaje-e-")).join("")}</ul>` : `<p class="ctas">Se preparan en la pestaña «Doblaje» y se mandan con «Mandar a la clase».</p>`}`
+    + `<h3 class="admh3">🎵 Canciones mandadas (${canciones.length})</h3>${canciones.length ? `<ul class="ctali">${canciones.map(d => mandada(d, "🎵", "cancion-")).join("")}</ul>` : `<p class="ctas">Se mandan desde la pestaña «Canciones».</p>`}`
+    + sec(`⭐ Vídeos preparados por COMPRENDO (${prep.length})`, prep, "—");
+  $$("[data-cierra]").forEach(a => a.onclick = () => C.ui.cerrar());
+  if (window.LYAActividades) $$("[data-act]").forEach(el => window.LYAActividades.formDeber(el, {id: el.dataset.act, tipo: el.dataset.tipo, titulo: el.dataset.tit}));
 };
 
 /* ---------- fallos: palabras «por repasar» y preguntas más falladas ---------- */

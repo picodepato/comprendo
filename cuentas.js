@@ -255,6 +255,6 @@ function panelCopia() {
   };
 }
 
-window.LYACuentas = {preparar, cambio, boton, abrir, subir, api, hayServidor, get usuario() { return C && C.usuario; }, get rol() { return C && C.token ? C.rol || "alumno" : null; },
+window.LYACuentas = {preparar, cambio, boton, abrir, subir, api, hayServidor, get usuario() { return C && C.usuario; }, get rol() { return C && C.token ? (C.usuario === "admin" ? "admin" : C.rol || "alumno") : null; }, panel: tab => panelAdmin(tab),
   ui: {ventana, cerrar, esc, get dlg() { return dlg; }, $d: s => dlg.querySelector(s)}};
 })();

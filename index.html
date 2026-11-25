@@ -314,6 +314,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="garabatos/garabatos.css">
 <link rel="stylesheet" href="escape/escape.css">
 <link rel="stylesheet" href="concursos/concursos.css">
+<link rel="stylesheet" href="videos/videos.css">
 <link rel="stylesheet" href="diseno.css">
 </head>
 <body>
@@ -585,7 +586,7 @@ function renderProg() {
 function renderTop() {
   const rd = S.view === "read", L = rd ? R : null;
   $("tabs").innerHTML = `<a href="#inicio" ${S.view === "home" ? 'aria-current="page"' : ""}>${TT("home")}</a>
-    <a href="#diccionario" ${S.view === "dict" || S.view === "fc" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}${window.LYADictados ? `<a href="#dictados" ${S.view === "dictado" ? 'aria-current="page"' : ""}>${LYADictados.tab()}</a>` : ""}${window.LYACanciones ? `<a href="#canciones" ${S.view === "songs" ? 'aria-current="page"' : ""}>${LYACanciones.tab()}</a>` : ""}${window.LYADuelo ? `<a href="#duelo" ${S.view === "duelo" ? 'aria-current="page"' : ""}>${LYADuelo.tab()}</a>` : ""}${window.LYAEscape ? `<a href="#escape" ${S.view === "escape" ? 'aria-current="page"' : ""}>${LYAEscape.tab()}</a>` : ""}${window.LYAConcursos ? `<a href="#concursos" ${S.view === "cc" ? 'aria-current="page"' : ""}>${LYAConcursos.tab()}</a>` : ""}${window.LYADoblaje ? `<a href="#doblaje" ${S.view === "dub" ? 'aria-current="page"' : ""}>${LYADoblaje.tab()}</a>` : ""}${window.LYACamara ? `<a href="#camara" ${S.view === "camara" ? 'aria-current="page"' : ""}>${LYACamara.tab()}</a>` : ""}${window.LYAPronto?.pending() ? `<a href="#proximamente" ${S.view === "pronto" ? 'aria-current="page"' : ""}>${LYAPronto.tab()}</a>` : ""}`;
+    <a href="#diccionario" ${S.view === "dict" || S.view === "fc" ? 'aria-current="page"' : ""}>${TT("dict")} (${S.dict.filter(d => d.l === S.learn).length})</a>${window.LYAJuegos ? `<a href="#juegos" ${S.view === "games" ? 'aria-current="page"' : ""}>${LYAJuegos.tab()}</a>` : ""}${window.LYAMascota ? `<a href="#mascota" ${S.view === "pet" ? 'aria-current="page"' : ""}>${LYAMascota.tab()}</a>` : ""}${window.LYADictados ? `<a href="#dictados" ${S.view === "dictado" ? 'aria-current="page"' : ""}>${LYADictados.tab()}</a>` : ""}${window.LYACanciones ? `<a href="#canciones" ${S.view === "songs" ? 'aria-current="page"' : ""}>${LYACanciones.tab()}</a>` : ""}${window.LYADuelo ? `<a href="#duelo" ${S.view === "duelo" ? 'aria-current="page"' : ""}>${LYADuelo.tab()}</a>` : ""}${window.LYAEscape ? `<a href="#escape" ${S.view === "escape" ? 'aria-current="page"' : ""}>${LYAEscape.tab()}</a>` : ""}${window.LYAConcursos ? `<a href="#concursos" ${S.view === "cc" ? 'aria-current="page"' : ""}>${LYAConcursos.tab()}</a>` : ""}${window.LYADoblaje ? `<a href="#doblaje" ${S.view === "dub" ? 'aria-current="page"' : ""}>${LYADoblaje.tab()}</a>` : ""}${window.LYACamara ? `<a href="#camara" ${S.view === "camara" ? 'aria-current="page"' : ""}>${LYACamara.tab()}</a>` : ""}${window.LYAPronto?.pending() ? `<a href="#proximamente" ${S.view === "pronto" ? 'aria-current="page"' : ""}>${LYAPronto.tab()}</a>` : ""}${window.LYAVideos ? `<a href="#videos" ${S.view === "vd" ? 'aria-current="page"' : ""}>${LYAVideos.tab()}</a>` : ""}${window.LYAAvisos?.tabHTML ? LYAAvisos.tabHTML(S.view) : ""}`;
   if (rd && L) { const r = scoreOf(L); $("score").innerHTML = `${esc(U("points", S.learn))} <b>${r.pts}</b> / ${r.tot}`; $("score").hidden = false; }
   else if (S && S.view === "dict") { $("score").innerHTML = `${esc(U("to_review", S.learn))} <b>${S.dict.filter(d => d.miss && d.l === S.learn).length}</b>`; $("score").hidden = false; }
   else $("score").hidden = true;
@@ -1040,6 +1041,8 @@ function render() {
   if (S.view === "duelo" && window.LYADuelo) return LYADuelo.render($("app"));
   if (S.view === "escape" && window.LYAEscape) return LYAEscape.render($("app"));
   if (S.view === "cc" && window.LYAConcursos) return LYAConcursos.render($("app"));
+  if (S.view === "vd" && window.LYAVideos) return LYAVideos.render($("app"));
+  if (S.view === "deb" && window.LYAAvisos?.render) return LYAAvisos.render($("app"));
   if (S.view === "pronto" && window.LYAPronto) return LYAPronto.render($("app"));
   if (S.view === "camara" && window.LYACamara) return LYACamara.render($("app"));
   if (S.view === "read" && R) return renderRead();
@@ -1063,6 +1066,8 @@ async function route() {
   else if (window.LYADuelo?.isDuelo(h)) S.view = "duelo";
   else if (window.LYAEscape?.isEscape(h)) S.view = "escape";
   else if (window.LYAConcursos?.isCc(h)) S.view = "cc";
+  else if (window.LYAVideos?.isVd(h)) S.view = "vd";
+  else if (window.LYAAvisos?.isDeb?.(h)) S.view = "deb";
   else if (window.LYAPronto?.isPronto(h)) S.view = "pronto";
   else if (window.LYACamara?.isCam(h)) S.view = "camara";
   else if (lv) { S.view = "home"; S.level = lv[1].toUpperCase(); }
@@ -1112,5 +1117,8 @@ start();
 <script src="escape/escape.js"></script>
 <script src="concursos/formato.js"></script>
 <script src="concursos/concursos.js"></script>
+<script src="actividades.js"></script>
+<script src="videos/preparados.js"></script>
+<script src="videos/videos.js"></script>
 </body>
 </html>

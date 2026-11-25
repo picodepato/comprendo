@@ -94,3 +94,17 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - El dibujo se manda en tandas cada segundo y se vuelve a pintar poco a poco en los demás. El estado lo comparte la caché de Vercel durante 1 s (30 jugadores gastan casi como 2). Unos 300-400 comandos de Upstash por turno.
 - API dentro de `api/dibujos.js` (no gasta otra función): código en `api/_garabatos.js`, palabras en `api/_garabatos-palabras.js`.
 - Pruebas: `qa/prueba-garabatos-api.mjs` y `qa/prueba-garabatos.cjs` (3 navegadores a la vez).
+
+## Vídeos con preguntas (videos/), Actividades creadas y Deberes
+- Pestaña «📺 Vídeos»: un vídeo de YouTube que se para en ciertos momentos y no sigue hasta contestar. Preparados por nosotros (`videos/preparados.js`, con los tiempos sacados de los subtítulos del vídeo) y creados por los profes: pegar el enlace, ir al momento y «➕ Añadir pregunta aquí». Se guardan con los concursos (`concurso:<id>` con `tipo: "video"`, `v` = id de YouTube y `t` = segundo de cada pregunta).
+- A solas (`#video-solo-<id>`): se para en cada pregunta (si alguien adelanta el vídeo, la pregunta sale igual). Resultado en `S.g.ac[id]`.
+- En directo, con la misma sala que los concursos (código de 6 cifras, `api/concursos`). Antes de lanzar, el profe elige:
+  - 📺 **Proyección**: el vídeo en la pantalla grande; a los móviles solo les sale la pregunta cuando el vídeo se para (puntos por rapidez, resultado y ranking, y sigue el vídeo).
+  - 📱 **Individual**: cada uno ve el vídeo en su móvil y se para solo en cada pregunta (1000 puntos por acierto). El profe ve el progreso de cada alumno y acaba cuando todos han terminado (o pulsa «Terminar»).
+  - ⏱ Tiempo para **leer antes todas las preguntas** (no, 30 s, 1 o 2 min).
+- **Avisar a la clase**: al abrir la sala el profe elige su clase; la sala se anuncia en `csclase:<clase>` y los alumnos que tienen abierta la web entran solos desde «Deberes». Ellos preguntan cada 5 s a `api/concursos?aviso=<clase>`, que Vercel guarda 4 s y comparte entre toda la clase.
+- **Actividades creadas** (Panel del profe): concursos, vídeos con preguntas, canciones mandadas, los preparados por COMPRENDO (y los doblajes cuando lleguen). Cada uno se prueba, se juega en directo o se manda como deberes: «🏠 cada uno en casa» o «🔴 en clase, en directo».
+- **Deberes del alumno**: caja en la portada y página `#deberes` (pestaña «📚 Deberes»). Tocar un deber abre directamente la actividad (lectura, dictado, canción, concurso, vídeo; doblaje en `#doblaje-e-<id>`).
+- Deberes de actividades en `admin:deberes`: `{lectura: "actividad", actividad, tipo: quiz|video|doblaje, titulo, directo}`. El profe ve quién lo ha hecho con `S.g.ac`.
+- Código compartido en `actividades.js` (mandar como deberes, avisar a la clase, guardar el resultado, entrar solo en la sala).
+- Pruebas: `qa/prueba-videos-api.mjs` (API) y `qa/prueba-videos.cjs` (navegador, con un YouTube simulado: crear, mandar, entrar solo, individual, proyección, a solas y Actividades creadas).

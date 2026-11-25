@@ -135,6 +135,7 @@ async function cargar(id) {
   if (id.startsWith("l")) { const c = locales().find(x => x.id === id); return c ? {c, mio: true} : null; }
   const r = await api("concursos?id=" + encodeURIComponent(id)).catch(() => null);
   if (!r) throw new Error("red");
+  if (r.ok && r.j.concurso && r.j.concurso.tipo === "video") { location.hash = "video-" + id; return null; }  /* es un vídeo con preguntas */
   return r.ok ? {c: r.j.concurso, mio: r.j.mio} : null;
 }
 function aviso(txt, mal) {
@@ -187,7 +188,7 @@ async function inicio(app) {
   </section>`;
   app.querySelector("#cc-unir").onsubmit = e => { e.preventDefault(); const c = e.target.codigo.value.replace(/\D/g, ""); if (c.length === 6) location.hash = "jugar-" + c; };
   let nube = [];
-  if (C) { const r = await api("concursos?mios=1").catch(() => null); if (r && r.ok) nube = r.j.concursos || []; }
+  if (C) { const r = await api("concursos?mios=1").catch(() => null); if (r && r.ok) nube = (r.j.concursos || []).filter(x => x.tipo !== "video"); }  /* los vídeos con preguntas están en videos/ */
   if (V.h !== "concursos") return;
   const todos = [...nube.map(x => ({...x, nube: true})), ...ls.map(x => ({id: x.id, titulo: x.titulo, n: x.preguntas.length, f: x.f}))];
   const el = app.querySelector("#cc-lista");
@@ -323,12 +324,15 @@ async function ficha(app, id) {
     <p class="cc-small">${T("npreg", {n: c.preguntas.length})}${c.autor && !r.mio ? " · " + T("de", {u: c.autor}) : ""}${id.startsWith("l") ? " · 📱" : " · ☁️"}</p>
     <p class="cc-msg" id="cc-msg" hidden></p>
     <div class="cc-crea"><button class="btn main cc-big" data-cc="directo" data-id="${esc(id)}">${T("proyectar")}</button><a class="btn cc-big" href="#concurso-solo-${esc(id)}">${T("solo")}</a></div>
+    <div id="ac-clase"></div><div id="ac-deber"></div>
     <div class="cc-acc">${r.mio ? `<a class="btn" href="#concursos-editar-${esc(id)}">${T("editar")}</a>` : `<button class="btn" data-cc="copia">${T("copia")}</button>`}
       ${id.startsWith("l") ? "" : `<button class="btn" data-cc="enlace">${T("enlace")}</button>`}<button class="btn" data-cc="comotexto">${T("comotexto")}</button>
       ${r.mio ? `<button class="btn" data-cc="borrar">${T("borrar")}</button>` : ""}</div>
     <ol class="cc-ver">${c.preguntas.map(q => `<li><b>${esc(q.p)}</b> <small>⏱ ${q.s} s</small><ul>${q.o.map((o, j) => `<li class="${j === q.c ? "cc-si" : ""}">${opcHTML(o, j, j === q.c ? " ✓" : "")}</li>`).join("")}</ul></li>`).join("")}</ol>
   </section>`;
   if (tras) aviso(...tras);
+  const AC = window.LYAActividades;  /* actividades.js: avisar a la clase al abrir la sala y mandar como deberes */
+  if (AC) { AC.selectorClase(app.querySelector("#ac-clase"), id); AC.formDeber(app.querySelector("#ac-deber"), {id, tipo: "quiz", titulo: c.titulo}); }
 }
 
 /* ---------- jugar solo ---------- */
@@ -376,7 +380,8 @@ async function abrirDirecto(id) {
   const c = V.c && V.id === id ? V.c : (await cargar(id).catch(() => null))?.c;
   if (!c) return aviso(t("e_noexiste"), true);
   aviso(t("abriendo"));
-  const r = await api("concursos", id.startsWith("l") ? {accion: "abrir", concurso: c} : {accion: "abrir", id}).catch(() => null);
+  const grupo = window.LYAActividades ? window.LYAActividades.grupoElegido() : "";
+  const r = await api("concursos", id.startsWith("l") ? {accion: "abrir", concurso: c, grupo} : {accion: "abrir", id, grupo}).catch(() => null);
   if (!r || !r.ok) return aviso(r && r.code === 429 ? t("e_espera") : t("e_abrir"), true);
   const hs = store.get(HKEY, {}); hs[r.j.codigo] = {clave: r.j.clave, id, f: Date.now()};
   for (const k in hs) if (Date.now() - (hs[k].f || 0) > 864e5) delete hs[k];
@@ -524,10 +529,11 @@ async function sondeoJug() {
       J.e = j;
     } else if (r.status === 404) J.e = {fase: "cerrada"};
   } catch (e) {}
+  if (J.e && J.e.tipo === "video") { V.j = null; location.hash = "vjugar-" + J.cod; return; }  /* es un vídeo con preguntas (videos/) */
   pintarJug();
   const f = J.e && J.e.fase;
   if (f && f !== "cerrada" && f !== "fin") timer = setTimeout(sondeoJug, f === "espera" ? 2000 : 1000);
-  if (f === "fin" && !J.premio) { J.premio = 1; const yo = (J.e.ranking || []).find(x => x.n === J.nombre); if (yo) xp(5 + Math.round(yo.pts / 500), {ok: true}); }
+  if (f === "fin" && !J.premio) { J.premio = 1; const yo = (J.e.ranking || []).find(x => x.n === J.nombre); if (yo) xp(5 + Math.round(yo.pts / 500), {ok: true}); if (J.e.idc) window.LYAActividades?.marcar(J.e.idc, Object.values(J.okq || {}).filter(Boolean).length, J.e.total || 1); }
 }
 function pintarJug() {
   const J = V.j, app = V.app; if (!J || !app) return;
@@ -542,6 +548,7 @@ function pintarJug() {
   const q = e.pregunta, res = e.fase === "resultado", mia = J.resp[e.i];
   if (res) {
     const ok = yo && yo.ok === true, nada = !yo || yo.ok === null;
+    (J.okq ||= {})[e.i] = ok;  /* aciertos, para los deberes */
     return caja(`<div class="cc-gran">${ok ? "🎉" : nada ? "⏰" : "❌"}</div><h2>${ok ? T("j_bien") : nada ? T("j_tarde") : T("j_mal")}</h2>${ok ? `<p class="cc-pts">+${yo.d}</p>` : ""}${yo && yo.ra > 1 ? `<p>${T("j_racha", {n: yo.ra})}</p>` : ""}
       <p class="cc-small">✓ ${opcHTML(q.o[e.correcta], e.correcta)}</p>${yo ? `<p>${T("j_puesto", {p: pos, n: e.ranking.length})} · ${T("j_pts", {n: yo.pts})}</p>` : ""}`, ok ? "si" : "no");
   }
@@ -591,7 +598,7 @@ document.addEventListener("click", async ev => {
     store.set(LKEY, quedan); inicio(V.app); setTimeout(() => aviso(quedan.length ? t("e_red") : t("subidos"), !!quedan.length), 300);
   }
   else if (a === "solor") responderSolo(+b.dataset.j);
-  else if (a === "solosig") { const s = V.s; s.i++; s.elegida = undefined; if (s.i >= s.c.preguntas.length) { s.fase = "fin"; xp(5, {ok: true}); } else { s.fase = "pregunta"; s.t0 = Date.now(); } pintarSolo(V.app); scrollTo(0, 0); }
+  else if (a === "solosig") { const s = V.s; s.i++; s.elegida = undefined; if (s.i >= s.c.preguntas.length) { s.fase = "fin"; xp(5, {ok: true}); window.LYAActividades?.marcar(V.h.slice(14), s.ok, s.c.preguntas.length); } else { s.fase = "pregunta"; s.t0 = Date.now(); } pintarSolo(V.app); scrollTo(0, 0); }
   else if (a === "solootra") { V.s = {...V.s, i: 0, pts: 0, ok: 0, ra: 0, fase: "pregunta", t0: Date.now()}; pintarSolo(V.app); }
   else if (a === "pasar") { b.disabled = true; V.p.verRank = -1; pasarHost(); }
   else if (a === "verrank") pintarRank();
