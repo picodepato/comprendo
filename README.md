@@ -87,7 +87,6 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - `api/votos` ahora vive en `api/_votos.js` y se sirve desde `api/propuestas?votos=1` (y una redirección en `vercel.json`), para no pasar del máximo de funciones de Vercel.
 - Pruebas: `qa/prueba-concursos-api.mjs` (API) y `qa/prueba-concursos.cjs` (navegador: crear, editar, jugar solo y partida con 3 móviles).
 
-
 ## Garabatos: dibuja y adivina en grupo (garabatos/)
 - En «Juegos» → «Garabatos» (#garabatos). Uno crea una sala (código de 6 cifras, enlace #garabatos-<código>, máx. 30) y los demás se unen con su nombre, sin cuenta.
 - Por turnos, al que dibuja le salen 3 palabras del idioma del curso y del nivel elegido (con su traducción) y elige una; los demás escriben lo que creen que es. Vale sin tildes o con artículo; «¡Casi!» si falla una letra. Pistas: se descubren letras al pasar el tiempo.
