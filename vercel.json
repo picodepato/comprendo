@@ -1,4 +1,13 @@
 {
+  "rewrites": [
+    { "source": "/api/entrar", "destination": "/api/cuenta?a=entrar" },
+    { "source": "/api/registro", "destination": "/api/cuenta?a=registro" },
+    { "source": "/api/salir", "destination": "/api/cuenta?a=salir" },
+    { "source": "/api/estado", "destination": "/api/cuenta?a=estado" }
+  ],
+  "functions": {
+    "api/duelo.js": { "includeFiles": "content/**/lecturas/*.json" }
+  },
   "headers": [
     { "source": "/content/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] }
   ]
