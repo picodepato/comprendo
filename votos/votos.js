@@ -1,7 +1,7 @@
 /* Votar el próximo tema: los temas de reserva (content/temas-reserva.json) salen en la portada con «Quiero este tema».
    Un voto por tema y aparato. Dónde se guardan los votos:
    - Web en Claude (artefacto): base de datos del artefacto, documento votos/<id de la persona> = {temas: [...]}.
-   - Web en Vercel: api/votos (Upstash Redis), con un id de aparato guardado en localStorage "lyaAparato".
+   - Web en Vercel: api/propuestas?votos=1 (Upstash Redis), con un id de aparato guardado en localStorage "lyaAparato".
    - Sin ninguna de las dos: solo en este aparato (localStorage "lyaVotos"), sin recuento.
    Usa window.LYA (index.html). */
 (() => {
@@ -39,7 +39,7 @@ async function connect() {
     } catch (e) {}
     return; /* inside Claude without a database: keep votes on this device */
   }
-  try { const r = await fetch("api/votos", {cache: "no-store"}); const j = await r.json(); if (r.ok && j.ok) { mode = "api"; counts = j.votos || {}; addExtra(j.temas); paint(); } } catch (e) {}
+  try { const r = await fetch("api/propuestas?votos=1", {cache: "no-store"}); const j = await r.json(); if (r.ok && j.ok) { mode = "api"; counts = j.votos || {}; addExtra(j.temas); paint(); } } catch (e) {}
 }
 /* topics the admin added from students' proposals (only on the Vercel site) */
 function addExtra(list) { if (!D || !Array.isArray(list)) return; const have = new Set(ids()); for (const t of list) if (t && t.id && !have.has(t.id)) D.temas.push(t); try { const {S} = st(); if (S && S.view === "home" && list.length) L().renderPage(); } catch (e) {} }
@@ -48,7 +48,7 @@ async function vote(id) {
   mine.add(id); keepMine(); msg = "thanks"; paint();
   try {
     if (mode === "db") await db.doc("votos/" + uid).set({temas: [...mine].filter(t => ids().includes(t)), t: Date.now()});
-    else if (mode === "api") { const r = await fetch("api/votos", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({tema: id, aparato: device()})}); const j = await r.json(); if (r.ok && j.votos) counts = j.votos; }
+    else if (mode === "api") { const r = await fetch("api/propuestas?votos=1", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({tema: id, aparato: device()})}); const j = await r.json(); if (r.ok && j.votos) counts = j.votos; }
   } catch (e) { msg = "local"; }
   paint();
 }

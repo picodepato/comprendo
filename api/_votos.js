@@ -1,4 +1,4 @@
-/* Votar el próximo tema. GET: recuento. POST {tema, aparato}: un voto por tema y aparato. */
+/* Votar el próximo tema (se sirve desde api/propuestas?votos=1).  GET: recuento. POST {tema, aparato}: un voto por tema y aparato. */
 import { redis, leerJSON, responder, cuerpo, seguro } from "./_db.js";
 const BASE = ["tiburones", "esports", "cuerpo", "internet", "olimpicos"];
 /* temas añadidos por el admin al aprobar una propuesta */

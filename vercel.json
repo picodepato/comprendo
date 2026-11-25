@@ -1,4 +1,5 @@
 {
+  "rewrites": [{ "source": "/api/votos", "destination": "/api/propuestas?votos=1" }],
   "headers": [
     { "source": "/content/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] }
   ]
