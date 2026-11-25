@@ -86,9 +86,13 @@ function generar(lang) {
     (porNivel[R.level] ||= []).push(id);
   }
   /* trampas: palabras clave de otras lecturas del mismo nivel que no salen en esta (las de final parecido primero) */
-  for (const ids of Object.values(porNivel)) for (const id of ids) {
+  const NIV = ["A1", "A2", "B1", "B2", "C1"];
+  for (const [nv, ids] of Object.entries(porNivel)) for (const id of ids) {
     const aqui = new Set(salida[id].s.flat().flatMap(palabras).map(base));
-    const pool = [...new Set(ids.filter(o => o !== id).flatMap(o => salida[o].kw.map(k => k.f.toLowerCase())))].filter(w => !aqui.has(base(w)) && !/^\p{Lu}/u.test(w));
+    /* un nivel con una sola lectura (C1) coge las trampas del nivel de abajo */
+    let otros = ids.filter(o => o !== id);
+    for (let k = NIV.indexOf(nv) - 1; otros.length < 3 && k >= 0; k--) otros = otros.concat(porNivel[NIV[k]] || []);
+    const pool = [...new Set(otros.flatMap(o => salida[o].kw.map(k => k.f.toLowerCase())))].filter(w => !aqui.has(base(w)) && !/^\p{Lu}/u.test(w));
     const fins = new Set(salida[id].kw.map(k => base(k.f).slice(-2)));
     const h = w => { let x = 7; for (const c of w + id) x = (x * 31 + c.charCodeAt(0)) >>> 0; return x; };
     pool.sort((a, b) => (fins.has(base(b).slice(-2)) - fins.has(base(a).slice(-2))) || h(a) - h(b));
