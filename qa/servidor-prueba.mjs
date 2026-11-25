@@ -31,6 +31,7 @@ http.createServer((q, r) => { let b = ""; q.on("data", c => b += c); q.on("end",
     else if (c === "HEXISTS") res = h.has(a[2]) ? 1 : 0;
     else if (c === "HLEN") res = h.size;
     else if (c === "HINCRBY") { const n = (+h.get(a[2]) || 0) + +a[3]; h.set(a[2], String(n)); kv.set(k, h); res = n; }
+    else if (c === "HEXISTS") res = h.has(a[2]) ? 1 : 0;
   }
   r.setHeader("content-type", "application/json"); r.end(JSON.stringify({result: res}));
 }); }).listen(PUERTO + 1);
