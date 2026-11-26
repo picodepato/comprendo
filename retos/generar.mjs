@@ -46,6 +46,9 @@ function generar(lang) {
       /* si la lectura trae las pruebas escritas a mano (q[i][3].ev), mandan ellas */
       const aMano = extra && Array.isArray(extra.ev) ? evDeFrases(P, extra.ev) : null;
       if (aMano) return aMano.slice(0, 3);
+      /* «¿En qué párrafo…?» → «Párrafo 3»: vale cualquier frase de ese párrafo */
+      const np = String(ops[ok] || "").trim().match(/^(?:párrafo|paragraph|paràgraf)\s+(\d+)\.?$/i);
+      if (np && P[+np[1] - 1]) return P[+np[1] - 1].map((_, s) => [+np[1] - 1, s]);
       let solo = null; for (const [re, n] of ORD[lang]) if (re.test(preg)) { solo = n < 0 ? P.length - 1 : n; break; }
       const qa = stems(preg.replace(/párrafo|paragraph|paràgraf/gi, "")), an = stems(ops[ok]), mal = new Map();
       ops.forEach((o, i) => { if (i !== ok) for (const [t] of stems(o)) mal.set(t, 1); });

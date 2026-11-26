@@ -55,7 +55,12 @@
     "A monster",
     "A dinosaur egg"
    ],
-   0
+   0,
+   {
+    "ev": [
+     "They looked for the monster with special machines, but they did not find it."
+    ]
+   }
   ],
   [
    "What do tourists do at Loch Ness?",

@@ -781,7 +781,7 @@ function renderRead() {
     <article class="reading${L.level === "B2" || L.level === "C1" ? " num" : ""}">${L.text.map((p, i) => `<p>${tok(p)}</p>${S.trx && tr.text?.[i] ? `<div class="trx">${esc(tr.text[i])}</div>` : ""}`).join("")}</article>
     ${L.font ? `<p class="src">${TI("src")}: ${esc(L.font.autor)}, <i>${esc(L.font.obra)}</i>${L.font.nota ? ` (${esc(L.font.nota)})` : ""}. ${esc(L.font.llibre)}. ${esc(L.font.editorial)}.</p>` : ""}
     <section class="ex"><h2><span>1.</span> ${esc(U("s_q", S.learn))}</h2><p class="en">${TB("s_q_help")}</p>
-      ${L.q.map((q, i) => q[3] ? fitxaQ(id, q, i) : mcq(id, "q", i, q[0], "", q[1], q[2], true)).join("")}</section>
+      ${L.q.map((q, i) => q[3] && q[3].t ? fitxaQ(id, q, i) : mcq(id, "q", i, q[0], "", q[1], q[2], true)).join("")}</section>
     <section class="ex"><h2><span>2.</span> ${esc(U("s_vocab", S.learn))}</h2><p class="en">${TB("s_vocab_help")}</p>
       ${matcher(id, "vocab", L.vocab.map(v => v[0]), L.vocab.map((v, i) => `${v[1]} ${(tr.vocab || [])[i] || ""}`), false)}</section>
     <section class="ex"><h2><span>3.</span> ${esc(U("s_halves", S.learn))}</h2><p class="en">${TB("s_halves_help")}</p>

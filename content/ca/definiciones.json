@@ -31,6 +31,10 @@
 "abella",
 "Insecte groc i negre que fa mel i pot picar."
 ],
+"absolutament": [
+"absolutament",
+"Del tot, completament."
+],
 "abstractes": [
 "abstracte",
 "D'idees."
@@ -183,6 +187,10 @@
 "actor",
 "Dona que fa papers al cinema, al teatre o a la televisió."
 ],
+"actuacions": [
+"actuació",
+"El que fa un esportista o un artista en una prova o un espectacle."
+],
 "actual": [
 "actual",
 "D'ara."
@@ -211,9 +219,17 @@
 "acumular",
 "S'ajunti."
 ],
+"acuradament": [
+"acuradament",
+"Amb molta cura."
+],
 "adaptar": [
 "adaptar",
 "Canviar per encaixar."
+],
+"addictius": [
+"addictiu",
+"Que enganxa: costa molt deixar-ho."
 ],
 "adequada": [
 "adequat",
@@ -322,6 +338,10 @@
 "afirmen": [
 "afirmar",
 "Diuen que és veritat."
+],
+"afortunadament": [
+"afortunadament",
+"Per sort."
 ],
 "afrontat": [
 "afrontar",
@@ -983,6 +1003,10 @@
 "Antàrtida",
 "Continent de gel al sud de la Terra."
 ],
+"anual": [
+"anual",
+"Que passa una vegada l'any."
+],
 "anuncia": [
 "anunciar",
 "Diu una notícia a molta gent."
@@ -1046,6 +1070,10 @@
 "aparells": [
 "aparell",
 "Màquines."
+],
+"aparença": [
+"aparença",
+"Com es veu una cosa o una persona per fora."
 ],
 "aparta": [
 "apartar",
@@ -1122,6 +1150,10 @@
 "apropiat": [
 "apropiat",
 "Correcte."
+],
+"aprovades": [
+"aprovar",
+"Aprovar: dir oficialment que una cosa està bé i es pot fer."
 ],
 "aprovat": [
 "aprovar",
@@ -1399,6 +1431,10 @@
 "assolir",
 "Aconseguien."
 ],
+"assoliment": [
+"assoliment",
+"Una cosa difícil que has aconseguit."
+],
 "asteroide": [
 "asteroide",
 "Roca molt gran que viatja per l'espai."
@@ -1490,6 +1526,10 @@
 "atrapar": [
 "atrapar",
 "Agafar."
+],
+"atrapat": [
+"atrapar",
+"Atrapar: agafar algú o alguna cosa que vol escapar."
 ],
 "atrapats": [
 "atrapar",
@@ -1875,6 +1915,10 @@
 "batre",
 "Batre un rècord = fer-ho millor que ningú."
 ],
+"batria": [
+"batre",
+"Batre un rècord: fer-ho millor que ningú abans."
+],
 "battle royale": [
 "Battle Royale",
 "Mode de joc on guanya l'últim jugador viu."
@@ -1902,6 +1946,10 @@
 "belle": [
 "Belle",
 "Nom: David Belle, un dels creadors del parkour."
+],
+"bellesa": [
+"bellesa",
+"El que fa que una cosa sigui bonica."
 ],
 "ben": [
 "ben",
@@ -2323,6 +2371,10 @@
 "cada vegada més",
 "Més i més."
 ],
+"cadascun": [
+"cadascun",
+"Cada un, un per un."
+],
 "cadascuna": [
 "cadascun",
 "Cada una."
@@ -2482,6 +2534,10 @@
 "canonades": [
 "canonada",
 "Tubs per on passa l'aigua."
+],
+"cansament": [
+"cansament",
+"El que sents quan necessites descansar."
 ],
 "cansen": [
 "cansar",
@@ -3467,6 +3523,10 @@
 "comú",
 "Que tenen moltes persones. Sentit comú = pensar bé."
 ],
+"concentració": [
+"concentració",
+"Posar tota l'atenció en una sola cosa."
+],
 "concentrada": [
 "concentrat",
 "Molta cosa en poc espai."
@@ -3562,6 +3622,14 @@
 "coneixia": [
 "conèixer",
 "Sabia qui era o què era."
+],
+"confiança": [
+"confiança",
+"Creure que tu o una altra persona ho pot fer bé."
+],
+"confien": [
+"confiar",
+"Confiar: creure que algú o alguna cosa no et fallarà."
 ],
 "confirmar": [
 "confirmar",
@@ -3811,6 +3879,10 @@
 "convenient",
 "De manera útil."
 ],
+"convençuda": [
+"convençut",
+"Segur que una cosa és veritat."
+],
 "convençut": [
 "convençut",
 "Que creu una cosa amb força."
@@ -3878,6 +3950,10 @@
 "cop": [
 "cop",
 "Xoc fort."
+],
+"copiades": [
+"copiar",
+"Copiar: fer una cosa igual que una altra."
 ],
 "copiant": [
 "copiar",
@@ -4082,6 +4158,10 @@
 "creix": [
 "créixer",
 "Es fa més gran."
+],
+"creixement": [
+"creixement",
+"Fer-se més gran."
 ],
 "creixia": [
 "créixer",
@@ -4895,6 +4975,10 @@
 "desmaiar",
 "Desmaiar-se: perdre el sentit."
 ],
+"desmotivats": [
+"desmotivat",
+"Sense ganes de fer res."
+],
 "desordenat": [
 "desordenat",
 "Que no està ben endreçat."
@@ -4966,6 +5050,10 @@
 "detecten": [
 "detectar",
 "Troben una cosa amagada."
+],
+"determinació": [
+"determinació",
+"Força per continuar fins a aconseguir una cosa."
 ],
 "deu": [
 "deu",
@@ -5523,6 +5611,10 @@
 "educació",
 "Ensenyament."
 ],
+"educatius": [
+"educatiu",
+"Que serveix per aprendre."
+],
 "educativa": [
 "educar",
 "Per aprendre."
@@ -5670,6 +5762,10 @@
 "emocionant": [
 "emoció",
 "Que emociona."
+],
+"emocionants": [
+"emocionant",
+"Que fa sentir molta emoció."
 ],
 "emocions": [
 "emoció",
@@ -6055,6 +6151,10 @@
 "entrar",
 "Jo passo a dins."
 ],
+"entusiasmats": [
+"entusiasmat",
+"Molt content i amb moltes ganes."
+],
 "entusiasta": [
 "entusiasta",
 "Amb moltes ganes."
@@ -6090,6 +6190,10 @@
 "envies": [
 "enviar",
 "Fas arribar."
+],
+"enviïs": [
+"enviar",
+"Enviar: fer arribar una cosa a algú."
 ],
 "envolta": [
 "envoltar",
@@ -6222,6 +6326,10 @@
 "esclata": [
 "esclatar",
 "Explota."
+],
+"esclatarà": [
+"esclatar",
+"Esclatar: trencar-se de cop amb força, com una bomba o un globus."
 ],
 "escola": [
 "escola",
@@ -6895,6 +7003,14 @@
 "existir",
 "Ha existit = ha estat real."
 ],
+"existència": [
+"existència",
+"El fet que una cosa existeixi, que sigui real."
+],
+"exitosos": [
+"exitós",
+"Que té èxit; que li va molt bé."
+],
 "experiment": [
 "experiment",
 "Prova per aprendre una cosa."
@@ -7083,6 +7199,10 @@
 "fer",
 "Forma de \"fer\"."
 ],
+"facis": [
+"fer",
+"Facis: forma de fer (que tu facis = que tú hagas)."
+],
 "factors": [
 "factor",
 "Causes."
@@ -7170,6 +7290,10 @@
 "fao": [
 "FAO",
 "Organització de les Nacions Unides per a l'alimentació."
+],
+"faran": [
+"fer",
+"Faran: ho fan ells en el futur."
 ],
 "faraons": [
 "faraó",
@@ -7887,6 +8011,10 @@
 "galàxia",
 "Grups enormes d'estrelles."
 ],
+"gamba": [
+"gamba",
+"Animal de mar petit i rosat que es menja."
+],
 "gambes": [
 "gamba",
 "Animals de la mar xicotets, amb closca, que es mengen."
@@ -7943,6 +8071,10 @@
 "gastronomia",
 "L'art de cuinar i de menjar bé."
 ],
+"gastronòmic": [
+"gastronòmic",
+"Que té a veure amb el menjar i la cuina."
+],
 "gat": [
 "gat",
 "Animal petit de casa que fa «miau»."
@@ -7994,6 +8126,14 @@
 "general": [
 "general",
 "Comú."
+],
+"generalment": [
+"generalment",
+"Gairebé sempre; en la majoria dels casos."
+],
+"generositat": [
+"generositat",
+"Donar als altres sense esperar res a canvi."
 ],
 "geni": [
 "geni",
@@ -8439,6 +8579,10 @@
 "haver",
 "Haurien de: tindrien que."
 ],
+"hauries": [
+"haver",
+"Hauries de: és bona idea que tu ho facis."
+],
 "haurà": [
 "haver",
 "Hi haurà = existirà (futur de hi ha)."
@@ -8458,6 +8602,10 @@
 "havien": [
 "haver",
 "Havien fet = forma del passat."
+],
+"havíem": [
+"haver",
+"Havíem: forma de haver per al passat (nosaltres havíem fet…)."
 ],
 "hawaii": [
 "Hawaii",
@@ -8663,6 +8811,10 @@
 "Illes Canàries",
 "Illes d'Espanya a l'oceà Atlàntic."
 ],
+"il·limitada": [
+"il·limitat",
+"Sense límit; que no s'acaba."
+],
 "il·lumina": [
 "il·luminar",
 "Es posa ple de llum."
@@ -8791,6 +8943,10 @@
 "impressionar",
 "Sorprès."
 ],
+"imprevisible": [
+"imprevisible",
+"Que no es pot saber què passarà."
+],
 "incendis": [
 "incendi",
 "Focs molt grans."
@@ -8867,6 +9023,10 @@
 "infinit",
 "Que no s'acaba mai."
 ],
+"influents": [
+"influent",
+"Que canvia el que pensen o fan els altres."
+],
 "influir": [
 "influir",
 "Tenir efecte."
@@ -8895,6 +9055,10 @@
 "ingredient",
 "Coses que es fan servir per fer un menjar."
 ],
+"inicialment": [
+"inicialment",
+"Al principi."
+],
 "injecta": [
 "injectar",
 "Fica líquid."
@@ -8906,6 +9070,10 @@
 "inky": [
 "inky",
 "Nom d'un pop."
+],
+"inofensiva": [
+"inofensiu",
+"Que no fa mal."
 ],
 "inscripcions": [
 "inscripció",
@@ -10235,6 +10403,10 @@
 "menjar",
 "1. Posar aliments a la boca. 2. El que es menja."
 ],
+"menjaran": [
+"menjar",
+"Menjaran: ho menjaran ells en el futur."
+],
 "menjarem": [
 "menjar",
 "Nosaltres menjarem (futur)."
@@ -11203,6 +11375,10 @@
 "netejar",
 "Treu la brutícia."
 ],
+"netejades": [
+"netejar",
+"Netejar: treure la brutícia."
+],
 "netejar": [
 "netejar",
 "Treure la brutícia."
@@ -11366,6 +11542,10 @@
 "notable": [
 "notable",
 "Que crida l'atenció."
+],
+"notables": [
+"notable",
+"Important o que es nota molt."
 ],
 "notar": [
 "notar",
@@ -11671,6 +11851,10 @@
 "oposar",
 "Estaven en contra."
 ],
+"optimistes": [
+"optimista",
+"Que pensa que les coses sortiran bé."
+],
 "or": [
 "or",
 "Metall groc molt valuós."
@@ -11938,6 +12122,10 @@
 "parlaràs": [
 "parlar",
 "Tu parlaràs (futur)."
+],
+"parlaré": [
+"parlar",
+"Parlaré: parlaré jo en el futur."
 ],
 "parlava": [
 "parlar",
@@ -12539,6 +12727,10 @@
 "petit",
 "Que tenen poca mida."
 ],
+"petitíssim": [
+"petit",
+"Petitíssim: molt i molt petit."
+],
 "petjada": [
 "petjada",
 "Marca que deixa un peu a terra."
@@ -13111,6 +13303,10 @@
 "precís",
 "Justament."
 ],
+"precises": [
+"precís",
+"Molt exacte."
+],
 "prefereixen": [
 "preferir",
 "Els agrada més."
@@ -13627,6 +13823,10 @@
 "pràcticament",
 "Gairebé, quasi."
 ],
+"prèviament": [
+"prèviament",
+"Abans."
+],
 "pròpia": [
 "propi",
 "Seva, d'ella mateixa."
@@ -13666,6 +13866,10 @@
 "publiqués": [
 "publicar",
 "Tragués un llibre."
+],
+"puc": [
+"poder",
+"Puc: forma de poder (jo puc = yo puedo)."
 ],
 "pudent": [
 "pudent",
@@ -14163,6 +14367,10 @@
 "recaptar",
 "Ajuntat (diners)."
 ],
+"recaptés": [
+"recaptar",
+"Recaptar: reunir diners per a alguna cosa."
+],
 "recentment": [
 "recent",
 "Fa poc."
@@ -14639,6 +14847,10 @@
 "revelar",
 "Explicar un secret."
 ],
+"revisades": [
+"revisar",
+"Revisar: mirar una cosa amb atenció per veure si està bé."
+],
 "revisar": [
 "revisar",
 "Mirar bé si està bé."
@@ -14883,6 +15095,10 @@
 "sabor",
 "El gust que té un menjar."
 ],
+"saborosos": [
+"saborós",
+"Que té molt bon gust."
+],
 "saborós": [
 "sabor",
 "Que té bon gust."
@@ -14962,6 +15178,10 @@
 "salts": [
 "salt",
 "Moviments per saltar."
+],
+"saltés": [
+"saltar",
+"Saltar-se: no fer una part, passar-la de llarg."
 ],
 "saludable": [
 "saludable",
@@ -15310,6 +15530,10 @@
 "senzilles": [
 "senzill",
 "Fàcils."
+],
+"senzillesa": [
+"senzillesa",
+"Ser fàcil i sense complicacions."
 ],
 "senzills": [
 "senzill",
@@ -15670,6 +15894,10 @@
 "solidaris": [
 "solidari",
 "Que ajuden els altres."
+],
+"solien": [
+"soler",
+"Solien: ho feien normalment, abans."
 ],
 "sols": [
 "sol",
@@ -16531,6 +16759,10 @@
 "tenir",
 "Tu tindries (condicional)."
 ],
+"tindrà": [
+"tenir",
+"Tindrà: ho tindrà en el futur."
+],
 "tinga": [
 "tindre",
 "Forma valenciana del subjuntiu de tindre (= tingui)."
@@ -16839,6 +17071,10 @@
 "treballar",
 "Feien la seva feina."
 ],
+"treballem": [
+"treballar",
+"Treballem: nosaltres treballem."
+],
 "treballen": [
 "treballar",
 "Fan una feina."
@@ -16890,6 +17126,10 @@
 "tresor": [
 "tresor",
 "Coses molt valuoses."
+],
+"tret": [
+"tret",
+"Tret que: només si no; llevat que."
 ],
 "trets": [
 "tret",
@@ -16947,6 +17187,10 @@
 "trineu",
 "Vehicles sense rodes que llisquen."
 ],
+"triomf": [
+"triomf",
+"Guanyar o aconseguir una cosa important."
+],
 "tripulada": [
 "tripular",
 "Amb persones a dins."
@@ -16994,6 +17238,10 @@
 "troben": [
 "trobar",
 "Es troben: estan."
+],
+"trobi": [
+"trobar",
+"Trobi: forma de trobar (que algú trobi = que alguien encuentre)."
 ],
 "trobin": [
 "trobar",
@@ -17207,6 +17455,10 @@
 "utilitzar",
 "Fer servir."
 ],
+"utilitzat": [
+"utilitzar",
+"Utilitzar: fer servir."
+],
 "va": [
 "anar",
 "1. Va a casa. 2. Va + verb = passat: va fer."
@@ -17274,6 +17526,10 @@
 "valorar": [
 "valorar",
 "Apreciar."
+],
+"valuosa": [
+"valuós",
+"Que val molt."
 ],
 "valuosos": [
 "valor",
@@ -17650,6 +17906,10 @@
 "visitar": [
 "visitar",
 "Anar a veure."
+],
+"visitarem": [
+"visitar",
+"Visitarem: nosaltres visitarem en el futur."
 ],
 "visitaràs": [
 "visitar",

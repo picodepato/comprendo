@@ -79,6 +79,10 @@
 "according to",
 "As someone says."
 ],
+"accurate": [
+"accurate",
+"Correct in every detail."
+],
 "achieve": [
 "achieve",
 "Succeed in doing."
@@ -122,6 +126,10 @@
 "added": [
 "add",
 "Put something more with another thing."
+],
+"addictive": [
+"addictive",
+"So good that it is hard to stop doing it."
 ],
 "addition": [
 "addition",
@@ -242,6 +250,10 @@
 "agreed": [
 "agree",
 "Had the same opinion."
+],
+"agreement": [
+"agreement",
+"When people think the same about something."
 ],
 "agrees": [
 "agree",
@@ -439,6 +451,10 @@
 "annoying",
 "It makes you a little angry."
 ],
+"annually": [
+"annually",
+"Once every year."
+],
 "another": [
 "another",
 "One more; a different one."
@@ -502,6 +518,10 @@
 "appear": [
 "appear",
 "Start to be seen."
+],
+"appearance": [
+"appearance",
+"How someone or something looks."
 ],
 "appeared": [
 "appear",
@@ -991,6 +1011,10 @@
 "beautiful",
 "Very nice to look at."
 ],
+"beauty": [
+"beauty",
+"The quality of being beautiful."
+],
 "beaver": [
 "beaver",
 "An animal that builds dams."
@@ -1294,6 +1318,10 @@
 "boiling": [
 "boil",
 "Make water very hot until it has bubbles."
+],
+"boils": [
+"boil",
+"Boil: get so hot that it bubbles and turns into steam."
 ],
 "bolt": [
 "bolt",
@@ -2555,6 +2583,10 @@
 "concentrate",
 "Think hard about one thing."
 ],
+"concentration": [
+"concentration",
+"Putting all your attention on one thing."
+],
 "concern": [
 "concern",
 "Worry."
@@ -2598,6 +2630,10 @@
 "conference": [
 "conference",
 "A big meeting."
+],
+"confidence": [
+"confidence",
+"Believing that you can do something well."
 ],
 "confirmed": [
 "confirm",
@@ -2899,6 +2935,10 @@
 "creativity",
 "Being able to make new things."
 ],
+"creator": [
+"creator",
+"The person who makes something new."
+],
 "creators": [
 "creator",
 "A person who makes something new."
@@ -2978,6 +3018,10 @@
 "cured": [
 "cured",
 "Dried and salted to keep it (meat)."
+],
+"curiosity": [
+"curiosity",
+"Wanting to know or learn something."
 ],
 "curious": [
 "curious",
@@ -3635,9 +3679,17 @@
 "door",
 "Things you open to go in."
 ],
+"doubt": [
+"doubt",
+"A feeling of not being sure."
+],
 "doubted": [
 "doubt",
 "Did not believe."
+],
+"doubtful": [
+"doubtful",
+"Not sure; probably not true."
 ],
 "down": [
 "down",
@@ -3851,6 +3903,10 @@
 "education",
 "Teaching and learning."
 ],
+"educational": [
+"educational",
+"That helps you learn."
+],
 "effect": [
 "effect",
 "A result."
@@ -3962,6 +4018,10 @@
 "empty": [
 "empty",
 "With nothing inside."
+],
+"enable": [
+"enable",
+"Make it possible for someone to do something."
 ],
 "enceladus": [
 "enceladus",
@@ -4310,6 +4370,10 @@
 "experiment": [
 "experiment",
 "A test to find something out."
+],
+"experimental": [
+"experimental",
+"New and still being tested."
 ],
 "experiments": [
 "experiment",
@@ -4839,6 +4903,10 @@
 "flavour",
 "Taste."
 ],
+"flavourful": [
+"flavourful",
+"With a lot of good taste."
+],
 "fleming": [
 "fleming",
 "Name of a scientist (Alexander Fleming)."
@@ -4990,6 +5058,10 @@
 "fortnite": [
 "fortnite",
 "Name of a famous video game."
+],
+"fortunately": [
+"fortunately",
+"Luckily."
 ],
 "forty": [
 "forty",
@@ -5234,6 +5306,10 @@
 "generation": [
 "generation",
 "People born around the same time."
+],
+"generosity": [
+"generosity",
+"Giving to others without wanting anything back."
 ],
 "genetically": [
 "gene",
@@ -5634,6 +5710,10 @@
 "harmed": [
 "harm",
 "Hurt."
+],
+"harmless": [
+"harmless",
+"Not dangerous; it does not hurt you."
 ],
 "has": [
 "have",
@@ -6259,6 +6339,10 @@
 "influence",
 "Had an effect on."
 ],
+"influential": [
+"influential",
+"Able to change what other people think or do."
+],
 "information": [
 "information",
 "Facts."
@@ -6270,6 +6354,10 @@
 "ingredients": [
 "ingredient",
 "One of the things you mix to make something."
+],
+"initially": [
+"initially",
+"At the beginning."
 ],
 "injects": [
 "inject",
@@ -7571,6 +7659,10 @@
 "melt",
 "Becoming liquid because of heat."
 ],
+"melts": [
+"melt",
+"Melt: turn from solid into liquid because of heat."
+],
 "memory": [
 "memory",
 "Being able to remember."
@@ -8451,6 +8543,10 @@
 "oppose",
 "Against."
 ],
+"optimistic": [
+"optimistic",
+"Thinking that good things will happen."
+],
 "or": [
 "or",
 "A word for choosing."
@@ -8827,6 +8923,10 @@
 "perform",
 "Do in front of people."
 ],
+"performances": [
+"performance",
+"How well someone does something, for example in a match."
+],
 "performing": [
 "perform",
 "Doing in front of people."
@@ -9130,6 +9230,10 @@
 "popular": [
 "popular",
 "Many people like it."
+],
+"popularity": [
+"popularity",
+"Being liked by a lot of people."
 ],
 "population": [
 "population",
@@ -9727,6 +9831,10 @@
 "reader",
 "People who read."
 ],
+"reading": [
+"read",
+"Reading: the -ing form of read (look at words and understand them)."
+],
 "ready": [
 "ready",
 "Prepared."
@@ -9934,6 +10042,10 @@
 "related": [
 "related",
 "Connected; of the same family."
+],
+"relationship": [
+"relationship",
+"How two people or things are connected."
 ],
 "relationships": [
 "relationship",
@@ -10226,6 +10338,10 @@
 "riders": [
 "rider",
 "A person who rides."
+],
+"riding": [
+"ride",
+"Riding: going on a bike, a horse or a board."
 ],
 "right": [
 "right",
@@ -11123,6 +11239,10 @@
 "simple",
 "More simple."
 ],
+"simplicity": [
+"simplicity",
+"Being easy and not complicated."
+],
 "simply": [
 "simply",
 "Just; only."
@@ -11262,6 +11382,10 @@
 "sleeping": [
 "sleep",
 "Resting with your eyes closed."
+],
+"sleepless": [
+"sleepless",
+"Without sleep."
 ],
 "sleeps": [
 "sleep",
@@ -11594,6 +11718,10 @@
 "spirit": [
 "spirit",
 "Character; attitude."
+],
+"spite": [
+"in spite of",
+"In spite of: even though something is true."
 ],
 "splash": [
 "splash",
@@ -11959,6 +12087,10 @@
 "succeed",
 "Do well."
 ],
+"succeeded": [
+"succeed",
+"Succeed: manage to do what you wanted."
+],
 "succeeds": [
 "succeed",
 "Goes well."
@@ -12218,6 +12350,10 @@
 "taking": [
 "take",
 "Getting; carrying."
+],
+"talented": [
+"talented",
+"Very good at something."
 ],
 "talk": [
 "talk",
@@ -12530,6 +12666,10 @@
 "thomas": [
 "thomas",
 "Name: Thomas Young, an English scientist."
+],
+"thoroughly": [
+"thoroughly",
+"Very carefully, checking every part."
 ],
 "those": [
 "that",
@@ -13039,6 +13179,10 @@
 "understand",
 "Know the meaning."
 ],
+"understanding": [
+"understanding",
+"Knowing how or why something happens."
+],
 "understood": [
 "understand",
 "Knew the meaning."
@@ -13087,6 +13231,10 @@
 "unknown",
 "Not known."
 ],
+"unless": [
+"unless",
+"Only if not: unless you run = if you do not run."
+],
 "unlike": [
 "unlike",
 "Different from."
@@ -13095,9 +13243,21 @@
 "unlikely",
 "Not probable."
 ],
+"unlimited": [
+"unlimited",
+"With no limit or end."
+],
 "unlock": [
 "unlock",
 "Open; solve."
+],
+"unmotivated": [
+"unmotivated",
+"Without the wish to do something."
+],
+"unpredictable": [
+"unpredictable",
+"Nobody can know what will happen."
 ],
 "unscrew": [
 "unscrew",
@@ -13671,6 +13831,10 @@
 "whole",
 "All; complete."
 ],
+"whom": [
+"whom",
+"Who, used after words like with, to or of."
+],
 "whose": [
 "whose",
 "Of whom; of which."
@@ -13790,6 +13954,10 @@
 "woman": [
 "woman",
 "An adult female person."
+],
+"women": [
+"woman",
+"Women: more than one woman."
 ],
 "won": [
 "win",

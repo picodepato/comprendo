@@ -19,7 +19,12 @@
     "Muy mal",
     "No huele"
    ],
-   1
+   1,
+   {
+    "ev": [
+     "Huele muy mal: algunas personas dicen que huele a calcetines sucios."
+    ]
+   }
   ],
   [
    "¿Dónde está prohibido llevar durián?",
