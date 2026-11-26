@@ -106,7 +106,9 @@
   "dance_title": "¡A bailar!",
   "dance_1": "Saltitos",
   "dance_2": "Meneíto",
-  "dance_3": "Vuelta loca"
+  "dance_3": "Vuelta loca",
+  "k_clawy": "Clawy",
+  "dn_clawy": "Clawy"
  },
  "en": {
   "tab": "My pet",
@@ -215,7 +217,9 @@
   "dance_title": "Let's dance!",
   "dance_1": "Hop hop",
   "dance_2": "Wiggle",
-  "dance_3": "Crazy spin"
+  "dance_3": "Crazy spin",
+  "k_clawy": "Clawy",
+  "dn_clawy": "Clawy"
  },
  "ca": {
   "tab": "La meva mascota",
@@ -324,6 +328,8 @@
   "dance_title": "A ballar!",
   "dance_1": "Saltirons",
   "dance_2": "Meneig",
-  "dance_3": "Volta boja"
+  "dance_3": "Volta boja",
+  "k_clawy": "Clawy",
+  "dn_clawy": "Clawy"
  }
 }
