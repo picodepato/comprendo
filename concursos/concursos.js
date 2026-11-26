@@ -151,7 +151,7 @@ async function copiar(txt) {
 const xp = (n, extra) => { try { dispatchEvent(new CustomEvent("lya:xp", {detail: {xp: n, src: "concurso", ...extra}})); } catch (e) {} };
 
 /* ---------- rutas ---------- */
-const RE = /^(concursos|concursos-crear|concursos-editar(?:-(l?[a-f0-9]{10,12}))?|concurso-(l?[a-f0-9]{10,12})|concurso-solo-(l?[a-f0-9]{10,12})|concursos-proyectar-(\d{6})|jugar(?:-(\d{6}))?|concursos-lectura-([a-z0-9-]{3,40})|concursos-mates-(t2-[1-8]{1,8}-[123]-\d{1,2}-\d{1,10}))$/;
+const RE = /^(concursos|concursos-crear|concursos-editar(?:-(l?[a-f0-9]{10,12}))?|concurso-(l?[a-f0-9]{10,12})|concurso-solo-(l?[a-f0-9]{10,12})|concursos-proyectar-(\d{6})|jugar(?:-(\d{6}))?|concursos-lectura-([a-z0-9-]{3,40})|concursos-mates-((?:t2|p2)-[1-8]{1,8}-[123]-\d{1,2}-\d{1,10}))$/;
 const isCc = h => RE.test(h);
 let V = {h: ""}; /* estado de la página actual */
 let timer = null;

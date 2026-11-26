@@ -10,8 +10,8 @@
    POST ?retos=1 {accion, sala, ...}
      crear {juego, lectura, file, lang, equipos, dur, rd} → {sala, clave}
      empezar / terminar / ronda {r} / cerrar / echar {jugador} → con {clave} (la del anfitrión); cerrar = acabar ya la ronda
-   Mates (mates/grupo.js): juegos m-recta, m-cadena, m-objetivo, m-ascensor, m-escape, m-apuesta y m-cartas;
-     lectura = mates-t2-<apartados>-<dificultad>, file = mates/t2, lang = es (el contenido sale de mates/banco.js con la semilla).
+   Mates (mates/grupo.js): juegos m-recta, m-cadena, m-objetivo, m-ascensor, m-escape, m-apuesta, m-cartas, m-oferta y m-monta;
+     lectura = mates-<t2|p2>-<apartados>-<dificultad>, file = mates/<tema>, lang = es (el contenido sale de mates/banco.js con la semilla).
      entrar {nombre, equipo, jugador?} → {jugador}
      jugar {jugador, k, v, eq?, uno?, suma?}  guarda una jugada (uno: solo la primera; suma: contador +1)
      toque {jugador, r, d}                                mapa de calor: +1 a la frase/palabra d de la ronda r */
@@ -20,9 +20,10 @@ import { redis, contar, ipDe, responder, cuerpo, seguro } from "./_db.js";
 
 const VIDA = 4 * 3600, MAXJ = 80, MAXE = 8, MAXEV = 4000;
 const JUEGOS = ["prueba", "apuesta", "cartas", "tabu", "piloto"];
-/* juegos de mates (mates/grupo.js): la configuración va en «lectura» = mates-t2-<apartados>-<dificultad> */
-const MATES = ["m-recta", "m-cadena", "m-objetivo", "m-ascensor", "m-escape", "m-apuesta", "m-cartas"];
-const POR_RONDAS = ["prueba", "apuesta", "m-recta", "m-cadena", "m-objetivo", "m-ascensor", "m-apuesta"];
+/* juegos de mates (mates/grupo.js): la configuración va en «lectura» = mates-<tema>-<apartados>-<dificultad>
+   (t2: 1.º ESO, números enteros · p2: 4.º ESO PDC, proporcionalidad y porcentajes; file = mates/<tema>) */
+const MATES = ["m-recta", "m-cadena", "m-objetivo", "m-ascensor", "m-escape", "m-apuesta", "m-cartas", "m-oferta", "m-monta"];
+const POR_RONDAS = ["prueba", "apuesta", "m-recta", "m-cadena", "m-objetivo", "m-ascensor", "m-apuesta", "m-oferta", "m-monta"];
 const SOLO_EQUIPOS = ["cartas", "tabu", "piloto", "m-recta", "m-cadena", "m-escape", "m-cartas"];
 const K = c => "reto:" + c;
 const hash = s => crypto.createHash("sha256").update(String(s)).digest("hex");
@@ -63,7 +64,7 @@ export default (req, res) => seguro(res, async () => {
     if ((await contar("reto-crear:" + ipDe(req), 3600)) > 40) return responder(res, 429, {error: "muchas"});
     const juego = String(b.juego || ""), lectura = String(b.lectura || ""), file = String(b.file || ""), lang = String(b.lang || "");
     if (!JUEGOS.includes(juego) && !MATES.includes(juego)) return responder(res, 400, {error: "juego"});
-    if (MATES.includes(juego) ? !/^mates-t2-[1-8]{1,8}-[123]$/.test(lectura) || file !== "mates/t2" || lang !== "es"
+    if (MATES.includes(juego) ? !/^mates-(t2|p2)-[1-8]{1,8}-[123]$/.test(lectura) || file !== "mates/" + lectura.split("-")[1] || lang !== "es"
       : !/^[a-z0-9-]{3,40}$/.test(lectura) || !/^(es|en|ca)\/lecturas\/[a-z0-9-]{3,40}\.json$/.test(file) || !/^(es|en|ca)$/.test(lang)) return responder(res, 400, {error: "lectura"});
     const minimo = SOLO_EQUIPOS.includes(juego) ? 1 : 0;
     const equipos = entre(b.equipos, minimo, MAXE, Math.max(minimo, 4)), dur = entre(b.dur, 3, 60, 15), rd = entre(b.rd, 10, 180, 40);

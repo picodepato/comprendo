@@ -39,7 +39,7 @@ function info(d) {
   }
   if (d.cancion && d.doblaje) return {titulo: "🎬 " + (d.titulo || ""), hecha: (g.cn || {})[d.cancion], ruta: "#doblaje-e-" + d.cancion, boton: "doblar"};  /* doblaje (doblaje/) */
   if (d.cancion) return {titulo: "🎵 " + (d.titulo || ""), hecha: (g.cn || {})[d.cancion], ruta: "#cancion-" + d.cancion, boton: "oir"};
-  const mm = /^mates-(t\d+)-([1-8]|repaso)-([123])$/.exec(d.lectura || "");
+  const mm = /^mates-([tp]\d+)-([1-8]|repaso)-([123])$/.exec(d.lectura || "");
   if (mm) {  /* mates: abre la práctica de ese apartado ya en la dificultad que pide el profe */
     const h = (((g.mt || {})[mm[1] + "-" + mm[2]] || {}).h || [])[mm[3] - 1];
     return {titulo: "➗ " + matesNombre(mm), hecha: h && h.last >= (d.creado || 0) ? h : null, ruta: `#mates-${mm[1]}-${mm[2]}-d${mm[3]}`, boton: "hacer"};

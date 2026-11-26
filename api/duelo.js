@@ -14,6 +14,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { redis, usuarioDeSesion, leerJSON, ADMIN, ipDe, contar, responder, cuerpo, seguro } from "./_db.js";
 import "../mates/banco.js"; /* duelos de mates: las preguntas salen de una semilla (globalThis.LYAMatesBanco) */
+import "../mates/pdc.js";   /* y las de 4.º ESO PDC (spec «p2-…», globalThis.LYAMatesPDC) */
 
 export const MAX = 30, R = 6, TTL = 3 * 3600;
 const clave = c => "duelo:" + c;
