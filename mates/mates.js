@@ -13,7 +13,7 @@
 const B = () => window.LYAMatesBanco, TM = () => window.LYAMatesTemas;
 const L = () => window.LYA, st = () => L().get();
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
-const RE = /^mates(?:-(t\d+)(?:-([1-8]|repaso))?)?$/;
+const RE = /^mates(?:-(t\d+)(?:-([1-8]|repaso)(?:-d([123]))?)?)?$/;  /* «-d2»: abre la práctica ya en esa dificultad (deberes) */
 const isMates = h => RE.test(h) || window.LYAMatesGrupo?.isGrupo(h);
 const DIF = ["", "Fácil", "Medio", "Difícil"];
 const COLOR = "#4f8cff";
@@ -36,6 +36,12 @@ function render(app) {
   if (!m[1]) return portada(app);
   const T = tema(m[1]); if (!T) { location.hash = "mates"; return; }
   if (!m[2]) return temaHTML(app, T);
+  if (m[3]) {  /* deber: empieza (o sigue) la práctica en esa dificultad y deja la dirección normal */
+    const n = m[2] === "repaso" ? "repaso" : +m[2], k = `${T.id}-${n}`, d = +m[3];
+    if (!P || P.k !== k || P.d !== d || P.fase === "fin") P = nuevaPractica(T, n, d);
+    tab[k] = "practica";
+    try { history.replaceState(null, "", `#mates-${T.id}-${n}`); } catch (e) {}
+  }
   if (m[2] === "repaso") return practica(app, T, "repaso");
   return apartado(app, T, +m[2]);
 }
@@ -83,17 +89,26 @@ function apartado(app, T, n) {
   const pestanas = `<div class="mt-tabs" role="tablist">${[["aprende", "📘 Aprende"], ["practica", "✏️ Practica"]].map(([id, t]) => `<button type="button" role="tab" data-mt="tab" data-t="${id}" aria-selected="${tab[k] === id}">${t}</button>`).join("")}</div>`;
   const cab = `<p class="mt-migas"><a href="#mates-${T.id}">← Tema ${T.n} · ${esc(T.titulo)}</a></p><h1 class="mt-h1"><small>${n}.</small> ${esc(A.titulo)}</h1>${pestanas}`;
   if (tab[k] === "aprende") {
+    const aMedias = P && P.k === k && P.fase !== "fin";
     app.innerHTML = `<section class="wrap mt" style="--c:${T.color}">${cab}
-      <div class="mt-teo"><p class="mt-idea">${A.ic} ${esc(A.idea)}</p>
-        <ul class="mt-reglas">${A.reglas.map(r => `<li>${r}</li>`).join("")}</ul>
-        ${A.ejemplos.map(e => `<div class="mt-ej"><p class="mt-ejq"><span>Ejemplo</span> ${esc(e.q)}</p><ol>${e.pasos.map(x => `<li>${esc(x)}</li>`).join("")}</ol><p class="mt-ejr">${/=/.test(e.r) ? "" : "= "}<b>${esc(e.r)}</b></p></div>`).join("")}
-        ${A.ojo ? `<p class="mt-ojo">⚠️ ${esc(A.ojo)}</p>` : ""}</div>
-      <p class="mt-cta"><button class="btn main" type="button" data-mt="tab" data-t="practica">✏️ A practicar</button></p></section>`;
+      ${aMedias ? `<div class="mt-seguir"><span>✏️ Tienes una práctica a medias: vas por el <b>${P.i + 1} de ${P.serie.length}</b> (${DIF[P.d]}).</span><button class="btn main" type="button" data-mt="tab" data-t="practica">Seguir practicando →</button></div>` : ""}
+      ${teoHTML(T, A)}
+      <p class="mt-cta"><button class="btn main" type="button" data-mt="tab" data-t="practica">${aMedias ? "✏️ Seguir practicando" : "✏️ A practicar"}</button></p></section>`;
     return;
   }
   practica(app, T, n, cab);
 }
 
+/* la explicación de un apartado, con sus dibujos (sirve en «Aprende» y como ayuda dentro de la práctica) */
+function teoHTML(T, A) {
+  const dib = window.LYAMatesDibujos?.[T.id]?.[A.n];
+  let figs = ""; try { figs = dib ? dib() : ""; } catch (e) {}
+  return `<div class="mt-teo"><p class="mt-idea">${A.ic} ${esc(A.idea)}</p>
+    ${figs ? `<div class="mt-figs">${figs}</div>` : ""}
+    <ul class="mt-reglas">${A.reglas.map(r => `<li>${r}</li>`).join("")}</ul>
+    ${A.ejemplos.map(e => `<div class="mt-ej"><p class="mt-ejq"><span>Ejemplo</span> ${esc(e.q)}</p><ol>${e.pasos.map(x => `<li>${esc(x)}</li>`).join("")}</ol><p class="mt-ejr">${/=/.test(e.r) ? "" : "= "}<b>${esc(e.r)}</b></p></div>`).join("")}
+    ${A.ojo ? `<p class="mt-ojo">⚠️ ${esc(A.ojo)}</p>` : ""}</div>`;
+}
 /* ---------- práctica ---------- */
 function nuevaPractica(T, n, d) {
   const r = B().Rn(Math.floor(Math.random() * 2 ** 31)), aps = n === "repaso" ? T.aps.map(a => a.n) : [n], tot = n === "repaso" ? 12 : 10, serie = [], vistos = new Set();
@@ -103,7 +118,7 @@ function nuevaPractica(T, n, d) {
     if (vistos.has(firma)) continue;
     vistos.add(firma); serie.push(q); i++;
   }
-  return {k: `${T.id}-${n}`, T, n, d, serie, i: 0, ok: 0, fase: "preg", inp: "", inp2: "", campo: 0, orden: [], paso: 0, pasoMal: false, pasoFallo: null, xp: 0};
+  return {k: `${T.id}-${n}`, T, n, d, serie, mal: [], i: 0, ok: 0, fase: "preg", inp: "", inp2: "", campo: 0, orden: [], paso: 0, pasoMal: false, pasoFallo: null, xp: 0};
 }
 function practica(app, T, n, cab) {
   const k = `${T.id}-${n}`;
@@ -135,9 +150,11 @@ function pregHTML() {
   }
   else if (Q.tipo === "pasos") cuerpo = pasosHTML(Q, fb);
   const res = fb ? fbHTML() : "";
-  return `<div class="mt-q mt-box"><div class="mt-qtop"><span>${P.i + 1} / ${P.serie.length}${P.n === "repaso" ? ` · ${esc(B().NOMBRES[Q.ap])}` : ""}</span><span>✅ ${P.ok} · ${DIF[P.d]}</span></div>
+  const A = P.T.aps.find(a => a.n === (Q.ap || P.n));
+  return `<div class="mt-q mt-box"><div class="mt-qtop"><span>${P.i + 1} / ${P.serie.length}${P.n === "repaso" ? ` · ${esc(B().NOMBRES[Q.ap])}` : ""}</span><span>✅ ${P.ok} · ${DIF[P.d]} <button type="button" class="mt-dejar" data-mt="dejar">cambiar</button></span></div>
     <div class="mt-prog"><i style="width:${100 * P.i / P.serie.length}%"></i></div>
-    <p class="mt-enun">${esc(Q.enun)}</p>${cuerpo}${res}</div>`;
+    <p class="mt-enun">${esc(Q.enun)}</p>${cuerpo}${res}</div>
+    ${A ? `<details class="mt-ayu"${P.ayuda ? " open" : ""}><summary>📘 ¿Cómo se hacía? Ver la explicación${P.n === "repaso" ? ` de «${esc(A.titulo)}»` : ""} sin salir</summary>${teoHTML(P.T, A)}</details>` : ""}`;
 }
 const exprHTML = e => e ? `<p class="mt-expr">${marca(e)}</p>` : "";
 const pantalla = v => `<p class="mt-pant" aria-live="polite">${v ? esc(v.replace(/^-/, B().M)) : '<span class="mt-ph">?</span>'}</p>`;
@@ -187,14 +204,23 @@ function finHTML() {
   const tot = P.serie.length, pct = P.ok / tot, e = pct >= .9 ? 3 : pct >= .7 ? 2 : pct >= .5 ? 1 : 0;
   return `<div class="mt-box mt-fin"><p class="mt-big">${["💪", "👍", "🌟", "🏆"][e]}</p><h2>${P.ok} de ${tot} bien</h2><p class="mt-stars">${estrellas(e)}</p>
     <p>${P.xp ? `Has ganado <b>${P.xp} XP</b>.` : ""} ${e < 3 ? (P.d < 3 && e >= 2 ? "Prueba el siguiente nivel." : "Repasa la explicación y vuelve a intentarlo.") : P.d < 3 ? "¡Perfecto! Prueba el siguiente nivel." : "¡Eres un crack de los enteros!"}</p>
-    <p class="mt-acc"><button type="button" class="btn main" data-mt="otra">🔁 Otros ${tot}</button>${P.d < 3 ? ` <button type="button" class="btn" data-mt="empezar" data-d="${P.d + 1}">Subir a ${DIF[P.d + 1]}</button>` : ""} <a class="btn" href="#mates-${P.T.id}">Volver al tema</a></p></div>`;
+    <p class="mt-acc"><button type="button" class="btn main" data-mt="otra">🔁 Otros ${tot}</button>${P.d < 3 ? ` <button type="button" class="btn" data-mt="empezar" data-d="${P.d + 1}">Subir a ${DIF[P.d + 1]}</button>` : ""} <button type="button" class="btn" data-mt="dejar">Elegir dificultad</button> <a class="btn" href="#mates-${P.T.id}">Volver al tema</a></p></div>`;
 }
 
 /* ---------- respuestas ---------- */
+/* lo que se guarda de un fallo: el ejercicio y la solución, en corto */
+function fallo(Q) {
+  const lim = t => String(t || "").replace(/[\u0001\u0002]/g, "").replace(/\s+/g, " ").trim().slice(0, 70);
+  const sol = Q.tipo === "resto" ? `raíz ${Q.sol}, resto ${Q.resto}` : Q.tipo === "opc" ? Q.opciones[Q.ok] : Q.tipo === "orden" ? ordenBueno(Q).map(B().sg).join(Q.asc ? " < " : " > ")
+    : Q.tipo === "pasos" ? B().s((Q.R ||= B().resolver(Q.arbol)).v) : B().s(Q.sol);
+  const que = Q.tipo === "orden" ? Q.nums.map(B().sg).join(", ") : Q.tipo === "recta" ? "Punto en la recta" : Q.expr || Q.enun;
+  return lim(`${lim(que)} → ${lim(sol)}`);
+}
 const xp = (n, ok) => { try { dispatchEvent(new CustomEvent("lya:xp", {detail: {xp: n, src: "mates", ok}})); } catch (e) {} };
 function responder(bien) {
   P.ultima = bien; P.fase = "fb"; P.ganado = 0;
   if (bien) { P.ok++; P.ganado = P.d + 1; P.xp += P.ganado; }
+  else P.mal.push(fallo(q()));
   xp(bien ? P.ganado : 0, bien);
   pintar();
 }
@@ -202,6 +228,10 @@ function terminar() {
   P.fase = "fin";
   const pr = prog(), x = pr[P.k] ||= {e: [0, 0, 0], n: 0, ok: 0}, pct = P.ok / P.serie.length, e = pct >= .9 ? 3 : pct >= .7 ? 2 : pct >= .5 ? 1 : 0;
   x.e[P.d - 1] = Math.max(x.e[P.d - 1] || 0, e); x.n++; x.ok += P.ok;
+  /* por dificultad, para los deberes: veces, mejores estrellas y el último intento (aciertos y lo que falló, lo ve el profe) */
+  x.h ||= [null, null, null];
+  const h = x.h[P.d - 1] ||= {n: 0, best: 0};
+  Object.assign(h, {n: h.n + 1, best: Math.max(h.best, e), ok: P.ok, tot: P.serie.length, last: Date.now(), mal: P.mal.slice(0, 12)});
   try { L().save?.(); } catch (er) {}
   pintar();
 }
@@ -233,6 +263,7 @@ function enviar() {
   responder(v === Q.sol);
 }
 let appEl = null;
+document.addEventListener("toggle", e => { if (P && e.target.matches?.(".mt-ayu")) P.ayuda = e.target.open; }, true);  /* la ayuda sigue abierta entre pregunta y pregunta */
 const pintar = () => { if (appEl && /^mates-/.test(location.hash.slice(1))) render(appEl); };
 function siguiente() {
   if (P.i + 1 >= P.serie.length) return terminar();
@@ -243,7 +274,8 @@ document.addEventListener("click", e => {
   const b = e.target.closest("[data-mt]"); if (!b || !b.closest(".mt")) return;
   appEl = b.closest("#app") || document.getElementById("app");
   const a = b.dataset.mt, h = location.hash.slice(1), m = h.match(RE);
-  if (a === "tab") { tab[`${m[1]}-${m[2]}`] = b.dataset.t; if (b.dataset.t === "aprende") P = null; return pintar(); }
+  if (a === "tab") { tab[`${m[1]}-${m[2]}`] = b.dataset.t; if (b.dataset.t === "practica" && P && P.fase === "fin") P = null; scrollTo(0, 0); return pintar(); }  /* «Aprende» ya no borra la práctica: se sigue donde estaba */
+  if (a === "dejar") { P = null; return pintar(); }
   if (a === "empezar") { const d = +b.dataset.d; store.set("lyaMatesDif", d); const T = tema(m[1]); P = nuevaPractica(T, m[2] === "repaso" ? "repaso" : +m[2], d); return pintar(); }
   if (a === "otra") { P = nuevaPractica(P.T, P.n, P.d); return pintar(); }
   if (!P) return;
@@ -259,7 +291,7 @@ document.addEventListener("click", e => {
 /* teclado del ordenador: números, «-», borrar e Intro */
 addEventListener("keydown", e => {
   if (!P || !/^mates-t/.test(location.hash.slice(1)) || e.ctrlKey || e.metaKey || e.altKey) return;
-  if (e.target.closest?.("input,textarea,select")) return;
+  if (e.target.closest?.("input,textarea,select,summary")) return;
   appEl = document.getElementById("app");
   if (P.fase === "fb" && e.key === "Enter") { e.preventDefault(); return siguiente(); }
   if (P.fase !== "preg") return;
