@@ -1,6 +1,6 @@
 /* Cuentas de profe y alumno: idioma al crear la cuenta, profe crea clase con código, alumno se une (al crear la cuenta y después),
    cada profe solo ve a sus alumnos, deberes del profe, el admin lo ve todo. Necesita /api (qa/servidor-prueba.mjs).
-   Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-profe.js http://localhost:8790/index.html [clave-admin] */
+   Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-profe.cjs http://localhost:8790/index.html [clave-admin] */
 const { chromium } = require("playwright");
 const URL = process.argv[2], CLAVE = process.argv[3] || "admin";
 const tab = async (p, k) => { await p.click(`[data-tab=${k}]`); await p.waitForSelector(`[data-tab=${k}][aria-selected=true]`); };

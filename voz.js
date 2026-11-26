@@ -245,7 +245,10 @@ const tip = document.getElementById("tip");
 if (tip && !tip.querySelector(".vz-word")) {
   const bt = document.createElement("button");
   bt.type = "button"; bt.className = "vz-word"; bt.dataset.vz = "word"; bt.innerHTML = svg("ear");
-  bt.setAttribute("aria-label", "Escuchar la palabra · Listen to the word"); bt.title = bt.getAttribute("aria-label");
+  /* en el idioma de la web (el que se aprende) */
+  const ETQ = {es: "Escuchar la palabra", en: "Listen to the word", ca: "Escoltar la paraula"};
+  const etq = () => { let l = "es"; try { l = window.LYA.S.learn; } catch (e) {} bt.setAttribute("aria-label", ETQ[l] || ETQ.es); bt.title = ETQ[l] || ETQ.es; };
+  etq(); addEventListener("hashchange", etq); tip.addEventListener("pointerenter", etq); bt.addEventListener("focus", etq);
   tip.prepend(bt);
 }
 /* for dictados.js: is sound on? turn it on */

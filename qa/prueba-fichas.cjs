@@ -1,7 +1,7 @@
 /* Flashcards (web/fichas/): crear con dibujo, emoji, enlace, Wikimedia (simulada) y Pixabay (sin clave / simulada),
    repaso espaciado, juego «¿Qué es?», juego «Dibújalo», XP, y con cuenta: el dibujo se sube aparte (/api/dibujos)
    y otro dispositivo lo ve. El progreso (S) no lleva la imagen.
-   Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-fichas.js http://localhost:8790/index.html [carpeta-capturas] */
+   Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-fichas.cjs http://localhost:8790/index.html [carpeta-capturas] */
 const { chromium } = require("playwright");
 const URL = process.argv[2], OUT = process.argv[3] || "/tmp";
 const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c) ERR.push(m); };

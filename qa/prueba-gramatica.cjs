@@ -1,5 +1,5 @@
 // Comprueba los 5 juegos de gramática y verbos (gramatica/gramatica.js) en los dos cursos.
-// Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-gramatica.js http://localhost:8765/index.html /tmp/capturas
+// Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-gramatica.cjs http://localhost:8765/index.html /tmp/capturas
 // Sin servidor de cuentas, los 404 de api/estado son esperados.
 const {chromium} = require('playwright');
 const BASE = process.argv[2] || 'http://localhost:8765/index.html';

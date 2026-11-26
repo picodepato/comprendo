@@ -90,7 +90,7 @@ const TX = {
 const tl = (k, lang, v) => { let s = (TX[lang] || TX.en)[k] ?? TX.es[k] ?? k; for (const x in v || {}) s = s.split(`{${x}}`).join(v[x]); return s; };
 const S_ = () => st().S;
 /* main text in the language you learn + small line in the language you know (A1) */
-const TI = (k, v) => { const s = S_(); return esc(tl(k, s.learn, v)) + (both() && s.know !== s.learn ? `<span class="fcen"> · ${esc(tl(k, s.know, v))}</span>` : ""); };
+const TI = (k, v) => { const s = S_(); const a = tl(k, s.learn, v), b = tl(k, s.know, v); return esc(a) + (both() && s.know !== s.learn && b !== a ? `<span class="fcen"> · ${esc(b)}</span>` : ""); };
 const T1 = (k, v) => tl(k, S_().learn, v);
 
 /* ---------- datos ---------- */

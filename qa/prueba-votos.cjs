@@ -1,5 +1,5 @@
 // Votar el próximo tema: tarjetas en la portada, votar, un voto por tema y aparato, recuento (con servidor).
-// Uso: node prueba-votos.js <url> [/tmp/capturas]   (con servidor: node qa/servidor-prueba.mjs <web+api> 8790)
+// Uso: node prueba-votos.cjs <url> [/tmp/capturas]   (con servidor: node qa/servidor-prueba.mjs <web+api> 8790)
 const puppeteer = require('puppeteer-core');
 const BASE = process.argv[2] || 'http://localhost:8765/index.html', SHOTS = process.argv[3] || '/tmp';
 const wait = ms => new Promise(r => setTimeout(r, ms));

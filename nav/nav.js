@@ -17,7 +17,7 @@ const TX = {
     buscar: "Buscar una palabra", buscar_ph: "Escribe una palabra…", buscar_help: "Escribe una palabra en {a} o en {b}.", nada: "No hemos encontrado esa palabra.", anadir: "＋ Al diccionario", anadida: "✓ En tu diccionario", oir: "Escuchar", cerrar: "Cerrar", buscadas: "🔍 Palabras buscadas",
     idioma: "Idioma", aprendo: "Quiero aprender…", se: "Sé…", pronto: "pronto", cambiar: "Cambiar", aprendes: "Aprendes {a} · Sabes {b}",
     sigue: "Sigue donde lo dejaste", volver: "Volver a", tu_semana: "Tu semana", xp_semana: "XP esta semana", racha_d: "días seguidos", nivel: "Nivel {n}", xp_falta: "{n} XP para el nivel {l}", ver_prog: "Ver mi progreso", empieza: "Empieza por una lectura", empieza_p: "Elige tu nivel y una lectura en «Aprender».", ir_aprender: "📖 Ir a las lecturas",
-    t_lect: "Lecturas", t_lect_p: "Por niveles: A1, A2, B1 y B2.", t_gram_p: "Ordena frases y encuentra el error.", t_juegos_p: "Cartas, contrarreloj y ahorcado.", todo: "Todo COMPRENDO", todo_p: "Toca lo que quieras hacer.", ver_todo: "Ver todo", codigo_t: "Entrar con código", codigo_t_p: "Únete a la sala de tu clase.", f_seg_p: "Actividades, deberes y resultados.", a_h1: "Aprender", a_sub: "Lecturas por nivel y otras formas de aprender: dictados, canciones, vídeos y más.", mas: "Más formas de aprender", lecturas: "Lecturas",
+    t_lect: "Lecturas", t_lect_p: "Por niveles: {l}.", y: "y", t_gram_p: "Ordena frases y encuentra el error.", t_juegos_p: "Cartas, contrarreloj y ahorcado.", todo: "Todo COMPRENDO", todo_p: "Toca lo que quieras hacer.", ver_todo: "Ver todo", codigo_t: "Entrar con código", codigo_t_p: "Únete a la sala de tu clase.", f_seg_p: "Actividades, deberes y resultados.", a_h1: "Aprender", a_sub: "Lecturas por nivel y otras formas de aprender: dictados, canciones, vídeos y más.", mas: "Más formas de aprender", lecturas: "Lecturas",
     p_vocab: "Vocabulario", p_vocab_p: "Repasa las palabras que has guardado.",
     g_h1: "En grupo", g_sub: "Juega con tu clase o con amigos. Si te han dado un código, escríbelo aquí.", codigo: "Entrar con código", entrar: "Entrar", buscando: "Buscando la sala…", no_sala: "No hay ninguna sala abierta con ese código.", seis: "El código tiene 6 números.", crear_sala: "O crea una sala",
     z_h1: "Mi zona", z_sub: "Tus palabras, tu mascota, tus logros y tus deberes.",
@@ -51,7 +51,7 @@ const TX = {
     buscar: "Look up a word", buscar_ph: "Type a word…", buscar_help: "Type a word in {a} or in {b}.", nada: "We couldn't find that word.", anadir: "＋ To my dictionary", anadida: "✓ In your dictionary", oir: "Listen", cerrar: "Close", buscadas: "🔍 Words I looked up",
     idioma: "Language", aprendo: "I want to learn…", se: "I know…", pronto: "soon", cambiar: "Change", aprendes: "You learn {a} · You know {b}",
     sigue: "Carry on where you left off", volver: "Back to", tu_semana: "Your week", xp_semana: "XP this week", racha_d: "days in a row", nivel: "Level {n}", xp_falta: "{n} XP to level {l}", ver_prog: "See my progress", empieza: "Start with a reading", empieza_p: "Pick your level and a reading in «Learn».", ir_aprender: "📖 Go to the readings",
-    t_lect: "Readings", t_lect_p: "By level: A1, A2, B1 and B2.", t_gram_p: "Order sentences and find the mistake.", t_juegos_p: "Cards, time attack and hangman.", todo: "All of COMPRENDO", todo_p: "Tap what you want to do.", ver_todo: "See all", codigo_t: "Join with a code", codigo_t_p: "Join your class room.", f_seg_p: "Activities, homework and results.", a_h1: "Learn", a_sub: "Readings by level and more ways to learn: dictation, songs, videos and more.", mas: "More ways to learn", lecturas: "Readings",
+    t_lect: "Readings", t_lect_p: "By level: {l}.", y: "and", t_gram_p: "Order sentences and find the mistake.", t_juegos_p: "Cards, time attack and hangman.", todo: "All of COMPRENDO", todo_p: "Tap what you want to do.", ver_todo: "See all", codigo_t: "Join with a code", codigo_t_p: "Join your class room.", f_seg_p: "Activities, homework and results.", a_h1: "Learn", a_sub: "Readings by level and more ways to learn: dictation, songs, videos and more.", mas: "More ways to learn", lecturas: "Readings",
     p_vocab: "Vocabulary", p_vocab_p: "Review the words you have saved.",
     g_h1: "Together", g_sub: "Play with your class or your friends. If you have a code, type it here.", codigo: "Join with a code", entrar: "Join", buscando: "Looking for the room…", no_sala: "There is no open room with that code.", seis: "The code has 6 numbers.", crear_sala: "Or create a room",
     z_h1: "My space", z_sub: "Your words, your pet, your achievements and your homework.",
@@ -85,7 +85,7 @@ const TX = {
     buscar: "Buscar una paraula", buscar_ph: "Escriu una paraula…", buscar_help: "Escriu una paraula en {a} o en {b}.", nada: "No hem trobat aquesta paraula.", anadir: "＋ Al diccionari", anadida: "✓ Al teu diccionari", oir: "Escoltar", cerrar: "Tancar", buscadas: "🔍 Paraules buscades",
     idioma: "Idioma", aprendo: "Vull aprendre…", se: "Sé…", pronto: "aviat", cambiar: "Canviar", aprendes: "Aprens {a} · Saps {b}",
     sigue: "Continua on ho vas deixar", volver: "Tornar a", tu_semana: "La teva setmana", xp_semana: "XP aquesta setmana", racha_d: "dies seguits", nivel: "Nivell {n}", xp_falta: "{n} XP per al nivell {l}", ver_prog: "Veure el meu progrés", empieza: "Comença per una lectura", empieza_p: "Tria el teu nivell i una lectura a «Aprendre».", ir_aprender: "📖 Anar a les lectures",
-    t_lect: "Lectures", t_lect_p: "Per nivells: A1, A2, B1 i B2.", t_gram_p: "Ordena frases i troba l'errada.", t_juegos_p: "Cartes, contrarellotge i penjat.", todo: "Tot COMPRENDO", todo_p: "Toca el que vulguis fer.", ver_todo: "Veure-ho tot", codigo_t: "Entrar amb codi", codigo_t_p: "Uneix-te a la sala de la classe.", f_seg_p: "Activitats, deures i resultats.", a_h1: "Aprendre", a_sub: "Lectures per nivell i altres maneres d'aprendre: dictats, cançons, vídeos i més.", mas: "Més maneres d'aprendre", lecturas: "Lectures",
+    t_lect: "Lectures", t_lect_p: "Per nivells: {l}.", y: "i", t_gram_p: "Ordena frases i troba l'errada.", t_juegos_p: "Cartes, contrarellotge i penjat.", todo: "Tot COMPRENDO", todo_p: "Toca el que vulguis fer.", ver_todo: "Veure-ho tot", codigo_t: "Entrar amb codi", codigo_t_p: "Uneix-te a la sala de la classe.", f_seg_p: "Activitats, deures i resultats.", a_h1: "Aprendre", a_sub: "Lectures per nivell i altres maneres d'aprendre: dictats, cançons, vídeos i més.", mas: "Més maneres d'aprendre", lecturas: "Lectures",
     p_vocab: "Vocabulari", p_vocab_p: "Repassa les paraules que has desat.",
     g_h1: "En grup", g_sub: "Juga amb la teva classe o amb amics. Si t'han donat un codi, escriu-lo aquí.", codigo: "Entrar amb codi", entrar: "Entrar", buscando: "Buscant la sala…", no_sala: "No hi ha cap sala oberta amb aquest codi.", seis: "El codi té 6 números.", crear_sala: "O crea una sala",
     z_h1: "El meu espai", z_sub: "Les teves paraules, la mascota, els assoliments i els deures.",
@@ -115,9 +115,15 @@ const TX = {
     c_quiz: "Concurs amb IA", c_quiz_p: "Amb la foto del llibre o un text.", c_video: "Vídeo amb preguntes", c_video_p: "Enganxa un enllaç de YouTube.", c_dob: "Doblatge", c_dob_p: "Una escena o cançó per doblar.", c_cancion: "Cançó", c_cancion_p: "Una cançó amb buits per a la classe."
   }
 };
-/* la navegación va en el idioma que el alumno ya sabe (el que aprende ya sale en las lecturas) */
-const lg = () => { const S = st().S; return S && TX[S.know] ? S.know : "es"; };
-const t = (k, v) => { let s = TX[lg()][k] ?? TX.es[k] ?? k; for (const x in v || {}) s = s.split(`{${x}}`).join(v[x]); return s; };
+/* la navegación sigue la misma regla que el resto de la web: va en el idioma que se aprende y,
+   en A1 (CAT.settings.ui = "both"), con el idioma que ya sabe al lado */
+const lg = () => { const S = st().S; return S && TX[S.learn] ? S.learn : "es"; };
+const kn = () => { const S = st().S; return S && TX[S.know] ? S.know : null; };
+const dos = () => { try { return !!L().both?.() && !!kn() && kn() !== lg(); } catch (e) { return false; } };
+const t = (k, v, l = lg()) => { let s = TX[l]?.[k] ?? TX.es[k] ?? k; for (const x in v || {}) s = s.split(`{${x}}`).join(v[x]); return s; };
+/* segunda lengua (solo A1 y solo si dice algo distinto): en línea (t2) o en otra línea (tb) */
+const t2 = (k, v) => { if (!dos()) return ""; const a = t(k, v), b = t(k, v, kn()); return a === b ? "" : ` <span class="nven">· ${esc(b)}</span>`; };
+const tb = (k, v) => { if (!dos()) return ""; const a = t(k, v), b = t(k, v, kn()); return a === b ? "" : `<span class="nven nvenb">${esc(b)}</span>`; };
 const rol = () => { try { return window.LYACuentas?.rol || null; } catch (e) { return null; } };
 const esProfe = () => rol() === "profe" || rol() === "admin";
 
@@ -143,13 +149,15 @@ function bar(view) {
   const cur = secOf(view);
   return SECS.filter(([k]) => k !== "profe" || esProfe()).map(([k, ic]) => {
     const n = k === "inicio" ? pendientes() : 0;
-    return `<a href="#${k}" data-sec="${k}" ${cur === k ? 'aria-current="page"' : ""}><span class="nvi" aria-hidden="true">${ic}</span><span class="nvl">${esc(t(k))}</span>${n ? `<span class="nvn" aria-label="(${n})">${n}</span>` : ""}</a>`;
+    return `<a href="#${k}" data-sec="${k}"${kn() && kn() !== lg() ? ` title="${esc(t(k, null, kn()))}"` : ""} ${cur === k ? 'aria-current="page"' : ""}><span class="nvi" aria-hidden="true">${ic}</span><span class="nvl">${esc(t(k))}</span>${n ? `<span class="nvn" aria-label="(${n})">${n}</span>` : ""}</a>`;
   }).join("");
 }
 
 /* ---------- tarjetas ---------- */
-const tile = (href, ic, k, extra = "") => `<a class="nvt" href="${href}"${extra}><span class="nvti" aria-hidden="true">${ic}</span><span class="nvtt"><b>${esc(t(k))}</b><span>${esc(t(k + "_p"))}</span></span></a>`;
-const btile = (data, ic, k) => `<button class="nvt" type="button" ${data}><span class="nvti" aria-hidden="true">${ic}</span><span class="nvtt"><b>${esc(t(k))}</b><span>${esc(t(k + "_p"))}</span></span></button>`;
+/* niveles que tiene de verdad el curso (el catalán llega al C1) */
+const niveles = () => { const ls = [...new Set((L().rdList?.() || []).filter(r => r.file).map(r => r.level))].sort(); return ls.length > 1 ? ls.slice(0, -1).join(", ") + " " + t("y") + " " + ls[ls.length - 1] : ls.join("") || "A1, A2, B1 " + t("y") + " B2"; };
+const tile = (href, ic, k, extra = "") => `<a class="nvt" href="${href}"${extra}><span class="nvti" aria-hidden="true">${ic}</span><span class="nvtt"><b>${esc(t(k))}</b>${tb(k)}<span>${esc(t(k + "_p", k === "t_lect" ? {l: niveles()} : undefined))}</span></span></a>`;
+const btile = (data, ic, k) => `<button class="nvt" type="button" ${data}><span class="nvti" aria-hidden="true">${ic}</span><span class="nvtt"><b>${esc(t(k))}</b>${tb(k)}<span>${esc(t(k + "_p"))}</span></span></button>`;
 function pronLink() {
   const {S} = st();
   const r = S && L().rdById?.(S.read);
@@ -167,14 +175,14 @@ const APRENDER = () => [
   window.LYAPronto?.pending?.() && ["#proximamente", "🔜", "t_pronto"]
 ].filter(Boolean);
 const aprenderTiles = () => `<div class="nvtiles nvsmall">${APRENDER().map(([h, ic, k]) => tile(h, ic, k)).join("")}</div>`;
-const practicarExtra = () => `<section class="nvsec"><h2>📝 ${esc(t("p_vocab"))}</h2><div class="nvtiles nvsmall">${tile("#diccionario", "📖", "t_dicc")}${window.LYAFichas ? tile("#fichas", "🃏", "t_fichas") : ""}</div></section>`;
+const practicarExtra = () => `<section class="nvsec"><h2>📝 ${esc(t("p_vocab"))}${t2("p_vocab")}</h2><div class="nvtiles nvsmall">${tile("#diccionario", "📖", "t_dicc")}${window.LYAFichas ? tile("#fichas", "🃏", "t_fichas") : ""}</div></section>`;
 
 function renderGrupo(el) {
-  el.innerHTML = `<section class="wrap nvhub"><h1>🏫 ${esc(t("g_h1"))}</h1><p class="nvsub">${esc(t("g_sub"))}</p>
-    <form class="nvcode" id="nvcode" novalidate><label for="nvcin">🔑 ${esc(t("codigo"))}</label>
+  el.innerHTML = `<section class="wrap nvhub"><h1>🏫 ${esc(t("g_h1"))}${t2("g_h1")}</h1><p class="nvsub">${esc(t("g_sub"))}${tb("g_sub")}</p>
+    <form class="nvcode" id="nvcode" novalidate><label for="nvcin">🔑 ${esc(t("codigo"))}${t2("codigo")}</label>
       <div class="nvcrow"><input id="nvcin" inputmode="numeric" autocomplete="off" maxlength="6" placeholder="123456" aria-describedby="nvcmsg"><button class="btn main" type="submit">${esc(t("entrar"))}</button></div>
       <p class="nvmsg" id="nvcmsg" role="alert"></p></form>
-    <h2 class="nvh2">${esc(t("crear_sala"))}</h2>
+    <h2 class="nvh2">${esc(t("crear_sala"))}${t2("crear_sala")}</h2>
     <div class="nvtiles">${[
       window.LYADuelo && tile("#duelo", "⚔️", "t_duelo"),
       window.LYAConcursos && tile("#concursos", "🏆", "t_concursos"),
@@ -209,7 +217,7 @@ async function buscarSala(c) {
 function renderZona(el) {
   const {S} = st();
   const n = S ? S.dict.filter(d => d.l === S.learn).length : 0, nc = S ? S.dict.filter(d => d.l === S.learn && d.r === "canciones").length : 0;
-  el.innerHTML = `<section class="wrap nvhub"><h1>📚 ${esc(t("z_h1"))}</h1><p class="nvsub">${esc(t("z_sub"))}</p>
+  el.innerHTML = `<section class="wrap nvhub"><h1>📚 ${esc(t("z_h1"))}${t2("z_h1")}</h1><p class="nvsub">${esc(t("z_sub"))}${tb("z_sub")}</p>
     <div class="nvtiles">${tile("#diccionario", "📖", "t_dicc", n ? ` data-n="${n}"` : "")}
       ${window.LYACanciones ? tile("#diccionario", "🎵", "t_canpal", nc ? ` data-n="${nc}"` : "") : ""}
       ${window.LYAFichas ? tile("#fichas", "🃏", "t_fichas") : ""}
@@ -219,19 +227,19 @@ function renderZona(el) {
 }
 function renderProfe(el) {
   if (!esProfe()) {
-    el.innerHTML = `<section class="wrap nvhub"><h1>👩‍🏫 ${esc(t("f_h1"))}</h1><p class="nvsub">${esc(t("solo_profe"))}</p>${window.LYACuentas ? `<p><button class="btn main" type="button" data-nv="cuenta">${esc(t("entrar_cuenta"))}</button></p>` : ""}</section>`;
+    el.innerHTML = `<section class="wrap nvhub"><h1>👩‍🏫 ${esc(t("f_h1"))}${t2("f_h1")}</h1><p class="nvsub">${esc(t("solo_profe"))}${tb("solo_profe")}</p>${window.LYACuentas ? `<p><button class="btn main" type="button" data-nv="cuenta">${esc(t("entrar_cuenta"))}</button></p>` : ""}</section>`;
     return;
   }
   const P = k => `data-nv="panel" data-tab="${k}"`;
-  el.innerHTML = `<section class="wrap nvhub"><h1>👩‍🏫 ${esc(t("f_h1"))}</h1><p class="nvsub">${esc(t("f_sub"))}</p>
+  el.innerHTML = `<section class="wrap nvhub"><h1>👩‍🏫 ${esc(t("f_h1"))}${t2("f_h1")}</h1><p class="nvsub">${esc(t("f_sub"))}${tb("f_sub")}</p>
     <div class="nvtiles">${btile(P("clases"), "🏫", "f_clases")}</div>
-    <h2 class="nvh2">🧩 ${esc(t("f_crear"))}</h2>
+    <h2 class="nvh2">🧩 ${esc(t("f_crear"))}${t2("f_crear")}</h2>
     <div class="nvtiles">${[
       window.LYAConcursos && tile("#concursos-crear", "🏆", "c_quiz"),
       window.LYAVideos && tile("#videos-editar", "📺", "c_video"),
       window.LYADoblaje && tile("#doblaje", "🎬", "c_dob"),
       window.LYACanciones && tile("#canciones", "🎵", "c_cancion")].filter(Boolean).join("")}</div>
-    <h2 class="nvh2">📋 ${esc(t("f_seg"))}</h2>
+    <h2 class="nvh2">📋 ${esc(t("f_seg"))}${t2("f_seg")}</h2>
     <div class="nvtiles">${btile(P("actividades"), "🧩", "f_creadas")}${btile(P("deberes"), "📚", "f_deberes")}${btile(P("usuarios"), "📊", "f_result")}${btile(P("fallos"), "❌", "f_fallos")}${btile(P("mensajes"), "✉️", "f_msgs")}${rol() === "admin" ? btile(P("propuestas"), "💡", "f_admin") : ""}</div></section>`;
 }
 function render(el) {
@@ -272,16 +280,16 @@ function mapa() {
     ["mizona", "📚", "#mizona", [["#diccionario", "📖", "t_dicc"], window.LYACanciones && ["#diccionario", "🎵", "t_canpal"], window.LYAFichas && ["#fichas", "🃏", "t_fichas"], window.LYAMascota && ["#mascota", "🐾", "t_mascota"], ["#progreso", "🏅", "t_logros"], window.LYAAvisos && ["#deberes", "🗂️", "t_debhist"]]]
   ];
   if (esProfe()) G.push(["profe", "👩‍🏫", "#profe", [["#profe", "🏫", "f_clases"], window.LYAConcursos && ["#concursos-crear", "🏆", "c_quiz"], window.LYAVideos && ["#videos-editar", "📺", "c_video"], window.LYADoblaje && ["#doblaje", "🎬", "c_dob"], window.LYACanciones && ["#canciones", "🎵", "c_cancion"], ["#profe", "📋", "f_seg"]]]);
-  return `<section class="nvmapa"><h2>🧭 ${esc(t("todo"))}</h2><p class="nvsub">${esc(t("todo_p"))}</p>
+  return `<section class="nvmapa"><h2>🧭 ${esc(t("todo"))}${t2("todo")}</h2><p class="nvsub">${esc(t("todo_p"))}${tb("todo_p")}</p>
     ${G.map(([k, ic, h, items]) => `<div class="nvgr nvgr-${k}"><div class="nvgrh"><h3>${ic} ${esc(t(k))}</h3><a href="${h}">${esc(t("ver_todo"))} →</a></div>
       <div class="nvtiles">${items.filter(Boolean).map(([hh, i2, kk]) => tile(hh, i2, kk)).join("")}</div></div>`).join("")}</section>`;
 }
 function inicio({card, streak, lvl, xp, a, b, wk}) {
   const u = ls.get(ULT), m = u && LUGARES.find(([re]) => re.test(u.h));
   const otro = m ? `<a class="nvt" href="#${esc(u.h)}"><span class="nvti" aria-hidden="true">${m[1]}</span><span class="nvtt"><span>${esc(t("volver"))}</span><b>${esc(t(m[2]))}</b></span></a>` : "";
-  const sigue = card || otro ? `<section class="nvsec nvsigue"><h2>▶️ ${esc(t("sigue"))}</h2><div class="nvsg">${card || ""}${otro ? `<div class="nvtiles nvsmall">${otro}</div>` : ""}</div></section>`
-    : `<section class="nvsec nvsigue"><h2>▶️ ${esc(t("empieza"))}</h2><p class="nvsub">${esc(t("empieza_p"))}</p><p><a class="btn main" href="#aprender">${esc(t("ir_aprender"))}</a></p></section>`;
-  const semana = `<section class="nvsec"><h2>📅 ${esc(t("tu_semana"))}</h2><a class="nvstats" href="#progreso" aria-label="${esc(t("ver_prog"))}">
+  const sigue = card || otro ? `<section class="nvsec nvsigue"><h2>▶️ ${esc(t("sigue"))}${t2("sigue")}</h2><div class="nvsg">${card || ""}${otro ? `<div class="nvtiles nvsmall">${otro}</div>` : ""}</div></section>`
+    : `<section class="nvsec nvsigue"><h2>▶️ ${esc(t("empieza"))}${t2("empieza")}</h2><p class="nvsub">${esc(t("empieza_p"))}${tb("empieza_p")}</p><p><a class="btn main" href="#aprender">${esc(t("ir_aprender"))}</a></p></section>`;
+  const semana = `<section class="nvsec"><h2>📅 ${esc(t("tu_semana"))}${t2("tu_semana")}</h2><a class="nvstats" href="#progreso" aria-label="${esc(t("ver_prog"))}">
     <span class="nvst"><b><span class="fire${streak ? "" : " off"}" aria-hidden="true">🔥</span> ${streak}</b><span>${esc(t("racha_d"))}</span></span>
     <span class="nvst"><b>⭐ ${wk}</b><span>${esc(t("xp_semana"))}</span></span>
     <span class="nvst nvlv"><b>${esc(t("nivel", {n: lvl}))}</b><span class="nvxpb"><i style="width:${Math.max(0, Math.min(100, (xp - a) / (b - a) * 100))}%"></i></span><span>${esc(t("xp_falta", {n: b - xp, l: lvl + 1}))}</span></span></a></section>`;
@@ -289,8 +297,8 @@ function inicio({card, streak, lvl, xp, a, b, wk}) {
 }
 function idiomaLinea() {
   const {S, CAT} = st(); if (!S || !CAT) return "";
-  const nm = c => CAT.languages[c]?.name?.[S.know] || CAT.languages[c]?.name?.en || c;
-  return `<p class="nvlang">🌐 ${esc(t("aprendes", {a: nm(S.learn), b: nm(S.know)}))} <button type="button" class="nvlink" data-nv="idioma">${esc(t("cambiar"))}</button></p>`;
+  const nm = (c, l = lg()) => CAT.languages[c]?.name?.[l] || CAT.languages[c]?.name?.en || c;
+  return `<p class="nvlang">🌐 ${esc(t("aprendes", {a: nm(S.learn), b: nm(S.know)}))}${dos() ? ` <span class="nven">· ${esc(t("aprendes", {a: nm(S.learn, kn()), b: nm(S.know, kn())}, kn()))}</span>` : ""} <button type="button" class="nvlink" data-nv="idioma">${esc(t("cambiar"))}</button></p>`;
 }
 
 /* ---------- barra superior: buscador e idioma ---------- */
@@ -321,9 +329,9 @@ function abrirIdioma() {
   const okKnow = c => CAT.courses.some(x => x.ready && x.know.includes(c)), okLearn = c => CAT.courses.some(x => x.ready && x.learn === c);
   const nm = (c, l) => CAT.languages[c].name[l] || CAT.languages[c].name.en;
   const chip = (c, on, ok, act) => `<button class="chip" type="button" data-nvl="${act}" data-l="${c}" aria-pressed="${on}" ${ok ? "" : "disabled"}>${esc(nm(c, c))}${ok ? (c !== S.know ? `<small>${esc(nm(c, S.know))}</small>` : "") : `<small>${esc(t("pronto"))}</small>`}</button>`;
-  const o = capa(`<h2>🌐 ${esc(t("idioma"))}</h2>
-    <div class="pk"><h3>${esc(t("aprendo"))}</h3><div class="chips" role="group">${langs.map(c => chip(c, c === S.learn, okLearn(c), "learn")).join("")}</div></div>
-    <div class="pk"><h3>${esc(t("se"))}</h3><div class="chips" role="group">${langs.map(c => chip(c, c === S.know, okKnow(c), "know")).join("")}</div></div>`, "nvidioma");
+  const o = capa(`<h2>🌐 ${esc(t("idioma"))}${t2("idioma")}</h2>
+    <div class="pk"><h3>${esc(t("aprendo"))}${t2("aprendo")}</h3><div class="chips" role="group">${langs.map(c => chip(c, c === S.learn, okLearn(c), "learn")).join("")}</div></div>
+    <div class="pk"><h3>${esc(t("se"))}${t2("se")}</h3><div class="chips" role="group">${langs.map(c => chip(c, c === S.know, okKnow(c), "know")).join("")}</div></div>`, "nvidioma");
   o.querySelectorAll("[data-nvl]").forEach(b => b.onclick = () => { L().setLang?.(b.dataset.nvl, b.dataset.l); abrirIdioma(); });
   o.querySelector("[aria-pressed=true]")?.focus();
 }
@@ -348,8 +356,8 @@ function buscar(q) {
 }
 function abrirBuscar(q = "") {
   const {S, CAT} = st(); if (!S || !CAT) return;
-  const nm = c => CAT.languages[c]?.name?.[S.know] || c;
-  const o = capa(`<h2>🔍 ${esc(t("buscar"))}</h2>
+  const nm = c => CAT.languages[c]?.name?.[lg()] || c;
+  const o = capa(`<h2>🔍 ${esc(t("buscar"))}${t2("buscar")}</h2>
     <form class="nvsf" role="search"><input type="search" id="nvsq" placeholder="${esc(t("buscar_ph"))}" aria-label="${esc(t("buscar"))}" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(q)}"></form>
     <p class="nvsub" id="nvsh">${esc(t("buscar_help", {a: nm(S.learn), b: nm(S.know)}))}</p><ul class="nvres" id="nvres" aria-live="polite"></ul>`, "nvbuscar");
   const inp = o.querySelector("#nvsq"), ul = o.querySelector("#nvres");

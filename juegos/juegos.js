@@ -14,9 +14,9 @@ const shuf = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j
 const tl = (k, lang, v) => { let s = (TX?.[lang] || TX?.es || {})[k] ?? (TX?.es || {})[k] ?? k; for (const x in v || {}) s = s.split(`{${x}}`).join(v[x]); return s; };
 const both = () => { try { return L().both(); } catch (e) { return false; } };
 /* inline "texto · text" (second language only in A1) */
-const T = (k, v) => { const {S} = st(); return esc(tl(k, S.learn, v)) + (both() ? " · " + esc(tl(k, S.know, v)) : ""); };
+const T = (k, v) => { const {S} = st(); const a = tl(k, S.learn, v), b = tl(k, S.know, v); return esc(a) + (both() && b !== a ? " · " + esc(b) : ""); };
 /* block: main + small line */
-const TB = (k, v) => { const {S} = st(); return esc(tl(k, S.learn, v)) + (both() ? `<span class="en" style="display:block">${esc(tl(k, S.know, v))}</span>` : ""); };
+const TB = (k, v) => { const {S} = st(); const a = tl(k, S.learn, v), b = tl(k, S.know, v); return esc(a) + (both() && b !== a ? `<span class="en" style="display:block">${esc(b)}</span>` : ""); };
 const lname = c => { try { const {CAT, S} = st(); return CAT.languages[c].name[S.learn] || c; } catch (e) { return c; } };
 const xp = d => { try { dispatchEvent(new CustomEvent("lya:xp", {detail: d})); } catch (e) {} };
 const say = w => { try { if (st().S.say) L().speak(w, 1); } catch (e) {} };

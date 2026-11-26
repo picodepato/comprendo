@@ -105,8 +105,8 @@ const both = () => { try { return L().both(); } catch (e) { return false; } };
 const lg = () => { try { return st().S.learn; } catch (e) { return "es"; } };
 const tl = (k, l, v) => { let s = (TX[l] || TX.es)[k] ?? TX.es[k] ?? k; for (const x in v || {}) s = s.split(`{${x}}`).join(v[x]); return s; };
 const two = () => { try { const S = st().S; return both() && S.know !== S.learn; } catch (e) { return false; } };
-const T = (k, v) => esc(tl(k, lg(), v)) + (two() ? " · " + esc(tl(k, st().S.know, v)) : "");
-const TB = (k, v) => esc(tl(k, lg(), v)) + (two() ? `<span class="en">${esc(tl(k, st().S.know, v))}</span>` : "");
+const T = (k, v) => { const a = tl(k, lg(), v), b = two() ? tl(k, st().S.know, v) : a; return esc(a) + (b !== a ? " · " + esc(b) : ""); };
+const TB = (k, v) => { const a = tl(k, lg(), v), b = two() ? tl(k, st().S.know, v) : a; return esc(a) + (b !== a ? `<span class="en">${esc(b)}</span>` : ""); };
 const T1 = (k, v) => esc(tl(k, lg(), v));
 /* botón con icono + texto (en el móvil solo el icono) */
 const IB = k => { const full = tl(k, lg()), i = full.indexOf(" "); return `<span class="cnic" aria-hidden="true">${esc(full.slice(0, i))}</span><span class="cnlbl">${esc(full.slice(i + 1))}</span>`; };

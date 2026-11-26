@@ -3,7 +3,7 @@
    móvil, y deberes del profe (mandar canción → el alumno la ve y la hace → el profe ve que está hecha → quitarla la borra).
    YouTube no se usa de verdad: se simulan la API del reproductor y la respuesta de api/canciones?v=…
    Uso: sh vercel/montar.sh /tmp/site && node qa/servidor-prueba.mjs /tmp/site 8790
-        NODE_PATH=/opt/node22/lib/node_modules node qa/prueba-canciones.js http://localhost:8790/index.html [carpeta-capturas] */
+        NODE_PATH=/opt/node22/lib/node_modules node qa/prueba-canciones.cjs http://localhost:8790/index.html [carpeta-capturas] */
 const { chromium } = require("playwright");
 const URL = process.argv[2] || "http://localhost:8790/index.html", OUT = process.argv[3] || "";
 const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c) ERR.push(m); };

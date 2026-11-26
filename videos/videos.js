@@ -15,7 +15,7 @@ const $ = s => document.querySelector(s);
 const STR = {
   es: {tab: "📺 Vídeos", h1: "Vídeos con preguntas", sub: "El vídeo se para y no sigue hasta que contestas. Míralo tú solo o en clase, todos a la vez.",
     unirse: "Unirse con un código", codigo: "Código", entrar: "Entrar", crear: "✏️ Crear un vídeo con preguntas",
-    prep: "Preparados por COMPRENDO", mios: "Mis vídeos", ninguno: "Todavía no has creado ninguno. Pega un enlace de YouTube y añade preguntas en los momentos que quieras.",
+    prep: "Preparados por COMPRENDO", prep_otros: "En otros idiomas", prep_no: "Todavía no hay vídeos preparados en {l}.", mios: "Mis vídeos", ninguno: "Todavía no has creado ninguno. Pega un enlace de YouTube y añade preguntas en los momentos que quieras.",
     npreg: "{n} preguntas", solo: "▶ Verlo yo", directo: "📺 En clase, en directo", editar: "✏️ Editar", copia: "Guardar una copia para editarla", borrar: "🗑 Borrar",
     seguro: "¿Borrar «{t}»? No se puede deshacer.", volver: "← Vídeos", e_noexiste: "Este vídeo no existe o se ha borrado.", e_red: "No hay conexión con el servidor. Inténtalo otra vez.",
     local: "Sin cuenta, tus vídeos se guardan solo en este aparato.",
@@ -48,7 +48,7 @@ const STR = {
     e_llena: "La sala está llena (30).", e_terminado: "Esta sala ya ha terminado.", salir: "Salir", e_gen: "Algo ha fallado. Inténtalo otra vez."},
   en: {tab: "📺 Videos", h1: "Videos with questions", sub: "The video stops and won't go on until you answer. Watch it alone or in class, all at the same time.",
     unirse: "Join with a code", codigo: "Code", entrar: "Join", crear: "✏️ Create a video with questions",
-    prep: "Made by COMPRENDO", mios: "My videos", ninguno: "You haven't made any yet. Paste a YouTube link and add questions wherever you like.",
+    prep: "Made by COMPRENDO", prep_otros: "In other languages", prep_no: "There are no ready-made videos in {l} yet.", mios: "My videos", ninguno: "You haven't made any yet. Paste a YouTube link and add questions wherever you like.",
     npreg: "{n} questions", solo: "▶ Watch it", directo: "📺 Live in class", editar: "✏️ Edit", copia: "Save a copy to edit", borrar: "🗑 Delete",
     seguro: "Delete “{t}”? This can't be undone.", volver: "← Videos", e_noexiste: "This video doesn't exist or has been deleted.", e_red: "No connection to the server. Try again.",
     local: "Without an account, your videos are only saved on this device.",
@@ -81,7 +81,7 @@ const STR = {
     e_llena: "The room is full (30).", e_terminado: "This room has already finished.", salir: "Leave", e_gen: "Something went wrong. Try again."},
   ca: {tab: "📺 Vídeos", h1: "Vídeos amb preguntes", sub: "El vídeo s'atura i no continua fins que contestes. Mira'l tot sol o a classe, tots alhora.",
     unirse: "Unir-se amb un codi", codigo: "Codi", entrar: "Entrar", crear: "✏️ Crear un vídeo amb preguntes",
-    prep: "Preparats per COMPRENDO", mios: "Els meus vídeos", ninguno: "Encara no n'has creat cap. Enganxa un enllaç de YouTube i afegeix preguntes on vulguis.",
+    prep: "Preparats per COMPRENDO", prep_otros: "En altres llengües", prep_no: "Encara no hi ha vídeos preparats en {l}.", mios: "Els meus vídeos", ninguno: "Encara no n'has creat cap. Enganxa un enllaç de YouTube i afegeix preguntes on vulguis.",
     npreg: "{n} preguntes", solo: "▶ Mirar-lo", directo: "📺 A classe, en directe", editar: "✏️ Editar", copia: "Guardar-ne una còpia per editar-la", borrar: "🗑 Esborrar",
     seguro: "Esborrar «{t}»? No es pot desfer.", volver: "← Vídeos", e_noexiste: "Aquest vídeo no existeix o s'ha esborrat.", e_red: "No hi ha connexió amb el servidor. Torna-ho a provar.",
     local: "Sense compte, els teus vídeos només es guarden en aquest aparell.",
@@ -115,7 +115,9 @@ const STR = {
 };
 const lang = () => { try { const l = st().S.learn; return STR[l] ? l : (STR[st().S.know] ? st().S.know : "es"); } catch (e) { return "es"; } };
 const t = (k, v) => { let o = STR[lang()][k] ?? STR.es[k] ?? k; for (const x in v || {}) o = o.split(`{${x}}`).join(v[x]); return o; };
-const T = (k, v) => esc(t(k, v));
+/* A1: con el idioma que ya sabe al lado, como el resto de la web (solo si dice algo distinto) */
+const t2 = (k, v) => { try { const S = st().S, b = STR[S.know] && S.know !== lang() && window.LYA?.both?.() ? S.know : null; if (!b) return ""; let o = STR[b][k] ?? STR.es[k] ?? k; for (const x in v || {}) o = o.split(`{${x}}`).join(v[x]); return o === t(k, v) ? "" : o; } catch (e) { return ""; } };
+const T = (k, v) => { const b = t2(k, v); return esc(t(k, v)) + (b ? " · " + esc(b) : ""); };
 const SIMB = ["★", "♥", "☾", "✚"], LETRAS = ["A", "B", "C", "D"];
 const opcHTML = (o, i, extra = "") => `<span class="cc-sim" aria-hidden="true">${SIMB[i]}</span><span class="cc-ot">${esc(o)}</span>${extra}`;
 const mmss = s => { s = Math.max(0, Math.floor(+s || 0)); const h = Math.floor(s / 3600), m = Math.floor(s / 60) % 60, x = String(s % 60).padStart(2, "0"); return h ? `${h}:${String(m).padStart(2, "0")}:${x}` : `${m}:${x}`; };
@@ -210,7 +212,11 @@ async function inicio(app) {
     <div class="cc-crea"><a class="btn main cc-big" href="#videos-editar">${T("crear")}</a></div>
     <h2 class="cc-h2">${T("mios")}</h2><div class="vd-grid" id="vd-mios">${C ? `<p class="cc-small">…</p>` : ""}</div>
     ${!C && ls.length ? `<p class="cc-small">${T("local")}</p>` : ""}
-    <h2 class="cc-h2">⭐ ${T("prep")}</h2><div class="vd-grid">${preps.map(x => tarjeta({...x, n: x.preguntas.length})).join("")}</div>
+    <h2 class="cc-h2">⭐ ${T("prep")}</h2>${(() => { /* primero los del idioma del curso; los demás, aparte */
+      const mio = preps.filter(x => x.idioma === lg), otros = preps.filter(x => x.idioma !== lg), nl = c => L().CAT?.languages?.[c]?.name?.[lg] || c;
+      return (mio.length ? `<div class="vd-grid">${mio.map(x => tarjeta({...x, n: x.preguntas.length})).join("")}</div>` : `<p class="cc-small">${T("prep_no", {l: lg === "en" ? nl(lg) : nl(lg).toLowerCase()})}</p>`)
+        + (otros.length ? `<h3 class="cc-h2 vd-otros">${T("prep_otros")}</h3><div class="vd-grid">${otros.map(x => tarjeta({...x, n: x.preguntas.length})).join("")}</div>` : "");
+    })()}
   </section>`;
   app.querySelector("#vd-unir").onsubmit = e => { e.preventDefault(); const c = e.target.codigo.value.replace(/\D/g, ""); if (c.length === 6) location.hash = "vjugar-" + c; };
   let nube = [];

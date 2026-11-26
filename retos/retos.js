@@ -19,7 +19,7 @@ const L = () => window.LYA, st = () => L().get(), TX = () => window.LYARetosText
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const COLORES = ["#ff7a45", "#7c6cff", "#2fbf71", "#ff4f8b", "#18b6d6", "#f5b700", "#a259ff", "#53c41a"];
 const EMOJI = ["🦊", "🐙", "🦉", "🐺", "🐢", "🦄", "🐝", "🦖"];
-const IDIOMA = {es: {es: "español", en: "inglés", ca: "catalán"}, en: {es: "Spanish", en: "English", ca: "Catalan"}, ca: {es: "castellà", en: "anglès", ca: "català"}};
+const IDIOMA = {es: {es: "español", en: "inglés", ca: "catalán"}, en: {es: "Spanish", en: "English", ca: "Catalan"}, ca: {es: "espanyol", en: "anglès", ca: "català"}};
 const BLOQUEO = 3000, BLOQUEO_TABU = 2000, SALDO = 1000;
 
 /* ---------- estado ---------- */

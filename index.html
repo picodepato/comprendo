@@ -396,11 +396,12 @@ const lvNow = () => S.view === "read" ? (rdById(S.read)?.level || S.level) : S.l
 const U = (k, lang, vars) => { let s = (UI[lang] || UI.en)[k] ?? k; for (const v in vars || {}) s = s.replace(`{${v}}`, vars[v]); return s; };
 const both = () => uiMode(lvNow()) === "both" && S.know !== S.learn;
 /* block: main text + small line in the language you know (A1 only) */
-const TB = (k, vars, tag = "p") => `${esc(U(k, S.learn, vars))}${both() ? `<span class="en" style="display:block">${esc(U(k, S.know, vars))}</span>` : ""}`;
+const two = (a, b) => both() && a !== b; /* no repetir «Jugar · Jugar» cuando las dos lenguas lo dicen igual */
+const TB = (k, vars, tag = "p") => { const a = U(k, S.learn, vars), b = U(k, S.know, vars); return `${esc(a)}${two(a, b) ? `<span class="en" style="display:block">${esc(b)}</span>` : ""}`; };
 /* inline: "texto · text" */
-const TI = (k, vars) => esc(U(k, S.learn, vars)) + (both() ? " · " + esc(U(k, S.know, vars)) : "");
+const TI = (k, vars) => { const a = U(k, S.learn, vars), b = U(k, S.know, vars); return esc(a) + (two(a, b) ? " · " + esc(b) : ""); };
 /* top bar: second language hidden on phones */
-const TT = k => esc(U(k, S.learn)) + (both() ? `<span class="tk"> · ${esc(U(k, S.know))}</span>` : "");
+const TT = k => { const a = U(k, S.learn), b = U(k, S.know); return esc(a) + (two(a, b) ? `<span class="tk"> · ${esc(b)}</span>` : ""); };
 const lc = (n, lang) => lang === "en" || lang === "de" ? n : n.toLowerCase();
 const lname = (code, inLang) => CAT.languages[code].name[inLang] || CAT.languages[code].name.en;
 
@@ -452,7 +453,7 @@ const lvStart = n => 50 * n * (n - 1); /* XP needed to reach level n: 0, 100, 30
 const lvOf = xp => { let n = 1; while (xp >= lvStart(n + 1)) n++; return n; };
 const rankOf = n => [[1, "r1"], [3, "r2"], [5, "r3"], [8, "r4"], [12, "r5"]].filter(([m]) => n >= m).pop()[1];
 /* inline text with values that depend on the language */
-const TV = (k, f) => esc(U(k, S.learn, f(S.learn))) + (both() ? " · " + esc(U(k, S.know, f(S.know))) : "");
+const TV = (k, f) => { const a = U(k, S.learn, f(S.learn)), b = U(k, S.know, f(S.know)); return esc(a) + (two(a, b) ? " · " + esc(b) : ""); };
 function streakNow() { const g = S.g; if (!g.last) return 0; const gap = dayN(today()) - dayN(g.last); return gap <= 1 || g.shields >= gap - 1 ? g.streak : 0; }
 function touchDay() {
   const g = S.g, t = today(); if (g.last === t) return;
