@@ -263,6 +263,7 @@ async function miClase(aviso = "") {
 
 /* ---------- administrador: el panel está en panel-admin.js y se carga solo cuando el admin lo abre ---------- */
 let cargaAdmin = null;
+const cargarPanel = () => cargaAdmin ||= new Promise((ok, mal) => { const sc = document.createElement("script"); sc.src = "panel-admin.js"; sc.onload = ok; sc.onerror = mal; document.head.appendChild(sc); });
 function panelAdmin(tab) {
   cargaAdmin ||= new Promise((ok, mal) => { const sc = document.createElement("script"); sc.src = "panel-admin.js"; sc.onload = ok; sc.onerror = mal; document.head.appendChild(sc); });
   cargaAdmin.then(() => window.LYAPanelAdmin.abrir(tab)).catch(() => { cargaAdmin = null; ventana(`<h2>🛠 ${X("admin")}</h2><p class="ctam">${X("admin_mal")}</p>`); });
@@ -297,6 +298,6 @@ function panelCopia() {
   };
 }
 
-window.LYACuentas = {preparar, cambio, boton, abrir, subir, api, hayServidor, get usuario() { return C && C.usuario; }, get rol() { return C && C.token ? (C.usuario === "admin" ? "admin" : C.rol || "alumno") : null; }, panel: tab => panelAdmin(tab),
+window.LYACuentas = {preparar, cambio, boton, abrir, subir, api, hayServidor, get usuario() { return C && C.usuario; }, get rol() { return C && C.token ? (C.usuario === "admin" ? "admin" : C.rol || "alumno") : null; }, panel: tab => panelAdmin(tab), cargarPanel, /* la portada del profe (profe/profe.js) usa el panel sin abrirlo */
   ui: {ventana, cerrar, esc, get dlg() { return dlg; }, $d: s => dlg.querySelector(s)}};
 })();

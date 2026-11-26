@@ -3,7 +3,7 @@
    Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-profe.cjs http://localhost:8790/index.html [clave-admin] */
 const { chromium } = require("playwright");
 const URL = process.argv[2], CLAVE = process.argv[3] || "admin";
-const tab = async (p, k) => { await p.click(`[data-tab=${k}]`); await p.waitForSelector(`[data-tab=${k}][aria-selected=true]`); };
+const tab = async (p, k) => { await p.click(`.ctatabs [data-tab=${k}]`); await p.waitForSelector(`.ctatabs [data-tab=${k}][aria-selected=true]`); };
 const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c) ERR.push(m); };
 const n = Date.now() % 100000, P1 = "profe" + n, P2 = "otraprofe" + n, AL1 = "lucia" + n, AL2 = "mario" + n, AL3 = "nora" + n, COD = "clase-" + n;
 (async () => {
@@ -54,7 +54,7 @@ const n = Date.now() % 100000, P1 = "profe" + n, P2 = "otraprofe" + n, AL1 = "lu
   /* deberes del profe para todas sus clases */
   await tab(P, "deberes"); await P.selectOption("#admdc [name=lectura]", "bear-a1"); await P.click("#admdc [type=submit]"); await P.waitForSelector("[data-borrad]");
   ok(/1<\/b> de 2/.test(await P.innerHTML("#admc")), "deber del profe: 1 de 2 alumnos lo han hecho");
-  await P.click(`[data-tab=usuarios]`); await P.click(`[data-usuario="${AL2}"]`); await P.waitForSelector(".ctares"); ok(!(await P.$("#admub")), "detalle para el profe sin botón de borrar");
+  await P.click(`.ctatabs [data-tab=usuarios]`); await P.click(`[data-usuario="${AL2}"]`); await P.waitForSelector(".ctares"); ok(!(await P.$("#admub")), "detalle para el profe sin botón de borrar");
   await P.screenshot({ path: "/tmp/profe-detalle.png" });
   await B.reload(); await listo(B); await B.waitForSelector("#deberes"); ok(true, "alumno de la clase ve los deberes de su profe");
   await C3.reload(); await listo(C3); await C3.waitForTimeout(1500); ok(!(await C3.$("#deberes")), "alumno de otra profe no los ve");

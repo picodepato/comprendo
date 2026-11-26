@@ -230,6 +230,9 @@ function responder(bien) {
   P.ultima = bien; P.fase = "fb"; P.ganado = 0;
   if (bien) { P.ok++; P.ganado = Math.max(1, P.d + 1 - (P.usadas || 0)); P.xp += P.ganado; }
   else P.mal.push(fallo(q()));
+  /* por tipo de ejercicio, los últimos 10: «1» bien, «p» bien con pistas, «0» mal (el profe ve qué le cuesta ahora) */
+  { const Q = q(), k = `${P.T.id}.${Q.ap || P.n}.${Q.g ?? 0}`, g = st().S.g, mh = g.mh ||= {}; mh[k] = ((mh[k] || "") + (bien ? (P.usadas ? "p" : "1") : "0")).slice(-10); }
+  P.pistasTot = (P.pistasTot || 0) + (P.usadas || 0);
   xp(bien ? P.ganado : 0, bien);
   pintar();
 }
@@ -240,7 +243,7 @@ function terminar() {
   /* por dificultad, para los deberes: veces, mejores estrellas y el último intento (aciertos y lo que falló, lo ve el profe) */
   x.h ||= [null, null, null];
   const h = x.h[P.d - 1] ||= {n: 0, best: 0};
-  Object.assign(h, {n: h.n + 1, best: Math.max(h.best, e), ok: P.ok, tot: P.serie.length, last: Date.now(), mal: P.mal.slice(0, 12)});
+  Object.assign(h, {n: h.n + 1, best: Math.max(h.best, e), ok: P.ok, tot: P.serie.length, last: Date.now(), mal: P.mal.slice(0, 12), pi: P.pistasTot || 0});
   try { L().save?.(); } catch (er) {}
   pintar();
 }

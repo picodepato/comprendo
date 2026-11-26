@@ -2,7 +2,7 @@
    Necesita /api (qa/servidor-prueba.mjs). Uso: NODE_PATH=/opt/node22/lib/node_modules node prueba-admin2.cjs http://localhost:8790/index.html [clave-admin] */
 const { chromium } = require("playwright");
 const URL = process.argv[2], CLAVE = process.argv[3] || "admin";
-const tab = async (p, k) => { await p.click(`[data-tab=${k}]`); await p.waitForSelector(`[data-tab=${k}][aria-selected=true]`); };
+const tab = async (p, k) => { await p.click(`.ctatabs [data-tab=${k}]`); await p.waitForSelector(`.ctatabs [data-tab=${k}][aria-selected=true]`); };
 const ERR = [], ok = (c, m) => { console.log((c ? "OK  " : "MAL ") + m); if (!c) ERR.push(m); };
 const sufijo = Date.now() % 100000, A1 = "ana" + sufijo, B1 = "beto" + sufijo, CLASE = "3A-" + sufijo;
 (async () => {

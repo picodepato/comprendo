@@ -360,5 +360,5 @@ VISTAS.votos = () => {
 };
 ACCIONES.votos = () => { $$("[data-quitat]").forEach(b => b.onclick = async () => { if (await hacer({accion: "tema_quitar", id: b.dataset.quitat}, b)) abrir("votos"); }); };
 
-window.LYAPanelAdmin = {abrir, t};
+window.LYAPanelAdmin = {abrir, t, catalogo, usuario: async u => { if (!D) await cargar(); usuario(u); }};  /* catalogo y usuario: para la portada del profe */
 })();

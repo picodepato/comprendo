@@ -346,11 +346,20 @@ function gen(ap, d, r, o = {}) {
     if (!q) continue;
     if (o.texto && (q.tipo === "recta" || q.tipo === "orden")) continue;
     if (o.sinPasos && q.tipo === "pasos") continue;
-    q.ap = ap; q.d = d;
+    q.ap = ap; q.d = d; q.g = i;  /* g: qué tipo de ejercicio (HAB) */
     return q;
   }
-  return AP[ap][0](r, d);
+  const q0 = AP[ap][0](r, d); q0.ap = ap; q0.d = d; q0.g = 0; return q0;
 }
+/* el nombre de cada tipo de ejercicio (AP[ap][g]): lo que el profe ve en «le cuesta» */
+const HAB = {1: ["Situaciones con negativos", "Positivo, negativo o cero", "Leer la recta", "Moverse por la recta", "Valor absoluto y opuesto", "Huecos con valor absoluto"],
+  2: ["Comparar (<, >, =)", "Ordenar enteros", "El mayor y el menor", "Enteros entre dos números"],
+  3: ["Sumar dos enteros", "Restar dos enteros", "Pasar la resta a suma", "Número que falta (suma y resta)"],
+  4: ["Forma abreviada", "Sumas y restas seguidas", "Quitar paréntesis y calcular", "Paso a paso con paréntesis", "Número que falta"],
+  5: ["Regla de los signos", "Multiplicar", "Dividir", "Varias · y : seguidas", "Número que falta (· y :)"],
+  6: ["Calcular potencias", "Signo de una potencia", "Escribir como potencia", "Comparar potencias", "−a² y exponente que falta"],
+  7: ["Raíz exacta (±)", "Raíz entera y resto", "El radicando", "Entre qué enteros está", "Cuadrados perfectos"],
+  8: ["Combinadas paso a paso", "Qué operación va primero", "Combinadas de cabeza"]};
 const enunciado = q => q.expr ? `${q.enun}: ${q.expr}` : q.enun;
 /* números parecidos al bueno para las opciones malas */
 function malos(q, r, n = 3) {
@@ -415,5 +424,5 @@ function pistas(q) {
   return out;
 }
 
-G.LYAMatesBanco = {pistas, pistaPaso, M, semilla, Rn, s, sg, p, sup, leer, absT, N, POT, RAIZ, GR, txt, texto, resolver, valorDe, combinada, clon, gen, test, enunciado, malos, serie, leerSpec, hacerSpec, TEMAS, NOMBRES, AP};
+G.LYAMatesBanco = {HAB, pistas, pistaPaso, M, semilla, Rn, s, sg, p, sup, leer, absT, N, POT, RAIZ, GR, txt, texto, resolver, valorDe, combinada, clon, gen, test, enunciado, malos, serie, leerSpec, hacerSpec, TEMAS, NOMBRES, AP};
 })();

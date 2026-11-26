@@ -44,10 +44,10 @@ async function practica(b) {
 async function pistas(b) {
   const p = await b.newPage({viewport: {width: 420, height: 900}}); const errs = []; p.on("pageerror", e => errs.push(e.message));
   let paso = false;
-  for (let k = 0; k < 6 && !paso; k++) {
+  for (let k = 0; k < 12 && !paso; k++) {
     await p.goto(`${URL}/#mates-t2-8-d3`); await espera(300);
     paso = await p.evaluate(() => { const P = LYAMates._P(); return P.serie[P.i].tipo === "pasos"; });
-    if (!paso) await p.evaluate(() => { location.hash = "mates-t2-8"; });
+    if (!paso) { await p.evaluate(() => { location.hash = "mates-t2-8"; }); await espera(200); if (await p.locator('[data-mt="dejar"]').count()) await p.click('[data-mt="dejar"]'); }
   }
   ok(paso, "una combinada difícil para probar las pistas");
   const n0 = await p.locator(".mt-pista").count();
