@@ -23,7 +23,9 @@ const JUEGO = {"lecturas": "📖 Lecturas", mates: "➗ Mates · práctica", "ma
   prueba: "🔎 La prueba (en grupo)", apuesta: "🎲 Apuesta (en grupo)", tabu: "🤐 Tabú (en grupo)", piloto: "🧭 Piloto (en grupo)"};
 const nomJuego = k => { if (JUEGO[k]) return JUEGO[k]; const m = /^m-(\w+)/.exec(k), J = window.LYAMatesGrupo?.J; if (m && J && J[m[1]]) return `${J[m[1]].ic} ${J[m[1]].n}`; if (/^quiz-/.test(k)) return "🧠 Repasar palabras"; return "🎮 " + k.replace(/[-_]/g, " ").replace(/^./, c => c.toUpperCase()); };
 /* una habilidad de mates: "t2.3.1" → apartado 3, tipo 1 */
-const nomHab = k => { const [, ap, g] = k.split("."); return {ap: +ap, n: (B()?.HAB?.[ap] || [])[+g] || `Tipo ${g}`, apN: (B()?.NOMBRES || {})[ap] || `Apartado ${ap}`}; };
+/* el banco de cada tema: t2 (1.º ESO) en mates/banco.js, p2 (4.º ESO PDC) en mates/pdc.js */
+const BT = tema => (window.LYAMatesTemas?.banco ? LYAMatesTemas.banco(tema) : null) || B();
+const nomHab = k => { const [tema, ap, g] = k.split("."), b = BT(tema), pdc = tema !== "t2"; return {ap: +ap, tema, n: ((b?.HAB?.[ap] || [])[+g] || `Tipo ${g}`) + (pdc ? " (4.º PDC)" : ""), apN: (b?.NOMBRES || {})[ap] || `Apartado ${ap}`}; };
 const tira = s => [...String(s || "")].map(c => c === "1" ? '<i class="pf-b" title="Bien">✓</i>' : c === "p" ? '<i class="pf-p" title="Bien, con pistas">💡</i>' : '<i class="pf-m" title="Mal">✗</i>').join("");
 const bienDe = s => { s = String(s || ""); return {n: s.length, bien: (s.match(/[1p]/g) || []).length, pistas: (s.match(/p/g) || []).length, mal: (s.match(/0/g) || []).length}; };
 
@@ -44,7 +46,7 @@ const alumnosDe = () => D.usuarios.filter(u => u.rol !== "profe" && (!clase() ||
 const deberesDe = () => D.deberes.filter(d => !clase() || !d.grupo || d.grupo === clase());
 const nomLectura = id => { const dic = /^dictado-/.test(id), x = T[dic ? id.slice(8) : id]; return x ? `${dic ? "✍️ Dictado: " : "📖 "}${x.titulo} (${x.nivel})` : id; };
 const nomDeber = d => d.actividad ? `${{quiz: "🏆", video: "📺", doblaje: "🎬"}[d.tipo] || "🧩"} ${d.titulo || "Actividad"}` : d.cancion ? `${d.doblaje ? "🎬" : "🎵"} ${d.titulo || ""}` : /^mates-/.test(d.lectura) ? nomMates(d.lectura) : nomLectura(d.lectura);
-const nomMates = id => { const m = /^mates-(t\d+)-([1-8]|repaso)-([123])$/.exec(id); if (!m) return id; const a = m[2] === "repaso" ? "Repaso del tema" : `${m[2]}. ${(B()?.NOMBRES || {})[m[2]] || ""}`; return `➗ Mates · ${a} · ${["", "Fácil", "Medio", "Difícil"][m[3]]}`; };
+const nomMates = id => { const m = /^mates-([tp]\d+)-([1-8]|repaso)-([123])$/.exec(id); if (!m) return id; const a = m[2] === "repaso" ? "Repaso del tema" : `${m[2]}. ${(BT(m[1])?.NOMBRES || {})[m[2]] || ""}`; return `➗ Mates${m[1] === "p2" ? " 4.º PDC" : ""} · ${a} · ${["", "Fácil", "Medio", "Difícil"][m[3]]}`; };
 
 /* ---------- piezas ---------- */
 const tarjeta = (ic, n, t, sub = "") => `<div class="pf-card"><span class="pf-ic">${ic}</span><b>${n}</b><span>${t}</span>${sub ? `<small>${sub}</small>` : ""}</div>`;
@@ -142,8 +144,9 @@ async function ficha(app, u) {
   const habs = cuestan([R.mh], 1), flojas = habs.filter(x => x.p < 70).slice(0, 5);
   const xs = Object.entries(R.dias || {}).filter(([d]) => d > diaS(Date.now() - 7 * DIA)).reduce((a, [, x]) => a + x, 0);
   /* mates por apartado: estrellas por dificultad (R.mates: "mates-t2-3-2" → {...}) y % de los últimos intentos */
-  const porAp = {}; for (const [k, v] of Object.entries(R.mates || {})) { const m = /^mates-(t\d+)-([1-8]|repaso)-([123])$/.exec(k); if (m) (porAp[m[2]] ||= {})[m[3]] = v; }
-  for (const x of habs) (porAp[x.ap] ||= {});
+  const porAp = {}; for (const [k, v] of Object.entries(R.mates || {})) { const m = /^mates-([tp]\d+)-([1-8]|repaso)-([123])$/.exec(k); if (m) (porAp[`${m[1]}-${m[2]}`] ||= {})[m[3]] = v; }
+  for (const x of habs) (porAp[`${x.tema}-${x.ap}`] ||= {});
+  const apNom = k => { const [tema, ap] = k.split("-"), pdc = tema !== "t2" ? "4.º PDC · " : ""; return ap === "repaso" ? `🔁 ${pdc}Repaso` : `${pdc}${ap}. ${(BT(tema)?.NOMBRES || {})[ap] || ""}`; };
   const L = lecturas.filter(l => l.terminada).map(l => ({...l, m: T[l.id] || {titulo: l.id, nivel: ""}})).sort((a, b) => (b.cuando || 0) - (a.cuando || 0));
   const pal = palabras.filter(p => p.fallo);
   app.innerHTML = `<section class="wrap pf">
@@ -161,8 +164,8 @@ async function ficha(app, u) {
       <section class="pf-box"><h2>📈 Su actividad</h2>${barrasDias(R.dias || {}, "XP en los últimos 14 días")}</section>
       <section class="pf-box"><h2>🎮 A qué juega</h2>${barrasJuegos(R.act || {}, false)}</section>
       <section class="pf-box"><h2>📚 Deberes</h2>${Ds.length ? `<ul class="pf-deb">${Ds.slice(0, 10).map(({d, a}) => `<li class="${a.hecho ? "ok" : d.limite < h ? "tarde" : ""}"><b>${a.hecho ? "✅" : d.limite < h ? "⏰" : "⬜"} ${esc(nomDeber(d))}</b><small>${a.hecho ? `${"★".repeat(a.estrellas)}${"☆".repeat(3 - a.estrellas)}${a.tot ? ` · ${a.ok}/${a.tot}` : ""}` : d.limite < h ? "No lo hizo a tiempo" : "Por hacer"} · hasta el ${esc(d.limite.split("-").reverse().join("/"))}</small>${a.mal && a.mal.length ? `<small class="pf-mal">Falló: ${a.mal.slice(0, 4).map(esc).join(" · ")}</small>` : ""}</li>`).join("")}</ul>` : `<p class="pf-vacio">No tiene deberes.</p>`}</section>
-      <section class="pf-box"><h2>➗ Mates</h2>${Object.keys(porAp).length ? `<ul class="pf-mates">${Object.keys(porAp).sort().map(ap => { const e = porAp[ap], hs = habs.filter(x => String(x.ap) === ap);
-          return `<li><b>${ap === "repaso" ? "🔁 Repaso" : `${ap}. ${esc((B()?.NOMBRES || {})[ap] || "")}`}</b><small>${[1, 2, 3].map(d => e[d] ? `${["", "Fácil", "Medio", "Difícil"][d]} ${"★".repeat(e[d].best)}${"☆".repeat(3 - e[d].best)} ${e[d].ok}/${e[d].tot}${e[d].pi ? ` · ${e[d].pi} 💡` : ""}` : "").filter(Boolean).join(" · ") || "Practicado en grupo o en otros apartados"}</small>
+      <section class="pf-box"><h2>➗ Mates</h2>${Object.keys(porAp).length ? `<ul class="pf-mates">${Object.keys(porAp).sort().map(ap => { const e = porAp[ap], hs = habs.filter(x => `${x.tema}-${x.ap}` === ap);
+          return `<li><b>${esc(apNom(ap))}</b><small>${[1, 2, 3].map(d => e[d] ? `${["", "Fácil", "Medio", "Difícil"][d]} ${"★".repeat(e[d].best)}${"☆".repeat(3 - e[d].best)} ${e[d].ok}/${e[d].tot}${e[d].pi ? ` · ${e[d].pi} 💡` : ""}` : "").filter(Boolean).join(" · ") || "Practicado en grupo o en otros apartados"}</small>
             ${hs.map(x => `<div class="pf-hab"><span>${esc(x.n)}</span><span class="pf-tira">${tira((R.mh || {})[x.k])}</span></div>`).join("")}</li>`; }).join("")}</ul><p class="pf-ley"><i class="pf-b">✓</i> bien · <i class="pf-p">💡</i> bien con pistas · <i class="pf-m">✗</i> mal (los 10 últimos de cada tipo; los antiguos se borran solos)</p>` : `<p class="pf-vacio">Todavía no ha practicado mates.</p>`}</section>
       <section class="pf-box"><h2>📖 Lecturas</h2>${L.length ? `<ul class="pf-lect">${L.slice(0, 12).map(l => { const nf = (l.fq || []).length + (l.fg || []).length;
           return `<li><b>${esc(l.m.titulo)} <small>${esc(l.m.nivel || "")}</small></b><small>${"★".repeat(l.estrellas)}${"☆".repeat(3 - l.estrellas)} · ${l.veces} ${l.veces === 1 ? "vez" : "veces"}${l.pct !== null ? ` · última: ${l.pct} %` : ""}${l.fq ? ` · ${nf ? `${nf} ${nf === 1 ? "pregunta fallada" : "preguntas falladas"}` : "sin fallos"}${l.fv ? ` · ${l.fv} de vocabulario` : ""}` : ""}</small>

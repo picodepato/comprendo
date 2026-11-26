@@ -1,7 +1,7 @@
 /* COMPRENDO · Matemáticas en grupo: juegos de clase con sala y código de 6 cifras (como los retos de las lecturas).
    El servidor es el mismo de los retos (api/_retos.js, en api/propuestas?retos=1): guarda la sala, quién juega y qué ha hecho cada uno.
    El contenido sale de mates/banco.js con la semilla de la sala: es igual en todos los móviles y no hay que preparar nada.
-   La sala guarda en «lectura» la configuración: mates-t2-<apartados>-<dificultad>. En «dur»: rondas (juegos por rondas) o minutos (juegos libres).
+   La sala guarda en «lectura» la configuración: mates-<tema>-<apartados>-<dificultad> (tema t2 o p2). En «dur»: rondas (juegos por rondas) o minutos (juegos libres).
    Juegos:
      🧍 recta    La recta humana: cada uno del equipo tiene cartas (números u operaciones) y entre todos las colocan en orden en la recta.
      🔗 cadena   Cadena de operaciones: una operación combinada larga; cada paso lo hace uno del equipo, por turnos. Si fallas, la cadena se rompe.
@@ -10,10 +10,18 @@
      🔐 escape   Escape room de mates: 4 candados cuyo código es el resultado de una operación; cada móvil tiene solo una parte de los datos.
      🎲 apuesta  Atrapa los puntos: ¿verdadero o falso? Apuesta y, si escribes el resultado bueno, ganas el doble.
      🃏 cartas   Cartas a la mesa: operaciones con hueco; las soluciones están repartidas como cartas entre los móviles del equipo (y 2 trampas).
+   4.º ESO PDC (tema p2, proporcionalidad y porcentajes; el contenido sale de mates/pdc.js):
+     🃏 cartas   Parejas: «Rebajar un 20 % es multiplicar por ▢», «25 % de 80 = ▢»… y las soluciones como cartas.
+     🔐 escape   Escape room «La tienda»: 4 problemas (rebajas, IVA, repartos, regla de tres) con los datos repartidos por letras.
+     🏷️ oferta   ¿Cuál es la mejor oferta? Tres tiendas, tres ofertas: elige la más barata y, si quieres, demuestra cuánto se paga.
+     🧩 monta    Monta el problema (mates/monta.js): datos a su sitio, tipo, operación y respuesta. Gana quien lo monta antes y con menos fallos.
    Rutas: #mates-grupo · #mates-juego-<juego> (explicación, entrar con código y crear sala) · #mates-sala-<código> (alumno) · #mates-pizarra-<código> (pizarra). */
 (() => {
 const API = "api/propuestas?retos=1";
 const B = () => window.LYAMatesBanco;
+/* el banco del tema de la sala (o del que se está creando): banco.js (t2) o pdc.js (p2) */
+const BT = () => { const t = sala() ? CFG().tema : E.crear?.tema; return (t && window.LYAMatesTemas?.banco ? LYAMatesTemas.banco(t) : null) || B(); };
+const esP2 = () => (sala() ? CFG().tema : E.crear?.tema) === "p2";
 const L = () => window.LYA;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
 const J = {
@@ -30,9 +38,20 @@ const J = {
   apuesta: {ic: "🎲", n: "Atrapa los puntos", c: "#f5b700", tipo: "rondas", eq: false, p: "¿Verdadero o falso? Apuesta y demuéstralo.", def: {equipos: 0, dur: 8, rd: 40},
     como: ["Empiezas con 1000 puntos.", "Sale una operación con un resultado: ¿es verdad o mentira?", "Elige verdadero o falso y cuánto apuestas. Si aciertas, ganas lo apostado; si no, lo pierdes.", "Si además escribes el resultado bueno, ganas el doble."]},
   cartas: {ic: "🃏", n: "Cartas a la mesa", c: "#53c41a", tipo: "libre", eq: true, p: "Operaciones con hueco y las soluciones repartidas como cartas.", def: {equipos: 4, dur: 8, rd: 60},
-    como: ["Hay 8 operaciones con un hueco (▢).", "Las soluciones están repartidas como cartas entre los móviles del equipo, con 2 cartas trampa.", "Toca una carta tuya y luego su hueco. Si fallas, 5 segundos sin jugar.", "Tenéis un comodín: dice quién tiene la carta de un hueco."]}
+    como: ["Hay 8 operaciones con un hueco (▢).", "Las soluciones están repartidas como cartas entre los móviles del equipo, con 2 cartas trampa.", "Toca una carta tuya y luego su hueco. Si fallas, 5 segundos sin jugar.", "Tenéis un comodín: dice quién tiene la carta de un hueco."],
+    comoP2: ["Hay 8 frases con un hueco (▢): «Rebajar un 20 % es multiplicar por ▢», «25 % de 80 = ▢»…", "Las soluciones están repartidas como cartas entre los móviles del equipo, con 2 cartas trampa.", "Toca una carta tuya y luego su hueco. Si fallas, 5 segundos sin jugar.", "Tenéis un comodín: dice quién tiene la carta de un hueco."]},
+  oferta: {ic: "🏷️", n: "¿Cuál es la mejor oferta?", c: "#ff9f1c", tipo: "rondas", eq: false, p: "Tres tiendas, tres ofertas: ¿dónde sale más barato?", def: {equipos: 0, dur: 6, rd: 60}, temas: ["p2"],
+    como: ["En cada ronda salen tres ofertas del mismo producto: descuentos, rebajas seguidas, IVA, 3 × 2…", "Elige la más barata. Cuanto antes aciertes, más puntos.", "¿Doble premio? Después escribe cuánto se paga con la mejor oferta y ganas 300 puntos más.", "Al cerrar la ronda se ven las cuentas de las tres."]},
+  monta: {ic: "🧩", n: "Monta el problema", c: "#2fbf71", tipo: "rondas", eq: false, p: "Datos a su sitio, tipo, operación y respuesta.", def: {equipos: 0, dur: 5, rd: 120}, temas: ["p2"],
+    como: ["Sale un problema de proporcionalidad, porcentajes o repartos.", "Arrastra los datos a su sitio, elige el tipo (directa, inversa, porcentaje o reparto), la operación y escribe la respuesta.", "Si algo no va ahí, te explica por qué, pero cuenta como fallo.", "Gana quien lo monta antes y con menos fallos."]}
 };
-const ORDEN = ["recta", "cadena", "objetivo", "ascensor", "escape", "apuesta", "cartas"];
+J.recta.temas = J.cadena.temas = J.objetivo.temas = J.ascensor.temas = J.apuesta.temas = ["t2"];
+J.escape.temas = J.cartas.temas = ["t2", "p2"];
+J.escape.comoP2 = ["Escape room «La tienda»: hay 4 candados y cada uno se abre con la respuesta de un problema (rebajas, IVA, repartos…).", "El problema viene con letras (A, B, C) y los valores de las letras están repartidos entre los móviles del equipo.", "Solo hablando podéis juntar todo. Un fallo congela el candado 15 s y suma 30 s.", "El candado final se abre con la suma de los 4 resultados."];
+const comoDe = (g, tema) => tema === "p2" && g.comoP2 ? g.comoP2 : g.como;
+const ORDEN = ["recta", "cadena", "objetivo", "ascensor", "escape", "apuesta", "cartas", "oferta", "monta"];
+let temaPref = null;  /* el tema desde el que se ha entrado (tarjetas de #mates-p2) */
+document.addEventListener("click", e => { const a = e.target.closest?.("[data-mg-tema]"); if (a) temaPref = a.dataset.mgTema; }, true);
 const COLORES = ["#ff7a45", "#7c6cff", "#2fbf71", "#ff4f8b", "#18b6d6", "#f5b700", "#a259ff", "#53c41a"];
 const EQN = ["🦊 Zorros", "🐙 Pulpos", "🦉 Búhos", "🐺 Lobos", "🐢 Tortugas", "🦄 Unicornios", "🐝 Abejas", "🦖 Dinos"];
 const SALDO = 1000, APUESTAS = [100, 250, 500, 1000];
@@ -48,7 +67,7 @@ const mmss = ms => { ms = Math.max(0, ms); const s = Math.ceil(ms / 1000); retur
 const jg = () => J[sala()?.juego?.slice(2)] || null;
 const jid = () => sala()?.juego?.slice(2);
 const esProfe = () => { const r = window.LYACuentas?.rol; return r === "profe" || r === "admin"; };
-const S = () => B().s, SG = () => B().sg;
+const S = () => BT().s, SG = () => BT().sg;
 
 async function api(metodo, datos, q = "") {
   let r;
@@ -66,7 +85,7 @@ function recibir(s) {
 const ERR = {red: "No hay conexión. Lo intentamos otra vez…", serv: "El servidor no responde.", no_existe: "No hay ninguna sala abierta con ese código.", empezada: "La partida ya ha empezado y es por equipos: ya no se puede entrar.", llena: "La sala está llena.", nombre: "Escribe tu nombre.", equipo: "Elige un equipo.", fase: "Ahora no se puede.", muchas: "Demasiados intentos. Espera un poco.", no_anfitrion: "Solo quien ha creado la sala puede hacer eso.", juego: "Ese juego no existe.", lectura: "Configuración no válida."};
 
 /* ---------- configuración y contenido (igual en todos los móviles) ---------- */
-const CFG = () => { const m = String(sala()?.lectura || "").match(/^mates-(t\d+)-([1-8]+)-([123])$/); return m ? {tema: m[1], aps: m[2].split("").map(Number), d: +m[3]} : {tema: "t2", aps: [1, 2, 3, 4, 5, 6, 7, 8], d: 1}; };
+const CFG = () => { const m = String(sala()?.lectura || "").match(/^mates-([tp]\d+)-([1-8]+)-([123])$/); return m ? {tema: m[1], aps: m[2].split("").map(Number), d: +m[3]} : {tema: "t2", aps: [1, 2, 3, 4, 5, 6, 7, 8], d: 1}; };
 const rng = salt => B().Rn(((sala()?.semilla || 1) + salt * 7919) % 2147483647);
 const memo = (k, f) => { const kk = (sala()?.codigo || "") + ":" + (sala()?.semilla || "") + ":" + k; return E.cache[kk] ??= f(); };
 
@@ -171,6 +190,7 @@ function rondaApuesta(rr) {
 function juegoCartas() {
   return memo("cartas", () => {
     const {aps, d} = CFG(), r = rng(600), huecos = [], usados = new Set();
+    if (esP2()) { const X = BT().cartas(r, d); return {huecos: X.huecos, cartas: r.mez([...X.huecos.map((h, i) => ({v: h.sol, h: i})), ...X.trampas.map(v => ({v, h: -1}))])}; }
     for (let i = 0; i < 8; i++) { const P = pregNum(r, aps, d, usados); usados.add(P.sol); huecos.push(P); }
     const trampas = []; for (const h of r.mez(huecos)) { for (const m of B().malos({sol: h.sol, mal: h.q?.mal}, r, 3)) if (!usados.has(m) && trampas.length < 2 && !trampas.includes(m)) { trampas.push(m); break; } if (trampas.length >= 2) break; }
     const cartas = r.mez([...huecos.map((h, i) => ({v: h.sol, h: i})), ...trampas.map(v => ({v, h: -1}))]);
@@ -198,10 +218,15 @@ function letrear(t) {
 function juegoEscape() {
   return memo("escape", () => {
     const {aps, d} = CFG(), r = rng(700), cands = [];
+    if (esP2()) return BT().escape(r, d);
     for (let i = 0; i < 4; i++) { let t, v; for (let k = 0; k < 50; k++) { t = arbolPara(r, aps, d); v = B().valorDe(t); if (Number.isInteger(v) && Math.abs(v) <= 200) break; } const {plantilla, datos} = letrear(B().clon(t)); cands.push({plantilla, datos, v, expr: B().texto(t)}); }
     return {cands, final: cands.reduce((a, c) => a + c.v, 0)};
   });
 }
+
+/* 🏷️ oferta y 🧩 monta (4.º ESO PDC) */
+const rondaOferta = rr => memo("of" + rr, () => BT().oferta(rng(800 + rr), CFG().d));
+const rondaMonta = rr => memo("mo" + rr, () => BT().monta(rng(900 + rr), CFG().d));
 
 /* ---------- jugadores, equipos y unidades ---------- */
 const yoId = () => mem().play[sala()?.codigo]?.id;
@@ -216,7 +241,7 @@ const num = (u, k) => +(ev(u, k)?.v || 0);
 const rondas = () => jg()?.tipo === "rondas";
 const finRonda = () => sala().tr + sala().rd * 1000;
 const finLibre = () => sala().t0 + sala().dur * 60000;
-const hecho = (u, rr) => { const j = jid(); if (j === "recta") return !!ev(u, `r${rr}ok`); if (j === "cadena") return pasosHechos(u, rr) >= rondaCadena(rr).R.pasos.length; if (j === "objetivo") { const x = ev(u, `r${rr}`); return !!x && valorObj(x.v, rr) === rondaObjetivo(rr).obj; } if (j === "ascensor") return !!ev(u, `r${rr}`); if (j === "apuesta") return !!ev(u, `r${rr}`) && !!ev(u, `r${rr}d`); return false; };
+const hecho = (u, rr) => { const j = jid(); if (j === "recta") return !!ev(u, `r${rr}ok`); if (j === "oferta") return !!ev(u, `r${rr}`) && !!ev(u, `r${rr}p`); if (j === "monta") return !!ev(u, `r${rr}`); if (j === "cadena") return pasosHechos(u, rr) >= rondaCadena(rr).R.pasos.length; if (j === "objetivo") { const x = ev(u, `r${rr}`); return !!x && valorObj(x.v, rr) === rondaObjetivo(rr).obj; } if (j === "ascensor") return !!ev(u, `r${rr}`); if (j === "apuesta") return !!ev(u, `r${rr}`) && !!ev(u, `r${rr}d`); return false; };
 const todosHechos = rr => { const us = unidades(); return us.length > 0 && us.every(u => hecho(u.u, rr)); };
 const rondaAbierta = () => sala()?.fase === "juego" && rondas() && sala().cerrada !== sala().r && ahora() < finRonda() && !todosHechos(sala().r);
 const libreAcabado = () => { const s = sala(); if (!s) return false; if (s.fase === "fin") return true; if (s.fase !== "juego" || rondas()) return false; if (ahora() >= finLibre()) return true; const us = unidades(); return us.length > 0 && us.every(u => libreHecho(u.u)); };
@@ -231,6 +256,8 @@ function puntosRonda(u, rr) {
   if (j === "cadena") { const n = rondaCadena(rr).R.pasos.length, h = pasosHechos(u, rr), errs = num(u, `r${rr}e`), ult = ev(u, `r${rr}p${n - 1}`); return h >= n ? Math.max(200, 1000 + rapidez(ult.ms, tot) - 100 * errs) : Math.round(600 * h / n); }
   if (j === "objetivo") { const x = ev(u, `r${rr}`); if (!x) return 0; const v = valorObj(x.v, rr); if (v === null) return 0; const dd = Math.abs(v - rondaObjetivo(rr).obj); return dd === 0 ? 1000 + rapidez(x.ms, tot) : Math.max(0, 600 - 100 * dd); }
   if (j === "ascensor") { const x = ev(u, `r${rr}`); return x && +x.v === historia().pasos[rr]?.despues ? 500 + rapidez(x.ms, tot) : 0; }
+  if (j === "oferta") { const x = ev(u, `r${rr}`), O = rondaOferta(rr); if (!x || +x.v !== O.mejor) return 0; const p = ev(u, `r${rr}p`), v = p ? BT().leer(p.v) : null; return 500 + rapidez(x.ms, tot) + (v !== null && BT().igual(v, O.ofertas[O.mejor].final) ? 300 : 0); }
+  if (j === "monta") { const x = ev(u, `r${rr}`); return x ? Math.max(200, 1000 + rapidez(x.ms, tot) - 150 * (+x.v || 0)) : 0; }
   return 0;
 }
 function pasosHechos(u, rr) { const n = rondaCadena(rr).R.pasos.length; let h = 0; while (h < n && ev(u, `r${rr}p${h}`)) h++; return h; }
@@ -334,10 +361,14 @@ const aviso = () => E.msg ? `<p class="rt-aviso ${E.msgOk ? "ok" : ""}" role="st
 function avisar(t, ok) { E.msg = t; E.msgOk = !!ok; clearTimeout(avisar.t); avisar.t = setTimeout(() => { E.msg = ""; pintar(true); }, 2600); if (!ok && navigator.vibrate) try { navigator.vibrate(150); } catch (e) {} pintar(true); }
 
 /* tarjetas para otras páginas (Mates, En grupo) */
-function tiles() {
-  return `<div class="mg-tiles">${ORDEN.map(j => `<a class="mg-tile" href="#mates-juego-${j}" style="--c:${J[j].c}"><span class="mg-ic" aria-hidden="true">${J[j].ic}</span><span><b>${esc(J[j].n)}</b><small>${esc(J[j].p)}</small><em>${J[j].eq ? "Por equipos" : "Solos o por equipos"}</em></span></a>`).join("")}
-    <a class="mg-tile" href="#mates-duelo" style="--c:#ff4141"><span class="mg-ic" aria-hidden="true">⚔️</span><span><b>Duelo de mates</b><small>Preguntas a la vez contra tu clase. Acertar rápido da más puntos.</small><em>Con cuenta</em></span></a>
-    <a class="mg-tile" href="#mates-concurso" style="--c:#f5b700"><span class="mg-ic" aria-hidden="true">🏆</span><span><b>Concurso de mates</b><small>Preguntas en la pantalla grande y respuestas en el móvil.</small><em>Se puede editar</em></span></a></div>`;
+/* tema: solo los juegos de ese tema (en #mates-t2 o #mates-p2); sin tema, todos */
+function tiles(tema) {
+  const lista = ORDEN.filter(j => !tema || (J[j].temas || ["t2"]).includes(tema)), dt = tema ? ` data-mg-tema="${tema}"` : "";
+  const nombre = j => tema === "p2" && j === "cartas" ? "Parejas de porcentajes" : tema === "p2" && j === "escape" ? "Escape room «La tienda»" : J[j].n;
+  const desc = j => tema === "p2" && j === "cartas" ? "«Rebajar un 20 % es multiplicar por ▢»… y las soluciones como cartas." : tema === "p2" && j === "escape" ? "Rebajas, IVA y repartos para abrir los candados." : J[j].p;
+  return `<div class="mg-tiles">${lista.map(j => `<a class="mg-tile" href="#mates-juego-${j}" style="--c:${J[j].c}"${dt}><span class="mg-ic" aria-hidden="true">${J[j].ic}</span><span><b>${esc(nombre(j))}</b><small>${esc(desc(j))}</small><em>${J[j].eq ? "Por equipos" : "Solos o por equipos"}${!tema && J[j].temas?.[0] === "p2" ? " · 4.º PDC" : ""}</em></span></a>`).join("")}
+    <a class="mg-tile" href="#mates-duelo" style="--c:#ff4141"${dt}><span class="mg-ic" aria-hidden="true">⚔️</span><span><b>Duelo de mates</b><small>Preguntas a la vez contra tu clase. Acertar rápido da más puntos.</small><em>Con cuenta</em></span></a>
+    <a class="mg-tile" href="#mates-concurso" style="--c:#f5b700"${dt}><span class="mg-ic" aria-hidden="true">🏆</span><span><b>Concurso de mates</b><small>Preguntas en la pantalla grande y respuestas en el móvil.</small><em>Se puede editar</em></span></a></div>`;
 }
 function codigoForm() {
   return `<form class="mt-box" data-mg-form="ir" style="--c:var(--acc)"><h2>🔑 Entrar con código</h2><div class="mg-mini"><input id="mg-cod" inputmode="numeric" maxlength="7" autocomplete="off" placeholder="123456" aria-label="Código de la sala"><button class="btn main">Entrar</button></div></form>`;
@@ -347,22 +378,29 @@ function grupoHTML() {
     <p class="mt-lead">Juegos para la clase con sala y código. Quien crea la sala elige los apartados del tema y la dificultad; los demás entran con el código desde su móvil, sin cuenta.</p>
     ${aviso()}${codigoForm()}<h2 class="mt-h2">Crear una sala</h2>${tiles()}</section>`;
 }
+/* el tema (1.º ESO o 4.º PDC), si el juego tiene los dos */
+function temaSel(c, temas) {
+  const TT = (temas || ["t2", "p2"]).map(id => window.LYAMatesTemas?.tema?.(id)).filter(Boolean);
+  if (TT.length < 2) return "";
+  return `<label for="mg-tema">Tema</label><select id="mg-tema" data-mg-c="tema">${TT.map(T => `<option value="${T.id}" ${c.tema === T.id ? "selected" : ""}>${esc(LYAMatesTemas.cursoDe(T.id).n)} · ${esc(T.titulo)}</option>`).join("")}</select>`;
+}
 function apsHTML(c) {
-  const T = window.LYAMatesTemas?.T2;
-  return `<div class="mg-aps" role="group" aria-label="Apartados">${T.aps.map(a => `<label><input type="checkbox" id="mg-ap${a.n}" data-mg-ap="${a.n}" ${c.aps.includes(a.n) ? "checked" : ""}> ${a.n}. ${esc(a.titulo)}</label>`).join("")}</div>`;
+  const T = window.LYAMatesTemas?.tema?.(c.tema || "t2") || window.LYAMatesTemas?.T2;
+  return `<label>Apartados del tema ${T.n} (${esc(T.titulo.toLowerCase())})</label><div class="mg-aps" role="group" aria-label="Apartados">${T.aps.map(a => `<label><input type="checkbox" id="mg-ap${a.n}" data-mg-ap="${a.n}" ${c.aps.includes(a.n) ? "checked" : ""}> ${a.n}. ${esc(a.titulo)}</label>`).join("")}</div>`;
 }
 function juegoHTML() {
-  const j = juegoRuta, g = J[j], c = E.crear?.j === j ? E.crear : (E.crear = {j, d: 1, ...g.def, aps: [...(g.def.aps || [1, 2, 3, 4, 5, 6, 7, 8])], juega: !esProfe()});
+  const j = juegoRuta, g = J[j], temas = g.temas || ["t2"], t0 = temas.includes(temaPref) ? temaPref : temas[0];
+  const c = E.crear?.j === j ? E.crear : (E.crear = {j, tema: t0, d: 1, ...g.def, aps: [...(t0 === "t2" && g.def.aps || [1, 2, 3, 4, 5, 6, 7, 8])], juega: !esProfe()});
   const minEq = g.eq ? 1 : 0;
   const eqOps = [...(minEq ? [] : [0]), 1, 2, 3, 4, 5, 6, 7, 8].map(n => `<option value="${n}" ${+c.equipos === n ? "selected" : ""}>${n === 0 ? "Cada uno por su cuenta" : n === 1 ? "1 equipo (toda la clase)" : n + " equipos"}</option>`).join("");
   const durOps = rondas2(j) ? [3, 4, 5, 6, 8, 10, 12, 15].map(n => `<option value="${n}" ${+c.dur === n ? "selected" : ""}>${n} rondas</option>`).join("") : [5, 8, 10, 12, 15, 20, 25, 30].map(n => `<option value="${n}" ${+c.dur === n ? "selected" : ""}>${n} minutos</option>`).join("");
   const rdOps = [20, 30, 40, 60, 90, 120, 180].map(n => `<option value="${n}" ${+c.rd === n ? "selected" : ""}>${n < 60 ? n + " s" : n / 60 + " min"}</option>`).join("");
   return `<section class="wrap mt" style="--c:${g.c}"><p class="mt-migas"><a href="#mates-grupo">← Mates en grupo</a></p>
     <h1 class="mt-h1">${g.ic} ${esc(g.n)}</h1><p class="mt-lead">${esc(g.p)}</p>${aviso()}
-    <details class="rt-como" open><summary>Cómo se juega</summary><ol>${g.como.map(x => `<li>${esc(x)}</li>`).join("")}</ol></details>
+    <details class="rt-como" open><summary>Cómo se juega</summary><ol>${comoDe(g, c.tema).map(x => `<li>${esc(x)}</li>`).join("")}</ol></details>
     <div class="rt-dos">${codigoForm()}
       <form class="mt-box" data-mg-form="crear"><h2>✨ Crear sala</h2>
-        <label>Apartados del tema 2 (números enteros)</label>${apsHTML(c)}
+        ${temaSel(c, temas)}${c.tema === "p2" ? `<p class="mt-small">Con preguntas de todo el tema 2 (proporcionalidad y porcentajes).</p>` : apsHTML(c)}
         <label for="mg-d">Dificultad</label><select id="mg-d" data-mg-c="d">${[1, 2, 3].map(d => `<option value="${d}" ${+c.d === d ? "selected" : ""}>${DIF[d]}</option>`).join("")}</select>
         <label for="mg-eq">Equipos</label><select id="mg-eq" data-mg-c="equipos">${eqOps}</select>
         <div class="rt-fila"><div><label for="mg-dur">${rondas2(j) ? "Rondas" : "Duración"}</label><select id="mg-dur" data-mg-c="dur">${durOps}</select></div>
@@ -374,14 +412,14 @@ function juegoHTML() {
 const rondas2 = j => J[j].tipo === "rondas";
 /* ⚔️ duelo y 🏆 concurso de mates: preguntas de opciones generadas con una semilla (se crean en duelo/ y concursos/) */
 function preguntasHTML(tipo) {
-  const c = E.crear?.j === tipo ? E.crear : (E.crear = {j: tipo, aps: [1, 2, 3, 4, 5, 6, 7, 8], d: 1, n: 10, D: 30, juega: !esProfe()});
+  const c = E.crear?.j === tipo ? E.crear : (E.crear = {j: tipo, tema: temaPref === "p2" ? "p2" : "t2", aps: [1, 2, 3, 4, 5, 6, 7, 8], d: 1, n: 10, D: 30, juega: !esProfe()});
   const cuenta = window.LYACuentas?.usuario;
   const duelo = tipo === "duelo";
   return `<section class="wrap mt" style="--c:${duelo ? "#ff4141" : "#f5b700"}"><p class="mt-migas"><a href="#mates-grupo">← Mates en grupo</a></p>
     <h1 class="mt-h1">${duelo ? "⚔️ Duelo de mates" : "🏆 Concurso de mates"}</h1>
     <p class="mt-lead">${duelo ? "Todos contestáis las mismas preguntas a la vez desde el móvil. Acertar rápido da más puntos. Hace falta cuenta." : "Se prepara un concurso con preguntas de mates. Lo puedes revisar y cambiar antes de jugarlo en la pantalla grande o de guardarlo."}</p>${aviso()}
     <form class="mt-box" data-mg-form="${tipo}"><h2>✨ Preguntas</h2>
-      <label>Apartados del tema 2 (números enteros)</label>${apsHTML(c)}
+      ${temaSel(c)}${apsHTML(c)}
       <div class="rt-fila"><div><label for="mg-d">Dificultad</label><select id="mg-d" data-mg-c="d">${[1, 2, 3].map(d => `<option value="${d}" ${+c.d === d ? "selected" : ""}>${DIF[d]}</option>`).join("")}</select></div>
         <div><label for="mg-n">Preguntas</label><select id="mg-n" data-mg-c="n">${[5, 8, 10, 12, 15, 20].map(n => `<option value="${n}" ${+c.n === n ? "selected" : ""}>${n}</option>`).join("")}</select></div></div>
       ${duelo ? `<label for="mg-dd">Tiempo por pregunta</label><select id="mg-dd" data-mg-c="D">${[15, 20, 30, 45, 60].map(n => `<option value="${n}" ${+c.D === n ? "selected" : ""}>${n} s</option>`).join("")}</select>
@@ -394,7 +432,7 @@ function preguntasHTML(tipo) {
 /* ---------- la sala (móvil del alumno) ---------- */
 function cabeza(extra = "") {
   const s = sala(), g = jg(), cfg = CFG();
-  return `<p class="mt-migas"><a href="#mates-juego-${jid()}">← ${esc(g.n)}</a> · Código <b>${esc(s.codigo)}</b> · ${esc(cfg.aps.length === 8 ? "Todo el tema" : "Apartados " + cfg.aps.join(", "))} · ${DIF[cfg.d]}</p>
+  return `<p class="mt-migas"><a href="#mates-juego-${jid()}">← ${esc(g.n)}</a> · Código <b>${esc(s.codigo)}</b> · ${esc(cfg.tema === "p2" ? "4.º PDC · Proporcionalidad y porcentajes" : cfg.aps.length === 8 ? "Todo el tema" : "Apartados " + cfg.aps.join(", "))} · ${DIF[cfg.d]}</p>
     <div class="rt-top" style="--c:${g.c}"><span>${g.ic} <b>${esc(g.n)}</b>${extra}</span>${s.fase === "juego" ? `<span class="rt-reloj">⏱ <b data-mg-reloj>--:--</b>${rondas() ? ` · Ronda ${s.r + 1}/${s.dur}` : ""}</span>` : ""}</div>`;
 }
 function mandoHTML() {
@@ -410,7 +448,7 @@ function salaHTML() {
   if (!y || E.ui.cambiar) body = unirmeHTML();
   else if (s.fase === "espera") body = `<div class="mt-box" style="--c:${g.c}"><h2>⏳ Esperando a que empiece…</h2><p>Estás dentro como <b>${esc(y.n)}</b>${porEq() ? ` en <b>${esc(eqNombre(y.e))}</b>` : ""}.</p>
     ${porEq() ? equiposLista() : `<p class="mt-small">${E.st.jugadores.map(j => esc(j.n)).join(" · ")}</p>`}
-    <details class="rt-como"><summary>Cómo se juega</summary><ol>${g.como.map(x => `<li>${esc(x)}</li>`).join("")}</ol></details>
+    <details class="rt-como"><summary>Cómo se juega</summary><ol>${comoDe(g, CFG().tema).map(x => `<li>${esc(x)}</li>`).join("")}</ol></details>
     ${s.fase === "espera" ? `<p><button class="btn" data-mg="cambiar">Cambiar nombre o equipo</button></p>` : ""}</div>`;
   else if (s.fase === "fin" || libreAcabado()) body = finHTML();
   else body = jugarHTML();
@@ -449,9 +487,9 @@ function solucionesHTML() {
 function jugarHTML() {
   const j = jid();
   if (rondas() && !rondaAbierta()) return finRondaHTML(true);
-  return {recta: jRecta, cadena: jCadena, objetivo: jObjetivo, ascensor: jAscensor, apuesta: jApuesta, cartas: jCartas, escape: jEscape}[j]();
+  return {recta: jRecta, cadena: jCadena, objetivo: jObjetivo, ascensor: jAscensor, apuesta: jApuesta, cartas: jCartas, escape: jEscape, oferta: jOferta, monta: jMonta}[j]();
 }
-const teclado = (id, txt = "Enviar") => `<div class="mt-tec" role="group" aria-label="Teclado">${[7, 8, 9, 4, 5, 6, 1, 2, 3].map(n => `<button type="button" class="mt-k" data-mg="k" data-v="${n}" data-t="${id}">${n}</button>`).join("")}<button type="button" class="mt-k mt-kpm" data-mg="k" data-v="pm" data-t="${id}">±</button><button type="button" class="mt-k" data-mg="k" data-v="0" data-t="${id}">0</button><button type="button" class="mt-k" data-mg="k" data-v="bs" data-t="${id}">⌫</button><button type="button" class="mt-k mt-kok" data-mg="k" data-v="ok" data-t="${id}">${txt}</button></div>`;
+const teclado = (id, txt = "Enviar") => `<div class="mt-tec" role="group" aria-label="Teclado">${[7, 8, 9, 4, 5, 6, 1, 2, 3].map(n => `<button type="button" class="mt-k" data-mg="k" data-v="${n}" data-t="${id}">${n}</button>`).join("")}${esP2() ? `<button type="button" class="mt-k mt-kpm" data-mg="k" data-v="dec" data-t="${id}">,</button>` : `<button type="button" class="mt-k mt-kpm" data-mg="k" data-v="pm" data-t="${id}">±</button>`}<button type="button" class="mt-k" data-mg="k" data-v="0" data-t="${id}">0</button><button type="button" class="mt-k" data-mg="k" data-v="bs" data-t="${id}">⌫</button><button type="button" class="mt-k mt-kok" data-mg="k" data-v="ok" data-t="${id}">${txt}</button></div>`;
 const pant = id => `<p class="mt-pant">${E.ui["in_" + id] ? esc(String(E.ui["in_" + id]).replace(/^-/, "−")) : '<span class="mt-ph">?</span>'}</p>`;
 const bloqHTML = () => E.ui.bloq && E.ui.bloq > ahora() ? `<p class="mg-bloq" data-mg-bloq="${E.ui.bloq}"></p>` : "";
 
@@ -464,6 +502,8 @@ function finRondaHTML(movil) {
   if (j === "objetivo") { const O = rondaObjetivo(rr); sol = `<p>Objetivo <b>${esc(S()(O.obj))}</b>. Una forma: <b>${esc(tokTxt(tokens(O.sol), O.nums))} = ${esc(S()(O.obj))}</b></p>${unidades().map(u => { const x = ev(u.u, `r${rr}`); if (!x) return ""; const v = valorObj(x.v, rr); return `<p class="mt-small"><span style="color:${u.c}">●</span> ${esc(u.n)}: ${esc(tokTxt(tokens(x.v), O.nums))} = ${v === null ? "?" : esc(S()(v))}</p>`; }).join("")}`; }
   if (j === "ascensor") { const P0 = historia().pasos[rr], H = historia().H; sol = `<p>${esc(P0.txt)}</p><p class="mg-grande">${esc(H.fmt(P0.antes))} → ${esc(H.fmt(P0.despues))}</p><p class="mt-small">${esc(S()(P0.antes))} ${P0.cambio < 0 ? "−" : "+"} ${Math.abs(P0.cambio)} = ${esc(S()(P0.despues))}</p>`; }
   if (j === "apuesta") { const R0 = rondaApuesta(rr); sol = `<p class="mg-grande" style="font-size:clamp(22px,4vw,40px)">${esc(R0.frase)}</p><p>Es <b>${R0.verdad ? "VERDADERO ✅" : "FALSO ❌"}</b>. El resultado bueno es <b>${esc(S()(R0.sol))}</b>.</p>`; }
+  if (j === "oferta") { const O = rondaOferta(rr); sol = `<p>${esc(O.titulo)}</p><ol class="mg-ofs" type="A">${O.ofertas.map((o, i) => `<li class="${i === O.mejor ? "mejor" : ""}"><b>${esc(o.t)}</b><span>${esc(o.calc)}</span>${i === O.mejor ? "<em>🏆 La más barata</em>" : ""}</li>`).join("")}</ol>`; }
+  if (j === "monta") { const X = rondaMonta(rr); sol = `<p class="mo-txt">${esc(X.texto)}</p><p>Tipo: <b>${esc(X.tipo)}</b> · Operación: <b>${esc(X.ops.find(o => o.ok).t)}</b></p><ol>${X.res.map(x => `<li>${esc(x)}</li>`).join("")}</ol><p>Respuesta: <b>${esc(BT().conUd(X.sol, X.ud))}</b></p>`; }
   const mio = movil && mi ? (j === "apuesta" ? (() => { const a = apuestaRes(mi, rr); return a ? `<p class="mt-fb ${a.bien ? "ok" : "no"}">${a.bien ? "🎉" : "😬"} ${a.gana > 0 ? "+" : ""}${a.gana} puntos${a.prueba ? " (¡demostrado, el doble!)" : ""}</p>` : `<p class="mt-fb no">No apostaste en esta ronda.</p>`; })() : `<p class="mt-fb ${puntosRonda(mi, rr) ? "ok" : "no"}">${puntosRonda(mi, rr) ? "🎉 +" + puntosRonda(mi, rr) + " puntos" : "😬 0 puntos esta ronda"}</p>`) : "";
   return `<div class="mt-box"><h2>Ronda ${rr + 1}: solución</h2>${sol}${mio}<h3>Clasificación</h3>${tablaHTML(marcador())}${movil && !mem().host[sala().codigo] ? `<p class="mt-small">⏳ Esperando a la siguiente ronda…</p>` : ""}</div>`;
 }
@@ -554,7 +594,7 @@ function jCartas() {
 function frz(k) { const u = miU(), x = ev(u, "x" + k); return x ? x.ms + sala().t0 + 15000 : 0; }
 function jEscape() {
   const X = juegoEscape(), u = miU(), y = yo(), ms = miembros(y.e), yoK = ms.findIndex(j => j.id === y.id), nM = ms.length;
-  const pistas = (c, k) => { const items = [{t: `Operación: ${c.plantilla}`}, ...c.datos.map(d => ({t: `${d.L} = ${S()(d.v)}`}))]; return items.filter((_, i) => (i + k) % nM === yoK); };
+  const pistas = (c, k) => { const items = [{t: `${esP2() ? "Problema" : "Operación"}: ${c.plantilla}`}, ...c.datos.map(d => ({t: `${d.L} = ${S()(d.v)}`}))]; return items.filter((_, i) => (i + k) % nM === yoK); };
   const abiertos = [0, 1, 2, 3].filter(k => ev(u, "c" + k)).length;
   if (ev(u, "fin")) return `<div class="mt-box"><h2>🎉 ¡Habéis escapado!</h2><p>Tiempo: <b>${mmss(ev(u, "fin").ms + [0, 1, 2, 3, 4].reduce((a, k) => a + num(u, "x" + k), 0) * 30000)}</b> (con las penalizaciones).</p></div>`;
   return `<div class="mt-box"><p class="rt-habla">🗣️ Cada uno tiene solo una parte de los datos. ¡Hablad para juntarlo todo!</p><p class="mt-small">Candados abiertos: ${abiertos} de 4 · Penalizaciones: ${[0, 1, 2, 3, 4].reduce((a, k) => a + num(u, "x" + k), 0)} × 30 s</p>
@@ -564,6 +604,22 @@ function jEscape() {
     <div class="mg-cand" style="grid-column:1/-1"><h3>🗝️ Candado final</h3><p class="mt-small">Se abre con la suma de los 4 códigos.</p>${abiertos < 4 ? `<p class="mt-small">Abrid antes los 4 candados.</p>` : frz(4) > ahora() ? `<p class="mg-bloq" data-mg-bloq="${frz(4)}"></p>` : `<form class="mg-mini" data-mg-form="candado" data-k="4"><input id="mg-c4" inputmode="text" autocomplete="off" placeholder="Suma" aria-label="Código final"><button class="btn main">Abrir</button></form>`}</div></div></div>`;
 }
 
+/* 🏷️ ¿cuál es la mejor oferta? */
+function jOferta() {
+  const rr = sala().r, O = rondaOferta(rr), u = miU(), x = ev(u, `r${rr}`), p = ev(u, `r${rr}p`);
+  return `<div class="mt-box"><p class="mg-grande" style="font-size:clamp(20px,5vw,30px)">${esc(O.titulo)}</p>
+    <div class="mg-ofs2">${O.ofertas.map((o, i) => `<button class="mg-of ${x && +x.v === i ? "sel" : ""}" data-mg="of" data-i="${i}" ${x ? "disabled" : ""}><span>${"ABC"[i]}</span><b>${esc(o.t)}</b></button>`).join("")}</div>
+    ${!x ? `<p class="mt-small">Toca la oferta más barata. Haz las cuentas con calma: cuanto antes, más puntos.</p>`
+      : p ? `<p class="mt-fb ok">📤 Has elegido la ${"ABC"[+x.v]}${p.v !== "no" ? ` y dices que se pagan ${esc(S()(BT().leer(p.v)))} €` : ""}. Espera a que se cierre la ronda.</p>`
+      : `<p><b>¿Doble premio?</b> Escribe cuánto se paga con la oferta que has elegido. Si es la mejor y aciertas, +300 puntos.</p>${pant("ofp")}${teclado("ofp", "Enviar")}<p><button class="btn" data-mg="ofno">No, gracias</button></p>`}</div>`;
+}
+/* 🧩 monta el problema (en clase): cada uno lo monta en su móvil; si hay equipos, cuenta el primero del equipo que lo acaba */
+function jMonta() {
+  const rr = sala().r, X = rondaMonta(rr), u = miU(), x = ev(u, `r${rr}`);
+  if (x) return `<div class="mt-box"><h2>✅ ¡Problema montado!</h2><p>${+x.v ? `Con ${x.v} ${+x.v === 1 ? "fallo" : "fallos"}.` : "¡Sin fallos!"} Esperad a que acabe la ronda.</p></div>`;
+  if (!window.LYAMonta) return `<div class="mt-box"><p>Falta una parte de la web. Recarga la página.</p></div>`;
+  return `<div class="mt-box">${LYAMonta.html(`g-${sala().codigo}-${sala().semilla}-${rr}-${yoId()}`, X, {onFin: err => jugarU(`r${rr}`, err, {uno: true})})}</div>`;
+}
 /* ---------- pizarra ---------- */
 function pizarraHTML() {
   const s = sala(), g = jg(), c = mem().host[s.codigo];
@@ -572,7 +628,7 @@ function pizarraHTML() {
   if (s.fase === "espera") body = `<div class="mt-box" style="text-align:center"><p>Entrad en <b>COMPRENDO → En grupo</b> y escribid el código:</p><p class="mg-grande" style="letter-spacing:8px">${esc(s.codigo)}</p>
     <p class="mt-small">o abrid el enlace: <b>${esc(location.origin + location.pathname)}#mates-sala-${esc(s.codigo)}</b></p></div>
     ${porEq() ? equiposLista() : `<div class="mt-box"><h2>Jugadores (${E.st.jugadores.length})</h2><p>${E.st.jugadores.map(j => `<span class="rt-j">${esc(j.n)}${c ? ` <button class="rt-x" data-mg="echar" data-j="${esc(j.id)}" aria-label="Sacar a ${esc(j.n)}">✕</button>` : ""}</span>`).join(" ") || "<i>Aún no hay nadie</i>"}</p></div>`}
-    <details class="rt-como"><summary>Cómo se juega</summary><ol>${g.como.map(x => `<li>${esc(x)}</li>`).join("")}</ol></details>`;
+    <details class="rt-como"><summary>Cómo se juega</summary><ol>${comoDe(g, CFG().tema).map(x => `<li>${esc(x)}</li>`).join("")}</ol></details>`;
   else if (s.fase === "fin" || libreAcabado()) body = `<div class="mt-box"><h2>🏁 Resultados</h2>${podio(marcador())}${tablaHTML(marcador())}${solucionesHTML()}</div>`;
   else if (rondas() && !rondaAbierta()) body = finRondaHTML(false);
   else body = pizarraJuego();
@@ -587,8 +643,10 @@ function pizarraJuego() {
   if (j === "objetivo") { const O = rondaObjetivo(rr); return `<div class="mt-box" style="text-align:center"><p>Llegad a</p><p><span class="mg-obj">${esc(S()(O.obj))}</span></p><p class="mg-grande">${O.nums.map(n => esc(S()(n))).join("  ")}</p><p class="mt-small">Con + − · : y paréntesis. Cada número, una vez como mucho.</p>${listos(rr)}<p class="mt-small">Han enviado algo: ${us.filter(u => ev(u.u, `r${rr}`)).length} de ${us.length}</p></div>`; }
   if (j === "ascensor") { const Hs = historia(), P0 = Hs.pasos[rr]; return `<div class="mt-box"><div class="mg-termo">${escalaHTML(P0.antes, Hs.H)}<div class="mg-historia"><p class="mt-small">${Hs.H.ic} Ahora: <b>${esc(Hs.H.fmt(P0.antes))}</b></p><p class="mg-grande">${esc(P0.txt)}</p><p><b>${esc(Hs.H.preg)}</b></p>${listos(rr)}</div></div></div>`; }
   if (j === "apuesta") { const R0 = rondaApuesta(rr); return `<div class="mt-box" style="text-align:center"><p>¿Verdadero o falso?</p><p class="mg-grande">${esc(R0.frase)}</p><p class="mt-small">Apostad en el móvil. Si escribís el resultado bueno, ganáis el doble.</p>${listos(rr)}</div>`; }
-  if (j === "cartas") return `<div class="mt-box"><h2>Cartas a la mesa</h2><div class="mg-eqs">${marcador().map(u => `<div class="mg-eq" style="--c:${u.c}"><b>${esc(u.n)}</b><span>${esc(u.info)} huecos · ${num(u.u, "err")} fallos</span></div>`).join("")}</div></div>`;
-  if (j === "escape") return `<div class="mt-box"><h2>Escape room</h2><div class="mg-eqs">${marcador().map(u => `<div class="mg-eq" style="--c:${u.c}"><b>${esc(u.n)}</b><span>${esc(u.info)}</span></div>`).join("")}</div></div>`;
+  if (j === "oferta") { const O = rondaOferta(rr); return `<div class="mt-box"><p class="mg-grande" style="font-size:clamp(24px,4vw,44px)">${esc(O.titulo)}</p><div class="mg-ofs2 grande">${O.ofertas.map((o, i) => `<div class="mg-of"><span>${"ABC"[i]}</span><b>${esc(o.t)}</b></div>`).join("")}</div><p class="mt-small">¿Cuál es la más barata? Elegid en el móvil.</p>${listos(rr)}</div>`; }
+  if (j === "monta") { const X = rondaMonta(rr); return `<div class="mt-box"><h2>🧩 Problema ${rr + 1}</h2><p class="mg-grande" style="font-size:clamp(22px,3.4vw,40px);line-height:1.35">${esc(X.texto)}</p><p class="mt-small">Montadlo en el móvil: datos, tipo, operación y respuesta.</p>${listos(rr)}</div>`; }
+  if (j === "cartas") return `<div class="mt-box"><h2>${esP2() ? "Parejas de porcentajes" : "Cartas a la mesa"}</h2><div class="mg-eqs">${marcador().map(u => `<div class="mg-eq" style="--c:${u.c}"><b>${esc(u.n)}</b><span>${esc(u.info)} huecos · ${num(u.u, "err")} fallos</span></div>`).join("")}</div></div>`;
+  if (j === "escape") return `<div class="mt-box"><h2>${esP2() ? "Escape room «La tienda»" : "Escape room"}</h2><div class="mg-eqs">${marcador().map(u => `<div class="mg-eq" style="--c:${u.c}"><b>${esc(u.n)}</b><span>${esc(u.info)}</span></div>`).join("")}</div></div>`;
   return "";
 }
 
@@ -609,8 +667,9 @@ function tecla(id, v) {
   let t = String(E.ui["in_" + id] || "");
   if (v === "bs") t = t.slice(0, -1);
   else if (v === "pm") t = t.startsWith("-") ? t.slice(1) : "-" + t;
-  else if (v === "ok") return enviarNum(id, B().leer(t));
-  else if (t.replace("-", "").length < 6) t = (t === "0" ? "" : t) + v;
+  else if (v === "dec") { if (!t.includes(",")) t = (t || "0") + ","; }
+  else if (v === "ok") return enviarNum(id, BT().leer(t));
+  else if (t.replace(/[-,]/g, "").length < 8 && !/,\d\d$/.test(t)) t = (t === "0" ? "" : t) + v;
   E.ui["in_" + id] = t; pintar(true);
 }
 async function enviarNum(id, v) {
@@ -626,6 +685,7 @@ async function enviarNum(id, v) {
   }
   if (id === "asc") return jugarU(`r${rr}`, v, {uno: true});
   if (id === "dem") return jugarU(`r${rr}d`, v, {uno: true});
+  if (id === "ofp") return jugarU(`r${rr}p`, v, {uno: true});
 }
 document.addEventListener("click", async e => {
   const b = e.target.closest("[data-mg]"); if (!b || !APP?.contains(b)) return;
@@ -667,6 +727,10 @@ document.addEventListener("click", async e => {
     if (a === "apostar") { const s0 = saldo(u, rr), ap = Math.min(E.ui.ap || 100, s0); await jugarU(`r${rr}`, E.ui.vf + ap, {uno: true}); E.ui.vf = null; return; }
     if (a === "nodem") return jugarU(`r${rr}d`, "no", {uno: true});
   }
+  if (j === "oferta") {
+    if (a === "of") return jugarU(`r${rr}`, +b.dataset.i, {uno: true});
+    if (a === "ofno") return jugarU(`r${rr}p`, "no", {uno: true});
+  }
   if (j === "cartas") {
     if (a === "carta") { E.ui.sel = E.ui.sel === +b.dataset.i ? null : +b.dataset.i; return pintar(true); }
     if (a === "comodin") { E.ui.comodin = !E.ui.comodin; return pintar(true); }
@@ -688,8 +752,8 @@ document.addEventListener("submit", async e => {
   if (t === "crear") {
     const c = E.crear; if (!c.aps.length) return;
     E.busy = true; E.err = ""; pintar(true);
-    const lectura = `mates-t2-${[...c.aps].sort().join("")}-${c.d}`;
-    const r = await api("POST", {accion: "crear", juego: "m-" + c.j, lectura, file: "mates/t2", lang: "es", equipos: c.equipos, dur: c.dur, rd: c.rd});
+    const tema = c.tema || "t2", lectura = `mates-${tema}-${[...(tema === "t2" ? c.aps : [1, 2, 3, 4, 5, 6, 7, 8])].sort().join("")}-${c.d}`;
+    const r = await api("POST", {accion: "crear", juego: "m-" + c.j, lectura, file: "mates/" + tema, lang: "es", equipos: c.equipos, dur: c.dur, rd: c.rd});
     E.busy = false;
     if (!r.ok) { E.err = r.error || "red"; return pintar(true); }
     const m = mem(); m.host[r.sala] = {clave: r.clave, t: Date.now()}; for (const k in m.host) if (Date.now() - m.host[k].t > 864e5) delete m.host[k]; guard.set(m);
@@ -697,7 +761,7 @@ document.addEventListener("submit", async e => {
   }
   if (t === "duelo" || t === "concurso") {
     const c = E.crear; if (!c.aps.length) return;
-    const spec = B().hacerSpec({tema: "t2", aps: c.aps, d: c.d, n: c.n, seed: Math.floor(Math.random() * 2e9)});
+    const spec = B().hacerSpec({tema: c.tema || "t2", aps: c.aps, d: c.d, n: c.n, seed: Math.floor(Math.random() * 2e9)});
     if (t === "concurso") { location.hash = "#concursos-mates-" + spec; return; }
     if (!window.LYADuelo?.crearMates) return;
     E.busy = true; E.err = ""; pintar(true);
@@ -717,11 +781,11 @@ document.addEventListener("submit", async e => {
     E.ui.cambiar = false; return pintar(true);
   }
   if (t === "candado") {
-    const k = +f.dataset.k, inp = f.querySelector("input"), v = B().leer(inp.value), X = juegoEscape(), u = miU();
+    const k = +f.dataset.k, inp = f.querySelector("input"), v = BT().leer(inp.value), X = juegoEscape(), u = miU();
     inp.value = "";
-    if (v === null) return avisar("Escribe un número entero (puede ser negativo).");
+    if (v === null) return avisar(esP2() ? "Escribe un número." : "Escribe un número entero (puede ser negativo).");
     const bueno = k < 4 ? X.cands[k].v : X.final;
-    if (v === bueno) { await jugar(k < 4 ? "c" + k : "fin", v, {uno: true}); return avisar(k < 4 ? "🔓 ¡Candado abierto!" : "🎉 ¡Habéis escapado!", true); }
+    if (BT().igual ? BT().igual(v, bueno) : v === bueno) { await jugar(k < 4 ? "c" + k : "fin", v, {uno: true}); return avisar(k < 4 ? "🔓 ¡Candado abierto!" : "🎉 ¡Habéis escapado!", true); }
     await jugar("x" + k, num(u, "x" + k) + 1); return avisar("❌ Código incorrecto: el candado se congela 15 s y sumáis 30 s.");
   }
 });
@@ -729,6 +793,7 @@ document.addEventListener("change", e => {
   const el = e.target; if (!APP?.contains(el) || !E.crear) return;
   if (el.dataset.mgAp) { const n = +el.dataset.mgAp; E.crear.aps = el.checked ? [...new Set([...E.crear.aps, n])] : E.crear.aps.filter(x => x !== n); return pintar(true); }
   const k = el.dataset.mgC; if (!k) return;
+  if (k === "tema") { E.crear.tema = el.value; E.crear.aps = el.value === "t2" && J[E.crear.j]?.def.aps ? [...J[E.crear.j].def.aps] : [1, 2, 3, 4, 5, 6, 7, 8]; return pintar(true); }
   E.crear[k] = el.type === "checkbox" ? el.checked : +el.value; pintar(true);
 });
 document.addEventListener("input", e => { if (e.target.id === "mg-cod") e.target.value = e.target.value.replace(/[^\d ]/g, ""); });
@@ -736,9 +801,9 @@ document.addEventListener("input", e => { if (e.target.id === "mg-cod") e.target
 addEventListener("keydown", e => {
   if (!enGrupo() || e.target.closest?.("input,textarea,select") || e.ctrlKey || e.metaKey || e.altKey) return;
   const t = APP?.querySelector(".mt-tec [data-t]")?.dataset.t; if (!t) return;
-  if (/^\d$/.test(e.key)) tecla(t, e.key); else if (e.key === "-" || e.key === "+") tecla(t, "pm"); else if (e.key === "Backspace") tecla(t, "bs"); else if (e.key === "Enter") tecla(t, "ok"); else return;
+  if (/^\d$/.test(e.key)) tecla(t, e.key); else if ((e.key === "," || e.key === ".") && esP2()) tecla(t, "dec"); else if ((e.key === "-" || e.key === "+") && !esP2()) tecla(t, "pm"); else if (e.key === "Backspace") tecla(t, "bs"); else if (e.key === "Enter") tecla(t, "ok"); else return;
   e.preventDefault();
 });
 window.LYAMatesGrupo = {isGrupo, render, tiles, J, evaluar, tokens,
-  _t: {E, rondaRecta, rondaCadena, rondaObjetivo, historia, rondaApuesta, juegoCartas, juegoEscape, misCartasRecta, misCartas, miU, colocacion, pasosHechos, turnoCadena}}; /* _t: para las pruebas (qa/prueba-mates.cjs) */
+  _t: {E, rondaRecta, rondaCadena, rondaObjetivo, historia, rondaApuesta, juegoCartas, juegoEscape, rondaOferta, rondaMonta, misCartasRecta, misCartas, miU, colocacion, pasosHechos, turnoCadena}}; /* _t: para las pruebas (qa/prueba-mates.cjs) */
 })();

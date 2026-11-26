@@ -90,7 +90,7 @@ async function accion(b, yo) {
       }
       const lectura = String(b.lectura || ""), limite = String(b.limite || "");
       if (!/^[a-z0-9-]{3,40}$/.test(lectura) || !/^\d{4}-\d{2}-\d{2}$/.test(limite)) return [400, "datos_no_validos"];
-      if (/^mates-/.test(lectura) && !/^mates-t\d+-([1-8]|repaso)-[123]$/.test(lectura)) return [400, "datos_no_validos"];  /* mates: tema, apartado (o repaso) y dificultad */
+      if (/^mates-/.test(lectura) && !/^mates-[tp]\d+-([1-8]|repaso)-[123]$/.test(lectura)) return [400, "datos_no_validos"];  /* mates: tema, apartado (o repaso) y dificultad */
       const D = await leerJSON("admin:deberes", []);
       if (!yo.admin && !A.grupos.length) return [400, "sin_clases"];
       D.push({ id: nuevoId(), lectura, grupo: b.grupo && G.grupos[b.grupo] ? b.grupo : null, profe: yo.admin ? null : yo.usuario, limite, nota: String(b.nota || "").slice(0, 200), creado: Date.now() });

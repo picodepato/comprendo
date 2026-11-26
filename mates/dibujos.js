@@ -139,5 +139,76 @@ const T2 = {
     })(), "Escalera con el orden de las operaciones: paréntesis, potencias y raíces, multiplicar y dividir, sumar y restar"),
       "Se baja la escalera en orden. Si hay dos del mismo escalón, de <b>izquierda a derecha</b>.")
 };
-window.LYAMatesDibujos = {t2: T2, recta};
+
+/* 4.º ESO PDC · Tema 2: proporcionalidad y porcentajes */
+const st = 'style="text-anchor:start"', en = 'style="text-anchor:end"';
+const flecha = (x1, y1, x2, y2, t, ty) => `<path d="M${x1} ${y1} Q${(x1 + x2) / 2} ${Math.min(y1, y2) - 26} ${x2} ${y2}" class="ms-c" fill="none" marker-end="url(#mtf)"/>` + (t ? tx((x1 + x2) / 2, ty ?? Math.min(y1, y2) - 22, t, "mf-c mt-num") : "");
+const flechaAb = (x1, y1, x2, y2, t, ty) => `<path d="M${x1} ${y1} Q${(x1 + x2) / 2} ${Math.max(y1, y2) + 26} ${x2} ${y2}" class="ms-c" fill="none" marker-end="url(#mtf)"/>` + (t ? tx((x1 + x2) / 2, ty ?? Math.max(y1, y2) + 34, t, "mf-c mt-num") : "");
+/* tabla de dos filas: cabeceras y valores, con flechas arriba y abajo */
+function tablaSVG(y0, h1, h2, xs, ys) {
+  const x0 = 120, cw = (W - x0 - 6) / xs.length; let o = "";
+  o += `<rect x="6" y="${y0}" width="${W - 12}" height="76" rx="8" class="mt-alto"/><line x1="6" y1="${y0 + 38}" x2="${W - 6}" y2="${y0 + 38}" class="ms-mute"/><line x1="${x0}" y1="${y0}" x2="${x0}" y2="${y0 + 76}" class="ms-mute"/>`;
+  o += tx(14, y0 + 25, h1, "mf-ink mt-num", st) + tx(14, y0 + 63, h2, "mf-ink mt-num", st);
+  xs.forEach((v, i) => { o += tx(x0 + cw * (i + .5), y0 + 25, v, "mf-ink mt-lbl") + tx(x0 + cw * (i + .5), y0 + 63, ys[i], "mf-c mt-lbl"); });
+  return {o, cx: i => x0 + cw * (i + .5)};
+}
+const P2 = {
+  1: () => { const T = tablaSVG(40, "Kilos", "Precio (€)", ["1", "2", "3", "4"], ["1,5", "3", "4,5", "6"]);
+      return fig(svg(170, T.o + flecha(T.cx(0), 38, T.cx(1) - 6, 38, "× 2") + flecha(T.cx(0), 38, T.cx(2) - 6, 32, "× 3", 4) + flechaAb(T.cx(0), 118, T.cx(1) - 6, 118, "× 2") + flechaAb(T.cx(0), 118, T.cx(2) - 6, 124, "× 3", 160), "Tabla de kilos y precio: si los kilos se multiplican por 2 o por 3, el precio también"),
+        "Si los kilos se hacen el <b>doble</b> o el <b>triple</b>, el precio también: es <b>directa</b>. Y precio : kilos da siempre <b>1,5</b> (lo que vale 1 kg).")
+      + fig(svg(150, (() => { let o = tx(200, 22, "Regla de tres directa: en cruz", "mf-ink mt-lbl");
+          o += tx(110, 64, "3 kg", "mf-ink mt-lbl") + tx(290, 64, "4,5 €", "mf-ink mt-lbl") + tx(110, 112, "4 kg", "mf-ink mt-lbl") + tx(290, 112, "x", "mf-c mt-big");
+          o += `<line x1="150" y1="58" x2="250" y2="58" class="ms-mute" marker-end="url(#mtfi)"/><line x1="150" y1="106" x2="250" y2="106" class="ms-mute" marker-end="url(#mtfi)"/>`;
+          o += `<line x1="140" y1="104" x2="262" y2="70" class="ms-c" stroke-dasharray="6 4"/>` + tx(200, 140, "x = 4 · 4,5 : 3 = 6 €", "mf-c mt-lbl"); return o; })(), "Regla de tres directa con tres kilos y cuatro con cincuenta euros: se multiplica en cruz cuatro por cuatro con cincuenta"),
+        "Se multiplican los dos que están <b>en cruz</b> (4 y 4,5) y se divide entre el que queda (3)."); },
+  2: () => fig(svg(200, (() => { let o = tx(200, 22, "Todas tienen el mismo trabajo: 12", "mf-ink mt-lbl");
+      [[1, 12], [2, 6], [3, 4], [4, 3], [6, 2]].forEach(([a, b], i) => { const x = 14 + i * 78, w = 10 * a, h = 10 * b; o += `<rect x="${x}" y="${160 - h}" width="${w}" height="${h}" class="mt-cuad"/>` + tx(x + 32, 186, `${a} × ${b}`, "mf-ink mt-num"); });
+      return o; })(), "Rectángulos de la misma área: uno por doce, dos por seis, tres por cuatro, cuatro por tres y seis por dos"),
+      "1 albañil 12 días, 2 albañiles 6 días, 3 albañiles 4 días… Si uno se hace el <b>doble</b>, el otro la <b>mitad</b>: el producto (el área) es siempre <b>12</b>.")
+    + (() => { const T = tablaSVG(40, "Grifos", "Horas", ["1", "2", "3", "6"], ["12", "6", "4", "2"]);
+      return fig(svg(170, T.o + flecha(T.cx(0), 38, T.cx(1) - 6, 38, "× 2") + flechaAb(T.cx(0), 118, T.cx(1) - 6, 118, ": 2") + flecha(T.cx(1), 38, T.cx(3) - 6, 38, "× 3") + flechaAb(T.cx(1), 118, T.cx(3) - 6, 118, ": 3"), "Tabla de grifos y horas: cuando los grifos se multiplican por dos, las horas se dividen entre dos"),
+        "Arriba se <b>multiplica</b> y abajo se <b>divide</b> por lo mismo: es <b>inversa</b>. Regla de tres inversa: x = 2 · 6 : 3 = 4 (se multiplica en línea)."); })(),
+  3: () => fig(svg(190, (() => { let o = "";
+      const caja = (x, t, t2) => `<rect x="${x}" y="40" width="112" height="60" rx="10" class="mt-alto"/>` + tx(x + 56, 66, t, "mf-ink mt-lbl") + tx(x + 56, 88, t2, "mf-mute mt-sm");
+      o += caja(8, "Obreros", "2 → 4") + caja(144, "Horas al día", "5 → 6") + caja(280, "Metros", "50 → x");
+      o += flechaAb(64, 100, 330, 104, "directa: más obreros, más metros", 168) + flecha(200, 40, 318, 36, "directa", 10);
+      return o; })(), "Tres cajas: obreros, horas al día y metros. Cada una se compara con los metros"),
+      "Cada magnitud se compara <b>con la que te preguntan</b> (los metros), una a una. Luego: 1 obrero en 1 hora hace 50 : 2 : 5 = 5 m, y 4 obreros 6 horas hacen 5 · 4 · 6 = 120 m."),
+  4: () => fig(svg(250, (() => { let o = tx(200, 20, "15 % = 15 de cada 100", "mf-ink mt-lbl");
+      for (let i = 0; i < 100; i++) { const x = 100 + (i % 10) * 20, y = 34 + Math.floor(i / 10) * 20; o += `<rect x="${x}" y="${y}" width="17" height="17" rx="3" class="${i < 15 ? "mt-cuad2" : "mt-cuad3"}"/>`; }
+      return o; })(), "Cuadrícula de cien cuadros con quince coloreados"),
+      "De cada <b>100</b> cuadritos, <b>15</b> están pintados: eso es el <b>15 %</b>.")
+    + fig(svg(120, (() => { let o = "";
+      o += `<rect x="20" y="36" width="360" height="30" rx="6" class="mt-cuad3"/><rect x="20" y="36" width="54" height="30" rx="6" class="mt-cuad2"/>`;
+      o += tx(20, 26, "0 %", "mf-mute mt-sm", st) + tx(380, 26, "100 %", "mf-mute mt-sm", en) + tx(47, 26, "15 %", "mf-c mt-sm");
+      o += tx(20, 90, "0 €", "mf-mute mt-sm", st) + tx(380, 90, "35 €", "mf-ink mt-num", en) + tx(47, 90, "5,25 €", "mf-c mt-num") + tx(200, 114, "15 % de 35 = 15 · 35 : 100 = 5,25", "mf-ink mt-num"); return o; })(), "Barra de cero a cien por cien que equivale a cero a treinta y cinco euros; el quince por ciento son cinco con veinticinco"),
+      "El total (35 €) es el <b>100 %</b>. El 15 % es un trozo de la barra: <b>5,25 €</b>."),
+  5: () => fig(svg(150, (() => { let o = tx(200, 20, "Con el IVA pagas el 116 %", "mf-ink mt-lbl");
+      o += `<rect x="16" y="40" width="300" height="34" rx="6" class="mt-cuad3"/><rect x="316" y="40" width="48" height="34" rx="6" class="mt-cuad2"/>`;
+      o += tx(166, 63, "100 % · 240 €", "mf-ink mt-num") + tx(340, 63, "+16 %", "mf-c mt-sm") + tx(340, 96, "38,40 €", "mf-c mt-sm");
+      o += `<line x1="16" y1="112" x2="364" y2="112" class="ms-c" marker-start="url(#mtf)" marker-end="url(#mtf)"/>` + tx(190, 136, "116 % → 240 · 1,16 = 278,40 €", "mf-c mt-lbl"); return o; })(), "Barra del cien por cien con un trozo más del dieciséis por ciento: en total el ciento dieciséis por ciento"),
+      "Subir un 16 % es pagar el <b>100 % + 16 % = 116 %</b>: se multiplica por <b>1,16</b>. Para volver atrás, se <b>divide</b> entre 1,16."),
+  6: () => fig(svg(150, (() => { let o = tx(200, 20, "Con un 10 % de descuento pagas el 90 %", "mf-ink mt-lbl");
+      o += `<rect x="16" y="40" width="331" height="34" rx="6" class="mt-cuad2"/><rect x="347" y="40" width="37" height="34" rx="6" class="mt-cuad3" stroke-dasharray="5 4"/>`;
+      o += tx(180, 63, "90 % · lo que pagas", "mf-ink mt-num") + tx(366, 63, "−10 %", "mf-neg mt-sm");
+      o += tx(200, 106, "24 € · 0,9 = 21,60 €", "mf-c mt-lbl") + tx(200, 132, "(el 10 % de 24 son 2,40 €, que te ahorras)", "mf-mute mt-sm"); return o; })(), "Barra del cien por cien a la que se le quita un diez por ciento: queda el noventa por ciento"),
+      "Rebajar un 10 % es pagar el <b>90 %</b>: se multiplica por <b>0,9</b>.")
+    + fig(svg(170, (() => { let o = tx(200, 20, "−10 % y después −20 %", "mf-ink mt-lbl"), y = 38;
+      [[100, "60 €"], [90, "54 € (60 · 0,9)"], [72, "43,20 € (54 · 0,8)"]].forEach(([p, t], i) => { o += `<rect x="16" y="${y + i * 42}" width="${2.2 * p}" height="30" rx="6" class="${i ? "mt-cuad2" : "mt-cuad3"}"/>` + tx(24, y + i * 42 + 21, `${p} %`, "mf-ink mt-num", st) + tx(2.2 * p + 26, y + i * 42 + 21, t, "mf-c mt-num", st); });
+      return o; })(), "Tres barras: cien por cien, noventa por ciento y setenta y dos por ciento"),
+      "La segunda rebaja se hace sobre el precio <b>ya rebajado</b>: al final pagas el <b>72 %</b>, no el 70 %."),
+  7: () => fig(svg(200, (() => { let o = tx(200, 20, "1.000 € al 5 % durante 3 años", "mf-ink mt-lbl");
+      for (let i = 0; i <= 3; i++) { const x = 30 + i * 92; o += `<rect x="${x}" y="${170 - 100}" width="60" height="100" rx="6" class="mt-cuad3"/>` + tx(x + 30, 125, "1.000", "mf-ink mt-sm");
+        for (let k = 0; k < i; k++) o += `<rect x="${x}" y="${66 - (k + 1) * 14}" width="60" height="12" rx="3" class="mt-cuad2"/>`;
+        o += tx(x + 30, 190, i === 0 ? "al meterlo" : `año ${i}`, "mf-mute mt-sm"); }
+      return o; })(), "Cuatro montones: el capital de mil euros y cada año un trocito más de cincuenta euros"),
+      "Cada año te dan el 5 % de 1.000 € = <b>50 €</b>. En 3 años: 50 · 3 = <b>150 €</b> de intereses (I = C · r · t : 100). Al final tienes 1.150 €."),
+  8: () => fig(svg(220, (() => { const cx = 110, cy = 110, R = 92, quien = ["Juan", "Juan", "Juan", "Juan", "Ana", "Ana", "Ana", "Luis"], cls = {Juan: "mt-cuad2", Ana: "mt-cuad", Luis: "mt-cuad3"};
+      let o = "";
+      quien.forEach((q, i) => { const a1 = -Math.PI / 2 + i * Math.PI / 4, a2 = a1 + Math.PI / 4; o += `<path d="M${cx} ${cy} L${cx + R * Math.cos(a1)} ${cy + R * Math.sin(a1)} A${R} ${R} 0 0 1 ${cx + R * Math.cos(a2)} ${cy + R * Math.sin(a2)} Z" class="${cls[q]}"/>`; });
+      [["Juan", "4 porciones → 6 €"], ["Ana", "3 porciones → 4,50 €"], ["Luis", "1 porción → 1,50 €"]].forEach(([n, t], i) => { o += `<rect x="226" y="${46 + i * 48}" width="22" height="22" rx="4" class="${cls[n]}"/>` + tx(256, 56 + i * 48, n, "mf-ink mt-num", st) + tx(256, 74 + i * 48, t, "mf-c mt-sm", st); });
+      o += tx(300, 208, "12 € : 8 = 1,50 € la porción", "mf-ink mt-sm"); return o; })(), "Una pizza de ocho porciones: cuatro de Juan, tres de Ana y una de Luis"),
+      "Total 12 € y 8 porciones: <b>una porción vale 1,50 €</b>. Cada uno paga sus porciones por 1,50 €.")
+};
+window.LYAMatesDibujos = {t2: T2, p2: P2, recta};
 })();

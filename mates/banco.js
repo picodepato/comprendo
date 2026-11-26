@@ -390,6 +390,7 @@ function test(q, r) {
 /* serie para duelos y concursos: "t2-<apartados>-<dificultad>-<cuántas>-<semilla>" */
 const SPEC = /^(t2)-([1-8]{1,8})-([123])-(\d{1,2})-(\d{1,10})$/;
 function leerSpec(x) {
+  if (/^p\d/.test(String(x || ""))) return G.LYAMatesPDC ? G.LYAMatesPDC.leerSpec(x) : null;  /* 4.º ESO PDC: mates/pdc.js */
   const m = String(x || "").match(SPEC); if (!m) return null;
   const aps = [...new Set(m[2].split("").map(Number))].sort();
   return {tema: m[1], aps, d: +m[3], n: Math.max(3, Math.min(30, +m[4])), seed: +m[5] % 2 ** 31};
@@ -398,6 +399,7 @@ const hacerSpec = o => `${o.tema || "t2"}-${[...new Set(o.aps)].sort().join("")}
 const NOMBRES = {1: "Números enteros", 2: "Comparar y ordenar", 3: "Suma y resta de dos", 4: "Suma y resta de varios", 5: "Multiplicación y división", 6: "Potencias", 7: "Raíz cuadrada", 8: "Operaciones combinadas"};
 function serie(spec) {
   const o = typeof spec === "string" ? leerSpec(spec) : spec; if (!o) return null;
+  if (o.tema && o.tema !== "t2") return G.LYAMatesPDC ? G.LYAMatesPDC.serie(o) : null;
   const r = Rn(o.seed), q = [], vistos = new Set();
   for (let i = 0, k = 0; q.length < o.n && k < o.n * 20; k++) {
     const ap = o.aps[i % o.aps.length];

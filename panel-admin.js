@@ -108,10 +108,10 @@ const catalogo = () => { if (CATL !== LG()) { CAT = null; CATL = LG(); } return 
   return m;
 }).catch(() => ({})); };
 const otraL = l => l && l !== LG() ? nomLengua(l) : "";
-/* mates: «mates-t2-3-2» = tema 2, apartado 3 (o «repaso»), dificultad 2 */
+/* mates: «mates-t2-3-2» = tema 2, apartado 3 (o «repaso»), dificultad 2 (p2: 4.º ESO PDC) */
 const MDIF = ["", "Fácil", "Medio", "Difícil"], mTemas = () => ((window.LYAMatesTemas || {}).cursos || []).flatMap(c => c.temas.map(x => ({...x, curso: c.n})));
-const nombreM = id => { const m = /^mates-(t\d+)-([1-8]|repaso)(?:-([123]))?$/.exec(id); if (!m) return id; const T = mTemas().find(x => x.id === m[1]), a = T && T.aps.find(x => String(x.n) === m[2]);
-  return `➗ ${t("Mates")} · ${T ? t("Tema {0}", T.n) + " · " : ""}${a ? a.n + ". " + a.titulo : t("Repaso del tema")}${m[3] ? " · " + t(MDIF[m[3]]) : ""}`; };
+const nombreM = id => { const m = /^mates-([tp]\d+)-([1-8]|repaso)(?:-([123]))?$/.exec(id); if (!m) return id; const T = mTemas().find(x => x.id === m[1]), a = T && T.aps.find(x => String(x.n) === m[2]);
+  return `➗ ${t("Mates")} · ${T ? (T.id !== "t2" ? T.curso + " · " : "") + t("Tema {0}", T.n) + " · " : ""}${a ? a.n + ". " + a.titulo : t("Repaso del tema")}${m[3] ? " · " + t(MDIF[m[3]]) : ""}`; };
 const nombreL = (T, id) => /^mates-/.test(id) ? nombreM(id) : /^dictado-/.test(id) && T[id.slice(8)] ? t("✍️ Dictado: {0}", nombreL(T, id.slice(8))) : T[id] ? `${T[id].titulo} (${T[id].tema} · ${T[id].nivel}${otraL(T[id].lengua) ? " · " + otraL(T[id].lengua) : ""})` : id;
 const marcaL = l => otraL(l) ? ` <small class="ctae">(${esc(otraL(l))})</small>` : "";
 
