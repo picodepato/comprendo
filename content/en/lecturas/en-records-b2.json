@@ -42,7 +42,12 @@
     "It was only popular in pubs.",
     "Few people expected it to sell so well."
    ],
-   3
+   3,
+   {
+    "ev": [
+     "To the surprise of almost everyone, it became a bestseller by Christmas."
+    ]
+   }
   ],
   [
    "In the fourth paragraph, why does the writer mention food records?",

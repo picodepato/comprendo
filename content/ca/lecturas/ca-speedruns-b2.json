@@ -22,7 +22,12 @@
     "descriure un rècord mundial en un joc antic",
     "criticar els qui es queden desperts tota la nit"
    ],
-   1
+   1,
+   {
+    "ev": [
+     "Són les tres de la matinada i més de cent mil persones estan mirant com una noia intenta acabar un videojoc dels anys noranta en menys d'una hora."
+    ]
+   }
   ],
   [
    "Com va anar el primer esdeveniment en comparació amb el que esperaven els organitzadors?",
