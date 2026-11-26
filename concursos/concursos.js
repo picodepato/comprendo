@@ -151,7 +151,7 @@ async function copiar(txt) {
 const xp = (n, extra) => { try { dispatchEvent(new CustomEvent("lya:xp", {detail: {xp: n, src: "concurso", ...extra}})); } catch (e) {} };
 
 /* ---------- rutas ---------- */
-const RE = /^(concursos|concursos-crear|concursos-editar(?:-(l?[a-f0-9]{10,12}))?|concurso-(l?[a-f0-9]{10,12})|concurso-solo-(l?[a-f0-9]{10,12})|concursos-proyectar-(\d{6})|jugar(?:-(\d{6}))?|concursos-lectura-([a-z0-9-]{3,40}))$/;
+const RE = /^(concursos|concursos-crear|concursos-editar(?:-(l?[a-f0-9]{10,12}))?|concurso-(l?[a-f0-9]{10,12})|concurso-solo-(l?[a-f0-9]{10,12})|concursos-proyectar-(\d{6})|jugar(?:-(\d{6}))?|concursos-lectura-([a-z0-9-]{3,40})|concursos-mates-(t2-[1-8]{1,8}-[123]-\d{1,2}-\d{1,10}))$/;
 const isCc = h => RE.test(h);
 let V = {h: ""}; /* estado de la página actual */
 let timer = null;
@@ -171,6 +171,7 @@ function render(app) {
   if (m[4]) return solo(app, m[4]);
   if (m[5]) return proyectar(app, m[5]);
   if (m[7]) return desdeLectura(app, m[7]);
+  if (m[8]) return desdeMates(m[8]);
   return jugar(app, m[6]);
 }
 const cab = (titulo, atras = "#concursos") => `<a class="cc-back" href="${atras}">${T("volver")}</a><h1 class="cc-h1">${titulo}</h1>`;
@@ -244,6 +245,14 @@ async function desdeLectura(app, id) {
   let R; try { R = await L().loadReading(meta.file); } catch (e) { app.innerHTML = `<section class="wrap cc">${cab("")}<p class="cc-msg mal">${T("e_red")}</p></section>`; return; }
   if (V.h !== h) return;
   E = {id: null, titulo: String(R.title || "").slice(0, 80), preguntas: (R.q || []).map(q => ({p: q[0], o: q[1].slice(0, 4), c: q[2], s: 30})).filter(q => q.c < q.o.length)};
+  location.hash = "concursos-editar";
+}
+
+/* ---------- concurso de mates (#concursos-mates-<spec>, desde mates/grupo.js): preguntas de mates/banco.js, al editor ---------- */
+function desdeMates(spec) {
+  const X = window.LYAMatesBanco?.serie(spec);
+  if (!X) { location.hash = "concursos"; return; }
+  E = {id: null, titulo: X.titulo.slice(0, 80), preguntas: X.q.map(q => ({p: q[0].slice(0, 200), o: q[1].slice(0, 4), c: q[2], s: 30})).filter(q => q.c < q.o.length)};
   location.hash = "concursos-editar";
 }
 

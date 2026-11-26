@@ -9,7 +9,9 @@
    GET  ?retos=1&sala=CÓDIGO → estado entero (lo comparten todos; caché de Vercel de 1 s).
    POST ?retos=1 {accion, sala, ...}
      crear {juego, lectura, file, lang, equipos, dur, rd} → {sala, clave}
-     empezar / terminar / ronda {r} / echar {jugador}     → con {clave} (la del anfitrión)
+     empezar / terminar / ronda {r} / cerrar / echar {jugador} → con {clave} (la del anfitrión); cerrar = acabar ya la ronda
+   Mates (mates/grupo.js): juegos m-recta, m-cadena, m-objetivo, m-ascensor, m-escape, m-apuesta y m-cartas;
+     lectura = mates-t2-<apartados>-<dificultad>, file = mates/t2, lang = es (el contenido sale de mates/banco.js con la semilla).
      entrar {nombre, equipo, jugador?} → {jugador}
      jugar {jugador, k, v, eq?, uno?, suma?}  guarda una jugada (uno: solo la primera; suma: contador +1)
      toque {jugador, r, d}                                mapa de calor: +1 a la frase/palabra d de la ronda r */
@@ -18,6 +20,10 @@ import { redis, contar, ipDe, responder, cuerpo, seguro } from "./_db.js";
 
 const VIDA = 4 * 3600, MAXJ = 80, MAXE = 8, MAXEV = 4000;
 const JUEGOS = ["prueba", "apuesta", "cartas", "tabu", "piloto"];
+/* juegos de mates (mates/grupo.js): la configuración va en «lectura» = mates-t2-<apartados>-<dificultad> */
+const MATES = ["m-recta", "m-cadena", "m-objetivo", "m-ascensor", "m-escape", "m-apuesta", "m-cartas"];
+const POR_RONDAS = ["prueba", "apuesta", "m-recta", "m-cadena", "m-objetivo", "m-ascensor", "m-apuesta"];
+const SOLO_EQUIPOS = ["cartas", "tabu", "piloto", "m-recta", "m-cadena", "m-escape", "m-cartas"];
 const K = c => "reto:" + c;
 const hash = s => crypto.createHash("sha256").update(String(s)).digest("hex");
 const codigoOk = c => /^\d{6}$/.test(c);
@@ -56,9 +62,10 @@ export default (req, res) => seguro(res, async () => {
   if (acc === "crear") {
     if ((await contar("reto-crear:" + ipDe(req), 3600)) > 40) return responder(res, 429, {error: "muchas"});
     const juego = String(b.juego || ""), lectura = String(b.lectura || ""), file = String(b.file || ""), lang = String(b.lang || "");
-    if (!JUEGOS.includes(juego)) return responder(res, 400, {error: "juego"});
-    if (!/^[a-z0-9-]{3,40}$/.test(lectura) || !/^(es|en|ca)\/lecturas\/[a-z0-9-]{3,40}\.json$/.test(file) || !/^(es|en|ca)$/.test(lang)) return responder(res, 400, {error: "lectura"});
-    const minimo = juego === "prueba" || juego === "apuesta" ? 0 : 1;
+    if (!JUEGOS.includes(juego) && !MATES.includes(juego)) return responder(res, 400, {error: "juego"});
+    if (MATES.includes(juego) ? !/^mates-t2-[1-8]{1,8}-[123]$/.test(lectura) || file !== "mates/t2" || lang !== "es"
+      : !/^[a-z0-9-]{3,40}$/.test(lectura) || !/^(es|en|ca)\/lecturas\/[a-z0-9-]{3,40}\.json$/.test(file) || !/^(es|en|ca)$/.test(lang)) return responder(res, 400, {error: "lectura"});
+    const minimo = SOLO_EQUIPOS.includes(juego) ? 1 : 0;
     const equipos = entre(b.equipos, minimo, MAXE, Math.max(minimo, 4)), dur = entre(b.dur, 3, 60, 15), rd = entre(b.rd, 10, 180, 40);
     const clave = crypto.randomBytes(16).toString("base64url");
     let codigo = null;
@@ -77,7 +84,7 @@ export default (req, res) => seguro(res, async () => {
   const guardar = async () => { await redis("SET", K(c), JSON.stringify(sala), "EX", VIDA); };
 
   /* anfitrión (la pizarra) */
-  if (["empezar", "terminar", "ronda", "echar"].includes(acc)) {
+  if (["empezar", "terminar", "ronda", "echar", "cerrar"].includes(acc)) {
     if (hash(b.clave || "") !== sala.clave) return responder(res, 403, {error: "no_anfitrion"});
     if (acc === "echar") { await redis("HDEL", K(c) + ":j", String(b.jugador || "")); return responder(res, 200, {ok: true, estado: await estado(c, sala)}); }
     if (acc === "empezar") {
@@ -85,6 +92,9 @@ export default (req, res) => seguro(res, async () => {
       const s = await estado(c, sala), rep = {};
       for (const j of s.jugadores) rep[j.e] = (rep[j.e] || 0) + 1;
       sala.fase = "juego"; sala.t0 = Date.now(); sala.rep = rep; sala.r = 0; sala.tr = sala.t0;
+    } else if (acc === "cerrar") { /* cerrar ya la ronda (pasar a la solución) */
+      if (sala.fase !== "juego") return responder(res, 409, {error: "fase"});
+      sala.cerrada = sala.r;
     } else if (acc === "ronda") {
       if (sala.fase !== "juego") return responder(res, 409, {error: "fase"});
       const r = entre(b.r, 0, 50, -1); if (r < 0) return responder(res, 400, {error: "ronda"});
@@ -119,7 +129,7 @@ export default (req, res) => seguro(res, async () => {
     const yo = await redis("HGET", K(c) + ":j", String(b.jugador || ""));
     if (!yo) return responder(res, 403, {error: "no_jugador"});
     if (sala.fase !== "juego") return responder(res, 409, {error: "fase"});
-    const E = K(c) + ":e", ms = Date.now() - (sala.juego === "prueba" || sala.juego === "apuesta" ? sala.tr : sala.t0);
+    const E = K(c) + ":e", ms = Date.now() - (POR_RONDAS.includes(sala.juego) ? sala.tr : sala.t0);
     if (acc === "toque") {
       const r = entre(b.r, 0, 50, -1), d = String(b.d || "");
       if (r !== sala.r || !/^\d{1,2}\.\d{1,2}(\.\d{1,3})?$/.test(d)) return responder(res, 400, {error: "toque"});

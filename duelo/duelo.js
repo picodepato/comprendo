@@ -69,7 +69,7 @@ const guardarMesa = (c, v) => { const o = misMesas(); o[c] = {...v, t: Date.now(
 const prog = () => { const {S} = st(); S.g ||= {}; return (S.g.du ||= {n: 0, w: 0, tr: []}); };
 const cuenta = () => window.LYACuentas;
 const api = (ruta, metodo, datos) => cuenta().api(ruta, metodo, datos);
-const plain = s => { try { return L().plain(s); } catch (e) { return String(s).replace(/[[\]]/g, ""); } };
+const plain = s => { if (D?.s?.mesa?.file?.startsWith("mates:")) return String(s); /* mates: los corchetes son de verdad */ try { return L().plain(s); } catch (e) { return String(s).replace(/[[\]]/g, ""); } };
 const fmtCode = c => String(c).replace(/^(\d{3})(\d{3})$/, "$1 $2");
 
 /* ---------- creating: remembered choices ---------- */
@@ -112,7 +112,7 @@ async function consultar() {
   D.err = ""; D.s = j;
   if (D.pid && !j.jugadores.some(p => p.pid === D.pid) && D.jugo && j.fase.f === "lobby") { D.err = "e_echado"; D.pid = null; }
   if (D.pid && j.jugadores.some(p => p.pid === D.pid)) D.jugo = true;
-  if (!D.R) { try { D.R = await L().loadReading(j.mesa.file); } catch (e) {} }
+  if (!D.R) { try { D.R = j.mesa.file.startsWith("mates:") ? window.LYAMatesBanco.serie(j.mesa.file.slice(6)) : await L().loadReading(j.mesa.file); } catch (e) {} }
   pintar();
   anfitrionAuto();
   const f = F();
@@ -261,6 +261,15 @@ function hub(app) {
   }
 }
 
+/* duelo de mates (mates/grupo.js, #mates-duelo): las preguntas salen de mates/banco.js con una semilla; sin texto ni tiempo de lectura */
+async function crearMates(spec, o = {}) {
+  const rol = cuenta()?.rol, profe = rol === "profe" || rol === "admin";
+  const r = await api("duelo", "POST", {a: "crear", mates: spec, D: o.D || 30, TL: 0, texto: false, juega: !!o.juega, xp: OPC.xp, logro: OPC.logro}).catch(() => ({ok: false, j: {}}));
+  if (!r.ok) return r;
+  guardarMesa(r.j.c, {tk: r.j.tk, pid: o.juega || !profe ? r.j.pid : null, host: true});
+  location.hash = "duelo-" + r.j.c;
+  return r;
+}
 function textoHTML() {
   if (!D.R) return "";
   return `<div class="du-text" lang="${esc(D.s.mesa.lang)}">${(D.R.text || []).map(p => `<p>${esc(plain(p))}</p>`).join("")}</div>`;
@@ -381,5 +390,5 @@ document.addEventListener("click", e => {
 document.addEventListener("visibilitychange", () => { if (D && D.s && !document.hidden) planear(100); });
 addEventListener("hashchange", () => { if (!esDuelo(location.hash.slice(1))) salirMesa(); });
 
-window.LYADuelo = {render, isDuelo: esDuelo, tab, prog, fase};
+window.LYADuelo = {render, isDuelo: esDuelo, tab, prog, fase, crearMates};
 })();

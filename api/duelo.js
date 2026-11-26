@@ -13,6 +13,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { redis, usuarioDeSesion, leerJSON, ADMIN, ipDe, contar, responder, cuerpo, seguro } from "./_db.js";
+import "../mates/banco.js"; /* duelos de mates: las preguntas salen de una semilla (globalThis.LYAMatesBanco) */
 
 export const MAX = 30, R = 6, TTL = 3 * 3600;
 const clave = c => "duelo:" + c;
@@ -81,14 +82,17 @@ async function quien(req) {
 async function crear(req, res, b) {
   const yo = await quien(req); if (!yo) return responder(res, 401, { error: "sin_sesion" });
   if (await contar("duelocrea:" + ipDe(req), 3600) > 60) return responder(res, 429, { error: "espera" });
-  const L = leerLectura(String(b.file || ""));
+  const mates = b.mates ? globalThis.LYAMatesBanco?.leerSpec(String(b.mates)) : null;
+  if (b.mates && !mates) return responder(res, 400, { error: "lectura_no_valida" });
+  const L = mates ? globalThis.LYAMatesBanco.serie(mates) : leerLectura(String(b.file || ""));
   if (!L || !Array.isArray(L.q) || !L.q.length) return responder(res, 400, { error: "lectura_no_valida" });
+  const file = mates ? "mates:" + globalThis.LYAMatesBanco.hacerSpec(mates) : b.file;
   const profe = yo.rol === "profe" || yo.rol === "admin";
   const m = {
-    st: "lobby", file: b.file, lang: b.file.slice(0, 2), lectura: L.id, nivel: L.level, titulo: limpiar(L.title, 80),
+    st: "lobby", file, lang: mates ? "es" : b.file.slice(0, 2), lectura: L.id, nivel: L.level, titulo: limpiar(mates ? L.titulo : L.title, 80),
     nq: L.q.length, nops: L.q.map(q => q[1].length), key: L.q.map(q => q[2]),
     D: num(b.D, [10, 15, 20, 30, 45, 60], 20), TL: num(b.TL, [0, 30, 60, 90, 120, 180, 300], 90),
-    texto: b.texto !== false, host: yo.u, hu: yo.u, profe, juega: profe ? !!b.juega : true, creada: Date.now()
+    texto: !mates && b.texto !== false, host: yo.u, hu: yo.u, profe, juega: profe ? !!b.juega : true, creada: Date.now()
   };
   /* premios: el profe elige XP y un logro; el alumno, los de siempre */
   if (profe) {

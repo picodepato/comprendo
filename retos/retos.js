@@ -264,6 +264,7 @@ function render(app) {
 }
 async function primera(cod) {
   const r = await api("GET", null, "&sala=" + cod);
+  if (r.ok && /^m-/.test(r.sala?.juego || "")) { parar(); location.replace("#mates-sala-" + cod); return; } /* sala de mates (mates/grupo.js) */
   if (r.ok) { recibir(r); try { await cargarLectura(); } catch (e) {} }
   else E.err = r.status === 404 ? "no_existe" : r.error === "serv" ? "e_serv" : "e_red";
   pintar(true);
