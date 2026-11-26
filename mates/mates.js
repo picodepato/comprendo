@@ -118,7 +118,7 @@ function nuevaPractica(T, n, d) {
     if (vistos.has(firma)) continue;
     vistos.add(firma); serie.push(q); i++;
   }
-  return {k: `${T.id}-${n}`, T, n, d, serie, mal: [], i: 0, ok: 0, fase: "preg", inp: "", inp2: "", campo: 0, orden: [], paso: 0, pasoMal: false, pasoFallo: null, xp: 0};
+  return {k: `${T.id}-${n}`, T, n, d, serie, mal: [], pist: 0, usadas: 0, i: 0, ok: 0, fase: "preg", inp: "", inp2: "", campo: 0, orden: [], paso: 0, pasoMal: false, pasoFallo: null, xp: 0};
 }
 function practica(app, T, n, cab) {
   const k = `${T.id}-${n}`;
@@ -153,8 +153,17 @@ function pregHTML() {
   const A = P.T.aps.find(a => a.n === (Q.ap || P.n));
   return `<div class="mt-q mt-box"><div class="mt-qtop"><span>${P.i + 1} / ${P.serie.length}${P.n === "repaso" ? ` · ${esc(B().NOMBRES[Q.ap])}` : ""}</span><span>✅ ${P.ok} · ${DIF[P.d]} <button type="button" class="mt-dejar" data-mt="dejar">cambiar</button></span></div>
     <div class="mt-prog"><i style="width:${100 * P.i / P.serie.length}%"></i></div>
-    <p class="mt-enun">${esc(Q.enun)}</p>${cuerpo}${res}</div>
+    <p class="mt-enun">${esc(Q.enun)}</p>${fb ? "" : pistasHTML(Q)}${cuerpo}${res}</div>
     ${A ? `<details class="mt-ayu"${P.ayuda ? " open" : ""}><summary>📘 ¿Cómo se hacía? Ver la explicación${P.n === "repaso" ? ` de «${esc(A.titulo)}»` : ""} sin salir</summary>${teoHTML(P.T, A)}</details>` : ""}`;
+}
+/* pistas: de menos a más; en las combinadas, las del paso que toca. Cada pista usada quita 1 XP (mínimo 1) */
+function pistasDe(Q) {
+  if (Q.tipo === "pasos") { Q.R ||= B().resolver(Q.arbol); const x = Q.R.pasos[P.paso]; return x ? B().pistaPaso(x) : []; }
+  return B().pistas(Q) || [];
+}
+function pistasHTML(Q) {
+  const ps = pistasDe(Q); if (!ps.length) return "";
+  return `<div class="mt-pistas">${ps.slice(0, P.pist).map((t, i) => `<p class="mt-pista"><b>💡 ${i + 1}</b> ${esc(t)}</p>`).join("")}${P.pist < ps.length ? `<button type="button" class="mt-pbtn" data-mt="pista">💡 ${P.pist ? "Otra pista" : Q.tipo === "pasos" ? "Pista para este paso" : "Pista"} <small>${P.pist + 1} de ${ps.length}</small></button>` : ""}</div>`;
 }
 const exprHTML = e => e ? `<p class="mt-expr">${marca(e)}</p>` : "";
 const pantalla = v => `<p class="mt-pant" aria-live="polite">${v ? esc(v.replace(/^-/, B().M)) : '<span class="mt-ph">?</span>'}</p>`;
@@ -196,7 +205,7 @@ function fbHTML() {
   if (Q.tipo === "num" || Q.tipo === "recta") sol = `La respuesta es <b>${esc(B().s(Q.sol))}</b>.`;
   if (Q.tipo === "resto") sol = `Raíz entera <b>${Q.sol}</b> y resto <b>${Q.resto}</b>.`;
   if (Q.tipo === "pasos") sol = bien ? "" : `Te has equivocado en ${P.malos.filter(x => x !== undefined).length === 1 ? "un paso" : "algunos pasos"} (en rojo).`;
-  return `<div class="mt-fb ${bien ? "ok" : "no"}" role="status"><b>${bien ? "🎉 ¡Bien!" : "😬 Casi"}</b>${bien && P.ganado ? ` <span class="mt-xp">+${P.ganado} XP</span>` : ""}
+  return `<div class="mt-fb ${bien ? "ok" : "no"}" role="status"><b>${bien ? "🎉 ¡Bien!" : "😬 Casi"}</b>${bien && P.ganado ? ` <span class="mt-xp">+${P.ganado} XP</span>` : ""}${bien && P.usadas ? ` <small>(con ${P.usadas === 1 ? "1 pista" : P.usadas + " pistas"})</small>` : ""}
     ${bien ? "" : `<p>${sol}</p><p class="mt-ayuda">💡 ${esc(Q.ayuda || "")}</p>`}</div>
     <p class="mt-acc"><button type="button" class="btn main" data-mt="sig" data-foco>${P.i + 1 < P.serie.length ? "Siguiente →" : "Ver resultado"}</button></p>`;
 }
@@ -219,7 +228,7 @@ function fallo(Q) {
 const xp = (n, ok) => { try { dispatchEvent(new CustomEvent("lya:xp", {detail: {xp: n, src: "mates", ok}})); } catch (e) {} };
 function responder(bien) {
   P.ultima = bien; P.fase = "fb"; P.ganado = 0;
-  if (bien) { P.ok++; P.ganado = P.d + 1; P.xp += P.ganado; }
+  if (bien) { P.ok++; P.ganado = Math.max(1, P.d + 1 - (P.usadas || 0)); P.xp += P.ganado; }
   else P.mal.push(fallo(q()));
   xp(bien ? P.ganado : 0, bien);
   pintar();
@@ -256,7 +265,7 @@ function enviar() {
     const x = Q.R.pasos[P.paso]; P.malos ||= [];
     if (v !== x.v) { P.malos[P.paso] = v; P.pasoFallo = `${x.parte} no es ${B().s(v)}: es ${B().s(x.v)}. Seguimos con el bueno.`; }
     else P.pasoFallo = null;
-    P.paso++; P.inp = "";
+    P.paso++; P.inp = ""; P.pist = 0;
     if (P.paso >= Q.R.pasos.length) { P.pasoFallo = null; return responder(!P.malos.some(m => m !== undefined)); }
     return pintar();
   }
@@ -267,7 +276,7 @@ document.addEventListener("toggle", e => { if (P && e.target.matches?.(".mt-ayu"
 const pintar = () => { if (appEl && /^mates-/.test(location.hash.slice(1))) render(appEl); };
 function siguiente() {
   if (P.i + 1 >= P.serie.length) return terminar();
-  Object.assign(P, {i: P.i + 1, fase: "preg", inp: "", inp2: "", campo: 0, orden: [], paso: 0, malos: [], pasoFallo: null, elegida: null});
+  Object.assign(P, {i: P.i + 1, fase: "preg", inp: "", inp2: "", campo: 0, orden: [], paso: 0, malos: [], pasoFallo: null, elegida: null, pist: 0, usadas: 0});
   pintar();
 }
 document.addEventListener("click", e => {
@@ -280,6 +289,7 @@ document.addEventListener("click", e => {
   if (a === "otra") { P = nuevaPractica(P.T, P.n, P.d); return pintar(); }
   if (!P) return;
   if (a === "k") return tecla(b.dataset.v);
+  if (a === "pista") { if (P.fase !== "preg") return; P.pist++; P.usadas++; return pintar(); }
   if (a === "campo") { P.campo = +b.dataset.c; return pintar(); }
   if (a === "opc") { P.elegida = +b.dataset.i; return responder(P.elegida === q().ok); }
   if (a === "poner") { P.orden.push(+b.dataset.i); return pintar(); }

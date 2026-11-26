@@ -40,6 +40,32 @@ async function practica(b) {
   ok(!errs.length, "sin errores en la práctica " + errs.join(" | "));
   await p.close();
 }
+/* pistas: en una combinada difícil, pistas del paso que toca (cambian al pasar de paso) y quitan XP; y en una suma */
+async function pistas(b) {
+  const p = await b.newPage({viewport: {width: 420, height: 900}}); const errs = []; p.on("pageerror", e => errs.push(e.message));
+  let paso = false;
+  for (let k = 0; k < 6 && !paso; k++) {
+    await p.goto(`${URL}/#mates-t2-8-d3`); await espera(300);
+    paso = await p.evaluate(() => { const P = LYAMates._P(); return P.serie[P.i].tipo === "pasos"; });
+    if (!paso) await p.evaluate(() => { location.hash = "mates-t2-8"; });
+  }
+  ok(paso, "una combinada difícil para probar las pistas");
+  const n0 = await p.locator(".mt-pista").count();
+  await p.click('[data-mt="pista"]'); await espera(100);
+  const t1 = await p.textContent(".mt-pista");
+  ok(n0 === 0 && /Ahora toca/.test(t1), "la primera pista dice qué toca ahora: " + t1);
+  await p.click('[data-mt="pista"]'); await espera(100);
+  ok(await p.locator(".mt-pista").count() === 2, "la segunda pista dice cómo hacerlo: " + (await p.locator(".mt-pista").nth(1).textContent()));
+  if (DIR) await p.screenshot({path: `${DIR}/pistas.png`, fullPage: true});
+  const pasos = await p.evaluate(() => { const P = LYAMates._P(), q = P.serie[P.i]; return LYAMatesBanco.resolver(q.arbol).pasos.map(x => x.v); });
+  await teclear(p, pasos[0]);
+  if (pasos.length > 1) ok(await p.locator(".mt-pista").count() === 0, "al pasar de paso, las pistas empiezan de nuevo");
+  for (const v of pasos.slice(1)) await teclear(p, v);
+  const xp = await p.evaluate(() => LYAMates._P().ganado);
+  ok(xp === 2 && /con 2 pistas/.test(await p.textContent(".mt-fb")), "con 2 pistas gana 2 XP en vez de 4: " + xp);
+  ok(!errs.length, "pistas sin errores " + errs.join(" | "));
+  await p.close();
+}
 async function sala(b, juego, cfg, jugadores) {
   const host = await b.newPage({viewport: {width: 1200, height: 900}}); const errs = []; host.on("pageerror", e => errs.push(juego + ": " + e.message));
   await host.goto(`${URL}/#mates-grupo`); await espera(300);
@@ -171,6 +197,7 @@ async function dueloConcurso(b) {
 (async () => {
   const b = await chromium.launch();
   if (quiere("practica")) await practica(b);
+  if (quiere("pistas")) await pistas(b);
   await juegos(b);
   if (quiere("concurso")) await dueloConcurso(b);
   await b.close();
