@@ -163,3 +163,24 @@ mark.mt-hl{background:var(--beam);color:#1a1208;border-radius:6px;padding:0 4px}
 .mg-vf button{min-height:64px;border-radius:14px;border:2px solid var(--line);background:var(--panel2);font-size:20px;font-weight:800;cursor:pointer}
 .mg-vf button[aria-pressed=true]{border-color:var(--c);background:color-mix(in srgb,var(--c) 22%,transparent)}
 body.mg-pizarra .mg-grande{font-size:clamp(34px,6vw,72px)}
+/* dibujos de la explicación (mates/dibujos.js) */
+.mt-figs{display:grid;gap:12px;margin:14px 0}
+.mt-fig{margin:0;padding:12px;border-radius:14px;background:var(--panel2);border:1px solid var(--line)}
+.mt-fig svg{display:block;width:100%;max-width:520px;height:auto;margin:0 auto;overflow:visible}
+.mt-fig figcaption{font-size:15px;color:var(--mute);margin-top:6px}.mt-fig figcaption b{color:var(--ink)}
+.mt-fig text{font-family:Lexend,system-ui,sans-serif;text-anchor:middle}
+.mt-fig .mt-num{font-size:15px;font-weight:600}.mt-fig .mt-lbl{font-size:17px;font-weight:700}.mt-fig .mt-sm{font-size:13px;font-weight:500}.mt-fig .mt-big{font-size:21px;font-weight:800}
+.mf-ink{fill:var(--ink)}.mf-mute{fill:var(--mute)}.mf-c{fill:var(--c)}.mf-pos{fill:var(--ok)}.mf-neg{fill:#ff7a7a}
+.ms-ink{stroke:var(--ink);stroke-width:2}.ms-mute{stroke:var(--mute);stroke-width:2}.ms-c{stroke:var(--c);stroke-width:2.5}.ms-bg{stroke:var(--panel2);stroke-width:3}.ms-neg{stroke:#ff7a7a}
+.mt-alto{fill:color-mix(in srgb,var(--ok) 16%,transparent);stroke:var(--line)}.mt-bajo{fill:color-mix(in srgb,#ff7a7a 16%,transparent);stroke:var(--line)}
+.mt-termo{fill:var(--bg);stroke:var(--ink);stroke-width:2}
+.mt-cajap{fill:color-mix(in srgb,var(--ok) 18%,transparent);stroke:var(--ok);stroke-width:2}.mt-cajan{fill:color-mix(in srgb,#ff7a7a 18%,transparent);stroke:#ff7a7a;stroke-width:2}
+.mt-cuad{fill:color-mix(in srgb,var(--c) 30%,transparent);stroke:var(--c);stroke-width:1.5}.mt-cuad2{fill:color-mix(in srgb,var(--c) 50%,transparent);stroke:var(--c);stroke-width:1.5}.mt-cuad3{fill:color-mix(in srgb,var(--c) 15%,transparent);stroke:var(--c);stroke-width:1.5}
+.mt-esc{fill:color-mix(in srgb,var(--c) 45%,transparent);stroke:var(--c);stroke-width:2}
+/* ayuda dentro de la práctica */
+.mt-ayu{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel2)}
+.mt-ayu>summary{cursor:pointer;padding:12px 14px;font-weight:700;min-height:24px}
+.mt-ayu[open]>summary{border-bottom:1px solid var(--line)}
+.mt-ayu .mt-teo{margin:0;border:0;background:transparent}
+.mt-seguir{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:14px;padding:12px 14px;border-radius:12px;background:color-mix(in srgb,var(--c) 18%,var(--panel));border:1px solid var(--c)}
+.mt-dejar{background:none;border:0;color:var(--mute);text-decoration:underline;cursor:pointer;font:inherit;font-size:14px;padding:4px}

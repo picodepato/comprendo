@@ -27,6 +27,8 @@ const dia = d => new Date(d + "T12:00:00").toLocaleDateString(S().learn === "en"
 const C = () => window.LYACuentas || {};
 const ICONO = {quiz: "🏆", video: "📺", doblaje: "🎬"};
 
+const matesNombre = mm => { const T = ((window.LYAMatesTemas || {}).cursos || []).flatMap(c => c.temas).find(x => x.id === mm[1]), a = T && T.aps.find(x => String(x.n) === mm[2]);
+  return `Mates · ${a ? a.n + ". " + a.titulo : mm[2] === "repaso" ? "Repaso" + (T ? " · " + T.titulo : "") : mm[2]} · ${["", "Fácil", "Medio", "Difícil"][mm[3]]}`; };
 /* qué abre cada deber y si está hecho */
 function info(d) {
   const s = S(), g = s.g || {};
@@ -37,6 +39,11 @@ function info(d) {
   }
   if (d.cancion && d.doblaje) return {titulo: "🎬 " + (d.titulo || ""), hecha: (g.cn || {})[d.cancion], ruta: "#doblaje-e-" + d.cancion, boton: "doblar"};  /* doblaje (doblaje/) */
   if (d.cancion) return {titulo: "🎵 " + (d.titulo || ""), hecha: (g.cn || {})[d.cancion], ruta: "#cancion-" + d.cancion, boton: "oir"};
+  const mm = /^mates-(t\d+)-([1-8]|repaso)-([123])$/.exec(d.lectura || "");
+  if (mm) {  /* mates: abre la práctica de ese apartado ya en la dificultad que pide el profe */
+    const h = (((g.mt || {})[mm[1] + "-" + mm[2]] || {}).h || [])[mm[3] - 1];
+    return {titulo: "➗ " + matesNombre(mm), hecha: h && h.last >= (d.creado || 0) ? h : null, ruta: `#mates-${mm[1]}-${mm[2]}-d${mm[3]}`, boton: "hacer"};
+  }
   const dic = /^dictado-/.test(d.lectura || ""), r = window.LYA && window.LYA.rdById ? window.LYA.rdById(dic ? d.lectura.slice(8) : d.lectura) : null;
   const titulo = r ? (dic ? "✍️ " + t("dict") + ": " : "📖 ") + (r.title[s.learn] || r.title.es) + ` · ${r.level}` : d.lectura;
   return {titulo, hecha: dic ? (g.dc || {})[d.lectura.slice(8)] : (g.rd || {})[d.lectura], ruta: r && r.file ? "#" + d.lectura : null, boton: dic ? "escribir" : "ir"};

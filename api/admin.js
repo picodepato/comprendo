@@ -16,7 +16,9 @@ function resumen(u, d, p, grupo) {
     cromos: Object.keys(g.album || {}).length, medallas: Object.keys(g.medals || {}).length, palabras: (s.dict || []).length,
     lecturas: Object.fromEntries([...fin.map(id => [id, rd[id].best || 0]), ...Object.entries(g.dc || {}).map(([k, v]) => ["dictado-" + k, (v && v.best) || 0])]),  /* S.g.dc[lectura] = dictados */
     canciones: Object.fromEntries(Object.entries(g.cn || {}).map(([k, v]) => [k, (v && v.best) || 0])),  /* S.g.cn[cancion] = {n, best, bp, last} (canciones de YouTube) */
-    actividades: Object.fromEntries(Object.entries(g.ac || {}).map(([k, v]) => [k, (v && v.best) || 0])) };  /* S.g.ac[actividad] = {n, best, bp, last} (concursos y vídeos con preguntas) */
+    actividades: Object.fromEntries(Object.entries(g.ac || {}).map(([k, v]) => [k, (v && v.best) || 0])),  /* S.g.ac[actividad] = {n, best, bp, last} (concursos y vídeos con preguntas) */
+    /* S.g.mt["t2-3"].h[d-1] = {n, best, ok, tot, last, mal} (mates, por dificultad) → "mates-t2-3-<d>" */
+    mates: Object.fromEntries(Object.entries(g.mt || {}).flatMap(([k, v]) => ((v && v.h) || []).map((h, i) => h ? ["mates-" + k + "-" + (i + 1), { best: h.best || 0, ok: h.ok || 0, tot: h.tot || 0, n: h.n || 0, last: h.last || 0, mal: (h.mal || []).slice(0, 12) }] : null).filter(Boolean))) };  /* S.g.ac[actividad] = {n, best, bp, last} (concursos y vídeos con preguntas) */
 }
 const leer = x => { try { return JSON.parse(x || "null") || {}; } catch (e) { return {}; } };
 /* qué ve cada uno: el admin todo; un profe sus clases y los alumnos que están en ellas */
@@ -85,6 +87,7 @@ async function accion(b, yo) {
       }
       const lectura = String(b.lectura || ""), limite = String(b.limite || "");
       if (!/^[a-z0-9-]{3,40}$/.test(lectura) || !/^\d{4}-\d{2}-\d{2}$/.test(limite)) return [400, "datos_no_validos"];
+      if (/^mates-/.test(lectura) && !/^mates-t\d+-([1-8]|repaso)-[123]$/.test(lectura)) return [400, "datos_no_validos"];  /* mates: tema, apartado (o repaso) y dificultad */
       const D = await leerJSON("admin:deberes", []);
       if (!yo.admin && !A.grupos.length) return [400, "sin_clases"];
       D.push({ id: nuevoId(), lectura, grupo: b.grupo && G.grupos[b.grupo] ? b.grupo : null, profe: yo.admin ? null : yo.usuario, limite, nota: String(b.nota || "").slice(0, 200), creado: Date.now() });
@@ -160,6 +163,8 @@ export default (req, res) => seguro(res, async () => {
   const misGrupos = Object.fromEntries(A.grupos.map(id => [id, { ...G.grupos[id], alumnos: Object.keys(G.miembros).filter(k => G.miembros[k] === id).length }]));
   const deberes = (await leerJSON("admin:deberes", [])).filter(d => yo.admin || d.profe === yo.usuario).map(d => {
     const para = alumnos.filter(x => d.grupo ? x.grupo === d.grupo : !d.profe || (x.grupo && (G.grupos[x.grupo] || {}).profe === d.profe)).map(x => x.usuario);
+    if (/^mates-/.test(d.lectura || "")) return { ...d, alumnos: para.map(u => { const v = (porU[u].mates || {})[d.lectura], hecho = !!v && v.last >= (d.creado || 0);  /* solo cuenta si lo ha hecho después de mandarlo */
+      return { usuario: u, hecho, estrellas: hecho ? v.best : 0, ok: hecho ? v.ok : 0, tot: hecho ? v.tot : 0, veces: hecho ? v.n : 0, mal: hecho ? v.mal : [] }; }) };
     return { ...d, alumnos: para.map(u => { const m = d.actividad ? porU[u].actividades : d.cancion ? porU[u].canciones : porU[u].lecturas, k = d.actividad || d.cancion || d.lectura; return { usuario: u, hecho: m[k] !== undefined, estrellas: m[k] || 0 }; }) };
   });
   const base = { soy: yo, usuarios, grupos: misGrupos, deberes, fallos: fallos(lista.filter(x => (x.d.rol || "alumno") !== "profe")), enviados: await leerJSON("enviados:" + yo.usuario, []) };
