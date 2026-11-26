@@ -140,3 +140,20 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Servidor: `api/_retos.js`, montado en `api/propuestas?retos=1` (no gasta otra función de Vercel). Rutas: `#reto-<código>` (alumno) y `#reto-pizarra-<código>` (pizarra).
 - Quien crea la sala puede jugar también: casilla «Voy a jugar yo también» (marcada por defecto si no es profe; el profe por defecto solo lleva la pizarra y tiene «Jugar yo también»). Si juega, lleva en su móvil los botones de la pizarra (empezar, siguiente, terminar).
 - Pruebas: `qa/prueba-retos.cjs` (pizarra + 3 alumnos, los 5 juegos) y `qa/prueba-retos-creador.cjs` (el creador juega).
+
+## Matemáticas 1.º ESO (mates/)
+- Apartado **➗ Mates** en la barra (`#mates`). De momento solo en castellano y solo el **tema 2, Números enteros**, con los 8 apartados del libro: números enteros y recta (valor absoluto y opuesto), comparar y ordenar, suma y resta de dos, suma y resta de varios (forma abreviada y paréntesis), multiplicación y división, potencias, raíz cuadrada (exacta, entera y resto) y operaciones combinadas (jerarquía, paréntesis y corchetes). Los demás temas salen como «Pronto».
+- Cada apartado (`#mates-t2-<n>`): **📘 Aprende** (explicación con palabras nuestras, reglas, ejemplos resueltos y «ojo»; en `mates/temas.js`) y **✏️ Practica**: 10 ejercicios nuevos cada vez en Fácil, Medio o Difícil, con teclado propio con botón ± (y el teclado del ordenador). Tipos: número, elegir, ordenar, leer la recta numérica, raíz entera y resto, y **paso a paso** en las combinadas (sale resaltado lo que toca y, si fallas un paso, dice cuál era y sigue). Al fallar sale una ayuda corta. **Repaso del tema** (`#mates-t2-repaso`): 12 mezclados.
+- Ejercicios generados solos, sin IA, en `mates/banco.js` (con semilla: los mismos en todos los móviles). Funciona en el navegador (`window.LYAMatesBanco`) y en el servidor (`api/duelo.js` lo importa).
+- Progreso en `S.g.mt["t2-<n>"] = {e: [estrellas fácil, medio, difícil], n, ok}` (se guarda con la cuenta). XP 2/3/4 por acierto.
+- **Juegos en grupo** (`mates/grupo.js`, `#mates-grupo`, también en «En grupo»): sala con código de 6 cifras, sin cuenta; quien la crea elige apartados, dificultad, equipos y rondas o minutos, y puede jugar también.
+  - 🧍 **La recta humana**: cada uno tiene cartas (−7, |−3|, (−2)³, √49…) y el equipo las ordena en la recta. «¡Listo!» comprueba; si falla, −150 y 5 s.
+  - 🔗 **Cadena de operaciones**: una combinada larga; cada paso lo hace uno del equipo, por turnos. Si alguien falla, la cadena se rompe y el paso pasa al siguiente.
+  - 🎯 **Número objetivo**: con 5 enteros, + − · : y paréntesis, llegar al número (exacto: 1000 + rapidez; cerca: algo).
+  - 🌡️ **Ascensor y termómetro**: una historia (ascensor, termómetro, submarino o cuenta del banco) que sube y baja; todos escriben dónde queda y el marcador avanza.
+  - 🔐 **Escape room de mates**: 4 candados con una operación con letras; los valores de las letras están repartidos entre los móviles del equipo. Final = suma de los 4.
+  - 🎲 **Atrapa los puntos**: ¿verdadero o falso?, apuesta y, si escribes el resultado bueno, el doble.
+  - 🃏 **Cartas a la mesa**: 8 operaciones con hueco; las soluciones repartidas como cartas (con 2 trampas) y un comodín.
+  - ⚔️ **Duelo de mates** (`#mates-duelo`, con cuenta): usa los duelos de siempre con `file = "mates:<spec>"`; el servidor y los móviles sacan las mismas preguntas de la semilla. 🏆 **Concurso de mates** (`#mates-concurso` → `#concursos-mates-<spec>`): abre el editor de concursos con las preguntas.
+- Servidor: el de los retos (`api/_retos.js`, juegos `m-…`, con `lectura = mates-t2-<apartados>-<dificultad>`; acción nueva `cerrar` para acabar ya una ronda). No gasta otra función de Vercel.
+- Prueba: `qa/prueba-mates.cjs <url> [capturas]` con `servidor-prueba.mjs` (los 8 apartados en fácil y difícil, y los 7 juegos con pizarra y 2 móviles).

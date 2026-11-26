@@ -333,6 +333,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="retos/retos.css">
 <link rel="stylesheet" href="concursos/concursos.css">
 <link rel="stylesheet" href="videos/videos.css">
+<link rel="stylesheet" href="mates/mates.css">
 <link rel="stylesheet" href="diseno.css">
 <link rel="stylesheet" href="nav/nav.css">
 <script src="nav/nav.js"></script>
@@ -1140,6 +1141,7 @@ function render() {
   if (S.view === "duelo" && window.LYADuelo) return LYADuelo.render($("app"));
   if (S.view === "escape" && window.LYAEscape) return LYAEscape.render($("app"));
   if (S.view === "retos" && window.LYARetos) return LYARetos.render($("app"));
+  if (S.view === "mates" && window.LYAMates) return LYAMates.render($("app"));
   if (S.view === "cc" && window.LYAConcursos) return LYAConcursos.render($("app"));
   if (S.view === "vd" && window.LYAVideos) return LYAVideos.render($("app"));
   if (S.view === "deb" && window.LYAAvisos?.render) return LYAAvisos.render($("app"));
@@ -1159,6 +1161,7 @@ async function route() {
   const lv = h.match(/^nivel-(a1|a2|b1|b2|c1)$/);
   if (h === "aprender" || h === "lecturas") S.view = "learn";
   else if (window.LYANav?.isHub(h)) S.view = "hub";
+  else if (window.LYAMates?.isMates(h)) S.view = "mates";
   else if (h === "diccionario") S.view = "dict";
   else if (window.LYAFichas?.isFc(h)) S.view = "fc";
   else if (window.LYAJuegos?.isGames(h)) S.view = "games";
@@ -1232,5 +1235,9 @@ start();
 <script src="videos/preparados.js"></script>
 <script src="videos/ia.js"></script>
 <script src="videos/videos.js"></script>
+<script src="mates/banco.js"></script>
+<script src="mates/temas.js"></script>
+<script src="mates/grupo.js"></script>
+<script src="mates/mates.js"></script>
 </body>
 </html>
