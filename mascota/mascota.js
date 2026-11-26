@@ -1,5 +1,5 @@
 /* Mascota y personalización.
-   - Eliges una mascota (oso, ajolote, dinosaurio, robot, gato) y le pones nombre.
+   - Eliges una mascota (oso, ajolote, dinosaurio, robot, gato o Clawy, el osito monstruo de garras de cristal) y le pones nombre.
    - Tienda: ropa y accesorios por zonas (fondo, cabeza, ojos, cuello, mano) y colores de la web,
      que se compran con los puntos para gastar (S.g.xp - S.g.spent, los mismos que el escudo).
    - La mascota saluda en la portada y celebra los aciertos (evento window "lya:gain" que emite award()).
@@ -7,7 +7,7 @@
    para aplicarlo antes de que cargue el resto.
    Usa window.LYA (index.html) y sus textos en content/textos-mascota.json. Ruta: #mascota */
 (() => {
-const KINDS = ["oso", "ajolote", "dino", "robot", "gato"];
+const KINDS = ["oso", "ajolote", "dino", "robot", "gato", "clawy"];
 const SLOTS = ["cabeza", "ojos", "cuello", "mano", "fondo", "temas"];
 
 /* ---------- colours of the website (free: oscuro, claro) ---------- */
@@ -29,8 +29,11 @@ const C = {
   ajolote: ["#f6a6c8", "#ffe0ec", "#a83a6a"],
   dino: ["#5cbf6b", "#d9f2a6", "#2c6b37"],
   robot: ["#a9b6c6", "#e3e9f0", "#3f4a5a"],
-  gato: ["#e9b45e", "#fbe6bf", "#6b4a1e"]
+  gato: ["#e9b45e", "#fbe6bf", "#6b4a1e"],
+  clawy: ["#e7e1f2", "#f7f4fc", "#3b2a6b"]
 };
+/* Clawy: garras de cristal (tres púas azules) que salen de una mano en (x, y), hacia abajo y hacia fuera (s = 1 derecha, -1 izquierda) */
+const garras = (x, y, s) => `<g transform="translate(${x} ${y}) scale(${s} 1)">${[[-9, -2, 34], [0, 0, 12], [9, -2, -8]].map(([dx, dy, a]) => `<g transform="translate(${dx} ${dy}) rotate(${a})"><path d="M-5.5 0L5.5 0L1.5 38z" fill="#3fa9ff" stroke="#1d3f9e" stroke-width="2.2" stroke-linejoin="round"/><path d="M-1.5 3L1.5 3L1 26z" fill="#c8eeff"/></g>`).join("")}</g>`;
 const eyesN = (d, happy) => happy
   ? `<path d="M71 88q9-11 18 0M111 88q9-11 18 0" fill="none" stroke="${d}" stroke-width="5" stroke-linecap="round"/>`
   : `<ellipse cx="80" cy="86" rx="7.5" ry="9.5" fill="#1d1420"/><ellipse cx="120" cy="86" rx="7.5" ry="9.5" fill="#1d1420"/><circle cx="82.5" cy="82" r="2.8" fill="#fff"/><circle cx="122.5" cy="82" r="2.8" fill="#fff"/>`;
@@ -71,7 +74,20 @@ const DRAW = {
     <ellipse cx="100" cy="88" rx="58" ry="52" fill="${c}"/>
     <path d="M90 44l2 12M100 41v14M110 44l-2 12" stroke="${d}" stroke-width="4" stroke-linecap="round" opacity=".55"/>
     ${eyesN(d, happy)}<path d="M94 100h12l-6 7z" fill="#e8738f"/><path d="M88 112q6 5 12-2q6 7 12 2" fill="none" stroke="${d}" stroke-width="3" stroke-linecap="round"/>
-    <path d="M62 102l-22-4M62 110l-22 4M138 102l22-4M138 110l22 4" stroke="${d}" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>`, arm: armR(c)}; }
+    <path d="M62 102l-22-4M62 110l-22 4M138 102l22-4M138 110l22 4" stroke="${d}" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>`, arm: armR(c)}; },
+  /* Clawy (diseño de la web): osito de peluche lila, ojos grandes de cristal morado, boca de dientes y garras azules */
+  clawy: (happy) => { const [c, l, d] = C.clawy, sh = "#c9bfe0", o = `stroke="${d}" stroke-width="3"`;
+    const ojo = x => `<circle cx="${x}" cy="84" r="17" fill="#2a1d55" ${o}/><circle cx="${x}" cy="84" r="12.5" fill="#6a4be0"/><path d="M${x - 9} 80l9-8 9 8-9 14z" fill="#8f74ff" opacity=".8"/><path d="M${x} 72v24M${x - 11} 84h22" stroke="#3a2690" stroke-width="1.6"/><circle cx="${x - 5}" cy="78" r="3.2" fill="#fff"/>`;
+    const eyes = happy ? `<path d="M66 88q12-14 24 0M110 88q12-14 24 0" fill="none" stroke="#5b3fd0" stroke-width="6" stroke-linecap="round"/>` : ojo(78) + ojo(122);
+    return { body: `<ellipse cx="80" cy="206" rx="15" ry="10" fill="${c}" ${o}/><ellipse cx="120" cy="206" rx="15" ry="10" fill="${c}" ${o}/>
+    <path d="M66 150q-24 16-28 34" stroke="${d}" stroke-width="23" stroke-linecap="round" fill="none"/><path d="M66 150q-24 16-28 34" stroke="${c}" stroke-width="17" stroke-linecap="round" fill="none"/>${garras(38, 184, -1)}
+    <ellipse cx="100" cy="168" rx="40" ry="40" fill="${c}" ${o}/><ellipse cx="100" cy="174" rx="24" ry="24" fill="${l}"/><path d="M100 152v44" stroke="${sh}" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="52" cy="42" r="19" fill="${c}" ${o}/><circle cx="52" cy="42" r="9" fill="${sh}"/><circle cx="148" cy="42" r="19" fill="${c}" ${o}/><circle cx="148" cy="42" r="9" fill="${sh}"/>
+    <ellipse cx="100" cy="86" rx="60" ry="54" fill="${c}" ${o}/><path d="M64 60q8-6 14-2M136 60q-8-6-14-2" stroke="${sh}" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    ${eyes}<ellipse cx="100" cy="103" rx="7" ry="5.5" fill="#2f6bff" stroke="#1d3f9e" stroke-width="2"/>
+    <path d="M78 113h44q-4 20-22 20t-22-20z" fill="#1d1430" ${o} stroke-linejoin="round"/>
+    <path d="M80 114l5 7 5-7 5 7 5-7 5 7 5-7 5 7 5-7" fill="#fff"/><path d="M86 130l4-6 4 6 4-6 4 6 4-6 4 6" fill="#fff"/>`,
+    arm: `<path d="M134 150q22 12 24 30" stroke="${d}" stroke-width="23" stroke-linecap="round" fill="none"/><path d="M134 150q22 12 24 30" stroke="${c}" stroke-width="17" stroke-linecap="round" fill="none"/>${garras(158, 180, 1)}`}; }
 };
 
 /* items: [id, slot, price, svg | {back, front}] */

@@ -334,6 +334,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="concursos/concursos.css">
 <link rel="stylesheet" href="videos/videos.css">
 <link rel="stylesheet" href="mates/mates.css">
+<link rel="stylesheet" href="profe/profe.css">
 <link rel="stylesheet" href="diseno.css">
 <link rel="stylesheet" href="nav/nav.css">
 <script src="nav/nav.js"></script>
@@ -483,6 +484,7 @@ function award(n, key, rid) {
   if (h >= 22 || h < 5) secret("buho"); else if (h < 8) secret("madruga");
   if (n > 0) {
     const wk = weekId(); if (!g.wk || g.wk.w !== wk) g.wk = {w: wk, xp: 0}; g.wk.xp += n; /* XP de la semana (Inicio) */
+    { const dd = g.dias ||= {}, t = today(); dd[t] = (dd[t] || 0) + n; const ks = Object.keys(dd).sort(); while (ks.length > 14) delete dd[ks.shift()]; }  /* XP de los últimos 14 días (lo ve el profe) */
     const before = lvOf(g.xp); g.xp += n; if (rid) g.rx[rid] = (g.rx[rid] || 0) + n;
     xpPop(n); const after = lvOf(g.xp); if (after > before) toast(TI("t_level", {n: after}), 1);
     try { dispatchEvent(new CustomEvent("lya:gain", {detail: {n, key, up: after > before}})); } catch (e) {} /* mascota */
@@ -522,6 +524,9 @@ function recordRun(L) {
   S.a[fk] = 1; g.rd = g.rd || {};
   const st = starsOf(r.pts, r.tot), o = g.rd[id] || {n: 0, best: 0, bp: 0}, prev = o.best;
   o.n++; o.last = st; o.best = Math.max(o.best, st); o.bp = Math.max(o.bp, Math.round(r.pts / r.tot * 100)); g.rd[id] = o;
+  /* qué falló en este intento (se reescribe al repetirla): preguntas de comprensión y de gramática, y cuántas de vocabulario y frases */
+  o.fq = L.q.map((q, i) => S.a[`${id}:q${i}`] === q[2] ? -1 : i).filter(i => i >= 0); o.fg = L.grammar.items.map((q, i) => S.a[`${id}:g${i}`] === q[2] ? -1 : i).filter(i => i >= 0);
+  o.fv = r.vocab[1] - r.vocab[0]; o.fh = r.halves[1] - r.halves[0]; o.pct = Math.round(r.pts / r.tot * 100); o.t = Date.now();
   toast(`${"★".repeat(st)}${"☆".repeat(3 - st)} ${TI("t_stars", {n: st})}`, 1);
   if (o.n > 1) award(15 + (st > prev ? 20 * (st - prev) : 0), null, id);
   checkStarAch(); save();
@@ -567,6 +572,8 @@ addEventListener("lya:xp", e => {
   if (typeof d.ok === "boolean" && !/^(dict-save|quiz-done)$/.test(d.src || "")) practiceAnswer(d.ok);
   else if (/^quiz-(test|fill|write)$/.test(d.src || "")) practiceAnswer(true);
   const rid = d.lectura && rdById(d.lectura) ? d.lectura : null;
+  /* a qué juega (para el profe): un contador por juego, que se sobrescribe; nunca crece con cada partida */
+  try { const k = String(d.juego || d.src || "otro").replace(/^retos-/, "").slice(0, 24), x = (S.g.act ||= {})[k] ||= {n: 0, ok: 0, mal: 0, xp: 0}; x.n++; if (d.ok === true) x.ok++; if (d.ok === false) x.mal++; x.xp += Math.max(0, n); x.t = Date.now(); } catch (er) {}
   if (n > 0 || d.ok !== false) award(Math.max(0, n), null, rid); else { save(); }
 });
 function stkHTML(r) {
@@ -632,11 +639,13 @@ function cardHTML(r, small) {
 }
 function renderHome() {
   setAcc("#ff4141");
+  /* un profe no ve la portada del alumno: va a la suya (profe/profe.js), salvo si ha pedido «ver la web como un alumno» */
+  if (window.LYAProfe?.esProfe() && !LYAProfe.verComoAlumno() && window.LYANav) { history.replaceState(null, "", "#profe"); return route(); }
   if (!window.LYANav) return renderLearn();
   const g = S.g, n = lvOf(g.xp), last = rdById(S.read);
   $("app").innerHTML = `<section class="intro nvintro"><div class="in">
     <h1>${esc(U("home_title", S.learn))}</h1><p class="lead">${TB("home_sub")}</p>${LYANav.idiomaLinea()}${window.LYAMascota ? LYAMascota.homeCard() : ""}</div></section>
-    ${window.LYAAvisos ? LYAAvisos.html() : ""}
+    ${window.LYAProfe ? LYAProfe.banda() : ""}${window.LYAAvisos ? LYAAvisos.html() : ""}
     <div class="nvhome">${LYANav.inicio({card: last && last.file ? cardHTML(last) : "", streak: streakNow(), lvl: n, xp: g.xp, a: lvStart(n), b: lvStart(n + 1), wk: g.wk && g.wk.w === weekId() ? g.wk.xp : 0})}</div>
     <div class="nvhome nvhome2">${LYANav.mapa()}</div>
     ${window.LYAVotos ? LYAVotos.html() : ""}${window.LYAPropuestas ? LYAPropuestas.html() : ""}`;
@@ -1240,5 +1249,6 @@ start();
 <script src="mates/dibujos.js"></script>
 <script src="mates/grupo.js"></script>
 <script src="mates/mates.js"></script>
+<script src="profe/profe.js"></script>
 </body>
 </html>

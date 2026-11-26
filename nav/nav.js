@@ -133,10 +133,10 @@ const esProfe = () => rol() === "profe" || rol() === "admin";
 /* ---------- apartados ---------- */
 const SECS = [["inicio", "🏠"], ["aprender", "📖"], ["practicar", "🎮"], ["mates", "➗"], ["grupo", "🏫"], ["mizona", "📚"], ["profe", "👩‍🏫"]];
 const HUBS = ["grupo", "mizona", "profe"];
-const isHub = h => HUBS.includes(h);
+const isHub = h => HUBS.includes(h) || /^profe-alumno-./.test(h);  /* profe-alumno-<usuario>: ficha de un alumno (profe/profe.js) */
 const hash = () => location.hash.replace(/^#/, "");
 function secOf(view, h = hash()) {
-  if (view === "hub") return isHub(h) ? h : "inicio";
+  if (view === "hub") return isHub(h) ? h.replace(/^profe-alumno-.*/, "profe") : "inicio";
   if (view === "home") return "inicio";
   if (view === "deb") return "mizona";
   if (["learn", "read", "dictado", "camara", "songs", "dub", "pronto"].includes(view)) return "aprender";
@@ -246,11 +246,13 @@ function renderProfe(el) {
       window.LYACanciones && tile("#canciones", "🎵", "c_cancion")].filter(Boolean).join("")}</div>
     <h2 class="nvh2">📋 ${esc(t("f_seg"))}${t2("f_seg")}</h2>
     <div class="nvtiles">${btile(P("actividades"), "🧩", "f_creadas")}${btile(P("deberes"), "📚", "f_deberes")}${btile(P("usuarios"), "📊", "f_result")}${btile(P("fallos"), "❌", "f_fallos")}${btile(P("mensajes"), "✉️", "f_msgs")}${rol() === "admin" ? btile(P("propuestas"), "💡", "f_admin") : ""}</div></section>`;
+  /* la portada del profe (su clase, estadísticas, deberes, a qué juegan y fichas de alumnos) está en profe/profe.js; estas tarjetas van abajo como «herramientas» */
+  if (window.LYAProfe) { const sec = el.querySelector(".nvhub"); sec.querySelector("h1")?.remove(); sec.querySelector(".nvsub")?.remove(); LYAProfe.render(el, sec.innerHTML); }
 }
 function render(el) {
   const h = hash();
   if (h === "grupo") renderGrupo(el);
-  else if (h === "profe") renderProfe(el);
+  else if (h === "profe" || /^profe-alumno-/.test(h)) renderProfe(el);
   else renderZona(el);
   try { L().setAcc?.("#ff4141"); } catch (e) {}
 }

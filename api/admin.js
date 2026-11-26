@@ -18,7 +18,10 @@ function resumen(u, d, p, grupo) {
     canciones: Object.fromEntries(Object.entries(g.cn || {}).map(([k, v]) => [k, (v && v.best) || 0])),  /* S.g.cn[cancion] = {n, best, bp, last} (canciones de YouTube) */
     actividades: Object.fromEntries(Object.entries(g.ac || {}).map(([k, v]) => [k, (v && v.best) || 0])),  /* S.g.ac[actividad] = {n, best, bp, last} (concursos y vídeos con preguntas) */
     /* S.g.mt["t2-3"].h[d-1] = {n, best, ok, tot, last, mal} (mates, por dificultad) → "mates-t2-3-<d>" */
-    mates: Object.fromEntries(Object.entries(g.mt || {}).flatMap(([k, v]) => ((v && v.h) || []).map((h, i) => h ? ["mates-" + k + "-" + (i + 1), { best: h.best || 0, ok: h.ok || 0, tot: h.tot || 0, n: h.n || 0, last: h.last || 0, mal: (h.mal || []).slice(0, 12) }] : null).filter(Boolean))) };  /* S.g.ac[actividad] = {n, best, bp, last} (concursos y vídeos con preguntas) */
+    /* para la portada del profe: a qué juega, XP de los últimos 14 días, XP de esta semana y mates por tipo de ejercicio (últimos 10) */
+    ult: Object.fromEntries(fin.filter(id => rd[id].pct !== undefined).map(id => [id, [rd[id].pct, (rd[id].fq || []).length + (rd[id].fg || []).length]])),  /* último intento de cada lectura: % y preguntas falladas */
+    act: g.act || {}, dias: g.dias || {}, semana: (g.wk && g.wk.w) ? g.wk : null, mh: g.mh || {},
+    mates: Object.fromEntries(Object.entries(g.mt || {}).flatMap(([k, v]) => ((v && v.h) || []).map((h, i) => h ? ["mates-" + k + "-" + (i + 1), { best: h.best || 0, ok: h.ok || 0, tot: h.tot || 0, n: h.n || 0, last: h.last || 0, pi: h.pi || 0, mal: (h.mal || []).slice(0, 12) }] : null).filter(Boolean))) };  /* S.g.ac[actividad] = {n, best, bp, last} (concursos y vídeos con preguntas) */
 }
 const leer = x => { try { return JSON.parse(x || "null") || {}; } catch (e) { return {}; } };
 /* qué ve cada uno: el admin todo; un profe sus clases y los alumnos que están en ellas */
@@ -151,7 +154,9 @@ export default (req, res) => seguro(res, async () => {
     if (!d) return responder(res, 404, { error: "no_existe" });
     const P = leer(p), s = P.s || {}, rd = ((s.g || {}).rd) || {}, emp = empezadas(s);
     const ids = [...new Set([...Object.keys(rd), ...Object.keys(emp)])];
-    const lecturas = ids.map(id => ({ id, veces: (rd[id] || {}).n || 0, estrellas: (rd[id] || {}).best || 0, ultima: (rd[id] || {}).last ?? null, mejorPct: (rd[id] || {}).bp || 0, respuestas: emp[id] || 0, terminada: !!rd[id] }));
+    const lecturas = ids.map(id => { const x = rd[id] || {}; return { id, veces: x.n || 0, estrellas: x.best || 0, ultima: x.last ?? null, mejorPct: x.bp || 0, respuestas: emp[id] || 0, terminada: !!rd[id],
+      /* el último intento: qué preguntas falló (índices) y cuántas de vocabulario y frases */
+      fq: x.fq || null, fg: x.fg || null, fv: x.fv ?? null, fh: x.fh ?? null, pct: x.pct ?? null, cuando: x.t || null }; });
     const palabras = (s.dict || []).map(x => ({ palabra: x.w, lengua: x.l, fallo: !!x.miss }));
     const mensajes = ((await redis("LRANGE", "mensajes:" + u, 0, 19)) || []).map(x => leer(x));
     return responder(res, 200, { resumen: resumen(u, leer(d), P, G.miembros[u]), lecturas, palabras, mensajes, grupos: Object.fromEntries(A.grupos.map(id => [id, G.grupos[id]])) });

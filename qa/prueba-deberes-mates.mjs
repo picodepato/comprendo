@@ -24,7 +24,7 @@ const pagina = async (tok, u, w) => {
 const P = await pagina(prof.j.token, "profe" + id, 1280);
 await P.goto(B + "/index.html#inicio", { waitUntil: "networkidle" }); await P.waitForFunction(() => window.LYA && document.getElementById("cta"));
 await P.click("#cta"); await P.click("#ctaadm"); await P.waitForSelector("#admc");
-await P.click("[data-tab=deberes]"); await P.waitForSelector("#admdc");
+await P.click(".ctatabs [data-tab=deberes]"); await P.waitForSelector("#admdc");
 ok(await P.isHidden("#admdif"), "la dificultad no sale para una lectura");
 await P.selectOption("#admdc [name=lectura]", "mates-t2-3");
 ok(await P.isVisible("#admdif"), "al elegir mates sale la dificultad");
@@ -75,7 +75,7 @@ await espera(2600); /* se guarda en la nube */
 const R = await api("admin", prof.j.token);
 const x = (R.j.deberes || []).find(z => z.lectura === "mates-t2-3-2"), a = x && x.alumnos[0];
 ok(a && a.hecho && a.estrellas === 2 && a.ok === 8 && a.tot === 10 && a.mal.length === 2, "el profe lo ve hecho: 2 estrellas, 8/10 y 2 fallos: " + JSON.stringify(a));
-await P.click("[data-tab=usuarios]"); await P.click("[data-tab=deberes]"); await P.waitForSelector("#admc .ctali");
+await P.click(".ctatabs [data-tab=usuarios]"); await P.click(".ctatabs [data-tab=deberes]"); await P.waitForSelector("#admc .ctali");
 await P.click("#admc .ctapal summary");
 const det = await P.textContent("#admc .ctapal");
 ok(det.includes("(8/10)") && det.includes("Lo que fallaron") && det.includes("→"), "en el panel salen los aciertos y lo que falló");

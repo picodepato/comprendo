@@ -102,10 +102,11 @@ function resolver(t, lim = 999) {
   const pasos = []; let h, n = 0;
   while ((h = siguiente(t)) && n++ < 60) {
     const antes = txt(t, true, h), parte = parteTxt(h), dentro = h.g !== t;
+    const dato = h.par ? {a: h.g.it[h.i].v, op: h.g.it[h.i + 1], b: h.g.it[h.i + 2].v} : {nodo: clon(h.g.it[h.i])};  /* para las pistas */
     const v = aplicar(h);
     if (!Number.isFinite(v) || Math.abs(v) > lim) return null;
     plano(t);
-    pasos.push({antes, parte, v, tipo: h.tipo, dentro, despues: texto(t)});
+    pasos.push({antes, parte, v, tipo: h.tipo, dentro, despues: texto(t), dato});
   }
   return t.it.length === 1 && t.it[0].k === "n" ? {pasos, v: t.it[0].v} : null;
 }
@@ -221,9 +222,49 @@ const ayudaSuma = (a, b) => {
   const g = Math.abs(a) > Math.abs(b) ? a : b;
   return `Distinto signo: se restan los valores absolutos (${Math.max(Math.abs(a), Math.abs(b))} − ${Math.min(Math.abs(a), Math.abs(b))} = ${Math.abs(a + b)}) y se pone el signo del de mayor valor absoluto (${sg(g)}).`;
 };
+/* ---------- pistas: de menos a más, sin dar la solución de golpe ---------- */
+const absS = (a, b) => [Math.max(Math.abs(a), Math.abs(b)), Math.min(Math.abs(a), Math.abs(b))];
+function pistasSuma(a, b) {
+  if (a === 0 || b === 0) return ["Uno de los dos es 0: sumar 0 no cambia el número."];
+  if (Math.sign(a) === Math.sign(b)) return ["Mira los signos de los dos números: ¿son iguales o distintos?", `Los dos son ${a < 0 ? "negativos" : "positivos"} (mismo signo): suma ${Math.abs(a)} + ${Math.abs(b)} y pon el signo ${a < 0 ? "−" : "+"}.`];
+  const [g, c] = absS(a, b), gr = Math.abs(a) > Math.abs(b) ? a : b;
+  return ["Mira los signos de los dos números: ¿son iguales o distintos?", `Son de distinto signo: resta ${g} − ${c} y ponle el signo del que tiene mayor valor absoluto, ${sg(gr)} (${gr < 0 ? "−" : "+"}).`];
+}
+function pistasVarios(ts) {
+  const P = ts.filter(x => x > 0), Ng = ts.filter(x => x < 0), sp = P.reduce((a, b) => a + b, 0), sn = -Ng.reduce((a, b) => a + b, 0);
+  return ["Junta por un lado los positivos y por otro los negativos.",
+    `Positivos: ${P.join(" + ") || "0"} = ${sp}. Negativos: ${Ng.map(x => -x).join(" + ") || "0"} = ${sn}.`,
+    `Ahora resta ${Math.max(sp, sn)} − ${Math.min(sp, sn)} y pon el signo del grupo que gana (${sp >= sn ? "los positivos, +" : "los negativos, −"}).`];
+}
+function pistasMul(a, b, op) {
+  const ig = Math.sign(a) === Math.sign(b);
+  return ["Primero el signo, con la regla de los signos: signos iguales → +, distintos → −.", `${p(a)} y ${p(b)} tienen signos ${ig ? "iguales" : "distintos"}: el resultado es ${ig ? "positivo (+)" : "negativo (−)"}. Ahora calcula ${Math.abs(a)} ${op} ${Math.abs(b)}.`];
+}
+function pistasCadena(its) {
+  const nums = its.filter((x, i) => i % 2 === 0).map(x => parseInt(x.replace(/[()+]/g, "").replace(M, "-"), 10)), neg = nums.filter(x => x < 0).length;
+  return ["Primero el signo: cuenta cuántos números negativos hay.", `Hay ${neg} negativo${neg === 1 ? "" : "s"} (${neg % 2 ? "impar → el resultado es −" : "par → el resultado es +"}). Ahora opera sin signos, de izquierda a derecha.`,
+    `Empieza por ${Math.abs(nums[0])} ${its[1]} ${Math.abs(nums[1])} y sigue con el resultado.`];
+}
+function pistasPot(b, e) {
+  const ab = Math.abs(b), sgn = b > 0 ? "Base positiva: el resultado es +." : e % 2 ? "Base negativa y exponente impar: el resultado es −." : "Base negativa y exponente par: el resultado es +.";
+  return ["Una potencia es multiplicar la base por sí misma tantas veces como dice el exponente.", `Aquí: ${Array(Math.min(e, 6)).fill(ab).join(" · ")}${e > 6 ? " · …" : ""} (${e} veces). ${sgn}`];
+}
+const pasoNombre = x => ({pot: "la potencia", raiz: "la raíz", mul: "multiplicar o dividir", sum: "sumar o restar"}[x.tipo] + " " + x.parte);
+/* pistas para un paso de una combinada (resolver → pasos[i]) */
+function pistaPaso(x) {
+  const qu = {pot: "una potencia", raiz: "una raíz", mul: x.dato?.op === ":" ? "dividir" : "multiplicar", sum: x.dato?.op === M ? "restar" : "sumar"}[x.tipo];
+  const por = {pot: "las potencias y las raíces van antes que · : + −", raiz: "las potencias y las raíces van antes que · : + −", mul: "· y : van antes que + y −, de izquierda a derecha", sum: "las sumas y restas van al final, de izquierda a derecha"}[x.tipo];
+  const out = [`Ahora toca ${qu}: ${x.parte} (lo resaltado), porque ${por}${x.dentro ? ", y está dentro de un paréntesis o corchete" : ""}.`];
+  const d = x.dato || {};
+  if (x.tipo === "pot" && d.nodo) out.push(d.nodo.neg ? `Ojo: en ${x.parte} la base es ${d.nodo.b} y el − va delante. Calcula ${d.nodo.b}${sup(d.nodo.e)} y ponle el −.` : pistasPot(d.nodo.b, d.nodo.e)[1]);
+  else if (x.tipo === "raiz" && d.nodo) { const r = Math.round(Math.sqrt(d.nodo.v)); out.push(`¿Qué número multiplicado por sí mismo da ${d.nodo.v}? En las combinadas se usa la raíz positiva${d.nodo.neg ? ", y el − de delante se queda" : ""}. Pista: está entre ${r - 1} y ${r + 1}.`); }
+  else if (x.tipo === "mul") out.push(pistasMul(d.a, d.b, d.op)[1]);
+  else if (x.tipo === "sum") { const b = d.op === M ? -d.b : d.b; out.push((d.op === M ? `Restar ${p(d.b)} es sumar ${p(-d.b)}: ${p(d.a)} + ${p(b)}. ` : "") + pistasSuma(d.a, b).slice(-1)[0]); }
+  return out;
+}
 AP[3] = [
-  (r, d) => { const a = r.nz(-MAG[d], MAG[d]), b = r.nz(-MAG[d], MAG[d]); return {tipo: "num", enun: "Calcula", expr: `${p(a)} + ${p(b)}`, sol: a + b, ayuda: ayudaSuma(a, b), mal: [a - b, -(a + b)]}; },
-  (r, d) => { const a = r.nz(-MAG[d], MAG[d]), b = r.nz(-MAG[d], MAG[d]); return {tipo: "num", enun: "Calcula", expr: `${p(a)} ${M} ${p(b)}`, sol: a - b, ayuda: `Restar es sumar el opuesto: ${p(a)} + ${p(-b)}. ${ayudaSuma(a, -b)}`, mal: [a + b, b - a]}; },
+  (r, d) => { const a = r.nz(-MAG[d], MAG[d]), b = r.nz(-MAG[d], MAG[d]); return {tipo: "num", enun: "Calcula", expr: `${p(a)} + ${p(b)}`, sol: a + b, ayuda: ayudaSuma(a, b), pistas: pistasSuma(a, b), mal: [a - b, -(a + b)]}; },
+  (r, d) => { const a = r.nz(-MAG[d], MAG[d]), b = r.nz(-MAG[d], MAG[d]); return {tipo: "num", enun: "Calcula", expr: `${p(a)} ${M} ${p(b)}`, sol: a - b, ayuda: `Restar es sumar el opuesto: ${p(a)} + ${p(-b)}. ${ayudaSuma(a, -b)}`, pistas: ["Restar es sumar el opuesto: cambia el − por un + y cambia el signo del segundo número.", `Queda ${p(a)} + ${p(-b)}. ${pistasSuma(a, -b)[0]}`, pistasSuma(a, -b)[1]], mal: [a + b, b - a]}; },
   (r, d) => { const a = r.nz(-MAG[d], MAG[d]), b = r.nz(-MAG[d], MAG[d]); return opcQ({enun: "Transforma la resta en una suma", expr: `${p(a)} ${M} ${p(b)} =`, opciones: [`${p(a)} + ${p(-b)}`, `${p(a)} + ${p(b)}`, `${p(-a)} + ${p(b)}`, `${p(-a)} + ${p(-b)}`], ok: 0, ayuda: "Para restar, se suma al primero el opuesto del segundo."}, r); },
   (r, d) => { const a = r.nz(-MAG[d], MAG[d]), b = r.nz(-MAG[d], MAG[d]), k = r.int(0, 3); const [e, sol] = k === 0 ? [`▢ + ${p(b)} = ${sg(a + b)}`, a] : k === 1 ? [`▢ ${M} ${p(b)} = ${sg(a - b)}`, a] : k === 2 ? [`${p(a)} + ▢ = ${sg(a + b)}`, b] : [`${p(a)} ${M} ▢ = ${sg(a - b)}`, b]; return {tipo: "num", enun: "¿Qué número falta?", expr: e, sol, ayuda: "Prueba con el número que has pensado: tiene que salir el resultado.", mal: [-sol]}; }
 ];
@@ -236,9 +277,9 @@ AP[4] = [
     const malas = new Set(); let k = 0; while (malas.size < 3 && k++ < 30) { const j = r.int(0, n - 1), t2 = ts.map((x, i) => i === j ? -x : x), m = abreviada(t2); if (m !== buena) malas.add(m); }
     return opcQ({enun: "¿Cómo se escribe en forma abreviada?", expr: conParentesis(ts, sig), opciones: [buena, ...malas], ok: 0, ayuda: "+(+a) = +a, +(−a) = −a, −(+a) = −a y −(−a) = +a."}, r); },
   (r, d) => { const n = d === 1 ? 4 : d === 2 ? 5 : 6, ts = Array.from({length: n}, () => r.nz(-MAG[d], MAG[d])), sol = ts.reduce((a, b) => a + b, 0), pos = ts.filter(x => x > 0).reduce((a, b) => a + b, 0), neg = -ts.filter(x => x < 0).reduce((a, b) => a + b, 0);
-    return {tipo: "num", enun: "Calcula", expr: abreviada(ts), sol, ayuda: `Suma los positivos (${pos}) y los negativos (${neg}), y resta: ${pos} − ${neg} = ${s(sol)}.`, mal: [-sol, sol + 2 * ts[n - 1]]}; },
+    return {tipo: "num", enun: "Calcula", expr: abreviada(ts), sol, ayuda: `Suma los positivos (${pos}) y los negativos (${neg}), y resta: ${pos} − ${neg} = ${s(sol)}.`, pistas: pistasVarios(ts), mal: [-sol, sol + 2 * ts[n - 1]]}; },
   (r, d) => { const n = d === 1 ? 3 : d === 2 ? 4 : 6, ts = Array.from({length: n}, () => r.nz(-MAG[d], MAG[d])), sig = ts.map(() => r.sig()), sol = ts.reduce((a, b) => a + b, 0);
-    return {tipo: "num", enun: "Calcula", expr: conParentesis(ts, sig), sol, ayuda: `Primero quita los paréntesis: ${abreviada(ts)}. Luego suma positivos y negativos por separado.`, mal: [-sol]}; },
+    return {tipo: "num", enun: "Calcula", expr: conParentesis(ts, sig), sol, ayuda: `Primero quita los paréntesis: ${abreviada(ts)}. Luego suma positivos y negativos por separado.`, pistas: ["Quita los paréntesis: un + delante deja el signo como está y un − delante lo cambia.", `Sin paréntesis queda: ${abreviada(ts)}.`, ...pistasVarios(ts).slice(1)], mal: [-sol]}; },
   (r, d) => { const t = combinada(r, d, {solo: "sum", lim: 60}); return {tipo: "pasos", enun: "Resuelve paso a paso", arbol: t, expr: texto(t), sol: valorDe(t), ayuda: "Primero lo que hay dentro de los paréntesis; después, las sumas y restas de izquierda a derecha."}; },
   (r, d) => { const a = r.nz(-MAG[d], MAG[d]), b = r.nz(1, MAG[d]), k = r.int(0, 2); const [e, sol] = k === 0 ? [`▢ + ${b} = ${s(a + b)}`, a] : k === 1 ? [`${s(a)} ${M} ▢ = ${s(a - b)}`, b] : [`▢ ${M} ${b} = ${s(a - b)}`, a]; return {tipo: "num", enun: "¿Qué número falta?", expr: e, sol, ayuda: "Prueba con tu número en el hueco y comprueba que da el resultado.", mal: [-sol]}; }
 ];
@@ -247,16 +288,16 @@ AP[4].pesos = [[3, 3, 3, 1, 1], [2, 3, 3, 3, 1], [1, 2, 3, 4, 1]];
 const reglaSignos = (a, b, op) => `${Math.sign(a) === Math.sign(b) ? "Mismo signo" : "Distinto signo"}: el resultado es ${Math.sign(a) === Math.sign(b) ? "positivo" : "negativo"}. ${Math.abs(a)} ${op} ${Math.abs(b)} = ${op === "·" ? Math.abs(a * b) : Math.abs(a / b)}.`;
 AP[5] = [
   (r, d) => { const a = r.sig(), b = r.sig(), op = r.pick(["·", ":"]), t = x => x > 0 ? "(+)" : `(${M})`; return {tipo: "opc", enun: "Regla de los signos", expr: `${t(a)} ${op} ${t(b)} = ?`, opciones: ["+", M], ok: a * b > 0 ? 0 : 1, ayuda: "Signos iguales dan +; signos distintos dan −."}; },
-  (r, d) => { const m = d === 1 ? 9 : d === 2 ? 12 : 15, a = r.sig() * r.int(2, m), b = r.sig() * r.int(2, m); return {tipo: "num", enun: "Calcula", expr: `${p(a)} · ${p(b)}`, sol: a * b, ayuda: reglaSignos(a, b, "·"), mal: [-a * b, a + b]}; },
-  (r, d) => { const m = d === 1 ? 9 : d === 2 ? 12 : 15, b = r.sig() * r.int(2, m), q = r.sig() * r.int(2, m), a = b * q; return {tipo: "num", enun: "Calcula", expr: `${p(a)} : ${p(b)}`, sol: q, ayuda: reglaSignos(a, b, ":"), mal: [-q]}; },
-  (r, d) => { const n = d === 1 ? 3 : 4; for (let k = 0; k < 100; k++) { let v = r.sig() * r.int(2, 9); const its = [p(v)]; let ok = true; for (let i = 1; i < n; i++) { const op = r.si(.5) ? "·" : ":"; if (op === "·") { const f = r.sig() * r.int(2, 6); v *= f; its.push("·", p(f)); } else { const ds = []; for (let x = 2; x <= Math.abs(v); x++) if (v % x === 0) ds.push(x); if (!ds.length) { const f = r.sig() * r.int(2, 5); v *= f; its.push("·", p(f)); continue; } const dd = r.pick(ds) * r.sig(); v /= dd; its.push(":", p(dd)); } if (Math.abs(v) > 300) { ok = false; break; } } if (ok) return {tipo: "num", enun: "Calcula (de izquierda a derecha)", expr: its.join(" "), sol: v, ayuda: "Primero el signo: cuenta cuántos negativos hay (par → +, impar → −). Luego opera los valores absolutos de izquierda a derecha.", mal: [-v]}; } return AP[5][1](r, d); },
+  (r, d) => { const m = d === 1 ? 9 : d === 2 ? 12 : 15, a = r.sig() * r.int(2, m), b = r.sig() * r.int(2, m); return {tipo: "num", enun: "Calcula", expr: `${p(a)} · ${p(b)}`, sol: a * b, ayuda: reglaSignos(a, b, "·"), pistas: pistasMul(a, b, "·"), mal: [-a * b, a + b]}; },
+  (r, d) => { const m = d === 1 ? 9 : d === 2 ? 12 : 15, b = r.sig() * r.int(2, m), q = r.sig() * r.int(2, m), a = b * q; return {tipo: "num", enun: "Calcula", expr: `${p(a)} : ${p(b)}`, sol: q, ayuda: reglaSignos(a, b, ":"), pistas: pistasMul(a, b, ":"), mal: [-q]}; },
+  (r, d) => { const n = d === 1 ? 3 : 4; for (let k = 0; k < 100; k++) { let v = r.sig() * r.int(2, 9); const its = [p(v)]; let ok = true; for (let i = 1; i < n; i++) { const op = r.si(.5) ? "·" : ":"; if (op === "·") { const f = r.sig() * r.int(2, 6); v *= f; its.push("·", p(f)); } else { const ds = []; for (let x = 2; x <= Math.abs(v); x++) if (v % x === 0) ds.push(x); if (!ds.length) { const f = r.sig() * r.int(2, 5); v *= f; its.push("·", p(f)); continue; } const dd = r.pick(ds) * r.sig(); v /= dd; its.push(":", p(dd)); } if (Math.abs(v) > 300) { ok = false; break; } } if (ok) return {tipo: "num", enun: "Calcula (de izquierda a derecha)", expr: its.join(" "), sol: v, ayuda: "Primero el signo: cuenta cuántos negativos hay (par → +, impar → −). Luego opera los valores absolutos de izquierda a derecha.", pistas: pistasCadena(its), mal: [-v]}; } return AP[5][1](r, d); },
   (r, d) => { const m = d === 1 ? 9 : 12, a = r.sig() * r.int(2, m), b = r.sig() * r.int(2, m), k = r.int(0, 2); const [e, sol] = k === 0 ? [`▢ · ${p(b)} = ${sg(a * b)}`, a] : k === 1 ? [`${p(a * b)} : ▢ = ${sg(a)}`, b] : [`▢ : ${p(b)} = ${sg(a)}`, a * b]; return {tipo: "num", enun: "¿Qué número falta?", expr: e, sol, ayuda: "Piensa primero el signo con la regla de los signos y después el número.", mal: [-sol]}; }
 ];
 AP[5].pesos = [[2, 4, 3, 0, 1], [1, 3, 3, 2, 2], [0, 2, 2, 4, 2]];
 
 AP[6] = [
   (r, d) => { let b, e; if (d === 1) { b = r.nz(-5, 5); e = r.int(2, 3); if (e === 3) b = r.nz(-4, 4); } else { e = r.int(2, 5); b = e >= 4 ? r.nz(-3, 3) : r.nz(-6, 6); if (r.si(.15)) { b = -1; e = r.int(7, 40); } } if (Math.abs(b) === 1 && d === 1) b *= 2;
-    const v = b ** e; return {tipo: "num", enun: "Calcula la potencia", expr: (b < 0 ? `(${s(b)})` : `(+${b})`) + sup(e), sol: v, ayuda: `${Math.abs(b)}${sup(e)} = ${Math.abs(v)}. ${b < 0 ? (e % 2 ? "Base negativa y exponente impar: signo −." : "Base negativa y exponente par: signo +.") : "Base positiva: siempre +."}`, mal: [-v, b * e]}; },
+    const v = b ** e; return {tipo: "num", enun: "Calcula la potencia", expr: (b < 0 ? `(${s(b)})` : `(+${b})`) + sup(e), sol: v, pistas: pistasPot(b, e), ayuda: `${Math.abs(b)}${sup(e)} = ${Math.abs(v)}. ${b < 0 ? (e % 2 ? "Base negativa y exponente impar: signo −." : "Base negativa y exponente par: signo +.") : "Base positiva: siempre +."}`, mal: [-v, b * e]}; },
   (r, d) => { const b = r.nz(-90, 90), e = r.int(2, 31); return {tipo: "opc", enun: "Sin calcularla, ¿qué signo tiene?", expr: (b < 0 ? `(${s(b)})` : `(+${b})`) + sup(e), opciones: ["Positivo", "Negativo"], ok: b < 0 && e % 2 ? 1 : 0, ayuda: "Base positiva → siempre +. Base negativa → + si el exponente es par y − si es impar."}; },
   (r, d) => { const b = r.sig() * r.int(2, 9), e = r.int(3, 5), f = Array(e).fill(p(b)).join(" · ");
     return opcQ({enun: "Escribe en forma de potencia", expr: f, opciones: [`(${sg(b)})${sup(e)}`, `(${sg(e)})${sup(Math.abs(b))}`, `(${sg(-b)})${sup(e)}`, `${p(b * e)}`], ok: 0, ayuda: "La base es el número que se repite y el exponente, las veces que se repite."}, r); },
@@ -271,7 +312,7 @@ AP[6].pesos = [[5, 2, 2, 0, 0], [3, 2, 2, 2, 1], [3, 1, 1, 3, 2]];
 AP[7] = [
   (r, d) => { const b = r.int(2, d === 1 ? 10 : d === 2 ? 15 : 30), neg = r.si(.2), v = neg ? -(b * b) : b * b;
     return opcQ({enun: "Indica, si existe, la raíz cuadrada", expr: `√${neg ? s(v) : v}`, opciones: [`±${b}`, `Solo ${b}`, `Solo ${M}${b}`, "No existe"], ok: neg ? 3 : 0, ayuda: neg ? "Ningún número al cuadrado da negativo: la raíz de un negativo no existe." : `${b}² = ${b * b} y (${M}${b})² = ${b * b}: un positivo tiene dos raíces.`}, r); },
-  (r, d) => { const max = d === 1 ? 99 : d === 2 ? 230 : 900; let a; do a = r.int(5, max); while (Number.isInteger(Math.sqrt(a))); const b = Math.floor(Math.sqrt(a)); return {tipo: "resto", enun: "Calcula la raíz entera y el resto", expr: `√${a}`, sol: b, resto: a - b * b, ayuda: `${b}² = ${b * b} ≤ ${a} y ${b + 1}² = ${(b + 1) ** 2} > ${a}. Raíz entera ${b}; resto ${a} − ${b * b} = ${a - b * b}.`}; },
+  (r, d) => { const max = d === 1 ? 99 : d === 2 ? 230 : 900; let a; do a = r.int(5, max); while (Number.isInteger(Math.sqrt(a))); const b = Math.floor(Math.sqrt(a)); return {tipo: "resto", enun: "Calcula la raíz entera y el resto", expr: `√${a}`, sol: b, resto: a - b * b, pistas: [`Busca el número más grande que, al cuadrado, no se pase de ${a}. Prueba: ${Math.max(1, b - 2)}², ${b - 1}², …`, `${b}² = ${b * b} todavía cabe en ${a}, pero ${b + 1}² = ${(b + 1) ** 2} ya se pasa. Esa es la raíz entera.`, `El resto es lo que sobra: ${a} − ${b * b}.`], ayuda: `${b}² = ${b * b} ≤ ${a} y ${b + 1}² = ${(b + 1) ** 2} > ${a}. Raíz entera ${b}; resto ${a} − ${b * b} = ${a - b * b}.`}; },
   (r, d) => { const b = r.nz(-20, 20); return {tipo: "num", enun: `Una raíz cuadrada exacta de un número es ${sg(b)}. ¿Cuál es ese número (el radicando)?`, expr: "", sol: b * b, ayuda: `El radicando es la raíz al cuadrado: (${sg(b)})² = ${b * b}.`, mal: [2 * b, -b * b]}; },
   (r, d) => { let a; do a = r.int(5, d === 1 ? 99 : 500); while (Number.isInteger(Math.sqrt(a))); const b = Math.floor(Math.sqrt(a));
     return opcQ({enun: "¿Entre qué dos enteros está esta raíz?", expr: `√${a}`, opciones: [`${b} y ${b + 1}`, `${b - 1} y ${b}`, `${b + 1} y ${b + 2}`, `${Math.floor(a / 2)} y ${Math.floor(a / 2) + 1}`], ok: 0, ayuda: `${b}² = ${b * b} y ${b + 1}² = ${(b + 1) ** 2}, y ${a} está entre los dos.`}, r); },
@@ -288,7 +329,7 @@ AP[8] = [
       visita(tt); otros.delete(primero);
       if (otros.size >= 2) return opcQ({enun: "¿Qué operación se hace primero?", expr: texto(t), opciones: [primero, ...[...otros].slice(0, 3)], ok: 0, ayuda: "Orden: paréntesis y corchetes → potencias y raíces → multiplicaciones y divisiones → sumas y restas (de izquierda a derecha)."}, r); }
     return AP[8][0](r, d); },
-  (r, d) => { const t = combinada(r, d, {maxPasos: d === 1 ? 3 : 5}); const v = valorDe(t); return {tipo: "num", enun: "Calcula", expr: texto(t), sol: v, ayuda: "Respeta la jerarquía: primero paréntesis, potencias y raíces, luego · y :, y al final + y −.", mal: [-v]}; }
+  (r, d) => { const t = combinada(r, d, {maxPasos: d === 1 ? 3 : 5}); const v = valorDe(t), R0 = resolver(t); return {tipo: "num", enun: "Calcula", expr: texto(t), sol: v, pistas: ["Ve por orden: paréntesis y corchetes → potencias y raíces → · y : → + y −.", `Empieza por ${R0.pasos[0].parte}. Te da ${s(R0.pasos[0].v)}.`, ...(R0.pasos[1] ? [`Después: ${R0.pasos[0].despues}. Ahora toca ${pasoNombre(R0.pasos[1])}.`] : [])], ayuda: "Respeta la jerarquía: primero paréntesis, potencias y raíces, luego · y :, y al final + y −.", mal: [-v]}; }
 ];
 AP[8].pesos = [[5, 3, 2], [5, 2, 2], [6, 2, 1]];
 
@@ -305,11 +346,20 @@ function gen(ap, d, r, o = {}) {
     if (!q) continue;
     if (o.texto && (q.tipo === "recta" || q.tipo === "orden")) continue;
     if (o.sinPasos && q.tipo === "pasos") continue;
-    q.ap = ap; q.d = d;
+    q.ap = ap; q.d = d; q.g = i;  /* g: qué tipo de ejercicio (HAB) */
     return q;
   }
-  return AP[ap][0](r, d);
+  const q0 = AP[ap][0](r, d); q0.ap = ap; q0.d = d; q0.g = 0; return q0;
 }
+/* el nombre de cada tipo de ejercicio (AP[ap][g]): lo que el profe ve en «le cuesta» */
+const HAB = {1: ["Situaciones con negativos", "Positivo, negativo o cero", "Leer la recta", "Moverse por la recta", "Valor absoluto y opuesto", "Huecos con valor absoluto"],
+  2: ["Comparar (<, >, =)", "Ordenar enteros", "El mayor y el menor", "Enteros entre dos números"],
+  3: ["Sumar dos enteros", "Restar dos enteros", "Pasar la resta a suma", "Número que falta (suma y resta)"],
+  4: ["Forma abreviada", "Sumas y restas seguidas", "Quitar paréntesis y calcular", "Paso a paso con paréntesis", "Número que falta"],
+  5: ["Regla de los signos", "Multiplicar", "Dividir", "Varias · y : seguidas", "Número que falta (· y :)"],
+  6: ["Calcular potencias", "Signo de una potencia", "Escribir como potencia", "Comparar potencias", "−a² y exponente que falta"],
+  7: ["Raíz exacta (±)", "Raíz entera y resto", "El radicando", "Entre qué enteros está", "Cuadrados perfectos"],
+  8: ["Combinadas paso a paso", "Qué operación va primero", "Combinadas de cabeza"]};
 const enunciado = q => q.expr ? `${q.enun}: ${q.expr}` : q.enun;
 /* números parecidos al bueno para las opciones malas */
 function malos(q, r, n = 3) {
@@ -359,5 +409,20 @@ function serie(spec) {
   return {id: "mates", titulo, level: ["", "Fácil", "Medio", "Difícil"][o.d], q};
 }
 
-G.LYAMatesBanco = {M, semilla, Rn, s, sg, p, sup, leer, absT, N, POT, RAIZ, GR, txt, texto, resolver, valorDe, combinada, clon, gen, test, enunciado, malos, serie, leerSpec, hacerSpec, TEMAS, NOMBRES, AP};
+/* pistas de un ejercicio (no de los pasos de una combinada: esos con pistaPaso) */
+const ESTRAT = {1: "Piensa en la recta: el 0 en medio, los negativos a la izquierda y los positivos a la derecha.", 2: "En la recta, el mayor es el que está más a la derecha. Entre negativos, gana el que está más cerca del 0.",
+  3: "Para sumar, mira si los signos son iguales o distintos. Para restar, suma el opuesto.", 4: "Quita los paréntesis y junta los positivos por un lado y los negativos por otro.",
+  5: "Primero el signo con la regla (iguales → +, distintos → −) y después el número.", 6: "Multiplica la base por sí misma tantas veces como dice el exponente; el signo, según la base y si el exponente es par o impar.",
+  7: "La raíz de un número es otro número que, al cuadrado, da el primero.", 8: "Sigue el orden: paréntesis y corchetes → potencias y raíces → · y : → + y −."};
+function pistas(q) {
+  if (q.pistas) return q.pistas;
+  const out = [ESTRAT[q.ap] || "Lee bien el enunciado y piensa qué te piden."];
+  if (q.tipo === "num" && /▢/.test(q.expr || "")) out.splice(0, 1, "Prueba con un número en el hueco y comprueba si sale el resultado.", `El número que falta es ${q.sol > 0 ? "positivo" : q.sol < 0 ? "negativo" : "el 0"}.`);
+  else if (q.tipo === "num" || q.tipo === "recta") out.push(q.sol === 0 ? "El resultado es 0." : `El resultado es ${q.sol > 0 ? "positivo" : "negativo"}.`);
+  else if (q.tipo === "opc" && q.opciones.length > 2) { const malo = q.opciones.findIndex((o, i) => i !== q.ok); out.push(`Una que seguro que no es: «${q.opciones[malo]}».`); }
+  else if (q.tipo === "orden") { const o = [...q.nums].sort((a, b) => q.asc ? a - b : b - a); out.push(`Separa los negativos y los positivos. ${q.asc ? "El menor" : "El mayor"} de todos es ${sg(o[0])}.`); }
+  return out;
+}
+
+G.LYAMatesBanco = {HAB, pistas, pistaPaso, M, semilla, Rn, s, sg, p, sup, leer, absT, N, POT, RAIZ, GR, txt, texto, resolver, valorDe, combinada, clon, gen, test, enunciado, malos, serie, leerSpec, hacerSpec, TEMAS, NOMBRES, AP};
 })();
