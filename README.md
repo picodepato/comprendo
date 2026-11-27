@@ -186,3 +186,12 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Juegos en grupo de 4.º PDC (`grupo.js` filtra por tema): 🏷️ **¿Cuál es la mejor oferta?** (`m-oferta`: elegir la oferta más barata y, de extra, su precio), 🧩 **Monta el problema en clase** (`m-monta`), 🃏 **Parejas de porcentajes** (cartas con datos de p2), 🔐 **Escape room «La tienda»** (candados de precios con códigos enteros), y ⚔️ duelo y 🏆 concurso con specs `p2-…`.
 - Deberes, progreso, pistas y panel del profe igual que en 1.º, con `p2` en vez de `t2` (`mates-p2-<n>-<d>`, `S.g.mt["p2-<n>"]`, en la ficha sale «(4.º PDC)»).
 - Prueba: `qa/prueba-pdc.mjs <url>` (portada, 8 dibujos, ayudas, comas, Monta solo con arrastre y toque en móvil y PC, concurso, salas de oferta y monta, parejas, escape y deberes).
+
+## FP Básica (fpb/)
+Sección propia (`#fpb`, botón 🛠️ en la barra), separada de Mates y del resto. Pensada para alumnado con necesidades educativas: explicaciones en lectura fácil, palabras difíciles, textos literarios tal cual del libro, y actividades **siempre de tocar** (elegir, relacionar, clasificar) en tres niveles.
+- Motor: `fpb/fpb.js` (`window.LYAFpb`). Cada asignatura se registra con `LYAFpb.asignatura({id, n, ic, color, intro, temas, pronto})` y cada tema con `LYAFpb.banco(tema, {manual, gen, nombres, parejas})`. Ids de tema: letra + número (`l2`, `s3`…).
+- Lengua y Literatura: `fpb/lengua-temas.js` (temas 2, 3 y 4: Romanticismo, préstamos y abreviaciones, Modernismo y 98) y `fpb/lengua-banco.js` (preguntas a mano y generadores).
+- Ayudas en cada pregunta: al menos 3 pistas (la última casi da la respuesta), ✂️ quitar una mala, 🤔 uno parecido resuelto, 🧭 paso a paso, 🔊 leer en voz alta, segunda oportunidad con el porqué del fallo y, tras 2 fallos seguidos, ver la explicación o bajar de nivel.
+- Rutas: `#fpb` · `#fpb-<asignatura>` · `#fpb-<tema>` · `#fpb-<tema>-<apartado|repaso>`.
+- En grupo (`fpb/grupo.js`): 🏆 ¿Quién sabe más? (`f-quiz`, por rondas) y 🃏 Parejas en equipo (`f-parejas`) con código, y 📺 En la pizarra por turnos (`#fpb-clase-<tema>`, sin móviles). El servidor (`api/_retos.js`) acepta `lectura = fpb-<tema>-<apartados>-<nivel>` y `file = fpb/<tema>`.
+- Prueba: `qa/prueba-fpb.mjs <url>` (portada, temas, textos, práctica en los 3 niveles con elegir, relacionar y clasificar, ayudas, fallos, pizarra, quiz y parejas).
