@@ -1,6 +1,8 @@
 /* COMPRENDO · Matemáticas (1.º ESO y 4.º ESO PDC, en castellano). Apartado «➗ Mates» de la barra.
-   Rutas (tema: t2 = 1.º ESO, números enteros · p2 = 4.º ESO PDC, proporcionalidad y porcentajes):
-     #mates              portada: cursos y temas, y los juegos de mates en grupo
+   Cada curso es un apartado propio (los cursos y sus temas, en mates/temas.js). Rutas:
+     #mates              portada: un botón por curso (1.º ESO, 4.º ESO PDC…) y los juegos en grupo
+     #mates-<curso>          un curso (1eso, 4pdc…): sus temas y los juegos en grupo de ese curso
+   (tema: t2 = 1.º ESO, números enteros · p2 = 4.º ESO PDC, proporcionalidad y porcentajes):
      #mates-<tema>           el tema: sus apartados (con estrellas), el repaso y «Jugar con la clase»
      #mates-<tema>-<1..8>    un apartado: 📘 Aprende (explicación de mates/temas.js) y ✏️ Practica (ejercicios de mates/banco.js o mates/pdc.js)
      #mates-<tema>-repaso    repaso del tema: un poco de todo
@@ -16,8 +18,9 @@
 const B = () => window.LYAMatesBanco, TM = () => window.LYAMatesTemas;
 const L = () => window.LYA, st = () => L().get();
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
-const RE = /^mates(?:-([tp]\d+)(?:-([1-8]|repaso|monta)(?:-d([123]))?)?)?$/;  /* «-d2»: abre la práctica ya en esa dificultad (deberes) */
-const isMates = h => RE.test(h) || window.LYAMatesGrupo?.isGrupo(h);
+const RE = /^mates(?:-([a-z]\d+)(?:-([1-8]|repaso|monta)(?:-d([123]))?)?)?$/;  /* «-d2»: abre la práctica ya en esa dificultad (deberes) */
+const RE_CURSO = /^mates-(\d[a-z]+)$/;  /* #mates-1eso, #mates-4pdc */
+const isMates = h => RE.test(h) || RE_CURSO.test(h) || window.LYAMatesGrupo?.isGrupo(h);
 const DIF = ["", "Fácil", "Medio", "Difícil"];
 const COLOR = "#4f8cff";
 const store = {get(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }};
@@ -37,6 +40,8 @@ function render(app) {
   const h = location.hash.slice(1);
   try { L().setAcc?.(COLOR); } catch (e) {}
   if (window.LYAMatesGrupo?.isGrupo(h)) return LYAMatesGrupo.render(app);
+  const mc = h.match(RE_CURSO);
+  if (mc && TM()) { const C = TM().curso?.(mc[1]); if (!C) { location.hash = "mates"; return; } return cursoHTML(app, C); }
   const m = h.match(RE);
   if (!m || !B() || !TM()) { app.innerHTML = `<p class="msg">…</p>`; return; }
   if (!m[1]) return portada(app);
@@ -53,20 +58,37 @@ function render(app) {
   return apartado(app, T, +m[2]);
 }
 
-/* ---------- portada ---------- */
+/* ---------- portada: un apartado por curso ---------- */
+const hechosTema = T => T.aps.filter(a => (prog()[`${T.id}-${a.n}`]?.e || []).some(x => x > 0)).length;
 function portada(app) {
   app.innerHTML = `<section class="wrap mt">
     <h1 class="mt-h1">➗ Matemáticas</h1>
-    <p class="mt-lead">${TM().cursos.map(C => esc(C.n)).join(" y ")} · Explicaciones, ejercicios que no se acaban nunca y juegos con tu clase.</p>
-    ${TM().cursos.map(C => `<h2 class="mt-h2">📚 Temas de ${esc(C.n)}</h2>
-    <div class="mt-temas">${C.temas.map(T => {
-      const hechos = T.aps.filter(a => (prog()[`${T.id}-${a.n}`]?.e || []).some(x => x > 0)).length;
-      return `<a class="mt-tema" href="#mates-${T.id}" style="--c:${T.color}"><span class="mt-tn">${esc(C.n)} · Tema ${T.n}</span><b>${esc(T.titulo)}</b><span class="mt-small">${esc(T.intro)}</span><span class="mt-bar"><i style="width:${100 * hechos / T.aps.length}%"></i></span><span class="mt-small">${hechos} de ${T.aps.length} apartados practicados</span></a>`;
-    }).join("")}
-      ${C.pronto.map(t => `<div class="mt-tema soon"><span class="mt-tn">Pronto</span><b>${esc(t)}</b></div>`).join("")}</div>`).join("")}
+    <p class="mt-lead">Elige tu curso. Explicaciones, ejercicios que no se acaban nunca y juegos con tu clase.</p>
+    <div class="mt-cursos">${TM().cursos.map(C => {
+      const aps = C.temas.reduce((n, T) => n + T.aps.length, 0), hechos = C.temas.reduce((n, T) => n + hechosTema(T), 0);
+      return `<a class="mt-curso" href="#mates-${C.id}" style="--c:${C.color}"><span class="mt-cic" aria-hidden="true">${C.ic}</span><span class="mt-cbody"><b>${esc(C.n)}</b><span class="mt-small">${esc(C.temas.map(T => "Tema " + T.n + " · " + T.titulo).join(" · "))}</span><span class="mt-bar"><i style="width:${aps ? 100 * hechos / aps : 0}%"></i></span><span class="mt-small">${hechos} de ${aps} apartados practicados</span></span><span class="mt-cgo" aria-hidden="true">→</span></a>`;
+    }).join("")}</div>
     <h2 class="mt-h2">🏫 Jugar con la clase</h2>
-    <p class="mt-small">Con sala y código, como los juegos de las lecturas. Elegís los apartados del tema y la dificultad.</p>
-    ${window.LYAMatesGrupo ? LYAMatesGrupo.tiles() : ""}
+    <p class="mt-small">Con sala y código, como los juegos de las lecturas. Dentro de cada curso están sus juegos.</p>
+    <p class="mt-acc"><a class="btn main" href="#mates-grupo">🏫 Mates en grupo</a></p>
+  </section>`;
+}
+
+/* ---------- curso: sus temas y sus juegos ---------- */
+function cursoHTML(app, C) {
+  app.innerHTML = `<section class="wrap mt" style="--c:${C.color}">
+    <p class="mt-migas"><a href="#mates">← Matemáticas</a></p>
+    <h1 class="mt-h1">${C.ic} ${esc(C.n)}</h1>
+    <p class="mt-lead">${esc(C.intro || "")}</p>
+    <h2 class="mt-h2">📚 Temas</h2>
+    <div class="mt-temas">${C.temas.map(T => {
+      const hechos = hechosTema(T);
+      return `<a class="mt-tema" href="#mates-${T.id}" style="--c:${T.color}"><span class="mt-tn">Tema ${T.n}</span><b>${esc(T.titulo)}</b><span class="mt-small">${esc(T.intro)}</span><span class="mt-bar"><i style="width:${100 * hechos / T.aps.length}%"></i></span><span class="mt-small">${hechos} de ${T.aps.length} apartados practicados</span></a>`;
+    }).join("")}
+      ${(C.pronto || []).map(t => `<div class="mt-tema soon"><span class="mt-tn">Pronto</span><b>${esc(t)}</b></div>`).join("")}</div>
+    <h2 class="mt-h2">🏫 Jugar con la clase</h2>
+    <p class="mt-small">Con sala y código. Elegís los apartados del tema y la dificultad.</p>
+    ${window.LYAMatesGrupo ? LYAMatesGrupo.tiles(C.temas.map(T => T.id)) : ""}
   </section>`;
 }
 
@@ -74,7 +96,7 @@ function portada(app) {
 function temaHTML(app, T) {
   const pr = prog();
   app.innerHTML = `<section class="wrap mt" style="--c:${T.color}">
-    <p class="mt-migas"><a href="#mates">← Matemáticas</a></p>
+    <p class="mt-migas">${TM().cursoDe?.(T.id) ? `<a href="#mates-${TM().cursoDe(T.id).id}">← ${esc(TM().cursoDe(T.id).n)}</a>` : `<a href="#mates">← Matemáticas</a>`}</p>
     <h1 class="mt-h1"><small>${esc(TM().cursoDe?.(T.id)?.n || "")} · Tema ${T.n}</small> ${esc(T.titulo)}</h1>
     <p class="mt-lead">${esc(T.intro)}</p>
     <div class="mt-aps">${T.aps.map(a => {

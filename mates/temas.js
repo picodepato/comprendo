@@ -198,11 +198,18 @@ const P2 = {
   ]
 };
 T2.banco = "LYAMatesBanco";
-const CURSOS = [{id: "1eso", n: "1.º ESO", temas: [T2], pronto: ["Números naturales", "Divisibilidad", "Fracciones", "Números decimales", "Proporcionalidad", "Álgebra", "Geometría", "Estadística"]},
-  {id: "4pdc", n: "4.º ESO PDC", temas: [P2], pronto: ["Números reales", "Álgebra", "Funciones", "Geometría", "Estadística y probabilidad"]}];
+/* Los cursos, cada uno con su apartado propio (#mates-<id del curso>) y sus temas dentro.
+   Para añadir un curso: un objeto más aquí ({id: número + letras, p. ej. "2eso" o "3pdc", n, ic, color, intro, temas, pronto})
+   y sus temas con ids nuevos (letra + número, p. ej. "s3"; la letra no puede repetir la de otro curso si los números chocan). */
+const CURSOS = [
+  {id: "1eso", n: "1.º ESO", ic: "1️⃣", color: "#4f8cff", intro: "Números enteros, y pronto más temas del curso.", temas: [T2],
+    pronto: ["Números naturales", "Divisibilidad", "Fracciones", "Números decimales", "Proporcionalidad", "Álgebra", "Geometría", "Estadística"]},
+  {id: "4pdc", n: "4.º ESO PDC", ic: "4️⃣", color: "#2fbf71", intro: "Diversificación (PDC): proporcionalidad y porcentajes, y pronto más temas.", temas: [P2],
+    pronto: ["Números reales", "Álgebra", "Funciones", "Geometría", "Estadística y probabilidad"]}];
 const tema = id => CURSOS.flatMap(c => c.temas).find(t => t.id === id);
+const curso = id => CURSOS.find(c => c.id === id);
 const cursoDe = id => CURSOS.find(c => c.temas.some(t => t.id === id));
 /* el banco de ejercicios de cada tema (mates/banco.js o mates/pdc.js) */
 const banco = id => window[(tema(id) || {}).banco || "LYAMatesBanco"] || window.LYAMatesBanco;
-window.LYAMatesTemas = {cursos: CURSOS, T2, P2, tema, cursoDe, banco};
+window.LYAMatesTemas = {cursos: CURSOS, T2, P2, tema, curso, cursoDe, banco};
 })();

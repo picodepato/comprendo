@@ -16,7 +16,15 @@ const ir = async h => { await p.goto(B + "/index.html#" + h, { waitUntil: "netwo
 /* portada y tema */
 await ir("mates");
 const port = await p.textContent("#app");
-ok(/Temas de 1\.º ESO/.test(port) && /Temas de 4\.º ESO PDC/.test(port) && /Proporcionalidad y porcentajes/.test(port), "la portada tiene los dos cursos");
+ok(await p.locator(".mt-curso").count() === 2 && /1\.º ESO/.test(port) && /4\.º ESO PDC/.test(port) && !(await p.locator(".mt-tema").count()), "la portada tiene un apartado por curso, sin los temas mezclados");
+await ir("mates-4pdc");
+const c4 = await p.textContent("#app");
+ok(/Proporcionalidad y porcentajes/.test(c4) && !/Números enteros/.test(c4) && !/La recta humana/.test(c4) && /Monta el problema/.test(c4), "4.º ESO PDC: solo sus temas y sus juegos");
+await ir("mates-1eso");
+const c1 = await p.textContent("#app");
+ok(/Números enteros/.test(c1) && !/Proporcionalidad y porcentajes/.test(c1) && !/Monta el problema/.test(c1) && /La recta humana/.test(c1), "1.º ESO: solo sus temas y sus juegos");
+await ir("mates-p2");
+ok((await p.getAttribute(".mt-migas a", "href")) === "#mates-4pdc", "el tema vuelve a su curso");
 await ir("mates-p2");
 ok(await p.locator(".mt-ap").count() === 10, "el tema tiene 8 apartados, el repaso y «Monta el problema»");
 const tiles = await p.locator(".mg-tile").allTextContents();
