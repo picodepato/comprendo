@@ -361,14 +361,21 @@ const aviso = () => E.msg ? `<p class="rt-aviso ${E.msgOk ? "ok" : ""}" role="st
 function avisar(t, ok) { E.msg = t; E.msgOk = !!ok; clearTimeout(avisar.t); avisar.t = setTimeout(() => { E.msg = ""; pintar(true); }, 2600); if (!ok && navigator.vibrate) try { navigator.vibrate(150); } catch (e) {} pintar(true); }
 
 /* tarjetas para otras páginas (Mates, En grupo) */
-/* tema: solo los juegos de ese tema (en #mates-t2 o #mates-p2); sin tema, todos */
-function tiles(tema) {
-  const lista = ORDEN.filter(j => !tema || (J[j].temas || ["t2"]).includes(tema)), dt = tema ? ` data-mg-tema="${tema}"` : "";
+/* tema: solo los juegos de ese tema (en #mates-t2 o #mates-p2), o de una lista de temas (los de un curso, en #mates-1eso);
+   sin tema, todos. extras: false → sin las tarjetas de duelo y concurso */
+function tiles(tema, extras = true) {
+  const temas = tema ? [].concat(tema) : null, deJuego = j => J[j].temas || ["t2"];
+  const lista = ORDEN.filter(j => !temas || deJuego(j).some(t => temas.includes(t)));
+  const dtJ = j => temas ? ` data-mg-tema="${deJuego(j).find(t => temas.includes(t))}"` : "", dt = temas ? ` data-mg-tema="${temas[0]}"` : "";
+  tema = temas && temas.length === 1 ? temas[0] : null;
   const nombre = j => tema === "p2" && j === "cartas" ? "Parejas de porcentajes" : tema === "p2" && j === "escape" ? "Escape room «La tienda»" : J[j].n;
   const desc = j => tema === "p2" && j === "cartas" ? "«Rebajar un 20 % es multiplicar por ▢»… y las soluciones como cartas." : tema === "p2" && j === "escape" ? "Rebajas, IVA y repartos para abrir los candados." : J[j].p;
-  return `<div class="mg-tiles">${lista.map(j => `<a class="mg-tile" href="#mates-juego-${j}" style="--c:${J[j].c}"${dt}><span class="mg-ic" aria-hidden="true">${J[j].ic}</span><span><b>${esc(nombre(j))}</b><small>${esc(desc(j))}</small><em>${J[j].eq ? "Por equipos" : "Solos o por equipos"}${!tema && J[j].temas?.[0] === "p2" ? " · 4.º PDC" : ""}</em></span></a>`).join("")}
-    <a class="mg-tile" href="#mates-duelo" style="--c:#ff4141"${dt}><span class="mg-ic" aria-hidden="true">⚔️</span><span><b>Duelo de mates</b><small>Preguntas a la vez contra tu clase. Acertar rápido da más puntos.</small><em>Con cuenta</em></span></a>
-    <a class="mg-tile" href="#mates-concurso" style="--c:#f5b700"${dt}><span class="mg-ic" aria-hidden="true">🏆</span><span><b>Concurso de mates</b><small>Preguntas en la pantalla grande y respuestas en el móvil.</small><em>Se puede editar</em></span></a></div>`;
+  return `<div class="mg-tiles">${lista.map(j => `<a class="mg-tile" href="#mates-juego-${j}" style="--c:${J[j].c}"${dtJ(j)}><span class="mg-ic" aria-hidden="true">${J[j].ic}</span><span><b>${esc(nombre(j))}</b><small>${esc(desc(j))}</small><em>${J[j].eq ? "Por equipos" : "Solos o por equipos"}${!temas && J[j].temas?.[0] === "p2" ? " · 4.º PDC" : ""}</em></span></a>`).join("")}${extras ? extrasHTML(dt) : ""}</div>`;
+}
+/* ⚔️ duelo y 🏆 concurso: valen para cualquier curso */
+function extrasHTML(dt = "") {
+  return `<a class="mg-tile" href="#mates-duelo" style="--c:#ff4141"${dt}><span class="mg-ic" aria-hidden="true">⚔️</span><span><b>Duelo de mates</b><small>Preguntas a la vez contra tu clase. Acertar rápido da más puntos.</small><em>Con cuenta</em></span></a>
+    <a class="mg-tile" href="#mates-concurso" style="--c:#f5b700"${dt}><span class="mg-ic" aria-hidden="true">🏆</span><span><b>Concurso de mates</b><small>Preguntas en la pantalla grande y respuestas en el móvil.</small><em>Se puede editar</em></span></a>`;
 }
 function codigoForm() {
   return `<form class="mt-box" data-mg-form="ir" style="--c:var(--acc)"><h2>🔑 Entrar con código</h2><div class="mg-mini"><input id="mg-cod" inputmode="numeric" maxlength="7" autocomplete="off" placeholder="123456" aria-label="Código de la sala"><button class="btn main">Entrar</button></div></form>`;
@@ -376,7 +383,9 @@ function codigoForm() {
 function grupoHTML() {
   return `<section class="wrap mt"><p class="mt-migas"><a href="#mates">← Matemáticas</a></p><h1 class="mt-h1">🏫 Mates en grupo</h1>
     <p class="mt-lead">Juegos para la clase con sala y código. Quien crea la sala elige los apartados del tema y la dificultad; los demás entran con el código desde su móvil, sin cuenta.</p>
-    ${aviso()}${codigoForm()}<h2 class="mt-h2">Crear una sala</h2>${tiles()}</section>`;
+    ${aviso()}${codigoForm()}<h2 class="mt-h2">Crear una sala</h2>
+    ${(window.LYAMatesTemas?.cursos || []).map(C => `<h3 class="mt-h2">${C.ic || "📚"} Juegos de ${esc(C.n)}</h3>${tiles(C.temas.map(T => T.id), false)}`).join("")}
+    <h3 class="mt-h2">🎯 Para cualquier curso</h3><div class="mg-tiles">${extrasHTML()}</div></section>`;
 }
 /* el tema (1.º ESO o 4.º PDC), si el juego tiene los dos */
 function temaSel(c, temas) {
@@ -412,7 +421,7 @@ function juegoHTML() {
 const rondas2 = j => J[j].tipo === "rondas";
 /* ⚔️ duelo y 🏆 concurso de mates: preguntas de opciones generadas con una semilla (se crean en duelo/ y concursos/) */
 function preguntasHTML(tipo) {
-  const c = E.crear?.j === tipo ? E.crear : (E.crear = {j: tipo, tema: temaPref === "p2" ? "p2" : "t2", aps: [1, 2, 3, 4, 5, 6, 7, 8], d: 1, n: 10, D: 30, juega: !esProfe()});
+  const c = E.crear?.j === tipo ? E.crear : (E.crear = {j: tipo, tema: window.LYAMatesTemas?.tema?.(temaPref) ? temaPref : "t2", aps: [1, 2, 3, 4, 5, 6, 7, 8], d: 1, n: 10, D: 30, juega: !esProfe()});
   const cuenta = window.LYACuentas?.usuario;
   const duelo = tipo === "duelo";
   return `<section class="wrap mt" style="--c:${duelo ? "#ff4141" : "#f5b700"}"><p class="mt-migas"><a href="#mates-grupo">← Mates en grupo</a></p>

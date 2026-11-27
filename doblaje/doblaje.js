@@ -7,12 +7,14 @@
    - Las tomas se guardan solo en este aparato (IndexedDB "comprendoDoblaje"). Solo sale una si el alumno la manda a la votación
      de su clase (api/propuestas?votos=1 {dob: "enviar"}). En #doblaje-clase la clase vota el mejor doblaje de cada escena.
    - Profes: «Mandar a la clase» guarda la escena como deberes (api/canciones {accion: "asignar", doblaje: true}); los alumnos la abren en #doblaje-e-<id>.
+   - Escena sin frases: «Sácalas con Gemini» da un prompt (con el enlace y el trozo) que devuelve un SRT; se pega en las frases y la web
+     dice cuántas ha entendido y con qué tiempos (si empiezan en 0:00 se cuentan desde «Desde»). También se puede subir un .srt/.vtt (Whisper, TurboScribe…).
    Rutas: #doblaje · #doblaje-<vídeo> (canción) · #doblaje-texto (escena pegada) · #doblaje-e-<id> (del profe) · #doblaje-l-<clave> (guardada aquí)
           #doblaje-clase (votación) · #doblaje-ver-<id> (ver un doblaje de la clase). */
 (() => {
 const TX = {
   es: {tab: "🎬 Doblaje", h1: "Doblaje", sub: "Pon tu voz a una canción o a una escena de película. El vídeo se queda sin sonido, las frases salen a su tiempo y el móvil graba tu voz encima.",
-    pega: "1. Pega el enlace de YouTube", ej: "https://www.youtube.com/watch?v=…", que: "2. ¿Qué vas a doblar?", t_cancion: "🎵 Una canción", td_cancion: "La letra sale sola", t_escena: "🎞️ Una escena", td_escena: "Pegas las frases",
+    pega: "1. Pega el enlace de YouTube", ej: "https://www.youtube.com/watch?v=…", que: "2. ¿Qué vas a doblar?", t_cancion: "🎵 Una canción", td_cancion: "La letra sale sola", t_escena: "🎞️ Una escena", td_escena: "Pegas las frases o las saca Gemini",
     frases: "Frases de la escena (una por línea)", frases_ayuda: "Escribe «NOMBRE: frase» para saber quién habla. Si las copias con tiempos (SRT o LRC) salen solas; si no, marcarás los tiempos escuchando el original.",
     desde: "Desde (min:seg)", hasta: "Hasta (min:seg)", titulo: "Título (opcional)", empezar: "Empezar", cargando: "Buscando la letra…", volver: "← Doblaje",
     e_enlace: "Ese enlace no parece de YouTube. Cópialo de la barra del navegador o del botón «Compartir».", e_frases: "Pega al menos una frase.",
@@ -39,9 +41,16 @@ const TX = {
     votacion: "Votación de la clase", clase_de: "Clase: {c}", sindobs: "Todavía nadie ha mandado un doblaje. ¡Sé el primero!", votos: "{n} votos", voto1: "1 voto", votar: "⭐ Votar", tuvoto: "✓ Tu voto", tuyo: "Es tuyo",
     gana: "🏆 Va ganando", e_clase: "Entra con tu cuenta y únete a una clase para ver la votación.", e_sinclase_v: "Únete a una clase para ver los doblajes de tus compañeros.",
     de: "de {u}", hace: "{d}", e_audio: "Este navegador no puede reproducir esta grabación (está en un formato que no entiende).", nodob: "Este doblaje ya no está.", quitar: "Quitar", seguro: "¿Seguro? Pulsa otra vez",
-    sinvideo: "El vídeo no se puede ver aquí.", abriryt: "Ábrelo en YouTube", dur: "{s} s"},
+    sinvideo: "El vídeo no se puede ver aquí.", abriryt: "Ábrelo en YouTube", dur: "{s} s",
+    ia_sum: "✨ ¿No tienes las frases? Sácalas con Gemini", ia1: "Pega arriba el enlace del vídeo (y, si quieres, desde y hasta qué minuto).",
+    ia2: "Copia el prompt y pégalo en Gemini: ve el vídeo y escribe las frases con sus tiempos (en formato SRT).", ia3: "Copia lo que te responda y pégalo en «Frases de la escena». La web comprueba que esté bien.",
+    copiarp: "📋 Copiar el prompt", copiado: "✓ Copiado. Pégalo en Gemini.", nocopia: "No se ha podido copiar solo: selecciona el texto y cópialo.", abrirgem: "Abrir Gemini ↗",
+    ia_nota: "Si los tiempos no cuadran del todo, en el estudio puedes adelantar o atrasar las frases (⏪ ⏩) o marcarlas tú (⏱️).",
+    srt_b: "📂 Subir un .srt", srt_p: "¿Lo has transcrito con Whisper (por ejemplo, en TurboScribe) o ya tienes los subtítulos? Sube el .srt o .vtt.",
+    e_srt: "Ese archivo no parece de subtítulos (.srt, .vtt o .lrc).", e_url_ia: "Primero pega arriba el enlace de YouTube.",
+    ok_t: "✓ {n} frases con tiempos ({a} → {b}).", ok_who: "Hablan: {w}.", ok_sin: "{n} frases sin tiempos: los marcarás escuchando el original.", ok_rel: "Los tiempos empiezan en 0:00: se contarán desde «Desde» ({a}).", ok_vacio: "No vemos ninguna frase. Revisa lo que has pegado."},
   en: {tab: "🎬 Dubbing", h1: "Dubbing", sub: "Put your voice on a song or a film scene. The video has no sound, the lines appear on time and your phone records your voice over it.",
-    pega: "1. Paste the YouTube link", ej: "https://www.youtube.com/watch?v=…", que: "2. What are you going to dub?", t_cancion: "🎵 A song", td_cancion: "The lyrics come on their own", t_escena: "🎞️ A scene", td_escena: "You paste the lines",
+    pega: "1. Paste the YouTube link", ej: "https://www.youtube.com/watch?v=…", que: "2. What are you going to dub?", t_cancion: "🎵 A song", td_cancion: "The lyrics come on their own", t_escena: "🎞️ A scene", td_escena: "You paste the lines or Gemini gets them",
     frases: "Lines of the scene (one per line)", frases_ayuda: "Write «NAME: line» to show who speaks. If you copy them with times (SRT or LRC) they appear on their own; if not, you will mark the times while you listen to the original.",
     desde: "From (min:sec)", hasta: "To (min:sec)", titulo: "Title (optional)", empezar: "Start", cargando: "Looking for the lyrics…", volver: "← Dubbing",
     e_enlace: "That link does not look like YouTube. Copy it from the address bar or the «Share» button.", e_frases: "Paste at least one line.",
@@ -68,9 +77,16 @@ const TX = {
     votacion: "Class vote", clase_de: "Class: {c}", sindobs: "Nobody has sent a dub yet. Be the first!", votos: "{n} votes", voto1: "1 vote", votar: "⭐ Vote", tuvoto: "✓ Your vote", tuyo: "It's yours",
     gana: "🏆 Winning", e_clase: "Sign in and join a class to see the vote.", e_sinclase_v: "Join a class to see your classmates' dubs.",
     de: "by {u}", hace: "{d}", e_audio: "This browser cannot play this recording (its format is not supported).", nodob: "This dub is no longer here.", quitar: "Remove", seguro: "Sure? Press again",
-    sinvideo: "The video cannot be shown here.", abriryt: "Open it on YouTube", dur: "{s} s"},
+    sinvideo: "The video cannot be shown here.", abriryt: "Open it on YouTube", dur: "{s} s",
+    ia_sum: "✨ No lines? Get them with Gemini", ia1: "Paste the video link above (and, if you want, from and to which minute).",
+    ia2: "Copy the prompt and paste it into Gemini: it watches the video and writes the lines with their times (SRT format).", ia3: "Copy its answer and paste it into «Lines of the scene». The site checks that it is OK.",
+    copiarp: "📋 Copy the prompt", copiado: "✓ Copied. Paste it into Gemini.", nocopia: "It could not be copied automatically: select the text and copy it.", abrirgem: "Open Gemini ↗",
+    ia_nota: "If the times are a bit off, in the studio you can move the lines earlier or later (⏪ ⏩) or mark them yourself (⏱️).",
+    srt_b: "📂 Upload an .srt", srt_p: "Did you transcribe it with Whisper (for example, on TurboScribe) or do you already have the subtitles? Upload the .srt or .vtt.",
+    e_srt: "That file does not look like subtitles (.srt, .vtt or .lrc).", e_url_ia: "First paste the YouTube link above.",
+    ok_t: "✓ {n} lines with times ({a} → {b}).", ok_who: "Speakers: {w}.", ok_sin: "{n} lines without times: you will mark them while you listen to the original.", ok_rel: "The times start at 0:00: they will count from «From» ({a}).", ok_vacio: "We cannot see any line. Check what you pasted."},
   ca: {tab: "🎬 Doblatge", h1: "Doblatge", sub: "Posa la teva veu a una cançó o a una escena de pel·lícula. El vídeo es queda sense so, les frases surten al seu moment i el mòbil grava la teva veu damunt.",
-    pega: "1. Enganxa l'enllaç de YouTube", ej: "https://www.youtube.com/watch?v=…", que: "2. Què doblaràs?", t_cancion: "🎵 Una cançó", td_cancion: "La lletra surt sola", t_escena: "🎞️ Una escena", td_escena: "Enganxes les frases",
+    pega: "1. Enganxa l'enllaç de YouTube", ej: "https://www.youtube.com/watch?v=…", que: "2. Què doblaràs?", t_cancion: "🎵 Una cançó", td_cancion: "La lletra surt sola", t_escena: "🎞️ Una escena", td_escena: "Enganxes les frases o les treu Gemini",
     frases: "Frases de l'escena (una per línia)", frases_ayuda: "Escriu «NOM: frase» per saber qui parla. Si les copies amb temps (SRT o LRC) surten soles; si no, marcaràs els temps escoltant l'original.",
     desde: "Des de (min:seg)", hasta: "Fins a (min:seg)", titulo: "Títol (opcional)", empezar: "Començar", cargando: "Buscant la lletra…", volver: "← Doblatge",
     e_enlace: "Aquest enllaç no sembla de YouTube. Copia'l de la barra del navegador o del botó «Compartir».", e_frases: "Enganxa almenys una frase.",
@@ -97,7 +113,14 @@ const TX = {
     votacion: "Votació de la classe", clase_de: "Classe: {c}", sindobs: "Encara ningú no ha enviat cap doblatge. Sigues el primer!", votos: "{n} vots", voto1: "1 vot", votar: "⭐ Votar", tuvoto: "✓ El teu vot", tuyo: "És teu",
     gana: "🏆 Va guanyant", e_clase: "Entra amb el teu compte i uneix-te a una classe per veure la votació.", e_sinclase_v: "Uneix-te a una classe per veure els doblatges dels teus companys.",
     de: "de {u}", hace: "{d}", e_audio: "Aquest navegador no pot reproduir aquesta gravació (té un format que no entén).", nodob: "Aquest doblatge ja no hi és.", quitar: "Treure", seguro: "Segur? Torna-hi a prémer",
-    sinvideo: "El vídeo no es pot veure aquí.", abriryt: "Obre'l a YouTube", dur: "{s} s"}
+    sinvideo: "El vídeo no es pot veure aquí.", abriryt: "Obre'l a YouTube", dur: "{s} s",
+    ia_sum: "✨ No tens les frases? Treu-les amb Gemini", ia1: "Enganxa a dalt l'enllaç del vídeo (i, si vols, des de i fins a quin minut).",
+    ia2: "Copia el prompt i enganxa'l a Gemini: mira el vídeo i escriu les frases amb els seus temps (en format SRT).", ia3: "Copia el que et respongui i enganxa'l a «Frases de l'escena». La web comprova que estigui bé.",
+    copiarp: "📋 Copiar el prompt", copiado: "✓ Copiat. Enganxa'l a Gemini.", nocopia: "No s'ha pogut copiar sol: selecciona el text i copia'l.", abrirgem: "Obrir Gemini ↗",
+    ia_nota: "Si els temps no quadren del tot, a l'estudi pots avançar o endarrerir les frases (⏪ ⏩) o marcar-les tu (⏱️).",
+    srt_b: "📂 Pujar un .srt", srt_p: "L'has transcrit amb Whisper (per exemple, a TurboScribe) o ja tens els subtítols? Puja el .srt o .vtt.",
+    e_srt: "Aquest fitxer no sembla de subtítols (.srt, .vtt o .lrc).", e_url_ia: "Primer enganxa a dalt l'enllaç de YouTube.",
+    ok_t: "✓ {n} frases amb temps ({a} → {b}).", ok_who: "Parlen: {w}.", ok_sin: "{n} frases sense temps: els marcaràs escoltant l'original.", ok_rel: "Els temps comencen a 0:00: es comptaran des de «Des de» ({a}).", ok_vacio: "No veiem cap frase. Revisa el que has enganxat."}
 };
 const L = () => window.LYA, st = () => L().get();
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
@@ -132,10 +155,18 @@ function parseFrases(txt) {
   txt = String(txt || "").replace(/\r/g, "").trim();
   const seg = h => { const p = h.replace(",", ".").split(":").map(Number); return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p[0] * 60 + p[1]; };
   let out = [];
-  if (/\d+:\d+[.,]\d+\s*-->/.test(txt)) {
-    for (const b of txt.split(/\n\s*\n/)) {
-      const m = b.match(/((?:\d+:)?\d+:\d+[.,]\d+)\s*-->\s*((?:\d+:)?\d+:\d+[.,]\d+)[^\n]*\n([\s\S]*)/); if (!m) continue;
-      const a = seg(m[1]), z = seg(m[2]); out.push({t: a, d: Math.max(0.3, z - a), x: m[3].replace(/<[^>]+>/g, "").replace(/\n/g, " ")});
+  txt = txt.replace(/^\s*```[^\n]*$/gm, "").replace(/\*\*/g, "").trim();   /* lo que suele añadir una IA: ```srt … ``` y **negritas** */
+  const FLECHA = /((?:\d+:)?\d+:\d+(?:[.,]\d+)?)\s*-->\s*((?:\d+:)?\d+:\d+(?:[.,]\d+)?)/;
+  if (FLECHA.test(txt)) {
+    /* SRT/VTT línea a línea: sirve aunque falten líneas en blanco; lo de antes del primer tiempo (WEBVTT, «Aquí tienes…») y lo de después se ignora */
+    const ls = txt.split("\n"); let cur = null, blanco = false;
+    for (let i = 0; i < ls.length; i++) {
+      const ln = ls[i].trim(), m = ln.match(FLECHA);
+      if (m) { const a = seg(m[1]), z = seg(m[2]); cur = {t: a, d: Math.max(0.3, z - a), x: ""}; out.push(cur); blanco = false; continue; }
+      if (!ln) { blanco = !!(cur && cur.x); continue; }
+      if (!cur || blanco) { cur = blanco ? null : cur; if (!cur) continue; }
+      if (/^\d+$/.test(ln) && FLECHA.test(ls[i + 1] || "")) continue;   /* número del subtítulo */
+      cur.x += (cur.x ? " " : "") + ln.replace(/<[^>]+>/g, "");
     }
   } else if (/^\s*\[\d+:\d+(?:[.:]\d+)?\]/m.test(txt)) {
     for (const ln of txt.split("\n")) {
@@ -150,6 +181,87 @@ function parseFrases(txt) {
   return out.slice(0, 300);
 }
 const conTiempos = ls => ls.some(l => l.t > 0) || (ls.length === 1 && ls[0].d > 0);
+/* tiempos de Gemini contados desde el principio del trozo (0:00) y no del vídeo: se corren a «Desde» */
+const relativos = (ls, inicio) => inicio > 0 && conTiempos(ls) && ls[0].t < 30 && Math.max(...ls.map(l => l.t)) < inicio;
+const correr = (ls, inicio) => relativos(ls, inicio) ? ls.map(l => ({...l, t: l.t + inicio})) : ls;
+/* el prompt para Gemini: mira el vídeo de YouTube y devuelve un SRT que parseFrases entiende */
+const PROMPT = {
+  es: (u, a, b) => `Mira este vídeo de YouTube: ${u}
+
+Transcribe ${a != null || b != null ? `solo el trozo que va ${a != null ? `del minuto ${mmss(a)}` : "desde el principio"} ${b != null ? `al minuto ${mmss(b)}` : "hasta el final"}` : "todo lo que se dice en el vídeo"}, palabra por palabra y en el idioma en que se habla (no lo traduzcas ni lo resumas).
+
+Devuélvelo SOLO en formato SRT, sin nada antes ni después y sin bloque de código. Así:
+
+1
+00:00:12,300 --> 00:00:14,800
+ANA: Hola, ¿qué tal?
+
+2
+00:00:15,100 --> 00:00:17,000
+BEN: Muy bien, gracias.
+
+Reglas:
+- Los tiempos son los del vídeo completo (el minuto y segundo reales en YouTube), con el formato HH:MM:SS,mmm. Que sean lo más exactos posible: cada subtítulo empieza justo cuando la persona empieza a hablar y acaba cuando termina.
+- Frases cortas: como mucho unas 10 palabras y 5 segundos por subtítulo. Si una frase es larga, pártela en varios subtítulos.
+- Una sola persona por subtítulo. Empieza con quién habla en MAYÚSCULAS y dos puntos (ANA: …). Si no sabes su nombre, pon algo como CHICO, CHICA, PROFESOR o NARRADOR (sin números).
+- No escribas sonidos ni música ([risas], ♪…): solo lo que se dice.
+- Si una parte no se entiende, sáltala. Si no puedes ver el vídeo, dilo y no te inventes nada.`,
+  en: (u, a, b) => `Watch this YouTube video: ${u}
+
+Transcribe ${a != null || b != null ? `only the part that goes ${a != null ? `from minute ${mmss(a)}` : "from the beginning"} ${b != null ? `to minute ${mmss(b)}` : "to the end"}` : "everything that is said in the video"}, word for word and in the language that is spoken (do not translate or summarise it).
+
+Give it back ONLY in SRT format, with nothing before or after and no code block. Like this:
+
+1
+00:00:12,300 --> 00:00:14,800
+ANA: Hi, how are you?
+
+2
+00:00:15,100 --> 00:00:17,000
+BEN: Very well, thanks.
+
+Rules:
+- The times are those of the whole video (the real minute and second on YouTube), in the format HH:MM:SS,mmm. Make them as exact as possible: each subtitle starts right when the person starts speaking and ends when they finish.
+- Short lines: at most about 10 words and 5 seconds per subtitle. If a sentence is long, split it into several subtitles.
+- Only one person per subtitle. Start with who is speaking in CAPITALS and a colon (ANA: …). If you do not know their name, write something like BOY, GIRL, TEACHER or NARRATOR (no numbers).
+- Do not write sounds or music ([laughs], ♪…): only what is said.
+- If a part cannot be understood, skip it. If you cannot watch the video, say so and do not make anything up.`,
+  ca: (u, a, b) => `Mira aquest vídeo de YouTube: ${u}
+
+Transcriu ${a != null || b != null ? `només el tros que va ${a != null ? `del minut ${mmss(a)}` : "des del principi"} ${b != null ? `al minut ${mmss(b)}` : "fins al final"}` : "tot el que es diu al vídeo"}, paraula per paraula i en l'idioma en què es parla (no el tradueixis ni el resumeixis).
+
+Torna-ho NOMÉS en format SRT, sense res abans ni després i sense bloc de codi. Així:
+
+1
+00:00:12,300 --> 00:00:14,800
+ANNA: Hola, com va?
+
+2
+00:00:15,100 --> 00:00:17,000
+BEN: Molt bé, gràcies.
+
+Normes:
+- Els temps són els del vídeo sencer (el minut i segon reals a YouTube), amb el format HH:MM:SS,mmm. Que siguin tan exactes com puguis: cada subtítol comença just quan la persona comença a parlar i acaba quan acaba.
+- Frases curtes: com a molt unes 10 paraules i 5 segons per subtítol. Si una frase és llarga, parteix-la en diversos subtítols.
+- Una sola persona per subtítol. Comença amb qui parla en MAJÚSCULES i dos punts (ANNA: …). Si no saps el seu nom, posa alguna cosa com NOI, NOIA, PROFESSOR o NARRADOR (sense números).
+- No escriguis sons ni música ([riures], ♪…): només el que es diu.
+- Si una part no s'entén, salta-la. Si no pots veure el vídeo, digues-ho i no t'inventis res.`
+};
+const promptIA = (v, a, b) => (PROMPT[lg()] || PROMPT.es)("https://www.youtube.com/watch?v=" + v, a, b);
+/* lo que la web ve en las frases pegadas, para saber si la respuesta de Gemini está bien */
+function revisar(txt, inicio) {
+  if (!String(txt || "").trim()) return "";
+  let ls = parseFrases(txt);
+  if (!ls.length) return `<span class="dbmal">${T1("ok_vacio")}</span>`;
+  if (!conTiempos(ls)) return esc(tl("ok_sin", lg(), {n: ls.length}));
+  const rel = relativos(ls, inicio); ls = correr(ls, inicio);
+  const u = ls[ls.length - 1], ws = [...new Set(ls.map(l => l.who).filter(Boolean))];
+  return `<span class="dbbien">${T1("ok_t", {n: ls.length, a: mmss(ls[0].t), b: mmss(u.t + u.d)})}</span>` + (ws.length ? " " + T1("ok_who", {w: ws.slice(0, 6).join(", ")}) : "") + (rel ? " " + T1("ok_rel", {a: mmss(inicio)}) : "");
+}
+async function copiarTxt(txt) {
+  try { await navigator.clipboard.writeText(txt); return true; }
+  catch (e) { const ta = document.createElement("textarea"); ta.value = txt; document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e2) {} ta.remove(); return ok; }
+}
 const COLORES = ["#ff6b9d", "#4cc9f0", "#ffcc4d", "#3fd69c", "#b98cff", "#ff9f43"];
 const quienes = () => [...new Set((D && D.lineas || []).map(l => l.who).filter(Boolean))];
 const colorDe = w => COLORES[Math.max(0, quienes().indexOf(w)) % COLORES.length];
@@ -288,7 +400,17 @@ async function pintarInicio(el) {
       <div class="cnrow"><input id="dburl" name="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="${esc(tl("ej", lg()))}" value="${F.v ? "https://youtu.be/" + esc(F.v) : ""}"></div>
       <fieldset class="cnlvs"><legend>${T("que")}</legend>${tBtn("cancion")}${tBtn("escena")}</fieldset>
       <div id="dbesc"${tipo === "escena" ? "" : " hidden"}>
+        <details class="cnpaste dbia"${F.ia ? " open" : ""}><summary>${T("ia_sum")}</summary>
+          <ol class="dbpasos"><li>${TB("ia1")}</li><li>${TB("ia2")}</li><li>${TB("ia3")}</li></ol>
+          <p class="dbbtns"><button type="button" class="btn main" data-db="prompt">${T("copiarp")}</button><a class="btn" href="https://gemini.google.com/app" target="_blank" rel="noopener">${T("abrirgem")}</a></p>
+          <p class="small dbhelp" id="dbcopiado" role="status" hidden></p>
+          <textarea class="dbprompt" id="dbprompt" readonly rows="8" hidden aria-label="Prompt"></textarea>
+          <p class="small dbhelp">${TB("ia_nota")}</p>
+          <p class="dbbtns"><label class="btn dbsubir">${T("srt_b")}<input type="file" id="dbsrt" accept=".srt,.vtt,.lrc,.txt,text/plain,text/vtt"></label></p>
+          <p class="small dbhelp">${TB("srt_p")}</p>
+        </details>
         <label class="dblab">${T("frases")}<textarea name="frases" rows="7" placeholder="ANA: Hello, how are you?&#10;BEN: I'm fine, thanks.">${esc(F.frases || "")}</textarea></label>
+        <p class="small dbcheck" id="dbcheck" aria-live="polite">${revisar(F.frases, leerMMSS(F.desde))}</p>
         <p class="small dbhelp">${TB("frases_ayuda")}</p>
         <div class="dbrango"><label class="dblab">${T("desde")}<input name="desde" inputmode="numeric" placeholder="0:00" value="${esc(F.desde || "")}"></label><label class="dblab">${T("hasta")}<input name="hasta" inputmode="numeric" placeholder="1:30" value="${esc(F.hasta || "")}"></label></div>
         <label class="dblab">${T("titulo")}<input name="titulo" maxlength="120" value="${esc(F.titulo || "")}"></label>
@@ -311,13 +433,25 @@ async function pintarInicio(el) {
     if (!v) { F.err = "e_enlace"; return pintarInicio(el); }
     F.err = "";
     if (F.tipo === "escena") {
-      const ls = parseFrases(f.frases.value);
+      const ls = correr(parseFrases(f.frases.value), leerMMSS(f.desde.value));
       if (!ls.length) { F.err = "e_frases"; return pintarInicio(el); }
       nuevaEscena({h: "doblaje-texto", v, titulo: f.titulo.value.trim() || "YouTube", idioma: lg(), lineas: ls, inicio: leerMMSS(f.desde.value), fin: leerMMSS(f.hasta.value), origen: ""});
       if (location.hash.slice(1) === "doblaje-texto") pintarEstudio(el); else location.hash = "doblaje-texto";
       return;
     }
     if (location.hash.slice(1) === "doblaje-" + v) { D = null; render(el); } else location.hash = "doblaje-" + v;
+  };
+  const chk = () => { const c = el.querySelector("#dbcheck"); if (c) c.innerHTML = revisar(f.frases.value, leerMMSS(f.desde.value)); };
+  f.frases.addEventListener("input", chk); f.desde.addEventListener("input", chk);
+  el.querySelector(".dbia").addEventListener("toggle", e => { F.ia = e.target.open; });
+  el.querySelector("#dbsrt").onchange = async e => {
+    const fi = e.target.files && e.target.files[0]; e.target.value = ""; if (!fi) return;
+    let txt = ""; try { txt = await fi.text(); } catch (x) {}
+    const c = el.querySelector("#dbcheck");
+    if (fi.size > 2e6 || !conTiempos(parseFrases(txt))) { if (c) c.innerHTML = `<span class="dbmal">${T1("e_srt")}</span>`; return; }
+    f.frases.value = txt.replace(/\r/g, "").trim();
+    if (!f.titulo.value.trim()) f.titulo.value = fi.name.replace(/\.[^.]+$/, "").replace(/[_-]+/g, " ").slice(0, 120);
+    chk(); f.frases.focus();
   };
   el.querySelector("#dbsform").onsubmit = e => { e.preventDefault(); F.v = idVideo(f.url.value) || F.v; buscar(el, e.target.q.value.trim()); };
   listaInicio(el);
@@ -777,6 +911,7 @@ document.addEventListener("click", e => {
   const a = b.dataset.db;
   if (a === "tipo") { F.tipo = b.dataset.t; const f = document.getElementById("dbform"); if (f) { F.v = idVideo(f.url.value) || F.v; F.frases = f.frases.value; F.desde = f.desde.value; F.hasta = f.hasta.value; F.titulo = f.titulo.value; } F.err = ""; return pintarInicio(app()); }
   if (a === "usarres") return usarResultado(+b.dataset.i);
+  if (a === "prompt") return copiarPrompt();
   if (a === "votar") return votar(b.dataset.id, b);
   if (a === "quitar") return quitar(b.dataset.id, b);
   if (!D) return;
@@ -800,6 +935,15 @@ document.addEventListener("click", e => {
     const r = document.getElementById("dbrango"); if (r) r.innerHTML = rangoTxt(); return;
   }
 });
+async function copiarPrompt() {
+  const f = document.getElementById("dbform"); if (!f) return;
+  const v = idVideo(f.url.value), ok = document.getElementById("dbcopiado"), ta = document.getElementById("dbprompt");
+  ok.hidden = false;
+  if (!v) { ok.innerHTML = `<span class="dbmal">${T1("e_url_ia")}</span>`; f.url.focus(); return; }
+  F.v = v; ta.value = promptIA(v, leerMMSS(f.desde.value), leerMMSS(f.hasta.value)); ta.hidden = false;
+  if (await copiarTxt(ta.value)) ok.innerHTML = `<span class="dbbien">${T1("copiado")}</span>`;
+  else { ok.textContent = tl("nocopia", lg()); ta.focus(); ta.select(); }
+}
 /* tocar una frase: el vídeo va a ese momento (con sonido) */
 document.addEventListener("click", e => {
   const li = e.target.closest && e.target.closest("#dblyr li"); if (!li || !D || !player || modo || !tiemposOK()) return;
@@ -809,5 +953,5 @@ document.addEventListener("click", e => {
 /* espacio / Enter para marcar tiempos con el teclado */
 document.addEventListener("keydown", e => { if (modo === "marcar" && (e.key === " " || e.key === "Enter") && !/INPUT|TEXTAREA|SELECT/.test((e.target.tagName || ""))) { e.preventDefault(); marca(); } });
 
-window.LYADoblaje = {render, isDub, tab, _test: {parseFrases, idVideo, get D() { return D; }, get modo() { return modo; }, get audio() { return audioEl; }, lineaEn}};
+window.LYADoblaje = {render, isDub, tab, _test: {parseFrases, idVideo, promptIA, revisar, correr, get D() { return D; }, get modo() { return modo; }, get audio() { return audioEl; }, lineaEn}};
 })();
