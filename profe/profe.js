@@ -96,6 +96,7 @@ async function portada(app) {
     ${!gs.length ? `<div class="pf-aviso">👋 Empieza creando una clase. Da su código a tus alumnos: lo ponen al crear su cuenta o en «Mi cuenta». <button class="btn main" type="button" data-pf="panel" data-tab="clases">🏫 Crear una clase</button></div>` : ""}
     ${cod ? `<p class="pf-cod">Código de la clase: <b>${esc(cod)}</b> <small>(tus alumnos lo ponen en «Mi cuenta»)</small></p>` : ""}
     <div class="pf-acc">
+      <a class="btn main" href="#profe-cuaderno">📒 Cuaderno de clase</a>
       <button class="btn main" type="button" data-pf="panel" data-tab="deberes">📚 Mandar deberes</button>
       <a class="btn" href="#concursos-crear">🏆 Crear un concurso</a>
       <a class="btn" href="#grupo">🏫 Jugar en clase</a>
@@ -204,9 +205,10 @@ document.addEventListener("click", e => { if (e.target.closest("[data-pfb=volver
 
 function render(app, herramientas) {
   appEl = app; if (herramientas !== undefined) herr = herramientas;
+  if (window.LYACuaderno?.isCuaderno(location.hash.slice(1))) return LYACuaderno.render(app);  /* cuaderno de clase: cuaderno/cuaderno.js */
   const m = location.hash.slice(1).match(/^profe-alumno-(.+)$/);
   if (m) return ficha(app, decodeURIComponent(m[1]));
   return portada(app);
 }
-window.LYAProfe = {render, verComoAlumno, esProfe, banda, recargar: () => { cuando = 0; }, _cuestan: cuestan};
+window.LYAProfe = {render, verComoAlumno, esProfe, banda, recargar: () => { cuando = 0; }, _cuestan: cuestan, datos: cargar, nomDeber};
 })();
