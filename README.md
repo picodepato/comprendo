@@ -186,3 +186,17 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Juegos en grupo de 4.º PDC (`grupo.js` filtra por tema): 🏷️ **¿Cuál es la mejor oferta?** (`m-oferta`: elegir la oferta más barata y, de extra, su precio), 🧩 **Monta el problema en clase** (`m-monta`), 🃏 **Parejas de porcentajes** (cartas con datos de p2), 🔐 **Escape room «La tienda»** (candados de precios con códigos enteros), y ⚔️ duelo y 🏆 concurso con specs `p2-…`.
 - Deberes, progreso, pistas y panel del profe igual que en 1.º, con `p2` en vez de `t2` (`mates-p2-<n>-<d>`, `S.g.mt["p2-<n>"]`, en la ficha sale «(4.º PDC)»).
 - Prueba: `qa/prueba-pdc.mjs <url>` (portada, 8 dibujos, ayudas, comas, Monta solo con arrastre y toque en móvil y PC, concurso, salas de oferta y monta, parejas, escape y deberes).
+
+## 🖨️ Imprimir tema (imprimir/)
+- Botón **«🖨️ Imprimir tema»** debajo del título de cada tema y de cada apartado de las asignaturas por temas: Matemáticas 1.º ESO y 4.º ESO PDC, y FP Básica (Lengua, Sociales…) cuando está cargada. Lo pone `imprimir/imprimir.js` solo, mirando la dirección (`#mates-<tema>[-<n>]`, `#fpb-<tema>[-<n>]`): las páginas no cambian.
+- Abre un panel con la vista previa de la hoja al lado (debajo en el móvil, con «👀 Ver la hoja»):
+  - **Qué parte**: tema entero, ninguno o solo el apartado desde el que se abrió; o marcar los apartados uno a uno. En mates, «Tipos de ejercicio» de cada apartado (los de `HAB`).
+  - **Explicación** sí o no, con dibujos y con ejemplos resueltos (en FP Básica también palabras difíciles y textos).
+  - **Actividades** sí o no: cuántas por apartado (1-20), niveles Fácil, Medio y Difícil (varios a la vez: se reparten, primero las fáciles), repaso mezclado al final (0-30) y sitio para contestar (rayas, casillas, renglones en las combinadas, tabla en clasificar).
+  - **Pistas**: sin pistas, debajo de cada actividad o todas al final; solo la primera o todas (de menos a más). En FP Básica se quitan las que solo sirven en la pantalla (🔊, «en verde»).
+  - **Soluciones**: sin, al final o en hoja aparte (página nueva); con o sin «cómo se hace» (los pasos).
+  - **Hoja**: nombre, curso y fecha arriba, y letra grande.
+  - En la vista previa, cada actividad tiene ✕ (quitar) y 🔄 (otra igual); «🔄 Otras actividades» las cambia todas. Cambiar opciones no cambia las actividades (salen de una semilla).
+- «🖨️ Imprimir o guardar PDF» usa la impresión del navegador: solo sale la hoja, en A4 y en blanco. Las opciones se recuerdan en el navegador (`localStorage.lyaImprimir`).
+- Otra asignatura por temas: `LYAImprimir.fuente(id, {ruta, tema, curso, rng, gen, preg, firma, tipos?, pesoOk?, figs?})` (ver las de mates y FP Básica en el archivo).
+- Prueba: `qa/prueba-imprimir.mjs <url> [carpeta]` con `servidor-prueba.mjs` (deja PDF de muestra en la carpeta; si FP Básica está cargada, prueba también sus temas).
