@@ -416,7 +416,7 @@ document.addEventListener("click", e => {
   else if (a === "op") {
     const i = +b.dataset.i, o = Q.ops[i];
     if (o.ok) { C.pts[C.turno] += C.pist || C.rebote ? 1 : 2; C.gano = C.turno; C.fase = "fb"; C.aviso = null; }
-    else { C.fuera.push(i); C.intentos++; C.aviso = `${esc(EQN[C.turno])}: ${o.por || "no es esa."}`;
+    else { C.fuera.push(i); C.intentos++; C.aviso = `${EQN[C.turno]}: ${o.por || "no es esa."}`;
       if (C.intentos >= Math.min(C.eq, Q.ops.length - 1) || Q.ops.length - C.fuera.length <= 1) { C.gano = -1; C.fase = "fb"; }
       else { C.turno = (C.turno + 1) % C.eq; C.rebote = true; } }
   } else if (a === "sig") {
