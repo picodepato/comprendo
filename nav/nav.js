@@ -13,7 +13,7 @@ const ls = {get(k) { try { return JSON.parse(localStorage.getItem(k) || "null");
 
 const TX = {
   es: {
-    mates: "Mates", t_mates: "Matemáticas 1.º ESO", t_mates_p: "Explicaciones y ejercicios que no se acaban.", t_mgrupo: "Mates en grupo", t_mgrupo_p: "Recta humana, cadena de operaciones y más.", g_mates: "Juegos de mates",
+    mates: "Mates", t_mates: "Matemáticas 1.º ESO", t_mates_p: "Explicaciones y ejercicios que no se acaban.", t_mgrupo: "Mates en grupo", t_mgrupo_p: "Recta humana, cadena de operaciones y más.", fpb: "FP Básica", t_fpb: "FP Básica: Lengua y más", t_fpb_p: "Lectura fácil, actividades para elegir y muchas pistas.", t_fgrupo: "FP Básica en grupo", t_fgrupo_p: "Concurso, parejas y el juego de la pizarra.", g_fpb: "Juegos de FP Básica", g_mates: "Juegos de mates",
     inicio: "Inicio", aprender: "Aprender", practicar: "Practicar", grupo: "En grupo", mizona: "Mi zona", profe: "Profe", menu: "Menú",
     buscar: "Buscar una palabra", buscar_ph: "Escribe una palabra…", buscar_help: "Escribe una palabra en {a} o en {b}.", nada: "No hemos encontrado esa palabra.", anadir: "＋ Al diccionario", anadida: "✓ En tu diccionario", oir: "Escuchar", cerrar: "Cerrar", buscadas: "🔍 Palabras buscadas",
     idioma: "Idioma", aprendo: "Quiero aprender…", se: "Sé…", pronto: "pronto", cambiar: "Cambiar", aprendes: "Aprendes {a} · Sabes {b}",
@@ -48,7 +48,7 @@ const TX = {
     c_quiz: "Concurso con IA", c_quiz_p: "Con la foto del libro o un texto.", c_video: "Vídeo con preguntas", c_video_p: "Pega un enlace de YouTube.", c_dob: "Doblaje", c_dob_p: "Una escena o canción para doblar.", c_cancion: "Canción", c_cancion_p: "Una canción con huecos para tu clase."
   },
   en: {
-    mates: "Maths", t_mates: "Maths (year 7, in Spanish)", t_mates_p: "Explanations and endless exercises.", t_mgrupo: "Maths together", t_mgrupo_p: "Human number line, operation chain and more.", g_mates: "Maths games",
+    mates: "Maths", t_mates: "Maths (year 7, in Spanish)", t_mates_p: "Explanations and endless exercises.", t_mgrupo: "Maths together", t_mgrupo_p: "Human number line, operation chain and more.", fpb: "FP Básica", t_fpb: "FP Básica (in Spanish)", t_fpb_p: "Easy-read explanations and multiple-choice practice.", t_fgrupo: "FP Básica together", t_fgrupo_p: "Quiz, pairs and the whiteboard game.", g_fpb: "FP Básica games", g_mates: "Maths games",
     inicio: "Home", aprender: "Learn", practicar: "Practise", grupo: "Together", mizona: "My space", profe: "Teacher", menu: "Menu",
     buscar: "Look up a word", buscar_ph: "Type a word…", buscar_help: "Type a word in {a} or in {b}.", nada: "We couldn't find that word.", anadir: "＋ To my dictionary", anadida: "✓ In your dictionary", oir: "Listen", cerrar: "Close", buscadas: "🔍 Words I looked up",
     idioma: "Language", aprendo: "I want to learn…", se: "I know…", pronto: "soon", cambiar: "Change", aprendes: "You learn {a} · You know {b}",
@@ -83,7 +83,7 @@ const TX = {
     c_quiz: "Quiz with AI", c_quiz_p: "From a photo of the book or a text.", c_video: "Video with questions", c_video_p: "Paste a YouTube link.", c_dob: "Dubbing", c_dob_p: "A scene or song to dub.", c_cancion: "Song", c_cancion_p: "A song with gaps for your class."
   },
   ca: {
-    mates: "Mates", t_mates: "Matemàtiques 1r ESO (en castellà)", t_mates_p: "Explicacions i exercicis que no s’acaben.", t_mgrupo: "Mates en grup", t_mgrupo_p: "Recta humana, cadena d’operacions i més.", g_mates: "Jocs de mates",
+    mates: "Mates", t_mates: "Matemàtiques 1r ESO (en castellà)", t_mates_p: "Explicacions i exercicis que no s’acaben.", t_mgrupo: "Mates en grup", t_mgrupo_p: "Recta humana, cadena d’operacions i més.", fpb: "FP Bàsica", t_fpb: "FP Bàsica (en castellà)", t_fpb_p: "Lectura fàcil, activitats per triar i moltes pistes.", t_fgrupo: "FP Bàsica en grup", t_fgrupo_p: "Concurs, parelles i el joc de la pissarra.", g_fpb: "Jocs de FP Bàsica", g_mates: "Jocs de mates",
     inicio: "Inici", aprender: "Aprendre", practicar: "Practicar", grupo: "En grup", mizona: "El meu espai", profe: "Profe", menu: "Menú",
     buscar: "Buscar una paraula", buscar_ph: "Escriu una paraula…", buscar_help: "Escriu una paraula en {a} o en {b}.", nada: "No hem trobat aquesta paraula.", anadir: "＋ Al diccionari", anadida: "✓ Al teu diccionari", oir: "Escoltar", cerrar: "Tancar", buscadas: "🔍 Paraules buscades",
     idioma: "Idioma", aprendo: "Vull aprendre…", se: "Sé…", pronto: "aviat", cambiar: "Canviar", aprendes: "Aprens {a} · Saps {b}",
@@ -131,7 +131,7 @@ const rol = () => { try { return window.LYACuentas?.rol || null; } catch (e) { r
 const esProfe = () => rol() === "profe" || rol() === "admin";
 
 /* ---------- apartados ---------- */
-const SECS = [["inicio", "🏠"], ["aprender", "📖"], ["practicar", "🎮"], ["mates", "➗"], ["grupo", "🏫"], ["mizona", "📚"], ["profe", "👩‍🏫"]];
+const SECS = [["inicio", "🏠"], ["aprender", "📖"], ["practicar", "🎮"], ["mates", "➗"], ["fpb", "🛠️"], ["grupo", "🏫"], ["mizona", "📚"], ["profe", "👩‍🏫"]];
 const HUBS = ["grupo", "mizona", "profe"];
 const isHub = h => HUBS.includes(h) || /^profe-alumno-./.test(h);  /* profe-alumno-<usuario>: ficha de un alumno (profe/profe.js) */
 const hash = () => location.hash.replace(/^#/, "");
@@ -145,6 +145,7 @@ function secOf(view, h = hash()) {
   if (view === "games") return /^garabatos/.test(h) ? "grupo" : "practicar";
   if (view === "duelo" || view === "escape" || view === "retos") return "grupo";
   if (view === "mates") return /^mates-(sala|pizarra)-/.test(h) ? "grupo" : "mates";
+  if (view === "fpb") return /^fpb-(sala|pizarra)-/.test(h) ? "grupo" : "fpb";
   if (["dict", "fc", "pet", "prog"].includes(view)) return "mizona";
   return "inicio";
 }
@@ -194,7 +195,8 @@ function renderGrupo(el) {
       window.LYAGarabatos && tile("#garabatos", "✏️", "t_garabatos"),
       window.LYAVideos && tile("#videos", "📺", "t_vdirecto"),
       ...(window.LYARetos ? Object.entries(LYARetos.JUEGOS).map(([j, x]) => tile("#reto-" + j, x.ic, "t_r" + j)) : [])].filter(Boolean).join("")}</div>
-    ${window.LYAMatesGrupo ? `<h2 class="nvh2">➗ ${esc(t("g_mates"))}${t2("g_mates")}</h2>${LYAMatesGrupo.tiles()}` : ""}</section>`;
+    ${window.LYAMatesGrupo ? `<h2 class="nvh2">➗ ${esc(t("g_mates"))}${t2("g_mates")}</h2>${LYAMatesGrupo.tiles()}` : ""}
+    ${window.LYAFpbGrupo ? `<h2 class="nvh2">🛠️ ${esc(t("g_fpb"))}${t2("g_fpb")}</h2>${LYAFpbGrupo.tiles()}` : ""}</section>`;
   const f = el.querySelector("#nvcode"), inp = f.querySelector("input"), msg = f.querySelector(".nvmsg");
   inp.addEventListener("input", () => { inp.value = inp.value.replace(/\D/g, "").slice(0, 6); msg.textContent = ""; });
   f.addEventListener("submit", async e => {
@@ -215,7 +217,7 @@ async function buscarSala(c) {
     prueba("api/duelo?c=" + c, () => "duelo-" + c),
     prueba("api/propuestas?escape=1&sala=" + c, () => "escape-" + c),
     prueba("api/dibujos?sala=" + c, () => "garabatos-" + c),
-    prueba("api/propuestas?retos=1&sala=" + c, j => (/^m-/.test(j.sala?.juego || "") ? "mates-sala-" : "reto-") + c)
+    prueba("api/propuestas?retos=1&sala=" + c, j => (/^m-/.test(j.sala?.juego || "") ? "mates-sala-" : /^f-/.test(j.sala?.juego || "") ? "fpb-sala-" : "reto-") + c)
   ]);
   return rs.find(Boolean) || null;
 }
@@ -271,7 +273,7 @@ const ULT = "lyaNavUltimo";
 const LUGARES = [
   [/^juego-/, "🎮", "t_juegos"], [/^gram-/, "✏️", "t_gram"], [/^dictado/, "✍️", "t_dictados"], [/^camara$/, "📷", "t_camara"],
   [/^canciones/, "🎵", "t_canciones"], [/^(videos$|video-solo-)/, "📺", "t_videos"], [/^doblaje/, "🎬", "t_doblaje"], [/^fichas$/, "🃏", "t_fichas"],
-  [/^diccionario$/, "📖", "t_dicc"], [/^mascota$/, "🐾", "t_mascota"]
+  [/^diccionario$/, "📖", "t_dicc"], [/^mascota$/, "🐾", "t_mascota"], [/^fpb-[a-z]\d+-\d+$/, "🛠️", "t_fpb"]
 ];
 function apuntar() {
   const h = hash(), m = LUGARES.find(([re]) => re.test(h));
@@ -285,6 +287,7 @@ function mapa() {
     ["practicar", "🎮", "#practicar", [window.LYAGram && ["#practicar", "✏️", "t_gram"], ["#diccionario", "📝", "p_vocab"], window.LYAFichas && ["#fichas", "🃏", "t_fichas"], window.LYAJuegos && ["#practicar", "🎲", "t_juegos"]]],
     ["grupo", "🏫", "#grupo", [["#grupo", "🔑", "codigo_t"], window.LYADuelo && ["#duelo", "⚔️", "t_duelo"], window.LYAConcursos && ["#concursos", "🏆", "t_concursos"], window.LYAEscape && ["#escape", "🔐", "t_escape"], window.LYAGarabatos && ["#garabatos", "✏️", "t_garabatos"], window.LYAVideos && ["#videos", "📺", "t_vdirecto"], ...(window.LYARetos ? Object.entries(LYARetos.JUEGOS).map(([j, x]) => ["#reto-" + j, x.ic, "t_r" + j]) : [])]],
     ["mates", "➗", "#mates", [window.LYAMates && ["#mates", "📚", "t_mates"], window.LYAMatesGrupo && ["#mates-grupo", "🏫", "t_mgrupo"]]],
+    ["fpb", "🛠️", "#fpb", [window.LYAFpb && ["#fpb", "📚", "t_fpb"], window.LYAFpbGrupo && ["#fpb-grupo", "🏫", "t_fgrupo"]]],
     ["mizona", "📚", "#mizona", [["#diccionario", "📖", "t_dicc"], window.LYACanciones && ["#diccionario", "🎵", "t_canpal"], window.LYAFichas && ["#fichas", "🃏", "t_fichas"], window.LYAMascota && ["#mascota", "🐾", "t_mascota"], ["#progreso", "🏅", "t_logros"], window.LYAAvisos && ["#deberes", "🗂️", "t_debhist"]]]
   ];
   if (esProfe()) G.push(["profe", "👩‍🏫", "#profe", [["#profe", "🏫", "f_clases"], window.LYAConcursos && ["#concursos-crear", "🏆", "c_quiz"], window.LYAVideos && ["#videos-editar", "📺", "c_video"], window.LYADoblaje && ["#doblaje", "🎬", "c_dob"], window.LYACanciones && ["#canciones", "🎵", "c_cancion"], ["#profe", "📋", "f_seg"]]]);
