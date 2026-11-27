@@ -110,7 +110,14 @@ function render(app) {
   try { L().setAcc?.("#ff9f1c"); } catch (e) {}
   if (!m) return;
   if (!m[1]) return portada(app);
-  const T = tema(m[1]); if (!T) { location.hash = "fpb"; return; }
+  const T = tema(m[1]);
+  /* temas de los profes (x1, y1…): se cargan al entrar (temas-profe/temas-profe.js) */
+  if (!T && /^[u-z]/.test(m[1]) && window.LYATemasProfe) {
+    app.innerHTML = `<section class="wrap mt fp"><p class="mt-lead">Cargando el tema…</p></section>`;
+    LYATemasProfe.cargarTemas().then(() => { if (location.hash.slice(1) !== h) return; if (tema(m[1])) render(app); else location.hash = "mis-temas"; });
+    return;
+  }
+  if (!T) { location.hash = "fpb"; return; }
   try { L().setAcc?.(T.color); } catch (e) {}
   if (!m[2]) return temaHTML(app, T);
   const n = m[2] === "repaso" ? "repaso" : +m[2];
@@ -129,7 +136,7 @@ function portada(app) {
   app.innerHTML = `<section class="wrap mt fp">
     <h1 class="mt-h1">🛠️ FP Básica</h1>
     <p class="mt-lead">Elige una asignatura. Todo está explicado en lectura fácil, con actividades para elegir y muchas pistas.</p>
-    <div class="mt-temas fp-asigs">${ASIG.map(A => { const tot = A.temas.reduce((s, T) => s + T.aps.length, 0), hh = A.temas.reduce((s, T) => s + hechos(T), 0);
+    <div class="mt-temas fp-asigs">${ASIG.filter(A => !A.profe).map(A => { const tot = A.temas.reduce((s, T) => s + T.aps.length, 0), hh = A.temas.reduce((s, T) => s + hechos(T), 0);
       return `<a class="mt-tema fp-asig" href="#fpb-${A.id}" style="--c:${A.color}"><span class="fp-aic" aria-hidden="true">${A.ic}</span><b>${esc(A.n)}</b><span class="mt-small">${esc(A.intro || "")}</span><span class="mt-small">${A.temas.length} ${A.temas.length === 1 ? "tema" : "temas"}</span><span class="mt-bar"><i style="width:${tot ? 100 * hh / tot : 0}%"></i></span><span class="mt-small">${hh} de ${tot} apartados practicados</span></a>`; }).join("") || `<p class="mt-small">Pronto habrá asignaturas.</p>`}</div>
     <h2 class="mt-h2">🏫 Jugar con la clase</h2>
     ${window.LYAFpbGrupo ? LYAFpbGrupo.tiles() : ""}
@@ -137,8 +144,8 @@ function portada(app) {
 }
 function asigHTML(app, A) {
   app.innerHTML = `<section class="wrap mt fp" style="--c:${A.color}">
-    <p class="mt-migas"><a href="#fpb">← FP Básica</a></p>
-    <h1 class="mt-h1"><small>FP Básica</small> ${A.ic} ${esc(A.n)}</h1>
+    <p class="mt-migas">${A.profe ? `<a href="#mis-temas">← Temas de mis profes</a>` : `<a href="#fpb">← FP Básica</a>`}</p>
+    <h1 class="mt-h1"><small>${A.profe ? esc(A.curso) : "FP Básica"}</small> ${A.ic} ${esc(A.n)}</h1>
     <p class="mt-lead">${esc(A.intro || "")}</p>
     <div class="mt-temas">${A.temas.map(T => `<a class="mt-tema" href="#fpb-${T.id}" style="--c:${T.color}"><span class="mt-tn">Tema ${T.n}</span><b>${T.ic} ${esc(T.titulo)}</b><span class="mt-small">${esc(T.intro)}</span><span class="mt-bar"><i style="width:${100 * hechos(T) / T.aps.length}%"></i></span><span class="mt-small">${hechos(T)} de ${T.aps.length} apartados practicados</span></a>`).join("")}
       ${(A.pronto || []).map(t => `<div class="mt-tema soon"><span class="mt-tn">Pronto</span><b>${esc(t)}</b></div>`).join("")}</div>
