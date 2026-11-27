@@ -202,3 +202,17 @@ Sección propia (`#fpb`, botón 🛠️ en la barra), separada de Mates y del re
 - **Imágenes** (`fpb/sociales-dibujos.js`): cuadros y edificios de Wikimedia Commons (dominio público) por nombre de archivo; si uno no carga, se busca en Commons (sin desnudos) y, si tampoco, sale una ficha con la descripción. Donde el libro trae obras con desnudos (Gauguin, Sorolla, Rodin, Delacroix) salen otras del mismo autor o se nombran solo en el texto: «Los girasoles» y «Los jugadores de cartas», «Paseo a orillas del mar» de Sorolla, y el «Oficial de cazadores» de Géricault como cuadro romántico.
 - Juegos en grupo: los de FP Básica (`fpb/grupo.js`) ya ofrecen los temas 3 y 4 de Sociales (¿Quién sabe más?, Parejas en equipo con las parejas de cada apartado y la pizarra por turnos).
 - Prueba: `qa/prueba-fpb-sociales.mjs <url> [capturas]` con `servidor-prueba.mjs` (banco bien formado, explicaciones e imágenes, los 15 apartados en los 3 niveles, pistas, fallo explicado y juegos).
+
+## 🖨️ Imprimir tema (imprimir/)
+- Botón **«🖨️ Imprimir tema»** debajo del título de cada tema y de cada apartado de las asignaturas por temas: Matemáticas 1.º ESO y 4.º ESO PDC, y FP Básica (Lengua, Sociales…) cuando está cargada. Lo pone `imprimir/imprimir.js` solo, mirando la dirección (`#mates-<tema>[-<n>]`, `#fpb-<tema>[-<n>]`): las páginas no cambian.
+- Abre un panel con la vista previa de la hoja al lado (debajo en el móvil, con «👀 Ver la hoja»):
+  - **Qué parte**: tema entero, ninguno o solo el apartado desde el que se abrió; o marcar los apartados uno a uno. En mates, «Tipos de ejercicio» de cada apartado (los de `HAB`).
+  - **Explicación** sí o no, con dibujos y con ejemplos resueltos (en FP Básica también palabras difíciles y textos).
+  - **Actividades** sí o no: cuántas por apartado (1-20), niveles Fácil, Medio y Difícil (varios a la vez: se reparten, primero las fáciles), repaso mezclado al final (0-30) y sitio para contestar (rayas, casillas, renglones en las combinadas, tabla en clasificar).
+  - **Pistas**: sin pistas, debajo de cada actividad o todas al final; solo la primera o todas (de menos a más). En FP Básica se quitan las que solo sirven en la pantalla (🔊, «en verde»).
+  - **Soluciones**: sin, al final o en hoja aparte (página nueva); con o sin «cómo se hace» (los pasos).
+  - **Hoja**: nombre, curso y fecha arriba, y letra grande.
+  - En la vista previa, cada actividad tiene ✕ (quitar) y 🔄 (otra igual); «🔄 Otras actividades» las cambia todas. Cambiar opciones no cambia las actividades (salen de una semilla).
+- «🖨️ Imprimir o guardar PDF» usa la impresión del navegador: solo sale la hoja, en A4 y en blanco. Las opciones se recuerdan en el navegador (`localStorage.lyaImprimir`).
+- Otra asignatura por temas: `LYAImprimir.fuente(id, {ruta, tema, curso, rng, gen, preg, firma, tipos?, pesoOk?, figs?})` (ver las de mates y FP Básica en el archivo).
+- Prueba: `qa/prueba-imprimir.mjs <url> [carpeta]` con `servidor-prueba.mjs` (deja PDF de muestra en la carpeta; si FP Básica está cargada, prueba también sus temas).
