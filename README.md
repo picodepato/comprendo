@@ -174,7 +174,9 @@ Web de lecturas para aprender idiomas, con cuentas de usuario.
 - Prueba: `qa/prueba-mates.cjs <url> [capturas]` con `servidor-prueba.mjs` (los 8 apartados en fácil y difícil, y los 7 juegos con pizarra y 2 móviles). `qa/prueba-deberes-mates.mjs <url>`: el profe manda un apartado, el alumno lo hace (mirando «Aprende» a mitad) y el profe ve aciertos y fallos. `qa/captura-dibujos-mates.cjs <url> <carpeta>`: una captura de cada dibujo.
 
 ## Matemáticas 4.º ESO PDC (mates/pdc.js, mates/monta.js)
-- En `#mates` hay ahora dos cursos: 1.º ESO (`t2`) y **4.º ESO PDC** (`p2`). Cada tema dice su banco en `mates/temas.js` (`T2.banco = "LYAMatesBanco"`, `P2.banco = "LYAMatesPDC"`) y `LYAMatesTemas.banco(id)` lo devuelve; el resto de la app (mates.js, grupo.js, profe, panel, servidor) elige el banco por el tema.
+- **Cada curso es un apartado propio**: `#mates` solo enseña un botón por curso, y cada uno abre su página (`#mates-1eso`, `#mates-4pdc`) con sus temas, sus «Pronto» y sus juegos en grupo. Los temas vuelven a su curso. En «Mates en grupo» los juegos salen por curso, y el duelo y el concurso aparte (valen para todos).
+- **Añadir un curso**: un objeto más en `CURSOS` de `mates/temas.js` (`{id: "2eso", n: "2.º ESO", ic, color, intro, temas: [...], pronto: [...]}`; el id es número + letras) y sus temas con ids de letra + número. La portada, la página del curso y «Mates en grupo» salen solos.
+- Cursos: 1.º ESO (`t2`) y **4.º ESO PDC** (`p2`). Cada tema dice su banco en `mates/temas.js` (`T2.banco = "LYAMatesBanco"`, `P2.banco = "LYAMatesPDC"`) y `LYAMatesTemas.banco(id)` lo devuelve; el resto de la app (mates.js, grupo.js, profe, panel, servidor) elige el banco por el tema.
 - **Tema 2, Proporcionalidad y porcentajes**, 8 apartados (`#mates-p2-<1..8|repaso>`): directa, inversa, compuesta, porcentajes, aumentos, disminuciones (encadenadas, IVA + descuento), interés simple y repartos proporcionales. Teoría con palabras nuestras y dibujos (`LYAMatesDibujos.p2`: tabla con flechas y regla de tres en cruz, rectángulos de igual área, cuadrícula de 100, barras del 116 % y 90 %, años de interés, pizza del reparto).
 - Respuestas con **decimales y coma** (el teclado cambia ± por «,»; `leer` acepta coma o punto; `igual` con tolerancia de céntimos) y **unidad** a la derecha.
 - Ayudas nuevas cuando no entienden algo (en `pdc.js`, por pregunta):
@@ -213,3 +215,17 @@ Sección propia (`#fpb`, botón 🛠️ en la barra), separada de Mates y del re
 - **Tema de ejemplo**: `temas-profe/x1.js` (2.º ESO, Matemáticas, «Las fracciones»), solo para el admin; es el modelo para la rutina.
 - **Futuro (preparado, no hecho)**: ficha de dificultades por alumno (`perfil:<alumno> = {dif: [...DIFICULTADES], adaptar: {...}}`) y botón «Adaptar para este alumno»; cada tema ya tiene un campo `adaptado` para sus versiones por dificultad.
 - Prueba: `TEMAS_ROBOT=<clave> node qa/servidor-prueba.mjs <copia> 8790` y `TEMAS_ROBOT=<clave> node qa/prueba-temas-profe.mjs http://localhost:8790 <copia> [capturas]` (usa una copia porque cambia su `indice.json`).
+
+## 🖨️ Imprimir tema (imprimir/)
+- Botón **«🖨️ Imprimir tema»** debajo del título de cada tema y de cada apartado de las asignaturas por temas: Matemáticas 1.º ESO y 4.º ESO PDC, y FP Básica (Lengua, Sociales…) cuando está cargada. Lo pone `imprimir/imprimir.js` solo, mirando la dirección (`#mates-<tema>[-<n>]`, `#fpb-<tema>[-<n>]`): las páginas no cambian.
+- Abre un panel con la vista previa de la hoja al lado (debajo en el móvil, con «👀 Ver la hoja»):
+  - **Qué parte**: tema entero, ninguno o solo el apartado desde el que se abrió; o marcar los apartados uno a uno. En mates, «Tipos de ejercicio» de cada apartado (los de `HAB`).
+  - **Explicación** sí o no, con dibujos y con ejemplos resueltos (en FP Básica también palabras difíciles y textos).
+  - **Actividades** sí o no: cuántas por apartado (1-20), niveles Fácil, Medio y Difícil (varios a la vez: se reparten, primero las fáciles), repaso mezclado al final (0-30) y sitio para contestar (rayas, casillas, renglones en las combinadas, tabla en clasificar).
+  - **Pistas**: sin pistas, debajo de cada actividad o todas al final; solo la primera o todas (de menos a más). En FP Básica se quitan las que solo sirven en la pantalla (🔊, «en verde»).
+  - **Soluciones**: sin, al final o en hoja aparte (página nueva); con o sin «cómo se hace» (los pasos).
+  - **Hoja**: nombre, curso y fecha arriba, y letra grande.
+  - En la vista previa, cada actividad tiene ✕ (quitar) y 🔄 (otra igual); «🔄 Otras actividades» las cambia todas. Cambiar opciones no cambia las actividades (salen de una semilla).
+- «🖨️ Imprimir o guardar PDF» usa la impresión del navegador: solo sale la hoja, en A4 y en blanco. Las opciones se recuerdan en el navegador (`localStorage.lyaImprimir`).
+- Otra asignatura por temas: `LYAImprimir.fuente(id, {ruta, tema, curso, rng, gen, preg, firma, tipos?, pesoOk?, figs?})` (ver las de mates y FP Básica en el archivo).
+- Prueba: `qa/prueba-imprimir.mjs <url> [carpeta]` con `servidor-prueba.mjs` (deja PDF de muestra en la carpeta; si FP Básica está cargada, prueba también sus temas).
