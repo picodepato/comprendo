@@ -45,7 +45,7 @@ const TX = {
     t_vdirecto: "Vídeos en directo", t_vdirecto_p: "Un vídeo con preguntas para toda la clase.",
     t_juegos: "Mini-juegos", t_gram: "Gramática y verbos",
     f_clases_p: "Tus alumnos y los códigos de clase.", f_creadas_p: "Pruébalas, lánzalas en directo o mándalas como deberes.", f_deberes_p: "Mandados, entregados y notas.", f_result_p: "El progreso de cada alumno y de la clase.", f_fallos: "Fallos", f_fallos_p: "Las preguntas que más fallan.", f_msgs: "Mensajes", f_msgs_p: "Escribe a tu clase.", f_admin: "Propuestas y votos", f_admin_p: "Temas propuestos y votación.",
-    c_quiz: "Concurso con IA", c_quiz_p: "Con la foto del libro o un texto.", c_video: "Vídeo con preguntas", c_video_p: "Pega un enlace de YouTube.", c_dob: "Doblaje", c_dob_p: "Una escena o canción para doblar.", c_cancion: "Canción", c_cancion_p: "Una canción con huecos para tu clase."
+    c_quiz: "Concurso con IA", c_quiz_p: "Con la foto del libro o un texto.", c_video: "Vídeo con preguntas", c_video_p: "Pega un enlace de YouTube.", c_dob: "Doblaje", c_dob_p: "Una escena o canción para doblar.", c_cancion: "Canción", c_cancion_p: "Una canción con huecos para tu clase.", t_tnuevo: "Añadir un tema", t_tnuevo_p: "Curso, tema y fotos del libro: lo preparamos para tu clase.", t_tmios: "Mis peticiones de temas", t_tperfil: "Perfil de la clase", t_tperfil_p: "Las dificultades de cada alumno, para adaptarle los temas.", t_tmios_p: "En qué estado están los temas que has pedido.", t_tprofes: "Temas de mis profes", t_tprofes_p: "Temas preparados para tu clase."
   },
   en: {
     mates: "Maths", t_mates: "Maths (in Spanish)", t_mates_p: "Explanations and endless exercises.", t_mgrupo: "Maths together", t_mgrupo_p: "Human number line, operation chain and more.", fpb: "FP Básica", t_fpb: "FP Básica (in Spanish)", t_fpb_p: "Easy-read explanations and multiple-choice practice.", t_fgrupo: "FP Básica together", t_fgrupo_p: "Quiz, pairs and the whiteboard game.", g_fpb: "FP Básica games", g_mates: "Maths games",
@@ -80,7 +80,7 @@ const TX = {
     t_vdirecto: "Live videos", t_vdirecto_p: "A video with questions for the whole class.",
     t_juegos: "Mini-games", t_gram: "Grammar and verbs",
     f_clases_p: "Your students and class codes.", f_creadas_p: "Try them, play them live or set them as homework.", f_deberes_p: "Set, handed in and marks.", f_result_p: "Each student's and the class's progress.", f_fallos: "Mistakes", f_fallos_p: "The questions they get wrong most.", f_msgs: "Messages", f_msgs_p: "Write to your class.", f_admin: "Ideas and votes", f_admin_p: "Topic ideas and voting.",
-    c_quiz: "Quiz with AI", c_quiz_p: "From a photo of the book or a text.", c_video: "Video with questions", c_video_p: "Paste a YouTube link.", c_dob: "Dubbing", c_dob_p: "A scene or song to dub.", c_cancion: "Song", c_cancion_p: "A song with gaps for your class."
+    c_quiz: "Quiz with AI", c_quiz_p: "From a photo of the book or a text.", c_video: "Video with questions", c_video_p: "Paste a YouTube link.", c_dob: "Dubbing", c_dob_p: "A scene or song to dub.", c_cancion: "Song", c_cancion_p: "A song with gaps for your class.", t_tnuevo: "Add a unit", t_tnuevo_p: "Course, unit and photos of the book: we prepare it for your class.", t_tmios: "My unit requests", t_tperfil: "Class profile", t_tperfil_p: "Each student's needs, to adapt the units for them.", t_tmios_p: "The status of the units you asked for.", t_tprofes: "My teachers' units", t_tprofes_p: "Units prepared for your class."
   },
   ca: {
     mates: "Mates", t_mates: "Matemàtiques (en castellà)", t_mates_p: "Explicacions i exercicis que no s’acaben.", t_mgrupo: "Mates en grup", t_mgrupo_p: "Recta humana, cadena d’operacions i més.", fpb: "FP Bàsica", t_fpb: "FP Bàsica (en castellà)", t_fpb_p: "Lectura fàcil, activitats per triar i moltes pistes.", t_fgrupo: "FP Bàsica en grup", t_fgrupo_p: "Concurs, parelles i el joc de la pissarra.", g_fpb: "Jocs de FP Bàsica", g_mates: "Jocs de mates",
@@ -115,7 +115,7 @@ const TX = {
     t_vdirecto: "Vídeos en directe", t_vdirecto_p: "Un vídeo amb preguntes per a tota la classe.",
     t_juegos: "Minijocs", t_gram: "Gramàtica i verbs",
     f_clases_p: "Els teus alumnes i els codis de classe.", f_creadas_p: "Prova-les, llança-les en directe o envia-les com a deures.", f_deberes_p: "Enviats, entregats i notes.", f_result_p: "El progrés de cada alumne i de la classe.", f_fallos: "Errades", f_fallos_p: "Les preguntes que més fallen.", f_msgs: "Missatges", f_msgs_p: "Escriu a la teva classe.", f_admin: "Propostes i vots", f_admin_p: "Temes proposats i votació.",
-    c_quiz: "Concurs amb IA", c_quiz_p: "Amb la foto del llibre o un text.", c_video: "Vídeo amb preguntes", c_video_p: "Enganxa un enllaç de YouTube.", c_dob: "Doblatge", c_dob_p: "Una escena o cançó per doblar.", c_cancion: "Cançó", c_cancion_p: "Una cançó amb buits per a la classe."
+    c_quiz: "Concurs amb IA", c_quiz_p: "Amb la foto del llibre o un text.", c_video: "Vídeo amb preguntes", c_video_p: "Enganxa un enllaç de YouTube.", c_dob: "Doblatge", c_dob_p: "Una escena o cançó per doblar.", c_cancion: "Cançó", c_cancion_p: "Una cançó amb buits per a la classe.", t_tnuevo: "Afegir un tema", t_tnuevo_p: "Curs, tema i fotos del llibre: el preparem per a la teva classe.", t_tmios: "Les meves peticions de temes", t_tperfil: "Perfil de la classe", t_tperfil_p: "Les dificultats de cada alumne, per adaptar-li els temes.", t_tmios_p: "En quin estat estan els temes que has demanat.", t_tprofes: "Temes dels meus profes", t_tprofes_p: "Temes preparats per a la teva classe."
   }
 };
 /* la navegación sigue la misma regla que el resto de la web: va en el idioma que se aprende y,
@@ -145,6 +145,7 @@ function secOf(view, h = hash()) {
   if (view === "games") return /^garabatos/.test(h) ? "grupo" : "practicar";
   if (view === "duelo" || view === "escape" || view === "retos") return "grupo";
   if (view === "mates") return /^mates-(sala|pizarra)-/.test(h) ? "grupo" : "mates";
+  if (view === "tp") return /^profe-/.test(h) ? "profe" : "aprender";
   if (view === "fpb") return /^fpb-(sala|pizarra)-/.test(h) ? "grupo" : "fpb";
   if (["dict", "fc", "pet", "prog"].includes(view)) return "mizona";
   return "inicio";
@@ -171,6 +172,7 @@ function pronLink() {
   return first ? "#" + first.id : "#aprender";
 }
 const APRENDER = () => [
+  window.LYATemasProfe?.hay && ["#mis-temas", "📚", "t_tprofes"],
   window.LYADictados && ["#dictados", "✍️", "t_dictados"],
   window.LYACamara && ["#camara", "📷", "t_camara"],
   window.LYACanciones && ["#canciones", "🎵", "t_canciones"],
@@ -245,7 +247,11 @@ function renderProfe(el) {
       window.LYAConcursos && tile("#concursos-crear", "🏆", "c_quiz"),
       window.LYAVideos && tile("#videos-editar", "📺", "c_video"),
       window.LYADoblaje && tile("#doblaje", "🎬", "c_dob"),
-      window.LYACanciones && tile("#canciones", "🎵", "c_cancion")].filter(Boolean).join("")}</div>
+      window.LYACanciones && tile("#canciones", "🎵", "c_cancion"),
+      window.LYATemasProfe && tile("#profe-tema-nuevo", "➕", "t_tnuevo"),
+      window.LYAPerfiles && tile("#profe-perfil-clase", "🧩", "t_tperfil"),
+      window.LYATemasProfe && tile("#profe-temas", "📥", "t_tmios"),
+      window.LYATemasProfe && tile("#mis-temas", "📚", "t_tprofes")].filter(Boolean).join("")}</div>
     <h2 class="nvh2">📋 ${esc(t("f_seg"))}${t2("f_seg")}</h2>
     <div class="nvtiles">${btile(P("actividades"), "🧩", "f_creadas")}${btile(P("deberes"), "📚", "f_deberes")}${btile(P("usuarios"), "📊", "f_result")}${btile(P("fallos"), "❌", "f_fallos")}${btile(P("mensajes"), "✉️", "f_msgs")}${rol() === "admin" ? btile(P("propuestas"), "💡", "f_admin") : ""}</div></section>`;
   /* la portada del profe (su clase, estadísticas, deberes, a qué juegan y fichas de alumnos) está en profe/profe.js; estas tarjetas van abajo como «herramientas» */
@@ -290,7 +296,7 @@ function mapa() {
     ["fpb", "🛠️", "#fpb", [window.LYAFpb && ["#fpb", "📚", "t_fpb"], window.LYAFpbGrupo && ["#fpb-grupo", "🏫", "t_fgrupo"]]],
     ["mizona", "📚", "#mizona", [["#diccionario", "📖", "t_dicc"], window.LYACanciones && ["#diccionario", "🎵", "t_canpal"], window.LYAFichas && ["#fichas", "🃏", "t_fichas"], window.LYAMascota && ["#mascota", "🐾", "t_mascota"], ["#progreso", "🏅", "t_logros"], window.LYAAvisos && ["#deberes", "🗂️", "t_debhist"]]]
   ];
-  if (esProfe()) G.push(["profe", "👩‍🏫", "#profe", [["#profe", "🏫", "f_clases"], window.LYAConcursos && ["#concursos-crear", "🏆", "c_quiz"], window.LYAVideos && ["#videos-editar", "📺", "c_video"], window.LYADoblaje && ["#doblaje", "🎬", "c_dob"], window.LYACanciones && ["#canciones", "🎵", "c_cancion"], ["#profe", "📋", "f_seg"]]]);
+  if (esProfe()) G.push(["profe", "👩‍🏫", "#profe", [["#profe", "🏫", "f_clases"], window.LYAConcursos && ["#concursos-crear", "🏆", "c_quiz"], window.LYAVideos && ["#videos-editar", "📺", "c_video"], window.LYADoblaje && ["#doblaje", "🎬", "c_dob"], window.LYACanciones && ["#canciones", "🎵", "c_cancion"], window.LYATemasProfe && ["#profe-tema-nuevo", "➕", "t_tnuevo"], ["#profe", "📋", "f_seg"]]]);
   return `<section class="nvmapa"><h2>🧭 ${esc(t("todo"))}${t2("todo")}</h2><p class="nvsub">${esc(t("todo_p"))}${tb("todo_p")}</p>
     ${G.map(([k, ic, h, items]) => `<div class="nvgr nvgr-${k}"><div class="nvgrh"><h3>${ic} ${esc(t(k))}</h3><a href="${h}">${esc(t("ver_todo"))} →</a></div>
       <div class="nvtiles">${items.filter(Boolean).map(([hh, i2, kk]) => tile(hh, i2, kk)).join("")}</div></div>`).join("")}</section>`;

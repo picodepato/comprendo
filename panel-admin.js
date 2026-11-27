@@ -146,6 +146,7 @@ function pintar() {
   const nG = Object.keys(D.grupos).length;
   const tabs = [["propuestas", t("💡 Propuestas ({0})", D.propuestas.length)], ["usuarios", esAdmin() ? t("👥 Usuarios ({0})", D.usuarios.length) : t("🎒 Mis alumnos ({0})", D.usuarios.length)], ["clases", esAdmin() ? t("🏫 Clases ({0})", nG) : t("🏫 Mis clases ({0})", nG)],
     ["actividades", t("🧩 Actividades creadas")], ["deberes", t("📚 Deberes ({0})", D.deberes.length)], ["fallos", t("❌ Fallos")], ["mensajes", t("✉️ Mensajes")], ["votos", t("🗳 Votos")]].filter(([k]) => esAdmin() || !["propuestas", "votos"].includes(k));
+  if (esAdmin()) tabs.splice(1, 0, ["temas", t("📥 Temas pedidos ({0})", (D.temasPedidos || []).filter(p => p.estado === "pendiente").length)]);
   if (!tabs.some(([k]) => k === tabActual)) tabActual = tabs[0][0];
   ventana(`<h2>${titulo()}</h2>
     ${!esAdmin() && !nG ? `<p class="ctas">${t("👋 Empieza creando una clase en «Mis clases». Da su código a tus alumnos: lo ponen al crear su cuenta o en «Mi cuenta».")}</p>` : ""}
@@ -172,6 +173,51 @@ ACCIONES.propuestas = () => {
     e.preventDefault();
     const ok = await hacer({accion: "propuesta_aprobar", id: f.dataset.form, emoji: f.emoji.value, nombre_es: f.nombre_es.value, nombre_en: f.nombre_en.value, desc_es: f.desc_es.value}, f.querySelector("[type=submit]"));
     if (ok) { await abrir("propuestas"); alerta(t("✓ Tema añadido a la votación de la portada.")); }
+  });
+};
+
+/* ---------- temas pedidos por los profes (temas-profe/temas-profe.js, api/_temas.js) ---------- */
+const TPE = () => (window.LYATemasProfe || {}).ESTADO || {};
+const TPD = k => (((window.LYATemasProfe || {}).DIFICULTADES || []).find(x => x[0] === k) || [k, k])[1];
+const ORDEN_TP = {pendiente: 0, error: 1, aprobada: 2, preparada: 3, rechazada: 4, publicada: 5};
+VISTAS.temas = () => {
+  const P = [...(D.temasPedidos || [])].sort((a, b) => (ORDEN_TP[a.estado] ?? 9) - (ORDEN_TP[b.estado] ?? 9) || b.creado - a.creado);
+  if (!P.length) return `<p class="ctas">${t("Todavía no hay peticiones de temas. Los profes las hacen en Profe → «➕ Añadir un tema».")}</p>`;
+  return `<p class="ctas">${t("Revisa cada petición. Las aprobadas se preparan solas la mañana siguiente (con el motor de FP Básica) y se abre un PR. Al rechazar, las fotos se borran.")}</p><ul class="ctali">${P.map(p => { const [ic, n] = TPE()[p.estado] || ["•", p.estado];
+    return `<li><p><b>${ic} ${esc(p.asignatura)} · ${esc(p.curso)} · ${t("Tema")} ${esc(p.tema)}: ${esc(p.titulo)}</b></p>
+    <small>🧑‍🏫 ${esc(p.profe)} · ${fecha(p.enviado || p.creado)} · ${esc(n)}${p.pr ? ` · <a href="${esc(p.pr)}" target="_blank" rel="noopener">PR</a>` : ""}${p.temaId ? ` · <a href="#fpb-${esc(p.temaId)}">#fpb-${esc(p.temaId)}</a>` : ""}</small>
+    ${p.apartados ? `<p><b>${t("Apartados")}:</b><br>${esc(p.apartados).replace(/\n/g, "<br>")}</p>` : ""}
+    <p><b>${t("Alumnado")}:</b> ${p.alumnado && p.alumnado.length ? p.alumnado.map(k => esc(TPD(k))).join(", ") : "—"}${p.notas ? `<br>${esc(p.notas)}` : ""}</p>
+    ${p.metodologia && p.metodologia.length ? `<p><b>${t("Metodología")}:</b> ${p.metodologia.map(esc).join(", ")}</p>` : ""}
+    ${p.actividades && p.actividades.length ? `<p><b>${t("Actividades")}:</b> ${p.actividades.map(esc).join(", ")}${(p.juegos || []).length || p.juegoOtro ? `<br><b>${t("Juegos")}:</b> ${[...(p.juegos || []), p.juegoOtro].filter(Boolean).map(esc).join(", ")}` : ""}</p>` : ""}
+    ${p.adaptarClase ? `<p><b>🧩 ${t("Adaptar para todo su alumnado")}${p.clase ? " (" + esc(p.clase) + ")" : ""}:</b> ${Object.entries((p.difsClase || {}).dif || {}).map(([k, n]) => `${esc(TPD(k))} · ${n}`).join(", ") || t("sin dificultades marcadas")} ${t("(de {0} alumnos)", (p.difsClase || {}).n || 0)}</p>` : ""}
+    ${p.texto ? `<details><summary>${t("Texto ({0} letras)", p.texto.length)}</summary><div class="tpa-txt">${esc(p.texto)}</div></details>` : ""}
+    ${p.fotos && p.fotosSubidas ? `<p><button type="button" class="btn" data-tpfotos="${esc(p.id)}" data-n="${p.fotos}">${t("🖼️ Ver las fotos ({0})", p.fotos)}</button></p><div class="tpa-fotos" id="tpaf-${esc(p.id)}"></div>` : p.fotos ? `<p class="ctas">${t("Las fotos ya se han borrado.")}</p>` : ""}
+    ${p.motivo ? `<p class="ctam">${esc(p.motivo)}</p>` : ""}
+    ${["pendiente", "error", "aprobada"].includes(p.estado) ? `<form class="admform" data-tpform="${esc(p.id)}"><label class="admw">${t("Indicaciones para prepararlo (opcional) o motivo si lo rechazas")}<textarea name="nota" rows="2" maxlength="1500">${esc(p.nota || "")}</textarea></label>
+      <button class="btn main" type="submit" data-dec="aprobar">${p.estado === "aprobada" ? t("💾 Guardar indicaciones") : t("✅ Aprobar y mandar a crear")}</button> <button class="btn" type="submit" data-dec="rechazar">${t("❌ Rechazar")}</button></form>` : ""}
+    <p class="admbt"><button type="button" class="ctal" data-tpborrar="${esc(p.id)}">${t("Borrar")}</button></p></li>`; }).join("")}</ul>`;
+};
+ACCIONES.temas = () => {
+  $$("[data-tpfotos]").forEach(b => b.onclick = async () => {
+    b.disabled = true; const caja = $d("#tpaf-" + b.dataset.tpfotos);
+    for (let i = 0; i < +b.dataset.n; i++) {
+      const r = await api(`temas?foto=${encodeURIComponent(b.dataset.tpfotos)}&i=${i}`).catch(() => ({ok: false}));
+      caja.insertAdjacentHTML("beforeend", r.ok ? `<a href="#" data-tpgrande title="${t("Ver en grande")}"><img src="${esc(r.j.data)}" alt="${t("Foto {0}", i + 1)}"></a>` : `<span class="ctas">${t("Foto {0}: ya no está", i + 1)}</span>`);
+    }
+    b.hidden = true;
+    caja.querySelectorAll("[data-tpgrande]").forEach(a => a.onclick = e => { e.preventDefault(); a.classList.toggle("tpa-grande"); });
+  });
+  $$("[data-tpform]").forEach(f => { let dec = "aprobar"; f.querySelectorAll("[data-dec]").forEach(b => b.onclick = () => { dec = b.dataset.dec; });
+    f.onsubmit = async e => {
+      e.preventDefault();
+      const r = await api("temas", "POST", {accion: "revisar", id: f.dataset.tpform, decision: dec, nota: f.nota.value}).catch(() => ({ok: false, j: {}}));
+      if (!r.ok) return alerta(t("No se ha podido hacer."));
+      await abrir("temas"); alerta(dec === "aprobar" ? t("✓ Aprobado. Se preparará la próxima mañana.") : t("✓ Rechazado. Las fotos se han borrado."));
+    }; });
+  $$("[data-tpborrar]").forEach(b => b.onclick = async () => {
+    if (b.dataset.ok !== "1") { b.dataset.ok = "1"; b.textContent = t("¿Seguro? Pulsa otra vez"); return; }
+    b.disabled = true; await api("temas", "POST", {accion: "borrar", id: b.dataset.tpborrar}).catch(() => {}); abrir("temas");
   });
 };
 

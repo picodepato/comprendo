@@ -336,6 +336,7 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="mates/mates.css">
 <link rel="stylesheet" href="fpb/fpb.css">
 <link rel="stylesheet" href="fpb/sociales.css">
+<link rel="stylesheet" href="temas-profe/temas-profe.css">
 <link rel="stylesheet" href="profe/profe.css">
 <link rel="stylesheet" href="imprimir/imprimir.css">
 <link rel="stylesheet" href="diseno.css">
@@ -1156,6 +1157,7 @@ function render() {
   if (S.view === "retos" && window.LYARetos) return LYARetos.render($("app"));
   if (S.view === "mates" && window.LYAMates) return LYAMates.render($("app"));
   if (S.view === "fpb" && window.LYAFpb) return LYAFpb.render($("app"));
+  if (S.view === "tp" && window.LYATemasProfe) return LYATemasProfe.render($("app"));
   if (S.view === "cc" && window.LYAConcursos) return LYAConcursos.render($("app"));
   if (S.view === "vd" && window.LYAVideos) return LYAVideos.render($("app"));
   if (S.view === "deb" && window.LYAAvisos?.render) return LYAAvisos.render($("app"));
@@ -1177,6 +1179,7 @@ async function route() {
   else if (window.LYANav?.isHub(h)) S.view = "hub";
   else if (window.LYAMates?.isMates(h)) S.view = "mates";
   else if (window.LYAFpb?.isFpb(h)) S.view = "fpb";
+  else if (window.LYATemasProfe?.isTp(h)) S.view = "tp";
   else if (h === "diccionario") S.view = "dict";
   else if (window.LYAFichas?.isFc(h)) S.view = "fc";
   else if (window.LYAJuegos?.isGames(h)) S.view = "games";
@@ -1265,6 +1268,8 @@ start();
 <script src="fpb/sociales-dibujos.js"></script>
 <script src="fpb/sociales-temas.js"></script>
 <script src="fpb/sociales-banco.js"></script>
+<script src="temas-profe/temas-profe.js"></script>
+<script src="temas-profe/perfiles.js"></script>
 <script src="profe/profe.js"></script>
 <script src="imprimir/imprimir.js"></script>
 <script src="imprimir/lectura.js"></script>

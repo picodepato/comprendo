@@ -5,6 +5,8 @@
                                     mensaje, propuesta_aprobar, tema_quitar */
 import { redis, quienPanel, claveAdminPorDefecto, normUsuario, claveValida, hashClave, cerrarSesiones, leerJSON, guardarJSON, leerGrupos, normCodigo, codigoValido, nuevoId, ADMIN, responder, cuerpo, seguro } from "./_db.js";
 import { leerPropuestas } from "./propuestas.js";
+import temas, { leerPeticiones } from "./_temas.js";
+import perfiles from "./_perfiles.js";
 
 /* estado guardado por la web: S.a = respuestas ("<lectura>:q0", "<lectura>:g0"…, "<lectura>:fin" al terminar), S.g.rd[lectura] = {n veces, best estrellas, bp mejor %, last} */
 const empezadas = s => { const m = {}; for (const k of Object.keys((s && s.a) || {})) { const [id, ex] = k.split(":"); if (ex !== "fin") m[id] = (m[id] || 0) + 1; } return m; };
@@ -110,7 +112,7 @@ async function accion(b, yo) {
     case "borrar_usuario": {
       if (!u || u === ADMIN) return [400, "no_valido"];
       await cerrarSesiones(u);
-      await redis("DEL", "usuario:" + u, "progreso:" + u, "mensajes:" + u, "leidos:" + u);
+      await redis("DEL", "usuario:" + u, "progreso:" + u, "mensajes:" + u, "leidos:" + u, "perfil:" + u);
       await redis("SREM", "usuarios", u);
       { const ds = (await redis("SMEMBERS", "dibujos:" + u)) || []; if (ds.length) await redis("DEL", ...ds.map(id => `dibujo:${u}:${id}`)); await redis("DEL", "dibujos:" + u); }  /* dibujos de sus flashcards */
       if (G.miembros[u]) { delete G.miembros[u]; await guardarJSON("admin:grupos", G); }
@@ -143,6 +145,11 @@ async function accion(b, yo) {
 }
 
 export default (req, res) => seguro(res, async () => {
+  /* /api/temas («Añadir un tema» de los profes y el robot de cada mañana): api/_temas.js */
+  /* /api/perfiles (dificultades de cada alumno, las marca su profe): api/_perfiles.js */
+  const ruta = new URL(req.url || "/", "http://x").searchParams.get("t") ?? (req.query || {}).t;
+  if (ruta === "temas") return temas(req, res);
+  if (ruta === "perfiles") return perfiles(req, res);
   const yo = await quienPanel(req);
   if (!yo) return responder(res, 403, { error: "solo_admin" });
   /* cuaderno de clase (notas, asistencia, comportamiento, plano): api/_cuaderno.js */
@@ -176,9 +183,9 @@ export default (req, res) => seguro(res, async () => {
     return { ...d, alumnos: para.map(u => { const m = d.actividad ? porU[u].actividades : d.cancion ? porU[u].canciones : porU[u].lecturas, k = d.actividad || d.cancion || d.lectura; return { usuario: u, hecho: m[k] !== undefined, estrellas: m[k] || 0 }; }) };
   });
   const base = { soy: yo, usuarios, grupos: misGrupos, deberes, fallos: fallos(lista.filter(x => (x.d.rol || "alumno") !== "profe")), enviados: await leerJSON("enviados:" + yo.usuario, []) };
-  if (!yo.admin) return responder(res, 200, { ...base, propuestas: [], votos: {}, temasExtra: [] });
+  if (!yo.admin) return responder(res, 200, { ...base, propuestas: [], votos: {}, temasExtra: [], temasPedidos: [] });
   const claves = (await redis("KEYS", "votos:*")) || [];
   const cuentas = claves.length ? await redis("MGET", ...claves) : [];
   const votos = Object.fromEntries(claves.map((k, i) => [k.slice(6), +cuentas[i] || 0]));
-  responder(res, 200, { ...base, propuestas: await leerPropuestas(), votos, temasExtra: await leerJSON("temas:extra", []), claveAdminPorDefecto: claveAdminPorDefecto() });
+  responder(res, 200, { ...base, propuestas: await leerPropuestas(), votos, temasExtra: await leerJSON("temas:extra", []), temasPedidos: (await leerPeticiones()).filter(p => p.estado !== "subiendo"), claveAdminPorDefecto: claveAdminPorDefecto() });
 });

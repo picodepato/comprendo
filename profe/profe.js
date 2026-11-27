@@ -153,7 +153,7 @@ async function ficha(app, u) {
   app.innerHTML = `<section class="wrap pf">
     <p class="pf-migas"><a href="#profe">← Mi clase</a></p>
     <div class="pf-top"><div><h1 class="pf-h1">👤 ${esc(u)}</h1><p class="pf-sub">${R.grupo && D.grupos[R.grupo] ? esc(D.grupos[R.grupo].nombre) + " · " : ""}Última vez: ${hace(R.ultimo)}${R.idioma ? ` · aprende ${esc(R.idioma.toUpperCase())}` : ""}</p></div>
-      <button class="btn" type="button" data-pf="usuario" data-u="${esc(u)}">⚙️ Contraseña y mensajes</button></div>
+      <button class="btn" type="button" data-pf="usuario" data-u="${esc(u)}">⚙️ Contraseña y mensajes</button>${window.LYAPerfiles ? ` <button class="btn" type="button" data-perfil="${esc(u)}">🧩 Dificultades</button>` : ""}</div>
     <div class="pf-cards">
       ${tarjeta("⚡", R.xp, "XP en total", `${xs} esta semana`)}
       ${tarjeta("🔥", R.racha, "días seguidos", `mejor racha: ${R.mejorRacha}`)}

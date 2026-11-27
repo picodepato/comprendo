@@ -1,0 +1,34 @@
+# Guardia de los temas de profes: los PR de la rutina de cada mañana (ramas claude/temas-profe-…) SOLO pueden añadir temas.
+# Usa pull_request_target para que la guardia sea SIEMPRE la de main: los cambios del PR no pueden cambiarla.
+# Del PR solo se leen archivos como datos (git diff y JSON.parse); nunca se ejecuta nada suyo.
+name: Guardia temas de profes
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: read
+jobs:
+  guardia:
+    if: startsWith(github.head_ref, 'claude/temas-profe-')
+    runs-on: ubuntu-latest
+    steps:
+      - name: La guardia, desde main
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: guardia
+          persist-credentials: false
+      - name: Los cambios del PR (solo como datos)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: pr
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Comprobar que solo añade temas
+        run: |
+          git -C pr fetch --no-tags origin ${{ github.event.pull_request.base.sha }}
+          node guardia/temas-profe/guardia.mjs ${{ github.event.pull_request.base.sha }} pr
