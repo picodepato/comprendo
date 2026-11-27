@@ -133,10 +133,10 @@ const esProfe = () => rol() === "profe" || rol() === "admin";
 /* ---------- apartados ---------- */
 const SECS = [["inicio", "🏠"], ["aprender", "📖"], ["practicar", "🎮"], ["mates", "➗"], ["fpb", "🛠️"], ["grupo", "🏫"], ["mizona", "📚"], ["profe", "👩‍🏫"]];
 const HUBS = ["grupo", "mizona", "profe"];
-const isHub = h => HUBS.includes(h) || /^profe-alumno-./.test(h);  /* profe-alumno-<usuario>: ficha de un alumno (profe/profe.js) */
+const isHub = h => HUBS.includes(h) || /^profe-alumno-./.test(h) || /^profe-cuaderno(-[a-z]+)?$/.test(h);  /* profe-alumno-<usuario>: ficha de un alumno (profe/profe.js); profe-cuaderno: cuaderno de clase (cuaderno/) */
 const hash = () => location.hash.replace(/^#/, "");
 function secOf(view, h = hash()) {
-  if (view === "hub") return isHub(h) ? h.replace(/^profe-alumno-.*/, "profe") : "inicio";
+  if (view === "hub") return isHub(h) ? h.replace(/^profe-(alumno|cuaderno).*/, "profe") : "inicio";
   if (view === "home") return "inicio";
   if (view === "deb") return "mizona";
   if (["learn", "read", "dictado", "camara", "songs", "dub", "pronto"].includes(view)) return "aprender";
@@ -254,7 +254,7 @@ function renderProfe(el) {
 function render(el) {
   const h = hash();
   if (h === "grupo") renderGrupo(el);
-  else if (h === "profe" || /^profe-alumno-/.test(h)) renderProfe(el);
+  else if (h === "profe" || /^profe-(alumno|cuaderno)/.test(h)) renderProfe(el);
   else renderZona(el);
   try { L().setAcc?.("#ff4141"); } catch (e) {}
 }
