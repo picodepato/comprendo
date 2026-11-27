@@ -1,0 +1,215 @@
+/* COMPRENDO · FP Básica · Ciencias Sociales: las explicaciones de cada tema, en lectura fácil.
+   Frases cortas, una idea por frase, palabras clave en negrita y un glosario. Resumen hecho con palabras nuestras (no copia el libro).
+   Tema s3 = Unidad 3 «El disputado voto…» (movimiento obrero, imperialismo, Sexenio y Restauración).
+   Tema s4 = Unidad 4 «Soles más limpios» (el arte del siglo XIX).
+   Los dibujos y cuadros salen de fpb/sociales-dibujos.js. Las actividades, de fpb/sociales-banco.js. */
+(() => {
+const D = () => window.LYASocialesDibujos;
+
+const S3 = {
+  id: "s3", n: 3, titulo: "El disputado voto…", ic: "🗳️", color: "#d9822b",
+  intro: "De 1850 a 1911, más o menos. Los obreros se unen para vivir mejor. Los países de Europa se reparten África y Asia. Y en España llegan el Sexenio Democrático y la Restauración, con elecciones llenas de trampas.",
+  aps: [
+    {n: 1, ic: "👥", titulo: "Una sociedad nueva: las clases sociales",
+      idea: "Con la Revolución Industrial nace la sociedad de clases: tu lugar en la sociedad depende del dinero que tienes.",
+      reglas: [
+        "Antes (en el <b>Antiguo Régimen</b>) mandaban los nobles. Se nacía noble o no.",
+        "Ahora manda la <b>burguesía</b>: los dueños de fábricas, bancos y comercios. Tienen mucho dinero.",
+        "Aparece una clase nueva: el <b>proletariado</b> o <b>clase obrera</b>. Son las personas que trabajan en las fábricas por un sueldo.",
+        "Los <b>campesinos</b> siguen siendo el grupo más numeroso, aunque cada vez son menos."],
+      glosario: [["Burguesía", "Personas ricas: dueñas de fábricas, bancos o tiendas grandes."], ["Proletariado", "Los obreros. Trabajan por un sueldo."], ["Sociedad de clases", "Sociedad donde tu lugar depende de tu dinero."]],
+      ejemplos: [{q: "Juan es dueño de una fábrica de tela. ¿De qué clase es?", pasos: ["Tiene una fábrica → tiene dinero y manda.", "Los dueños de fábricas son la burguesía."], r: "Burguesía"},
+        {q: "María trabaja 14 horas al día en esa fábrica. ¿De qué clase es?", pasos: ["Trabaja por un sueldo en una fábrica.", "Los que trabajan en las fábricas son el proletariado."], r: "Proletariado (clase obrera)"}],
+      ojo: "Burguesía = dueños. Proletariado = obreros. No los confundas."},
+    {n: 2, ic: "🏭", titulo: "El movimiento obrero",
+      idea: "Los obreros vivían muy mal. Por eso se unieron para pedir mejoras. A eso lo llamamos movimiento obrero.",
+      reglas: [
+        "<b>Cómo vivían</b>: trabajaban <b>14 o 16 horas</b> al día. Cobraban muy poco. No había médico ni paro. Los <b>niños</b> también trabajaban en las fábricas.",
+        "<b>1.º El ludismo</b>: los obreros pensaban que la culpa era de las <b>máquinas</b>. Atacaban las fábricas y <b>rompían las máquinas</b>.",
+        "<b>2.º Asociaciones de ayuda mutua</b>: los sindicatos estaban prohibidos. Los obreros pagaban un poco de dinero a una caja común. Si alguien enfermaba o se quedaba sin trabajo, la caja le ayudaba.",
+        "<b>3.º Los sindicatos</b>: <b>Inglaterra</b> fue el primer país que los permitió, en <b>1824</b>. Los sindicatos pedían: <b>menos horas</b> de trabajo, <b>más sueldo</b> y <b>que los niños no trabajaran</b>.",
+        "Los <b>empresarios</b> y los <b>gobiernos</b> estaban en contra. Despedían y castigaban a los obreros. A veces mandaban a la <b>policía</b> y al <b>ejército</b> contra las huelgas."],
+      glosario: [["Ludismo", "Romper las máquinas como protesta."], ["Sindicato", "Grupo de trabajadores que defiende sus derechos."], ["Huelga", "Dejar de trabajar todos a la vez para protestar."], ["Ayuda mutua", "Ayudarse unos a otros con una caja de dinero común."]],
+      textos: [{n: 1, titulo: "Los niños en las fábricas (texto del libro, actividad 1)", autor: "Friedrich Engels, «La situación de la clase obrera en Inglaterra», 1845",
+        prosa: true, versos: ["«El informe de la comisión central cuenta que los fabricantes comenzaban a ocupar a los niños, a veces de cinco años, frecuentemente de seis, más a menudo de siete, en la mayor parte de ocho a nueve años; que la duración del tiempo de trabajo era, diariamente, de 14 a 16 horas (fuera de las horas libres para la comida), que los fabricantes dejaban que los capataces pegasen y maltratasen a los niños, y que ellos también, con frecuencia, recurrían a las manos; se cuenta un caso en que un fabricante escocés persiguió a un muchacho de dieciséis años que huía, le obligó a trotar como un caballo, a correr delante de él, golpeándole continuamente con una fusta… Los fabricantes introdujeron el pésimo sistema del trabajo nocturno; en aquellas fábricas había dos clases de obreros de forma permanente: una clase trabajaba las doce horas del día y la otra las doce horas de la noche.»"]}],
+      ejemplos: [{q: "Unos obreros entran de noche en una fábrica y rompen los telares. ¿Qué es?", pasos: ["Rompen máquinas porque creen que tienen la culpa.", "Eso se llama ludismo. Fue lo primero que hicieron."], r: "Ludismo"}],
+      ojo: "El orden es: ludismo → ayuda mutua → sindicatos."},
+    {n: 3, ic: "💡", titulo: "Las ideas obreras: socialismo utópico, marxismo y anarquismo",
+      idea: "Algunos pensadores buscaron una solución para los obreros. Unos querían cambiar las cosas en paz. Otros, con una revolución.",
+      reglas: [
+        "<b>Socialismo utópico</b>: soñaba con una sociedad sin problemas para los obreros. Quería conseguirla <b>en paz</b>. Pensadores: <b>Saint-Simon</b>, <b>Fourier</b>, <b>Proudhon</b> (franceses) y <b>Robert Owen</b> (inglés).",
+        "<b>Marxismo</b>: ideas de <b>Karl Marx</b> y <b>Friedrich Engels</b>. Los obreros harían una <b>revolución</b> y tomarían el poder. Querían una sociedad <b>sin propiedad privada y sin clases</b> (el comunismo). El libro más famoso: <b>«El Capital»</b> (1867).",
+        "<b>Anarquismo</b>: quería acabar con el capitalismo <b>y también con el Estado</b>. Estaba <b>en contra de los partidos políticos y de votar</b>. Pensadores: <b>Bakunin</b> y <b>Kropotkin</b> (rusos). En España fue fuerte en <b>Cataluña</b> y <b>Andalucía</b>.",
+        "En <b>1864</b> se creó la <b>AIT</b> (Asociación Internacional de Trabajadores o I Internacional), con marxistas y anarquistas juntos. Se pelearon y se separaron.",
+        "En <b>1889</b> nació la <b>II Internacional</b>, solo con socialistas marxistas.",
+        "<b>Lo que consiguieron</b>: menos trabajo infantil, la <b>jornada de 8 horas</b> y seguros para los accidentes de trabajo."],
+      glosario: [["Revolución", "Cambio grande y rápido, muchas veces con violencia."], ["Propiedad privada", "Cosas (tierras, fábricas…) que son de una persona."], ["Estado", "El gobierno, las leyes, la policía y el ejército de un país."], ["Jornada", "Las horas que se trabaja cada día."]],
+      ejemplos: [{q: "«No quiero partidos ni elecciones. Quiero acabar con el Estado.» ¿Quién lo diría?", pasos: ["Fíjate: no quiere partidos ni votar.", "Estar en contra del Estado y de votar es el anarquismo."], r: "Un anarquista"}],
+      ojo: "Marxistas y anarquistas querían revolución. La diferencia: el anarquista no quiere Estado ni partidos ni votar."},
+    {n: 4, ic: "🌍", titulo: "Imperialismo y colonialismo (1870-1914)",
+      idea: "Entre 1870 y 1914 los países ricos de Europa conquistaron casi toda África y gran parte de Asia. Así formaron sus imperios coloniales.",
+      reglas: [
+        "Hay <b>potencias nuevas</b>: <b>Alemania</b> y <b>Estados Unidos</b>. Compiten con <b>Gran Bretaña</b>, que era la más fuerte.",
+        "Otros países también quieren colonias: Francia, Bélgica, Italia, España, Portugal, Japón, Rusia…",
+        "En la <b>Conferencia de Berlín (1885)</b> los europeos se pusieron de acuerdo para repartirse África. Desde entonces la conquista fue muy rápida.",
+        "El <b>Imperio británico</b> fue el más grande: unos 450 millones de personas (India, Australia, Egipto…). Su mejor época fue con la <b>reina Victoria</b>.",
+        "El <b>Imperio francés</b> estaba sobre todo en África y Asia.",
+        "<b>España</b> perdió en <b>1898</b> sus últimas colonias de América y Asia: <b>Cuba, Puerto Rico y Filipinas</b>. Pero se quedó con territorios en África: <b>Marruecos</b> (el norte), <b>Río de Oro</b> y <b>Guinea Española</b>.",
+        "<b>Consecuencias</b>: los europeos <b>explotaron</b> las colonias (plantaciones de café, cacao, caucho; minas de oro, diamantes…). La gente local trabajaba casi como <b>esclavos</b>. No les dejaron tener industria. Por eso hoy muchos de esos países son <b>pobres</b>.",
+        "Los países europeos se pelearon por las colonias. Esas peleas fueron una causa de la <b>Primera Guerra Mundial (1914-1918)</b>.",
+        "Los pueblos colonizados perdieron su <b>cultura</b>. Por eso nació un <b>resentimiento</b> (rencor) contra Occidente."],
+      glosario: [["Colonia", "Territorio conquistado y gobernado por otro país."], ["Metrópoli", "El país que manda sobre las colonias."], ["Imperio", "Un país con muchas colonias."], ["Potencia", "País muy fuerte en dinero y en ejército."], ["Materias primas", "Cosas de la naturaleza para fabricar: algodón, caucho, minerales…"]],
+      ejemplos: [{q: "¿Qué país europeo tuvo el imperio más grande?", pasos: ["Piensa en la India y Australia: eran británicas.", "Llegó a 450 millones de personas."], r: "Gran Bretaña (Imperio británico)"}],
+      ojo: "1885 = Conferencia de Berlín (reparto de África). 1898 = España pierde Cuba, Puerto Rico y Filipinas."},
+    {n: 5, ic: "🗺️", titulo: "Por qué conquistaban y cómo gobernaban las colonias",
+      idea: "Hubo 4 razones (factores) para conquistar colonias, y 3 formas de gobernarlas.",
+      reglas: [
+        "<b>Factores económicos</b> (los más importantes): las fábricas de Europa necesitaban <b>materias primas baratas</b> y <b>sitios donde vender</b> sus productos.",
+        "<b>Factores políticos</b>: tener más territorio daba más <b>prestigio</b> (fama y poder) a un país.",
+        "<b>Factores demográficos</b>: en Europa había <b>demasiada gente</b>. Muchos <b>emigraron</b> a las colonias.",
+        "<b>Factores ideológicos</b>: los europeos se creían <b>superiores</b>. Decían que iban a «civilizar» o a hacer cristianos a otros pueblos. Era una excusa.",
+        "<b>Colonia</b>: no tiene gobierno propio. La manda la metrópoli con un <b>gobernador</b>. Ejemplo: el Congo Belga.",
+        "<b>Concesión</b>: el país es independiente «en teoría», pero los extranjeros tienen <b>derechos para comerciar</b>. Ejemplo: China.",
+        "<b>Protectorado</b>: hay un gobierno local, pero la metrópoli manda en la <b>política exterior</b> y en la <b>economía</b>. Ejemplo: Marruecos (de España y de Francia)."],
+      glosario: [["Factor", "Una causa, una razón."], ["Demográfico", "Que tiene que ver con la cantidad de población."], ["Prestigio", "Fama, respeto y poder."], ["Emigrar", "Irse a vivir a otro país."]],
+      ejemplos: [{q: "La India no tenía gobierno propio y la mandaba Gran Bretaña. ¿Qué forma era?", pasos: ["Sin gobierno propio + manda directamente la metrópoli.", "Eso es una colonia."], r: "Colonia"},
+        {q: "«Necesitamos caucho barato para nuestras fábricas.» ¿Qué factor es?", pasos: ["Habla de dinero, fábricas y materias primas.", "Es un factor económico."], r: "Económico"}],
+      ojo: "Protectorado = hay gobierno local, pero manda la metrópoli. Colonia = no hay gobierno propio."},
+    {n: 6, ic: "👑", titulo: "España: el Sexenio Democrático (1868-1874)",
+      idea: "En 1868 una revolución echa a la reina Isabel II. Empiezan 6 años con democracia: el Sexenio Democrático.",
+      reglas: [
+        "<b>1868, la Revolución</b>: los generales <b>Prim</b> y <b>Serrano</b> se levantan. Isabel II se va de España.",
+        "<b>1869, nueva Constitución</b>: por primera vez votan <b>todos los hombres</b> (sufragio universal masculino). Las mujeres todavía no.",
+        "<b>Amadeo de Saboya (1870-1873)</b>: Prim busca un rey nuevo, italiano. Quiere modernizar España, pero casi nadie le apoya. Lo ven como un extranjero.",
+        "A <b>Prim</b>, su gran apoyo, lo <b>matan</b> en un atentado en Madrid. Además hay guerra en <b>Cuba</b> y la <b>tercera guerra carlista</b>. En 1873 Amadeo <b>renuncia</b> (abdica).",
+        "<b>La I República (1873-1874)</b>: por primera vez España no tiene rey. Fue muy difícil: guerras, problemas y el <b>cantonalismo</b> (ciudades que querían ser casi independientes, como <b>Cartagena</b>).",
+        "<b>1874</b>: el general <b>Martínez Campos</b> da un <b>golpe de Estado</b> en <b>Sagunto</b> y vuelve la monarquía con <b>Alfonso XII</b>, hijo de Isabel II."],
+      glosario: [["Sexenio", "Seis años."], ["Sufragio universal masculino", "Votan todos los hombres adultos."], ["Abdicar", "Un rey deja de ser rey porque quiere."], ["Golpe de Estado", "Tomar el poder por la fuerza, normalmente el ejército."], ["República", "País sin rey; el jefe del Estado se elige."]],
+      ejemplos: [{q: "Ordena: República · Amadeo I · Revolución de 1868", pasos: ["Primero se va Isabel II: Revolución de 1868.", "Luego buscan rey: Amadeo I (1870).", "Amadeo se va y llega la República (1873)."], r: "Revolución de 1868 → Amadeo I → I República"}],
+      ojo: "Sexenio: 1868 → 1874. Amadeo de Saboya no era español: era italiano."},
+    {n: 7, ic: "🎩", titulo: "España: la Restauración (1875-1898)",
+      idea: "Vuelve el rey (Alfonso XII) y dos partidos se turnan en el poder. Hay paz, pero las elecciones son falsas.",
+      reglas: [
+        "El sistema lo crea <b>Cánovas del Castillo</b> (Partido <b>Conservador</b>). Le ayuda <b>Sagasta</b> (Partido <b>Liberal</b>).",
+        "Objetivo: <b>estabilidad política</b>. Que no haya más golpes de Estado ni militares mandando.",
+        "<b>Los pilares (las bases) de la Restauración</b>:",
+        "<b>Constitución de 1876</b>: mandan juntos el rey y las Cortes. Hasta <b>1890</b> solo votan los hombres ricos (<b>sufragio censitario</b>).",
+        "<b>Bipartidismo</b>: solo cuentan <b>dos partidos</b>, el Conservador y el Liberal.",
+        "<b>Turnismo</b>: los dos partidos se <b>turnan</b> en el gobierno, en paz. Así dejan fuera a obreros, republicanos, nacionalistas y militares.",
+        "<b>Fraude electoral</b>: primero deciden quién gana y después hacen las elecciones y <b>falsean</b> los resultados.",
+        "<b>Caciquismo</b>: el <b>cacique</b> es un hombre rico y poderoso del pueblo. Obliga a votar a quien conviene con <b>amenazas</b>, violencia o favores. El <b>pucherazo</b> es cambiar los votos (¡hasta votaban los muertos!).",
+        "Caciques de la <b>Comunidad Valenciana</b>: los Fabra (Castellón), Font de Mora (Vinaròs), Cirilo Amorós (Xàtiva) y García Berlanga (Requena). <b>Blasco Ibáñez</b> creó el <b>Partido Republicano</b> en Valencia.",
+        "<b>Fuera del sistema</b>: el <b>PSOE</b> (<b>1879</b>, fundado por <b>Pablo Iglesias</b>), la <b>UGT</b> (sindicato socialista, 1888), la <b>CNT</b> (sindicato anarquista) y los partidos <b>nacionalistas</b> de <b>Cataluña</b> y del <b>País Vasco</b>.",
+        "<b>1898, «el Desastre»</b>: guerra con <b>Estados Unidos</b>. España pierde <b>Cuba, Puerto Rico y Filipinas</b>. Gran crisis. Muchos piden cambiar el país: el <b>regeneracionismo</b>."],
+      glosario: [["Cacique", "Persona rica y poderosa de un pueblo que controla los votos."], ["Pucherazo", "Trampa en las elecciones: cambiar o inventar votos."], ["Turnismo", "Turnarse: ahora gobiernas tú, después yo."], ["Sufragio censitario", "Solo votan los que tienen dinero."], ["Fraude", "Engaño, trampa."]],
+      img: () => D() ? `<div class="sc-dos">${D().vineta1()}${D().vineta2()}</div>` : "",
+      ejemplos: [{q: "En un pueblo, un señor rico dice a los vecinos a quién votar y les amenaza con quitarles el trabajo. ¿Qué es?", pasos: ["Un hombre poderoso del pueblo controla los votos.", "Eso es un cacique: es el caciquismo."], r: "Caciquismo"}],
+      ojo: "Cánovas = Conservador. Sagasta = Liberal. Se turnaban."}]};
+
+const S4 = {
+  id: "s4", n: 4, titulo: "Soles más limpios: el arte del siglo XIX", ic: "🎨", color: "#7b5fc4",
+  intro: "En el siglo XIX el arte cambia muy deprisa: Romanticismo, Realismo, Impresionismo, Posimpresionismo, la arquitectura de hierro y cristal, Goya, Sorolla y el Modernismo.",
+  aps: [
+    {n: 1, ic: "🖼️", titulo: "El arte cambia en el siglo XIX",
+      idea: "La sociedad cambia mucho y el arte también. Los estilos duran cada vez menos.",
+      reglas: [
+        "Ahora manda la <b>burguesía</b> (los ricos). Ellos compran el arte.",
+        "En los edificios se usan <b>materiales nuevos</b> de la Revolución Industrial: <b>hierro</b>, <b>vidrio</b> y <b>cemento</b>.",
+        "Se inventa la <b>fotografía</b>. Los pintores ya no necesitan copiar la realidad exacta y buscan <b>formas nuevas</b> de pintar.",
+        "Orden de los estilos: <b>Neoclasicismo</b> (imita a griegos y romanos) → <b>Romanticismo</b> → <b>Realismo</b> → <b>Impresionismo</b> → <b>Posimpresionismo</b>."],
+      glosario: [["Estilo", "Forma de pintar o construir de una época."], ["Neoclasicismo", "Estilo que imitaba el arte griego y romano."]],
+      ejemplos: [{q: "¿Qué invento hizo que los pintores buscaran formas nuevas de pintar?", pasos: ["Un invento que copia la realidad de forma exacta.", "La fotografía."], r: "La fotografía"}],
+      ojo: "Neoclasicismo va antes que Romanticismo."},
+    {n: 2, ic: "🌩️", titulo: "El Romanticismo",
+      idea: "Tras la caída de Napoleón (1815) llega el Romanticismo: un arte de libertad, emociones y movimiento.",
+      reglas: [
+        "Nace en <b>Francia</b>, contra el Neoclasicismo.",
+        "<b>Cómo es</b>: mucha importancia del <b>color</b> · <b>luces brillantes</b> · mucho <b>movimiento</b> (posturas agitadas) · <b>paisajes</b> con <b>nubes de tormenta</b> que expresan sentimientos · temas de <b>revoluciones</b> y de lugares <b>exóticos</b> (lejanos).",
+        "Pintores: <b>Théodore Géricault</b> («La balsa de la Medusa», 1819) y <b>Eugène Delacroix</b> («La matanza de Quíos», 1824; «La Libertad guiando al pueblo», 1830)."],
+      glosario: [["Exótico", "De un lugar lejano y diferente."], ["Tempestuoso", "Con tormenta."]],
+      img: () => D() ? D().obra("gericault") : "",
+      ejemplos: [{q: "Un cuadro con un caballo que salta, nubes de tormenta y colores fuertes. ¿Qué estilo es?", pasos: ["Movimiento + tormenta + color.", "Son rasgos del Romanticismo."], r: "Romanticismo"}],
+      ojo: "Romanticismo = emoción y movimiento. Realismo = la vida real tal cual."},
+    {n: 3, ic: "🧑‍🌾", titulo: "El Realismo",
+      idea: "A mediados del siglo XIX los pintores quieren pintar la realidad: la vida y el trabajo de la gente normal.",
+      reglas: [
+        "¿Por qué? La burguesía ya manda y se vuelve conservadora · los artistas ven los <b>problemas</b> de la Revolución Industrial y los <b>denuncian</b> · fracasa la Revolución de 1848.",
+        "<b>Millet</b> (1814-1875): pinta a la gente <b>trabajando en el campo</b>. Obra: <b>«El Ángelus»</b>.",
+        "<b>Daumier</b> (1808-1879): dibujante de <b>caricaturas</b>. Obra: <b>«Crispín y Scapín»</b>.",
+        "<b>Courbet</b> (1819-1877): pinta a gente corriente; fue <b>polémico</b> y comprometido con la política. Obras: <b>«El entierro de Ornans»</b> (1849), <b>«El taller»</b> (1855) y <b>«Los picapedreros»</b> (1849)."],
+      glosario: [["Denunciar", "Decir en público que algo está mal."], ["Caricatura", "Dibujo que exagera los rasgos de una persona."], ["Picapedrero", "Persona que rompe piedras."]],
+      img: () => D() ? D().dos("angelus", "picapedreros") : "",
+      ejemplos: [{q: "Dos hombres rompen piedras en un camino, con ropa vieja. ¿Qué estilo es?", pasos: ["Gente pobre trabajando, sin adornos.", "Es la vida real: Realismo. Es «Los picapedreros», de Courbet."], r: "Realismo"}],
+      ojo: "Courbet y Millet son realistas. Géricault y Delacroix son románticos."},
+    {n: 4, ic: "☀️", titulo: "El Impresionismo: Monet. La escultura: Rodin",
+      idea: "Los impresionistas quieren pintar la luz. Pintan al aire libre y muy deprisa.",
+      reglas: [
+        "Nace en <b>París en 1874</b>. Un crítico se burló del cuadro de Monet <b>«Impresión»</b> y sin querer dio nombre al estilo: «impresionistas».",
+        "<b>Cómo es</b>: estudian cómo la luz se separa en colores (Newton) · pintan <b>lo mismo a distintas horas</b> para ver cómo cambia la luz (las catedrales de Rouen) · pintan <b>al aire libre</b>, en el campo y en la calle · <b>pincelada suelta</b> (manchas rápidas).",
+        "<b>Claude Monet</b> (1840-1926) es el más importante: «Impresión, sol naciente», la catedral de Rouen, Argenteuil, los nenúfares. Otros: <b>Renoir</b>, <b>Degas</b>, <b>Pissarro</b>.",
+        "<b>Rodin</b>, escultor: también capta la luz con superficies rugosas. Obras: <b>«El pensador»</b>, «El beso» y «Los burgueses de Calais». La escultura moderna empieza con él."],
+      glosario: [["Pincelada suelta", "Manchas de pintura rápidas, sin detalles."], ["Al aire libre", "Fuera del estudio: en la calle o en el campo."]],
+      img: () => D() ? D().obra("impresion") : "",
+      ejemplos: [{q: "Un pintor pinta la misma iglesia por la mañana, a mediodía y por la tarde. ¿Por qué?", pasos: ["Quiere ver cómo cambia la luz.", "Captar la luz es lo principal del Impresionismo."], r: "Es impresionista: estudia la luz"}],
+      ojo: "Pintar al aire libre = salir a pintar fuera del estudio. No es abrir la ventana."},
+    {n: 5, ic: "🌻", titulo: "El Posimpresionismo: Van Gogh, Gauguin y Cézanne",
+      idea: "Al final del siglo XIX, algunos pintores dejan el Impresionismo y vuelven a dar importancia al dibujo y a la forma.",
+      reglas: [
+        "Son muy importantes porque abren el camino a los estilos del siglo XX (las <b>vanguardias</b>).",
+        "<b>Van Gogh</b> (1853-1890): <b>holandés</b>, vivió en Francia. Pinta con <b>formas que se retuercen</b> (serpenteantes), que muestran sus nervios y su sufrimiento. Obras: «Los girasoles», «La habitación en Arlés», «La iglesia de Auvers». Influyó en el <b>expresionismo</b>.",
+        "<b>Gauguin</b> (1848-1903): vivió con Van Gogh en Arlés y después en <b>Tahití</b>. Le importa el <b>color</b> más que la luz y no usa la perspectiva de siempre. Le gustaban las estampas <b>japonesas</b>. Influyó en el <b>fauvismo</b>.",
+        "<b>Cézanne</b> (1839-1906): busca las <b>formas básicas</b>. Las cosas parecen <b>figuras geométricas</b> (cubos, cilindros…). Obras: <b>«Los jugadores de cartas»</b> y «La montaña Santa Victoria». Influyó en el <b>cubismo</b>."],
+      glosario: [["Serpenteante", "Que se mueve como una serpiente, en curvas."], ["Vanguardias", "Estilos nuevos y atrevidos del siglo XX."], ["Perspectiva", "Forma de pintar para que parezca que hay profundidad."]],
+      img: () => D() ? D().dos("girasoles", "jugadores") : "",
+      ejemplos: [{q: "Pintor holandés con cielos y árboles en remolinos. ¿Quién es?", pasos: ["Holandés + formas que se retuercen.", "Es Van Gogh."], r: "Van Gogh"}],
+      ojo: "Cézanne → cubismo. Gauguin → fauvismo. Van Gogh → expresionismo."},
+    {n: 6, ic: "🏗️", titulo: "La arquitectura del siglo XIX: arquitectos e ingenieros",
+      idea: "Las ciudades crecen y hacen falta edificios nuevos: estaciones, puentes, museos… Se usan hierro y vidrio.",
+      reglas: [
+        "Hay discusión: los <b>arquitectos</b> prefieren formas tradicionales y artísticas; los <b>ingenieros</b>, materiales nuevos y formas atrevidas.",
+        "<b>Historicismo</b>: edificios que <b>imitan estilos antiguos</b> (gótico, barroco), pero con hierro. Ejemplo: la <b>Ópera de París</b>, de <b>Charles Garnier</b> (estilo neobarroco, con muchos adornos). <b>Viollet-le-Duc</b>, neogótico.",
+        "<b>Exposiciones universales</b>: hacían falta edificios que se montaran y desmontaran. Se usan piezas <b>prefabricadas</b> de hierro y vidrio. Ejemplos: el <b>Crystal Palace</b> (Londres, 1851) y la <b>Torre Eiffel</b> (París, 1889).",
+        "<b>Escuela de Chicago</b> (Estados Unidos): unen arquitectura e ingeniería. Crean los <b>primeros rascacielos</b>. Piensan más en que el edificio sea <b>útil</b> (funcional) que en que sea bonito. <b>Louis Sullivan</b>: Almacenes Carson, Pirie y Scott (1899)."],
+      glosario: [["Prefabricado", "Hecho por piezas en una fábrica, para montarlo después."], ["Funcional", "Pensado para que sea útil."], ["Rascacielos", "Edificio muy alto, de muchos pisos."], ["Fachada", "La parte de delante de un edificio."]],
+      img: () => D() ? D().dos("garnier", "carson") : "",
+      ejemplos: [{q: "Un edificio alto de oficinas, con muchas ventanas iguales y casi sin adornos. ¿De qué escuela es?", pasos: ["Alto + útil + sin adornos.", "Es la Escuela de Chicago (precedente del rascacielos)."], r: "Escuela de Chicago"}],
+      ojo: "Ópera de París = muchos adornos (historicismo). Almacenes Carson = sin adornos (Chicago)."},
+    {n: 7, ic: "🖌️", titulo: "España: la pintura de Goya",
+      idea: "Francisco de Goya (1746-1828) es uno de los pintores más grandes de la historia. Su pintura cambia con los años.",
+      reglas: [
+        "<b>Al principio, alegre</b>: cartones para tapices, estilo <b>Rococó</b>: «La vendimia», «La gallinita ciega», <b>«El quitasol»</b> (El parasol).",
+        "Pintor de los <b>reyes</b>: «La familia de Carlos IV» (influencia del Neoclasicismo).",
+        "Se queda <b>sordo</b> y vive la guerra contra Napoleón. Su pintura se vuelve <b>dramática</b>: es <b>romántico</b>. Obras: <b>«Los fusilamientos del 3 de mayo»</b>, «El coloso» y las <b>Pinturas Negras</b> (brujas, locos, viejos… en su casa, la Quinta del Sordo).",
+        "También pinta retratos (las Majas) y hace <b>grabados</b>: «Los caprichos», «Los desastres de la guerra», «La tauromaquia».",
+        "Al final, en Francia, su pintura es más alegre y suelta (<b>«La lechera de Burdeos»</b>): anuncia el Impresionismo."],
+      glosario: [["Grabado", "Dibujo hecho en una plancha para imprimir copias."], ["Tapiz", "Tela grande con dibujos para colgar en la pared."]],
+      img: () => D() ? D().obra("tresmayo") : "",
+      ejemplos: [{q: "«Los fusilamientos del 3 de mayo»: soldados disparan de noche a gente asustada. ¿Qué estilo es?", pasos: ["Drama, emoción, una escena de guerra y revolución.", "Es Romanticismo."], r: "Romanticismo"}],
+      ojo: "«El quitasol» es alegre (Rococó). «Los fusilamientos» es dramático (Romanticismo). Los dos son de Goya."},
+    {n: 8, ic: "🏖️", titulo: "Sorolla y la arquitectura del Modernismo",
+      idea: "Sorolla pinta la luz de Valencia. El Modernismo llena los edificios de curvas y plantas.",
+      reglas: [
+        "<b>Joaquín Sorolla</b> (1863-1923), <b>valenciano</b>: el gran <b>impresionista español</b>. Pinta con <b>manchas de color</b> y <b>pinceladas sueltas</b>. Pinta <b>playas</b> y <b>pescadores</b> con la luz del Mediterráneo. Obras: <b>«Paseo a orillas del mar»</b>, «Niños en la playa».",
+        "<b>Modernismo</b> (finales del siglo XIX): estilo de muchos países, con muchos nombres (Art Nouveau, Jugendstil, Liberty…).",
+        "<b>Cómo es</b>: deja la tradición · usa las técnicas nuevas · mucho <b>movimiento</b> (curvas) · <b>formas de plantas</b> · muy <b>decorativo</b> · también diseñan <b>muebles</b>.",
+        "En España: <b>Antoni Gaudí</b> (1852-1926), catalán: <b>La Pedrera</b> y la <b>Sagrada Familia</b>.",
+        "En <b>Valencia</b>: la <b>Estación del Norte</b> y el <b>Mercado Central</b>. Usan el <b>trencadís</b>: trocitos de <b>cerámica rota</b> que cubren las paredes."],
+      glosario: [["Trencadís", "Paredes cubiertas con trocitos de cerámica rota (azulejos)."], ["Decorativo", "Con muchos adornos."]],
+      img: () => D() ? D().dos("sorolla", "pedrera") : "",
+      ejemplos: [{q: "Una fachada con curvas como olas y balcones que parecen plantas. ¿Qué estilo es?", pasos: ["Curvas + formas vegetales + mucha decoración.", "Es Modernismo (por ejemplo, La Pedrera de Gaudí)."], r: "Modernismo"}],
+      ojo: "Trencadís NO es un tren: son trocitos de cerámica."}]};
+
+/* «img» puede ser una función: se resuelve aquí para que el motor reciba HTML ya hecho */
+const resolver = T => { T.aps.forEach(A => { if (typeof A.img === "function") Object.defineProperty(A, "img", {get: A.img, enumerable: true}); }); return T; };
+
+function registrar() {
+  window.LYAFpb.asignatura({
+    id: "sociales", n: "Ciencias Sociales", ic: "🌍", color: "#d9822b",
+    intro: "Historia y arte explicados fácil: el movimiento obrero, las colonias, la España del siglo XIX y los pintores y edificios de esa época.",
+    temas: [resolver(S3), resolver(S4)],
+    pronto: []});
+}
+window.LYASocialesTemas = {S3, S4};
+if (window.LYAFpb?.asignatura) registrar();
+else addEventListener("DOMContentLoaded", () => window.LYAFpb?.asignatura && registrar());
+})();
