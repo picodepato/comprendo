@@ -5,11 +5,12 @@
    3) El admin la revisa en su panel (pestaña «📥 Temas pedidos») y la aprueba o la rechaza.
    4) Cada mañana la rutina prepara los aprobados con el motor de FP Básica (fpb/fpb.js) en temas-profe/<id>.js,
       los apunta en temas-profe/indice.json, abre un PR y borra las fotos (ver temas-profe/RUTINA.md).
+      Los temas son SOLO DATOS (temas-profe/<id>.json): se bajan con fetch y se limpian (ver «SEGURIDAD» más abajo).
    5) Los temas publicados salen en «Temas de mis profes» (#mis-temas): solo para el profe que lo pidió, sus alumnos y el admin.
       Cada tema usa las rutas de FP Básica (#fpb-<id>…), con ids x1…x99, y1…y99 (las letras x, y, z, w, v, u son de los profes).
-   Formato de temas-profe/<id>.js: LYATemasProfe.registrar({id, profe, curso, asignatura, peticion, tema, banco, adaptado})
+   Formato de temas-profe/<id>.json: {id, profe, curso, asignatura, peticion, tema, banco, adaptado}
      tema   = como un tema de fpb/sociales-temas.js ({id, n, titulo, ic, color, intro, aps: [{n, ic, titulo, idea, reglas, glosario, ejemplos, ojo}]})
-     banco  = {manual: {<apartado>: [preguntas]}, nombres: {<apartado>: nombre}, parejas: [[a, b, apartado]…]} (preguntas con E, REL y CLA de aquí)
+     banco  = {manual: {<apartado>: [preguntas]}, nombres: {<apartado>: nombre}, parejas: [[a, b, apartado]…]} (preguntas como las de E, REL y CLA)
      adaptado = (para el futuro) versiones por dificultad del alumno: {tdah: {banco?, tema?}, …} con las claves de DIFICULTADES.
    Futuro (no está hecho): ficha de dificultades por alumno, perfil:<alumno> = {dif: ["tdah"…], adaptar: {fpb: true, temas: true, lecturas: false…}, notas},
    y el motor elegiría tema.adaptado[dif] cuando el profe haya marcado que se adapte. DIFICULTADES es la misma lista para todo. */
@@ -56,11 +57,43 @@ async function visibles() {
   const p = await profeDeMiClase();
   return p ? I.filter(t => t.profe === p) : [];
 }
-const cargarScript = src => new Promise((ok, mal) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = mal; document.head.appendChild(s); });
+/* SEGURIDAD: un tema de profe es solo DATOS (temas-profe/<id>.json), nunca código. Se baja con fetch (no con <script>),
+   solo para ids x1…, y todo su texto pasa por limpiar(): se escapa el HTML y solo se dejan <b> <i> <u> <em> <strong> <br> <sub> <sup> <small>
+   sin atributos. Las imágenes solo pueden ser archivos de Wikimedia Commons por su nombre ({imagen: "Archivo.jpg"}). */
+const ID_OK = /^[u-z]\d{1,2}$/;
+const ETIQUETAS = /&lt;(\/?)(b|i|u|em|strong|br|sub|sup|small)\s*\/?&gt;/gi;
+const limpiarTxt = t => esc(t).replace(ETIQUETAS, "<$1$2>");
+/* texto con formato (se pinta como HTML): solo las etiquetas de arriba. El resto de campos (títulos, opciones…): texto plano, sin < > ni comillas */
+const RICOS = new Set(["reglas", "idea", "q", "pasos", "r", "pi", "versos", "glosario", "p"]);
+const plano = t => String(t).replace(/<[^>]*>?/g, "").replace(/</g, "‹").replace(/>/g, "›").replace(/"/g, "”");
+const COLOR = /^#[0-9a-fA-F]{3,8}$/;
+const imagen = (n, alt) => /^[^\/\\:?#<>"]{1,150}\.(jpe?g|png|gif|webp|svg)$/i.test(String(n || "")) ? `<img src="https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(n)}?width=640" alt="${esc(alt || "")}" loading="lazy" referrerpolicy="no-referrer">` : "";
+function limpiar(v, prof = 0, rico = false) {
+  if (prof > 12) return null;
+  if (typeof v === "string") return rico ? limpiarTxt(v.slice(0, 4000)) : plano(v.slice(0, 4000));
+  if (typeof v === "number" || typeof v === "boolean" || v === null) return v;
+  if (Array.isArray(v)) return v.slice(0, 300).map(x => limpiar(x, prof + 1, rico));
+  if (typeof v !== "object") return null;
+  const o = {};
+  for (const [k, x] of Object.entries(v)) {
+    if (!/^[a-zA-Z0-9_]{1,30}$/.test(k) || /^on/i.test(k) || ["img", "prep", "gen", "__proto__", "constructor", "prototype"].includes(k)) continue;
+    if (k === "imagen") { const im = imagen(x && x.archivo || x, x && x.alt); if (im) o.img = im; continue; }
+    if (k === "color") { o.color = typeof x === "string" && COLOR.test(x) ? x : "#7c5cff"; continue; }
+    o[k] = limpiar(x, prof + 1, RICOS.has(k) || (rico && /^\d+$/.test(k)));
+  }
+  return o;
+}
+async function cargarTema(id) {
+  if (!ID_OK.test(id)) return;
+  const r = await fetch(`temas-profe/${id}.json`, {cache: "no-cache"}); if (!r.ok) throw new Error("sin tema");
+  const x = limpiar(await r.json());
+  if (!x || x.id !== id || !x.tema || x.tema.id !== id) throw new Error("tema no válido");
+  registrar(x);
+}
 async function cargarTemas() {
-  const V = await visibles();
+  const V = (await visibles()).filter(t => ID_OK.test(t.id));
   if (C().rol === "alumno" && V.length && !MIO) MIO = await (window.LYAPerfiles?.mio?.() || null);
-  await Promise.all(V.filter(t => !cargados[t.id]).map(t => (cargados[t.id] = cargarScript(t.archivo || `temas-profe/${t.id}.js`).catch(() => { delete cargados[t.id]; }))));
+  await Promise.all(V.filter(t => !cargados[t.id]).map(t => (cargados[t.id] = cargarTema(t.id).catch(() => { delete cargados[t.id]; }))));
   return V;
 }
 /* id de la asignatura (solo letras: fpb.js lo pide así) para cada profe + curso + asignatura */
@@ -87,8 +120,6 @@ function efectivo(x, v) {
 function registrar(x) {
   const F = window.LYAFpb; if (!F || !x || !x.tema) return;
   x.tema.id ||= x.id; x.id ||= x.tema.id;
-  const fijar = T => T.aps.forEach(A => { const d = Object.getOwnPropertyDescriptor(A, "img"); if (d && typeof d.value === "function") Object.defineProperty(A, "img", {get: d.value, enumerable: true}); });
-  fijar(x.tema); Object.values(x.adaptado || {}).forEach(v => (v.tema?.aps || []).forEach(a => { if (typeof a.img === "function") Object.defineProperty(a, "img", {get: a.img, enumerable: true}); }));
   REG[x.id] = x;
   const {T, B} = efectivo(x, variante(x));
   const id = idAsig(`${x.profe}|${x.curso}|${x.asignatura}`);

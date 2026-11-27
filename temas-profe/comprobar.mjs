@@ -1,7 +1,7 @@
 // Comprueba los temas de los profes (temas-profe/indice.json y cada temas-profe/<id>.js) antes de publicarlos.
-// Uso: node temas-profe/comprobar.mjs   → sale con código 1 si hay errores (los avisos no paran).
-import fs from "node:fs"; import path from "node:path"; import vm from "node:vm"; import url from "node:url";
-const DIR = path.dirname(url.fileURLToPath(import.meta.url)), RAIZ = path.join(DIR, "..");
+// Uso: node temas-profe/comprobar.mjs [carpeta temas-profe]   → sale con código 1 si hay errores (los avisos no paran).
+import fs from "node:fs"; import path from "node:path"; import url from "node:url";
+const DIR = process.argv[2] ? path.resolve(process.argv[2]) : path.dirname(url.fileURLToPath(import.meta.url));  // la carpeta temas-profe a revisar
 const errores = [], avisos = [];
 const mal = (id, t) => errores.push(`${id}: ${t}`), ojo = (id, t) => avisos.push(`${id}: ${t}`);
 
@@ -20,29 +20,39 @@ function revisar(L, a) {
       else mal(w, "tipo desconocido (usa E, REL o CLA)");
     });
 }
+/* SEGURIDAD: los temas son solo datos. Nada de código, HTML peligroso ni enlaces fuera de Wikimedia Commons. */
+const CAMPOS = ["id", "profe", "curso", "asignatura", "peticion", "tema", "banco", "adaptado"];
+const CAMPOS_IND = ["id", "profe", "curso", "asignatura", "tema", "titulo", "peticion", "creado"];
+const ETQ_OK = /^<\/?(b|i|u|em|strong|br|sub|sup|small)\s*\/?>$/i;
+function revisarDatos(v, donde, ruta = "") {
+  if (typeof v === "string") {
+    for (const m of v.matchAll(/<[^>]*>?/g)) if (!ETQ_OK.test(m[0])) mal(donde, `${ruta}: etiqueta HTML no permitida ${m[0].slice(0, 40)} (solo <b> <i> <u> <em> <strong> <br> <sub> <sup> <small>)`);
+    if (/javascript:|data:|https?:\/\//i.test(v)) mal(donde, `${ruta}: no se permiten enlaces en el texto`);
+    return;
+  }
+  if (Array.isArray(v)) return v.forEach((x, i) => revisarDatos(x, donde, `${ruta}[${i}]`));
+  if (v && typeof v === "object") for (const [k, x] of Object.entries(v)) {
+    if (k === "img" || /^on/i.test(k) || ["prep", "gen", "__proto__", "constructor", "prototype"].includes(k)) mal(donde, `${ruta}.${k}: campo no permitido (las imágenes van como «imagen»: "Archivo de Wikimedia Commons.jpg")`);
+    else if (k === "imagen") { const n = typeof x === "string" ? x : x && x.archivo; if (!/^[^\/\\:?#<>"]{1,150}\.(jpe?g|png|gif|webp|svg)$/i.test(String(n || ""))) mal(donde, `${ruta}.imagen: debe ser el nombre de un archivo de Wikimedia Commons`); }
+    else revisarDatos(x, donde, `${ruta}.${k}`);
+  }
+}
 const DIFS = ["facil", "nee", "tdah", "dislexia", "tea", "idioma", "dibujos", "muchos", "normal"];
 const ind = JSON.parse(fs.readFileSync(path.join(DIR, "indice.json"), "utf8"));
 if (!Array.isArray(ind)) { console.error("indice.json debe ser una lista"); process.exit(1); }
 const vistos = new Set();
 for (const t of ind) {
   const id = t.id || "?";
-  if (!/^[u-z]\d{1,2}$/.test(id)) mal(id, "el id debe ser una letra de la u a la z y 1 o 2 cifras (x1, x2… y1…)");
+  if (!/^[u-z]\d{1,2}$/.test(id)) { mal(id, "el id debe ser una letra de la u a la z y 1 o 2 cifras (x1, x2… y1…)"); continue; }
   if (vistos.has(id)) mal(id, "id repetido en indice.json"); vistos.add(id);
-  for (const k of ["profe", "curso", "asignatura", "titulo", "archivo", "peticion"]) if (!t[k]) mal(id, `falta «${k}» en indice.json`);
-  const f = path.join(RAIZ, t.archivo || "");
-  if (!t.archivo || !fs.existsSync(f)) { mal(id, `no existe el archivo ${t.archivo}`); continue; }
-  const src = fs.readFileSync(f, "utf8");
-  if (/<script|javascript:|on\w+\s*=\s*["']/i.test(src)) mal(id, "el tema no puede llevar <script>, javascript: ni on…= en el HTML");
-  for (const m of src.matchAll(/https?:\/\/[^\s"'`)]+/g)) if (!/^https:\/\/(upload\.wikimedia\.org|commons\.wikimedia\.org)\//.test(m[0])) ojo(id, `enlace externo: ${m[0]} (solo Wikimedia Commons)`);
-  // cargar el archivo con un LYATemasProfe de mentira
-  const reg = [];
-  const E = (d, g, e, o, p, pi, r, x = {}) => ({d, g, e, o, p: ["", ...p], pi, r: [].concat(r), ...x});
-  const REL = (d, g, e, pares, pi, r, x = {}) => ({d, g, e, tipo: "rel", pares, pi, r: [].concat(r), ...x});
-  const CLA = (d, g, e, cajas, items, pi, r, x = {}) => ({d, g, e, tipo: "cla", cajas, items, pi, r: [].concat(r), ...x});
-  const window = {LYATemasProfe: {E, REL, CLA, registrar: x => reg.push(x)}};
-  try { vm.runInNewContext(src, {window, console}, {filename: t.archivo, timeout: 2000}); } catch (e) { mal(id, "el archivo da error al cargarlo: " + e.message); continue; }
-  if (reg.length !== 1) { mal(id, `el archivo debe llamar 1 vez a LYATemasProfe.registrar (lo llama ${reg.length})`); continue; }
-  const X = reg[0], T = X.tema || {}, B = X.banco || {};
+  for (const k of ["profe", "curso", "asignatura", "titulo", "peticion"]) if (!t[k]) mal(id, `falta «${k}» en indice.json`);
+  for (const k of Object.keys(t)) if (!CAMPOS_IND.includes(k)) mal(id, `campo no permitido en indice.json: «${k}»`);
+  const f = path.join(DIR, id + ".json");
+  if (!fs.existsSync(f)) { mal(id, `no existe temas-profe/${id}.json`); continue; }
+  let X; try { X = JSON.parse(fs.readFileSync(f, "utf8")); } catch (e) { mal(id, "el archivo no es JSON válido: " + e.message); continue; }
+  revisarDatos(X, id);
+  for (const k of Object.keys(X)) if (!CAMPOS.includes(k)) mal(id, `campo no permitido: «${k}»`);
+  const T = X.tema || {}, B = X.banco || {};
   if (X.id !== id || T.id !== id) mal(id, "el id del archivo (registrar.id y tema.id) no coincide con indice.json");
   if (X.profe !== t.profe || X.peticion !== t.peticion) mal(id, "profe o peticion no coinciden con indice.json");
   for (const k of ["titulo", "ic", "color", "intro"]) if (!T[k]) mal(id, `falta tema.${k}`);
@@ -67,7 +77,7 @@ for (const t of ind) {
   }
   if (!Array.isArray(B.parejas) || B.parejas.length < 4) ojo(id, "banco.parejas: pon al menos 4 parejas para el juego de Parejas en equipo");
 }
-for (const f of fs.readdirSync(DIR).filter(f => /^[u-z]\d{1,2}\.js$/.test(f))) if (!ind.some(t => t.archivo === "temas-profe/" + f)) ojo(f, "este archivo no está en indice.json (no saldrá en la web)");
+for (const f of fs.readdirSync(DIR).filter(f => /^[u-z]\d{1,2}\.json$/.test(f))) if (!ind.some(t => t.id + ".json" === f)) ojo(f, "este archivo no está en indice.json (no saldrá en la web)");
 avisos.forEach(a => console.log("aviso:", a));
 errores.forEach(e => console.log("ERROR:", e));
 console.log(`${ind.length} temas · ${errores.length} errores · ${avisos.length} avisos`);

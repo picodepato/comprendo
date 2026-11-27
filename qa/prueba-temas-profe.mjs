@@ -106,7 +106,7 @@ const env = { ...process.env, COMPRENDO_URL: B }, carp = path.join(tmp, "peticio
 const sal = execFileSync("node", [path.join(RAIZ, "temas-profe/robot.mjs"), "lista", carp], { env }).toString();
 ok(/1 peticiones aprobadas/.test(sal) && fs.existsSync(path.join(carp, pet.id, "foto-1.jpg")) && fs.existsSync(path.join(carp, pet.id, "foto-2.jpg")), "el robot baja la petición y sus 2 fotos");
 ok(JSON.parse(fs.readFileSync(path.join(carp, pet.id, "peticion.json"))).nota.includes("nivel 1"), "el robot recibe las indicaciones del admin");
-execFileSync("node", [path.join(RAIZ, "temas-profe/robot.mjs"), "preparada", pet.id, "x1", "temas-profe/x1.js", "https://github.com/x/y/pull/1"], { env });
+execFileSync("node", [path.join(RAIZ, "temas-profe/robot.mjs"), "preparada", pet.id, "x1", "temas-profe/x1.json", "https://github.com/x/y/pull/1"], { env });
 P1 = (await api("temas", adm.j.token)).j.peticiones.find(x => x.id === pet.id);
 ok(P1.estado === "preparada" && P1.fotosSubidas === 0 && P1.temaId === "x1", "preparada con su PR");
 ok((await api(`temas?foto=${pet.id}&i=0`, adm.j.token)).code === 404 && (await api(`temas?foto=${pet.id}&i=1`, adm.j.token)).code === 404, "las fotos ya no están en la base de datos");
@@ -114,7 +114,14 @@ ok((await api(`temas?foto=${pet.id}&i=0`, adm.j.token)).code === 404 && (await a
 /* 4) se publica (simulado: el tema de ejemplo pasa a ser de este profe) */
 const indF = path.join(RAIZ, "temas-profe/indice.json"), ind = JSON.parse(fs.readFileSync(indF, "utf8"));
 ind[0] = { ...ind[0], profe: "profe" + id, peticion: pet.id }; fs.writeFileSync(indF, JSON.stringify(ind));
-fs.writeFileSync(path.join(RAIZ, "temas-profe/x1.js"), fs.readFileSync(path.join(RAIZ, "temas-profe/x1.js"), "utf8").replace('profe: "admin"', `profe: "profe${id}"`).replace('peticion: "ejemplo"', `peticion: "${pet.id}"`));
+/* y, de paso, un tema con trampas: HTML peligroso, un enlace javascript: y una imagen que no es de Wikimedia (la web tiene que neutralizarlo todo) */
+const x1F = path.join(RAIZ, "temas-profe/x1.json"), X1 = JSON.parse(fs.readFileSync(x1F, "utf8"));
+Object.assign(X1, { profe: "profe" + id, peticion: pet.id });
+X1.tema.intro = X1.adaptado.tdah.tema.intro = 'Hola <b>clase</b> <img src=x onerror="window.__trampa=1"><script>window.__trampa=2</script><a href="javascript:window.__trampa=3">pulsa</a>';
+X1.tema.aps[0].reglas[0] = X1.adaptado.tdah.tema.aps[0].reglas[0] = 'Regla con <b>negrita</b> y <img src=x onerror="window.__trampa=7"> <b onclick="window.__trampa=8">clic</b>'; X1.tema.color = "red;background:url(https://malo.example/x)";
+X1.tema.aps[0].img = '<img src=x onerror="window.__trampa=4">'; X1.tema.aps[0].imagen = "Pizza.jpg\" onerror=\"window.__trampa=5";
+X1.tema.onload = "window.__trampa=6";
+fs.writeFileSync(x1F, JSON.stringify(X1));
 await p.goto(B + "/index.html?otra=1#profe-temas"); await p.waitForSelector(".tp-pet");
 ok(/Publicado/.test(await p.textContent(".tp-lista")) && await p.locator('.tp-pet a[href="#fpb-x1"]').count() === 1, "el profe ve su petición como publicada, con el enlace al tema");
 await p.goto(B + "/index.html#mis-temas"); await p.waitForSelector('.tp a[href="#fpb-x1"]');
@@ -132,18 +139,24 @@ await pal.goto(B + "/index.html#fpb-x1"); await pal.waitForSelector(".tp-ver");
 ok(/adaptado para ti/.test(await pal.textContent(".tp-ver")), "le dice que el tema está adaptado para ella");
 await pal.goto(B + "/index.html#fpb-x1-1-d1"); await pal.waitForSelector(".fp-q", { timeout: 10000 });
 const enun = await pal.textContent(".fp-q");
-ok(/¿Cuál es el de abajo|Pizza en 8 trozos|se lee…/.test(enun), "sus actividades son las adaptadas (enunciados cortos)");
+ok(/¿Cuál es el de ABAJO|Pizza en 8 trozos|se lee…/.test(enun), "sus actividades son las adaptadas (enunciados cortos)" + (/¿Cuál es el de ABAJO|Pizza en 8 trozos|se lee…/.test(enun) ? "" : ": " + enun.slice(0, 150)));
 ok(await pal.locator(".fp-q button").count() >= 2, "la práctica de nivel Fácil funciona con el motor de FP Básica");
 if (DIR) await pal.screenshot({ path: DIR + "/tp-alumno-practica.png", fullPage: true });
 await pal.goto(B + "/index.html#mis-temas"); await pal.waitForSelector('.tp a[href="#fpb-x1"]');
 ok(true, "el alumno ve el tema en «Temas de mis profes»");
+await pal.goto(B + "/index.html#fpb-x1"); await pal.waitForSelector(".mt-lead");
+const intro = await pal.innerHTML(".fp .mt-lead");
+ok(/Hola clase/.test(intro) && !/<img|<script|<a /i.test(intro) && await pal.evaluate(() => window.__trampa === undefined && !document.querySelector("#app img[onerror], #app script, #app a[href^=javascript]")), "un tema con HTML o código escondido no hace nada: solo se dejan negritas y similares");
+await pal.goto(B + "/index.html#fpb-x1-1"); await pal.waitForSelector(".fp"); await espera(300);
+ok(await pal.evaluate(() => window.__trampa === undefined && !document.querySelector("#app img")), "ni imágenes que no sean de Wikimedia ni campos «img» del tema");
+ok(/Regla con <b>negrita<\/b>/.test(await pal.innerHTML("#app")) && await pal.evaluate(() => !document.querySelector("#app [onclick], #app [onerror]") && !/malo\.example/.test(document.querySelector("#app section").getAttribute("style") || "")), "en las explicaciones se dejan las negritas, pero sin atributos ni colores con trampa");
 await pal.goto(B + "/index.html#fpb"); await espera(500);
 ok(!/Matemáticas/.test(await pal.textContent("#app")), "el tema de un profe no sale en la portada de FP Básica");
 
 /* el profe ve el tema normal y puede mirarlo «como» un alumno con TDAH */
 await p.goto(B + "/index.html#fpb-x1"); await p.waitForSelector(".tp-ver");
 ok(!/Abajo: partes/.test(await p.textContent("#app")), "el profe ve la versión normal");
-await p.click('[data-tpver=tdah]'); await p.waitForFunction(() => /partes iguales\. Abajo/.test(document.querySelector("#app").textContent));
+await p.click('[data-tpver=tdah]'); await p.waitForFunction(() => /Abajo: partes que hay/.test(document.querySelector("#app").textContent));
 ok(true, "«Ver como: TDAH» le enseña la versión adaptada");
 await p.click('[data-tpver=""]');
 /* la página del perfil de la clase */
