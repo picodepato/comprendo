@@ -71,6 +71,7 @@ async function accion(b, yo) {
     case "grupo_borrar": {
       if (!A.esMio(b.id)) return [403, "no_es_tu_clase"];
       delete G.grupos[b.id]; for (const k in G.miembros) if (G.miembros[k] === b.id) delete G.miembros[k];
+      await redis("DEL", "cuaderno:" + b.id);  /* su cuaderno de clase */
       await guardarJSON("admin:grupos", G); return [200, {}];
     }
     case "grupo_asignar": {
@@ -151,6 +152,8 @@ export default (req, res) => seguro(res, async () => {
   if (ruta === "perfiles") return perfiles(req, res);
   const yo = await quienPanel(req);
   if (!yo) return responder(res, 403, { error: "solo_admin" });
+  /* cuaderno de clase (notas, asistencia, comportamiento, plano): api/_cuaderno.js */
+  if ((new URL(req.url || "/", "http://x").searchParams.get("t") ?? (req.query || {}).t) === "cuaderno") return (await import("./_cuaderno.js")).default(req, res, yo);
   if (req.method === "POST") { const [c, r] = await accion(cuerpo(req), yo); return responder(res, c, typeof r === "string" ? { error: r } : { ok: true, ...r }); }
   const q = new URL(req.url || "/", "http://x").searchParams.get("usuario") ?? (req.query || {}).usuario;
   const G = await leerGrupos(), A = alcance(yo, G);

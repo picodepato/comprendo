@@ -129,6 +129,23 @@ html.imp-on{overflow:hidden}
 .imp-aparte{border-top:3px dashed #999;padding-top:8px;margin-top:26px}
 .imp-vacio{padding:30px 0;text-align:center;color:#555}
 
+/* ---------- lecturas (imprimir/lectura.js) ---------- */
+.imp-texto-l p{margin:0 0 8px;text-align:justify}
+.imp-pn{display:inline-grid;place-items:center;min-width:1.4em;height:1.4em;margin-right:6px;border-radius:50%;border:1px solid #888;font-size:.75em;font-weight:700;color:#444;vertical-align:.1em}
+.imp-trx{margin:-4px 0 10px;padding-left:10px;border-left:3px solid #bbb;color:#444;font-style:italic;font-size:.92em}
+.imp-vf{width:100%;border-collapse:collapse;margin:4px 0}
+.imp-vf td{padding:4px 6px;border-bottom:1px solid #ddd;vertical-align:top}
+.imp-vfb{white-space:nowrap;text-align:right;width:1%}
+.imp-tabla{border-collapse:collapse;margin:6px 0}
+.imp-tabla td{border:1px solid #999;padding:3px 12px}
+.imp-uoe{line-height:2.1;margin:6px 0}
+.imp-uoe .imp-linea{width:auto;min-width:90px}
+.imp-kw{display:inline-block;padding:0 6px;border:1.5px solid #222;border-radius:4px;font-weight:700;letter-spacing:.04em}
+.imp-kwt{margin:8px 0;break-inside:avoid}
+.imp-kwt p{margin:2px 0}
+.imp-mc p{margin:3px 0;display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+.imp-sols li.imp-sin-n{list-style:none;margin-left:-1.8em}
+
 /* ---------- al imprimir: solo la hoja ---------- */
 @media print{
   @page{size:A4;margin:12mm 12mm 14mm}
@@ -142,4 +159,5 @@ html.imp-on{overflow:hidden}
   .imp-aparte{break-before:page;page-break-before:always;border-top:0;padding-top:0;margin-top:0}
   .imp-act,.imp-ej,.imp-texto,.imp-figs .mt-fig{break-inside:avoid;page-break-inside:avoid}
   .imp-hoja *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .imp-hoja *:last-child{margin-bottom:0 !important} /* si no, Chrome a veces añade una hoja en blanco al final */
 }
