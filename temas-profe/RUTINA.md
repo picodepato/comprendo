@@ -1,6 +1,6 @@
 # Rutina de cada mañana: preparar los temas que piden los profes
 
-Esto lo lee la rutina programada de Claude (una vez al día, por la mañana). Hace falta la variable de entorno
+Esto lo lee la tarea programada de Claude (cada mañana a las 7:43, hora de Madrid). Hace falta la variable de entorno
 `TEMAS_ROBOT` (la misma clave que en Vercel → Settings → Environment Variables → `TEMAS_ROBOT`).
 
 ## Pasos
@@ -19,9 +19,12 @@ Esto lo lee la rutina programada de Claude (una vez al día, por la mañana). Ha
 4. `node temas-profe/comprobar.mjs` tiene que salir **sin errores** (arregla los avisos que puedas).
 5. Prueba en local: `node qa/servidor-prueba.mjs . 8790` y abre `#fpb-<temaId>` y un apartado en los 3 niveles (como admin todo se ve).
 6. Un solo PR con todos los temas de la mañana, en una rama `claude/temas-profe-AAAA-MM-DD`, título
-   «Temas de profes: <asignatura> <curso> tema N…». En el cuerpo: profe, petición y qué apartados tiene cada tema.
-7. Para cada tema del PR: `node temas-profe/robot.mjs preparada <id> <temaId> temas-profe/<temaId>.js <url del PR>`
-   (esto **borra las fotos** del servidor). No guardes las fotos en el repositorio.
+   «Temas de profes: <asignatura> <curso> tema N…». En el cuerpo: profe, petición, apartados y versiones adaptadas de cada tema,
+   y los juegos propuestos (`juegoOtro`) como ideas para más adelante.
+7. **Publicar sola** (lo decidió la dueña de la web): cuando `comprobar.mjs` está sin errores y el despliegue de Vercel del PR está «Ready»,
+   junta el PR en `main` (squash). Si algo falla y no se puede arreglar, no lo juntes: deja el PR abierto y marca las peticiones con `error`.
+8. Para cada tema ya juntado: `node temas-profe/robot.mjs preparada <id> <temaId> temas-profe/<temaId>.js <url del PR>`
+   (esto **borra las fotos** del servidor) y después `node temas-profe/robot.mjs publicada <id>`. No guardes las fotos en el repositorio.
 
 ## Cómo tiene que ser el tema
 
