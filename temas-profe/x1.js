@@ -57,6 +57,22 @@ window.LYATemasProfe.registrar({
         REL(3, "Equivalentes", "Une cada fracción con su equivalente.", [["1/2", "3/6"], ["2/3", "4/6"], ["1/4", "2/8"], ["3/5", "9/15"]],
           ["Multiplica arriba y abajo por el mismo número.", "1/2 × 3 = 3/6."], "Cada pareja tiene arriba y abajo multiplicados por el mismo número.")]},
     parejas: [["Numerador", "El de arriba", 1], ["Denominador", "El de abajo", 1], ["3/4", "Tres cuartos", 1], ["4/4", "El todo (1)", 1], ["1/2", "2/4", 2], ["1/3", "2/6", 2], ["Equivalente", "Vale lo mismo", 2]]},
-  adaptado: {}
+  /* versiones adaptadas: solo lo que cambia (por apartado) */
+  adaptado: {
+    tdah: {
+      tema: {intro: "Una fracción = partes iguales. Abajo: cuántas hay. Arriba: cuántas coges.",
+        aps: [{n: 1, idea: "Abajo: partes que hay. Arriba: partes que coges.",
+          reglas: ["<b>Abajo</b> = partes que hay (<b>denominador</b>).", "<b>Arriba</b> = partes que coges (<b>numerador</b>).", "<b>3/4</b> = «tres cuartos»."]},
+          {n: 2, idea: "Equivalentes = valen lo mismo.",
+          reglas: ["<b>1/2 = 2/4</b>.", "Multiplica <b>arriba y abajo</b> por el <b>mismo número</b>."]}]},
+      banco: {manual: {
+        1: [
+          E(1, "Partes", "3/4. ¿Cuál es el de <b>abajo</b>?", ["4", "3"], ["El 3 está arriba."], ["Mira abajo.", "Abajo hay un 4."], "Abajo está el 4."),
+          E(1, "Partes", "Pizza en 8 trozos. Comes 3. ¿Fracción?", ["3/8", "8/3"], ["Abajo va el total: 8."], ["Total: 8 → abajo.", "Comes 3 → arriba."], "3/8."),
+          E(1, "Leer", "1/2 se lee…", ["Un medio", "Un dos"], ["No se lee así."], ["Media pizza.", "«Un medio»."], "«Un medio»."),
+          E(2, "El todo", "4/4 vale…", ["1", "4", "0"], ["No son 4 pizzas.", "Lo coges todo."], ["Coges todas las partes.", "Todo = 1."], "4/4 = 1."),
+          REL(2, "Leer", "Une.", [["1/2", "un medio"], ["1/3", "un tercio"], ["1/4", "un cuarto"]], ["Mira el de abajo.", "2 medios, 3 tercios, 4 cuartos."], "Medios, tercios, cuartos."),
+          CLA(3, "El todo", "¿Menos de 1 o 1 entero?", ["Menos de 1", "1 entero"], [["2/3", 0, "No llegas."], ["5/5", 1, "Iguales."], ["1/4", 0, "Poco."]], ["¿Arriba = abajo?", "Iguales → 1."], "Iguales → 1.")]}}}
+  }
 });
 })();

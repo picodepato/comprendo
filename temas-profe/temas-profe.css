@@ -31,3 +31,13 @@ textarea.tp-in{resize:vertical;min-height:90px}
 .tpa-txt{white-space:pre-wrap;max-height:240px;overflow:auto;background:var(--panel2);padding:8px 10px;border-radius:8px;font-size:14px}
 @media (max-width:520px){.tp-res{grid-template-columns:1fr}.tp-res dt{margin-top:6px}}
 .tpa-fotos a.tpa-grande{width:100%;height:auto}.tpa-fotos a.tpa-grande img{object-fit:contain;height:auto}
+/* perfil de la clase (temas-profe/perfiles.js) */
+.pfl-lista{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.pfl-al{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.pfl-al h3{margin:0 0 4px;font-size:17px}.pfl-al .tp-chips{margin:4px 0}.pfl-al .tp-chip{min-height:36px;padding:6px 11px;font-size:14px}
+.pfl-res{display:flex;flex-wrap:wrap;gap:6px}.pfl-tag{padding:4px 10px;border-radius:999px;background:var(--panel2);border:1px solid var(--line);font-size:14px}
+.pfl-ad{border:1px solid var(--line);border-radius:12px;padding:8px 12px;margin:10px 0;display:flex;flex-direction:column;gap:6px}
+.pfl-ad label{display:flex;gap:8px;align-items:center}
+.tp-sw{display:flex;gap:10px;align-items:flex-start;padding:12px;border-radius:12px;border:1.5px solid var(--c);background:var(--panel2);margin:12px 0;font-weight:600}
+.tp-sw input{width:22px;height:22px;flex:none;accent-color:var(--c)}
+.tp-ver{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 4px;padding:8px 10px;border-radius:12px;background:var(--panel2);font-size:14px}

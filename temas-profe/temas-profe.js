@@ -29,6 +29,9 @@ const ASIGS = ["Matemáticas", "Lengua Castellana y Literatura", "Inglés", "Val
 const ESTADO = {subiendo: ["⏫", "Subiendo…"], pendiente: ["⏳", "Esperando revisión"], aprobada: ["✅", "Aprobado: se prepara una mañana de estas"], rechazada: ["❌", "No aprobado"],
   error: ["⚠️", "Ha habido un problema al prepararlo"], preparada: ["🛠️", "Preparado: falta publicarlo en la web"], publicada: ["🎉", "Publicado"]};
 const LIM = {fotos: 6, fotoBytes: 750000};
+const METODOS = ["🎮 Gamificación", "🤝 Aprendizaje cooperativo", "🧪 Por proyectos (ABP)", "🔄 Clase invertida", "🔍 Por descubrimiento", "📋 Explicación guiada paso a paso", "🧩 DUA (varias formas de aprender)"];
+const ACTIVIDADES = ["✅ Tipo test", "➡️ Unir con flechas", "🗂️ Clasificar en cajas", "✍️ Completar huecos (eligiendo la palabra)", "⚖️ Verdadero o falso", "🧭 Problemas paso a paso", "🖼️ Con dibujos o imágenes"];
+const JUEGOS = ["🏆 ¿Quién sabe más? (concurso por rondas)", "🃏 Parejas en equipo", "📺 En la pizarra por turnos (sin móviles)"];
 
 /* ---------- helpers para los archivos de temas (iguales que en fpb/sociales-banco.js) ---------- */
 const E = (d, g, e, o, p, pi, r, x = {}) => ({d, g, e, o, p: ["", ...p], pi, r: [].concat(r), ...x});
@@ -56,26 +59,57 @@ async function visibles() {
 const cargarScript = src => new Promise((ok, mal) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = mal; document.head.appendChild(s); });
 async function cargarTemas() {
   const V = await visibles();
+  if (C().rol === "alumno" && V.length && !MIO) MIO = await (window.LYAPerfiles?.mio?.() || null);
   await Promise.all(V.filter(t => !cargados[t.id]).map(t => (cargados[t.id] = cargarScript(t.archivo || `temas-profe/${t.id}.js`).catch(() => { delete cargados[t.id]; }))));
   return V;
 }
 /* id de la asignatura (solo letras: fpb.js lo pide así) para cada profe + curso + asignatura */
 const idAsig = s => { let h = 2166136261; for (const c of s) h = Math.imul(h ^ c.charCodeAt(0), 16777619) >>> 0; let o = "tp"; for (let i = 0; i < 6; i++) { o += String.fromCharCode(97 + h % 26); h = Math.floor(h / 26) || (h * 7 + 13); } return o; };
+/* versiones adaptadas: x.adaptado = {tdah: {tema: {intro?, aps: [{n, …cambios}]}, banco: {manual: {<apartado>: [...]}, nombres?, parejas?}}, …}
+   El alumno ve la de su primera dificultad que tenga versión (si su profe marcó «adaptar temas»); el profe y el admin eligen «Ver como». */
+let MIO = null;
+const VER = "lyaTpVer";
+const verComo = id => { try { return JSON.parse(sessionStorage.getItem(VER) || "{}")[id] || ""; } catch (e) { return ""; } };
+const ponerVer = (id, v) => { try { const o = JSON.parse(sessionStorage.getItem(VER) || "{}"); o[id] = v; sessionStorage.setItem(VER, JSON.stringify(o)); } catch (e) {} };
+function variante(x) {
+  const ad = x.adaptado || {};
+  if (["profe", "admin"].includes(C().rol)) { const v = verComo(x.id); return ad[v] ? v : ""; }
+  if (!MIO || (MIO.adaptar || {}).temas === false) return "";
+  return DIFICULTADES.map(d => d[0]).find(k => (MIO.dif || []).includes(k) && ad[k]) || "";
+}
+function efectivo(x, v) {
+  const T0 = x.tema, V = v ? x.adaptado[v] || {} : {}, VT = V.tema || {}, VB = V.banco || {};
+  const cambios = Object.fromEntries((VT.aps || []).map(a => [a.n, a]));
+  const T = {...T0, ...VT, id: T0.id, aps: T0.aps.map(a => cambios[a.n] ? {...a, ...cambios[a.n]} : a), adaptadoPara: v};
+  const B0 = x.banco || {}, B = {...B0, ...VB, manual: {...(B0.manual || {}), ...(VB.manual || {})}, nombres: {...(B0.nombres || {}), ...(VB.nombres || {})}};
+  return {T, B};
+}
 function registrar(x) {
   const F = window.LYAFpb; if (!F || !x || !x.tema) return;
-  const T = x.tema; T.id ||= x.id;
-  T.aps.forEach(A => { if (typeof A.img === "function") Object.defineProperty(A, "img", {get: A.img, enumerable: true}); });
+  x.tema.id ||= x.id; x.id ||= x.tema.id;
+  const fijar = T => T.aps.forEach(A => { const d = Object.getOwnPropertyDescriptor(A, "img"); if (d && typeof d.value === "function") Object.defineProperty(A, "img", {get: d.value, enumerable: true}); });
+  fijar(x.tema); Object.values(x.adaptado || {}).forEach(v => (v.tema?.aps || []).forEach(a => { if (typeof a.img === "function") Object.defineProperty(a, "img", {get: a.img, enumerable: true}); }));
+  REG[x.id] = x;
+  const {T, B} = efectivo(x, variante(x));
   const id = idAsig(`${x.profe}|${x.curso}|${x.asignatura}`);
   let A = F.asignaturas().find(a => a.id === id);
   if (!A) { A = {id, n: x.asignatura, ic: T.ic || "📘", color: T.color || "#7c5cff", intro: `${x.curso} · temas preparados para la clase de ${x.profe}.`, temas: [], pronto: [], profe: x.profe, curso: x.curso}; F.asignatura(A); }
-  if (!A.temas.some(t => t.id === T.id)) { A.temas.push(T); A.temas.sort((a, b) => (a.n || 0) - (b.n || 0)); }
-  const B = x.banco || {}, P = B.parejas;
+  const i = A.temas.findIndex(t => t.id === T.id);
+  if (i >= 0) A.temas[i] = T; else { A.temas.push(T); A.temas.sort((a, b) => (a.n || 0) - (b.n || 0)); }
+  const P = B.parejas;
   F.banco(T.id, {...B, parejas: Array.isArray(P) ? (aps => P.filter(p => !aps || !aps.length || aps.includes(p[2]))) : P});
-  REG[T.id] = x;
 }
+/* encima del tema (fpb.js lo pide): «Ver como…» para el profe y «Adaptado para ti» para el alumno */
+function barra(temaId) {
+  const x = REG[temaId]; if (!x) return "";
+  const ks = Object.keys(x.adaptado || {}), v = variante(x), nom = k => (DIFICULTADES.find(d => d[0] === k) || [k, k])[1];
+  if (["profe", "admin"].includes(C().rol)) return ks.length ? `<p class="tp-ver">👀 Ver como: <button type="button" class="tp-chip" data-tpver="" data-id="${temaId}" aria-pressed="${!v}">Normal</button>${ks.map(k => `<button type="button" class="tp-chip" data-tpver="${k}" data-id="${temaId}" aria-pressed="${v === k}">${esc(nom(k))}</button>`).join("")}</p>` : "";
+  return v ? `<p class="tp-ver">🧩 Este tema está adaptado para ti.</p>` : "";
+}
+document.addEventListener("click", e => { const b = e.target.closest("[data-tpver]"); if (!b) return; ponerVer(b.dataset.id, b.dataset.tpver); registrar(REG[b.dataset.id]); dispatchEvent(new HashChangeEvent("hashchange")); });
 
 /* ---------- rutas ---------- */
-const RE = /^(mis-temas|profe-tema-nuevo|profe-temas)$/;
+const RE = /^(mis-temas|profe-tema-nuevo|profe-temas|profe-perfil-clase)$/;
 const isTp = h => RE.test(h);
 const RE_FPB = /^fpb-([u-z]\d{1,2})(-|$)/;
 let appEl = null;
@@ -83,8 +117,9 @@ function render(app) {
   appEl = app;
   const h = location.hash.slice(1);
   try { window.LYA?.setAcc?.("#7c5cff"); } catch (e) {}
-  if (h === "profe-tema-nuevo") return asistente(app);
+  if (h === "profe-tema-nuevo") { CL = null; return asistente(app); }
   if (h === "profe-temas") return misPeticiones(app);
+  if (h === "profe-perfil-clase" && window.LYAPerfiles) return LYAPerfiles.render(app);
   return misTemas(app);
 }
 const esProfe = () => ["profe", "admin"].includes(C().rol);
@@ -131,14 +166,16 @@ function peticionHTML(p) {
 /* ---------- el asistente ---------- */
 const BORR = "lyaTemaBorrador";
 let W = null;
-const nuevoW = () => ({paso: 0, d: {curso: "", asignatura: "", tema: "", titulo: "", apartados: "", alumnado: [], notas: "", texto: ""}, fotos: [], acepto: false, enviando: false});
+const nuevoW = () => ({paso: 0, d: {curso: "", asignatura: "", tema: "", titulo: "", apartados: "", alumnado: [], notas: "", metodologia: [], adaptarClase: false, clase: "", actividades: [], juegos: [], juegoOtro: "", texto: ""}, fotos: [], acepto: false, enviando: false});
 const PASOS = [
   {k: "curso", t: "¿Para qué curso es el tema?", ok: d => d.curso.trim()},
   {k: "asignatura", t: "¿De qué asignatura?", ok: d => d.asignatura.trim()},
   {k: "tema", t: "¿Qué tema es?", ok: d => d.titulo.trim()},
   {k: "apartados", t: "¿Qué apartados tiene?", ok: () => true},
   {k: "alumnado", t: "¿Cómo es tu alumnado?", ok: () => true},
-  {k: "material", t: "Adjunta el material", ok: (d, w) => (w.fotos.length || d.texto.trim().length >= 40) && w.acepto},
+  {k: "metodo", t: "¿Cómo quieres trabajarlo?", ok: () => true},
+  {k: "actividades", t: "¿Qué actividades y juegos quieres?", ok: d => d.actividades.length},
+  {k: "material", t: "Escribe el tema o sube fotos", ok: (d, w) => (w.fotos.length || d.texto.trim().length >= 40) && w.acepto},
   {k: "resumen", t: "Revisa y envía", ok: () => true}];
 const guardarBorrador = () => store.set(BORR, W.d);
 /* lo que más ha usado (para sugerirlo primero) */
@@ -146,6 +183,19 @@ const usados = k => store.get("lyaTemaUsados:" + k) || [];
 const usar = (k, v) => { if (!v) return; store.set("lyaTemaUsados:" + k, [v, ...usados(k).filter(x => x !== v)].slice(0, 6)); };
 const sugerencias = (k, base) => [...new Set([...usados(k), ...base])];
 const chips = (k, lista, actual) => `<div class="tp-chips" role="group">${lista.map(v => `<button type="button" class="tp-chip" data-tp="chip" data-k="${k}" data-v="${esc(v)}" aria-pressed="${v === actual}">${esc(v)}</button>`).join("")}</div>`;
+const multi = (k, lista, sel) => `<div class="tp-chips" role="group">${lista.map(v => `<button type="button" class="tp-chip" data-tp="multi" data-k="${k}" data-v="${esc(v)}" aria-pressed="${sel.includes(v)}">${esc(v)}</button>`).join("")}</div>`;
+/* el perfil de mi clase, para «Adaptar para todo mi alumnado» (solo cuántos hay de cada dificultad) */
+let CL = null;
+const cargarCL = () => CL ? Promise.resolve(CL) : C().api("perfiles").then(r => (CL = r.ok ? r.j : {clases: {}, alumnos: [], perfiles: {}, clase: {}})).catch(() => (CL = {clases: {}, alumnos: [], perfiles: {}, clase: {}}));
+function claseHTML() {
+  if (!CL) { cargarCL().then(() => { const x = document.getElementById("tpcl"); if (x && W && W.d.adaptarClase) x.innerHTML = claseHTML(); }); return `<p class="mt-small">Mirando tu clase…</p>`; }
+  const d = W.d, ids = Object.keys(CL.clases || {});
+  if (d.clase && !CL.clases[d.clase]) d.clase = "";
+  const us = CL.alumnos.filter(u => !d.clase || CL.clase[u] === d.clase), cuenta = {};
+  us.forEach(u => ((CL.perfiles[u] || {}).dif || []).forEach(k => { cuenta[k] = (cuenta[k] || 0) + 1; }));
+  return `${ids.length > 1 ? `<label class="tp-l">¿Para qué clase?<select class="tp-in" data-tpin="clase"><option value="">Todas mis clases</option>${ids.map(id => `<option value="${esc(id)}"${id === d.clase ? " selected" : ""}>${esc(CL.clases[id])}</option>`).join("")}</select></label>` : ""}
+    <p class="pfl-res">${Object.keys(cuenta).length ? Object.entries(cuenta).map(([k, n]) => `<span class="pfl-tag">${esc((DIFICULTADES.find(x => x[0] === k) || [k, k])[1])} · ${n}</span>`).join(" ") + ` <span class="mt-small">de ${us.length} alumnos</span>` : `<span class="mt-small">Todavía no has marcado dificultades en tu clase. <a href="#profe-perfil-clase">Márcalas aquí</a> (se guarda el borrador).</span>`}</p>`;
+}
 const dl = (id, lista) => `<datalist id="${id}">${lista.map(v => `<option value="${esc(v)}">`).join("")}</datalist>`;
 
 function asistente(app) {
@@ -164,15 +214,24 @@ function asistente(app) {
   else if (P.k === "alumnado") cuerpo = `<p class="mt-small">Marca todo lo que encaje con tu clase. Así adaptamos las explicaciones y las actividades.</p>
     <div class="tp-chips" role="group">${DIFICULTADES.map(([k, n]) => `<button type="button" class="tp-chip" data-tp="dif" data-v="${k}" aria-pressed="${d.alumnado.includes(k)}">${esc(n)}</button>`).join("")}</div>
     <label class="tp-l">Algo más que debamos saber (opcional):<textarea class="tp-in" rows="4" data-tpin="notas" maxlength="1500" placeholder="Por ejemplo: les cuesta mucho leer enunciados largos; quiero ejercicios con dinero; el examen es el día 12…">${esc(d.notas)}</textarea></label>`;
-  else if (P.k === "material") cuerpo = `<p class="mt-small">Haz fotos a las páginas del libro o de tus apuntes (hasta ${LIM.fotos}), o pega el texto. Puedes hacer las dos cosas.</p>
+  else if (P.k === "metodo") cuerpo = `<p class="mt-small">Elige una o varias (opcional).</p>${multi("metodologia", METODOS, d.metodologia)}
+    <label class="tp-sw"><input type="checkbox" data-tp="adaptar"${d.adaptarClase ? " checked" : ""}><span>🧩 Adaptar para todo mi alumnado<br><small class="mt-small">Cada alumno con dificultades verá su versión adaptada del tema. Las dificultades se marcan en <a href="#profe-perfil-clase">🧩 Perfil de la clase</a>.</small></span></label>
+    <div id="tpcl">${d.adaptarClase ? claseHTML() : ""}</div>`;
+  else if (P.k === "actividades") cuerpo = `<p class="mt-small"><b>Tipos de actividad</b> (elige al menos uno). Todas se hacen tocando, sin escribir.</p>${multi("actividades", ACTIVIDADES, d.actividades)}
+    <p class="mt-small"><b>Juegos para hacer en clase</b> (opcional)</p>${multi("juegos", JUEGOS, d.juegos)}
+    <label class="tp-l">¿Otro juego? Propónlo (opcional):<input class="tp-in" data-tpin="juegoOtro" value="${esc(d.juegoOtro)}" maxlength="200" placeholder="Por ejemplo: un bingo de vocabulario, un pasapalabra…"></label>`;
+  else if (P.k === "material") cuerpo = `<p class="mt-small">Escribe tú el tema (o pega el texto) o haz fotos a las páginas del libro o de tus apuntes (hasta ${LIM.fotos}). Puedes hacer las dos cosas.</p>
     <div class="tp-fotos">${W.fotos.map((f, i) => `<figure class="tp-foto"><img src="${f}" alt="Foto ${i + 1}"><button type="button" class="tp-x" data-tp="quitar" data-i="${i}" aria-label="Quitar la foto ${i + 1}">✕</button></figure>`).join("")}
       ${W.fotos.length < LIM.fotos ? `<label class="tp-add"><input type="file" accept="image/*" multiple data-tpfile hidden><span>📷</span><b>Añadir fotos</b></label>` : ""}</div>
     <p class="mt-small" id="tpfm" role="status"></p>
-    <label class="tp-l">O pega aquí el texto:<textarea class="tp-in" rows="6" data-tpin="texto" maxlength="20000" placeholder="Copia aquí la teoría o los ejercicios…">${esc(d.texto)}</textarea></label>
+    <label class="tp-l">Escribe o pega aquí el tema:<textarea class="tp-in" rows="6" data-tpin="texto" maxlength="20000" placeholder="Copia aquí la teoría o los ejercicios…">${esc(d.texto)}</textarea></label>
     <label class="tp-ok"><input type="checkbox" data-tp="acepto"${W.acepto ? " checked" : ""}> En las fotos no salen alumnos, caras ni datos personales.</label>`;
   else cuerpo = `<dl class="tp-res"><dt>Curso</dt><dd>${esc(d.curso)}</dd><dt>Asignatura</dt><dd>${esc(d.asignatura)}</dd><dt>Tema</dt><dd>${esc(d.tema ? d.tema + ". " : "")}${esc(d.titulo)}</dd>
       <dt>Apartados</dt><dd>${d.apartados ? esc(d.apartados).replace(/\n/g, "<br>") : "Los sacamos de las fotos"}</dd>
       <dt>Alumnado</dt><dd>${d.alumnado.map(k => esc((DIFICULTADES.find(x => x[0] === k) || [k, k])[1])).join(", ") || "—"}${d.notas ? `<br>${esc(d.notas)}` : ""}</dd>
+      <dt>Metodología</dt><dd>${d.metodologia.map(esc).join(", ") || "—"}${d.adaptarClase ? "<br>🧩 Adaptado para todo mi alumnado" : ""}</dd>
+      <dt>Actividades</dt><dd>${d.actividades.map(esc).join(", ")}</dd>
+      <dt>Juegos</dt><dd>${[...d.juegos, d.juegoOtro].filter(Boolean).map(esc).join(", ") || "—"}</dd>
       <dt>Material</dt><dd>${W.fotos.length} foto${W.fotos.length === 1 ? "" : "s"}${d.texto ? ` y ${d.texto.length} letras de texto` : ""}</dd></dl>
     <p class="mt-small">El administrador lo revisa antes de prepararlo. Cuando el tema esté listo, las fotos se borran.</p>`;
   app.innerHTML = `<section class="wrap mt tp" style="--c:#7c5cff"><p class="mt-migas"><a href="#profe">← Profe</a> · <a href="#profe-temas">📥 Mis peticiones</a></p>
@@ -235,6 +294,8 @@ document.addEventListener("input", e => {
 document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.matches?.("input[data-tpin]") && W && PASOS[W.paso].ok(W.d, W)) { e.preventDefault(); W.paso++; pintarW(); } });
 document.addEventListener("change", async e => {
   if (e.target.matches?.("[data-tp=acepto]") && W) { W.acepto = e.target.checked; botonSigue(); return; }
+  if (e.target.matches?.("[data-tp=adaptar]") && W) { W.d.adaptarClase = e.target.checked; guardarBorrador(); const x = document.getElementById("tpcl"); if (x) x.innerHTML = W.d.adaptarClase ? claseHTML() : ""; return; }
+  if (e.target.matches?.("select[data-tpin=clase]") && W) { W.d.clase = e.target.value; guardarBorrador(); const x = document.getElementById("tpcl"); if (x) x.innerHTML = claseHTML(); return; }
   if (!e.target.matches?.("[data-tpfile]") || !W) return;
   const fs = [...e.target.files].slice(0, LIM.fotos - W.fotos.length);
   for (let i = 0; i < fs.length; i++) {
@@ -254,6 +315,7 @@ document.addEventListener("click", async e => {
   }
   if (!W) return;
   if (a === "chip") { W.d[b.dataset.k] = b.dataset.v; guardarBorrador(); W.paso++; pintarW(); }
+  else if (a === "multi") { const k = b.dataset.k, v = b.dataset.v, L = W.d[k]; W.d[k] = L.includes(v) ? L.filter(x => x !== v) : [...L, v]; b.setAttribute("aria-pressed", W.d[k].includes(v)); guardarBorrador(); botonSigue(); }
   else if (a === "dif") { const v = b.dataset.v, L = W.d.alumnado; W.d.alumnado = L.includes(v) ? L.filter(x => x !== v) : [...L, v]; b.setAttribute("aria-pressed", W.d.alumnado.includes(v)); guardarBorrador(); }
   else if (a === "sigue" && PASOS[W.paso].ok(W.d, W)) { W.paso++; pintarW(); scrollTo(0, 0); }
   else if (a === "atras") { W.paso = Math.max(0, W.paso - 1); pintarW(); }
@@ -274,5 +336,5 @@ addEventListener("load", () => setTimeout(() => { antesDeFpb(); hayTemas().then(
 /* hay temas para mí (para enseñar la tarjeta en Aprender) */
 const hayTemas = async () => (await visibles()).length > 0;
 
-const API = window.LYATemasProfe = {hay: false, isTp, render, registrar, cargarTemas, hayTemas, visibles, E, REL, CLA, DIFICULTADES, ESTADO, LIM, _reg: REG};
+const API = window.LYATemasProfe = {hay: false, barra, isTp, render, registrar, cargarTemas, hayTemas, visibles, E, REL, CLA, DIFICULTADES, ESTADO, LIM, _reg: REG};
 })();

@@ -6,7 +6,8 @@
    Profe (o admin):
      GET                                   → {peticiones: las suyas (el admin: todas), limites}
      GET  ?foto=<id>&i=<n>                 → {data: "data:image/jpeg;base64,…"} (el admin o el profe que la pidió)
-     POST {accion: "pedir", curso, asignatura, tema, titulo, apartados, alumnado, notas, texto, fotos: n} → {id} (estado «subiendo»)
+     POST {accion: "pedir", curso, asignatura, tema, titulo, apartados, alumnado, notas, metodologia, actividades, juegos, juegoOtro,
+           adaptarClase, clase, texto, fotos: n} → {id} (estado «subiendo»). Con adaptarClase se guarda difsClase = {dif: {tdah: 2…}, n} (sin nombres).
      POST {accion: "foto", id, i, data}    → guarda la foto i (JPEG en base64; caduca sola a los 30 días)
      POST {accion: "enviar", id}           → pasa a «pendiente» (la ve el admin)
      POST {accion: "cancelar", id}         → la borra con sus fotos (solo si aún no está preparada)
@@ -21,13 +22,15 @@
      POST {accion: "robot_error", id, motivo} → estado «error» (el admin lo ve; las fotos se quedan para volver a intentarlo)
    Datos: temas:peticiones = [{id, profe, estado, creado, …}] (una sola clave JSON, como admin:deberes) y temafoto:<id>:<i> (con caducidad). */
 import crypto from "node:crypto";
-import { redis, quienPanel, leerJSON, guardarJSON, nuevoId, contar, responder, cuerpo } from "./_db.js";
+import { resumenClase } from "./_perfiles.js";
+import { redis, leerGrupos, quienPanel, leerJSON, guardarJSON, nuevoId, contar, responder, cuerpo } from "./_db.js";
 
 export const LIM = { fotos: 6, fotoBytes: 750000, texto: 20000, porProfe: 3, abiertas: 30, fotoDias: 30 };
 const K = "temas:peticiones", KF = (id, i) => `temafoto:${id}:${i}`;
 const ABIERTA = ["subiendo", "pendiente", "aprobada", "error"];
 const DIA = 864e5;
 const corta = (s, n) => String(s ?? "").replace(/\s+/g, " ").trim().slice(0, n);
+const lista = (x, n, m) => (Array.isArray(x) ? x : []).map(v => corta(v, m)).filter(Boolean).slice(0, n);
 const larga = (s, n) => String(s ?? "").replace(/\r/g, "").trim().slice(0, n);
 
 export const leerPeticiones = () => leerJSON(K, []);
@@ -103,7 +106,14 @@ export default async function temas(req, res) {
       if ((await contar("temaspedir:" + yo.usuario, 3600)) > 10) return responder(res, 429, { error: "espera" });
       const nueva = { id: nuevoId(), profe: yo.usuario, estado: "subiendo", creado: Date.now(), curso, asignatura, tema: corta(b.tema, 10), titulo,
         apartados: larga(b.apartados, 1500), alumnado: (Array.isArray(b.alumnado) ? b.alumnado : []).map(x => corta(x, 60)).filter(Boolean).slice(0, 10),
-        notas: larga(b.notas, 1500), texto, fotos, fotosSubidas: 0 };
+        notas: larga(b.notas, 1500), texto, fotos, fotosSubidas: 0,
+        metodologia: lista(b.metodologia, 8, 60), actividades: lista(b.actividades, 10, 60), juegos: lista(b.juegos, 6, 80), juegoOtro: corta(b.juegoOtro, 200),
+        adaptarClase: !!b.adaptarClase };
+      /* «Adaptar para todo mi alumnado»: solo cuántos alumnos hay con cada dificultad (nunca quiénes) */
+      if (nueva.adaptarClase) {
+        const G = await leerGrupos(), cl = b.clase && G.grupos[b.clase] && (yo.admin || G.grupos[b.clase].profe === yo.usuario) ? b.clase : null;
+        nueva.clase = cl ? G.grupos[cl].nombre : ""; nueva.difsClase = await resumenClase(yo.usuario, yo.admin, cl);
+      }
       P.push(nueva); await guardar(P);
       return responder(res, 200, { ok: true, id: nueva.id });
     }

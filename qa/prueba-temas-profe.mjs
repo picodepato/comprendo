@@ -24,6 +24,14 @@ ok((await api("temas", alu.j.token)).code === 403, "un alumno no puede usar /api
 ok((await api("temas", null, "GET", undefined, { "x-robot": "mala-clave-mala-clave-1234" })).code === 403, "el robot con una clave mala no entra");
 ok((await api("temas", prof.j.token, "POST", { accion: "pedir", curso: "2.º ESO", asignatura: "Mates", titulo: "X", texto: "corto" })).j.error === "falta_material", "sin fotos ni texto no deja pedir");
 
+/* perfil de la clase: el profe marca las dificultades de su alumna */
+ok((await api("perfiles", prof.j.token, "POST", { accion: "perfil", usuario: "ana" + id, dif: ["tdah", "inventada"], adaptar: { temas: true }, notas: "Se distrae con textos largos." })).ok, "el profe guarda las dificultades de su alumna");
+ok((await api("perfiles", otro.j.token, "POST", { accion: "perfil", usuario: "ana" + id, dif: ["nee"] })).code === 403, "otro profe no puede tocar a una alumna que no es suya");
+const pAna = (await api("perfiles", alu.j.token)).j.perfil;
+ok(pAna.dif.join() === "tdah" && pAna.notas === undefined && pAna.adaptar.temas, "la alumna ve sus dificultades pero no las notas del profe");
+ok((await api("perfiles", alu.j.token, "POST", { accion: "perfil", usuario: "ana" + id, dif: [] })).code === 403, "un alumno no puede cambiar su perfil");
+ok(JSON.stringify((await api("perfiles?resumen=1", prof.j.token)).j.dif) === '{"tdah":1}', "resumen de la clase: cuántos con cada dificultad, sin nombres");
+
 const b = await chromium.launch(), errs = [];
 const ctxDe = async (tok, u, rol) => { const c = await b.newContext({ viewport: { width: 420, height: 900 } }); await c.addInitScript(([t, uu, r]) => { if (!sessionStorage.getItem("hecho")) { sessionStorage.setItem("hecho", 1); localStorage.setItem("lyaCuenta", JSON.stringify({ token: t, usuario: uu, rol: r })); } }, [tok, u, rol]); const p = await c.newPage(); p.on("pageerror", e => errs.push(e.message)); return p; };
 
@@ -42,6 +50,15 @@ await p.fill("[data-tpin=tema]", "4"); await p.fill("[data-tpin=titulo]", "Las f
 await p.click("[data-tp=sigue]");
 await p.fill("[data-tpin=apartados]", "1. Qué es una fracción\n2. Fracciones equivalentes"); await p.click("[data-tp=sigue]");
 await p.click('[data-tp=dif][data-v=tdah]'); await p.click('[data-tp=dif][data-v=facil]'); await p.fill("[data-tpin=notas]", "Les cuesta leer enunciados largos."); await p.click("[data-tp=sigue]");
+ok(/¿Cómo quieres trabajarlo/.test(await p.textContent(".tp")), "paso nuevo: metodología");
+await p.click('[data-tp=multi][data-k=metodologia][data-v="🎮 Gamificación"]');
+await p.check("[data-tp=adaptar]"); await p.waitForSelector("#tpcl .pfl-tag");
+ok(/TDAH · 1/.test(await p.textContent("#tpcl")), "«Adaptar para todo mi alumnado» enseña cuántos alumnos tienen cada dificultad");
+await p.click("[data-tp=sigue]");
+ok(await p.locator("[data-tp=sigue]").isDisabled(), "sin elegir un tipo de actividad no deja seguir");
+await p.click('[data-tp=multi][data-k=actividades][data-v="✅ Tipo test"]'); await p.click('[data-tp=multi][data-k=actividades][data-v="➡️ Unir con flechas"]');
+await p.click('[data-tp=multi][data-k=juegos][data-v="🃏 Parejas en equipo"]'); await p.fill("[data-tpin=juegoOtro]", "Un bingo de fracciones");
+await p.click("[data-tp=sigue]");
 /* fotos: dos capturas grandes (se reducen en el navegador) */
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "tp-")), f1 = path.join(tmp, "pagina1.png"), f2 = path.join(tmp, "pagina2.png");
 fs.writeFileSync(f1, await p.screenshot({ fullPage: true })); fs.writeFileSync(f2, await p.screenshot());
@@ -53,7 +70,7 @@ ok(tam.every(n => n < 750000), `las fotos se reducen antes de subirlas (${tam.ma
 ok(await p.locator("[data-tp=sigue]").isDisabled(), "sin marcar «no salen alumnos» no deja seguir");
 await p.check("[data-tp=acepto]"); await p.click("[data-tp=sigue]");
 const res = await p.textContent(".tp-res");
-ok(/2\.º ESO/.test(res) && /Las fracciones/.test(res) && /TDAH/.test(res) && /2 fotos/.test(res), "el resumen enseña todo lo elegido");
+ok(/2\.º ESO/.test(res) && /Las fracciones/.test(res) && /TDAH/.test(res) && /2 fotos/.test(res) && /Gamificación/.test(res) && /Adaptado para todo/.test(res) && /Unir con flechas/.test(res) && /bingo/.test(res), "el resumen enseña todo lo elegido");
 if (DIR) await p.screenshot({ path: DIR + "/tp-resumen.png", fullPage: true });
 await p.click("[data-tp=enviar]");
 await p.waitForFunction(() => location.hash === "#profe-temas" && document.querySelector(".tp-pet"), null, { timeout: 15000 });
@@ -62,6 +79,7 @@ if (DIR) await p.screenshot({ path: DIR + "/tp-mis-peticiones.png", fullPage: tr
 
 const mias = (await api("temas", prof.j.token)).j.peticiones, pet = mias[0];
 ok(mias.length === 1 && pet.fotos === 2 && pet.fotosSubidas === 2 && pet.alumnado.includes("tdah") && pet.estado === "pendiente", "la petición está en la cola con sus 2 fotos");
+ok(pet.adaptarClase && pet.difsClase.dif.tdah === 1 && !JSON.stringify(pet).includes("ana" + id) && pet.actividades.length === 2 && pet.juegoOtro === "Un bingo de fracciones" && pet.metodologia[0].includes("Gamificación"), "la petición lleva metodología, actividades, juegos y las dificultades de la clase (sin nombres)");
 ok((await api("temas", otro.j.token)).j.peticiones.length === 0, "otro profe no ve la petición");
 ok((await api(`temas?foto=${pet.id}&i=0`, otro.j.token)).code === 404, "otro profe no puede ver las fotos");
 ok((await api("temas", otro.j.token, "POST", { accion: "revisar", id: pet.id, decision: "aprobar" })).code === 403, "un profe no puede aprobar");
@@ -109,13 +127,34 @@ await pal.waitForFunction(() => /Las fracciones/.test(document.querySelector("#a
 ok(true, "el alumno abre el tema con un enlace directo (#fpb-x1)");
 await pal.goto(B + "/index.html#fpb-x1-1"); await pal.waitForSelector(".fp");
 ok(/numerador/i.test(await pal.textContent("#app")), "el apartado 1 enseña la explicación");
+ok(/Abajo: partes que hay/.test(await pal.textContent("#app")), "la alumna con TDAH ve la versión adaptada del apartado");
+await pal.goto(B + "/index.html#fpb-x1"); await pal.waitForSelector(".tp-ver");
+ok(/adaptado para ti/.test(await pal.textContent(".tp-ver")), "le dice que el tema está adaptado para ella");
 await pal.goto(B + "/index.html#fpb-x1-1-d1"); await pal.waitForSelector(".fp-q", { timeout: 10000 });
+const enun = await pal.textContent(".fp-q");
+ok(/¿Cuál es el de abajo|Pizza en 8 trozos|se lee…/.test(enun), "sus actividades son las adaptadas (enunciados cortos)");
 ok(await pal.locator(".fp-q button").count() >= 2, "la práctica de nivel Fácil funciona con el motor de FP Básica");
 if (DIR) await pal.screenshot({ path: DIR + "/tp-alumno-practica.png", fullPage: true });
 await pal.goto(B + "/index.html#mis-temas"); await pal.waitForSelector('.tp a[href="#fpb-x1"]');
 ok(true, "el alumno ve el tema en «Temas de mis profes»");
 await pal.goto(B + "/index.html#fpb"); await espera(500);
 ok(!/Matemáticas/.test(await pal.textContent("#app")), "el tema de un profe no sale en la portada de FP Básica");
+
+/* el profe ve el tema normal y puede mirarlo «como» un alumno con TDAH */
+await p.goto(B + "/index.html#fpb-x1"); await p.waitForSelector(".tp-ver");
+ok(!/Abajo: partes/.test(await p.textContent("#app")), "el profe ve la versión normal");
+await p.click('[data-tpver=tdah]'); await p.waitForFunction(() => /partes iguales\. Abajo/.test(document.querySelector("#app").textContent));
+ok(true, "«Ver como: TDAH» le enseña la versión adaptada");
+await p.click('[data-tpver=""]');
+/* la página del perfil de la clase */
+await p.goto(B + "/index.html#profe-perfil-clase"); await p.waitForSelector(".pfl-al");
+ok(await p.locator(`[data-pfl-rapido="ana${id}"][data-d=tdah][aria-pressed=true]`).count() === 1, "«🧩 Perfil de la clase» enseña a la alumna con TDAH marcado");
+await p.click(`[data-pfl-rapido="ana${id}"][data-d=dislexia]`); await p.waitForFunction(() => /Guardado/.test(document.querySelector("#pflm").textContent));
+ok((await api("perfiles", alu.j.token)).j.perfil.dif.includes("dislexia"), "tocar una dificultad la guarda al momento");
+if (DIR) await p.screenshot({ path: DIR + "/tp-perfil-clase.png", fullPage: true });
+await p.goto(B + `/index.html#profe-alumno-ana${id}`); await p.waitForSelector("[data-perfil]");
+await p.click("[data-perfil]"); await p.waitForSelector("[data-pfl-form]");
+ok(/Se distrae/.test(await p.inputValue("[data-pfl-form] textarea")), "en la ficha del alumno, «🧩 Dificultades» abre sus dificultades y notas");
 
 /* otro alumno (sin esa clase) y el otro profe: no lo ven */
 const pj = await ctxDe(ajeno.j.token, "leo" + id, "alumno");

@@ -188,6 +188,9 @@ VISTAS.temas = () => {
     <small>🧑‍🏫 ${esc(p.profe)} · ${fecha(p.enviado || p.creado)} · ${esc(n)}${p.pr ? ` · <a href="${esc(p.pr)}" target="_blank" rel="noopener">PR</a>` : ""}${p.temaId ? ` · <a href="#fpb-${esc(p.temaId)}">#fpb-${esc(p.temaId)}</a>` : ""}</small>
     ${p.apartados ? `<p><b>${t("Apartados")}:</b><br>${esc(p.apartados).replace(/\n/g, "<br>")}</p>` : ""}
     <p><b>${t("Alumnado")}:</b> ${p.alumnado && p.alumnado.length ? p.alumnado.map(k => esc(TPD(k))).join(", ") : "—"}${p.notas ? `<br>${esc(p.notas)}` : ""}</p>
+    ${p.metodologia && p.metodologia.length ? `<p><b>${t("Metodología")}:</b> ${p.metodologia.map(esc).join(", ")}</p>` : ""}
+    ${p.actividades && p.actividades.length ? `<p><b>${t("Actividades")}:</b> ${p.actividades.map(esc).join(", ")}${(p.juegos || []).length || p.juegoOtro ? `<br><b>${t("Juegos")}:</b> ${[...(p.juegos || []), p.juegoOtro].filter(Boolean).map(esc).join(", ")}` : ""}</p>` : ""}
+    ${p.adaptarClase ? `<p><b>🧩 ${t("Adaptar para todo su alumnado")}${p.clase ? " (" + esc(p.clase) + ")" : ""}:</b> ${Object.entries((p.difsClase || {}).dif || {}).map(([k, n]) => `${esc(TPD(k))} · ${n}`).join(", ") || t("sin dificultades marcadas")} ${t("(de {0} alumnos)", (p.difsClase || {}).n || 0)}</p>` : ""}
     ${p.texto ? `<details><summary>${t("Texto ({0} letras)", p.texto.length)}</summary><div class="tpa-txt">${esc(p.texto)}</div></details>` : ""}
     ${p.fotos && p.fotosSubidas ? `<p><button type="button" class="btn" data-tpfotos="${esc(p.id)}" data-n="${p.fotos}">${t("🖼️ Ver las fotos ({0})", p.fotos)}</button></p><div class="tpa-fotos" id="tpaf-${esc(p.id)}"></div>` : p.fotos ? `<p class="ctas">${t("Las fotos ya se han borrado.")}</p>` : ""}
     ${p.motivo ? `<p class="ctam">${esc(p.motivo)}</p>` : ""}

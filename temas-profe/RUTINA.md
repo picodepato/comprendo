@@ -40,6 +40,12 @@ Esto lo lee la rutina programada de Claude (una vez al día, por la mañana). Ha
   - `dibujos`: usa `img` con SVG sencillo hecho a mano o imágenes de Wikimedia Commons.
   - `normal`: nivel del curso, con más problemas de nivel 3.
   - Lo que diga `notas` (del profe) y `nota` (del admin) va por delante de todo esto.
-- `adaptado: {}` se deja vacío de momento (es para las versiones por alumno del futuro).
+- **Metodología** (`metodologia`): úsala para el enfoque. Gamificación: retos, puntos y una pequeña historia en los enunciados. Cooperativo: actividades pensadas para hacer en pareja o en equipo y parejas para el juego. ABP: un problema real que recorre el tema. Clase invertida: explicación corta para casa y más práctica. Paso a paso: más `ejemplos` y `guia`. DUA: la misma idea explicada de varias formas (texto, dibujo y ejemplo).
+- **Tipos de actividad** (`actividades`): haz sobre todo los que pide. Test → `E` · Unir con flechas → `REL` · Clasificar → `CLA` · Completar huecos → `E` con la frase con «___» en el enunciado y las palabras como opciones · Verdadero o falso → `E` con `["Verdadero", "Falso"]` · Problemas paso a paso → `E` con `guia` · Con dibujos → `img` (SVG hecho a mano o Wikimedia Commons).
+- **Juegos** (`juegos`): «¿Quién sabe más?» y «En la pizarra» usan las preguntas de elegir; «Parejas en equipo» usa `banco.parejas` (pon 3 o más por apartado si lo pide). Si hay `juegoOtro`, apúntalo en el cuerpo del PR como propuesta (no se construye solo).
+- **Adaptar para todo su alumnado** (`adaptarClase` y `difsClase.dif`, p. ej. `{tdah: 2, dislexia: 1}`): crea `adaptado[<clave>]` para cada dificultad de `difsClase.dif` (menos `normal`). Cada versión lleva solo lo que cambia:
+  `{tema: {intro?, aps: [{n, idea?, reglas?, glosario?, ejemplos?, ojo?}]}, banco: {manual: {<apartado>: [actividades]}}}` (un apartado de `manual` sustituye entero al normal; mínimo 3 actividades y mejor 6).
+  Cada alumno con esa dificultad lo verá así si su profe tiene marcado «Temas» en «¿Qué se le adapta?». El modelo está en `temas-profe/x1.js` (versión `tdah`).
+  Sin `adaptarClase`, `adaptado: {}`.
 - Nada de `<script>`, `on…=` ni enlaces fuera de Wikimedia Commons (`comprobar.mjs` lo revisa).
 - Mates con números: el motor es de tocar, así que los cálculos van como «elige el resultado» con opciones bien pensadas (errores típicos como opciones malas).

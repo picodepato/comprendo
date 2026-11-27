@@ -5,6 +5,22 @@ const DIR = path.dirname(url.fileURLToPath(import.meta.url)), RAIZ = path.join(D
 const errores = [], avisos = [];
 const mal = (id, t) => errores.push(`${id}: ${t}`), ojo = (id, t) => avisos.push(`${id}: ${t}`);
 
+function revisar(L, a) {
+  L.forEach((q, j) => {
+      const w = `${a} actividad ${j + 1}`;
+      if (![1, 2, 3].includes(q.d)) mal(w, "d debe ser 1, 2 o 3");
+      if (!q.e) mal(w, "falta el enunciado (e)");
+      if (!Array.isArray(q.pi) || q.pi.length < 2) mal(w, "pon al menos 2 pistas (pi)");
+      if (!q.r || !q.r.length || !q.r[0]) mal(w, "falta «así se hace» (r)");
+      if (!q.tipo) {
+        if (!Array.isArray(q.o) || q.o.length < 2) mal(w, "elegir: al menos 2 opciones");
+        else { if (new Set(q.o).size !== q.o.length) mal(w, "opciones repetidas"); if (q.o.length < q.d + 1) ojo(w, `nivel ${q.d} con ${q.o.length} opciones (lo normal: ${q.d + 1})`); if ((q.p || []).filter(Boolean).length < q.o.length - 1) ojo(w, "falta el porqué de alguna opción mala (p)"); }
+      } else if (q.tipo === "rel") { if (!Array.isArray(q.pares) || q.pares.length < 3) mal(w, "relacionar: al menos 3 parejas"); }
+      else if (q.tipo === "cla") { if (!Array.isArray(q.cajas) || q.cajas.length < 2 || !Array.isArray(q.items) || q.items.length < 3) mal(w, "clasificar: al menos 2 cajas y 3 elementos"); else q.items.forEach(it => { if (!(it[1] >= 0 && it[1] < q.cajas.length)) mal(w, `«${it[0]}» va a una caja que no existe`); }); }
+      else mal(w, "tipo desconocido (usa E, REL o CLA)");
+    });
+}
+const DIFS = ["facil", "nee", "tdah", "dislexia", "tea", "idioma", "dibujos", "muchos", "normal"];
 const ind = JSON.parse(fs.readFileSync(path.join(DIR, "indice.json"), "utf8"));
 if (!Array.isArray(ind)) { console.error("indice.json debe ser una lista"); process.exit(1); }
 const vistos = new Set();
@@ -40,20 +56,15 @@ for (const t of ind) {
     const L = (B.manual || {})[A.n] || [];
     if (L.length < 6) (L.length < 3 ? mal : ojo)(a, `tiene ${L.length} actividades (mínimo 3, mejor 6 o más)`);
     for (const d of [1, 2, 3]) if (!L.some(q => q.d === d)) ojo(a, `no hay actividades de nivel ${d}`);
-    L.forEach((q, j) => {
-      const w = `${a} actividad ${j + 1}`;
-      if (![1, 2, 3].includes(q.d)) mal(w, "d debe ser 1, 2 o 3");
-      if (!q.e) mal(w, "falta el enunciado (e)");
-      if (!Array.isArray(q.pi) || q.pi.length < 2) mal(w, "pon al menos 2 pistas (pi)");
-      if (!q.r || !q.r.length || !q.r[0]) mal(w, "falta «así se hace» (r)");
-      if (!q.tipo) {
-        if (!Array.isArray(q.o) || q.o.length < 2) mal(w, "elegir: al menos 2 opciones");
-        else { if (new Set(q.o).size !== q.o.length) mal(w, "opciones repetidas"); if (q.o.length < q.d + 1) ojo(w, `nivel ${q.d} con ${q.o.length} opciones (lo normal: ${q.d + 1})`); if ((q.p || []).filter(Boolean).length < q.o.length - 1) ojo(w, "falta el porqué de alguna opción mala (p)"); }
-      } else if (q.tipo === "rel") { if (!Array.isArray(q.pares) || q.pares.length < 3) mal(w, "relacionar: al menos 3 parejas"); }
-      else if (q.tipo === "cla") { if (!Array.isArray(q.cajas) || q.cajas.length < 2 || !Array.isArray(q.items) || q.items.length < 3) mal(w, "clasificar: al menos 2 cajas y 3 elementos"); else q.items.forEach(it => { if (!(it[1] >= 0 && it[1] < q.cajas.length)) mal(w, `«${it[0]}» va a una caja que no existe`); }); }
-      else mal(w, "tipo desconocido (usa E, REL o CLA)");
-    });
+    revisar(L, a);
   });
+  /* versiones adaptadas */
+  for (const [k, V] of Object.entries(X.adaptado || {})) {
+    const a = `${id} adaptado «${k}»`;
+    if (!DIFS.includes(k)) { mal(a, "la clave debe ser una de " + DIFS.join(", ")); continue; }
+    for (const ap of (V.tema || {}).aps || []) if (!T.aps.some(x => x.n === ap.n)) mal(a, `cambia el apartado ${ap.n}, que no existe`);
+    for (const [n, L] of Object.entries((V.banco || {}).manual || {})) { if (!T.aps.some(x => String(x.n) === n)) mal(a, `actividades del apartado ${n}, que no existe`); else { if (L.length < 3) mal(a, `apartado ${n}: al menos 3 actividades`); revisar(L, `${a} apartado ${n}`); } }
+  }
   if (!Array.isArray(B.parejas) || B.parejas.length < 4) ojo(id, "banco.parejas: pon al menos 4 parejas para el juego de Parejas en equipo");
 }
 for (const f of fs.readdirSync(DIR).filter(f => /^[u-z]\d{1,2}\.js$/.test(f))) if (!ind.some(t => t.archivo === "temas-profe/" + f)) ojo(f, "este archivo no está en indice.json (no saldrá en la web)");

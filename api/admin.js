@@ -6,6 +6,7 @@
 import { redis, quienPanel, claveAdminPorDefecto, normUsuario, claveValida, hashClave, cerrarSesiones, leerJSON, guardarJSON, leerGrupos, normCodigo, codigoValido, nuevoId, ADMIN, responder, cuerpo, seguro } from "./_db.js";
 import { leerPropuestas } from "./propuestas.js";
 import temas, { leerPeticiones } from "./_temas.js";
+import perfiles from "./_perfiles.js";
 
 /* estado guardado por la web: S.a = respuestas ("<lectura>:q0", "<lectura>:g0"…, "<lectura>:fin" al terminar), S.g.rd[lectura] = {n veces, best estrellas, bp mejor %, last} */
 const empezadas = s => { const m = {}; for (const k of Object.keys((s && s.a) || {})) { const [id, ex] = k.split(":"); if (ex !== "fin") m[id] = (m[id] || 0) + 1; } return m; };
@@ -110,7 +111,7 @@ async function accion(b, yo) {
     case "borrar_usuario": {
       if (!u || u === ADMIN) return [400, "no_valido"];
       await cerrarSesiones(u);
-      await redis("DEL", "usuario:" + u, "progreso:" + u, "mensajes:" + u, "leidos:" + u);
+      await redis("DEL", "usuario:" + u, "progreso:" + u, "mensajes:" + u, "leidos:" + u, "perfil:" + u);
       await redis("SREM", "usuarios", u);
       { const ds = (await redis("SMEMBERS", "dibujos:" + u)) || []; if (ds.length) await redis("DEL", ...ds.map(id => `dibujo:${u}:${id}`)); await redis("DEL", "dibujos:" + u); }  /* dibujos de sus flashcards */
       if (G.miembros[u]) { delete G.miembros[u]; await guardarJSON("admin:grupos", G); }
@@ -144,7 +145,10 @@ async function accion(b, yo) {
 
 export default (req, res) => seguro(res, async () => {
   /* /api/temas («Añadir un tema» de los profes y el robot de cada mañana): api/_temas.js */
-  if ((new URL(req.url || "/", "http://x").searchParams.get("t") ?? (req.query || {}).t) === "temas") return temas(req, res);
+  /* /api/perfiles (dificultades de cada alumno, las marca su profe): api/_perfiles.js */
+  const ruta = new URL(req.url || "/", "http://x").searchParams.get("t") ?? (req.query || {}).t;
+  if (ruta === "temas") return temas(req, res);
+  if (ruta === "perfiles") return perfiles(req, res);
   const yo = await quienPanel(req);
   if (!yo) return responder(res, 403, { error: "solo_admin" });
   if (req.method === "POST") { const [c, r] = await accion(cuerpo(req), yo); return responder(res, c, typeof r === "string" ? { error: r } : { ok: true, ...r }); }

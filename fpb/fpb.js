@@ -158,6 +158,7 @@ function temaHTML(app, T) {
   app.innerHTML = `<section class="wrap mt fp" style="--c:${T.color}">
     <p class="mt-migas"><a href="#fpb-${A.id}">← ${esc(A.n)}</a></p>
     <h1 class="mt-h1"><small>${esc(A.n)} · Tema ${T.n}</small> ${esc(T.titulo)}</h1>
+    ${window.LYATemasProfe?.barra?.(T.id) || ""}
     <p class="mt-lead">${esc(T.intro)}</p>
     ${bloques.map(b => `${b && bloques.length > 1 ? `<h2 class="mt-h2">${b === "Lengua" ? "🔤" : "📚"} ${esc(b)}</h2>` : ""}<div class="mt-aps">${T.aps.filter(a => (a.bloque || "") === b).map(a => {
       const e = pr[`${T.id}-${a.n}`]?.e || [0, 0, 0];
