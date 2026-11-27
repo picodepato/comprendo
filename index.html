@@ -334,7 +334,10 @@ a.stk:focus-visible{outline:3px solid var(--hi,var(--beam));outline-offset:2px}
 <link rel="stylesheet" href="concursos/concursos.css">
 <link rel="stylesheet" href="videos/videos.css">
 <link rel="stylesheet" href="mates/mates.css">
+<link rel="stylesheet" href="fpb/fpb.css">
+<link rel="stylesheet" href="fpb/sociales.css">
 <link rel="stylesheet" href="profe/profe.css">
+<link rel="stylesheet" href="imprimir/imprimir.css">
 <link rel="stylesheet" href="diseno.css">
 <link rel="stylesheet" href="nav/nav.css">
 <script src="nav/nav.js"></script>
@@ -1151,6 +1154,7 @@ function render() {
   if (S.view === "escape" && window.LYAEscape) return LYAEscape.render($("app"));
   if (S.view === "retos" && window.LYARetos) return LYARetos.render($("app"));
   if (S.view === "mates" && window.LYAMates) return LYAMates.render($("app"));
+  if (S.view === "fpb" && window.LYAFpb) return LYAFpb.render($("app"));
   if (S.view === "cc" && window.LYAConcursos) return LYAConcursos.render($("app"));
   if (S.view === "vd" && window.LYAVideos) return LYAVideos.render($("app"));
   if (S.view === "deb" && window.LYAAvisos?.render) return LYAAvisos.render($("app"));
@@ -1171,6 +1175,7 @@ async function route() {
   if (h === "aprender" || h === "lecturas") S.view = "learn";
   else if (window.LYANav?.isHub(h)) S.view = "hub";
   else if (window.LYAMates?.isMates(h)) S.view = "mates";
+  else if (window.LYAFpb?.isFpb(h)) S.view = "fpb";
   else if (h === "diccionario") S.view = "dict";
   else if (window.LYAFichas?.isFc(h)) S.view = "fc";
   else if (window.LYAJuegos?.isGames(h)) S.view = "games";
@@ -1251,6 +1256,14 @@ start();
 <script src="mates/monta.js"></script>
 <script src="mates/grupo.js"></script>
 <script src="mates/mates.js"></script>
+<script src="fpb/fpb.js"></script>
+<script src="fpb/grupo.js"></script>
+<script src="fpb/lengua-temas.js"></script>
+<script src="fpb/lengua-banco.js"></script>
+<script src="fpb/sociales-dibujos.js"></script>
+<script src="fpb/sociales-temas.js"></script>
+<script src="fpb/sociales-banco.js"></script>
 <script src="profe/profe.js"></script>
+<script src="imprimir/imprimir.js"></script>
 </body>
 </html>
